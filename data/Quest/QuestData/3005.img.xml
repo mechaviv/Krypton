@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3005.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hella's Missing" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="Alcaster told me to go to Hella's house in Orbis, to no avail. She wasn't anywhere to be found, as I had to resort to talking to her housekeeper, #bElma#k. According to her, Hella hadn't been home in months, and no one knows where she went or why. She did tell me to go see her best friend, #bJade of El Nath#k, so I should go there immediately." />
+        <string name="summary" value="I should go see Hella's friend, Jade, at El Nath." />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;Where's Hella?&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3006" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Miss Hella left the house months ago and hasn't been back since. Visitors drop by everyday looking for Hella and leave. Do you have something to say to her? I'll give her the message once she gets back here.\r\n#b#L0# It's okay, don't worry about it.#l\r\n#b#L1# Did Hella have any close friends?#l\r\n#b#L2# Do you have any clue as to where Hella might have went?#l" />
+            <string name="1" value="A close friend? Oh, him! A good friend of hers lives in #bEl Nath#k. His name is #bJade#k, and he's been friends with Miss Hella since childhood so he may have a clue as to where she might have went." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="2" value="If I knew where she was, then I wouldn't be doing this. Miss Hella doesn't divulge in her plans to begin with, and one of her favorite things to do is traveling. I tried to stop her a number of times, but now I've totally given up. Where did she go this time? I really would like to know myself." />
+                    <string name="0" value="I would like to tell you to come back later but I have no clue as to when she'll be back so I really don't have much to say to you. I haven't heard a word from her in months so I am really worried now. If you ever find out how #bMiss Hella#k is doing, please let me know. Thank you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you met #bJade#k from #bEl Nath#k? He's been friends with Miss Hella since childhood so he may have a clue as to where she might have gone. Please let me know if you find out her whereabouts." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3004" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

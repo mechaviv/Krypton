@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21741.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Investigating Mu Lung" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 54, you hear from #b#p1002104##k." />
+        <string name="1" value="#p1002104# says they've just received word regarding the Black Wings and urges you to go to #b#m250000000##k. Talk to #b#p2090004##k in #m250000000# for more details." />
+        <string name="2" value="You met with #p2090004# in #m250000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you been advancing your levels? I found an interesting piece of information about the Black Wings. This time, you'll have to travel quite a bit. Do you know a town called #b#m250000000##k? You'll have to head there." />
+            <string name="1" value="Apparently, #b#p2090004##k in #m250000000# somehow met with the Black Wings. I don't know the details. Please go and find out why the Black Wings contacted #p2090004# and what exactly happened between them." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Eh? What is it? Do you need some medicine?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#m250000000##k yet? Don't tell me you don't know how to get there. #bHead over to #m200000000# station#k and get on #b#p2090005##k, which will take you directly there. Get on #p2090005#, head over to #m250000000#, and meet #p2090004#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2090004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21740" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21741s" />
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

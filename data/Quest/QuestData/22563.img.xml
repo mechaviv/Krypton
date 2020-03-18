@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22563.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Value of One Scale" />
+        <int name="area" value="7" />
+        <string name="0" value="You may be able to confirm whether #p1013000# is really an Onyx Dragon with just one scale. Ask #b#p1013000##k to give you one scale." />
+        <string name="1" value="#p1013000# says that his defenses will weaken if a scale is removed. He says that he'll need calcium to compensate and asks that you feed him bones. He says that #b#t4000204#s#k should suffice...\r\n\r\n#i4000204# #t4000204# #b#c4000204# / 50#k" />
+        <string name="2" value="You fed the #t4000204#s to #p1013000# and took one of his scales." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032467" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000204" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ma... Master, why are you looking at me like that?\r\n#L0##bYou heard, didn't you? I need one of your scales. Give me one.#l\n#k" />
+            <string name="1" value="You want one of my scales? How could you say something so cruel with a straight face, master? Do you know how painful that would be?\r\n#L0##bWell, not really, but there is no other way for us to identify which family of Dragons you belong to. Come on now, hurry.#l\n#k" />
+            <string name="2" value="No way! I can't do that! How could you try to take one of my pretty and perfect scales? Think about it, master. How pathetic would you feel if you had a bald spot?\r\n#L0##bA scale isn't like hair. I can take one from your body where it wouldn't be so noticeable. #l\n#k" />
+            <string name="3" value="Wahhh, don't say that with such a happy face! I'm scared! Can't I give you something else? \r\n#L0##bSomething else... Like your horn?#l\n#k" />
+            <string name="4" value="Yikes! My horn? Of course not! Fine, just take a scale! But I have to consume enough calcium for my DEF to compensate for the loss of my scale." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Oh, what about a bone? I am going to eat a bone! If you go near #bRemains &lt;Tomb&gt;#k, you will find #r#o4230125#s#k. Bring me #b50#k of their #bBones#k! Then I will give you one... I repeat, just ONE scale." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Absolutely not, then! I don't care if you're my master, I can't just give you a scale. No way!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you already find all the #t4000204#s I've asked you to bring? I've always been impressed with your strength and speed, but I'm not so happy this time. Hmph, fine. Give me a minute. Eeeeeeeeeeeeek!" />
+            <imgdir name="yes">
+                <string name="0" value="*sniff* Here is my scale. My precious scale. Please be careful with that. Okay? I'm not giving you another one." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you find all the #b#t4000204#s#k? I won't give you my scale if you don't give me #r50#k of them!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000204" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22562" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032467" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="41" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

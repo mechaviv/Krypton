@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22009.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Verifying the Farm Situation" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22009" />
+        <string name="0" value="#p1013101# seems worried that the number of #o9300385#es has grown. Talk to #p1013101#." />
+        <string name="1" value="#p1013101# says that he is worried whether the number of foxes in the #b#m100030300##k has also grown. He asks that you go to #bDad#k and ask him about the situation. If the number of foxes has grown, some major hunting may be required..." />
+        <string name="2" value="Dad seems to be more worried about the #o1210100#s than the #o9300385#es." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="260" />
+            <int name="nextQuest" value="22010" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If the number of foxes has increased near the farm just like it has near our house, that'll interfere with Dad's farm work. We should investigate this. Don't you agree?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go to the #b#m100030300##k and ask #bDad#k about the situation. If the number of #o9300385#es haa increased there as well, we're going to have to conduct a major #o9300385# hunt." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Think hard about this! If the farm fails, what are we going to survive on! Huh? Talk to me again and press ACCEPT this time!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is it, Evan? I'm sure you're not here to deliver another #t4032448#, and I'm too busy to play with you... What? Have the number of foxes increased here?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, I'm not sure. I've been too busy to notice. The #b#o1210100##ks have been acting crazy, jumping all over the place. Even the foxes seem to be running away from the #o1210100#s..." />
+                <string name="1" value="Ah, maybe that is why the #o9300385# population near the house has increased. They ran there to escape from the #o1210100#s. Hmm..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't talked to Dad yet? You didn't forget where he is, right? #bDad#k is at the #b#m100030300##k. Come on! Get your act together!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013103" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22008" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="7" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

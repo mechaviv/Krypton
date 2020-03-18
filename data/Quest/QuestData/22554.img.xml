@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22554.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nella's Introductions" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p1052103##k in #b#m103000000##k seems to have something she wants to say..." />
+        <string name="1" value="The news of you helping #p1052103# seems to have gotten around. #p1052103# says that many people have been asking her to introduce you to them. She says to go see #b#p1012003##k in #b#m100000000##k...\r\n\r\nHuh? That's your town.. What could it be about? Chief Stan seems to need some help." />
+        <string name="2" value="Chief Stan doesn't seem to believe your abilities." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032465" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032465" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, Evan. Are you busy? I have something to tell you... I told someone about how you helped me before, and now that person wants to meet you. I'm not bothering you, am I?\r\n#b#L0#No, you're not bothering me. But who wants to meet me?#l\n#k" />
+            <string name="1" value="It's Chief Stan of #m100000000#. Something happened and he's looking for someone strong. Won't you go over to #b#m100000000# Town#k and help #bChief Stan#k? I'll write you a Letter of Introduction." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thanks for accepting my request without giving me grief. I was scared that you might snap at me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmph, fine. Something happened in #m100000000#, but I'm sure Chief Stan will find a capable person to help him." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Is that you, Evan? Shouldn't you be helping out at the farm? Hm? Isn't this #t4032465#? Hm, I asked her to introduce a capable adventurer to me... Why did she send this with you? Let me give it a read." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone over to #m100000000#? Go to #b#m100000000##k and find #b#p1012003##k. Tell him #p1052103# sent you." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Evan, what are you doing here? Shouldn't you be helping out at the farm?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost the Letter of Introduction? I can quickly write you another one, but please be careful not to lose it again. " />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032465" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22552" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="34" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

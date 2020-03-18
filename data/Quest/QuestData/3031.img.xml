@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3031.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Acquiring the Memory Powder" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="28" />
+        <int name="area" value="33" />
+        <string name="1" value="Corporal Easy promised me to hand me the Memory Powder in exchange for #b3 Toenails of Werewolf#k. Apparently those Werewolves reside deep in the snowfield...\n\n#t4000053# #b#c4000053##k/3" />
+        <string name="2" value="I gave Toenails of Werewolf to Corporal Easy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6340" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000053" />
+                    <int name="count" value="-3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3032" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm doing a secret op right now so don't bother me. What? you're here because you need #b#t4031055##k? How did you know I found it? That was a top secret, to say the least. This looks like a very important item so I can't give it to you just like that. If you do me a favor, though, then the story changes. I recently found something I desperately need." />
+            <imgdir name="yes">
+                <string name="0" value="A comrade of mine should be here soon and I had nothing to brag about. I heard at the deep end of the valley exist a scary, humongous wolf, a werewolf! If you collect three of the toenails he offers, I may give you the stuff. My comrade will go crazy if he sees it. Well then, good luck!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="This is a strange place ... It looks like an old, abandoned tower. I'm #b#p2030002##k, member of the Alpha platoon. I was headed somewhere on the aeroboat when a freak accident forced us to land here on an emergency, and I am worried that I don't see any of the other troopers around, but I'm sure they are all alive and well. Well, then, back to work...!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't gotten #b3 #t4000053#s#k yet? Oh well, its been infamous for its wildness, and I'm sure you can't do a thing about it. I'm not even sure if you can go deep into the valley safely. Anyway collect #b3 #t4000053#s#k and I may hand you #b#t4031055##k, so keep up the good work." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000053" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3030" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

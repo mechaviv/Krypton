@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21101.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Polearm-Wielding Hero" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="Apparently, a hero's weapon can recognize its owner, which means the weapon would react the moment you touched it...if you were indeed the hero that wielded a polearm, that is. You should head to town and click on #b#p1201001##k." />
+        <string name="1" value="The moment you touch the #p1201001#, you feel memories flood through you, but you aren't sure if you're really reminiscing or just imagining things. You should try holding the #p1201001# one more time." />
+        <string name="2" value="You remembered a time when you held the weapon, flashbacks of gripping the polearm in your two hands…while standing in front of the Black Mage. Yes, you were Aran, the warrior that wielded the polearm to perfection." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b(You touch the #p1201001#. The polearm is supposed to be ice cold, but it feels so…warm. Makes you feel like your old memories are starting to return.)#k" />
+            <string name="1" value="#b(…the hero that wielded the polearm was also the master of melee combat, with amazing strength and stamina...)#k" />
+            <string name="2" value="#b(…the hero had high levels of STR but also some DEX, which meant the hero moved with agility...)#k" />
+            <string name="3" value="#b(Is this from your memories or the memories of a fellow hero…? In order to find out for sure, you have to touch the #p1201001# one more time.)#k" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b(Are you certain that you were the hero that wielded the #p1201001#? Yes, you're sure. You better grab the #p1201001# really tightly. Surely it will react to you.)#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b(You need to think about this for a second...)#k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201001" />
+            <string name="endscript" value="q21101e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21100" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21101s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

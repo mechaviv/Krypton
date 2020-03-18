@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2271.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lana's Decision" />
+        <int name="area" value="30" />
+        <string name="0" value="#bLana#k the CEO of Big Hit Records says she needs a few moments to decide whether Blake has what it takes to make a big debut. Talk to her in a minute to see what she decides." />
+        <string name="1" value="Finally! Blake will be able to make his debut! But first, you must convince the seven star chef #bRobby Fray#k to cater Blake's afterparty." />
+        <string name="2" value="What? #bRobby Fray#k needs a favor? Well, you gotta do what you gotta do to help Blake make his debut. Talk to Robby Fray again." />
+        <string name="rewardSummary" value="1,280 EXP\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1280" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright. I've decided that Blake has what it takes to become a star. But he needs to put in a lot of work first, and I've got a ton of stuff going on. With your help, things would move faster. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay. First you must convince #bRobby Fray#k, the seven star chef, to be in charge of cooking for the party after the performance. People who come to see my productions deserve nothing but the best, and that includes food." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, I see. You want to become the star and make your debut instead of Blake, right? I could tell you were the conniving sort." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Are you here to taste, nay, to EXPERIENCE my art? Better get in line then.\r\n#L0##b(You explain that you're here on behalf of Blake.) In conclusion...I was wondering if you, the most famous and talented chef in the world, the one and only Robby Fray, would be willing to cater the party immediately following Blake's performance!#l\n#k" />
+            <string name="1" value="Ah, that boy's voice makes me want to do a little dance. He's really quite talented. I'd be thrilled to help. One talent deserves another, am I right? But I have a favor to ask." />
+            <imgdir name="yes">
+                <string name="0" value="Will you do a favor for me? Think about it and let me know." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I simply must have the best. If you don't convince #bRobby Fray#k to cater the reception, the deal's off." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052123" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2270" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

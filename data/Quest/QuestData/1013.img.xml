@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1013.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rain's Maple Quiz 5" />
+        <string name="parent" value="Rain's Maple Quiz" />
+        <int name="order" value="5" />
+        <int name="area" value="20" />
+        <string name="0" value="#b#p12101##k's fifth question. Wonder what it's about." />
+        <string name="1" value="What'sthe fifth question?" />
+        <string name="2" value="Rain asked job advancements. For Warriors, Thieves, and Bowmen, you need to be at least level 10, while for Magicians, you can advance at Level 8." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10" />
+            <int name="nextQuest" value="1014" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're inching closer and closer towards making your job advancement. I'm wondering which job you're going to pick. Now, talk to me when you're ready for the 5th question." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="In order to make the job advancement as a Warrior, Bowman, or Thief, you have to be at least level 10. What level do you have to be to make the job advancement as a Magician? \n\n#L0##bLevel 10#l#l\n#L1#Level 8#k#l" />
+            <string name="1" value="Ding! To become a Magician, you only need to be at level 8. You'll need to head to Victoria Island, to a magician town called Ellinia, and look for Grendel the Really Old, the chief magician that'll lead you down the Magician's path." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Hm, I think you can make the job advancement as a Magician earlier than that." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1012" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

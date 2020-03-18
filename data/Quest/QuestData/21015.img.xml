@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Basic Fitness Training 1" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="#p1201000#'s debriefing allowed you to understand the gist of what happened between the heroes and the Black Mage. You have a hunch there may be another showdown with the Black Mage down the road, and that you'll be an important part of it. You should see what #b#p1201000##k thinks you should do next." />
+        <string name="1" value="#p1201000# tells you that you'll have to do everything you can to regain your abilities. First, however she suggests you warm up, seeing how you were frozen in ice for hundreds of years. The first level of basic training is monster hunting. You'd better head to #b#m140020000##k and start hunting." />
+        <string name="2" value="You were able to defeat the #o0100131#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                    <int name="count" value="15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000023" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, I've done enough explaining for now. Let's move on to the next stage. What's the next stage, you ask? I just told you. Train as hard as you can until you become strong enough to defeat the Black Mage with a single blow." />
+            <string name="1" value="You may have been a hero in the past, but that was hundreds of years ago. Even if it weren't for the curse of the Black Mage, all those years you spent frozen in time have stiffened your body. You must loosen up a bit and slowly regain your agility. How do you do that, you ask?" />
+            <string name="2" value="Don't you know that you must first master the fundamentals? So the wise thing to do is to begin with #bBasic Training#k. Oh, of course, I forgot that you lost your memory. Well, that's why I'm here. You'll just have to experience it yourself. Shall we begin?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The population of Rien may be mostly Penguins, but even this island has monsters. You'll find #o0100131#s if you go to #b#m140020000##k, located on the right side of the town. Please defeat #r10 of those #o0100131#s#k. I'm sure you'll have no trouble defeating the #o0100131#s that even the slowest penguins here can defeat." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What are you so hesitant about? You're a hero! You gotta strike while the iron is hot! Come on, let's do this!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Were you able to defeat the #o0100131#s? I mean, those monsters are the easiest ones you can find around here. So easy that you can swing a sword around blindfolded and still defeat them. C'mon, a hero that's even slower than a penguin? That's embarassing…" />
+            <imgdir name="yes">
+                <string name="0" value="That was a bit better than the penguins, but still not enough. Let's move to the next level. Talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="What? You still haven't defeated #r10 #o0100131#s#k? You know even the penguins are faster than that, right? Now please head to #b#m140020000##k immediately." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100131" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21015s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

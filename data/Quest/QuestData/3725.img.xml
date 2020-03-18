@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3725.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Hidden Truth about the Past" />
+        <string name="parent" value="Year 2099- The Harbor" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value="Andy the Time Traveler has requested that you travel to Midnight Harbor in the year 2099 to investigate and if possible, destroy the giant robot, if it exists." />
+        <string name="2" value="You traveled to Midnight Harbor in the year 2099 as Andy the Time Traveler has requested, during which time you spotted a giant robot and destroyed it as instructed." />
+        <string name="demandSummary" value="#o7220005# #a37251#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 120,000\r\nCan participate in the &quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="120000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="According to the records I found, a giant robot appeared in the year 2099. At the time, this was regarded as a silly rumor, but I have a hunch it's not something we should overlook. Please travel to year 2099 and investigate." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you get lucky and find the robot, destroy it. Please. For the sake of the future." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is serious business. If you've lost interest, now would be a good time for you to quit and go about your business." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="So? Was there really a giant robot?\r\n#b#L0#Yes, there really was. As you requested, I destroyed it.#l\n#k" />
+            <string name="1" value="You did? Thank you. I wish this were the end to our problem." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please travel to year 2099 and investigate the robot that appeared in the harbor. If you happen to run into the robot, please destroy it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7220005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3724" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

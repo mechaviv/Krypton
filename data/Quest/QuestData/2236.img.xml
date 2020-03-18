@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2236.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="How to Shoo Away the Evil" />
+        <int name="area" value="30" />
+        <string name="0" value="Chrishrama in Sleepywood claims that he's felt an ominous energy. Let's go talk to him." />
+        <string name="1" value="Chrishrama says he feels the forces of evil coming from the dungeon and asks that you place a Charm on each of the Shaman Rocks nearby. It sounds a bit superstitious, but let's make him happy and do this favor for him." />
+        <string name="2" value="Chrishrama says he feels the forces of evil coming from the dungeon and asks that you place a Charm on each of the Shaman Rocks nearby. It sounds a bit superstitious, but let's make him happy and do this favor for him. Since you've stuck an Charm on all 6 of the Shaman Rocks, let's go see Chrishrama." />
+        <string name="summary" value="Place a Charm on the 6 Shaman Rocks located throughout the central dungeon of Victoria to drive out evil!" />
+        <string name="demandSummary" value="#i4032263:# #t4032263:# #c4032263# / 0&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 60,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032263" />
+                    <int name="count" value="6" />
+                </imgdir>
+            </imgdir>
+            <string name="info" value="000000" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="60000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can feel the forces of evil. They're deep inside the dungeon and they're very, very powerful. If we want to drive the evil away from this place, we must place Charms on the Shaman Rocks inside the dungeon. Will you do that for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Take these Charms and place them on the Shaman Rocks in the dungeon. I'm giving you a total of 6 Charms. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If we don't place these Charms on the Shaman Rocks, evil might awaken..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I, too, felt it. The force of the Shaman Rocks began to overpower the forces of evil. I think Sleepywood is safe now. The evil has been eliminated. " />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please report back after placing the 6 Charms on the Shaman Rocks inside the dungeon. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061000" />
+            <int name="infoNumber" value="2236" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="111111" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032263" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061000" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

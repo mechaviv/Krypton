@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2286.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Request for a New Song" />
+        <int name="area" value="30" />
+        <string name="0" value="Lana wants you to request a new song from a genius composer? Maestro Rho is not only known for his talents but is also infamous for his arrogance. Oh well, gotta do what you gotta do. Go talk to #bMaestro Rho#k and request a new song." />
+        <string name="1" value="Destroy the Cheap Amplifiers and find Maestro Rho's lost MP3 player. Follow the sound coming from the 7th-8th floor to where #bJune#k is on duty." />
+        <string name="2" value="When you found the MP3 player and returned it to Maestro Rho, he said he wanted to listen to some music before helping you. How rude! But this is for Blake, so you should ask him again... And try to be nice." />
+        <string name="demandSummary" value="#i4032509:# #t4032509:# #c4032509# / 1&#xD;&#xA;#o4300011# #a22861#&#xD;&#xA;" />
+        <string name="rewardSummary" value="14,100 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="14100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032509" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ahhhh! Too loud! Too loud! Someone turn that off! The garbage blasting out of those Cheap Speakers... Ahhh! It's torture on my ears! \r\n#L0##bHe...Hello. I'm here to ask if you'd be willing to write a new song for B...Blake...#l\n#k" />
+            <string name="1" value="I won't talk to anyone until that noise is turned off! Turn that thing off, I say!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Too loud! That noise from the Cheap Amplifiers! Get to that music shop on the 7th-8th floor and get rid of the Cheap Amplifiers! And bring back the #bLatest Model MP3#k I left behind while you're at it. \r\nI dropped it because I couldn't think straight, thanks to the noise from the Cheap Amplifiers! Argh! You'll find it if you destroy about #r50 Cheap Amplifiers#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't concentrate on what you're saying because it's too noisy!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, isn't that my MP3 player? Here, let me have it." />
+            <imgdir name="yes">
+                <string name="0" value="Phew, I think I'll live. The racket from the Cheap Amplifiers has settled down. So, what were you saying? Something about Blake...? But hold that thought. I have to listen to my MP3 first." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Go over to the music shop on the 7th-8th floor and destroy #r50 Cheap Amplifiers#k and bring me my #bLatest Model MP3#k! Argh, ahhhh!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Go over to the music shop on the 7th-8th floor and destroy #r50 Cheap Amplifiers#k and bring me my #bLatest Model MP3#k! Argh, ahhhh!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052120" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032509" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4300011" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2285" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

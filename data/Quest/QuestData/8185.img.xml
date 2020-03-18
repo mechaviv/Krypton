@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8185.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pet's Evolution2" />
+        <int name="area" value="50" />
+        <string name="0" value="I have sufficiently proved my love for the Baby Dragon. However, Karnox stated that special materials are required in order to evolve the Dragon..." />
+        <string name="1" value="In order to evolve the Baby Dragon, I'll need to deliver 1 #b#t5380000##k and 10,000 mesos to Karnox." />
+        <string name="2" value="The Baby Dragon has successfully evolved and has grown up rather nicely." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can see that you truly care for your Dragon. Now, shall I help you with your Baby Dragon's evolution?" />
+            <imgdir name="yes">
+                <string name="0" value="In order for you to help with the evolution of your Baby Dragon, I will need an item called #t5380000#. Someone told me it is being sold in the Cash Shop." />
+                <string name="1" value="The Rock of Evolution, coupled with 10,000 mesos, should be enough to evolve your Baby Dragon. What do you think? I think it's a reasonable deal." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Your heart's not ready yet? That's disappointing..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I thought I told you that you can't do it without the Rock of Evolution. Weren't you listening? Hurry up and find it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="pettamenessmin" value="1642" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="5380000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000029" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q8185e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9102001" />
+            <int name="pettamenessmin" value="1642" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8184" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000029" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

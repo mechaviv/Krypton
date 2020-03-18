@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6262.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Snow Mountain's Ice Stone" />
+        <string name="parent" value="Ancient Ice Stone" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2020009##k recognized the book right away. " />
+        <string name="1" value=" #b#p2020009##k told me to go see  #b#p2030000##k, the guardian of Snow Mountain in El Nath, if I want to get #q2221003#. I know he's the guardian of Snow Mountain, but would he know such a thing?" />
+        <string name="2" value=" The guard by Snow Mountain, #b#p2030000##k said it's nonsense to break the ice engraved ancient letters as it's protected by magic. #r#q2221003##k is too appealing to give up here. The blacksmith, #b#p2020000##k, could make a hammer that can break the ice..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="To sum up my study of #b#q2221003##k, 'swallow' in the sentence means literally, you swallow something, rather than a metaphor. It's worth a try! " />
+            <string name="1" value=" You look like one of the best Mages who deals with ice. You can get #q2221003# that you long for." />
+            <string name="2" value="It won't be easy. As an elder magician of Ossyria, I can give you a clue about #r#q2221003##k. Would you like to get #q2221003# magic?" />
+            <imgdir name="yes">
+                <string name="0" value="If you want to get #q2221003# magic, go to see the keeper of the snow mountain in El Nath, #b#p2030000##k. Real or not, it's worth testing the knowledge inside this book." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="And I thought Ice Mages didn't get cold feet...perhaps you don't deserve #q2221003#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...What made you come here?" />
+            <imgdir name="yes">
+                <string name="0" value=" Magic book? #r#q2221003##k? You must be a magician to say that. You don't know about the magical properties of this snow mountain?" />
+                <string name="1" value="The ice stone in snow mountain of El Nath is enchanted with an ancient spell so that the stone does not break nor melt. So it's impossible to just break the charm. Even drinking the water would cause your lungs to freeze..." />
+                <string name="2" value="Wait...there may be someone who can make it. #b#p2020000##k is the best blacksmith in El Nath. Do you know him? He could make a strong hammer which may be able to break the ice. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Don't you want #r#q2221003##k? I told you to go to see #b#p2030000##k. If you don't want to, give me the book back...I'm sure I could find a use for it..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6261" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

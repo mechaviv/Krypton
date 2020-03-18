@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Co-op with Special Agent O" />
+        <int name="area" value="50" />
+        <string name="0" value="Gaga, who's now a secret agent, says he has someone he wants to introduce you to. Who could it be?" />
+        <string name="1" value="Gaga, who 's suddenly a secret agent, suggests you work with Special Agent O. He says you can find Special Agent O at the mini dungeon entrance...n\n#b&lt;Mini Dungeon Area where agent O could be&gt;\n- Victoria Island: #m100020000#\n- Victoria Island: #m105040304#\n- Victoria Island: #m105050100#\n- Ludus Lake: #m221023400#\n- Nihal Desert: #m260020300#\n- Nihal Desert: #m261020300#\n- Minar Forest: #m240020500#\n- Minar Forest: #m240040511#\n- Minar Forest: #m240040520#" />
+        <string name="2" value="Through Gaga's introduction, you met Special Agent O. He's quite the character." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="특수요원O로부터 협조요청이 왔는데 당신이 가주지 않겠어요? 특수요원O는 요원들 중에서도 정말 탁월하고 신출귀몰한 능력을 가진 분이에요. 하루는 니할사막에 나타났다가 그 다음날이면 오르비스에 가 있고, 또 그 다음날이면 페리온에 나타나기도 하죠. 당신이 원한다면 이 임무에 당신을 추천해 줄게요. #b특수요원O와 나는 정말 절친하니까요" />
+            <imgdir name="yes">
+                <string name="0" value="특수요원O는 미니던전 입구에서 만날 수 있어요. 어떤 미니던전이냐구요? 글쎄요. 앞서 말씀드렸다시피 워낙 신출귀몰한 분이라서 현재 위치는 알 수 었죠. 하지만 우선은 여기서 가장 가까운 미니던전으로 가보는게 어떨까요? #b요원G가 보내서 왔다고 하시면 되요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="잠깐만요. 다시 생각해봐요. 그런 분을 만날 수 있는 기회는 쉽게 오지 않는다구요. 그 분과 절친한 저를 만난건 정말 놓칠 수 없는 기회라니까요!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="nextQuest" value="10002" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Special Agent O has sent a request for help. Among the agents, Special Agent O is one of the most talented. One day, he'll be at Nihal Desert, the next he'll be at Orbis, and the day after that, he'll be at Perion. It's amazing! Want to work with him? #bSpecial Agent O and I are close friends." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then meet Special Agent O at the entrance of the mini dungeon. Which one? Beats me! You just never know where he'll be at any given moment. Why don't you just head over to the closest one? Tell him #bAgent G sent you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Think about this.  An opportunity to meet someone like him is rare. You shouldn't let it just slip away!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Special Agent O's location?  Good question! It's impossible to know where he is at any given moment.  But for now, why don't you try going to the closest mini dungeon? " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000034" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+        </imgdir>
+    </imgdir>
+</imgdir>

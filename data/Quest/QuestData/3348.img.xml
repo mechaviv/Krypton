@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3348.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="For Alcadno" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2111002#, the missing alchemist. What he wanted, and the dark truth behind #m261000000#... All these previously hidden facts have been revealed. Now it's the matter of choice. If I am to choose Alcadno, I'll have to head to where #r#p2111001##k is." />
+        <string name="1" value="If I handed #b#t4161033##k to #p2111001#, then the truth about #m261000000#, as well as all things #p2111002# strived for would be hidden forever. If that really is what I want for this to happen,  then I have no choice but to hand in #t1102135# and the note to Maed." />
+        <string name="2" value="I gave #p2111001# #t4161033#, and received a brand new Alcadno Cape. This has made me forfeit my right to contemn the Alcadnos. I am now one of them." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102136" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102140" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4161034" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have been eagerly waiting for you here. I am excited to finally uncover the truth... Judging from the #t4161033# that you have in your hand, I guess my wishes have come true... I had a hunch that you'd successfully uncover the truth about #p2111002# and #m261000000#." />
+            <string name="2" value="Other alchemists are totally unaware about #p2111002#, nor the origin of #m261000000#. The reason they were pointing their fingers at #p2111002# was because they really didn't know any better... they aren't guilty of this, either. Please do not blame the proud alchemists, who have all dedicated their lives to alchemy and little else." />
+            <string name="3" value="The only person that is guilty of all this is me, #p2111001#. Can you at least try to understand this foolish president, who still wishes to cover up the truth even after #p2111002#'s sacrifice?" />
+            <string name="1" value="If you believe I deserve the blame, then I have nothing to say about that. How can I Say anything when I perpetuate the swirling rumors about #p2111002# by not commenting on his innocence? But if silence is also considered a sin, then can I at least Say something about other alchemists?" />
+            <imgdir name="yes">
+                <string name="0" value="...then I want you to hand me #t1102136# and #t4161033#. As long as the book is still out, there's still a chance of the truth being released to the public. By incinerating the book, we're going to burn the truth in flames... even if that means not doing the right thing." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Now please hand me #t4161033#..." />
+            <imgdir name="yes">
+                <string name="0" value="I was hoping for someone to prove #p2111002#'s innocence. Once that person came forward, however, I have managed to hide the truth again... isn't that just incomprehensible? I don't know how I am going to live down with this for the rest of my life... can you handle it?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Where did you place #b#t4161033##k? You didn't lose it did you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102136" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4161034" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3349" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3346" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3347" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

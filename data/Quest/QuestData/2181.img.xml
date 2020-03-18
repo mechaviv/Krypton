@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2181.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Porchay's Letter" />
+        <string name="parent" value="A Banquet for the Whalians" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Porchay, who stays with the Whalians in the Generator Room, says that there is an emergency. I wonder what it is?" />
+        <string name="1" value="I can't believe that the Whalians have completely run out of food! According to Porchay, Kenta has plenty of food ingredients so I should go to #bKenta#k and talk to her. I should take Porchay's letter with me too, right?" />
+        <string name="2" value="I gave Porchay's letter to Kenta." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031858" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031858" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2181" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler? Are you here at the Generator Room to see this rock? Isn't Shining Stone amazing? And the Whalians that control the rock... they're amazing too, right?" />
+            <string name="1" value="Since you've made your way all the way down here, can I ask you for a favor? Not many people pass through this area, and we're in a bit of trouble right now." />
+            <imgdir name="yes">
+                <string name="0" value="The Whalians here don't eat what the normal people eat. They eat something that can only be found in the sea. They always ate that, but... now that we've spent a considerable amount of time here on land, the ingredients have run out." />
+                <string name="1" value="My cousin Kenta, who lives in Aquarium, can make something for them. That's why I am here to ask you for a favor. Can you send this letter that I wrote about that food to #bKenta#k? You can find him at the Aquarium Zoo." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you don't have time to help me. Who should I ask, then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're here to give me a letter? It's from Porchay?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh... so it's about the special food that the Whalians eat. They only eat certain things, so... let's see if there's any left." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You can find Kenta at the Aquarium." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Kenta is at the Aquarium Zoo, watching over the animals." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you lose the letter? Oh no... I'll write you another one. Don't lose it again, okay?" />
+                <imgdir name="yes">
+                    <string name="0" value="Now, please give this letter to Kenta." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031858" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092013" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20407.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Curse of the Black Witch" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="...Wait, is this Ereve? But Ereve's usually not like this. And why are the Chief Knights standing like that? No one's answering! Only #p1101001# seemed to be barely awake. I better talk to #b#p1101001##k." />
+        <string name="1" value="#p1101001# told me the lady in front is actually #r#p1104002# the #o9001010##k and that she has put a curse on everyone in Ereve. He mentioned that most of them on the island should be able to weather it, but the Empress might be in grave danger... I better defeat #o9001010# and break the curse now! \n\n#o9001010##r #a204071##k" />
+        <string name="2" value="The cunning #o9001010#, after realizing that Ereve, which is protected by #p1101001#, may be hard to enter, used #p1103000# to throw in cursed items, then cursed the whole island through that! Fortunately, after defeating #o9001010#, the curse seems to have been lifted." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...Yes... that lady... you see in front of you... she is #r#o9001010# #p1104002##k... She has casted the curse on all of Ereve, which means... you'll need to defeat #o9001010# immediately! Other people have more stamina, but.. the Empress... that's different." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...You were able to defeat #o9001010#. Cygnus Knight... I can feel that the curse is slowly fading away and that the Empress is safe." />
+            <imgdir name="yes">
+                <string name="0" value="As #p1101001# whose job is to protect the Empress, I commend thee for your work." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="...That lady right there is #r#o9001010# #p1104002##k... The source of all these things...! You better defeat #o9001010# to break the curse...!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1104208" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001010" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1104208" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20406" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="913030000" />
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1110" />
+                <int name="2" value="1111" />
+                <int name="3" value="1112" />
+                <int name="4" value="1200" />
+                <int name="5" value="1210" />
+                <int name="6" value="1211" />
+                <int name="7" value="1212" />
+                <int name="8" value="1300" />
+                <int name="9" value="1310" />
+                <int name="10" value="1311" />
+                <int name="11" value="1312" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+                <int name="16" value="1500" />
+                <int name="17" value="1510" />
+                <int name="18" value="1511" />
+                <int name="19" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

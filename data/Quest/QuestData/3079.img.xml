@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3079.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Nependeath Juice" />
+        <int name="area" value="33" />
+        <string name="0" value="If I ever lost the Nependeath Juice, at least I know who to talk to... Elma." />
+        <string name="1" value="I went to see Elma to get another glass of Nependeath Juice that I lost." />
+        <string name="2" value="I got a new glass of Nependeath Juice from Elma." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="제가 힘들게 만든 #b네펜데스 주스#k를 잃어버렸다는 말씀입니까?" />
+            <imgdir name="yes">
+                <string name="0" value="어떻게 그럴 수가 있습니까? 힘들게 만든 것을 그렇게 쉽게 잃어버리고요..." />
+                <string name="1" value="제가 좀 많이 만들어 놓아서 다행입니다. 하지만 그냥 드리지 않겠습니다. 저한테 #b300000#k 메소를 주셔야 됩니다. 준비되면 저한테 다시 말 걸어주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아니라면 다행이고요..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-300000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you telling me you've just lost the #bNependeath Juice#k, the one that I worked so hard to make?" />
+            <imgdir name="yes">
+                <string name="0" value="How can you do such thing? I put a lot of effort into making those, and for you to just lose it so easily..." />
+                <string name="1" value=" thing I've made a lot, in case things like this happened, but I won't be giving this to you for free. You'll have to give me #b300,000 mesos#k for it. Talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If not, then good..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here it is. Please make sure not to lose it again. I am running out of #bNependeath Juice#k here myself." />
+            <imgdir name="yes">
+                <string name="0" value="Please don't lose this, and deliver it to the right person." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3048" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3050" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

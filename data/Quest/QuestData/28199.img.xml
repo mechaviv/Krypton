@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28199.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="First Encounter with Ervine" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says he will help you train further. Let's talk to him." />
+        <string name="1" value="Let's go find #b#@9201120:##k in #bKerning City#k for additional training." />
+        <string name="2" value="The Path of a Thief.." />
+        <string name="rewardSummary" value="Exp 500&#xD;&#xA;Able to proceed to 'Even More Challenging Training 1' as next quest.&#xD;&#xA;Able to proceed to 'Even More Challenging Training 2' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've grown.\n\nBut it's still only the beginning. Would you like some additional training?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I like your attitude.\nThen go see #b#p9201120##k the plumber in #bKerning City#k. He'll have the perfect training course prepared for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're weak." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome! Did #b#p1052001##k send you? " />
+            <imgdir name="yes">
+                <string name="0" value="I have a few more training courses ready for you.\n\nTalk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p9201120##k is in #bKerning City#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

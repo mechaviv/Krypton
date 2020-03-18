@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10313.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Crystal Ball" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You have found an interesting artifact." />
+        <string name="1" value="This item looks like Cassandra's Crystal Ball. Let's go talk to Cassandra." />
+        <string name="2" value="She thanked you for finding her cracked Crystal Ball and said she'd restore it and put it to a good use." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hm, a cracked Crystal Ball. No one knows a Crystal Ball like Cassandra. Report it to Cassandra." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Oh well, it's up to you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, thanks for bringing it. Blah blah blah." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't reported it to Cassandra yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q10313e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001305" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8867.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Circle of Trust 1 (The Unmarried Couple)" />
+        <string name="parent" value="Circle of Trust" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="An unhappy couple in Amoria? I should go find out what's wrong..." />
+        <string name="1" value="I spoke with Gary and Shatima, and it looks like their rings were broken and taken in to #b20 Ring Fragments#k by some Tweeters. Looks like I'll have to clip some wings to find them all..." />
+        <string name="2" value="I returned to the Rings to Gary and Shatima, and now they can get married! Phew, a lot of work, but well worth it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031526" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022121" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2002001" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Salutations, my friend. My name's Gary and this is my fiancée, Shatima. We wondered if you had a moment to maybe help us with getting our engagement rings back..." />
+            <imgdir name="yes">
+                <string name="0" value="Great news. Well, we're schedules to get married, and I got Moony to give us a set of Golden Heart rings. Would you believe that the day after I propose, some Tweeters came along and dismantled both rings into fragments to put in their nest? Ridiculous. If you could hunt them down, I'm sure you'd come across the #b20 Ring Fragments#k. After that, Moony has agreed to restore the rings. If you could bring them back to us, we'd be grateful beyond words." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh...I see. Maybe we were mistaken about you. If you have a change of heart, please come back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Simply Spectacular! Now we're off to get married. Thank you so much for your help!" />
+            <imgdir name="yes">
+                <string name="0" value="My fiancée and I both thank you. Your kindness has touched both of our hearts." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Back already? That's gre-wait, wait...not all of them are here. When you have them all, be sure to head over to Moony." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201037" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031526" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201037" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8862" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

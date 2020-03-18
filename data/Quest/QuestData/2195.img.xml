@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2195.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Pirate's Third Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to get into this training thing. #bKyrin#k wants to give you another lesson." />
+        <string name="1" value="According to Kyrin, Pirates need great composure and perseverence. She wants you to hunt 43 Pigs this time. #r43 Pigs#k indeed... That's no joke!  \n\n#o 1210100# #r#a21951##k" />
+        <string name="2" value="You took care of 43 Pigs. Phew... Wasn't easy, but you did it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕~ 한층 더 강해졌다는 소식을 듣고 널 찾았어. 내 수련 덕택이라고 생각되지 않아? 하하~ 자, 그럼 다음 수련을 받아보겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 그럼 이번 수련은 돼지 43마리를 사냥하는 것이야. #r43마리#k... 많다고 생각될지 몰라. 하지만 너정도라면 충분하다고 생각되는걸. 그럼 네 힘을 보여줘. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="스스로의 힘으로 수련할 수 있다면, 더 이상 권하지 않겠어." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="645" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! I heard you have gotten much stronger since the last time. Don't you think it has something to do with my great training method? Hahaha, off to the next one!" />
+            <imgdir name="yes">
+                <string name="0" value="This time, your task is to hunt down #r43 pigs.#k 43... might be a bit high, but I think you can do it easily. Show me what you've got." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can train yourself effectively, then I won't need to step in." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You were able to slay 43 pigs. I am quite impressed!" />
+            <imgdir name="yes">
+                <string name="0" value="I'll let you know when I see that you'll need another set of training. Until then..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't slayed #r43 pigs#k yet. I didn't think they'd be too tough on you, but..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="43" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2194" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

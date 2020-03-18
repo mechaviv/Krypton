@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28337.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cupid's Lost Arrows" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Have you heard about #bCupid's Lost Arrows#k? You can find out more from #rCassandra.#k" />
+        <string name="1" value="Please bring me #b50 Cupid's Lost Arrows.#k You can get them from any monster. I will give you an awesome Valentines present when you bring them to me!" />
+        <string name="2" value="You can repeat this quest every 2 hours until #rFebruary 17th 2010.#k However, you'll only be able to receive the Cupid Wings Cape once. After that, you'll just receive additional #bEXP.#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Valentine's Day is here and everyone is in love! Oh? You disagree? Hehe. That reminds me, have you heard the story about #bCupid's Lost Arrows#k?" />
+            <imgdir name="yes">
+                <string name="0" value="They say anyone hit by Cupid's Arrow falls in love. But monsters have started stealing the arrows because they're jealous, which means there will be fewer people in love this year! We have to get the arrows back!" />
+                <string name="1" value="If you bring me #b50 Cupid's Lost Arrows,#k I'll reward you with a #rCupid Wings Cape#k that's good for #b30 days#k, and if you already have a Cupid Wings Cape, I'll give you #bEXP.#k Hurry, you don't have much time!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You've really become much cold-hearted. This will only be available until #rFebruary 17th 2010,#k so don't hesitate too long!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q28337e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="8" />
+            <string name="start" value="2010020300" />
+            <string name="end" value="2010021800" />
+            <int name="interval" value="120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

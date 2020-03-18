@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9850.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Do Gong's Test" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Did you hear #b#p2091001##k, the mental strength trainer of Mu Lung, might need help?" />
+        <string name="1" value="#b#p2091001##k says he wants to test your progress and has asked that you defeat the Book Ghost and Sage Cat. He says the Book Ghost and the Sage Cat have mastered magic, so defeating them won't be as easy as you think.\n\n#o6130209# #r#a98501##k \n#o5120506# #r#a98502##k" />
+        <string name="2" value="You have returned after defeating the Book Ghost and the Sage Cat, but he said you needed to continue training, as that's the only way for you to become a master." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How is the training going? You seem surprised that you can hear me from here. Ah, this is nothing when you are a master like me. But that is not important now." />
+            <string name="1" value="Becoming a master is no easy task... I would like to test your training by pitting you against those who are stronger but..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Not trying to avoid difficult training is a good attitute to have! Since I've asked you to go up against the Sage Cat before, I'm sure you are aware of the strange monsters that exist past the Peach Farm near Mu Lung..." />
+                <string name="1" value="The monsters out there have mastered magic, giving them powers that surpasses that of humans. Why don't you try training against them? Defeat #r100 #o6130209#s#k and #r100 #o05120506#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you do not need my instruction, that is fine..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <string name="endscript" value="huntUP9" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6130209" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="5120506" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="65" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="250010502" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

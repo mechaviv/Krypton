@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3405.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="An Important Robotic Part" />
+        <string name="parent" value="Supplying the Robotic Parts" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Dr. Kim at the Command Center in the Omega Sector." />
+        <string name="1" value="From the Command Center in the Omega Sector, Dr. Kim requested that I receive 3 important mechanical parts from Cheng the Assistant at the Toy Factory of Ludibrium. Man ... when am I going to find time to go all the way up to Ludibrium?" />
+        <string name="2" value="Dr. Kim of the Command Center in the Omega Sector gave me a mission to receive some stuff from Cheng the Assistant of the Toy Factory. The parts I received seem to be very important for something." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3406" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Glad you are here... thanks to you, the designing of the new robot is complete, and I've started the process of actually making it. Then I realized, we were missing 3 very important mechanical parts necessary to build the robot. I've already given #b#p2040003##k of Ludibrium the word, so can you please go there and pick up the pieces for me? Thank you!" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you've met #b#p2040003##k yet. I asked #p2040003# for the parts, so all you need to do is go there and pick them up for me. #b#p2040003##k is located somewhere around the Ludibrium Toy Factory. I'll be waiting for you here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3404" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

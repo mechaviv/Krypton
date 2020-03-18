@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Scarred Kitty" />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="I should go talk to #bThe Scarred Kitty#k." />
+        <string name="1" value="I should feed this poor-looking #bScarred Kitty#k." />
+        <string name="2" value=" I fed #bThe Scarred Kitty#k at Showa Town, and... WHAT? This kitty's talks! Apparently this kitty was teased, abused, and labeled as a monster cat because it spoke and understood the  human language. After thanking me for food, it promised to help me if I ever run into a tight situation. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2120000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8018" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This kitty is covered with scars, and it must be hungry. Should I feed this kitty some pet food?" />
+            <imgdir name="yes">
+                <string name="0" value="I heard there's some food for pets only. Can you give me some, too?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="The scarred kitty is looking up here with apprehension, but ... it looks way too exhausted to even move." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I'm so hungry that I feel like I'm too weak to even move anymore. I need something to... eat... right... now..." />
+            <imgdir name="yes">
+                <string name="0" value="Wow! Thank you so much! There's actually a person with warmth and compassion around here... hmmm? Are you surprised a cat like me speaks in human language? Meow! I know, I know, I must be the &quot;MONSTER CAT&quot;! Do you think I like being different? Why does no one just leave me alone!! Meow!! But then again, you helped me. I owe you one, meow! If you ever run into a tight situation, I'll be more than happy to help you out!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The scarred kitty is looking up here with apprehension, but ... it looks way too exhausted to even move." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2120000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120012" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

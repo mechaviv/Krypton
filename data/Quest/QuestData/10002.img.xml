@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Number of Special Agent Badges " />
+        <int name="area" value="50" />
+        <string name="1" value="Special Agent O tells you to go to the mini dungeon and bring back #b#t4031988##k from the Agent Box which appears after 30 minutes.\r\n#i4031988# #t4031988# #b#c4031988# / 1\n\n#k  Each time you collect 10 badges, you'll receive #bAgent O's Nylon Gloves#k and when you collect 100, you can get #bAgent O's Leather Gloves#k." />
+        <string name="2" value="Special Agent O asked you to disarm the Agent Box in the mini dungeon and retrieve a Special Agent Badge, and you successfully completed his mission." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="...#b(He is staring into space.)\r\n#L0#Hello. Are you Special Agent O? Um... Gaga... I mean Agent G sent me to see you. #l" />
+            <string name="1" value="Agent G? Who's that?\r\n#b#L0#You haven't? Oh. Uh, he sort of has a long face with a butterfly neck tie...um...and...#l" />
+            <string name="2" value="Oh... He must be the new guy. I've never met him personally, but I heard he's been put in charge of recruiting new agents. So, why are you here? I'm quite busy.#b\r\n#L0#I was told to help you with your mission.#l" />
+            <string name="3" value="You're an agent?  Eh, I didn't know they'd send a rookie... Oh well, it should be fine. First, you sure you even want to do this? Could be dangerous." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'm assuming you know about Master M? Finding Master M is the most important thing, but it ain't easy. " />
+                <string name="1" value="Special agents are spread throughout Maple World, collecting intel, uploading it onto badges, and sending them to me. These Special Agent Badges are being collected in Agent Boxes in mini dungeons. Your job is to go in the mini dungeon and retrieve them." />
+                <string name="2" value="But it won't be easy. The Agent Box has a special security feature on it, where it won't appear until 30 minutes after you've connected. Wait 30 minutes inside the mini dungeon, and when the Agent Box appears, retrieve the Special Agent Badge and bring it to me." />
+                <string name="3" value="Each time you collect 10 Special Agent Badges, I will give you a pair of #bNylon Gloves#k. If you collect 100 Special Agent Badges, I will give you a pair of my favorite #bLeather Gloves#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...If you're afraid, then becoming an agent isn't for you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The Agent Box has a special security feature on it, where you have to wait 30 minutes after you connect for it to appear.  So wait 30 minutes inside the mini dungeon and when the Agent Box appears, retrieve the Special Agent Badge inside it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000034" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031988" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10002e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000034" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10001" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

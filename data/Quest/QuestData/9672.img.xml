@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9672.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="외로운 가가" />
+        <int name="area" value="50" />
+        <string name="0" value="수정구슬을 통해 메이플 월드 곳곳에서 일어나는 일을 살피는 카산드라가 뭔가를 봤다고 하는데, 무슨 일인지 카산드라를 찾아가 보자." />
+        <string name="1" value="발렌타인데이인데도 초콜릿을 못 받은 #b가가#k에게 초콜릿을 선물하자. 초콜릿은 뭐니뭐니해도 제과사 쿠커스가 만든 것이 최고겠지?\n\n#t04140100# #b#c04140100#/1#k" />
+        <string name="2" value="#b가가#k에게 #b#t04140100##k을 선물했다." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4140100" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020028" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2020022" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2020023" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4140200" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1000" />
+                    <int name="period" value="4320" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="보인다… 보여. 난 이 푸른빛의 맑은 수정구슬을 통해 메이플 월드에서 일어나는 모든 일들을 다 알 수 있지. 네가 무슨 일로 날 찾아왔는지도 다 알고 있지.  내가 한번 맞춰 볼까? 발렌타인데이에 초콜릿 하나 못 받은 남자에게 선물을 주려고 온 것이지? 그렇지?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="으하하하. 거봐 난 뭐든지 알고 있다니까. 혹시 길쭉하고 어리바리한 얼굴을 하고 동화책을 짊어지고 있는 #b가가#k를 본 적이 있어? 그는 너무 소심해서 인지 여태껏 발렌타인데이에 초콜릿을 받아본 적이 없다고 하더군. " />
+                <string name="1" value="좀 안타깝지? 그러니 시간이 되면 메이플 월드의 일류 제과사 #b#p2041017##k를 만나 #b#t04140100##k을 하나 만들어 #b가가#k에게 가져다 주도록 해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="초콜릿을 못 받은 남자의 심정을 알기나 해? 맘이 바뀐다면 16일 전에 나를 찾아와." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="네? 저를 위해서 초콜릿을 만들었다요? 아... 이렇게 예쁘고 맛있어 보이는 초콜릿은 처음봐요." />
+            <imgdir name="yes">
+                <string name="0" value="너무 예뻐서 혼자 먹기는 아까워요. 제가 조금 나눠 드렸으니 한번 드셔보세요~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="여태 안가고 뭘 하고 있는 거야.  어서 제과사 #b#p2041017##k에게 부탁해  #b#t04140100##k을 하나 만들어 #b가가#k에게 선물하도록 해." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="발렌타인데이... 초콜릿...." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4140100" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="8" />
+            <string name="start" value="2009020600" />
+            <string name="end" value="2009021600" />
+            <int name="interval" value="43200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

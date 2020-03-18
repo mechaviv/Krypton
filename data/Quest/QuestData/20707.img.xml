@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20707.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Revolt of the Pigs" />
+        <int name="area" value="15" />
+        <string name="0" value="I'll need to talk to Agent #b#p1103001##k of #m100000000#, who apparently received some disturbing news." />
+        <string name="1" value="Was I too late in finding that black shadow? Apparently, the #o1210100#s at the #o1210100# Farm have caused a revolt. The agent believes that one of Black Mage's men has probably set up a device in the area that causes such chaos. #p1103001# assigned me to defeat the #r#o1210100#s#k and if I happen to come across an item called #b#t4032130##k, then I should bring it back to him. \n\n#o1210100##r #a207071##k \n#o1210101##r #a207072##k \n#i4032130# #t4032130# #b#c4032130# / 1#k" />
+        <string name="2" value="I was able to eliminate #o1210100#s and prevented their revolt from being carried out any further. After handing in the #p1103001# to #t4032130#, he had a disturbed look on his face. I wonder what's going on." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032130" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, we're in deep trouble! #o1210100#s in #m100020100# have revolted! I have a feeling that's because we spotted the black shadows too late. Ahhh, we should have done something about it when we found a shadow at the Pig Farm. We must prevent the #o1210100#s from taking this any further!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please go and battle #o1210100#s and #o1210101#s, while preventing #o1210100#s from creating more chaos. If you can defeat #r100 #o1210100#s#k and #r50 #o1210101#s#k, they'll know what they're running against and stop. Oh, and... while you're hunting #o1210100#, if you ever come across an item called #b#t4032130##k, please pick it up and give it to me as well! It's not 100 percent confirmed, but I think I have a general idea of what that item is..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahhh, we are running out of time! Once the #o1210100#s start revolting, you'll no longer be able to enjoy pork. Is that okay with you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you were able to snuff out #o1210100#s' revolt! That was awesome! I think it's safe to say you are the #b#o1210100#s' worst nightmare#k, no? Okay... maybe not." />
+            <string name="1" value="...Hmmm, and that is... #t4032130#? I couldn't confirm its accuracy, so I wasn't sure if you'd bring it to me, but since you did... maybe that was the correct information..." />
+            <imgdir name="yes">
+                <string name="0" value="...Maybe this all came about because of this doll..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please defeat #r100 #o1210100#s#k and #r50 #o1210101#s#k so you can prevent the #o1210100#s from revolting any further. Oh, and if you find #t4032130#, then give me that too! Ahhh, I don't even want to imagine life without pork!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please defeat #r200 #o1210100#s#k so you can prevent the #o1210100#s from revolting any further. Oh, and if you find #t4032130#, then give me that too! Ahhh, I don't even want to imagine life without pork!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032130" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20706" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

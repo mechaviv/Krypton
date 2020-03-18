@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10230.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gold Richie's Compass" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="Cassandra says something went wrong on Gold Richie's Treasure Island. Rush over to #bCassandra# and talk to her." />
+        <string name="1" value="If you need a compass to give you directions to Treasure Island, talk to Cassandra." />
+        <string name="2" value="If you've collected #bN,E,W,S for the Compass#k from the monsters, double-click the #b#t2430007##k to make a #t2430008# which will take you to Gold Richie's Treasure Island." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Seriously, what would Maple World do without Cassandra? Not a day goes by without some mess I have to clean up. What, are you curious?" />
+            <string name="1" value="The wealthiest man in Maple World, Gold Richie, is looking for help. Goldrich's Treasure Vault has been invaded by some Pigs that have been eating his treasures. Well, not that you're my first choice or anything, but since I don't have anyone else to ask... Will you go and take care of this? Who knows? You might be able to get some treasures. Oh, make sure you have at least 1 slot open in your Inventory!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="If you're not into treasures... then never mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="I only have the #t2430007#. But if you collect #b#t3994102#, #t3994103#, #t3994104#, #t3994105##k from the monsters and double-click the  #b#t2430007##k I give you, you'll be able to make the #b#t2430008##k that will give you access to Goldrich's Treasure Vault. Just remember that you'll be returned to a town close to Gold Richie's Treasure Vault." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430007" />
+                    <int name="count" value="0" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2430008" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2009010100" />
+            <int name="interval" value="30" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

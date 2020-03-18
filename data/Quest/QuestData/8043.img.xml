@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8043.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lycanthrope" />
+        <string name="parent" value="Monster Rumor Mill" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="No wonder ... according to him, Omega Sector may also be on the move to defeat the monster. He said I'll find out more about it by eavesdropping on General Maestro. That won't be easy..." />
+        <string name="1" value="No way... one of the #b#o8140000#s#k could be planning something insidious...I can't let them create havoc over innocent people here. This may not be what Maya wants to hear, but I'll have to kill the #b#o8140000#s#k. \n#t04000054# #b#c04000054##k/50" />
+        <string name="2" value="I didn't find the #b#o8140000##k with the necklace. I'm sure it's alive somewhere. I know this may sound odd, but I decided to believe that's true." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000054" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040706" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040708" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(This is bigger than we ever thought...) Hide behind the bushes and listen carefully." />
+            <string name="1" value="(No way ... to #b#o8140000##k? That crazy scientist ... something must be done before chaos further ensues.)" />
+            <string name="2" value="(But that monster... well, is that a monster? Anyway, they all gathered up, and did ... the unthinkable ... and ...Ah, time's up already! I better get back to the headquarters.)" />
+            <string name="3" value=" ...! Hey, who's there! You scared me! What do you want from me?" />
+            <string name="5" value="Hmmm, so you were eavesdropping on me. I can't believe you know that much already... Based on what I see from you, you must have gone through your share of chaos's. Fine, I'll tell you the story." />
+            <string name="6" value="Months ago, a scientist hired by Omega Sector broke the ultimate code of conduct. He gathered up a bunch of monsters, showed them a strange ray of light, and they transformed into a bunch of #b#o8140000#s#k." />
+            <string name="7" value="Monsters are usually just that, monsters, but when a monster like #b#o8140000##k completely overwhelms even an army like ours, there's nothing we can do about it. There used to be a tame-looking Lioner too... but it was wearing a necklace, so there's no way to tell who raised it. " />
+            <string name="8" value="The 100 created #b#o8140000#s#k then escaped the lab and disappeared, along with that scientist." />
+            <string name="9" value="Every since then, they've kept themselves on the down low, which forced me to gather up the troops and search for them while putting up a Code Red. So far, I haven't heard any good news come out of this. That's it. Now you see why I was talking to myself?" />
+            <string name="10" value="That's why... I have something to ask from you. If you can, can you please eliminate #b50 #o8140000#s#k? I know finding 100 is near impossible. 50 is fine. Can you do that for us? We'll reward you well for your effort." />
+            <string name="4" value="You're saying that monster with the necklace may have something to do with the monster in El Nath?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Please defeat #b50 #o8140000#s#k that have stepped over the boundaries of the wolves. I want to see for it myself that you killed them all, so please bring me #b50 #t04000054#s#k as proof. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b#o8140000#s#k have to be taken care of and killed before they cause any more harm on the innocent citizens of El Nath! Please reconsider!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you defeated the #b#o8140000#s#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, they are #b#t4000054##k. Great job. Thanks to your help, the Earth remains a safe place to live. As the representative of the Omega Sector, I'd like to say, thank you. This is the reward I promised you. Please take it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have enough. That's #b50 #t04000054#s#k. Thanks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000054" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8042" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

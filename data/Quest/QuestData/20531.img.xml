@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20531.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiridu's Calling" />
+        <string name="parent" value="The Birth of Shinjo" />
+        <int name="order" value="1" />
+        <int name="area" value="15" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Suddenly, #p1101002# approaches you." />
+        <string name="1" value="#p1101002# suggested that you take your Mount and go see #b#p1102002#, the Mount Instructor,#k saying that your Mount may be in trouble." />
+        <string name="2" value="#p1101002# suggested that you take your Mount and go see #p1102002#, the Mount Instructor, saying that your Mount may be in trouble." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#p1102002# the Mount Trainer#k is looking for you. It seemed like there was a problem with your Mount. I'm not sure what exactly, but I suggest you take your Mount and go see #p1102002# at once." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I overheard something about your Mount. It could be weakening! If you want more details, go see #p1102002# now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#p1102002# didn't seem too happy. I think it has something to do with your Mount. This is all I can tell you right now, but if you wish to continue riding your Mount without seeing him, I can't stop you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Long time no see, #h0#. I'm so happy to hear that you've become a Chief Knight, but this may pose an issue for your Mount." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#p1102002##k yet? Hm, it seemed rather urgent. You're only hurting yourself by wasting time." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="1112" />
+                <int name="1" value="1212" />
+                <int name="2" value="1312" />
+                <int name="3" value="1412" />
+                <int name="4" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

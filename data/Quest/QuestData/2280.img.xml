@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2280.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Costume Preparation" />
+        <int name="area" value="30" />
+        <string name="0" value="Lala is thrilled to hear that Blake is finally making his debut and happily agrees to help with the costumes. Assist #bLala#k to prepare the costumes." />
+        <string name="1" value="Collect the costumes and props for Blake's debut performance and take them over to #bLala#k." />
+        <string name="2" value="#bLala#k was thrilled to hear about Blake's debut and asked you to give her some time to think about which costumes would be best for the performance." />
+        <string name="demandSummary" value="#i4000525:# #t4000525:# #c4000525# / 50&#xD;&#xA;#i4000526:# #t4000526:# #c4000526# / 50&#xD;&#xA;#i4000527:# #t4000527:# #c4000527# / 50&#xD;&#xA;" />
+        <string name="rewardSummary" value="16,700 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="16700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000525" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000526" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000527" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! You're back! I've decided on Blake's costume. But I'm a student, so I don't have much free time to work on the costume. Can you help me collect the materials I need?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I had an amazing Fedora in mind for Blake's costume. I also need a Wig to transform him into a star, and...what else... Oh, yes, a cute Bunny Suit! If you go to the 5th-6th floor of Kerning Square, you'll see a lot of Mannequins wearing those items. I need costumes for Blake's backup dancers, too." />
+                <string name="1" value="Please bring me #b50 Kid Mannequin's Bunny Suits, 50 Female Mannequin's Wigs, and 50 Male Mannequin's Fedoras#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Blake can't have a debut performance without the right costume. This is important!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Woohoo! Have you brought the materials? Let me see, let me see. I'm so excited!" />
+            <imgdir name="yes">
+                <string name="0" value="Eeeek, they're wonderful! Everything from Bunny Suits to Fedoras! It's everything I could've asked for! But...something is missing. Argh, I can't quite figure it out. Could you talk to me in a little bit? I need to think this through." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me #b50 Kid Mannequin's Bunny Suits, 50 Female Mannequin's Wigs, and 50 Male Mannequin's Fedoras#k. You'll be able to find them easily on the 5th-6th floor of Kerning Square." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052119" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000525" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000526" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000527" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2279" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

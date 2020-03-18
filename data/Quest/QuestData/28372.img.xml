@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28372.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Welcome Back to New Leaf City Day 3" />
+        <int name="area" value="50" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="Icebyrd Slimm, the one-man welcome wagon of New Leaf City, is itching to pick your brain. He wants to know how much you've learned about his wonderful city in the three years since it was founded. (3 of 7)" />
+        <string name="1" value="You're in the process of answering Icebyrd's daily question. Return to him and give him the correct answer." />
+        <string name="2" value="He wants to know how much you've learned about his wonderful city in the three years since it was founded. (3 of 7)" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="pop" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Can you believe it's been three years since my New Leaf City became the talk of the entire Maple World? You've spent most of that time here, of course? Why not try to answer a daily question about my city? C'mon, quizzes are so in right now." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good! Quizzes are the latest craze, you know. All the cool townies are doing it. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hrmph! Well, we can't all be trendy, I suppose. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Here's my question of the day. Who is Ridley?\n\n&#xD;&#xA;#b#L0#Butler in the Haunted House#l\n#L1#Dermatologist inside the New Leaf Mall#l\n#L2#Guy in the Bigger Ben Lobby#l\n#L3#Statue in front of Crimsonwood Keep#l\n#k" />
+            <string name="1" value="Well done! I guess you've visited the marvelous Crimsonwood Keep!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201050" />
+            <string name="endscript" value="q28372e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201050" />
+            <string name="start" value="2010051400" />
+            <string name="end" value="2010051500" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

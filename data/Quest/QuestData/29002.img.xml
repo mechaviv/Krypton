@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Celebrity!" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142003" />
+        <string name="0" value="#b#eTitle Challenge - Celebrity#n\n#kA title given to those who increase their popularity by 1,000 within the 30 day time limit.  I should talk to Dalair and try out for the #e#bCelebrity#n#k Medal." />
+        <string name="1" value="#b#eTitle Challenge - Celebrity#n\n#k - Time Left : #Qdaylimit#Days #Qhourlimit#Hours #Qminlimit#Minutes\n - Popularity Level : #b#jpopgap##k / #jpopG#\n               #jgaugePop# #jperPop# %" />
+        <string name="2" value="#b#eTitle Challenge - Celebrity#n\n#k - Time Left : #Qdaylimit#Days #Qhourlimit#Hours #Qminlimit#Minutes\n - Popularity Level : #b#jpopgap##k / #jpopG#\n               #jgaugePop# #jperPop# %\n\nI raised my popularity by 1,000 within 30 days!  Even Dalair seemed surprised by it, and he gave me the '#bCelebrity#k' title.  Ha, maybe I should try out for the '#bMaple Idol Star#k' medal now." />
+        <int name="timeLimit2" value="2592000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="In order to earn the Celebrity title, you must raise 1,000 popularity points within a given time.  If you think that's too hard, why don't you quit and try for another title? " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <string name="endscript" value="q29002e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142003" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29002s" />
+            <int name="lvmin" value="20" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

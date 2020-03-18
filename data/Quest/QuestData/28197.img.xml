@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28197.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Returning to Ellinia" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #bPerion#k says #rMarbas#k must be eliminated. Let's go find him." />
+        <string name="1" value="Let's go see #b#@1032001:##k in #bEllinia#k and hear what he knows about #rMarbas#k." />
+        <string name="2" value="The person who sealed #rMarbas#k the demon was #b#p1032001##k in #bEllinia#k." />
+        <string name="rewardSummary" value="Exp 6000&#xD;&#xA;Able to proceed to 'Marbas the Demon!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's time to catch our suspect. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b#p1032001##k in #bEllinia#k sealed #rMarbas#k the demon in #bEllinia#k a long time ago.\n\nWhy don't you go see him and see if you can get some information on the demon." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="We must hurry!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome back. Look at how much you've grown!\n\nBut has something happened?" />
+            <imgdir name="yes">
+                <string name="0" value="What? Did you say #rMarbas#k? I sealed that demon in my days of youth! How could he have revived? Only a person stronger than I could have broken that seal. It must be someone very powerful. I don't know how and why something so atrocious has happened in our peaceful Victoria Island!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1032001##k is in #bEllinia#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28196" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3340.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Key to the Secret Book" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="I mentioned the book I found at the underground study to #p2111004#. I told her that the book may hold the clue to #p2111002#'s disappearance... then I asked Phyllia for #t4031744#. She seemed hesitant, but she gave me the item in the end. Time to go back to the #bunderground study#k." />
+        <string name="2" value="Looking at the hidden hole, I matched #t4031744# into it, and... the rose engraving on #t04031744# matched the shape of the hole. That's when a light flashed out of the hole. Okay, time to look more into it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031744" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <string name="npcAct" value="act3340" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031744" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you gone to the underground study? It must have been really messy down there, since no one has visited the area in such a long time... did you find anything interesting? \r\n#b#L0# I found a strange book. #l" />
+            <string name="1" value="A book with a hole in the middle? I knew there were numerous books downstairs, but I've never opened them before, so I had no clue something like that would be inside the book. Maybe that book might have a clue or two on #p2111002#. I wonder what, if anything, will fit in that hole, though... \r\n#b #L0##bHow about a meso coin?\r\n#L1# How about your fist?\r\n#L2# How about a pill?\r\n#L3# How about #t4031744#?" />
+            <string name="2" value="#t4031744#...? If #p2111002# really made #t4031744#, then that makes perfect sense... and yet, it's the only item that De Lang left with me... ...if we need to find out more about De Lang and his whereabouts, then that is our only clue. I'll give you #t4031744#, so please find out more about #p2111002# for me." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Meso coins? I don't know... I have bills, but I don't have coins..." />
+                    <string name="1" value="That was a joke, right? Hahaha, you're funny." />
+                    <string name="2" value="De Lang was an alchemist from Alcadno, so maybe he made that book to store some pills." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Here, please take the #t4031744#. I sincerely hope this will lead us to where #p2111002# is..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I even promised you to give you #t4031744#, and now you're telling me you can't help me? That's terrible..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(After carefully opening the book, I placed #t4031744# in the hole. The fact that the rose engravings on the pendant fits right in confirms that this is the key to the book.)" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I already gave you #t4031744#... Haven't you gone back to the #bunderground study#k and place it in that strange book?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I noticed you misplaced #t4031744# somewhere around here. Fortunately, the pendant had the name #p2111004# engraved on it as well, and a nice traveler happened to pick it up, and returned it to me. It's a very important item, so please don't lose it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111016" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031744" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3339" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

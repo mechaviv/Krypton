@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3926.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Screwing the Red Scorpions" />
+        <string name="parent" value="Sand Bandits and Red Scorpions" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="Like #p2101000# suggested, you went the Red Scorpions' hideout and stole their treasure. Now you have to drop it off at secret spots inside residents' houses. Sirin says houses marked with an X are associated with the Red Scorpions, so you should avoid those." />
+        <string name="2" value="You left the treasures at homes marked with an O. That should be enough revenge against the Red Scorpions..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031579" />
+                    <int name="count" value="4" />
+                </imgdir>
+            </imgdir>
+            <string name="info" value="2222" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="A huge treasure chest can be found containing an amazing amount of treasures. All of them stolen by the Red Scorpions. \r\n#L0# #b Take some to distribute among the people in town." />
+            <string name="1" value="Remove the treasure from the chest and place it in a pocket." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="#b(Now, to give these to the people in town who need it.)#k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hahaha, looking at you, I can tell you took the stolen treasures from the Red Scorpions and gave them to the people of #m260000000#. Feel better now?" />
+            <imgdir name="yes">
+                <string name="0" value="The silly queen was already a big enough headache for everyone in #m260000000#, and now the Red Scorpions... Seriously, why are things in #m260000000# are becoming such a mess?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="A huge treasure chest can be found that contains large amounts of treasures. Let's give these out to the people in town." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm...you said you were going to exact revenge on the Red Scorpions. I guess you aren't ready yet." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="Hmmm...you said you were going to exact revenge on the Red Scorpions. I guess you aren't ready yet." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="A huge treasure chest can be found containing large amounts of treasures. I may have to take some more." />
+                <imgdir name="yes">
+                    <string name="0" value="Take some more treasures so more people will be happy to receive them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="3333" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031579" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2103007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3925" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="27" />
+        </imgdir>
+    </imgdir>
+</imgdir>

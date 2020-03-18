@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8142.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Todd's How-to-Hunt" />
+        <int name="area" value="20" />
+        <string name="0" value="I hear #b#p9101002##k can teach us how to hunt." />
+        <string name="1" value="#b#p9101002##k taught me to move towards upper right-hand side to attack by pressing #rCtrl#k and kill #b1 x #o9409000##k and #b1 x #o9409001##k,  then talk to #b#p9101001##k... \n\nTutorial Leatty #b#a81421##k\nTutorial Drumming Rabbit #b#a81422##k\n#t4000300# #b#c4000300#/1#k\n#t4000301# #b#c4000301#/1#k" />
+        <string name="2" value="As #b#p9101002##k's taught me, I hunted down the monsters." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000300" />
+                    <int name="count" value="0" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000301" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohh, a new traveller, huh? Don't you want to learn the ways of hunting? Leatty and Drumming Rabbit you see are normally too powerful monsters to be here, or for you to handle. The ones you see here, however, are lacking of any power, thanks to #b#p1032001##k, the head of all magicians who sealed up their power. These are here for the sole purpose of training. Here's your task : Take down #b1 x #o9409000##k and #b1 x #o9409001##k, pick up its dropping, and go see #b#p9101001##k, who should be up there somewhere. It's that easy." />
+            <imgdir name="yes">
+                <string name="0" value="As you can see through the Minimap (#bM#k), located on the left corner you'll see something blink on the right side of the map. That's where #b#p9101001##k is. You'll run into Tutorial Leatty and Tutorial Drumming Rabbit on your way to seeing #b#p9101001##k. Defeat #b1 x #o9409000##k and #b1 x #o9409001##k, pick up #r1 x #t4000300##k and #r1 x #t4000301##k, then see #b#p9101001##k." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you the one that #b#p9101002##k is training to hunt? He said something about you having the potential to be a great hunter. Let's see ... let's see if you've trained right." />
+            <imgdir name="yes">
+                <string name="0" value="Someday, long after you leave this place, you'll be powerful enough to take on the real Leatty and Drumming Rabbit ... oh, and ... when you level up, make sure to press #bS#k and check out your #bAbility points#k after leveling up." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Huh? I don't think you have #r1 x #t4000300##k and #r1 x #t4000301##k. When you defeat Tutorial Leatty and Tutorial Drumming Rabit here, Leatty's hariball and Toy drum will be dropped right there on that spot. When that happens, make sure to press #rZ#k to pick up the item. Please hurry!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Hmmm ... you should have seen the #bTutorial Leatty#k and #bTutorial Drumming Rabbit#k on the map. Maybe you missed it. All you need to do is attack it by pressing #rCtrl#k and kill it. Once you pick up the dropping, then come back to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9101003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000300" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000301" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9409000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9409001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

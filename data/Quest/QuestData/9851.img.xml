@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9851.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Snake Pit in the Swamp" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p1052000##k in Kerning City is being called Alex the coward. Why is he being teased for being a coward? Talk to Alex." />
+        <string name="1" value="#b#p1052000##k saw a snake pit and told his friends, but no one believed him and accused him of being a coward. Well, it is a bit hard to believe... A snake pit? Really? When Alex sensed your skepticism, he instantly teleported you to the snake pit in the swamp, saying you should see it for yourself and hunt 50 Jr. Neckis!\n\n#o2130103# #r#a98511##k " />
+        <string name="2" value="#b#p1052000##k was telling the truth. In the swamp, there was a snake pit filled with slithering Jr. Neckis. Eeeeeek! No wonder Alex was so frightened." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <imgdir name="no">
+                <string name="0" value="What? You don't believe me? I'm telling you, it's real!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm... So, do you believe me? It's true! There is a Snake Pit in the Swamps." />
+            <imgdir name="yes">
+                <string name="0" value="It's now a fact that there's a Snake Pit in the Swamps. So everyone needs to be more careful when traveling through there. Of course, it may be a good place to go if you're in need of Jr. Necki Skins." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="What's this? You haven't elminated #r50 Jr. Neckis#k yet. You acted like you weren't afraid of snakes but I guess you're just not up to the task." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2130103" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052000" />
+            <string name="startscript" value="q9851s" />
+            <int name="lvmin" value="25" />
+            <string name="start" value="2007052200" />
+            <string name="end" value="2007061800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

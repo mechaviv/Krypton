@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6106.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" Insignificant Being" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="7" />
+        <int name="area" value="10" />
+        <string name="1" value="#p1061011# said #b#p1061012##k will know about the Bowman's ultimate skill. At last! I'm on my way there now! \n\n#t4161029# #b#c4161029# / 1" />
+        <string name="2" value="#p1061012# was aware of the book and gave me the answers I needed. I see that my journey has just begun, but I will gain tremendous power should I see it through to completion. Onward!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161029" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161029" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" You are looking for someone who knows about advanced Bowmen techniques. Then go to see #b#p1061012##k. You may find more information! " />
+            <imgdir name="yes">
+                <string name="0" value="He has his own identity and way of doing things. I believe he talked about #bThe Bowman's Ultimate Skill#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't disturb my training then!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Is it you that has searched the land for me? I've heard of you from #p1061011# ! It's good to know that there are some people still looking for me. I haven't had visitors for a quite a while..." />
+            <imgdir name="yes">
+                <string name="0" value=" #bThe Bowman's Ultimate Skill#k? #bTraining Fields for the Ultimate Skill?#k And the book...That book is...! That's it! I can't believe you brought this book! I've been uninspired and bored for hundreds of years, but no longer! This book reminds me of the days of my youth...and the battles I fought! I thought that this book was lost forever! It is you who has returned inspiration to #p1061012#. I'm so happy!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you found #p1061012#? It's easy to recognize #p1061012#. He's...well, not quite there these days..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" It used to have meaning...huh? What brought you here? Book? What are you talking about?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you leave this book?" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161029" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6105" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

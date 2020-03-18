@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6240.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Flame Bird" />
+        <string name="parent" value="The Legendary Fire Bird" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#p2081001##k says he heard an interesting story...." />
+        <string name="1" value=" #b#p2081001##k said he heard that someone spotted the legendary fire bird.  He said the bird's nest might be in the volcanic cave and told me to go check it out.  I heard #b#m921100200##k was spotted deep inside the Cave of Distress.  I wonder where that is...let's go find out. \n\n#i4001113##t4001113# #b#c4001113#/1#k" />
+        <string name="2" value="#b#p2081001##k said he will find out how to hatch the egg." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hi! Are you interested in a legend about a fearsome, fiery bird? You don't know? Never heard of the glowing star of the east, the story of #b#o9300089##k? Would you like to hear about it? \n\r#L0# #b Tell me about it.#k" />
+            <string name="1" value="The story tells of an immortal bird which can live forever. This creature could only be the Phoenix. Many have said it's wings of fire are everlasting...that is why it is called an Immortal Bird. Such a powerful creature...\n\r#L0# #bIsn't is just a legend?#k" />
+            <string name="2" value=" I thought so at first. But then, my friend in El Nath told me he saw a nest of #o9300089# in the glowing lava. Isn't that wonderfull? I suppose they're real after all! \n\r#L0# #bYes, it is.#k" />
+            <string name="3" value="#o9300089# probably doesn't hatch because it is beneath a snowy mountain. #o9300089# is a bird so it will hatch when it can see the sky. If you are interested in #o9300089#, I suggest that you get the eggs! My mind can't bear the thought of those birds trapped, yearning for a glimpse at the sun...Are you game for some adventure?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Wow! Thank you! Nobody believed this story so I couldn't ask a favor. Not anymore! I'm glad you believe me. Please save the eggs!" />
+                <string name="1" value="#b#t4001113##k was found in #bdeep inside of the Cave of Trial#k. Maybe in the third cave? Check there!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Yeah. You don't believe me either. Off with you then...I'll wait for a true believer to come along!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah! You found #t4001113#! It really is warm, unlike other eggs--they'd cook themselves! Maybe there is a bird of flame inside. Now maybe it can hatch...but how? Think you can help me again?" />
+            <imgdir name="yes">
+                <string name="0" value="#o9300089# hasn't hatched such an egg, so I have no idea. But I'm an expert of egg-care and baby bird births! I can find out how, just give me a few minutes..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you got #b#t04001113##k? Think about a little bird...struggling for life...You should save it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001113" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081001" />
+            <imgdir name="job">
+                <int name="0" value="312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

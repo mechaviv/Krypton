@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21707.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Information" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="For the time being, you're working as an informant for #p1002104#. Your first task is to approach #b#p1002001##k and ask about any rumors circulating among the crewmembers." />
+        <string name="1" value="#p1002001# tells you that revealing a rumor is no big deal, but he'll only do it under one condition. Turns out he wants some snail shells to treat his arthritis. Fair enough. The area surrounding #m104000000# is infested with snails, so this shouldn't be hard. \r\n\r\n#i4000019# #t4000019# #b#c4000019# / 10#k\r\n#i4000000# #t4000000# #b#c4000000# / 10#k\r\n#i4000016# #t4000016# #b#c4000016# / 10#k" />
+        <string name="2" value="You gave him all the #t4000019#s, and in return, he told you that the crew is currently stressed about the certain revival of the Black Mage. You'd better relay this bit of info to #p1002104#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I don't think I've seen you before. A new member of the crew? Or are you a novice adventurer? Well it doesn't matter what you are. #m104000000# is always filled with new people. Anyway, do you need me for something? What? The latest news on the crewmembers?" />
+            <string name="1" value="Spilling the beans about that is no big deal, but can you do me a favor first? It's not much. I've been working on this boat a long time, and it's been showing in my arthritis. #bI'd like for you to gather up Small Snail Shells, which are good for people with arthritis. You give me those and I give you the information, deal?#k" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want #b10#k small snail shells for each of the following: #b#t4000019#, #t4000000#, and #t4000016##k. Well, they can all be found in the #bforests near #m104000000##k, so they shouldn't be hard to find. I'll be waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm, if you say so, then there's nothing I can do for you. I'll be here if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, did you really gather up all the snail shells? Let's see if you brought the exact amount…" />
+            <imgdir name="yes">
+                <string name="0" value="Brilliant! Now it's my turn. It's really not much, though. Mostly about the Cygnus Knights, along with some #rgossip about the Black Mage#k. People seem afraid that the Black Mage might be making a comeback." />
+                <string name="1" value="Aside from that, rumor has it that whale meat is good for new arthritis medicine…and that the glaciers may show up around here soon. Oh, and there are some rumors about adventurers who've come looking to slay the Balrog. But the real eye-popping rumor is about the Black Mage." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Are you still short on the ingredients for the arthritis medicine? I need #b10 each#k of the following: #b#t4000019#, #t4000000#, and #t4000016##k.  " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21706" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

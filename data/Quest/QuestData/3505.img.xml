@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3505.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The One Who Walks Down Memory Lane5" />
+        <int name="area" value="46" />
+        <string name="0" value="I received permission to go all the way to #m270010500#.  If I want to go beyond that, I need to take a test.  I should go to #b#p2140000##k to receive the test." />
+        <string name="1" value="#p2140000# said if I want to go in further, defeat the giant Whale of Time, #r#o8220004##k, at #b#m270010500##k \n\n#o8220004# #r#a35051##k" />
+        <string name="2" value="I defeated the Whale of Time, #o8220004#.  #p2140000# granted me permission.  I should be able to go past Memory Lane now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you want to go in further, you'll need to take a harder test... Makes perfect sense, right?  So what do you want?  Do you want the new test? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then go to #b#m270010500##k and defeat the #r#o8220004##k.  If you defeat #o8220004#, the giant Whale of Time that lives inside the temple, I will grant you permission to go beyond that." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's too hard for you?  That's too bad then.  I guess that's just your limit." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated 999 #o8200004#.  That's amazing.  I will grant you permission as promised." />
+            <imgdir name="yes">
+                <string name="0" value="#dAs the representative of Rhinne, the Goddess of Time, I grant you permission to go past #m270020000#, the Door of Regret, to look at your 1st regret.#k" />
+                <string name="1" value="Go on.  You should be able to go up till #b#m270020100##k.  As you can guess, you can't go beyond that. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r#o8220004##k yet.  I don't think you are strong enough to walk against the flow of the past yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3504" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="103" />
+        </imgdir>
+    </imgdir>
+</imgdir>

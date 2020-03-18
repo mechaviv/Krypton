@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3345.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Black Magician's Magic Pentagram" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="7" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2020005# said that because of #p2111002#'s experiment, the Black Magician's Magic Pentagram that sustained #m261000000# was shaken to its core, which unstabilized the Pentagram. He also mentioned that if this is kept as it is, then soon, the Magic Pentagram will explode. In order to prevent this from happeninng, he instructed me to find #b3 Magic Rocks and place them in sequence to soothe the Magic Pentagram, then apply pressure to the center of the Magic Pentagram#k... \n\n#i4031739##t4031739# #b#c4031739##k/1 \n#i4031740##t4031740# #b#c4031740##k/1 \n#i4031741##t4031741# #b#c4031741##k/1\n\nI received one of the Magic Rocks from #p2020005#, but the rest will have to be found through the #rmonsters of #m261000000##k. I better find 3, and then head off to the Black Magician's Lab. That lab is only accessible through the secret passage that connects Zenumist and Alcadno." />
+        <string name="2" value="After successfully putting Magic Pentagram under control, I went to see #p2020005#, the 3rd president of the Alchemist Union, again. I wonder what he's thinking, with that soothing smile that instinctively let us put our guards down...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031739" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Yes, #r#m261000000# is a town built right above the lab of the Black Magician#k. That's the truth, yet most residents of #m261000000# aren't even aware of it...\r\n#b#L0# Can you explain a little bit more on it?#l" />
+            <string name="1" value="Yes I will... but before that, I want to clarify something first. As written on the note, did #p2111002# wind up conducting the experiment? \r\n#b#L0# Yes, he did.#l" />
+            <string name="2" value="...Sigh. In that case, I have no choice but to give you some of the burden in regards to this event. The experiments conducted by #p2111002# were too risky and reckless, to say the least. He may have believed in the power of the Black Magician, but... the Magic Pentagram he made was made hundreds of years ago. It's probably already weakened considerably since then. \r\n#b#L0# That means...#l" />
+            <string name="3" value="If #p2111002#'s experiment is the cause for the epic explosion,  then I am sure the Black Magician's Magic Pentagram is destroyed as well. The fact that the Magic Pentagram served as the foundation of #m261000000#, and if that's destroyed... you get the picture. I suspect that after #p2111002#'s failure, #m261000000# itself might have been negatively affected. Isn't that so? \r\n#b#L0# I heard that was the case.#l" />
+            <string name="4" value="...I knew it. In that case... I may need to give you more responsibilities on this matter. Can you do something important for the town of #m261000000#? The town that is polluted with lies and deceit?&#x9;" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Good. I want you to take this Magic Rock with you. This should be one of the three Magic Rocks that have been extracted from the Magic Pentagram made by the Black Magician. I want you to find the other two and place them in the Magic Pentagram." />
+                <string name="1" value="#b#t4031740##k can be found through #rHomunculus#k, and #b#t4031741##k through #rD. Roid#k. I am sure those two were used to make the two robots, so with this much power... those three should be enough to stabilize the Magic Pentagram from Black Magician." />
+                <string name="2" value="You'll need to activate the #btop Magic Pentagram, left Magic Pentagram, and the right Magic Pentagram in that order#k, followed by applying pressure on the center of the Magic Pentagram. This should aid the Magic Pentagram in stabilizing its power, which means you are holding the key to the future of #m261000000#!  Good luck..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Even if you reject the offer, there's no turning back. #m261000000#...may not even be worth that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You managed to activate Black Magician's Magic Pentagram. Thank you so much for your help. I believe that with your great deed, #m261000000# will finally be back in peace. That said..." />
+            <imgdir name="yes">
+                <string name="0" value="Hmm...I don't know. I've spent hundreds of years living here, but I still can't make the decision on what to do with #m261000000#..." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="4" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3344" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

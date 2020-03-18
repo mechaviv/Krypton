@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28239.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding Muirhat" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says she will help you train further. Let's talk to her." />
+        <string name="1" value="Let's go find #b#@1092007:##k in #bNautilus#k for additional training." />
+        <string name="2" value="The Path of a Pirate.." />
+        <string name="rewardSummary" value="Exp 500&#xD;&#xA;Able to proceed to 'Rigorous Training! 1' as next quest.&#xD;&#xA;Able to proceed to 'Rigorous Training! 2' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've grown into a competent beginner Pirate, I see. But this is just the beginning.\n\nWould you like to receive additional training?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice.\nYou will see #b#p1092007##k when you exit through the door. Go see him.\nHe will have some training courses prepared for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No good will come your way if you decline." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Has #b#p1072008##k sent you? I've been waiting." />
+            <imgdir name="yes">
+                <string name="0" value="But it's not like I'll ask you to do something absurdly difficult.\nDon't worry." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1092007##k is in #bNautilus#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

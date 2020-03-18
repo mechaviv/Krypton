@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hanako's Foxtail Muffler 2" />
+        <string name="parent" value="Hanako's Foxtail Wardrobe" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9120001##k, who wanted to make a #t4000066# muffler, haven't finished making it. I wonder what she's lacking..." />
+        <string name="1" value="#p9120001# wanted to make a muffler out of #t4000066#, so I gave her 100 #t4000066#s. Despite the work, #p9120001# flat-out insisted that she asked for 300 all along, and demanded that I get her 200 more. I didn't need to hear that from her, but I'll have to get her 200 more... #b200 more #t4000066#s#k? That's a lot!\n\n#t4000066# #b#c4000066#/200" />
+        <string name="2" value="I gave #p9120001# 200 #t4000066#s. Hopefully this will do." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="이봐, 당신! 전에 #t4000066#를 가져다 준 사람이지? 왜 그것만 가져다 주고 마는 거야? 분명 #t4000066# 300개를 구해다 달라고 했었잖아! " />
+            <string name="1" value="무슨 소리야~! 언제 100개라고 했어, 300개라고 했지! 목도리가 겨우 #t4000066# 100개 가지고 만들어질 것 같아? 그런 건 상식이라고~ 자, 빨리 #t4000066# 를 더 갖다 줘~" />
+            <imgdir name="yes">
+                <string name="0" value="호호호~ 역시 친절한 사람이라니까~ 전에 100개 모아다 줬으니 #t4000066# 200개야! 이번에는 잊지 말고 꼭 가져다 줘야 해~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흥. 숙녀의 부탁을 거절하다니, 정말 무례한 사람이로군!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you're the one that got me a whole bunch of #t4000066#s before, right? Why did you give me that little? I SPECIFICALLY told you to get me 300 #t4000066#s!!!" />
+            <string name="1" value="Nooo, I NEVER said 100! I said 300!! 300!! Mufflers can't be made with just 100 #t4000066#s! That's common sense, okay? Now, get me some more #t4000066#s~" />
+            <imgdir name="yes">
+                <string name="0" value="Hohoho~ you're so kind. Well, since you got me 100 last time, I need #b200 more #t4000066#s#k! Don't forget it this time! Okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You said no to a lady? That's so rude!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you gathered up #t4000066#s like I asked you to~! I knew you looked pretty strong, but this is impressive~" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks a lot! #t4000066# is really really soft, and I just love that feeling of it rubbing against my skin. There's nothing quite like fox skin! This should probably help me make the muffler." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="That's not 200! I want 200, #b200 #t4000066#s#k! How many times do I have to tell you this?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4302" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8042.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fox So Foxy" />
+        <string name="parent" value="Monster Rumor Mill" />
+        <int name="order" value="2" />
+        <int name="area" value="48" />
+        <string name="0" value=" In order to gather up the information regarding the monster, I'll have to do Master Sergeant Fox a favor. Are you kidding me?" />
+        <string name="1" value=" In order to find out more about the monster, I'll have to give Master Sergeant Fox #b50 #t04000129#s#k. \n#t04000129#  #b#c04000129##k/50" />
+        <string name="2" value=" No wonder ... according to him, Omega Sector may also be on the move to defeat the monster. He said I'll find out more about it by eavesdropping on General Maestro. That won't be easy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000129" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="In exchange for valuable information regarding the monster, you'll need to gather up some items I need. Are you in?" />
+            <string name="1" value="Good, then ... \nI'll need #b50 #t04000129#s#k, which can be obtained through #b#o6230300##k. Don't ask how this is going to be used." />
+            <string name="2" value="In terms of the value of information in which I may divulge up on, I think it's fair trade. Are you in?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, then. Bring me #b50 #t04000129#s#k, then we'll talk." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know this may not be the most pleasant thing to go through, working your way towards obtaining the valuable information on the monster. If you change your mind, however, then talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you get them all?" />
+            <string name="1" value="Good. As promised...Actually, in regards to that monster, Omega Sector actually put up a red flag on in, and is moving in as we speak. They're gathering up the troops, and I'm one of them actually. Omega Sector, who prides itself on protecting the land, actually puts up the red flag on a monster? I have no qualms whatsoever on it, but doesn't it sound a little strange?" />
+            <string name="2" value="This is a remote snow valley far  away from the city, and the Omega Sector is gathering up the troops just to combat a single monster. Don't you think something fishy may be going on here?" />
+            <string name="3" value="I advise you to eavesdrop on General Maestro, wherever he may be. You may find out the truth behind this." />
+            <string name="4" value="This is all there is to it. Hmmm, I feel like I am the only one that got what I need from this. This may not be something great, but I'll do this. Since you're combating the monster, you may need this..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're a little short. I can't give you the information with this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000129" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8041" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

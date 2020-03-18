@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3832.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Do Gong's Test" />
+        <int name="area" value="44" />
+        <string name="0" value="The Head Mental Trainer of #b#m250000000##k, #b#p2091001##k, wants to test the students willing to become the Master..." />
+        <string name="1" value="To test out the skills the students have accumulated over time, #p2091001# told us to defeat both #r#o5120506##k and #r#o6130209##k. #o5120506# and #o6130209# have both mastered the art of casting spells, becoming close to Masters themselves. They may be hard to handle...\n\n#o5120506#  #r#a38321##k \n#o6130209#  #r#a38322##k" />
+        <string name="2" value="After defeating 100 #o5120506#s and 100 #o6130209#s, #p2091001# told me I still have ways to go before becoming a true Master..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="64800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020012" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How is the training going? Is it going well? You look like you're still a long way to go...but then again, the road to becoming a Master is long... very long... do you want my advice on your training? I'd like to test your level of training by putting you up against a more powerful foe." />
+            <imgdir name="yes">
+                <string name="0" value="It's good that you aren't shying away from tough challenges like this. I am sure you are aware that there are many powerful monsters around the Peach Farm near #m250000000#. You remember #o6130209#, right?" />
+                <string name="1" value="At the forest past the Peach Farm, there are numerous monsters that have taught themselve how to use spells, and they have become more powerful than most human beings. How about training your combat skills against them? I Say #r100 #o5120506#s#k and #r100 #o6130209#s#k would really help expedite your training." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm...if you don't need my teaching, then I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How was it like facing both #o5120506# and #o6130209#? I am sure you felt it too that those monsters, equipped with spells, were much tougher than most human beings. Weren't they?" />
+            <imgdir name="yes">
+                <string name="0" value="Neither #o5120506# nor #o6130209# are Masters. If nothing else, they taught themselves the wrong types of spells and tactics, and fell on dark, evil ways. True Masters easily exceed that. If you really desire to become one yourself, then I suggest you keep training diligently." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't believe you have defeated #r100 #o5120506#s#k and #r100 #o6130209#s#k. That means your training isn't up there yet. Please keep trying." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120506" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6130209" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3804" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+            <string name="start" value="2007061800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3406.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering the Robotic Parts" />
+        <string name="parent" value="Supplying the Robotic Parts" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I met with Cheng the Assistant at the Toy Factory in Ludibrium, and he handed me 3 boxes full of robotic parts, which will be used to make the robot. Now I should just hand them over to Dr. Kim at the Command Center in the Omega Sector." />
+        <string name="2" value="At the Toy Factory in Ludibrium, Cheng the Assistant gave me 3 boxes of robotic parts so I could deliver them to Dr. Kim of the Command Center in the Omega Sector. After delivering the goods to Dr. Kim, he gave me a Warp Capsule, which will enable me to transport to Ludibrium in an instant. Hmmm... this looks like something I can use!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031095" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031096" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031097" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031095" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031096" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031097" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2030012" />
+                    <int name="count" value="7" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm...? Ohhhh~ #b#p2050001##k already told me about it, through a special device that connects Ludibrium and Omega Sector. The 3 Boxes of Parts that #p2050001# requested are ready here. I'll give those to you, but first make sure to have 3 slots of your etc. inventory available." />
+            <imgdir name="yes">
+                <string name="0" value="So you got the 3 Boxes of Parts, right? All these Boxes of Parts contain machines that are very sensitive to pressure, so it may break on you easily. Make sure not to get ambushed by monsters on your way back to the Omega Sector, but I'm sure you can handle it just fine. I'll see you around~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh, this is it! These 3 Boxes of Parts are essential in trying to create an important device for the robot. This information is classified, so this is about all I can tell you for now, but... it must have been tough for you to travel from Ludibrium to here. Take this, the #b#t2030012##k." />
+            <imgdir name="yes">
+                <string name="0" value="The #b#t2030012##k I gave you will enable you to teleport straight to Ludibrium. Please be aware that you may not use this on other continents. Thank you so much for helping me out on numerous occasions. Now that I have the parts ready, I better get this started." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please take these 3 Boxes of Parts and give them to #b#p2050001##k of the Omega Sector. I'm sure he's been sticking his neck out for this. These machines are all very delicate, so please be careful on your way there. I'll see you around~!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I think you have met #b#p2040003##k, but you may have lost one of the boxes full of robotic parts on your way back here. I need 3 Boxes of Parts, and without one, it's nothing. Please go see #p2040003# again at the Ludibrium Toy Factory, receive all 3 boxes full of robotic parts, and then deliver them to me. Thanks!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hmmm... did you lose the Boxes of Parts on your way back? Should have been more careful... but thankfully, the Boxes of Parts have the automatic-returning device created by #b#p2050001##k, so they are back here already. I'll give them to you once more, so please don't lose it this time!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031095" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031096" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031097" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3405" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

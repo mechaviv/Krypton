@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28245.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="You Can't Teach an Old Dog New Tricks" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1020000:##k in #bPerion#k says he may be able to uncover the red portion of the #rDirty Treasure Map#k. Let's talk to him." />
+        <string name="1" value="He suggests you do not waste your time and energy chasing after some nonexistent treasure, but instead hunt #rDark Stumps#k to clear your head. They can be easily found in #b#m101030000##k.\n\nReport back to #b#@1020000:##k in #bPerion#k upon completion." />
+        <string name="2" value="#b#@1020000:##k in #bPerion#k says he may be able to uncover the red portion of the #rDirty Treasure Map#k. Let's talk to him." />
+        <string name="demandSummary" value="#o1110101# #a282451#" />
+        <string name="rewardSummary" value="Exp 1,800&#xD;&#xA;Able to proceed to 'The Mystery of the Red Portion' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1800" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A Treasure Map? I don't know where you found such a thing, but don't waste your time with that.\nThere are no treasures in the world. How do I know that? Well, when I was young, I spent a good portion of my youth searching for treasure, thinking that it was really a Treasure Map. \n\nLook, I'm telling you again, there are no treasures in this world! Why don't you just get some fresh air?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You'll find a lot of #rDark Stumps#k in #b#m101030000##k. Why don't you just defeat 30 of them? Hopefully, you'll come to your senses while hunting and realize that there is no such thing as a Treasure Map." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't decline. You should take my advice!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're stronger than I thought.\n\nHow was it? Have you not come to your senses yet about the Treasure Map?" />
+            <imgdir name="yes">
+                <string name="0" value="Don't even think about treasures from this point forward. It is only a waste of valuable time and energy.\n\n....\n\nBut where did you find that map anyway?\nI'm asking only out of curiosity, of course…" />
+                <string name="1" value="What? You got it from #b#p1072008##k in #bNautilus#k?\nOh! Then it can't be fake.\n\nCould I take a look at it? I just want to see something. Don't give me that look!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I thought I told you to defeat 30 #rDark Stumps#k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1020000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28244" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

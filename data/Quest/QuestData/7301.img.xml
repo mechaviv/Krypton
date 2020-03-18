@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Secret Medicine for Transformation" />
+        <string name="parent" value="War of the Dragons" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value=" Moira, whom I met at the entrance of the Cave of Life, asked me to defeat Horntail. She said that she would make me a secret medicine that allows one to transform into a dragon, which I'll need to pass through the entrance of the cave that is guarded by Horntail's follower, Keroben . \nLet's get back to Moira with all the ingredients.\n\n#i4001075##t4001075#  #b#c4001075##k / 1\n#i4000267##t4000267#  #b#c4000267##k / 1\n#i4001076##t4001076#  #b#c4001076##k / 1\n#i4001077##t4001077#  #b#c4001077##k / 10\n#i4001078##t4001078#  #b#c4001078##k / 1" />
+        <string name="2" value="Moira told me about the war of the dragons and asked me to defeat Horntail. Moira said that she will make me a secret medicine to transform if I bring him/her all the ingredients he/she had asked me, which I would need to get passed #p2081005# and enter Horntail's cave.. Let's get all the ingredients to Moira. Moira made me a secret medicine that can transform me into Cornian." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300000" />
+            <int name="buffItemID" value="2210003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001075" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001076" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001077" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4001078" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The prison is protected by a powerful spell and I can't get out of here before I die. For the sake of Nine Spirit and me, can you take the challenge to defeat the mighty Horntail?" />
+            <imgdir name="yes">
+                <string name="0" value=" You're brave. When I saw you the first time, I could feel the courage you have. I'll give you some information." />
+                <string name="1" value="Horntail beat Nine Spirit but he has severe injuries. He's in the #bCave of Life#k looking for a cure. The entrance of Cave of Life is right down there. Horntail's protector, #bKeroben#k is guarding the entrance. " />
+                <string name="2" value="You need to transform into a Cornian to get into the cave. If you gather all the ingredients, I'll make you #bsecret medicine#k so you can change into a Cornian." />
+                <string name="3" value=" In order to make the secret medicine... I need \n\n#i4001075# 1#k#t4001075# #b\n#i4000267# 1#k#t4000267# #b\n#i4001076# 1#k#t4001076# #b\n#i4001077# 10#k#t4001077# #b\n#i4001078# 1#k#t4001078# #b. \n\nDid you memorize everything?" />
+                <string name="4" value="You'll need to get the Cornian's Marrow and a skull shoulder guard from #rCornian#k,  Manon's Cry from #rManon#k in Minar Forest, and tough dragon leather from  #rDrakes#k on Victoria Island. " />
+                <string name="5" value="You can get the most important thing, the Cornian Dagger, from #bMos#k, the best blacksmith in the Leafre town. Hurry up! I'll be waiting for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you leave Horntail, Ossyria as well as Minar Forest will be in constant danger! Think it over, please!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather everything? Let me see. Great!! Wait a second." />
+            <string name="1" value="If you take this medicine, you will look like Cornian for a while. But, keep this in mind. This medicine doesn't work well so when you're out of this town, it won't work. Keep in mind that. " />
+            <imgdir name="yes">
+                <string name="0" value="Good luck to you!! Please eliminate Horntail!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Do you remember what I said? In order to make the secret medicine to change into dragon, I need \n\n1 #i4001075# #t4001075# #b #k\n1 #i4000267# #t4000267# #b #k\n1 #i4001076# #t4001076# #b#k\n 10 #i4001077# #t4001077# #b#k \n1 #i4001078# #t4001078# #b#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001077" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001078" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001075" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001076" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

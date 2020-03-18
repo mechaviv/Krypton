@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3712.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Recovering the Black Spirit" />
+        <int name="area" value="41" />
+        <string name="0" value="Let's go see #p2081007#, who's lying wounded somewhere in #m240040400#." />
+        <string name="1" value=" #p2081007# asked me to defeat the monsters that possess &quot;black spirit&quot; which have been tainted by Horntail's evil powers.  He wanted me to take those spirits to #b#p2081006##k in prison so that he/she can analyze it. Let's gather the #bblack-stained spirits of the monsters#k and take them to #p2081006#, who's at the entrance of the Cave of Life.\n\n#i4031412##t4031412#  #b#c4031412##k / 1\n#i4031413##t4031413#  #b#c4031413##k / 1\m#i4031414##t4031414#  #b#c4031414##k / 1\n#i4031415##t4031415#  #b#c4031415##k / 1" />
+        <string name="2" value=" I gathered all the black spirits tainted by Horntail and took them to #p2081006# as #p2081007# requested." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <int name="lvmin" value="100" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="72000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031412" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031413" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031414" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031415" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you ever seen a monster that is pitch black from head to toe? As Nine Spirit got sealed up by Horntail, the barrier of the Minar Forest got noticeably weakened. As a result, the monsters that reside in this forest have collectively turned violent, but not only that, some of the monsters wound up being heavily influenced by Horntail's evil powers, which in turn blackened their flesh and spirit." />
+            <string name="1" value="For these monsters, even their spirits have turned black, which in turn blackened their bodies. If I can analyze their black spirits, I may be able to pinpoint Horntail's weaknesses. Will you help me find it?" />
+            <imgdir name="yes">
+                <string name="0" value="Please find a way to gather up #b1 black spirit of #o7130501#, #o8140111#, #o8150201#, and #o8150302# each#k and take them to #b#p2081006##k, who is locked up in #b#m240040700##k. She's the only person that can handle these volatile, dangerous black spirits." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're carrying a dangerous item with you. What? Raul sent you here? If so, then I'll take care of the item. You really did a fantastic job handling this dangerous mission. Anyway, this place is not safe at all, so I suggest you leave this place without being detected by #p2081005# at the entrance of the Cave of Life." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I want you to gather up #b1 black spirit of #o7130501#, #o8140111#, #o8150201#, and #o8150302# each#k and give them to #b#p2081006##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Please gather up #b1 black spirit of #o7130501#, #o8140111#, #o8150201#, and #o8150302# each#k and give them to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031412" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031413" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031414" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031415" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <int name="lvmin" value="100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29903.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Master Adventurer" />
+        <int name="area" value="51" />
+        <int name="viewMedalItem" value="1142110" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="You can earn the #b&lt;Master Adventurer&gt;#k title by completing your 4th Job Advancement as an Adventurer." />
+        <string name="1" value="Adventurers who complete the 4th Job Advancement will receive the #b&lt;Master Adventurer&gt;#k title. Let's go find NPC #p9000040#, who can be found in every town." />
+        <string name="2" value="You have earned the #b&lt;Master Adventurer&gt;#k title by completing your 4th Job Advancement as an Adventurer." />
+        <string name="demandSummary" value="Report to NPC #b#p900040##k and receive the honorable #t1142110# Medal." />
+        <string name="rewardSummary" value="#Wbasic#" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <string name="endscript" value="q29903e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142110" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29903s" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

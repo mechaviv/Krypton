@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51218.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Is This A Dream?" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You're back in the present and the Future Doctor Bing has sent you a message.\r\n(How did he send a message?)" />
+        <string name="1" value="The Future Doctor Bing wants you to meet his present self.\r\nUse the Command Center Warp Capsule #i2030011# to warp to the Omega Sector.\r\n\r\nFind Doctor Bing, who is somewhere inside." />
+        <string name="2" value="Doctor Bing is hard at work and doesn't seem to have any idea what's going on.\r\n\r\n(Yet...)" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032702" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032706" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032730" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2030011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142247" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm relieved. Everything has returned to normal! I guess this will be the last time we see each other.\r\nBut..." />
+            <string name="1" value="Who knows what stupid things the me in your present time will do now? Right about now...he should be at the Omega Sector." />
+            <string name="2" value="Can you please go see him one last time and make sure he's okay? He probably won't remember you..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! I will give you the Command Center Warp Capsule. Please use it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What are you thinking? Fine. Do as you will..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What is it? I'm just a researcher. If you're a Mesoranger recruit, go see Chury!\r\n#L0##bHey, what do you know about time travel?#l\n#k" />
+            <string name="1" value="Are you kidding me!? I have so much research to do, I don't even have time to sleep. Bah, who has time to worry about time travel.\r\nNow, please. Don't bother me.\r\n#L0##b(Hmm... I guess he doesn't have time to re-make the same mistakes.)#l\n#k" />
+            <string name="2" value="Haven't we...met somewhere before?" />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, I'll see you around!\n\r(I've thought of something much more interesting than Time Machines... Heh, heh, heh.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250147" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250149" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51191" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29017.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title - Soul Conjurer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142138" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You can acquire the title of #b&lt;Soul Conjurer&gt;#k by eliminating undead monsters and sending them back to nirvana..." />
+        <string name="1" value="#b#eTitle - Soul Conjurer#k#n\r\nEliminate undead monsters and send them back to where they came from.\n\n1 #t2383036#\n1 #t2384003#\n1 #t2383037# \n1 #t2383038# \n1 #t2388008# \n\n#o5150001# #a290171#\n#o6230602# #a290172#\n#o5130107# #a290173#\n#o5130108# #a290174#\n#o6300005# #a290175#" />
+        <string name="2" value="You were able to eliminate the undead monsters and acquired the title of #b&lt;Soul Conjurer&gt;#k." />
+        <string name="demandSummary" value="#t2383036# 1\r\n#t2384003# 1\r\n#t2383037# 1\r\n#t2383038# 1\r\n#t2388008# 1\r\n#t2384010# 1\r\n#o5150001# #a290171#\r\n#o6230602# #a290172#\r\n#o5130107# #a290173#\r\n#o5130108# #a290174#\r\n#o6300005# #a290175#\r\n#o6090000# #a290176#\r\n" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1142138:# #t1142138:# 1 \r\nGo on to 'Title - Soul Guardian' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142138" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I think it's time for you to increase your inner powers. When you acquire the ability to recognize the brightness or darkness of a spirit, then you'll be able to obtain the title of &lt;Soul Conjurer&gt;. Do you wish to be tested?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In order to acquire the title of &lt;Soul Conjurer&gt;, you'll need to put yourself through some more severe challenges. Free the Skeleton Soldiers, the Skeleton Generals, Cooley Zombies, Minor Zombies, and Zombie Mushmoms from the shackles of their past…" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I hope you can treat the spirits that are seeped in darkness." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I think you have noticed now, how slim the difference is between good and evil. But light can only exist with the presence of darkness… Know what I mean…?" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="They should have all been incinerated and be sent to nirvana, but I don't think you have enough experience to make that happen yet." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Did you gather up the cards that embody their spirits?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mbcard">
+                <imgdir name="0">
+                    <int name="id" value="2383036" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2384003" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2383037" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2383038" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2388008" />
+                    <int name="min" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5150001" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6230602" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5130107" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5130108" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="6300005" />
+                    <int name="count" value="44" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29016" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="57" />
+        </imgdir>
+    </imgdir>
+</imgdir>

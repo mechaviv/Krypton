@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3637.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Judging the Axe" />
+        <int name="area" value="37" />
+        <string name="0" value="As the Mountain God said, if I got an axe from Dark Axestump, let's go to the Mountain God and ask him to see if it's indeed the steel axe." />
+        <string name="1" value="The Mountain God told me if I bring the #baxe#k that #r#o2130100##k had, then he'll look into it and see if it's indeed the steel axe of the tree cutter or not. I need to pick up an axe from Dark Stump and bring it back to the Mountain God." />
+        <string name="2" value="The Mountain God carefully looked through the axe that I picked up, and told me what kind of axe that was. If I ever find the tree cutter's steel axe, then I'll have to return it to the tree cutter who lives somewhere around the Black Mountain." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000215" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031315" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031316" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031317" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031318" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031319" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4031320" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You brought the axe. Let me see it. I'll have to look at it from up close to see if it's the tree cutter's steel axe or not." />
+            <imgdir name="yes">
+                <string name="0" value="Please wait." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You'll need to show me the axe in order for me to judge the axe." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It looks like a name is engraved on it, but my eyes have failed me a long time ago, and I can't clearly see what's on it. Why don't you take a look at it?" />
+            <imgdir name="yes">
+                <string name="0" value="Look at it closely. If it is indeed the steel axe of the tree cutter, then bring it to #b#p2071011##k, who lives somewhere around the Black Mountain. If it isn't the tree cutter's axe, then bring the one that is." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you bring the axe that #r#o2130100##k gave you, then I'll check and see if it is #b#t4031315##k or not." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3636" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031315" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000215" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

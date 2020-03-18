@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8233.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rags to Riches" />
+        <string name="parent" value="Bounty Hunter." />
+        <int name="order" value="1" />
+        <int name="area" value="45" />
+        <string name="0" value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I'll bet that she's willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I'll be on my way to New Leaf City!" />
+        <string name="1" value="I spoke with LIta, and it seems that there strange, powerful spirits drifting about the Phantom Forest. These strange spirits seemingly have no desire, save for tormenting others. I've agreed to eliminate 30 of them, and bring their soiled rags to Lita as proof of valor. I'd better keep sharp-that forest has driven quite a few travelers mad with its confusion..." />
+        <string name="2" value="I navigated the Phantom Forest and collected 30 of the Soiled Rags the Elder Wraiths had upon them. It was strange to finally fight one, they were eerily quiet for being so vicious. I wonder if there's more to their story...perhaps someone in the Phantom Forest would know..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="200000" />
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032011" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Back so soon?  Let's see how you did...5, 15...30! Excellent work! You've done an excellent service to the citizens of New Leaf City. Please take these mesos as a token of appreciation! Be sure to return once you rest-I have plenty of bounties available!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, looks like you're short of the 30 Soiled Rags I asked for. I can understand if you want to rest, Just be sure to get them all before you return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201054" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032011" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201054" />
+            <string name="startscript" value="q8233s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

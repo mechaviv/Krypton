@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6108.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Junior Balrog in a Different World" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="9" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p1061012##k said he'll teach me the ultimate skill once I go to #m910500000# and get #b300 #o9300085##k. It's almost within my grasp! \n\n#o9300085# #r#a61081##k " />
+        <string name="2" value="After completing the training to catch Junior Balrogs in #m910500000#, I acquired the Bowman's ultimate skill! Power is now mine--I shall master this skill and use it triumph over my enemies in battle!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="3121008" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="312" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3221007" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="322" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" Are you ready? Go to the training field of a different world and hunt #b300 #o9300085##k. After you're trained, you will become stronger! This is necessary preparation to use the skill properly! " />
+            <imgdir name="yes">
+                <string name="0" value="After this training, I'll teach you the ultimate skill. By the time you finish training, you'll be ready to learn the skill... Ah. It's dangerous to go by yourself so I recommend that you make a #bparty with a 4th Job Bowman.#k When you get ready, let me know!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" No guts, no glory!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Finally, you came back! You look tired but I feel your power from here!  Now, you are strong enough to learn the skill!" />
+            <imgdir name="yes">
+                <string name="0" value=" I hope you train yourself and practice with the skill I taught you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value=" Get 300#b#o9300085##k and come back. You're so close--you can do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061012" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300085" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6107" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

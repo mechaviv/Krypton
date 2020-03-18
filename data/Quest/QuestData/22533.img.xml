@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22533.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Please Catch the Thief" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1061005# in #b#m105040300##k has something he wants to say to you. Go see #b#p1061005##k." />
+        <string name="1" value="#p1061005# says that #p1040001# has told him that you are a very capable Guard and asks that you help him. According to him, someone has stolen an expensive  herb, and he is sure it is a thief from #m103000000#. He asks that you go to #b#m103000000##k and investigate. You suddenly remember that Alex is in Kerning City. For now go see #bAlex#k.\r\n\r\n1. #y22534# #b(#u22534#)#k\r\n2. #y22535# #b(#u22535#)#k\r\n3. #y22536# #b(#u22536#)#k" />
+        <string name="2" value="When you tell #p1061005# that you don't think it was a thief from #m103000000#, he says that he will wait for your investigation for now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7250" />
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2210" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, are you Evan? I've heard so much about you from #p1040001#. He told me what a great Guard you are. That's why I thought you could help me." />
+            <string name="1" value="My job is to collect herbs and make them into medicine. But recently, someone stole one of my herbs! It was a very rare and expensive herb! Do you think you can catch the thief for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It's doubtful that there are thieves in #m105040300# so I'm certain that a thief from #m103000000# stole it! Can you go to #m103000000# to investigate and bring back my herb?" />
+                <string name="1" value="How should go about the investigation? Er, shouldn't you know that? Maybe look around and search for a witness? Try talking to someone you know in #b#m103000000#... I don't know. That's YOUR job!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I didn't think you would refuse. #p1040001# told me what a great person you are but I guess he was wrong." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've returned! So who was the thief? What? You haven't caught the thief yet?" />
+            <imgdir name="yes">
+                <string name="0" value="It's hard for me to believe that the Thieves in #m103000000# aren't responsible... But since they are willing to put their honor on the line to help find the culprit, I will trust them for now. Now, please find the thief." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Have you gone to #m103000000# yet? Until my herb is returned, I don't think I'll even be able to sleep at night. Please go to #b#m103000000# and start your investigation#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22534" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="22535" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="22536" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22532" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

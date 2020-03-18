@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1026.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering Nutritious Juice to Shanks" />
+        <string name="parent" value="Maria and Shanks" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="0" value="#b#p2103##k seems to need your help again." />
+        <string name="1" value="#p2103# asked you to give nutritious juice to #b#p22000##k, the captain of #b#m60000##k. Hmm...are they dating?" />
+        <string name="2" value="You gave #p22000# #p2103#'s nutritious juice. #p22000# looked happy...#p2103# and #p22000# are dating. The juice looks...pretty nasty, actually, but #p22000# seemed happy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031556" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031556" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm sorry to ask you for help again but I'm lucky to meet a kind adventurer like you. Can you do me a favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Ah! Thank you! I'm so glad to have a nice person like you in Maple World. Can you give this complete #b#t04031556##k to #b#p22000##k. He is a captain in #b#m60000##k. You can't miss him. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well. I've already asked two things. I' ve been annoying, haven't I?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Huh? What the matter? Ah. This is #p2103#'s special nutritious juice. Did #p2103# send you here? Thank you very much!  It's a great pleasure to have a nice partner." />
+            <imgdir name="yes">
+                <string name="0" value="Now, you are ready to take an adventure. Would you like to go to a new world? Once on board, I can show you #bVictoria Island#k. Once you leave, you can't come back though. What do you say?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't found #b#p22000##k yet. He's a captain in #b#m60000##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What's the matter? I'm willing to take you, if you're ready to leave Maple Island and start your adventure elsewhere! " />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost the nutritious juice! I'll give you more as I made some for you as well. But don't lose it. " />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="22000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031556" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1025" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

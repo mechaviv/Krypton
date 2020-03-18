@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20203.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knighthood Exam: Wind Archer" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="According to #p1101002#, you can take your Knighthood Exam if you see #b#p1101005##k, the Chief Knight of the Wind. Better head over to Ereve and meet #p1101005#." />
+        <string name="1" value="The Knighthood Exam has started. The test itself is actually quite simple. You just need to reach the end of the Training Forest, enter #bthe 2nd Drill Hall#k, and defeat the Mimis inside while bringing back #t4032098#. Better find #b30 #t4032098#s#k and bring them back to #p1101005# \n\n#i4032098# #t4032098# #b#c4032098# / 30#k" />
+        <string name="2" value="You have successfully completed the Knighthood Exam and officially dropped the &quot;in-Training&quot; from your title. As a bonafide Cygnus Knight, do your best to work hard so you will never be ashamed of yourself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Knighthood Exam... I suppose it's your turn to take it now. Based on your contributions to the Cygnus Knights, it only makes sense. Okay, I will grant you the right to take the Knighthood Exam. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The test is actually quite easy. Remember the Training Forest in which you trained back in the day? At the end of it, you'll find #bthe 2nd Drill Hall#k. There, your job is to defeat the Mimis and bring back #b30 #t4032098#s#k in return." />
+                <string name="1" value="If you can bring all the #t4032098#s, then I will grant you the right to become a Knight. At this point, I need your skills to do the talking." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you have the slightest of hesitation, it's good to dust them off first before taking on the test." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have brought #b30 #t4032098#s#k yet. Go to the end of the Training Forest. There, inside #bthe 2nd Drill Hall#k, you'll need to find #t4032098#..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032098" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q20203e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="1300" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

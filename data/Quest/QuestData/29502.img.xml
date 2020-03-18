@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29502.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Pink Bean Slayer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142008" />
+        <string name="0" value="#b#eTitle Challenge - Pink Bean Slayer#n(Special Title)\n#k#e#bPink Bean Slayer#k#n, the title given to the person who slays the most Pink Beans!  Dalair said that if I hunt a Pink Bean but don't report it to him, it won't count." />
+        <string name="1" value="#b#eTitle Challenge - Pink Bean Slayer#n(Special Title)\n#k\n - Pink Bean Hunting Record that Dalair knows about : #r#jmon##k \n\nThe person who reports the most Pink Beans hunted to Dalair will receive this title.  But, if I give up, I'll have to start all over from zero next time!" />
+        <string name="2" value="#b#eTitle Challenge - Pink Bean Slayer#n(Special Title)\n#k\n - Pink Bean Hunting Record that Dalair knows about : #r#jmon##k \n\nThe honorable '#bPink Bean Slayer#k' title is given to the one person who slays the most Pink Beans." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#i1140003##e#b#t1140003##k\n\n#nRaise Popularity by 20,000 \n\n\nDo you want to test your skills to see if you're worthy of this title?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I wish you the best.  There isn't a specific time limit, so whenever you think you're ready, come back and see me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Only one person who hunts the most Pink Beans can be the owner of this title. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <string name="endscript" value="q29502e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3521" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29502s" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

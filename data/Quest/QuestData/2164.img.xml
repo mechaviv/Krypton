@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2164.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Athena Pierce's Gift" />
+        <string name="parent" value="The Lost Letter" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="I'd better hurry and bring this orgel to Kyrin who is onboard on The Nautilus waiting for me, especially for Athena Pierce's sake who is dying to see Kyrin. Anyhow, it's amazing how deeply their fates are intertwined..." />
+        <string name="2" value="I've delivered the orgel to Kyrin per Athena Pierce's request. Kyrin seemed so happy- I guess it was a good thing that I picked up the letter from the trash after all?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031840" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031840" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030019" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I think Kyrin had been feeling guilty all this time about leaving Henesys without telling me. She shouldn't have felt that way, though. Can you help me give this item to Kyrin? If she sees this, maybe she'll summon up the courage to come visit Henesys after all these years." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. This is the orgel that she built when she was a kid. Her very first item, shall we say. She gave it to me as a present, and I've kept it after all these years. Please let #bKyrin#k know how much I miss her, and give this #borgel#k to her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah... will that be too much for you? I'll have to look for other ways, then..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm? You're here to give me an item from Athena Pierce?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh... this orgel... I can't believe she actually kept it after all those years... this orgel was my very first invention. Back when I was child, I would spend countless hours making this just for Athena Pierce..." />
+                <string name="1" value="I feel ashamed to have not summoned up the courage to meet her first. I better go pay a visit to Athena Pierce really soon." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I would really appreciate it if you can take this orgel and give it to Kyrin. She'll like it." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost it? No wonder... you dropped the orgel right here." />
+                <imgdir name="yes">
+                    <string name="0" value="It's an item I cherish, so please don't misplace it again, and give it to Kyrin this time around." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031840" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2163" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

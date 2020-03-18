@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20532.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mount in Danger" />
+        <string name="parent" value="The Birth of Shinjo" />
+        <int name="order" value="2" />
+        <int name="area" value="15" />
+        <string name="0" value="Let's show your #t1902006# to #b#p1102002#, the Mount Instructor#k." />
+        <string name="1" value="#p1102002# says your Mount is suffering because you've gotten too strong for your Mount to keep up. He says he can try to recover your weakened Mount by putting the Mount inside a special Incubator, which will cost you a usage fee of #b50,000,000 Mesos#k." />
+        <string name="2" value="You have given 50,000,000 Mesos to #p1102002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-50000000" />
+            <int name="nextQuest" value="20533" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A Mount is not just your ride but also your friend and companion. That is why your Mount is very dependent on you and easily affected by you. When you're strong, your Mount becomes strong. That's just how Mounts work. But, unfortunately, all Mounts have limits." />
+            <string name="1" value="Your Mount has become stronger as your companion, but #bit reached its limit as soon as you reached Lv.120 and became the Chief Knight#k. Simply put, you've become too strong for your Mount and your Mount cannot keep up with you." />
+            <string name="2" value="It's wonderful that you've become so strong, but your Mount is suffering because of it. We should tend to your Mount quickly. I'll first put your Mount in the special Incubator and see what I can do to recover its health. I don't know how effective this will be, but we should try everything we can, right?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="As you may have guessed, it will cost you some Mesos to use the Incubator. It will cost you even more to use the special Incubator, but what can you do? This is all for your Mount." />
+                <string name="1" value="I know it is a bit much, but bring me your #bMount along with 50,000,000 Mesos#k. I'll do everything I can to heal your Mount, so it can accompany you in your adventure." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="*sigh* I can't guarantee anything, but what can we do? We don't have many options. We have to try everything we can." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you brought your Mount with you? Alright, it will be 50,000,000 Mesos. I'll put your Mount in the special Incubator." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20531" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1112" />
+                <int name="1" value="1212" />
+                <int name="2" value="1312" />
+                <int name="3" value="1412" />
+                <int name="4" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3403.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. Kim's Comments : A Meeting with Hoony" />
+        <string name="parent" value="Dr. Kim's Comments" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="1" value="I met Hoony at a Field around Omega Sector, and showed him the #bBlueprint Machine#k, as well as provide him with #b20 Space Foods#k. Hoony said that he fixed #bGunny's Laser Gun#k that he was asked to fix and requested me if I could give him his #bLaser Gun#k as well as show him the Blueprint Machine. He should be somewhere around the Field. Where could he be..." />
+        <string name="2" value="Hoony wanted to show the Blueprint to Gunny. He was already on his way to give Gunny a new weapon, so he asked me if I could give him the new gun, as well as show him the Blueprint. After much searching around, I was able to finally find him and gave him the gun." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031100" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031101" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031101" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030011" />
+                    <int name="count" value="7" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3404" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Phew... I feel much better now. But #b#t4031100##k is really amazing! I really want to show #b#p2050007##k this... please find him somewhere around the fields. Oh, and please give him the #b#t4031101##k that I just gave you, too. He told me it was broken, so I fixed it for him." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, you have my #b#t4031101##k! I am guessing you ran into #b#p2050006##k first. Anyway, it's been tough for me to handle all these aliens by myself. Now, let's see if this gun is fixed right." />
+            <imgdir name="yes">
+                <string name="0" value="Whoa... this #b#t4031101##k ... it seems like it's actually working better than it did before it broke. And this... this must be the #b#t4031100##k  of the new robot that #b#p2050001##k had been working so hard on. This is incredible!! I truly believe with this robot, the aliens will be much easier to handle." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please find #b#p2050007##k around the fields, and show him the #b#t4031100##k that #b#p2050001##k gave you, as well as the #b#t4031101##k that I promised to fix for him. I'm sure he's having problems fighting the aliens without his main weapon." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Well, I was sent here on a mission, and one day, my precious #b#t4031101##k broke down on me. I gave it to #b#t2050006##k so he can fix it up quickly, but I'm guessing the fixing has taken longer than expected, and thus, I do not have a weapon to defend myself with. It's quite dangerous around here without a trusty weapon... I hope I can get that really soon..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no... did you lose either the #b#t4031101##k or #bBlueprint Machine#k that I gave you, by any chance? Good thing I put automatic-returning devices on both of them in case something like this happened. I'll give you another chance, so please show it to #b#p2050007##k the #b#t4031101##k as well as #b#t4031100##k ." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031101" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3402" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

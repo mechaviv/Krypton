@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8019.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I should talk to the Boss Kitty in kitty language." />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="5" />
+        <int name="area" value="30" />
+        <string name="1" value="Now that I mastered the kitty language, I should go talk to the Boss Kitty." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8010" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now that you've mastered the Kitty Language, go up to the Boss Kitty and start up a conversation with it." />
+            <imgdir name="yes">
+                <string name="0" value="Alright, good luck~!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Busy? Alright then, next time..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Ohhh~~~ not a human!!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8009" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

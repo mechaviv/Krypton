@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3429.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Pilot's Whereabouts..." />
+        <string name="parent" value="The Missing Dropship" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="1" value="I found what appeared to be a broken Dropship around Boswell Field, but the pilot is nowhere to be found, and instead, I was able to find a letter inside. I better give that letter to Kay." />
+        <string name="2" value="I found a letter inside the broken Dropship, and gave it to #bKay the Engineer#k at the Omega Sector Silo. With a sad look on her eyes, Kay said she was glad to find out the pilot was at least alive. Now, where would that pilot be...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031127" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="18000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031127" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The pilot, described by #b#p2051001##k, was nowhere to be found, but a hastily-written letter is found near the cockpit. The letter needs to be delivered to #b#p2051001##k of Omega Sector Silo." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're back. I've been waiting for you to come back with good news. How is it? Did you find the lost Dropship at the Boswell Field? How about the pilot? Did you find anything about him? If you found any clue whatsoever inside the Dropship, please show me right now." />
+            <string name="1" value="Ohh... so you were unable to find the pilot, but you did find a letter near the cockpit. If the letter's there, that means he's alive somewhere!!! Please show me the letter immediately. Let's see... the handwriting looks like his... he must have written this in a hurry. Hmm..." />
+            <imgdir name="yes">
+                <string name="0" value="It looks like he was attacked by the aliens on his way back from a mission. He tried to survive the attack, but once the Dropship got busted, he decided to leave the place to save his life. I am not sure if he's alive now, but I really would like to believe that he is indeed alive and well." />
+                <string name="1" value="Thank you so much for all your help. Actually, the Sector had pretty much given up on this, and this had been quietly ran by myself and #b#p2050013##k. We may not have been able to find him, but I'm glad we at least have a chance that he's alive. Well, I'll have to get back to the studies now..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The Dropship appears to be broken. Observing the Dropship, it looks like a property of Omega Sector. Inside, a letter is found. The letter needs to be delivered to #b#p2051001##k of Omega Sector Silo." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you searched the Boswell Field? It looks like the Dropship has been found, and the clues were inside for the taking, but I think you lost it on your way back here. Please check the Dropship again to check out the whereabouts of the pilot. It doesn't really matter what happened to the Dropship, as long as the pilot's fine..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="The Dropship appears to be broken. Observing the Dropship, it looks like a property of Omega Sector. Inside, a letter is found. The letter needs to be delivered to #b#p2051001##k of Omega Sector Silo." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2051001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031127" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050020" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3428" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

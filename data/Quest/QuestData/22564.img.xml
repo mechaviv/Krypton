@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22564.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knowledge about Dragons 3" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p1032001##k starts talking to you. Has the #t4032467# been verified?" />
+        <string name="1" value="According to #p1032001#'s friend Tatamo, it's certain that #p1013000# is an Onyx Dragon. He asks that you come to #m240000000# if you want more details. Go to #b#m240000000#.#k.\r\n" />
+        <string name="2" value="You met Tatamo in #m240000000#. He was very happy to see #p1013000# and told you about Onyx Dragons and how they became extinct..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I finally heard back from Tatamo! He says the owner of the scale is definitely an Onyx Dragon! Since he's spent much of his life with Dragons and has raised a number of Baby Dragons, he can't be wrong." />
+            <string name="1" value="Tatamo is very curious as to how you were able to find the scale of an Onyx Dragon. Honestly, I'm extremely curious myself, but I won't ask since you seem to want to keep it a secret." />
+            <string name="2" value="Anyway, Tatamo has asked me to tell you that you should go see him in #m240000000# and discuss what you know about Onyx Dragons. He says he'll tell you what he knows about them as well. If you're interested, go over to #b#m240000000##k." />
+            <string name="3" value="#m240000000# is a dangerous place. Monsters in #r#m240000000# are at least Lv. 70#k! if you don't feel comfortable battling monsters like that, #rdo not go out into the field.#k Be careful out there and come back safely." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Hm, I guess you're not that curious." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to Leafre yet? Tatamo is desperately waiting for the Onyx Dragon... I mean, you. He's desperately waiting for you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <string name="endscript" value="q22564e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22562" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="42" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

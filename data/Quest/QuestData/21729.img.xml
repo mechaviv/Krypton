@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21729.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="4th Assignment Completed" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your fourth assignment as an informant and while you've found the puppeteer's cave, you need a password to enter. Maybe #p1061019# knows what the password could be? Go talk to #b#p1061019##k in #b#m105040300##k." />
+        <string name="1" value="#p1061019# says that he doesn't know anything about the password but says that he saw the puppeteer scribble something onto #p1061006# that just might be the password. Find out what the password is by talking to #b#p1061006##k and tell #b#p1002104##k the password is as well.\r\n\r\n#y21730# #b(#u20730#)#k" />
+        <string name="2" value="So you found out the password but decided to first return to #p1002104# and debrief him on the case. This concludes your fourth Informant Assignment. Next up, Operation Puppeteer Headquarters?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="So, was the case of the #o2230101# was also related to the puppeteer, right? He has now appeared in #m100000000#, #m101000000#, #m102000000#, and #m105040300#... We have yet to solve this case, but I hear that similar things occurred at Kerninig City. Seriously, how does this guy go from one end of the island to the other in such a short amount of time?\n#b#L0#(You tell him about the Puppeteer's Cave.)#l\n#k" />
+            <string name="1" value="What? You found his headquarters? This is amazing, And you also figured out the password? Not bad, not bad! I can see that you're a hero for a reason. You make up for your lack of experience as an informant with enthusiasm and hard work! You are indeed a hero." />
+            <imgdir name="yes">
+                <string name="0" value="Wait, the last time the puppeteer met you, he revealed that his name was #p1204001#, so the password must be '#bFrancis is a genius puppeteer'!#k Okay, this is perfect." />
+                <string name="1" value="Now that we know where the puppeteer lives, all we need to do is attack the cave! But it may be very dangerous, so you should train a bit more while I come up with a plan. Talk to me when you reach Level 29." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Thank you so much for your help. The #o2230131#s are still the same but I'll try to become more courageous. Please give my thanks to #b#p1002104##k, too. By the way, what do you think the puppeteer kid wrote on the #b#p1061006##k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21730" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061019" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21728" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21729s" />
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29512.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Monster Expert" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142083" />
+        <string name="0" value="#b#eTitle Challenge - Monster Expert#n\nCollect #k#b30 Monster Cards#k. Dalair, on behalf of the God of Honor, is looking for explorers who know everything there is to know about the monsters in Maple World. He says anyone who collects more than 30 Monster Cards will receive the #bMonster Expert#k#n title." />
+        <string name="1" value="Collect the Monster Cards, which will help you understand the tendencies, habitats, and dropped items of various monsters. Some cards have special powers that will help you in your adventures." />
+        <string name="2" value="#b#eTitle Challenge - Monster Expert#n#k\n\nYou have received the #bMonster Expert#k title and the associated medal." />
+        <string name="demandSummary" value="Acquire at least 30 Monster Cards." />
+        <string name="rewardSummary" value="#Wbasic#&#xD;&#xA;#v1142083:##t1142083:# 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142083" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142083:# #e#b#t1142083##k\n\n - Must acquire 30 or more Monster Cards.#n\nWould you like to test yourself to see whether you have what it takes to be the owner of this medal?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can collect up to 5 cards of the same type, and you can learn about the monster in detail when you acquire the cards. Some cards have special powers that can help you in your adventures. Come and see me when you collect #b30 cards#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm, what a shame. You'd receive useful information on monsters, which would help you in your adventures." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let's see if you have what it takes to be called a #bMonster Expert#k. How many cards have you collected?" />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, announce to the world that you are the owner of the #bMonster Expert#k title.  If you want to try out for a new title, come back and see me any time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You must have at least  #b30#k cards to receive the #bMonster Expert Medal#k. Come and see me when you've collected at least 30 cards." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <int name="mbmin" value="30" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

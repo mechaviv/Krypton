@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9988.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Francois' Latest Work" />
+        <string name="parent" value="Snow Silk and the Mysterious Fabric " />
+        <int name="order" value="3" />
+        <int name="area" value="50" />
+        <string name="0" value="Mysterious Fabric that I got from Arwen... What should I make with this?  Should I go see Francois like Arwen mentioned?  But she seems a little strange though..." />
+        <string name="1" value="As Arwen suggested, I went to go see Francois with the Mysterious Fabric.  Francois said she will make me her latest creation and asked me to bring her one more ingredient; an item that is common but not ordinary, small but possessing great power... She wants me to bring her #b50 Maple Leaves#k...\n\n#i4001126# #t4001126# #b#c4001126# / 50" />
+        <string name="2" value="After contemplating what to do make with the Mysterious Fabric I received from Arwen, I decided to go see Francois as Arwen suggested.  Francois told me she would make me an item she just recently created and asked me to bring her 50 more Maple Leaves.  She then made me a #bMaple Cape#k.  Wow~ this is great!  " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031945" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102166" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What brings you to me?\r\n#b#L0#I want to make something with the Mysterious Fabric.#l" />
+            <string name="1" value="Hey!  Where did you get the Mysterious Fabric?  No, no, no, that's not important.  So you want to make something with it, is that right?  Then you've come to the right place.  Hehe... so, are you willing to trust me with it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You made the right choice.  You can't just make anything with a Mysterious Fabric, don't you agree?  I recently learned how to make a new cape.  it would be awesome to make the cape with the Mysterious Fabric.  But I'm short on the materials right now.  I need a special something." />
+                <string name="1" value="I heard monsters are carrying interesting items these days.  It's common but not generic, small yet powerful.  Bring me #b50 Maple Leaves#k.  If you do, I'll make you a truly special cape." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're making a mistake.  A big make...(mumbling)" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow~ that was fast.  Good, good.  I like your passion.  Now, wait here.  In order to get a great item, waiting is just part of the process." />
+            <imgdir name="yes">
+                <string name="0" value="Tada~ It was a great success.  What do you think?  Isn't it great?  This cape is truly a one of a kind.  Hehe... It's almost too good to be giving it away to you...." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9987" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031945" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+        </imgdir>
+    </imgdir>
+</imgdir>

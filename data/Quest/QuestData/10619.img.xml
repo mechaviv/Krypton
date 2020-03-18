@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10619.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dual Blade - Everyday 2X Buff!!" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="Dual Blade Launch Event! Receive a 2X Buff everyday!" />
+        <string name="1" value="Dual Blade Launch Event! Receive a 2X Buff everyday!\r\n#bEvent Period&gt;\nJul. 14th, 2010 - Aug. 5th, 2010" />
+        <string name="2" value="Dual Blade Launch Event! Receive a 2X Buff everyday!\r\n#bEvent Period&gt;\nJul. 14th, 2010 - Aug. 5th, 2010" />
+        <string name="demandSummary" value="#i3994193:# #t3994193:# #c3994193# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="#Wselect#\r\n#i2022694:# #t2022694:# 1 \r\n#i2450018:# #t2450018:# 1\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994192" />
+                    <int name="count" value="1" />
+                    <int name="period" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994193" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022694" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2450018" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello! The long-anticipated new job #b#eDual Blade#n#k has been launched. They're faster than shadows! They're stronger than dragons! Please welcome the new Dual Blades!" />
+            <string name="1" value="If you hold onto the Dark Feather I'm giving you for 15 minutes, it will turn into a beautiful Bright Feather. Return the feather to me and I'll give you a #b2x EXP Buff#k or a #b2x Drop Rate Buff#k, whichever one you want!\r\n#i2450018# #t2450018#\n#i2022694# #t2022694#" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, it starts now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You can participate once a day, so why not take advantage of this opportunity?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you hold onto the Dark Feather I'm giving you for 15 minutes, it will turn into a beautiful Bright Feather. Return the feather to me and I'll give you a #b2x EXP Buff#k or a #b2x Drop Rate Buff#k, whichever one you want! \r\n#i2450018# #t2450018# or #i2022694# #t2022694#" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994193" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10619e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994192" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3994193" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="201002190000" />
+            <string name="end" value="201008180000" />
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

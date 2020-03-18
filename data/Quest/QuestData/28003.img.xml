@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alcaster's Reply" />
+        <int name="area" value="50" />
+        <string name="0" value="Alcaster says he has something for Snow Spirit." />
+        <string name="1" value="He handed me a reply letter to Snow Spirit, a note that contains the exact method we should take to defeat Scrooge. I better go see her right now!" />
+        <string name="2" value="I gave the Snow Spirit Alcaster's reply letter. She stood quietly for a moment, then gave me something called Force of the Spirit, which she said was the key to defeating Scrooge. What exactly is this?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032093" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032093" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032092" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, this is not good. Scrooge is back?!  We cannot let him steal the hopes and dreams of the good residents of Happyville... That just cannot happen... now hold on for minute... here's the letter I want you to give to Snow Spirit. Please help us one more time by seeing her immediately and hand her this letter. Will you?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I'll be counting on you. The fate of Happyville and Maplemas lies in your hands. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I did not expect you to say no, but... since you're already here to help us, wouldn't it only make sense to help us once more? Please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I have been waiting for you, #b#h0##k! How was Alcaster doing? Oh... okay... yes... I knew he would write back! Let me see what he wrote." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for your help. We will be able to protect Happyville with this. Let me see what it say. (After finishing the letter, she starts thinking for a bit...) #b#h0##k... I want you to listen carefully to what I am about to say. First, take this Force of the Spirit. This is the key to defeating Scrooge." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you not go see her yet? Happyville is rather easy to find. Just find Rooney and ask her to take you to Happyville." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9105003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032093" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2008123100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

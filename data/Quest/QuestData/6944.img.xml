@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6944.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Attributes of a Hero" />
+        <string name="parent" value="The Ultimate Stage of the Pirate" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081500##k tells me that I need to prove my attributes as a hero in order to make the 4th level job advancement. To prove my eligibility, I must bring #b#t4031518##k and #b#t4031517##k. \r\n#i4031860##t4031860# #b#c4031860#/1#k\r#i4031861##t4031861# #b#c4031861#/1  " />
+        <string name="2" value="I took the #b#t4031518##k and #b#t4031517##k and proved my readiness. He told me that I am finally ready to be a hero and to come and talk to him when I'm ready to make the 4th level job advancement. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031860" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031861" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I will now give you the last task required to complete the 4th job advancement." />
+            <imgdir name="yes">
+                <string name="0" value="It is your mission to acquire two items that I assign to you. I want #b#t4031517##k and #b#t4031518##k." />
+                <string name="1" value="How you will acquire these items, I'll leave that up to you. If you want to acquire by fully utilizing your courage and physical capabilities, then you should get them through #bManon and Griffey#k. If you want to acquire them using brains and wisdom, then head to Leafre and see #b#p2081000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What is there for you to fear? You are walking the path of Pirate greatness, and you don't wish to encounter hardship?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have proven your worth as a person that can be called a hero." />
+            <imgdir name="yes">
+                <string name="0" value="What you'll need to do now is to keep walking the path of great Pirates. Talk to me when you are ready to make the job advancement." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have acquired #b#t4031517##k and #b#t4031518##k, yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031860" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031861" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081500" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6943" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="511" />
+                <int name="1" value="521" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

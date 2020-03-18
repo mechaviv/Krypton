@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3228.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Recovered Memory" />
+        <string name="parent" value="Korin's Memory" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="1" value="After defeating a bunch of #bMateons#k at the Boswell Field, I went through their stuff and found 5 #bMemory Pieces#k that contained Korin's lost memories. I gave them to Agent Marco, and he proceeded to put the 5 together into one whole piece of #bKorin's Memory#k. Now all I have left to do is give this piece of memory back to Korin." />
+        <string name="2" value="I gave Korin her lost memories through the man in Omega Sector wearing black suits, #bAgent Marco#k. She was initially disoriented after recovering her memories, but she promised to fully enjoy life the way she used to before the kidnapping. Hopefully that'll never happen again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031091" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2550" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031091" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, it's done. Now, take this 'memory' to #b#p2041015##k, and she'll probably be able to recover her lost memory. She'll go through an initial stage of shock the moment she recovers the memory, but that's the price she'll have to pay for that. I have a lot to do, so if you'll excuse me..." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, you're back! What?? The man in black suit told you that I spent the last 10 months being abducted by the aliens? I can't believe this ... aliens?? Do they even exist? I can't believe what I'm hearing... I can't believe you." />
+            <string name="1" value="Hmmm... What's that you're holding? Is that ... what the ...?? Is that ... the lost memory of mine?? Okay, now you have turned my lost &quot;memories&quot; into an object... and I'm supposed to trust you?? But ... well, maybe I should just go there and take a look at the item. Maybe it is what it really is, a lost memory. Let's see...." />
+            <imgdir name="yes">
+                <string name="0" value="Arrrgh ... this ... this ... oh my goodness ... now I remember everything. Yes, I had been abducted by the aliens who call themselves #bMateons#k. They were trying to extract any information regarding Ludibrium and Omega Sector from me, but I refused..." />
+                <string name="1" value="I finally escaped their wrath after spending countless days being held captive. They followed me for a while, but I successfully found refuge in Omega Sector, after which I got safely sent home. Whew... thank you so much for helping me recover my lost memories. There are still some loose ends that need to be addressed, but..." />
+                <string name="2" value="Anyway, without your help, I would have probably spent the rest of my life wondering whatever happened in those 10 months. Did you like the small reward I gave you for your hard work? Use that scroll on the hat / helmet you're currently wearing, and it'll significantly improve its stats. Thank you so much for helping me out. Good bye." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please give #b#t4031091##k to #b#p2041015##k so she can recover her lost memories. She'll probably be in a state of shock at first, but she'll be fine. Please go see her immediately." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... It seems like you have met the man in black suit that I described for you. Did you find out anything new? What did he Say about my lost memories? Please revisit him and find out more information about me. Thanks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041015" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031091" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3227" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

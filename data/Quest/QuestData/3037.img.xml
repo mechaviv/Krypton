@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3037.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nick's Ring" />
+        <string name="parent" value="Nick, the Son of Scadur the Hunter" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="At the bottom of a chipped part of the statue was what appeared to be Nick's #bring#k. A name is engraved on it, and I suppose Scadur can read out the name for me.\n\n#t4000079# #b#c4000079##k/80\n#t4031060# #b#c4031060##k/1  " />
+        <string name="2" value="I found Nick's ring at the lava cave, and I also collected a number of Cerebes's teeth, getting them all to Scadur. Hopefully Nick will be satisfied with this. I got a cape from Scadur that's been passed down from generation to generation ... this ain't bad at all!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031060" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="21415" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031060" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102021" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102022" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1102023" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1102024" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000079" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="There seems to be a little bit of room below #b#p2030007##k, and, looking into it, there seems to be a sparkling item in there. Should I stretch my arm out and get that item?" />
+            <imgdir name="yes">
+                <string name="0" value="I found what appears to be the #b#t4031060##k of #b#p2020007##k's son." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is IT! This is the ring my son Nick wore ...! Only two people in this world have this ring, my son and me. It has our name engraved on it at the cover. I can't believe I'm seeing this ring again, after all that happened. Thank you! Thank you SO MUCH!" />
+            <string name="1" value="And you also took out #b#m7130001##k and collected a lot of #b#t4000079##k, just the way my son had wanted. Scares me just looking at these... anyway, Nick should be pleased with all this in heaven ..." />
+            <imgdir name="yes">
+                <string name="0" value="Since you have taken care of my request so well, I'm a much happier man today than I was for a long long time. All right, then. I'll give you the cape that has been passed down through generations at our household. I've been taking good care of this cape, but it may serve its real purpose with you wearing it. Please take it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="There seems to be a little bit of room below #b#p2030007##k, but no matter how much I look into it, I can't find anything in there." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't found #bNick#k's ring, yet? It should be at the lava cave at the inner part of the mine ... and, as my son has wished, please take down #b#o7130001##k in the cave and collect #b100 #t4000079#s#k. Thank you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031060" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000079" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3036" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+        </imgdir>
+    </imgdir>
+</imgdir>

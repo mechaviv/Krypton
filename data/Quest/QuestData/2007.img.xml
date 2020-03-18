@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Sparkling Rock" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="6" />
+        <int name="area" value="30" />
+        <string name="1" value="Sophia looks genuinely surprised when you hand her all the materials needed for the #bsparkling rock#k. Well, it wasn't easy! Anyway, she hands over a #bsparkling rock#k made of the materials you gathered. Hmm, the #bsparkling rock#k...gives off a strange light and then...starts glittering, and...whoa, now you understand why people want this! It's mesmerizing! Well, now you just have to do it trade it with Teo in Lith Harbor." />
+        <string name="2" value="Sophia looked genuinely surprised when you handed her all the materials needed for the #bsparkling rock#k. Well, it wasn't easy! Anyway, she handed back a #bsparkling rock#k made of the materials you gathered. Hmm, the #bsparkling rock#k...gives off a strange light and then...starts glittering, and...whoa, now you understand why people want this! It's mesmerizing! Well, now you just have to do it trade it with Teo in Lith Harbor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031004" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2008" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Here, take this #b#t4031004##k. What do you plan on doing with it? It is a special item, indeed, but unless you're collecting stones, it's sort of useless..." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh...this... it's a #b#t4031004##k!! How did you get this? That's just incredible! How about trading that stone with me? I'll give you some #b#t4031006##k in return!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What did you do with the #b#t4031004##k? I see... That stone is coveted by many, but so many materials are needed for it, that you're actually the first one to ever gather all of them. Hopefully you'll put this to good use..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Didn't get the #b#t4031004##k yet? Oh well, it's not the easiest things to acquire. Ah, so gorgeous when it shines like a star... Hurry and go see #r#p1022100##k at the department store in #b#m102000000##k." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Here, take this #b#t4031004##k. What do you plan on doing with it? It is a special item, indeed, but unless you're collecting stones, it's sort of useless..." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2006" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

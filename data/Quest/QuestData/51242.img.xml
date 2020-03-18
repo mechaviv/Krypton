@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51242.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Unidentified Spaceship" />
+        <int name="area" value="50" />
+        <string name="0" value="An unidentified spaceship has crashed in Maple World. Talk to #b#p9250156##k, who is in each town, and go to the spaceship crash site." />
+        <string name="1" value="A spaceship presumably belonging to aliens has crash landed in Maple World. An organization called the OSSS seems to be investigating it. Investigate the cube-shaped spaceship and defeat the leader of the aliens before returning to #b#p9250154##k." />
+        <string name="2" value="You explored the alien cube and defeated the Ultimate Visitor.\r\nBut why do you feel as if you've been here before..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, I'm Wynn, an OSSS Researcher. Are you here because you heard the news?\r\n#L0##bYes. Whoa! A spaceship really did crash!#l\n#k" />
+            <string name="1" value="We've done a preliminary investigation of the interior. The beings, which we presume to be aliens, are inside and they seem to have a leader commanding them.\r\n#L0##bBeings presumed to be aliens...? What could they possibly want from us?#l\n#k" />
+            <string name="2" value="That's what I want to find out. We need people to go in and investigate. Interested?\r\n#L0##bYes. That's why I'm here!#l\n#L1#Nah, sounds dangerous.#l\n#k" />
+            <string name="3" value="You are very brave. \r\nSo, will you accept?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Okay, enjoy your stay then..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Please talk to me again and I will let you in." />
+                <string name="1" value="Once you've investigated the Cube, don't forget to report back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you finished exploring the Spaceship?\r\n#L0##bYes. I fought quite a few aliens. In the last cube, I encountered a very powerful alien.#l\n#k" />
+            <string name="1" value="Were you able to find out anything about their purpose?\r\n#L0##bNo. They refused to talk. The strange thing is... I felt like I've been there before.#l\n#k" />
+            <string name="2" value="You did?\r\nThat is strange...I also feel as if I've experienced this before. Others have said the same.\r\nIt's as if we all had the same dream.  " />
+            <imgdir name="yes">
+                <string name="0" value="In any case, thank you. You've been a lot of help.\r\nYou can re-enter anytime you wish. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Please be safe." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250154" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420067" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250154" />
+            <int name="lvmin" value="120" />
+            <int name="lvmax" value="200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

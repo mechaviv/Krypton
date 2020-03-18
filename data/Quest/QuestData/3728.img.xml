@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3728.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Temporary Relief" />
+        <string name="parent" value="Year 2099- The Harbor" />
+        <int name="order" value="5" />
+        <int name="area" value="41" />
+        <string name="1" value="When you meet Captain Edmond in 2099, he asks you bring him 20 Overlord A Radar Devices and 40 Overlord B Radar Devices to temporarily stop the monsters at the harbor." />
+        <string name="2" value="When you met Captain Edmond in 2099, he complained that he didn't approve of the monsters that overtook the harbor. He then asked that you bring him their radar devices, which you did." />
+        <string name="demandSummary" value="#i4000548:# #t4000548:# #c4000548# / 20&#xD;&#xA;#i4000549:# #t4000549:# #c4000549# / 40&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 75,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="75000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000548" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000549" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Look here. The harbor has been entirely overtaken by monsters. The harbor represents the dream and dignity of the men of the sea, and I can't bear to just watch those monsters stomp all over that. I'm planning to drive them out. You seem young and capable. Why don't you help me, huh?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright! If you have been observing these monsters, you'll know that they have Radar Devices that operate as their eyes. If you eliminate those Radar Devices, they won't be able to do a thing. Bring me 20 Overlord A Radar Devices and 40 Overlord B Radar Devices. This isn't going to put a stop to the problem, but it'll earn us some time." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're young, yet you lack determination and courage. Hmph." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ha, sensational! Thanks to your hard work, I can sit back and watch these monsters completely lose their sense of direction. Even the thought of it makes me laugh." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you bring me 20 Overlord A Radar Devices and 40 Overlord B Radar Devices?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000548" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000549" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3727" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

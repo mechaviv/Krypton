@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maya of Henesys" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="You hear that #p1012101# is very sick..." />
+        <string name="1" value="A girl named Maya in Henesys has been ill for a long time. It looks like she can't live a normal life at all. You agree to help her. #bWeird Medicine#k... What a strange name! She says she'll get a little better by taking that... You should go to Lith Harbor and see this guy Teo..." />
+        <string name="2" value="Maya wanted you to go see Teo of Lith Harbor, so you did just that. He promised to give you the Weird Medicine only after you get him a Sparkling Rock. Geez, he won't even give any free medicine for a sick girl?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2003" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Cough...cough... Oh, hello stranger. Sorry, but may I ask you for a favor? I've been sick for a while, and the doctors can't do anything. Lately, it has gotten so bad I can't even take care of myself." />
+            <string name="1" value="Is there any way you can get me some #b#t4031006##k? I am not sure exactly how to get that, but #r#p1002001##k from #b#m104000000##k may know a thing or two about it. Please help me. Cough...cough...Pardon me." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met up with #r#p1002001##k, yet? #p1002001# from #b#m104000000##k can definitely help you find some #p1002001#. Please...talk to him for me..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

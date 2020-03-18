@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22583.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Releasing the Free Spirits" />
+        <int name="area" value="7" />
+        <string name="0" value="The item that #p1013203# was talking about seems to be ready. Go to the #b#m922030000##k, the Black Wings hideout in #m220000300#." />
+        <string name="1" value="#p1013203# gives you the pouch containing the spirits and tells you to go the #b#m922030010##k. He tells you to climb the ladder, placed there in advance by another member, and once there, to #release the Black Pouch and free the #t4000144#s in order to chase everyone away#k. He wants you to return to him once everyone's gone...\r\n\r\nThis is kind of strange. Why does he want to free the spirits? Why chase everyone away?\r\n\r\n#o9300389##r #a225831##k" />
+        <string name="2" value="You returned after releasing the spirits at the #m922030010# on top of #m922030000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430032" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="64900" />
+            <int name="nextQuest" value="22584" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The mission is not yet complete. Here, take this pouch. It contains the #t4000144#s you've collected. Take this pouch and go to the #b#m922030010##k at the Clocktower in #b#m220000000#." />
+            <string name="1" value="Go to #m922030010# and you will see a ladder that another member has set up. Climb it, and when you get to the top of the ladder, open the pouch and set the #t4000144#s free. That's all you have to do." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You must do it quickly and carefully. Just release the #b#t4000144#s so that they destroy all the other creatures there#k. Everything, besides you, needs to be completely eliminated. I'm depending on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? I thought you'd take on this mission..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You released the #t4000144#s? Thank you. You are truly amazing. This means that all the guards have been distracted. Next, we'll just have to take care of #o9300390# and the #rSeal Stone#k is ours... Oh, haha, never mind.\r\n#L0##bUh, I have a question I've been wanting to ask.#l\n#k" />
+            <string name="1" value="I'm sorry, but your mission is not yet complete. Please complete one more job and I will tell you whatever you want to know.\r\n#L0##b(The guards were pretty angry about the #t4000144#s. Is this really the right thing to do? You want to ask, but #p1013203#'s already started talking about the next mission. You might as well complete this mission, then ask.)#l\n#k" />
+            <string name="2" value="Here is your next mission." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="So you haven't gone to #b#m922030010##k yet? Take the pouch I gave you and unleash the spirits before you come back and see me. Oh, if you've lost the pouch, forfeit the quest and come talk to me again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300389" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013203" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22582" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="68" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

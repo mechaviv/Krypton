@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making a Sparkling Rock" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="You meet Sophia in the department store in Perion. She's working on her dream to be an alchemist. To make the sparkling rock, she says she needs #b50 squishy liquids, 50 leaves, 20 octopus legs#k and #b1 Arcon's blood#k. Everything looks reasonable enough...wait, Arcon's blood?! Fortunately, Sophia knows where to get some. She says to have a chat with Manji, who's somewhere around Perion." />
+        <string name="2" value="Sophia told you that Manji has some Arcon's Blood, a key ingredient to make a sparkling rock." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2005" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So you are looking for a #b#t4031004##k? That stone is very rare. Alright then, get me the items, I list. Ready?" />
+            <string name="1" value="#b50 #t4000004#s#e#n, 50 #t4000005#s#e#n, 20 #t4000006#s#e#n#k and #b1 #t4031005##e#n#k. Everything should be fairly easy to get. Except for the #t4031005#. You should ask #r#p1022002##k about that one. He is somewhere around town." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you have 50 #b#t4000004#s#e#n #k, 50 #b#t4000005#s#e#n #k, 20 #b#t4000006#s#e#n#k, 1 #b#t4031005##e#n#k, you can make 1 #b#t4031004##k... You should ask #r#p1022002##k about the #t4031005#... I think he is somewhere around #m102000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2003" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

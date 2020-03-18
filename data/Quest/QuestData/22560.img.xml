@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22560.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Condition for Joining the Secret Organization 1" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="The #b#p1063018##k has suddenly started talking to you... What could it be about?" />
+        <string name="1" value="The #p1063018# says he told his master about you and that you can join the secret organization if you fulfill a few conditions. He asks that you eliminate the #o3230100#s. Go to the #b#m105040200##k and eliminate the #r#o3230100##ks.\r\n\r\n#o3230100##r #a225601##k" />
+        <string name="2" value="You elminated the #o3230100#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15800" />
+            <int name="nextQuest" value="22561" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Wow, you've defeated all 150 #o3230100#s! My master will be very happy! Let me go ask my master if you can join the secret organization." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r150 #o3230100#s#k, huh? Go over to #b#m105040200##k and eliminate the #o3230100#s. You'll then be able to join the secret organization." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1063018" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3230100" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1063018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22553" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22560s" />
+            <int name="lvmin" value="36" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

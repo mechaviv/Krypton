@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search of Its Rightful Owner" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 30, #b#p1201000##k strikes up a conversation with you…" />
+        <string name="1" value="#p1201000# tells you that the polearm is acting strange and that it might be trying to send you a message. You'd better head to #b#m140000000##k and check on the state of the #bpolearm#k." />
+        <string name="2" value="Standing in front of the polearm is a strange-looking boy who you've never met before. Who is that? That kid does look a bit familiar. What? That boy is #p1201001#? No way…!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How is training going? Wow, you've reached such a high level! That's amazing. I knew you would do just fine on Victoria Island... Oh, look at me. I'm wasting your time. I know you're busy, but you'll have to return to the island for a bit." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Your #b#p1201001##k in #b#m140000000##k is acting strange all of a sudden. According to the records, the Polearm acts this way when it is calling for its master. #bPerhaps it's calling for you.#k Please return to the island and check things out." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <string name="endscript" value="q21200e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <string name="startscript" value="q21200s" />
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

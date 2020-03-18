@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6905.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tatamo's Suggestion" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#p2081100##k told me to see #b#p2081200##k in Leafre if I want to get #b#t4031343##k and  #b#t4031344##k." />
+        <string name="1" value="#b#p2081000##k told me to bring #b#t4031348##k to get #b#t4031343##k and  #b#t4031344##k.  He says the merchants in another town have the secret magic book. \r\n#i4031348##t4031348##k #b#c4031348#/1" />
+        <string name="2" value=" I gave #b#t4031348##k and received  #b#t4031343##k and  #b#t4031344##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031344" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031343" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031348" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I heard about you from the 4th Job Instructor in the Forest of the Priest. You want the 4th job advancement, right?" />
+            <string name="1" value="You need #b#t4031343##k and #b#t4031344##k. If you do one thing for our town, I'll give you what you want. Can you prove you're a hero?" />
+            <imgdir name="yes">
+                <string name="0" value="This forest and the dragons that inhabit it protect herrings, which protect the eggs of the dragons who protect the forest. But we think we need to protect ourselves. They're fairly dangerous. I've also heard of a mighty dragon known as Horntail, somewhere outside of town. His power is said to be unrivaled..." />
+                <string name="1" value="At any rate, I heard that those merchants who sell order sheets in the other town sell #b#t4031348##k, which can help the owner of the sheet. We might as well protect our town and Minar Forest with the order sheet." />
+                <string name="2" value="Can you get me the order sheet for our town? \r\nThen I'll give you what you're looking for." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's ok not to accept my suggestion. You can get what you want a different way." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You finally got #b#t4031348##k!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your kindness. This document will be a great help for our town. \rYou have the heart of a true hero." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you found #b#t4031348##k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031348" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6904" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031343" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031344" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="111" />
+                <int name="1" value="121" />
+                <int name="2" value="131" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

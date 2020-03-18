@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2242.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stay Away From Strangers" />
+        <int name="area" value="30" />
+        <string name="0" value="Mu Young says he's met a strange man. Could it be someone who is related to the impending revival of Balrog? Let's go find Mu Young." />
+        <string name="1" value="Mu Young claims that he spotted a strange man at the entrance of the Underground Temple. He has asked you to look into this and see if you can gather some information about the man. Let's investigate the strange man." />
+        <string name="2" value="Mu Young claims that he spotted a strange man at the entrance of the Underground Temple. At the request of Mu Young, who has asked you to look into this strange man to see if you can gather some information, you began your investigation." />
+        <string name="summary" value="Let's start a conversation with the strange man." />
+        <string name="rewardSummary" value="EXP 10,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you seen a strange man on your way down here? I haven't seen a single person around here in ages, and it seems a bit odd that this person suddenly appeared out of nowhere. Isn't that weird? He even had chains around his ankles! I can't stop wondering who this person is. How do you feel about investigating him?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. Could you talk to him and distract him while I investigate? Go on ahead and I'll be right there behind you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't you think he's a bit strange? I'm so curious, I can't stand it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What a beautiful day it is. I know you and that other man are here to see what you can find out about me, but I'm just a person like you. I have nothing to reveal, so stop wasting your time and energy, and just go back to where you came from.\r\n#b#L0#Who are you?#l\n#k" />
+            <string name="1" value="As you can see, I'm just an ordinary person. Ah, but I do have a special talent. Come back and see me later and I'll show you my trick. It'll be entertaining. I doubt your friend with the hat will come though. Hahaha." />
+            <imgdir name="yes">
+                <string name="0" value="I know a lot about rare treasures." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Start a conversation with that strange man and distract him. I'll be right there behind you. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061016" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2235" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

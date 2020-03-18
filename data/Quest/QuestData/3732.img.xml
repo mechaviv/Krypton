@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3732.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rambunctious Robots" />
+        <string name="parent" value="Year 2215- The Bombing" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="You meet May in the middle of the Bombed City Center in the year 2215. What's she doing in the destroyed City Center? In any case, she asks you to defeat the Robbies that appeared after the bombing. She says they're so loud and rambunctious that she's about to have a nervous breakdown." />
+        <string name="2" value="You met May in the middle of the Bombed City Center in the year 2215. She asked you to defeat the Robbies that appeared after the bombing. She said they were so loud and rambunctious that she was about to have a nervous breakdown. Well, that worked out since you were thinking about getting rid of those noisy robots anyway." />
+        <string name="demandSummary" value="#o7120108# #a37321#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 90,000\r\nCan participate in the &quot;Survivor Search&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="90000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello there, #b#h0##k. This is a very dangerous place. It was bombed recently, and I must warn you that walking around like you are doing right now poses a threat to your safety.\r\n#L0##bHow did you know my name? And how did this happen?#l\n#k" />
+            <string name="1" value="How do I know your name? That's a secret. I have to wipe out these noisy robots. They keep beeping rambunctiously, and it's driving me crazy. Won't you help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="On the day of the bombing, I woke up and the City Center was already destroyed. It's been overtaken by those noisy robots. I'm THIS close to having a nervous breakdown. Please #b#h0##k, all you have to do is eliminate 50 of those noisy Robbies." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's alright. I'll manage. I am a bit weak... And a little too pretty to be doing this... But I'll be alright." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you. Now I can breathe again. Where could have those robots have come from?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I'm THIS close to having a nervous breakdown. Please eliminate 50 of those noisy Robbies." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I'm THIS close to having a nervous breakdown. Please eliminate 50 of those noisy Robbies." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I'm THIS close to having a nervous breakdown. Please eliminate 50 of those noisy Robbies." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082009" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7120108" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3730" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

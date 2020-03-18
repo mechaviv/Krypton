@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3030.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Restoring the Map" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="27" />
+        <int name="area" value="33" />
+        <string name="1" value="So I need the #bMemory Powder#k to put the map pieces back as one...I better talk to #bCorporal Easy of Alpha Platoon#k and see if he has it. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <int name="nextQuest" value="3031" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhh, this is it. The piece of a map that shows where #b#t4031056##k is at ...! But they are in pieces, after all, which is no good...Wait, #b#p2030002##k of Alpha platoon must have found #b#t4031055##k while investigating something around the Orbis Tower. Can you get the item for me, please? Thank you!" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I'm studying these four pieces of #b#t4031054##k, but these don't mean a thing unless they are put together! #b#p2030002##k of Alpha platoon must have found #b#t4031055##k while investigating something around the Orbis Tower. Can you get the item for me, please? Thank you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3029" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

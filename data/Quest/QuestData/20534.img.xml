@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20534.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Rebirth of Shinjo" />
+        <int name="area" value="15" />
+        <string name="0" value="If you wish to turn your #t1902006# into a #t1902007# again, you must go see #b#p1102002#, the Mount Instructor#k." />
+        <string name="1" value="#p1102002# said he's learned to summon #t1902007# from #p1101001#, but that he couldn't do such a favor for someone who's careless enough to lose his #t1902007#. He then proposed that you pay him #b100,000,000 Mesos#k as a testament of your devout determination to never lose your Mount again." />
+        <string name="2" value="You paid 100,000,000 Mesos to #p1102002# and received a #t1902007#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-100000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want to grow #t1902006# into #b#t1902007##k? Aren't you being a little greedy now? You should be happy that your Mount has become a #t1902006#. Someone like you should never be given the luxury of having a #t1902007#. " />
+            <string name="1" value="...But I can't prevent your #t1902006# from wanting to become a #t1902007#. Alright, I've learned to summon #t1902007# from #p1101001#, so it shouldn't be too hard to please you. I shall turn your #t1902006# into a #t1902007#." />
+            <string name="2" value="But I can't do it for free. You must pay me #b100,000,000 Mesos#k as a testament of your devout determination to never lose your Mount again. If you agree to that, I will grow your #t1902006# into a #t1902007#. What? It's too costly? Perhaps you should have thought about it before you went and carelessly lost your Mount." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then bring your #t1902006# along with 100,000,000 Mesos." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm, too bad. If you don't want to pay the fee, enjoy riding your #t1902006#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, have you brought 100,000,000 Mesos like I asked you to? Good. Alright, I'll put your #t1902006# in a Hyper Incubator as #p1101001# taught me and hatch it into to a #t1902007#." />
+            <imgdir name="yes">
+                <string name="0" value="Please do not lose your #t1902007# again. Take care of your friend!" />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20533" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902007" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="1112" />
+                <int name="1" value="1212" />
+                <int name="2" value="1312" />
+                <int name="3" value="1412" />
+                <int name="4" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2184.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Black Bark's Worry" />
+        <string name="parent" value="For Kyrin" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="The Nautilus' First Officer and handsome muscle man, Black Bark has a worry? I should go talk to him in the conference room of The Nautilus' central corridor. " />
+        <string name="1" value="Black Bark wants to give Kyrin a pretty dress for her birthday, something that would express everyone's warmest regards toward her. He's apparently asked his old friend and dressmaker, Mrs. Ming Ming to make the dress, but she's run out of bright white material. She says that a table cloth made of junior lace is best for the dress she's making... I should gather #b40 table cloths#k and bring it to #bMrs. Ming Ming#k. \n\n#i4000035##t4000035#  #b#c4000035#/40#k" />
+        <string name="2" value="I've collected the table cloths and have brought them to Mrs. Ming Ming. I wonder what the dress will look like!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="하하핫~ 거기 자네!! 곧 카이린의 생일이란 걸 알고 있나? 어휴~ 쪼끄만 꼬마 숙녀일때부터 데리고 다닌 녀석이 벌써 이렇게 커버리다니... 감동이야~ 감동! " />
+            <string name="1" value="그렇지. 그래서 얼마 전에 선원 투표를 했는데 카이린님의 생일 선물로 가장 좋은 걸로 드레스가 당첨 되었지 머야. 하핫~ 나도 그 녀석을 오래 봐왔지만 여성스러운 드레스를 입은 적을 본 적이 없어. 그래서 드레스 제작을 내 오랜 친구 밍밍부인에게 부탁했네. 그런데... 재료가 없다고! 혹시 자네가 구해다 줄 수 있겠나?" />
+            <imgdir name="yes">
+                <string name="0" value="하하하~ 요새 젊은이들 답지 않게 성실하고 착하고 대단한 멋진 선원이군! 역시 노틸러스호 선원이야! 드레스 제작을 위해선 하얗고 얇고 질 좋은 천이 필요한데 그게 주니어 레이스의 식탁보가 제격이라고 하더군. 식탁보 40개만 모아서 밍밍부인에게 가져다 주게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="쩝... 단칼에 거절하다니. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="12000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey hey there! Are you aware that Kyrin's birthday is coming up! Seriously, to see her all grown up now, that is just astounding. Seriously!" />
+            <string name="1" value="That's why a few days ago, the crew voted and we decided the best birthday present for her would be a dress. Yes, I've seen her for a long long time, and I have honestly never seen her wear a feminine dress. That's why I asked my dear friend Mrs. Ming Ming for help, and... the problem is, we don't have the materials! Can you get some for us?" />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha... unlike most people, you seem nice and diligent. That's very commendable! I knew you were a capable member of the crew at The Nautilus! In order to make the dress, we'll need a thin, white cloth with good quality, and I heard that the tablecloth from Jr. Wraith is the best one available. I want you to acquire #b40 tablecloths#k and give them to #bMrs. Ming Ming#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... that was cold." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I heard it from Black Bark already. Seriously, he asks for favors first, then thinks about it. Sigh... I am busy preparing for this festival... if he wasn't an old friend of mine, then the answer would have been no..." />
+            <imgdir name="yes">
+                <string name="0" value="Yeah, that's 40 tablecloths all right. Okay, time to make a dress!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Mrs. Ming Ming is at Henesys." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have 40 tablecloths, and without them, I can't make a dress." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092006" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

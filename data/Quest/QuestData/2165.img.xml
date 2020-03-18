@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2165.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Prince's Request" />
+        <string name="parent" value="Whalians and The Nautilus" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="There's apparently a mysterious dolphin in the corridors of the  Nautilus' lower deck. Seems very strange... What would a dolphin be doing out of the water and onboard a ship?" />
+        <string name="1" value="The mysterious dolphin is claiming that he is actually a Whalian prince and  that he can't transform back to being a Prince because he is low on mana. Perhaps I should go find a bottle of #bmana elixir#k for the Whalian Prince?" />
+        <string name="2" value="Finally, the Whalian Prince has been replenished with mana. I thought he was just an ordinary dolphin... I mean, who would have known that he could turn out to be such a handsome prince? " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="400" />
+            <string name="npcAct" value="quest" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000006" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2166" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Uh... ummm... if you aren't too busy, then can you please help me? I really need your help... and I feel weaker by the second." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. I may look like a regular dolphin to you, but I am Sharyl, the prince of Whalians. It's hard for me to even stand right now because my mana has almost run out. Can you please get me one #bMana Elixir#k bottle?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah... please...so...weak..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you! I can feel myself already getting better. Yeah!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please get me 1 Mana Elixir bottle." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092003" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

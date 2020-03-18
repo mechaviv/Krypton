@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3801.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="No Gong's Teaching2" />
+        <string name="parent" value="No Gong's Teaching" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Despite defeating 10 #o5120503# just as #b#p2091000##k ordered, he had that look of &quot;that's really nothing&quot;. What? Okay, that's really not cool. I better go see #p2091000# again." />
+        <string name="1" value="Without any explanation, #p2091000# ordered to me to take on #r20 #o5120503#s#k.  \n\n#o5120503# #r#a38011##k" />
+        <string name="2" value="Even though I was successful in taking on all the #o5120503#s, #p2091000# compliment my work one bit. He's really getting on my nerves now..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="수련에만 정신을 집중해도 강해지기는 쉽지 않아. 모든 마음을 모아 수행, 또 수행하게나.\r\n#L0#  #b…저어, 이제 선인으로 만들어 주실 겁니까?" />
+            <string name="1" value="흠? 자넨 누구지? 이 수련장 소속은 아닌 것 같은데?\r\n#L0#  #b전에 선인이 되고 싶다고 말씀드렸던 사람입니다! #o5120503#도 10마리 잡았습니다! " />
+            <string name="2" value="아아~ 그러고 보니 그런 일이 있었던 것 같기도 하군. 아직도선인이 되고 싶은가?" />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="그럼 당장 나가서 #o5120503# 20마리를 쓰러뜨리게. 뭘 망설이고 있어? 어서 잡게!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="되고 싶은 생각이 없다면 수련을 방해하지 말게. 선인이 되기 위해서는 부지런히 수련을 해야 한다고." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="16000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It's not easy to improve yourself just by concentrating on training. You'll need to dedicate every ounce of your energy into training, and more training.\r\n#L0#  #b...um... when are you going to mold me into the Master of my own right?" />
+            <string name="1" value="Huh? Who are you? I don't think you're from here.\r\n#L0#  #bHey, I'm the one that told you I want to become the Master! I even defeated 10 #o5120503#s!" />
+            <string name="2" value="Ahhh, I see. I guess something like that occurred before. Anyway, do you still want to become the Master?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then head over to the training ground immediately and defeat #r20 #o5120503#s#k. What are you waiting for? Hesitation cannot be tolerated in here!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't desire to become the master, then don't interrupt my training. In order to become the Master, one requires to train diligently for a long time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm... did you really defeat 20 #o5120503#s? You must be a little better than I thought." />
+            <imgdir name="yes">
+                <string name="0" value="Well, but that's nothing. You can't call yourself the Master just by doing that." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You can't even get #r20 #o5120503#s#k. How can you call yourself the Master if you can't even do that?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120503" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3800" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

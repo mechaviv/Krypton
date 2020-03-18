@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3080.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kenta's Research 1" />
+        <int name="area" value="33" />
+        <string name="0" value="#p2060005#, the animal instructor at the Aquarium Zoo, has a quandary. I should go talk to him and see what's up." />
+        <string name="1" value="#b#p2060005##k, a veteran animal instructor at the Aquarium Zoo, seemed to be concerned over the fact that the animals at Aqua Road have been acting strangely since the storm that occurred not too long ago. I couldn't see the difference myself, but I'm sure the expert sees it differently. \n#b#p2060005##k wanted to investigate this phenomenon, and asked me to gather up the DNA samples of the animals at Aqua Road." />
+        <string name="2" value="I gave #p2060005#, the animal trainer at Aquarium, the DNA samples of some of the animals at Aquarium. If it's indeed true that some animals have started to act differently since the storm, then how is he going to prove it through research? I'm anxious to find out..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <int name="lvmin" value="17" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031259" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031260" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031261" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2002002" />
+                    <int name="count" value="30" />
+                    <int name="job" value="132097" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2002005" />
+                    <int name="count" value="30" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2002001" />
+                    <int name="count" value="30" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="2002004" />
+                    <int name="count" value="30" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="2002000" />
+                    <int name="count" value="30" />
+                    <int name="job" value="49200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you noticed something strange while making your way here to Aquarium? It seems like the animals and the fishes here have been acting strange lately. It's not overtly noticeable, but it seems like some of them look very fatigued, while the others seem... overly in rage." />
+            <string name="1" value="I'd like to believe that I'm just overreacting, but it does bother me that this has started to happen after Aqua Road went through a wild storm. I want to really investigate into this matter. Will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for offering to help. What I'd like to ask you for help is that... I need to gather up the DNA samples of the living organisms here at the Aqua Road. I don't know exactly what kind of changes have occurred, but I do notice that SOMETHING's changing..." />
+                <string name="1" value="If I study the DNA samples of these living organisms, I may be able to uncover some things that may provide a clue to the picture. Please get me the #bDNA samples#k of #rSeacle, Cico, and Pin Boom#k, and I only need #b1 of each#k.\n\n#i4031259# 1 #t4031259# \n#i4031260# 1 #t4031260#\n#i4031261# 1 #t4031261#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This may take a while, so if you change your mind, then please talk to me. I sure can use your help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up all the samples I asked you to get?" />
+            <imgdir name="yes">
+                <string name="0" value="I know this must have been a chore for you, so thank you so much for helping me out. I may ask you for some help again down the road. Will you help me out again like you did this time?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you gather up all the samples I asked you to get? Please gather up  #b1 of each#k of #b#t4031259#, #t4031260#, and #t4031261##k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031259" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031260" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031261" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <int name="lvmin" value="17" />
+        </imgdir>
+    </imgdir>
+</imgdir>

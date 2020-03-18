@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2171.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Can you please give Baine a helping hand?" />
+        <string name="parent" value="A mysterious entity onboard The Nautilus" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Baine's job is to monitor the sound waves of The Nautilus. The way the ship sounds is a good indicator of the overall well-being of the ship. Recently, Baine had apparently detected a strange sound coming through the walls on the lower deck. Could this be an ominous sign of things to come? " />
+        <string name="1" value="When Baine detects the strange sound waves coming from The Nautilus, he asks #bBart#k, the  #bkeeper of the Watchtower#k, whether he's noticed any changes in sight. The watchtower is apparently on the eastern end of the shipping dock so I'd better look around carefully." />
+        <string name="2" value="Bart says that he's noticed some strange movements. I wonder what he saw?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="당신도 들리나요? 노틸러스호에서 들리는 이상한 소리. 이 청진기를 이용하면 확실하게 들리죠. 이 일을 한지 10년이 넘었지만 이런 소리는 첨 들어요. 혹시 무슨 일이 있었는지 알아봐줄 수 있나요?" />
+            <imgdir name="yes">
+                <string name="0" value="노틸러스 호 밖으로 나가면 감시탑이 있어요. 그 곳에 있는 키드가 무언가를 느꼈을지도 몰라요. 그에게 어떤 일이 일어나지 않았는지 알아봐 주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="당신은 이 이상한 소리가 들리지 않나 보군요. 한번 노틸러스호에 귀를 대어보세요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <int name="nextQuest" value="2172" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you hear it? That strange noise that comes out of The Nautilus. Use this stethoscope, and you'll hear it. I've been working here for 10 years, and I've never heard anything like this. Can you find out what exactly happened?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to the #bharbor outside The Nautilus#k and walk towards East to find the #bobservatory tower#k. You'll find #bBart#k, there, and I have a hunch that he might have felt something. Please check and see if he's okay." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Maybe you don't hear that strange noise. Place your ear next to The Nautilus. Come on, just try it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? Baine noticed that, too?" />
+            <imgdir name="yes">
+                <string name="0" value="I mean, I noticed something a few days back, too. Wait... there should be a document that contains the record of activities that day...the log..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You can find Bart at the observatory tower at the Nautilus Harbor. He spends his time with the seagulls." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1094000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092002" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

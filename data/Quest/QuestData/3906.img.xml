@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3906.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jiyur's Sister" />
+        <string name="parent" value="Jiyur's Sister" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="A little kid from #b#m260000000##k, #b#p2101001##k, has an older sister. Then why is #p2101001# standing by himself? You should ask him that." />
+        <string name="1" value="#p2101001# has an older sister who used to tell him fun stories, but she was dragged into the castle by the guards one day. Concerned, #p2101001# wants you to tell his sister he misses her. \n\nWait, you forgot to ask him her name, though you have a hunch you'll recognize the #bsister of #p2101001##k when you see her." />
+        <string name="2" value="#p2101001#'s storytelling sister is indeed #p2101008#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="450" />
+            <int name="nextQuest" value="3907" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Excuse me. Um, do you have access to the palace? See, the thing is, my sister's in there, and I was wondering if you could look for her for me.\r\n#L0# #b If your sister's in the palace, isn't that a good thing?#k" />
+            <string name="1" value="No way! My sister didn't want to go! The guards came and took her away...even though she said she didn't want to go... I think the queen took her after hearing that my sister's a good storyteller. If you...go into the palace, please just tell her I miss her." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. My sister knows a lot of stories. She also has a beautiful voice. The stories she told were so much fun to listen to... Please find her and tell her that #p2101001# misses her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You…you don't want to? I see... I'm sorry I asked for something that's so difficult to do." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you see my sister yet? She should be inside the palace." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

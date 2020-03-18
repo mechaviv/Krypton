@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21612.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Visit from the Wolf Herd" />
+        <int name="area" value="6" />
+        <string name="0" value=" #b#p1202007##k, the penguin from #b#m140000000##k, wants to have a word with you." />
+        <string name="1" value="A pack of wolves apparently paid a visit to #m140000000# in search of #t1902016#. It must be the family that #t1902016# lost as a pup. You should meet #b#p1202008##k and ask why they're here all of a sudden. #p1202008# is waiting at #m914030000##k, which can be accessed through #b#m140010100#." />
+        <string name="2" value="You met with #p1202008#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, Aran! There's a problem here! #bA giant pack of wolves#k came by, wanting to see you! I asked why, and they said they had recently lost a wolf pup, and that they'd heard of rumors that you might be holding onto it! I am very certain they are talking about #t1902016#!" />
+            <string name="1" value="I wonder what they are here for…are they here to take back #t1902016#...? That would be really terrible. Regardless of the circumstances, I say that as the master of #t1902015#, you'll have to face the pack yourself. Please go meet the group of #b#p1202008##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="They said that they'll send their representative wolf to #b#m140010200##k. It's a wolf, though it looked quite proper…but watch out for them regardless." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="They said they'll wait for you until you decide to meet them…so don't you think it'll be better to just go see them?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you the one holding onto our baby?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you met #p1202008#? It promised to wait for you in #b#m914030000##k, which you can reach through #b#m140010100##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21607" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902016" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="150" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

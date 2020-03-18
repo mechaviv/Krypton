@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2254.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Karcasa of the Desert" />
+        <int name="area" value="30" />
+        <string name="0" value="Through research, you discovered that a place known as the Mushroom Castle is in trouble, but even #bThe Rememberer#k doesn't know anything about the place. You should see what he thinks you should do next." />
+        <string name="1" value="Through research, you discovered that a place known as the Mushroom Castle is in trouble, but even #bThe Rememberer#k had no clue where that is. He recommends you ask #bKarcasa#k in the desert for some information…" />
+        <string name="2" value="You met #bKarcasa#k and asked about the Mushroom Castle, to no avail." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, I think I know what to do now. I'll send you to #bKarcasa#k right now. The only problem is that he's…quite the salesman. You'll know what I mean. Do you want to go over to see him right now?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, now head over to see #bKarcasa#k and ask him about Mushroom Castle. Again, thank you for helping me out with my research!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm… I don't know if I've told you this, but at your level, it might be easier to level-up around the desert. It's your choice, though…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Eh? Who are you? I don't think we've ever met." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see #bKarcasa#k at the desert yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2251" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2255" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2254s" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

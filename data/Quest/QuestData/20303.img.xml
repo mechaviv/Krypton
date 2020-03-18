@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Master of Disguise" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The detailed instructions on searching for the thief will be given by #b#p1101005##k, the Chief Knight of the Wind. I better talk to #p1101005#." />
+        <string name="1" value="Apparently, the member of the Black Wings has yet to escape Ereve. If we just search the island thoroughly, we may be able to find the culprit. First, I'll need to visit #b#p1101002##k and receive a #bInvestigation Permit#k, followed by a thorough search of Ereve to find #r#o9001009##k. Once I find him, I'll need to defeat him in a battle and bring back #b#t4032101##k in the process. The problem is that the enemy, being the #o9001009#, is adept at transforming into different persons, so I better talk to each and every one of them to figure out who's real or fake.\n\n#o9001009##r #a203031##k\n#i4032103# #t4032103# #b#c4032103# / 1#k" />
+        <string name="2" value="I was able to defeat #p1104001# the #o9001009#, a member of the Black Wings, and managed to recover #t4032103#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="...#p1101002#에게 자세한 설명은 들었을 테니, 바로 본론을 이야기 할게요. 당신도 알고 있겠지만 에레브는 신수에 의해 보호받는 땅... 사악한 자는 들어올 수 없고, 들어온다 하더라도 바로 알아채 퇴치할 수 있지요..." />
+            <string name="1" value="하지만 이번에는 그렇지 못했습니다... 그건... 보물을 훔쳐간 자의 능력 때문이지요... 검은 마법사의 수하 중 하나인 변신술사... 그의 침입을 알아챈 후에도 그가 누구인지 구분할 수 없어 대응이 늦어진 것입니다..." />
+            <string name="2" value="보물은 절대 검은 마법사의 손에 넘어가서는 안 될 중요한 것... 변신술사는 아직 에레브를 빠져 나가지 못했습니다. 당신도 수색에 참가해서 변신술사를 퇴치하고... 보물을 되찾아 주세요... 저와 다른 단원들도 함께할 것입니다..." />
+            <imgdir name="yes">
+                <string name="0" value="변신술사라면 또다시 기사단원으로 변신해 당신을 현혹시킬 겁니다... 하지만 겉모습을 바꿔도 진실은 속일 수 없는 법... 누군가를 발견하면 그와 대화해 보세요. 말 속에서 미혹이 느껴진다면 그가 바로 변신술사일 겁니다... " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="두려움? 망설임? 그 모든 것을 떨쳐 버리지 않는 한, 당신은 영원히 그 자리에 머물 수밖에 없어요..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032103" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="..I am sure .#p1101002# gave you a thorough outline, so I will just go straight to the facts. As you know, Ereve is an island protected by the Shinsoo. Any form of darkness is not only forbidden from winning, but even if it does enter, it'd be detected right away and be promptly removed." />
+            <string name="1" value="Unfortunately, we weren't able to do that this time, and... that's because... we did not acount for who the thief was. The culprit was#ra member of Black Wings, #o9001009# #p1104001##k... We were unable to locate him even after entering this island, because he was in disguise." />
+            <string name="2" value="The treasure should NEVER end up in Black Mage's hands. #o9001009# has yet to escape Ereve, so you must participate in this search as well. Go visit #p1101002# and receive #b#t4032179##k." />
+            <string name="3" value="Now... Go defeat #r#o9001009##k... And bring back the #btreasure#k... I, as well as other Knights, will also be conducting the search." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o9001009# is most likely disguised as one of the Knights. The appearances may change, but the inner self won't, so #rI suggest you keep talking to various Knights until you hear something that doesn't sound like it would come from a Knight. If you do, you can consider that individual #o9001009##k and attack immediately." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fear? Hesitation? As long as you keep the two with you, you will never be able to move up." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow... you were able to defeat #o9001009# #p1104001#... You are a special Knight, indeed." />
+            <imgdir name="yes">
+                <string name="0" value="The Empress observes your accomplishment. Do not forget the fact that you're an important indivual here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Were you unable to find #o9001009#...? I know for sure that he has yet to escape. First, visit #b#p1101002##k and receive the #bInvestigation Permit#k, then conduct a thorough search of the whole Ereve to locate #r#o9001009##k, then defeat it to bring #b#t4032103##k back..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Were you unable to find #o9001009#...? I know for sure that he has yet to escape. First, visit #b#p1101002##k and receive the #bInvestigation Permit#k, then conduct a thorough search of the whole Ereve to locate #r#o9001009##k, then defeat it to bring #b#t4032103##k back..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032103" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001009" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032179" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="1310" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

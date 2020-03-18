@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3522.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beyond the Ruins" />
+        <int name="area" value="46" />
+        <string name="0" value="#p2140000# made the intruder's force field ineffective.  What was this intruder planning to do?  I should ask #b#p2140000##k." />
+        <string name="1" value="#p2140000# said that he has no idea what the intruder wants. There's nothing but a ruin deep in the temple and nothing to take from the Path of Past.  'Perhaps the #rMirror of the Goddess#k...?', he mumbled and then shook his head and said 'no way....'.  But just in case, he told me to go past #b#m270040000#, to #m270050000##k and check..." />
+        <string name="2" value="When I told #p2140000# that someone summoned a strange monster from the Mirror of the Goddess, his face turned pale." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The force field has been completely destroyed.  But I still have no idea what the intruder wants. Other temples maybe, but there's nothing that can be taken from the Temple of the Past.  The past is the past, there's nothing you can do to change it..." />
+            <string name="1" value="...Don't tell me they're thinking about taking the #rMirror of the Goddess#k?" />
+            <string name="2" value="Do not attempt it! The Mirror of the Goddess cannot be moved by the futile strength of humans.  Even if you were to move it, one wrong move and it could be disastrous..." />
+            <string name="3" value="...But who knows.  Humans are known for their boldness and are capable of anything...  You need to go past #b#m270040000#, to #m270050000##k and make sure the Mirror of the Goddess is okay." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'm pretty sure it's fine but just in case, if you see the intruder trying to touch the Mirror of the Goddess... You must stop them.  You must...at all cost." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...You're right.  That's not possible.  How could a human dare to touch the Mirror of the Goddess.  I think I was being too paranoid." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? The intruder touched the Mirror of the Goddess?  Impossible! It's true that the Mirror of the Goddess has the power to move the past but only the Goddess herself can wield it!  It's not possible for a mere mortal to #rmove time#k, I don't understand what they're trying to do!  " />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <int name="infoNumber" value="7402" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3521" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="140" />
+        </imgdir>
+    </imgdir>
+</imgdir>

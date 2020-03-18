@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3054.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fairy's Horn Flute" />
+        <int name="area" value="33" />
+        <string name="0" value="According to Lisa, there is a way to communicate with Moppie the dog, as long as the horn flute is there. They are usually featured by the fairies." />
+        <string name="1" value="With the fairies' horn flute, I can talk to Moppie with ease...and Lisa promised to make one for me, as long as I gather up the necessary materials for it. \n\n#t4000073# #b#c4000073#/80#k\n#t4003004# #b#c4003004#/15#k\n#t4000021# #b#c4000021#/5#k" />
+        <string name="2" value="The horn flute for the fairies is finally made. Wow, this thing feels weird..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031190" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032011" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2050004" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="-15" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000073" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="But the fairies won't give us their horn flute. Fairies generally hate humans, remember. Well ... I have blown the pipe before, and I think I can at least replicate it. Can you gather up the materials for me?" />
+            <string name="0" value="Are you really intent on understanding what Moppie is saying? There's actually a way to do it ... as long as you get a hold of an item only fairies carry around and use: the horn flute. With it, you may be able to talk to Moppie like never before." />
+            <imgdir name="yes">
+                <string name="0" value="I'll need #b80 solid horns, 15 stiff feathers#k, and #b5 leathers#k as materials for the horn flute." />
+                <string name="1" value="It also reminds me of the past, so ... this is going to be interesting, to say the least. Please gather up the materials for me! Head over to the garden where the monsters reside." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What are you afraid of? Or are you worried about me messing it up?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I am getting nervous and excited at the same time. Before I get started, however, let me check on all the materials and see if you brought them all or not." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, these materials are perfect! I got nervous and excited at the same time the whole time I was making this." />
+                <string name="1" value="This is a gorgeous horn flute. I made it myself, but even I have to admit, it's a thing of a beauty. With this, you'll be able to understand what Moppie wants to say. Please go and help poor Moppie out immediately!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm? I think you're lacking the materials. \n\n#t4000073# #b#c4000073#/100#k\n#t4003004# #b#c4003004#/20#k\n#t4000021# #b#c4000021#/10#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000073" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="15" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3053" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

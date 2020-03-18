@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3840.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Weakening King Sage Cat" />
+        <string name="parent" value="Eliminating King Sage Cat" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The Head Mental Trainer of #bMu Lung#k, #bDo Gong#k, seems to be concerned about something..." />
+        <string name="1" value="The source of awful concern for Do Gong was Master Goblin, who over the course of thousand years have digressed from a promising Master to a bona-fide Master Goblin. Do Gong pleaded with me to defeat Master Goblin, who's responsible for tricking Tae Roon and is primed to trick his way into Mu Lung. In order to weaken Master Goblin, I'll first have to eliminate Sage Cats and recover #bcat dolls#k from the battle.  \n\n#i4000289# #t4000289# #b#c4000289##k/100" />
+        <string name="2" value="I managed to defeat the Sage Cats and recovered the cat dolls. After casting spells on those cat dolls, Do Gong wanted me to head to #b#m250010503##k to see if the spells were casted right. Off to the Goblin Forest." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000289" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="From outside looking in, Mu Lung looks like a haven for the select few wanting to train themselves to continue their lives as Master, free from trouble and worries, but... even Mu Lung can be subject to concerns at times. There's someone out there posing as a threat to Mu Lung... #rMaster Goblin#k." />
+            <string name="1" value="He used to be a divine creature himself, but after more than a thousand years, all he gained was cunning deceit, which turned him into a goblin, Master Goblin. He's blinded by his foolish ambition to take over Mu Lung, but his spells are very powerful. So powerful, that the students here are vulnerable to those spells, unable to fend off the evil forces." />
+            <string name="2" value="Previously he had been threatening the security of Mu Lung with his disciples, but now... he has decided to show himself. I am afraid he's starting to really show his true dirty ambitions. I can't just watch him take over Mu Lung like that. We need to find a way to defeat Master Goblin. I know you would be of great help to us. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for accepting the offer. First, we need to try to weaken Master Goblin. We'll need to defeat the #rSage Cats#k that have been controlled by him, and take away #b100 Cat Dolls#k that transmit the forces of evil. This should definitely affect the Master Goblin, so... good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can't help us here, then... there's nothing we can do about it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You managed to reclaim the Cat Dolls from the Sage Cats. Thank you very much. Now, if I write this sentence that I've prepared, then..." />
+            <imgdir name="yes">
+                <string name="0" value="ah! Success! Okay... now please head over to #bGoblin Forest#k. I have neutralized Master Goblin's spells, and have casted a spell of my own. If it worked properly, then the number of Sage Cats should be decreasing as we speak!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... you haven't managed to defeat the #rSage Cats#k and gather up #b100 Cat Dolls#k. Are you still a long way to go before collecting 100?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000289" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="77" />
+        </imgdir>
+    </imgdir>
+</imgdir>

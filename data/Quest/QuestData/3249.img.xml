@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3249.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Operation Strategy 2 : Defeat the Monsters" />
+        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="Operation strategy 2 is much simpler than strategy 1. It was to defeat the monsters! You must defeat #r#o4230113##k, #r#o3230306##k, #r#o4230114##k, #r#o4230115##k, and even #r#o5220003##k, so it's not child's play... but let's defeat the monsters.\n\n#o4230113# #r#a32491##k \n#o3230306# #r#a32492##k \n#o4230114# #r#a32493##k \n#o4230115# #r#a32494##k \n#o5220003# #r#a32495##k " />
+        <string name="2" value="You have reported to #p2041026# after defeating all the monsters. It's not as easy as it may seem since there are so many types of monsters to hunt!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="151500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Operation strategy 2 is, obviously, defeating the monsters! Now that you've collected the eggs, let's begin defeating the monsters to wipe out the Clocktower Monsters. How about it? Are you ready? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go hunt the monsters. If you hunt #r20 #o4230113##k, #r30 #o3230306##k, #r40 #o4230114##k, #r50 #o4230115##k, and #r1 #o5220003##k; wouldn't the tower be somewhat home free? Now, hurry and...  " />
+                <string name="1" value="What's with the face? There are too many monsters to remember? Fine, I'll tell you again... NOT. Why don't you just view your Information window as you proceed with the quest? Problem solved. Go get 'em now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm, you're not ready? Are you hungry or something? Would you like a hamburger? No, I'm not offering you want... I'm just asking if you want one. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you defeated all the monsters? Wow, incredible! You're truly amazing. It took you a lot less than I expected. Even our members would have taken longer... simply amazing, you! I'm sure the Clocktower Monsters are under control now. Thanks!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated all the monsters yet? Did you forget which monsters to hunt? Sigh... I'll tell you again. Pay attention this time. #r20 #o4230113##k, #r30 #o3230306##k, #r40 #o4230114##k, #r50 #o4230115##k, and #r1 #o5220003##k. Got it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041026" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230113" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3230306" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4230114" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4230115" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="5220003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041026" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3248" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

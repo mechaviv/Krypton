@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20402.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Black Scale" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="While slaying the zombies, I was able to obtain an item called #t4001207#. Once I did that, #p2032001# approached me." />
+        <string name="1" value="#b#p2032001##k warned me that #b#t4001207##k contained a curse-like power that spread all over this world, and that since it's a dangerous item, he wanted me to hand it in to him so he could break the curse. While listening to #p2032001# talk, however, I noticed #p1103000#'s name being mentioned... \n\n#i4001207# #t4001207# #b#c4001207# / 1#k" />
+        <string name="2" value="I gave #p2032001# the #t4001207#. #p2032001# told me that #p1103000# gave him #t4001207# too the other day, and that he recently moved to #m240000000# to find out more about #t4001207#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="...자네에게서 이상한 기운이 느껴지는군. 혹시 #t4001207#이라는 물건을 가지고 있지 않나? 얼마 전부터 대륙 곳곳에 저주가 담긴 #t4001207#이 나타나고 있는데 자네에게서 그 기운이 느껴지는군... 가지고 다니면 위험한 물건이니 넘겨주지 않겠나? " />
+            <imgdir name="yes">
+                <string name="0" value="자네가 있는 위치는 어디인가? 흠... 꽤 가까운 곳에서 느껴지는 걸 보니 #m211000000#인 모양이군. 그리 멀지 않으니 그럼 #m200000000#로 와서 #t4001207#을 가져다 주게. #p1103000#도 그렇고 #m211000000#에서 #t4001207#이 자주 발견되는 것 같군..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="가지고 다니면 자네 역시 저주의 영향을 받아 주문서 발릴 확률과 드롭율이 낮아지고 아이템이 깨질 확률은 높아지며 심지어 탈모와 무좀까지 생길지도 모르는데 정말로 갖고 있겠는가?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001207" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I feel a strange aura emitting from you. Do you by any chance have #b#t4001207##k with you? Recently, a number of cursed #t4001207#s have been flashing all over the world, and I can feel the same thing from you. It's a very dangerous item, so would you mind giving it to me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Where are you located? Hmmm... the fact that it feels close makes me suspect that you might be around #m211000000#. It's not too far from here, so I want you to go to #b#m200000000##k and hand me #t4001207#. #p1103000# had that too, and... it seems like #t4001207#s are easily found in #m211000000#..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You should know that as long as you hold on to it, you will be affected by it as well, from a higher percentage of scroll failure and lower drop rate to item decomposition. You may even lose hair as well. Are you sure you want to hold on to it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, so you did bring #t4001207#. Good work. It's a dangerous item, so as soon as I feel it, I make sure to contact that individual and have that person bring it to me. Thankfully, most of the people I contacted promptly came and gave them to me, so it's not that difficult... the problem is that the level of curse seems quite powerful.\r\n#b#L0#Did you... take one from #p1103000#, by chance?#k" />
+            <string name="1" value="#p1103000#? Are you talking about that Knight #p1103000#? Yes, he brought a whole bunch of #t4001207# acquired from zombies. He wasn't satisfied with just retrieving those items, but he was rather interested in finding the origin so he could snuff them out. That's why he started asking me about the information on #t4001207#. \r\n#b#L0#Can you tell me what you told #p1103000#?#k" />
+            <string name="2" value="It was really nothing special. #t4001207# may look small on the outside, but it's really a scale of a dragon. Most dragon scales reflect magic, but since the curse is so deeply ingraned, I told him I suspect #bthese scales are from a special dragon#k." />
+            <imgdir name="yes">
+                <string name="0" value="Apparently, that was enough for #p1103000# to pack up and leave, and told me he'll be heading over to #b#m240000000##k and find out more... about the scales. Since #m240000000# is the land where dragons and Hafrings coexist, there's got to be more information there." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0" />
+                <imgdir name="1" />
+                <imgdir name="item">
+                    <string name="0" value="Hmmm...? You didn't bring #b#t4001207##k with you? Please gather up the #t4001207#s that are laden with the power of curse." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001207" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20401" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001207" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1110" />
+                <int name="2" value="1111" />
+                <int name="3" value="1112" />
+                <int name="4" value="1200" />
+                <int name="5" value="1210" />
+                <int name="6" value="1211" />
+                <int name="7" value="1212" />
+                <int name="8" value="1300" />
+                <int name="9" value="1310" />
+                <int name="10" value="1311" />
+                <int name="11" value="1312" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+                <int name="16" value="1500" />
+                <int name="17" value="1510" />
+                <int name="18" value="1511" />
+                <int name="19" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3907.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Letter From the Sister" />
+        <string name="parent" value="Jiyur's Sister" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2101008#, the older sister of #p2101001#. #p2101001# will want to know how his sister is doing. You should deliver the letter she wrote to #b#p2101001##k." />
+        <string name="2" value="#p2101001# seemed ecstatic to receive a letter from #p2101008#. He must have been concerned that the horrendous queen might really give her a hard time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031589" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="450" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031589" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, traveler. What kind of a story would you like to hear from me, #p2101008#? \r\n#L0# #b The story of #p2101001#" />
+            <string name="1" value="#p2101001#!? You know #p2101001#?! How is he?! I hope he's doing all right without me... So, #p2101001# sent you. Thank you. There's no way for me to check up on #p2101001# from the palace. I was so worried.\r\n#L0# #b #p2101001# is really worried about you, too." />
+            <string name="2" value="I see... It's only natural, since he can't contact his only sister. Could you tell #p2101001# that I'm doing all right in here?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Here's a letter I wrote. Please give it to #b#p2101001. I can't see him face to face, but I want to let him know that I am okay and that I miss him terribly." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be really busy... But there's nothing I can do from here. At least I know how #p2101001#'s doing now, but..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, traveler. Did you see my sister? What? This is a letter from her?! I was so worried, because I heard that the queen is quite scary... I am so glad she's doing all right!" />
+            <imgdir name="yes">
+                <string name="0" value="Can you please wait while I read her letter? Thanks." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you've met with #b#p2101001##k yet. He should be around #b#m260000200##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You didn't meet with my sister yet? She's in the palace." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no... you lost the letter? Well, it's not hard for me to write another one. Here you go. Please give this to #b#p2101001##k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031589" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3906" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

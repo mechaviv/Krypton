@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8052.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Umi's Spiced Veggies" />
+        <int name="area" value="48" />
+        <string name="0" value="Umi of Showa Town sounds like she's stuck in a tough spot. I should go talk to her." />
+        <string name="1" value="She said she needed a solid rock to help her make spice vegetables. A solid rock...speaking of which, I remember hearing that #b#o6400100##k the monster collects them. \n#t04000131#  #b#c04000131##k/80" />
+        <string name="2" value="Umi's spiced vegetables sure sound enticing. I should go get some later~!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000131" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040713" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We have the freshest cabbages you can find! Well, I'm trying to spice up these vegetables..." />
+            <string name="1" value="Of course, we sell them here. The problem is, I can't find the solid rock necessary to make these spiced vegetables. I tried finding those the other day at a beach, but I could only find small, useless ones. Even when I found the big ones, they were too heavy for my bad back. Granny has a hard time carrying those, you know. Sigh~" />
+            <string name="2" value="If you got some time, how about helping me find those rocks? I'll pay you well." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you!" />
+                <string name="1" value="Good luck, and don't get hurt!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh no!! Who should I ask then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find a solid rock?" />
+            <string name="1" value="Heavy...solid... I like it!" />
+            <string name="2" value="This should definitely do. Here's your pay. Thank you!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This is not enough..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000131" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120005" />
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

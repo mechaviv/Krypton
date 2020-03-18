@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8032.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="War of Pang Pang" />
+        <int name="area" value="48" />
+        <string name="0" value="Poni Chai of Showa Town is apparently in trouble. Might as well go there while there's time." />
+        <string name="1" value=" I have no idea what the War of Pang Pang is all about, but I'll need to gather up #b30 #t04000110#s#k in order to sharpen a pencil. I better gather them up and give them to Poni Chai. \n#t04000110#  #b#c04000110##k/30" />
+        <string name="2" value="By the way, does the plastic knife really work in sharpening a pencil? Oh well, Poni Chai claims he'll emerge victorious tomorrow at the War of Pang Pang, so..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020008" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000110" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh no! I can't win this battle with a pencil that has a round tip like this! I can't take the recess tomorrow and not play the War of Pang Pang! I need to sharpen my pencil in order to win this game, and...\r\n#b#L0#My goodness, you're loud! What's the War of Pang Pang anyway? #l\r\n#L1#Why don't you sharpen the pencil yourself?#k#l" />
+            <string name="1" value="You want to know what the War of Pang Pang is about, right? It's a game that consists of two players. What you'll need to bring are ... a piece of paper and a pencil.\nThe rules are very simple! The two players will draw a dot on the paper. That'll be your area. Then, the game begins.\nOn top of that dot, place your pencil perpendicular to the paper, and place your index finger gently on top of the back of the pencil. \nSlide that finger down, and the pencil will draw a line as a result. \nThat represents the bullet that left your area!\n" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I may lose tomorrow in the great War of Pang Pang. If you ever change your mind, please let me know." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! In order for this to fly farther, the pencil HAS to be sharp! Well, the thing is... I can sharpen the pencil alright, but I need to sharpen it... so it looks good ...\nand to do that, I'll need #b#t04000110##k. \nPlease bring me #b30 #t04000110#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I may lose tomorrow in the great War of Pang Pang. If you ever change your mind, please let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you? Did you? Did you bring \n#b#t04000110##k with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. This'll help me win my battle tomorrow. Time to sharpen up my pencil! \nI'll give you this. It's my lunch for today!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm.. you don't have enough. Check and see if you have all of them. I need #b30 #t04000110#s#k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000110" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120017" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

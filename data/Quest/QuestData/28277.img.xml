@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28277.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] Camouflaging Slimes" />
+        <int name="area" value="30" />
+        <string name="0" value=" #b#@1092011:##k in #b#m120000200##k says he has a favor to ask of you." />
+        <string name="1" value="He says the #rSlimes#k in the forest are so similar to the green leaves that people have trouble telling them apart, which prevents those who are afraid of the monsters from entering the forest.\n\nEliminate 30 #rSlimes#k. They can be easily found in #b#m100040000##k.\n\nReport back to #b#@1092011:##k in #b#m120000200##k." />
+        <string name="2" value="The #rSlimes#k in #b#m120000200##k are known to scare people by randomly popping out here and there, and you have eliminated 30 #b#p1092011##ks for #b#p1092011##k in #b#m120000200##k who is terrified of them." />
+        <string name="demandSummary" value="#o210100# #a282771#" />
+        <string name="rewardSummary" value="Exp 700&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="700" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I was on my way to #b#m101000000##k. I was singing and walking when I stepped on something squishy! I looked down and I had stepped on a #rSlime#k!" />
+            <string name="1" value="*Sob sob* I'm so scared of monsters. I especially hate how the #rSlimes#k blend in with other plants in the forest, making it utterly difficult for me to spot them!\n\nSo I want to ask you for a favor.\nCould you eliminate some #rSlimes#k so that I don't have to worry whenever I trek through the forest?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then will you eliminate 30 #rSlimes#k?\nYou'll see a lot of them in #b#m100040000##k.\nGood luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose it was too much to ask of you..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've already eliminated all of them? You're a strong one, aren't cha?" />
+            <imgdir name="yes">
+                <string name="0" value="Now I can walk around the forest without having to worry about a single thing. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You agreed rather quickly, so I thought you were confident. But you haven't hunted 30 #rSlimes#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092011" />
+        </imgdir>
+    </imgdir>
+</imgdir>

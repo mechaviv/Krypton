@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Abilities Lost" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You should talk to #b#p1202004##k, standing on the road to town." />
+        <string name="1" value="#p1202004# says that it makes perfect sense that you don't know how to hold a weapon, since you've lost your memory. He then tells you that maybe battling a monster would jog your memory and asks you to defeat #r#o9300383##k. You wonder if you can do it." />
+        <string name="2" value="You defeated #o9300383#, but it hasn't jogged any memories. You have a feeling that your skills and abilities were lost, just like your memories. What kind of a hero are you if you have no abilities?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Seeing your face tells me you didn't get a whole lot out of defeating that monster, but don't worry. I am sure things will work out. Here's a potion for you. Good luck!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I see that you have yet to defeat all the #r#o9300383#s#k yet. Take on about #r3#k of them, and maybe that'll jog your memory." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202004" />
+            <string name="endscript" value="q21012e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300383" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21012s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3383.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Moren's Upset" />
+        <string name="parent" value="Gordon Passes His Magic" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Keol and Ramain have been concerned lately because Moren seemed to be letting out a heavy sigh every other minute. They may not try to show it, but the two are struggling right now, so for the sake of these three, I better ask Moren what's up." />
+        <string name="1" value="Gordon's Secret Technique! This is something I didn't even see coming. A secret technique that even the creator of the Maker skill cannot pray away. Moren had high expectations that this technique would further advance the Maker skill. I decided to visit Gordon in El Nath without notifying Moren. Who knows, I might be the one learning that skill instead." />
+        <string name="2" value="After calmly answering Gordon's questions, I was able to have this rolling in no time. Gordon at first seemed taken aback that the very existence of the technique had been exposed, but seemed to have gotten over it quickly. He then made a proposition where if I pass his test, then he'll share his technique with me. I wonder what that test is..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Sigh... phew... sigh... \r\n#b#L0#Moren, what's bothering you? Why the sighing?#l" />
+            <string name="1" value="Hmmm? Was I sighing? You are wrong! I don't ever do that, no?!! \r\n#b#L0#No, Moren, you were definitely sighing. I saw you do just that.#l" />
+            <string name="2" value="Sigh... you got me. Do you know of a gentleman named Gordon?\r\n#b#L0#No, I don't.\r\n#b#L1#Yes, I do. He's the shoemaker at El Nath.#l" />
+            <string name="3" value="That's right, but he's not just another shoemaker! I got to see him work on his craft, and I was humbled and inspired by his work! He's a friend of mine, and a mentor as well!\r\n#b#L0#So what does that have to do with your heavy sighing?#l" />
+            <string name="4" value="He has this technique that only he can duplicate! I tried as hard as I could, but I couldn't make it the way he did! That's why the other day, I wrote a letter to him asking for his secret technique... but he rejected my plea!!! \r\n#b#L0#I thought you just told me you were friends with Gordon!#l" />
+            <string name="5" value="Gordon is a kind of a person who distinguishes personal life and work! He will not divulge his secrets even if you're his best friend! I was thinking of ways to improve the methods for the Makers, and I kept going back to Gordon's secret method, but... #h0#! Even if you meet Gordon after this, promise me not to tell him what I have just told you! He thinks I have completely given up on learning his secret method... sigh..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Are you not aware of Gordon? He's a legend in the field of shoemaking! I should not have taught you the Maker skill! You should look at yourself in the mirror and ask yourself whether you're worth having that skill." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="#b#h0##k, you should also really work on your craft with your Maker skill! The more you work on the skill, the higher chance you'll have of one day unlocking the secrets of Gordon!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? I cannot believe I just heard that coming out of your mouth! Are you trying to put me in a difficult situation?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmmm? Do you need me for something? \r\n#b#L0#I have seen your technique, and it's nothing short of amazing.\r\n#b#L1#I hear that you have this special technique of yours. Is that true?#l" />
+            <string name="1" value="... Was it two days ago? It was a dark night with an especially bright moon shining over us when I heard someone stepping on the snow. That shook me up... maybe that was you, though. Yes, so what did you see that night?\r\n#b#L0#Hmmm... (in a faint voice) a...(doll?) two...(of them???)...maybe you had two... dolls...?\r\n#b#L1#Hmmm... (in a confident manner) Did you have a doll with you? At least two or three of them? Something that looked like... Pinocchio...?#l" />
+            <string name="2" value="!!!!! You ... you really saw 'that object' correctly, did you...\nSigh... In that case, there's nothing I can do but to tell you of my story. But in order to listen to this story, you must promise me that you'll become my student. Are you ready to do that?" />
+            <imgdir name="yes">
+                <string name="0" value="Once you become my student... haha, Moren will be very upset over that. I remember him writing me a letter a while back about the secret technique of mine, but I told him I will never share that with anyone. Well, it's not something that you should know anyway, so don't worry about it." />
+                <string name="1" value="First of all, I don't know you that well. I'll have to make sure that your skills are good enough so that I can teach you what you'd call a special technique. I'll have 'the item' ready, so I want you to prepare one on your own as well. I need you to prepare for the test I will be giving you. Let me know when you are ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Oh ho... maybe you came to the wrong place. I am just an old man making regular shoes here." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hahaha... that... is correct. I once ran into a huge problem while making Pinocchio because I ran out of materials. Chipping wood can also be my special technique... indeed it can be... hahaha. The next time you come here, I'll teach you the intricacies of sculpting wood." />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="What are you doing just standing there? If you found out what my problems are, you should be out there trying to solve it for me, isn't that what all students do for their masters? Put more effort into the Maker skill!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6029" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

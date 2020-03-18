@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3603.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Brothers' Stack of Rice 3" />
+        <string name="parent" value="Brotherly Love" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="1" value="Chil Sung was puzzled that his stack didn't seem to decrease, and asked me if I could place another #t4031229# on his brother's stack." />
+        <string name="2" value="I received a #t4031229# from Chil Sung, and placed it on top of a stack of rice in front of Chil Nam's house." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031247" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031247" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you make sure my brother did not find out about this? Something's weird, though. It seems like my stack of rice didn't shrink one bit. Don't you think so, too? Well, that's why ... can you go back to Chil Nam's house once more?" />
+            <imgdir name="yes">
+                <string name="0" value="I urge you, please make sure my brother doesn't know about this~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm sorry. I should have known that I was pushing it by asking you to do this twice..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" I see a stack of rice stacked at the garden of Chil Nam's house. Secretly, I brought out a sack of rice and laid it unnoticeably on top of the stack." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" This is Chil Nam's stack of rice." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" I think you forgot to take #t4031229#." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2072001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031247" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3602" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

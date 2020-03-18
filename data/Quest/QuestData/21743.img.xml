@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21743.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Special Ink" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You want to restore the #t4220151# that the Black Wings gave to #p2090004#. The one person in #b#m250000000##k who is capable of doing the restoration is #b#p2091008# the painter#k." />
+        <string name="1" value="#p2091008# states that to restore the #t4220151#, one must make a #b#t4032342##k and pour it all over the scroll. He then asks you to bring the materials necessary to make the ink, so he can make some for you. \r\n\r\n#i4000286# #t4000286# #b#c4000286# / 50#k\r\n#i4000287# #t4000287# #b#c4000287# / 50#k\r\n#i4000291# #t4000291# #b#c4000291# / 100#k" />
+        <string name="2" value="You handed #p2091008# the materials and received #t4032342# in return. You should now open the #t4220151# and pour the #t4032342# over it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-500000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000286" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000287" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000291" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032342" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How can I help you? What? Are you asking me whether this #t4220151# can be restored? Let's see…How in the world did this #t4220151# get soaked and steamed in boiling water? Only a dummy like #p2090004# would do such a thing. Good thing the paper is so strong. It should be fine." />
+            <string name="1" value="Well, restoring the #t4220151# is not impossible. As long as I have some special ink, I'll be able to restore it. I can make the #t4032342# myself, so all you'll need to do is get me the materials needed for me to make one. I also charge a small fee, of course." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="These are the items I need for the special ink: #b50 #t4000286#s#k, #b50 #t4000287#s#k, and #b100 #t4000291#s#k along with a service fee of #b500,000 Mesos#k. That should be enough to make the #b8 batches of #t4032342##k required to restore the #t4220151#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm… So you can't pay for the fee? In that case, I better get back to work. I'm a busy man, you know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you brought all the materials I've asked you for. Now please hand me the items along with the required fee." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, here are 8 batches of #t4032342#. Now open up the #t4220151# and spray #t4032342# all over the scroll to restore the content. If you happen to lose the #t4032342#, then I'll make you more, so just let me know." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gotten all the materials for #t4032342# yet. I'll tell you what I need one more time: #b50 #t4000286#s#k, #b50 #t4000287#s#k, and #b100 #t4000291#s#k along with a service fee of #b500,000 Mesos#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000286" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000287" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000291" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21742" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032342" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="54" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

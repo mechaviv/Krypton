@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3448.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mason the Collector" />
+        <string name="parent" value="Mason the Collector" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should meet Mason, who newly moved into a previously-empty house at Ludibrium." />
+        <string name="1" value="The bird with an odd way of talking, Mason the Collector is always busy looking for something to collect. It especially has a fondness for sparkling objects, and apparently found the Aurora Marble at the Warped Path of Time. Hmmm... wonder who has that item? \n\n#t4031189::# #b#c4031189#/1#k" />
+        <string name="2" value="At the Warped Path of Time, I took out the Lazy Buffys, collected the Aurora Marble, and handed it to Mason." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031189" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4004000" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4004001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4004002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4011007" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4011006" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="4080006" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="4080010" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="4004004" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="4004003" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="4080011" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A marble that emits a mysterious sparkle... I saw with my very own eyes; I can't help, I want it!! I want Aurora Marble!!! I want it... Get that marble for me." />
+            <imgdir name="yes">
+                <string name="0" value="Are you really going to get it for me? I went to the #bWarped Path of Time#k before to collect some items, and that's where I saw it... and it was right there on the ground!!!!" />
+                <string name="1" value="Aurora Marble, very mystifying. I was ready to take it when someone else took it and ran away with it!! Very angry now, thinking about it. I want the marble, and I want it now. \n\n#i4031189# 1 #t4031189# #b#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you get me the Aurora Marble, I'll give you something from my collection. Get me that sparkling marble." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You may find yourself staring at that mystifying light. Did you bring it? Show it to me." />
+            <imgdir name="yes">
+                <string name="0" value="This is it. Yes, the beautiful, mystifying colors. This marble deserves to be part of my collection. I now give you an item from the collection as I promised.." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="No. Not it. You don't have the marble I am looking for!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041027" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031189" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041027" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

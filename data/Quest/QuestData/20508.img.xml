@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20508.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mimiana's Shedding" />
+        <int name="area" value="15" />
+        <string name="0" value="Ask #b#p1102002##k about a more powerful mount." />
+        <string name="1" value="A #t1902005# that has accumulated experience can go through a shedding process to become even more powerful. However, during the shedding, it becomes very weak...and you won't be able to mount it. If you have things to do that require the #t1902005#, you should do it now." />
+        <string name="2" value="You left #t1902005# with #p1102002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="왔는가? 자네 정말 레벨이 많이 높아졌군. 어디 보자... 그렇다면 당연히 #t1902005#도 경험을 많이 쌓았을 텐데... 역시 그렇군. 오랫동안 자네와 함께 모험한 #t1902005#는 많은 경험을 쌓아 더 강해질 수 있게 되었다네." />
+            <string name="1" value="하지만 그냥 강해지는 건 아니야. #t1902005#가 한 단계 성숙해지려면 탈피라는 것을 해야 한다네. 하지만 그 탈피가 그리 만만치 않은데... 탈피하는 동안 자네도 #t1902005#도 꽤나 고생하게 될 거야. 그래도 괜찮다면 탈피를 할 수 있도록 도와주지." />
+            <imgdir name="yes">
+                <string name="0" value="탈피하는 동안에는 #t1902005#를 타고 다닐 수 없다네. 탈피중인 #t1902005#는 매우 쇠약해져서 #t4220138#에 넣어두고 돌봐줘야 하거든. 그러니 혹시 #t1902005#를 타고 처리해야 할 일이 있다면 모두 처리하고 오게. 그 동안 #t4220138#을 준비해 놓지." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흠... 뭐, 보통은 더 강해지기를 열망하기 마련이지만 자네가 그렇게 선택하겠다면 말릴 수는 없는 노릇이지. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20507" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <string name="end" value="2008120200" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

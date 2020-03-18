@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2081.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Lesson on Job Advancement" />
+        <int name="area" value="30" />
+        <string name="0" value="What do you have to do to start the job you like? Better talk to Olaf in Lith Harbor to find out." />
+        <string name="1" value="Listen carefully as #p1002101# describes the details of each job. There'll be a quiz afterwards!" />
+        <string name="2" value="You answered #p1002101#'s questions. You need to be at least #bLevel 10#k to be a #bWarrior, Thief, Bowman, or Pirate#k, and at least #bLevel 8#k to be a #bMagician#k. Head on over to the city where you can get your first job! Warriors: Perion. Thieves: Kerning City. Magicians: Ellinia. Bowmen: Henesys. Pirates: Nautilus." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="65" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's not in my nature to babble, so I'll keep this short. You can become a #bWarrior, Bowman, Thief, or Pirate#k at #bLevel 10#k and a #rMagician#k at #rLevel 8#k. Talk to the correct person at the correct town to get the job you want." />
+            <string name="1" value="Perhaps that was a little TOO short. Fine. Talk to #p1022000# in Perion to become a Warrior, to #p1012100# in Henesys to become a Bowman, to #p1052001# in Kerning City to become a Thief, to #p1032001# in Ellinia to become a Magician, and to Kyrin in Nautilus to become a Pirate." />
+            <string name="2" value="Clear enough for you? I hope you paid attention. That info is important. Talk to me again when you're ready to answer my questions." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Question one. To become #ba Warrior, Bowman, Thief, or Pirate#k, #bwhat level do you need to be?#k\n\n#L0##bLevel 8#l\n#L1#Level 1#l\n#L2#Level 10#l" />
+            <string name="1" value="Excellent. Question two. To become a #bMagician#k, #byou need to reach what level?#k \n\n#L0##bLevel 8#l\n#L1#Level 1#l\n#L2#Level 10#l" />
+            <string name="2" value="Great work! Are you using a cheat sheet? Haha!\nYou know, I've always imagined myself as a Warrior, but every now and then, I see myself shooting arrows with a cool bow! \nHere's the next question. #bWhere#k do you go to become a #bBowman#k? \n\n#L0##bPerion#l\n#L1#Henesys#l\n#L2#Kerning City#l\n#L3#Ellinia#l" />
+            <string name="3" value="You paid attention! I'm impressed." />
+            <imgdir name="yes">
+                <string name="0" value="You've passed my test. Now it's time for you to decide which job (Warrior, Thief, Magician, Bowman, Pirate) you want. Talk to me once you've made up your mind." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="I already addressed this. You can become a Magician at Level 8. But I didn't ask about Magicians, did I?" />
+                    <string name="1" value="Whoa, ambitious much? That's way too early to get your first job. Let me spoonfeed you: the answer is 10." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I'd like to see you try to start a job at Level 1... That's way too early." />
+                    <string name="2" value="Well, you CAN still become a Magician at Level 10, but that's a little late. You can actually become a Magician a couple levels before that..." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Perion is for Warriors. I went there myself when I was training to be a Warrior." />
+                    <string name="2" value="At Kerning City you'll find a legendary Thief called Dark Lord...if you keep your eyes open, that is. Are you interested in becoming a Thief?" />
+                    <string name="3" value="You know, with all those trees they force everyone to climb in Ellinia, you'd expect Magicians to be buff and muscular...but in fact, the opposite is true! Strange, eh?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002101" />
+            <int name="lvmin" value="8" />
+            <int name="subJobFlags" value="1" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

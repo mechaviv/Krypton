@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22544.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where's the Book? 4" />
+        <string name="parent" value="Where's the Book?" />
+        <int name="order" value="4" />
+        <int name="area" value="7" />
+        <string name="1" value="When you ask Dr.#p1032104# about the book, she says that she sent it to her professor who really needed it. Go to #b#m102000000#'s East Rock Mountain#k to find #b#p1022006##k, Dr.#p1032104#'s professor." />
+        <string name="2" value="You met #p1022006# at the East Rocky Mountain." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Is there something I can do for you? Hm? #p1012110# sent you? Has my kid done something bad? Oh, then what brings you here? A book? Oh, you mean #t4161050#, correct? " />
+            <string name="1" value="I sent it to my scholarly master who is conducting research on fossils. He's been trying to idenitify a fossil he recently discovered and thought it might be a Dragon fossil. If you want the book, please visit my master." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="My master is a renowned scholar in fossilology. His name is Dr. #b#p1022006##k. He is always roaming outside. He should be near the #bEast Rocky Mountain in #m102000000##k right about now. " />
+                <string name="1" value="That's one unique creature you've got there. It looks like a lizard but looking at its bone structure, it's obvious that it isn't a lizard. Could I just... Oh, I'm sorry. I got carried away. Anyway, good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you needed that book. I guess not." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoa! Wha... What is that? What is that strange creature? A lizard? I don't care if it's a lizard or a salamander! Get it out of here. It's gross! Just tell me why you are here! " />
+            <imgdir name="yes">
+                <string name="0" value="A book? Oh, maybe you're talking about the book I have. Wait here for a minute." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I guess you haven't met my master yet. My master, Dr. #b#p1022006#, is at the #kEast Rocky Mountain in #b#m102000000##k. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22543" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

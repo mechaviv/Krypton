@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20017.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The First Knight Training" />
+        <int name="area" value="15" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="As #p1101002# has said, you must reach Lv.10 before you can become a Knight-in-Training. Head over to #b#m130010000##k to find #b#p1102000#, the Training Instructor#k." />
+        <string name="1" value="You have met #p1102000#, the Training Instructor, in #m130010000#. According to #p1102000#, there isn't a single monster in Ereve, so you must train against illusory creatures named Mimis, which #p1101001# summons. Then #p1102000# asks that you hunt #r#o100122##ks." />
+        <string name="2" value="You have met #p1102000#, the Training Instructor, in #m130010000#. According to #p1102000#, there isn't a single monster in Ereve, so you must train against illusory creatures named Mimis, which #p1101001# summons. Then #p1102000# asks that you hunt #r#o100122##ks." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="430" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000020" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000021" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What's that? #p1101002# sent you? Oh! Wow, are you a newbie? Good to meet ya. Really. I'm #p1102000#. I'm the Training Instructor who's in charge of Noblesse like you. But... why are you looking at me like that...? Ah, this must be your first time seeing a Piyo." />
+            <string name="1" value="We are called Piyos. You've talked to #p1101001# who's always next to the Empress, haven't you? Well, Piyos are from the same family as #p1101001# though we differ in type. Piyos only live in Ereve, so I'm sure it'll take some time for you to get used to us." />
+            <string name="2" value="Oh, and did you know that there are no monsters in Ereve? Not even a smidgeon of evil dare enter Ereve. But don't you worry. You'll be able to train with illusory monsters created by #p1101001# called Mimis. Shall we begin the training now?" />
+            <string name="3" value="shall we begin your second training then? Let's have you hunt #r#o100123##ks this time. It should be a bit more challenging. What are #o100123#s, you wonder? You probably saw them while you were hunting the #o100122#s... They somewhat resemble the #o10012" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you've already defeated all the #o100122#s? Well done! We can go on to the next stage then." />
+            <imgdir name="yes">
+                <string name="0" value="Oh, and since there is a good chance that you've consumed a lot of your potions already, I'll give you some more just in case. Potions can truly save your life when you're in danger, so guard them well." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't been able to defeat all #r15 of #o100122#s#k yet? If you are having trouble finding them, I suggest you go to #m130010110#. You won't find anything but #o100122#s there, so you'll be able to hunt them in no time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100122" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20016" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20017s" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

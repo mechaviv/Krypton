@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3011.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To Restore the Crystal" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="8" />
+        <int name="area" value="33" />
+        <string name="1" value="Just as I expected...Spiruna went livid over the cracked Black Crystal, and blames it all on me!!! Maybe I should seek some help from that lady standing next to her." />
+        <string name="summary" value="I should talk to the mysterious girl who lives in Spiruna's house. " />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;A Word from the Assistant&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3012" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohh ... looks like you have found my #bBlack Crystal#k, and... hey, what happened? My ... my ... Black Crystal is cracked!! You incompetent fool! Do you think you can actually get away with breaking my crystal?? I don't want to see your face so get out of here now!! Arrrgh ... I need to find a way to fix it ... do I have to let my assistant take care of it?" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I can't believe you have the nerve to show up after breaking my precious #bBlack Crystal#k!!! Thanks to you my work is set back another six months! It will be easy to fix it with an item from the fairies but I'd rather die than ask them for their help. Do I have to let my assistant do it? Arghhh..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3010" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

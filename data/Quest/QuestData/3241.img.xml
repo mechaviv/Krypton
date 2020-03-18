@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3241.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning Up Helios Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="Helios Tower opened recently for public, and apparently #p2041004# has been going through some trouble thanks to the growing number of #o3210208#s at the tower." />
+        <string name="1" value="#p2041004#, the security guard of Ludibrium, approached me and asked for a favor. He was concerned about the growing number of #b#o3210208##k at the Helios Tower, which has recently opened for travelers. According to him, the #o3210208#s have been blocking the travelers' path, as well as destroying the elevators in the tower, and he wanted me to eliminate some #o3210208#s for him.\n\n#o3210208#  #r#a32411#" />
+        <string name="2" value="With a request from #p2041004#, the security guard of Ludibrium, I went into Helios Tower and eliminated 20 #o3210208#s, the striped rats that have been destroying the elevators at the tower." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000011" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My gosh, it seems like there's work wherever I go. Since Ludibrium is one giant castle, there seems to be a problem here and there popping up by the minute. This time, I've been reported that there's a major problem at the Helios Tower, which opened only recently to the public." />
+            <string name="1" value="Unfortunately, all the toy soldiers are currently stationed at Eos Tower, so there's no one available to take care of Helios Tower. Say, you seem like someone that enjoys adventures... can I ask you for a little help? " />
+            <imgdir name="yes">
+                <string name="0" value="Helios Tower is located at the East of Ludibrium, and it serves as the rock-solid foundation of Ludibrium, along with Eos Tower. The tower is also the home of #b#o3210208##k, a rat monster that has been rapidly growing in numbers, and they have currently been causing a lot of problems with the elevators at the tower." />
+                <string name="1" value="This is very important, for it has everything to do with the safety of the elevators there. Please head over to Helios Tower and eliminate #b30 #o3210208#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't feel like doing it? It's not that difficult, though. If you ever feel like changing your mind, I'll be here waiting. Like I said, this is very important, for it has everything to do with the safety of Helios Tower." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have done a great job; the people here are talking about the job you did there at the tower. They saw a noticeable decrease in the number of #o3210208#s at Helios Tower. What can I Say, great job! " />
+            <imgdir name="yes">
+                <string name="0" value="This is a reward for your effort, brought to you by the people of Ludibrium. Hopefully this will aid your journey down the road." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please check Helios Tower immediately, for #o3210208#s are causing great havoc there. We need every help we can find, and your help will be very much appreciated." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3210208" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

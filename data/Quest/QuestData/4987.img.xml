@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4987.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Game On! &lt;Best Buy&gt; 3" />
+        <int name="area" value="50" />
+        <string name="0" value="I helped Mom and Dad with Thanksgiving dinner and received my #bAllowance#k! Now I can head to #bHenesys, Amoria, and New Leaf City#k and obtain a #bNexon Game Card#k from one of the Vendors! " />
+        <string name="1" value="I have my #bAllowance#k, and I'm on my way to #bHenesys, Amoria, and New Leaf City#k! I just have to speak with one of the Vendors there to receive a #bNexon Game Card#k! Just have to make sure I have some room in my ETC slot for it..." />
+        <string name="2" value="I spoke with one of the vendors, and in return for my #bAllowance#k, I received a #bNexon Game Card#k! I can also take this to any of the Store Vendors in #bHenesys, Amoria, or New Leaf City#k if one store happens to be sold out. I can help Mom and Dad everyday until the end of the event, receive #bAllowance#k and get another #bNexon Game Card#k. I should get as many as possible, because when the event ends, it will turn into MaplePoints that I can use in the Cash Shop! Free money! WOO HOO! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031864" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031865" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="95" />
+                    <string name="dateExpire" value="2007122001" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031866" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="5" />
+                    <string name="dateExpire" value="2007122000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey!  Hope your day's going well.  We sell #bNexon Game Cards#k here.  Are you here to get yours?\r\n\r\n#b#L0#Oh yea!#l#k" />
+            <string name="1" value="Well, I have something here called a #bNexon Game Card#k. It comes in 2 kinds: #b100 points#k and #b250 points#k. These are available wherever you see my store. You will need your #b#t4031529##k from your Mom and Dad to get one, though.  Have you helped them with Thanksgiving Dinner?\r\n\r\n#b#L0#Yep! Mom's making enough food to keep our Aunt Petunia fed for a few hours!#l#k\r\n#b#L1#No. I'm not going to either--I should just get #t4031529#, why should I have to work?#l#k" />
+            <string name="2" value="Good job!  Well, are you ready to get your #bNexon Game Card#k?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Well, working hard is what gets you ahead in life. Maybe you should talk to your parents a bit more so you can learn that..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ok. Let me get it for you. Be right back! &lt;runs to the counter and grabs one of the cards from the stack behind the counter&gt;" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back anytime you change your mind. Have a nice day!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, back already I see, ready to get your #bNexon Prepaid#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Excellent, well, here you go! Remember to keep it, after the Event ends, it will become #rMaple Points#k you can use in the Cash Shop!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you have some dirt, but not your #bAllowance#k. When you get your #bAllowance#k from Mom and Dad, be sure to return!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201090" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031864" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201090" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4986" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031864" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <string name="end" value="2007121000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

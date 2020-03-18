@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9734.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Help out Gordon!!" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra seems to be depressed.  What could maker her sad? I better go talk to her." />
+        <string name="1" value="Gordon of El Nath had been busy creating a wooden puppet called Pinocchio, and it seems like he is stuck in limbo because he's short on materials to finish the puppet... better start gathering up some materials for Gordon\r\n\r\n#i4031934# #t4031934# #b#c4031934# / 30#k" />
+        <string name="2" value="I gathered up the materials and gave it to Cassandra. She seemed elated that she would be able to help Gordon with these new materials. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you so much for coming. I have a huge favor to ask you. You know Mr. Gordon at El Nath? He's currently living alone in that cold place, and he was never married, so he doesn't have any kids with him, either. To combat his loneliness, he's been working on a wooden puppet called Pinocchio." />
+            <string name="1" value="Lately, he's been telling me he's short on materials, so he hasn't started making the face of the puppet yet. He is too old to be roaming around looking for materials in that cold weather... so I was wondering... would you like to help him finish his puppet?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! It's nice to see a Mapler like you that's willing to help out the elders! He told me he'll need #b30 #t4031934#s#k to complete the face. You'll find those through monsters. I really hope Gordon gets to complete Pinocchio. Come see me when you have the materials ready!\r\n#i4031934# #t4031934#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? No? Don't you feel bad for Mr. Gordon?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Gordon told me he's run out of #t4031934#, and is in need of #b30 #t4031934#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031934" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q9734e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="70" />
+            <string name="start" value="2009032400" />
+            <string name="end" value="2009040700" />
+            <int name="interval" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

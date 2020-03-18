@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3702.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yaku's Request" />
+        <int name="area" value="41" />
+        <string name="0" value="I'd better go see #p2081003# at #m240000000#." />
+        <string name="1" value="#p2081003#, who takes great care of the egg at Leafre, desires to beautifully decorate the nest. She seemed excited by the prospect of the baby dragon hatching out of the egg and seeing the beautiful nest for the very first time, and asked me if I could gather up #b50 #t4000238#s#k and #b30 #t4000239#s#k to help her decorate the nest.\n\n#i4000238##t4000238#  #b#c4000238##k / 50\n#i4000239##t4000239#  #b#c4000239##k / 30" />
+        <string name="2" value="As requested by #p2081003#, I gathered up 50 #t4000238#s and 30 #t4000239#s. #p2081003# went to work immediately, decorating the nest with soft, sparkling feathers." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="반짝 반짝하게 닦아야지~ 이거봐 내 얼굴이 비칠정도로 닦았어. 알에서 빛이나는 것 같아. 어때? 빛이 나는 것 같지? 아기용이 태어났을 때 깨끗하고 예쁜 둥지를 보여주고 싶어~ 그래서 매일매일 열심히 청소를 하고 있어." />
+            <string name="1" value="그런데 깨끗하긴 하지만 뭔가 부족한 것 같아. 예쁜 새 깃털로 장식해주면 예쁠텐데 저기... 둥지를 예쁘게 꾸밀 수 있게 새 깃털을 모아다 주지 않겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="고마워~ 마을 밖 미나르숲에는 #o8140001#라는 새가 살고 있는데 그 새의 깃털이 아름답다는 이야기를 들었어. #b#t4000238# 50개#k와 #b#t4000239# 30개#k를 모아와 주지 않겠어?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="새 깃털로 둥지를 장식하면 아기용이 참 좋아할텐데. 그렇게 생각하지 않아?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="47000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000238" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000239" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sparkly shiny, shiny sparkly! Look! I can see my face reflecting on it! I think this egg is about as clean as it can get. What do you think? Isn't it cool? When the dragon hatches out of the egg, I want it to see a beautiful nest as it sees the world for the very first time! That's why I have been cleaning up the nest all the time." />
+            <string name="1" value="Well, it is clean and all, but I think something's lacking here. If the nest can be decorated with feathers... that would be nice. Can you... gather up some new feathers to really decorate the nest? It'll look beautiful!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks!! At Minar Forest outside town, you'll find a bird named #o8140001#, and apparently, its feathers are something to behold. Can you please bring me #b50 #t4000238#s#k and #b30 #t4000239#s#k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="The baby dragon should really love the new nest decorated with feathers. Don't you think so?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoaa! You did gather up a whole bunch of feathers! They're so pretty! They seem to be sparkling in all angles! Thank you so much for all this! I think I can decorate this nest really pretty now." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, this feather goes here, and this little one goes ... here! I really wish the baby dragon hatches out of the egg soon! Thanks a lot for your help~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I heard Harps live in a forest far away from town. If you see bird nests at high places, that means Harps are there nearby. Please gather up #b50 #t4000238#s#k and #b30 #t4000239#s#k~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000238" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000239" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081003" />
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

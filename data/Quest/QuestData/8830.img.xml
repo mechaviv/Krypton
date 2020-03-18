@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8830.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Festival of Lights - Blessing the Festival " />
+        <string name="parent" value="Festival of Lights" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="I promised Hannah I'd return to her once I was rested up. I should head back soon." />
+        <string name="1" value="Upon my return, Hannah was joyous, having finished the Altar. She now needs candles to signal the start of the ceremony. I'll have to get 9 candles (she mentioned Horned Mushrooms) and bring them back so the Festival of Lights can begin. " />
+        <string name="2" value="I acquired the nine candles and gave them to Hannah. The Festival of Lights has begun!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031444" />
+                    <int name="count" value="-9" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031521" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'll start building the Altar. In the meantime, I'll need you to gather 9 Sabbath Candles so we can officially start the festival. If you could help me out, I'd greatly appreciate it! " />
+            <imgdir name="yes">
+                <string name="0" value="Glad to hear it. Ok, They can be found on those strange horned mushroom creatures. Come back here when you've got 9!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Alright. I still need your help, though, so be sure to come back!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great job! I think these candles will be enough to being the Festival of Lights! Thanks for your hard work, please take this present as a token of my appreciation." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks again! If you want to open this present box, then would you like me to help you open up the present?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Ah, you've returned...with not enough candles, I see. I'll need 9 to start the Festival. See you when you get them!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201031" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031444" />
+                    <int name="count" value="9" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201031" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28331" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2010010100" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

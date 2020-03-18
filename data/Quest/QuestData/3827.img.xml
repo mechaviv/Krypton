@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3827.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tae Sang's Request" />
+        <string name="parent" value="Operation Eliminate Red-Nosed Pirates" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="15" />
+        <string name="0" value="The resident pharmacist of #b#m250000000##k, #b#p2091002##k, would like to request something. I wonder what that is..." />
+        <string name="1" value="#p2091002# talked to me about the dastardly ways the #rRed-Nosed Pirates#k used to steal some herbs by attacking the ships traveling from #m250000000# to #m251000000#. He asked me to join forces with #b#p2092001##k, who's in charge of freight on #b#m251000000##k and protect it." />
+        <string name="2" value="#b#p2092001##k seems to be very experienced here. If I work well with him, defeating the disciples of Lord Pirate should not be too difficult." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can't believe the herbs have been stolen again. This is not doing justice to all the good folks at #m250000000#... Don't you think so? Hmmm? Hey, you're not from here... you look like you have no clue what I've just talked about. Do you want to hear a story?" />
+            <imgdir name="yes">
+                <string name="0" value="#b#m251000000##k, a beautiful town right next to #m250000000#, is renowned fro herbs. That hold especially true for Mr. Koo, who has the best set of... never... nevermind. Lately, however, I've seen some weird pirates setting up the lair, only pilgramaging the ships that are carrying the herbs around." />
+                <string name="1" value="I can't do anything about it here in #m250000000# if I don't get the herbs from #m251000000#. Normally this should be something I should take care of first, but since I'm in charge of freight from #m251000000# on. If you can help me here, it'll be very much appreciated." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There's no way you'ld be concerned about a small things that occurs everyday here..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome to #m251000000#. Unfortunately, things are not looking up here, so I also suggest you to do the same. What? #p2091002# sent you here?" />
+            <imgdir name="yes">
+                <string name="0" value="From what I see through your clothes and armors, you definitely look like an experienced traveler. This may not be an easy task, though. Can you do it?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not run into #b#p2092001##k, yet? #p2092001# may be currently moving freights at #b#m251000000##k, but he used to be a famous traveler from back in the day." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2092001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

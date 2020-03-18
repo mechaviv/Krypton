@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8238.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Catch a Bigfoot by the Toe." />
+        <string name="parent" value="Bounty Hunter..." />
+        <int name="order" value="2" />
+        <int name="area" value="45" />
+        <string name="0" value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I'll bet that she's willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I'll be on my way to New Leaf City!" />
+        <string name="1" value="I spoke with Lita, and I'm pretty sure I'm getting the short end of the stick on this one. I have to venture into the Phantom Forest and find this creature they've named Bigfoot and claim its toe as the proof of bounty. Everyone else who's gone after this thing has never come back-I'd better stock up on potions and keep my guard up-who knows when it could appear?" />
+        <string name="2" value="I found this mysterious creature, and Lita wasn't kidding when she said it wrecked everyone that came after it! Although, when I was fighting it, I got the feeling that the Leprechaun on its back was just luring him into things...maybe it just doesn't know better? At any rate, I returned the Toe to Lita and claimed the Bounty.  The more mesos, the better!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="150000" />
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032013" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You're alive! I mean, you made it back! That's great...and there's only a few dozen scratches on you-nothing a Ginger Ale won't fix in a jiffy. And you brought Bigfoot's Toe! How was the fight? Take this reward-you've certainly earned it!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, looks like you're short of 1Bigfoot's Toe I asked for. I can understand if you want to rest, Just be sure to get them all before you return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201054" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201054" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8237" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8238s" />
+            <int name="lvmin" value="80" />
+            <int name="interval" value="2880" />
+        </imgdir>
+    </imgdir>
+</imgdir>

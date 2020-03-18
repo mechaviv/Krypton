@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21712.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="First Assignment, Completed!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Since this is your first assignment as an informant, you are eager to find out whether #p1012111# of #b#m100000000##k has solved the mystery behind the #t4032315#. Go visit #b#p1012111##k and find out." />
+        <string name="1" value="#p1012111# says he discovered a faint noise coming out of the #t4032315#, which only #o1210102#s can hear, and that's what's been causing their aggressive behavior. In other words, #bthe #r#o1210102#s' behavior is all because of a puppet#k! Now that you have this case pretty much wrapped up, your should report the info to #b#p1002104##k." />
+        <string name="2" value="You notified #p1002104# about the cause of the strange behavior among the #o1210102#s, which officially concluded your first ever assignment as an informant. You should probably spend some time leveling up and training yourself now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, you're back. I noticed that it took you longer than expected to gather up the information on the changes in #o1210102#s around #m100000000#. So what was it?\n#b#L0#(You explain to him what happened in #m100000000# and some details on #t4032315#.)#l\n#k" />
+            <string name="1" value="Hmmm… I sent you out there, thinking this would be a simple open and shut case, but now I realize that this is a very complex case. Seems like you were able to get the job done, though! I was worried about you, but you're doing quite well here." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to you, I have another piece of valuable information. I should definitely get a good price for this." />
+                <string name="1" value="The next assignment? Well there's really not much to do right now. I suggest you keep training. Just explore the island, gain some experience, and... I'll let you know when I find a new gig. Maybe when you get to Lv. 18." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Thanks to you, I was able to understand why the #o1210102# near #m100000000# have been acting strange lately. By the way, why were you investigating this in the first place? Did #bsomebody#k ask you to do it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21711" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21712s" />
+            <int name="lvmin" value="15" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

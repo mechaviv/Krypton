@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22516.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Power B. Fore's Paranoia" />
+        <int name="area" value="7" />
+        <string name="0" value="Did he finish reading the Recommendation Letter? Talk to #b#p1012118##k." />
+        <string name="1" value="#p1012118# says that there is no way Stan would write such a nice letter and that it is a conspiracy to trick him. He wants to test you to be sure... He's obviously deluded but what can you do? Accept #p1012118#'s test.\r\n\r\n#o9300274##r #a225161##k" />
+        <string name="2" value="You passed #p1012118#'s test. But it doesn't seem like #p1012118# is going to accept the results..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4390" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="This...this isn't possible! That miserly Stan would never write a Recommondation Letter for anyone! I don't believe it! I grew up with Stan, so I know! This is a conspiracy! That Stan is just trying to trick me! \r\n#b#L0#(Hmm... Chief Stand did say #p1012118# was full of hot air. Do they hate each other?)#l\n#k" />
+            <string name="1" value="And you're nothing but his little instrument, here to muddy the quality of my Training Center! If people were to find out that someone like you was training here, rumor would spread that training here isn't very helpful. I won't let that happen!\r\n#b#L0#(This guy is paranoid. Who'd want to muddy his Training Center's reputation?)#l\n#k" />
+            <string name="2" value="I won't simply fall for Stan's little trick. I refuse this Recommendation Letter! Well, that's what I want to say. But he's the Chief of #m100000000#, I can't just refuse... Oh, a test! I'll give you a test!  " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="There are a lot of #r#o9300274#s#k that have appeared at the #b#m100010100##k to your right. Eliminate #r50#k of them! Puhaha, of course there's no way you can pull that off. You're just Stan's instrument!" />
+                <string name="1" value="#b(Sheesh, he's wrong, but there's no point trying to convince him. You have little choice but to eliminate the #o9300274#s.)#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Yes, I'm sure of it. This is all a part of Stan's conspiracy! Did you think I would fall for it, Stan?! Puhaha!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wha..What? You eliminated 50 #o9300274#s? Th...there's no way!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Ha, you can't eliminate #r50 #o9300274#s#k, just as I though! Even though there are lots of them at the #b#m100010100##k towards the right, there's no way that you can handle them!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012119" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300274" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22515" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

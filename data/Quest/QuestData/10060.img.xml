@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10060.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Special Gift" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="#bCassandra#k seems to have something she wants to say to you..." />
+        <string name="1" value="#bCassandra#k says that she has something to give you..." />
+        <string name="2" value="#bCassandra#k gave you a strange medicine. Should you drink it?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2210021" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="뭐야? 그 우중충한 옷은? 설마... #b가가#k가 부러워서 똑같은 옷을 사입은거야?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="네가 정말 가가가 부럽다면 네게 줄 특별한 것이 있지. 잠시 후에 나를 찾아오도록 해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="부럽지도 않으시면서 왜 그런 옷을..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#b가가#k가 부럽다니, 취향하고는...내가 특별한 약을 줄테니 한번 마셔봐. " />
+            <imgdir name="yes">
+                <string name="0" value="한모금 들이키는 순간 너도 금방 그 어리바리한 표정의 길죽한 얼굴을 하고 있을테니..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="내가 주려는 것을 이미 가지고 있는 것 같은데?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2210021" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="end" value="2008103100" />
+            <int name="dayByDay" value="1" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1022074" />
+                <int name="1" value="1052169" />
+                <int name="2" value="1072370" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

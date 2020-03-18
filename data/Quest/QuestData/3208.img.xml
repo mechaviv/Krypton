@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3208.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nemi's Second Ingredient" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Nemi, who's in Ludibrium..." />
+        <string name="1" value="I met up with Nemi again at a small house in Ludibrium. This time, she was preparing a lunchbox for her dad, and she wanted to get him some eggs for lunch. She asked me if I could get her #b15 #t4000116#s#k by taking out the #b#o3230308#s#k. They are a bunch of pink birds that should be flying around the outer wall of Eos Tower. \n\n#t4000116# #b#c4000116##k/15" />
+        <string name="2" value="I got Nemi the #b#t4000116#s#k that she wanted. I wonder what kind of lunch she's making for her dad..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000116" />
+                    <int name="count" value="-15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi~ It's sunny here today. I can't tell you how much I love the fact that it's sunny here 365 days a year. How's it going? Are you here just to say hi? Well, if that's so... then can you help me out one more time...?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much~! This one's also on the fact that I don't have anything to cook with at home. My dad works everyday, and I want to make something healthy as well as delicious for his lunch today, but I have nothing to work with at home. My dad seems to be losing his appetite, so I need something better than usual." />
+                <string name="1" value="Head over to Eos Tower and you'll see a monster called #b#o3230308##k hanging around at the outer wall. They cough up #t4000116#, so please gather up #b 15 #t4000116#s#k. They are full inside, and tasty like no other. It can be used on a variety of dishes, so ... good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... you must be swamped with other things yourself. If you ever find some time, then please come talk to me. I can always use some help, you know~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're back! That's it! That's what I was looking for! My father will love it when he sees it in his lunchbox! Thank you so much, yet again. Here, this is an item that I truly cherish, and it's for you. Hope you like it." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the #b#t1032006##k? Now that I have the ingredients ready, I'll have to get back to cooking now. I can literally see my dad drooling over this as we speak. Thank you so much for you help. I'll have to go now. See you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have the stuff I asked for, yet. Defeat the #b#o3230308#s#k, who are usually located at the outer wall of Eos Tower, and collect #b15 #t4000116#s#k in the process. That will make me look like a great cook in a hurry!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000116" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3207" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29020.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title - Dynamic Hair" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142122" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="If you change your hairstyle more than 50 times, the Maple Hair Association will offer you the title of #b&lt;Dynamic Hair&gt;#k..." />
+        <string name="1" value="#b#eTitle - Dynamic Hair#k#n\r\nUse Hair Salon\n(Change hairstyles, whether it be regular, special, or random. Hair color not included.)\r\n#b- Current Progress\nHair Changes #R29020# / 50 completed." />
+        <string name="2" value="You changed your hairstyle 50 times and received the title #b&lt;Dynamic Hair&gt;#k." />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1142122:# #t1142122:# 1 \r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142122" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The Maple Hair Association has come up with a new title for those adventurers who prefer to make visual statements with their hairstyles. Any adventurer who's #bchanged his or her hairstyle 50 times or more#k will be awarded with the title of #b&lt;Dynamic Hair&gt;#k. Do you want to take on the challenge?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The count begins now! Try out as many hairstyles as you can!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, if you do change your hair that often, wouldn't you lose all your hair…?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have just been awarded the title of &lt;Dynamic Hair&gt; by the Maple Hair Association. That's just incredible that you were able to try out all those hairstyles." />
+            <imgdir name="yes">
+                <string name="0" value="It's good to follow the latest hair trends, but it's just as important to take care of your hair so it won't fail you in the end. Of course, I'm sure you're aware of all that." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Have you switched up your hairstyle enough times? I see that you have changed your hair a total of #b#R29020# time(s)#k. Which of the hairstyles did you like the most?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000066" />
+            <int name="infoNumber" value="29020" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="50" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000066" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142122" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+        </imgdir>
+    </imgdir>
+</imgdir>

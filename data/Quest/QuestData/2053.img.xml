@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2053.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="John's Present" />
+        <int name="area" value="30" />
+        <string name="0" value="Let's go see John at Lith Harbor again." />
+        <string name="1" value="I ran into John the fisherman again at Lith Harbor. This time, he wanted to get his wife Blue Viola for her birthday. He asked me to get #b20 Blue Violas#k for him. The scent of Blue Violas last over 500 years...and according to John, they can be found through the mysterious statue again, where the flower may be found. Man ... do I HAVE to go in there again??" />
+        <string name="2" value="I got John all #b20 Blue Violas#k. It has a nice scent to it, but 20 of them? Makes my head spin...As a sign of appreciation, John got me a nice glove he found inside a ship. I mean, it looks like someone accidentally left that glove in there...is he allowed to give it to me like that? What if I wear this around town and run into the actual owner of it??" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031026" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1082002" />
+                    <int name="count" value="1" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1082036" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1082056" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4198404" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1082070" />
+                    <int name="count" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1082045" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="1082192" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhhh, you're the one that helped me out the other day. You look much stronger now. How's traveling these days? I actually have another favor to ask you ... this time, my wife's birthday is coming up and I need more flowers. Can you get them for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! This time I'd like to give my wife #b#t4031026##k ... It has a very pleasant scent, and I heard it's found deep in the forest ... I heard the place where it exists doesn't let everyone in; only a selected few, I think. Something about #p1061006# at #m105040300# and something something ..." />
+                <string name="1" value="Please get me #b20 #t4031026#s#k. I think 20 will cover the house with that pleasant scent. Please hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand ... my wife's birthday is coming up and I am screwed! Please come back if you have some spare time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... you got me #b20 #b#t4031026#s#k~! This is awesome ... I can't believe you went deep into the forest and got these flowers ... there's a story about this flower where it supposedly doesn't die for 500 years. With this, I can make the whole house smell like flowers." />
+            <string name="1" value="Oh, and ... since you have worked hard for me, I should reward you well. I found this glove in the ship. Some travelers leave things here and there. It looks like something you may need, so take it." />
+            <imgdir name="yes">
+                <string name="0" value="If you have time, why not try going back into the forest? You may find an important item in there. I can't guarantee it since obviously I've never been there before, so please don't come back complaining if all you can find is trash." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten the #b#t4031026##k yet. There's #p1061006# at #m105040300# and I heard that with that you can go to the place where #t4031026##k is. Please go into the forest and collect #t4031026##k for me. I need 20 to make my wife's birthday present." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031026" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2052" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

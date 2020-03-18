@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28136.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Wandering Alchemist Eurek's New Skill" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="I hear that #b#p2040050##k over in Sleepywood is working on a way to scroll items without equipping them.  I should go see Eurek and see how far along his research is--maybe I can learn how to do it!" />
+        <string name="1" value=" I spoke with Eurek and he's perfected his method for scrolling unequipped items. I've agreed to gather some materials for him for a trip he's taking. I'll need to get #b#p2040050##k everything he needs: \n\n#t1302013#  #b#c1302013#/1#k\n#t2043000#  #b#c2043000#/1#k\n#t2040000#  #b#c2040000#/1#k\n#t2040400#  #b#c2040400#/1#k\n#t2040600#  #b#c2040600#/1#k\n#b1,000,000 mesos. I can't wait for him to show me how to perform this new skill!" />
+        <string name="2" value="I returned with the materials that #b#p2040050##k asked for and learned how to use scrolls on unequipped items! Eurek also mentioned that in his travels, he'd heard rumors of a powerful monster residing somewhere in Leafre--even stronger than Zakum." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="10001003" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="1000" />
+                        <int name="1" value="1100" />
+                        <int name="2" value="1110" />
+                        <int name="3" value="1111" />
+                        <int name="4" value="1112" />
+                        <int name="5" value="1200" />
+                        <int name="6" value="1210" />
+                        <int name="7" value="1211" />
+                        <int name="8" value="1212" />
+                        <int name="9" value="1300" />
+                        <int name="10" value="1310" />
+                        <int name="11" value="1311" />
+                        <int name="12" value="1312" />
+                        <int name="13" value="1400" />
+                        <int name="14" value="1410" />
+                        <int name="15" value="1411" />
+                        <int name="16" value="1412" />
+                        <int name="17" value="1500" />
+                        <int name="18" value="1510" />
+                        <int name="19" value="1511" />
+                        <int name="20" value="1512" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there~ I am #b#p2040050##k. You know I love to travel around the Maple World. Since I have been to so many places in Maple World, I was fortunate to learn some new skills that others couldn't even find!" />
+            <string name="1" value=" For example... using scrolls on unequipped items to increase their power...and perhaps make a bit of extra mesos. Hey, would you like to learn this skill? I can teach you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Well, well, well... I am sure that it was quite uncomfortable for you so far, because you were only able to use scrolls on equipped items. No more worries! With this new skill, you will be able to use the scrolls on items even if you are not wearing them. How cool is that?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Shame. I'm sure you would've enjoyed being able to experiment with items like I do..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast. You already got what I asked for? Please give me the items so I can finish packing for my trip." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you very much. To show you my appreciation, I just taught you the &quot;Legendary Spirit&quot; skill." />
+                <string name="1" value=" Please press &quot;K&quot; to open up your skills window and you will find the &quot;Legendary Spirit&quot; in the Beginner section. When this skill is clicked, you will be able to use scrolls on unequipped items. I bet it will be a useful skill for you. Farewell now, I'm off! I've heard rumors of a mythical creature in the Leafre region...supposedly more powerful than Zakum. I have to see if the rumor is true..." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="10001003" />
+                </imgdir>
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

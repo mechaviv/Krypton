@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3202.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning Up the Outer Parts of Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Marcel now..." />
+        <string name="1" value="Marcel asked me to take care of  #b25 #o3230303#s#k and #b25 #o3230308#s#k living on the outer parts of Eos Tower. \n\n#o3230303# #r#a32021##k\n#o3230308# #r#a32022#" />
+        <string name="2" value="I took care of the #b25 #o3230303#s#k and #b25 #o3230308#s#k like Marcel asked, but I have a gut feeling that another set of powerful force is lurking around this tower." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you're back! Actually, I have another favor to ask you. This time, I've heard reports that the menacing toy monsters have been appearing around the outer walls of Eos Tower, and I'd really like for you to defeat them for me. Will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay! It's similar to what I requested before. There have been reports that some of the toys made from the Toy Factory, located at the bottom of the Ludibrium Clocktower, have been attacking anyone walking around the outer walls of Eos Tower. I would like for you to go back into the tower and take care of them." />
+                <string name="1" value="Please take out #b25 #o3230303#s#k and #b25 #o3230308#s#k. Both of them can be found at the outer wall of Eos Tower. One resemble a toy pink plane, while the other looks like a pink bird. I'll be waiting for you here." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really. This task isn't that difficult, and I think you can do it. If you have any free time, then come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Awesome! You took them all out again! There must have been quite a few #b#o3230303#s#k and #b#o3230308#s#k around Eos Tower. Anyway, thank you for helping me out. I'll give you an item that you'll need to use for hunting. Please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="Here they are, #b50 #t2000004#s#k. Thank you so much for your help, but it seems like Eos Tower is still full of nasty, evil monsters. I have a lot to ask of you, so if you have any free time, please come talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you did what I asked of you. Please head to Eos Tower and take out #b30 #o3230303#s#k and #b30 #o3230308#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3230303" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3230308" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3201" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

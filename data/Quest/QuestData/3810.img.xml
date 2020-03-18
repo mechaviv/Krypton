@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3810.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Legendary Being's Scroll 2" />
+        <string name="parent" value="The Legendary Being's Scroll" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Through #p2071010#'s request, I returned #t4031430# to #b#p2091001##k of #b#m250000000##k. Now I better borrow #b#t4031431##k from him..." />
+        <string name="1" value="#p2091001# decided to lend me #t4031431:#, in exchange for #b#t4031432:##k. #t4031432# can be apparently found at #r#o5120506##k...\n\n#t4031432#  #b#c4031432##k/1" />
+        <string name="2" value="I managed to give #p2091001# the #t4031432#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="21500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031432" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for returning #t4031430# to me... now, do you still need me for something? What? #p2071010# wants you to borrow #t4031431# for him? Well, I can certainly lend it to you, but ... if you can do me a favor, then I'll lend it to you." />
+            <imgdir name="yes">
+                <string name="0" value="Hey! You're the one that got me the Yeti Keychain last time! Since you're here again, I'm guessing you have some new dolls for me, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am afraid I can't lend you #t4031431# if you do not wish to help me out here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you found #t4031432#! Incredible! #o5120506# is really hard to tackle, because it has the secret art of an old master." />
+            <imgdir name="yes">
+                <string name="0" value="Now that you have brought #t4031432#, it's time for me to give you #t4031431#, but... hold on one second. One of my other students borrowed #t4031431#, so I'll have to get that back first. I've been waiting for this for a while, but now I'll finally be able to read #t4031432#..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It seems like you have not acquired #b#t4031432##k, yet. I'll need that if you want me to give you #t4031431#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031432" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3809" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28233.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Putting the Legend to a Test" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #bPerion#k says he has something else he wants to say about #rSolomon's Bow#k." />
+        <string name="1" value="He says to hunt 30 #rStumps#k in order to test the bow first.\n\nHe says you can easily find them in #b#m101040000##k as well as in #b#m102010000##k.\n\nLet's report back to #b#@1022000:##k in #bPerion#k upon completion." />
+        <string name="2" value="#b#@1022000:##k in #bPerion#k wants to know more about #rSolomon's Bow#k." />
+        <string name="demandSummary" value="#o130100# #a282331#" />
+        <string name="rewardSummary" value="Exp 3500&#xD;&#xA;Able to proceed to 'Revival of the Demon' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1452083" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Once upon a time, there was a demon in #bHenesys#k that played music so loud that the townspeople went deaf. But one brave man in #bHenesys#k made a weapon to defeat the demon, #rSolomon's Bow#k. According to legend, the person who made the bow was a king, but I'm not sure if that's true." />
+            <string name="1" value="The brave man defeated and sealed the demon in the bow before he died. It's incredible to see this bow in person.\n\nOh, the one that #b#p1020000##k claims to have seen when he was a kid? Ah, don't sweat it, that's just a toy bow!\n\nShall we put it to test?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="For the time being, I've done some work to the Bow for immediate use.\n\nWhy don't you try hunting 30 #rStumps#k? We'll see how strong this bow really is." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready yet?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was quick! Was the bow that strong?" />
+            <imgdir name="yes">
+                <string name="0" value="That's it? It's not that strong then.\n\nOh? It said it had a special ability in something else? Are you telling me that this is a talking bow? How incredibly strange." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hunt 30 #rStumps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28232" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3452.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Blocktopus is an Alien?" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard that #p2050001# of #m221000000# has something new to research, and is in need of help..." />
+        <string name="1" value="As someone who tirelessly studied life in space, #p2050001# wondered if a monster from Eos Tower, #b#o3230302##k, is in fact an alien. He said details could be found out by having an octopus key chain......\n\n#i4000099##t4000099# #b#c4000099#/1#k\n\nThen... if there's a more definite evidence than #t4000099#, maybe we'll find out a more accurate answer." />
+        <string name="2" value="Gave #p2050001# #t4000099#. Will #p2050001# be able to find the correlations betwee #o3230302# and aliens?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... wait, this is...!! Wow... interesting... it's definitely worth studying. Hey, you look like a traveler... have you ever been to Eos Tower? If so, then you may have met a monster that resembles an Octopus, #o3230302#. A monster called #b#o3230302##k, isn't it strange?" />
+            <string name="1" value="What do I mean by this? Well, the way #o3230302# is structured, it really looks familiar...and after some researching, I have come to conclusion that it may be close to that of the aliens. Maybe #o3230302# is made by the aliens. It's defeintely worth more attention. Can you help me on this?" />
+            <imgdir name="yes">
+                <string name="0" value="The physical structure of the aliens are well-known in Omega Sector, so I know a thing or two about, but they can't be necessarily called #o3230302#. That's why I want you to go get #b1 #t4000099##k, which is based on #o3230302#. Once you get that, we can determine the similarities between the Blocktopus and the Omega Sector aliens." />
+                <string name="1" value="But you know... there's gotta be a better method to research something like #t4000099#. Something like a #bManual#k... but it's really hard to get, so just disregard what I just said." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="So you can't help? I seriously hope you change your mind, for the sake of the humans on Earth. The Omega Sector aliens pose a grave threat." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You are still having trouble acquiring the octopus keychain. They are owned by Blocktopuses." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000099" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q3452e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

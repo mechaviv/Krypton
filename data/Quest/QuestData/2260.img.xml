@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2260.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To the Mushroom Castle!" />
+        <string name="parent" value="About the Mushroom Castle..." />
+        <int name="order" value="6" />
+        <int name="area" value="44" />
+        <string name="0" value="You can finally find out what the Mushroom Castle is all about." />
+        <string name="1" value="The Camel Cab tells you that you need to be over Level 30 for him to give information about the Mushroom Castle." />
+        <string name="2" value="Camel Cab can finally share information about the Mushroom Castle now that you've reached Level 30! You'd better undergo job advancement and listen to the Camel Cab talk about the Mushroom Castle." />
+        <string name="demandSummary" value="Reach Lv. 30" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Your level is still a bit low; You should be at least Lv. 30 in order to handle the truth about this place!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110005" />
+            <int name="level" value="30" />
+            <string name="endscript" value="q2260e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2259" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2260s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

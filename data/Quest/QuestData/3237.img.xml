@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3237.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rocky's Parts" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go talk to #p2041019#" />
+        <string name="1" value="I met up with #p2041019# at the Toy Factory in Ludibrium Clocktower. Rocky seemed to be swamped with work due to a sudden increase in monsters destroying parts here and there. He was worried about running out of essential parts, so he asked me if I could gather up #b50 cogs#k and #b30 screws#k. .\n\n#t4003000# #b#c4003000##k/30\n#t4000115# #b#c4000115##k/50" />
+        <string name="2" value="At the Toy Factory in Ludibrium, I gave Rocky the cogs and screws needed for him to fix anything that is broken. Hopefully that was enough to undo the damages done by those pesky monsters." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000115" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2002010" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, this is busted again. Oh, hello there. I'm #b#p2041019##k, the head mechanic in charge of fixing all kinds of machinery here at the factory. #b#p2041018#, #p2041020##k, and myself are the three people that are in charge of this place. I can't imagine this place without me, you know!" />
+            <string name="1" value="Lately we have been experiencing problems here. Our workers are fantastic and all, but we have experienced a sudden increase in broken machines due to a sudden increase in the number of monsters. What we need now is someone like you... can you help us out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank goodness. I've been looking long and hard on finding someone that could help us. Like I said before, the machines have been destroyed at an alarming rate, thanks to an increase in the number of monsters. We've been fixing so much that we have run out of materials needed to fix the machines. I would love for you to gather up the items necessary for us to start working again." />
+                <string name="1" value="What I'll need are #b50 #t4000115#s#k and #b30 #t4003000#s#k. #t4000115# can be found through weird monsters right below this level, but I've never been there before so ...as for #t4003000#, I heard someone in Ludibrium makes it. Thanks!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="We'll have to look for someone else then. If our machines don't work, then we'll have problem making new stuff, then that's when we get in deep trouble. If you ever feel a change of heart, talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Arrgh, it's busted again... hey, you're back! You won't believe how much I've waited for you. Now that you brought the parts needed to fix the machinery, this factory will run just like the way it used to. Thank you for your hard work, and this one is for you!" />
+            <imgdir name="yes">
+                <string name="0" value="What do you think about the #b30 #t2002010#s#k? This one's given to me by the manager to be more efficient at work, but I already have lots of this. You may need something like this, though, so please put that to good use. Now that I have the stuff ready, it's work time! Now, if you'll excuse me..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="My goodness, the machine is not working again. If you don't gather up those items fast, we may have to shut down the factory. Please get me #b50 #t4000115#s#k and #b30 #t4003000#s#k. We need parts to fix things. Thanks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041019" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000115" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041019" />
+            <int name="lvmin" value="34" />
+        </imgdir>
+    </imgdir>
+</imgdir>

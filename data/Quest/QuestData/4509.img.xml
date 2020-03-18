@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4509.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Angie's Beloved Costume 3" />
+        <string name="parent" value="Angie's Beloved Costume" />
+        <int name="order" value="3" />
+        <int name="area" value="48" />
+        <string name="0" value="What?  #p9270032# in CBD is looking for me again?  I wonder what could it be this time!" />
+        <string name="1" value="No surprise to find out that she wants a new dress!  She asked me to gather 50 #t4000035#, 50 #t4000021#, and 10 #t4021003# this time.  I really hope that she is satisfied with her dress!\n\n#t4000035#  #r#c4000035#/50#k\n#t4000021#  #r#c4000021#/50#k\n#t4021003#  #r#c4021003#/10#k" />
+        <string name="2" value="Phew... Finally, #p9270032# was able to get all dresses she ever wanted! But speaking of fashion, I am sure that I look much better!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2043702" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4021003" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You... Yes! Stop looking around... Oh hi~ I can't believe I've met you the third time in such a short period of time! Now listen~ I have another problem now. A few hours ago while I was doing my routine window shopping, I saw another dress that I fell in love with at first sight!" />
+            <string name="1" value="The tailor of the shop told me that this dress is originated from Chinese Custom~ It is the traditional costume of Chinese. It looks tight and firm though, but I knew it could stand out my good figure by wearing it~ I love it so much! Erm... But, as you probably know... it is not for free... Please help me, please...........?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew that my beauty strikes on the right person! Geez~ I need #b50 #t4000035#, 50 #t4000021# and 10 #t4021003##k for the tailor to make out the awful Costume!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come on~ It's my last request! You wouldn't want to reject a pretty lady's offer right?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Where could I find extra leathers and tablecloths? Do you have any idea?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much~! I knew you will never let me down. Now, I can imagine how beautiful and lady-like I can be with this Chinese costume on! For 3 consecutive helps from a kind-hearted person like you... Please accept this." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Ehh.... I don't think you have the materials I need for the dress. Please get me #b50 #t4000035#, 50 #t4000021# and 10 #t4021003##k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270032" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4021003" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270032" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4508" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

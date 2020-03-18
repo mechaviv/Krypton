@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28174.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Investigation in Progress" />
+        <string name="parent" value="Who is the suspect?" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1092012:##k in #b#m120000200##k says he's finished analyzing the clues. Let's talk to him." />
+        <string name="1" value="Although #b#p1032001##k in Ellinia has received a request to further investigate the matter, he doesn't like talking to strangers.\n\n You may be able to find what he likes, however, if you go see #b#@1092002:##k in the #b#m120000300##k. Let's rush over!" />
+        <string name="2" value="#b#@1092002:##k says he'll make something #b#@1032001:##k likes. Let's go find him at the #b#m120000300##k." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'A Special Wine' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have looked into this all night, and I can tell you that this isn't just a regular Iron Fragment. It's cast with a magic spell, but I don't know much about magic." />
+            <string name="1" value="The only thing I can tell you with absolute certainty is that it exudes a powerful force. I believe there is one way to find out more about this." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you see #b#p1032001##k in #b#m101000000##k, you'll be able to find out the specifics of this magic spell. The only thing is that he doesn't particularly enjoy seeing strangers." />
+                <string name="1" value="First, head over to see #b#p1092002##k in the #b#m120000300##k. Since he frequently visits Ellinia, he'll know what #b#p1032001##k likes." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? If I were you, I'd be curious!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome. So, I hear you're trying to go see #b#p1032001##k in #b#m101000000##k." />
+            <imgdir name="yes">
+                <string name="0" value="Then you've come to the right place! I'll tell you how.\n\nTalk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1092002##k is in the #b#m120000300##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28173" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

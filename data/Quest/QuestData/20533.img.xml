@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20533.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Birth of Shinjo" />
+        <string name="parent" value="The Birth of Shinjo" />
+        <int name="order" value="3" />
+        <int name="area" value="15" />
+        <string name="0" value="Let's go check with #b#p1102002##k, the Mount Instructor, to see whether your Mount will recover its health if it goes into the special Incubator." />
+        <string name="1" value="#p1102002# says he's done everything he could but the Mount keeps getting weaker and weaker. As a last resort, he suggests you seek help from #b#p1101001##k. He then hints that you may gain something more valuable if you #bsincerely devote time and energy to your Mount#k." />
+        <string name="2" value="The Mount which #p1101001# had revived was not the same #t1902006#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Let's put your Mount in the special Incubator." />
+            <string name="1" value="......" />
+            <string name="2" value="Oh no! Not only did it do no good for your Mount, but your Mount is getting significantly weaker by the second. It must be because it's apart from its master. Oh boy, I'm so sorry. It's all my fault!" />
+            <string name="3" value="Oh, I can't just stand here and watch him get weaker and weaker... What do I do? I can't be responsible for losing your Mount... Oh! I've got an idea. Let's ask #b#p1101001##k for help!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Every Mount that belongs to a Knight begins as an illusory creature summoned by #p1101001#. If anyone can save your Mount, it is #p1101001#. Take your Mount to see #p1101001#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I wish there were other options, but there aren't any. No one other than #p1101001# can help you this time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="#t1902006# you have with you is an illusory creature I summoned. You are the one who gave your Mount the strength to exist in this world, but it has weakened over time and exhausted its strength by participating in your battles. It may be time to let #t1902006# go.\n#b#L0#Isn't there a way I can be with my Mount?#l\n#L1#I will let my Mount go.#l\n#k" />
+            <string name="1" value="With the power of #t1902006#, you have become incredibly strong. Even if you kept #t1902006# in this world, it will not perform as it had in the past. It will only burden you with extra responsibilities. Would you still like to keep #t1902006#?\n#b#L0#Then I do not wish to keep #t1902006# anymore.#l\n#L1#I still want to be with my Mount.#l\n#k" />
+            <string name="2" value="#t1902006# has become exhausted over time and is suffering from fatigue. You may be happy to have a companion by you, but dragging #t1902006# around may only exacerbate its condition. #t1902006# is in desperate need of rest, but you still wish to keep your Mount in this world?\n#b#L0#If #t1902006# is suffering from pain, I'll let my Mount go.#l\n#L1#I still wish to be with my Mount.#l\n#k" />
+            <string name="3" value="If you say so. I will send #t1902006# back to where it belongs." />
+            <imgdir name="yes">
+                <string name="0" value="I've sent your Mount back once, but it has come back on its own... #t1902006# seems to want to stay by you." />
+                <string name="1" value="Your sincere request and your #t1902006#'s strong will combined have recreated #t1902006#. #bShinjo#k is its name. You don't need my help any more. You two will be just fine." />
+                <string name="2" value="Congratulations on acquiring an eternal companion." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Don't you have any regrets?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="You're extremely cold-hearted." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Must you do something Mimio really does not want?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Where is your #t1902006#?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20532" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="1112" />
+                <int name="1" value="1212" />
+                <int name="2" value="1312" />
+                <int name="3" value="1412" />
+                <int name="4" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

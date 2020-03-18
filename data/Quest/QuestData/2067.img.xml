@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2067.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Research on Plant Fossils" />
+        <string name="parent" value="Dr. Betty's Research on Plants" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Dr. Betty, a biologist near Ellinia is looking for an assistant." />
+        <string name="1" value="#bDr. Betty#k asked me to work as an assistant for a while. My first task from her is to collect #b20 #t4031150#s#k. I can see various plants covering the woods in Ellinia.\n\n#t4031150# #c4031150#/20" />
+        <string name="2" value="My first job as Dr. Betty's assistant was to collect some plants in the woods in Ellinia and sample them. It wasn't that hard I guess." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031150" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2068" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're the one that got me Dr. Winston's Fossil Box, right? Good to see you. You didn't forget my plea for help down the road. I've been busily working on the fossils these days. Can you help me out by any chance?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I've been busily investigating the leaf fossils of a plant, but this is much tougher than I thought. The leaves that are shown on this fossil are very uniquely formed..." />
+                <string name="1" value="I need samples that I can compare with in detail. You'll find various plants all around Ellinia. I need you to gather up a few of those, #b20 #t4031150#s#k to be exact. I'll be waiting for you. Please hurry!" />
+                <string name="2" value="The plants that can be used for samples are usually bigger than other plants. They are usually grown at the northern forest of Ellinia. You'll be able to find it in no time." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you were going to help me out. If I do this by myself, I'll have to get going fast. Please don't bother me now. See you around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I thought I told you #b20 #t4031150#s#k. Did you completely forget about it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031150" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2066" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="22" />
+        </imgdir>
+    </imgdir>
+</imgdir>

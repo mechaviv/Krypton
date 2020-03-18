@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4486.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Santa Cat's request" />
+        <string name="parent" value="Helping to Clean Chimney " />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9201030##k, who is planning on extensive chimney cleaning, needs some help. #b#p9201030##k should be somewhere around the Chimney in Happyville.  You should find out." />
+        <string name="1" value="You met Santa Kitty #b#p9201030##k in Happyville, who asked you to find Rina#b#p1010100##k in Henesys in order to borrow a Chimney Sweep and a Flashlight to be used for cleaning the Chimney." />
+        <string name="2" value="You've successfully borrowed a Chimney Sweep and a Flashlight from Rina#p1010100#k in Henesys." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="4487" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, my! This chimney is so D-I-R-T-Y! If I were Santa, I would never enter that house! But it seems like very nice children are living in that house. It'd be sad if they didn't receive any Christmas gifts... ALRIGHT! I guess I'll clean the chimney for them. Oh wait! I don't have the cleaning tools. I just need a #bChimney Sweep and a Flashlight#k. Perhaps, you'd be kind enough to bring me those?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Thank you so much! What a fine Mapler you are! You should be able to get the  #bChimney Sweep#k and the #bFlashlight#k from #bRina in Henesys#k. I have something else to do in this town, so please get me those two cleaning tools." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You refuse? Hmm, okay. I'll find somebody else who can help me. If you change your mind, please come talk to me again. After all, the children in this house deserve to have Christmas presents." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met Rina#b#p1010100##k yet. I want to get started soon before Santa Claus comes to town." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1010100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201030" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4483" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

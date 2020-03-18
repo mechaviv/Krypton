@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2227.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Defeat Faust" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="6" />
+        <int name="area" value="30" />
+        <string name="1" value="#p1032001#, who has heard everything about #p1032107#, claims that #p1032107# was once a polite and mild-tempered person... He speculates that it was the power of darkness that has consumed and changed Reef, and blames himself for it. Then, #p1032001# asks you to defeat #o5220002#... \n\n#o5220002# #r#a22271##k" />
+        <string name="2" value="When you defeat #o5220002# and report your progress to #p1032001#, he says #p1032107#, too, probably feels relieved." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="112800" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you collected all the information about the monster? What did Fanzy tell you? ...Hmmm? Reef is the one who created Faust...? Wha... what are you talking about? Tell me what you're talking about!" />
+            <string name="1" value="Oh... I see. Reef... Please don't blame Reef. The Reef I know is polite and mild-tempered. He wouldn't hurt a fly. He must have done something like this because of the magic of darkness..." />
+            <string name="2" value="The magic of darkness turns people ill. I'm certain that it was the force of the magic in the air that has turned Reef like this. Everything is my fault... " />
+            <string name="3" value="I don't have time to sit around. I'll have time to reflect on my mistakes after I defeat Faust. Reef will remain anxious as long as Faust is alive. Won't you help me? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please defeat Faust that Reef has created. You seem like a competent adventurer... and you know about the unfortunate situation Reef is in. Please... do it for Reef if not for anything else. Defeat #rFaust#k. I'll be counting on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...Hmm. There isn't much I can do to convince you if you don't think you can." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have defeated Faust. What a relief... I'm sure Reef feels relieved too. Thank you so much." />
+            <imgdir name="yes">
+                <string name="0" value="The force of darkness that is deep-rooted in the forest... I think it's time we extracted this force once and for all." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #rFaust#k yet? You'll be able to find Faust somewhere in the Ellinia Forest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5220002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2226" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

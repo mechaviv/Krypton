@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4553.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gift for Dear Daddy" />
+        <string name="parent" value="Surprise Birthday Party" />
+        <int name="order" value="1" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270058##k is lost in her thought. Her daddy's birthday is coming and she wants to give him something special this year." />
+        <string name="1" value="#b#p9270058##k's daddy is a great fan of music, as well as a collector of all sorts of musical instruments. #b#t4000472##k might be the perfect birthday gift for him. \n\n#o9420534# #r#a45531##k \n#t4000472# #r#c4000472#/100#k" />
+        <string name="2" value="#b#p9270058##k's daddy was happy with the gift and he promised to take her out for a exquisite dinner." />
+        <string name="demandSummary" value="#i4000472:# #t4000472:# #c4000472# / 100&#xD;&#xA;#o9420534# #a45531#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 10,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i2000005:# #t2000005:# 10&#xD;&#xA;Able to proceed to 'Daddy's Birthday Party' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000472" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm...Daddy's birthday is coming and I want to give him something special this year. What would make him thrilled with joy and surprise?" />
+            <string name="1" value="I got it! Since he's such a huge fan of music and loves to collect all sorts of musical instruments, he would definitely love to have #b#t4000472##k as a gift." />
+            <string name="2" value="But how can I collect #b100 #t4000472#s#k to make a whole collection for him in such a short time? Maybe you could help me with it!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Make sure you hunt #b100 #o9420534#s#k and bring back #b100 #t4000472#s#k. Only those collected from #b#o9420534##k are the authentic ones!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Without your help, I won't be able to surprise my daddy on his birthday." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! This is just enough to make a full collection of #b#t4000472##k for my daddy. Thanks a bunch." />
+            <imgdir name="yes">
+                <string name="0" value="It would be the best birthday ever!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I really want to give a special gift for my daddy. Nothing is more perfect than a full collection of #b#t4000472##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Remember, only #b#o9420534##k has the authentic #b#t4000472##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270058" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000472" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420534" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270058" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

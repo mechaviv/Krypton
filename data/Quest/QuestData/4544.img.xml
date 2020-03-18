@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4544.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="All taken away!" />
+        <string name="parent" value="Malek's Joy of Music" />
+        <int name="order" value="4" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270061##k needs more of the #b#t4000466#s#k to keep the Kampung village safe from #b#o9420528##k." />
+        <string name="1" value="#bEmo Slimes#k have snatched away all of the #bRebabs#k in the village. Kampung Village now needs#b 150 Rebabs#k to lure those monsters and put the to sleep. \n\n#t4000466# #r#c4000466#/150#k " />
+        <string name="2" value="#b#p9270061##k and the whole village is now safe from #b#o9420528##k, and it seems like there will be a party with some great musics. Kampung village is always a fun place to hang out. " />
+        <string name="demandSummary" value="#i4000466:# #t4000466:# #c4000466# / 150&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 30,000&#xD;&#xA;10,000 Meso&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="10000" />
+            <int name="exp" value="30000" />
+            <int name="pop" value="10" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000466" />
+                    <int name="count" value="-150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Gee, do you know what an #b#o9420528##k is? It is one of the most frustrating monsters to handle around this area. They not only take away our #b#t4000466#s#k, but also use it as a threat against us! " />
+            <string name="2" value="The Rebabs could be a deadly weapon for Emo Slimes once they're all angry and upset. They will not hesitate to use them against us. We need more Rebabs to lure the Emo Slimes out and put them to sleep by playing one of the secret songs, which is our traditional way of taking care of them. Could you be of help to us?" />
+            <string name="1" value="We're so relieved that you're back. Sad to say that the previous Rebabs that you had gathered for us were snatched back by the Emo Slimes." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please go and collect #b150 #t4000466#s#k while we're digging up one big hole to lure them into it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh please... #b#o9420528##k may appear rather stupid, but they could be a deadly threat to the whole Kampung village." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You just made it right on time, successfully collecting #b150 #t4000466#s#k!" />
+            <imgdir name="yes">
+                <string name="0" value="The big hole is now ready, and we have enough \n#b#t4000466#s#k to lure them out. Here is a small reward for you. Now, leave the rest of the #b#o9420528##k hunting up to us. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have not collected #b150 #t4000466#s#k yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270061" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000466" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270061" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4543" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

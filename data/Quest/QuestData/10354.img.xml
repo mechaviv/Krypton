@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10354.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Who Deserves Cassandra's Album?" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You were digging and digging." />
+        <string name="1" value="After diligently digging around, you discovered Cassandra's Album. Hm, should you return it to its owner, Cassandra? Or should you take it over to Gaga for fun?" />
+        <string name="2" value="You received an Aran Memory Fragment for returning the Album." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Deliver Cassandra's Album." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000066" />
+            <int name="infoNumber" value="10354" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="87" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10356" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="10355" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001316" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10354s" />
+            <string name="end" value="2009010100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

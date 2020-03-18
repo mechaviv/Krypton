@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28317.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Olivia: &quot;Find My Daddy&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="Those monsters have been defeated, but it looks like Olivia has something else to request." />
+        <string name="1" value="In order to find the right key to the Piano Room, you must first obtain #b25 Silver Keys, 25 Gold Keys, and 25 Brass Keys#k. Though it would be easier if you could just break that door open instead..." />
+        <string name="2" value="You collected the #b25 Silver Keys, 25 Gold Keys, and 25 Brass Keys#k. But there's still more work to be done before you can relax." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000518" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000519" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000520" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032443" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I know I might be asking for a lot, but could you please go back inside and help escort my daddy out? He's stuck inside the Piano Room, and I believe one of the ghosts holds the key for entrance. Could you get me this key?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd do it! Hee hee. The only thing is, there are a bunch of keys around the house and I'm sure you'd have trouble finding the right one. So, could you look for #b25 Silver Keys, 25 Gold Keys, and 25 Brass Keys#k, then bring them back to me? I'll be able to look through them all and identify the correct key. And please?hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How can you tell me to ‘suck it up' and go inside when you're afraid to go in yourself?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Please save my father who is confined in the Piano Room by finding the right set of keys. Were you able to find them yet? " />
+            <imgdir name="yes">
+                <string name="0" value="Oh, that's great! Now, let's see which one has just the right cut..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I was never too good at math, but I sure can count and it looks like you don't have enough yet. Please come back when you retrieve #b25 Silver Keys, 25 Gold Keys, and 25 Brass Keys#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201136" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000518" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000519" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000520" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201136" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28316" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

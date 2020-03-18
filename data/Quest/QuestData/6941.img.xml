@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6941.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Samuel's Revelation of the First Truth" />
+        <string name="parent" value="The Ultimate Stage of the Pirate" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081500##k says that he will tell me the First Truth and wants me to come back and talk to him when I'm ready." />
+        <string name="2" value="#b#p2081500##k has told me the story of Zakum, the First Truth. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The first story I want to share with you involves a town located deep in the volcanic mountain that completely disappeared. Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Great. I think you are more than capable of hearing the truth. Let me know when you are ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Whatever happened to the courage you summoned to see me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you ventured into the volcanic lava areas of El Nath, the innermost part of the earth? There actually was a town located in an even deeper region than El Nath." />
+            <string name="1" value="The residents there worshipped the fire-breathing monster and the statues made out of stone that resembled a human figure. To prove their unwavering belief, they would build a statue right underneath the tree that's planted in the deepest part of the volcano, and worshipped them." />
+            <string name="2" value="That is when the disasters started occuring. The tree located deep in the volcanic mountain was actually saturated with the evil powers of Zakum. Zakum didn't have any physical body to work with, but after the residents built that statue, Zakum merged himself into the statue, and became a resurrected, living being." />
+            <string name="3" value="Soon after, the town vanished without a trace. Since you have been in the world of Maple for quite some time, I am sure you must have heard of the monster called #bZakum#k, living under the fiery lava." />
+            <imgdir name="yes">
+                <string name="0" value="The first batch of truth ends here. When you are ready to hear part 2, let me know." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081500" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081500" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6940" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="511" />
+                <int name="1" value="521" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

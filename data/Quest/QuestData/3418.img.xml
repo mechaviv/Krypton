@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3418.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Completion of the Alarm Clock" />
+        <string name="parent" value="Delivering the Alarm Clock" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I received the #bSuper Alarm Clock#k from #bKevin the Soldier#k, who was at the Omega Sector, for Pink Mesoranger. Now all I have to do is deliver this to her." />
+        <string name="2" value="#bKevin the Soldier#k made the #bsuper alarm clock#k for Pink Mesoranger, stationed at a field around Omega Sector, and I delivered it to her. Hopefully this will enable her to wake up on time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031108" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031108" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030011" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030012" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahh... I've been waiting for you, actually. #b#p2041012##k must be quite busy these days. The clock was about to be completed anyway. Please hand this to #p2041012#. Once it starts ringing in the morning, there is no way she'll be able to sleep through it. Thanks~" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoaaaaa! This is one incredible alarm clock!! Isn't he good? I didn't know he was this good... I truly feel that with this clock, I will never oversleep in the mornings anymore! Thank you so much for all your hard work. For your reward, I'll give you some items that I received from the Sector. Please take it." />
+            <imgdir name="yes">
+                <string name="0" value="I can't thank you enough for helping me out this much. I feel like I won't ever hear the heat from my boss anymore, and I also feel like I'm going to work harder from here on out. Now, I need to take care of my mission, so I'll have to leave now. Bye~~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please get this #b#t4031108##k to #b#p2041012##k. The moment it starts ringing, there is no way anyone is going to sleep through it! Good luck!~!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hmmm... did you lose the #b#t4031108##k that I left there? Don't worry too much about it. It has the automatic-returning device attached to it, and therefore, it's back here with me. I'll give it to you again, but please don't lose it this time." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031108" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3417" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

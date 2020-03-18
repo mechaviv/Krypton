@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2353.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dark Lord's Trivial Problem 1" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="The Dark Lord says that a small problem has risen. His expression seems to indicate that he is quite bothered. Go see the Dark Lord." />
+        <string name="1" value="The Dark Lord says that a few strange incidents have been occurring recently. Although they are not serious, the frequency of the occurrences is bothering him.\r\nOne incident involves the thieving Shrooms who have infiltrated Kerning City. He needs someone to get rid of them by investigating them one by one, but there is no one who can be entrusted with this task. In order to gain the Dark Lord's trust, you volunteered to eliminate the #bShrooms#k..." />
+        <string name="2" value="The Dark Lord said that a few strange incidents have been occurring recently. Although they are not serious, the frequency of the occurrences is bothering him.\r\nOne incident involved the thieving Shrooms who have infiltrated Kerning City. He needed someone to get rid of them by investigating them one by one, so you volunteered for the task...\r\n\r\nAlthough you eliminated 10 Shrooms, you were not able to find a suspicious Shroom. Still, the Dark Lord appreciated your hard work and displayed his trust towards you. You seem to have successfully gained his trust." />
+        <string name="summary" value="To solve the Dark Lord's problem, head to the #bKerning City Construction Site#k located to the left of Kerning City and eliminate the #bShrooms#k." />
+        <string name="demandSummary" value="#o120100# #a23531#" />
+        <string name="rewardSummary" value="EXP 1,300\r\nCan proceed to 'The Dark Lord's Trivial Problem 2' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+            <int name="nextQuest" value="2377" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What is it?\r\n#L0##bYou appear as if something is bothering you. Is there something you're worried about...?#l\n#k" />
+            <string name="1" value="No, nothing you need to worry about. If you don't need anything from me, you're free to leave.\r\n#L0##bI don't need anything, but I just thought we could chat a bit.#l\n#k" />
+            <string name="2" value="Heh, aren't you the peculiar one? Most people rather talk to a tree bark than with me. Still, today is not a good day. So many little problems have been turning up in Kerning City these days. Those thieving Spores are especially giving me a headache.\r\n#L0##bI heard something about those thieving Spores too... From what I hear, they are making everyone miserable by stealing things and playing pranks.#l\n#k" />
+            <string name="3" value="Ah, so you're aware. Well, the stolen items are of negligible value, so that hasn't been too problematic. It's the pranks they're pulling on people that I'm worried about. They need to be stopped, but investigating every Spore in Victoria Island is out of the question... I'm not sure what to do. \r\n#L0##bWell, what if I took care of this for you? I don't have much to do right now, and I was planning on exploring Victoria Island anyway.#l\n#k" />
+            <string name="4" value="Hmm...really? This could be very time consuming... But if you really wish to help, I will entrust this job to you." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="First, investigate #b10 Spores#k. They may be hiding something. The thieving Spore should be hiding a mask that was used during the crimes. I've been told that the Spores are appearing in large numbers at the #bKerning City Construction Site#k located left of Kerning City, so head there first." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No one else thought this was too much to handle, but I guess you are different." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You've returned. So, were you able to find a suspicious Spore?\r\n#L0##bWell... Unfortunately, I didn't have much success.#l\n#k" />
+            <string name="1" value="Well, I didn't expect that he would be found very easily. In any case, thank you for helping me. You are much more trustworthy than I first thought. " />
+            <imgdir name="yes">
+                <string name="0" value="I will continue to trust you with tasks and ask for help when it's needed." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="First, catch #b10 Spores.#k They may be hiding something. The thieving Spore should be hiding a mask that was used during the crimes." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="120100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2352" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

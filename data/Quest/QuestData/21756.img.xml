@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21756.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Letter to the Queen" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Level 68, #b#p1002104##k send a message." />
+        <string name="1" value="Apparently, #p1201000# succeeded in decoding the letter and it contains some surprising information! Better head over to #b#m140000000##k immediately and talk to #b#p1201000##k about the contents of the letter." />
+        <string name="2" value="Amazingly, the letter written by the heroes was addressed to the Queen of the time. The actual content of the letter simply asked that the Queen take good care of the Seal Stone of #m130000000#. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, great news! #p1201000# just finished deciphering the letter and it mentions some crazy things! You should head over to #b#m140000000##k immediately and talk to #b#p1201000##k about the letter!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="No useful information on the Black Wings, though! I don't think Black Wings have a clue about the location of the Seal Stone, either. #bWe can finally get ahead of the Black Wings#k! Hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? I know you're busy, but work should always come first. What are you thinking? Come on, you know better than that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You heard what Tru told you, right? This letter contains incredible information that goes beyond anyone's expectation. The letter was written by the heroes, meaning you and your friends, and the letter was written to…#bthe Empress#k at the time! " />
+            <imgdir name="yes">
+                <string name="0" value="The content of the letter is rather simple. \n\n'Take care of the Seal Stone in #m130000000#.' \n\nIt looks like the #bSeal Stone is indeed in #m130000000##k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#m140000000##k yet? Hurry, Aran! #b#p1201000##k is anxiously waiting for you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21755" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="68" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

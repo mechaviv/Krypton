@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9875.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Growing a Sprout" />
+        <int name="area" value="50" />
+        <string name="0" value="#bCassandra#k is handing out a pretty Pot. Head over to #bCassandra#k." />
+        <string name="1" value="The sprout in the Pot grows every time you hunt, but she says it'll grow even faster if you double-click the Pot and let it receive sunlight." />
+        <string name="2" value="You have delivered a Pot to #bCassandra#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q9875e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q9875s" />
+            <int name="lvmin" value="10" />
+            <string name="start" value="2007071600" />
+            <string name="end" value="2007082000" />
+            <int name="interval" value="360" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Returning to Nina" />
+        <string name="parent" value="Nina and Sen's Dinner Menu" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="1" value="Sen wants Mushroom Soup for dinner. Better tell Nina now." />
+        <string name="2" value="You told Nina what Sen wants for dinner." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="Please tell my sister I really really want #bmushroom soup#k for dinner!" />
+            <string name="0" value="Ahh, soooo hungry. Where's my sister?! I was gonna ask her to make me mushroom soup. Soooo hungry!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="What...? Aren't you gonna deliver it? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="He wants mushroom soup? I guess that's our dinner then. Thanks for helping me out." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2102" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1003" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

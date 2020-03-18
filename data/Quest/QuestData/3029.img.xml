@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3029.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="All the Map Pieces in One Place" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="26" />
+        <int name="area" value="33" />
+        <string name="1" value="I have obtained all #b4 map pieces#k from the four wisemen in Victoria Island, and this map supposedly locates where the Book of Ancient is currently hidden. I should get back to Alcaster now. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031054" />
+                    <int name="count" value="4" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5430" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031054" />
+                    <int name="count" value="-4" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3030" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I knew I could count on you. I had the utmost faith in you. This will help me recover my health. Like I promised, here's the item that may hold key to finding #b#t4031056##k. Before that, though, check and make sure your etc. inventory is available for storage." />
+            <imgdir name="yes">
+                <string name="0" value="With this, you have collected all four pieces of the map. You won't be able to do anything with these in pieces, though. You mentioned Alcaster, right? Maybe he might know something about putting these together, so I think you should revisit him. Oh, and the #b#t4031053##k you have...take good care of it. It may hold the key to a very important matter." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The map that shows where #b#t4031056##k is hidden is cut up in four pieces, and was left to us 4 wisemen. It can't be hidden forever, anyway. Please find the book and seal it up for all of us. Now please take the map pieces back to the sorcerer in El Nath." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3028" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51217.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Demoralizing the Aliens" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="Show the aliens how many brave Maplers there are in Maple World! For every hour you're online, OSSS will issue you 5 #b#t04310004#s#k." />
+        <string name="1" value="Since OSSS will be issuing you 5 #b#t04310004#s#k every hour you're logged in, you should stay connected and not log off." />
+        <string name="2" value="You received 5 #b#t04310004#s#k for staying online for an hour. Good job doing your part to scare away the aliens!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032735" />
+                    <int name="count" value="1" />
+                    <int name="period" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4310004" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032736" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been thinking... If the aliens realized how united Maplers are, they might think twice about invading." />
+            <string name="1" value="#bSo for every hour that passes while you are logged in#k, the OSSS will recognize your effort and issue you 1 #b#t04310004#." />
+            <string name="2" value="When one hour has passed, the 0 Minute Timer that you've been issued will turn into a 60 Minute Timer. When that occurs, please exchange it for a #b#t04310004##k. " />
+            <string name="3" value="The #b#t04310004##k can be used to purchase cells to upgrade your suit. Just talk to #b#p9250135##k." />
+            <string name="4" value="Having enough medals is very important, so don't miss out on any medals." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good luck.\r\nRemember that the future of Maple World is in your hands." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Who then will stand up for Maple World...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Timer has changed to 60 minutes." />
+            <imgdir name="yes">
+                <string name="0" value="I will issue you the #b#t04310004#s#k. You can use them to purchase cells for upgrading your suit. Just talk to #b#p9250135##k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You haven't completed your assignment yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032736" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032735" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032736" />
+                </imgdir>
+            </imgdir>
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

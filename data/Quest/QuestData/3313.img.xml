@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3313.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Destroy the Roid" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p2111009##k, an alchemist from #m261000000#, seems to be proficient at concocting and experimenting with medicine. He mentioned that he's short on something again. What would he be short on this time? I better go see #p2111009#." />
+        <string name="1" value="Out of the blue, #p2111009# asked me to destroy #r#o5110301##k, which can be found at the storage area in the basement. Destroying #o5110301# wouldn't be impossible... but why? Does this have something to do with getting in the way of the Zenumist Society?  \n\n#o5110301# #r#a33131##k " />
+        <string name="2" value="After destroying the #o5110301#s, I reported the results to #p2111009#. He then flashed a smile of satisfaction and relief.  What the...something about this creeps me out!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="43000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020012" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Come to think of it, #o3110302# is plenty strong, which should have made it hard for you to acquire the leaves. Something doesn't seem right... you are much, much more powerful than other alchemists we have here. How can someone who's been conducting experiments for such a short period of time be so strong...?" />
+            <string name="1" value="Hmm, well that doesn't matter. (It's a good opportunity, in fact...) Maybe... someone like you can slay #o5110301#, no? Alcadnos spent a long time building #o5110301#, and although they aren't created for battle purposes, they are plenty strong enough... but I think you're more than capable of beating them. What do you think? Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh no! Really? Then go there and defeat #r80 #o5110301##k. It's hard to find someone that strong in #m261000000#k, so I am excited to see what you can do. I'll be here waiting..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm, so it's a tough task for you? That's a bummer..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you really defeated all 80 #o5110301#k? That is just amazing, really. I didn't think you'd be that strong. Amazing! Here, take this. It's a small reward for the job well done." />
+            <imgdir name="yes">
+                <string name="0" value="I am very excited to meet an individual as powerful as you... please come back later. I may have something else in store for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r80 #o5110301#s#k yet. I am eagerly awaiting good news from you. Keep working." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111009" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5110301" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3312" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102136" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

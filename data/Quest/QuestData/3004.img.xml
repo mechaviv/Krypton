@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Descendent of the Author of the Book of Ancient" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="I should go see Alcaster of El Nath right now..." />
+        <string name="1" value="I met #bAlcaster#k, the archeologist, at El Nath. He said he had heard about the #bBook of Ancient#k, which tells about the Great World War, happened hundreds years ago. Interesting... The only living descendant of the author of the &quot;Book of Ancient&quot;  #bHella#k who lives in Orbis. I better go to find her right now~" />
+        <string name="summary" value="I should go see Hella in Orbis. " />
+        <string name="rewardSummary" value="Can proceed to the 'Hella's Missing'' quest&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3005" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Allow me to introduce myself. I'm Alcaster the Sorcerer, studying the intricate details of magic and wizardry for over 300 years here. Say, I haven't seen someone with a piercing, affirming look in the eyes like you have in a while. I feel safe asking someone like you for help. What do you think? I am sure you may be busy with your other endeavors, but can you make some time and listen to my story?" />
+            <string name="1" value="Recently I found something very interesting from an old book that I was looking at while studying forbidden magic. The book states that somewhere around Ossyria, an incredible book by the name of #b#t4031056##k is hidden away. It was used ages ago at a war but its whereabouts have been questionable at best since. At least the very existence of the book is recorded for us to wonder..." />
+            <string name="2" value="I'd like to have that book with me and study it. I'm sure once it's discovered the book will be full of important, previously-unknown knowledge on spells. Too bad I'm very old and in need of more research here so I won't be able to find it myself. I'm sorry, but can you find #b#t4031056##k for me? I know it won't be easy, but I can at least help you out a little bit." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! But it will be impossible for you to locate the book without any information on its whereabouts. According to this book, a descendant of the author of #b#t4031056##k resides in Orbis. That person may have a clue or two on #b#t4031056##k's whereabouts. I'll be waiting for you to come back with good news. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really, it could have been too much for you to handle. If that book ever ends up with an evil magician, however, it will be the end of the world as we know it ... anyway if you ever feel a change of heart, please come..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't found #b#t4031056##k yet. Please head over to Orbis where a descendant of the author of #b#t4031056##k lives. That person may know the whereabouts of the book. I'm counting on you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

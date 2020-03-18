@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4304.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hanako's Foxtail Coat" />
+        <string name="parent" value="Hanako's Foxtail Wardrobe" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="0" value="#p9120001# seemed to be dissatisfied with just having a #t4000066# muffler, and wants something more. What would that be..." />
+        <string name="1" value="It turns out #p9120001# wanted not just a #t4000066# muffler, but a #t4000066# coat. Seriously, why does she need a coat at #m800000000#... This defies anyone's logic, but oh well... How am I going to gather up #b400 #t4000066#s#k?\n\n #t4000066# #b#c4000066#/400" />
+        <string name="2" value="I gave #p9120001# 400 #t4000066#s. I understand her need for pretty things, but wearing a muffler AND a coat at #m800000000#? #p9120001#'s just weird." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어머~ 당신은 전에 #t4000066# 목도리 재료를 구해준 사람 아니야? 반가워~ 호호. 덕분에 목도리를 만들 수 있게 되었어. 그런데 말이야, 뭔가 약간 부족한 것 같은 느낌 안 들어? 이 기모노에는 목도리만이 아니라 코트까지 입어야 완벽할 것 같아. 안 그래? 그렇지? " />
+            <string name="1" value="당신이라면 #t4000066# 구하는 건 어렵지 않을 테니, 좀 구해다 줘~" />
+            <imgdir name="yes">
+                <string name="0" value="호호호호~ 역시 친절한 사람이야. 아무래도 코트는 목도리 보다 재료가 많이 필요할 것 같아. #t4000066# 400개만 구해다 줘. 그거면 충분히 만들 수 있을 거야." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="뭐야~ 지금까지 구해다 줬으면서 치사하게 그러기야?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="-400" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, aren't you the one that got me some #t4000066#s for the muffler? Nice to see you~! Thanks to your good work, I was able to make the best muffler in the world! But you know what...? Don't I look like ... something's missing? I mean, look. It just doesn't seem complete. You know what? I think this Kimono needs not just the muffler, but a matching coat! Don't you think so?" />
+            <string name="1" value="Getting #t4000066# should be a piece of cake for you. Please get me some~" />
+            <imgdir name="yes">
+                <string name="0" value="Hohoho~ you're so kind. Well, since the coat requires much more materials than the muffler, just get me #b400 #t4000066#s#k. That should be enough for me to make the coat~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, you got me those last time. Why not now? Sheesh..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey~! You did get all 400 of the #t4000066#s! I needed a lot of #t4000066# to make the coat, you know..." />
+            <imgdir name="yes">
+                <string name="0" value="You are indeed much stronger than your looks may suggest. Seriously, thank you soooo much for all this! This should finally complete the dream look for me. A Kimono, combined with #t4000066# muffler and #t4000066# coat? This screams elegance!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This isn't 400! I need at least 400 to make the coat! Do it right!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="400" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4303" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

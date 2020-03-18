@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28180.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The First Encounter with Lucci" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032001:##k in #bEllinia#k says he'll help you train further. Let's talk to him." />
+        <string name="1" value="He says he has additional training courses for Magicians.\nLet's talk to #b#@9201121:##k in #bEllinia#k." />
+        <string name="2" value="The Path of a Magician.." />
+        <string name="rewardSummary" value="Exp 500&#xD;&#xA;Able to proceed to 'Rigorous Training 1' as next quest.&#xD;&#xA;Able to proceed to 'Rigorous Training 2' as next quest.&#xD;&#xA;Able to proceed to 'Rigorous Training 3' as next quest.&#xD;&#xA;Able to proceed to 'Rigorous Training 4' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've finished the basic training, but that's not enough. Would you like to receive more training?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go find #bLucci#k in #bEllinia#k for a few additional training courses." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi, there! #b#p1032001##k sent you here for training, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Let me know when you're ready, and I'll begin the training!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#bLucci#k is in #bEllinia#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201121" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

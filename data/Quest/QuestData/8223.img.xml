@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8223.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Storming the Castle" />
+        <int name="area" value="45" />
+        <string name="0" value="To enter the Grandmaster Hall of Crimsonwood Keep and find the new twisted Masters, Jack Barricade says I'll need to find some way to open the gate to the Keep's Inner Sanctum.  Perhaps someone who has firsthand knowledge of the Keep will know what I need... and I know just who to ask!" />
+        <string name="1" value="I asked Lukan about the Inner Sanctum Gate, and as I surmised, he knew how to get in.  Being a well-respected Stormcaster Knight, he was given a #bCrimsonwood Keystone#k by the Keep's Grandmasters.  However, Lukan thinks that I'm mad to assault the castle and refuses to give me the key, calling it a suicide mission.  However, if I can whittle down the Keep's defenders, he'll relent and give me the Keystone.  I've already put the hurt on the Stormbreakers, but I'll need to defeat at least #b75 Windraiders, 75 Firebrands#k, and #b75 Nightshadows#k more to put a sizeable enough dent in this evil army!" />
+        <string name="2" value="I defeated the twisted Crimsonwood warriors!  And true to his word, Lukan gave me his #bCrimsonwood Keystone#k.  He also said that although the Keystone will physically unlock the Inner Sanctum Gate, the red energy field that surrounds them is foreign to him, and likely a new addition by the Keep's new Masters.  I should take the key back to Jack Barricade and let him know what I've discovered." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="220000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3992041" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You have done it!  As I promised, here is the key to the Inner Sanctum." />
+            <imgdir name="yes">
+                <string name="0" value="Lightening Field? The Grandmasters would never shield the entry to their Council Hall in such an offensive manner!  This Keystone opens the mechanical locks of Inner Sanctum gates, but this unholy energy field you describe is another matter.  Regarding this impediment, I do not know what advice I can give.  Perhaps someone in your time who has studied such things can provide a solution." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="There are still too many warriors guarding the Keep.  I cannot, in good conscience, give you the Keystone.  Remember, your mission can only hope to succeed if you destroy at least a battalion each of the #bWindraiders#k, the #bFirebrands#k, and the #bNightshadows#k - which means #b75 of each type#k of these corrupted ones.  Return when you have decimated their ranks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201098" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400576" />
+                    <int name="count" value="75" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9400578" />
+                    <int name="count" value="75" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="9400579" />
+                    <int name="count" value="75" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201098" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8230" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8222" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8223s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

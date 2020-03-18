@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3069.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Sap of Nependeath" />
+        <int name="area" value="33" />
+        <string name="0" value="I lost the sap of Nependeath. I better go talk to Ericsson about it." />
+        <string name="1" value="Fortunately Ericsson had some left over from the last time he made them. He wasn't very pleased with the fact that I lost it, but...I think he'll make me another batch." />
+        <string name="2" value="I got a new batch of sap of Nependeath from Ericsson." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-10000" />
+            <int name="pop" value="-2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031200" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you lose the #bSap of Nependeath#k that I made for you?" />
+            <imgdir name="yes">
+                <string name="0" value="How can you do such thing! I put my hard work into making that, and you lost it!!!" />
+                <string name="1" value="So that's why you want me to give you another one... good thing I saved up some the last time I made one for you. #bThe Sap of Nependeath#k will cost you #b100,000#k mesos." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, if you didn't lose it, then good..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here, take this... and please don't lose it again!" />
+            <imgdir name="yes">
+                <string name="0" value="Please take care of this. Don't lose it!! Take care~" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3048" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3047" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

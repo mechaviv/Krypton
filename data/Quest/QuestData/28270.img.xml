@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28270.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] Pigs at the Corner" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1052103:##k in #b#m103000000##k is worried because there are too many #rPigs#k around. Let's go find her." />
+        <string name="1" value="She says there are too many #rPigs#k on the way to #b#m103000000##k from #b#m100000000##k.\n\nHunt 30 #rPigs#k in #b#m103020000##k!\n\nReport back to  #b#@1052103:##k in #b#m103000000##k upon completion." />
+        <string name="2" value="You have swept the #rPigs#k that were blocking people's way to #b#m103000000##k!" />
+        <string name="demandSummary" value="#o1210100# #a282701#" />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Not a lot of people have been coming to #b#m103000000##k as of late. I couldn't figure it out for the longest time, but I finally realized why.\n\nIt's because of the #rPigs#k! Won't you help?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="A friend of mine from #b#m100000000##k who came to visit not too long ago told me that it was too hard to get here because of those Pigs. My friend was able to get here safely, but people may abandon this village altogether if this keeps up!" />
+                <string name="1" value="So, I was wondering if you could help. You see a lot of #rPigs#k in #b#m103020000##k. Would you be able to defeat about 30 of them? Alright, let's get to it then!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're weaker than I thought." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Back already? Thanks to you, my friends in #b#m100000000##k will be able to come visit me more often! Thank you! Hee hee!" />
+            <imgdir name="yes">
+                <string name="0" value="Lallalallalalalala" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you hunted all 30 #rPigs#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052103" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052103" />
+        </imgdir>
+    </imgdir>
+</imgdir>

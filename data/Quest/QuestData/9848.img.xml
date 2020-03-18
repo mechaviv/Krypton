@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9848.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Small Pond" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="2" value="It appeared to have been enchanted by #b#p9010010##k's magic." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아앗! 위험해. 뒤를 조심해. 아무리 아기 호랑이라도 맹수인걸 잊어선 안된다고! 너에게 꼭 필요한게 있는 것 같은데…" />
+            <imgdir name="no">
+                <string name="0" value="내 도움이 필요 없다면 뭐.." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="buffItemID" value="2022152" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa! Watch out behind you! Never forget that even baby tigers are ferocious beasts! I think I may have something that you could use..." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Well, if you don't need my help..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You'll need this in order to confront those frightful tigers." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="180" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="222010100" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

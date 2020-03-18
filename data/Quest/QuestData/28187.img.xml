@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28187.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Show Kyrin What You've Got!" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says she is going to test you in something. Let's go find her." />
+        <string name="1" value="She says she'll test to see if you have what it takes to become a Magician.\nShe says to hunt #rPigs#k and #rRibbon Pigs#k.\nYou can easily find them in #b#m100030000##k.\n\nLet's go back to #b#@1072008:##k in #bNautilus#k upon completion." />
+        <string name="2" value="#b#p1072008##k has confirmed your capabilities as a Magician." />
+        <string name="demandSummary" value="#o1210100# #a281871# \r\n#o1210101# #a281872# " />
+        <string name="rewardSummary" value="Exp 1,700&#xD;&#xA;Able to proceed to 'Finding Chief Stan in Henesys' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1700" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shall we put you to a test to see if you have what it takes to be a Magician?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It's nothing too challenging. It simply requires you to hunt monsters.\n\nHunt 30 #rPigs#k and 20 #rRibbon Pigs#k.\nYou'll be able to find a lot of them in #b#m100030000##k. They're stronger than they appear, so be careful out there!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I won't ask you for something that hard." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, that's impressive for a beginning Magician. You definitely have what it takes.\nI didn't think it would be this easy for you. Haha!" />
+            <imgdir name="yes">
+                <string name="0" value="I wish you the best of luck as a Magician. Many people can really use your help.\nAnd I hope your experiences in #bNautilus#k will become pleasant memories in the future.\n\nI have a favor to ask, so please talk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You must hunt 30 #rPigs#k and 20 #rRibbon Pigs#k. Please try harder!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28186" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Save the Snowman!" />
+        <int name="area" value="50" />
+        <string name="0" value="Scrooge seems to have started putting his plan into reality. I better go see Snow Spirit." />
+        <string name="1" value="Protect the snowman from Scrooge and his men!" />
+        <string name="2" value="I was able to protect the symbol of luck here in Happyville, the giant snowman. That really made my day." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9105003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9105003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28003" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q28004s" />
+            <string name="end" value="2008123100" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

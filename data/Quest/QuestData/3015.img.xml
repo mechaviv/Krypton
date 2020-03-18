@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Truth Comes Out..." />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="12" />
+        <int name="area" value="33" />
+        <string name="1" value="Spiruna was utterly ecstatic over receiving the #bFairy Dust#k, and proceeded to tell me everything she knew about Hella. Oh my goodness ... are you kidding me? That assistant there is the Hella I've been looking for all this time??" />
+        <string name="summary" value="I should talk to Spiruna's assistant, whom now I know is Hella." />
+        <string name="rewardSummary" value="4,610 EXP&#xD;&#xA;Can proceed to the &quot;Hella is Found!&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4610" />
+            <int name="nextQuest" value="3016" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'll give you Hella's whereabouts like I promised. 3 months ago a young woman barged into my home. She lost her mother because of an evil sorcerer and wanted to acquire the powerful spell herself. She wanted to become my assistant and learn everything from me. Her name is Hella, #bright there, my assistant, she's Hella#k. There's no point hiding anymore. Might as well hear from Hella herself." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I can't believe you have the nerve to show up after breaking my precious #bBlack Crystal#k!!! Thanks to you my work is set back another six months! It will be easy to fix it with an item from the fairies but I'd rather die than ask them for their help. Do I have to let my assistant do it? Arghhh..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

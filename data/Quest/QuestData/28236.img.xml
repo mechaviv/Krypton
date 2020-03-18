@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28236.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Catching the Demon" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k say he has located the demon but has no way of catching him. Let's talk to him first." />
+        <string name="1" value="#b#@1012100:##k in #bHenesys#k is said to be the descendant of the hero who made #rSolomon's Bow#k. Find her and see if you can get her to tell you how to recover the power of Solomon's Bow." />
+        <string name="2" value="#b#@1012100:##k in #bHenesys#k says she knows how to restore the power of Solomon's Bow. Let's talk to her." />
+        <string name="rewardSummary" value="Exp 2500&#xD;&#xA;Able to proceed to 'The Legendary Revival' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We know where and how to find the demon, but we still have yet to figure out a way to defeat #rAmdusias#k.\n\nI can't tell you that, but I know whom you can ask for help." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You've heard that a brave man from #bHenesys#k made #rSolomon's Bow#k, right? There is no way he's still alive, but I'm sure you can find his descendant somewhere." />
+                <string name="1" value="The descendant of the brave man is in #rHenesys#k. #b#p1012100##k is probably the one you're looking for. I can't tell you that I'm entirely sure, but I trust my Thief instincts.\n\nGo see #b#p1012100##k in #bHenesys#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't have time to waste!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It's been a long time. Welcome back. I can see you've grown a lot.\n\nIsn't that #rSolomon's Bow#k? How do you have that in your possession?" />
+            <imgdir name="yes">
+                <string name="0" value="I see...\n#b#p1052001##k...He's known to be the most reliable source of information, but he's also got keen senses!\n\nHe's right. I am the descendant of the person who made #rSolomon's Bow#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012100##k is in #bHenesys#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28235" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

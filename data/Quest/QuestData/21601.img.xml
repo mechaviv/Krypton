@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21601.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Formula for Your Wolf Pup" />
+        <int name="area" value="6" />
+        <string name="0" value="You should ask #b#p2060000##k of #b#m230010201##k about how to raise a wolf." />
+        <string name="1" value="#p2060000# says that she knows a bit about raising wolves and tells you that she will make #bWolf Pup Formula#k for the weakened baby wolf. The ingredients for the formula include #b#t4000157##k, which can be found on seals, and #t4032331#, which #b#p2060005##k sells.\r\n\r\n#i4000157# #t4000157# #b#c4000157# / 50#k\r\n#i4032331# #t4032331# #b#c4032331# / 1#k" />
+        <string name="2" value="Armed with all the ingredients, #p2060000# asked you to wait while she finishes making the #t4032332#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032331" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, are you raising a wolf, by any chance? I've seen plenty of people raising dogs, but wolves…not so much. Oh yes, you were asking how to raise a wolf? Well, I have had to tend to an injured wolf before, so I know a a little about raising wolves." />
+            <string name="1" value="If the wolf pup seems weakened, that's because it's malnourished. I created a formula for wolf pups that's a bit different from the formula for huskies, and it's called #b#t4032332##k. If you want some for your pup, I'll make some for you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Now I'll need you to bring me the ingredients for the formula. Please get me: #b50 #t4000157#s#k and #b#t4032331##k. You can probably get some vitamins from #p2060005# in #m230000003# on Aqua Road." />
+                <string name="1" value="Once you bring me all the ingredients, I'll make you some #t4032332#. See you soon." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm…you don't need any formula? So you're not actually raising a wolf, you're just researching or something...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, did you bring all the ingredients already? Okay then… I'm going to go ahead and make the #t4032332# right now, so talk to me in a bit." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you get the ingredients for the #t4032332#? I need #b50 #t4000157#s#k and #b1 #t4032331##k. You can find #t4000157# by #bhunting seals#k in Aqua Road and the vitamins from #b#p2060005#, who sells them in #m230000003##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032331" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21600" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

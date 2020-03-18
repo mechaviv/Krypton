@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20311.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shinsoo's Teardrop" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="It seems like #p1101003# has something to say about the recovered treasure..." />
+        <string name="1" value="For defeating #o9001009# and recovering Shinsoo's Teardrop, I was promoted to Advanced Knight." />
+        <string name="2" value="For defeating #o9001009# and recovering Shinsoo's Teardrop, I was promoted to Advanced Knight. I'll need to make sure to keep going so I won't lower the standards of the Advanced Knights." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1101003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20301" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20311s" />
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="1110" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

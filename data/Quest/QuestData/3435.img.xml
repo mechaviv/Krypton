@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3435.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Mateon" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Green Mesoranger, who should be somewhere around Boswell Field." />
+        <string name="1" value="I met Green Mesoranger at Boswell Field around Omega Sector. Green Mesoranger said he heard a lot about me through other Mesorangers, and asked if I wanted to tackle a Mesoranger mission. First I decided to help Green Mesoranger by helping his mission to #beliminate 100 Mateons#k.\n\n#o4230119# #r#a34351#" />
+        <string name="2" value="I took out 100 Mateons, just the way Green Mesoranger from Boswell Field asked. The duties of the Mesorangers don't seem to be over, though, so if I have some time to spare, then I maybe I should go check Green Mesoranger then." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="20000" />
+            <int name="exp" value="5100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Boswell Field is full of aliens wandering around, making it the most-watched zone for the Sector. The attacks are relentless, and it's still going on, so I suggest a regular person should just stay away from this area." />
+            <string name="1" value="I've heard about your performance through others in the Sector. From what I've heard, you're quite a strong person, and... you know what, why don't you and I take care of some missions as the member of the Mesorangers? Of course, the Sector will recognize your work and pay you accordingly." />
+            <imgdir name="yes">
+                <string name="0" value="Alright, here's the 1st mission. A few days ago, we received a word that #b#o4230119##k have been attacking innocent bystanders. It's our job to come out and lay a whopping on them." />
+                <string name="1" value="Please take care of #b100 #o4230119#s#k for me. They actually wear helmets while shooting laser guns, so please be careful around them. I'll be here taking care of the other aliens." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't think this would necessarily do you any harm. If you have a change of heart, please talk to me. Until then, if you'll excuse me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back!!! I can't believe you completed this mission as well as you did just now. I mean, the aliens you faced were quite dangerous, to say the least. You're just as advertised. I feel like I can work with you from here on out. Here, this isn't much, but please put this to good use." />
+            <imgdir name="yes">
+                <string name="0" value="What do you think about the 20,000 Mesos? This mission must have been a piece of cake for you. Rest assured, there are still plenty of missions to take care of. The aliens attack day and night, everyday. You know who to talk to whenever you have some time available, right? I'll be here waiting." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have completed the mission just yet. Please take out the aliens that attack innocent people, they being #o4230119#. Your job is to eliminate #b100 #o4230119#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040017" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230119" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040017" />
+            <int name="lvmin" value="41" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3831.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="No Gong's Test" />
+        <int name="area" value="44" />
+        <string name="0" value="The Head Physical Trainer of #b#m250000000##k, #b#p2091000##k, wants to test the students willing to become the Master..." />
+        <string name="1" value="#p2091000# told us the test consists of defeating both #r#o5120500# and #o6130203##k. #o5120500# and #o6130203# may be animals, but they have both been training hard to become Masters, so this may not be a easy fight...\n\n#o5120500#  #r#a38311##k \n#o6130203#  #r#a38312##k" />
+        <string name="2" value="After successfully defeating #o5120500# and #o6130203#, I went back to #p2091000# to tell him the good news, only to listen to him tell me that I still have ways to go before becoming the true Master. What the, he's doing this again... is he really going to make me a Master, or what?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="56160" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020012" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The path to becoming a master is long and arduous! It requires lots and lots of training... what? Are you telling me that taking on the Straw Target Dummies are boring? How many have you gotten anyway? Way back in the day, I took care of 466,532 Straw Target Dummies... or something like that. Understand?" />
+            <string name="1" value="Hmmm... I don't think you understand what I am saying. Are you really that confident in your ability? Fine, then let's test you out. Let's see how much progress you have made. This time, it isn't Straw Target Dummy. Much tougher than it. Are you up for it?" />
+            <imgdir name="yes">
+                <string name="0" value="It's good to see you so confident in your abilities. I want you to head over to the Wild Bear Area and take on both #r#o5120500# and #o6130203##k. #o5120500# and #o6130203# aren't just regular animals. They are training to be Masters themselves, so maybe they can teach you a lesson or two. I want you to defeat #r100 of each#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't the Straw Target Dummies the easiest to train against? I suggest you keep training right now if you want to make up for the lost time you spent complaining." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... So you must have defeated both #o5120500# and the Panda. Not bad, I Say. Now you're looking more and more like a Master in the making." />
+            <imgdir name="yes">
+                <string name="0" value="So is your training complete? Nonsense! You're still a long, long, looooooong way to go. I mean, I defeated 9,545,642 Grizzlies and Pandas... or something like that. I mean, a lot! Okay? Have you even come close to that figure? You should if you want to become a Master." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmmm...I don't think you have defeated all the #r#o5120500#s#k and #r#o6130203#s#k yet. I understand. It's hard to defeat #r100 of each#k. That's also why it's called training." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120500" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6130203" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3802" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+            <string name="start" value="2007061800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

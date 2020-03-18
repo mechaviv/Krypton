@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3707.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" The Last Hour of Horntail" />
+        <int name="area" value="41" />
+        <string name="0" value=" I hear #b#p2081006##k, who's locked up in prison, has a request for me..." />
+        <string name="1" value="The incarcerated #b#p2081006##k wanted me to kill Horntail in revenge for Nine Spirit and the Dragon Squad and bring peace in Minar Forest.\n\nKill Horntail #r#a37071##k" />
+        <string name="2" value="I killed Horntail as #b#p2081006##k requested, but will this really bring peace in Minar Forest?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="80000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This tragic course of event all started with Horntail. For it to turn its back on other dragons and start a war... I don't understand. Horntail should be defeated for the sake of Minar Forest. Let me cut to the chase here. Will you help destroy the evil Horntail for the sake of Minar Forest?" />
+            <imgdir name="yes">
+                <string name="0" value="Your courageous effort and stance for justice will be revered and remembered by everyone in here. Once you defeat the Horntail, please make sure to give me the good news." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What's stopping you? Fear? Fear of what? Fear of Horntail? Fear of failure?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah... Have you really defeated the Horntail? Wow... this is just unbelievable. You really did it. I never thought this day would come... your name will now be synonymous with greatness in this town. Thank you so much for your work. You have saved this forest and all of us." />
+            <imgdir name="yes">
+                <string name="0" value="The people of Leafre will remember your name and your amazing accomplishments with great reverence for a long time. You are our hero in the truest sense." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Horntail is a difficult monster to take on. It will not be easy at all. Here's wishing you the best of luck." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8810018" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081006" />
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

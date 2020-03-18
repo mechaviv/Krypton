@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4777.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chair King Medal" />
+        <int name="area" value="51" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="If you have #t3010036#, I'll give you Chair King medal." />
+        <string name="1" value="Oh, you have the #t3010036#. I'll give you the Chair King Medal since you own a special chair." />
+        <string name="2" value="Here is a Chair King Medal for you. Remember, in the next event, the Chair King Medal will go to someone who has a different chair." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142179" />
+                    <int name="count" value="1" />
+                    <int name="period" value="43200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you have #t3010036#, I'll give you Chair King medal." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, you have the #t3010036#. I'll give you the Chair King Medal since you own a special chair." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Remember, in the next event, the Chair King Medal will go to someone who has a different chair." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here is a Chair King Medal for you. Remember, in the next event, the Chair King Medal will go to someone who has a different chair." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3010117" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3010036" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="201003230000" />
+            <string name="end" value="201007142300" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

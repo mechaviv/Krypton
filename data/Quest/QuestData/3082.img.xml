@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3082.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kenta's Research 3" />
+        <int name="area" value="33" />
+        <string name="0" value="Has #p2060005#, the animal instructor at Aquarium Zoo, been getting the results he wanted? I better go find out..." />
+        <string name="1" value="I met up with #p2060005#, the animal instructor at Aquarium Zoo, again. This time, he mentioned that the fishes near Aquarium have generally transformed more than others, and that he wanted to find out the conditions of the living organisms at the east coast and west coast. He wanted me to gather up another set of DNA samples for him. \n\n#t4031265#  #b#c4031265##k / 1\n#t4031266#  #b#c4031266##k / 1\n#t4031267#  #b#c4031267##k / 1" />
+        <string name="2" value="I helped #p2060005#, the animal instructor at Aquarium Zoo, out again. So the animals in Aqua Road have been slowly changing in a negative way without anyone noticing... why is that happening? Can #p2060005# find out?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <int name="lvmin" value="37" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3081" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031265" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031266" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031267" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031242" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2022040" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Aren't you the one that helped me out twice? I'm still here, studying the general living creatures that reside in Aqua Road. Thanks to your help last time, I was able to find out that the state of the living organisms around Aquarium is much more in danger than the ones far away from here. " />
+            <string name="1" value="I still don't know if this has to do with Aquarium, however, so this time, I plan on gathering up the samples of other living organisms. Will you help me out one more time?I still don't know if this has to do with Aquarium, however, so this time, I plan on gathering up the samples of other living organisms. Will you help me out one more time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. I knew you'd help out. It's just like the last time you helped me out, in that this time, I'd like to study the living organisms in the west coast. Please get me #b1 of each#k of #rPooper, Sparker, and Freezer's DNA samples#k.\n\n#i4031265# 1 #t4031265#\n#i4031266# 1 #t4031266#\n#i4031267# 1 #t4031267#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This may take a while, so if you change your mind, then please talk to me. I sure can use your help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up the samples I asked you to get? " />
+            <imgdir name="yes">
+                <string name="0" value="I know it must have been a chore for you to do it, so thank you so much for helping me out. I sure hope I can find out why the animals have changed, since you've helped me out so much on that area. The VIP Cab coupon I gave you is the coupon that allows you to transport straight to the folk town from the Aquarium. Try using it while in Aqua Road!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you get all the samples I asked you to get? Please get me #b1 #t4031265#, 1 #t4031266#, and 1 #t4031267##k. One of each." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031266" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031267" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031265" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3081" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

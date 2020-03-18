@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10586.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Blue Goblin Crowns" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9000076# at the #b#m950100000##k has a wish. Has it come true yet? Talk to #b#p9000076##k." />
+        <string name="1" value="#p9000076# says that she came here to pray so that her wish might come true. Unfortunately, despite the long time she has spent in prayer, her wish has yet to be fulfilled. She says that maybe she should offer something. Defeat the #r#o9500387#s#k and bring her some #b#t4000564#s#k. You can enter the Goblin Cave by talking to #b#p9000075##k. \n\n#i4000564# #t4000564# #b#c4000564# / 50#k\n#o9500387##r #a105861##k" />
+        <string name="2" value="You defeated the #o9500387#s and delivered the #t4000564#s to #p9000076#. Wait #b1hour#k to see if her prayers have had any effect, then come back to see her. She may want to offer something else if her wish doesn't come true." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="37100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000564" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="(Prayer mumble...) Please, please let my wish come true...! Why isn't my wish coming true?\r\n#L0##bIs the prayer not having any effect?#l\n#k" />
+            <string name="1" value="Oh, hello there. Are you here because you heard that praying at the #m950100000# will make your wish come true? Well, that's why I came, but nothing has come true!\r\n#L0##bMaybe you're missing something? Like devotion...?#l\n#k" />
+            <string name="2" value="Hmm... of course! I haven't offered a single thing all this time while I've been praying. Maybe if I offer a really good item, my wish will come true! So... what should I offer? \r\n#L0##bWait, what I meant by devotion was...#l\n#k" />
+            <string name="3" value="The more expensive the item, the better the chances of my wish being fulfilled, right? Yes, that's it! Perhaps I can offer crowns... They can be obtained by defeating the #o9500387#s around here. Oh, please help!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please eliminate #r100 #o9500387#s#k and return with #b50 Crowns#k! If I offer those up, my wish is sure to come true!" />
+                <string name="1" value="What? Where are the Blue Goblins? They are found in the Goblin Cave, which you can enter by talking to #b#p9000075##k, the Goblin Cave Guard who's standing right over there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I only asked because you thought you were strong, but I guess I was wrong..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you brought the #t4000564#s! Oh, look how shiny it is! Please give me the crowns and I'll give them as an offering and pray again." />
+            <imgdir name="yes">
+                <string name="0" value="(Prayer mumble...) If there is no effect after #b1 hour#k has passed, I'll have to offer something else. I'm sure that the chance of my prayers being answered will increase with the more items I offer." />
+                <string name="1" value="(Faint mumbling...) Fat go away... Fat go away... Fat go away..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="It looks like you haven't been able to defeat #r100 #o9500387#s and bring back #b50 crowns#k yet. Please talk to #b#p9000075##k and enter the Goblin Cave. I know my wish will come true if I offer these crowns! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000076" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000564" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9500387" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000076" />
+            <int name="lvmin" value="43" />
+            <int name="lvmax" value="53" />
+            <int name="premium" value="1" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

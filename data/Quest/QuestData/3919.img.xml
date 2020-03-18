@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3919.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Recovering the Book The Little Prince 1" />
+        <string name="parent" value="Recovering the Book The Little Prince" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The strange boy you saw in the middle of the Nihal Desert... apparently, #p2040052# of #b#m222020000##k knows something about him. Better go talk to #b#p2040052##k." />
+        <string name="1" value="You tell #p2040052# about the boy you saw in Nihal Desert. He says the boy is from a folk tale and ended up here because of crack in dimensions at the Helios Tower. He said #p2101006# shouldn't be sitting in the desert by himself, so #p2040052# wants you to get back the book #p2101006# from him." />
+        <string name="2" value="You found #p2101006# at Nihal Desert. Looking at the young boy with the sad expression, you didn't know what to say... You don't know what to do to straighten up this jumbled folk tale." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh no... This is not good. The story of #p2101006# has been mixed to unrecognizable bits because of the dimensional rift in Ludibrium. I wonder where #p2101006# is... Have you seen #p2101006# by any chance? It's a kid wearing a scarf. He really likes roses... \r\n#L0# #b I think I saw him at Nihal Desert." />
+            <string name="1" value="What? Nihal Desert? You saw a blonde kid who likes roses and just gazes around absently? Ohhh...#p2101006#'s there. But...was he with anyone? Besides the rose, I mean? \r\n#L0# #b There was no one besides #p2101006#." />
+            <string name="2" value="Oh no... #p2101006# is supposed to meet a fox in the desert... The story's  all jumbled up. Can you go to #p2101006# and get the #p2101006# storybook from him for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I can't even see how #p2101006# can be straightened out... How will I find the fox for him... Please help #b#p2101006##k make a friend of any kind. Then he should give you the book..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You seem busy. Then who should I ask for the storybook of #p2101006#?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahh... You're the kind person that got me the #t2022155#s for the rose and the #t4000333#s to help me see the stars... I'm glad to see you again..." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You told me you saw #b#p2101006##k at Nihal Desert, right? I can't believe the dimensional rift has reached that far..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3918" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="32" />
+        </imgdir>
+    </imgdir>
+</imgdir>

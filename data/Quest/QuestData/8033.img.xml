@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8033.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Youthful Mariwaka" />
+        <int name="area" value="48" />
+        <string name="0" value="Mariwaka of Showa Town apparently has great concern. I should at least listen to her and see what the fuss is about." />
+        <string name="1" value=" Mariwaka desired to keep her beauty eternal, and she found out about a potion that'll help her do so. Sounds very fishy, but since she really believes in it, I should get her #b50 #t04000149#s#k for her eternal beauty.\n#t04000149# #b#c04000149##k/50" />
+        <string name="2" value="I really doubt that those potions enable eternal youth. Oh well, she likes it anyways, and that's the bottom line. I'll just leave her be." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022004" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000149" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I know it's a sin to look sooo beautiful. It's obvious why men can't take their eyes off me~!" />
+            <string name="1" value="But there are times where I'm afraid, very afraid, terribly afraid. I'm afraid of getting old, to the point where I may not look so stunningly beautiful anymore. Then, and only then, will no one look at me. Arrrrghh, I can't imagine what that feels like." />
+            <string name="2" value="And I keep thinking about it. I keep thinking, is there a way where I can stop this aging process once and for all? I know it's impossible, but it's something all women think of at all times." />
+            <string name="3" value="But you know? I heard of a rumor floating around the other day, the rumor that states that there's a pot that exclusively stores eternal youth. If only I can get my hands on it... hey, there. Can I ask you for a favor? Can you help me, for the sake of my beautiful face?" />
+            <imgdir name="yes">
+                <string name="0" value="Hahah, I know you want to see me this beautiful at all times. That's a good decision. Thanks. I want to find out if the rumors are true, so please gather up #b50 #t04000149#s#k from #b#o8142000##k for me. Please~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why are you like this? Can you tell me about it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, did you bring the potion?" />
+            <imgdir name="yes">
+                <string name="0" value="So this is #b#t04000149##k!\nGreat job! This will enable me to be the leading actress forever... hahaha! Here, take this. It's my way of saying thanks." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hey, the number's not right! Are you making ME count these more than once? I'm disappointed in you. Do it again!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120016" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000149" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120016" />
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

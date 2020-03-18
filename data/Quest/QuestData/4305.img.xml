@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4305.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Dark Cloud Fox" />
+        <int name="area" value="30" />
+        <string name="0" value="The 'best-dressed' lady of #b#m800000000##k, #b#p9120001##k, seems to be perturbed at something..." />
+        <string name="1" value="I found #p9120001# enraged - it appears her newly-purchased fabric was destroyed by a pack of #o9400004#es. For someone as vain as she is, this is devastating. As a result, I promised her to eliminate #b80 #o9400004#es#k for her.The things I do for friends... \n\n#o9400004# #r#a43051##k " />
+        <string name="2" value="#p9120001# seemed thankful for me eliminating 100 #o9400004#s. She must have bought some new fabric already." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="정말 열 받아! 왜 이렇게 화를 내냐고? 잘 들어봐. 최근에 입을 만한 옷이 없는 것 같아서 새 옷을 지으려고 근사한 토끼 그림이 있는 옷감을 샀거든? 옷을 만들기 전에 그걸 잠깐 뒤뜰에 걸어 놓았는데, 그새 큰 #o9400002#가 와서 그걸 물어뜯어놨지 뭐야! 무척 귀여운 토끼 그림이 그려져 있는 거였는데 말이야! " />
+            <string name="1" value="당신 강한 모험가지? 그렇다면 제발 그 큰 #o9400002#를 퇴치해 줘! 불안해서 옷을 살 수가 없다고!" />
+            <imgdir name="yes">
+                <string name="0" value="어머~ 정말 퇴치해 주는 거야? 큰 #o9400002#는 그냥 #o9400002#보다 훨씬 강한데, 당신이 정말 할 수 있겠어? 아니, 못 믿는 건 아니지만 말이야." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="들어주지 않겠다니, 정말이지 치사한 사람이네. 당신 옷도 큰 #o9400002#가 노릴지도 몰라~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022024" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Arrrrgh! This is reaaaallly making me upset! Why am I so upset? Well, listen to this. Lately, I haven't found any new clothes worth buying, so I went ahead and bought this fabric that featured a nice drawing of a bunny. I hung it up at the back porch for a second, so I could get my tools ready, and... #o9400004# came in and snatched it away!!! Arrrghh!!!" />
+            <string name="1" value="You are pretty strong, right? Well, then I beg you to go eliminate #o9400004#! Because of it, I am too worried to buy new clothes now!" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, really? You're really going to fight #o9400004#? You should know that it's much more powerful than #o9400002#. Are you sure you can do it? Don't get me wrong--I want your help, and I think you can do it; I just don't want you coming back with a busted face. So if you're ready, go take down #b80 #o9400004#es#k for me. I'm counting on you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You said no? You know what? I can't believe this. #o9400004# is out stealing more clothes as we speak. Your clothes might be next!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, all 80 #o9400004#!! A lot of people tend to underestimate #o9400004#'s power, but I guess you weren't like that!" />
+            <imgdir name="yes">
+                <string name="0" value="Seriously, thank you so much!! The fabric I bought just now will now be hung up at the back porch, thanks to your good work!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated all the #b#o9400004#es#k, yet? I told you they're strong. Do it fast! I don't know where would be safe to put my fabric from those #o9400004#es!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400004" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4304" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

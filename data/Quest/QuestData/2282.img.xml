@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2282.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rose Scent" />
+        <int name="area" value="30" />
+        <string name="0" value="You aren't sure which scent would go best with which costume. Why don't you leave it up to #bLala#k?" />
+        <string name="1" value="Rush to #bLana#k before the scent fades and ask her which costume this rose scent would best complement." />
+        <string name="2" value="#bLana#k said the rose scent would go best with the Kid Mannequin's Bunny Suit. Time to tell #bLala#k." />
+        <string name="rewardSummary" value="2,300 EXP" />
+        <int name="timeLimit" value="40" />
+        <string name="timerUI" value="default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="buffItemID" value="2022631" />
+            <string name="message" value="향긋한 장미향기가 온몸을 감싸는 순간 이상하게 머리가 아프고 발걸음이 무거워 진다. 향기가 사라지기 전에 라나에게 가보자." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="#h0#, have you thought about which perfume goes with which outfit?\r\n#L0##bWell, I thought about it, but I'm not an expert. Shouldn't we ask Lana from Big Hit Records? She has an opinion about everything.#l\n#k" />
+            <string name="1" value="Great idea! I'll spray the Pink Perfume first. Could you ask her what she thinks?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I've sprayed the Pink Perfume on you. Please go to #bLana#k and ask her what she thinks before the lovely rose scent fades." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is the smell embarrassing you? I think it's just lovely." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You have the costumes ready, I presume? \r\n#L0##bYup! I have Kid Mannequin's Bunny Suits, Female Mannequin's Wigs, and Male Mannequin's Fedoras!#l\n#k" />
+            <string name="1" value="What is this scent I smell on you? \r\n#L0##bWe have perfumes to go with the costumes, but Lala couldn't decide which fragrance should go with which costume. Which costume do you think goes best with this rose scent?#l\n#k" />
+            <string name="2" value="Hm, a light, rose fragrance. I know exactly which outfit it should go with. Will you tell Lala what I've decided?" />
+            <imgdir name="yes">
+                <string name="0" value="I think the rose scent should go with the Kid Mannequin's Bunny Suit. Please tell #bLala#k for me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="What smell? Why don't you ask Lala to spray you with more perfume?" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please hurry to #bLana#k and ask her before the scent fades." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+            <string name="buff" value="2022631" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2281" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2283" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

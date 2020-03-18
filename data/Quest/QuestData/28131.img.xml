@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28131.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Soft and Cozy Chief's Chair" />
+        <int name="area" value="50" />
+        <string name="0" value="Kopee says she'll make a nice chair for the person who has released the seal of the #bMiwok Artifact#k. Let's go talk to her. " />
+        <string name="1" value="Kopee says that she'll make you a #bMiwok Chief's Chair#k as a token of her appreciation for your help. She says if I go and talk to Toh Relicseeker and release the seal of the #bMiwok Artifact#k 20 times using the #bEnchanted Scroll#k, she'll make me the chair. It's a great opportunity for me to receive a reward and the Chief's Chair from the Miwok Artifact." />
+        <string name="2" value="Kopee gave me a Miwok Chief's Chair as a gift, thanking me for finding the Miwok Artifact. It's an impressive chair that is both soft and cozy." />
+        <string name="summary" value="Release the seal on the Miwok Artifact 20 times" />
+        <string name="rewardSummary" value="#i3010072:# #t3010072:# 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, #b#h0##k. How goes recovering the Miwok Artifacts from the monsters? I have some good news for you. Toh and I are planning to give a special chair to those who release the seal on the #bMiwok Artifact#k many times." />
+            <string name="1" value="Are you wondering how many times you have to release the seal?" />
+            <string name="2" value="Well, you only have to release it #b20#k times. What do you say? Won't you try? This special chair is only for the Chief of a tribe to sit, but I'm specially offering it to you. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good! Find the #bMiwok Artifact#k from the monsters and take it to Toh Relicseeker. Ask Toh Relicseeker to release the seal on it using the #bEnchanted Scroll#k. If you release the seal on the #bMiwok Artifact 20 times#k, I promise to give you the #bChief Chair#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why not? Let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201116" />
+            <string name="endscript" value="q28131e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201116" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28128" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009082521" />
+        </imgdir>
+    </imgdir>
+</imgdir>

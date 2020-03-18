@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6162.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" Another Crazy Genius?!" />
+        <string name="parent" value="Shammos's past" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value=" After an uneasy silence, #p1032001# spoke at last. He said that the main character of the book is none other than #p2022003#, who used to be a human and a genius Magician. Then he asked me to go check out the elder's official residence, #b#p2022003##k, to see how he's doing these days..." />
+        <string name="2" value="#p2022003# is still out of it. But I think I heard him say #p1032001# .." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Phew... As you know... This book is about a genius in magic." />
+            <string name="1" value="...He is talented and has a pure passion for magic, which led him astray. He tested the very limits of magic until he finally had magic that could threaten the balance of the world. He turned into Hobi, not a human being. Do you know who this is? It's #p2022003#." />
+            <string name="2" value="#p2081200# said that It's better to get rid of him. #p2020009# and I are human beings, and couldn't do it. It's not easy to take the life of somebody, especially one so powerful...as well as a friend of ours. I couldn't do it in the end, so I imprisoned him. Sometimes I could see him coming to his senses...other times, not so much..." />
+            <string name="3" value=" It's been a long time since I saw him. Would you like to check on #b#p2022003##k for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. He rarely comes back to his senses, so don't get upset if he's a bit rude." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to, that's fine. I'm not encouraged to go to see him, either." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hahaha... Such a nice weather. Wonderful. Wonderful...nice and warm sunshine... No, no sunshine in the prison. The floor is cold. It makes me mad. It would be fine outside. " />
+            <string name="1" value=" I can't see outside, but it will fine today. It doesn't matter. If I think it's good, it's good. Grendel the Really Old will agree with me. Won't he?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" Visit and see #b#p2022003##k. Pray that he's back to his senses..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2022003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6161" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

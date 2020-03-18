@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="사본 - 51179.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Way Home" />
+        <int name="area" value="50" />
+        <string name="0" value="Talk to #b#p9250122##k, who is getting a lot of attention for being clad in Chemical Protective Clothing." />
+        <string name="1" value="Escort #b#p9250122##k at the #b#m502010010##k to the OSSS Secret Base. \r\n\r\nTalk to #b#p9250122##k and enter the #b#m502010100##k." />
+        <string name="2" value="You successfully escorted #b#p9250122##k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <string name="npcAct" value="say" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032706" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Why are you staring at me like that? It's creeping me out.\r\n#L0##bAre you the researcher working for Doctor Bing? Please tell me how to get to the OSSS Secret Base.#l\n#k" />
+            <string name="1" value="Shhh! Not so loud!\r\nI could get abducted by aliens at any moment. Don't draw attention to me!\r\n#L0##bI see... (Interesting choice of clothes for someone who doesn't want to be noticed.)#l\n#k" />
+            <string name="2" value="Staying here will get both of us abducted, no thanks to you. I'll help you on one condition: take me with you.\r\n#L0##bFine by me. Where to?#l\n#k" />
+            <string name="3" value="I will guide you. Please board the OS3A Machine and escort me to the base." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You do have an OSSS Machine driving license right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You won't be able to find the OSSS Secret Base without my help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Welcome, welcome, to my humble abode! I am Doctor Bing! Thank you for escorting my researcher here!\r\n#L0##bWhat is this place?#l\n#L1#Geez, you should learn some telephone etiquette!#l\n#k" />
+            <string name="1" value="The OSSS is a special Intelligence Organization within Omega Sector. Our mission is to collect intelligence about aliens and this is our base.\r\n#L0##bExcuse me? Intelligence about aliens? Why?#l\n#k" />
+            <string name="2" value="You know that scientists are being kidnapped, right? General Maestro views these kidnappings as an act of aggression and is preparing for a full-scale war. Unfortunately, we can't win against the aliens with our current technology...\r\n#L0##bThen let's flee!#l\n#L1#There is ALWAYS a way...#l\n#k" />
+            <string name="3" value="Yes. There is a way. We must obtain the energy source for the Bing Machine-Alpha, which I'm developing as we speak. To run, it requires a substance called Crystanol, which we theoretically won't be able to develop for another 50 years...\r\n#L0##bI'm sensing there's a twist...#l\n#k" />
+            <string name="4" value="Indeed. If we build a Time Machine, we can travel to the future and obtain the Crystanol. Then we'll have a fully functional Bing Machine-Alpha and stand a chance against the aliens.\r\n#L0##bI'm sensing there's another twist...#l\n#L1#Fiddling with science has fiddled with your mind. A Time Machine? HA!#l\n#k" />
+            <string name="5" value="No twist. We simply have to build a Time Machine. Easy enough. The researchers located in every town can lead you back to me whenever you wish.\r\nNow, do you want to help build the Time Machine?" />
+            <imgdir name="yes">
+                <string name="0" value="Come see me whenever you are ready!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Ah, but the aliens were listening in. I had no choice but to behave that way. I do apologize if I seemed brash." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Flee? Ha! To where? Outer space? Do you see the irony in that?" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Ah, the youths of today have so little imagination. Great things are possible if you only believe..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250125" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250122" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51178" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032702" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

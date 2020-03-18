@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2011.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jane's First Challenge" />
+        <string name="parent" value="Jane the Alchemist" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="You hear Jane's got herself a new life ambition..." />
+        <string name="1" value="Last time, you got Jane some boar's teeth to convince her dad to let her travel. That didn't work. Now she has a new dream. She wants to be an alchemist! A bit fickle, but whatever. Now, she needs materials... You can guess where this is going. She wants you to get her #b1 Pure Water, 30 Medicines with Weird Vibe, and 20 Malady's Experimental Frogs#k so she can make some Elixir." />
+        <string name="2" value="You got the materials Jane needed to make some elixir. If she fails...is the whole place going to blow up?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000041" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! You helped me the other day! You know, even after I showed my dad the items you got me, he still wouldn't let me travel... Hmph. He said he knew I didn't get them myself." />
+            <string name="1" value="I gave up on that dream shortly afterwards. Ah well. Anyway, I want to ask you for another favor... Do you have time?" />
+            <string name="2" value="I have a new dream. Being a traveler would be too tough for a pretty girl like me, hehe, so my new life ambition is to become a great alchemist! Someday I will be a better alchemist than even Maria in #m102000000#! Better believe it!" />
+            <string name="3" value="Alchemy isn't nearly as dangerous as traveling the world, so my dad's not against it. Oh! Do you even know what alchemy is? I better explain..." />
+            <string name="4" value="Alchemists can manipulate all sorts of matter to create special items." />
+            <string name="5" value="You can guess where this is going, right? Hehe, I need materials to practice on! Can you please gather some for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome! Let's see... I need #b1 #t2022000##k, #b30 Medicines with Weird Vibes#k, and #b20 #t4000041#s#k. If all goes well, I can make #t2000004#s!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, now. If you don't have time to listen to a poor girl's plea... Fine, just let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yippee! You got #b1 #t2022000##k, #b30 #t4000036##k, and #b20 #t4000041##k! Now, my turn. I just gotta mix these babies together and..." />
+            <string name="1" value="Voila! You know, this is my first time actually doing alchemy. Am I good or what? Here you go. Take it as a gift." />
+            <imgdir name="yes">
+                <string name="0" value="Wow. I've got a talent for this. I made 10 #r#t2000004#s#k during my very first experiment. You did your part to help, of course! Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #b1 #t2022000##k, #b30 #t4000036##k, and #b20 #t4000041#s#k, yet! I believe some vendors sell #t2022000#. You can get the other stuff from monsters." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000041" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2010" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

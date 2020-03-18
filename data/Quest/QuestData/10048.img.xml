@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10048.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Snipe" />
+        <int name="area" value="50" />
+        <string name="0" value="A #p9000043# that has been separated from his flock is looking for help..." />
+        <string name="1" value="A snipe that was migrating to a warmer place got lost and is now separated from his flock. He wants to fly towards his friends but he can only take off by jumping off the #bJump Stand#k... To help the Snipe, talk to him using the keyword #bHelp the Snipe#k." />
+        <string name="2" value="You helped the Snipe get up the branch. He should now be able to jump and take off. But why do you feel so uneasy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello! The sun is radiant and the eggs are growing nicely...it sure is a nice day isn't it? But why do I look so depressed, you ask? It's because the warm weather led me to fly into Maple World, and now I am lost. I don't know where my friends went... I wonder where they must have flown to by now... What? Why don't I just follow after them?" />
+            <string name="1" value="Well, I would like to! But...I can't. The truth is, I'm not really that great at flying yet. Of course, I know the basics. But my wings just aren't that strong! If I can descend from greater heights, I'm sure I'd be able to fly all I want!" />
+            <string name="2" value="But going to a high place isn't that easy. In order to climb up high on the tree branches, I have to jump over monsters, but I'm afraid of both jumping and monsters! Say, do you think you could lend me a hand?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, thank you so much! Talk to me using the keyword, #bHelp the Lost Snipe#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, I see. Does that mean I'm stuck here forever...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I'm... I'm so sorry! You went out of your way to help me, but I failed to jump. Wahhhh! What am I going to do? At this rate, I'll never catch up to my friends!" />
+            <imgdir name="yes">
+                <string name="0" value="*Sniff sniff* Oh, how I would love to go to the platform one more time. I think I'd be able to fly successfully this time..." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000043" />
+            <int name="infoNumber" value="10049" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000043" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="2010071400" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4481.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Socks Creation Recipes" />
+        <int name="area" value="50" />
+        <string name="0" value="Mrs. Claus, who previously wouldn't open up about Santa Claus, finally started talking to you after realizing you had read up on Santa Claus. As you expected, there was another reason behind Santa Claus leaving." />
+        <string name="1" value="Mrs. Claus told you about the importance of the Christmas Socks. However, she also said that making quality socks is not an easy task. The sock factory ceased its production due to a case of robbery, but she'll be able to make them again with a little bit of your help.\n\n#t4161039# #b#c4161039##k/1" />
+        <string name="2" value="You brought #bSanta Encyclopedia No.3#k to Mrs. Claus who was having a hard time remembering how to make Christmas Socks. But it all came back to her after reading the book. You should wait a while until she finds the frame for the socks." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Indeed, as I get older, it's becoming harder and harder to speak for long periods of time. Alright, so let's get back to where we left off. Where was I?" />
+            <string name="1" value="Yes, ah yes! We were talking about Christmas Socks. Pay attention, because you'll need to carefully choose the Christmas socks that will be hung as decorations." />
+            <string name="2" value="The standard ones would be the Christmas Socks of Happyville, which have a tradition that spans over six decades. However, a robbery occurred in the Socks factory that drove sock production to a screeching halt. I had worked there as a QC manager, but I hardly remember anything." />
+            <string name="3" value="First, to make Happyville Socks, you'll need information on how to make it, including the order of steps. You'll be able to find that information on #bSanta Encyclopedia No.3#k, the one about #bRecipe for Christmas Socks#k. Could you retrieve that for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks! Get them as soon as possible. I'll wait here, practicing my knitting skills." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Give up now? What happened to your ambition? Somebody had to do it for the sake of a happy Christmas in Maple World and I truly believed it would be you. If you change your mind, please come to me again. Please…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you get the #bSanta Encyclopedia No.3#k, Recipe for Christmas Socks? Great! Could you read it for me? My sight is rather weakening." />
+            <imgdir name="yes">
+                <string name="0" value="Oh yes, I remember! Now I remember it. You need the #ba Sock Frame and Colorful Yarns #k. Ah, so let's see. It requires a good amount of Colorful Yarns, but I think I have some extra Sock Frames. Please give me some time to find it. Come talk to me later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you haven't found it yet. It's not an easy task, since I know some monsters have taken it. But be patient, my dear Mapler. You'll need it to make standard socks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250051" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161039" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4480" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

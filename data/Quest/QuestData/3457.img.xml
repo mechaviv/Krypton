@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3457.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Battle Against Zeno" />
+        <int name="area" value="37" />
+        <string name="0" value="The #b#p2050002##k, who has failed at keeping #o6220001# under control, informs you that #m221000000# will be in danger if nothing is done to control #o6220001# soon. Let's hurry over to #b#p2050001##k and let him know." />
+        <string name="1" value="When you tell #p2050001# everything you've heard from #p2050002# using the Wave Translator, #p2050001# asks you to defeat Zeno for the safety of this world. Based on #p2050001#'s speculation, #o6220001# can be found in a place called #b#m221040301##k, where you can reach from #m221040300#. Let's rush over to defeat #r#o6220001##k once and for all! \n\n#o6220001# #r#a34571##k" />
+        <string name="2" value="You have defeated #o6220001# and reported your progress to #p2050001#. Not only does #m221000000# have to worry about the safety of the world, but also the safety of the #p2050002#... No wonder #m221000000# is always busy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="180000" />
+            <int name="pop" value="12" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm, did you bring the information you got from the Alien Grays? ...Mmmmm. I can't believe they've failed at controlling Zeno. The Grays always took great pride in their perfectly organized society, but even they couldn't manage this situation. That was useful. Thanks a lot." />
+            <string name="1" value="Zeno will affect the Omega Sector too? We can't have that happen. I don't think that one Zeno can put the entire Omega Sector in danger, but It's better to be safe than sorry. We'll need your help again." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please defeat #rZeno#k for us. It'll be ea piece of cake for someone like you. I've already located Zeno. It seems like Zeno makes frequent appearances in #bGray Field#k, and you can reach this place from Kulan Field 4. I'll be counting on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you declining this mission? Bummer. Shall I call the Mesorangers then...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've defeated Zeno. I really appreciate your hard work. I've been so fortunate to have met someone like you. We need you in the Omega Sector. What do you think about becoming the 5th Mesoranger? You will be in neon orange... Not your cup of tea?" />
+            <imgdir name="yes">
+                <string name="0" value="Please come back to see me if you want to become a Mesoranger. We'll be happy to welcome you whenever." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I suppose you haven't defeated #rZeno#k yet. Have you forgotten where Zeno is? You can find Zeno in #bGray Field#k, and you can get there from Kula Field 4." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6220001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3456" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

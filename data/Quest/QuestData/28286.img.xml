@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28286.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Trick or Treat" />
+        <int name="area" value="50" />
+        <string name="0" value="They say that Cassandra has prepared a fun event in commemoration of the Halloween Season. Would you like to go find out about it?" />
+        <string name="1" value="Cassandra has asked that you bring her 31 Red Halloween Stick Candies. The candies are carried by Monsters during the Halloween season and Cassandra says that the monsters in the Haunted Mansion have more than others. Who knew that Cassandra had such a craving for sweets, but this should be easy, right? \n\n#i4032446:# #t4032446:# #c4032446# / 31" />
+        <string name="2" value="It's not certain whether Cassandra was happy because she received the candies or because she pulled off a trick... Regardless, it always feels good to help someone, no? You can receive another Halloween task if you return to Cassandra after 1 hour. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Trick or treat! Halloween is upon us! What comes to your mind when you think of Halloween? The first thing that comes to my mind is the delicious Halloween Candies. " />
+            <string name="1" value="According to my sources, there are reports that the monsters possess a lot of these yummy Halloween candies. Can you bring me some of these #bRed Halloween Stick Candies#k? I will give you a gift that you'll really like.I promise!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="All of the monsters have the yummy Red Halloween Stick Candies that I'm looking for. But according to rumors, the monsters in the Haunted Mansion possess more than others. Whatever the case, bring me #b31 Red Halloween Stick Candies#k! Hurry up now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? You'll regret it if you miss out on the festivities... Why don't you think about it again?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Let's see... Have you brought all of the stick candies?\r\n ... What I want are #r31 Red Halloween Candies#k that the monsters currently possess. If you don't have them all, you can forget about the great gift I'll be giving you. Heh heh!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032446" />
+                    <int name="count" value="31" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q28286e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="51" />
+            <string name="end" value="2009112500" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

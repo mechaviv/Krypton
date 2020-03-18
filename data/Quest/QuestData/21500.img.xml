@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21500.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Weapon Acknowledges Its Owner" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 200, #b#p1201002##k strikes up a conversation with you...?!" />
+        <string name="1" value="#p1201002# tells you to come to #b#m140000000##k. He has something he wants to tell you." />
+        <string name="2" value="#p1201002# tells you that you are almost back to you old, heroic self, and as proof, gives you a powerful skill called Hero's Echo." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142133" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="20001005" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2112" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Aran, do you hear me?" />
+            <string name="1" value="Finally! Just like the old times, I can talk to you directly. Now that you have the ability to hear me, there's only one more thing you'll need to learn…" />
+            <string name="2" value="Just come to #b#m140000000##k first. I'll give you the details once you get here." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="We spent a few hundred years apart thanks to the Black Mage, and it was hard to recognize you when you first emerged from the ice. You weren't the hero I remembered; instead, you were just another person who couldn't even handle the #p1201001#. Worst of all, you didn't even remember me. Unforgivable." />
+            <string name="1" value="But as time went by, you changed. You diligently leveled up, and I saw that you were trying your hardest to remember me. That's when I knew... You may have drastically changed, but you're still Aran. The old you is still inside." />
+            <string name="2" value="You may have yet to retrieve all your memories, but your abilities are almost on par with your old self, I'd say. As proof, there's a skill that you can now use, and that's the reason why I brought you here." />
+            <imgdir name="yes">
+                <string name="0" value="The skill's called #bHero's Echo#k. It's the perfect skill for someone with the role of the protector, which is exactly what you were when you faced the Black Mage. I want you to put that power to good use again, because its perfect for you." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201002" />
+            <int name="lvmin" value="200" />
+            <imgdir name="job">
+                <int name="0" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

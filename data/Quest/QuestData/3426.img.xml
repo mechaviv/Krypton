@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3426.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Brilliant Assistant" />
+        <string name="parent" value="The Control Program for Rombot" />
+        <int name="order" value="4" />
+        <int name="area" value="37" />
+        <string name="1" value="Once again, I gave #bPorter#k Rombot's Memory Cards. Fortunately, the deciphering worked this time around, and I was able to get a hold of #b3 Deciphered Memory Cards#k for Kay. Now all I have to do is give them to her." />
+        <string name="2" value="I gave Kay, who's at the Silo of Omega Sector, the #bDeciphered Memory Cards#k that she requested. I'm anxious to see what she makes out of them." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031118" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="16300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031118" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030011" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(Sniff sniff~) Alright, the deciphering is now complete! What do you think? I deciphered two memory cards for you last time, and one for you just now, so... (Sniff sniff~) you now have the 3 that #b#p2051001##k asked for, right? Now please take them right to Kay. I have to run now." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Brilliant!! It's #b3 #t4031118#s#k, indeed! I'm sure #b#p2050013##k didn't get this done in one attempt, and I'm sure you've went through some unnecessary trouble to get this done with. I'm very impressed. Thanks to you, the research should receive some boost from it. Oh, here's something from the Sector, to you. Please take it." />
+            <imgdir name="yes">
+                <string name="0" value="What do you think about the #b3 #t2030011#s#k? This was sent straight from the Sector, but I didn't really need it, so here. Anyway, with this, the programming of the new robot should receive a much-needed boost. I knew I had an eye for talent. You're a brilliant assistant, you know that? I may have something else in store for you, so keep dropping by every now and then, okay?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="With the #b3 #t4031118#s#k that I've deciphered for you, you can give these to #b#p2051001##k at the Silo. (Sniff sniff~) I saw her just now, and she seemed to be really in a hurry to see this. You better go see her now! I wonder what she's making these days..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmm... I thought you gathered up 3 Rombot's Memory Cards to request Porter for some deciphering. How come you don't have all 3 Deciphered Memory Cards? Please get me all 3 of them for me to work." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="With the #b3 #t4031118#s#k that I've deciphered for you, you can give these to #b#p2051001##k at the Silo. (Sniff sniff~) I saw him just now, and he seemed to be really in a hurry to see this. You better go see him now! I wonder what he's making these days..." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2051001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031118" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3425" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

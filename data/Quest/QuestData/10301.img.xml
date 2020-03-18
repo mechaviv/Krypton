@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the Witch's Solid Broomstick" />
+        <int name="area" value="50" />
+        <string name="0" value="When you use the Witch's precious treasure, #b#t01002971##k, you hear a voice that sounds like the Witch. " />
+        <string name="1" value="The Witch says she must make a Broomstick she can ride in order to release the magic binding her and fly away." />
+        <string name="2" value="Bon voyage!\r\nYou must help the Witch make her Broomstick 5 times by #rDecember 8th#k. Otherwise, it all goes to waste! " />
+        <string name="demandSummary" value="#i4032349:# #t4032349:# #c4032349# / 20" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032349" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahhhh I want to get out of here. Please let me out. If you can hear me, please let me out of here!!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want to get out of here so badly. It's been too long since I've been stuck in here. Please let me out. Help me make the Broomstick so I can ride away!" />
+                <string name="1" value="Please bring me 20 #b#t4032349##ks you see monsters carrying. I'll give you some clothes made out of #bPink Bean#k skin in return." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please just let me out of here!!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, did you really bring me Bundles of Straw? Here, here, bring them to me. " />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I thought I told you I need 20 #b#t04032349##ks... " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010020" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032349" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10301e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010020" />
+            <int name="infoNumber" value="10299" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="0" />
+                </imgdir>
+                <imgdir name="1">
+                    <string name="value" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <string name="value" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <string name="value" value="3" />
+                </imgdir>
+                <imgdir name="4">
+                    <string name="value" value="4" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1052202" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="70" />
+            <string name="end" value="2009010100" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

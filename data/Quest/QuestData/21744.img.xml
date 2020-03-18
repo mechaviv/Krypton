@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21744.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Shadow Knight's Letter" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You wonder how #p2090004# will take the contents of the #t4220151# now that it's restored? You should talk to #b#p2090004##k in #b#m250000000##k." />
+        <string name="1" value="#p2090004# seems to be genuinely panicking and wants you to deliver the #t4220151# to #b#p2091007##k. But how in the world are you going to meet him when he resides at the very top floor of #m925020000#? That's when #p2090004# mentioned the ultimate weakness of #p2091007#'s student, #b#p2091005##k. You'd better head over to see #p2091005#." />
+        <string name="2" value="You met #p2091007# and handed him #o9300351#'s Letter of Warning." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032343" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032343" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm… So #t4220151# states that they're here to take the Seal Stone of #m250000000#. They're taunting us to stop them if we can. I can't believe this… Isn't this a direct challenge to #p2091007#? But what exactly is the Seal Stone of Mu Lung? Wait, that's not what's important here." />
+            <string name="1" value="The important thing is that someone like #o9300351# is challenging the master of #m250000000#, #p2091007#, but if he finds out that he hadn't so much as received the challenge scroll in the first place...? Then I'll probably be sandwiched between #o9300351# and #p2091007# and get living daylight beaten out of me." />
+            <string name="2" value="Noooo nooo nooo that cannot happen! You... If you aren't that busy, can you go to #b#m925020000##k and deliver the #t4220151# to #b#p2091007##k? Help me out here. My life is on the line, you know. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hey, do you know where in #m925020000# #p2091007# resides? He's at the very top floor of #m925020000#, awaiting the master of combat for a challenge. In other words, you'll have to get all the way up to the top floor by battling and only then will you be able to meet #p2091007#. But looking at you, you don't seem to have the skill for that yet." />
+                <string name="1" value="But I can't just give up my life like this! There is another way. Do you know #p2091007#'s student #b#p2091005##k? If you can convince him, you may be able to see #p2091007#. How do you convince him, you ask? Hahaha... I know all his weaknesses." />
+                <string name="2" value="#p2091005# is so determined to get stronger that he will literally eat anything and everything that's said to be good for the body. Even things like #b#t4000293##k, so if you can sneak in a couple of those and ask to meet him, then he'll probably teach you the backdoor shortcut to the top of the building. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, what exactly are you doing right now, putting a panda in danger and just watching him sink into oblivion! You can't do that to me! Please reconsider…!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm? You don't look like you deserve to be here. How did you… Hmmm? Is that...#t4220151# for me? Let me see…" />
+            <imgdir name="yes">
+                <string name="0" value="...#o9300351#... The Seal Stone of Mu Lung? Oh no… how could this happen?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hey, you still haven't seen #p2091007# yet? Head over to #m925020000# and convince #b#p2091005##k so you can directly reach #p2091007#. I'm counting on you, because without you, I am dead meat!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm? How did you end up here? You don't look like you belong up here yet. You'll need to follow the proper procedure of this training center and move up from the very bottom." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hey, you there. I didn't know you were such a klutz, but you dropped the #t4032343#! I'll give you another shot. This time, this better get delivered to #b#p2091007##k." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21745" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032343" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2090004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21742" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

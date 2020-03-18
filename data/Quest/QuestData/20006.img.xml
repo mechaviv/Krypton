@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20006.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku's Fourth Training Session" />
+        <int name="area" value="15" />
+        <string name="0" value="Visit #b#p1102000# the Training Instructor#k and receive some training." />
+        <string name="1" value="#p1102000#'s fourth session involves facing off against the fourth weakest... you get the drill. Anyway, an easy Mimi called #r#o0100123##k, and defeating #r20#k of them in the process. You better hunt down those #o0100123#s in #b#m130010100##k. \n\n#o0100123##r #a200061##k" />
+        <string name="2" value="You managed to defeat all 15 #o0100122#s and return. Off to the next session." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="네 번째 수련은... 이제 말 안 해도 알겠지? 지금 네 레벨이면 딱 사냥하기 좋을 #m0100123#를 잡으면 돼. 이번에는 한 20마리 잡아 보자고." />
+            <imgdir name="yes">
+                <string name="0" value="#m0100123#가 있는 위치... 설명 안 해도 짐작하겠지? 수련의 숲3에서 포탈을 타고 왼쪽으로 나가면 수련의 숲4가 있는데, 그곳에 #m0100123#들이 있어. 자, 그럼 수고해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="벌써 수련이 지겨워진 거야? 이봐이봐. 아직 멀었다고. 기사의 길은 이 정도가 아니라니까." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000020" />
+                    <int name="count" value="25" />
+                    <int name="job" value="64512" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000021" />
+                    <int name="count" value="25" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Your fourth training session will involve... you know what I'm going to give you, right? You are right at that level where you can take on #r#o0100123##k. Let's try #r20#k of them, okay?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I don't even need to tell you where you can find #o0100123#... Right? Find them at or near #b#m130010100##k. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you already getting sick of training? You can't say that. You're nowhere near the level you should be to even think of something like that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have defeated 20 #o0100123#s. Wow... a little more, and you may be able to become a Knight-in-Training! I advise you to start planning out what kind of a knight you'd like to become. A knight of light, a magician of fire, a bowman of wind, a thief of darkness, or a pirate of lightning...  you're surely interested in becoming one of them, right?" />
+            <imgdir name="yes">
+                <string name="0" value="But before anything, you must become stronger. Talk to me when you're ready to take the next step." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to defeat #r20 #o0100123#s#k yet? You'll find them at #b#m130010100##k or in forests nearby." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100123" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20005" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

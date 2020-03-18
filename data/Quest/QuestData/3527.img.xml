@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3527.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search for the Lost Memory" />
+        <int name="area" value="46" />
+        <string name="0" value="According to the Memory Keeper, in order to find my lost memory, I need to go back to the starting point of my adventure.  Starting point of my adventure? Let's see... Wouldn't that be when I left Maple Island to Victoria Island for the first time and got my job?  I should go see #b#p1090000##k. " />
+        <string name="1" value="It had been a long time since I last met with #p1090000#.  He said he remembered back when I was just a beginning and I knew nothing. He was happy to see how I've grown into a great pirate.  I was touched that he still remembered our first meeting from such a long time ago. " />
+        <string name="2" value="It had been a long time since I last met with #p1090000#.  He said he remembered back when I was just a beginning and I knew nothing. He was happy to see how I've grown into a great pirate.  I was touched that he still remembered our first meeting from such a long time ago. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3507" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3527s" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10510.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Evan Everyday Event" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="Cassandra has something to talk to you about. What could she want?" />
+        <string name="1" value="Cassandra says that she's decided to raise a Mini Dragon as a way of commemorating the launch of Dragon Master Evan. But she says that she doesn't think she will do a good job and asks that you take care of the Dragon Egg for her. She says that if you #bhatch the egg by taking good care of it for 1 hour#k, she will give you a nice gift... \r\n\r\nIf the egg disappears because you log out, forfeit the quest and accept it again." />
+        <string name="2" value="Cassandra seems to be raising a Mini Dragon in order to commemorate the launch of Dragon Master Evan. She is planning to hatch new Dragons from #bMarch 31 to May 4#k, so keep helping her until then." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It looks like you haven't hatched the Dragon Egg yet. If you take care of it for #babout 1 hour#k, it will hatch for sure! If you disconnect, the egg will disappear so be careful! If the egg has disappeared, forfeit the quest and accept it again!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994187" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10510e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994187" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3994186" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10510s" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="201005050000" />
+            <int name="interval" value="60" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

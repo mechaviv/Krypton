@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3602.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Brothers' Stack of Rice 2" />
+        <string name="parent" value="Brotherly Love" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="Chil Nam insisted that his brother, who is the oldest child, should have more food than him, and stuck out a #t4031229# from his stack. He then requested that I place it on top of Chil Sung's stack of rice in front of his house." />
+        <string name="2" value="I received a #t4031229# from Chil Nam, and placed it on top of a stack of rice in front of Chil Sung's house." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031246" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031246" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Umm, hi there. I don't think we've ever met. Someone told me a person from outside came by here, and I guess that must be you. This is great; I need to ask you for a small favor. My brother and I live here in this town, farming for a living. We harvested our crop a few days ago, but something's been nagging me ever since. I have equally split the #t4031229# between my brother and myself, but my brother takes care of my parents, and I seriously believe my brother deserves a little more of #t4031229#, but I know he won't accept it. That's why ... can you please secretly put one #t4031229# on top of the stack of rice in front of my brother's house?" />
+            <imgdir name="yes">
+                <string name="0" value="Please, please make sure my brother does NOT find out about this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" I understand. It's rude for me to ask for such a huge favor to a stranger. I'm sorry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" I see a stack of rice stacked at the garden of Chil Sung's house. Secretly, I brought out a sack of rice and laid it unnoticeably on top of the stack." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" This is Chil Sung's stack of rice." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" I think you forgot to get #t4031229#." />
+                <imgdir name="yes">
+                    <string name="0" value="Please make sure not to get caught by my brother..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2072000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031246" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3601" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

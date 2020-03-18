@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2140.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Thief's First Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're now a Thief! Now what? Perhaps #b#p1052001##k can help you." />
+        <string name="1" value=" #p1052001# suggests monster hunting as a form of basic training. He wants you to hunt #r20 #o130100#s#k. #o130100#s can be easily found near #m103000000#. \n\n#o130100# #r#a21401##k" />
+        <string name="2" value="You eliminated 20 #o130100#s and reported that to  #p1052001#. Piece of cake!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="도적이 되었다고 무작정 강해지는 것은 아니지. 이제 겨우 초보자에서 벗어난 애송이 도적은 스스로의 힘으로 전투를 하기도 어려운 법. 특히 자네 같은 경우엔 더 한 것 같은데... 어때? 이 다크로드님의 특별 수련을 받아보겠나?\r\n#L0# #b수련을 하겠습니다.#l  \n\n#L1# 스스로의 힘으로 할 수 있습니다. #I" />
+            <string name="1" value="스스로의 한계도 인정할 줄 모르는 멍청이는 도적이 아니지...좋아. 자네에게 수련을 시켜주지." />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="알아서 할 수 있다고? 흐응... 그렇게 보이지 않는데. 뭐 수련을 받지 않겠다면 하는 수 없지만 말이야." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="590" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Being a Thief doesn't mean you are strong. You're just out of the beginner's level. It's hard for you to fight. You look even worse. Would you like to go for a special training by #p1052001#?\r\n#L0# #bI want to be trained.#l \n\n#L1# I can do it by myself. #I" />
+            <string name="1" value="When you don't know who you are, you are no longer a Thief. Good. I'll show how to train yourself." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="You can do it by yourself? Hmm..I don't think so, but I won't press you further..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" I'm sure that you don't know how to use weapons. It's better to hunt #o130100#. You can do anything after you learn how to hunt. Go and hunt #r20 #o130100#s#k and let me know when you've finished. You can do it easily as #o130100#s are all around Kerning City." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not ready to be trained." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You came back with 20 #o130100#s. It's a piece of cake. Don't be happy with this. It is just first step." />
+            <imgdir name="yes">
+                <string name="0" value="I'll call you when you need another training session. Until we meet again...keep training hard!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r20 #o130100#s#k yet? Sigh, hurry up." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="411" />
+                <int name="3" value="412" />
+                <int name="4" value="420" />
+                <int name="5" value="421" />
+                <int name="6" value="422" />
+                <int name="7" value="430" />
+                <int name="8" value="431" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

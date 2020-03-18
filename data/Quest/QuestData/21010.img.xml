@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21010.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Return of the Hero" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Where is this? What's going on? You don't even know who you are." />
+        <string name="1" value="#p1202001# seems to be really excited at having met a hero. A hero? Who…you? Judging from what #p1201000# is saying, maybe you really were a hero in your past life. But you have no recollection of it…" />
+        <string name="2" value="Since drinking the potion, your HP recovered quite a bit. You still don't know what's going on, but considering how nicely everyone's been treating you, they must have good intentions. You should have no trouble going back to town now..." />
+        <string name="rewardSummary" value="Go on to 'The Weapon That Disappeared' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Don't feel like you need to save this potion for later use. Just drink it! It's not much, but it'll be enough to restore some of your HP." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21010e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21001" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21010s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

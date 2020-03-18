@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10345.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Signs of Their Revival" />
+        <int name="area" value="50" />
+        <string name="0" value="There have been subtle signs that indicate the revival of the Arans. Talk to Cassandra for details." />
+        <string name="1" value="Ice Shards from the ice the Arans were sealed in have been found near town. Where are those Ice Shards?" />
+        <string name="2" value="The Aran Memory Fragments...How long will it take for you to collect all 12?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Yes, there have been indications everywhere that have foreshadowed their revival. You should know what those signs are in order to find their Memory Fragments." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="According to what my Crystal Ball has shown me, the ice in which the heroes were sealed has started to crack as the curse weakens." />
+                <string name="1" value="You'll be able to find the Ice Shards near town. That would definitely help you find their Memory Fragments." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You mean you're ready to give up on finding the Aran Memory Fragments?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you spot an Ice Shard while passing by the Hunting Ground, don't just ignore it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000068" />
+            <string name="endscript" value="q10345e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10344" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

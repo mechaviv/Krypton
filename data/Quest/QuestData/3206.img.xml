@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3206.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nemi's Lunchbox Delivery" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Nemi, who's in Ludibrium..." />
+        <string name="1" value="Nemi of Ludibrium gave me a lunchbox and asked me if I could make a special delivery to her dad, #b#p2040015##k. Apparently, he forgot to bring his lunchbox to work today. She said her dad should be somewhere around the #bToy Factory#k." />
+        <string name="2" value="I met #b#p2040015##k, who was at the toy factory, and gave him the lunchbox Nemi packed for him, but it looks like he wants to ask me for something..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020021" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="4500" />
+            <int name="exp" value="750" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020021" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My father may be waiting for me by now. I have so many chores to take care of here ... I have a favor to ask you regarding my father... will you help us out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much~ My father is the manager of the Toy Factory inside the Ludibrium Clocktower, and I think he forgot to pack his lunch today. I am hoping you can deliver this to my father for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... you must be swamped with other things yourself. If you ever find some time, then please come talk to me. I can always use some help, you know~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, this is it! The lunchbox from heaven by none other than my daughter! I can't work without this. Great job bringing this here. Thanks to you, I'll be able to concentrate on my work now. Here are some mesos for you." />
+            <imgdir name="yes">
+                <string name="0" value="Mmmhmmm, this is how it should be! #p2041005#'s the best, bar none! Oh, by the way, I have been really busy these days with work, and I was hoping someone help me out here. If you have any free time down the road, please drop by." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have met my father yet. He is the manager of the Toy Factory which is inside the Ludibrium Clocktower. Please get this lunchbox to him as soon as possible. He must be starving by now. Thanks~" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You must have met my daughter! Didn't she want you to deliver the lunchbox to me? If you lost it in the middle of the track or have eaten it, please go back to her immediately. If she feels good, she may just make you another one." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I think you may have lost the lunchbox somewhere on the way. Or ... you may have had a hard time resisting the smell of it and ate it yourself. Well, that's okay. I'll make you another one, and pleaaaase don't lose it this time. My father should be starving by now." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040015" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020021" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041005" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

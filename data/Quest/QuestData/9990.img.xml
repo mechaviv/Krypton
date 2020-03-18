@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9990.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gaga's Maple Leaf" />
+        <int name="area" value="50" />
+        <string name="0" value="A Golden Maple Leaf fell from a full grown maple tree.  I should take it to Gaga who is the keeper of the maple trees." />
+        <string name="1" value="I took the golden Maple Leaf to Gaga, the keeper of the maple tree." />
+        <string name="2" value="I should take the Golden Maple Leaf that fell from the Maple Tree to Gaga, the Maple Tree keeper.  Gaga said that this Maple Leaf can be used to plant another Maple Tree and gave me a gift for bringing it to him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001168" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q9990s" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+            <int name="interval" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

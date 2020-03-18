@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2237.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Owner of the Mysterious Note" />
+        <string name="parent" value="The Mysterious Note" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="There is a note inside the Ant Tunnel. Let's pick it up and see what it is." />
+        <string name="1" value="You've picked up a Mysterious Note inside the dungeon. Let's return this Note to its owner. Hm, could it belong to Mu Young?" />
+        <string name="2" value="Chrishrama says he feels the forces of evil coming from the dungeon and asks that you place a Charm on each of the Shaman Rocks nearby. It sounds a bit superstitious, but let's make him happy and do this favor for him. You have given the Note to Mu Young, whom you met inside the dungeon." />
+        <string name="summary" value="Let's return the piece of paper you've picked up. Could it be Mu Young's?" />
+        <string name="demandSummary" value="#i4032250:# #t4032250:# #c4032250# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 30,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032250" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032250" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2238" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="There is a crumpled piece of paper on the ground. Would you like to pick it up and read what's written on it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The words written on this piece of paper make absolutely no sense.\r\n#bPrince of Darkness. Underground temple, a bold young man, the key of the seal... My last breath'#k\r\nWhat's that supposed to mean? There is nobody around so finding the owner might be hard. Oh, maybe it belongs to Manji's apprentice, Mu Young. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is this trash?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hm? What is that? That doesn't belong to me." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Let's go find the owner of this paper." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Can I... help you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061014" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032250" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1063014" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

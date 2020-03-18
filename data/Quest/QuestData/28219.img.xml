@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28219.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Catch Valefor!" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says it is time to eliminate #rValefor#k the demon. Let's talk to him." />
+        <string name="1" value="If you go to #b#m103030200##k, you will find a Demon's Doorway where #rValefor#k is hiding. You can enter using the #rLarge Model of a Coin#k you received from #bShumi#k.\n\nDefeat #rValefor#k!\n\nReport back to #b#@1052001:##k in #bKerning City#k upon completion." />
+        <string name="2" value="You have defeated #rValefor#k whose seal had been broken. But who or what is responsible for the broken seal still remains a mystery." />
+        <string name="demandSummary" value="#o9400613# #a282191#" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i1003033:# #t1003033:# #c1003033# 1&#xD;&#xA;#i4032496:# #t4032496:# #c4032496# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1003033" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032496" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're all set.\n\nAre you ready to face #rValefor#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There is a Demon's Doorway in #b#m103030200##k.\nThat is #rValefor#k's hiding place." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you scared?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Not bad for a novice. You'll come in handy in the future, I can see." />
+            <imgdir name="yes">
+                <string name="0" value="But this is just the beginning. According to the rumor going around, the one who broke the seal is extremely powerful. Be careful out there, and keep training diligently!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not defeated #rValefor#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400613" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28218" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22527.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Guard's First Assignment: Cleaning up Around the Dungeon" />
+        <int name="area" value="7" />
+        <string name="0" value="Since #p1013000# also agrees, you've decided to become a #m102000000# Guard. Tell #b#p1040001##k of your decision." />
+        <string name="1" value="#p1040001# gives you your first assignment. Your job is to clean up around the Dungeon Entrance by eliminating the #r#o2110200#s#k. Sounds simple enough.\r\n\r\n#o2110200##r #a225271##k" />
+        <string name="2" value="#p1040001# seems very satisfied that you've eliminated the #o2110200#s around the Dungeon Entrance." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142153" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2210" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you going to join the #m102000000# Guards? You are?! This is great! I will now appoint you as a #m102000000# Guard! Since you're a little young, you can't be a full Guard, but I'll treat you the same as an official Guard." />
+            <string name="1" value="Now onto your first assignment! It's pretty simple. Clean up the Dungeon Entrance area by eliminating the #o2110200#s surrounding #m106000300#.  If it's too difficult, just tell me. Want to do it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Go on and eliminate #r100 #o2110200#s#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, it's okay if it's too hard. Let me think of something easier. Hmm... But this is a basic job that all Guards should be able to do..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you eliminated 100 #o2110200#s already? I was right about you. I thought you would do a good job. And oh, there is something I forgot to give you earlier." />
+            <imgdir name="yes">
+                <string name="0" value="Here, this is the Honorary #m102000000# Guard Medal. It's not much but it should come in useful. Now please continue your good work. I'll call when I have a new assignment for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r100 #o2110200#s#k yet? Hmm... Maybe you're not as strong as #p1040000# implied." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1040001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2110200" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22526" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="21" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

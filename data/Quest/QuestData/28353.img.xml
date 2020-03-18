@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28353.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Shadow Knight in Dragon's Nest" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The #p9010000# says that there is some news you should know about. Click on the lightbulb over the #p9010000#'s head to hear the news!" />
+        <string name="1" value=" The #p9010000# says to go through the Dimensional Mirror to get to Dragon's Nest, where you will find #p9201144#." />
+        <string name="2" value="You spoke to #p9201144# in Dragon's Nest. He told you about some eggs you can obtain from the Dragon's Nest." />
+        <string name="summary" value="Go to Dragon's Nest and look for #p9201144#." />
+        <string name="rewardSummary" value="Exp 2,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="I suppose you heard about me through the #p9010000#. It's nice to meet you." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What? You couldn't find #p9201144#? Go through the Dimensional Mirror and go to #m683010000#. You'll find him there." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201144" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <string name="startscript" value="q28353s" />
+            <int name="lvmin" value="15" />
+            <string name="end" value="2010051800" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

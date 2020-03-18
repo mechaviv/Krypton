@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3246.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Mysterious Letter" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p2041004##k of #b#m220000000##k is concerned about a mysterious letter... what could it be?" />
+        <string name="1" value="#p2041004# said he's been concerned about a mysterious, anonymous letter sent to the king of #m220000000#, and believes something huge is developing. He then asked me to head over to #b#m100030000##k and find out who wrote the letter..." />
+        <string name="2" value="There's a huge wooden entryway leading into #m100030000# which I'd never seen before. It almost looks like an entryway to a fortress... I should try talking to #p1094000#, who was standing in front of me. I remember him telling me that a #bpirate #p1072008##k fort is being built here.  I wonder who the captain is..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler. You look like someone who has a wealth of experience traveling around to different areas. If so, then can I ask you for a favor? What is it, you ask? Well, are you ready to hear something strange?" />
+            <imgdir name="yes">
+                <string name="0" value="A while back, our king of #m220000000# received a #bstrange, anonymous note#k. Only he knows exactly what's written on it, but I think it's a note that signals the arrival of a #bnew force#k to be reckoned with. The king announced to us that we'll become their allies." />
+                <string name="1" value="That being said, I still can't shake this feeling of concern. I want to know exactly who wants what, and honestly, I have no clue. All I know is that their arrival will signal a new, earth-shattering change in the Maple World. What else have they brought with them?" />
+                <string name="2" value="The king told us not to worry, but I think it'll be better for us to investigate on our own. I would like for you to head to Victoria Island and go up to the #bEast forest of #m100000000##k and see what's really going on there. Thanks in advance!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm...this is a classified subject, so I can't tell you what it is if you do not wish to help us." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, who's that? I, #p1094000#, will protect #b#p1072008##k and #bThe Nautilus#k! Remember the name, the hero of the pirates, #p1094000#! Hahahahaha! Wait, this is not it. What are you trying to do there? Whatever you are trying to do, it won't fool me! Not #p1094000#!" />
+            <string name="2" value="We ride around on our ship, The Nautilus, under the guidance of our captain, Kyrin, roaming around the coasts of Maple World, looking for the Black Magician. We use Knucklers and Guns to make sure that the root of all evil is vanquished--we want to make sure that the Black Magician never rises to the heights of power as he did before." />
+            <string name="3" value="Just like the wisemen in Victoria Island training for the day the Black Magician returns, #p1072008# is busy making sure that his followers stay in low numbers.  She's so young, too. That's just so admirable!" />
+            <string name="4" value="So no more suspicious looks! We're not here to fight you! I swear on #p1072008#'s name!" />
+            <string name="1" value="Eh? What? You're just here to investigate because you've never seen us before? Why didn't you just Say that from the get go? We're not aliens or anything like that! We're just Pirates.  Fearsome, fight-to-the-last-man, potion-loving Pirates! Don't tell me you are thinking of Lord Pirate and those despicable bandits.  They suck!  We serve a cause much more true to the spirit of Victoria Island!" />
+            <imgdir name="yes">
+                <string name="0" value="We're not done with the fort's construction just yet, so I can't show you what's going on, but...we'll be finished soon, so have no fear. If you want to join us and #p1072008# and become a mighty  #bGunslinger or Brawler#k, come back later. By then, we'll be ready to accept you with open arms, and train you to live the life of a Pirate!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#m100030000##k yet?? Please find out what it really is. Make sure to find out if it is a threat to the peaceful Ludibrium." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1094000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2190" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3381" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3115" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3713" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008111100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

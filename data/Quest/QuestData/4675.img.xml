@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4675.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Naomi's Invitation 1" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9105002# seems to be holding a very fascinating event. I better go check it out." />
+        <string name="1" value="#p9105002# gave me all the information on the newest event that she planned. I should talk to her again in a bit." />
+        <string name="2" value="#p9105002# gave me an entrance ticket to participate in the event." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032055" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! Isn't it beautiful outside?" />
+            <string name="1" value="I am #p9105002#, a special event planner/event guide. I spend most of the time cooking up new events for the public, and this is when I get to see other people enjoy my hours of hard work!" />
+            <string name="2" value="So what do you think? If you have some free time on hand, you should definitely join this event. Interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome! Well, I need to print you a new ticket for entrance. Talk to me in a bit." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, really. That's too bad. Like I said, if you have some time to burn, you should really try this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you didn't wait too long, did you? Here is your ticket!" />
+            <string name="1" value="（and that's how I received #b#t4032055##k. Where am I supposed to go to use this?)" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9105002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9105002" />
+            <string name="end" value="2008121600" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

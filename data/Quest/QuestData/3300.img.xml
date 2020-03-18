@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Deal with the Broker" />
+        <int name="area" value="44" />
+        <string name="0" value="There's a new, unknown and mysterious town called #m261000000#. It's an alchemist town, which explains the mysterious aura around it... I better go see #b#p2111007##k to gain some information on #m261000000#." />
+        <string name="1" value="When I asked #p2111007# about #m261000000#, he requested #b10,000 mesos#k for information, as if it's an accepted practice. Is he really a broker...? Come to think of it, #p2111007#'s reputation isn't that great either...what do I have to lose?" />
+        <string name="2" value="After giving #p2111007# 10,000 mesos, I was able to obtain some information on #m261000000#. A long time ago, after the death of the Black Magician, the alchemists came together and set up a town called #m261000000#. Nowadays, the town is split into #b2 societies, Zenumist and Alcadno. They seem to be in constant conflict with one another.#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-10000" />
+            <int name="exp" value="6000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmm... I don't think I've seen you before. You are definitely not from the area... and you don't seem to be an alchemist, either. Maybe a traveler...? You do look the part. I can tell you have a substantial amount of skills, but you also seem to be have a bit of a daredevil in you, finding yourself in trouble at times. Am I right? \r\n#b#L0#How did you know?#l&#x9;" />
+            <string name="1" value="It's because you seem overly curious... just by the fact that you casually struck a conversation with a broker, that tells that you are fearless. I don't care who does business with me, anyway.  Business is Business. If you want to do business with me, let me know.\r\n#b#L0#I want to know more about #m261000000#.#l" />
+            <string name="2" value="Information on #m261000000#... It depends on the quality of information you'd want to know, but the minimum is #b10,000 mesos#k. Expensive? Trust me, it's worth it. Do you want to make a deal?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Great choice. I'll give you some valuable information on #m261000000#, so get your mesos ready, and let me know when you are." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? That's too bad... but I know you'll be back. It's impossible to do anything in #m261000000# without any information..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring 10,000 mesos? If so, then have your pen and paper ready. Here is some valuable information on #b#m261000000##k..." />
+            <imgdir name="yes">
+                <string name="0" value="Long ago, after the Black Magician disappeared from Ossyria, a group of alchemists got together and formed #m261000000#. The motto of the town is &quot;Ultimate knowledge is only an experiement away.&quot;" />
+                <string name="1" value="The town itself is flush with money, since various results from experiments conducted with alchemy have been sold for lots of money. Even with all that, however, the town seems very isolated from the world. That's because alchemists in general are very introverted, which makes brokers like me much richer. Especially in times like this, where the town is in conflict..." />
+                <string name="2" value="#m261000000# is currently split into two: #bZenumist#k and #bAlcadno#k. Zenumists are the ones considered pure alchemists that have successfully blended science and magic.  Alcadnos are the ones that have added mechanical engineering to the already potent mix.  They truly dislike one another, so if you want to get involved, you may want to think twice before going in." />
+                <string name="3" value="Because of the current conflict, the already-insulated alchemists have withdrawn even further. I honestly think a traveler like you won't get anything substantial out of #m261000000#... it's much easier for you to do anything if you're affiliated with one or the other." />
+                <string name="4" value="That's it for basic info. Too little, you say? That's why it's BASIC info. If you want more, then come see me. I guarantee that if you want to do anything at #m261000000#, then you'll have to come back and see me sooner or later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have enough mesos with you. It's only #b10,000 mesos#k... and you call yourself a traveler?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111007" />
+            <int name="endmeso" value="10000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

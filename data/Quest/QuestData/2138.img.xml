@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2138.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Bowman's Third Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to get into this training thing. #b#p1012100##k wants to give you another session." />
+        <string name="1" value="#p1012100# says Bowmen must be calm and possess much willpower. Thus, you must hunt #r65 #o0210100#s#k. That's, uh, quite a lot. \n\n#o0210100# #r#a21381##k" />
+        <string name="2" value="You took care of 65 #o0210100#s. Phew... Wasn't easy, but you did it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="미숙한 팔을 가진 궁수여. 성장하는 당신의 모습에 감탄하게 되네요. 당신의 눈은 이미 또 한 명의 강력한 궁수의 것이에요. 하지만... 아직 당신에게는 부족한 것이 있군요. 더 큰 성장을 위해 한 번 더 수련을 받아보겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="좋은 결심이에요. 이번에 자네가 해야 할 일은 슬라임 65마리를 사냥하는 것이에요. 65마리... 결코 적지 않은 숫자이지요. 하지만 궁수의 침착성과 의지라면 얼마든지 상대할 수 있는 수예요. 자, 어서 당신의 힘을 보여주세요. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="스스로의 힘으로 수련할 수 있다면, 더 이상 권하지 않겠어요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="645" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Bowman with unskilled arms. I'm impressed by your enhancement.Your eyes already belong to another strong Bowman. But, would you like to go for one more training for further improvement?" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice. Your mission is to hunt #r65 #o0210100##k. 65... It's quite many. You are calm and have a strong will so  that I believe you can do it. Now, let me see your strength." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you train by yourself, I won't ask you any more." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You killed 65#o0210100#. I pay homage to you for finishing this hard training." />
+            <imgdir name="yes">
+                <string name="0" value="I'll call you when you need another training. Keep training yourself." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't killed #r65#o0210100##k. Don't be hasty.You need to endure to be stronger." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="65" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2137" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

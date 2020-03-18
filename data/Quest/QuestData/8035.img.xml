@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8035.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maya's Concerns 2" />
+        <string name="parent" value="Maya's Concerns" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="The condition of the baby Lioner concerns me. I better go to Maya's house." />
+        <string name="1" value=" Now, the baby Lioner is poisoned! In order to detox the poison, it'll require #b50 #t02050000##ks, #b30 #t04000076#s#k, and #b30 #t04000058#s#k. Gotta hurry! \n#t02050000#  #b#c02050000##k/50 \n#t04000076#  #b#c04000076##k/30 \n#t04000058#  #b#c04000058##k/30" />
+        <string name="2" value="The medicine should detox any poison in its body after a good night sleep. Is this it? I better ask Maya." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2050000" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000058" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000076" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8036" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, we've stopped the bleeding, but it's breathing very heavily. Hmm... it's getting worse though... \nMaybe..." />
+            <string name="1" value="Oh nooo!!! This baby Lioner is poisoned. It must be the poisonous herb I plucked out along with the actual medicinal herbs, and it may have infected the wound. That poison is so atypical, I'll need a combination of medicines in order to detox her." />
+            <string name="2" value="I'll bring out the apparatus that'll help me combine items, so please get me the ingredients for the medicine. \n (Baby Lioner is breathing heavily and looking at this direction)" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. In order to make the detox medicine, I'll need #b50 #t02050000#s#k, #b30 #t04000076#s#k, and #b30 \n#t04000058##k. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're the only one I can trust. Once this matter is resolved, I'll definitely reward you well for this, so please, help us." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up the medicine ingredients?" />
+            <imgdir name="yes">
+                <string name="0" value="(Maya gathered up the medicine and fed it to baby Lioner) \nSoon, it'll fall asleep. It may have a tough time while sleeping, but it'll be completely detoxed by tomorrow morning." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have enough. It's a very rare poison, so it requires #b50 #t02050000##ks, #b30 #t04000076#s#k, and #b30 #t04000058#s#kto detox it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2050000" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000058" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000076" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8034" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3641.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Young Man Possessed by a Fox" />
+        <string name="parent" value="Legends of Hometown" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="Chil Nam from the #bFolk Town#k has become strange lately, and #bChil Sung#k is worried sick. What could be the problem? Let's go see Chil Sung." />
+        <string name="1" value="Chil Sung says Chil Nam doesn't eat nor sleep, and just sits and sighs all day. What could be wrong with him? Let's see how #bChil Nam#k is." />
+        <string name="2" value="A preoccupied Chil Nam sits with his mouth open and says something about a fox. This may be a clue. Let's go back to Chil Sung." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="700" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Sigh... What should I do... sigh... There has to be something I can do...  \r\n#L0# #b Hello, there? Are you okay?" />
+            <string name="1" value="Oh my, you caught me by surprise! Oh, sorry. I was thinking about something else... You really want to know? Then, yes. I do have a problem. It has to do with my brother, Chil Nam... sigh... \r\n#L0# #b What about your brother?" />
+            <string name="2" value="...Chil Nam... I think he's possessed. He won't eat nor sleep... He won't do anything but stay... still. Watches the sky with no expression at all.   \r\n#L0# #b Oh... you don't know why he became like this?" />
+            <string name="3" value="Doctors Say it isn't an illness, but seems like his soul has been stolen... I don't know what to do. He's the only relative I've got. You look like you've been to places and are experienced in a lot of things. Can you please take some time to look at my brother?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="#bChil Nam#k lives on the other side of the village. Please take care and visit him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's okay. I can't make you go see him." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="(A young man looking very similar to Chil Sung is watching the sky absent-mindedly. Looking a little closer, his eyes are out of focus and his mouth is opened wide.) \r\n#L0# #b Hey, you! Are you all right?!" />
+            <string name="1" value="(Doesn't budge a bit.) \r\n#L0# #b Hey, I'm talking to you! Get to your senses!" />
+            <string name="2" value="(Shaking him doesn't seem to have any affect.) \r\n#L0# #b Say something!" />
+            <string name="3" value="(Chil Nam moves his lips slightly.) \r\n#L0# #b ... (What?)" />
+            <string name="4" value="A fox..." />
+            <imgdir name="yes">
+                <string name="0" value="(What fox...? What could he be talking about? Let's go ask Chil Sung.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met #rChil Nam#k yet, have you? He lives on the other side of the village. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071005" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

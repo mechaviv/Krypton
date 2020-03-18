@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28184.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rigorous Training 4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201121:##k in #bEllinia#k says he'll begin the fourth training." />
+        <string name="1" value="For #b#@9201121:##k's fourth training, you must hunt #rStumps#k and collect #rTree Branches#k.\n\nLet's report back to #b#@9201121:##k in #bEllinia#k upon completion." />
+        <string name="2" value="You've completed #bLucci#k's fourth training!" />
+        <string name="demandSummary" value="#i4000003:# #t4000003:# #c4000003# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1800&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Grendel the Really Old' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready for your fourth training? It won't be that hard." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="For this training, you must hunt monsters and bring me their drop items. Eliminate the #rStumps#k and bring me 20 #rTree Branches#k. Remember that collecting items requires a great amount of patience." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Tell me when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The #rTree Branches#k weren't too hard to find, right? This was a pretty easy assignment." />
+            <imgdir name="yes">
+                <string name="0" value="Fourth training complete!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You must collect 20 #rTree Branches#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201121" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28180" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

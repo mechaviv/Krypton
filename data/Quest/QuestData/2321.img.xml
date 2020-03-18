@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2321.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Over the Castle Walls (1)" />
+        <int name="area" value="30" />
+        <string name="0" value="The #bSecretary of Magic#k told you he had something for you." />
+        <string name="1" value="You should visit the #bSecretary of Domestic Affairs#k." />
+        <string name="2" value="You stopped by to see the #bSecretary of Domestic Affairs#k. He's been thinking of ways for you to somehow enter the castle." />
+        <string name="summary" value="You should visit the #bSecretary of Domestic Affairs#k." />
+        <string name="rewardSummary" value="EXP 2,500\r\nCan proceed to 'Over the Castle Walls (2)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <int name="nextQuest" value="2322" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now you'll be able to penetrate the Thorny Vine which stands as a barrier in the Mushroom Forest, but before you go and do that, the #bSecretary of Domestic Affairs#k wants to have a word with you. Please go see him immediately." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't seem to follow instructions well. Come see me when you are ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I have been keeping up on your fabulous work. I understand that you were able to successfully create the #bKiller Spore Potion#k, which penetrates through the unpenetrable barrier in the forest? Well, congratulations!" />
+            <imgdir name="yes">
+                <string name="0" value="The problem now is to figure out how to enter the castle." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Are you deaf or something? I thought I told you that you must see the #bSecretary of Domestic Affairs#k immediately." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2319" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

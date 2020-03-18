@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3412.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Grays" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Black Mesoranger, who should be somewhere around Kulan Field." />
+        <string name="1" value="At a field around Omega Sector, I met this strangely-dressed man who called himself Black Mesoranger. He requested that I eliminate the alien that's been taking over Kulan Field, the #bBarnard Gray#k, 25 of them to be exact.\n\n#o4230116# #r#a34121#" />
+        <string name="2" value="I successfully completed the mission from Black Mesoranger by defeating the #bBarnard Grays#k. It seems, however, that there will be much more dangerous aliens monsters around Kulan Field" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000011" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Everyday, we devote everything to defeat the aliens, but the number seems to be increasing by day. I don't think I've gotten weaker, you know. Maybe there's a force of evil controlling them... Anyway, I would love to reach out for your help. Would you like to at least listen to the whole story?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Things have reached the point where I can't handle these aliens by myself, and so I would like you to help me decrease the number of aliens around. Please defeat #b25 #o4230116#s#k for me. They can be easily found at Kulan Field." />
+                <string name="1" value="They are the weakest among the Grays, so that shouldn't be too much of a problem. Grays are very class-driven, and the lowest guys actually approach the Omega Sector as close as they can possibly get. Please take care of them, and then come back to me, okay? Best of luck to you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really...? I understand. Everyone seems to get a tad hesitant when dealing with ugly aliens like them. If you ever change your mind, however, I'll be right here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Unbelievable! You actually defeated 25 out-of-control #b#o4230116#s#k and came back unscathed! This is much more than I expected, to be honest with you! Were they really that close to the Sector? Anyway, this is so awesome! I know this isn't much, but please take it." />
+            <imgdir name="yes">
+                <string name="0" value="What do you think about the #b100 #t2000011#s#k? Thank you so much for your great help, but I believe it's now time to attack this problem right to the core. I may need your help again down the road, so if you have any free time, then please talk to me. Til then, bye~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have completed my request, just yet. Please defeat #b30 #o4230116#s#k at the Kulan Field for me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040018" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230116" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040018" />
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

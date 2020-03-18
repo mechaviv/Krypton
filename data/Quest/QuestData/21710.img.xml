@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21710.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Monster War?" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your first assignment as an informant. You wonder if #p1012111# of #m100000000# has been able to poinpoint the cause of the #o1210102#'s recent changes yet. Maybe you should go ask #p1012111# right now." />
+        <string name="1" value="#p1012111# says that the reason for the #o1210102#'s strange behavior may be the ongoing conflict, and a potential war, between the #o1210102#s and the #o1210100#s. He asks you to look into the #o1210100#s as well and to gather #b50 #t4032340#s#k to aid his research...\r\n\r\n#i4032340# #t4032340# #b#c4032340# / 50#k" />
+        <string name="2" value="#p1012111#, who studied the #t4032340#s, came to the conclusion that the #o1210100#s are not properly prepared for combat, which of course threw out the whole theory of a possible monster war. He then asked you to stop by later since he'd like some time to come up with another hypothetical theory to explain this mess." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="780" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032340" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The more I think about it, the more I am stuck about the reason why the #o1210102#s have changed. I suspect that it might be a war within the monsters for supremacy. It's a well-known fact that #o1210102#s and #o1210100#s have had skirmishes over their territories." />
+            <string name="1" value="But it's been years since the #o1210102#s and #o1210100#s signed a peace treaty, so I don't see that as a viable reason. If we're to really look into the reason why they're acting that way, then we'll also have to look into the #o1210100#s as well. You may have to go do more work." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to eliminate #r#o1210100#s#k and gather up #b50 #t4032340#s#k for me. #t4032340#s are usually twirled up, but during a crisis, pigs get so stressed their tails turn straight. If we study #t4032340#s, we'll find out whether the #o1210100#s are also preparing for war." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Studying even the slightest of possibilites! Is that not the way of the scholar? Of course, you're not a scholar, but...you get what I mean." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find 50 #t4032340#s? Then let's take a look at them. Hand me the tails." />
+            <imgdir name="yes">
+                <string name="0" value="Seeing that the #t4032340#s are still rolled up mean the #o1210100#s are not preparing for war. Then why are the #o1210102#s getting ready for battle? Hmmm. We're back to square one." />
+                <string name="1" value="For now, I'll keep looking into the reason behind this chaos. It may take some time, so I suggest you keep hunting. I'll see you when you reach Level 15." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you not been able to gather 50 Pig Tails? I will need at least that many to come to a definitive conclusion..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032340" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21709" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

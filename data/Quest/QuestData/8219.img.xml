@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8219.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding Jack" />
+        <int name="area" value="45" />
+        <string name="0" value="I heard that John Barricade has received news from his brother Jack!  I should go find John in Bigger Ben and see what he's learned." />
+        <string name="1" value="Apparently, Jack Barricade is in Masteria and has discovered Crimsonwood Keep deep in the Phantom Forest.  However, the last letter John received from his brother was dated over a month ago.  John wants me to head to Crimsonwood after him and see why Jack's communiques have stopped.  Looks like I need to make my way through the Phantom Forest... I'd better stock up on potions!" />
+        <string name="2" value="I found Jack Barricade resting in a cave on Crimsonwood Mountain.  It turns out that after exploring the Masterian wilderness for weeks, Jack finally came across the ancient stronghold - only it wasn't deserted.  Jack was captured and imprisoned in the Keep by the evil soldiers I've been seeing around, but luckily managed to escape.  John will be relieved that Jack is okay." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't found my brother yet?  &lt;sigh&gt;  He's gotta be somewhere on this continent.  Just continue to keep an eye out for him, will ya, kid?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201096" />
+            <string name="endscript" value="q8219e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4915" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4917" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8219s" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

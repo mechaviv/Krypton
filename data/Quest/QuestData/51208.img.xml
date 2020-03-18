@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51208.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="OSSS Mission 2: Protecting the Scientists" />
+        <int name="area" value="50" />
+        <string name="0" value="Receive an OSSS Mission from #b#p9250133##k." />
+        <string name="1" value="Protect the scientists hard at work throughout Maple World. When you find a scientist and start a conversation, aliens will appear. You must protect the scientists. You will not be able to do the mission when another Mapler is protecting the scientist." />
+        <string name="2" value="Receive this mission again after completing the other missions." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032715" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032715" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032719" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4310004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've been issued a special mission from the OSSS. You can complete it if you have the #b#t4032715##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I see that you have the #b#t4032715##k. I will issue you Mission 2." />
+                <string name="1" value="As I'm sure you are already aware, scientists throughout Maple World are being abducted by alien motherships." />
+                <string name="2" value="Please locate the scientists and protect them!" />
+                <string name="3" value="You will get a medal when you complete the mission. Talk to #b#p9250135##k to upgrade your suit using those medals." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Idle chat can wait until after you've saved Maple World..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you completed the mission?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your work. Here is your medal. Head over to #b#p9250135##k to purchase various cells that can be used to upgrade your suit." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Looks like you haven't finished the mission just yet..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250133" />
+            <int name="infoNumber" value="51215" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q51208e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250133" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51214" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032715" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28169.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Visiting Henesys" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in Kerning City says something is going on in #b#m100000000##k..." />
+        <string name="1" value="Apparently, #b#@1012003:##k in #b#m100000000##k is angry with anyone and anything that has to do with Perion. Let's talk to him and find out what that's all about." />
+        <string name="2" value="#bChief Stan#k hates #bPerion.#k" />
+        <string name="rewardSummary" value="Exp 1200&#xD;&#xA;Able to proceed to 'What Does Chief Stan Like?' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dear Warrior, have you been to a place called #b#m100000000##k? It is at the opposite end of Victoria Island from #b#m102000000##k. A man named #b#p1012003##k who resides over there has been saying some negative things about Perion. Now isn't that a curious matter?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Why don't you head over to #b#m100000000##k down south and meet #b#p1012003##k to figure out why he's so upset?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, I hope...I hope...I hope you're curious." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Who are you? Are you a Warrior from #b#m102000000##k?" />
+            <imgdir name="yes">
+                <string name="0" value="Why don't you go away?! I don't want to waste my breath by talking to someone from #b#m102000000##k. I wish I had music to listen to on a terrible day like this!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012003##k is in #b#m100000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28168" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

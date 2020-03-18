@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8857.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Cupid's Courier - Magician" />
+        <string name="parent" value="Cupid's Courier - Magician" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
+        <string name="1" value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
+        <string name="2" value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2001000" />
+                    <int name="count" value="2" />
+                    <int name="prop" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4020007" />
+                    <int name="count" value="3" />
+                    <int name="prop" value="15" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="3" />
+                    <int name="prop" value="25" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031565" />
+                    <int name="count" value="0" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2020025" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="18" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2020026" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="17" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been working on this love letter for Angelique, could you do me a favor and deliver it to her? " />
+            <imgdir name="yes">
+                <string name="0" value="Thanks again! Don't get hurt!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, really? Well, okay then. I need to get back to work now, but if you need me, I'll be right here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back! And he got everything ok? Fantastic. And ... what is this ... oh a letter? Awww ... whenever I write him a letter, he always follows up with a sweet letter of his own. Great~ As promised, here's your reward. It should come in handy during your adventures." />
+            <imgdir name="yes">
+                <string name="0" value="Again, I thoroughly appreciate your help. I hope you have a safe journey. Here's wishing you good luck!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you met my wife yet? Go ahead... Hurry up!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You must be miss something, right?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201036" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8852" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031565" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201038" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8852" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031565" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

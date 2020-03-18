@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8869.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spot On : An Interesting Chore" />
+        <string name="parent" value="Spot On" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Mom and Dad need some help at home. I'd better go visit and see how I can help them." />
+        <string name="1" value="I visited Mom and Dad and they looked pretty happy to see me. They need a #bMouse#k for their new computer, and heard that Mr. Spot would have one. He's in Kerning City, so I'd better get a move on. " />
+        <string name="2" value="I returned to Mom and Dad with the #bMouse#k, and they gave me #bAllowance#k. Now I can return to Mr. Spot and get a #bNexon Prepaid!#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031542" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031529" />
+                    <int name="count" value="1" />
+                    <int name="period" value="20160" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, dear. Would you like to give Mom and Dad some help?" />
+            <imgdir name="yes">
+                <string name="0" value="Music to my ears! Dad and I got a new computer, but the mouse doesn't really work that well. We heard about a man named #bMr. Spot#k, and he should have a better #bMouse#k for us to use. Go and see him, he should be in Kerning City. Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="We raised you to be a little more obedient, young one. I will expect a different answer next time you come around!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wonderful, you've got the #bMouse#k we need. I'm sure this one will work great! I know Mr. Spot probably told you about his #bNexon Prepaid#k, and I know you wanted one, so here is your #bAllowance#k. " />
+            <imgdir name="yes">
+                <string name="0" value="Thanks again sweetie! Come back in a day, and I might have another chore for you..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you forgot the Mouse, dear. Be a doll and go see Mr. Spot as soon as you can. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031542" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201003" />
+            <int name="lvmin" value="1" />
+            <string name="end" value="2007012423" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

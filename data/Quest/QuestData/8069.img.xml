@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8069.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tsuri's Special Seafood 1" />
+        <string name="parent" value="Tsuri's Special Seafood" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="Tsuri of Showa Town seems to be in a tight spot. Wonder why..." />
+        <string name="1" value="It would be nice to go catch a fish without having to go underwater, but ... oh well, that's alright. You should get #b#t04000153##k that #b#o3210450##k has. \n\n#t04000153#  #b#c04000153##k/1" />
+        <string name="2" value="It'd be nice to catch a fair share of fishes, but ... I'll have to come back later and see how this goes." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000153" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8070" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, there! Have you heard of the fresh fisherman dish?" />
+            <string name="1" value=" A fresh fisherman dish is consumed by the fisherman at the harbor after a long day's work at sea, and it tastes delicious. How delicious? Take the best meal you've had, and double the helping. Fantastic, right? Of course, they'd cook up something they caught during the day. They're so fresh, they can't help but be vibrantly bouncing around before being cooked." />
+            <string name="2" value="It's supposed to be just for them, but it seems like there's a restaurant out there that sells this kind of food these days, so... what should I call this ... a gourmet dish that's in touch with nature? THAT'S IT!" />
+            <string name="3" value="I heard young people love it. I think our restaurant needs to sell that too, so I'll try to make it here. Can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I plan on using the eggs of #b#o4230200##k, and sprinkle them on top of a bowl of rice for a delicious new gourmet dish." />
+                <string name="1" value="Ah ah, need not worry! I'll bring out the eggs myself. All you need to do is find #b#t04000153##k.\r\nApparently, it enables them to breathe underwater, with their eyes wide open, feasting on #b#o4230200##k. I hear that \r\n#b#o3210450##k the penguin has #b#t04000153##k, so please bring it to me!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'll let you have some once I get done with it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What's up with #b#t04000153##k?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. So this is the snorkel they use... Very colorful. Will I be considered out of style if I wear this?" />
+                <string name="1" value="I'm kidding, I'm kidding. Don't you have a sense of humor? Well, I'm out of here. Be right back." />
+                <string name="2" value="I'll make you a bowl of rice covered in #b#o4230200##k eggs, ready to explode in your unsuspecting mouth. Be Ware." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hey, Hey, Hey~ Where are the snorkels huh?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000153" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120008" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3407.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Retrieving the Robotic Parts" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Dr. Kim at the Command Center in the Omega Sector." />
+        <string name="1" value="I met with Dr. Kim again at the Command Center. Dr. Kim was furious over the fact that someone stole 3 boxes full of robotic parts. He requested that I check into the hidden place at the Boswell Field, break all the Alien boxes, and recover the 3 missing boxes.\n\n#t4031141# #b#c4031141##k/1\n#t4031142# #b#c4031142##k/1\n#t4031143# #b#c4031143##k/1" />
+        <string name="2" value="I retrieved the 3 boxes full of robotic parts that were stolen by the Aliens, and gave them back to Dr. Kim at the Command Center. This should speed up the development of the new robot." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2030011" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030012" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031141" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031142" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031143" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhh... good thing you're here. I've been really needing your help, and thank goodness you're here. It's about the Boxes of Parts that you brought here last time... are you willing to listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for making some time with me. I have heard that someone's been looking for the boxes, but I didn't think much of it, until one day, the Boxes of Parts disappeared totally. The Boxes of Parts have been stolen, and I think it's the work of the aliens. Maybe they were just worried about the possibility of our new robot controlling their livelihood." />
+                <string name="1" value="The one good thing is that, thanks to the automatic-returning device I attached to all the boxes, even the most intricate of the responses will generate a signal that'll enable us to locate where the boxes are located at. They may have broken the device, but I don't think they completely destroyed it. The Boxes of Parts are hidden at the Boswell Field. Go there, and you may find a box that looks like that of the aliens. Your task is to destroy that box and bring back the Box of Parts." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm ... you must be busy doing things here and there, but this is a very important task, and we don't have much time. I can't think of anyone else worthy of taking on this task but you! Please, if you ever change your mind, talk to me, okay?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh... you brought all 3 Boxes of Parts! I'm sure the... 3aliens made your way back a little more difficult that it should have been... you really must be something special. How about joining us and working here full-time as a member of the Omega Sector? Hahaha... anyway, great job there. Since you worked so hard to make it here, I'll give you some more spare Warp Capsules. Please take this." />
+            <imgdir name="yes">
+                <string name="0" value="Now that all the parts are here, I'll have to get back to work. Oh, before I do that... I better make sure to attach these Boxes of Parts with the newest automatic-returning device! It would be terrible to have these stolen by the aliens, again. Now, if you'll excuse me, I have a lot of work to do... I'll see you around~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I don't think you have all 3 Boxes, yet. Head over to a secretive place around Boswell Field, all the way to the alien headquarters, and you'll find a huge box that appears to be that of the aliens'. Your task is to break those Boxes, and find the 3 Boxes of Parts for me. I'll be here waiting for you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031141" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031142" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031143" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3406" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

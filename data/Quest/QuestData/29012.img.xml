@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ossyria Explorer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="1" />
+        <int name="viewMedalItem" value="1142119" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="Let's explore the continent of Ossyria!\r\nEl Nath Mts. Explorer\nLudus Lake Explorer\nUndersea Explorer\nMu Lung Explorer\nNihal Desert Explorer\nMinar Forest Explorer\r\nYou must earn a total of 6 titles." />
+        <string name="1" value="#b#eTitle - Ossyria Explorer#n#k\r\n● Requirement(s)\nCan acquire after earning a total of 6 titles: El Nath Mts. Explorer, Ludus Lake Explorer, Undersea Explorer, Mu Lung Explorer, Nihal Desert Explorer, and Minar Forest Explorer\r\n#b● Status\n#y29006# : #u29006#\n#y29007# : #u29007#\n#y29008# : #u29008#\n#y29009# : #u29009#\n#y29010# : #u29010#\n#y29011# : #u29011#" />
+        <string name="2" value="You have finally acquired the #b&lt;Ossyria Explorer&gt;#k title upon earning all of the explorer titles in Ossyria." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142119" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="It isn't as easy as it sounds to become an Ossyria Explorer. I can't believe you've finished exploring 6 different regions already. I'm extremely impressed with you." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, you've explored the 6 regions of Ossyria continent! You're really something. Your #b&lt;Ossyria Explorer&gt;#k title suits you perfectly. Job well done, Explorer." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="First, make sure you explore El Nath Mts, Ludus Lake, Aqua Road, Mu Lung Garden, Nihal Desert, and Minar Forest. Come back and see me after you've acquired the Explorer title of each region." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29006" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="29007" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="29008" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="29009" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="29010" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="29011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000066" />
+            <int name="infoNumber" value="27020" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

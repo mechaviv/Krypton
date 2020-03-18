@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3916.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Schegerazade the Storyteller" />
+        <string name="parent" value="Schegerazade the Storyteller" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2040052# of #m222020000# has prepared some storybooks for #p2101008#. No idea when the queen may act up again, so you should hurry back to to #b#m260000000##k and give them to #b#p2101008##k." />
+        <string name="2" value="After receiving the book, #p2101008# let out a sigh of relief. Hopefully these books will be enough for her for a while... Poor #p2101008#, when will she be freed from the wrath of the queen?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031573" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="9000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031573" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, this is a book that contains desert stories and other stories from afar that #p2101008# may not be aware of. It has a lot of stories in it, so she should be fine for a while. Please take it." />
+            <imgdir name="yes">
+                <string name="0" value="It's amazing to see a woman in such a stressful environment who nevertheless constantly searches for great stories... It really is. Once you go back to #b#m260000000##k, tell #b#p2101008##k I'd most like to meet her here at #m222020000# when she gets free of the queen." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't plan on returning to #m260000000#? #p2101008# seemed pretty desperate..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome, traveler... Did you really go to #m222020000# and back? Ah, so this is the book from #p2040052#... Thank you very much. With this, I'll have enough stories to last a while." />
+            <imgdir name="yes">
+                <string name="0" value="I can't help but envy you for being able to travel to far places like #m220000000# and even #m222020000#... I wonder when I'll be free of the queen's grasp... I dream of the day I can travel the world with my brother." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you go to #b#m260000000##k, please tell #b#p2101008##k to one day come to this library and personally return the book...." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you not gone to #m222020000# yet? It's not close to here, so you should get moving." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You dropped the book that you were supposed to give to #p2101008#. Fortunately, all books from #m222020000# are magically locked, so if any of them get lost, they return to the library." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031573" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3915" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="36" />
+        </imgdir>
+    </imgdir>
+</imgdir>

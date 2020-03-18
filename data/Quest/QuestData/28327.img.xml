@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28327.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Green Turkey Egg Hunt" />
+        <int name="area" value="50" />
+        <string name="0" value="Cody says he has a special request to ask of you in celebration of Thanksgiving. See what it could be!" />
+        <string name="1" value="Cody's been busy collecting #bGreen Turkey Eggs#k in celebration of Thanksgiving! Hunt the #bTurkey Monsters#k that have been appearing around the #rTowns and Mini-Dungeons of Henesys, Kerning City, Perion, Ellinia, and Orbis#k and collect as many #bGreen Turkey Eggs#k as possible for Cody! " />
+        <string name="2" value="Cody says he is truly grateful for your help and is asking you to come back and see him again in 30 minutes. Seems like he's got another favor to request." />
+        <string name="demandSummary" value="#i4032523:# #t4032523:# #c4032523# / 10&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp - Relative to the user level&#xD;&#xA;#Wprob#&#xD;&#xA;#i5000022:# #t5000022:# 1&#xD;&#xA;#i5240008:# #t5240008:# 1&#xD;&#xA;#i2022261:# #t2022261:# 50&#xD;&#xA;#i2022263:# #t2022263:# 50&#xD;&#xA;#i2022264:# #t2022264:# 50&#xD;&#xA;#i2022113:# #t2022113:# 5&#xD;&#xA;#i2022262:# #t2022262:# 5&#xD;&#xA;#i2022634:# #t2022634:# 5&#xD;&#xA;#i2000006:# #t2000006:# 50&#xD;&#xA;#i2020008:# #t2020008:# 50&#xD;&#xA;#i2020029:# #t2020029:# 100&#xD;&#xA;#i2020030:# #t2020030:# 100" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Finally! My favorite day of the year is encroaching upon us! That's right. It's almost Thanksgiving! I get to eat all sorts of awesome food on Thanksgiving. I can't wait! But since there's so much to prepare for the festivities, I'm going to need someone to give me a hand with all the preparations. If you're willing to help, I'll give you either a #bPet Turkey or Some Delicious Thanksgiving Food#k in return. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice! Have you heard about the #bTurkeys#k that have recently been appearing around the #kTowns and Mini-Dungeons#k? Well, what I need are some #bGreen Turkey Eggs#k from those #bTurkeys#k. Don't need too many, just #b10#k, that's all." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You should know that #bPet Turkeys#k are only available around Thanksgiving, so don't miss this special opportunity! If you change your mind, come back and see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Where are the #b10 Green Turkey Eggs#k I'd asked you for? Go to any #rarea surrounding Henesys, Kerning City, Perion, Ellinia or Orbis, or any Mini-Dungeon#k to find the #bTurkeys#k. Press the #eW#n key to see the World Map if you need help locating the Mini-Dungeons. Put your cursor on the map to see the areas marked #bMini-Dungeon#k. Try to find the dungeon that matches your level.   " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032523" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q28327e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200000" />
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="60" />
+            <string name="end" value="2009120900" />
+            <int name="interval" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

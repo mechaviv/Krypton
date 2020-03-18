@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28305.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Joe: &quot;Clear the Way&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="It looks like you found Olivia's father, Joe. Although he seems a little distraught, you will need to escort him to the front yard. " />
+        <string name="1" value="Joe would like you to kill #b100 Glutton Ghouls, 1 Psycho Jack #kso that he'd be able to walk through the hallway untouched." />
+        <string name="2" value="You were able to defeat the#b 100 Glutton Ghouls, 1 Psycho Jack #k. The hallway is now clear for him to escape." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Listen, I...umm...would love to see Olivia. It's just... It's just that I have an intense phobia of dark hallways. Especially when weird, creepy little toys come alive and walk all over the place! Could you do it? You know, take care of them for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I noticed several of these twisted toys going berserk in the house. Would it be possible for you to #b100 Glutton Ghouls, 1 Psycho Jack #kto clear the way for me? I'd certainly feel safer then. Oh, and watch out! I don't know what kind of tricks they have up their sleeve." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's understandable if I'm too afraid to do it. But you? C'mon! You're an adventurer, for goodness sakes!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="When will I be able to go see Olivia? Can you defeat the scary toy monsters roaming inside the house so that I can go see Olivia?" />
+            <imgdir name="yes">
+                <string name="0" value="So...are they gone...for good? Whew! I feel sorry for the sucker who had to go through all of that...Oh wait...that's you. I mean...shall we get going now?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I won't leave until I know all #b100 Glutton Ghouls, 1 Psycho Jack#k are entirely disposed of." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201137" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400558" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9400556" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201137" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28304" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

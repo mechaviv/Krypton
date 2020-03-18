@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2318.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Killer Mushroom Spores (2)" />
+        <int name="area" value="30" />
+        <string name="0" value="It looks like you need more ingredients to produce a #bKiller Mushroom Spore Potion#k." />
+        <string name="1" value="You have to gather 50 Mutated Spores, which are found on Renegade Spores." />
+        <string name="2" value="You gave all the ingredients required for producing the #bKiller Mushroom Spore Potion#k to Scarrs." />
+        <string name="summary" value="You need to gather #b50 #t4000499#s#k for #bScarrs#k to finish making the #bKiller Mushroom Spore Potion#k." />
+        <string name="demandSummary" value="#i4000499:# #t4000499:# #c4000499# / 50\r\n" />
+        <string name="rewardSummary" value="EXP 11,500\r\n#Wbasic#\r\n#i2430014:# #t2430014:# 1 \r\nCan proceed to 'Killer Mushroom Spores (3)' quest\r\nCan proceed to 'Friendship with Bruce' quest\r\nCan proceed to 'Killer Mushroom Spores, Again' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="11500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000499" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2430014" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2319" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm… I looked into making the Killer Spore Potion while you were gathering up the Poison Mushroom Caps and realized that we'll need some more ingredients. I need you to gather up one more set of items." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, I want you to defeat some Renegade Spores and bring back #b50 #t4000499#s#k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand it's not an easy task, but I won't be able to make the #bKiller Spore Potion#k without them. Please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring back all the necessary ingredients for the potion?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, this should be enough for me to make the #bKiller Spore Potion#k. Please hold on for just a moment." />
+                <string name="1" value="Okay, here is the Killer Spore Potion. Hopefully this is enough for you to save Princess Violetta and help regain our kingdom. Good luck!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm… Doesn't look like you were able to collect #b50 #t4000499#s#k like I asked you to. I need #b50 #t4000499#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000499" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2317" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

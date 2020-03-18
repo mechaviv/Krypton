@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8040.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lionel's Journey" />
+        <int name="area" value="30" />
+        <string name="0" value=" Is Lionel hanging out outside with Maya right now? I better go check them out at Maya's house." />
+        <string name="1" value=" Apparently, the one that scarred Lionel was #b#o5130104##k, and that was why it never left the house, despite the necklace. I better gather up #b100 #t04000051#s#k to boost its confidence. \n#t04000051#  #b#c04000051##k/100" />
+        <string name="2" value=" Maya said Lionel's friends came by and left with it. At least Lionel isn't alone. Maya may be crying, but I think it's best for Lionel to go and live among his friends." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2041001" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you so much for the necklace. Lionel seems to really like wearing it. There's another problem, however." />
+            <string name="1" value="I got the necklace so I can walk Lionel, but it does not want to take one step outside. I thought at first it didn't want to leave the house because it's a town populated with many people, but I don't think that's the case." />
+            <string name="2" value="Actually, I'm looking at it from all sides, but I have no idea what's up. I think I've figured out what the problem is, but I'll need your help to solve it. Are you up for it?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Remember when Lionel first came here, full of scars? Well, at the time, Lionel's white fur intermingled with quite a few strands of brown hair. After looking up, it turned out that those were that of #b#o5130104##k. \nYes, Lionel got attacked by #b#o5130104##k. That is why Lionel kept shivering at night when hearing the wolves howl at night." />
+                <string name="1" value="The request is, I want you to gather up #b#t04000051##k. I want to show them to Lionel so it can grow out of the fear of the wolves. I know it's a little too straight-forward, but I can't think of another way. \nOkay~ Can you gather up #b100 #t04000051#s#k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? Well, I can't do anything about it, so this puts me in a tight spot..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yeah! I've been waiting for you to come back here. Well, Lionel is... Lionel is..." />
+            <string name="1" value="Something terrible happened! Lionel left me! \nLike, all of a sudden, two monsters, #b#o5120001##k and #b#o5120003##k, came and took Lionel away." />
+            <string name="2" value="Fortunately, they didn't forcefully take Lionel away. #b#o5120001#s#k came up to Lionel, and hung out with it, wagging their tails in the process." />
+            <string name="3" value="And you know, it dawned on me, that... ah, they're friends!\nAt first, I was ready to take on them since #b#o5120001#s#k just barged into my house, but... they never attacked. In fact, when they were taking Lionel back, they sat in front of me." />
+            <string name="4" value="So yeah, Lionel went back with its friends. Lionel kept looking back at me on its way out, until I was too far to see. I held back my tears and let it go with a smile." />
+            <string name="5" value=" That's the reason. I'm sorry you went through all that trouble to get #b#t04000051##k. This is my way of saying thanks. Please take it. It'll be impossible to replace Lionel here, but please congratulate it on its return home. (Maya was smiling,but her eyes finally shed a tear...she held it back quite admirably.)" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have it all. Please gather up #b100 #t04000051#s#k. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8039" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

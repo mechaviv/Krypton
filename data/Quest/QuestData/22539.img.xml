@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22539.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knowledge About Dragons 1" />
+        <int name="area" value="7" />
+        <string name="0" value="You received the #t4161049#. #p1013000# seems to also be curious about its contents... Talk to #b#p1013000##k." />
+        <string name="1" value="#p1013000# asks for you to read through the #t4161049# and tell him what it says. Read the book and explain it to #p1013000#." />
+        <string name="2" value="Unfortunately, the book doesn't contain any information that pertains to #p1013000#. Maybe the #t4161050# has some information?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5900" />
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2211" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Master, master! You just got a book about Dragons, didn't you? Let me see it! Ugh... I can't read human letters. Please read it and tell me what it says!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I wonder what is written in it. I can't wait to hear about my race!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? Don't you want to explain it to me? Fine, then can you teach me how to read human letters? This could take a while..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Master, master! Did you finish reading the book? Please tell me! What does the book talk about?\r\n#b#L0#Dragon Culture#l\n#L1#Dragon Attack and Defense#l\n#L2#Dragon History and Traditions#l\n#L3#Dragon Types and Characteristics#l\n#k" />
+            <string name="1" value="Oh, Dragon Types and Characteristics? That's perfect! It'll tell me what kind of Dragon I am! Since you've read it, tell me what kind of Dragon I am master!\r\n#b#L0#Blue Dragon#l\n#L1#Gold Dragon#l\n#L2#Black Dragon#l\n#L3#Can't Be Known#l\n#k" />
+            <string name="2" value="Huh? What do you mean can't be known... Why? Am I not a Dragon? What am I then, master?\r\n#b#L0#Special Dragon#l\n#L1#Wyvern#l\n#L2#Drake#l\n#L3#Alien Being#l\n#k" />
+            <string name="3" value="Special Dragon? What's a special Dragon? Tell me more master!" />
+            <imgdir name="yes">
+                <string name="0" value="Huh? This book doesn't contain information about special Dragons? It's in another book called Dragon Types and Characterics (Vol. II)? Master, let's go look for it! That book must contain information about me!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Dragon culture? That does sound pretty interesting, but I'm more interested about knowing what kind of Dragon I am..." />
+                    <string name="1" value="Attack and defense? I know that stuff without having to read about it. I think it must be innate." />
+                    <string name="2" value="Dragon history and traditions... That sounds so boring... Yawn." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Blue Dragon? Hmm... I guess my scales are kind of bluish...but I don't have any ice attributes. Read the book again." />
+                    <string name="1" value="Gold Dragon? Only a really small part of me is gold. I don't think that's it, master. Read the book more closely." />
+                    <string name="2" value="Black Dragon! Is that what I am? Hmm... But there is a small part of me that is gold colored. That can't be it. Please read it more closely, master." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Wyvern? But Wyverns don't have any front feet. Am I a mutant Wyvern? Read it more closely master!" />
+                    <string name="2" value="Drake? I don't think I look as dumb as a Drake... Really? Please tell me it's not true!" />
+                    <string name="3" value="Ahhh, so was I an alien being all this time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22538" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161049" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

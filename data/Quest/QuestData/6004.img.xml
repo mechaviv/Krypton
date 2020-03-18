@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost Saddle" />
+        <int name="area" value="10" />
+        <string name="0" value="I lost the #t1912000# that I received from #b#p2060005##k!  What should I do?  Hmmm... maybe I should go see #p2060005#. I hope he's nice enough to give me another one!" />
+        <string name="1" value="#p2060005# says that making a #t1912000# for monster riding requires special ingredients.  He needs #b200#t4000171#, 200 #t4000030#, 200 #t4000055##k.  #p2060005# says he will also need #b5 million mesos#k for &quot;research purposes&quot;.  I believe this is otherwise known as &quot;extortion&quot;. He's probably a bit upset at me for losing the first one. Oh well, looks like I've got some work to do...\n\n#i4000171##t4000171# #b#c4000171#/200#" />
+        <string name="2" value=" I returned to #p2060005# with the proper materials and the 5 million meso extortion--I mean &quot;Research Fee&quot;. In return for my efforts, I received #t1912000# from #p2060005#.  I should be able ride monsters again with this. I'll be sure not to lose it again!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어라? 전에 몬스터 라이딩 스킬을 익히신 분 아니세요? 그런데 왜 몬스터는 안 타고... 여긴 어쩐 일이시죠? 네에? #t1912000#을 잃어버리셨다고요?" />
+            <string name="1" value="이런! 몬스터와의 공존을 실현시킬 분이라고 생각해서 #t1912000#을 드렸는데, 그것을 잃어버리다니... 휴우. 하는 수 없죠. 다시 #b#t1912000##k을 만들어 드리도록 할게요." />
+            <imgdir name="yes">
+                <string name="0" value="하지만, 이번에는 #t1912000#을 만드는 재료를 모두 구해 오셔야 해요. 재료는 #b#t4000171# 200개, #t4000030# 200개, #t4000055# 200개#k에요. 많다고요? 물론 많지요. 몬스터의 거친 등에 얹힐 물건이니까요! " />
+                <string name="1" value="아, 이번에는 재료만으로는 안 돼요! #t1912000#을 만드는 동안 연구를 못 하게 되니, 그 만큼의 보상도 해 주셔야지요. 연구 지원금 #b500만 메소#k도 가죽과 함께 가져 오세요. 과하다고 하셔도 소용 없어요. 이 정도는 해야 다시는 #t1912000#을 안 잃어버리실 테니까요! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="싫으신가요? 그렇다면 하는 수 없죠. 당신께 몬스터 라이딩 스킬을 가르쳐 드린 것이 조금 후회되네요" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-5000000" />
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000171" />
+                    <int name="count" value="-200" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="-200" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000055" />
+                    <int name="count" value="-200" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1912000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Aren't you the one who learned the monster riding skill from me? Why didn't you get on the monster? Did you lose #t1912000#?" />
+            <string name="1" value="You're kidding, right? I gave you #t1912000# because I believe that humans and monsters can live in peace together. You lost it...Sigh. I know what to do. I'll make another #b#t1912000##k for you, but you'll have to do some work!" />
+            <imgdir name="yes">
+                <string name="0" value="You'll have to gather all the ingredients to make #t1912000#. They are  200 #b#t4000171#, 200#t4000030#, 200#t4000055##k. Sound like a lot? I'll admit the amount seems excessive, but if you want something of high quality, it takes more material. The one I gave you before was one of kind..." />
+                <string name="1" value=" Got everything? Excellent! However, I'll need one more thing from you...As I can't do my research while making #t1912000#,  you'll have to compensate me for it.  I believe #b5 million mesos#k for a replacement sounds reasonable. It may ease your mind to know that you will also help fund further research into human-monster relationships with your donation. Well, should I get started?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want another one? Hmm, I had you pegged as someone who wanted to help spread the idea of monsters and humans living together, apparently I was wrong." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have all the ingredients and the donation? Great! I'm ready to make #t1912000# for you right now then...let me cut the leather and paste it, and sew it....that's it All done!" />
+            <string name="1" value=" Now, #b#t1912000##k is all done. I've made a few modifications to this one, it's a special #t1912000# to protect people from rough hairs of monster. One must be comfortable, after all..." />
+            <imgdir name="yes">
+                <string name="0" value="Try not to lose this one--they're hard to make, you know!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gathered all the ingredients. Remember, I'll need 200#b#t4000171#, 200#t4000030#, 200#t4000055##kl. In addition to that, #b5 million mesos#k. When you have everything, return and I'll make you a new one!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="200" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000055" />
+                    <int name="count" value="200" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000171" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+            <int name="endmeso" value="5000000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912000" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

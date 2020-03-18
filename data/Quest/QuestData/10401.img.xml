@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10401.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The True Winter King / Winter Queen Event of 2010!" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Winter is here, and the chilly cold is already affecting everyone! If you wish to become the Winter King or Winter Queen of 2010, you'd better go see Cassandra." />
+        <string name="1" value="What, she's going to give you a present? All you did was train diligently throughout the winter!" />
+        <string name="2" value="On a cold winter day in 2010, you have become the ultimate Winter King or Winter Queen." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="infoNumber" value="10402" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="20" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10401s" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="2010021700" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3019.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Secrets Behind the Ring?" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="16" />
+        <int name="area" value="33" />
+        <string name="1" value="Alcaster took time observing the ring, and felt an incredible force emanating from it. He recommended that I go see Scadur the Hunter around El Nath." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031053" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031053" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3020" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So this is the #b#t4031053##k that you found at the tomb. It doesn't look like much, but I can feel the force emanate. You didn't find anything else but the ring? Okay... you should look for #bScadur the Hunter#k, who lives around here. He's been hunting exclusively at that valley the last couple of years." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is a gorgeous ring. It looks a bit old, but I can feel the special force emanate. Hmmm, here, let me see the ring...I have to look really into it." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="So this is the #b#t4031053##k that you found at the tomb. It doesn't look like much, but I can feel the force emanate. You didn't find anything else but the ring? Okay... you should look for #bScadur the Hunter#k, who lives around here. He's been hunting exclusively at that valley the last couple of years." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I am concerned about the state of the monsters being much more aggressive than usual these days. There were times where I felt like I was putting my life on the line while hunting. Back in the day I used to bring home a whole lot of Yeti's. As the years go by, the age is definitely starting to show..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3018" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

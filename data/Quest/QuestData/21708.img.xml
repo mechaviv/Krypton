@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21708.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Your First Informant Assignment" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Now that you have an idea of what an informant does, it's time to get your hands dirty. #b#p1002104##k will tell you what to do." />
+        <string name="1" value="Your first information gathering assignment is to find out why the #o1210102#s near #m100000000# have started acting so wildly. They're usually so tame! #p1002104# tells you to ask the mushroom monster scholar about the occurrence and see if he can shed some light on what's been going on. #b#p1012111##k can be found in #b#m100000000##k." />
+        <string name="2" value="You met with #p1012111#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032313" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now that you have an idea of what an informant does, shall we begin the real mission? Let's start it off somewhere easy…which means…yes, #b#m100000000##k." />
+            <string name="1" value="Are you familiar with #m100000000#? It's a bowman town located east of #m104000000#. It's also the heart of Victoria Island. The town is famous for its mushrooms." />
+            <string name="2" value="But lately, the #o1210102#s near #m100000000# have been causing trouble. If you find out the reason behind this mess, the information should prove to quite lucrative. Head over to #m100000000# and ask around to gather information on #bthe abnormal behavior of these mushroom monsters#k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Luckily there's a mushroom scholar named #b#p1012111##k at #m100000000# who specializes in studying mushroom monsters. Maybe a word with him will get you some valuable information. Good luck!" />
+                <string name="1" value="Oh, and although its possible to reach #m100000000# on foot, you're still at a low level. I suggest you use a cab. Use the Taxi Coupon I just gave you, and it'll take you directly to #m100000000#." />
+                <string name="2" value="You know how to ride a cab, right? Leave this place, head to your left, and you'll find a #bLith Harbor Regular Cab#k. Use the Taxi Coupon I gave you, talk to the cab driver, and the cab'll take you straight to #m100000000#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm… are you too nervous to venture into other towns? No worries! Just like #m104000000#, #m100000000# is a town catered toward beginners. No high-level monsters there at all." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How can I help you? You want to know more about the mushroom monsters? Hmmm? The #o1210102#s surrounding #m100000000# are acting strange?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #m100000000# yet? Use the #bTaxi Coupon#k I just gave you and take the cab located on the west side of #m104000000#. You'll get there before you know it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21706" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4900.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Welcome to New Leaf City Quiz 1" />
+        <string name="parent" value="Welcome to New Leaf City Quiz" />
+        <int name="order" value="1" />
+        <int name="area" value="45" />
+        <string name="0" value="Let's solve Icebyrd Slimm's 1st Quiz." />
+        <string name="1" value="What would be Icebyrd Slimm's 1st Quiz?" />
+        <string name="2" value="33" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="333" />
+            <int name="nextQuest" value="4901" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Where are you? \n\n#L0##b Aqua Road#l\n#L1# The Forest of Golem#l\n#L2# New Leaf City#l\n#L3# Henesys#k#l" />
+            <string name="1" value="That's right! You are Right now at New Leaf City of Masteria!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="wrong" />
+                    <string name="1" value="wrong" />
+                    <string name="3" value="wrong" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201050" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201050" />
+            <int name="lvmin" value="100200" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6942.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Samuel's Revelation of the Second Truth" />
+        <string name="parent" value="The Ultimate Stage of the Pirate" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081500##k says that he will tell me the Second Truth and wants me to come back and talk to him when I'm ready." />
+        <string name="2" value="#b#p2081500##k has told me the story of the Holy Corals, the Second Truth. He said there is one more story to be told. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The second story I want to share with you involves corals that grow in the sea water. Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Great. I think you are more than capable of hearing the truth. Let me know when you are ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Whatever happened to the courage you summoned to see me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you been to the Aquarium, located deep in the sea? The Aquarium is a mysterious area that floats above the the deep canyon. Aren't you curious to find out how Aquarium stays afloat?" />
+            <string name="1" value="At the bottom of the canyon where Aquarium stands, there is a series of corals that grow on their own, called #bHoly Corals#k. No one knows how it ended up there, or how it started growing, but it had been there for a long, long time." />
+            <string name="2" value="#bHoly Corals#k have this mysterious ability to purify the ocean, and this power allows Aqua Road to stay clean, while keeping Aquarium afloat above the canyon. Without the #bHoly Corals#k, the whole sea will be blackened." />
+            <imgdir name="yes">
+                <string name="0" value="The second batch of truth ends here. When you are ready to hear the last story, let me know." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081500" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081500" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6941" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="511" />
+                <int name="1" value="521" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

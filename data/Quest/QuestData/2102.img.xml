@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2102.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Korean Folk Town : Through the Ocean" />
+        <int name="area" value="30" />
+        <string name="0" value="How about going to the Korean Folk Town through the ocean?" />
+        <string name="1" value="Through Camila's request, I have decided to travel to Korean Folk Town through the ocean and meet her pen pal, Kong Ji. Camila said she'll give me a few essential items for the trip. What must those be?" />
+        <string name="2" value="Through Camila's request, I have decided to travel to Korean Folk Town through the ocean and meet her pen pal, Kong Ji. Okay, so I first go from #bEllinia#k to #bOrbis#k, then from #bOrbis Tower#k all the way down to #bAqua Road#k? I think she told me to take the #bDolphin Taxi#k at Aquarium..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001019" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031242" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready to travel?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now I'll tell you how to get to Korean Folk Town underwater. First, head over to the station in #bEllinia#k. The ship that heads to #bOrbis#k should leave every 15 minutes. Once at Orbis, head over to #bOrbis Tower#k and make your way all the way down to the 1st floor, which should be right at the ground level." />
+                <string name="1" value="You can enter #bAqua Road#k through the #bbasement of Orbis Tower#k. Navigate your way through Aqua Road and you'll find #bAquarium#k, a town that is completely underwater. Once there, you'll find #bDolphin Taxi#k, which should take you to the nearest spot from the Korean Folk Town." />
+                <string name="2" value="Talk to me once more, so I can give you all the necessary items for the travel." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This ticket will enable you to get on board for the flight. Please use it wisely." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012108" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012108" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2100" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2101" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

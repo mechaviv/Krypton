@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8065.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Ghost Whereabout" />
+        <string name="parent" value="Freed From Darkness" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1012109##k of #b#p1012109##k's book should be ready by now. I should go talk to him." />
+        <string name="1" value="Apparenlty the #b#t4000144#s#k have disappeared to the direction of #b#m801000000##k. I need to find it and return it to its original state." />
+        <string name="2" value="Apparently, #p9120011#'s doll just went about on its one way. Maybe this has something to do with #b#t4000144##k that #p1012109# is looking for..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8066" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, you're the ... from the other day ...! Help! Please help me!" />
+            <imgdir name="yes">
+                <string name="0" value=" I'm really sorry about last time, and I also can't thank you enough for your constant help. The thing is, the #b#t4000144#s#k that you gathered up, started moving all of a sudden by itself, and just flew away..." />
+                <string name="1" value=" No damage occurred, but it used to be part of the monster... if we leave it out like that, then something terrible may happen. I need your help! Please find the #b#t4000144##k that flew away from me. #b#t4000144##k may have flown to the direction of #b#m801000000##k. Maybe you should check out there for what you seek." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh well... just a little more, and I'll be done with this book ... can you recommend someone of your caliber for me? If only I could fight..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh... Arrrgh... my doll!" />
+            <string name="1" value="My doll just disappeared on me... what happened?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you find #b#t4000144##k that flew away to the direction of #b#m801000000##k? " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8064" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="90" />
+        </imgdir>
+    </imgdir>
+</imgdir>

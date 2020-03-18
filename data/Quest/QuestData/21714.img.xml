@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21714.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Green Mushrooms" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your second assignment as an informant and you need to ask #b#p1032101##k in #b#m101000000##k why the #o1110100#s have suddenly turned so aggressive." />
+        <string name="1" value="#p1032101# says she's heard that a lot of monsters have been going crazy and that they all seem to have something in common: their strange behavior is tied to an odd puppet. Maybe this too is tied to the puppet? You should eliminate the #r#o1110130#s#k and find a #b#o1110100# puppet#k if you can.\r\n\r\n#o1110130##r #a217141##k\r\n#i4032316# #t4032316# #b#c4032316# / 1#k" />
+        <string name="2" value="You gave #p1032101# the #t4032316#. #p1032101# seemed shocked that the rumors were actually true and wanted to find out who was responsible for placing a puppet on the #o1110100#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1770" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032316" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I don't know how you found that out, but that's absolutely correct. Lately, the #o1110100#s from the southern forest have been getting more and more violent, which alarms me. Their personalities have gotten really dark these days…" />
+            <string name="1" value="But from what I hear, this is occuring in many places at an alarming rate, so I looked into the matter a little more, and it seems that they all have something to do with a puppet. A puppet...! This is really getting more and more bizarre by the day." />
+            <string name="2" value="I don't know if those rumors are true or not, but it may have to do with the recent case of the #o1110100#s. I don't know why you're asking me for the reason behind the sudden violence of the #o1110100#s, but if you're as intrigued as I am, do you want to help me look into this matter?" />
+            <string name="3" value="I want to see if it really is because of the puppets…so I want you to eliminate #r25 #o1110130#s#k and find the #b#o1110130#'s puppet#k if you can. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. #o1110100# can be found at #b#m100040003##k in #m100040000#. You can enter through the #bhole in the tree where #p1032112# stands#k, so it shouldn't be too hard to find. Thanks in advance." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="In that case, there's nothing we can do about it. If you change your mind, let me know. I do need someone to look into the Green Mushrooms…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, did you eliminate all the #o1110130#s already? And did you find the #o1110100#'s puppets?" />
+            <imgdir name="yes">
+                <string name="0" value="I thought it was just a rumor…but now it's really scaring me. The puppets are real. We need to know how the the #o1110100# got this puppet. If you are willing to help, then please talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have yet to eliminate #r25 #o1110130#s#k and bring back the #b#o1110100#'s puppet#k. Did you get lost finding the monster? #o1110100#s can be found at #b#m100040003##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You have yet to eliminate #r25 #o1110130#s#k and bring back the #b#o1110100#'s puppet#k. Did you get lost finding the monster? #o1110100#s can be found at #b#m100040003##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032316" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110130" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21713" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

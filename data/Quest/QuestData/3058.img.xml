@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3058.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lisa's Special Medicine III" />
+        <int name="area" value="33" />
+        <string name="0" value="With Lisa's Special Medicine, Moppie's injuries should be taken care of in an instant ... I better get to Moppie ASAP." />
+        <string name="1" value="With Lisa's Special Medicine, Moppie's injuries should be taken care of in an instant...I better get to Moppie ASAP." />
+        <string name="2" value="Thanks to Lisa's Special Medicine, Moppie is completely healed!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031205" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031205" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Please take my special medicine to Moppie. Moppie's wounds will be gone in an instant." />
+            <imgdir name="yes">
+                <string name="0" value="Apply the medicine evenly directly to the wound, and it'll be gone in an instant. There's one thing you should remember. PLEASE DON'T EAT IT!!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Didn't you make this to cure Moppie's wounds?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Bark bark? What? You're here to help me heal my wound? Please don't tell me you brought Lisa's Special Medicine... you did? Can you put it on my wound?" />
+            <imgdir name="yes">
+                <string name="0" value="Bark bark! The pain is gone! I'm pain free!! Lisa is incredible! Wait, I heard that it required a whole lot of rare ingredients to make, and ..." />
+                <string name="1" value="You're the one that gathered up the ingredients? Well, thanks to you I'm doing well now. Thank you so much! Bark bark!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't found Moppie? He should be around here ..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012019" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031205" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3057" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

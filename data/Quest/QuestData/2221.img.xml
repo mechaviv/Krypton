@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2221.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Conclusion" />
+        <int name="area" value="30" />
+        <string name="0" value="The evil scheme to put #m103000000# in danger... it only turned out to be #p9020000#'s clumsiness. Let's go inform #bJM#k." />
+        <string name="1" value="JM, numbed by the absurdity, asks you to defeat #o6220000#. He seems to have aged 10 years because of this. Poor JM...\n\n#o6220000##r#a22211##k" />
+        <string name="2" value="You have defeated #o6220000# and reported your progress to JM." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="180000" />
+            <int name="pop" value="12" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="So, what did Lakelis have to say? ...She is the one responsible for all this, huh? That wretched girl! I can't believe she made the same mistake twice! As if King Slime weren't enough... now a #o6220000#? And she was going to gather adventurers to take care of it? She hasn't even taken care of the King Slime yet!! When will she learn?! \n\r#L0##b Ca.. Calm down...#k#l" />
+            <string name="1" value="Right... Right... Well, you've done well. I'm sorry you went through so much trouble because of some fool. Well, what's done is done and we can't have a monster wandering around. Will you still defeat #r#o6220000##k for us?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Sigh... The mystery of the scheme ends here. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What... you don't think you can handle it? I can't ask #p9020000# to take care of it... She'll make a big fuss about gather adventurers... What will I do?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you defeated #o6220000#? Woohoo~thanks. You've done so much for us! You had to hunt alligators and gather information for no good reason. I'm sorry you went through all that. I don't really have anything to offer you but to enhance your Fame. " />
+            <imgdir name="yes">
+                <string name="0" value="I've learned a few lessons from all of this. Don't blow things out of proportion. Have an informant ready to collect information. Never trust #r#p9020000#.#k.. Good work." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I assume you haven't seen #o6220000# yet. You can probably find it near the swamp somewhere. Make sure you defeat this monster at once. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2220" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

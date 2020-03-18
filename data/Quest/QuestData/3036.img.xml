@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3036.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traces of Nick" />
+        <string name="parent" value="Nick, the Son of Scadur the Hunter" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="I should go see Scadur the Hunter in El Nath." />
+        <string name="1" value="I got to see Scadur again, first time we really got to talk since the whole Book of Ancient fiasco. He told me a story of how, a long time ago, a bunch of monsters from the dead mine claimed the life of his wife, enraging his son Nick. 3 years later, he went into the dead mine, hoping to avenge his mother's death, but haven't been heard since. He wanted me to find #bNick's Ring#k somewhere at the innermost part of the lava cave. He also wants me to grant his dying wish, which would be collecting #b100 Cerebes' teeth#k. This will be VERY tough to do ..." />
+        <string name="2" value="I went into the innermost part of the lava cave, where I found a chipped part of a statue. I have a feeling something is in here." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <int name="nextQuest" value="3037" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Aren't you the one that brought that strange ring the other day? How have you been? I'm glad you came. Anyway, I have a distinct favor to ask you ... something I've been wishing to take care of for a long, long time. What do you think? It may not be easy, but do you want to help me nonetheless?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! I can finally fulfill my long-time wish with this ... See, I have a lovely son, who I adore more than anyone else in the world. His name is #bNick#k. He wasn't exceptional in one thing, but was a great kid who was a hard worker." />
+                <string name="1" value="Then one day, a group of monsters from the mines attacked our town. They took my wife Ria away from me forever ... and, ever since her passing, Nick had turned into a totally different person." />
+                <string name="2" value="He made up his mind to strengthen himself so he can take care of the monsters from the mines. I tried my best to stop him, to no avail. He left 3 years ago to defeat the monsters, and I haven't heard one word from him since. It's obvious what happened to him ..." />
+                <string name="3" value="I don't cling on to hope that he's alive. What I do hope is to find a ring that he's wearing. There should be a lava cave at the inner part of the mines at the valley of El Nath. You may be able to find his ring somewhere in there." />
+                <string name="4" value="Please find his #bring#k for me. Also, as my son had always wished, please take down #b#o7130001#'s#k and collect #b100 Cerebes Teeth#k for him. I have faith in you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand. You must be worn out from all that traveling ... but if you want to change your mind, then please come talk to me. I can't think of anyone else but you that can do this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't found #bNick#k's ring, yet? It should be at the lava cave at the inner part of the mine ... and, as my son has wished, please take down #b#o7130001##k in the cave and collect #b100 Cerebes Teeth#k. Thank you." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="There seems to be a little bit of room below #b#p2030007##k, but no matter how much I look into it, I can't find anything in there." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3020" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+        </imgdir>
+    </imgdir>
+</imgdir>

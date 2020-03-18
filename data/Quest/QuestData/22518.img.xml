@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22518.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Power B. Fore's Never Ending Paranoia" />
+        <int name="area" value="7" />
+        <string name="0" value="You defeated the #o9300274#s once again but #p1012118# still seems suspicious. Talk to #b#p1012118##k." />
+        <string name="1" value="#p1012118# says that he still can't believe you and tells you that if you enter his Training Center and defeat the #r#o9300386#s#k, he will believe you... He will really will this time...right? Defeat the #o9300386#s.\r\n\r\n#o9300386##r #a225181##k" />
+        <string name="2" value="You defeated the #o9300386#s. This time, it looks like #p1012118# has no choice but to believe you. Now that you've received the Certificate of Training, enter the Training Center and start training." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032457" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2200" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How...how could this be..." />
+            <string name="1" value="You defeated even the #o9300386#s!!" />
+            <string name="2" value="I guess I'll have have to let you enter my Bowman Training Center. Here is the Certificate I give to those who've completed my training." />
+            <imgdir name="yes">
+                <string name="0" value="It's a very special item, so take good care of it. If you want to enter, talk to me using the keyword #bAsk about using Power B. Fore's Training Center.#k... " />
+                <string name="1" value="Is Stan sick or something? He's really not like this..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not defeated all #r100 #o9300386#s#k yet? Puhaha... So you ARE Stan's instrument? If you want to argue that you're not, talk to me using the keyword #bAsk about using Power B. Fore's Training Center#k. Puhaha..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012119" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300386" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22517" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22518s" />
+            <int name="lvmin" value="16" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

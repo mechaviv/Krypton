@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3939.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tigun's Hair" />
+        <int name="area" value="44" />
+        <string name="0" value="You promised #p2101010# to get a strand of #p2101004#'s hair, but how are you going to manage that? Better go see #b#p2101004##k." />
+        <string name="1" value="#p2101004# vehemently refuses to part with even a single strand of his hair, but promises to give you a piece from his beard...if you give him #b1 #t4010007##k.\n\n#i4010007# #t4010007# #b#c4010007#/1#k" />
+        <string name="2" value="You gave #p2101004# the #t4010007# and got a piece of his beard in return. It's not head hair, but...it's close. Better go see #p2101010#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="무슨 일이지? 왕성에는 아무나 들여보내 주지 않는데.. 잡상인은 특히 말이야. 잡상인이 아니라고? 그럼 왜 이렇게 얼쩡대는데? 뭐? 머리카락을 한 가닥만 달라고? 아니 머리카락은 왜? 어디에 쓰려고 그러는데?" />
+            <string name="1" value="흠... 왜인지는 모르지만 머리카락은 줄 수 없어. 안 그래도 한 가닥이 아쉬운 판에 어딜... 하지만 대신 자랑거리인 수염은 한 가닥쯤 줄 수도 있는데... 네가 부탁 한 가지만 들어준다면 말이야." />
+            <imgdir name="yes">
+                <string name="0" value="헤에... 그렇게해서까지 수염을 가지고 싶다니 뭐, 그렇다면 말해주지. 리툼이라고 알아? 이 아리안트에서만 생산되는 독특한 광석인데 그게 그렇게 갖고 싶더라고. 리툼의 원석 1개만 가져다 주면 수염 한 가닥과 교환해 줄게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="싫으면 수염은 절대 줄 수 없어. 머리카락은 더더욱 안 되고. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4010007" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031570" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What is it? We don't let any old stranger in the palace. What? You want a piece of my hair? Why? What do you plan on doing with it?" />
+            <string name="1" value="It doesn't matter. I can't give you the hair on my head. I need to save each and every last strand. But I CAN give you a hair from my beard...if you can do me a favor." />
+            <imgdir name="yes">
+                <string name="0" value="I'll tell you what I want. Have you heard of #t4011008#? It's an ore that's only produced in #m260000000#. If you can get me #b1 #t4010007##k, then I'll give a hair from my beard." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then my hair is off limits. Scram." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I don't know what you want with this, but a deal is a deal. I'm not giving back the Lidium Ore, you got me?" />
+            <imgdir name="yes">
+                <string name="0" value="Now that you have a hair from my beard, get out of here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What? You still haven't gotten #b1 #t4010007##k? I know it's expensive, but it's not as valuable as a hair from my beard!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4010007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3938" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031570" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

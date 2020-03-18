@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28208.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kyrin's Request" />
+        <string name="parent" value="Commotion on the Ship" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says she has a favor to request of you. Let's talk to her." />
+        <string name="1" value="She says there are too many #rRibbon Pigs#k near the ship, which makes loading and unloading difficult for the passengers. She would like you to hunt the #rRibbon Pigs#k.\nYou can easily find them in #b#m100030000##k." />
+        <string name="2" value="#b#@1072008:##k in #bNautilus#k says there was something very valuable amongst the things she's lost. She says to go talk to #b#@1092002:##k in #bNautilus#k, but there is also something you need to do first." />
+        <string name="demandSummary" value="#o1210101# #a282081#" />
+        <string name="rewardSummary" value="Exp 3,500&#xD;&#xA;Able to proceed to 'Baine Likes...' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So, did you get to look around at all? There has been a huge increase in the #rRibbon Pig#k population. Even just a few days ago, I was trying to unload my things from the ship and the #rRibbon Pigs#k came and caused a ruckus. Thanks to that, I lost some of my luggage.\n\nSo I was wondering if you could help me hunt some of those #rRibbon Pigs#k. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You're very generous.\nPlease hunt 30 #rRibbon Pigs#k.\nYou'll be able to find a lot of them in #b#m100030000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I heard you're the type who can't say 'no' to people. I guess I was mistaken." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you finished hunting them already? No wonder I stopped hearing the 'oinking' noises. Haha...thanks!" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, my life has gotten a lot easier with your help. I can easily load and unload my luggage without having to worry about those Ribbon Pigs. Thank you.\nBut I have one more favor..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You must hunt 30 #rRibbon Pigs#k. Keep at it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28207" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

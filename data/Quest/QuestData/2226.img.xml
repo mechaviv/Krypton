@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2226.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Arwen's Apology" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="5" />
+        <int name="area" value="30" />
+        <string name="1" value="Arwen, after much contemplation, says she can't understand Reef's actions but takes some responsibility for them. She, then, asks you for a favor... to deliver Fairy Hair to #bReef#k. She seems sincere, so perhaps you should help her out. Don't forget that Reef is a ghost who only appears #bfrom 5 p.m. to 7 a.m. of the following day#k." />
+        <string name="2" value="You have delivered the Fairy Hair to Reef. Reef, surprised at the unexpected gift, asks you to give his apologies to #bGrendel the Really Old#k for having harmed others." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031924" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031924" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...I don't know. Why are humans so volatile? I can't understand Reef's feelings and actions... none of it. But I am feeling guilty... I must be feeling responsible for this." />
+            <string name="1" value="Reef is definitely at fault... but I can't say that I'm completely devoid of any blame either. That's what my head is telling me, but, sometimes, it's necessary to listen to what your heart is saying too... Will you do me a favor?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I will give you this #bFairy Hair#k... will you give it to #bReef#k? No matter how hard I try, I can't understand how he could be so foolish... but it wouldn't be a bad idea to clam his anger down a bit. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How ill-natured humans are. But what can I do? Come back and see me if you want to help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...Ah, you're here. Did you give Arwen my apologies? What? You didn't? Why not...?!" />
+            <imgdir name="yes">
+                <string name="0" value="...This is... Fairy Hair! How... did you...? Giving Fairy Hair signifies a sincere apology. Did Arwen really ask you to give this to me? This means... Arwen is sorry..." />
+                <string name="1" value="I can't believe it... Arwen, so arrogant as can be, is apologizing to someone...? And, of all people, she's apologizing to Reef? In truth, she didn't do anything wrong. It's me who has to apologize... Arwen, I'm sorry and thank you." />
+                <string name="2" value="I'm sorry. I've been a pain in the neck to you. Will you also tell Grendel the Really Old that I'm very sorry?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see #bReef#k yet? I'm sure you know where he is... don't you?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you give #bArwen#k my apologies...?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="...What? You've lost the Fairy Hair? Oh my... do you know how precious that is? Ugh, humans...! Okay, Arwen... Breathe... Breathe... Alright, I will give you the Fairy Hair one more time. Don't you lose it! Make sure #bReef#k gets it this time!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032107" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031924" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2225" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

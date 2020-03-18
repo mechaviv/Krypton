@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4548.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Oly Oly is back!" />
+        <string name="parent" value="Chee Wee's Worries" />
+        <int name="order" value="4" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270060##k has found out that even more tires have been stolen now. It must be those sneaky villain, #b#o9420530##k, back in town!" />
+        <string name="1" value="This stealing must be stopped now! Let's put an end to it, once and for all! \n\n#o9420530# #r#a45481##k \n#t4000468# #r#c4000468#/100#k  " />
+        <string name="2" value="#b#p9270060##k was happy to announce that life in the city is back to normal that everybody is getting proper transportation they need. What a releif!" />
+        <string name="demandSummary" value="#i4000468:# #t4000468:# #c4000468# / 100&#xD;&#xA;#o9420530# #a45481#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 33,300&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4003000:# #t4003000:# 20&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="33300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000468" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh...My worst fears have become reality. I was just informed that even more people have stolen their tires. Even for the public bus, too!" />
+            <string name="1" value="Just imagine a city without proper transportation. Dreadful! Someone has got to put an end to this callous thievery." />
+            <string name="2" value="You were so brave to take down those sneaky #b#o9420530##k last time. Why don't you step up for the task? Maybe you could bring peace to this city once and for all. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! We all know that you're perfect for this job. Now, go and hunt #b100 #o9420530#s#k and bring back #b100 \n#t4000468#s#k. You must hurry before this city goes out of function. Go now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Who could be more perfect for this job than you? Think again..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have to put an end to this! " />
+            <imgdir name="yes">
+                <string name="0" value="I'm happy to tell you that our city life is back to normal, and that everybody is praising you. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have not collected enough tires. We need at least #b100 #t4000468##k in order to provide proper transportation in the city." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Your hunting is not completed yet. Remember, #b100 #o9420530##k more to take down!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270060" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000468" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420530" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270060" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4547" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="57" />
+        </imgdir>
+    </imgdir>
+</imgdir>

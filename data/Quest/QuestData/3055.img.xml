@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3055.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fairy's Horn Flute II" />
+        <int name="area" value="33" />
+        <string name="0" value="Lisa of Orbis made me a horn flute. Hopefully this will help me finally understand what Moppie is saying ..." />
+        <string name="1" value="Should I try this horn flute on Moppie?" />
+        <string name="2" value="I used the horn flute for fairies on Moppie, and I could finally understand what he's saying!!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031190" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Let's see what happens when a human uses the fairy's horn flute, I don't know how it'll react to humans using it, so there's no guarantee it'll work, but ... do you still want to try it?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, then go up to Moppie and play the horn flute in front of him. I don't know if the fairies will like the idea of a human playing it, though..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You took so much time and effort to acquire the horn flute, and now you don't want to help Moppie out? Are you really THAT afraid of the fairies?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Bark bark ... bark bark bark??" />
+            <imgdir name="yes">
+                <string name="0" value="(When the horn flute starts to be played, a soothing sound echoes throughout the area while the horn flute disappears in a puff) Hey, it's ... gone! Is that because I'm a human?" />
+                <string name="1" value="Did I do all this for naught? \n#bHey can you hear me, bark bark~?#k\n Hey, isn't this Moppie talking? ... It IS!! I can clearly understand Moppie now!" />
+                <string name="2" value="Okay, now I can understand what Moppie's saying!! But ... what??" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't used it? Don't be scared. Try it." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Bark bark?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012019" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031190" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3054" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20704.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Mission in Henesys" />
+        <int name="area" value="15" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="I have finally reached the level it takes to receive an assignment as a Cygnus Knight. I'll need to visit #bthe Tactician for Cygnus Knights, #p1101002##k for an assignment." />
+        <string name="1" value="I finally received the first assignment from #p1101002#, asking that I head over to #b#m100000000# of Victoria Island#k and provide support for #bAgent #p1103001##k." />
+        <string name="2" value="I finally received the first assignment from #p1101002#, asking that I head over to #m100000000# of Victoria Island and provide support for Agent #p1103001#. I guess this kind of assignment is very common, since the Cygnus Knights are sent to different parts of Maple World to collect information on the Black Mage." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032288" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I see that you have reached Level 13. Okay, from here on out, as an official member of Cygnus Knights, you will receive official assignments that will be given to you from the headquarters. Do you want to know what your duties are? Let me explain them." />
+            <string name="1" value="Your duties, your assignments are detailed tasks given to you to fulfill as a member of the Cygnus Knights. That's because if one person takes on all of the duties, such as strengthening one's self, while at the same time investigating Black Mage and preventing his warriors from invading, that person will burn out in no time." />
+            <string name="2" value="We have delegated the duties for a more effective way of facing the Black Mage and his warriors. Everyone presents different but appropriate sets of skills depending on the circumstances, and this is a way of doing that." />
+            <string name="3" value="The duty that most suits you at this point is... #bworking in #m100000000##k. Since you'll be sent there for your duties, you will be away from Ereve for the forseeable future. If you have some unfinished business to take care of, then you should take care of it right now. If you are ready to take on the tasks immediately, then press Accept." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to #m100000000#, where you'll run into #bAgent #p1103001##k, who's there to gather up information on the Black Mage. Secrecy is of utmost importance as an Agent, so you won't be able to find him easily. Your first task is to contact him." />
+                <string name="1" value="Your duties after the meeting will be instructed by him. Please make sure to receive the blessing from #p1101001# before leaving Ereve. May your efforts bring glory to the Empress." />
+                <string name="2" value="Your destination is Ellinia, which isn't too far from Henesys. But your level may not be high enough to just breeze through the journey, so you may want to travel in a taxi. If you take the taxi near the bottom of Ellinia, you'll be able to get 1 free ride using this #bTaxi Coupon#k." />
+                <string name="3" value="Find Roca when you reach Henesys. You'll find out what your mission is once you talk to him. Oh, and don't forget to ask #p1101001# for a blessing on your way out. Best of luck to you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you have some unfinished business to take care of in Ereve, do so now before taking on the assignment." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you an agent from Ereve by any chance? Wow, it's nice to see you! It's been such a long time since I last met anyone from the Cygnus Knights. How's Ereve? Is Oz still the same old? Ahhh... I must be really missing Ereve if I am admitting to missing #p1101002#...!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The agent in charge of #b#m100000000##k is #b#p1103001##k. He's either hiding himself somewhere in #m100000000#, or others. Your first duty is to find that wrestler." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

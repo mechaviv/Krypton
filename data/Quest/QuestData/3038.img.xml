@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3038.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting Huckle's Magic Ingredients" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard there is an old man called #bHuckle#k inside a hidden secret room in Orbis Tower..." />
+        <string name="1" value="I met an old man named Huckle at the hidden room in the middle of Orbis Tower. He's been living in there for 30 years, studying the physics of the self-moving stones. He wants me to gather up #b45 Jr. Sentinel Shellpieces, 20 Ice Sentinel Shellpieces, and 20 Fire Sentinel Shellpieces#k. Alright, let's do this ..." />
+        <string name="2" value="I got Huckle, the old man living in the hidden room at the Orbis Tower, the items he had requested, and in return, got the Statue-Teleporting Scroll. It allows me to teleport between the statue at the 20th floor of Orbis Tower, and the 1st floor. Huckle looks like he needs more samples, so I guess I'll need to keep looking for those ..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000083" />
+                    <int name="count" value="-45" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000084" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000085" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001019" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Cough cough ... excuse me ... oh, hello there. You found a way to get here, somehow. My name's #p2030012#, and I've been here for 30 years. I don't even remember the last time I've seen a person. But hey, if you have some time in your hand, then can you help me out here? It's not that hard of a task, so I'm sure you can do it." />
+            <imgdir name="yes">
+                <string name="0" value="Alright! Actually, I've been here studying the basis of self-moving rocks for the past 30 years. The more visible ones at this tower are the monsters that resemble a bunch of moving stones, and I'm here to study anything and everything involving them. Conducting studies on them takes time, however, and so it is almost impossible for me to gather up the samples of them." />
+                <string name="1" value="That's why, I need you to go to the tower, take down the monsters, and collect the pieces of rock that consists their body. I will need #b45 #t4000083#s, 20 #t4000084#s, and 20 #t4000085#s#k. I'll be here waiting for you. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... you must be really busy... Please come back to me when you have time" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... you really did gather up the sample for me. I knew I have an eye for a talent. Anyway, thank you so much for your hard work. For your reward, I'll give you #b#t4001019##k, something only I can make. I'll give you the details on how to use it once I give you the item." />
+            <imgdir name="yes">
+                <string name="0" value="The #b#t4001019##k that I just gave you is the item that activates two teleporting rocks at the Orbis Tower. I'll let you use #b#p2012014##k at the 20th floor, and #b#p2012015##k at the 1st floor. Use it on one of the teleport rock and you'll be able to move to the other teleport rock. Please put them to good use, and come back if you need me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gotten everything I asked for. Please take down the monsters in the Orbis Tower and collect #b45 #t4000083#s, 20 #t4000084#s, and 20 #t4000085#s#k up, and bring them all to me. I'll be here conducting studies until you make your way back here. Thank you, and hope you get back here safely." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000085" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000083" />
+                    <int name="count" value="45" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000084" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030012" />
+            <int name="lvmin" value="20" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21720.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Puppeteer's Warning" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="What would #p1002104# say about the Black Wings? You should talk to #b#p1002104##k, the Information Dealer in #b#m104000000##k, and find out." />
+        <string name="1" value="He tells you that the Black Wings are an organization conspiring to resurrect the Black Mage and says that this information must be relayed to #b#p1201000##k as well, so he wants you to let #p1201000# know about the situation.  In the mean time, Tru plans on utilizing his network as an Information Dealer to gather as much information on the Black Wings as possible." />
+        <string name="2" value="#p1201000# thought that the fact that an organization like the Black Wings even exists...means that the Black Mage's resurrection is imminent. She encouraged you to train that much harder to regain your old, heroic form. She then taught you a skill called #bPolearm Booster#k which she she learned by poring over an ancient document!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmmm? I still haven't found a suitable Informant Assignment for you… well, do you need me for anything else? Or do you have some juicy information for me...?\n#b#L0#(You tell him about your encounter with Francis the Puppeteer.)#l\n#k" />
+            <string name="1" value="#p1204001#, the Black Wing Puppeteer. Okay, now this all makes sense. What happened with the #o1210102#s in #m100000000# and the #o1110100#s in #m101000000# are all being done by the same guy. But wait...are you telling me he also mentioned the Black Mage?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Now that I think of it, I do remember a report saying that there's a group that's trying to revive the Black Mage. I thought it was bogus, but now…it seems quite legit. Are they really trying to revive the Black Mage? Could the prophecy be true?" />
+                <string name="1" value="I think the Black Wings might be worth looking into. It may seem like a very secretive organization, but there's no way they can outsmart my intelligence network. I'll let you know when I hear something that's relevant. In the meanwhile, you should head over to #b#m140000000##k and tell #b#p1201000##k what has happened here." />
+                <string name="2" value="The return of the hero, a group following the Black Mage, and the prophecy…the three seem to go hand-in-hand. As someone who revived the hero, #p1201000# has a right to know about this as well. #p1201000# may be a great help, too, since she's studied heroes for so long." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to give #p1201000# the dangerous news? She may seem weak on the outside, but remember, she lived alone on that island a long time, just to find you. She's much stronger than you think." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #m140000000# yet? For anything to do with the Black Mage, you should definitely keep #p1201000# in the loop." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <string name="endscript" value="q21720e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <int name="infoNumber" value="21760" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="0" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21719" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="22" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

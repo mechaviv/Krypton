@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8229.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost in Translation 3" />
+        <int name="area" value="45" />
+        <string name="0" value="I showed the #bCoded Communique#k to Elpam Gorlab, and he recognized the symbols as being #bVersalian#k!  Elpam translated what he could and gave me a #bTranslated Communique#k.  I should show this to John immediately!" />
+        <string name="1" value="I must traverse Crimsonwood Mountain and get this new information Jack and see what else he knows...!" />
+        <string name="2" value="I reached Jack and gave him the info-he's going through it all now..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hurry, take the #bTranslated Communique#k back to my brother!  And tell him what I said about Subani!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201096" />
+            <string name="endscript" value="q8229e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8228" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8229s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

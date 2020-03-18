@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2385.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Octopuses Do Your Body Good" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Something still seems to be wrong with Lady Syl. Go see #bRyden#k." />
+        <string name="1" value="Gather the ingredients that are needed to make a special tonic that will reenergize Lady Syl. #Go to the Construction site using the portal located to the left of Kerning City#k and gather some Octopus Legs." />
+        <string name="2" value="You hope that Lady Syl will get better soon. Go find out from Ryden if there is anything else you can do." />
+        <string name="demandSummary" value="#i4000006:# #t4000006:# #c4000006# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 3,800\r\nProceed to 'Making a Tonic' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000006" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#h0#! I assume you've heard the rumor that Lady Syl hasn't been able to sleep, despite having the pigs eliminated. It may be due to her weakening health. What do you think about helping me prepare a tonic for her?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There is an old recipe for a tonic that's been used for generations by the people of Kerning City. It's a tonic made by boiling octopus legs. It's been said that this tonic, made by boiling octopus legs for three straight days and nights, can even make a dead person come to life!" />
+                <string name="1" value="Please bring me #b20 Octopus Legs#k that I can use to make the tonic. You should be able to find Octopuses at the Construction Site to your left." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If Lady Syl becomes ill, all of our efforts will be for naught!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've collected the Octopus Legs already? Please give them to me." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, I've never seen such fresh Octopus Legs! Now, all I have to do is to boil them for 3 days and 3 nights. Remember, the most important thing in making tonics is using fresh ingredients and putting a lot of care into it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="#rGo to the Construction site using the portal located to the left of Kerning City#k and gather #b20 Octopus Legs#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000006" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2384" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="16" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

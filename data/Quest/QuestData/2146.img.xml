@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2146.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Monstrous Tree Stumpy" />
+        <string name="parent" value="The Old Tree" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="Visited Doctor #p1022006# again. He says #o3220000# seems to take all the nutrients from #m102000000#. He also added that if this continues, #m102000000# would become a wasteland devoid of life. The #r#o3220000##k must be eliminated.\n\n#o3220000#  #r#a21461##k" />
+        <string name="2" value="Acting on Doctor #p1022006#'s request, I've tracked down and eliminated #o3220000# that was nourishing on#m102000000#. Will this help #m102000000# return to its original state?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="43500" />
+            <int name="pop" value="5" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome. I've been inspecting the #t4031773# you've brought, and I'm confident that my theory is true. However, the problem is that the results are much more serious than we expected." />
+            <string name="1" value="I see you're losing me. The #o3220000# weren't nourishing on the stumps. They've been nourishing on #m102000000#. The stumps weren't being dried up, but instead couldn't find nourishment from the ground itself." />
+            <string name="2" value="This is very dreadful situation. If this goes on #m102000000# will become a wasteland. You must help me once again. " />
+            <imgdir name="yes">
+                <string name="0" value="#o3220000# is a very evil being. It's not only almost invincible, but also dries out the life out of everything else. Getting rid of #r#o3220000##k is the only way to save #m102000000#. Please track down and defeat #o3220000#. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You still don't understand, do you? This is a matter of life and death! Unbelievable! Coward!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back. How did it go? Oh my, I understand. Try to feel the strength of the ground itself. Then you should feel differently. You have done an honorable deed." />
+            <imgdir name="yes">
+                <string name="0" value="However, I'm still feeling uneasy. The #m102000000# has suffered the most. Feels like we'll never get our forest back to its original, healthy state." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Sorry, but I have no clue where to find #o3220000#. I apologize that I can't be of much help. Nevertheless, you still need to defeat #r#o3220000##k. You understand, don't you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2145" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

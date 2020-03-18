@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2180.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find Fresh Milk" />
+        <string name="parent" value="Special Recipe for The Nautilus" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="According to those who've tasted Tangyoon's cooking, Tangyoon's dishes give you a mystical experience... They say that Tangyoon's dishes will either transport you to the happiest moment of your life or make you experience a flood-like rush of fantasy the moment you take a bite of it. What IS his secret? " />
+        <string name="1" value="The secret behind Tangyoon's cooking is none other than fresh ingredients! So I guess that means that freshness is the basis of all great cooking? Tangyoon is so serious about making sure that he has the freshest ingredients that he actually raises his own milk cows on The Nautilus for milk... Now that's impressive! Tangyoon wants me to go milk the cows and bring him some milk if I want to try some of his newest dish. Well, I definitely want to try some of his food, so I guess I'll go milk the cows and fill this bottle with milk. I'd better remember that I can only fill up 1/3rd of the bottle from a single mother cow.  \n\n#i4031850##t4031850# #b#c4031850##k / 1" />
+        <string name="2" value="Wow! I can't believe I'm telling you this, but Tangyoon's dish was truly amazing. I was touched!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031850" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmm hmm.. Hey! I saw you just walking by! Thanks to your great work, those pigs haven't been sniffing around ever since. Thank you so much! Hahahha... I cooked something for you in return... and... here, try it.\n\r#L0##b Whaaaaaaat! (Is this really... the Dragon Special that I've only heard of in storybooks??? Oh my goodness...)#k#l" />
+            <string name="1" value="Hahaha! Isn't it delicious? That's what everyone says when they try my food. Now that you've tasted the heavens, can you help me out once more?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Yes yes, I like your attitude. I need to make food for everyone on board, and I am out of milk. Please fill this bottle up with milk." />
+                <string name="1" value="For fresh ingredients, I raise a number of milk cows at the corner of this ship. Go there, and milk some from the cows. Lately, we've seen a number of baby cows being born, and... those kids sure can eat, so please be careful. If you leave the bottle in front of them, they'll just drink it all..." />
+                <string name="2" value="Oh, and you can only fill up 1/3 of this bottle from one cow. If you try to milk more, there won't be any left for the babies, so... once you're ready to hit the stable, let me know. I'll take you there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Were you not that impressed with my food?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh! Fresh milk! What do you think about the stable? Isn't it amazing?" />
+            <imgdir name="yes">
+                <string name="0" value="Haha... thanks to your help, the crew will be feasting tonight. Thank you, and if you ever find yourself hungry, come by and I'll make you something delicious. Hahahah!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Didn't I tell you to fill up the whole bottle with milk?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031850" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2179" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

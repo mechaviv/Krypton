@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9996.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alcaster's Advice" />
+        <int name="area" value="50" />
+        <string name="0" value="I get the feeling that my Maple Cape's vibrant color has faded a bit.  It seems less shiny... I should go see Lisa who repaired the cape before. " />
+        <string name="1" value="I decided to go see Alcaster on Lisa's referral...  Lisa did mention that I'll probably need #b10 Snow Silks and 10 Maple Leaves#k, so I should gather all the materials before I go see Alcaster.\n\n#i4001166# #t4001166# #b#c4001166# / 10#k\n#i4001126# #t4001126# #b#c4001126# / 10#k\n#i1102167# #t1102167# #b#c1102167# / 1" />
+        <string name="2" value="With Alcaster's help, I was able to recharge the power into the Maple Cape.  It even seems to fit me better than before.  Alcaster told me that the cape is excellent item which is rare to find these days.  I will take good care of it and use it for a long time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102167" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1102168" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Long time no see.  What brings you here today?\r\n#L0##bThe cape's color seems to be fading.#l" />
+            <string name="1" value="Oh, you're right.  I think you're the cause of that.  Items made with the Mysterious Fabric are sensitive to the balance of power with its owner.  It seems like you've grown significantly recently.  The cape's power must have not been able to match your power, thus breaking the balance of power.  It's okay as is but maintaining the balance of power will be good for the cape in the long haul.  What do you think?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="In order to breathe in new power into the cape, you'll need #b 10 Snow Silks and 10 Maple Leaves#k.  Take those materials and go see #bAlcaster#k in El Nath.  He will be able to help you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well... it should be okay as is.  For now at least." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome.  Lisa already told me about you.  So, it looks like you already came prepared with the materials.  I will now breathe in new power into the cape.  Once the process is finished, the cape will possess a power more fitting to yours." />
+            <imgdir name="yes">
+                <string name="0" value="It turned out great.  It's perfect for you.  A great item like this is rare to find these days.  You're one lucky person." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go see Alcaster in El Nath.  I'm sure he'll be able to help you." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="In order to breathe in new power into the cape, you need #b10 Snow Silks and 10 Maple Leaves#k.." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102167" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9994" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102167" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+            <string name="end" value="2009061623" />
+        </imgdir>
+    </imgdir>
+</imgdir>

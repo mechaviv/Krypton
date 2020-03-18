@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2163.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Athena Pierce's Smile" />
+        <string name="parent" value="The Lost Letter" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="I wonder how Kyrin and Athena Pierce know each other? Let me see what Athena Pierce has to say about that." />
+        <string name="2" value="How surprising! Athena Pierce and Kyrin used to be practically family! I had no idea that the two had such a deep history." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="이렇게 카이린의 소식을 전해주워서 감사합니다. 그녀가 이렇게 성장해서 다시 빅토리아 아일랜드로 돌아오다니 자랑스럽네요. 그런데 카이린은 아직 옛날 일이 마음에 많이 걸려하는 듯 한데…\r\n#b#L0# 과거 일이라뇨?#l" />
+            <string name="1" value="복잡한 이야기인데… 들으시겠어요?" />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="편지를 전해주신 분이니 이야기를 해드리죠. 오래된 이야기라 잠시 머리 속에서 정리할 수 있도록 시간을 주시겠어요?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="바쁜 일이 있으신가 보군요. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I can't thank you enough for giving me this. At least I know how Kyrin is doing these days. I am just proud that she came back to Victoria Island all grown up. It does seem like she's still dogged by her past, though...\r\n#b#L0# Her past?#l" />
+            <string name="1" value="It's a long story. Care to listen?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Since you served as a messenger, I should tell you what really happened. Please give me some time as I try to recollect and make sure I remember what actually happened. It's been so long..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy with something." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I'll have to go quite a while back. Kyrin's father is Testonen, a savior of Victoria who battled the Black Magician when Victoria and Ossyria broke into two separate lands." />
+            <string name="1" value="Once Victoria found some peace, he asked me to take care of his newborn kid Kyrin before he left to track the Black Magician once more. That's how she ended up growing up here in Henesys. She was full of courage like her father, and she was also very capable of inventing things. Some of her inventions did end up causing chaos in this town, though. Hahaha..." />
+            <string name="2" value="One day, during one of the meetings between town chiefs, she overheard what happened to her father, and disappeared all of a sudden. I went to Ossyria, Victoria, Maple Island, and everywhere else looking for her, only to find my search attempts futile. After all these years, I didn't think she'd come back to Victoria Island, all grown up." />
+            <imgdir name="yes">
+                <string name="0" value="I'd really love to see her once more. I am sorry, but can you help me facilitate this meeting between her and myself?" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2162" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

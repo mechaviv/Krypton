@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10500.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Sign of the Dragon Master's Return" />
+        <int name="area" value="50" />
+        <string name="0" value="If you're curious about #bDragon Master Evan#k, go see Cassandra in town." />
+        <string name="1" value="#bCassandra#k says that she has some information for you regarding Dragon Master Evan. Go see her now." />
+        <string name="2" value="You found out that the return of Dragon Master Evan is close at hand." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you heard about the #bDragon Master#k? No? Hehe, that's what I figured. If you're curious about #bDragon Master Evan#k, come talk to me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You do know where I am right? I can be found in any of the major towns in Maple World." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I called you so that I could give you info about the #bDragon Master#k and give you a gift as a bonus but you don't want it? You're going to regret it..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q10500s" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="200912170000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

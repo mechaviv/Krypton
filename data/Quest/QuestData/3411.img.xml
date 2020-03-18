@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3411.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chief Gray's Sign" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Gunny of Omega Sector." />
+        <string name="1" value="I met up with Gunny again at a field around Omega Sector. Lately Gunny has been on a mission to trace Chief Gray's every move, but due to the fact that he gets lost easily, he had been having trouble locating it. I'll need to defeat Chief Gray's for  Gunny and collect 5 signs that they wear with them, so I can give them to Gunny.\n\n#t4000125# #b#c4000125##k/5" />
+        <string name="2" value="I collected Chief Gray's signs and gave them to Gunny, who's at a field around Omega Sector. With this sign, Gunny may be able to have an easier time tracing Chief Gray." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="23000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000125" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020008" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, there? You look quite familiar... if I'm not mistaken, aren't you the one that showed me Dr. Kim's blueprint the other day? Am I right? Haha... no one can beat me in terms of remembering people. The problem is, I have really a hard time remembering DIRECTIONS, and thus, I get lost very easily..." />
+            <string name="1" value="Can you help me out? The mission that's given to me this time is to chase #b#o4240000##k, but even after knowing their current location, I keep getting lost trying to chase them down, making my mission nearly impossible to conquer. Please help me gather up #b5 #t4000125#s#k, which can be obtained by defeating #b#o4240000##k. Please help me." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I knew you'd have no trouble doing this. #b5 #t4000125#s#k, indeed. This will do just fine. For your hard work, I feel obligated to give you something nice. I got these from the Sector, and I'll give you some of them. Please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="How do you like the #b100 #t2020008#s#k? I better start chasing #o4240000# with the newly-received #b#t4000125##k, right now. These guys are difficult to find, and they seem to pop up everywhere, so this should be a life-saver for me. I gotta get to work now, so if you'll excuse me..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I'm beyond terrible at directions, and I need to get this mission completed, so please help me find #b#o4240000##k and collect #b5 #t4000125#s#k for me. I feel like with that, I'll be having a much easier time chasing them down. Thanks, and I'll be waiting for you here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000125" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3404" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="47" />
+        </imgdir>
+    </imgdir>
+</imgdir>

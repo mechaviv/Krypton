@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3402.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. Kim's Comments : A Meeting with Chury" />
+        <string name="parent" value="Dr. Kim's Comments" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I met Chury at the Silo of the Omega Sector and showed him the #bBlueprint Machine#k, which contains the blueprint of the new robot, that I got from Dr. Kim. Chury wanted to show this to Hoony, so he asked me if I could show the Blueprint Machine to Hoony, as well as provide him with #b20 Space Foods#k, for he had been away at the Field for a while. Space Food, huh... I think I can find them through Barnard Gray the alien. I'll run into on the way to the Field. \n\n#t4000117# #b#c4000117##k/20" />
+        <string name="2" value="I met up with Chury somewhere around the Omega Sector Silo. Chury wanted me to show the Blueprint Machine to Hoony, as well as give him some food. In turn, I gave Hoony some Space Food to last him a while, and showed him the Blueprint Machine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031100" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000117" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3403" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhh... this is just incredible! I can't believe he drew up a robot as technologically advanced as this! I knew he was incredible to begin with, but... wow!!! He's much more than I thought! Anyway, please take this #b#t4031100##k and show it to #b#p2050006##k, who should be at a field around Omega Sector. I bet you he'll be just as astounded looking at it as I am right now." />
+            <string name="1" value="Oh, and... #b#p2050006##k ... he's been out on a mission for a while now and I'm pretty sure he's run out of food as we speak. Please gather up #b20 #t4000117#s#k, which can be found through #b#o4230116##k the alien, and give them to him. Good luck!" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh... #b#t4000117##k!!! Great timing, because I've just ran out of food, and I'm still in the middle of a mission. Can you give me the #t4000117#s? I'll need to fill my belly up first before I check out the #b#t4031100##k or anything else for that matter." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please take the #b#t4031100##k that #b#p2050001##k gave you, along with the 20 #b#t4000117#s#k that can be found through #b#o4230116##k, and give them to #b#p2050006##k, who should be around a field in Omega Sector. He's probably crazy hungry right now, so please find him ASAP." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... are you sure you have #b20 #t4000117#s#k? Or is your etc. inventory full by any chance? Please check your item inventory one more time." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000117" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3401" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

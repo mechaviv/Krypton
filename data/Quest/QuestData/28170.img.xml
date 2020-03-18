@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28170.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What Does Chief Stan Like?" />
+        <string name="parent" value="What's going on in Henesys?" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012106:##k in #b#m100000000##k says she knows what #b#@1012003:##k likes." />
+        <string name="1" value="She says she'll make you something #b#@1012003:##k likes if you bring her the following materials.\n\n#r#t4001343:##k-5\n(#r#o1210101##ks drop them, so you can easily find them in #b#m100020000##k.)\n\n#r#t4001344:##k-2\n(#r#o1110101##ks drop them and they can be easily found in the #b#m100040000##k map.)\n\n#r#t4001345:##k-1\n(#r#o1210102##ks drop them.)\n\nReport back to #b#@1012106:##k in #b#m100000000##k upon completion." />
+        <string name="2" value="It's been said that #b#@1012003:##k in #b#m100000000##k greatly enjoys playing the guitar." />
+        <string name="demandSummary" value="#i4001343:# #t4001343:# #c4001343# / 5" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032480:# #t4032480:# #c4032480# 1&#xD;&#xA;&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001343" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001344" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001345" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032480" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="28170" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="When a person is upset, you can appease them by doing something you know they would appreciate.\n#b#p1012003##k is angry, you say?\nI know what he likes. Shall I tell you what it is?" />
+            <imgdir name="yes">
+                <string name="0" value="#b#p1012003##k has always loved music. And I'm talking about loud rock music!\n\nIf you bring me the following items, I'll make you something he will love.\n\n5 #rPig Veins#k\n2 #rDark Wooden Board#k\n1 pair of #rSunglasses#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm hurt... I can't believe you just declined without even thinking about it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you really brought back the materials I've asked for. I didn't think you'd be so quick!\nAnyway, I'll make you something amazing as promised." />
+            <imgdir name="yes">
+                <string name="0" value="Haha! Isn't this an amazing guitar? Take this guitar to #b#p1012003##k.\nHe'll be very happy!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need 5 #r#t4001343:##k, 2 #r#t4001344:##k, and 1 pair of #r#t4001345:##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001343" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001344" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001345" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28169" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

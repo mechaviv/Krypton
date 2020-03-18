@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10283.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Portrait of a Popular Monster: Octopus" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Every day, #b#p9010010##k will give you gifts if you bring her a Portrait of a Popular Monster." />
+        <string name="1" value="Collect a #t04032303# and complete a portrait of an #bOctopus#k." />
+        <string name="2" value="You brought a portrait of a popular monster to #b#p9010010##k." />
+        <string name="summary" value="Complete a portrait of an Octopus and bring it to #b#p9010010##k." />
+        <string name="demandSummary" value="#i4220149:# #t4220149:# #c4220149# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#v2022552:# #t2022552# 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220149" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm really worried. You see, I wanted to thank everyone who helped in celebrating MapleStory's 5th Anniversary, but I'm short-handed right now. Do you think you can help?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, #b#h0##k. All you have to do is to bring me a #t04220149:#. In order to draw the portrait, you have to collect an #t04032303:# and use it on a blank piece of drawing paper.\r\n" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine, suit yourself. You're going to regret not helping the beautiful #b#p9010010##k." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't seem to have a sheet of Magical Drawing Paper. Forfeit the quest and talk to me again, so I can give you a new sheet of Magical Drawing Paper." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="Hmm... I don't think you've completed the portrait. Please bring me a completed portrait. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <int name="infoNumber" value="10289" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="4000" />
+                </imgdir>
+                <imgdir name="1">
+                    <string name="value" value="4100" />
+                </imgdir>
+                <imgdir name="2">
+                    <string name="value" value="4200" />
+                </imgdir>
+                <imgdir name="3">
+                    <string name="value" value="4300" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220149" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10283e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q10283s" />
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="70" />
+            <string name="end" value="2010061600" />
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

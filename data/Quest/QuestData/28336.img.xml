@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28336.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lilin's Present 2" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You have reached Level 50 and #b#p9010000##k starts a conversation with you..." />
+        <string name="1" value="#p9010000# tells you since you have reached Level 50, you can receive a #bspecial gift#k from #p1201000#.\n\n#i1112414:# \n\nYou are told to go straight to #b#m140000000##k and meet #b#p1201000##k." />
+        <string name="2" value="Your received #t1112414# from #p1201000#. A special ring that can be worn by any character within the same account. It looks like an item that is not just for an Aran, but for any character." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1112414" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1112413" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there, #h0#. Congratulations on getting to Level 50! *Clap clap clap* I don't know if you are aware of this, but because reached Level 50, you are entitled to a #bspecial gift#k. It's a ring that I prepared with #p1201000#! Want to know what kind of ring it is?" />
+            <string name="1" value="#i1112414:# #t1112414#\n#t1112414# looks exactly like this! This item cannot be in traded with other users, but it can be transferred to your other characters within the SAME ACCOUNT, so #bany character in your account can wear this ring#k." />
+            <string name="2" value="Now you understand, right?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This event will be run through #bJune 9th of 2010#k, so I suggest you head over to #b#m140000000##k and meet #p1201000# before that! #p1201000# will be waiting for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you still confused about the event? Then talk to me, and I will explain it to you again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome, Aran. I'm sure you've already heard, but I have a present for you that I prepared with #p9010000#. It's this ring." />
+            <imgdir name="yes">
+                <string name="0" value="I made it because it just makes me happy to watch you grow stronger by the day. Now, keep training!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see #p1201000# yet? #b#p1201000##k is anxiously waiting for you in #b#m140000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1112413" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28335" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <string name="end" value="2010061000" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

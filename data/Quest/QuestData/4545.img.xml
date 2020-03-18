@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4545.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Poor Blondie" />
+        <string name="parent" value="Chee Wee's Worries" />
+        <int name="order" value="1" />
+        <int name="area" value="49" />
+        <string name="0" value="Blondie, the poor blonde Kitty has lost her fur due to the hot weather. There must be something that can be done for this poor little thing... " />
+        <string name="1" value="#b#p9270060##k needs #b100 #t4000467#s#k to cover up Blondie. \n\n#o9420529# #r#a45451##k \n#t4000467# #r#c4000467#/100#k " />
+        <string name="2" value="Blondie is now more precious than ever covered up with golden hair, and you have never seen #b#p9270060##k happier for his kitty." />
+        <string name="demandSummary" value="#i4000467:# #t4000467:# #c4000467# / 100\r\n#o9420529# #a45451#" />
+        <string name="rewardSummary" value="Exp 15,000&#xD;&#xA;Able to proceed to 'Running out of Wigs!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000467" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My poor Blondie. She lost a lot of hair due to the bad weather these days. My Blondie won't be blonde anymore without that golden hair she was so proud of. I'd better get some wigs to cover her up if that's the least I can do..." />
+            <string name="1" value="I heard that #b#o9420529##k has the finest golden hair, which is perfect for Blondie. But I don't want to leave poor Blondie all by herself... Could you help me elminate #b150 #o9420529#s#k and bring back #b100 #t4000467#s#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Can you hurry up a bit? My poor Blondie is so embarrassed that she doesn't even come out of her house." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Nooo... Even you won't help me. What's left for me to do with my poor Blondie...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Why, thank you! You have no idea how my Blondie is embarrassed without her blonde hair. Poor thing..." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to you, my Blondie will not be bald anymore. After all, Blondie won't be Blondie if not for blonde hair...Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have enough #b#t4000467##k yet..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Well, you haven't collected enough #b#o9420529##k... Is this your first time hunting #b#o9420529##k? Well, don't be so afraid of them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270060" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000467" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420529" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270060" />
+            <int name="lvmin" value="57" />
+        </imgdir>
+    </imgdir>
+</imgdir>

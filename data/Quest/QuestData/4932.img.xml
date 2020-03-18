@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4932.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grendel The Really Old's Glorious Days" />
+        <int name="area" value="30" />
+        <string name="0" value="Grendel The Really Old... He lives deep in the forest of Ellinia. Since he's really old, he has to know SOMETHING about Bob. I shall see him now." />
+        <string name="1" value="Grendel The Really Old was talking out of himself but I got to make him hear what I had to say. He is getting glasses. I hope his eyesight isn't too bad to recognize Bob... After all, Grendel is probably the oldest guy in this world." />
+        <string name="2" value="Grendel The Really Old got very mad at me for hitting Bob to make him go into his shell. I knew he would know something but never would have guessed they were old friends. I guess I owe Bob a big apology. But how am I going to be able to do that to a snail, especially if he's not coming out from his shell?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+            <int name="pop" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You look like a perfect fit for a magician. Are you interested in becoming a magician?\r\n\r\n#L0##bOh, you must have confused me with someone. Today, I am here to ask you some questions.#k#l\r\n#L1##bNot really.#k#l" />
+            <string name="1" value="Questions? What questions do you have?\r\n\r\n#L0##bI have a question about this one. (Shows Bob's Snail Shell)#k#l\r\n#L1##bWhy do you always fly?#k#l\r\n#L2##bDo you like heights?#k#l" />
+            <string name="2" value="Sure, I'd be glad to look at. *wrinkles on his forehead folds*" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I see. Being magician is not for everyone. It's a pure privilege to... blah blah blah blah..." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Because I can. Floating is just as easy to do as standing if you once get to know how. Don't try this at home though. At least not until you are as old as I am." />
+                    <string name="2" value="I get that question a lot since I am living at the top of trees. In my opinion, all magicians should not be afraid of heights. Magicians always can get back up there with no time unlike others." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Let me see... I should get my glasses first. Give me a second." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh ok. If you don't want me to, I won't." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Isn't this! Bob? Bob! Are you ok?\r\n\r\n#L0##bBob is doing fine. He's just inside his shell.#k#l" />
+            <string name="1" value="Don't you say that! You hurt him, didn't you? I can see he got new scratches all over on him. It's not fatal but...\r\n\r\n#L0##bI did have to hit him a few times to make him go into his shell. If I only knew Bob Snale was indeed a snail, I might have done things differently.#k#l" />
+            <string name="2" value="I forgive you. We always hunt monsters for money, for clothing, for strength, all for the survival in this world. I wouldn't be surprise if you have mistaken Bob as ordinary snails. Poor animal...\r\n\r\n#L0##bSo what's up with Bob? What do you know about him?#k#l" />
+            <string name="3" value="Bob is one of my oldest and dearest friends. I've seen him since I was little child so he is probably just as old as I am. We talked a lot. Subjects of those chats were mostly about this universe and our purpose of life. We've shared a great deal of thoughts until one day; he decided to pursue ascetic life with solitude. It's been a while since then. I didn't know I would see him like this though.\r\n\r\n#L0##bAh... I see. I was wondering, if by any chance, would you know how I could talk him to come out from his shell?#k#l" />
+            <string name="4" value="I don't know. I would think Bob is very mad at you at this moment. Maybe you can ease his mind if you comfort him somehow. I wouldn't really know how to about that though." />
+            <imgdir name="yes">
+                <string name="0" value="I wish you good luck. When he does get out, tell him my regards!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What am I suppose to look? Can you tell me again?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4928" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The End of Knight-in-Training" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="After reaching Level 30, #p1101002# wanted to talk to you about something..." />
+        <string name="1" value="#p1101002# stated that since your level is significantly high and that you are well-versed in the duties and assignments of a Knight, he suggested that it's time for you to remove the in-Training by taking the #bKnighthood Exam#k. To become a Knight on the next level, you better head over to Ereve." />
+        <string name="2" value="#p1101002# stated that since your level is significantly high and that you are well-versed in the duties and assignments of a Knight, he suggested that it's time for you to remove the in-Training by taking the #bKnighthood Exam#k. To become a Knight on the next level, you better head over to Ereve." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#h0#? Wow, your level has skyrocketed since the last time I saw you. You also look like you've taken care of a number of missions as well... you seem much more ready to move on now than the last time I saw you. What do you think? Are you interested in taking the #bKnighthood Exam#k? It's time for you to grow out of the Knight-in-training and become a bonafide Knight, right?" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="If you wish to take the Knighthood Exam, please come to Ereve. Each Chief Knight will test your abilities, and if you meet their standards, then you will officially become a Knight." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <string name="startscript" value="q20200s" />
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1200" />
+                <int name="2" value="1300" />
+                <int name="3" value="1400" />
+                <int name="4" value="1500" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

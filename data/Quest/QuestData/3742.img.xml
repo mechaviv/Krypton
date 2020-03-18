@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3742.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nex the Time Guard" />
+        <string name="parent" value="Year 2230- Imminent Collapse!" />
+        <int name="order" value="1" />
+        <int name="area" value="41" />
+        <string name="0" value="Andy the Time Traveler says he has something to tell you before your fifth time travel." />
+        <string name="1" value="Andy the Time Traveler has informed you that you must pass the test Nex the Gatekeeper of Time, who lives in the Old Tree of Tera, gives you before embarking on your fifth time travel. Enter the Old Tree of Tera and pass Nex's test." />
+        <string name="2" value="You have passed the fifth test given by Nex the Gatekeeper of Time and earned the right to travel to another time. You can now teleport to the dangerous towers of the year 2230. Go to the Time Gate with the Time Traveler's Pocket Watch." />
+        <string name="demandSummary" value="#o8120101# #a37421#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 140,000\r\nCan participate in &quot;The New and Improved, Oberon&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="140000" />
+            <int name="nextQuest" value="3743" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Before your fifth time travel, you must pass Nex's test again. I know I keep saying this, but trust me, Nex will be even stronger this time around!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="When you defeat Nex, the Time Gate to the year 2230 will open." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You won't be authorized to travel time until you defeat Nex the Gatekeeper of Time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've passed Nex's fifth test. Now then, you should be able to access the Time Gate to the year 2230." />
+            <imgdir name="yes">
+                <string name="0" value="Take the Time Traveler's Pocket Watch and go through the Time Gate." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Come back after you've passed Nex's test. Nex the Gatekeeper of Time lives inside the Old Tree of Tera." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8120101" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3737" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3738" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3739" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3740" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

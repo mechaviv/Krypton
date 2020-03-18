@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21701.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Train or Die! 1" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You certainly have doubts, but you'll give #b#p1202006##k the benefit of the doubt and receive some training from him." />
+        <string name="1" value="According to #p1202006#, the first training lesson involves eliminating #r#o9300341#s#k. He makes it seem like it's some huge hurdle but they don't sound too difficult.\r\n\r\n#o9300341##r #a217011##k" />
+        <string name="2" value="You eliminated the #o9300341#s with ease. Judging from how enthusiastic #p1202006# reacted, you are even less inclined to trust him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1400" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000023" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have been studying the historical records on the heroes of #m140000000#, and I focused particularly on their skills. I made sure not to leave anything out when studying the skills. In the end, I came to the conclusion that when the heroes were still beginners, they trained by battling against the #o0210100#s!" />
+            <string name="1" value="#o0210100#s! Those are the devastating, transparent monsters that are made of that sticky liquid! Piercing that body with the polearm may be a difficult task, akin to breaking an egg with a rock… Wait, was it the other way around? Striking a rock with a cucumber? A chicken eating a boulder?" />
+            <string name="2" value="Hmmm hmm! Anyway, I do believe #o0210100#s are pivotal to your training as you work towards regaining your heroic form! Eliminating #o0210100#s will do wonders for you! Now, go ahead and take on #r30 #o0210100#s#k!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#m140000000# might be too cold for #o0210100#s to live, but do not worry! This is why I've been raising a bunch of #o9300341#s nearby! Now, go ahead and #btake the portal here that leads to the training ground#k, where the #o9300341#s await you!" />
+                <string name="1" value="Seriously, no one can match me in my keen ability to anticipate the future!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No? Why? Battling #o0210100#s is a certified method of training for heroes! I mean, you went through the same thing hundreds of years ago!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhhh! You managed to defeat 30 #o9300341#s! You are indeed a hero! The immortal hero that weathered the storm and came back! Of course, I didn't mean immortal in the literal sense. I hope you don't literally take that to heart and risk erecting a big tombstone." />
+            <imgdir name="yes">
+                <string name="0" value="In any case, amazing work! You have taken your first step towards reclaiming your hero status! Talk to me when you're ready to take on the next challenge." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Are you having a hard time defeating #r30 #o9300341#s#k?! I see…indeed, training for heroes is not so easy…but please don't give up. Return to the training ground immediately!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300341" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21700" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

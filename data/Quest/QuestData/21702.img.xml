@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21702.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Train or Die! 2" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You still don't trust this #b#p1202006##k, but you might as well receive some training from him." />
+        <string name="1" value="According to #p1202006#, the second lesson involves eliminating #r#o9300342#s#k. Again, he still makes it sound like it's some huge hurdle, but again, they don't sound very tough.\r\n\r\n#o9300342##r #a217021##k" />
+        <string name="2" value="You defeated the #o9300342#s with ease! #p1202006# may be giving you words of encouragement, but his words are worth very little." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000023" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Training is a never-ending stream of obstacles, and only after overcoming that will you be able to realize your true powers, like you did in the past! Anyway, here's the second challenge. Your targets this time...are the #o1210102#s!" />
+            <string name="1" value="#o1210102#s! Those monsters wear a peaceful expression and sport their signature orange cap…but did you know that #o1210102#s have been sneakily spreading their influence throughout Maple World! And that's how the #o1210102#s took control of #m100000000#!" />
+            <string name="2" value="Before anyone even realized it, the #o1210102#s have managed to completely take over the town! Even the chief of the town didn't notice that he had been replaced by the #o1210102#s! Your task now is to take on these monsters and defeat #r30 #o1210102#s#k!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I knew a true hero like you would be courageous enough to face such daunting monsters! This is why I've been raising #o9300342#s here, knowing that you'd be here someday! #bReturn to the training ground#k, where the #o9300342#s await you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No…? Are you being influenced by the forces of the #o1210102#s, too? Please rethink your decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Amazing…you were able to defeat 30 #o9300342#s. Now that's what you'd call a heroic performance! I see that you have the steely resolve not to be swayed by the #o1210102#s' cuteness and defeated them with your polearm!" />
+            <imgdir name="yes">
+                <string name="0" value="Now let me know when you're ready to take on the next challenge!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Are you struggling to defeat #r30 #o9300342#s#k? You should never, ever fall for their cute appearances! #o1210102#s are the arch-enemies of the heroes! Return to the training ground immediately and defeat the #o9300342#s!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300342" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21701" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

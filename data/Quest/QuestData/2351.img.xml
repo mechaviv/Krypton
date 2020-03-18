@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2351.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="First Mission: Infiltration" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="You received another letter from the unidentified man who previously sent you a letter by an owl at Maple Island." />
+        <string name="1" value="The man, who remains unidentified, declares that the Dark Lord is not the true master of Kerning City and that the Dual Blades will soon reclaim their rightful position of power. To that end, he assigned you the mission of infiltrating the Dark Lord's organization in order to identify his movements. \r\n#eYour mission is to infiltrate the Dark Lord's organization by making the first job advancement as a #bRogue#k!#n\r\n\r\n#bAfter meeting with the Dark Lord and advancing as a Rogue, you are called to find him in Kerning City." />
+        <string name="2" value="The man, who remains unidentified, declared that the Dark Lord is not the true master of Kerning City and that the Dual Blades will soon reclaim their rightful position of power. To that end, he assigned you the mission of infiltrating the Dark Lord's organization in order to identify his movements. \r\n#eYour mission was to infiltrate the Dark Lord's organization by making the first job advancement as a #bRogue#k!#n\r\n\r\n#bAfter seeing the Dark Lord and advancing as a Rogue, you met with #b#eRyden#n#k, the sender of the letter." />
+        <string name="demandSummary" value="Make a job advancement as a #bRogue#k." />
+        <string name="rewardSummary" value="EXP 500\r\n#Wbasic#\r\n#i1032076:# #t1032076:# 1 \r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032076" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#bReceiver: #h0#\r\nSender: ...#k\r\n\r\nDo you wish to open the letter?" />
+            <string name="1" value="#b- To #h0# -\r\n#h0#... We've been watching your development. Although you still seem a bit raw, our organization has decided to give you a chance. \r\nHere's your first mission. In Victoria Island, there are four large towns: Henesys, Ellinia, Perion, and Kerning City... Kerning City is a thief town that has been under the control of someone called the [Dark Lord] for generations. However..." />
+            <string name="2" value="#bThe current Dark Lord is not fit for his position as the master of Kerning City. Our mission is to assist the true master, #eLady Syl#n, to take her rightful place. For quite some time now, the Dual Blades have been gathering information that will help in the fight against the Dark Lord and his minions. Your first mission is to infiltrate the Dark Lord's organization and obtain information about them. It is a difficult and dangerous mission, but it will prove to us your true abilities.  " />
+            <string name="3" value="The #bDark Lord #k accepts anyone who is #bLv. 10#k as his disciple, so infiltrating the organization should be easy as long as you don't act foolish. When you reach #k#eLv. 10, make a Job Advancement as a Rogue and come see me.#n I will give your next order at that time. \r\n\r\n#b- From Your Secret Watchman. -#k" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#bP.S - I'm in Kerning City. Much closer to you than you would've guessed...#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You placed the letter in your pockets." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have been successful. The plan went smoother than I expected. But hmm... It looks like he didn't teach you all of the skills. I guess the Dark Lord is smarter than I thought... " />
+            <string name="1" value="But we'll just let it be. After all, the goal was for you to advance, and that you did even while being under his suspicious glare. Let me reward you for successfully completing your first mission." />
+            <imgdir name="yes">
+                <string name="0" value="The real mission starts now. You are to act as a Rogue and collect information about the Dark Lord and other thieves. When the time comes, Lady Syl will call for you. Until then, you must be sure to hide your true identity and act like a Rogue. Is that clear?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Ahh... #h0#, you found me. Now, you haven't forgotten what your mission is, right? In order to get close to the Dark Lord, you have to become his subordinate. Act like a casual beginner and request an advancement as a Rogue. Camouflage is the first step in infiltration. Understood?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <int name="infoNumber" value="7635" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2350" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="9" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+                <int name="1" value="400" />
+                <int name="2" value="410" />
+                <int name="3" value="420" />
+                <int name="4" value="430" />
+                <int name="5" value="411" />
+                <int name="6" value="421" />
+                <int name="7" value="431" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="432" />
+                <int name="11" value="433" />
+                <int name="12" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

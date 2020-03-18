@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10580.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Attracting Tourists to the Golden Temple" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p9010010# is talking to you. What kind of event could be planned this time? Respond to #p9010010#. " />
+        <string name="1" value="There's a new attraction called the #b#m950100000##k in Maple World. It's a small village, but it has its own boss monster and other unique monsters. If you go now, #b#p9000078##k, the PR Manager, will give you a #t4001431# that will allow you to use the mini dungeons located near the temple. Head over to the #m950100000# through the #bDimensional Mirror#k." />
+        <string name="2" value="You received a #t4001431# from PR Manager #p9000078#. You can use it to enter any mini dungeons near the town once. If you want to use the mini dungeons again, you can purchase a Premium Golden Ticket or obtain ticket pieces dropped by monsters." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001431" />
+                    <int name="count" value="1" />
+                    <int name="period" value="180" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you ever heard of a place called the #b#m950100000##k? It's a small village located deep inside a tropical rain forest. Visitors were previously prohibited so it remained largely unknown. But for some reason, they decided to open the village to visitors. I'm not sure everyone agreed with that decision, though. " />
+            <string name="1" value="It's a place that has maintained its own unique culture and history without any disturbance from the outside world. Aren't you curious as to what it's like? It's been said that it features its own boss monster and other unique monsters. Sounds like it'd be a great experience. What do you think about making a visit?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can get to the #m950100000# by going through the #bDimensional Mirror#k. In order to publicize their village and attract new visitors, they are giving out free Golden Tickets that will allow you enter the mini dungeons near the village. Be sure to ask #b#p9000078##k the PR Manager about it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm...not even a little bit curious? I, #p9010010#, would definitely make a trip there myself, if there weren't so many people that needed me here!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome to the #m950100000#! Please come this way! Thank you for traveling so far! I hope you make several lasting memories here in the #m950100000#! ...Oh? A #t4001431#? Yes, of course! I haven't forgotten." />
+            <imgdir name="yes">
+                <string name="0" value="Here is the #b#t4001431##k that will allow you enter any #bmini dungeon#k nearby! However, it will only allow you to enter just once." />
+                <string name="1" value="If you want to enter the mini dungeons again in the future, you can do so through several different ways. \n\n1. Purchase a Premium Golden Ticket.\n2. Hunt the monsters in Maple World to obtain a Golden Ticket.\n3. Obtain a Golden Ticket by completing a quest that is given out once a day.\n\nIt doesn't matter which method you choose." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to #b#m950100000##k yet? You can get there by using the #bDimensional Mirror#k located in town. Be sure to meet #b#p9000078##k the PR Manager!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000078" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="15" />
+            <string name="end" value="201007140000" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

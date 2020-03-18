@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2210.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Take the Gold Pouch to Muirhat" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder what it is that Bartol wants me to do?" />
+        <string name="1" value="I should bring the #bGold Pouch#k to #bMuirhat#k as Bartol asked me to. Muirhat is standing #bin front of the Control Room on the upper deck#k. " />
+        <string name="2" value="I've delivered the Gold Pouch to Muirhat." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031891" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031891" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="First, give this Gold Pouch to Muirhat." />
+            <imgdir name="yes">
+                <string name="0" value="This Gold Pouch is from the box that Muirhat asked me to open a week ago, and... I totally forgot about it, hahaha! Muirhat is #bin front of the Navigation Room at the upper hallways of The Nautilus#k. He's always there..." />
+                <string name="1" value="Do the three favors I asked you to do, and you'll get the Warp Card. Keep going!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't feel like doing it anymore?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh, this is a Gold Pouch with a lot of gold! Did Bartol tell you to give this to me?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahhh, so this is from the box I asked him to look at a week ago. Tell Bartol I said thanks!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please give Muirhat the Gold Pouch." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Can I helpyou with something?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost it, right? I picked it up right after you left it. Seriously, take care of these things! It's really an expensive item you know. Give this to Muirhat." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031891" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2208" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="200801010000" />
+            <string name="end" value="200801020000" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

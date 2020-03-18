@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3761.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tears of Repentance" />
+        <int name="area" value="41" />
+        <string name="0" value="The identity of the Dragon Rider has been revealed. Talk to #b#p2085003##k who seems to have something to say." />
+        <string name="1" value="That such a horrible thing could happen to one of the Halflingers... You kind of feel sorry for #p2085003#. Go to #bChief Tatamo#k and tell him his story." />
+        <string name="2" value="You protected Leafre, though now that you know the whole story, you're not entirely sure the townspeople deserved it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ugh, adventurer... Please... Hear me out...\r\n#L0##bWhat? How are you alive?!#l\n#k" />
+            <string name="1" value="Actually... I'm a Halflinger that was born in Leafre. Leafre was a peaceful town with a rich soil and lush trees before I was born...\r\n#L0##bNo kidding! At least, it was until you rode around on your fancy dragon and destroyed it all!#l\n#k" />
+            <string name="2" value="Truth is, I wasn't always like this. It's just that, when I was born, strange things started to happen in our peaceful little town, and everyone blamed me, saying I was born with cursed blood! It got so bad that I left town in a fury, vowing to get revenge.\r\n#L0##bYes, getting teased as a kid justifies destroying an entire town... You kind of overreacted, don't you think?#l\n#k" />
+            <string name="3" value="Argh, your words are like a slap to the face, adventurer. Yes, I know now that I was wrong! It was foolish to take revenge on my own people... Will you please tell the Halflingers that I deeply regret my actions?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I will now exile myself and live out the rest of my days quietly in remorse. Please return to Leafre and tell my story to Chief Tatamo." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Adventurer... Please..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you finally discovered the Dragon Rider's identity?\r\n#L0##bYes, the Dragon Rider was actually a Halflinger who was kicked out of Leafre.#l\n#k" />
+            <string name="1" value="Kicked out? Then, could he be... Oh no. The child who was born with cursed blood?\r\n#L0##bYup, that's the guy. You guys blamed him when he hadn't done anything wrong, so he responded with vengeance. You kind of brought it on yourself, if you ask me.#l\n#k" />
+            <string name="2" value="I understand. You're right. It... It was my ignorance that caused this horrible situation... I will have to think deeply upon this. Thank you." />
+            <imgdir name="yes">
+                <string name="0" value="#h0#. I will never forget what you did for us." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please tell my story to Chief Tatamo." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2085003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3759" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

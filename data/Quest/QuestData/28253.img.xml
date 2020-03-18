@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28253.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where Are the Treasures?" />
+        <string name="parent" value="The Completed Treasure Map" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012003:##k in #bHenesys#k says it is necessary that you look into the emblem on the #rOld Worn-out Paper#k. Let's talk to him." />
+        <string name="1" value="He tells you to find #b#@1072008:##k in #bNautilus#k in order to further investigate the emblem on the #rOld Worn-out Paper#k." />
+        <string name="2" value="#b#@1072008:##k in #bNautilus#k says the emblem signifies a demon. Let's talk to her." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'There Are No Treasures?!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Something is strange about the drawing on this #rOld Worn-Out Paper#k.\nI feel something evil emanating from the emblem.\n\nI think you should check with the person who gave you this map." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Did #b#p1072008##k in #bNautilus#k give this to you?\nThen that's not too far from here. Rush over and talk to her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did you forget who gave you this?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It's been a long time since I last saw you. I can see that you've grown.\nHaha, well done! I see great potential in you!\n\n" />
+            <string name="1" value="So, did you solve the mysteries behind the Treasure Map I gave you? I'm curious to see what you found out about it." />
+            <imgdir name="yes">
+                <string name="0" value="So it was only this #rOld Worn-Out Paper#k and #rOld Key#k?\nLet me take a good look at it...\n\nMmm?\n\nOh wait, this emblem on the paper is...!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1072008##k is in #bNautilus#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28252" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

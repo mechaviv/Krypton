@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6102.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Bowman's Ultimate Skill" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value="While studying the book, Athena remarked that she's heard about the Bowman's Ultimate Skill but has never seen one of these books before. She told me that if one masters this skill, they might even surpass her in level.  To discover more, she told me to go see #bRene#k...\n\n#t4161025#  #b#c4161025# / 1#k for more information. This is shaping up to be quite a journey..." />
+        <string name="2" value="I traveled to the frozen fields of El Nath and gave the book to Rene. She was intrigued by the book as well, and wants to study it a bit more before she tells me more information. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161025" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161025" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I heard about #bThe Bowman's Ultimate Skill#k and this legendary #btraining place#k long time ago. This is my first time to read a book with such information. Amazing... The book really exists! &quot;The Bowman's Ultimate Skill&quot; might not be just a legend after all..." />
+            <string name="1" value=" I won't ask you where you get it from. But you have this book, so that means you are meant to be the #bNew Master of the Skill#k." />
+            <string name="2" value=" I don't remember much about the training place or how to perform the skill. I suggest that you see the senior #p2020010##k of #b#m211000000##k. She is one of the best Bowman in the Maple World. She may have more information for you. Maybe it'll come back to me at some point..." />
+            <imgdir name="yes">
+                <string name="0" value=" I hope you get this skill. If you can become the Ultimate Bowman, your skills may even exceed that of #b#p1012100##k. I'm looking forward to your progress!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Interesting...I thought you wanted attain the highest skill level a Bowman can hope for. I suppose I was mistaken..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Seeing that you come to see #p2020010#, you are definitely a Bowman. What can I do for you?" />
+            <imgdir name="yes">
+                <string name="0" value=" I've never seen this this. Let me have a look." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met #p2020010# yet. Is there anything else that I can help you with? If not, please get some advice from #b#p2020010##k first. " />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" You look like a strong Bowman. What brought you here?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" You lost the book? Fortunately, somebody brought it back. Be more careful." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161025" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6101" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28248.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Calming the Soul with Music" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="6" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022007:##k in #bPerion#k says the map is cursed with the blood of an animal, so you must calm the soul of the animal. Let's talk to her." />
+        <string name="1" value="#b#@1022007:##k in #bPerion#k says you must have music to calm the soul.\nShe has asked you to bring back the following items.\n\n#rLong Strong Stick#k(a drop item from #rStumps#k.)\n#rSmall Snail Shell#k(a drop item from #rRed Snails#k.)\n#rPiece of White Pants#k(a drop item from #rDark Stumps#k that can be easily found in #b#m102020100##k.)\n\nReport back to #b#@1022007:##k in #bPerion#k when you finish collecting all the items." />
+        <string name="2" value="#b#@1022007:##k in #bPerion#k says #b#@1052001:##k in #bKerning City#k will be able to solve the last mystery. But first, let's talk to #b#@1022007:##k." />
+        <string name="demandSummary" value="#i4001358:# #t4001358:# #c4001358# / 5&#xD;&#xA;#i4001359:# #t4001359:# #c4001359# / 2&#xD;&#xA;#i4001360:# #t4001360:# #c4001360# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032488:# #t4032488:# #c4032488# 1&#xD;&#xA;Able to proceed to 'To Kerning City' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001358" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001359" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001360" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032488" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've carefully inspected this map, and I found that the red on this map has been cursed with the blood of an animal. In order for you to completely remove the red, you must tame the souls of animals." />
+            <string name="1" value="In order to do so, we need music...we need a microphone that will produce a special sound, and I can make it for you if you bring me a few materials. Will you find me what I need?" />
+            <imgdir name="yes">
+                <string name="0" value="I need the following 3 items: 5 #rLong Strong Sticks#k (a drop item from #rStumps#k), 2 #rSmall Snail Shells#k(a drop item from #rRed Snails#k), and 1 #rPiece of White Pants#k (a drop item from #rDark Stumps#k)." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I know it wasn't easy for you to collect these items, but you did a fine job.\n\nFor your hard work, I will make you something special." />
+            <imgdir name="yes">
+                <string name="0" value="This #rAyan Mercury's Microphone#k can deliver the soul of the singer.\nIf you sing into the Map, deep inside your soul will reach out and release the curse." />
+                <string name="1" value="Then the red part will naturally fade away.\n\nCome see me when you release the curse." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me 5 #rLong Strong Sticks#k, 2 #rSmall Snail Shells#k, and 1 #rpiece of White Pants#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001358" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001359" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001360" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28247" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

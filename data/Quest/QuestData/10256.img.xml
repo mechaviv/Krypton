@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10256.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="촌장 타타모의 봄꽃연구3" />
+        <int name="area" value="50" />
+        <string name="0" value="메이플월드에 더 많은 봄꽃을 피우기 위한 연구가 곳곳에서 일어나고 있다. 봄꽃 아가씨 카산드라를 찾아가보자." />
+        <string name="1" value="메이플월드에 더 많은 봄꽃이 피어날 수 있도록 도와주자." />
+        <string name="2" value="봄꽃연구를 도와주어 메이플월드에 더 많은 봄꽃이 피어날 수 있게 되었다." />
+        <string name="summary" value="리프레에 있는 촌장 타타모에게 토끼풀꽃 3송이를 전달해주자." />
+        <string name="demandSummary" value="#i2022528:# #t2022528:# #c2022528# / 3&#xD;&#xA;" />
+        <string name="rewardSummary" value="#Wbasic#&#xD;&#xA;#i1012140:# #t1012140:# 1 개&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022528" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1012140" />
+                    <int name="count" value="1" />
+                    <int name="period" value="4320" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="메이플월드에 더 많은 봄꽃을 피우려고 곳곳에서 봄꽃연구를 하고 있다는 거 아니? 네가 가진 봄꽃이 많은 도움이 될 거 같은데?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b리프레에 있는 촌장 타타모#k에게 #b토끼풀꽃 3송이#k를 전달해 준다면 아마 메이플월드의 봄꽃연구에 많은 도움이 될 거야~ 지금 바로 가져다줬으면 좋겠어." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="봄꽃이 시들어 버릴 텐데..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="메이플월드에 봄이 찾아왔군. 봄햇살이 눈부시지 않은가? 봄꽃연구가 한창중인데 나에게 봄꽃을 줄텐가? 어디보자~ 이정도면 연구에 도움이 되겠군." />
+            <imgdir name="yes">
+                <string name="0" value="도와줘서 고맙네. 허허허. 앞으로도 자주 찾아와주면 좋겠군. 왠지 자네에게는 따스한 냄새가 나는 것 같아." />
+                <string name="1" value="토끼풀은 ‘행운'을 상징한다네~ 언제나 행운이 따르길 빌겠네. #b토끼풀 스티커#k가 자네에게 행운을 줄꺼네.&#xD;&#xA;" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="아직 타타모촌장님에게 안 간 건가? 봄꽃을 전달해 줘야 한다니까." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="봄꽃을 가져다 주게나." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022528" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10256e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022528" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="lvmax" value="200" />
+            <string name="start" value="2009021900" />
+            <string name="end" value="2009032600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

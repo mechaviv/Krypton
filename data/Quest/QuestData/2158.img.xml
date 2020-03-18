@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2158.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping Riel" />
+        <int name="area" value="30" />
+        <string name="0" value="Riel, Rael and Roel starts betting on who will be offered to King Clang. The winner gets to be the sacrifice! How can I help these girls get to their senses? Let's first meet with #bRiel#k." />
+        <string name="1" value="Riel secretly asks to help her win the bet. Her deal is to defeat #r50 King Clangs#k. How do I get myself into these situations? I'd better help her with this, and then talk about how ridiculous this bet is.\n\n#o4230104# #r#a21581##k" />
+        <string name="2" value="Defeated all King Clangs for Riel." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm. Adventurer, will you please come here? (Whispering)" />
+            <string name="1" value="We've started a bet on who will become the offering to King Clang. At least we did start... But plans aren't going as we thought it would. Oh my gosh...we need to defeat all those #rKing Clangs#k crawling on the beach. " />
+            <string name="2" value="Of course, this is the kind of challenge for a winner to surpass. Still,  I'm too scared! I'd finish soon with the help from a strong and heroic adventurer like you! Will you please help me? Of course, this is between you and me. " />
+            <imgdir name="yes">
+                <string name="0" value="Ha! I knew you'd help me. Please take out #r50#k #rKing Clangs#k for me. That will definitely show Rael and Roel who should be the sacrifice!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You mean you can't help me? ...NOO...! How can you not? Someone beautiful and graceful like me, cannot stand up to an ugly King Clang! You must help me!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh goody! I knew you'd help me! That was fast! You truly are my hero! You're the bravest adventurer I've ever met~" />
+            <imgdir name="yes">
+                <string name="0" value="Huh? You want me to call this bet off? You don't seem to understand a girl's wish. A maiden is the most beautiful when she is in distress. I've dreamed of this role for as long as I can remember. I will never give up... I am already the winner! I know it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r50 King Clangs#k yet? I thought it wouldn't be so hard for someone like you to do the job. Try a little harder, please. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230104" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2157" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

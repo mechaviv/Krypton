@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2009.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pia and the Blue Mushroom" />
+        <int name="area" value="30" />
+        <string name="0" value="Find Pia in Henesys." />
+        <string name="1" value="Under the watchtower at Henesys Park, you see Pia, who's wearing a teddy bear costume. How cute. She tells you that she ran into a bully Blue Mushroom on her way to Ellinia and now she wants you to show the mushrooms who's boss! So collect #b40 blue mushroom caps and 40 green mushroom caps#k as proof. But, er, isn't she just asking to be teased, walking through the forest in a costume like that?" />
+        <string name="2" value="You delivered #b40 blue mushroom caps and 40 green mushroom caps#k to Pia in Henesys Park. She was thrilled that she got vengeance on the mushrooms and gave you a scroll for defense. All you have to do is click on it in the Use tab of your Item Inventory and drag it to your helmet in the Equipment window...but what if the scroll fails?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040000" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="-40" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000009" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="*Sigh* A few days ago, on the way to see a friend in #m101000000#, I ran into a #o2220100# and had the most miserable time! That blue mushroom wouldn't have stood a chance have stood a chance against me! If I were stronger, that is... *Sigh*" />
+            <string name="1" value="But heeeey, you look pretty strong. How about you take care of those bullies for me? Bring me #b#e40#n#k #b#t4000009#s#k and #b#e40#n#k #b#t4000012#s#k as proof, and I'll give you something...hmm, something really sweeeeet! Yeah!" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="HEY! In your hand...! Those are the #b#t4000009#s#k and #b#t4000012#s#k I asked for? You got so many! Thank you! I feel soo much better. Muahaha, take that, mushrooms. Right back at ya, punks!" />
+            <string name="1" value="Oh yeah. This isn't much, but take it. Great work!" />
+            <imgdir name="yes">
+                <string name="0" value="This scroll... I believe it can strengthen your helmet. It's easy to use, too. Just open the Use tab of your Item Inventory and open your Equipment Inventory at the same time, then drag the scroll onto your helmet. There's a chance the scroll will fail, but there's not much we can do about that..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Gather #b#e40#n #t4000009#s#k and #b#e40#n #t4000012#s#k and I'll give you something nice in return. Yeah, something really amazing." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012102" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000009" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012102" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

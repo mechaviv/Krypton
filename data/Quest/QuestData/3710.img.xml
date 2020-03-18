@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3710.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Getting Advice from Grendel the Really Old 2" />
+        <string name="parent" value="The Sacred Barrier of the Forest" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="The grand magician of #m101000000#, #p1032001# , gave me a letter with the solution to take back to #b#p2081000##k and also told me to gather materials to strengthen the forest's barrier .\n\n#i4000232##t4000232#  #b#c4000232##k / 5\n#i4000233##t4000233#  #b#c4000233##k / 5\n#i4000234##t4000234#  #b#c4000234##k / 5\n\n#i4031410##t4031410#  #b#c4031410##k / 1" />
+        <string name="2" value=" As requested by #p1032001#, I gathered up 5 each of #t4000232#, #t4000233#, and #t4000234#, along with #t4031410#, and took it to Tatamo." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031410" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000232" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000233" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000234" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031410" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, I found it! It seems like the reason the tree has turned red is because the protective force that covers the forest, the barrier of the forest, might have been weakened. I don't know what caused this, but right now, we need the spell that temporarily strengthens the protective force that surrounds Minar Forest. I'm sorry, but you may need to help me out here." />
+            <imgdir name="yes">
+                <string name="0" value="Please take this letter to #bChief Tatamo#k, and before you reach him, I advise you to gather up #b5 #t4000232#s, #t4000233#s, and #t4000234#s each#k. They can only be obtained at Minar Forest, and they're needed to strengthen the barrier of the forest." />
+                <string name="1" value="And please make sure to tell him that this is temporary; returning the forest back to its original state will require solutions that attacks the very core of the problem." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sigh ... who should I refer this to, then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="So what did Grendel the Really Old Say? \r\n#L0# #bHe told me to give you these.#k" />
+            <string name="1" value="Here, let me take a look at it." />
+            <imgdir name="yes">
+                <string name="0" value="Ahh... this is the vintage scroll from #p1032001# which is of most importance to the Hafrings at this moment. This is the scroll that contains the spell that strengthens the barrier of this forest. Thankfully, you've brought the necessary ingredients for this. Great work. This should be good for a little while, but I'll need to find out why the Barrier of the Forest is weakened." />
+                <string name="1" value="Anyway, thank you for your great work. The barrier of the forest seems to have weakened quite a bit, so I advise you to stay alert against possible monster attacks in the forest." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please take this letter, along with #b5 #t4000232#s, 5 #t4000233#s, and 5 #t4000234#s#k to Tatamo." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you received an answer from #p1032001#?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="This is an important letter, one that I advise you not to lose ever again. Tatamo should be waiting for this right now." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031410" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000232" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000233" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000234" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3709" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

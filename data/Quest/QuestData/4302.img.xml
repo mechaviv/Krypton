@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4302.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hanako's Foxtail Muffler 1" />
+        <string name="parent" value="Hanako's Foxtail Wardrobe" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9120001##k of #b#m800000000##k has an item she really would love to have. What must that be?" />
+        <string name="1" value="It turns out that the item #p9120001# wants to have is a muffler made out of #t4000066#. A muffler made out of Foxtails. Hmm...I don't get why she'd want to wear a muffler in such warm weather, but I did promise to get her #t4000066#s, She needs 100, so I'd better get started. So, that's #b100 #t4000066#s#k... \n\n#t4000066# #b#c4000066#/100#k" />
+        <string name="2" value="I gave #p9120001# 100 #t4000066#s. Hmmm, but this isn't as much as I thought. Can she really make a muffler out of this?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What do you think? This is a newly-made Kimono. This costs a lot, but isn't it beautiful to look at? The flowers at #m800000000# are generally that of pretty pink. Anyway, I'm pretty sure I'm the only person here that can pull this color off...! But then again, something seems to be lacking here. What would that be...?" />
+            <string name="1" value="Oh yeah! A gorgeous muffler to match this Kimono! If I put them both on, everyone will look at me with awe and reverence. Hey, you. If you aren't busy or something, then can you help me get some materials for the muffler?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks~ You are much more courteous than your looks suggest. What I need for the muffler will be #b100 #t4000066#s#k. I swear, the best mufflers are made out of #t4000066#. I put on nothing but the finest. Hohoho~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You said no to a lady? That's so rude!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you gathered up #t4000066#s like I asked you to~!" />
+            <imgdir name="yes">
+                <string name="0" value="Not bad at all~ Well, will these be enough to make the muffler? Hmmm ... talk to me in a bit." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="That's not 100! I want 100, #b100 #t4000066#s#k! Do it right!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000066" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120001" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28107.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Discovering Secrets" />
+        <string name="parent" value="The Terror of MV!" />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="Charles the Adventurer prepared something for all Maplers... Let's go find him." />
+        <string name="1" value="Charles has asked us to get 7 secret letters. Charles said we can find them in a pile of stones.  Where should we start to look? \n\n#i4032118# #t4032118# #b#c4032118#/7#k" />
+        <string name="2" value="You've accomplished your job and gained EXP and 1500 mesos. You can move on to the next quest!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, Maplers! I am part of a band of heros, sworn to protect the Maple World from outside threats.  There are only a few of us, but we've stopped countless plots in the shadows...until now.  I arrived to tell you about a madman known as &quot;Mal Volance&quot;, or for short,&quot;MV&quot;.  He used to be a part of our group, and was a fine hero,  but he has betrayed us, and seeks to cause anarchy rather than order.  We're not sure how it happened, he seems to be under the influence of some strange, even demonic force.  He conspires to attack the Maple World, only to cause  anarchy and chaos.  I'm positive that he's plotting something nefarious, and I need your help to stop him." />
+            <string name="1" value="The thing is... I first need to test if you are ready to encounter him.  He's no pushover, after all.  As a simple test, you must search for the secret letters that contain information about &quot;MV&quot;. After completing the search of secret letters, you will obtain a #bMap to MV's Lair." />
+            <string name="2" value="Can you get those items for me please?  You will be rewarded, of course." />
+            <imgdir name="yes">
+                <string name="0" value="Excellent!  Then, please find and bring me a #bMap to MV's Lair.#k You will need to find the #rsecret letters#k from the piles of stones. I will move you to the first stage.  Good Luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you sure? I mean... If I were you, I wouldn't have missed this chance, but I get what you mean.  Feel free to come talk to me anytime if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Congrats! I knew you wouldn't let me down. I will give you a reward." />
+            <imgdir name="yes">
+                <string name="0" value="Here's your reward. Let's move on to the next stage!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have what I've asked you for. Please get me a #bMap to MV's Lair#k. I think you will be able to find it in a pile of stones. Good Luck!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9220018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032248" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032118" />
+                    <int name="count" value="7" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200000" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2007112700" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

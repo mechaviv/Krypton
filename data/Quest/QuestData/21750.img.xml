@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21750.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="She Remembers Me" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Just as #p1002104# instructed, you use the #m220000000# clocktower to travel to the past. Just as you arrive in the past, someone calls out your name…" />
+        <string name="1" value="#p2131002# seems shocked to see you and greets you like a long-lost sibling. Do you know this person? While you stand there dumbfounded, #p2131002# tells you that #b#p2131000##k is also waiting for you, and that you should make your way to the #bCamp Conference Room#k to let #p2131000# know that you are alive and well." />
+        <string name="2" value="You finally met #p2131000# in Ellin Forest. #p2131000# seemed glad to see you alive and well, but then learned that you have no recollection of the past and seemed sad to hear it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...Aran?! Aran? Is that really you? I can't believe you're standing here, alive and well! And you are dressed nicely, too! Does that mean the others are alive and well, too?" />
+            <string name="1" value="Wait, this is not what I wanted to do. Aran! Do you understand how long #b#p2131000##k has waited to see you? Every single day, she's regretted not taking you along to Victoria Island... " />
+            <string name="2" value="If you've been alive all this time, then why didn't you contact me earlier? Well, maybe you were so busy battling that Black Mage that you had no time to talk to me, right? Right? Fine, I'll forgive you for all that. Let's head over to the #bCamp Conference Room#k and see #p2131000#!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to see #b#p2131000##k? Do you know how long #p2131000# has been waiting for you, Aran? You should go there and comfort #p2131000#! #p2131000# is in #m300000010#!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2131000" />
+            <string name="endscript" value="q21750e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2131002" />
+            <int name="lvmin" value="63" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="300000000" />
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

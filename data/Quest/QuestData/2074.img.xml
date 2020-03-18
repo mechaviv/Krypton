@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2074.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Maple History Book" />
+        <int name="area" value="30" />
+        <string name="0" value="Jay of Henesys has something to ask regarding the Maple History Book." />
+        <string name="1" value="#p1012109# of Henesys asked if I could find #b#t4031157##k, #b#t4031158##k, #b#t4031159##k and give them to #b#p2041022##k of Ludibrium. #b#t4031157##k was the one that went missing in on the way to Orbis; #b#t4031158##k being kept at a treasure chest at Grendel the Really Old's house in Ellinia; and #b#t4031159##k, apparently being stolen by the Chronos" />
+        <string name="2" value="I gathered up all 3 Maple History Books, gathered them up, and handed them to #p2041022# of Ludibrium." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031157" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031158" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031159" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello. My name is #b#p1012109##k, Chief Stan's oldest son. I am sure you've met my father before. Anyway, I have a huge dilemma that has been bothering me lately, and it's a very important matter. I've been looking for someone, someone trustworthy and dependable enough to help me take on an important matter, and the sooner the better. Will you ... help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, thank you... actually, the moment you came and talk to me, I had a feeling that you'd help me out on something like this Our job is to recover #bMaple History Books#k, which has every historical detail of this world from its creation. What happened was .. well, this is going to take a while, so you may want to grab a seat next to me." />
+                <string name="1" value="These books have been kept safely by important people in this place, until something happened recently. One of those books have been safely kept away, but ... the other two books are either stolen or at least in danger of being stolen. We need to find #ball 3 volumes of [Maple History Book]#k and give them to #r#p2041022# of Ludibrium#k." />
+                <string name="2" value="#b#t4031157##k, the one that covers the creation of MapleStory, was on its way to Orbis, along with the person responsible for it, but ... nothing's been heard from the person since. I don't think the book is in someone else's hands, and ... it should be somewhere out there ... we lost contact of him #rafter boarding on the ship to Orbis#k... Was he ambushed by #o8150000#? Maybe it's hidden well inside the ship..." />
+                <string name="3" value="#b#t4031158##k contains the developmental part of MapleStory, and how it rose to become the society that it is today. That book is #rwell taken care of by Grendel the Really Old of Ellinia, who stores it in a box back at home#k, so all you need to do is ask him for a favor, and he'll give the book to you." />
+                <string name="4" value="Lastly, #b#t4031159##k is apparently #rstolen by a bunch of #o3230306#'s in Ludibrium#k. Defeat a whole group of #o3230306#'s and one of them may actually cough-up the book. The book contains important information on the background of the monsters' stories, along with ways to combat them. This book should never be in the hands of a monster. Please gather up all 3 books and deliver them to #b#p2041022##k?\n\n#i4031157#   #i4031158#   #i4031159#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, re...really? Do know of anyone around that may help me out? I really really need this help, you know. If only I was stronger than I am right now..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hahaha. Do you have any business here with me? Unless you have something very important to discuss, please leave immediately. What? Isn't that the Maple History Books that you're holding on to? How do you have that in the first place? Oh boy ... please show me the books immediately!" />
+            <imgdir name="yes">
+                <string name="0" value="Wow ... These really are the Maple History Books! How did you...? No way... YOU are the one that #b#p1012109##k mentioned? I am so so sorry, I can not believe how ignorant I can get sometimes. #b#p1012109##k told me all these nice things, but I didn't expect you to be here early! These 3 books will be handed straight to the King of Ludibrium. Thank you so much, and now my Dad and I can go on  &quot;break&quot; and see something I may like in some other countries. Also, I just asked the King of Ludibrium to award you #t4031160#, but ... I made a mistake of leaving it there ... can you stop by again later?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you met up with the person I asked you to meet? You may want to start hurrying things up..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Are you bothering me for no purpose? My gosh, I'm here doing something VERY important here, finding a way to recover Maple History Book. So don't even try pulling any simple thing first, because it's just SO annoying.." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041022" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031157" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031158" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031159" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <int name="lvmin" value="25" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="111" />
+                <int name="3" value="112" />
+                <int name="4" value="120" />
+                <int name="5" value="121" />
+                <int name="6" value="122" />
+                <int name="7" value="130" />
+                <int name="8" value="131" />
+                <int name="9" value="132" />
+                <int name="10" value="200" />
+                <int name="11" value="210" />
+                <int name="12" value="211" />
+                <int name="13" value="212" />
+                <int name="14" value="220" />
+                <int name="15" value="221" />
+                <int name="16" value="222" />
+                <int name="17" value="230" />
+                <int name="18" value="231" />
+                <int name="19" value="232" />
+                <int name="20" value="300" />
+                <int name="21" value="310" />
+                <int name="22" value="311" />
+                <int name="23" value="312" />
+                <int name="24" value="320" />
+                <int name="25" value="321" />
+                <int name="26" value="322" />
+                <int name="27" value="400" />
+                <int name="28" value="410" />
+                <int name="29" value="411" />
+                <int name="30" value="412" />
+                <int name="31" value="420" />
+                <int name="32" value="421" />
+                <int name="33" value="422" />
+                <int name="34" value="430" />
+                <int name="35" value="431" />
+                <int name="36" value="432" />
+                <int name="37" value="433" />
+                <int name="38" value="434" />
+                <int name="39" value="500" />
+                <int name="40" value="510" />
+                <int name="41" value="511" />
+                <int name="42" value="512" />
+                <int name="43" value="520" />
+                <int name="44" value="521" />
+                <int name="45" value="522" />
+                <int name="46" value="1100" />
+                <int name="47" value="1110" />
+                <int name="48" value="1111" />
+                <int name="49" value="1112" />
+                <int name="50" value="1200" />
+                <int name="51" value="1210" />
+                <int name="52" value="1211" />
+                <int name="53" value="1212" />
+                <int name="54" value="1300" />
+                <int name="55" value="1310" />
+                <int name="56" value="1311" />
+                <int name="57" value="1312" />
+                <int name="58" value="1400" />
+                <int name="59" value="1410" />
+                <int name="60" value="1411" />
+                <int name="61" value="1412" />
+                <int name="62" value="1500" />
+                <int name="63" value="1510" />
+                <int name="64" value="1511" />
+                <int name="65" value="1512" />
+                <int name="66" value="2100" />
+                <int name="67" value="2110" />
+                <int name="68" value="2111" />
+                <int name="69" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

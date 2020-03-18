@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Missing Kid 1" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You hear someone scream from the ark, saying something about a kid that's gone missing. The ark can't leave until the kid's on board. What should you do?" />
+        <string name="1" value="#p1209000# is pleading with you to find the child. The kid's apparently lost somewhere in the forest. She says you're the only one who even has a chance of succeeding... #bSo you'd better go into the forest and look for him!#k" />
+        <string name="2" value="You barely managed to find the kid deep in the forest. You'd better take him back to the ark." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="21001" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Wah! *Sniff sniff* Hey, that's Aran! Are you here to rescue me?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Wait, where's the kid? We can't leave without him! Please go to the forest and find the child for me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1209006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1209000" />
+            <int name="infoNumber" value="21002" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21000s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

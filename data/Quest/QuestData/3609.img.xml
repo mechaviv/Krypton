@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3609.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Seed That Swallow Lost" />
+        <int name="area" value="37" />
+        <string name="0" value="I lost the seed that Swallow gave. I better go visit again." />
+        <string name="1" value="I lost the seed that Swallow gave, so I had to explain the circumstances to it. After some deliberation, it decided to look for another seed, and asked me to wait for a bit, then talk to it again." />
+        <string name="2" value="I went to see Swallow because I have lost the seed myself, and it gave me a new one. Now, who should I give this to?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031225" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What's going on? What? You lost the seed?? How can you lose it? Okay, I'll give you another one right now. This time, PLEASE don't lose it, and give it to the rightful owner, okay?" />
+            <imgdir name="yes">
+                <string name="0" value=" I need to look for it, so please talk to me in a little bit." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Well, then you won't need the seed. Good bye." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Please get this to the rightful owner, although I still have no idea who should receive this." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="2071006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3606" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3607" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3608" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031225" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

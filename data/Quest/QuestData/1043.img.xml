@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1043.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Third Training" />
+        <string name="parent" value="Mai's Training!" />
+        <int name="order" value="3" />
+        <int name="area" value="20" />
+        <string name="1" value="After you hunted five Red Snails, Mai says its time for even more powerful monsters. She wants you to hunt #r3 Slimes#k and bring back #b1 Squishy Liquid#k. \n\nSlime #r#a10431##k #i4000004# #t4000004# #b#c4000004# #k/1" />
+        <string name="2" value="After succesfully hunting Slimes, you obtained the Squishy Liquid and reported to Mai." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="빨간 달팽이를 퇴치하고 돌아왔군. 많이 다치지는 않았겠지? 이번에 잡아야 할 몬스터는 더 강한 녀석이라고. 이번에 사냥할 몬스터는 슬라임 3마리야. 슬라임을 사냥하고 녀석에게서 물컹물컹한 액체 1개를 가져오면 돼." />
+            <imgdir name="yes">
+                <string name="0" value="슬라임은 스텀프나 달팽이에 비해 훨씬 빠른데다가 점프를 하기까지 하니까, 조심해서 사냥해. 모아놓은 달팽이 껍질이 있다면 그걸 사용해서 사냥해 보는 것도 좋아. 그럼 행운을 빌게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="무섭다면 잠깐 쉬면서 마음의 각오를 다지는 것도 괜찮아." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="1044" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I see that you have eliminated the Red Snails. Hope you didn't get too roughed up. Your next mission involves an even more powerful monster. This time, you'll be slaying #r3 Slimes#k. Bring me back #b1 Squishy Liquid#k, too! That's all." />
+            <imgdir name="yes">
+                <string name="0" value="Slimes are worlds faster than Stumps and Snails. They also jump around, so you really need to be careful. I suggest you use the skill #bThree Snails#k to attack from a distance. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you're worried about safety, take some time to calm down and prepare yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn't look like you've defeated #r3 Slimes#k and brought back #b1 Squishy Liquid#k. I suggest you use some &quot;Use&quot; items while hunting. They'll definitely help." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="It doesn't look like you've defeated #r3 Slimes#k and brought back #b1 Squishy Liquid#k. I suggest you use some &quot;Use&quot; items while hunting. They'll definitely help." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1042" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

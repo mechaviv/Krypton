@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3101.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hughes's New Experiement" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard #b#p2060006##k is in need of help..." />
+        <string name="1" value="For all the travelers visiting the beach, #p2060006# requested the antidote for #o4230201# to #p2012017#. For his studies, #b#p2012017##k needs #b100 #t4000158#s#k and #b100 #t4000159#s#k. \n\n#i4000158# #t4000158#  #b#c4000158##k / 100 \n#i4000159# #t4000159#  #b#c4000159##k / 100" />
+        <string name="2" value="I gave #p2012017# all the materials needed to continue his research. I thought he was nothing but a lunatic scientist, but... maybe not." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="28290" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000158" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000159" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler. I wonder if you've ever experienced being attacked by a monster while traveling around the beach. Please know that #o4230201# in particular is very poisonous." />
+            <string name="1" value="A few days ago, I requested #b#p2012017##k to create an antidote for #o4230201#, and he was more than willing to do so. With the antidote, I know I'll have a much better time in the water next time..." />
+            <string name="2" value="But in order to continue with the studies, he looks like he needs more materials to work with. Since this is for everyone visiting the beach...will you help him out? I understand that it's hard work, but you also go visit the beach every once in a while." />
+            <imgdir name="yes">
+                <string name="0" value="Ahhh, thank you so much. The items he need for the antidote studies are #b#t4000158##k and #b#t4000159##k, and I'd like #ba 100 each#k of those two. #p2012017# said that'll do. Now please go get them and deliver them to #p2012017..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy with something...come back later if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You! You seem to have #t4000158# and #t4000159#! Sell it to me now! I'm more than willing to meet your price... what? You're here through #p2060006##'s favor?" />
+            <string name="1" value="Ahahahah! Of course it's #p2060006##. For her to take care of this... I know I was saying all those things, but I've been in a rut because I couldn't find the necessary items for the experiment...you've helped me a great deal. Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="Now I can really start working on my research. Making antidotes... that shouldn't take long. Me, #p2012017# the genius, will succeed!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you've gone to see #p2012017#, yet... Please get #b100 #t4000158#s#k and #b100 #t4000159#s#k for #b#p2012017##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What is it? If it's not important enough to interrupt #p2012017#'s research, then I will lose it, right here, right now!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000158" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000159" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <int name="lvmin" value="42" />
+        </imgdir>
+    </imgdir>
+</imgdir>

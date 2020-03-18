@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2259.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Scorpions Can't Listen at Night" />
+        <string name="parent" value="About the Mushroom Castle..." />
+        <int name="order" value="5" />
+        <int name="area" value="44" />
+        <string name="0" value="What? He can't tell you because the Meerkats may overhear? What to do? You'd better talk to the Camel again." />
+        <string name="1" value="He agrees that the Meerkats might eavesdrop and tells you to go to '#bSahel 1#k' for a private conversation." />
+        <string name="rewardSummary" value="Go on to the To the Mushroom Castle! quest." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is not something we should discuss here. Meet me at ‘Sahel 1.' It's safer there. Just keep going straight." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="I don't want to say anything in front of Meerkats." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110005" />
+            <string name="endscript" value="q2259e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2258" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2259s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

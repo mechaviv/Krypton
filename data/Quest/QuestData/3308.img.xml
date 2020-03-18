@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3308.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Getting in the Way of Alcadno" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p2111008##k, an alchemist from Zenumist, seems to have a plan in store. Now that I'm Zenumist, I should help him out, right? I better go see #p2111008# immediately." />
+        <string name="1" value="Zenumist is in conflict with Alcadno... I knew that fact, but I never thought he'd ask me for a favor like this! Anyway, since #p2111008# made the request, I better follow through with it, or I may be in trouble. I'll have to destroy #r200 #o5110300#k that Alcadnos have been working on. \n\n#o5110300#  #r#a33081#" />
+        <string name="2" value="I destroyed the #o5110300#s that Alcadnos have been working on, at the request of #p2111008#. Hmmm... was I allowed to do this? Why do Zenumist and Alcadno have such a huge conflict between them?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="37600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, aren't you the rookie alchemist that helped me make the Mana Rock the other day? What are you working on these days...? If you aren't that busy, then do you want to help out on this project? What? You want to know what this project is? Well... it's a secret, so I'll tell you only if you promise me you'll do it." />
+            <imgdir name="yes">
+                <string name="0" value="You may be a rook, but you know the basics, right? That Zenumist and Alcadno aren't really friendly. That's why... I was wondering if we can do something that will really irk them. Hahaha... sounds like fun, no?" />
+                <string name="1" value="Go to the basement of the Alcadno Society building, and you'll see a bunch of devices that Alcadnos made. They are called #r#o5110300##k... Our &quot;job&quot; is to destroy about #r200#k of them. Hahaha... I'm so ready to see how Alcadnos will react to this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... Since you don't want to partake in it, oh well... I guess you still have a long way to go before becoming a true Zenumist." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, how did it go? Did you really eliminate 200 #o5110300#s? Ahahahaha! That's awesome. I'm sure those Alcadnos are fuming right about now. Don't feel guilty about it. If you think about what they've done to us... this is nothing!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmm... You still haven't destroyed #r200 #o5110300#s#k yet? You don't have to feel bad about it... if you think about what the Alcadnos have done to us, this is nothing!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111008" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5110300" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3307" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102135" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

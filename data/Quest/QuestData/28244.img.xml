@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28244.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grendel the Really Tipsy" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032001:##k in #bEllinia#k says he may know of a way to unveil the rest of the map. Let's talk to him." />
+        <string name="1" value="#b#@1032001:##k in #bEllinia#k says there is no free lunch! He asks you to bring him some #rPork#k that would complement the fancy wine he just received as a gift.\nHe says it's a drop item that can be acquired from #rRibbon Pigs#k, which can be easily found in #b#m100030000##k.\n\nReport back to #b#@1032001:##k in #bEllinia#k upon completion." />
+        <string name="2" value="#b#@1020000:##k in #bPerion#k says he may be able to uncover the red portion of the #rDirty Treasure Map#k. Let's talk to him." />
+        <string name="demandSummary" value="#i4001357:# #t4001357:# #c4001357# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,500&#xD;&#xA;Able to proceed to 'You Can't Teach an Old Dog New Tricks' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001357" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#p1032104##k told you to come see me?\nHmm, let me see.\n\n" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, I was just about to have a glass of this fine wine I received as a gift, but I didn't have any appetizer to drink the wine with.\n\nCould you bring me 20 chunks of #rPork#k? The #rRibbon Pigs#k could easily be found in #b#m100030000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you curious?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What took you so long?\nThe therapeutic aroma of the wine will soon fade away." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks, I'll try to enjoy every bite of it. I suppose I owe you some information now.\nI'm sorry, I can't tell you exactly what to do, but I can tell you that people in Perion will know how to remove the red from the map. Really, I've seen them do it before.\n\nWhy don't you head over to see #b#p1020000##k in #bPerion#k?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Didn't I tell you to collect 20 chunks of #rPork#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001357" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28243" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

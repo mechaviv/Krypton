@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28191.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Coughing Dark Lord" />
+        <string name="parent" value="The Cause of Sickness" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012100:##k in #bHenesys#k says she has a favor to ask. Let's go see her." />
+        <string name="1" value="Let's take the Cold Medicine to #b#@1052001:##k in #bKerning City#k." />
+        <string name="2" value="#b#@1052001:##k in #bKerning City#k says he must look into the likelihood of the virus spreading. Let's talk to him." />
+        <string name="demandSummary" value="#i4032490:# #t4032490:# #c4032490# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1500&#xD;&#xA;Able to proceed to 'Virus Sample Research' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032490" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been suffering from this cold for a long time, but I'm feeling all better now thanks to the #rCold Medicine#k you've brought me. I want to thank you again for your help.\n\nFrom what I hear, people in #bKerning City#k are also suffering from a cold." />
+            <string name="1" value="I think it would be a wonderful idea to take some of this #rCold Medicine#k over to #bKerning City#k. Would you like to help?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This is just my humble opinion, but I think something strange is going on in Victoria Island right now. People of Victoria Island rarely catch a cold, but many people have become sick as of late. Something's got to be wrong.\nIt's as if someone is intentionally spreading the virus!" />
+                <string name="1" value="Please take this #rCold Medicine#k over to #b#p1052001##k in #bKerning City#k and ask him if he knows anything about the current situation. If anyone would know, it would be him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(*Cough cough*) Is that #rCold Medicine#k you have there?\n\nOh, it's orange! I know it's the Cold Medicine from #bHenesys#k!\nHere, give it to me." />
+            <imgdir name="yes">
+                <string name="0" value="You awesome person, you! I never thought #b#p1052001##k would ever get so sickly and pathetic!\nThanks to you, I've made a comeback! I appreciate your help. Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1052001##k is in #bKerning City#k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You need #rCold Medicine#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032490" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28190" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

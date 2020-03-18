@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3430.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting 100 Mateon Tentacles" />
+        <string name="parent" value="The Antidote" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Rice the Medic at the Omega Sector." />
+        <string name="1" value="I met Rice the Medic at the Omega Sector, and he asked for my help to gather up some items to make various kinds of medicine. He said he needed #b100 Mateon Tentacles#k, which can be obtained by taking out the aliens. It's quite amusing to think that the alien tentacles can be used as an ingredient to make medicines. Rice really wanted me to keep it a secret, since this was something even the famous Dr. Pepper was unaware of, and he's thinking of making a patent out of it. Well, time to collect some tentacles! \n\n#t4000120# #b#c4000120##k/100" />
+        <string name="2" value="Rice the Medic of Omega Sector requested the #b100 Mateon Tentacles#k, and I gathered up all of them. Will the research start now? I wonder what kind of the antidote this will produce. I should go see Rice right about the time when the tentacles run out." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2050003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem to look bored, unlike us who are really bombarded with work. If that's the case, can I ask you for few favors? It's a difficult task, so I can sure use someone who is adept at hunting down the aliens, like you. You'll be rewarded handsomely for your effort. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Great choice! Now, I'll explain it to you what you're going to do. Lately the aliens have been applying substantial damage to our army through lethal dose of poison, and we still haven't found a way to cure that. Fortunately, we've figured out the main reason behind the poisonous attack." />
+                <string name="1" value="The alien that applies the poisonous attack is a monster called #b#o4230119##k, and their tentacle seems be generate a powerful poison. We used to think the tentacle is used to feel out the situation, but I think they are also creating a lethal dose of poison to fight us." />
+                <string name="2" value="Please gather up #b100 #t4000120#s#k for me, which will help me create a breakthrough Antidote that'll combat the poisonous attacks made by the aliens. Remember, this is to be kept a secret from #b#p2051000##k of Omega Sector Silo, alright??" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you'd Say yes, but... that surprised me quite a bit. You must be really busy these days. By the way, i can still use someone to call the play-by-play." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You are back! Did you gather up all #b100 #t4000120#s#k? Great! This will help me prolong the studies on creating the Antidote. Here, I'll give you an item that may help you down the stretch. Congratulations!" />
+            <imgdir name="yes">
+                <string name="0" value="You really gathered up the finest-quality tentacles available. Do you see the purple liquid that's flowing on the cover? It looks like a lethal poison, and it scares a lot out of me. Alright, now, gotta go back to the studies. Please remember that I may run out of the materials sometime soon, and please keep dropping by, alright? Good bye!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please gather up #b100 #t4000120#s#k for me, which will help me create a breakthrough Antidote that'll combat the poisonous attacks made by the aliens. Remember, this is to be kept a secret from #b#p2051000##k of Omega Sector Silo, alright??" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050010" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

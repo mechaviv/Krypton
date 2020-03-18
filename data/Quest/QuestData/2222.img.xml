@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2222.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Forest of Evil" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1032100##k who lives in #b#m101000000##k was in a dangerous situation... " />
+        <string name="1" value="Arwen says she was attacked by a giant monkey monster in the forest. Although she's wasn't hurt, she was angry that something like this was still happening because #p1032001# had casted the magic of darkness during his days of youth. Let's go find #b#p1032001##k." />
+        <string name="2" value="#p1032001# admits that he did, indeed, make a mistake a while back when he was young that is still affecting #m101000000#. He asks  you to find #b#p1040002##k the cat in #b#m101020000##k to see what information you can get regarding the monster that attacked Arwen." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Humans are unbelievably foolish. They put themselves in danger for some silly fantasy, without even considering what might happen in the end. Are you offended? You won't argue that I'm wrong if you hear the details of my story. Would you like to hear it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Not too long ago, a monster that was never seen in the forest before appeared. It was a monster that resembled a monkey, only atrocious like the darkness of the forest and gigantic. This nefarious monster had to have been created by magic. What does this have to do with humans? " />
+                <string name="1" value="Didn't you hear...? A while back, #p1032001# had gotten involved with the magic of darkness... It was for a short time, but the magic spell he had casted then is affecting all around #m101000000#! The monster had to have been created because of that too!" />
+                <string name="2" value="Saying it was a mistake he made when he was young is not a good enough excuse! How could he neglect to do anything about the monster, simply concluding that there isn't anything he can do? Please go find #b#p1032001##k and tell him to defeat the atrocious monster he's created at once!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Humans are so selfish and irresponsible!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...Hmm, what is it? You don't see well... Is there a problem? Arwen...? Has Arwen said something...?" />
+            <imgdir name="yes">
+                <string name="0" value="...Oh, Arwen has been attacked by a monster...? Sigh... I'm sorry if she was being obnoxious. She isn't completely wrong. I was once blinded by the magic of darkness when I was young." />
+                <string name="1" value="Although it was for just a short time, the aftermath created many monsters that have the power of darkness such as the Zombie Lupin... so Arwen isn't lying. I'll have to take responsibility for this. Will you help me...?" />
+                <string name="2" value="If you go to the #bforest north of Ellinia#k, you will find a mysterious cat named #bFanzy#k. As Fanzy about the monster who attacked Arwen. Fanzy knows everything that goes on in the forest, so you'll be able to get some clues about the black monkey monster." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #bGrendel the Really Old#k yet? You know that you can find him at the Magic Library in Ellinia, don't you? " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032100" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

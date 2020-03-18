@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3057.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lisa's Special Medicine II" />
+        <int name="area" value="33" />
+        <string name="0" value="To cure Moppie, I need Lisa's Special Medicine..." />
+        <string name="1" value="To make Lisa's Special Medicine, I'll need 40 Orange Potions, 20 Blue Potions, 1 Antidote, and ... 1 Fierry's Tentacle. Obtaining the Fierry's Tentacle is going to be difficult.\n\n#t2000001# #b#c2000001#/40#k\n#t2000003# #b#c2000003#/20#k\n#t2050000# #b#c2050000#/1#k\n#t4000068# #b#c4000068#/1#k" />
+        <string name="2" value="Lisa's Special Medicine is finally made! The sweet scent of it just makes it look that much more appealing to me, and I'm sure it will for Moppie." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="-40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2050000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2048001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="All the cuts and wounds that have been caused by the monsters near Orbis can only be cured through my special medicine. It's something I can make with my eyes closed. What do you think? Do you want to make one?" />
+            <imgdir name="yes">
+                <string name="0" value="I'll need #b40 Orange Potions, 20 Blue Potions, 1 Antidote#k, and #b1 Fierry's Tentacle#k. Please be aware that Fierry's Tentacle is a really tough item to get, since Fierry's are the kind of monsters with special abilities, ready to pounce on unsuspecting travelers." />
+                <string name="1" value="You better be strong-willed if you intend on collecting those ingredients, because if not, you may put yourself in really serious, grave danger. Can you still do it?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you scared by the fact that your life may be in danger?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Really? You gathered up all the ingredients needed for the medicine? Alright, let's get this started! Oh, before we start, can I check and see if you have brought all the right ingredients for the medicine?" />
+            <string name="1" value="...mix the potions well, and ... the mixing ratio is so important here ... okay, now I need to boil it up, and ...throw in the Antidote ... ooh, now we're getting there ...that's one indescribable color we're seeing ... we're almost there ..." />
+            <string name="2" value="Lastly, add Fierry's Tentacles, and..." />
+            <imgdir name="yes">
+                <string name="0" value="A loud thud occured, followed by a scintillating scent of sweetness covering the area." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Wait, why is this not responding? ... I don't think you brought all the ingredients needed for this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2050000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3056" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

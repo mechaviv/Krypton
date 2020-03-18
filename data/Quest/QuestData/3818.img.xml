@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3818.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Mind &amp; Heart Medicine1" />
+        <string name="parent" value="Making Mind &amp; Heart Medicine" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The mental trainer of #b#m250000000##k, #b#p2091001##k, seems to be in need of something." />
+        <string name="1" value="#p2091001# seemed to be looking for a medicine that'll clear his head, and requested to the resident pharmacist #p2091002# for some #b#t2022142##k. Apparently, making #t2022142# requires #b8 #t4000283#s#k, so I better start gathering up the ingredients and give them to #b#p2091002##k. \n\n#i4000283##t4000283#  #b#c4000283##k/8" />
+        <string name="2" value="#p2091002# told me to wait as he makes the #t2022142#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아무리 생각해도 이 바둑의 다음 수가 떠오르지 않는군. 가슴도 답답하고 머리도 아프고… 수련이 부족한가? 이럴 때는 #t2022142#을 마시는 게 좋을 것 같군. 괜찮다면 마을의 약사 #p2091002#에게 가서 #t2022142#을 지어달라는 말을 전해 주시지 않겠소?" />
+            <imgdir name="yes">
+                <string name="0" value="정말 고맙구려. 아, #p2091002#에게 처방전을 받을 필요는 없소. 이몸도 한때 약초에 대해 연구했던 몸이니 #t2022142#의 재료는 정도는 알고 있지. #t4000283# 20개를 가지고 #p2091002#에게 가 보시오. #p2091001#의 약이라고 하면 알아서 만들어 줄 거라오." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="뭔가 바쁜 일이 있나 보구려…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000283" />
+                    <int name="count" value="-8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can't think of the next move... should I move the bishop, or the queen? I can't think straight... maybe I haven't trained as much as I should have. I can sure use #t2022142# right about now. If it's okay, can you talk to #p2091002#, our resident pharmacist, and ask him to make #b#t2022142##k for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you very much. Ah, you don't need to ask for a prescription from #p2091002#. I used to study medicinal herbs myself, so I know the formula for #t2022142#. Take #b8 #t4000283#s#k and bring them to #b#p2091002##k. He'll know what to do if you mention that it's for #p2091001#'s medicine." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy with something..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh no, where did those dried herbs go? Hmm? Were you here last time for aches and pain? No? #p2091001# sent you here? Okay let me see... 8 #t4000283#s... this must mean #p2091001# has a terrible migraine. There's nothing that clears headaches like #t2022142#." />
+            <imgdir name="yes">
+                <string name="0" value="#t2022142# is not made in an instant. The medicine for #p2091001# requires even more time to dry the herbs, so please be patient." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have gone to see #b#p2091002##k yet. Please take #b10 #t4000283#s#k and give them to #b#t2022142##k. He should know what to do." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Oh no, you don't look too well. I think you can definitely use some medicine... no?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000283" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

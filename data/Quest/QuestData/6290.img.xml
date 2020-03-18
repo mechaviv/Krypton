@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6290.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Forgotten Healing Power" />
+        <string name="parent" value="Spirit Healing" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" Since my last job, I got a strange spirit named #r#q1321007##k.  For a spirit, it doesn't have any special powers but I just kept him with me.  But supposedly #b#p2081100##k knows about a special healing power that this spirit has..." />
+        <string name="1" value=" #p2081100# said #q1321007# has much power in it but it's asleep now. He told me to see #b#p2041021##k to wake up his power." />
+        <string name="2" value="#p2041021# seems to know how to wake up  #q1321007#'s power." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You are with an eccentric, evil man. The Dark Spirit? Humans called it the #r#q1321007##k. Do you know whose spirit it is?" />
+            <string name="1" value=" You don't know. That's the spirit of someone wicked and strong. Ah, don't worry. He was so wicked that his spirit was forced to be purified. Actually, he was purified so much that he lost all his memories and powers. Now he ends up with purity. He won't do you any harm. He will be helpful." />
+            <string name="2" value="What do I mean? I told you. #r#q1321007##k used to have a strong power, which include healing power. If you make the power of spirit work properly, you can use it. Are you curious about this skill?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to see #b#p2041021##k, the clown standing in the #b#m220050300##k. He would know about #r#q1321007##k's history and more knowledge about this. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Hmm. If you aren't, that's fine. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome to #m220050300#! Looking at you and the trace of your spirit, you must be the one #p2081100# talked about. What can I help you with?" />
+            <imgdir name="yes">
+                <string name="0" value=" Is that #r#q1321007##k? #p2081100# said that he is so na?ve, like a child. Does he mean #r#q1321007##k?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go to see #b#p2041021##k in #b#m220050300##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="job">
+                <int name="0" value="132" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1321007" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

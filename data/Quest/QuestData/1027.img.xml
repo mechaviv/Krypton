@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1027.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Request" />
+        <string name="parent" value="For a new world" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="#b#p12100##k stands at #b#m50000##k. They say she is the strongest person on Maple Island.... Why is she here? What's her life story? Go talk to #p12100#." />
+        <string name="1" value="#p12100# was a new adventurer and worker on Victoria Island. But the elder, #p12000# in #m1010000# hired her to protect against dangerous situations on Maple Island. #p12100# says it's a hard because of all the work... Tell #b#p12000##k what #p12100# said." />
+        <string name="2" value="#p12000# agreed with what #p12100# said. He said it's better to hire more workers. Then he asked you to tell #b#p1002101##k in #b#m104000000##k... #m104000000# is on Victoria Island... You have to go to  #b#p22000##k in #b#m60000##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Maple Island is a land for beginning adventurers. Monsters are relatively weak here, but you need some experience to become a skilled adventurer. When you are a beginner, you have to try your best to train hard. \r\n#b#L0# You look very strong. Why are you on Maple Island?#l" />
+            <string name="1" value="Because I'm a trainer. Mr.#p12000# hired me. I quit adventuring in Victoria Island to protect the people in this town instead. Besides that, beginners always need a bit of guidance. But I've got far too much work these days...If you have a chance to go to #m1010000#, can you give a message to Mr. #p12000#?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ah, thank you. There are a lot of travelers in Maple Island and even more monsters. It's hard for me to protect people by myself. So please tell #b#p12000##k of #b#m1010000##k to hire one more person. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... Aren't you planning to go to #m1010000#? You can go to #m60000# directly." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmm... Who are you? Did #p12100# send you here? Why? \r\n#b#L0# #p12100# asked you for a raise. #l\r\n#L1#Because there are many beginners in Maple Island, it's hard for #p12100# to work by herself. #l\r\n#L2# #p12100# said she wanted to compete with #p12000#. #l" />
+            <string name="1" value="Hmm... Did #p12100# say that? Would you tell #b#p1002101##k in #b#m104000000##k what she said? You won't be here much longer so you can deliver the message when you get to #bVictoria Island#k. Thank you." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Ah, don't worry about the fare. You have to go to #b#m60000##k to go to Victoria Island. #m60000# knows who #b#p22000##k is. I'll tell him to take you for free. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Mai asked for a raise? I don't believe it. Are you lying?" />
+                    <string name="2" value="Compete...? Did Mai say that? I know there's no strong men in Maple Island, but it's nonsense to ask this old man like me to compete." />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you met #b#p12000##k yet? I'll take a walk in front of the store of #b#m1010000##k. Go ahead." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

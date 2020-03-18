@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6180.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Shield's True Power" />
+        <int name="area" value="10" />
+        <string name="0" value="I heard there's a #p2081009# in Leafre Forest that really loves shields!" />
+        <string name="1" value="#p2081009# gets upset at those who think the shield is weak. He developed a new shield skill and said to get used to fighting with the shield if I want to learn the new skill. He told me to hunt 200 #r#o9300096##k at the training ground he prepared...\n\n#o9300096# #r#a61801##k" />
+        <string name="2" value=" After I got 200 #o9300096#,  #p2081009# taught me the skill known as Guardian!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1092042" />
+                    <int name="count" value="1" />
+                    <int name="job" value="3" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1120005" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="112" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1220006" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="122" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello? Traveling Leafre forest. Very rare... Huh? You've seen me? That means you visited Leafre. #p2080002# is my brother. He is an armor seller in Leafre. \r\n#b#L0#Ah, I see!" />
+            <string name="1" value=" Are you a traveler? Or adventurer? It doesn't matter. You seem to know how to use the shield. Are you interested in it? What do you think of the shield?\r\n#b#L0#I think it is a way to increase defensive power." />
+            <string name="2" value="What? Only that? You don't mean it, do you?... Do you really only see that? A strong, perceptive warrior like yourself shouldn't Say such things! Never! \r\n#b#L0#Don't be angry. What do you think of the shield then?" />
+            <string name="3" value=" A shield does not just increase your defensive power! It's much more than that!  Do not solely depend on a sword, instead try to use a shield efficiently! Then you can attack easily. Many warriors aren't aware of it. That's why I, #p2081009#, made a new skill with a shield. Do you want to learn it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="This technique is called #r#q1120005##k skill. You can defend yourself from the enemy's attack. By pushing your enemy back with its power, your enemy will be stunned. Useful, isn't it?" />
+                <string name="1" value=" However, you can't learn this right now. You can learn when you're familiar with using a shield. Eliminate #r200#o9300096##k in the #btraining field#k. I'l teach you the skill after that. You must have a special shield in that area." />
+                <string name="2" value="Come back to me when you're ready to go to the training field. I'll give you #b#t1092041##k in the training field." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to? If you look down on a shield, you'll have trouble someday." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! Are you already done with #o8140103#? You have serious talent! I'll teach you the Blocking skill. Plus, I'll give you a shield that you can use with this new skill." />
+            <imgdir name="yes">
+                <string name="0" value="This will enable your shield mastery. Try to use a shield more often! Show how strong the shield is!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value=" Haven't you eliminated #b#o9300096##k? If you get used to the shield, it will be much easier to kill Kentaurus monsters." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081009" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300096" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081009" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

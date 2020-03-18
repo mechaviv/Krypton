@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21709.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Check Out the Orange Mushroom" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your first assignment as an informant. You're here to ask #b#p1012111##k in #b#m100000000##k about possible causes of the #o1210102#'s strange behavior." />
+        <string name="1" value="#p1012111# says that you must observe how the #o1210102#s have changed, and see if they've grown new sets of horns. You should eliminate the #r#o1210102#s#k and look for the #b#t4032314#s#k.\r\n\r\n#i4032314# #t4032314# #b#c4032314# / 30#k" />
+        <string name="2" value="You brought the #t4032314#s you found to #p1012111#. He says he's going to start studying the horns and asked you to come back later." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="620" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032314" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is the first time I've heard that the #o1210102#s are acting strange. But then again, I haven't left the lab in days. This means I must study the #o1210102#s and see if I can find a reason behind their strange behavior..." />
+            <string name="1" value="If they are in the mating season, then you'll find #o1210102#'s Love Letters on them. If they are migrating en masse, then you'll find #o1210102#'s House Deeds. If the #o01210102#s are preparing for a war, then you'll find #b#t4032314#s#k. " />
+            <string name="2" value="So eliminate some #o1210102#s and see what kind of items they drop. I don't care which of the three items you find, just gather up #b30#k of them." />
+            <imgdir name="yes">
+                <string name="0" value="#o1210102#s can be easily spotted in areas surrounding #m100000000#. Whatever drops, 30 of them should be enough to start making a hypothesis. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm? Are you afraid of #o1210102#s? Trust me, they aren't that powerful. You didn't hear a conspiracy about #o1210102#s wanting to take over Maple World...did you? Well, they are all lies! All lies, I tell you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, so you must have defeated the #o1210102#s and gathered up all the items necessary. Please show me what items you found." />
+            <imgdir name="yes">
+                <string name="0" value="#t4032314#s...? That means they are preparing for war. I have to look for more reasons why this might be. It will take some time, so just go level up for a bit. Come back to me when you reach Lv. 14." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Are you having a hard time defeating the #o1210102#s? Your task is to defeat the #r#o1210102#s#k and gather up the items they drop. You just have to bring #b30#k of whatever drops, whether it's the #o1210102#'s Love Letter, the #o1210102#'s House Deeds, or the #b#t4032314##ks." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032314" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21708" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

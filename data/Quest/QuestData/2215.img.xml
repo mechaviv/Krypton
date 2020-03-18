@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2215.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Crumpled Piece of Paper Again" />
+        <int name="area" value="30" />
+        <string name="0" value="You have lost the list of informants you retrieved from the hut in the swamp region. What to do...? Let's go see #bJM#k again." />
+        <string name="1" value="JM scowls and clicks his tongue at you. He says he'll provide you with the list of informants again, but asks you to pay #ba fee of  2000 Mesos#k and instructs you to leave it inside the trash can. Let's head over to #b#m107000300##k." />
+        <string name="2" value="You have taken the list of informants out and left 2000 Mesos inside the trash can." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흠... 다일에 관한 음모의 실마리는 찾은 건가? 뭐? 정보원 목록을 잃어버렸다고? 누군가 목록을 주워 보기라도 하면 어쩔 거야?! 정보원은 비밀이 생명이라는 것 몰라?!" />
+            <string name="1" value="휴우... 이번만은 넘어가 주도록 하지. 하지만 다음 번에는 용서 없을 테니, 주의하라고. 다시 한 번 위험한 크로코1로 가서 정보를 받도록 해. 물론 정해진 시간에만 정보를 얻을 수 있어." />
+            <imgdir name="yes">
+                <string name="0" value="실수에 대한 대가로 이번에는 정보료를 받겠어. 쓰레기통 안에 2000메소를 넣어 놓고 정보를 가져가도록 해. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="뭐야? 다시 할 자신이 없다는 건가?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031894" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm... Have you found any clues about #o6220000#? What? You've lost the list of informants? What if someone finds the list?! Don't you know that secrecy is the most important aspect of being an informant?!" />
+            <string name="1" value="Sigh... I'll have the informants look for the list. I'll let you off the hook this time, but you won't get another chance! Go to #b#m107000300##k for another list of informants." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Of course, you can only receive the list during certain hours. You haven't forgotten, have you? It's #bfrom 5 p.m. to 8 p.m.#k Oh, I'm going to have to charge you a fee for your mistake. Put #b2000 Mesos#k in the trash can before taking the list." />
+                <string name="1" value="Give me an update after you gather all the information from the informants on the list. I'll let you know which ones are valid and which ones are not. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Are you doubting yourself?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#b(You feel something rustling inside the dusty trash can. Would you like to take it out of the trash can?)#k" />
+            <string name="1" value="#b(You have taken out a crumpled piece of paper covered in cobwebs.)#k" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I guess you haven't been to #m107000301# yet... It's the hut in #b#m107000300#. You can only find the information if you go #bfrom 5 p.m. to 8 p.m.#k.. And don't forget to take #b2000 Mesos#k too." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052108" />
+            <string name="endscript" value="q2215e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2214" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2220" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031894" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

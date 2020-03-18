@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3231.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Broken Clocktower" />
+        <string name="parent" value="A Delivery to a Lost Time" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Olson the Toy Soldier, who's at Eos Tower" />
+        <string name="1" value="Olson the Toy Soldier from the 100th floor of Eos Tower wanted me to get the #b#t4031094##k obtained from the monster disguised as the dollhouse to #p2040029# at the Lost Time somewhere inside the Clocktower. Apparently the #p2040029# should be able to fix him." />
+        <string name="2" value="I found Grandpa Clock standing around somewhere in the lost time, but he looks very lethargic, as if he's about to stop." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031094" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031094" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3232" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been a while since we last met. Thanks to you, there hasn't been anything strange going on here ever since. I have another favor to ask you, though. Would you like to listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I've been thankful for you getting the #b#t4031094##k for me. The problem is, the person that is in charge of putting #b#t4031094##k in the right place is far and far away at this point. Help us find the #b#p2040029##k first and give him the #t4031094#." />
+                <string name="1" value="From what I know, #b#p2040029##k is currently at the #bLost Time#k, deep in the Ludibrium Clocktower. Lots of tough monsters reside there, but please find him ASAP for the sake of Ludibrium and give him the #b#t4031094##k that I'm about to give you. Good luck..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be really busy. The problem is, the longer we wait, the longer the clocktower stays still. I know you're busy and all, but please drop by some other time and let's get this thing to work." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please get this #b#t4031094##k to #b#p2040029##k, who should be at the deepest part of the Ludibrium Clocktower, the #bLost Time#k. Only he can put it where it should be. Be prepared, for you're guaranteed to face some tough monsters on your way there." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Can I help you...? What? Olson sent you here? Then you must have brought #b#t4031094##k with you. But where's #t4031094#? If you lost it, then please go get it from Olson again." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I can't believe you lost such an important item. Good thing I found it. Please don't lose it next time!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040029" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031094" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3230" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="33" />
+        </imgdir>
+    </imgdir>
+</imgdir>

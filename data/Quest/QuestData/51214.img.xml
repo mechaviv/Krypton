@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51214.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="OSSS Mission Issued" />
+        <int name="area" value="50" />
+        <string name="0" value="OSSS is ready to issue a mission. Talk to #b#p9250133##k when you're ready." />
+        <string name="1" value="Use the Orders given to you by #b#p9250133##k and complete each of the OSSS missions. When you complete the missions, you'll be given #b#t04310004#s#k and #b#t04310005#s#k." />
+        <string name="2" value="You've completed all of the OSSS missions. If you want to be issued these missions again, talk to #b#p9250133##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032714" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032715" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032716" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032717" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032718" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032719" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032720" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032721" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Well, now. Here you are. To defeat the aliens, you must complete missions issued by the OSSS." />
+            <string name="1" value="The OSSS has promised to reward you for your efforts. Remember that #byou can only repeat this mission 3 times a day#k." />
+            <string name="2" value="In order to complete each mission, you must have with you these four Orders. Please hold on to them to complete your missions." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, the Orders have been given to you. Please accept each mission separately by talking to me again." />
+                <string name="1" value="When you've successfully completed a mission, the OSSS will issue you a #b#t04310004##k. Once you've collected a bunch, talk to #b#p9250135##k, who will give you cells that will make your suit stronger." />
+                <string name="2" value="Each time you complete a mission, you'll get a completion certificate. Please hold on to them and submit them all at once during the final verification process. Four orders. Four certificates. Should be easy to remember." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You waiting for the aliens to attack before you do something to stop them? Bad idea..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you completed all the missions?" />
+            <imgdir name="yes">
+                <string name="0" value="Good job. Now, you'll be able to receive each of the missions again. Start by completing the OSSS Mission Order mission." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Let's talk again once you've completed each of the individual missions." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250133" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032718" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032719" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032720" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032721" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q51214e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250133" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51206" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

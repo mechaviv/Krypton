@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2332.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where's Violetta?" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="1" value="You need to find #b#p1300002##k, who is probably trapped inside the wedding hall.\r\n\r\n\r\n#b#e- Limit - #n\r\nMust be alone. (Leave Party)" />
+        <string name="2" value="You found #bPrincess #p1300002##k trapped inside the wedding hall." />
+        <string name="demandSummary" value="You need to find #b#p1300002##k, who is probably trapped inside the wedding hall.\r\n\r\n\r\n#b#e- Limit - #n\r\nMust be alone. (Leave Party)" />
+        <string name="rewardSummary" value="EXP 4,400" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Ah… you're the hero that's here to save me?" />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300002" />
+            <int name="infoNumber" value="2332" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2332e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032388" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2332s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21700.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="New Beginnings" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You discovered that you were a hero that used to wield a Polearm, and just like that, you started to remember a number of your former skills. Your recovered skills are far from optimal, but... You should report this to #b#p1201000##k anyway." />
+        <string name="1" value="#p1201000# seems amazed that you was able to recover so many of your abilities and urges you to start training seriously. She then recommends that you go see #b#p1202006# the Penguin Master#k, an old penguin that's studied the intricacies of various hero skills. He's located in the west side of town at #m140010100#." />
+        <string name="2" value="You met with #p1202006# in #m140010100#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1442077" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Haha… welcome. It's great to finally meet the true hero of Maple World... Aran! Now, how did I know you were Aran? Simple. A master like me should be able to figure out the competition simply by observing their posture and aura! Also, isn't that a polearm in your right hand? See, I'm good at problem-solving!" />
+            <imgdir name="yes">
+                <string name="0" value="I have heard stories about you, a legendary hero who has no recollection of the past and is devoid of the skills that made you a hero in the first place. But help is on the way! I have been studying the skills of the legendary heroes for the past 50 years, waiting for this moment to come! I will do my best to aid you on your training!" />
+                <string name="1" value="But before that, you'll have to first learn to distribute your #bstats#k. Do you know how to do it? Press #bS#k to open the stat window, then click the category you'd like to assign your skill points to." />
+                <string name="2" value="Aran, since you're a warrior that wields the polearm, I suggest you focus your skill points on STR, with a bit of DEX sprinkled here and there. If you are not sure how to best distribute your stat points, just press the #bauto-distribute#k button. It'll automatically distribute your stat points." />
+                <string name="3" value="Now once you're done distributing the stats, let me know. That's when the real training will begin!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Didn't you meet #b#p1202006# the Master Penguin#k? I told you before that you'll find him in #b#m140010100##k… He's not someone I like to associate myself with, but he's been training for a long time, so he may be of some help to you... I hope." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <string name="startscript" value="q21700s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

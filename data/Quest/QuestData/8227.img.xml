@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8227.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost in Translation 1" />
+        <int name="area" value="45" />
+        <string name="0" value="I should see if Jack Barricade needs my help with anything..." />
+        <string name="1" value="Jack needs John's help, and needs me to be the go-between.  He wants me to deliver a letter to his brother in NLC; the #bCoded Communique#k contains a transcription of some strange symbol code that he saw while being held in Crimsonwood Keep.  Hopefully, with his expertise in ancient languages, John should be able to decipher it.  I should hop to it!  I have a feeling some serious events are unfolding..." />
+        <string name="2" value="Looks like Jack was right about the symbols he saw in the Grandmaster Council Hall; the Versalian code seems to indicate that the new Masters are planning to attack NLC with the soldiers they're training!  It's going to be up to us to stop them!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You found my brother?!  Wonderful!  Glad to hear that he's alive and kicking." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You're back!  What does the code mean?  What did John Say?  What?!  You guys haven't figured it out yet!?  What are you waiting for?!  We need to find out what this means immediately!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201051" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201096" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8219" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8227s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

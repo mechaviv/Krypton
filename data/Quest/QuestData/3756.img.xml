@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3756.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dragon Rider's Identity 1" />
+        <int name="area" value="41" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="According to rumors, an something has been appearing near Leafre and causing problems for the town. Go see #bChief Tatamo#k to find out more details." />
+        <string name="1" value="Go meet #bChief Tatamo#k in Leafre and found out about what's been happening in there." />
+        <string name="2" value="You met with #bChief Tatamo#k and received a request to investigate the strange case happening in the town." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="nextQuest" value="3757" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahem... Can you hear me? #b#h0##k, my town is in dire need of help. Please listen to my plea. I beg you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Many strange things have been happening in Leafre. As the town chief, I have been trying to handle it, but I haven't been able to do much. We need a true warrior like you, #b#h0##k to help us!" />
+                <string name="1" value="Please consider my plea, and then talk to me, #bTatamo#k, the chief of Leafre." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="In that case, our town is doomed for sure..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you made your decision? I had no doubt, #b#h0##k, that you would help." />
+            <imgdir name="yes">
+                <string name="0" value="My town has remained peaceful by maintaining good relations with the Dragon race. But recently, strange things have happened." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <int name="lvmin" value="100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

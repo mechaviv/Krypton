@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Friendship with Yeti" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="So, you follow #p1201000#'s instructions and look in the Mirror of Desire once more. Your vision gets dark for a second, but then you find yourself in #m211000000#, once again returning to the past. Standing before you is a Yeti in tears. What's going on? You'd better talk to #b#p1203001##k." />
+        <string name="1" value="Sniffling heavily, #p1203001# says a thief stole his gem. He is distraught that his red gem is gone, after he had so painstakingly created it. A red gem? It must have something to do with the #t4032312#! You should find the thief on behalf of #p1203001#.\r\n\r\n#o9001013##r #a213031##k\r\n#i4032339# #t4032339# #b#c4032339# / 1#k" />
+        <string name="2" value="#p1203001# thanked you for retrieving his gem and taught you how to make a #t4032312# as a token of his appreciation. #t4032312# can be made using #b1 Dark Crystal, 3 Diamond Ores, and 3 Garnett Ores#k and combining them with the #bMaker Skill#k. Don't forget it when making the #t4032312# for #p1201002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032339" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You find gem?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes! Pretty red gem! You amazing! Happy #p1203001# teach you how to make pretty red gem, too." />
+                <string name="1" value="Red Jade made with #bMaker Skill#k. Red Jade made with #b1 Dark Crystal#k, #b3 Diamond Ores#k, and #b3 Garnet Ores#k! You make Red Jade now?" />
+                <string name="2" value="Hehehe,  #p1203001# now eat the gem. Om nom nom nom. Bye bye!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Still no catch thief? Thief went left. Find thief and give me gem." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Still no catch thief? Thief went left. Find thief and give me gem." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1203001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032339" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1203001" />
+            <int name="infoNumber" value="21203" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21302" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21303s" />
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

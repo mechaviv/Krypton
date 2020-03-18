@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Strange Dream" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22000" />
+        <string name="0" value="A dragon asleep in a forest covered in fog... What a strange dream. \r\n\r\nYou feel a bit tired from dreaming about the dragon but #byou should say good morning to your family.#k." />
+        <string name="1" value="When you tell your Mom about the dream, she says that it's a very interesting dream and that you should share it with #b#p1013101##k, who is in the #b#m100030102##k. Hmm... #p1013101# will probably just laugh at you. Still, you should go tell #p1013101#." />
+        <string name="2" value="#p1013101# just laughed, saying your dream was stupid. Just as you suspected." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #p1013101# yet? I think #p1013101# will find your dream interesting so go tell him about it. #b#p1013101##k is in the #b#m100030102##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013101" />
+            <string name="endscript" value="q22000e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013100" />
+            <string name="startscript" value="q22000s" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

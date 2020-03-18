@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10056.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Maple Scarf" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra says that she has something to tell you. Cassandra seems to know about everything going on in town. What could she want this time?" />
+        <string name="1" value="Cassandra seems to always be curious about what is going on. This time, she asks that you collect 100 Trivial Rumors dropped by monsters. Why is she so interested in rumors about other people..." />
+        <string name="2" value="You brought Cassandra 100 Trivial Rumors and received a Maple Scarf in return. Putting this around your neck should keep you warm and toasty!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="ㅇㄹㅇㄴㄹ" />
+            <imgdir name="yes">
+                <string name="0" value="ㅇㄹㅇㅁㄹ" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="ㅁㅇㄻ" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1122015" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022422" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Heeheehee, did you hear? I, Cassandra, know everything that goes on in town! I hear you've received a Bandana from a Maple Admin. It's a bit too red, but it's not bad. Don't you think you need a more fashionable item?" />
+            <string name="1" value="Since you've helped out a Maple Admin, you're probably well aware of this. But I hear you can get fun little stories from monsters. You seem like you have some time in your hands. Won't you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I don't need any elaborate stories. I just need something to gossip about. If you bring me #b100 Trivial Rumors#k I'll give you a present that would go perfectly with your Bandana." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine, suit yourself. I can easily find someone else to help me. Hmph!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, have you collected all of them already? Alright! Tee hee. Cassandra must know everything that goes on in town... Even Trivial Rumors! It makes absolutely no sense for someone else to know more than I do. Right?!" />
+            <string name="1" value="I'll give you this Scarf. The weather has been fickle, and that's when you have to be most careful about keeping yourself warm and free of germs. This is a thoughtful present from me to you, so accept it with gratitude!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="How much longer must I wait for those Trivial Rumors? You've left me hanging for too long already..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022422" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10052" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2008101300" />
+            <string name="end" value="2008103000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4930.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Rememberer's Passion Part 1" />
+        <string name="parent" value="The Rememberer's Passion" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="The Rememberer sure would know who Bob is. He's the Rememberer! I should talk with The Rememberer to find out what he knows." />
+        <string name="1" value="The Rememberer isn't relly being helpful today. Very slow talking, not really informative. I wonder why he is so... depres" />
+        <string name="2" value="He is MEAN! MEAN, MEAN, MEAN! He took away Bob's Snail Shell from me wtihout me letting him! Now, what do I have to do?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+            <int name="pop" value="-5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="... what brings you here...?\r\n\r\n#L0##bNothing. Just passing by.#k#l\r\n#L1##bSince you are the rememberer, I thought you might know something about this snail. Bob.#k#l" />
+            <string name="1" value="... Bob? If you mean Bob Snale, I've seen him before..\r\n\r\n#L0##bIs this snail the right one?#k#l" />
+            <string name="2" value="... you brought me Bob Snale...?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="... ok." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Let me remember..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="... no?. What a shame..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Yes... This snail is the snail I saw crawling toward the dungeon through sleepywood long time ago. People called him Bob... Ages have passed since then but it looks like the only thing that has changed is the number of scratches on his shell...\r\n\r\n#L0##bOk, that's all I needed to know. Thanks.#k#l" />
+            <string name="1" value="Wait... If you don't mind, can I hold him for a second...?\r\n\r\n#L0##bSure, go ahead.#k#l\r\n#L1##bHmm? No, I think I'd better not.#k#l" />
+            <string name="2" value="Thanks. Let me get a good look at him..." />
+            <imgdir name="yes">
+                <string name="0" value="HA! HA! HA! I finally have him on my collection. Leave now if you aren't here to hunt monsters." />
+                <string name="1" value="Why aren't you leaving? I am the Rememberer who counts up the monsters you kill and give reward to. What do you expect for me to act toward monsters? Also, this one is the legendary being. I've always been waiting for the moment I have him on my hands. Bye, bye. And come back if you are here to hunt monsters. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I will be waiting for you..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="... what brings you here...?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4928" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

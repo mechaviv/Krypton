@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4306.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lantern at Mushroom Shrine" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9120003##k, a proud resident of #b#m800000000##k, seems to be annoyed by something." />
+        <string name="1" value="#p9120003# was indeed annoyed by something. She was disturbed that the #t4000222#s that are being used at #m800000000# is apparently stuck with ghosts. This isn't annoying; this is downright creepy. I better kill #b100 #o9400011#s#k and get her some #b#t4000222#s#k, just the way #p9120003# said.\n\n#o9400011# #r#a43061##k \n#t4000222# #b#c4000222#/50" />
+        <string name="2" value="I eliminated #o9400011# and got some #t4000222#s for use. The more I think about it, I think #o9400011# is much more of a dangerous presence than an unlit street at night." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000222" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no. This isn't good. Hey, there. If you aren't really busy, then can you help me out? There's not much to worry. It may take up a little of your time, but it's nothing big." />
+            <imgdir name="yes">
+                <string name="0" value="I appreciate that. We have been experiencing problems with the lanterns in the streets lately. I mean, the #t4000222#s got stuck with ghosts! What? No no, there's nothing to worry. It's really nothing. Just go ahead and kill #b100 #o9400011#s#k, and I also want you to gather up #b50 #t4000222#s#k to be used at various places in this town. See, it's pretty simple!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? I am sure you have your own issues to deal with. Where am I going to find #t4000222#, then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm, okay. I guess you killed some #o9400011#s. What do you think? That wasn't too difficult, was it?" />
+            <imgdir name="yes">
+                <string name="0" value="Great work there. It's really dangerous at night here without the #t4000222#s brightening up the streets. It's to make sure no one gets hurt walking in the dark. That's why we really needed these #t4000222#s. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't finished yet, right? Please go ahead and kill #b100 #o9400011#s#k and gather up #b50 #t4000222#s#k in the process." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't finished yet, right? Please go ahead and kill #b100 #o9400011#s#k and gather up #b50 #t4000222#s#k in the process." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000222" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400011" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120003" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

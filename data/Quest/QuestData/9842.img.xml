@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9842.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Icarus's Mushroom Bites" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="Icarus is craving Mushroom Bites. Collect the ingredients and take them over to #b#p1052106##k.\n\n#o2220100# #r#a98421##k \n#o1120100# #r#a98422##k \n#t04000009# #b#c04000009#/20#k \n#t04000006# #b#c04000006#/20#k" />
+        <string name="2" value="You helped #b#p1052106##k make delicious Mushroom Bites." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! You have to be careful! Safety is key at a construction site! You have to especially #bbeware of falling#k. What am I talking about? You'll find out when you get to the top of the construction site... In any case, I'm supposed to deliver a message to you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Maybe it's the weather, but Icarus, who always talks about wanting to fly, has been complaining about not having an appetite. He says he wants some food made of mushroom caps and octopus legs. " />
+                <string name="1" value="There should be many #rBlue Mushrooms#k and #rOctopuses#k near that area. Eliminate about #r50#k of each of them and bring #b20 Blue Mushroom Caps#k and #b20 Octopus Legs#k to #bIcarus#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="So you're saying you don't want to help?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Defeat #r50 Blue Mushrooms and 50 Octopuses#k and bring #b20 Blue Mushroom Caps and 20 Octopus Legs#k to #bIcarus#k, who has lost his appetite." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Defeat #r50 Blue Mushrooms and 50 Octopuses#k and bring back #b20 Blue Mushroom Caps and 20 Octopus Legs#k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Defeat #r50 Blue Mushrooms and 50 Octopuses#k and bring back #b20 Blue Mushroom Caps and 20 Octopus Legs#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000006" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000009" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="huntUP3" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2220100" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1120100" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="103010000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

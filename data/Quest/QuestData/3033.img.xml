@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3033.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Secrets Behind the Statue" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="30" />
+        <int name="area" value="33" />
+        <string name="1" value="With the Memory Powder, Alcaster was able to attach the four map pieces and turn it into a map. According to the map, the Book of Ancient lies somewhere #baround Orbis Tower at some statue#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031053" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031053" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3034" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Phew, the spell worked. Now that the map is in one piece, we need to look through this. Let's see ... it's written in ancient language, so I'm having a hard time understanding this...Hmmm...I see...that's it! I got it! #t4031056# is hidden at the Orbis Tower! It's hidden in one of the statues there. I'm surprised it's there..." />
+            <string name="1" value="To open this statue, it looks like we need #b#t4031053##k from the battle...the ring works as the key here. Please head over to Orbis Tower, and come back with #b#t4031056##k in your hand! Meanwhile I'll be here figuring out how to seal #t4031056# up for good." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="At the bottom of the statue lie a sparkling core. Use #b#t4031053##k to unlock it and investigate what's inside." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gotten #b#t4031056##k, yet. According to the map, #b#t4031056##k is hidden at a statue at the Orbis Tower, and to open it, you'll need #b#t4031053##k. Well, then, please head over to Orbis Tower now." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="An old statue was there, but nothing could be found." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3032" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

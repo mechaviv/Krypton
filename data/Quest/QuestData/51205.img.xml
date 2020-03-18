@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51205.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Crystanol Retrieval" />
+        <int name="area" value="50" />
+        <string name="0" value="Now that the Teleport Device has been turned on, time to find some Crystanol!" />
+        <string name="1" value="You found a Crystanol Fragment! Now it's time to return to the Time Machine. But before you do that, you should give #b#p9250130##k some detailed information about the Energy Laboratory." />
+        <string name="2" value="Now, use the Time Machine to return to the present and deliver the Crystanol Fragment to Doctor Bing." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001458" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="0" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="(You study the Crystanol carefully.)\r\n#L0##bSo this is what Crystanol looks like! It's bigger than I thought. #l\n#k" />
+            <string name="1" value="(You move closer to the Crystanol.)\r\n#L0##bIt seems chipped in places... I guess that makes sense if Doctor Bing is sending others here, too. I'll just grab a piece.#l\n#k" />
+            <string name="2" value="(You attempt to break off a #b-Crystanol Fragment-#k.)\r\n#L0##bThis thing...isn't budging! Argh!#l\n#k" />
+            <string name="3" value="(You rip off a #b-Crystanol Fragment-#k.)\r\n#L0##bWhew! Now I better get back to the Time Machine. I should probably also tell #p9250130# how to get in the Energy Laboratory. Too bad these fragments are so heavy or I'd grab an extra for #p9250130#.#l\n#k" />
+            <string name="4" value="(You place the #b-Crystanol Fragment-#k inside your bag.)" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="(A bright light is glowing from the Crystanol.)" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Back already? Ooooh! Is that a Crystanol Fragment!!\r\n#L0##bI wanted to bring back a piece for you, #p9250130#, but it was too heavy. I'm sorry.#l\n#k" />
+            <string name="1" value="Aww, I wish you could've, but that's okay. \r\n#L0##bThe Energy Laboratory was exactly where you said it'd be, but it was protected by lasers.#l\n#k" />
+            <string name="2" value="Oh no! Then how'd you get past?\r\n#L0##bI did some tinkering around. You shouldn't have any problems getting past.#l\n#k" />
+            <string name="3" value="Whew, that's a relief! I'll head over in a little bit. Just let me rest for a few more minutes...\r\n\r\n" />
+            <imgdir name="yes">
+                <string name="0" value="Make it back safely to our own time. I'll follow soon, with my own Crystanol Fragment! (I hope...)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250130" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001458" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250132" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51201" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

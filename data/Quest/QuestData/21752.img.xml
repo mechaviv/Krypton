@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21752.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Key" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="Apparently, #p2132000 has the #t4032325# that can open the safe where the Seal Stone of Ellin Forest is stored. You'd better head over to #b#m300010400##k and talk to #b#p2132000##k." />
+        <string name="1" value="You ask #p2132000# for the keys, and he seems to panic. He tells you that he may have lost it. It looks like the #r#o5250002#s#k nearby have the key, so it's up to you to defeat them all and retrieve.\r\n\r\n#i4032326# #t4032326# #b#c4032326# / 10#k" />
+        <string name="2" value="#p2132000# found one of keys that #p2132000# lost and gave you the #t4032325#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032326" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032325" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="…Wait, are you Aran?! You're alive! I mean, of course you're alive. You're the master of polearms, the pride of all warriors. I knew you'd emerge victorious against the Black Mage!\n#b#L0#(Um…no...)#l\n#k" />
+            <string name="1" value="But anyway what brought you here? Are you here to look for a place to settle as well? You should let others take care of easy tasks like that, and you should take on tasks that are up to your level, no? \n#b#L0#I'm here to take the #t4032325#.#l\n#k" />
+            <string name="2" value="Ah... You mean the #t4032325#? Hold on one second. Let me see…" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="…I am so sorry, Aran. I don't even know what to say. I know I left it here somewhere, but I think I lost it along with all the other keys. It's all my fault. I remember you telling me a number of times to hold onto my items and keep them safe... I'm so sorry!" />
+                <string name="1" value="But fear not! I am certain the keys are with the #r#o5250002#s#k. You'll just have to teach those monster a lesson or two and retrieve the keys. From the #b10 #t4032326#s#k I lost, I am not sure which one fits which keyhole, so it'd be best if you go ahead and find all 10 of them!" />
+                <string name="2" value="What...? You think I should do it myself? Well, I can do it, but compared to a hero like you, I am nothing. It'll take much less time for you to do it, then for me to labor through it. Please show us your ability as the greatest warrior of all time!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you brought all the keys back! You are Aran, indeed… but that being said, it did take you longer than before. Your combo skills are still intact, but… hmmm, I'm sure you deliberately slowed down for a reason." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, this key is the #t4032325#! Do not lose it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you found the keys yet? I'm sure the #t4032325# is somewhere among the #b10 #t4032326#s#k that went missing!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2132000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032326" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2132000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21751" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032325" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="63" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

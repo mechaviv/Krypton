@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9843.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Garden of Three Shades" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="2" value="It appeared to have been enchanted by #b#p9010010##k's magic." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아니 그 먼 곳까진 어떻게 간거야? 정말 대단한걸? 그 곳은 아무래도 위험할 것 같아 내가 준비한 깜짝 선물이 있는데…" />
+            <imgdir name="no">
+                <string name="0" value="내 선물이 필요 없다면 뭐.." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="buffItemID" value="2022152" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How did you get to such a far away place? You're amazing! Since that place is so dangerous, I've prepared a surprise gift for you..." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Well, if you really don't need my gift..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Here you go! I hope you like my gift!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="180" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="200010100" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

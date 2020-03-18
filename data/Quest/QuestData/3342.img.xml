@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3342.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Truth About Dr. De Lang" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="1" value="After reading #t4161031#, #p2040050# realized what #p2111002# wanted was...really nothing significant. He felt sad about the whole situation, and as he observed the note, something caught #p2040050#'s eyes as he realized there was a hidden message on the back of the note. He then mentioned that #b#p2020005##k might be the person to talk to to reveal the hidden message." />
+        <string name="2" value="A great alchemist who served as the 3rd president of the Alchemist Union in #m261000000#... That's #p2020005#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161032" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161032" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What #p2111002# wanted was... actually that. He seemed to be so happy that he fell in love with someone... and for him to take this extreme measure... sigh. What #p2111002# wanted was in fact, so trivial and empty like this. I guess love painted #p2111002# in the corner." />
+            <string name="1" value="Wait a minute, there's something weird about this note. It looks like there's a huge blank space after the last sentence. It looks like some alchemy was applied to this... I am sorry, but this is the most we can read with my abilities, but... I can introduce you to someone who is capable of uncovering this blank." />
+            <imgdir name="yes">
+                <string name="0" value="The person who can uncover the hidden notes is #b#p2020005##k. He was the 3rd president of the Alchemy Society, so I am pretty sure he knows a way to extract the hidden message from this note." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you are not interested, then I don't know what to say..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm? What is it? What? You want me to extract the hidden message in this note? Let me see what this note is about..." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you met with #b#p2020005##k yet? He's currently conducting experiments at #b#m211000000##k, so I suggest you make your way there soon." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I found out you lost #t4161031#. There are so many people passing through, that someone found this dropped note, and it found its way back to me. It took me a while to regain this note, so please don't lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161032" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3341" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

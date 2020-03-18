@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2248.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Understanding the Horny Mushroom Signals" />
+        <string name="parent" value="Strange Mushrooms" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="0" value="You'd better check in to see the progress The Rememberer of Sleepywood is making with his research on the strange mushrooms." />
+        <string name="1" value="The Rememberer has completed his research, and has suggested that there may be some Horny Mushrooms that have been tainted. He's asked you to gather some Tainted Horny Mushroom Caps.\r\n\r\n\r\n#i4032390:# #t4032390:# #c4032390# / 20\r\n" />
+        <string name="2" value="The Rememberer told you that his study of the Horny Mushrooms has been completed, but that he still can't understood the vague mushroom signals. He told you he still doesn't know what drove the mushrooms into a rage." />
+        <string name="rewardSummary" value="EXP 8,000\r\nCan proceed to 'Zombie Mushroom Signal 1' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032390" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I just completed my research on the Horny Mushrooms, and… Well, it looks like some of these Horny Mushrooms are tainted. The tainted Horny Mushroom Caps look like this #v4032390#. If you can gather these up, it would really speed up the research. Can you do that for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I need 20 Tainted Horny Mushroom Caps." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am sorry. I must be working you too hard. I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You brought them all! Great, now once I take this and do that, and…" />
+            <imgdir name="yes">
+                <string name="0" value="I've been studying the signals that the Horny Mushrooms send to each other and figured out what some of them mean.\r\n#b‘Danger'#k , #b‘King Pepe'#k, #b‘Level 30'#k\r\nThis is still a big mystery to me…" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I'm currently studying the Horny Mushrooms..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032390" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2247" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

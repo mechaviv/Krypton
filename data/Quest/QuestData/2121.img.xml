@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2121.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Messenger of the Fairy Forest 2" />
+        <string name="parent" value="The Messenger of the Fairy Forest" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="After some convincing from the chief of #m101000000# #p1032001#, I have decided to leave #m101000000# as the messenger of #p1032001#. #p1032001# warned me that I may get lost on the way there since it's my first time there, and gave me #tLeafre Guidebook# as well as a flight ticket. By the way, what's this item that I'm suppose to deliver to Tatamo?" />
+        <string name="1" value="I received a request from #p1032001#, the chief of #m101000000#, to head to a place called #b#m240000000##k of Ossyria. #m240000000# is a town entrenched in Minar Forest somewhere in Ossyria, and I was told to deliver an item to the chief of the town, Chief Tatamo, for him. I'll have to deliver the #b#t4031345##k that #p1032001# gave to #b#p2081000##k of #b#m240000000##k." />
+        <string name="2" value="I managed to deliver the Pure Water of Protection that Chief Tatamo requested to Grendel The Really Old, the chief of Ellinia.  As a sign of gratitude, Chief Tatamo gave me 2 magic seeds that allows me to teleport between Ellinia and Leafre." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031345" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031346" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031345" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="And please give this item to #bChief Tatamo#k. I heard he has been living in #b#m240000000##k closely protecting something, and I believe that's the reason why he asked me for this." />
+            <string name="1" value="This bottle contains the Holy Water of Protection, the water which when sprinkled onto a desired item, the item will form a transparent protective shield, invisible to the naked eye. Good luck. Please say hi to him for me." />
+            <imgdir name="no">
+                <string name="0" value="Have you suddenly lost your confidence? I urge you to think again. This could be your best chance to explore the great unknown!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hoh... who are you, and where are you from? How can I help you? \r\n#L0# #bI have come here through a request from your long-time friend Grendel the Really Old. He wants me to give you an item that you requested a long time ago." />
+            <string name="1" value="Ohhh ~ he never forgot my little request. That's good to hear~ If so, then are you telling me you've come all the way from Ellinia just to deliver that item?\r\n#L0# #bYes, that's right." />
+            <string name="2" value="I see ... you've come a long way, that's for sure. You, the messenger of the Forest of Fairy, please take this as my thanks for your great work." />
+            <imgdir name="yes">
+                <string name="0" value="This Magic Seed is a flower seed full of mystical powers which contains teleporting magic. Anyone that holds onto this Magic Seed will be enabled to enter the entrance to the Forest that cannot be entered by a mere mortal. Someone mentioned that the Western part of this town features such entrance. Go check it out." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please give this item to Chief Tatamo of Leafre." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I have this item that I have requested to Grendel the Really Old. I wonder when I can actually get it..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="The Holy Water of Protection is a difficult item to acquire. I have actually been requested by Tatamo a long time ago, but it's such a hard item to acquire, that only now can I be able to give it to him, so PLEASE DON'T LOSE IT, okay?" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031345" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2120" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

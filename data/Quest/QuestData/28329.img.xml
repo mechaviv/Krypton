@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28329.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Object of Professor Foxwit's Interest" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Professor Foxwit in NLC has a deep interest in the Turkey Commando's Eye. If you happen to come across any of these eyes, be sure to bring them to Professor Foxwit in NLC." />
+        <string name="1" value="Professor Foxwit in NLC has a deep interest in the Turkey Commando's Eye. If you happen to come across any of these eyes, be sure to bring them to Professor Foxwit in NLC." />
+        <string name="2" value="Professor Foxwit in NLC has told me a fascinating story about Turkey Commandos." />
+        <string name="demandSummary" value="#i4032525:# #t4032525:# #c4032525# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="50,000 Meso&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032525" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey you! Yeah, I'm talking to you. You know that thing you're holding in your hand, that fancy-looking gagdet? Well, I think I could make good use of it. Wanna give it to me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll be waiting for you. You can find me at the highest point of NLC." />
+                <string name="1" value="To get to NLC, you'll have to purchase an NLC-bound ticket from Bell in Kerning City." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That fancy-looking gadget you're holding in your hand looks like something I could really use. If you bring me that object, I'll buy it from you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey! I know what you're thinking. What is it that you want?\r\n#b#L0#I have some questions about this whole Thanksgiving ordeal.#l\n#k" />
+            <string name="1" value="Hey! I know what you're thinking: crackpot or genius? I get it all the time!\r\n#b#L0#Uh, what?#l\n#k" />
+            <string name="2" value="It's quite alright. We'll see how you do when you're pushing almost a century of life! Awfully spry for an old timer, eh? But, if you have a moment, I do need a bit of help with something. I've been up to my ears in Vorticular Gyros all day! Never seen one of those, have you?\r\n#b#L0#Can't Say that I have. So, what's going on? What's with all these heavily-armed Turkeys running around wild?#l\n#k" />
+            <string name="3" value="You can Say that again! Those Turkey Commandos are wreaking havoc throughout Maple World! And I think I know where they're from.\r\n#b#L0#Where?#l\n#k" />
+            <string name="4" value="I've examined a few of them, and the design of their modifications are unquestionably of Krakian origin. I have a hunch about whose handiwork this belongs to.\r\n#b#L0#Wait, &quot;Krakian&quot; as in the &quot;Krakian Jungle&quot;?#l\n#k" />
+            <string name="5" value="Yes, the very same one. My nemesis, Dr. Krakia, must have discovered the former city of the Krakians, the Polis of Krakia itself. I know that it is located somewhere in the Krakian Jungle. He seems to have adopted their penchant for bodily modifications.  Knowing him, he's probably built his lab there. That must be where he's modified all these regular Turkeys into Turkey Commandos!\r\n#b#L0#Interesting. Well, what can we do about it now?#l\n#k" />
+            <string name="6" value="Don't worry. I'll call you if I need your help! Until then, just keep training. You'll need strength to weather the coming storm! " />
+            <imgdir name="yes">
+                <string name="0" value="I'll let you know everything as soon as I confirm my suspicions. In the mean time, do your best to destroy as many of those modified Turkeys as you possibly can! Happy Thanksgiving!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Where are the #bTurkey Commando#k objects I've been waiting for? Don't tell me you lost them on the way. Go back and bring them to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032525" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032525" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009112500" />
+            <string name="end" value="2009120100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

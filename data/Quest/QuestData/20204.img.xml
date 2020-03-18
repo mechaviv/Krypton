@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20204.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knighthood Exam: Night Walker" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="According to #p1101002#, you can take your Knighthood Exam if you go see #b#p1101006##k, the Chief Knight of Darkness. Better head over to Ereve and meet #p1101006#." />
+        <string name="1" value="The Knighthood Exam has started. The test itself is actually quite simple. You just need to reach the end of the Training Forest, enter #bthe 2nd Drill Hall#k, and defeat the Mimis inside while bringing back #t4032099#. Better find #b30 #t4032099#s#k and bring them back to #p1101006#. \n\n#i4032099# #t4032099# #b#c4032099# / 30#k" />
+        <string name="2" value="You have successfully completed the Knighthood Exam and officially dropped the &quot;in-Training&quot; from your title. As a bonafide Cygnus Knight, do your best to work hard so you will never be ashamed of yourself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Knighthood Exam? Is it already that time? Come to think of it... you have been working for the Cygnus Knights for quite some time... Okay, I will give you the opportunity to take the Knighthood Exam right now. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The test is really nothing special. Go to the end of Training Forest and enter #bthe 2nd Drill Hall#k, where you'll find some Mimis inside. Defeat them all and bring back #b30 #t4032099#s#k with you." />
+                <string name="1" value="If you can bring all the #t4032099#s back, then I will grant you the right to become a Knight. At this point, I need your skills to do the talking." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It doesn't matter when you start, but delaying the inevitable doesn't change a single thing." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You still haven't brought back #b30 #t4032099#s#k yet. I thought I told you to find them at the end of Training Forest, inside #bthe 2nd Drill Hall#k... Don't you remember this?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032099" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q20204e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="1400" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

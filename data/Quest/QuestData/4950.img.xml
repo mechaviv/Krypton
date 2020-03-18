@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4950.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="File Under Incomplete" />
+        <int name="area" value="50" />
+        <string name="0" value="MBI Agent Falcon is still snooping around the old Haunted House, even after I helped him find some of the Paranormal Activity Report Pages!  I wonder why... maybe he still needs help." />
+        <string name="1" value="Looks like MBI Agent Falcon spoke too soon... 50 pages led him to the wrong, uh, dead guy... but he thinks that if I collect #b100#k more of them, he'll be able to catch Mr. Bones for sure!  Whew... 100 pages.  I wonder how many pages in total were in his original report?" />
+        <string name="2" value="I tracked down all of the 100 more #t4031764#s#k Agent Falcon requested!  Now he can finally go track Mr. Bones... I hope." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031812" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, hey there... it's you again.  Er... you wouldn't happen to have some free time on your hands, would you?\r\n\r\n#L0##bDidn't I help you find Mr. Bones?  What are you still doing around here?#l#k" />
+            <string name="1" value="With the information I had, I tracked down Mr. Bones' hiding place in the house.  Well, uh... more accurately... what I thought was his hiding place.  I found a Mr. Bones... but he turned out to be an old (and rather crotchety) skeleton, rather than the crafty ghost I'm looking for.  &lt;Cough&gt;... He wasn't too happy that I woke him up.  Nasty fellow.\r\n\r\n#L0##bI can see your bruises.#l#k\r\n#L1##bI already helped you!  Can't you do your own job?!#l#k" />
+            <string name="2" value="Yes... unfortunately, they're as painful as they look.  Can you help me make sure I don't make the same mistake again?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Um... well... I guess that's one way to look at it.  Hmph... I thought civilians were always happy to help out on official Paranormal Investigation business.   Well, if you do, you know where to find me." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Guess I was a tad bit hasty in my assumptions.  I've realized that with only 50-some pages my file is still rather incomplete.  Plus... uh... I tend to doodle a lot when I'm nervous, so a lot of the report pages you found are... um... just my drawings of ghosts and aliens.  To be extra sure this time, let's get me #b100#k more #bParanormal Activity Report Pages#k.  That should do the trick." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmph... I thought civilians were always happy to help out on official Paranormal Investigation business.   Well, if you do, you know where to find me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got them?  Fantastic!  Here, let me have a look!  Hmmm... By triangulating the data from Mr. Bones' movements from Page 407 with this page from his psychological profile, we can infer that... Yes!  That makes sense!  And then, if we cross-reference that with this chart from Page 75, we can deduce... Yes!  Of course!  Why didn't I think of that before?!  Mr. Bones must be at- Oh, sorry, I almost forgot about you in my excitement!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for your help!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... not quite #b100 Paranormal Activity Report Pages#k yet.  Like I said, I don't want to make the same mistake twice... getting beaten up by a bony old skeleton really hurts!  Please keep looking!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201075" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031812" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201075" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4949" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

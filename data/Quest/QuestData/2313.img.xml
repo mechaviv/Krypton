@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2313.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Story Behind the Case" />
+        <int name="area" value="30" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="The Head Security Officer of Mushking Empire has something to say." />
+        <string name="1" value="You need to visit the Mushking Empire's Secretary of Domestic Affairs." />
+        <string name="2" value="You listened intently as the Mushking Empire's Secretary of Domestic Affairs gave you a timeline of what happened." />
+        <string name="summary" value="You should pay a visit to the Mushking Empire's #bSecretary of Domestic Affairs#k." />
+        <string name="rewardSummary" value="EXP 4,000\r\nCan proceed to 'Exploring Mushroom Forest (1)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <int name="nextQuest" value="2314" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have told our #bSecretary of Domestic Affairs#k of your work. Please go pay a visit to him immediately." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Save our kingdom! We believe in you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There's not much time. Please hurry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Oh, you must be the hero that the Head Security Officer talked about. Our kingdom is currently in a state of emergency because we were invaded by #bKing Pepe#k from Ice Land and lost our kingdom. To make matters worse, our own Princess Violetta has been kidnapped and taken into their custody." />
+                <string name="1" value="That dastardly King Pepe! He knew that Mushking was not doing well physically and was ready to hand the throne over to Princess Violetta, and attacked before that could happen. His plan surely must be to arrange for King Pepe's dumb son Prince Giuseppe and Princess Violetta to marry to orchestrate a takeover of the Mushking Empire. Right now, we must save Princess Violetta from their grasp. Please save the Princess for us!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="There's not much time. Please hurry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2312" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

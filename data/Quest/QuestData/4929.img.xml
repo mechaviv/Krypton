@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4929.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gwin's Thanks" />
+        <int name="area" value="30" />
+        <string name="0" value="When I passed by, #b#p1061013##k, someone I really never got to spoke with, looked like he had something to talk to me. Let's go and find out what he has to say to me." />
+        <string name="1" value="#p1061013# was looking at #t4031447# very closely to see if I did anything to hurt him. I don't know what the deal is but he was scaring me.  It makes me wonder why he is obsessed with this particular snail. I should find out by talking to #b#p1061013##k again." />
+        <string name="2" value="#p1061013# told me what happened between him and Bob. It's amazing that a simple snail actually tried to save human being... Those little monsters we hunt aren't really little at all..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+            <int name="pop" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hi... What's your business? I am Gwin, the traveler of Maple. I've traveled just about any place where my eyes can reach and now I am just exhausted. Just let me rest in peace...\r\n\r\n#L0##bOk, I was just passing by.#k#l\r\n#L1##bI just had a question about...#k#l" />
+            <string name="1" value="Wait, what are you holding on your hand? Isn't that #bBob's snail shell#k? Why are you holding it! Let me see him!\r\n\r\n#L0##bAlright, chill please. Here you go.#k#l\r\n#L1##bNo way! Why should I?#k#l" />
+            <string name="2" value="Ok... You'd better have explanation for this one." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Sorry. Leave me alone for now..." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="What have you done with him! You should be ashamed of yourself for this!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Talk to me in a minute! (Intensely looks at the snail shell)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Don't do that!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="How did this happen? How come there is this huge scar on his Shell? Are you responsible for this?!\r\n\r\n#L0##bNo, not that scar. I'm just... asked to bring him somewhere. That's all.#k#l" />
+            <string name="1" value="I see... Poor guy... Now that I look at it, doesn't look like this scar is fresh... No one really realizes how important his being is in this cynical world. Hope you realize that.\r\n\r\n#L0##bI get it. 100%. Crystal Clear. Won't happen again. I promise.#k#l" />
+            <string name="2" value="Understood. You know, he's the one who helped me getting out of that Drake's Meal Table when I got hurt... I could have gone out there by myself but I still admire his bravery and passion for doing such a thing for a human being as a snail.\r\n\r\n#L0##bOh.. that's what happened.#k#l" />
+            <string name="3" value="I guess your intention wasn't all that bad after all. Let me get you something. Talk to me in a minute while I get them." />
+            <imgdir name="yes">
+                <string name="0" value="This isn't really much but for Bob, I'd give him anything without any hesitation. Hope you take good care of him while your trip. " />
+                <string name="1" value="Also, don't give him to anyone suspicious if their intentions are unknown. Bob is a legend among people who know him and I bet lots of people would want him for whatever reason for all we know." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Sorry. Leave me alone for now..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4928" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

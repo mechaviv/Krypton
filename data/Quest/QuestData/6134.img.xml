@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6134.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Resurrection" />
+        <string name="parent" value="Caron's Notebook" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="1" value="When I asked #p1061011# to teach me how to resurrect the dead, he told me that I have to experience death.  He told me to go to the dark place across from the Door of death, guarded by #bThanatos#k, at the #bBottom of Ludibrium clock tower#k. I'm a bit scared, but my spirit is telling me that this is the path to take.\n\n#i4031448##t4031448# #b#c4031448#/1#k" />
+        <string name="2" value=" That was a tough test, but somehow, I survived. I received the supremely powerful skill known as #b#q2321006##k.  #p1061011# said those who obtain such power should never abuse it. This technique, while powerful, breaks one of nature's most sacred laws, that of life and death. I should be careful..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031448" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321006" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I know what you want. You'd like to have the #bpower to avoid death#k... But this power is in direct opposition to the laws of nature. Unless you are strong enough mentally, you can't handle this level of power." />
+            <string name="1" value="Do you really want this power?" />
+            <imgdir name="yes">
+                <string name="0" value=" Then you should pass the test. Quite simple really..." />
+                <string name="1" value="The test is to experience death. The one who keeps the door of death, Thanatos, lives in the bottom of the clock tower in Ludibrium. Pass the door he stands watch by and enter the opposite door. Then you can experience real death." />
+                <string name="2" value=" Do you want a clue? Death is like darkness in which you can see nothing. Darkness is a fear, but within that fear is a sense of calm, some would Say the very path of death is a merely a journey into the unknown... Could you possibly overcome it and bring #b#t4031448##k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Are you afraid? That means you are wise. Wiser still would be to turn back now..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Finally, you have passed the ultimate test..." />
+            <imgdir name="yes">
+                <string name="0" value="Passing that type of test means you saw many things. Things I would prefer that you mention to no one." />
+                <string name="1" value="What you saw, what you heard, and what you felt! All these feelings are death. You are qualified to have this power, unless you lose your mind after experiencing death. It's traumatic, and I've seen it happen before. The power to brave death itself, having the fortitude to take the final step of life before your time...this has led you to a new understanding--how to beat death itself. #b#q2321006##k. This power is now yours." />
+                <string name="2" value=" You would know since you passed the test. It's dangerous to wield such power. Do not abuse it...that's the only advice that I can give." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you got #b#t04031448##k yet? Then It's better for you to go back. The road ahead is not one that all mages should take." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031448" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6133" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

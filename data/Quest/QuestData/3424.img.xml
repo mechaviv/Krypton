@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3424.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Porter the Undependable" />
+        <string name="parent" value="The Control Program for Rombot" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I need 3 of Rombot's Memory Cards so #bPorter#k of Omega Sector can decipher them." />
+        <string name="2" value="Porter made a colossal mistake and destroyed one of Rombot's Memory Cards. I can't believe I just trusted this man to do this job!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000124" />
+                    <int name="count" value="-3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3425" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(Sniff sniff~) Man, I've been suffering from cold for months now...but then, hey, did #b#p2051001##k, the engineer at the Silo, really requested for #b3 #t4031118#s#k? Then please give me the #b3 #t4000124#s#k (Sniff sniff~). I'll try to decipher this, and make it into #t4031118#." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... #b#p2051001##k the engineer at Silo requested for the deciphering of #b#t4000124##k, right? (Sniff sniff~) Yes, it's possible, but I've been suffering from crazy cold lately. (Sniff sniff~) I'll have to try this, first  (Sniff sniff~) Hmmm... then please send me the #b3 #t4000124#s#k. Let's see ..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="(Sniff sniff~) Man, I've been suffering from cold for months now...but then, hey, did #b#p2051001##k, the engineer at the Silo, really requested for #b3 #t4031118#s#k? Then please give me the #b3 #t4000124#s#k (Sniff sniff~). I'll try to decipher this, and make it into #t4031118#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000124" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3423" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

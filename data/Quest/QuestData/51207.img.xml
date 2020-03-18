@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51207.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="OSSS Mission 1: Alien Elimination" />
+        <int name="area" value="50" />
+        <int name="selectedMob" value="1" />
+        <string name="0" value="Receive an OSSS Mission from #b#p9250133##k." />
+        <string name="1" value="Defeat #b20 Powerful Aliens, 20 Wise Aliens, and 20 Lucky Aliens, who appear when you defeat Unidentifed Powerful Aliens, Unidentified Wise Aliens, and Unidentified Lucky Aliens, respectively#k and return to #bHead Researcher Wynn#k.\r\n\r\nYou must be wearing a #bBing Machine or a Visitor Suit#k to defeat the aliens." />
+        <string name="2" value="Receive this mission again after completing the other missions." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032714" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032714" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032718" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4310004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've been issued a special mission from the OSSS. You can complete it if you have the #b#t4032714##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I see that you have the #b#t4032714##k. I will issue you Mission 1." />
+                <string name="1" value="Aliens have been appearing throughout Maple World. Please defeat #b20 Unidentified Powerful Aliens, 20 Unidentified Wise Aliens, and 20 Unidentified Lucky Aliens.#k" />
+                <string name="2" value="Remember, aliens can't be hurt if you're not wearing the Bing Machine." />
+                <string name="3" value="You will get a medal when you complete the mission. Talk to #b#p9250135##k to upgrade your suit using those medals." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Idle chat can wait until after you've saved Maple World..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you completed the mission?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your work. Here is your medal. Head over to #b#p9250135##k to purchase various cells that can be used to upgrade your suit." />
+                <string name="1" value="And as for the #b#t4032718##k, submit it with the other ones once all four missions have been completed." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Looks like you haven't finished the mission just yet..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250133" />
+            <string name="endscript" value="q51207e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420087" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9420128" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="9420129" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250133" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51214" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032714" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

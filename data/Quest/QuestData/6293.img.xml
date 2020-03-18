@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6293.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Black Spirit's Healing Power2" />
+        <string name="parent" value="Spirit Healing" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value=" #b#p2041021##k told me to bring #b500 #t4000148##k if I want to fully increase #q1321007#'s power and be able to control it.\n\n#i4000148##t4000148# #b#c4000148# / 500#k" />
+        <string name="2" value=" We fully increased #q1321007#'s healing power and control him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="150000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="-500" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1320008" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="25" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="132" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#q1321007# used to be a bad man, but now he uses healing power. How exciting! Do you want to awaken #q1321007#'s power?" />
+            <imgdir name="yes">
+                <string name="0" value="Then get me #b500 #t4000148##k! This will control\r\nthe #q1321007#'s power completely. His spiritual powers are so strong that lots of #t4000148# are required." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's fine with me if you don't want to." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You gathered 500 #t4000148# 500. I'll awaken all of #q1321007#'s power now." />
+            <imgdir name="yes">
+                <string name="0" value="While unlocking all his power, I controlled all of his memories with the help of 500 Bridles of Binding. Though he's a dark spirit, he looks pure. Please take care of him!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" If you don't get me #b500#t4000148##k, I won't awaken #q1321007#'s power." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="500" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6292" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

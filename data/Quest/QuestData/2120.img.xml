@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2120.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Messenger of the Fairy Forest 1" />
+        <string name="parent" value="The Messenger of the Fairy Forest" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#p1032001#, the chief of #m101000000#, apparently wants my help. I better go see\n#p1032001#." />
+        <string name="1" value="#m101000000#'s chief #p1032001# needed a favor, so I went. #p1032001# said when I go to #b#m240000000##k in Ossyria, and I need to see  #m240000000#. I'd better hurry!" />
+        <string name="2" value="I received a request from the chief of #m101000000# and headed over to see #p1032001# as their messenger. #p1032001# was worried I may get lost on the way." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="자네는 새로운 곳으로의 여행을 좋아하나? 대부분의 여행자들은 호기심이 많던데... 내가 제안을 하나 할 테니 들어보지 않겠나? 자네한테 손해가 되지는 않을거야." />
+            <imgdir name="yes">
+                <string name="0" value="역시 호기심이 많은가 보군. 혹시 리프레라는 마을에 대해 들어본 적 있나? 오시리아 대륙에 있는 마을인데 오래된 거대한 숲 한가운데 자리잡은 마을이라네. " />
+                <string name="1" value="그 마을의 촌장인 타타모와 나는 오랜 친구사이인데 오래 전 타타모가 부탁했던 물건을 전해주고 싶다네. 내가 주는 물건을 가지고 리프레로 갈 생각이 있다면 다시 나를 찾아오게나." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="새로운 것에 대한 호기심이 부족한 것일 수도 있고, 신중한 성격이어서 그럴 수도 있겠군. 자네는 다른 여행자들과는 좀 다른 것 같아." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2121" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you interested in traveling to new places? Most travelers seem very much interested in doing so, and ... tell you what, I'll make an offer to you. Are you interested? It shouldn't hurt you" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd be the curious kind. Say, have you ever heard of a town called Leafre? It's located somewhere in Ossyria, and it's safely encapsuled in the midst of a huge forest of trees." />
+                <string name="1" value="#bChief Tatamo#k, the chief of #bLeafre#k, and I go way back, and I've always wanted to give him this item that he asked for a long time ago. If you are interested in taking this item and heading to Leafre, let me know." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Maybe you aren't curious enough to explore the new ground; maybe you the kind of person that carefully weighs the pro's and con's before making a decision. Either way, you seem a little different from other travelers." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You look like you have made up your mind to visit #m240000000#. Just heading over to #b#m240000000##k without much of a game plan is commendable in itself, but since you have volunteered to become my messenger, I'll give you some items that should help you on your journey." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3242" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2080.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Path of a Magician" />
+        <int name="area" value="10" />
+        <string name="0" value="What does it mean to be a Magician? Talk to #p1002101# in Lith Harbor. " />
+        <string name="1" value="#p1002101# in Lith Harbor says you can choose to become a #bMagicianr#k if you're at least #bLevel 8#k. He tells you to see   #rGrendel the Really Old#k in #rEllinia#k. If you'd like to walk there, check your World Map. (#rW#k)" />
+        <string name="2" value="You learned what it takes to be a true Magician from the chief of all wizards, Grendel the Really Old. You have a feeling this is the right path for you." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#p1032001##k, the greatest Magician... I have never seen him up close. Someone told me he's always at the Magic Library, reading. So do you want to become a Magician?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay. Give #b#p1032001##k my greetings. Perhaps I'll get to meet him one day. Anyway, to become a Magician, head to Ellinia and go to the Magic Library located at the very top of that area." />
+                <string name="1" value="Passing by me and go further, you can find #bMagician Statue#k to teleport to #bElinia#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't think being a Magician suits you? Seems all right to me... In any case, talk to me when you're ready to choose a path." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you here to become a Magician like me?" />
+            <imgdir name="yes">
+                <string name="0" value="Many come, hoping to be great Magicians. They push themselves hard. If you wish to join them, you need to be at least #bLevel 8#k. Talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="At the very top of the biggest tree in the biggest forest of Victoria Island, a place called #rEllnia#k, you'll find #b#p1032001##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2079" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2081" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2212" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2077" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2078" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

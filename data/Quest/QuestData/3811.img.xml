@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3811.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Legendary Being's Scroll 3" />
+        <string name="parent" value="The Legendary Being's Scroll" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="I gave #t4031432# to #b#p2091001##k of #b#m250000000##k. Hopefully now he'll lend me #t4031431#. I better go see #p2091001# right now." />
+        <string name="1" value="#p2091001# met his end of the bargain and lent me #b#t4031431:##k. Now it's time for me to deliver it to #b#p2071010##k." />
+        <string name="2" value="I gave #p2071010# the #t4031431#. Hopefully this will help #p2071010# become the Master at the intermediate level. Does that mean the intermediate-leveled Master can make not just the Gold Axe, but a Diamond-studded Axe?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031431" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031431" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="0 = Oh, you must be the person that helped my old student out the other day. Thank you very much for giving me #t4031432#. I found #b#t4031431##k for my other student, so please take this." />
+            <imgdir name="yes">
+                <string name="0" value="So one of my students is being #b#p2071010##k at #b#m222000000##k... interesting. Should I visit him? Please let him know that he'll need to read #t4031431# and reach the medium level of the course to become the Legendary Being." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmph? You didn't take the item that you are supposed to deliver. Is there anything going on?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh... this is #t4031431#! You must have visited #m250000000#. And you even gave the master my best wishes. Great job, my friend... great job. Here's a Gold Axe for your stellar... hmmm. Regrettably, I do not think I can reward you with a Gold Axe. The price of gold has been skyrocketing these days, and... hmph. I apologize." />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm... the introductory level was difficult, so how hard would the medium level be... let's see ... oh, this looks difficult, as expected. What? The master is coming? When will I be able to master all this??" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmm? Why are you just standing around here? I have lent you #b#t4031431##k, so please take it and go see #b#p2071010##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You're not at #m250000000#, yet? #p2091001# of #m250000000# is indeed, my master. Please lend this copy of #t4031431# to him." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Ahh, you're here now.  The Legendary Being's Scroll may be lost, but everyone visits the Legendary Being. Here's the #b#t4031431##k, so please take this to the #bMountain God#k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031431" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3810" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10265.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Defeating the Hidden Monster" />
+        <int name="area" value="50" />
+        <string name="0" value="You received the #b#t2430009##k. It smells so pure. How are you supposed to use this? Find out from #p9010010#." />
+        <string name="1" value="The children say that they saw the monster in various places outside of town. Try going to the places where the children saw the monster and spritz on the perfume. If you bring back the toys that the monster took from the children, #p9010010# will cast a magical buff on you..." />
+        <string name="2" value="You defeated one monster. The children should be a bit safer now!" />
+        <string name="summary" value="Defeat the hidden monster and return the toys that the monster took from the children to Cassandra!" />
+        <string name="demandSummary" value="#i4032285:# #t4032285:# #c4032285# / 1\r\n" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1012146:# #t1012146:# 1\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1012146" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032285" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="후훗~ 이제 몬스터를 속일 준비는 된 것 같은데? 향수는 쉽게 만들 수 없으니까 몬스터를 본 장소에만 뿌려야 한다는걸 잊으면 안돼!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="마을 동쪽 어딘가에 몬스터를 본 아이가 있어. 어디였더라? 아~ 나의 기억력은.. 마을 동쪽으로 가서 향수를 뿌려봐. 혹시 몬스터가 말을 걸어오면 어린 아이인척 해야 한다고!!&#xD;&#xA;" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="도와줄 수 없다는 거야? 이거 실망인데...... 때론 누군가를 속이는 것도 필요하다고!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="숨어있는 몬스터를 찾아 멀리 내 쫓은거야?" />
+            <imgdir name="yes">
+                <string name="0" value="고마워! 이것으로 어린 모험가들이 안전하게 여행할 수 있을거야." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="아직 몬스터를 쫓아내지 못한 모양이지? 순결한 향수를 뿌리면 녀석은 분명 네가 어린 모험가인줄로 착각하고 나타날거야. 서둘러 향수를 뿌려보라고!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032285" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10265e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430009" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10265s" />
+            <int name="lvmin" value="26" />
+            <int name="lvmax" value="50" />
+            <string name="start" value="2009030100" />
+            <string name="end" value="2009041300" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

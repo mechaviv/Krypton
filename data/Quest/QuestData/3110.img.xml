@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3110.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Restoring the Spirit of the Snow Sculpture" />
+        <string name="parent" value="Snowfield Giant" />
+        <int name="order" value="5" />
+        <int name="area" value="33" />
+        <string name="1" value="Alcaster says he has everything set to restore the sculpture, and gives me an Ice Crystal. He says that a magic spell is cast onto this crystal, and will help restore the sculpture.\n\n#i4031791##t4031791#  #b#c4031791#/1" />
+        <string name="2" value="The snowman seems to have returned to its gentle self as soon as the Spirit of the Snow Sculpture was restored. No worries about the Snowman attacking anyone else, right?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031791" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="pop" value="20" />
+            <string name="npcAct" value="act3110" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031791" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome. Yes, I've heard from Scadur. I've barely managed to make an ice crystal to restore the Spirit of the Snow Sculpture. Here is the ice crystal. Go find the sculpture and restore it to its original form. As soon as the sculpture is restored, the Snowman will return to its gentle self." />
+            <imgdir name="no">
+                <string name="0" value="I have heard you are doing a good job holding down the Snowman, but that won't last forever. Restoring the sculpture is our only hope." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(As soon as the ice crystal is placed near the sculpture, the crystal sinks into the sculpture and the broken pieces are restored.)" />
+            <imgdir name="yes">
+                <string name="0" value="(The Snowman's crying is gradually quieting down. The huge creature disappears into the darkness from afar.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go seek the Spirit of the Snow Sculpture with this ice crystal." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="(It seems that a special item is needed to restore the Spirit of the Snow Sculpture.)" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You've lost the ice crystal. It is the only thing that can save El Nath. I can afford another spare to give to you, but please keep in mind that this is not easy to create. Please take care of it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031791" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3109" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3738.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Disturbing the Army of Robots" />
+        <string name="parent" value="Year 2216- The Ruins" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="You have traveled to the year 2216 on your fourth time travel. Thanks to Ken, who assumes you are from the support unit, you must eliminate monsters. Things keep coming up and hindering you from doing what you're here to do. Keep in mind that you are here for a reason." />
+        <string name="2" value="You traveled to the year 2216 on your fourth time travel. Thanks to Ken, who just assumed that you were from the support unit, you had to eliminate monsters. Conditions in the city appear to be deteriorating." />
+        <string name="demandSummary" value="#o8120102# #a37381#&#xD;&#xA;#o8120103# #a37382#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 105,000\r\nCan participate in &quot;Isabella's Search&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="105000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you from the support unit? I'm so glad you're here. Completing the mission here seems nearly impossible with the frequent attacks from the Afterlords and Prototype Lords. I'll give you the details a little later. Please just eliminate these monsters first." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please eliminate 50 Afterlords and 40 Prototype Lords." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Isn't the support unit supposed to provide support?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you. You've been extremely helpful." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate 50 Afterlords and 40 Prototype Lords." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082017" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8120102" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8120103" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3736" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29501.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Horned Tail Slayer" />
+        <int name="area" value="51" />
+        <int name="viewMedalItem" value="1142007" />
+        <string name="0" value="#b#eTitle Challenge - Horned Tail Slayer#n(Special Title)\n#k#e#bHorned Tail Slayer#k#n, the title given to the person who slays the most Horned Tails!  Dalair said that if I hunt a Horned Tail and don't report it to him, it won't count." />
+        <string name="1" value="#b#eTitle Challenge - Horned Tail Slayer#n(Special Title)\n#k\n - Horned Tail Hunting Record that Dalair knows about : #r#jmon##k \n\nAfter everyone reports to Dalair how many Horned Tails they hunted, the one who hunted the most will receive this title.  But... wait?  If I give up, I have to start all over when I try out again next time?!" />
+        <string name="2" value="#b#eTitle Challenge - Horned Tail Slayer#n(Special Title)\n#k\n - Horned Tail Hunting Record that Dalair knows about : #r#jmon##k \n\nThe honorable '#bHorned Tail Slayer#k' title is given to the one person who slays the most Horned Tails." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Only one person who hunts the most Horned Tails can be the owner of this title. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <string name="endscript" value="q29501e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3707" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29501s" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

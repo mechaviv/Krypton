@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3955.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search of the Long Lost Pyramid" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#bByron#k, who studies the everyday life of the desert people of the #bAriant Back Street#k, says that he's found something strange in the desert. You should go visit Byron.\r\n#bTip - Take the ship from Orbis heading toward Ariant, the oasis of Nihal Desert." />
+        <string name="1" value="Byron claims that a huge sandstorm recently covered the path between Ariant and Magatia and completely changed the landscape of the area, revealing a #e#bmysterious Pyramid#k#n. He's currently seeking explorers willing to help unlock the mysteries surrounding the Pyramid. First up, you'd better head over to Sahel 3 and talk to #e#bDuarte#k#n, who stands near the Pyramid." />
+        <string name="2" value="As Byron requested, you headed to Sahel Desert in search of the giant, mysterious Pyramid. At its entrance stood Duarte, who warned about the dangers of the Pyramid, but opened its doors to any who dare risk their lives to unlock its mystery." />
+        <string name="demandSummary" value="Talk to Duarte who stands near the Pyramid at Sahel 3." />
+        <string name="rewardSummary" value="EXP 6,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you hear the story? Recently, a huge sandstorm swept across Sunset Road in Nihal Desert. The path that connects Ariant to Magatia disappeared completely for a whole week. Even the residents there claim it was the biggest sandstorm they'd seen in a hundred years." />
+            <string name="1" value="After the sandstorm passed, I checked to see how it affected the creatures and discovered something amazing. A Pyramid! A giant Pyramid standing right before my eyes!\nI think it's a Pyramid that used to be buried underground but resurfaced after the sandstorm drastically changed the landscape. The local residents claim the Pyramid is evil and don't go anywhere near it." />
+            <string name="2" value="But I disagree with them. An evil Pyramid? That doesn't make any sense! So I decided to enter the Pyramid and study the basics of the ancient burial process. But someone stopped me in my tracks, saying that I was not qualified and that I would only enrage some god known as Nett." />
+            <string name="3" value="Apparently, only people over Level 40 are allowed in. Unfortunately, I am only at Level 39. This is why I am suggesting that you venture inside the Pyramid. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome! I want you to investigate the inside of the Pyramid thoroughly and tell me what it's like in detail. Head to #bSahel 3#k, and you'll find a new path that leads you to the Pyramid. I'll be here waiting. The man that stopped me at the entrance of the Pyramid is called #b#eDuarte#n#k. Strange name, don't you think?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="A giant Pyramid has revealed itself out of the blue! Aren't you excited to find out what's inside?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Stop immedietely, foolish one. Are you not afraid of death?\r\n#b#L0#I want to explore the Pyramid.#l\n#k" />
+            <string name="1" value="Fools. A sea of fools. Are all humans this foolish? Even one who called himself a scholar dared to venture here. But is not death something to avoid?\r\n#b#L0#I am here on behalf of that scholar, Byron.#l\n#k" />
+            <string name="2" value="I see. That fool. I was merciful enough to save him from the throngs of death, and instead he drags himself to another one of its doorsteps. So be it. Let us see if he can escape the breath of Anubis." />
+            <imgdir name="yes">
+                <string name="0" value="I will permit your entrance, but it remains to be seen if the Pyramid will accept you as well. If it does, then you will acquire the Pharaoh Yeti's Gem. If you bring that to me, I will lead you directly to a spot where you can acquire many other rare gems." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Head to #bSahel 3#k, and you'll find a new path that leads you to the Pyramid. I'll be here waiting. The man that stopped me at the entrance of the Pyramid is called #b#eDuarte#n#k. Strange name, don't you think?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2103013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101005" />
+            <int name="lvmin" value="40" />
+            <int name="lvmax" value="60" />
+            <string name="end" value="2009010100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

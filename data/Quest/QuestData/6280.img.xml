@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6280.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" The Holy Knight's Sword" />
+        <int name="area" value="10" />
+        <string name="0" value="#p2081100# says he has something to tell me..." />
+        <string name="1" value=" #p2081100# talked about holy power and told me to go to the statue in Orbis Tower. They say I can get this power if I get #b#t4031454##k and place it inside #b#t4031455##k and give it to #b#p2030005##k... I heard the explorer leader, Teng, knows about #t4031454#. I'll go see him first then go to the Cave of Life. \n\n#i4031455##t4031455# #b#c4031455#/1#k" />
+        <string name="2" value="  #p2030005#  in Orbis Tower gave me holy power!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031455" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1221003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="122" />
+                        <int name="1" value="0" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1221004" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="122" />
+                        <int name="1" value="0" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value=" To make up for your weakness, you need a new skill. Are you ready to receive it?" />
+            <string name="0" value="A Knight who completed the 4th job advancement. Your power is certainly strong but you need something more. You are a Paladin, sworn to get rid of darkness. Your power is not perfect. I can't say that you're a perfect Paladin." />
+            <imgdir name="yes">
+                <string name="0" value="You're really a knight. I'll let you know how to get a new skill!" />
+                <string name="1" value=" Do you know there is a spring in the Cave of Life? The water in the spring is not usual water but #b#t4031455##k. You can't touch the holy water so you need to have a container, #b#t4031454##k. Recently, #b#p2060101##k found  #t4031454# who sank under the deep sea after being attacked by a giant shark. Go to see him." />
+                <string name="2" value="Put #t4031455# in it. You should not drink it! Put #b#t4031455##k into #b#t4031454##k and sacrifice it to #b#p2030005##k in Orbis tower. If you are a real knight, you will receive a holy power." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" All Paladins want that power. You just aren't ready yet..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It looks like#p2030005# is looking down on me with merciful eyes." />
+            <imgdir name="yes">
+                <string name="0" value="This power is for Holy Knights... Make good use of it please. .." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Sacrifice holy water from the Cave of Life in front of #p2030005# in Orbis." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="#p2030005# doesn't move at all." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031455" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="job">
+                <int name="0" value="122" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6201.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shawn's  fear" />
+        <string name="parent" value="Grief of darkness" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="I was told to bring #brequested object#k from an unrevealed relic.  A newly discovered relic...What could it possibly be? \n\n#i4031452##t4031452# #b#c4031452#/1" />
+        <string name="2" value="...I brought the requested object. It wasn't easy but I did it.  #p9040002# looked extremely happy, but a bit worried at the same time.  What could be bothering him?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031452" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're going to the place where the excavation is still going on. It has never been revealed. I'm the excavation team leader, but have no idea what will happen. Certainly, it is dangerous. Would you like to go inside?" />
+            <imgdir name="yes">
+                <string name="0" value="Aren't you afraid? I don't even know what's in it. Why did you agree to do this? It's risky and the wrong thing to do. I am who requested this service, although there no point of saying this to yo now. As long as you agree with it, I won't Say anything." />
+                <string name="1" value=" I don't know what's inside the chamber of unrevealed relics. But what I am sure about is that its been tightly covered. I couldn't find it if it was right infront of my face! You have to bring me #ba certain box#k. Many, many monsters protect it. Be careful!" />
+                <string name="2" value=" If you want to go into the chamber of unrevealed relics, talk to me again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you sure? I don't want a human to go in but how will I find out what's inside?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Finally, you made it out! I can't believe it.. Are you ok? Any injuries? No? That's good." />
+            <imgdir name="yes">
+                <string name="0" value="This is it. Good... This will do." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you entered yet? You have to bring me a box." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9040002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031452" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

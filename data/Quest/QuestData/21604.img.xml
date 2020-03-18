@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21604.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wolf Mount" />
+        <int name="area" value="6" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="It looks like there are a couple of people who know how to handle Wolf Pups. You should head over to #b#m211000000##k and talk to #b#p2020007##k." />
+        <string name="1" value="#p2020007# has taught you the basics of mounting a wolf! With this, you'll be able to move around faster since you can ride on the wolf's back. Plus you gain valuable bonding time with your wolf. You'll have to gather materials for a saddle, since you won't be able to ride your wolf without one.\r\n\r\n#i4000048# #t4000048# #b#c4000048# / 50#k" />
+        <string name="2" value="You received the #t1912011# and Mount Skill from #p2020007#. You'll be able to roam through the entire world with this." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1912011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="20001004" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2000" />
+                        <int name="1" value="2100" />
+                        <int name="2" value="2110" />
+                        <int name="3" value="2111" />
+                        <int name="4" value="2112" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa, is that a wolf? I haven't seen anyone carry a wolf in ages! But why aren't you using it as a #bMount#k? From your bewildered expression, you probably don't know what I'm talking about…" />
+            <string name="1" value="Well, it's just as it sounds. You ride on the wolf's back and it allows you to move lightning fast. Oh boy, did I have some glorious days of riding #o5130104#s and #o5140000#s in the past!" />
+            <string name="2" value="Interested in riding one yourself? If so, then allow me, #p2020007#, to help you." />
+            <string name="3" value="Just because you want to ride your wolf as a Mount doesn't mean you can ride it just like that. Before anything, you must find a #b#t1912011##k so you won't hurt your wolf. I'll make the saddle for you if you bring me the materials to make it." />
+            <string name="4" value="The key material for the #t1912011# is #b#t4000048##k. I think about #b50#k should do it. When you bring me the materials, I'll give you the Monster Mount skill along with the #t1912011#. Now, hurry." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect all the #t4000048#s? Wow, that was quick! You must really want to turn your wolf into a Mount! Now give me a minute to make this." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, I've given you the Mount skill along with the #t1912011#. I finally have a friend who I can ride around with! Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you get me #b50 #t4000048#s#k yet? I need enough leather to make a #t1912011#..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21604s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3106.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Snowman Legend" />
+        <string name="parent" value="Snowfield Giant" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="#p2020007# tells me the story of the Snowman. According to #p2020007#'s story, the creature is quite gentle. What could have made it attack #p2020006#? Let's go back to #b#p2020006##k." />
+        <string name="2" value="Told #p2020006# about #p2020007#'s story of the #o8220001#. #p2020006# says it can't be true, because #o8220001# attacked him first and got mad over the entire thing. Strange that his story is different from what I heard from #p2020007#. Who speaks the truth? Or perhaps there's another story behind this? Let's get back to #p2020007#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It seems that #p2020006# was attacked by #b#o8220001##k.\r\n#b#L0#What is #o8220001#?#l" />
+            <string name="1" value="The Snowman is similar to a Yeti, but bigger in size and gentler. According to the legend, the Snowman was born through a snow spirit and a human.\r\n#b#L0#Legend? Can you tell me more?#l" />
+            <string name="2" value="The Snowman had the heart of a human, but the looks of a monster, so people neglected him. The snow spirit was sorry for the Snowman, and froze a whole mountain range for him. \r\n#b#L0#A whole mountain range? Then you must be saying...?#l" />
+            <string name="3" value="That's right. The mountain range the snow spirit froze for Snowman is El Nath Mountain Range. Soon after, the Snowman disappeared deep into the mountain. The Snowman hates to be seen by humans.\r\n#b#L0#Is the legend true?#l" />
+            <string name="4" value="Well...a legend is just a legend, and we cannot tell its authenticity. Since the Snowman is a shy and gentle creature, you don't need to be worried even if you get to run into it. You may repeat this to Jade." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The Snowman tends to hide if there is someone present, so to see one will be more difficult. I would personally want to meet one. Even I have never seen the Snowman in the years I've been hunting these grounds, I'd surely want to see one." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Just remember to repeat this on your way. Geez, I'm getting slightly annoyed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you heard from Scadur? What did he Say? \r\n#b#L0#(Told about Scadur's Snowman story.)#l" />
+            <string name="1" value="What? Gentle? That can't be! It attacked me first! That creature can't be gentle! Scadur must be mistaken!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Go tell Jade this. The Snowman is definitely gentle. I think Jade did something to make the Snowman mad." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3105" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

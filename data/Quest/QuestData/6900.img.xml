@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6900.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tylus' introduction letter" />
+        <string name="parent" value="The Warrior's Extreme Path" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="I've reached a limit to my training as a warrior. Is there a level beyond this? I should ask  #b#p2020008##k who helped me with the third job advancement." />
+        <string name="1" value="#b#p2020008##k told me to see the bishop  #b#p2081100##k in Minar Forest if I want to find the path of becoming a greater warrior." />
+        <string name="2" value=" #b#p2081100##k said he will guide me to the path that will lead me to the warriors' extreme power." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031342" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031342" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It's been a quite a while since I've last seen you. I'm happy to see you improved so much. Do you realize the hidden strength within you? You must have some reason to see me. What can I do for you?\r\n#b#L0# I want the 4th Job advancement.#l" />
+            <string name="1" value="Yes. I was expecting you. But I'm not strong enough to make your wish come true. Go to  #bMinar forest#k.  #b#p2081100##k who is training there will be able to help you. Do you want to see him?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'll recommend you to him. Hope you get stronger!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here to do the 4th job advancement? If not, that's fine." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Why do you want to see me, young warrior..\r\n#b#L0# I want the 4th job advancement. Here is #p2020008#'s recommendaton.#l" />
+            <string name="1" value="#b#p2020008##k?... Is he the one in El Nath? Then I can trust you." />
+            <imgdir name="yes">
+                <string name="0" value="A young warrior who wants increase their power. I have to tell you something. Talk to me only if you're ready to hear the truth. Many secrets will be revealed..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Remember. Bishop of Minar forest, #b#p2081100##k. Please see him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What are you doing here?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost #b#t4031342##k? I will write another recommendation but don't lose this one!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031342" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020008" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="111" />
+                <int name="1" value="121" />
+                <int name="2" value="131" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

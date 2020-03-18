@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28196.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Demon Behind It All" />
+        <string name="parent" value="Unveiling the Secret" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #bPerion#k says he's identified the emblem. Let's go see what he's discovered." />
+        <string name="1" value="He says the emblem signifies #rMarbas#k, who is known for spreading diseases. He was sealed in #bEllinia#k, but someone has broken the seal.\n\nFirst things first, though. He says you he needs a lot of Trees to stop the virus from spreading.\nHe says to hunt #rDark Stumps#k and #rAxe Stumps#k.\n(He says they can be easily found in #b#m102020100##k.)\n\nReturn to #b#@1022000:##k in Perion upon completion." />
+        <string name="2" value="The emblem signified #rMarbas#k the demon; the virus was stopped by blocking the Water Pipe with the Trees." />
+        <string name="demandSummary" value="#o1110101# #a281961# \r\n#o1130100# #a281962# " />
+        <string name="rewardSummary" value="Exp 3,500&#xD;&#xA;Able to proceed to 'Returning to Ellinia' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="According to the ancient book, this emblem signifies #rMarbas#k, a demon who was sealed in #bEllinia#k. He is a malicious figure that takes joy in transmitting deadly diseases. You can assume that he is responsible for all diseases that were recently found in Victoria Island." />
+            <string name="1" value="Now, since we've figured out who was responsible, we must stop the virus from spreading. Won't you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The virus is spreading through the water, so we must block the Water Pipe. There is only one way to block the Water Pipe, and that's by using a lot of Trees." />
+                <string name="1" value="Hunt 30 #rDark Stumps#k and 30 #rAxe Stumps#k. You'll be able to collect enough wood then.\nThey can be easily found in #b#m102020100##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is urgent. Let me know as soon as you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That's wonderful. We can block the waterway, thanks to all the wood you've collected. I'm sure this will stop the virus from spreading through the water." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to you, we were able to prevent the virus from spreading. I want to sincerely thank you once again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please hunt 30 #rDark Stumps#k and 30 #rAxe Stumps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28195" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

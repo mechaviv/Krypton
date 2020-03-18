@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3307.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping Out Bedin" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p2111008##k, an alchemist from Zenumist, seems to be looking for help with his experiment..." />
+        <string name="1" value="#p2111008# told me he was short on some items for his experiment and asked me to get #b5 refined #t4010004#s#k and #b50 #t4000352#s#k for him.\n\n#i4010004##t4010004# #b#c4010004##k/5 \n#i4000352##t4000352# #b#c4000352##k/50" />
+        <string name="2" value="I gave #p2111008# #t4011004# and #t4000352#. This #t4011004# seems to have a peculiar power of registering spells into it. I learned something new today." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000352" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010004" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Since you're wearing a cape, you must be the new kid everyone's talking about. I'm #p2111008#, nice to meet you. I'm in charge of making the #bMana Rock#k for Zenumist. ...What? You want to know what the Mana Rock does? Well... it's a device that allows one to gather up mana." />
+            <string name="1" value="Inside the Mana Rock, there's a core that allows one to register a spell in there. A Mana Rock with a spell registered in is called the Magic Rock. It allows even the ones that have never mastered spells to perform one. For example, the Magic Rock at Orbis is made out of the Mana Rock." />
+            <string name="2" value="The most important items for creating Mana Rock are #t4011004# and #t4011008#. #b#t4011004# is used to register spells#k, and #t4011008# is used to store mana. Every Mana Rock features a core made out of silver, and a power device made out of Lidium. Yes, I made them all..." />
+            <string name="3" value="The thing is... #t4011008# is easy to find, since you can find most of them at #m260000000#... #t4011004#, that's a different story. Maybe it's because a lot of the mines in El Nath are abandoned and devoid of life... I don't know. Can you help me get some, if it's alright with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, really? Then please get me #b5 #t4010004##k and #b50 #t4000352#s#k, which will be used to refine #t4011004#. I got to be honest with you, I made a mistake a while back making a core, and rendered #t4011004# useless... hmm, keep this on the hush hush. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... It might be tough for you, since you're a rookie here... Okay, let me know when you want to try this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What, you brought all the items? That's... amazing! You must be a traveler instead of an alchemist! Haha, I was just kidding, you don't have to make a face like that. You're new anyway. Good work, seriously." />
+            <imgdir name="yes">
+                <string name="0" value="#t4011004# is a mineral that is always used in alchemy. It is a required item if we want to have the power of magic laden into a special item. It's basic alchemy. Never forget that, rook." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... You still don't have #b5 #t4010004#s#k and #b50 #t4000352#s#k? I would appreciate it if you can get them for me before the President finds out." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000352" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010004" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3302" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102135" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

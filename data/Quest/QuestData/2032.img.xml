@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2032.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. Faymus's Request" />
+        <string name="parent" value="Nella &amp; Kerning City Citizen's Request" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="1" value="Nella said I look much stronger than last time. First request is to get ingredients for Dr. Faymus, the owner of potion shop. He needs #b100 Horny Mushroom Caps#k and #b50 Jr. Necki Skins#k. Taking on Jr. Necki's might be little tough, but I will give it a try." />
+        <string name="2" value="I gave what Dr. Faymus asked for and I got bunch of white potions for return. I wonder what kind of potion would Dr. Faymus make by using those materials. I should get back to Nella for more request." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000015" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000034" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're the one that helped me take care of #b#p1052101##k's request, right? He should be enjoying his seafood soup riiiight about now. ... but hey, you look much stronger than before! Alright, if that's the case ... you can probably take care of more difficult requests now." />
+            <string name="1" value="I have a new request in store for you, actually. #b#p1051002##k of the Famous Pharmacy needs help. He's been working on creating a new potion, and one day, he realized he has run out of ingredients. Those are pretty hard to find, and he claims that it's slowing down his experiments these days ..." />
+            <string name="2" value="He seems to be in a hurry to get those, so he can resume his experiments. He'll need #b100 #t4000015#s#k and #b50 #t4000034#s#k ... I'm sure it'll be a piece of cake for you, so ... I'll be waiting here, at this same spot, while you go gather up the items." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I knew it ... I knew you could get it done quickly! You did your job well last time, and here you are again, taking care of business!! Alright, since you have done it so well, I should reward you well. #b#p1051002##k is giving you #b100 #t2000002#s#k to help you in the future." />
+            <imgdir name="yes">
+                <string name="0" value="Alright, if you need work sometime down the road, feel free to come back and see me. This town sure can use a person like you for help~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't gotten all the items #b#p1051002##k requested, yet? He said he'll need #b100 #t4000015#s#k and #b50 #t4000034#s#k to experiment more with potions. Just gather them all up and give them to me, that's all!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000015" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000034" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2031" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

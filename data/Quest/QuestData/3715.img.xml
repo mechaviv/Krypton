@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3715.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Suspicious Wanderer" />
+        <string name="parent" value="The Truth Behind that Man" />
+        <int name="order" value="1" />
+        <int name="area" value="41" />
+        <string name="0" value="There is a rumor that Han the Broker of Magatia has acquired a new piece of information. Sounds exciting…" />
+        <string name="1" value="Han the Broker says a suspicious wanderer was staying in Magatia until just a few days ago, but then disappeared without a trace. Han the Broker thinks you might be able to find the wanderer if you follow the traces he left and suggests you first go to Ariant to find him." />
+        <string name="2" value="You met Syras at Ariant Station to ask about the suspicious wanderer that Han the Broker has told you about. Syras at the ticket box desk said a strange man bought a ticket to Orbis." />
+        <string name="demandSummary" value="#bTalk to Syras, the ticket agent at Ariant Station." />
+        <string name="rewardSummary" value="EXP 30,000\r\nCan participate in the &quot;Wanderer's Whereabouts 1&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="money" value="-5000" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <int name="nextQuest" value="3716" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Long time no see. I know what brings you here. People come to me for one thing: #einformation#n. Unfortunately, my memory's gotten a bit fuzzy, so I got nothing. Though #b5000 mesos#k might clear it up." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd understand! Now then, let me tell you about this wanderer I met a little while ago." />
+                <string name="1" value="One night, not too long ago, the stars stopped twinkling. The next day, a suspicious visitor arrived in Magatia. He wore a cape that covered his features, and I could tell he was from out of town. I started a conversation with him, hoping to get information." />
+                <string name="2" value="He was just plain strange. He kept mumbling to himself, some weird phrase over and over. &quot;#bI've come too far. It's too soon...&quot;#k\nBefore I could question him, he gave Humanoid A the stink eye and disappeared in the alley near the Alcadno Society." />
+                <string name="3" value="Late that night, there was a explosion near the Alcadno Society. There were no witnesses, but after that, no one saw the strange man again. The Alcadno Society blames the Zenumists, of course, but they're wrong. I'm pretty sure that man was responsible. He's got a huge secret. I can just feel it." />
+                <string name="4" value="I can see in your eyes that you want to pursue that man. Let me offer you some advice. I think he's already left Nihal Desert, so he must have passed through Ariant Station. Go ask #bSyras#k the ticket agent at Ariant Station if he saw anything." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, business is business. Scram if you aren't interested. I'm a busy guy, you know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Here to buy a ticket? I only sell tickets to Orbis. How many would you like? You only need one to board the ship, but you never know...\r\n#b#L0#I came here to ask you something. Did you see an out-of-towner not too long ago?#l\n#k" />
+            <string name="1" value="Lookie here, mister. I meet hundreds of out-of-towners every day!\r\n#b#L0#I'm looking for someone who's quiet. He was wearing a cape.#l\n#k" />
+            <string name="2" value="Hm, I recall two people who fit that description. One passed by around 10AM, the other around 5PM. The first one was a rather extravagant magician, the second was a young warrior in a raggedy cap. The young warrior asked me how to get to Victoria Island. That's about it... Oh, wait! I remember one other person. I saw him at sunrise a few days ago." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Talk to Syras at the Ariant ticket box desk." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2102002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

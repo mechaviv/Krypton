@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3932.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ardin's Test" />
+        <string name="parent" value="Sand Bandits According to Ardin" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="When you revisit #p2101003#, he tells you to defeat #r30 #o2100106#s#k and #r30 #o2100107#s#k and bring back #b20 #t4000326#s#k and #b20 #t4000327#s#k as proof. \n\n#o2100106# #r#a39321##k\n#o2100107# #r#a39322##k\n\n#i4000326# #t4000326# #b#c4000326# / 20#k\n#i4000327# #t4000327# #b#c4000327# / 20#k" />
+        <string name="2" value="After eliminating both the #o2100106#s and #o2100107#s, you reported it to #p2101003#, who seemed shocked. Hopefully he'll give you his recommendation now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아아~ 골치 아프군. 무슨 일이냐고? #o2100106#하고 #o2100107# 녀석들이 계속 주민들을 괴롭히고 있거든. 왕비가 치안에는 신경을 안 쓰고 이상한 보석들만 모으다 보니 주민들이 고생하게 된 거지. " />
+            <string name="1" value="모래그림단의 임무에는 이런 녀석들을 퇴치하는 것도 있어. 그러니 약한 자는 모래그림단에 들어올 수 없다는 거야. 어때?아직도 모래그림단에 들어오고 싶다면 네가 이 일을 대신 해보겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 그럼 #r#o2100106##k와 #r#o2100107##k를 각각 30마리씩 퇴치하고 그 증거로 #b#t4000326# 20개#k와 #b#t4000327# 20개#k를 가져와 봐. 모래그림단의 임무가 얼마나 어려운 것인지 직접 체험해 보면, 들어오고 싶다는 말을 못하게 될걸?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000326" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000327" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahh, what a headache. What is it? Well, #o2100106# and #o2100107# are such a hassle to everyone in town, but the queen doesn't care a whit! She's only interested in collecting weird treasures. That's why everyone's struggling." />
+            <string name="1" value="So it's up to the Sand Bandits to deal with those pesky monsters. That's why we can't accept weaklings. If you want to be a member, can you take care of this task for us?" />
+            <imgdir name="yes">
+                <string name="0" value="Fine. I want you to take care of #r30 #o2100106#s#k and #r30 #o2100107#s#k, and bring back #b20 #t4000326#s#k and #b20 #t4000327#s#k as proof. Experience the true hardship of being a member before you commit yourself to the group." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Too hard, eh? That's why we don't let people into our group that easily." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoa, did you already take care of all those #o2100106#s and #o2100107#s? Whoa, you also brought the #t4000326#s  and #t4000327#s? You really did that? No way!" />
+            <imgdir name="yes">
+                <string name="0" value="You're much stronger than I thought. I didn't think you'd handle #o2100106#s and #o2100107#s that easily. I think this...should be enough for you to join the Sand Bandits..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you haven't slain #r30 #o2100106#s#k and #r30 #o2100107#s#k and brought back #b20 #t4000326#s#k and #b20 #t4000327#s#k yet. I told you it's not easy." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I guess you haven't slain #r30 #o2100106#s#k and #r30 #o2100107#s#k and brought back #b20 #t4000326#s#k and #b20 #t4000327#s#k yet. I told you it's not easy." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000326" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000327" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2100106" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2100107" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3931" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

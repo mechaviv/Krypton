@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22571.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="John's Testimony" />
+        <string name="parent" value="Information about the Slumbering Dragon Island" />
+        <int name="order" value="3" />
+        <int name="area" value="7" />
+        <string name="0" value="Go see #p0020000#, author of the #t4161051#. #b#p0020000##k lives in #b#m104000000##k." />
+        <string name="1" value="#p0020000# says that he indeed who wrote the Voyage Log and that not a single word of it is exaggerated. When you ask #p0020000# about the location of the island that is mentioned, he gives you a map that shows where it is. Can you find a ship willing to go there? Go see #b#p1002001##k." />
+        <string name="2" value="#p1002001# says that he can't sail to this Island..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032469" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032469" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="22572" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to buy a fish? Huh? #t4161051#...? Well, of course I wrote it! But I've retired long ago... What? You want to know whether what I wrote is true?" />
+            <string name="1" value="Do I look like I need embellish stories to make them interesting? Of course it's all true! Even the bit about the island I where found a sleeping dragon. But why do you ask? You're not trying to get to that island, are you?" />
+            <string name="2" value="Haha, another youngling acting with reckless bravado... I'd urge you to play it safe, but I suppose you must learn that on your own. Alright, I'll give you a map to the island." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Since you're not a crew member, find #b#p1002001##k near the ticketing booth and ask him if you can go to this island. The sea route will be rough, so he may decline your request." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't need this map? Smart choice. Don't put yourself in danger for some ridiculous ambition." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That whale there is getting on my nerves. I probably shouldn't catch it though, huh? What are you doing here? Hm? You want to know if you can get to the island on this map? Let me see..." />
+            <imgdir name="yes">
+                <string name="0" value="This place...should only be approached by a competent crew member. The waves out there are very choppy. You can easily capsize and hurt yourself. I don't know if even I have the skill to navigate through there..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you gone to see Teo yet? He might be able to help you get to the island on the map." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="That whale there is getting on my nerves. What is it? Don't bother a crew member if you don't have much to say." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I thought you were a strong adventurer, but you are indeed a novice. You dropped the map. Here, take it." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032469" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22570" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

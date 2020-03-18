@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2290.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Debut Preparations Completed" />
+        <int name="area" value="30" />
+        <string name="0" value="Everything seems to be in order. Confirm one more time with #bLana#k." />
+        <string name="1" value="Lana says everything for Blake's debut performance is good to go and wants you to give #bBlake#k the good news." />
+        <string name="2" value="Blake was beyond happy and gave you a special gift. He then said you should go see #bJune#k at Kerning Square." />
+        <string name="rewardSummary" value="37,200 EXP\r\n#Wbasic#\r\n#i1032075:# #t1032075:# 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="37200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032075" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I think we're ready. Now it's up to Blake. He just needs to practice diligently. Will you let Blake know?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to give #bBlake#k the good news! And will you remind him that he needs to practice, practice, and practice even more until the day of his debut?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Blake will be so happy to hear this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hi, #h0#! Long time no see! Did you lose something?\r\n#L0##bNo, actually, I've spent a lot of time and energy getting your debut ready with the CEO of Big Hit Records.#l\n#k" />
+            <string name="1" value="What?! Are... Are you serious?! Does this mean I can finally perform?\r\n#L0##bYup! Oh, and Lana wanted me to tell you that you must practice, practice, practice until your debut.#l\n#k" />
+            <string name="2" value="I...I don't know what to say! Thank you so, so much! Oh my goodness, I'm so excited! This is something I've been saving for my debut concert, but I want to share it with you for everything you've done for me, #h0#." />
+            <imgdir name="yes">
+                <string name="0" value="You have no idea what this means to me! Thank you. Thank you so much! You have to come to my debut, too. Oh, and I'll have my fellow public service worker, #bJune#k, show you an incredible place. Please go see him if you can." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please tell #bBlake#k that everything is ready for his debut concert." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052117" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2289" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

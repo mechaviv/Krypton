@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28430.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Corruption of Morals: Strong Stone Goblin" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9000072# at the #b#m950100000##k looks very upset. What could be the problem? Talk to #b#p9000072##k." />
+        <string name="1" value="#p9000072# says that the influx of tourists has corrupted the morals and culture of the village. As evidence, he mentioned the outfit of the #o9409017#s. #p9000072# said that he can no longer put up with the #r#o9409017#s#k walking around in their revealing underwear and asked that you eliminate them. Enter the Goblin Cave by talking to #b#p9000075##k. \n\n#o9409017##r #a503191##k" />
+        <string name="2" value="You eliminated the #o9409017#s, but #p9000072# is worried that #bin just 1 hour#k, they will return again as they were before. Come back later to help #p9000072#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How could this be?! How could this have happened in the #m950100000#? This is all because of #p9000078#, whose idea was to develop #m950100000# into a tourist attraction. Look at all those tourists who've come at his beckoning! What? You want to know what I'm talking about? " />
+            <string name="1" value="All those tourists are corrupting the morals and culture of the holy #m950100000#! I have evidence... Just take a look at the outfit of those #o9409017#s! They are so vulgar... I can't stand looking at them! Something must be done now!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, so you'll help? It's good to know that there are some sensible ones even amongst the outsiders... In that case, I won't refuse your help. Please go defeat #r200#k of those lewd #r#o9409017#s#k! You can get to the Goblin Cave by talking to #b#p9000075##k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine. I guess I better tell #p9000078# to stop allowing tourists to enter. Then I'll have to deal with the #o9409017#s myself!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! It looks you've returned from eliminating the #o9409017#s! Thanks to you, the town seems to have somewhat returned to normalcy." />
+            <imgdir name="yes">
+                <string name="0" value="But those #o9409017#s are so persistent that they will probably return to normal once an hour has passed. I would like to ask the same favor of you again at that time. Please come back to me after #b1 hour#k has passed." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not defeated the #r200 #o9409017#s#ks yet? Then again, it must be pretty hard to do while looking at their vulgar outfits... Still, this is a very important matter. Please talk to #b#p9000075##k and enter the Goblin Cave." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000072" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9409017" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000072" />
+            <int name="lvmin" value="70" />
+            <int name="lvmax" value="77" />
+            <string name="end" value="201007140000" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

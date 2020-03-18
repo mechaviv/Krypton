@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21018.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Basic Fitness Test" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You think you have gained some much needed stamina through training. You should talk to #b#p1201000##k and receive the test for the final stage of your Basic Fitness Training." />
+        <string name="1" value="#p1201000# told you battle #r#o0100134#s#k.  This time, you need to head to the other side, to the west side of town where #b#m140010200##k is. Fortunately, that doesn't seem too hard." />
+        <string name="2" value="You eliminated the #o0100134#s. You can see how much your stamina and power have improved. What next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now, you will undergo a test that will determine whether you're fit or not. All you have to do is take on the most powerful monster on this island, #o0100134#s. About #r50#k of them would suffice, but..." />
+            <string name="1" value="We can't have you wipe out the entire population of #o0100134#s, since they aren't many of them out there. How about 5 of them? You're here to train, not to destroy the ecosystem." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o0100134#s can be found in deeper parts of the island. Continue going left until you reach #b#m140010200##k, and defeat #r5 #o0100134#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, is 5 not enough? If you feel the need to train further, please feel free to slay more than that. If you slay all of them, I'll just have to look the other way even if it breaks my heart, since they will have been sacrificed for a good cause..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have defeated all 5 #o0100134#s. Have you noticed how much stronger you've gotten since the first training session? Well, now that you're ready, let's get on with the real training, and... Wait!" />
+            <imgdir name="yes">
+                <string name="0" value="Come to think of it, I still have yet to ask you your name, dear hero. You are one of the five heroes, yes, but which of them are you? You lost all of your memories, so you probably can't answer…" />
+                <string name="1" value="It's time for you to begin your real training so you can defeat the Black Mage, but we must first know which of the five heroes you are so we can create a training program that caters to your strengths. There's no point learning skills for weapons you've never used. That won't help you against the Black Mage either." />
+                <string name="2" value="But really…who are you?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Doesn't look like you have defeated #r5 #o0100134#s#k yet. You'll need to defeat all 5 of them to complete the Basic Training. Please head to #b#m140010200##k and complete your training." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100134" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21017" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21018s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

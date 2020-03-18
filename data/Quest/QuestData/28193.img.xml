@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28193.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Virus is Spreading Via the Water?" />
+        <string name="parent" value="The Cause of Sickness" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says he's completed his Sample analysis. Let's make a trip to see what he's discovered." />
+        <string name="1" value="The virus had been spreading through the water. Let's talk to #b#@9201120:##k in #bKerning City#k." />
+        <string name="2" value="#b#@9201120:##k in #bKerning City#k says he might have seen something strange near the Water Pipe." />
+        <string name="rewardSummary" value="Exp 1500&#xD;&#xA;Able to proceed to 'Find the Clues!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, perfect timing. I spent the entire night looking at the monster samples you brought me and I found something crazy!\n\nI must first inform #bErvine#k in #bKerning City#k. Could you do that for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Like human bodies, monsters' bodies mainly consist of water. And looking at the samples you brought me, I've found a number of different viruses in the fluids.\nThis means there are germs living in the water they drink, which means someone has gone out of his way to inject virus into the water." />
+                <string name="1" value="You know how serious this is, don't you?\n\nCould you go over to #b#p9201120##k the plumber in #bKerning City#k and ask him if he's seen something strange in the water?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's really not that difficult. Why don't you just do it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi, #b#p1052001##k must have sent you.\nHmm? The water is infected with virus?\nNo way! Who would do such a thing to our drinking water?" />
+            <imgdir name="yes">
+                <string name="0" value="Wait a minute! Come to think of it, I remember seeing something strange." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p9201120##k is in #bKerning City#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28192" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

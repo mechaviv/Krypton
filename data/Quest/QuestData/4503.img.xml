@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4503.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Clear the Rubbish" />
+        <int name="area" value="48" />
+        <string name="0" value="I should go see #b#p9270039##k in Singapore Airport.  She needs to say something about our beautiful Singapore." />
+        <string name="1" value="She asked me to clean up the streets of Singapore.  As she works at the Singapore Airport, she sees lots of foreigners complaining that the city does not look the same as before.  I should impress foreign visitors again by cleaning up the wastes.\n\n#t4000366#  #r#c4000366# / 20#k\n#t4000367#  #r#c4000367# / 20#k" />
+        <string name="2" value="I feel much better now that I did contribute myself in making Singapore even cleaner." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="450" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000366" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000367" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How annoying can it be! I've just seen some people throwing rubbish all around Singapore Airport!! Argh... This is something I cannot tolerate!! They ought to do something about it~ Well... hmmm, will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Really?? It is so nice of you!! Would you help me out by clearing some of the rubbish around Singapore Airport? A kindness of clearing #b20 Wasted Paper and 20 Recycle Water Bottles#k will make a difference! Please get those items for me. Thanks~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Okay!! Humph~ I'll find someone else then..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You cleaned up the surroundings around Singapore Airport with such amazing speed! It is a huge place. Let me see if you really did clean it." />
+            <string name="1" value="Well well well... If everyone in Singapore were like you, this island would be free from rubbish!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much~! Ahh... The place looks much cleaner now!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Are you going to let our beautiful Singapore dirty??? Please clean up those empty bottles and waste paper!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270039" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000366" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000367" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270039" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

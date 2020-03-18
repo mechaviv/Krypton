@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51204.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="How to Enter?" />
+        <int name="area" value="50" />
+        <string name="0" value="You met another Mapler at the Energy Laboratory. Should you try starting a conversation?" />
+        <string name="1" value="You arrived at the Energy Laboratory but an Anti-Theft Laser is preventing your approach. There is a Teleport Device nearby which may allow you to pass through safely..." />
+        <string name="2" value="The Teleport Device has been turned on! All that is left is to retrieve a Crystanol Fragment and return to the Time Machine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, think. THINK. Others have made it past here, so there MUST be a way to power this thing.  \r\nCan you try looking for a power device?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In the meantime, there's something I've got to think about. \r\nReturn as soon as you can." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Guess you ARE as useless as you look." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What? \r\n#L0##bI've powered up the device.#l\n#k" />
+            <string name="1" value="Already? How? \r\n#L0##bWasn't hard. The outlet was just covered in dirt, that's all.#l\n#k" />
+            <string name="2" value="I see. Why don't you go on ahead and grab some #b#t4001458##k. I'll wait here and er, think some more.\r\n#L0##bOkay... (People can be so strange.)#l\n#k" />
+            <string name="3" value="Are you talking to yourself? What are you saying!?" />
+            <imgdir name="yes">
+                <string name="0" value="Hurry! Move quickly, before aliens appear!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="The Teleport Device is still not working! Oh geez, I hope we're not stuck here FOREVER!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250131" />
+            <int name="infoNumber" value="51237" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250131" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51203" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

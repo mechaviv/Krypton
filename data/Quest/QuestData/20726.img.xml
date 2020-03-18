@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20726.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Information From Those Who Remember" />
+        <int name="area" value="15" />
+        <string name="0" value="Maybe #b#p1061011##k of #m105040300# can tell me something useful about #o9300285#..." />
+        <string name="1" value="#p1061011# told me he can give a useful information on #o9300285# if I can eliminate #r250 #o2230101#s#k for him. \n\n#o2230101##r #a207261##k" />
+        <string name="2" value="According to #p1061011#, #o9300285# is a little boy whose name is #r#p1104000##k..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmmm... what is it? #o9300285#? #o9300285#? I've never heard of that name before. I did, however, run into a little kid carrying a doll near #m105040300# the other day... \n#b#L0#A little kid carrying around a doll?#l\n#k" />
+            <string name="1" value="Yes, I remember it distinctively because of the weird aura I felt from them. The kid seemed very young, and it felt like he was endangering himself by doing that, so I tried to talk to the kid, but he didn't listen. All I found out was his name... \n#b#L0#Do you know what his name is?#l\n#k" />
+            <string name="2" value="Yes I do, but... I can't just give you the name like that. Who knows if the kid is actually a harmless kid and you're here for reasons that aren't all that innocent? If you need to know the kid's name, then please do me a favor." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Have you ever been inside the Ant Tunnel of #m105040300#? Inside the tunnel is filled with dangerous mushrooms, and #o2230101#s especially make the lives of the travelers difficult. If you can defeat #r250 #o2230101#s#k for me, then I will tell you the kid's name." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then I am afraid I can't tell you his name..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you clear away 250 #o2230101#s? Okay, a deal is a deal. I'll give you the kid's name." />
+            <imgdir name="yes">
+                <string name="0" value="His name is #b#p1104000##k. He's the kind of a kid that seemed just a bit off-centered. I don't know if he's the #o9300285# that you're looking for." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have managed to defeat #r250 #o2230101#s#k yet. You'll need to do that in order for me to put my trust in you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101001" />
+                    <int name="count" value="250" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20725" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

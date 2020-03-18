@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3063.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nero's Necklace" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard somewhere around Orbis Park, there's a guy strolling along with a black cat on his head. I should check him out." />
+        <string name="1" value="I met #p2012018# at Orbis Park, and despite his intimidating appearance, seemed like a genuinely nice guy who has an affinity for cats. He was concerned about the fact that his cat Nero wandered around and came back without the necklace that he personally made for him. #p2012018# asked if I could buy the materials necessary for him to make a new necklace for Nero at the store. \n\n#t4031191# #b#c4031191##k/1\n#t4031192# #b#c4031192##k/1" />
+        <string name="2" value="As a favor from #p2012018# of Orbis Park, I purchased the necessary materials for #p2012018# to make a new necklace for Nero." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031191" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031192" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you, have you seen Nero's necklace? The one that Nero wears with a little bell on it. I made that necklace for his 1st birthday, and it's been missing since yesterday afternoon." />
+            <string name="1" value="Where did he lose it? I really want to make a new one for Nero, but I'm so swamped with work that I have no time to purchase the materials for it. Say, can you help me out here?" />
+            <imgdir name="yes">
+                <string name="0" value="The materials needed for Nero's necklace is not available here. You can only buy them at the cash shop. I don't remember the exact store for it...but just go there and get me #b1 #t4031191##k and #b1 #t4031192##k. With them, I can make a fantastic new necklace for Nero. It'll cost you #r1 meso#k per item." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you really that busy? Please help me out, for Nero's sake. Fine, then, you must be really busy right now. I'll see you around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is it! This is it! With this, I can make a new necklace for my precious Nero! Thank you so much!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Nero seems to be very depressed lately, ever since he lost the necklace. You didn't get the materials needed for the necklace? Please don't forget to bring #b1 #t4031191##k and 1 #b#t4031192##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031191" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031192" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012018" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

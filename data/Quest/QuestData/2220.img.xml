@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2220.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gathering Information Completed" />
+        <int name="area" value="30" />
+        <string name="0" value="You have gathered all the information from the informants. Let's give #bJM#k an update about the progress." />
+        <string name="1" value="As soon as you tell JM the information you have gathered, JM turns pale. Is he surprised at the evil scheme...? JM, with an anxious look on his face, tells you to speak with #b#p9020000##k and ask about #o6220000#." />
+        <string name="2" value="When asked about #o6220000#, #p9020000# is taken aback by the question and comes clean about the incident... about her accidentally dropping the Growth Powder in the sewer... " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Give me an update after you gather all the information from the informants. In order to get to the bottom of this evil scheme, we must gather as much information as possible. Which is the information #p9000008# collected?\n\r#L0##bHe says Dyle looks exactly like the Ligator.#l\n\n#L1#I think he said Dyle somewhat resembles Croco. \n#l\n#L2#He's not a foreigner, is he?#l#k" />
+            <string name="1" value="And what did #p1052102# say? \n\r#L0##bIf we have environmental concerns about Kerning City, she says we must clean out the sewer.#l\n\n#L1#And she says Chris stinks.\n#l\n#L2#A stench as if something has been mixed into the sewer.#l#k" />
+            <string name="2" value="Tell me what #p1052103# has told you. \n\r#L0##bShe's told me that Lakelis seems to be a prima donna.#l\n\n#L1#She says Lakelis has been acting strange, so we should pay close attention to her.\n#l\n#L2#And she thinks Icarus seems so pale because he doesn't exercise enough.#l#k" />
+            <string name="3" value="Did you talk to #p1052006# as well? \n\r#L0##bI've heard something about some powder that makes you grow.#l\n\n#L1#And, supposedly, there's a monster called Shade that frightens people in the subway.\n#l\n#L2#He wants to leave the subway.#l#k" />
+            <string name="4" value="......Is that all? That lady couldn't... Right. We should confirm. It's probably not but just in case... go to #p9020000# and ask about #o6220000#." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Why is it that the information you've gathered seem so ambiguous? What good is information that isn't factual?" />
+                    <string name="2" value="What difference does it make whether Mr. Pickall is a foreigner or not?! Is that all you have?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Hmm... We should think about the environment so I'll take that into consideration... NOT! Our priority lies on discovering the truth behind the evil scheme... not restoring the environment! " />
+                    <string name="1" value="That foolish boy, Chris... I told him to shower frequently. Shumi is way out of his league." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="In truth, it is weird how he wears such strange clothes in Kerning City. If it were Orbis... maybe. Anyway, is that part of the information you gathered? HUH?!" />
+                    <string name="2" value="Of course he doesn't exercise enough. He sits around all day! That's an obvious speculation. Not the kind of information you should waste my time on!" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Shade...? Everyone knows about Shade already. What does Shade have anything to do with it? What have you bee doing all this time?" />
+                    <string name="2" value="I sort of understand though. He must be sick of it... poor kid... I feel so sorry for him... NOT! This piece of information serves no purpose!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="...No way. She can't be foolish enough to do something like that... not once, but twice...? No... sigh..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't know who #p9020000# is? That lady in front of the sewer, gathering adventurers in strange clothes!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...Wha... what is it? Is there something you want from me? Huh? J... JM sent you here? Wha... Why would he... sen.... sen... send you here...?  WHAT?! Do I know anything about #o6220000#?!" />
+            <imgdir name="yes">
+                <string name="0" value="Haha... seems like you did your research before you came. Yes, you're right. I made a mistake again. I accidentally dropped an unfinished Growth Powder into the sewer! Ahhhhhgh, I'm so sorry!" />
+                <string name="1" value="It wasn't quite finished, so I didn't think it would work... Who knew it would turn #o3110100# into a giant monster. I'm... sorry... I was going to gather adventurers who were willing to hunt #o6220000#! Please ask JM to forgive me... " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#p9020000##k yet? Don't tell me you don't know who #p9020000# is! All you have to do is find a lady wearing strange outfit that seems out of place for #m103000000# and heavy, heavy makeup!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9020000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2216" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2217" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2218" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2219" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

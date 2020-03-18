@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22407.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making a Bigger Saddle" />
+        <int name="area" value="7" />
+        <string name="0" value="Ask #b#p2060005##k in #b#m230000000##k to make you a bigger saddle." />
+        <string name="1" value="#p2060005# says that he will make you a saddle that is flexible enough for #p1013000#. However, the materials are quite intimidating.\r\n\r\nYou must obtain #b#t4032475#s#k from #m211000000#, a #b#t4032476#s#k from Shipwreck Treasure Chests deep in the oceans of Aquaroad, and some #b#t4032477##k, a specialty product of #m251000000#, from Captain Hwang.\r\n\r\n#i4032475# #t4032475# #b#c4032475# / 10#k\r\n#i4032476# #t4032476# #b#c4032476# / 2#k\r\n#i4032477# #t4032477# #b#c4032477# / 2#k\r\n#b30000000 mesos" />
+        <string name="2" value="After receiving all the materials, #p2060005# made you the #t1912034#. With this, you should be able to mount comfortably for awhile." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-30000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032475" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032476" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032477" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1912034" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello. Aren't you the person who special ordered a saddle before. What brings you back? Whoa, that animal next to you, is that the same animal as before? It's huge now! I can hardly recognize it!" />
+            <string name="1" value="Seeing that animal, I can guess why you are here. He's gotten so big, there's no way that saddle still fits him. Are you here to order a #bnew saddle#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, I will make another special saddle for you. Seeing how much it has grown, I'll have to use a more flexible material this time. Hmm... The only materials that might work are so expensive, I'm not sure if you'll be able to find them..." />
+                <string name="1" value="Let me tell you what the materials are. First, #b#m211000000#s#k. They can be obtained from #r#o8140000#s#k, a frightful monster that appears in the #b#m211000000##k area. You'll need just #b10#k." />
+                <string name="2" value="Second, you need #b2 #t4032476#s#k, which can be found inside the #bShipwreck Tresure Chest#k on the wrecked ship deep inside Aqua Road. The monsters there that are over level 85 so be very careful.\nA Shipwreck Treasure Chest looks like this.\n#i4032557#\r\n" />
+                <string name="3" value="Third, you need #b2 #t4032477##ks#k, a specialty product from #m251000000#. They used to sell it at #m251000000#, but for some reason they've stopped. You'll have to go ask #b#p2092001##k about it." />
+                <string name="4" value="Fourth and most important, you need to pay a fee of #b30 million mesos#k." />
+                <string name="5" value="What?! I'm the only person in Maple World that can handle those kinds of materials. Besides, you must be rich to have such an interesting animal." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you don't need a saddle? By the looks of it though, I doubt that the old saddle is going to fit anymore..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought all the materials! I'll start making your saddle right away." />
+            <imgdir name="yes">
+                <string name="0" value="A beautiful saddle has been completed that is flexible enough to let the animal move yet strong enough to protect the rider. " />
+                <string name="1" value="However, there is a limit to the flexibility of this saddle. I'm not sure how big this Dragon will get, but if it gets too big, the saddle might not be able to handle it. If that happens, you'll have to come back and order a new one." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you forget what the materials were? #b10 #t4032475#s#k, which you can get from the #o8140000# in the #m211000000# area. #b2 #t4032476#s#k, from inside #Shipwrecked Treasure Chests#k deep inside Aqua Road. #b2 #t4032477#s#k which is a specialty product of #b#m251000000#. " />
+                    <string name="1" value="I will make you the saddle if you bring me all those materials along with a fee of #b30 million mesos#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032475" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032476" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032477" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22406" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2116.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Planting Trees" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard #p1022006# is looking for ways to liven up the barren grounds of Perion." />
+        <string name="1" value="Thanks to the excavation project, Perion and its surrounding areas have been rapidly deteriorating. To liven up the area, #p1022006# wanted me to get him Seedlings to plant around the area. Get #p1022006# #b54 #t4000195#s#k from #b#o1140100#s#k at #rExcavation Sites#k.  \n\n#t4000195# #b#c4000195##k/54" />
+        <string name="2" value="I defeated #o1140100# and collected #t4000195#. #p1022006# promised to liven up the currently-barren Perion by planting lots of trees around the area, and he'll be the first to start it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000195" />
+                    <int name="count" value="-54" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Perion has been steadily deteriorating these days. It seems barren to begin with because of the rocky landscape, but it's also because of the recent excavation project that has been affecting areas around Perion. The sheer digging only speeds up the deterioration. I, for one, would like to restore Perion to its previous, glorious days. Would you like to help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="I can't thank you enough for stepping up for Perion. New monsters have been popping up lately, with the land around Perion rapidly deteriorating. Recent reports suggest that a mutant version of the Stumps, #r#o1140100#s#k, have been roaming around the area. " />
+                <string name="1" value="After studying the #o1140100#, I learned that if the tree brances on the top of Ghost Stumps' heads are planted on the ground, they will grow into huge trees. It's kind of like #t4000195#. Please head to the excavation site and eliminate #o1140100#s, while gathering up #b54 #t4000195#s#k for me. I'll surely appreciate it." />
+                <string name="2" value="#o1140100# appears quite often around the excavation site. The way to get there is quite simple. Head all the way East until you reach #rRocky Road III#k. There, you'll see a portal at the very top. Enter the portal to head to the excavation site." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did I ask for something too difficult...? I sincerely hope the Perion area transforms into a green forest with trees to spare..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect the #t4000195#?" />
+            <imgdir name="yes">
+                <string name="0" value="Great job. The #t4000195# will be planted all around Perion, and hopefully that'll turn into a huge, green forest. I may be in it by myself for now, but once people start helping out, it'll speed up the process. You should plant one around your house yourself." />
+                <string name="1" value="Anyway, I feel this weird vibe going around the excavation site... wonder what that is." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please gather up #b54 #t4000195#s#k for me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000195" />
+                    <int name="count" value="54" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

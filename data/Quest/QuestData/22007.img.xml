@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting Eggs" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22007" />
+        <string name="0" value="#p1013101# seems to have an Incubator that can be used to hatch an egg. Talk to #b#p1013101##k." />
+        <string name="1" value="#p1013101# says that he will give you an Incubator if you do his chore of collecting #t4032451#s. Go to your #bright#k and collect the #t4032451# that #p1013101# is supposed to collect. You can obtain an #b#t4032451##k by clicking on a #b#p1013104##k.\r\n\r\n#i4032451# #t4032451# #b#c4032451# / 1#k" />
+        <string name="2" value="You collected the #t4032451# and received an incubator from #p1013101#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="An Incubator? Yeah, I have one. I picked it up after an adventurer tossed it a while ago. It should still work. Why? You need it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, you can have the Incubator, but you have to do me a favor first. Mom wants me to collect some #t4032451#s, but it's such a bother. If you collect an #t4032451# for me, I'll give you the Incubator. Do we have a deal?" />
+                <string name="1" value="Okay, then go to that #b#p1013104# to your right#k and bring back an #t4032451#. You can get an #t4032451# by clicking on the #p1013104#. You just need to get me #bone#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine. I'll just keep the Incubator, then." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What, you still haven't brought back #b1 #t4032451##k? The #p1013104# is just to your #bright#k. What? Am I scared of chickens? You know that's not true! I just don't want to do it, that's all!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032451" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q22007e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22006" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="7" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6271.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" A Mysterious Sentence" />
+        <string name="parent" value="Clean water from the Lava" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="So they say #b#p1032001##k is a magic book inscribed with fire and it contains powerful fire element magic. I think someone knows how to break the spell on the book..." />
+        <string name="1" value="The book contains myterious writing that I can't understand. They say I need to go see  #b#p2020009##k, an elder in Ossyria who has studied magic for a long time...\n\n#t4161023# #b#c4161023# / 1#k" />
+        <string name="2" value=" #b#p2020009##k explained about a magic called #r#q2121003##k and told me about a myterious legend. According to her, she's not sure if this is a real magic book but if it's about #q2121003# it's definitely worth a try." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161022" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161022" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've unlocked the magic meaning. There is a sentence:\r\n#bThose who drink hell's fire can have it dwell within.#k" />
+            <string name="1" value=" Even though I studied magic for a long time, I have no idea what is written in here. If it is really cast with a spell, you should pay attention to it! Do you want to know more about the book?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to see the magician #b#p2020009##k in El Nath. She, the elder of magicians in Ossyria, will know more about this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm. You don't want to know about this book? I believe all fire element-based magicians should desire such knowledge." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You look pretty strong. What are you doing here? Hey--I recognize that book! That book has the best fire element-based magic,#r#q2121003##k." />
+            <imgdir name="yes">
+                <string name="0" value=" According to the legend, there is a lava river. If you use the essence of the lava, you can get #q2121003#. This is how to obatin such power." />
+                <string name="1" value="I have been studying for a long time to learn the extremes of fire element-based magic, called #r#q2121003##k. This is my first time to see this confirmed in writing. Wonderful!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" Even if he gets busy as an elder, Robeira never skip his magic training." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What can I do for you?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" Did you lose #b#t4161022##k? *sigh* I used a summoning spell for you. Don't lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161022" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6270" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="212" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

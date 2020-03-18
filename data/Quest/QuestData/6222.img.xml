@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6222.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Theory on Inverse Attributes of Summoned Beings (Familiars)" />
+        <string name="parent" value=" Inverse Attributes" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2030012##k suggested that I go see  #b#p2012017##k,  the mad scientist in Orbis Tower." />
+        <string name="1" value=" I followed #b#p2030012##k's advice and went to see #b#p2012017##k. #b#p2012017##k said that it's an interesting theory and said that we should try it on a summoned-being--a familiar. He says to get him the ingredients.... I can find everything else, but I'll need to see #b#p2030012##k for #b#t4031468##k    \r\n#i4011005##t4011005# #b#c4011005#/10#k\n#i4011003##t4011003# #b#c4011003#/5#k\n#i4011002##t4011002# #b#c4011002#/5#k\n#i4031468##t4031468# #b#c4031468#/1" />
+        <string name="2" value=" #b#p2012017##k said it would take time to make #b#t4031451##k and told me to talk to him later. I will return in a little while to check on his progress" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="700000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4011003" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011002" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031468" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What are you doing in the laboratory? Inverse element-based magic? Hmm. The residing genius in science, #b#p2012017##k, knows magic as well as science. I've never heard about inverse element-based magic! It's nonsense!" />
+            <string name="2" value="Summon is when you call your loyal servant using magic. Think of it as an elemental familiar. Usually, Summon must have the same or similar power as you. If you Summon according to inverse element-based magic, it's possible to create a Fire creature if you were a Ice/Lightning ArchMage for instance. " />
+            <string name="3" value="If a human learns two different kinds of magic, they collide.  Other element-based magic can be realized outside these normal laws via Summon. That is the principle of an #binverse element-based magic summon. Hahaha! What do you think of my idea? Crazy, yet perfect right?" />
+            <string name="1" value=" It sounds interesting, though. Scientists never mind common sense! I'll help you out! The reason you can't learn two element-based magic is two different magic will always conflict with one another. Fire melts Ice, that sort of thing. What try saying... #bsummon#k!" />
+            <imgdir name="yes">
+                <string name="0" value="Good! You agree with my idea! Go and get ingredients to make #b#t4031451##k! I need #b10 #t04011005#, 5 #t04011003#, 5 #t04011002##k, and #b#t4031468##k.  We shall put this to the test!  " />
+                <string name="1" value=" It's not easy to get #b#t4031468##k. Go to #b#p2030012##k who knows well about such ingredients. He will know how to make everything you need. Take care!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you think it's impossible?!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You gathered everything! Good. Let's make\r\n#b#t4031451##k! It'll take time. Please talk to me in a few moments. " />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="A blueprint for #b#t4031451##k is ready! Go and get ingredients!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031468" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011002" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4011003" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6221" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

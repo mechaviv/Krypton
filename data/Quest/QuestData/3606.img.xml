@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3606.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Seed" />
+        <int name="area" value="37" />
+        <string name="0" value="Apparently, a Swallow hurt its wing and is laying down around the village shrine. I better go check it out ..." />
+        <string name="1" value="I met Swallow near the village shrine, its wings clipped. Swallow was on a delivery, but lost the item that it was suppose to deliver: a rare seed, and Swallow wanted me to find the seed for it. Apparently, it dropped the seed somewhere around where a bunch of suspicious rabbits looked on. Maybe the rabbits took it...\n\n#t4031241# #b#c4031241##k/1" />
+        <string name="2" value="I met Swallow near the village shrine, its wings clipped. Swallow was desperate to find the lost seed, and asked me for help. Swallow claimed to have lost the seed where a bunch of suspicious-looking rabbits gathered up, so I asked each and every one of them about the whereabouts of the seed. The seed was eventually found, and I gave them back to Swallow." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아야... 날개가 부러졌나봐요. 박씨를 찾아야 하는데... 제발 도와주세요..." />
+            <imgdir name="yes">
+                <string name="0" value="전 하늘님의 전령이랍니다. 작년 봄에 제 다리를 고쳐 준 분에게 전해드려야 하는 하늘님의 선물을 가지고 오다가 산중턱에서 잠시 앉아 쉬고 있었는데, 잠시 한 눈을 판 사이에 그만 하늘님이 준신 선물을 잃어버리고 말았어요. 그래서 잃어버린 박씨를 찾아 산 속을 헤매다가 사나운 토끼들한테 쫓기는 바람에 이렇게 다치고 말았어요. 박씨를 잃어버린걸 하늘님이 아시면 크게 혼날거에요. 제발 제 박씨를 되찾아 와주세요. 제 생각엔 아무래도 그 토끼들이 제 박씨를 가져간 것 같아요. 틀림없다니까요!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="설마 날개를 다친 절 두고 이대로 가시겠다는 건 아니시죠?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031241" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031225" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no... My wing must be clipped. I need to find the seed, though... please help me." />
+            <imgdir name="yes">
+                <string name="0" value=" I'm the messenger from the God of Sky, and I am in a little bit of a tight spot right now. I was carrying a present from the God of Sky for this man that took care of my broken leg last spring, but while I was resting at the top of the mountain, I dropped it somewhere, and now I can't find it." />
+                <string name="1" value="So I went into the woods looking for that lost seed, only to find a bunch of angry rabbits chasing me. That's how I clipped my wing, frantically trying to fly away from those rabbits. If the lord found out that I have lost the seed, then I'll be harshly reprimanded for this!! Pleeeeeease help me find the seed. I have a feeling that it's one of those rabbits that have the seed. I am pretty sure of that!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aww, you're not going to leave me here, are you? My wing just got clipped!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, that seed you have in your hand... that's it!!! You really did find it! That's incredible! Thank you thank you thank you! Wait, oh no... now I forgot who to give this seed too. I keep forgetting the most important things! Was it Hongbu or Nolbu?" />
+            <imgdir name="yes">
+                <string name="0" value="I really cannot remember which one... I'm sure it's either Hongbu or Nolbu, but ... I can't even fly there right now because my wing is clipped... please take this seed to either one of the two. I'll trust you to make the correct call." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Did you find the seed? If I ever tell the lord up there I lost the seed, then I will be scolded by him... sigh..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031241" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071006" />
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

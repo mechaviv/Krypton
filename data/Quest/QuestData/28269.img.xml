@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28269.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] The Terrorizing Red Ribbon Pigs" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1012109:##k in #b#m100000000##k says he needs your help." />
+        <string name="1" value="He wants you to eliminate 40 #rRed Ribbon Pigs#k that are pestering the people.\n\nReport back to #b#@1012109:##k in #b#m100000000##k upon completion." />
+        <string name="2" value="You have eliminated a herd of #rRed Ribbon Pigs#k that were pestering the people." />
+        <string name="demandSummary" value="#o1210101# #a282691#" />
+        <string name="rewardSummary" value="Exp 1,300&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I was taking a walk one evening. The cool breeze and balmy weather brushing past my face...it was the perfect weather for leisurely reading. So, I put a blanket down on the grass and was about to get comfortable." />
+            <string name="1" value="But suddenly, I heard an underground ringing I hadn't ever heard before.\n\nAre you listening to my story?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Haha! Thank you for offering your help.\nI should finish my story first. So, the underground ringing was accompanied by a herd of #rRed Ribbon Pigs#k. Thanks to my quick reflexes, I was able to avoid them, but those pigs had stomped all over my blanket and book, and even ruined the lunch I had packed." />
+                <string name="1" value="They're such violent creatures that they're harming other townspeople as well.\n\nCould you, capable adventurer, eliminate 40 #rRed Ribbon Pigs#k for the townspeople?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not interested in what I have to say?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thanks to you, the #rRibbon Pig#k population has decreased." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please hunt 40 #rRibbon Pigs#k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012109" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <int name="lvmin" value="12" />
+        </imgdir>
+    </imgdir>
+</imgdir>

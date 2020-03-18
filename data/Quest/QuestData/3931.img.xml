@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3931.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Man with the Iron Hammer" />
+        <string name="parent" value="Sand Bandits According to Ardin" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The words 'Iron Hammer' was written on the #p2103001#. There's only one person in #m260000000# that carries an iron hammer. Was his name #p2101003#?" />
+        <string name="1" value="#p2101003# is a the member of the Sand Bandits. #p2101003# says only the strongest are allowed to be members and that you have to prove your worth. He wants you to eliminate the ferocious #r#o2100105#s#k. Easy!\n\n#o2100105# #r#a39311##k" />
+        <string name="2" value="You eliminated the #o2100105#s, but #p2101003# said that you still need to do more to earn his approval." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Who are you? What do you want? What? You want to join the Sand Bandits? How did you…nevermind. That's not important. Do you really want to be a member?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm, Sand Bandits are asked to perform difficult missions. You look like a skilled traveler, but I can't trust that you have the strength to be a Sand Bandit. Show me you're worth. Slay #r100 #o2100105#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to do it, then get out of my face." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You slew 100 #o2100105#s? Really? I find that hard to believe. Wow, you really did!" />
+            <imgdir name="yes">
+                <string name="0" value="But #o2100105#s aren't really anything. Sand Bandits constantly face bigger and stronger monsters than that. You can't be a member just by destroying #o2100105#s." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't slain #r100 #o2100105#s#k. How can you honestly call yourself a candidate with those skills?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101003" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2100105" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3927" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

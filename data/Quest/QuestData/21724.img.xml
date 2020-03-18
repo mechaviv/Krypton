@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21724.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Third Assignment, Completed!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your third assignment as an informant and this one involves investigating the suddenly-erratic #o1140130#s in #b#m102000000##k. With the help of #p1103004#, you were able to locate the cause of the madness. The case seems to be nearing its end. You should talk to #b#p1103004##k." />
+        <string name="1" value="#p1103004# says that the puppet doesn't necessarily have to be on a monster's body, it's enough just to be near a monster. She says that she will take measures to beef up security so the kid with the puppet can't get close to #m102000000# ever again. This concludes the case, and you are going to send the information to #b#p1002104##k." />
+        <string name="2" value="You updated #p1002104# on what happened in #m102000000#, which concluded your third assignment as an informant. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="400" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I think this taught me a number of things.  \n\n#bFirst, anytime there's a group of monsters that have suddenly turned violent, there's ALWAYS a puppet involved#k. \n\n#bSecond, these puppets don't necessarily have to be carried by a monster to have an effect. It just needs to be in the vicinity of the monsters.#k. \n\n#bAnd third, the puppeteer is not causing problems in just one area but rather throughout the entirety of Victoria Island.#k" />
+            <string name="1" value="Thank you so much for your help, Aran. It was very much appreciated. Please give my thanks to #b#p1002104##k as well." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In any case, when should I send this report…? Oh, don't mind me, I was just talking to myself." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I think this is all we can do for now. Any more probing would be pointless." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey there, hero! How are you doing? How did things go with #p1103004#?\n#b#L0#(You tell him the information that #p1103004# in #m102000000# compiled.)#l\n#k" />
+            <string name="1" value="Hmmm… I see. Okay, I'll use my intelligence network throughout Victoria Island to close in on the puppeteer." />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, this is like the third or fourth time that you have stepped in and messed up their plans. I'm sure the puppeteer will try do something about it. You even ignored his warning once... I have a feeling he might find you before we find him. Be cautious." />
+                <string name="1" value="I'll keep looking into anything related to the puppeteer or the Black Wings. In the mean time, how about spending some time training? I'll see you around Level 28." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see #b#p1002104##k yet? You should tell him what exactly took place here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21723" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

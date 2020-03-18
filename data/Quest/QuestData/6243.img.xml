@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6243.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Frostprey" />
+        <string name="parent" value="The Legendary Ice Bird" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2081003##k says he found a good place to hatch Freezer." />
+        <string name="1" value="#p2081003# thinks the highest nest in the sky should be able to hatch it. Sounds good.  Let's go there. \n\n#o9300090# #r#a62431#" />
+        <string name="2" value=" I can use the power of Frostprey now!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="3221005" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="322" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It should be able to hatch in a nice place where it can open its wings. A modest wind, large, open space...I've got it!" />
+            <string name="1" value=" I found a place to hatch Frostprey. The Sky nest. The highest nest is the perfect place to hatch Frostprey. It's not too high for you I believe..." />
+            <string name="2" value=" Take the egg there. Hurry! Wake #r#o9300090##k up. I'd go with you, but I don't have my longjohns on...besides, I feel that you should reap the reward...if you're strong enough that is...so what do you say?" />
+            <imgdir name="yes">
+                <string name="0" value="Ok, then hurry up! Wake #r#o9300090##k up. Be careful though, #o9300090# might attack you the second it hatches!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why not? Please reconsider!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah! This is #o9300090#!  Sturdy beak! Ouch! Cold feathers! Eyes as cold as winter itself! Fantastic! " />
+            <string name="1" value=" #o9300090# hatched, thanks to you. As much as I'd like to look after this creature, it belongs to you now." />
+            <string name="2" value=" Did this magnificent bird attack you? I thought it might! They tend to have strong identities so they don't recognize, or obey, humans unless defeated by one. Because you won, he decided to  follow you. I envy your strength! I should gone to the sky nest. You can even raise #o9300090# so it will assist you in battle! I am so jealous...this is fine bird, don't you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Take care of it please. Show it to me some day when you've grown strong! Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Still waiting for it to hatch? Come on, you can do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081003" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300090" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6242" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001114" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

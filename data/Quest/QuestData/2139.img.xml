@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2139.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Bowman's Last Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to look like a Bowman. #b#p1012100##k wants to help you with one last training session." />
+        <string name="1" value="#p1012100# wants you to slay #r15 #o1210101#s#k as a test. #o1210101#s are much stronger than #o0210100#s. Stay alert. \n\n#o1210101# #r#a21391##k" />
+        <string name="2" value="You destroyed 15 #o1210101#s. Wasn't easy, but you feel like you're well on your way to becoming an amazing Bowman." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="지금까지 수련을 잘 따라와 주어서 고마워요. 진정한 한명의 궁수가 된 당신의 모습을 정말 기쁘군요. 하지만 정말 당신이 궁수가 되었음을 증명하기 위해선, 한 가지 시험에 통과해야만해요." />
+            <imgdir name="yes">
+                <string name="0" value="시험은 간단해요. 리본돼지 15마리 사냥. 리본돼지는 지금껏 당신이 상대해왔던 몬스터보다 훨씬 강한 녀석이니 사냥 중에 절대 긴장을 풀어서는 안 될 거예요. 하지만 그렇다고 해서 너무 걱정하진 말아요. 당신은 이미 리본돼지와 싸울 수 있을 정도로 강해져 있으니까요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="시험이 두려운 건가요? 두려워하지 말아요. 자네는 이미 한 명의 궁수입니다. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="840" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for listening to me. I'm really happy to see a real skilled Bowman. You need to have a test to prove you're a real Bowman." />
+            <imgdir name="yes">
+                <string name="0" value="The test is simple. Hunting #rfifteen #o1210101##k. #o1210101# is the strongest monster that you ever competed. Be alert and no worries. You're strong enough to fight with #o1210101#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid of a test? Don't be. You are already an Bowman." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You really made fifteen #o1210101#. I know you could make it. Wonderful. You improved a lot in quite short time." />
+            <imgdir name="yes">
+                <string name="0" value="It is just beginning as an Bowman. You have a long way to go. It's tough but face your enemy. Be brave enough to draw a bow. That's what archers are meant to be." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't hunted#rfifteen#o1210101##k. Don't make haste. Please be calm as a Bowman." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2138" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

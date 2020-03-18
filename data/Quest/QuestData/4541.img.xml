@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4541.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Bright and Sunny Day" />
+        <string name="parent" value="Malek's Joy of Music" />
+        <int name="order" value="1" />
+        <int name="area" value="49" />
+        <string name="0" value="It is such a sunny day! I really need something to cool down!" />
+        <string name="1" value="#b#p9270061##k says that with the #b#o9420527#s#k running outside the village, we won't be able to go out of the Kampung.They want me to help get rid of them and collect #b50 #t4000465#s#k. \n\n#t4000465# #r#c4000465#/50#k" />
+        <string name="2" value="After getting the #b#t4000465##k they felt less heaty." />
+        <string name="demandSummary" value="#i4000465:# #t4000465:# #c4000465# / 50&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 10,000&#xD;&#xA;3,000 Meso&#xD;&#xA;Able to proceed to 'Too Hot!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="3000" />
+            <int name="exp" value="10000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000465" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It is such a sunny day! I feel like we're in a steam pot or something... I really need something to cool down!" />
+            <string name="1" value="Hi there! It has been very hot these days! We could make one of the most delicious coconut juices in Malaysia if only we had enough coconuts. With all those #b#o9420527#s#k running outside the village, we won't be able go out of the Kampung to get enough coconuts." />
+            <string name="2" value="Will you help us get rid of them and collect #b50 #t4000465#s#k for us?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hope you will return before any one of us passes out from this deadly heat..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="C'mon now, you could enjoy nice cool coconut juice yourself. What do you say?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have collected #b50 #t4000465#s#k! Thank goodness, we were dying from thirst here. " />
+            <imgdir name="yes">
+                <string name="0" value="Now, we can drink some water with the #b#t4000465#s#k and cool down. What a refeshment!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have not collected #b50 #t4000465##k yet. Please hurry, it's getting even hotter!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270061" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000465" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270061" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

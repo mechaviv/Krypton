@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Missing Sergeant Bravo" />
+        <string name="parent" value="Alpha Platoon's Network of Communication" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="1" value="Inside El Nath, I found #bMaster Sergeant Fox#k, who seemed to have crashlanded here. He asked if I can find 3 of his men and if they are doing their job whereever they are. The ones I need to meet up are #bStaff Sergeant Charlie, Corporal Easy, and Sergeant Bravo#k, and they should be around Ossyria. He'd prefer that I meet them in the order of their ranks. I found #bStaff Sergeant Charlie#k at Orbis. Now I have to find #bSergeant Bravo#k next." />
+        <string name="2" value="I found #bSergeant Bravo#k in the middle of a snowfield far from El Nath. He said he's been doing his duties and that, while investigating around the area, he found this piece of an ancient document that he wants me to deliver to Master Sergeant Fox." />
+        <string name="summary" value="Find Sergeant Bravo" />
+        <string name="rewardSummary" value="1,200 EXP&#xD;&#xA;Can proceed to the &quot;A Request from Sergeant Bravo&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031049" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+            <int name="nextQuest" value="3040" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay... Now, you gotta meet #p2030001#... right? He must have found something like me. So long~" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you get #b#p2020003##k the #b#t4031049##k I asked you for? Do I have anything more to ask for? Hmmm ... none for now. Come back again sometime~!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You must have lost the document on the way. Please take this again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3039" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2169.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Large Pearl" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently Sharyl, the Prince of Whales has yet another problem. Should I go find out what it is?" />
+        <string name="1" value="Sharyl, the Prince of Whales claims that he had left a #bMother of Pearl#k in The Nautilus' #bGenerator Room#k a long time ago. He thinks that there must be a #bLarge Pearl#k in there by now, and wants me to go get the pearl to take to Kyrin. I wonder why Sharyl, the Prince of Whales wants to give the pearl to Kyrin?  Anyway, I should remember to beware of #bMuirhat#k while I'm on my way. The Prince warned me to watch out!  \n\n#i4031843##t4031843# #b#c4031843##k / 1" />
+        <string name="2" value="Just as I am about to enter the Captain's cabin, Muirhat appears and stands in front of the door, blocking my way. He says that Sharyl, the Prince of Whales must give up hope, and wants me to hand over the pearl! Then he tells me to comfort Sharyl, the Prince of Whales if I see him again... Stay strong, dear Sharyl, the Prince of Whales. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031843" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahh, you were the one that did me a huge favor the other day. I'm sorry I keep asking you this, but can you please help me out once more?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. A while back, I left a #bMother of Pearl#k inside the #bGenerator Room#k, and I am sure by now, it has a huge piece of pearl inside. I'd love to donate that pearl to Kyrin..." />
+                <string name="1" value="Please take the #bpearl#k and give it to Kyrin for me. I am way too shy to do this myself... and please let her know that Prince Sharyl picked it out because he thinks it'll look good on her. Thank you!" />
+                <string name="2" value="Before making your way to Kyrin, however, you should really watch out for #bMuirhat#k. He might stand in your way of getting this done." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand if you feel burdened by my constant requests. Who should I ask, then..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Wait, what's that pearl you have in your hand? \r\n#L0##b I'm here carrying out the Prince's order to give this to Kyrin.#k#l" />
+            <string name="1" value="Prince Sharyl?? Hmmm.... So you're saying Prince Sharyl ordered you to give that to Kyrin? \r\n#L0##b Is there a problem?#k#l" />
+            <string name="2" value="Hmm, the Prince should give it up right about now, yet he's still persistent. I bet even if Kyrin receives the pearl, she'll only get angry at him for that. Hand me the pearl. I better talk to Prince Sharyl about this myself." />
+            <imgdir name="yes">
+                <string name="0" value="The Prince will be saddened by this. For you to carry out a personal order like this, you must be very close to Prince Sharyl. Next time you see him, make sure to console him." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please find the pearl and give it to Kyrin. I want nothing more than to see Kyrin smile. Just make sure not to be detected by Muirhat." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031843" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2168" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

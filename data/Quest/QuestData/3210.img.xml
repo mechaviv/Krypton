@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3210.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Just Another Day at Work" />
+        <string name="parent" value="Just Another Day at Work" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see #b#p2040015##k, who should be somewhere around the Toy Factory" />
+        <string name="1" value="#bManager Karl#k, who's at the Toy Factory inside the Ludibrium Clocktower, wanted me to check up on his 10 Roly-Poly workers by taking pictures with them. The 10 have to be in the order... I should go see Eos Tower." />
+        <string name="2" value="I found Roly-Poly 1 at the 98th floor of Eos Tower working hard, so I took a picture of him with the camera that #p2040015# gave me." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031078" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="750" />
+            <int name="nextQuest" value="3211" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there! Aren't you the one that delivered my lunchbox for my daughter? Thanks to you I had a great lunch that day. Well, now that you're here ... I have something to ask you. Will you help me out, if you have some time with you right now?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. We had 10 Roly-Poly workers working at the factory. Those guys are hard workers, but right now, they have been sent abroad to fix Eos Tower. I'm sure they're working on the tower even as we speak." />
+                <string name="1" value="I'm just curious as to whether they work hard even without me watching over them. That is why... can you visit those guys and take a picture of each and every one of them through the camera that I'm giving you? It will be nice to have you visit them in order." />
+                <string name="2" value="You have my camera now. Please make sure you don't lose it. After taking pictures of my 10 workers in order, all you need to do is come back, and return the camera along with the pictures. Please head over to Eos Tower ASAP. Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm ... you must be busy right now. I sure can use someone like you right now. If you ever have a change of heart, please let me know, okay?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmmm ... you haven't met my 10 Roly-Poly workers yet? They are all sent to Eos Tower for maintenance. They're working in all corners, and all spread out. I'm sure they are doing a good job, but I need to find a way to monitor those guys, so please take the camera that I gave you, and take their pictures in order from 1 through 10. Good luck!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Man, so much work. Whoa. Are you here at #b#p2040015##k's request? It looks like you've lost the camera, though. Please go back to Manager Karl and talk to him about the camera." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hmmm ... did you lose my camera by any chance? You should have been careful... but don't worry, I always have some spares around. Please take this camera and head over to Eos Tower, where your job will be to take pictures of my roly-poly workers, from 1 through 10." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031078" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040015" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3206" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

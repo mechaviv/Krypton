@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10327.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Corba's Watch" />
+        <int name="area" value="50" />
+        <string name="0" value="Corba says he lost his watch during his transformation." />
+        <string name="1" value="You told the Maple Admin that you would take the watch to Corba yourself. Let's go find Corba in Leafre!" />
+        <string name="2" value="Corba sincerely thanked you and gave you an amazing present as a token of his appreciation." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001306" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10327e" />
+        </imgdir>
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001306" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

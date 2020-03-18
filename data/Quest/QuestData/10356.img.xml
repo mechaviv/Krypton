@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10356.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering Cassandra's Album" />
+        <int name="area" value="50" />
+        <string name="1" value="As a good citizen of Maple World, you've decided to take it over to Cassandra, its rightful owner." />
+        <string name="2" value="Cassandra, who had been extremely anxious, was ecstatic when you returned the Album." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001316" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10356e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001316" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

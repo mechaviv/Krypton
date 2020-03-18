@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Moira's Whereabouts" />
+        <string name="parent" value="War of the Dragons" />
+        <int name="order" value="1" />
+        <int name="area" value="41" />
+        <string name="0" value=" I heard recently #p2081000# in #m240000000# often looks up at the sky. Who is he waiting for? Let's go see #p2081000#." />
+        <string name="1" value=" #p2081000# in #m240000000# was concerned about #b#p2081006##k, a close magician friend, because he had recently lost contact with her. #p2081006# is very close to dragons in Minar Forest and a few days ago, she went to the forest because she heard that the dragons were under danger. Since then, she lost all contact with her.  What could've possibly happened the dragons in Minar Forest and where has #p2081006# disappeared to? Wouldn't I be able to find her somewhere #bbeyond Dragon's Forest#k?" />
+        <string name="2" value=" #p2081000# asked me look for magician #p2081006#.  After getting lost for awhile, I was finally able to meet #p2081006# at the top of the entrance of the Cave of Life at the dragon's nest." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="도데체 어떻게 된건지... 통 연락이 닿지 않으니...그녀는 어디로 사라져버린 것인지... 답답하군. 답답해! \r\n#L0# 누군가를 기다리고 계시나요?" />
+            <string name="1" value="아주 오래 전에 우리 마을을 찾아왔던 마법사가 있었다네. 그녀는 스스로를 위한 수련을 한다고 했었지. 쾌활하고 밝은 성격으로 마을 사람들도 모두 그녀를 좋아했었지… 그녀는 미나르숲의 용들과도 사이가 좋았다네. \r\n#L0# 용들과 사이가 좋았다니 굉장하네요." />
+            <string name="2" value="맞아. 용들이란 원래 인간을 믿지않지만, 그런 그들도 그녀만은 신뢰했었지. 어느 날, 그녀가 다급한 얼굴로 돌아오더니 용들에게 위기가 닥쳤다면서 그들을 도와주러 가겠다는 말만 남기고 떠나버렸네. 그 후로 다시는 그녀를 볼 수 없었지. \r\n#L0# 그런데 왜 그녀를 기다리시죠? 특별한 이유라도 있나요?" />
+            <string name="3" value="최근들어 숲으로 들어갔다가 돌아오지 않는 하프링들도 점점 늘어나고 있다네. 이럴 때 그녀가 우리 곁에 있어준다면 큰 도움이 될텐데 말이야. 자네가 그녀의 행방을 알아봐 주지 않겠나?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I don't know what happened to her and I have no way to contact her. I don't even know where she is! Its so frustrating! \r\n#L0# #bAre you looking for somebody?#k" />
+            <string name="1" value="There was a magician who claimed to have trained herself that came to our town. Everyone in town really liked her because she was so outgoing and cheerful. She even had a good relationship with the dragons in nearby Minar Forest. \r\n#L0# #bWow! A good relationship with dragons?#k" />
+            <string name="2" value="Yes! Dragons don't normally trust humans, but they believed her. One day, she told us the dragons were in danger and that she was going to help them. After that day, she never came back. \r\n#L0# #bthen why do you wait for her? Any reason?#k" />
+            <string name="3" value="Recently, Hafrings have been disappearing from the forest. If she were to come back, she could be of great help. Would you please find her for us?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! The last time I saw her was at at the entrance to the Dragon Forest. She looked as if she was getting ready to go in. She's probably still in there somewhere!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Who will help us find the missing Hafrings?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Who are you? How did you get here?!? \r\n#L0# #bAre you Moira? The Chief of Leafre Town asked me to see you.#k" />
+            <string name="1" value="SHH! Quiet! Thank you for being here. But you can't save me by yourself.\r\n#L0# #bWhy are you imprisoned?#k" />
+            <string name="2" value="...You must be good, I believe. Listen to me carefully. " />
+            <imgdir name="yes">
+                <string name="0" value="Here is a holy place where only the dragons of Minar Forest could live. The dragons had a good relationship with the Hafrings. They could hatch the egg with help of the Hafrings and dragons protected them. Nine Spirit is the chief of dragons, and is also a close friend of mine." />
+                <string name="1" value="A few days ago, Horntail with his followers attacked the dragons. I'm not a dragon but I fought with Horntail. Nine Spirit, the chief of dragons, did his best but he couldn't win the wicked power of Horntail. That's why I 'm locked." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I saw Moira go into the Forest of Dragon. That was the last time I saw her." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

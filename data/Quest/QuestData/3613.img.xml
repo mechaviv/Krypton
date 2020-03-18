@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3613.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chil Nam's Buckwheat Paste" />
+        <int name="area" value="37" />
+        <string name="0" value="Apparently, the place that makes the best buckwheat paste in Korean Folk Town is Chil Nam's..." />
+        <string name="1" value="I went to Chil Nam's place because he was apparently the best at making buckwheat paste in Folk Town. He asked for 4 Tiger Stamps and 1,000 mesos in return for some buckwheat paste.\n\n#t4000170# #b#c4000170##k/4" />
+        <string name="2" value="I gave Chil Nam 4 #t4000170#s and 1,000 mesos for 2 buckwheat pastes." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000170" />
+                    <int name="count" value="-4" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022051" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You are the one that helped us brothers out before, right? How can I help you this time? Please don't tell me you're here at the request of my older brother...\r\n#L0# #bCan I get some buckwheat paste?#k" />
+            <string name="1" value=" Buckwheat paste? Well, you've come to the right place. We make the best buckwheat paste in Folk Town, no question. The thing is, I was just about to leave to get something, and ... if you can get me the item, then I'll give you some buckwheat paste." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please get me #b4 Tiger Stamps#k and I'll make the buckwheat paste for you for only #b1,000 mesos#k per. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here because you need some buckwheat paste?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you really brought it! Since you have worked hard at bringing me the Tiger Stamps, I'll give you the buckwheat paste as promised. It really tastes good, you know." />
+            <imgdir name="yes">
+                <string name="0" value="If you want some buckwheat paste again, then by all means come see me. Please know that it takes me at least 6 hours to make one." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please get me 4 Tiger Stamps and I'll make some buckwheat paste for you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000170" />
+                    <int name="count" value="4" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3605" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="37" />
+            <int name="interval" value="360" />
+        </imgdir>
+    </imgdir>
+</imgdir>

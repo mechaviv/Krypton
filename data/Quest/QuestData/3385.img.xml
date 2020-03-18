@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3385.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gordon's Warm Heart" />
+        <int name="area" value="44" />
+        <string name="0" value="Oh my gosh... I wound up losing #b#t1122013##k! I swear I kept it with me, but while I looked away, I wound up... misplacing it. Sigh, there's nothing I can do, I better just visit #b#p2020002##k and tell him what happened. Do I really have to go to #b#m211000100##k and face the music?" />
+        <string name="1" value="He knew I had misplaced it? He picked it up from the streets? I was shocked to hear what #b#p2020002##k told me. Honestly, losing it really made me feel guilty about it, but at least it's back in my hands now! Phew... I'll need to start another conversation with him." />
+        <string name="2" value="I really didn't see it coming. I was totally unaware that he had left #b#m211000100##k and was watching me from the back... thankfully, #p2020002# had the item with him, and he just gave me back the item without much of a lecture. I felt so bad and embarassed that I vowed never to misplace the item ever again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="응? 무슨 문제라도 있는겐가? 얼굴 색이 좋질 않군. 고민거리가 있다면 나에게 말을 해 보게." />
+            <imgdir name="yes">
+                <string name="0" value="으음... 내가 준 마법인두를 잃어버렸다라... 허헛. 사실은 알고 있었네. 실은 내가 어딘가에 떨어져 있던 것을 주워서 갖고 있었네." />
+                <string name="1" value="뭐? 이곳에서 계속 신발을 수리하던 것 아니냐구? 이것 보시게, 나도 사람이네. 한 곳에 그렇게 오래 앉아 있을 수만은 없지 않은가? 짬이 날 때마다 나만 알고 있는 샛길로 이곳 저곳 다니곤 하는데 마침 이걸 발견하고는 한 눈에 내가 자네에게 준 것이라고 알아 보았지. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="뭐, 문제가 없다면 다행이고... 이곳의 날씨는 매우 추우니 감기에 걸리지 않도록 조심하게. 모험가에게는 건강이 제일 중요하니깐 말일세." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1122013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm? What concerns you? You don't look too well by any means. If you have something in mind, talk to me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh... so you lost the Magic ?? I gave you. Hah... the truth is, I knew you did. I actually picked it up from the streets, and I had been holding on to it, hoping that you will one day come pick it up." />
+                <string name="1" value="Even I can't stay in one place for too long. My body was aching and I need a long walk every now and then to stretch out. It was one of those long-walk days when I found the ??, and I immediately recognized it as the one I gave to you. \nTalk to me in a bit. I'll need to find it first so I can give it to you..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, if nothing concerns you, then that's good. It's really cold in here, and I urge you to take care of your body. Health is of utmost importance for explorers like you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh I found it! It looks a bit dirtier than when I last gave it to you. Do you not take care of this? That's unfortunate. When I was using this, there was nary a scratch on this ??. Here, take it." />
+            <imgdir name="yes">
+                <string name="0" value="Promise me that you will never lose it again. I want you to take care of it as much as I did. Understood? If you run into a nother problem, then feel free to let me know. I'll try to help you as much as I can." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What? You lost it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3384" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1122013" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

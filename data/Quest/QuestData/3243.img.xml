@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3243.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Messenger of the Toy Palace  2" />
+        <string name="parent" value="The Messenger of the Toy Palace" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="0" value="At the suggestion from #p2041004#, the security guard of #m220000000#, I headed to #m240000000# as the messenger of #m220000000#. #p2041004# graciously provided me with #tLeafre Guidebook# as well as a flight ticket provided by #m220000000#. What's the item I'm supposed to give him, though?" />
+        <string name="1" value="I received a request from #p2041004#, the security guard of #m220000000#, to head to a place called #m240000000# as the messenger of #m220000000#. #m240000000# is a town entrenched in Minar Forest somewhere in Ossyria, and I was told to deliver an item from #m2200000000# to the chief of the town, Tatamo. I better give that item from #p2041004# to #p2081000# of #m240000000#.\n\n#t4031347#  #b#c4031347##k / 1" />
+        <string name="2" value="I managed to deliver a present from #m220000000# to the chief of Leafre, Tatamo, as their messenger. As a sign of gratitude, Tatamo gave me a magic seed that allows me to transport between Ellinia and Leafre." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031347" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031347" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031346" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Your duty as the messenger of #m220000000# is to take this gift prepared by the good folks of the #m220000000# palace, and deliver it to #p2081000# of #m240000000#. Inside this box contains numerous presents we put our heart into, so please be careful with it." />
+            <imgdir name="no">
+                <string name="0" value="Why? Have you decided to back off at the last minute? This is an honorable task, and you should be proud of doing it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hoh... who are you, and where are you from? How can I help you? \r\n#L0# #bI am here as a messenger from Ludibrium. Ludibrium wants to engage in a friendly relations with Leafre, and asked me to deliver this present to you on their behalf." />
+            <string name="1" value="Oh ho~ They must really be friendly folks down there. It always feels great to start a friendly relationship. Great job making your way here. Please take this as my sign of gratitude." />
+            <imgdir name="yes">
+                <string name="0" value="This Magic Seed is a flower seed full of mystical powers which contains teleporting magic. Anyone that holds onto this Magic Seed will be enabled to enter the entrance to the Forest that cannot be entered by a mere mortal. Someone mentioned that the Western part of this town features such entrance. Go check it out." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please deliver this item to the chief of Leafre, Tatamo, as a sign of friendship." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Outside this vast forest, there must be a number of towns I may have never visited before. It would be nice if we come to friendly terms with them..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="This present contains the hearts and souls of the good people in Ludibrium that have prepared this, so please don't lose it again. Understood?" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031347" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3242" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

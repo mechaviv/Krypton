@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3947.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Byron's Recommendation!" />
+        <int name="area" value="44" />
+        <string name="0" value="You've been in #m260000000# for a while... suddenly, #p2101005# contacts you, wanting to meet up. What's this about?" />
+        <string name="1" value="#p2101005# says you're ready to make a job advancement and recommends that you see #p1090000# in Victoria Island. Hm, better take Byron's Recommendation Letter and go see #b#p1090000##k, then." />
+        <string name="2" value="You showed #p1090000# the recommendation letter written by #p2101005#. #p1090000# trusts #p2101005#'s judgement and told you to drop by whenever you're ready to make your job advancement." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031893" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031893" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, how's it going? I've been watching your every move, and... you look like you're ready for an advancement... and I want to recommend you to #p1090000#. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="I've known #p1090000# for a long time. Please visit #b#p1090000##k on the Nautilus. He'll be help you advance your job." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you feel like you're not ready to make the leap? You're humble, which is great, but keep in mind that this opportunity to make a job advancement disappears after a while..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Do I know you? Are you here to deliver something to me?" />
+            <imgdir name="yes">
+                <string name="0" value="#p2101005#'s recommendation, huh? You must be seeking job advancement. If you really want to change your job, you need to take the test." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you spoken to #b#p1090000##k yet?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Here, you can become a great Pirate." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you lose the recommendation? I can write a new one for you." />
+                <imgdir name="yes">
+                    <string name="0" value="Please try not to lose it this time." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031893" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101005" />
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

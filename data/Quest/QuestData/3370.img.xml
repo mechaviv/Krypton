@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3370.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Romeo's Flowers" />
+        <string name="parent" value="Romeo's Flowers" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="30" />
+        <string name="1" value="Romeo was able to complete the making of Snowfield Rose, but he's terribly shy. So shy that he was too terrified to give the flower to #bJuliet#k himself, and asked me to deliver the flower to her for him. I didn't know he was like this..." />
+        <string name="2" value="I gave Juliet Romeo's flower. Thankfully, she seemed very satisfied with the choice of the present. Good thing he didn't give her something like a Scorpion Needle." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031799" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031799" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, hello traveler! I've been waiting for you! I wanted to give Juliet a flower like you told me to, so I tried to create the Snowfield Rose... What? Did I fail to make it? Of course not! I have the rose ready." />
+            <string name="1" value="But I found out afterwards that there's a slight problem with giving Juliet this flower, and it's something only you can help me overcome. Please help me!" />
+            <imgdir name="yes">
+                <string name="0" value="Tha, thank you! Thank you so much, traveler! Now please give this flower to #bJuliet#k for me, thanks! What? Why am I not the one doing it? Well... that's the thing... you know... the thing is... ummm..." />
+                <string name="1" value="...just thinking about it makes me sweat profusely. I can't look into her eye and give her the flower. I just can't... I... I do believe you can do it for me! Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You, you don't want to? Then what do I do about this Snowfield Rose? It took a lot of work for me to make this..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, traveler! What can I do for you...? What? Romeo asked you to give me that flower? Wow..." />
+            <imgdir name="yes">
+                <string name="0" value="This is a beautiful Snowfield Rose... It's really difficult to make the seed of the Snowfield Rose, and for Romeo to make this... this is amazing. I can't believe he went through all the trouble just to give me this. I.. I am speechless. Thank you so much for giving me this. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Ex...excuse me? Have you... gone to see #bJuliet#k already? Oh... you... you didn't. Okay, then can you please...give that flower to... Juliet... for me?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Ex...excuse me? Have you... gone to see #bJuliet#k already? What? You lost the Snowfield Rose? No... no way... sigh... I'll make another one right now, so PLEASE, PLEASE don't lose it this time, and make sure to give it to Juliet... for me." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031799" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2112004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3369" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

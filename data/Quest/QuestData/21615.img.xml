@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21615.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gathering Ingredients for the Wolf's Life Water" />
+        <int name="area" value="6" />
+        <string name="0" value="One of the ingredients for the #t4032334# is the #t4032335#. Maybe #b#p2060005##k at the #b#m230000003# of #m230000000##k sells it? You'd better go see #p2060005#." />
+        <string name="1" value="#p2060005# tells you that the #t4032335# that was given by the wolves living in #m230000003# is available, but only at a price. She says it'll cost you 80 million mesos.\r\n\r\n#b80,000,000 mesos#k" />
+        <string name="2" value="You purchased the #t4032335# from #p2060005#. You'll use it to make some #t4032334#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-80000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032335" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hi there! Aren't you the one that bought the Wolf Vitamins the other day? How can I help you this time? Do you need those vitamins again?\n#b#L0#(You ask if #t4032335# is available.)#l\n#k" />
+            <string name="1" value="#t4032335#? Yes I have a few leftover after giving them to #o5130104# and #o5140000# . Do you need that? Well, I can sell it to you, but…" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Hello, customer. The item you've been looking for, #t4032335#, will cost you #b80 million mesos#k." />
+                <string name="1" value="#b('Hello customer'? He's treating you nicely all of a sudden, as if you just walked into a shopping mall!)#k" />
+                <string name="2" value="I know it's a bit pricey, but…#t4032335# is such a rare item, that… Well, just give me 80 million mesos, and I will hand you the #t4032335# immediately." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you saying no to the offer? I was going to sell it to you for the low price of 80 million mesos…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I don't know what you're going to be using it for, but seeing that you truly love wolves, I am confident that you'll put it to good use." />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha… Thanks to you, #m230000003# is no longer in the red. Hahaha…" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Are you sure you brought #b80 million mesos#k, because you look short on cash... Please double-check your inventory." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21614" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032335" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032334" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="150" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

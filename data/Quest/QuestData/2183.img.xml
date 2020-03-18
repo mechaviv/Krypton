@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2183.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Banquet for the Whalians" />
+        <string name="parent" value="A Banquet for the Whalians" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="I'm finally done cooking the special entree for the Whalians. I'd better take it to #bPorchay#k quick!" />
+        <string name="2" value="I don't think the Whalians will have to worry about food for a while." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031851" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031851" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Here's the feast. Can you please take this and go deliver it to Porchay?" />
+            <imgdir name="yes">
+                <string name="0" value="Here it is! Give this to #bPorchay#k, and please let her know that if she ever runs out again, all she needs to do is let me know, and I'll make some for her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you don't need to go to Victoria Island yet. Yes, it is a long way from here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh you're back! I've been waiting for you!" />
+            <imgdir name="yes">
+                <string name="0" value="Wow! Kenta sure cooked up a feast! I can just imagine the Whalians smiling at the thought of eating this. Thank you so so much!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please take this feast and give it to Porchay. She seemed to need it right this minute, so please hurry your way back to her." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What you lost it?? I have some spare, but please don't lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031851" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2182" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

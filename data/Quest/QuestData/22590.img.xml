@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22590.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Voice of the Sleeping Dragon" />
+        <int name="area" value="7" />
+        <string name="0" value="You aren't sure why the Black Wings did this or what they are after... Suddenly, #p1013000# seems surprised by something. What is it? Talk to #b#p1013000##k." />
+        <string name="1" value="#p1013000# says that the sleeping Dragon called to him. He says to try talking to the Dragon. Will that Dragon really respond?" />
+        <string name="2" value="#p1205000#, the sleeping Dragon, recognized #p1013000#!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ma...master! Did you hear that? But you just called me! You didn't call me? Was that a Dragon...? Wha... Listen! There it is again! You don't hear that, master? Master! Try talking to that sleeping dragon over there!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Maybe the Dragon's awake?! You should go talk to it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't tell me you're scared of the Dragon? It may be big, but I can tell it's really sweet. I know the Dragon won't hurt you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Are you the child's master?\r\n#L0##bUh, er, if you want to put it that way. Yes.  Are you...an Onyx Dragon? What is your name?#l\n#k" />
+            <string name="1" value="I am. My name is #p1205000#. I am the king of the Onyx Dragons of the past... The now extinct Onyx Dragons.\r\n#L0##bYou are the king of the Onyx Dragons? But how did the Onyx Dragons become extinct? And why are you trapped in ice?#l\n#k" />
+            <string name="2" value="To tell you all that...I need to go back in time hundreds of years. It is a long and sad story." />
+            <imgdir name="yes">
+                <string name="0" value="Are you ready to hear the story?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I thought he was asleep because his eyes are closed but I think he's awake! Let's talk to him!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1205000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22589" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

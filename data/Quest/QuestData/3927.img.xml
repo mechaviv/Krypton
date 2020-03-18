@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3927.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Existence of the Secret Organization" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#m260000000##k is famous for producing #t4011008#, but the people of #m260000000# aren't wealthy, and that's because of the greedy queen! Maybe #b#p2101000##k, who dances in the middle of town, knows a thing or two." />
+        <string name="1" value="When you ask #p2101000# about the queen, she speaks passionately about the queen's lack of humanity and mentions #bthe Sand Bandits#k in the process. Apparently, the Sand Bandits steal the treasures of the greedy queen and give them to the struggling folks in this town. When you mention you want to join then, #p2101000# instructs you to find #ba wall with something written about Sand Bandit on its#k. Find the wall and then return to #b#p2101000##k." />
+        <string name="2" value="You found the wall with clues about the Sand Bandits written on. A dagger, an iron hammer, a bow, an arrow? What does that mean?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="#m260000000# is a mineral-rich area with a lot of Lidium, an ore that can only be found at the Oasis and the Nihal Desert. But no thanks to the greedy queen, who charges ridiculous amount of taxes, everyone's struggling these days. Apparently the queen is a fairy from Orbis... She spends all the tax money to bring in unfathomable amounts of treasures.\r\n#L0##bWhat does the Sultan do?#l" />
+            <string name="1" value="The Sultan? #p2101009# is supposedly brilliant but I've never seen him act that way. He certainly sleeps brilliantly... He has virtually no power. The word is, the queen put a spell on him...\r\n#L0##bDoes anyone stand up against the queen?#l" />
+            <string name="2" value="Fortunately there are brave people who do. They serve as inspiration to the residents of #m260000000#. If this heroic group of bandits, called the Sand Bandits, didn't steal the queen's treasures and hand them to the people here, then the city would've been long dead by now.\r\n#L0##bThe Sand Bandits? I'd sure like to meet them.#l" />
+            <string name="3" value="You want to join the Sand Bandits? But you're an outsider! Hm, but you give off a good vibe. Want me to tell you more about them?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The Sand Bandits are despised by the queen, so they disguise themselves as common folk. Contacting them is not impossible, however…" />
+                <string name="1" value="I heard a story, just a story, you hear, that the Sand Bandits write hints #bon the walls of a house somewhere in town#k. It's the key to contacting them. Find the wall, meet some members, and maybe, just maybe, you'll become one of them…" />
+                <string name="2" value="Of course, the wall looks just like any other wall, from a distance… So you need to check every wall. Here's a clue. It could be closer than you'd think." />
+                <string name="3" value="But even if you do everything right, it still might not work out. Don't get your hopes up. It's not an easy organization to join." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid? The Sand Bandits go against the Sultan, so you could get in deep, deep trouble if you're not careful." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you find the wall?\r\n#L0##b I did, but I have no idea what it's talking about.#l" />
+            <string name="1" value="What did it say?\r\n#L0##b 'If I had an iron hammer and a dagger, a bow and an arrow...'#l\r\n#L1# 'Byron♡ Sirin'#l\r\n#L2# 'Ahhh I forgot.'" />
+            <string name="2" value="If I had an iron hammer and a dagger, a bow and an arrow, eh? Think about this! A weapon is just an item...until someone uses it, right? That's the only clue I can think of…" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Man, Jiyur wrote on the wall again? Arrgh! I'll get that kid…" />
+                    <string name="2" value="Really? You forgot? Well, do you remember where it was written?" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I guess you haven't found #p2103001# yet. Well, it's tough to locate the Sand Bandits..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

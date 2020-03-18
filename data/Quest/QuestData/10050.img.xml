@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10050.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Baby Bird Feather" />
+        <int name="area" value="50" />
+        <string name="0" value="The Baby Bird that hatched from the egg flew away freely with an indifferent and almost smug expression. The only thing left are some of its soft feathers. Hmm... Looks like #b#p9000042##k wants to say something." />
+        <string name="1" value="#p9000042#, with tears flowing down his smiling face, says that he is thrilled the cute Baby Bird hatched. He wants to keep a #b#t4032066##k as a momento. The Baby Bird really wasn't all that cute...but maybe you should just give him a feather." />
+        <string name="2" value="#p9000042#, after receiving the #t4032066#, jumped for joy saying that he would always treasure it. Now he's preparing to take care of the next egg..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you see? A cute little chick hatched out of its egg! I'm happy yet sad, thinking of this little chick saying goodbye with its two eyes so round and wide. I think I'm going to cry...\r\n#L0##b(He seems rather stoic and indifferent...)" />
+            <string name="1" value="The little birdie flew away, but I will always have the fond memories. To remember the little birdie, I'd like to keep a #t4032066#... Would you be so kind as to give me the #t4032066# you have?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Wow, thank you! I'll wait here until you give me the feather!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose you, too, wish to hold on to your memories with the birdie. Oh well, I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000042" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032066" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10050e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000042" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10046" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032066" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2008092600" />
+            <string name="end" value="2008101300" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

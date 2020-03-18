@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4914.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Subani's Legacy - Transgression" />
+        <string name="parent" value="Subani's Legacy" />
+        <int name="order" value="2" />
+        <int name="area" value="45" />
+        <string name="0" value="John Barricade is awaiting me at the Temple Hive! He's found something!" />
+        <string name="1" value="I spoke with John, and he's found a set of weird markings in the MesoGears that he can't decipher. He's mentioned that he'll need special crystals known as #bHyper Glyphs#k. I've agreed to snag #b50#k of them so he can decipher the markings. Electrophants...John thinks that the mechanism on their heads may have those Hyper Glyphs inside. I'd better be careful-I don't want to get shocked!" />
+        <string name="2" value="I got the #b50 Hyper Glyphs#k that John needed, and he's hard at work deciphering the markings. I should come back soon to see if he's finished!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031680" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022195" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Back already, huh? Well, you proved your worth, so I'll tell you a little story..." />
+            <imgdir name="yes">
+                <string name="0" value="Well, if you've heard of Dark Scrolls, you've heard about Subani. He was the powerful magician who sacrificed himself to seal away the evil demon, Naricain. The scrolls are all over the place, but that's not what we're here for. I got a tip from this funny looking guy over in Purplewood Forest, went by the name of Glimmer Man. He mentioned that Subani had a horde of items stashed away, and that the MesoGears would be a good place to look. I did some digging, thanks to the path you cleared, and found some strange markings. I don't know what they Say, but I do know that there only one thing that deciphers marking like these-a #bHyper Glyph#k. It can decipher other languages, but the problem is, you can only use it once, and there are 50 markings. I'll need you to hunt down #b50 Hyper Glyphs#k so we can keep going-I know we're close to something...Try those weird-looking elephants that shoot electricity. I'm willing to bet they're hiding something in that mechanism on top of their heads! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, ok. You never turn down a good legend though, they always turn out to be true..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Nice work! Now, I'll need some time to study these markings.\n\n#L0##bTell me some more about your discoveries.#k#l" />
+            <string name="1" value="Heh, ok. You asked for a list, well, my bro and I have discovered King Solomon's Mines, solved the mystery of Stonehenge, found Captain Kidd's gold horde, unearthed the trove of the Knights Templar, the Lost Dutchman's Gold Mine, the Sphinx Chamber, and countless Spanish galleons. Not bad for a few years! \n\n#L0##bHoly crap! What do you think we'll find here?#k#l" />
+            <string name="2" value="I have a hunch that Subani left something here. I remember when I explored the Sphinx Chamber, I discovered an old legend that was eerily similar to that of Subani and Naricain. It also foretells that the act that created the Dark Scrolls was not their final battle. I'm not sure what we'll find, but I'm sure it pertains to that. It also mentioned another world... \n\n#L0##bAnother world? Elpam's outside, have you spoken with him?#k#l" />
+            <string name="3" value="Not yet, he smells a bit too much like old cheese... but if he really is from where he said, I might have to..." />
+            <imgdir name="yes">
+                <string name="0" value="Ok, kid, get going! Return to me soon, and I should have more information!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Looking good, kid-but I'll need #b50 Hyper Glyphs#k to read the markings. I'll be waiting!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201051" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031680" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4913" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

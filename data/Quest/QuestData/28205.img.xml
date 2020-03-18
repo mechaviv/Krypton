@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28205.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for the Lost Book" />
+        <string name="parent" value="Lost Book" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201118:##k in #bHenesys#k wants your help in finding his #rLost Book#k. Let's go find him." />
+        <string name="1" value="He says he lost the book in #b#m104040001##k and #b#m104040002##k on his way back from #bNautilus#k.\n\nHe says you may be able to find the #rLost Book#k if you keep hunting the monsters in the area." />
+        <string name="2" value="#b#@9201118:##k in #bHenesys#k says to return the #rLost Book#k to #b#@1012109:##k in #bHenesys#k.Let's go see #b#@9201118:##k." />
+        <string name="demandSummary" value="#i4001352:# #t4001352:# #c4001352# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 2,700&#xD;&#xA;Able to proceed to 'Returning the Book to Jay' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2700" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="While I was reading the book I borrowed from #b#p1012109##k, I saw a beautiful Statue.\nSo I asked #b#p1072008##k in #bNautilus#k to find me that Statue if she stops in #bLeafre#k.\n\nAnyway, I lost the book on my way back to #bHenesys#k. Please, help me find the book!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I think I lost it in #b#m104040001##k and #b#m104040002##k. You'll be able to find the Lost Book if you keep hunting the mosnters nearby." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're quick to decline." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've found it! You're good!" />
+            <imgdir name="yes">
+                <string name="0" value="There are some pages missing here and there, but...\nI think it'll be okay. It doesn't seem like a very important book. Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you find the #rLost Book#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201118" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001352" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28204" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

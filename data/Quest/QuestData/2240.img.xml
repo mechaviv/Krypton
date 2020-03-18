@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2240.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Letter to the Master" />
+        <string name="parent" value="Manji and Balrog" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="0" value="Mu Young seems to have another favor to ask of you. Let's see what he needs." />
+        <string name="1" value="Mu Young says he has to further investigate the place, so he'd like me to deliver the letters he wrote to Manji during the past few days." />
+        <string name="2" value="Mu Young says he has to further investigate the place, so he'd like me to deliver the letters he wrote to Manji during the past few days.\r\nLet's deliver Mu Young's message to Manji in Perion. He thanked you for all your help as you set out to deliver his letters." />
+        <string name="summary" value="Let's deliver Mu Young's messages to Manji." />
+        <string name="demandSummary" value="#i4032262:# #t4032262:# #c4032262# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 50,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032262" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032262" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2241" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Too much has happened since then. Could you let my master know that I'm still looking for Balrog's traces and will be staying here until I find more clues? I know I should tell him myself, but I can't go back to Perion now. Not like this. I haven't fulfilled my duties and I'd only let him down if I go now." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please deliver this message to the master in Perion. Please." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you thinking about staying here a bit longer then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Welcome back. I was starting to get worried... Thought I'd lose you like I lost Mu Young.\n\n#b#L0#I have a message from Mu Young.#l\n#k" />
+            <string name="1" value="Did you really find Mu Young? What message have you brought me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please deliver this message to my master. I can trust you with this, right?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you find Mu Young? Did he have any messages for me?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032262" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2239" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

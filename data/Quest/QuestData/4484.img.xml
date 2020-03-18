@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4484.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cliff's Request" />
+        <string name="parent" value="Cliff's Rudolph" />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <int name="selectedMob" value="1" />
+        <string name="0" value="There is an old man looking sad on the 2nd floor of center tower in Happyville. It must be hard to just pass him by, knowing that he is sad. Go find him and offer him some help." />
+        <string name="1" value="#bCliff#k has been feeling lonely ever since Torr left to help Santa Claus. You will need to go to the highest point in town to take a picture of #bTorr#k pulling Santa's sleigh.\n\n#t4031881# #b#c4031881##k/1" />
+        <string name="2" value="What?! #bTorr#k is not in the sleigh formation. Rumor has it that there is a Reindeer crying around the corner of town. Could it be #bTorr#k?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031881" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="4485" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You look happy young man~  I have never felt this empty in my life when I should be singing and dancing for the Christmas...  Recently, as Santa Claus has gained too much weight, 4 Rudolphs were never enough to lead him and his sledge full of presents.  He was quite worried about that.  So... I had to let him take my #bTorr#k who I have been taking care of since I was young." />
+            <string name="1" value="I know that Santa Claus will take a good care of him but I am still worried if other Rudolphs might make fun of him since Torr is so weak and faint-hearted.  Torr has always been next to me through out the years and now that I don't have him here with me, this is what makes feel so lonely." />
+            <string name="2" value="But, there are some good things that I can enjoy too.  Christmas is the only chance for me to see Santa Claus and Rudolphs flying beautifully in the sky.  That's why I have climed up to the 2nd floor but it is still hard to see because of the other tall houses...  And I know better than anyone I can't climb up anymore with old body of mine..." />
+            <string name="3" value="So, will you be kind enough to make it to the highest point of the town and take a picture of my #bTorr#k who will be leading the sledge in a dashing figure?" />
+            <imgdir name="yes">
+                <string name="0" value="I could tell from the first sight that you will be able to do me a favor.  Your eyes are so kind.  Thanks.  Now, climb up to the highest point of the town and you will find a tripod to hold the camera up there.  Please take a picture of brave Torr leading the sledge there." />
+                <string name="1" value="Torr was the 5th one to be joined in the Santa's sledge club so he will be leading the sledge in the last, 5th row.  Take a good picture of him, showing his face clearly.  That picture will be my only pleasure to get over my yearning for Torr this year." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You have lots of things to do in this town.  I understand...  It's always busy during this time around.  When you have some time to hear me out, please come back to me.  I will be standing here..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So, did you bring the picture with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Sure you did!  You did take the picture! Let me see it!  Santa Claus is as busy as he was for past years~ ho~ho~ho~!" />
+                <string name="1" value="It's weired!  How come there is only one Rudolph?  There should be #bTorr#k at the end of the line but he is not in here~  What happened?  Did Torr leave the house?  Is he hurt?  You took this photo right?  Something must have happened to Torr...  What shall I do now?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm...  You didn't take the photo yet.  You will be able to find a tripod on the highest place of the town.  Be careful not to fall off from there~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2001000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031881" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2001000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4483" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

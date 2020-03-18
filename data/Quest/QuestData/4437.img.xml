@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4437.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rooney's Breaking News" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9250052##k is apparently handing out flyers that contain the breaking news..." />
+        <string name="1" value="Just received a flyer from #b#p9250052##k. The flyer stated that Happyville is in a state of emergency, and for more details, I have to visit #p1022101#." />
+        <string name="2" value="I asked #b#p1022101##k to inquire more on the stuff written on the flyer." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031876" />
+                    <int name="count" value="1" />
+                    <string name="dateExpire" value="2008011600" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031876" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Extra extra!!!" />
+            <imgdir name="yes">
+                <string name="0" value="Something urgent must be happening at Happyville. Rooney just asked me to hand these flyers out, and... if you want more information, you should go see her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahhh... you must be uninterested in what was going on. It was deemed urgent, though... what should I do?? Anyway, if you are interested, please see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have read the flyer for you to make your way here. Yes, it's true... Happyville is in a stage of emergency. I need as much help as I can get, and...what do you think? Would you like to help us out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Here's a little something for your good work..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Still haven't visited #p1022101#...?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you bring the flyer I asked you to bring? Did you meet up with the paperboy by any chance...?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost that????? Sigh ... please don't lose it again." />
+                <imgdir name="yes">
+                    <string name="0" value="With this flyers, #p1022101# will give a full detail of the information." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031876" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250052" />
+            <string name="start" value="2007112700" />
+            <string name="end" value="2008011523" />
+        </imgdir>
+    </imgdir>
+</imgdir>

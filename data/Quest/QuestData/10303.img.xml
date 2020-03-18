@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Witch's Treasure Chest" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9000059##k says he has something to tell you and it has to do with the Witch." />
+        <string name="1" value="He says he'll tell you how to open the Witch's Treasure Chest. " />
+        <string name="2" value="Remember you can open the Witch's Treasure Chest by leaving one #b#t4001300##k in front of the chest per day. \r\nRemember everything goes to waste if you don't release all 5 seals by #rDecember 8th#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001300" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want the Witch's treasures? I suppose you know about her very special treasure then?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The witch had a very unique hobby, which was to mercilessly hunt Pink Beans, a monster that many Maple warriors have trouble defeating. " />
+                <string name="1" value="That chest right there has been sealed with #b5 Magic Marbles#k so people can't open it. In order to break the seal... *ahem* *cough cough* *ahem* ...I'm sorry, it's been too long since I've talked. Could you give me a moment? Come back and talk to me in a few minutes." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Are you telling me that you're not interested in the Witch's treasures?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You can release the magic seal by leaving the Witch's favorite flower in front of the special treasure chest. When you open the chest, you can get to the special Pink Bean drop items stored inside!" />
+            <imgdir name="yes">
+                <string name="0" value="Here, this was the Witch's favorite flower. You can release the seal with this single flower. But it's a very valuable flower, so I can only give you #bone a day#k. " />
+                <string name="1" value="I sincerely hope you acquire lots and lots of special drop items by releasing the seal with this rare and valuable flower. If you don't break all 5 seals before #rJune 24th#k it will all go to waste!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you're not ready to break the seal. Make sure you have an empty slot in your Etc. window." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000059" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000059" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001300" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002971" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2009010100" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

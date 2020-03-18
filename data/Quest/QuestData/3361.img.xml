@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3361.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zenumist and the Ostracized Research" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="21" />
+        <string name="0" value="Apparently, #b#p2111008##k, an alchemist from Zenumist, wants something..." />
+        <string name="1" value="#p2111008# mentioned that there was an alchemist that has been ostracized by everyone for trying to combine the works of Zenumist and Alcadno, #b#p2112014##k, and he was interested in obtaining the Lab Report. He wanted me to acquire #b#t4031774##k for him, and in order to do so, I'll have to find someone that is aware of #p2112014#'s current whereabouts... \n\n#i4031774##t4031774# #b#c4031774##k/1 " />
+        <string name="2" value="I acquired #t4031774# and gave it to #p2111008#. Peering through the results, Bedin's eyes were flashing with interest." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Hey, do you know of the name Yulete by any chance? He's apparently very famous around Magatia, but infamous would be a better word. He was conducting this questionable research that was highly ridiculed by everyone, I even heard that his own pets told him his ideas were bad. We're talking about moon-powered sunlamps, dehydrated water in a box, lint staplers, the works.  If it was useless, he invented it. It was strange, he used to be a prodigy.  By the time of his last great failure, which I believe was a portal napkin holder, he went into seclusion." />
+            <string name="1" value="I mean, the point Yulete was trying to make was outrageous. I mean, he proposed that the work of Zenumist and Alcadno should be combined for a synergy effect. That definitely made him many enemies from both Zenumist and Alcadno." />
+            <string name="2" value="That being said... people are curious to see how that research and the following experiment turned out.  He did have one idea that was rather good.  I am sure he failed, and that's why he hasn't set foot in Magatia since, but... I'm getting curious, you know. That's why... I'd like you to get me his Lab Report. " />
+            <imgdir name="yes">
+                <string name="0" value="Excellent. I don't know where Yulete may have disappeared, but those that admired him claim he can still be found somewhere around Magatia, so enter Yulete's lab through those people, fight the monsters around the area, and get me Yulete's lab report. Thanks!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... if you don't want to, then I can't push you to do it, but... aren't you also curious to see how Yulete's experiments fared in the end? I want to see if the combining of the methods of Zenumist and Alcadno worked.  Couldn't be worse than the magnification goggles he invented..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="50000" />
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031774" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, do you know of the name #b#p2112014##k by any chance? He's apparently very famous around #m261000000#, but infamous would be a better word. He was conducting this ridiculous research that got so trashed by others that he went into seclusion.&#x9;" />
+            <string name="1" value="I mean, the point #p2112014# was trying to make was outrageous. I mean, he proposed that the work of Zenumist and Alcadno should be combined for a synergy effect. That definitely made him many enemies from both Zenumist and Alcadno.  There was an old legend, about a rather talented Alchemist known as Dr. Aikark who spoke about the same thing shortly before he disappeared to who-knows-where.  No one has ever been able to get the two to work together, not to extent where it became feasible." />
+            <string name="2" value="That being said... people are curious to see how that research and the following experiment turned out. I am sure he failed, and that's why he hasn't set foot on #m261000000# since, but... I'm getting curious, you know. That's why... can you get me his #bLab Report#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Ohh, really? You're going to get that for me? I don't know where #p2112014# may have disappeared, but people that have been chasing him claim he can still be found somewhere around #m261000000#, so enter #p2112014#'s lab through those people, fight the monsters around the area, and get me #b#t4031774##k. Thanks." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... if you don't want to, then I can't push you to do it, but... aren't you also curious to see how #p2112014#'s experiments fared in the end? I want to see if combining the methods of Zenumist and Alcadno worked.  After all, Dr. Aikark spoke of the same thing, and both of them were highly intelligent...if something was able to be accomplished, it would undoubtedly be something insanely powerful.  A fusion of pure alchemy and magic, given life?  I shudder to think was it would do in the wrong hands... " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm... how did you do? Were you able to find #t4031774#? What? This is it? Let me see!" />
+            <imgdir name="yes">
+                <string name="0" value="Ohh this is it! &quot;In order to combine the methods of Zenumist and Alcadno, one should understand that the two studies are actually derived from the same root.&quot; Even the introduction sounds like #p2112014#'s work." />
+                <string name="1" value="This is definitely piquing my interest. This was stated at the height of the conflict between Zenumist and Alcadno, so it was met with jeers and hatred, but... I personally think it's very interesting. #p2112014# just found the wrong time to state it... anyway, thanks a lot!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have brought #b#t4031774##k yet. Weren't you able to locate #p2112014#'s lab? Hmm... now I remember that #b#p2112004##k of Zenumist is looking for #p2112014#..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031774" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3362" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <int name="lvmax" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

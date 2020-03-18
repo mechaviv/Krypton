@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9992.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Vanished Mysterious Fabric" />
+        <int name="area" value="50" />
+        <string name="0" value="The Mysterious Fabric disappeared from me all of a sudden.  I should go talk to Arwen. " />
+        <string name="1" value="The Mysterious Fabric disappeared from me all of a sudden.  I went to go see Arwen and she said if the Mysterious Fabric isn't kept properly, it can melt away and disappear... She could make me another one but she would need more materials this time.  As Arwen requests, I should gather #b12 Snow Silks#k and bring it to her.\n\n#i4001166# #t4001166# #b#c4001166# / 12" />
+        <string name="2" value="The Mysterious Fabric disappeared from me all of a sudden.  Arwen said it was because I didn't properly take care of it.  I brought her 12 more Snow Silks and she made me another one. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="이번엔 또 무슨 일인가요?\r\n#L0##b신비로운 직물이 사라져버렸어요.#l" />
+            <string name="1" value="어휴~ 그럴 줄 알았어요. 어쩐지 못 미덥더라니. 신비로운 직물은 관리가 까다로워요. 조금이라도 소홀하면 녹아서 사라져 버린답니다. 조심하지 그랬어요. 그래서 신비로운 직물을 다시만들고 싶어서 찾아온건가요? 하지만 이번에는 저번보다 더 많은 스노우실크가 필요해요. 어때요 그래도 만들어보겠어요?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="-12" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031945" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What is it this time?\r\n#L0##bThe Mysterious Fabric disappeared on me.#l" />
+            <string name="1" value="Ugh~ I knew this would happen.  The Mysterious Fabric is hard to maintain.  If you are careless with it even for a bit, it will melt and disappear.  You should've been more careful.  So are you here because you want another one?  This time, I'll need more Snow Silks.  You still want it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Bring 12 Snow Silks this time.  Since you were able to get me 10 Snow Silks last time, it shouldn't be a problem, right?  After all, it's your fault for not taking good care of it from the first place." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I didn't know you were such a quitter.  Well, it doesn't really matter to me.  As long as it's okay with you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're something else...bringing me all 12 Snow Silks.  Very well.  Wait here for a bit." />
+            <imgdir name="yes">
+                <string name="0" value="Here you go.  Make sure to take good care of it this time.  Okay?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have to bring me 12 Snow Silks this time.  What don't you understand?  12!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="12" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9987" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9988" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031945" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009061623" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2217.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Information from Shumi" />
+        <int name="area" value="30" />
+        <string name="0" value="According to the information provided on the #t4031894#, #p1052102# is one of the informants that JM wants you to go see. Let's go find #b#p1052102##k." />
+        <string name="1" value="According to #p1052102#, the #m103000000# sewer has been emitting a strange odor." />
+        <string name="2" value="According to #p1052102#, the #m103000000# sewer has been emitting a strange odor. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1052102" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2214" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031894" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2217s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

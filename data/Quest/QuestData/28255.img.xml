@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28255.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for the Demon" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says the demon must be sealed again. Let's talk to her." />
+        <string name="1" value="You will find a box you have not seen before in #b#m120000300##k. She says to use the #rOld Key#k you acquired awhile back to investigate the box, and that you will find a message from the demon.\n\nReport back to #b#@1072008:##k in #bNautilus#k upon completion." />
+        <string name="2" value="You have found #rCrocell's Emblem#k." />
+        <string name="demandSummary" value="#i4032494:# #t4032494:# #c4032494# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 5000&#xD;&#xA;Able to proceed to 'Treasure, and Crocell the Demon' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The seal was already broken? Oh my...\n\nWe must defeat #rCrocell#k before she causes further harm to others." />
+            <string name="1" value="In order to do so, you must go to the location where #rCrocell#k is. Oh, before that, did you say you had the #rOld Key#k you received when you acquired the treasures?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There is a Treasure Chest in the Bottom Floor - Hallway, but I can't find the key to open it.\nThis is just a humble opinion of a Pirate, but I think the key you have may be the key to that Treasure Chest. I think the demon is taunting us.\n\nCould you go check and bring me some clues?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't have much time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So, indeed, it was the chest that #rCrocell#k left.\nShow me the treasure that was inside the chest." />
+            <imgdir name="yes">
+                <string name="0" value="Let's see...\nI'm certain that this is the emblem of Crocell.\n\nOh, and when you were trying to get the box opened, I found #rCrocell#k's hiding place.\nBut I couldn't go inside because of a powerful magic force. The emblem you discovered may be the key to the Demon's Doorway. #rCrocell#k is taking us for fools. She's challenging us to find her if we want..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Open the box in the Basement." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032494" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28254" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

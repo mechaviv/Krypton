@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21202.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search of the Ultimate Weapon" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="You look into the Mirror of Desire. There's a split second when you think you've lost your mind, but then… Where are you? Are you in the past? This feels like deja vu. You remember this, from a long, long time ago, when you begged #b#p1203000##k to make you the best polearm in the world." />
+        <string name="1" value="When you ask #p1203000# for the best polearm available, #p1203000# takes a  long look at you and says you'll need to prove your worth. Your mission is to battle the  #r#o9001012#s and defeat them. You also have to gather #b#t4032311#s#k." />
+        <string name="2" value="You managed to gather all the #t4032311#s required. #p1203000# liked you fearless attitude, and handed you the  polearm wrapped in cloth. The polearm, #p1201002#, and… Unfortunately, that was the extent of your memories." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1203000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032311" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21202e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1203000" />
+            <int name="infoNumber" value="21203" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="0" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21201" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21202s" />
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

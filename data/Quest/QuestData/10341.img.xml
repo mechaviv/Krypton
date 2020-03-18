@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10341.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Revival of the Arans" />
+        <int name="area" value="50" />
+        <string name="0" value="The Arans! They are going to revive. But who are the Arans? And why did they disappear from Maple World? Talk to #bCassandra#k if you'd like to find out more about them. " />
+        <string name="1" value="Cassandra seems to know a lot about them..." />
+        <string name="2" value="The 12 Aran Memory Fragments? Perhaps you should go see Cassandra to find the Aran Memory Fragments." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10340" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10341s" />
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22006.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Returning the Empty Lunch Box" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22006" />
+        <string name="0" value="Looks like Dad has something he wants to say..." />
+        <string name="1" value="Dad says that Mom probably knows best about how to raise a egg. He tells you to #bgo home and ask Mom#k. While you're at it, he asks you to return his #t4032450#." />
+        <string name="2" value="After delivering the #t4032450#, you asked Mom about raising an egg. She said that you can raise it in an incubator... #p1013101# seems to know something about an incubator." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032450" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="270" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032450" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022621" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022622" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you want to learn about hatching eggs, you should head #bhome#k and ask #bMom#k. She raises all our chickens, so she'd know. Also..." />
+            <string name="1" value="Since you're going home, return this #b#t4032450##k to your mother. I have so much work to do, I may not get home until late tonight." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. See you later, kiddo." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm. #p1013101# would have been more than willing..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Evan, you're back? Ah, you brought back the #t4032450#. You're such a good kid. Huh? How do you raise an egg?" />
+            <imgdir name="yes">
+                <string name="0" value="There are many ways, but the simplest is to use an Incubator. Come to think of it, I think I saw #b#p1013101##k with one. Why don't you ask #p1013101# to lend it to you? " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't returned to your #bmother#k yet? #t4032450#es should be cleaned right away." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You're back, Evan? Is #bDad#k busy? I wish he would return the #b#t4032450##k so I could wash it..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Now, now, it looks like you dropped the #t4032450#. It's a good thing I found it. I wonder where who your clumsiness comes from. Must be your mother's side. Here, why don't you take this #bhome#k." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032450" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22005" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="7" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

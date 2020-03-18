@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4925.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Brand Materia Continued" />
+        <string name="parent" value="Brand Materia" />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="0" value="Looks like the Glimmer Man is looking for a rare material from the alternate dimension of Versal, the very #b#t4031760##k that I now possess.  Perhaps I should visit him in New Leaf City and see what he wants with it.  Maybe he'll reward me for bringing him some..." />
+        <string name="1" value="I visited the Glimmer Man, and discovered that he's an ultra-powerful mage whose ability to turn his entire body into pure diamond (hence his name) has allowed him to journey to space and other inhospitable environments.  Through the vast knowledge he's acquired during his explorations, he's also become somewhat of a renowned weapons creator and arms dealer.\r\nThe Glimmer Man has landed in Masteria looking for something called #b#t4031760##k, a rare element from the alternate dimension of Versal he's been dying to experiment with.  To thank me for recovering some and bringing it to him, he's promised to make me a weapon of my own from it. However, I've got to also track down #b7 #t4021008#s#k and return these to him as well.  Only then can he reduce the naturally unstable Materia down to a useable form.  A weapon made from an otherwordly material! I wonder what it does..." />
+        <string name="2" value="I returned to the Glimmer Man and he synthesized the #b#t4031760##k and the #b7 #t4021008#s#k I gave him to form a Materia Orb.  He's said his precocious friend Spindle can turn this into a weapon, so I should see him when I'm ready to make the weapon...WOOT!  Spindle is currently residing in the Omega Sector.  Additionally, anytime I find more White Versal Materia, I can bring it to the Glimmer Man and he'll create another Materia Orb for me so I can make another weapon!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031760" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4021008" />
+                    <int name="count" value="-7" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031761" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Back again, I see! And you've found more White Versal Materia! Fantastic!  Most wonderful!  Let's test out another of my weapon designs!  You know what else to do, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Then it's agreed!  I'll need #b7 #t4021008#s#k as well if I'm to transform it into a form suitable for crafting a weapon." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you prefer using your primitive weapon, suit yourself...But let me ask you this, ever been to Amoria?  Amos the Strong is a good friend of mine.  Ever notice his axe?  He didn't beat that Balrog with just any old weapon.  And the axe?  One of my design.  Think on it, my friend.  I shall be here if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wonderful!  More White #t4031760# and #t4021008#s!  Let's try this again!  Just give me a moment... &lt;waves his hands over the Materia&gt; and there you go!" />
+            <imgdir name="yes">
+                <string name="0" value="Here's another #b#t4031761##k.  Perhaps this time, you can have Spindle try to make another weapon form out of this Orb!  Let me know how this one works out!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Unfortunately, you don't have everything I need.  Like I said, #b#t4031760##k by itself is not enough...It's highly unstable in its natural form, and I'll need #b7 #t4021008#s#k if I'm to transform it into a form suitable for crafting a weapon.  Exactly #b7#k, as 7 is the most magical of numbers!  Acquire them and return to me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201083" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031760" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4021008" />
+                    <int name="count" value="7" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201083" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4924" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031760" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6122.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bahamut's Power 2" />
+        <string name="parent" value="Dragon Heart" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value=" I spoek with #b#p2081007##k, who mentioned that the dragon is not at its full power yet. I must find a way to increase its power further...perhaps through a ritual or item?" />
+        <string name="1" value="Raul has agreed to help me further. He told me to gather #b30 #t04031483##k if I want to raise #q2321003#'s power. I should be able to strengthen the dragon even more! \n\n#i4031483##t4031483# #b#c4031483#/30#k" />
+        <string name="2" value=" After a long hunt, I gave Raul #t4031483#. Using it in an ancient ritual, he increased #q2321003#'s power even more. Yet something tells me there is more power within the dragon, waiting to be unlocked..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="150000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031483" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="20" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You have the power of #q2321003#. Your dragon's power is not completed. I think you want stronger power..." />
+            <string name="1" value=" Do you want dragon's power to work?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you want to make your dragon stronger, you need to have more #t04031483#. Looking at your dragon's power...I can increase its power with #b30 #t04031483##k. As the dragon's power gets stronger, I'll need more #t04031483#. Return when you have them all!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" You don't want to increase your dragon's power? I suggest you think about it. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great! You gathered 30#t04031483#. I can increase your dragon's power! #K" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Now your dragon is much stronger. #bStill, the dragon's power can be increased!#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't got #b30 #t04031483##k. It's impossible to make the dragon's power work with less than 30. When you have the needed materials, please return to me and I will increase your dragon's power." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031483" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6121" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

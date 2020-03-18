@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51186.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Building a Time Machine 6: Defend, Defend, Defend!" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9250126##k needs someone to help defend the Processing Plant." />
+        <string name="1" value="Help Randall defend the Processing Plant." />
+        <string name="2" value="You successfully helped Randall defend the Processing Plant. Great work!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032796" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We've received word that aliens plan to attack the Processing Plant. This time, I'll go with you on the OS3A Machine to defend the plant." />
+            <string name="1" value="During the battle, you won't be able to exit the OS3A Machine. But it was built to attack, so just blast the aliens away!" />
+            <string name="2" value="You must protect the machine for a certain amount of time. If the machine is destroyed, you fail!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go ahead and start. I'll be right behind you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're kidding, right? I can't do this alone!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whew, that was close. But we did it, thanks to you!" />
+            <imgdir name="yes">
+                <string name="0" value="But ugh, why must the aliens attack the plant instead of the base? It's suuuch a long trek to get out here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="I almost died because of you! Try harder this time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250151" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250126" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51180" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

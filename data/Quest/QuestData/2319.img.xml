@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2319.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Killer Mushroom Spores (3)" />
+        <int name="area" value="30" />
+        <string name="0" value="#bScarrs#k says he has something to tell you." />
+        <string name="1" value="You need to bring a #bSample of Killer Mushroom Spore Potion#k to the #bSecretary of Magic#k." />
+        <string name="2" value="You brought a #bSample of Killer Mushroom Spore Potion#k to the #bSecretary of Magic#k." />
+        <string name="summary" value="You need to hand a #bSample of Killer Mushroom Spore Potion#k to the #bSecretary of Magic#k." />
+        <string name="demandSummary" value="#i4032389:# #t4032389:# #c4032389# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 4,200\r\nCan proceed to 'Over the Castle Walls (1)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2321" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, I almost forgot! What was I thinking? I need you to hand this #b#t4032389##k to #b#p1300004##k and report the results." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The #bSecretary of Magic#k asked me to bring him some of the #bKiller Spore Potion#k when it is complete. I'll give you the sample; now could you please deliver the sample to our #bSecretary of Magic#k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not such a difficult task, so just come back to me when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So is the #bKiller Spore Potion#k finally ready?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, so this is the #bKiller Spore Potion#k. Thank you, thank you for bring this to me. Please send #bScarrs#k my deepest gratitude." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please deliver this to the Secretary of Magic." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Unless you really need me from something, please don't try starting a conversation with me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2318" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

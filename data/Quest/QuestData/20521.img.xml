@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20521.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mounts for Knights" />
+        <int name="area" value="15" />
+        <string name="0" value="I better talk to #b#p1101002##k and get some information on Monster Mounts for Knights." />
+        <string name="1" value="#p1101002# told me I'll need to visit #b#p1102002# the Mount Trainer#k, who's at the #bHatchery#k raising the Mimis for Mounts." />
+        <string name="2" value="I met with #p1102002# the Mount Trainer." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032208" />
+                    <int name="count" value="1" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032208" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh you made it here. Let's cut to the chase. There's a Mount that's different from all other Monster Mounts available only to the Cygnus Knights. Unlike the regular Monster Mounts, this Mount uses Mimi." />
+            <string name="1" value="Go to the #bHatchery#k that follows Training Forest 3, and you'll find #b#p1102002# the Mount Trainer#k raising the Mimis for Mounts. Go up to him and learn the intricacies of Mounts for Knights. Of course, this is for the glory of the Empress." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I have just written you a letter of introduction. Show him the letter, and #p1102002# will teach you about Mounting. Hopefully the next time I see you, you'll be riding one of those." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... do you honestly wish to keep moving from place to place with just your legs?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm? You must be a newly-minted Knight here. Are you here to learn how to Mount?" />
+            <imgdir name="yes">
+                <string name="0" value="Psssh, #p1101002#. He doesn't need to write this letter, since it's obvious whoever's coming to me is probably from #m130000000# anyway." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you yet to go on to #b#p1102002##k yet? Then let's pick up the pace now. It's not like #m130000000# is a huge island that is a tough to navigate. Don't tell me you can't find the #bMimi Hatchery#k. Really?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm..., I do know that you're a Cygnus Knight, but... without #b#t4032115##k... I can't do it for you. We need to keep a standard of formality in here, and I can't process this until you bring me the letter again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032208" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20520" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

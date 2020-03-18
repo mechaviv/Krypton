@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3094.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Snow Crystal 2" />
+        <string name="parent" value="The View of the Ocean" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="0" value="Is #t4031312# made? I better go see #p2020005# and find out for myself." />
+        <string name="1" value="I finally got #t4031312# from #p2020005#. I have a feeling #p2060006#'s going to LOVE seeing this. I better head back to Aquarium and see #r#p2060006##k." />
+        <string name="2" value="I gave #p2060006# the #t4031312#, and in return, got myself the Official Aqua Road Photo Album. Now it's time for me to show this to Kriel in Orbis." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031312" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031312" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031310" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, it's completed. I don't know exactly where you plan on using it, but I really hope you use it where it's needed. It surely does not melt, but please be careful with it, for it may break." />
+            <imgdir name="no">
+                <string name="0" value="Didn't you say you needed it? If you don't need it right now, then you can come back some other time, when you really need it. I'll keep it in store for you in the mean time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you brought the snow? Let me see let me see!! Ahh... it's white, and it's cold... wow, so this is called snow. This is just incredible... and SO PRETTY! I can finally understand what it's like to be simultaneously ice cold and warm. Thank you so much, traveler! I have finally experienced something I'll experience again... " />
+            <imgdir name="yes">
+                <string name="0" value="Here, I'll give you #b#t4031310##k. Since you have given me a present that I'll never forget, this photo album is yours for free." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Where did you use #t4031312#? Please think carefully and remember if anyone asked you for it..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you gotten the #b#t4031312##k that I asked you to get?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031312" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3093" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

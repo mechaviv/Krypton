@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21618.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Wolf's Evolution" />
+        <int name="area" value="6" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p1201002##k wants to talk to you about something..." />
+        <string name="1" value="#p1201002# says that he's noticed a formidable force surrounding you and tells you to come see him because he wants to find out what it is. You'd better head over to #b#m140000000##k right now." />
+        <string name="2" value="#t1902017#, the Silver Wolf, apparently grows with its master. The wolf is able to go through an awakening to get a whole new look once it gains enough strength from its master. This seems to explain your #p1201002#'s transformation into a #t1902018#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The aura that was next to me just disappeared. What happened? Did anything disappear from beside you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902017" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21618e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21614" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="21500" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902017" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21618s" />
+            <int name="lvmin" value="200" />
+            <imgdir name="job">
+                <int name="0" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

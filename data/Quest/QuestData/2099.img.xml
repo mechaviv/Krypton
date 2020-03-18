@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2099.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Camila's Lost Letter" />
+        <string name="parent" value="Looking for the Korean Folk Town..." />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently, Camila of Henesys lost something..." />
+        <string name="1" value="She was devastated that her friend, who lives far from here, sent her a letter, only to be stolen by the notorious Curse Eye's. She was crying as she asked me for help. I may have to find the letter for the sake of Camila, but where is that girl?\n\n#t4031239# #b#c4031239##k/1" />
+        <string name="2" value="I recovered Camila's letter that had been stolen from the Curse Eye's. It should be fun writing letters to people far from me..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어쩌면 좋지? 중요한 편지를 잃어버렸어요. 숲에 사는 심술궂은 커즈아이들이 내 편지를 가져가버렸어. 그 편지는 먼 마을에 사는 펜팔친구가 보내 준 소중한 편지인데.. 이젠 어쩌지? 커즈아이들이 가져 간 제 편지를 찾아와 주세요. 흑흑.." />
+            <imgdir name="no">
+                <string name="0" value="흑흑.. 이제 어쩌지?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031239" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What should I do? I lost a very important letter. A menacing group of Curse Eyes from the forest got a hold of it! It's an important letter written to me by a pen pal from far way. What should I do? Please help me get the letter back from those coward Curse Eyes! (cries)" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. I'll be here waiting for your good news~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Man... What am I going to do now...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you found my letter!!! Thank you so much! I thought I'd never live to see the day..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Is it really difficult to find that letter?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012108" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031239" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012108" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28235.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="So the Demons Like Noise?" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says he's discovered the location of the demon, but you can't enter without a certain item. Let's talk to him." />
+        <string name="1" value="You must have a noisy instrument in order to enter the Demon's Doorway in #b#m104040002##k.\nHe says he'll make you a loud instrument if you bring him the following materials.\n\n#rOrange Mushroom Cap#k(a drop item from #rOrange Mushrooms#k)#rOctopus Leg Stick#k(a drop item from #rOctopuses#k. There is a portal near the yellow barricade in #b#m103010000##k which leads to a hidden map where many Octopuses can be found.)\n#rPumpkin Head#k(a drop item from #rRibbon Pigs#k that can be easily found in #b#m103020100##k.)\n\nReport back to #b#@1052001:##k in #bKerning City#k when you finish collecting all the items." />
+        <string name="2" value="#b#@1052001:##k in #bKerning City#k say he has located the demon but has no way of catching him. Let's talk to him first." />
+        <string name="demandSummary" value="#i4001349:# #t4001349:# #c4001349# / 2&#xD;&#xA;#i4001350:# #t4001350:# #c4001350# / 1&#xD;&#xA;#i4000001:# #t4000001:# #c4000001# / 15&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032482:# #t4032482:# #c4032482# 1&#xD;&#xA;Able to proceed to 'Catching the Demon' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001349" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001350" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032482" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The name of the demon is #rAmdusias#k. Unlike most demons, Amdusias has admirable musical talent and can play just about any instrument. But, of course, he uses it to do harm to others, so you must keep that in mind. The Demon's Doorway in the #b#m104040002##k is the hiding place of #rAmdusias#k." />
+            <string name="1" value="But everyone has failed to enter. It was later discovered that a person needs a very loud instrument to enter that portal.\n\nI need a few items in order to make an instrument like that." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll make you an awesome instrument that will give you access to the portal if you bring me the following items.\n\n15 #rOrange Mushroom Caps#k\n2 #rOctopus Leg Stick#k\n1 #rPumpkin Head#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="But you really don't have a choice…this is the only way." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Job well done.\nI'll make you an awesome drum with these items.\n\nYou don't trust me? I used to be a renowned musician in the old days!\n\nGive me a few seconds." />
+            <imgdir name="yes">
+                <string name="0" value="It's finished.\nWhat do you think? Isn't it awesome? Haha!\n\nYou'll be able to enter the Demon's Doorway where #rAmdusias#k is hiding using the #rDarkween's Monster Drum#k. But you don't have everything you need yet.\n\nTalk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bring me 15 #rOrange Mushroom Caps#k, 2 #rOctopus Leg Sticks#k, and 1 #rPumpkin Head#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001349" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001350" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28234" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

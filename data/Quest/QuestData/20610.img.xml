@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20610.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Training Still Never Ends " />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1101002# seems to want to talk to me about something..." />
+        <string name="1" value="#p1101002# asked me if I had mastered all the skills I possessed, and he also confided in me that the Chief Knights came up with new skills again. Then he challenged me to learn that as well." />
+        <string name="2" value="#p1101002# asked me if I had mastered all the skills I possessed, and he also confided in me that the Chief Knights came up with new skills again. Then he challenged me to learn that as well." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you been mastering your skills? I am sure you've mastered all your skills, which means... it's time for you to learn a #bnew skill#k, right?" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Well, what you're doing right now doesn't make you appear humble. You just look complacent, and that's never a good thing." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#bChief Knights#k must have come up with another skill. Don't just stand here, find a way to learn that skill for yourself! I am sure the Chief Knights will be against it, but... acquiring the skill will depend purely on your abilities." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <string name="startscript" value="q20610s" />
+            <int name="lvmin" value="110" />
+            <imgdir name="job">
+                <int name="0" value="1111" />
+                <int name="1" value="1112" />
+                <int name="2" value="1211" />
+                <int name="3" value="1212" />
+                <int name="4" value="1311" />
+                <int name="5" value="1312" />
+                <int name="6" value="1411" />
+                <int name="7" value="1412" />
+                <int name="8" value="1511" />
+                <int name="9" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

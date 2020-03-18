@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20615.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Another New Skill for Thunder Breakers" />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="I better ask #b#p1101007##k about this new skill per comments from #p1101002#." />
+        <string name="1" value="#p1101002#told me that if I wanted to learn a new skill, I'll have to prove my skills again by entering #bHall #4#k at #m130020000#, where a tougher test will take place... \n\n#i4032129# #t4032129# #b#c4032129# / 1#k" />
+        <string name="2" value="I managed to defeat the boss monster again and brought back #t4032129# in return. #p1101007# told me I have proven that I deserve to learn the new skill and taught me Speed infusion." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032129" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="15111005" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="20" />
+                    <imgdir name="job">
+                        <int name="0" value="1511" />
+                        <int name="1" value="1512" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Eh? What is it? Huh? A new skill? How is this information leaking? I don't think other commanders are sharing this information. Anyway, since it's you, I have already given up on trying to convince you not to learn this skill. Just try passing this test. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to #bthe 4th Drill Hall#k of #m130020000#, pass the test that's given to you, and bring back #b#t4032129##k so I can teach you the new skill." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? You don't wan to do it? What is it? Is something wrong? This is not fun." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh! You managed to bring back #t4032129#! I knew you'd be able to pull it off! Well, here's the new skill for you!" />
+            <imgdir name="yes">
+                <string name="0" value="It's a new skill for the Thunder Breakers, #bSpeed Infusion#k. Use it well, you understand?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Ah, were you not able to find #b#t4032129##k...? You can get it at  #bthe 4th Drill Hall#k of #m130020000#. Of course, you know that it's the getting part that's the hardest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032129" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20610" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="110" />
+            <imgdir name="job">
+                <int name="0" value="1511" />
+                <int name="1" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

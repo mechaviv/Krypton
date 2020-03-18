@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6110.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Manji's Test" />
+        <int name="area" value="10" />
+        <string name="0" value="I obtained a book I can't read. It looks like it's written in a strange language. The writing is crude, almost like an animal wrote it...a kind of monster language. I wonder if #b#p1022002##k would know how to read it. Couldn't hurt to speak with him..." />
+        <string name="1" value="My hunch paid off. When I asked #b#p1022002##k about the book, he examined the language closer and came to a conclusion. He said the book is about the #bRush#k skill. He offered to translate, but he said that I must prove myself as one worthy to obtain such power--a true warrior in his eyes. I must eliminate #r200 #o9300087##k in #m910500100# located at the entrance of the Sanctuary, deep in Sleepywood. Manji saw that I was surprised by the high number and advised me to make a party with a few of like-minded companions to ensure victory. This is precisely what friends are for...\n\n#o9300087# #r#a61101##k" />
+        <string name="2" value="With a bit of help from my trusty weapon, I easily defeated the requisite number that #p1022002##k requested. As promised, he translated the book, and it revealed the famed skill known as Rush. I can't wait to try it out!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001112" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280012" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...You! You were just a beginner before... But now, you've became a good warrior. I see your strength. Yes. What made you come here? You don't need my help if you are that strong..." />
+            <string name="1" value=" This book...is written in a unique monster language, so that you may not understand how valuable it is. The skill called Rush is written in this book. You know this book, don't you? #o7130101# uses Rush. If this book is translated into a human language, humans can learn the Rush Skill. It's a valuable book!" />
+            <string name="2" value=" Because I found you so strong, I'll translate this book. You came here to get it, right?" />
+            <imgdir name="yes">
+                <string name="0" value="As you have made the 4th Job Advancement, you may now enter the #m910500100##k, the entrance of Sleepywood. Eliminate #r200 #o9300087##k inside and get the qualifications to learn the #bRush#k skill!" />
+                <string name="1" value=" A word of advice, don't go by yourself. You need to practice the Rush skill in advance as you'll find it difficult to use when you are with others ordinarily. Go with #bOne Warrior who has done the 4th Job Advancement#k like you. That should ensure success!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" You don't want to? Are you satisfied with your current skills? Suit yourself..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Great! You eliminated 200#r#o9300087##k. Can you feel your strength growing? Now you can learn the Rush skill." />
+            <string name="1" value="Look. This is #bBook of Taurospear's Rush Skill#k. It can be translated into a language humans can understand. If you're smart enough, you can learn and read it! " />
+            <imgdir name="yes">
+                <string name="0" value=" Good! It feels great to be strong doesn't it?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value=" I told you to eliminate 200#b#o7130101##k. I can't give you the book if two powerful warriors can't do it. Dig deep and finish hunting!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300087" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001112" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2280012" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1321003" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1221007" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1121006" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

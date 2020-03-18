@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3636.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Story of Axes" />
+        <int name="area" value="37" />
+        <string name="0" value="Deep in the #m222010002# of the Black Mountain, I heard #p2071010# is concerned about something. I better go check it out myself." />
+        <string name="1" value="I met #b#p2071010##k, who was heavily sighing at #m222010002# with a big lump on his head. Apparently, he got hurt from a random axe that was thrown on his way. After throwing the axe out of the pond in disgust, the owner of the axe, #b#p2071011##k, came and asked for the axe. He requested that anyone that finds the #b#t4031315##k return it to #p2071011#.\nThe Mountain God believes that the steel axe for the tree cutter might be taken by a monster, and that he has offered to look into the axe and see if it's legit. The axes will be available through #rDark Axe Stumps#k, and he'll look into it and see if it's really #b#t4031315##k." />
+        <string name="2" value="Through the request from #p2071010#, who I met at #m222010002# of the Black Mountain, I returned #t4031315# to its rightful owner, and received the storybook on 'The Story of the Axes'." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아야야... 이거 참 산신령 체면이 말이아니군.\r\n#L0#  #b어쩌다가 머리에 혹이 생기셨어요?" />
+            <string name="1" value="몇 일 전에 연못 속으로 떨어진 도끼에 머리를 부딪히고 말았네. 너무 화가 나서 도끼를 다시 연못 밖으로 집어 던져버렸지. 그런데 조금 전에 한 나뭇꾼이 와서 자신이 잃어버린 도끼를 내놓으라고 큰 소리를 치지 뭔가. 어찌나 고집불통이던지 내가 금도끼랑 은도끼를 준다고 해도 싫다더군.\r\n#L0# #b그래서 어떻게 하기로 하셨어요?" />
+            <string name="2" value="잃어버린 도끼를 내가 찾아주기로 약속했는데 아무리 찾아봐도 없어. 요즘 이 근처에 도끼를 머리에 꽂고 다니는 몬스터들이 있던데, 혹시 그 놈들 중 한 마리가 가져간게 아닐까? 자네 날 좀 도와주지 않겠나?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="14000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031315" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031298" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ouch... This is not the way the #p2071010# works.\r\n#L0#  #bHow did you end up with that lump on your head?" />
+            <string name="1" value="A few days ago, I got hit on the head by an axe that was dropped inside the pond. I was so incensed by this unruly behavior that I threw it back out. Just now, some tree cutter came by and demanded that I return his lost axe, though. He was so adamant about his axe that he didn't want the gold axe or the silver axe that I offered in place of it.\r\n#L0# #bSo what do you plan on doing with it?" />
+            <string name="2" value=" I promised to find the lost axe a while ago, but no matter how much I try, I can't find it. Nowadays, there seems to be monsters that have the axe stuck on their forehead. I wonder if one of them took his axe... can you please help me out on this?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please find the #btree cutter's steel axe#k that has been thrown out of the pond and return it to the tree cutter. I think a monster might have snatched it away. Bring the #baxe#k that the #rDark Stump#k yields, and I'll try to determine if the axe is indeed from the cutter or not." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="For you to say no to #p2071010#'s request ... my gosh, the lump on my head seems to be getting bigger and bigger now..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, that axe you have in your hand ... it looks awfully familiar. It looks like the one I lost! Can I take a look at it?" />
+            <string name="1" value="Yes! This is the axe that I lost! I was working, and all of a sudden, it slipped out of my hand and fell into the pond. Too bad the God of Mountain decided to throw it back out somewhere remote. I returned home with a promise that he'll someday find it for me, but that really wasn't enough to comfort me... anyway, thank you so much for your work." />
+            <string name="2" value="Here, take it. It's a book that I've had for a long time, but I really don't have time to read books these days, so it's been doing nothing but collecting dust. I want to give this to you in return for bringing back the axe!" />
+            <imgdir name="yes">
+                <string name="0" value="I haven't been able to concentrate on work with my axe gone. I'm so glad I got it back!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you happened to find the steel axe that belongs to the tree cutter, please return it to him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Where did my axe go? I can't work without the axe that my hand has grown accustomed to..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031315" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071010" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

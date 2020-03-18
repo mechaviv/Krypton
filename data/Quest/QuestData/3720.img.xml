@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3720.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The First Clue" />
+        <string name="parent" value="Year 2021- Just Another Day" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="0" value="Andy has a request." />
+        <string name="1" value="Year 2021. You must go through trash cans, find the clue that Andy needs, and bring it to him." />
+        <string name="2" value="You teleported to the year 2021, found a piece of paper that appeared to be the clue, and took it to Andy. Unfortunately, that was not what Andy was looking for. Will your time travel end in failure? Go back to year 2021." />
+        <string name="demandSummary" value="#i4032512:# #t4032512:# #c4032512# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 61,000\r\nCan participate in the 'Dangerous Slimes' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="61000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032512" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="When you arrive in the year 2021, you need to retrieve a certain item. You see, the cause of all the problems in my time must've started in 2021, when the technology for A.I. machinery was invented." />
+            <string name="1" value="From what I've heard, it all started with some scribbles. They were just meaningless doodles, at first, but A.I. robots were built based on that drawing. The scribbled note should be in a trash can somewhere. You must find it! Please, rifle through trash cans and bring me back that piece of paper!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I don't exactly where the paper is... Search in every trash can you come across!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is important. Before things get worse, we must destroy that paper." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found it! Let me see!" />
+            <imgdir name="yes">
+                <string name="0" value="No, no, no. This isn't it. This isn't what I'm looking for. I could've sworn... I mean, I'm sure it was 2021 that A.I.'s were first designed and invented. Could it be that I'm mistaken?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Keep searching in trash cans!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032512" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3719" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

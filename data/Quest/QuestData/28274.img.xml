@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28274.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] Why Are Dark Stumps So Dark?" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1032101:##k in #b#m101000000##k says she has a favor to ask you." />
+        <string name="1" value="She wants you to eliminated 40 #rDark Stumps#k that are emitting foul odor.\n\nReport back to #b#@1032101:##k in #b#m101000000##k upon completion." />
+        <string name="2" value="You have eliminated 40 #rDark Stumps#k that were emitting foul odor." />
+        <string name="demandSummary" value="#o1110101# #a282741#" />
+        <string name="rewardSummary" value="Exp 1,100&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hiya! You seem like you're in the middle of an adventure.\nWon't you help me? It's something really easy to do." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Have you ever smelled something rotting in the forest? No?\nYour senses must be dull. I'm the opposite, though. I'm overly sensitive, and that rotting smell has been killing me!" />
+                <string name="1" value="Anyway, that rotting smell comes from #rDark Stumps#k.\nAnd I was wondering if you could eliminate 40 #rDark Stumps#k to clear the air a little. I would have a much easier time breathing the air if you do that for me. You'll find a lot of them in either #b#m100040000##k or #b#m101010102##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmpf! You're not going to even hear me out?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back!\nEww, you reek!\nI can already tell how hard you had to work to eliminate those monsters.\n\nYou must have caught a lot of them!" />
+            <imgdir name="yes">
+                <string name="0" value="Now, I'll be able to breathe in clean, aromatic air when I pass by the forest.\nAnd it is all because of you. Thanks!\n\nDon't forget to take a bath!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you hunted all 40 #rDark Stumps#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <int name="lvmin" value="12" />
+        </imgdir>
+    </imgdir>
+</imgdir>

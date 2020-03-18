@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2258.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Meerkats Listen During the Day" />
+        <string name="parent" value="About the Mushroom Castle..." />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="0" value="You should ask the Camel Cab for information about the Mushroom Castle." />
+        <string name="1" value="Apparently, Meerkats spread rumors like wildfire during the day. Defeat enough Meerkats in a limited amount of time to keep the rumor from spreading.\r\n" />
+        <string name="demandSummary" value="#o2100108# #a22581#\r\n" />
+        <string name="rewardSummary" value="Go on to the Scorpions Can't Listen at Night quest.\r\n" />
+        <int name="timeLimit" value="300" />
+        <string name="timerUI" value="default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Why are you coming back? Keep defeating Mearkats! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110005" />
+            <string name="endscript" value="q2258e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2100108" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2257" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2258s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

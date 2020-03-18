@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2096.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Spell that Seals Up a Critical Danger I" />
+        <string name="parent" value="A Spell that Seals Up a Critical Danger" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently a strange vibe has been permeating deep inside the dungeon of Victoria Island. I should meet up with the Insignificant Being for details." />
+        <string name="1" value="I need to gather up 33 Cold Steam from Cold Eye that'll be used in a spell that can only be conducted by the Insignificant Being.\n\n#t4031212# #b#c4031212#/33#k" />
+        <string name="2" value="The Insignificant Being finally gave me a chance. Where can I gether up the items needed for the spell?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="12000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031212" />
+                    <int name="count" value="-33" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I...I really don't have much of a presence... it's been a long time since I lost my flesh and blood, but ... the fight against them is still on..." />
+            <string name="1" value="I may have turned into an insignificant being, but with my vast mental abilities as well as the experience gathered from years of training, I can quiet the danger that may be looming ahead... hah..." />
+            <string name="2" value="Humans and monsters should coexist under one roof. That's how it works here in this world. The problem is, those monsters think otherwise, and are getting more powerful by the minute..." />
+            <string name="3" value="I think you can quiet down that force of evil, seeing that you're brave enough to strike up a conversation with me. I feel like I should test your inner resolve. Are you ready?" />
+            <imgdir name="yes">
+                <string name="0" value="I need 33 of Cold Eye's Cold Steam. They may take a small part in the ritual, but they are difficult to gather up. Are you sure you can do it? Your eyes tell me that you can. Hah... but please be careful not to become an insignificant being like me! \n\n#i4031212# 33 #t4031212#s" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess I expected too much from you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Something feels creepy around here ... is that you? Did you collect the Cold Steam? I can't believe this! You really did it ... what are you doing? Bring them over here! Yes, this is it! All 33 of them!" />
+            <string name="1" value="This should help me get the ritual started. They may have been feeling safe ever since I became something like this, but I still have the strength to run this ritual!" />
+            <imgdir name="yes">
+                <string name="0" value="The items needed for the ritual can be difficult to obtain... it may even cost your life. Now, please hold on to this potion carefully. It'll help prevent you from turning into a ghost yourself!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="No, no, no! Please get the right set of items like I asked you to get!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031212" />
+                    <int name="count" value="33" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061012" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

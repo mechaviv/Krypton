@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2275.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tina's Proposition" />
+        <int name="area" value="30" />
+        <string name="0" value="Help #bTina#k with her request, then ask her to help with Blake's debut." />
+        <string name="1" value="Tina needs key chains to give out to her clients. Collect the key chains and dolls from the Doll Claw Games." />
+        <string name="2" value="You were able to get a makeup artist for the job. Deliver the good news to #bLana#k." />
+        <string name="demandSummary" value="#i4000542:# #t4000542:# #c4000542# / 50&#xD;&#xA;#i4000543:# #t4000543:# #c4000543# / 50&#xD;&#xA;#i4000544:# #t4000544:# #c4000544# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="15,300 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000542" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000543" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000544" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#h0##k. You wanted me to help with Blake's makeup, right? Will you help me with a few things first?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Soooo, I wanted to give a small gift to my clients to help advertise my shop. Adorable key chains would be perfect. Hmm, I'll need #b50 Yeti Key chains, 50 Jr. Pepe Keychains, and 20 Orange Mushroom Dolls#k. You can get them from the Doll Claw Games that can be easily found in the 3rd and 4th floors of Kerning Square." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did you talk to me just to tell me you refuse to help? Strange person..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you brought all the things I've asked for? Let me see them." />
+            <imgdir name="yes">
+                <string name="0" value="Perfect. As promised, I will do Blake's makeup. Please let Lana, the CEO of Big Hit Records, know. Oh, and could you also thank her for the gig?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me #b50 Yeti Keychains, 50 Jr. Pepe Keychains, and 20 Orange Mushroom Dolls#k. You can find a lot of #rDoll Claw Games#k on the 3rd and 4th floors of Kerning Sqaure.\r\n" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052122" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000542" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000543" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000544" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052122" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2274" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

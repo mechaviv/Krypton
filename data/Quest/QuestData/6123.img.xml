@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6123.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bahamut's Power 3" />
+        <string name="parent" value="Dragon Heart" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="The feeling I had within was confirmed by #b#p2081007##k. There is a way to unlock more of the dragon's power. I will not rest until I have discovered it. Raul has been helpful thus far--I wonder if he'd be willing to assist me again..." />
+        <string name="1" value="Raul has agreed to help me again. I'm to gather #b35 #t04031484##k if I want to raise #q2321003#'s power. \n\n#i4031484##t4031484# #b#c4031484#/35#k" />
+        <string name="2" value="Another long, but successful hunt. I gave Raul #t04031484#, and he increased #q2321003#'s power even more. When will the dragon reach its full power? It seems to be limitless... " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031484" />
+                    <int name="count" value="-35" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="25" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You already have #q2321003#. The power of dragon is infinite so it takes a lot of effort to increase its power even more. I think your dragon's power is strong enough... But what do you think?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you want to increase your dragon's power, you'll need  #t04031484#. Looking at the power of your dragon...#b35 #t04031484##k will do. " />
+                <string name="1" value="I wish I could increase its power all at once, but it's impossible. It is far too much for a baby dragon. You love your dragon, I'm sure you wouldn't want it hurt. I believe you understand this basic edict in the law of power: wield what you can, when you can. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" You look satisfied with this much power. Impressive as it is, there is still more power within your dragon." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great! You gathered 35#t04031484#.  I can increase your dragon's power! #K" />
+            <imgdir name="yes">
+                <string name="0" value=" Good. Now your dragon is even stronger! It seems to radiate a sense of awesome power. #bBut, your dragon still has power that can be unlocked.#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" You haven't got 35#b#t04031484##k. As dragon's power gets stronger, I will need more #t04031484# to properly perform the ritual. Thank you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031484" />
+                    <int name="count" value="35" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6122" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

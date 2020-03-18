@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2328.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sending Provisions (1)" />
+        <int name="area" value="30" />
+        <string name="0" value="Is there a way you can help the soldiers of Mushking Empire, who are running low on supplies? #b#p1300003##k says he wants to have a word with you." />
+        <string name="1" value="You need to gather #b200 #t4000502#s#k for #b#p1300005##k." />
+        <string name="2" value="You gathered 200 #b#t4000502#s#k and gave them to #b#p1300005##k to help lessen their supply shortage." />
+        <string name="summary" value="You should gather #b200 #t4000502#s#k for #b#p1300005##k." />
+        <string name="demandSummary" value="#i4000502:# #t4000502:# #c4000502# / 200\r\n" />
+        <string name="rewardSummary" value="EXP 17,500\r\nCan proceed to 'Sending Provisions (2)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="17500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000502" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2329" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You'll be entering the castle soon, and… Well, I actually have a favor to ask of you. While we hurriedly vacated the castle, we neglected to pack enough supplies for the soldiers. The Head Security Officer and his men are working hard protecting the area, but they are in dire need of some supplies. Please help them, ok?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay good. Acquiring brand-new supplies may be difficult to do right now, so I suggest you gather up #b200 #t4000502#s#k that can be reused and bring them to #b#p1300005##k. He'll know what to do with them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahh, so that's what it is. You don't necessarily have to help us, but it is an important matter for us, so please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh… so this is what's left of the helmet. It's a bit broken, but with a little tweaking here and there, I think this can be reused." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! We've been terribly short on combat supplies. I can't believe we have been backed into a corner like this... Please, please defeat #b#p1300001##k for all of us." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Thanks for your work, but this is not enough. Please gather #b200 #t4000502#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000502" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2323" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

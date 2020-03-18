@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21606.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Missing Saddle" />
+        <int name="area" value="6" />
+        <string name="0" value="You've lost your #t1912011#! What should you do?" />
+        <string name="1" value="#p2020007# tells you to gather materials to make another #t1912011# and to also pay a service fee of #b10 million mesos#k for the replacement. What?!\r\n\r\n#b10,000,000 mesos#k\r\n#i4000048# #t4000048# #b#c4000048# / 50#k" />
+        <string name="2" value="After paying the huge service fee and gathering all the materials, you received another #t1912011# from #p2020007#. Better not lose it again!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-10000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1912011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh hey there fellow rider! How's your wolf? Hmmm…it looks like something's missing. Did you lose your #t1912011#? Oh no…you can't ride without a saddle…" />
+            <string name="1" value="There's no choice but for me to make you another #t1912011#, but I have something to explain first. Last time, I made the saddle for free just so I could ride around with you. But this time, you'll have to pay me a #bservice fee#k. Got it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Now please bring me the #b50 #t4000048#s#k needed to make a #t1912011#, along with the #b10 million mesos#k service fee. Too expensive? Hahaha. Well, I consider myself one of the elites in this field." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm… is that a no? That's unfortunate. I liked having someone to talk about wolf mounts with." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, you did bring all the materials. Can you also hand me the service fee? Alright, time to make a #t1912011#." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, here's the #t1912011#. If you happen to lose it again, then by all means come see me. Now let's go ride around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have the mesos and the materials all ready. I need #b50 #t4000048#s#k for the #t1912011#, just like last time, along with #b10 million mesos as a service fee#k.  " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21604" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912011" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

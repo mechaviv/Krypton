@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3843.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Master Goblin's Questions" />
+        <string name="parent" value="Eliminating King Sage Cat" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="1" value="Due to being tricked by Master Goblin, I wound up giving the Red Marble to Do Gong, poisoning him in the process. This isn't true... how can he lie to me? I better go back to see Master Goblin and ask him what's up!" />
+        <string name="2" value="Master Goblin offered to give me an #bantidote marble#k if I manage to answer all three of questions... but the true answers were NOWHERE to be found. He NEVER meant to give me the antidote!! What should I do? I better go see Do Gong now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh... oh no... I should have told you more about Master Goblin... *gasping for air* Master Goblin is ruthless and cunning, to say the least. He is the master of breaking people's trust from one another and make them turn their backs on each other. That's an even more dangerous than his powerful spells...\r\n#L0# #b Oh no..." />
+            <string name="1" value="This is no ordinary poison... it's a poison made out of magic spells. It only works on someone casting an opposite spell on Master Goblin...! Ouch... I have a bad feeling that Master Goblin had been waiting for a moment like this... ahhh ... good thing I was prepared for something like this, but... it's difficult for me to withstand this much longer....\r\n#L0# #b I'll get the antidote for this!" />
+            <string name="2" value="Ca... can you? Only the person who created such poison has the antidote of it.... Cough cough! Please go see the Master Goblin you just met...!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh ho~ let's give a warm welcome to the traveler fully responsible for helping the King Sage Cat make a giant leap towards his ultimate goal! Ho ho ho ho... how's my friend Do Gong doing? Well, of course, he should be bedridden by now from that devastating poison... ho ho ho ho! \r\n#L0##bGive me the antidote now!!!" />
+            <string name="1" value="No no no. Aren't you supposed to question anything you receive from a stranger? But I tell you what, I will give you ONE chance, ONE chance to receive the Antidote Crystal. Of course, if you refuse this opportunity, then it's over~ \r\n#L0# #b ...opportunity?" />
+            <string name="2" value="Yes! I will give you THREE questions. If you can answer all three, then I will hand you the antidote crystal, the real deal that can neutralize the red crystal. What do you think? Are you ready to answer the questions?\r\n#L0# #b Yeah, I am! #l \r\n#L1# #b No way #l" />
+            <string name="3" value="Okay, here's the first question... Mu Lung is a place where Masters train, but seriously, is there a Master as great as the King Sage Cat?  \r\n#L0# #b Yes #l \r\n#L1# #b ...... #l" />
+            <string name="4" value="Here's the second question. Back in the day, there was a foolish student here at Mu Lung who thought, if he could wield his strength, he will be able to defeat the Sage Cats and bring 'peace' to Mu Lung. Now, those Sage Cats were the disciples of me, the King Sage Cats. Rather than being totally unnerved by his actions, the King Sage Cat, mercifully, awarded him with a spell that soothes and uncomplicates his mind. Is this 'punishment' feasible?   \r\n#L0# #b No, it isn't. #l \r\n#L1# #b ...#l" />
+            <string name="5" value="Hohoho... here's the last question. Okay, here it is... Even someone as pure and honest like the King Sage Cat may want to have some fun every once in a while. How about this? Do you think King Sage Cat meant it when he said he'll give you the antidote crystal when all three questions were answered right?\r\n#L0# #b Yes, he did. #l \r\n#L1# #b No way....#l" />
+            <string name="6" value="Ho ho ho ... of course I meant it~ If you would have answered the questions RIGHT, then the crystal would have been yours, but no no no~ You were unable to answer the question right! Ho ho ho ... that's unfortunate. So unfortunate!" />
+            <imgdir name="yes">
+                <string name="0" value="Ho ho ho!!! You're ALL WRONG! You didn't answer a SINGLE question right! What? None of the answers made sense? Ho ho ho! I told you the antidote was real; I didn't really Say the questions were! No way will I ever give you an antidote for Do Gong!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hah, if you are like this, then I sure can't give you the antidote crystal. Is that all the guilt you have on Do Gong? That's it?" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Hahaha! You didn't mean that, did you? If you were, then there's no point of giving Do Gong, who isn't even a real Master, an antidote!" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Of course! Of course! In that regard, the item I gave to Do Gong is also a medicine of sort, so I shouldn't bother giving you an antidote crystal!" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Wrong! I didn't mean it! I was FINALLY able to put Do Gong in a tough spot, so WHY should I help him out now? Even if you answered them all correct, I would never give you the antidote! Never!" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Ahhh... only Master Goblin has the antidote..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3842" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="77" />
+        </imgdir>
+    </imgdir>
+</imgdir>

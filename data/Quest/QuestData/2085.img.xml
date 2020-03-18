@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2085.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In search of Wing the Fairy" />
+        <string name="parent" value="Icarus and the Flying Pill" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder how Icarus's doing with the flying balloon...maybe I should go check up on him at Kerning City." />
+        <string name="1" value="Icarus had failed to make the flying balloon, but his never-ending quest for flight remains. This time he wants to deviate from the scientific approach to flight and opts for the magical approach, and asks me to see his best friend #b#p1032106##k at Ellinia, the town of fairies. Apparently Wing the Fairy knows the way to make #b'#t4031163#'#k...I'll need to see that fairy at Ellinia for Icarus's sake." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <int name="nextQuest" value="2086" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, you're the one that got me the materials for the flying balloon...\r\n#L0##bDid you get it to work?#k" />
+            <string name="1" value="Oh, that ... well ... I faced MINOR, I mean, MIIINOR technical difficulties, and ... well I don't know what's wrong!! Is it really an impossible dream to realize? All I wanted to do was to fly!! I can't let this deter me from my ultimate goal! I can't be giving up this soon. Can you help me out one last time?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd help me out. I really appreciate it! Anyway, I have a fairy friend, and his name is Wing. He lives in Ellinia, so it's hard to see him frequently, but we're still really close." />
+                <string name="1" value="Since Wing is a fairy, I'm sure he knows a way to make me fly. Please find out what #bWing#k has to offer in terms of me flying! Since I'm a long way from Ellinia, I don't think I can go there myself. Can you go there for me and ask?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Even you have a hard time trusting me now...seriously, this one is FOR REAL! Why can't you trust me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Wing the Fairy lives in a town called #bEllinia#k located in the east of Victoria Island." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032106" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2089" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2084" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="42" />
+        </imgdir>
+    </imgdir>
+</imgdir>

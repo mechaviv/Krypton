@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Carta's sin" />
+        <string name="parent" value="Strong Will" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#p2081000##k from #b#m240000000##k villiage says he has some information for me..." />
+        <string name="1" value=" I learned that Humans used to have strong will power to resist temptation, which prevented them from getting seduced by the monsters. But, #bwitch #p2060100##k took away the people's will power and since then, humans have been falling into seduction.  I wonder if this is really true.  Let's go ask #p2060100#." />
+        <string name="2" value=" #p2060100# doesn't look too thrilled." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You look like the strongest among human beings. Without a #bstrong will#k, it's impossible to be that powerful. Do you know fairies and herrings are not temped? Quite unlike humans. " />
+            <string name="1" value="Humans used to be like that. Magic of temptation, when used by monsters, work for monsters but not for those with pure will. Somebody ruined it. Do you know #bwitch #p2060100##k?" />
+            <string name="2" value=" Destroying willpower is among #p2060100#'s many sins. She took all of the #bpower to resist temptation#k. Her hatred towards humanity made her sin." />
+            <string name="3" value="You don't seem to believe it. Your experience will tell you everything. Were you ever tempted by a monster and couldn't control yourself? Exactly. That's the result of #b#p2060100#'s curse#k." />
+            <string name="4" value="A will to resist temptation. It's hard to make it no matter how hard you train yourself because #p2060100# took it away. If you want it back, go to see #p2060100#. If you lose your mind, the whole world will be threatened. Please find your #bwill#k." />
+            <imgdir name="yes">
+                <string name="0" value="#p2060100# is studying magic somewhere in the deep sea. She won't give what you seek easily." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to, then that's fine. Humans may not deserve to get their will back.." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You came here deep in the sea. It must be urgent. What's the matter? I don't like anyone strong like you." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p2060100##k is not willing to give the will." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+                <int name="13" value="2112" />
+                <int name="14" value="2217" />
+                <int name="15" value="2218" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1121011" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

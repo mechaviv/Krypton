@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28194.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Clues!" />
+        <string name="parent" value="The Cause of Sickness" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in #bKerning City#k says he might have seen something strange near the Water Pipe." />
+        <string name="1" value="He says he might have seen something strange near the Water Pipe.\nLet's go over to #b#m102050000##k and inspect the  Fire Hydrants. Report back to #b#@9201120:##k in #bKerning City#k when you find the clue." />
+        <string name="2" value="Someone had been spreading the virus through the Water Pipe. There must be some twisted figure behind all of this!" />
+        <string name="demandSummary" value="#i4001366:# #t4001366:# #c4001366# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'To Perion!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A few months back, I was inspecting the Water Pipe when I saw a suspicious shadow lingering around the area. I just assumed it was a wild animal and didn't think twice about it.\n\nNow that I think about it..." />
+            <string name="1" value="Why, are you curious?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I think the shadow was more like that of a monster than a wild animal. When I rushed over, the shadow had already disappeared. I didn't really think it was a big deal, but now that I really think about it, it could be tied to the virus!" />
+                <string name="1" value="If something or someone had really done something to the water--oh, I don't even want to think about it! Can you rush over to the  Fire Hydrants and inspect it as soon as possible? You'll find the  Fire Hydrants in #b#m102050000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How unexpected! I thought you'd be curious." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're pretty fast. Let's see what clues you've gathered." />
+            <imgdir name="yes">
+                <string name="0" value="This is an emblem that could only be found in ancient documents. I'm sure you can find someone who knows a lot about something like this.\n\nSince you've worked so hard to find the clue, come back and see me after you get some rest." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me the clues." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001366" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28193" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

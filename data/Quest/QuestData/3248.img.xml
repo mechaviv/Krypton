@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3248.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Operation Strategy 1 : Collect All the Eggs" />
+        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="#b#p2041026##k in the #b#m220000000# Clocktower basement#k has proposed to begin a Clocktower Monster Wipe-Out Operation. What does he mean by that? Let's go find #p2041026#." />
+        <string name="1" value="The Clocktower Monster Wipe-Out Operation has begun. #p2041026# asks you to bring back #b#o4230113##k, #b#o3230306##k, and #b#t4031991##k... It seems he wants to exterminate all the eggs first. Alright, whatever he wants!\nHe says you can find other eggs by hunting #rTick, Tick-Tock, or Chronos type monsters#k, but #b#o5220003s# have a tendency to hatch their eggs in another bird's nest#k, so their eggs would be amongst eggs of other birds. It seems you have to crack other eggs to find it and take it over to #t4031991#. \n\n#i2022354##t2022354# #b#c2022354#/10#k \n#i2022355##t2022355# #b#c2022355#/10#k \n#i4031991##t4031991# #b#c4031991#/10#k" />
+        <string name="2" value="You have found all the eggs and gave them to #p2041026#. Ghosthunter Bob seems satisfied and suggest you engage in the operation. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022354" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022355" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031991" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#m220000000#Castle Clocktower Monster Wipe-Out Operation#k! ...has begun. It may be a bit of a chore, but what can you do? Fortunately, you probably won't have to hunt any powerful monsters yet since it's still in the beginning stages of the operation. I'm saying, you can easily do it. What do you say? Do you want to try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Operation strategy 1 is to collect all the eggs! Simply put, you just have to find #b#o4230113##k, #b#o3230306##k, and #b#t4031991##k from the upper level and collect #b10 each#k. You'll be able to find them if you hunt #rTicks, Tick-Tocks, and all Chronos#k. But I must warn you, #o5220003# will be a little tricky. " />
+                <string name="1" value="#b#o5220003#s have a tendency of hatching eggs in another bird's nest.#k So you can't collect any eggs no matter how many #o5220003#s you hunt. You can probably find #t4031991# amongst the eggs of #o4230113# and Chronos. " />
+                <string name="2" value="If you find an egg that seems different from the eggs of #o4230113# and those of Chronos, try cracking it open. #t4031991# will be mixed in there somewhere with other eggs. You'll complete the operation strategy one when you bring #o4230113#, Chronos, and #t4031991#. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm, well... if it's too much for you, then I suppose there isn't anything I can do. Shall we call our members? But they won't even respond to the call saying they're busy... hmmmph." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you've collected all the eggs. I'm impressed! You've successfully completed the operation strategy 1! Shall we officially begin the operation?" />
+            <imgdir name="yes">
+                <string name="0" value="Let me know when you're ready to go on to the next phase of the operation." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn't seem like you've collected all the eggs. They're #b#t2022354##k, #b#t2022355##k, and #b#t4031991##k. You can get them from the monsters except #t4031991#. You can only distinguish it apart by cracking other eggs. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041026" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022354" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022355" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031991" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041026" />
+            <int name="lvmin" value="59" />
+        </imgdir>
+    </imgdir>
+</imgdir>

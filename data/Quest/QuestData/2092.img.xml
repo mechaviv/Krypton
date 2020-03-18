@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2092.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I Need to Find My Daughter 1" />
+        <string name="parent" value="I Need to Find My Daughter" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder how Bruce is doing in Henesys these days..." />
+        <string name="1" value="I met up with Bruce in Henesys, and he had great news: He finally found his daughter!!! There was one problem, however: She seems to be suffering from amnesia, Bruce gave me a toy that his daughter played around while growing up, and asked me if I can give that to her. " />
+        <string name="2" value="I found Ayan and gave her the toy sword. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031174" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031174" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2093" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, it is you! I have great news! A great news, indeed... if you have any spare time, then ask me what exactly the great news is. I also need your help on this." />
+            <imgdir name="yes">
+                <string name="0" value="The great news is that I have found my daughter!! My assistant went to places near Perion to pick up some samples. After he got done with it, he stopped by Perion for a few, and ... apparently, he met a lady that eerily resembled my daughter!" />
+                <string name="1" value="So he started talking to her, and... apparently, she does not remember anything from her childhood. She's also not a tribesperson... that has got to be my daughter. It seems like she was beyond shocked when she was attacked by the mushroom monster." />
+                <string name="2" value="That is most likely the reason why she does not remember her childhood. Here ... I want you to give her this sword for me. My daughter liked to pose as a knight while growing up." />
+                <string name="3" value="This toy sword was something she really enjoyed playing with. This may help her bring back the memories and remember the past. Please help me help my daughter." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It is really a great news ... and I would really appreciate it if you can help me out here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi! What? My dad is looking for me? Are you sure about that? Because I have no idea who my dad is. I don't remember anything from my childhood." />
+            <string name="1" value="Hey, this sword...I remember this! That's right!! I was attacked by a humongous mushroom, and I just ran away as fast as I could. I guess that's how I ended up in here." />
+            <imgdir name="yes">
+                <string name="0" value="I can't believe this! I remember everything now!! Where's my dad now? Well, here's a letter for my dad. Please get this to him ASAP." />
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Please don't lose it again. This is a very important item for me. Good thing my assistant picked it up from the ground. Again, please don't lose it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031174" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2088" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2082" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

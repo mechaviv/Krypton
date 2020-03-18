@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6006.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Silver Mane" />
+        <int name="area" value="10" />
+        <string name="0" value=" I've heard that #p2060005# has furthered his research and found a way to upgrade my existing mount.  A faster monster to ride?  I should go see #p2060005# in Aqua Road immediately!" />
+        <string name="1" value=" I visited the Aquarium and #p2060005# has indeed found a way to make the mounts bigger, faster and stronger! However, he needs #b#t4000264#, #t4000266#, and #t4000267##k to make the experiement a success.  He asked for a &quot;donation&quot; of 50 million mesos to develop the technology for monster and human to co-exist. That's some expensive research! He must be raking it in...\n\n#i4000264##t4000264# #b#c4000264#/600#k\n#i4000266##t4000266# #b#c4000266#/400#k\n#i4000267##t4000267# #b#c4000267#/400#k" />
+        <string name="2" value=" It took a bit of time, but I returned with the needed items and &quot;donation&quot; he asked for. #p2060005# made my #t1902000# into a #t1902001#.  What a difference! My mount is so much sharper and stronger than before! I can run over almost anything now!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-50000000" />
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000264" />
+                    <int name="count" value="-600" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000266" />
+                    <int name="count" value="-400" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="-400" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1902001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah! You learned the monster riding skill from me! You have a Pig... Wow! You really live with a monster! And it doesn't attack you? My research has been proven as viable! I'm as happy as a pig in mud! " />
+            <string name="1" value="You'll be happy to know that I learned how to strengthen monsters for riding a few days ago! The name tells you how strong it is: #b#t1902001##k~ Haha. Isn't it cool? What do you say? Would you like to strengthen your monster?" />
+            <imgdir name="yes">
+                <string name="0" value=" I knew it! Ok, to strengthen your monster, I'll need 600 #b#t4000264#, 400 #t4000266# , 400 #t4000267##k. Upgraded monsters will be faster and tougher so you'll need many ingredients. When you have everything, come back and we'll continue! See you then!" />
+                <string name="1" value="Ah, right. I'm sorry but it costs a lot for this type of research and I'm a bit short on funds. A donation of #b50 million mesos#k should do it. I can study further into the coexistence of humans and monsters. Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? You don't want a stronger mount? I suppose you're happy with your Pig now, I won't press you any more. When you change your mind, let me know!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow~ You have everything that I need. Excellent! It's easy to strengthen monsters with this. I'll even change the color of the mane to gray!" />
+            <string name="1" value="Ok. Your #t1902000# is changed to #b#t1902001##k. I did it! Try it out!" />
+            <imgdir name="yes">
+                <string name="0" value="Remember, when tired, #t1902001# can't run that well. Please be careful!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Hmmm...these ingredients are not sufficient to strengthen the monster. If I don't have all the ingredients, it's impossible to get on #t1902001#. The ingredients are #b600 #t4000264#, 400 #t4000266#, 400 #t4000267# , and a 50 million meso donation#k. Come back when you have everything!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000264" />
+                    <int name="count" value="600" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000266" />
+                    <int name="count" value="400" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="400" />
+                </imgdir>
+            </imgdir>
+            <int name="endmeso" value="50000000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6003" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="tamingmoblevelmin" value="3" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

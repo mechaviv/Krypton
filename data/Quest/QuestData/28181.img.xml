@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28181.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rigorous Training 1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201121:##k in #bEllinia#k says he'll begin the first training." />
+        <string name="1" value="#b#@9201121:##k's first training requires you to hunt #rSlimes#k.\nYou can easily find them in #b#m101010000##k.\n\nLet's report back to #b#@9201121:##k in #bEllinia#k upon completion." />
+        <string name="2" value="You've completed #bLucci#k's first training!" />
+        <string name="demandSummary" value="#o210100# #a281811#" />
+        <string name="rewardSummary" value="Exp 1600&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Grendel the Really Old' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready for your first training? It won't be too hard." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This time, you must hunt some monsters.\nHunt 30 #rSlimes#k. You've done it before, so it shouldn't be too hard." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Tell me when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you're better than I expected? You are starting to look like a real Magician!" />
+            <imgdir name="yes">
+                <string name="0" value="Well done. All the experience you'll gain through battles...\n\nOh, that experience is abbreviated as EXP.\n\nWhat? You already knew that? Oh, good! Hee hee." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You must hunt 30 #rSlimes#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201121" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28180" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

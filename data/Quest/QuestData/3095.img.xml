@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3095.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Photo Album" />
+        <int name="area" value="33" />
+        <string name="0" value="I think I lost the Official Aqua Road Photo Album that Muse gave me. I better go see her again." />
+        <string name="1" value="Muse said she can make another one for me, but this time, it'll cost me 10,000 mesos. 10,000 mesos? Man, that's expensive..." />
+        <string name="2" value="I gave Muse 10,000 mesos for the Official Aqua Road Photo Album." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031310" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello. You're the person that gave me the Snow Crystal Sphere, right? Don't worry, I'm keeping it at a safe place. How can help you?\r\n#b#L0#I lost the photo album. Can I get another one?#l#k" />
+            <string name="1" value="Oh, no!! Well... I've made a new one since then, but I can't give it to you for free this time. I'm selling this for 10,000 mesos. Do you want one?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please gather up the money first, then talk to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm ... are you short on mesos?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Yes, thank you. Here's the photo album. The album is full of pictures that capture the true beauty of Aqua Road. Enjoy~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm ... are you short on mesos?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3091" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3094" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031310" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3091" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3094" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031310" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

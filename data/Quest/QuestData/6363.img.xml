@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6363.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A New Revelation" />
+        <string name="parent" value="The Secret Behind Space Time Transformations" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="When I told Papulatus that I had come from the future, he seemed very interested in learning more about me. I guess he got even more excited when I told him that he, in the future, was doing some pretty major things... Little does he know that he's doing some pretty radical, negative things... Anyway, how am I supposed to get back to the future now?" />
+        <string name="1" value="Papulatus asks me to be his guinea-pig for the research he's been working on, which is almost complete. He says he'll send me back into the future where I came from... I don't like the idea that I'm a guinea-pig for his research, but I can't stay in the past like this forever. I guess I should trust Papulatus for now and get back to the future to tell Rolonay about what had happened." />
+        <string name="2" value="I don't know if it's a remnant of the power I felt during my transition between dimensions but I've somehow acquired the power to control space and time. I'll call this skill 'Time Lift'. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흐음... 그나저나 당신은 다시 미래로 돌아가야 하지 않나요? 시공간을 자유자재로 변형하는 것은 물론 좋은 일입니다만, 시공간을 꼬이게 할 수 있죠. 이 시대에 머무르다가 미래의 당신이 과거의 당신을 만나게 되면 무슨 일이 일어날지 모른다는 거죠. " />
+            <string name="1" value="제 연구의 완성은 1%가 남았어요. 남은 1%는 실제로 해보지 않았다는 거죠. 당신은 꼭 미래로 돌아가야 하고... 그래서 말인데 혹시 다시 원래의 시간으로 돌아가는걸 제가 도와드려도 되나요?" />
+            <imgdir name="yes">
+                <string name="0" value="절 믿어주시는 건가요? 어떻게 생각하면 실험상대가 될 수도 있지만... 전 100% 성공할 것을 확신해요. 당신도 아까 말했잖아요? 제가 성공할 거라는걸... " />
+                <string name="1" value="자, 전 당신을 다시 원래의 시간으로 되돌릴 준비를 할게요. 차원의 균열을 열기 위해선 약간의 시간이 필요하거든요. 미래로 돌아가셔서 다시 절 보시게 되면 반갑게 인사해주세요. 그때 제가 당신을 기억할 줄은 모르겠지만..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="제 실험이 실패할 것 같나요...? 하긴, 첫 시도인데 섯불리 나서긴 어렵죠." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5121010" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="512" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Anyway, don't you have to return to the future? I know taking advantage of the warped dimension of time is cool, but you may also run the risk of damaging the timestream altogether. There's no telling what may happen when you travel back in time and run into the &quot;old&quot; you." />
+            <string name="1" value="My studies are almost complete. 1% left, in fact. This means one thing... I have not tested it out yet myself. You'll need to go back to the future, and... will it be okay if I can help you return to your normal time?" />
+            <imgdir name="yes">
+                <string name="0" value="You really trust me to do this? I mean... I understand if you feel weird about being a test dummy, but... I am 100% sure this will work. You already told me that I'd succeed in the future..." />
+                <string name="1" value="Alright, now I'll set this up so you'll return to where you came from. This machine will require some time to open the crack of dimension, in which you'll enter and time-travel. If you see me back in the future, please Say hi... even if I may not necessarily remember you, again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you feel that my experiment will end up as a failure...? Well, it is true that this is the very first live experiment I'll be conducting with this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm...? You're telling me you met Papulatus in the past? Oh, so Papulatus took the key. I see... so does that mean that's the key used to open the crack of dimension?" />
+            <string name="1" value="Anyway, I also feel a strange aura emitting from you, #h0#. Maybe it's because you created a crack of dimension in an abnormal way, and you may have been affected by the special powers that exist while traveling time. Please have a seat. I'll examine you for a bit." />
+            <string name="2" value="#h0#, close your eyes and start thinking. Do you feel something different? Something powerful? From what I see, I think you acquired a new power. I don't know what exactly it is, but I feel something different emmanating from you. Look at yourself closely in the mirror." />
+            <imgdir name="yes">
+                <string name="0" value="(After hearing Rolonay's words, I tried to meditate for a bit and realized something is a bit different. What is it? Oh... oh! I was able to turn back the clock for a little bit!)" />
+                <string name="1" value="(I think I did acquire a new power. I'm going to name this 'Time Leap'.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please let me know when you are ready to return to the future. I am all set and ready to open the crack of dimension." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092012" />
+            <int name="infoNumber" value="6364" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2043000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6362" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

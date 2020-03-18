@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8220.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Translated Communique" />
+        <int name="area" value="45" />
+        <string name="0" value="I lost the translated communique, then Let's go to Elpam Gorlab!" />
+        <string name="1" value="I told Elpam Gorlab what I want." />
+        <string name="2" value="I got the translated communique from Elpam Gorlab again. Thank You!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032018" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You have misplaced the translation." />
+            <imgdir name="yes">
+                <string name="0" value="Here, let me write it down for you again.  Go and let John know what these words mean." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't need one?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must get the letter I have translated to John." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201055" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032018" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201055" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8228" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032018" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

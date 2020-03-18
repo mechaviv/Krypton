@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4477.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="News Special Report" />
+        <int name="area" value="50" />
+        <string name="0" value="People are saying that there is shocking news on the front page of the Maple Herald. What could it be?" />
+        <string name="1" value="You were unable to buy the newspaper because it was already sold out.  However, you were able to read from the newspaper clippings behind the sales clerk. They say that Santa Claus will not be coming to Maple World this year. Is it true that he's not coming to town because Maplers stopped believing in Santa Claus? There must be some other reason. #bRooney#k is from Happyville and should know about what's happening. You should go ask." />
+        <string name="2" value="You wished Rooney a Merry Christmas! Now, you should ask about Santa Claus." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="1000" />
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome! This is the Maple Herald's Exclusive News stand. Would you like to buy today's newspaper?" />
+            <string name="1" value="Oh, I'm sorry. All the newspapers are sold out due to exclusive, groundbreaking news. If it's any consolation, would you like to see the article that I scrapped this morning?" />
+            <imgdir name="yes">
+                <string name="0" value="[Maple Herald]\n#bSanta is NOT coming to our town this year#k\nIt's been revealed that Santa Claus has no plans to come to Maple World this year. Apparently, Santa Claus has been greatly disappointed with Maplers for not believing in him. It will certainly be a huge loss to Maple Community.\n-Senior Journalist A.Y, Maple Herald-" />
+                <string name="1" value="Wow! What sad news, isn't it? A lot of reporters are trying to get a hold of #bRooney#k regarding this article. Oh, you don't know? Rooney is the go-to source regarding all things Happyville. Anyways, I apologize for not being able to provide you with a newspaper today. Please stop by next time!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="At Maple Herald, we always do our best to deliver news as accurately and quickly as possible. If you are curious about the happenings in Maple World today, please stop by!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Helloooo! Are you here for to wish me Merry Christmas?" />
+            <imgdir name="yes">
+                <string name="0" value="Merry Christmas!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="At Maple Herald, we always do our best to deliver news as accurately and quickly as possible. If you are curious about the happenings in Maple World today, please stop by!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250052" />
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

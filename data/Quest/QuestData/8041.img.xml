@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8041.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Monster Rumor Mill" />
+        <string name="parent" value="Monster Rumor Mill" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value=" I heard Scadur of El Nath got attacked by a monster. I better go talk to him." />
+        <string name="1" value=" Apparently, Foxy, I mean, Master Sergeant Fox also got attacked by that infamous monster. I better check out what's up." />
+        <string name="2" value="In order to gather up the information regarding the monster, I'll have to do Master Sergeant Fox a favor. Are you kidding me?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8042" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I noticed the monsters have been unusually aggressive lately, but a monster like that... this is out of my league." />
+            <string name="1" value="Oh have you seen it already? That monster residing in the snow valley?" />
+            <string name="2" value="I tried hunting for that monster yesterday to protect this town from being attacked by it, but I ran into that werewolf monster. I actually felt like I may die right there on the spot." />
+            <string name="3" value="Ahh... there's nothing a hunter like I can do about it. Unless fighting is a way to make a living, there's no way you can handle that monster. Say, looking at you, you seem well equipped to fight it... \nHey! Don't tell me you are about to take on that monster!" />
+            <imgdir name="yes">
+                <string name="0" value="I can't believe you actually volunteered to go out and take on that hideous monster, but ... well maybe you'll do fine." />
+                <string name="1" value="It's a werewolf monster much like a human being in that it walked in two's. I ran into it at night, so when I lit a torch, all I could see were a set of intimidating eyes, along with 7 sparkles that flashed around the neck area." />
+                <string name="2" value="Now that I think about it, I heard that one of the soldiers who happened to just walk into town got attacked by the same monster. Foxy... no, Fox! Yes, that Fox fella. Master Sergeant Fox. Ask him, and he'll give you the details on that monster. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" That's fine. No sane person would voluntarily pick a fight with that monster." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I'm Master Sergeant Fox. What can I do for you?" />
+            <imgdir name="yes">
+                <string name="0" value="You must be talking about the monster in the snow valley. I was unable to defeat it. I also have no plans to ever face it again. I do not possess many lives." />
+                <string name="1" value="Why did I fight the monster even though I have nothing to do with this town? I can tell you why, but not for free!" />
+                <string name="2" value="Do not make a face like that. Information doesn't always come for free. If you want to know more about it, talk to me later." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8040" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51199.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Many a Mickle Makes a Muckle" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="1" value="Collect 20 #b#t3994199#s#k to exchange for any chocolate from the Maple Admin." />
+        <string name="2" value="You received a chocolate for 20 #b#t3994199#s#k." />
+        <string name="rewardSummary" value="#Wprob#&#xD;&#xA;#i3994200:# #t3994200:# 1 개&#xD;&#xA;#i3994201:# #t3994201:# 1 개&#xD;&#xA;#i3994202:# #t3994202:# 1 개&#xD;&#xA;#i3994203:# #t3994203:# 1 개&#xD;&#xA;#i3994204:# #t3994204:# 1 개&#xD;&#xA;#i3994205:# #t3994205:# 1 개&#xD;&#xA;#i3994206:# #t3994206:# 1 개&#xD;&#xA;#i3994207:# #t3994207:# 1 개&#xD;&#xA;#i3994208:# #t3994208:# 1 개&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994200" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3994201" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3994202" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3994203" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="3994204" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="3994205" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="3994206" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="3994207" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="3994208" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="5760" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="3994199" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've collected 20 #b#t3994199#s#k.\r\nYou can exchange them for one random chocolate." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Would you like to exchange 20 #b#t3994199#s#k for a random chocolate?" />
+            <imgdir name="yes">
+                <string name="0" value="Well done.\r\nYou have received a random chocolate.\r\nFree free to bring me more Petrified Chocolates." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You haven't collected 20 #b#t3994199#s#k yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994199" />
+                    <int name="count" value="9" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q51199e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51198" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994199" />
+                    <int name="count" value="9" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

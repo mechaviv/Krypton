@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10452.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rainbow Week: Yellow Wednesday Magic" />
+        <int name="area" value="50" />
+        <string name="0" value="Rainbow week, during which you can benefit from the seven colors of the rainbow, has started. They say that #b#p9010010##k can cast Yellow Wednesday magic on you..." />
+        <string name="1" value="Yellow Wednesday. With #b#p9010010##k's magic, you can trade a 60%/10% scroll for a 65%/15% scroll. You can receive the magic only 3 times per day on April 21, so you better hurry." />
+        <string name="2" value="Yellow Wednesday was the day for trading scrolls! Thanks to #b#p9010010##k's magic, you traded 60%/10% scrolls for 65%/15% scrolls." />
+        <string name="demandSummary" value="#i4032434:# #t4032434:# #c4032434# / 10&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032434" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10452e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q10452s" />
+            <int name="lvmin" value="13" />
+            <string name="start" value="2010042100" />
+            <string name="end" value="2010042200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

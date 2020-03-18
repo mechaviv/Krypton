@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6164.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grendel the Really Old's Apology" />
+        <string name="parent" value="Shammos's past" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="1" value=" #p2022003# seems very resentful.  #p1032001# asked me to tell him that he's sorry. But would #p2022003# even accept his apology?  Either way,  let's go to #b#p2022003##k and relay #p1032001#'s message." />
+        <string name="2" value="#p2022003# just kept shouting #p2020009# and #p1032001#'s name. I wonder if he's really crazy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Would you go to see him again and Say I'm sorry? Though that's only words I have for him, I think I have to say that. I owe him that much..." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Tell #b#p2022003##k I'm sorry." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to do it, that's fine..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let me go... No more... Please... #p1032001#... #p2020009#..." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Say sorry to #p2022003#. I can't see him now." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2022003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6163" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

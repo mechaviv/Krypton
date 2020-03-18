@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51185.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Building a Time Machine 5: Why's the Processing Plant so Far?" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9250126##k is looking for someone to deliver all the Time Machine materials to the Processing Plant." />
+        <string name="1" value="Use the OS4 Shuttle to deliver the materials for the Time Machine to the Processing Plant.\r\n\r\nWhen the shuttle arrives at the Processing Plant, enter the Processing Plant and come back out." />
+        <string name="2" value="You delivered the materials for the Time Machine to the Processing Plant." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032795" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Great. Now, the materials for the Time Machine must be delivered to the Processing Plant. We'll need to use the OS4 Shuttle, since the materials are quite heavy." />
+            <string name="1" value="Take the OS4 Shuttle in the Hangar and deliver the materials. You won't be able to leave the OS4 Shuttle during the delivery." />
+            <string name="2" value="There's a chance you'll be attacked... But the shuttle has an attack function, so use it if you need to!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Now, go!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't know how to drive or something?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good, you delivered the materials... You were driving like a madman! I'm just glad you didn't flip over!" />
+            <imgdir name="yes">
+                <string name="0" value="They built the Processing Plant sooo far away. It's a huge hassle. \r\nMaybe it was the only place they could afford or something." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="All the material collected doesn't mean a thing if it's not delivered to the processing plant..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250150" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250126" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51180" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

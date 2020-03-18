@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9670.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cody's Valentine" />
+        <int name="area" value="50" />
+        <string name="0" value="I heard Cody was acting like he's madly in love. I better go see for it myself." />
+        <string name="1" value="#p9200000# seemed to have a big-time crush on Maya, and wanted to surprise her with a Valentine's day gift. Since he couldn't go anywhere, he asked me if I could deliver chocolate for him, so I obliged. No one's better at making chocolate Cookers.\n\n#t04140100# #b#c04140100#/1#k" />
+        <string name="2" value="On behalf of Cody, I gave Maya the #b#t04140100##k. She seemed very much ecstatic. Hopefully this is the start of something good..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4140100" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020028" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2020022" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2020023" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4140200" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1000" />
+                    <int name="period" value="4320" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay... I know it's a little too early to ask, but will you be my date? Wait wait, that's too cheesy. Hmm... hey there, I like you a lot, would you be my Valentine? Hmmm, that doesn't sound like me either... whoa, were you watching me the whole time? That was embarassing. What was I doing? Well... I actually took a liking to this girl not too long ago, and I want her to be my Valentine, but I don't know how to say it. The problem I have right now is that I am stuck here, doing my work, and I can't go visit her right now. Can you do me a huge favor, just this one time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. The favor I am about to ask you is simple, actually. I can't leave this place, but I want to really do something for Maya. She's amazing-looking, but I heard from the grapevine that, for some reason, she's spending this Valentine's all alone. Nothing will surprise her more than a surprise present from me." />
+                <string name="1" value="I feel like this is my chance, you know. To make this a reality, I want you to go see #b#p2041017##k and make one #b#t04140100##k for Maya. Once you have the chocolate ready, head over to Henesys and give it to her for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh no... if I don't ask her today, she might find someone else!!! Noo!!!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, there. How can I help you? What? This chocolate's for me?? From Cody??? Wow... I am speechless. That's.... so sweet of him to do that. Awww, thank you so much for this. Here, hold on one second, I got something for you... I can't let you go just like that! You just made my day!" />
+            <imgdir name="yes">
+                <string name="0" value="As much as I love chocolate, this is A LOT, so I'll share some with you. It looks really delicious, too. Happy Valentine's!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hey what are you doing here? Please go see #b#p2041017##k and ask him to make one #b#t04140100##k for Maya. Once you have the chocolate ready, head over to Henesys and give it to her for me." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Sigh... it's Valentine's, and I have no date this year. I'd like nothing more than a box of chocolate right about now..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4140100" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200000" />
+            <int name="lvmin" value="8" />
+            <string name="start" value="2009012100" />
+            <string name="end" value="2009022423" />
+        </imgdir>
+    </imgdir>
+</imgdir>

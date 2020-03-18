@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6316.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Key to a Different World" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2020005##k told me to see #b#p2041023##k in #m220000000# #m220050300# to get #b#t4031470##k." />
+        <string name="1" value="#b#p2041023##k said to open the door in #m220060400#, I'll need #b#t4031##k. However, he says he lost the key while being chased by #r#o8160000##k....\r\n#i4031496##t4031496# #b#c4031496#/1" />
+        <string name="2" value=" I gave #t4031496# back to #b#p2041023##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031496" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Magician #b#p2041023##k's performance will continue as long as #m220000000#;s clock works! ...you're not here to see #b#p2041023##k's magic. What are you looking for? \r\n#L0# I'm looking for #b#o9300086#.#l" />
+            <string name="1" value="Are you looking for #b#o9300086##k? Why do you need him? I can't let you in because he's dangerous.  \r\n#b#L0# I'm studying element-based magic with #p2020005#.#l" />
+            <string name="2" value="Studying element-based magic with #b#p2020005##k? If the best magician say that, it'll be true. I certainly see #r#o9300086##k in #b#m922020100##k. I have the key. Oh Gosh! I lost it when I was chased by  #b#o8160000##k. \r\n#b#L0#I'll get it for you#l" />
+            <string name="3" value="Really? If you're strong enough to kill #r#o8160000##k, do so and get me #b#t4031473##k please. Then I'll let you in to #b#o9300086##k's room in the different dimension of #b#m220060400##k." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to? Without #t4031473#, you can't see him..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah! You gathered #b#t4031473##k! Fabulous~ I almost lost track of time!" />
+            <imgdir name="yes">
+                <string name="0" value="I'll let you in any room you like. #b#m922020100##k is very dangerous. Make a party with two other Arch Mages to go in. Talk to me when you ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Get me#b#t4031473##k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031496" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041023" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6315" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

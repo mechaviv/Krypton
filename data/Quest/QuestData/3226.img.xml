@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3226.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Girl Who Lost Her Memory" />
+        <string name="parent" value="Korin's Memory" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard something happened to Korin of Ludibrium... I better go check up on her." />
+        <string name="1" value="I met a girl named #bKorin#k at a small house nearby Ludibrium. Korin had been missing for 10 months, and she did not remember anything that occurred during that time. She wanted me to find these men wearing the black suit that visited her the other day, and ask him whatever happened to her the last 10 months. A man wearing black suit... I don't think he'd be at Ludibrium nor Eos Tower." />
+        <string name="2" value="I met Korin, who was suffering from partial loss of memory, at Ludibrium. I was able to meet Agent Marco at the Omega Sector. He's the man wearing the black suit who held the clue regarding her lost memory." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3227" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, there. I don't think we've ever met ... what can I do for you here? Well, the thing is, lately I've been experiencing some very strange things, and therefore very apprehensive towards strangers. Because of that ... well, um ... will it be okay for you to help me out here?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Now, here's the story. I've actually been declared missing for 10 months now, but I have no recollection of what happened during the 10 months that I've been deemed missing. It's like, I woke up one day, and 10 months have passed, just like that. Isn't that strange?" />
+                <string name="1" value="I couldn't sleep for a while because I was in shock. Luckily, there were people around me to bring me back to my senses, and I slowly started living a normal life again when two men dressed in dark suits came to me. They proceeded to ask me questions regarding the lost 10 months, then left." />
+                <string name="2" value="I'm very much sure that those men know what happened to me, and I need to find out what happened. Please find those men in black suits for me and ask them whatever they know about me, so I can recover 10 months' worth of memories. I don't think they're at either Ludibrium or Eos Tower, though. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm ... you must be busy with other things. I understand. You travel around different places, and it's only natural that you're busy. If you ever find some free time, however, then please find me. I really need help from someone like you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have located the men in black suits yet. The only ones that know what happened to me over the past 10 months are them, and I need to find out what happened. Please find those men in black suits for me and ask them whatever they know about me, so I can recover 10 months' worth of memories." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041015" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

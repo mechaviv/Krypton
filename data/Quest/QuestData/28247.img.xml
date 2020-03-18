@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28247.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Something's Lacking" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1020000:##k in #bPerion#k suggests that you go to #b#@1022007:##k in #bPerion#k for additional information. But first, let's talk to #b#@1020000:##k." />
+        <string name="1" value="Let's go find #b#@1022007:##k in #bPerion#k to gather more information about the red portion of the Treasure Map." />
+        <string name="2" value="#b#@1022007:##k in #bPerion#k says the map is cursed with the blood of an animal, so you must calm the soul of the animal. Let's talk to her." />
+        <string name="rewardSummary" value="Exp 1000&#xD;&#xA;Able to proceed to 'Calming the Soul with Music' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Were you able to remove the red from the map?\n\nWhat? Not yet? That's strange...\n\nI'm pretty sure I did everything right. Hmm, perhaps I missed something." />
+            <string name="1" value="Hmm...then we may need some help." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Take this to #b#p1022007##k in #bPerion#k.\nShe'll know something since she's incredibly bright!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm so curious--I'm going crazy!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, I'm #b#p1022007##k.\nDid you have something you wanted to ask me?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm, this is... I feel a strange force emitting from the map.\nCould I take a closer look at it?\n\nPlease talk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1022007##k is in #bPerion#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28246" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

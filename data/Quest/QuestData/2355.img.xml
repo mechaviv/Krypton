@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2355.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fourth Mission: Double Agent" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Ryden says that he has a new mission for you. Go to Kerning City and meet with Ryden." />
+        <string name="1" value="Ryden says that the Dark Lord's organization seems to have discovered the Dual Blades and are secretly conducting an investigation. He says that their efforts must be diverted in order to prevent interference with future plans. As a double agent, you are asked to deceive the Thief Job Instructor, who is spearheading the Dual Blade investigation. \r\nYou should go to see the #bThief Job Instructor#k located at the #bConstruction Site North of Kerning City#k." />
+        <string name="2" value="Ryden said that the Dark Lord's organization seemed to have discovered the existence of the Dual Blades and were secretly conducting an investigation. He said that their efforts must be diverted in order to prevent interference with future plans. You met with the Thief Job Instructor, who is in charge of investigating the Dual Blades, and passed on false information from Ryden that should deceive him." />
+        <string name="demandSummary" value="Complete the #bInvestigating the Suspicious Person#k quest\nComplete the #bFalsified Remnant#k quest" />
+        <string name="rewardSummary" value="EXP 3,500\r\nProceed to 'Quieting the Ribbon Pigs' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Psst, over here! Shhh! Keep your voice down... Listen up. It appears that the Dark Lord has learned of our existence. It hasn't gone public, but it looks like he's already started an investigation. We'll obviously need to be a step faster, so I have a dangerous mission with you in mind. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="According to our sources, the #bThief Job Instructor#k has received a secret letter from the Dark Lord and has launched an investigation. They are coming to the conclusion that someone is behind the recent incidents. Of course, I can't say that I'm surprised... " />
+                <string name="1" value="Your mission is to #bacquaint yourself with the Job Instructor and find out what he knows and what he plans on doing.#k In order to do that, you'll have to become his disciple. In other words, you'll be acting as a double agent. Talk to him first, then report back to me. He is at the #bConstruction Site North of Kerning City#k. Be careful, and remember that many eyes are on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you nervous? Your nerves are only going to get in the way of this mission." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Puahaha... So that foolish Job Instructor fell for our trick? Heh...that's great. Job well done. I'll be sure to let Lady Syl know as well. Hmm... I think someone might have overheard our conversation. We must be more careful in the future. You better leave now. " />
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Your mission is to #bacquaint yourself with the Job Instructor and find out what he knows and what he plans on doing.#k In order to do that, you'll have to become his disciple. In other words, you'll be acting as a double agent. Talk to him first, then report back to me. Be careful, and remember that many eyes are on you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2356" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2357" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2383" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

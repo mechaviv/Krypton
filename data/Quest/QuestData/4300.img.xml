@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kino Konoko's Concern" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9110002##k is responsible for taking care of a small altar over in Mushroom Shrine. She seems to be concerned about something..." />
+        <string name="1" value="Tired of cleaning up after those pesky #o9400000#s, #p9110002# wants me to gather #b100 #t4000064#s#k. I'd hate to see the #m800000000# covered in filth, so I've decided to help her. Time to pluck some #t4000064#s!\n\n#t4000064# #b#c4000064#/100" />
+        <string name="2" value="I gave #p9110002# a whole bunch of #t4000064#s. It felt good seeing her being ecstatic over a bunch of #p9110002#s. Hopefully this will restore #m800000000#'s beauty..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아아... 아무리 청소를 해도 도무지 깨끗해지지가 않잖아! 아, 이런. 안녕하세요? 손님에게 이런 모습을 보여 드리다니. ...부끄러워라. " />
+            <string name="1" value="죄송해요. 사실 요새 신사 주변에 #o9400000#들이 너무 많아져서 곤란해하고 있었거든요. 아름다운 벚꽃으로 유명한 #m800000000#가 지저분해지고 있어서 무척 안타까워요. 조금이라도 깨끗해 보이려고 열심히 청소는 하는데, 아무리 쓸어도 소용이 없네요... 죄송하지만 혹시 여유가 있으시다면 같이 #t4000064#을 청소해 주시겠어요? " />
+            <imgdir name="yes">
+                <string name="0" value="같이 청소해 주시겠다니... 당신은 정말 좋은 분이시로군요! 그럼, #t4000064#을 100개 정도만 모아서 가져다 주세요. 그 후의 처리는 제가 알아서 할 테니까요. 그럼 부탁 드려요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="네... 많이 바쁘신 모양이죠? 그렇다면 하는 수 없죠... 어떻게 하면 #m800000000#를 더 깨끗이 청소할 수 있을까..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000064" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My goodness... I've been sweeping and sweeping, and it's still dirty around here! Arghh! Oh, hello there... well, that was embarassing..." />
+            <string name="1" value="I'm sorry about that. The thing is, lately there have been so many #o9400000#s near the shrine, and they are causing the world-renowned #m800000000# to lose its beauty and be covered in filth. It's really sad to see. I'm sorry to ask this to a complete stranger, but if you have any time, will you help me clean #b#t4000064##k up?" />
+            <imgdir name="yes">
+                <string name="0" value="You're really going to help me? Wow ... you're awesome! Well, okay. What do I need to really clean this place up... oh, I know! Okay, I'll need #b100 #t4000064#s#k from you. Please gather them up for me, and I'll take care of the rest. I'll be waiting~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ok, you must be really busy - I understand. Now, if you'll excuse me, I have to figure out a way to clean up the #m800000000# even better than last time..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you must have gathered up all the #t4000064#s!" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome! This is such a big help for me! Now that we're cleaning up #t4000064#, I'm sure the shrine will look a little nicer than it does right now. Thank you so much for your help." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have many #b#t4000064#s#k yet. We'll need more feathers if we are to really clean up #m800000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9110002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000064" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9110002" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

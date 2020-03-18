@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3008.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Looking For the Old Lady" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="5" />
+        <int name="area" value="33" />
+        <string name="1" value="Jade said the &quot;old lady&quot; may be #bSpriuna#k, who lives in a small house around where the Orbis park monsters walk around, and recommends that I go see her immediately." />
+        <string name="summary" value="I should go see Spiruna in Orbis." />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;Spiruna's Black Crystal&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3009" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hella talked about an #bold lady#k? Well, there is no such old lady neither around Orbis nor El Nath, but oh wait. Maybe she's talking about #bSpiruna#k, who lives in a small house around Orbis Park surrounded by monsters. You should stop by that house once." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Maybe the old lady is #bSpiruna#k, who lives in a small house around Orbis Park surrounded by monsters. You should stop by that house once." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3007" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

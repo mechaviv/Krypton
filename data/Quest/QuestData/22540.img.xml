@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22540.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ellinia Magic Library" />
+        <int name="area" value="7" />
+        <string name="0" value="#t4161049# doesn't seem to contain any information about #p1013000#. Is it possible to get the second volume? Ask #b#p1012109##k." />
+        <string name="1" value="#t4161049# seems to have been borrowed from the #b#m101000003##k in #b#m101000000##k. #p1012109# says that you should be able to borrow the second volume from the #m101000003#..." />
+        <string name="2" value="You met #p1032001# at the #m101000003# in #m101000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <int name="nextQuest" value="22541" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="To tell you the truth, this #t4161049# isn't mine. It's a book I borrowed from #m101000003# in #m101000000#. I wanted to buy it, but I couldn't find it because it was so rare." />
+            <string name="1" value="So if you go to #b#m101000000##k, you'll probably find #t4161050#, the sequel to this one. If there is anything you'd like to know about Dragons, borrow the book in #b#m101000003##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="A lot of people go to #m101000003# in #m101000000# to find that book, so you'll have to hurry if you don't want someone else borrows it first. Rush there! I'll see you later then, Evan." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm, I suppose it's a bit of a hassle." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome to the #m101000000# #m101000003#. Hm, aren't you a strange one... You have a lot of MP but no Magic ATT. I've never met anyone like you." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #m101000000# yet? You'll be able to borrow the #t4161050# in #m101000003##k, located at the highest point of #b#m101000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22538" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

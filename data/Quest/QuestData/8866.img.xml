@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8866.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Red Dahlia -  Thief" />
+        <int name="area" value="30" />
+        <string name="0" value="Hmm, there's a man who looks a little distraught... should I help him?" />
+        <string name="1" value="I went and spoke with Ben, and he's trying to make a special flower for his wife called the Red Dahlia. He got injured and needs someone to collect the materials for him. I agreed to help, and bring back #b30 Stiff Feathers#k and #b3 Diamond Ore#k he needs to make the flower. Seems like a nice enough guy, shame he got injured, but I can get him what he wants" />
+        <string name="2" value="I retrieved all the materials Ben needed and he'll be able to make the Red Dahlia. In return for my help, he gave me a scroll that will help me in my travels." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020007" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...Woe is me... I promised to make my wife this flower called the Red Dahlia, but I can't gather the materials-the creatures are too strong. I need someone to head out and gather them for me. It's very special flower, and I'm sure you could do it." />
+            <imgdir name="yes">
+                <string name="0" value="Excellent. Bring me back #b30 Stiff feathers#k and #b3 Diamond Ore#k and I can give you something I found that may help you..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's unfortunate... if you run into anyone who's brave and wants to help someone in love, send them my way." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You got them all! I can't wait to see the look on my wife's face when she sees the flower. Thank you so much! As promised, I have something for you, I hope you like it!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks again for all your help, the Red Dahlia turned out great!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hard at work, I see! I'll need #b30 Stiff Feathers#k and #b3 Diamond Ore#k. You're almost there, keep going and return to me when done!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201034" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020007" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201034" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8862" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

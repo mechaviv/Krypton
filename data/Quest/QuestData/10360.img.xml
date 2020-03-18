@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10360.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Aran Welcome Celebration" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="To commemorate the launch of Aran, Cassandra has prepared an event that has the odds of you winning at 100%!" />
+        <string name="1" value="In celebration of the legendary hero Aran's release, Cassandra has prepared a foolproof lottery event!" />
+        <string name="2" value="In celebration of the legendary hero Aran's release, Cassandra  prepared a huge event. #bFrom December 10th through January 19th#k, this daily event is a guaranteed win for everyone who participates!" />
+        <string name="demandSummary" value="#i3994139:# #t3994139:# #c3994139# / 1\nAran Quiz" />
+        <string name="rewardSummary" value="#rSelect one of the following:#k\nMapleStory-skinned Laptop\nCanon Digital Camera\nApple iPod\n$25 NX Game Card\nVarious Cash Items\nAran Paper Box" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994138" />
+                    <int name="count" value="1" />
+                    <int name="period" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994139" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! The moment has finally arrived, and #e#rAran, the polearm-wielding hero,#k#n has joined Maple World! We can't let a monumental event like this slide, right? So I'm inviting you to join the #e#bAran Welcome Celebration#k#n! You can get lots of prizes!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In order to receive a prize, you have to pass two tests. #bFirst, you must take care of this ice crystal I am about to give you for one whole hour, and second, you must acquire the Maha Charm inside the crystal.#k You can't shatter the crystal using brute force, but if you hold it close to you, your body heat will steadily melt it. But be careful! #rIf you log out, it'll disappear forever.#k So be patient, okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you going let the oppportunity of a lifetime pass you by?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994139" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10360e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3994138" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3994139" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2010012000" />
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

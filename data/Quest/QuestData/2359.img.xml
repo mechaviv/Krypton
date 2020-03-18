@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2359.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sixth Mission: Destroying the Evidence" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Ryden says that he has a new mission for you. Go to Kerning City and meet with Ryden." />
+        <string name="1" value="Ryden says that the poster and bomb incident has awakened the Dark Lord to the threat of the Dual Blades. Their full identities might be compromised if they stay in Kerning City much longer. Since it is time for them to make a quick exit, he asks that you recover the #b#t4032622:##k which was hidden purposefully. \r\nComplete Destruction of Evidence...\r\n" />
+        <string name="2" value="Ryden said that the poster and bomb incident had awakened the Dark Lord to the threat of the Dual Blades. Their full identities would've been compromised if they stayed in Kerning City much longer. Since it was time for them to make a quick exit, he took back the Dual Blade Seal that had been attached to a #o1120100#." />
+        <string name="summary" value="Defeat #bOctopuses#k in places like #bCaution Falling Down, Construction Site North of Kerning City, Northern Top of Construction Site, etc.#k and recover the #b#t4032622:##k." />
+        <string name="demandSummary" value="#i4032622:# #t4032622:# #c4032622# / 5&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 2,500\r\nCan proceed to 'Sixth Mission: Destroying the Evidence 2' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032622" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2378" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="All of Kerning City is in disarray due to the poster and bomb incident. If he ever doubted before, the Dark Lord is now certain of our existence. We'll be found out if we stay here much longer. We've received orders to leave Kerning City, but there is one more thing we have to do first. Are you up to it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="We placed Dual Blade Seals in various monsters to create abnormal behaviors in them. But before we leave, we need to eliminate these monsters and recover the seals so that no evidence will be left." />
+                <string name="1" value="First, eliminate the #b#o1120100#es#k and recover #b5 #t4032622#s#k. You can find Octopuses in places like the Kerning City Construction Site, the Construction Site North of Kerning City, and the Northern Top of Construction Site. There's not much time so hurry! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you nervous? Your nerves are only going to get in the way of this mission." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've gotten quite fast. Hurry, give me the seals." />
+            <imgdir name="yes">
+                <string name="0" value="This isn't the end of it. There are still more seals that you need to recover." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't recovered the seals yet. There's not much time left, so hurry!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032622" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2358" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

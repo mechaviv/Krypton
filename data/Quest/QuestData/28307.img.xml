@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28307.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Steward: &quot;I'm a Butler, Not a Maid!&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="You have arrived before Steward. It's uncertain how happy he'll be to see you though, especially when he hears what kind of job he'll have to do cleaning up this mess." />
+        <string name="1" value="The butler advised that you to collect #b10 Tombstones#k to prove to Jonas that you are serious about the mission. " />
+        <string name="2" value="Yes! You were able to collect the #b10 Tombstones#k and show Jonas that you want this whole thing to end. But it's questionable whether he got it completely..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032435" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022244" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022246" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I would dare recall the brighter days of yesteryear, when Master Jonas was around. It wasn't that he was much less of an oaf, he was actually quite odd, but at least he showed some measure of respect. Speaking of whom, I recall seeing Master Jonas's ghost in the Toy Room just the other day...and all these other ghosts started appearing as well, shortly thereafter. Perhaps you would care to talk to Master Jonas and request him to release the father?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, that is just stellar! I, for one, would love to get that silly little man, Joe, out of my way. However, I must warn you, from what I know of Master Jonas, he might not take you seriously if you approach him haphazardly. I recommend collecting #b10 Tombstones#k to prove to Master Jonas that you do intend to find what you are looking for.  " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose a little flake like you wouldn't have had the mental fortitude to complete the task anyhow. Suit yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah. I haven't had any guests in quite some time. So, what business did you want to discuss? Do you have something to give me?" />
+            <imgdir name="yes">
+                <string name="0" value="Interesting looking objects. So, you're here to talk, right? Let's talk." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I recommend collecting #b10 Tombstones#k to prove to Master Jonas that you do intend to find what you are looking for.  " />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Unfortunately, I am quite busy and don't have much time to talk. I may be able to have a deeper conversation with you if you bring me #b10 Tombstones#k. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201138" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032435" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201143" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28306" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

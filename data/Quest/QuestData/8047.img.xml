@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8047.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tsuri &amp; the Gourmet Dish" />
+        <int name="area" value="48" />
+        <string name="0" value="Tsuri of Showa Town apparently is going to make a &quot;fantastic gourmet dish&quot;. Interesting..." />
+        <string name="1" value="Tsuri said, in order to make the fantastic gourmet dish, he'll need #b100 #t04000157#s#k. I can't wait to see what comes out of this!  #k#n#t04000157#  #b#c04000157##k/100" />
+        <string name="2" value="Gourmet dish? This is nothing more than junk food! *sigh*" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020006" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! Don't you want to try your hands on a fantastic gourmet dish?" />
+            <imgdir name="yes">
+                <string name="0" value="That's right! No one can resist the sound of someone yelling &quot;fantastic gourmet dish&quot;. Gather up the ingredients for me, and I'll give you half of what I make out of it." />
+                <string name="1" value="Alright, I need #b100 #t4000157#s#k, now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, how often do you think you get a chance to eat a fantastic gourmet dish like this? You might want to think again..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oooh, that's some fine piece of meat there. With this, I can make the best hotdog you'll ever find." />
+            <string name="1" value="Alright, here it is. Eat it before it turns cold." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you gathered up all the #b#t4000157#s#k like I asked you to get. Go get them before the sun goes down!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120008" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

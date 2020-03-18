@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3914.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Borrowing the Book from Wiz" />
+        <string name="parent" value="Schegerazade the Storyteller" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="After hearing the whole story, #p2040052# decides to lend #p2101008# a book. But there's a rule in #m222020000# where any book someone borrows must to replaced by another book, so you have to find one. Maybe you should put together a list of stories that #b#p2101008##k knows and make a book out of that." />
+        <string name="2" value="When you told #p2101008# what #p2040052# said, she smiled brightly and told me that she has a list of stories that have already been written down. Phew, thank goodness." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#p2101008# of #m260000000#... I am amazed to find out someone knows that many stories! Even so, there must be stories out there that even #m222020000# doesn't know. Storybooks? I'll definitely lend you some." />
+            <string name="1" value="The thing is, here at the Helios Library, there's one rule that must be obeyed. When you borrow a book, you must also offer a book. So, are you willing to offer a new storybook?" />
+            <imgdir name="yes">
+                <string name="0" value="It'll be hard to find a book that's not featured in this library... Oh, there's a better method, actually." />
+                <string name="1" value="Wouldn't it be better if you write down the stories that #b#p2101008##k knows and make them into their own storybook? That would be much easier and simpler to do than finding a brand new book." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's almost impossible to find a book that's not found in #m222020000#... I understand that you're overwhelemed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have gone to #m222020000#. Did the librarian lend you a book?" />
+            <imgdir name="yes">
+                <string name="0" value="So if one book is borrowed, it must be replaced by another... I didn't know there was such a rule in #m222020000#. Well, I've actually written down most of the stories I know. There's not much else to do when the queen doesn't need me... I just have to combine all the pages. Please come back in a bit." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you gone to see #b#p2101008##k yet? It's a long way from here to #b#m260000000##k, so wouldn't it be better for you to go right now?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3913" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="36" />
+        </imgdir>
+    </imgdir>
+</imgdir>

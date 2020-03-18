@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3354.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="De Lang's Potion" />
+        <string name="parent" value="Who is De Lang?" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2111002# confessed his research hasn't taken steps forward these days, but then he lightened up and told me he found a cure for #p2111005#... What? #bA medicine for #p2111005##k? But everything in #p2111002#'s house seemed to have been cleaned out. \n\nIf he didn't try so darndest to hide this, then someone from Alcadno that might have gotten through #p2111002#'s Lab Report. I better go see  #b#p2111001##k of Alcadno, since he searched #p2111002#'s whole house." />
+        <string name="2" value="When I told #p2111001# of #p2111002#, he seemed genuinely shocked." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="...Hey, what brought you back here. ...what? You met with #p2111002#'s afterimage? He mentioned something about #p2111005#'s medicine...?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmm... this is interesting. Why isn't he banned?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3353" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3354s" />
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

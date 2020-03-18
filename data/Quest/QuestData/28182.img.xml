@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28182.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rigorous Training 2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201121:##k in #bEllinia#k says he'll begin the second training." />
+        <string name="1" value="For #b#@9201121:##k's second training, you must hunt #rSlimes#k and collect #rSquishy Liquids#k." />
+        <string name="2" value="You've completed #bLucci#k's second training!" />
+        <string name="demandSummary" value="#i4000004:# #t4000004:# #c4000004# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1600&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Grendel the Really Old' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready for your second training? It won't be that hard." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This time, the training requires you to hunt monsters and bring their drop items.\nEliminate the #rSlimes#k and bring me exactly 20 #rSquishy Liquids#k. Remember that collecting drop items requires a great amount of patience." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Easy, huh? Maybe I should have asked you to bring 100 instead. Haha!" />
+            <imgdir name="yes">
+                <string name="0" value="Second training complete!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You must now collect 20 #rSquishy Liquid#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201121" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28180" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

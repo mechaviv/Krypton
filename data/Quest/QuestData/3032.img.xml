@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3032.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Map is in One Piece" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="29" />
+        <int name="area" value="33" />
+        <string name="1" value="I got the #bMemory Powder#k from Corporal Easy. Now I need to get this to Alcaster." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031055" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="7850" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031055" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3033" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can't believe you collected all of them. I may see you in a different light now. You took down the same monster that even our general was hesitant of ... that's just incredible! Anyway a promise is a promise so here's the #b#t4031055##k I found during the operation." />
+            <imgdir name="yes">
+                <string name="0" value="I don't know what you're going to do with it, but it's a pretty important item so I suggest you handle it with care. If you screw it up and throw it away in an accident, it'll vanish without a trace, so be really careful with it. Well then, bye~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found it ... you got a hold of #b#t4031055##k!! All right, now. I'll have to cast a special spell on it so please be quiet for a second. If I can't concentrate, there's a chance that these gathered items may disappear for good. Here we go...Haaaap!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't know what you're going to do with it, but it's a pretty important item so I suggest you handle it with care. If you screw it up and throw it away in an accident, it'll vanish without a trace, so be really careful with it. Well then, bye~" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I'm studying all #b4 of the #t4031054##k that you got me. It doesn't matter if they aren't put together into a single piece! #b#p2030002##k of Alpha platoon must have found #b#t4031055##k while investigating something around the Orbis Tower. Can you get the item for me, please? Thank you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031055" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3031" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

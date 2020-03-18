@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28351.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dragon Master's Treasure Chest" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Administrator says that she will give anyone who hatches a Mini Dragon Egg the chance to obtain some precious treasures.&#xD;&#xA;" />
+        <string name="1" value="You can receive the Onyx Dragon Treasure Chest from the Administrator by bringing her all 7 symbols of the Ancient Onyx Dragon. You can find symbols of the Ancient Onyx Dragon inside the Evan Gift Box given by Cassandra. " />
+        <string name="2" value="You received the Onyx Dragon Treasure Chest from the Administrator. Rumor has it that it belonged to an ancient Dragon Master." />
+        <string name="summary" value="Collect the 7 symbols of the Ancient Onyx Dragon." />
+        <string name="demandSummary" value="#i4032632:# #t4032632:# #c4032632# / 1&#xD;&#xA;#i4000566:# #t4000566:# #c4000566# / 1&#xD;&#xA;#i4000567:# #t4000567:# #c4000567# / 1&#xD;&#xA;#i4000568:# #t4000568:# #c4000568# / 1&#xD;&#xA;#i4000569:# #t4000569:# #c4000569# / 1&#xD;&#xA;#i4000570:# #t4000570:# #c4000570# / 1&#xD;&#xA;#i4000571:# #t4000571:# #c4000571# / 1" />
+        <string name="rewardSummary" value="#i2022695:# #t2022695:# 1&#xD;&#xA;#Wprob#&#xD;&#xA;#i3010107:# #t3010107:#&#xD;&#xA;#i3010108:# #t3010108:#&#xD;&#xA;#i1382009:# #t1382009:#&#xD;&#xA;#i1382012:# #t1382012:#&#xD;&#xA;#i1372034:# #t1372034:#&#xD;&#xA;#i1382039:# #t1382039:#&#xD;&#xA;#i2043700:# #t2043700:#&#xD;&#xA;#i2043701:# #t2043701:#&#xD;&#xA;#i2043702:# #t2043702:#&#xD;&#xA;#i2043800:# #t2043800:#&#xD;&#xA;#i2043801:# #t2043801:#&#xD;&#xA;#i2043802:# #t2043802:#" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032632" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032632" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000566" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000567" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000568" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000569" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000570" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4000571" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="2022695" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow! You hatched the Mini Dragon Egg. I have some information that can only be revealed to those who have hatched a Mini Dragon Egg. Want to hear?" />
+            <string name="1" value="Have you heard about the Onyx Dragon Treasure Chest, which contains treasures left by an ancient Dragon Master? If you collect 7 symbols of the Ancient Onyx Dragon and bring them to me, I will give you a chance to get one of those treasures! " />
+            <string name="2" value="Do you want to try to get an Onyx Dragon Treasure Chest?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll give you one of the symbols of the ancient Onyx Dragon, the Baby Onyx Dragon Horn. Now, please collect the remaining 6 symbols and bring them to me. " />
+                <string name="1" value="You can get the remaining 6 symbols from Evan's Gift Box, which is given by Cassandra to anyone who's hatched a Mini Dragon Egg!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That is sad to hear. If you want to obtain an Onyx Dragon Treasure Chest, be more courageous!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you collected all 7 symbols of the Ancient Onyx Dragon. Please take this Onyx Dragon Treasure Chest." />
+            <imgdir name="yes">
+                <string name="0" value="I gave you the Onyx Dragon Treasure Chest as I promised. Inside, you will find an awesome treasure that was once used by an ancient Dragon Master." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected all 7 symbols of the Onyx Dragon. Press 'Q' to find out which symbols you still need." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032632" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000566" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000567" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000568" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000569" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000570" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4000571" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10510" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="201005050000" />
+            <int name="dayByDay" value="1" />
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

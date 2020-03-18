@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3441.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Help Kevin the Soldier's Vacation Plans" />
+        <string name="parent" value="VIP Ticket to Florina Beach" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard Kevin the Soldier has something related with VIP ticket to Florina Beach at Omega Sector." />
+        <string name="1" value="Kevin the Soldier was drafted into the army, but was never thrown in combat, and instead, is relegated to security duties at the Omega Sector. Feeling bored from all the security work, Kevin decided to earn some brownie-points for vacation by hunting down Mateons, and enlisted for my help. \n\n #t04000120# #b#c04000120##k/25 \n #t04031206# #b#c04031206##k/1" />
+        <string name="2" value="What can I do with a Ripped Travel Ticket? I better check on Nara the Tour Guide first, just the way the ticket said." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031207" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031206" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031243" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I envy you. I envy you, because you can run away and travel around freely. I can't find Medin right now, so please be my talking buddy for a sec." />
+            <string name="1" value="You know, I entered the army to fight the aliens, but here I am, currently just protecting the HQ, and it's really affecting my patience. I would more than love to use a day off to travel, but you, you haven't really accomplished EVERYTHING." />
+            <string name="2" value="A while ago, while driving around the neighborhood, I picked up a ripped travel ticket. Looking at that ticket really makes me want to leave this place for a second. How are your parents doing?" />
+            <string name="3" value="There is a way to leave here for the vacation, but I really cannot do this by myself. I've asked other travelers for help, to no avail. If you have time to burn, will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="To leave for vacation, I'll need to be cleared by Jr. Officer Medin, but he doesn't check off the vacations unless I have some track record in working. That's why... can you do me a favor and take out some Mateons around the area?" />
+                <string name="1" value="It'll be doubly appreciated if you can gather up a big bag of Mateon's Tentacles. #b25 pieces of Mateon's Tentacles#k, alright? With those, I may actually earn enough brownie points to take a vacation!" />
+                <string name="2" value="Oh, and lately, I heard that Mateon has been holding something that it picked up around the Sector, so please find out what that thing is for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... that's why. Even the travelers seem to be doing more than just wander around these days. Everyone's so busy around here... if you ever pass by this place again, please be my chat buddy again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You really gathered up the tentacles for me! I actually thought you just left without any word. Thank you so much, my friend! Now I can finally enjoy a little bit of vacation!!" />
+            <imgdir name="yes">
+                <string name="0" value="Hey, that Ripped Travel Ticket looks like the other half of the ticket that I've been carrying around!! Can I see? Let's match the two up, and ... oh my gosh, this is going to be awesome." />
+                <string name="1" value="I'm sorry. I'm a soldier, so I can't really reward you in materialistic ways, but... I can give you the other half of the ticket. Put the two together, and you'll find yourself an awesome VIP pass! The back of the card say Nana the Tour Guide, so find her!" />
+                <string name="2" value="I can't even fully use the vacation, because I only have a few days off. Here , take it! I got to go get my vacation break accepted. Good luck!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm ... this may not be enough to report to the Jr. Officer. Since you promised to help, anyway, I'd appreciate it if you put more effort to what I asked you do." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031206" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050011" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

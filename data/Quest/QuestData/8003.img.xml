@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grako's Request 2" />
+        <string name="parent" value="Find Mariwaka's Purse!" />
+        <int name="order" value="2" />
+        <int name="area" value="48" />
+        <string name="1" value=" I heard Grako's best friend #bMariwaka#k, who resides in Showa Town, is going through some hard times. I better go there and check it out myself." />
+        <string name="2" value="I met up with Mariwaka. Yeah, it looks like something's troubling her..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8004" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Well, actually... I have something else to ask from you... can you help me out once more? Go meet up with Mariwaka, who should be near the movie theater. She told me something a while ago, and... I was too busy to pay attention to her, and I feel really bad about it. She's my best friend, you know... can you help me?" />
+            <imgdir name="yes">
+                <string name="0" value="Sweet. Thank you. The movie theater is in Showa Town." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy. Oh well, nothing I can do about it. If you got some time to spare, please come help me out here~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...are you here on behalf of Grako...?" />
+            <imgdir name="yes">
+                <string name="0" value="Grako... haha. Last time I saw her, she was acting all busy and stuff, you know... at least she remembers that I told her SOMETHING~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I heard that #bMarikawa#k is in need of urgent help!! Perhaps you can help her out if you are not too busy~ Please go see her!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120016" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

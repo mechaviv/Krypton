@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10215.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gaga's Analysis" />
+        <int name="area" value="50" />
+        <string name="0" value="Gather up some #t4001238#s and hand them over to Gaga." />
+        <string name="1" value="Gather up some #t4001238#s and hand them over to Gaga." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001238" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10215s" />
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="60" />
+            <string name="end" value="2009082523" />
+        </imgdir>
+    </imgdir>
+</imgdir>

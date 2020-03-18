@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2054.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="John's Last Present" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard John has one final thing to ask me..." />
+        <string name="1" value="I ran into John the fisherman again at Lith Harbor. This time, he told me his mother passed away recently, and he wanted to get her some White Violas for her. He asked me to get #b30 White Violas#k for him. The scent of White Violas last over 1000 years...and according to John, they can be found through the mysterious statue again, where the flower may be found. Man ... do I HAVE to go in there again??" />
+        <string name="2" value="I got John all #b30 White Violas#k. It has a nice scent to it, but 30 of them? Makes my head spin...As a sign of appreciation, John gave me a set of his mother's earrings. These earrings look like they are made of some common flowers, but it seems there's something to it..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031028" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032014" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhh...you're the person that did me huge favors a while ago. You look so much stronger now that I can't even recognize you anymore. By now it looks like you have gone pretty much everywhere. I have one last favor to ask you. Well, my mother passed away a few days ago of old age. I need a special kind of flower for her on her grave ... can you get them for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! The flowers I want on her grave are called #b#t4031028##k and it's a very rare kind. I heard it's found deep in the forest ... I heard the place where it exists doesn't let everyone in; only a select few, I think. Something about #p1061006# at #m105040300# and something something ..." />
+                <string name="1" value="Please get me #b30 #t4031028#s#k. I want to get a whole bunch for my mother's grave. Please hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... my mother loved looking at those flowers while she was alive ... I wished that you could get them for me and for her ... I understand ..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... you got me all #b30 #t4031028#s#k!  This is awesome ... I can't believe you went deep into the forest and got these flowers... there's a story about this flower where it supposedly doesn't die for 1000 years and it glows on its own. I can make a nice wreath out of this and bring it to my mother's grave..." />
+            <string name="1" value="Oh, and... since you have worked hard for me, I should reward you well. My late mother left me this earing before passing away. Apparently she had it since she was young. I don't know, but it seems to have some kind of a special power hidden in it ... anyway please take it." />
+            <imgdir name="yes">
+                <string name="0" value="If you have time, why not try going back into the forest? You may find an important item in there. I can't guarantee it since obviously I've never been there before, so please don't come back complaining if all you can find is trash." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten #b#t4031028##k yet. There's #p1061006# at #m105040300# and I heard that with that you can go to the place where #t4031028##k is. Please go into the forest and collect #t4031028##k for me. I need 30 to make a wreath" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031028" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2053" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

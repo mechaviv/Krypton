@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9923.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collect Pumpkin Pieces" />
+        <int name="area" value="50" />
+        <string name="0" value="#p2120000# is hosting a Halloween party at the #rHaunted #m229000000##k. The friendly yet slightly eerie looking #r#p2120003##k awaits your arrival..." />
+        <string name="1" value="#p2120003# wants me to collect and bring her the #b#t2022255##k left over from making halloween Jack-o'-Lanterns. She says that she will give me a #b#t1002699##k which she made herself, as a gift in return. Let me follow #p2120003# to go make a Jack-o'-Latern. \n\n#i2022255# #t2022255#  #b#c2022255#/50#k." />
+        <string name="2" value=" I brought the #t2022255# to #p2120003# and received a #t1002699# in return. Apparently, only 1 pumpkin hat is made per day, so I should go get myself a pumpkin hat to wear to the party." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Hello, dear guest, welcome. Is there something I can get for you? How about a cup of #t4031833#?  Please let me know if there is anything I can help you with. My Master wishes to ensure that everyone has a wonderful time at the party." />
+            <string name="1" value="Oh I almost forgot. The Master has prepared a special gift for all our guests. Whomever will bring back some sweet #t2022255# will receive a #b#t1002699##k, just right for celebrating the Halloween season! Would you like to participate in the #bGathering of #t2022255##k activities?" />
+            <imgdir name="yes">
+                <string name="0" value="If you will bring back #b50 #t2022255#s#k left over from making Jack-o'-Lanterns, I will give you a cute little #b#t1002699##k in return. You have to make a Jack-o'-Lantern to say that you've properly celebrated Halloween! " />
+                <string name="1" value=" If you would like to make a Jack-o'-Lantern, please talk to me and I will let you know where to go to make one. I hope you are enjoying yourself at the party..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Seems that you have no interest in collecting #t2022255#. Nothing I can do about that. Hope you're enjoying the party." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002699" />
+                    <int name="count" value="1" />
+                    <int name="var" value="2" />
+                    <int name="period" value="4320" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022255" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, dear guest, welcome. Is there something I can get for you? How about a cup of #t4031833#?  Please let me know if there is anything I can help you with. My Master wishes to ensure that everyone has a wonderful time at the party." />
+            <string name="1" value="Oh I almost forgot. The Master has prepared a special gift for all our guests. Whomever will bring back some sweet #t2022255# will receive a #b#t1002699##k, just right for celebrating the Halloween season! Would you like to participate in the #bGathering of #t2022255##k activities?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you will bring back #b50 #t2022255#s#k left over from making Jack-o'-Lanterns, I will give you a cute little #b#t1002699##k in return. You have to make a Jack-o'-Lantern to say that you've properly celebrated Halloween! " />
+                <string name="1" value="If you would like to make a Jack-o'-Lantern, please talk to me and I will let you know where to go to make one. I hope you are enjoying yourself at the party..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Seems that you have no interest in collecting #t2022255#. Nothing I can do about that. Hope you're enjoying the party." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow you've collected all #b50 #t2022255#s#k! Thank you so very much. I think I can make at least 10 cups of #t4031833#  with that! Haha. Alrighty then. And now, the gift I've promised you." />
+            <imgdir name="yes">
+                <string name="0" value="All you need is a #t1002699# and no one will get on your case about threatening to pull a prank unless they hand you some candy. It's Halloween afterall, so enjoy yourself! That is the Master's greatest wish for all his guests. " />
+                <string name="1" value="Well well, we can only make 1 pumpkin hat per day, so if you wish to get another pumpkin hat, just come back tomorrow. I'll make you another halloween pumpkin hat. Of course you'll have to bring me some more pumpkin pieces to get a hat though, haha." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you haven't been able to collect all  #b50 #t2022255#s#k as of yet? Collect them while you're making the Jack-o'-Lantern and you should be able to collect 50 in no time." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2120003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022255" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2120003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9920" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008111100" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

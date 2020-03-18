@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2050.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sabitrama and the Diet Medicine" />
+        <int name="area" value="30" />
+        <string name="0" value="Let's go look for Sabitrama in Sleepywood." />
+        <string name="1" value="In front of Sleepywood Hotel, I met #bSabitrama#k, a medicinal herb trader who seems to be the younger brother of Chrishrama. He said he found a place where he can finally find the herb that he needed for this medicine he's working on...and that he asked if I could go in that forest and grab an herb called #bPink Anthurium#k. It consists of green grass and a small pink flower ... I better remember this well and get him the exact same one. I heard the place is near Ellinia ... I should go there and talk to this guy #bShane#k ..." />
+        <string name="2" value="Thankfully I got the flower that Sabitrama wanted from the Forest of Patience, and as a sign of appreciation, he gave me a #bscroll for the overall armor#k. Oh, and he also said that from here on out, I can enter the Forest of Patience without having to pay Shane of Ellinia. Based on what I've heard, the diet medicine Sabitrama's working on is for Shane's fiance ... I better get back in the Forest of Patience when I have some time ..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040504" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040505" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031020" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wait, hold on one second. I am an herb-collector traveling around the world finding herbs. I'm looking for useful medicinal herbs around this area. It's been hard finding those these days ... so, hey, have found a place where the herbs run aplenty?" />
+            <string name="1" value="Actually I've found a place where you can find good medicinal herbs. It's at a forest not too far from here ... lots of obstacles around the area but I can tell in the end there will be goods available for us to use ... so what do you think? Do you want to go there in place of me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. The place where you can find the mysterious herb is actually the place you've been to before, which is #m101000000#. I heard someone's accepting an entrance fee at the entrance ... you have the mesos to go in, right? Sorry but I've spent all my money traveling so I'm afraid I can't help you on that ..." />
+                <string name="1" value="Yes! I'll explain to you about the herb you'll be getting for me. Remember there are similar herbs around so make sure you know this. The herb you'll need to get is #b#t4031020##k, and the flower looks like this #i4031020#. Look carefully and please get the same one as I described for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really. You look like you can just breeze through there ... please come back here when you have time. I'll be waiting for you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... this is IT! With #b#t4031020##k, I can finally make the diet medicine!! Hahaha, if you ever feel like you have gained weight, feel free to find me, because by then, I may have a special medicine in place for just that!" />
+            <string name="1" value="Oh, I almost forgot. Since you helped me out, I should thank you for your hard work. Here, take this scroll. My brother made this for me a while back, and it adds to the guarding abilities of the armor. Hopefully you'll use it well. And from here on out,  #p1032003# will let you in free. Thanks for your help..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten the herb yet. The herb you need to get is #b#t4031020##k. The roots look like this #i4031020#. Remember it and get it from #p1032003# in #m101000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031020" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

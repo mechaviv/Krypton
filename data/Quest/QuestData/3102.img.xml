@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3102.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Master Sergeant Fox's Secret" />
+        <string name="parent" value="Warm El Nath" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="Apparently #p2020003# has a small secret. I should go to #m211000000# and find out some more about this." />
+        <string name="1" value="#p2020003# admitted to easily getting cold...and the only reason he could stand the blistering cold in #m211000000#, the coldest place in Ossyria, is because he has this item... in return for divulging the secret, #p2020003# asked me to get some food for him as he makes his way back to the headquarter.\n\n#i4000088# #t4000088#  #b#c4000088##k / 40 \n#i2022001# #t2022001#  #b#c2022001##k / 10  \n#i2010000# #t2010000#  #b#c2010000##k / 10 \n#i2010002# #t2010002#  #b#c2010002##k / 10" />
+        <string name="2" value="After giving #p2020003# the food, he showed me a cape that helped him withstand the coldest of cold. Apparently the person that gave him the cape is a man who's over #b300 years old#k..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2020003" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="14500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022001" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, why are you coiling up to the cold? That's not the spirit! If you were a member of the Alpha Platoon, then I would have gone after you hard for this!#E \n\n#L0# #bI'm sorry, but #m211000000# is too cold.#k#l" />
+            <string name="1" value="Ah, oh yeah... I forgot. The sheer coldness of #m211000000# brings a chill to everyone. But it's not good for you to be all crunched up over this!#E \n\n#L0##bYou must be really strong to cold weather?#l" />
+            <string name="2" value="As the Master Sergeant of the Alpha Platoon, this is nothing! All I need is a bit of energy, and this cold is nothing... and, there's actually something else you need...#E \n\n#L0##bWhat is it? Can you tell me?#k#l" />
+            <string name="3" value="You want me to tell you about it? Hmmm... this is a top secret... but yes I will, but only after doing me a favor. What do you think? Are you down for it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then please get me #b40 #t4000088#s#k, #b10 #t2022001#s#k, #b10 #t2010000#s#k, and #b10 #t2010002#s#k. I'm planning on packing up this food for my trip back to headquarters. If you get me these, I'll let you in on the secret that allowed me to withstand this blistering cold of #m211000000#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you aren't interested, then oh well. There's nothing like blocking out cold with sheer concentration." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... so you brought everything. This should be enough for me to return to headquarters. Thank you for your work! Now, should I tell you how I survived the cold of #m211000000#?" />
+            <imgdir name="yes">
+                <string name="0" value="The secret lies in the cape. Way back when I first got to #m211000000#, a #bfriendly old man#k gave me a cape that's laden with magic, and he told me since he's lived in #m211000000# for over 300 years, he didn't really need it. He's an incredible person, indeed. Is there a way we can get the cape again?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have it all yet. If you want to know the secret behind withstanding the cold, then please bring #b40 #t4000088#s#k, #b10 #t2022001#s#k, #b10 #t2010000#s#b, and #b10 #t2010002#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022001" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020003" />
+            <int name="lvmin" value="33" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20703.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="3rd Acclimation Training" />
+        <int name="area" value="15" />
+        <string name="0" value="I shall receive the 3rd Acclimation Training from #b#p1102000##k." />
+        <string name="1" value="This time, the monster in question for the Acclimation Training is #r#o9300273##k. He warned me that the monster has quite a temper and that I better be careful. I better return to #bthe 1st Drill Hall#k and hunt #o9300273#s. \n\n#o9300273##r #a207031##k" />
+        <string name="2" value="I was able to hunt 30 #o9300273#s. Now that I have reached Level 13, I should return to #p1101002# and receive an assignment." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000020" />
+                    <int name="count" value="50" />
+                    <int name="job" value="64512" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000021" />
+                    <int name="count" value="50" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready to start the next training session? You did receive the blessing from #p1101001#, right? Then let's get this started. This is the final chapter of the Acclimation Training, which means after you pass this, you will be pressed into real duties!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The targets for this session are #o9300273#s. They are very much aggressive creatures, and they definitely look the part as well. You'll find a number of those creatures inside #bthe 1st Drill Hall#k, so go ahead and defeat #r30#k of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Your real Knight duties are coming up soon. Aren't you excited? Get this training session over with so you can take on the real duties!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have eliminated all the #o9300273#s. Great work there! Do you feel like you can do well out of this island and in the Victoria Island?" />
+            <imgdir name="yes">
+                <string name="0" value="This marks the end of the Acclimation Training sessions. You'll do well and not only survive, but thrive in Victoria Island. You will be thrown into fire, but I believe in you enough that you will find no trouble persevering through all that!" />
+                <string name="1" value="Your true duties begin now. Once you reach Level 13, talk to #p1101002# and he will give you a list of duties you'll have to take on. Please serve and honor the Empress well, and do not engage in activities that may jeopardize your standings in the Cygnus Knights." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r30 #o9300273#s#k yet...? There are lots of #o9300273#s set up at #bthe 1st Drill Hall#k, so all you need to do is just go there and battle. They are no different than #o1210100#s in #m104010001#, so you don't need to go too far to do that." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300273" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20702" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <int name="lvmax" value="15" />
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1110" />
+                <int name="2" value="1111" />
+                <int name="3" value="1112" />
+                <int name="4" value="1200" />
+                <int name="5" value="1210" />
+                <int name="6" value="1211" />
+                <int name="7" value="1212" />
+                <int name="8" value="1300" />
+                <int name="9" value="1310" />
+                <int name="10" value="1311" />
+                <int name="11" value="1312" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+                <int name="16" value="1500" />
+                <int name="17" value="1510" />
+                <int name="18" value="1511" />
+                <int name="19" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

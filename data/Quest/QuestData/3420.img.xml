@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3420.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Effort to Make-up" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Yellow Mesoranger at the Safety Zone." />
+        <string name="1" value="I met with Yellow Mesoranger at a field around Omega Sector. She alerted me that she's aware of the fact that I helped out Alien Gray, and that if I am to dispel the notion that I'm on the alien's side, I'll have to make an effort to make-up for my blunders. In order to regain their trust, I'll have to eliminate the aliens. \n\n#o4230118# #r#a34201#" />
+        <string name="2" value="I may have helped out Alien Gray in a moment of chaos, but after successfully completing the mission Yellow Mesoranger gave me, I think I regained some of her trust. It just seems like the aliens do not want to peacefully coexist with us." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="19000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032018" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... Aren't you... the one that helped #b#p2050002##k out the other day? This is serious stuff... I heard about an alien that trick the people into fishing out classified information on us, but I thought they were just rumors... not in real life." />
+            <string name="1" value="It's only a matter of time before the Sector finds out about this, and who knows? You may be classified as an alien-supporter, too. Well, but then again, you really didn't know any better... What do you think? Would you like to take on my mission to regain at least my trust?" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice. You never know when you're going to be classified as an enemy of the Sector. Your task is simple. Just show it to us that you're NOT an alien-supporter, and if you're not a supporter, you would have no trouble whatsoever going in the battle against them." />
+                <string name="1" value="There are quite a few aliens that have approached the nearby fields of the Omega Sector. Your task is to defeat #b120 #o4230118#s#k. They are pretty strong, so it'll be best for you to team up with other people in order to complete this mission faster. I'll be here awaiting good news from you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... so it wasn't really an accident, but rather, you ARE an alien-supporter? I'll try to believe that's not true. If you want to change your mind, then talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh... you did defeat all the #b#o4230118#s#k like I asked you to do. It was a difficult task, for sure, but I guess you really wanted to restore the faith in you, right? Alright... I'll tell the people upstairs that you are indeed a friend of the Omega Sector. Oh, and here's a small reward for your job well done." />
+            <imgdir name="yes">
+                <string name="0" value="Here's #b1 #t1032018##k for you. This should help you on your traveling. Here's hoping that you won't ever help out the aliens again. Also, if you find yourself with some time to kill, please find me. I may need your help sometime down the road." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have completed the mission, yet. In order to regain the trust of the Omega Sector, you'll have to go downfield and defeat #b120 #o4230118#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230118" />
+                    <int name="count" value="120" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3419" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="44" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2162.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Half-written Letter" />
+        <string name="parent" value="The Lost Letter" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I found a letter in the trash, all crumpled up in a ball. It looked like someone was in the middle of writing the letter when they decided to throw it away...It's hard to read what's written there because of all the creases everywhere, but I think I see the name ''Athena Pierce'' faintly across the page. I wonder if I can find the person to whom this letter belongs?" />
+        <string name="1" value="While I was trying to read the letter, Muirhat approached me with a suspicious look and started asking why I am reading Kyrin's letter. I told him that I had found it in the trash, and to that, he asked if I would be interested in delivering Kyrin's letter to #bAthena Pierce#k in #bHenesys#k." />
+        <string name="2" value="I've delivered the letter to Athena Pierce as Muirhat had asked me to." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031839" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, you! Yes, you. What do you have in your hand there? I am 100% sure that paper in your hand is only used in the Captain's Room. What's that doing there in your hand?\r\n#b#L0# I picked it up from the trash can in the hallway.#l" />
+            <string name="1" value="From the trash can? Can you show me that? Hmmm... just as I thought. I'm sorry I suspected you of doing something else. Now that I know you're okay... can I ask you for a favor...?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="This letter is written by Kyrin to Athena Pierce in Henesys. The two have a complicated history going on there, and... that's why I think Kyrin wrote it, but was never able to actually give it to her. I want you to take this letter, go to #bHenesys#k and give it to #bAthena Pierce#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand if you don't want to participate in this. It's a very personal matter, and I can understand if you don't feel comfortable partaking in it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you say you have a letter to give me? I wonder where this letter's coming from..." />
+            <imgdir name="yes">
+                <string name="0" value="She's back. I've heard of the rumors, but I guess she really is back." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I asked you to give this to Athena Pierce of Henesys. Have you not gone yet?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You told me you brought the letter, right? Now where is it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031839" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031839" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

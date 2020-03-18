@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6150.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Great Warrior, Sayram" />
+        <string name="parent" value="Song of forgotten warrior" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#p2040052##k of #b#m222020000##k says he has something to tell me..." />
+        <string name="1" value="#p2040052# talked about a warrior named #bSeram#k. He mentioned a singing shield which I can use to get information about the old techniques of Sayram. Then he told me to go see  #b#p2081000##k at #bLeafle#k to find more information about him...Let's go see #b#m240000000#'s Chief#k with the #b#t4161019##k that  \n#p2040052# gave me. Should be an amusing trip at the least. A singing shield? I wonder...   \n\n#i4161019##t4161019#  #b#c4161019# / 1#k" />
+        <string name="2" value="Tatamo seems to know about Sayram, however, the singing shield is another matter. I wonder if this is all true or just some kind of joke...perhaps I should talk with Chief Tatamo again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161019" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161019" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Traveler! You look like a strong warrior. Would you give this old librarian a hand?" />
+            <string name="1" value="While cleaning the library, I happened to find a #bvery old book#k. It is about the adventure of #ba great warrior,Sayram#k. He is the only warrior who mastered all warrior classes including Hero, Paladin, and Dark Knight. The book say he was called the father of all warriors.." />
+            <string name="2" value=" I'm quite interested in this story. While studying these ancient books, I read about the #bLegacy#k that he left behind. When you get it, you can learn the ultimate skill of a Warrior. I'd like to know more, but I work here as a librarian. I would have to leave that to the Warriors to discover!" />
+            <string name="3" value="If you are interested in it as a warrior, would you please examine #bSayram's legacy#k instead of me?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh. Thank you! His legacy details a #bshield#k that he used, called a singing shield. I'm not sure whether it really sang or not. If you can find the shield, you could find out if Sayram really existed, and what kind of power he had." />
+                <string name="1" value=" The location of #t04031471# is not known. Sayram worked in a small town called  #b#m240000000##k. The #bVillage Chief#k there might tell you something about  Sayram." />
+                <string name="2" value=" If you get a singing shield or any information about it, please come back to this old librarian and let me know." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" A non-believer, eh? Well, I'd ask that you look beyond traditional thought, you never know what's out there..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What brings you to Leafre?" />
+            <imgdir name="yes">
+                <string name="0" value="Huh? You mean Sayram? I know him. He is strong and has an even stronger sense of justice... He helped Leafre when the town was founded, but humans already forgot about him. How do you know him?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you been to #bLeafre Village#k? Sayram knows about #b#p2081000##k in Leafre Village." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the adventures of Sayram. Fortunately, a kind man brought this book back to the library. The book about Sayram is precious. Please take care of it!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161019" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1221011" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1121010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1320006" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

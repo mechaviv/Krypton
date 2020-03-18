@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8074.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Meaning of the Code" />
+        <string name="parent" value="A Puzzling Code" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="0" value="Should I head over to the small grave that serves as the answer to the code written on the bizarre-looking statue? I should--knowing is better than not knowing." />
+        <string name="1" value="Solving the code took me to this small grave. I better let Kinokonoko knowof this." />
+        <string name="2" value="I told Kinokonoko everything I knew in regards to this puzzling code." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(In the midst of snow-covered mountains lay a small grave no one notices.)" />
+            <imgdir name="yes">
+                <string name="0" value="(The tombstone has something engraved on it, but thanks to the years of weathering, it's barely legible.)" />
+                <string name="1" value="(This code seems to imply the presence of the person that is laid to rest here, but... now it's impossible to even find out exactly who that is.)" />
+                <string name="2" value="(First, I'll have to get back to Kinoko Shrine and let Kino Konoko on this.)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="（A small grave covered in snow can be found here, barely noticeable）" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're back! What happened to the code?" />
+            <string name="1" value="（I told Kinokono what the code implied）" />
+            <string name="2" value="I see... I see! It's hard to fathom, in the middle of a mountain covered in snow lays a small grave. \nIt's hard to find out what the code means, but I'm sure it means something..." />
+            <string name="3" value="But you know, it feels good to finally have the puzzling code solved, because it had been nagging me for quite some time. Great job there. Thanks. Hope to see you around." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="(I found a small grave. I'll need to head back to Kinoko Shrine and let Kino Konoko know of the events that unfolded)" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9110002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8073" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="69" />
+        </imgdir>
+    </imgdir>
+</imgdir>

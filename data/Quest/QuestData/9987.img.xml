@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9987.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Materials for the Mysterious Fabric" />
+        <string name="parent" value="Snow Silk and the Mysterious Fabric " />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="1" value="Winston the archaeologist said the reason he is looking for the Snow Silk is to get the #bMysterious Fabric#k, which is made from Snow Silk.  The Snow Silk is said to add Mysterious Power to any object that is made with it and he said if I'm interested in this #bMysterious Fabric#k, to gather #b10 Snow Silks#k and to go see Arwen the Fairy.\n\n#i4001166# #t4001166# #b#c4001166# / 10" />
+        <string name="2" value="As Winston the archaeologist advised, I gathered 10 Snow Silk and went to go see Arwen the fairy.  Arwen was amazed that I collected 10 Snow Silk and secretly made the Mysterious Fabric for me without the other fairies knowing.  Arwen warned me of the Mysterious Fabric's power and advised me that if she were to have a Mysterious Fabric, that she would go see #e#bFrancois #k#n." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031945" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Anyways, how did you know I was looking for Snow Silk?\r\n#b#L0#Cassandra told me.#l" />
+            <string name="1" value="There really isn't anything inside Maple World that gets passed her.  Anyways, that's good news for me.  I actually heard something about the #bMysterious Fabric#k the other day.  You're looking at me as if this is your first time hearing about it.  Yup, that's how rare this thing is.  Does that make you curious about it as well?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You seem to be a very curious fellow.  Very well then.  I have a job for you.  The real reason I'm looking for Snow Silk is because I need it to make the Mysterious Fabric." />
+                <string name="1" value="What is the Mysterious Fabric, you ask?  It's a very rare fabric.  I only heard about it from Arwen, the fairy in Ellinia.  Arwen did seem reluctant to tell me about it though.  But my curiosity got the best of her.  What can I Say?  It's in my nature.  After all, I am a scholar." />
+                <string name="2" value="According to Arwen, anything made with the Mysterious Fabric will contain special powers.  Aren't you curious about what kind of power?  If you can get #b10 Snow Silks#k, take it to Arwen.  If you catch her on a good day, she'll make you the Mysterious Fabric." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're more dull than you look.  It's a shame for a young person like you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Me!?  Why does a human want to see me?\r\n#b#L0#I heard about the Mysterious Fabric.#l" />
+            <string name="1" value="The Mysterious Fabric?  You must've heard from Winston.  He has a bigger mouth that I thought.  I don't know why you're interested in the Mysterious Fabric but you need #b10 Snow Silks#k to make it.  Those aren't easy to find so why don't you just give it up and go back?\r\n#b#L0#I have 10 Snow Silks with me.#l" />
+            <string name="2" value="What?  Where did you possibly find them?  Hm... What do I do... \r\n#b#L0#I promise I won't tell anyone.  Please make me a Mysterious Fabric.#l" />
+            <string name="3" value="You promise, right?  You must keep this as a secret.  If other fairies find out that I made a Mysterious Fabric for a human, there will be a huge commotion.  If you promise to keep this as a secret, give the Snow Silks to me.  Hurry, before someone sees it!" />
+            <imgdir name="yes">
+                <string name="0" value="Here you go.  Hurry up and put it away before someone sees it!\nBut, what do you plan to make with this?  It's none of my business but I should still warn you.  The Mysterious Fabric is a very rare item.  I don't know how you were able to collect the Snow Silks but you are definitely one lucky person. " />
+                <string name="1" value="If it were me, I would use it make something really special.  For example... oh!  That's right.  I would go see #bFrancois#k!!  She knows how to handle the Mysterious Fabric well.  I also heard that she recently learned how to make a new unique item." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="If you collect 10 Snow Silks, make sure you go see Arwen, the fairy in Ellinia." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What is it?  I just lost my glass slippers and I'm in no mood to talk, so come back later. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9986" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+        </imgdir>
+    </imgdir>
+</imgdir>

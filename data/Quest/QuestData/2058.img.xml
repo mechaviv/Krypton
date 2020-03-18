@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2058.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Special Taste of Florina Beach" />
+        <int name="area" value="30" />
+        <string name="0" value="A beautiful girl by the name of Riel from Florina Beach seems to be in need of help..." />
+        <string name="1" value="Riel introduced me to a part time job, where I have to collect #b10 Coconuts#k. Why don't I start collecting those delicious looking Coconuts over there on the right?\n\n#t4000136# #c4000136#/10" />
+        <string name="2" value="I brought back fresh coconuts just like Riel said.  Riel told me I can come back for work anytime I want. I guess I won't be starving here in Florina Beach." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="500" />
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome to the Florina Beach, where the beautiful sunshine and the mind-numbingly spectacular ocean awaits you, and. ... what? what?? Ah, you are looking for a job. That's awesome! I've been looking for some help, anyway! Florina Beach is renowned for delicious cononut juice, along with tropical fruits and seafood. Your job is to collect those for me. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright!! I'll first have to see how good you are. Don't worry, I'll pay you accordingly. It'll be a good experience for you. Head over to the beach on the right side, and you'll see a number of coconut trees. Please gather up #b10 fresh coconuts#k. I need fresh ones, nothing else, alright?? \n\n#i4000136##b 10 coconuts." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't need to start right away, huh? We at the Florina Beach can always use a hand or two, since there are so many tourists that come and go everyday. It's not that difficult a job, so if you're looking for a job that isn't terribly difficult, then feel free to come back and talk to me, okay?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect #b10 coconuts#k? If you get me the fresh ones, you'll be working for me, no problem. Well, can I see what you have there?" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, they really are fresh!! That's just awesome!! I can't believe I ran into someone as good as you. This one's a test, so I'll give you 500 mesos. Don't worry, the future ones will get you much more money. If you want to work while enjoying the life at the beach, then please come see me. YOU will always be welcome here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have enough number of coconuts. Can't find the fresh ones? Head over to the right side of the beach. The trees there have some of the freshest coconuts you can find." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

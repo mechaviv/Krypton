@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3404.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. Kim's Comments : A Meeting with Gunny" />
+        <string name="parent" value="Dr. Kim's Comments" />
+        <int name="order" value="4" />
+        <int name="area" value="37" />
+        <string name="1" value="I met up with Gunny at a field around Omega Sector, handed him his #bLaser gun#k, and showed him the #bBlueprint Machine#k. Gunny appreciated my effort and requested that I report this all to Dr. Kim. This Command Center warp capsule seems like a useful item." />
+        <string name="2" value="As Dr. Kim requested from the Command Center in the Omega Sector, I showed the blueprint of the new robot to Chury, Hoony, and Gunny, while simultaneously solving their problems. Dr. Kim was very pleased with the results, and wanted me to drop by again sometime, for he could use my help." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031100" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="12000" />
+            <int name="exp" value="4500" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031100" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Must have been tough for you to show all 3 of us the #b#t4031100##k. All you need to do now is to report all this to #b#p2050001##k. The #b#t2030011##k that I just gave you is an item that allows you to teleport straight to the Command Center in Omega Sector. This will help you report this much easier." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh ho... you must have met #b#p2050005#, #p2050006#, and #p2050007##k and showed them #b#t4031100##k. How did they react to it? Were they happy to see it? Hahaha... that was good to know. Now, since you helped us out a great deal, here's a small reward for your job well done. I know it isn't much, but please take it." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the #b12,000 Mesos#k? I also raised your fame level a little bit. It's only fair that your reputation improves after the great job you did. I may need your help again down the road, so please drop by from time to time again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Great work showing all 3 of us the #b#t4031100##k! Now all you need to do is report all this to #b#p2050001##k. Use the #b#t2030011##k that I gave you to teleport straight to the Command Center in the Omega Sector. Good luck~!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3403" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

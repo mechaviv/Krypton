@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7101.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Replacement Time Energy" />
+        <string name="parent" value="Protect Ludibrium" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="0" value="The source of energy has been swallowed a whole by #o8500001# with the disappearance of the time sphere. I need #p2041021# to find a way for an alternative." />
+        <string name="1" value="Thanks to Papulatus Clock with Time Sphere, the monsters below Path of Time have grown much stronger. There is, however, a way to recover the energy from those monsters; defeat them and they'll cough up the item that stores the energy. I'll need to gather up 300 Tachions and 100 Mysteriour Powers. \n\n#t4031175:# #r#c4031175#/300#k\n#t4031171:# #r#c4031171#/100#k" />
+        <string name="2" value="I gathered up #t4031175#s and #t4031171#s as the replacement energy to create the new Time Sphere." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="76600" />
+            <int name="exp" value="27600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031171" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031175" />
+                    <int name="count" value="-300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, this is it!! #b#t4031175:##k is the one that reacts well with #r#t4031171:##k, the one I have. With these two, I think we can make the #bTime Sphere#k! What do you think? Can you gather them up some more?" />
+            <imgdir name="yes">
+                <string name="0" value="Like I said, thanks to you, we now know that #t4031175# and #t4031171# reacts to one another. Transforming this into a sphere that generates massive power will require a lot of these. You can gather up #b#t4031170##k through #bthe monsters#k that can be found downstairs. Only #r#o7130300##k has #r#t4031171##k, however." />
+                <string name="1" value="To produce the #bTime Sphere#k, I'll need 300 #t4031175:#s and 100 #t4031171:#s \n#i4031175#   #r300#k #t4031175#s   \n#i4031171#   #r100#k #t4031171#s" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="To gather up the stuff I just mentioned, you'll have to take on some very challenging monsters, so you don't have to help me do this now. You can train yourself until you find yourself ready for this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up all 300 #t4031170:#s and 100 #t4031171:#s needed for the #bTime Sphere#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now I'll try to make the #bTime Sphere#k out of the items you got me. I may also need something else for this, so ... talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="To make the PERFECT Time Sphere, I'll need #b300 #t4031170:#s#k and #b100 #t4031171:#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031171" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031175" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7100" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

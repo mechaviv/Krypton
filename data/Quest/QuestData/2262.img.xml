@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2262.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Camel's Training Session 2 (Repeatable)" />
+        <int name="area" value="44" />
+        <string name="0" value="Apparently, the Camel Cab is willing to help you train until you reach Level 30." />
+        <string name="1" value="Apparently, the Camel Cab is willing to help you train until you reach Level 30.\r\n\r\n#o2110300# #a22621#\r\n#o2110301# #a22622#\r\n" />
+        <string name="2" value="The Camel Cab helped you train until you reached Level 30." />
+        <string name="demandSummary" value="#o2110300# #a22621#\r\n#o2110301# #a22622#\r\n" />
+        <string name="rewardSummary" value="EXP 2,000\r\n" />
+        <int name="timeLimit" value="1800" />
+        <string name="timerUI" value="default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You have yet to reach Level 30. Only those that have met the level requirement can handle the truth. You should train more diligently and get to Level 30. Would you mind if I offered you some help?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now I want you to go slay 50 Scorpions and 50 Sand Rats in 30 minutes." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not a bad idea for you to train by yourself to reach Level 30." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, did that help you with your training?" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have slayed them all yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110005" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2110300" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2110301" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2260" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="29" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

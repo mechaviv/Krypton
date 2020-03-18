@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Feeding Bull Dog" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22001" />
+        <string name="0" value="Say good morning to #b#p1013101##k." />
+        <string name="1" value="#p1013101#, after laughing for awhile, says to stop talking nonsense and asks you to give #p1013102# some breakfast. Give some food to #b#p1013102##k, who is to your #bleft#k, since #p1013101# is too scared to do it himself." />
+        <string name="2" value="You fed #p1013102# breakfast." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="35" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032447" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="#b(You place food in #p1013102#'s bowl.)#k" />
+            <string name="1" value="#b(#p1013102# is totally sweet. #p1013101# is just a coward.)#k" />
+            <imgdir name="yes">
+                <string name="0" value="#b(Looks like #p1013102# has finished eating. Return to #p1013101# and let him know.)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't fed #b#p1013102##k, who is located to your #bleft#k? Hurry up! He's in a bad mood because he's so hungry." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="(#p1013102# seems really hungry. It would be sad to make him starve. Hurry up and get the #b#t4032447##k from #b#p1013101##k.)" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the dog food? Geez, you're so clumsy! Well, here, take some more. Make sure not to lose it! If you don't feed #p1013102# soon, he might try to eat a person!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013102" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22001s" />
+            <int name="lvmin" value="2" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

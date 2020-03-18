@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1008.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pio's Collecting Recycled Goods" />
+        <int name="area" value="20" />
+        <string name="0" value="Pio wants you to help collect recycled goods." />
+        <string name="1" value="You ran into Pio, who is famous in Amherst for fixing broken goods. He asks you to break down scrap boxes from around town and bring back #t4031161#s and #t4031162#s. \n\n#t4031162# #c4031162# / #r5#k\n#t4031161# #c4031161# / #r5#k" />
+        <string name="2" value="You broke the boxes and collected supplies for Pio. It was fun because you found other useful items in the boxes as well." />
+        <string name="demandSummary" value="#i4031162:# #t4031162:# #c4031162# / 1\r\n#i4031161:# #t4031161:# #c4031161# / 1\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="200" />
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031162" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031161" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My goodness. I've been wandering around town, and I see so many recyclable items just being thrown away! Say, can you help me collect those?\n Don't worry, I'll reward you well for your effort." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That's right! Collect all the 'trash' around town." />
+                <string name="1" value="I don't know if you've seen any abandoned wooden boxes on your way here, but your job is to break those boxes apart into #t4031162#s and #t4031161#s. Collect 5 of each for me, okay? \n\n#i4031161# #b5#k #t4031161#s\n#i4031162# #b5#k #t4031162#s" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come on! Think about the planet!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? You brought them all? Okay, let's see ..." />
+            <imgdir name="yes">
+                <string name="0" value="See what I'm talking about? So many recyclable items, just carelessly tossed away. Hopefully there are more people like you in the world." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="No, no, no! Press 'Q' to look at the Quest Info to check what you need to do!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031162" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031161" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="10000" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

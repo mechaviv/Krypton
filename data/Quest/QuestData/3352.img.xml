@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3352.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Re-acquiring Dr. De Lang's Notes  " />
+        <int name="area" value="44" />
+        <string name="0" value="Oh no... I was going to give #t4161033# to Phyllia, but I misplaced it. What should I do? If that book ends up in the wrong hands, then that spells disaster. I better talk to #b#p2020005##k." />
+        <string name="1" value="Clearly flustered, #p2020005# yelled at me never to misplace it again. Fortunately, with his magic powers, it is easy to spot #t4161033#, so I'll just have to wait until he finds it." />
+        <string name="2" value="Now that I've received #t4161033# from #p2020005#, I better head back to #p2111004#. I still have a chance to change my mind and take a different route." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="...What brought you back here? The choice is yours, and it's your call to decide how the events will unfold, and... what? You lost De Lang's note? " />
+            <imgdir name="yes">
+                <string name="0" value="Hmm... My goodness, what were you thinking? That book contained all the secrets of Magatia!  In the wrong hands...I can't even imagine what horrors could emerge! How can you treat that book with no regard for safety? Is that what you chose to do? If this was a simple case of one spell, I suppose I could for give you, but this? Now I'll have to locate the book for you!  ...There! Don't lose it again!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I will give you this one time to rectify your mistake. Please promise me one thing...that you will act and handle yourself in a responsible manner. Only after you promise will I give you the book." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161034" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...What brought you back here? The choice is yours, and it's your call to decide how the events will unfold, and... what? You lost #t4161033#? " />
+            <string name="1" value="Hmm... My goodness, what were you thinking?? That book contained all the secrets of #m261000000# that will shake up the world. How can you treat that book with no regard for safety? Is that what you chose to do? If this was a simple case of misplacement, then I was sorely mistaken about you.&#x9;" />
+            <string name="2" value="I will give you this one time to make a do-over on your mistake. Please promise me one thing... that as a person who's shouldering a great responsibility, that you will act and handle yourself in a responsible manner. Only after you promise will I give you the book." />
+            <imgdir name="yes">
+                <string name="0" value="I will accept your promise. Please hold on. This book is heavily scented with alchemy spells, so it shouldn't take too long to locate it..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If not, then I cannot give you the book. I feel that you seem quite shallow for someone who'll be handed with a great deal of responsibility." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I have found the book for you this time... but if you lose it again, then I won't help you again. I will not allow you to select your own destiny with the book. Please think over carefully before making this decision." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3349" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161034" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+            <int name="interval" value="4320" />
+        </imgdir>
+    </imgdir>
+</imgdir>

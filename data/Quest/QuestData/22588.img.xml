@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22588.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Secret Organization's Fifth Mission" />
+        <int name="area" value="7" />
+        <int name="autoComplete" value="1" />
+        <string name="showLayerTag" value="22588" />
+        <string name="0" value="After seeing the map, #p1013203# smiles as if satisfied... What kind of map is this? Ask #b#p1013203##k." />
+        <string name="1" value="#p1013203# gives you an item called a #t4032473# and tells you to enter a portal that leads to Turtle Island, where you are to #boffer it on an altar inside a cave in the center of the island#k. You're not sure what this is about... You just have to #bdrop the #t4032473##k on the altar." />
+        <string name="2" value="Turtle Island was the island where the Dragon was sleeping! By breaking the #o9300391# as #p1013203# told you, you were able to get close to the sleeping Dragon. But you were told to come out as there was nothing more for you to do there..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032473" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ha! If this is the exact location, we can open a portal there with magic. Evan, I would like to give you your fifth mission now. This one should be easy." />
+            <string name="1" value="All you have to do is go through the portal and you'll get to Turtle Island. You will find an altar there. #bPlace a certain item on the altar#k. Just #bdrop#k it onto it. Then, #rleave the cave quickly#k! I warn you. Don't linger behind..." />
+            <string name="2" value="#rSome evil being has put a magic spell on the island, which keeps the members of our organization, including me, from entering#k. Since you are immune to that spell, we are relying on you to handle this mission. " />
+            <string name="3" value="What do you say? If you accept this mission, I will give you the item right now." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You received the item, right? Now, go through the portal. You will immediately be taken to Turtle Island." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You're refusing to accept this mission? But we have never needed you more! Please, think about it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You destroyed the #o9300391#! I knew it. Someone with an Onyx Dragon would of course be able to do it. Hehehe. Oh, no, don't mind me. Please leave the island at once. You will see a boat just outside." />
+            <string name="1" value="Huh? A Dragon sleeping on the island? That is not something you should concern yourself with! Do not let the Dragon see you. You must get off the island immediately!" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You haven't destroyed the #o9300391# yet? The portal is still open, so go to Turtle Island and place the item on the altar, like I said. If you've #blost the item, forfeit the quest and talk to me again#k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't destroyed the #o9300391# yet? The portal is still open, so go to Turtle Island and place the item on the altar, like I said. If you've #blost the item, forfeit the quest and talk to me again#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+            <int name="infoNumber" value="22605" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013203" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22586" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

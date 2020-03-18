@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3207.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nemi's First Ingredient" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Nemi, who's in Ludibrium..." />
+        <string name="1" value="I met up with Nemi again at a small house in Ludibrium. She was preparing dinner for her dad, who should be home from work soon, and she wanted to make him a nice bowl of soup. She asked me if I could get her #b10 slices of #t4031129##k by taking out the #bRatz#k in Eos Tower. \n\n#t4031129# #b#c4031129##k/10" />
+        <string name="2" value="I got Nemi the #b10 slices of #t4031129##k that she wanted. I wonder what kind of soup she's making for her dad..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031129" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020004" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So much work to do at home... oh, hello there? What are you doing here? Oh, oh yeah! If it's all right with you, can you help me out a little? I have to do something for my father, but I have no time to do it with all these chores to take care of." />
+            <imgdir name="yes">
+                <string name="0" value="Oh, thank you~! Actually it seems like my father has been working really hard lately, with an overwhelming number of new orders for toys. He's been leaving before dawn, and comes home before midnight, so I've decided to make him a special dinner, but I don't have anything to work with right now..." />
+                <string name="1" value="Head over to Eos Tower and you'll see a monster called #b#o3110102##k. Take them out and please gather up #b10 #t4031129#s#k. Their cheese is supposed to be top-notch. I feel like I can make the best soup in the world with that chesse, you know? Well, good luck~~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... you must be swamped with other things yourself. If you ever find some time, then please come talk to me. I can always use some help, you know~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're back! Yes! That's the cheese I was talking about! With this, I think I can make a hearty bowl of soup that my father will really enjoy after a long day at work. Thank you so much for helping me out again. I'll have to reward you for this. I hope you like it..." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the #b100 #t2020004#s#k that I gave you? Now that I've gotten the ingredients and all, I'll have to start working on this soup. My father is coming soon, and I'll need to start this now in order for him to enjoy it the moment he gets here. Thank you so much for your help! Now, if you'll excuse me..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm ... I don't think you have gathered up #b#t4031129#s#k yet. Please head over to Eos Tower and defeat the #b#o3110102##k, then gather up #b10 #t4031129#s#k for me. I feel like I'll be the best cook in the world with that cheese." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031129" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3206" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

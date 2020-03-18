@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3115.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Strange Development" />
+        <int name="area" value="33" />
+        <string name="0" value="#b#p2012012##k of #b#m200000000##k told me she saw something strange.  What could it be? I better go see #p2012012# right now." />
+        <string name="1" value="#p2012012# told me she saw a fish that resembled a huge chunk of metal crossing the water, and wanted me to find out exactly what that creature is. It was heading towards #b#m100030000##k, so I better go there right now." />
+        <string name="2" value="There's a huge wooden entryway leading into #m100030000# which I'd never seen before. It almost looks like an entryway to a fortress... I should try talking to #p1094000#, who was standing in front of me. I remember him telling me that a #bpirate #p1072008##k fort is being built here.  But for what purpose?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Just a few minutes ago, while flying over the ocean, I saw this #bweird creature#k around the area. It was the size of a town! Its body looked like blackened, solid steel, yet it was able to move on top of the water and underneath it with equal prowess." />
+            <string name="1" value="It really felt threatening, so I decided to chase this thing from behind, and wouldn't you know it, it was heading towards Victoria Island! Wait a minute... is this... a new monster getting ready to attack #m100000000#? This is really troubling." />
+            <string name="2" value="If it's okay with you, can you head over to Victoria Island and find out what that creature really is?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahhh, thank you so much. That creature is located next to a town called #b#m100000000##k, at #b#m100030000##k. I don't know what it's thinking, but it's just standing still for now. Please go check and see if it really is a danger to Victoria Island!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know it's dangerous, but I think it's something that needs to be clarified. I hope you change your mind!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, who's that? I, #p1094000#, will protect #b#p1072008##k and #bThe Nautilus#k! Remember the name, the hero of the pirates, #p1094000#! Hahahahaha! Wait, this is not it. What are you trying to do there? Whatever you are trying to do, it won't fool me! Not #p1094000#!" />
+            <string name="2" value="We ride around on our ship, The Nautilus, under the guidance of our captain, Kyrin, roaming around the coasts of Maple World, looking for the Black Magician. We use Knucklers and Guns to make sure that the root of all evil is vanquished--we want to make sure that the Black Magician never rises to the heights of power as he did before." />
+            <string name="3" value="Just like the wisemen in Victoria Island training for the day the Black Magician returns, #p1072008# is busy making sure that his followers stay in low numbers.  She's so young, too. That's just so admirable!" />
+            <string name="4" value="So no more suspicious looks! We're not here to fight you! I swear on #p1072008#'s name!" />
+            <string name="1" value="Eh? What? You're just here to investigate because you've never seen us before? Why didn't you just Say that from the get go? We're not aliens or anything like that! We're just Pirates.  Fearsome, fight-to-the-last-man, potion-loving Pirates! Don't tell me you are thinking of Lord Pirate and those despicable bandits.  They suck!  We serve a cause much more true to the spirit of Victoria Island!" />
+            <imgdir name="yes">
+                <string name="0" value="We're not done with the fort's construction just yet, so I can't show you what's going on, but we'll be finished soon, so have no fear. If you want to join us and #p1072008# and become a mighty  #bGunslinger or Brawler#k, come back later. By then, we'll be ready to accept you with open arms, and train you to live the life of a Pirate!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#m100030000##k yet? What if it turns out to be a deadly new monster terrorizing Victoria Island? Please go check so we can prepare for this threat!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1094000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2190" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3246" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3381" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3713" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008111100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

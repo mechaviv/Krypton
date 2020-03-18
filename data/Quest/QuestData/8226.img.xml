@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8226.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Fallen Warriors" />
+        <int name="area" value="45" />
+        <string name="0" value="I should speak to Taggrin to see if he has another task for me." />
+        <string name="1" value="Taggrin has one more task for me: he wants me to hunt down the #bElder Wraiths#k and collect #b50 of their Elder Ashes#k.  Warning me that this would be no easy task, he explained that the wraiths are the souls of brave Crimsonwood Keep warriors who fell in battle in the forest, protecting the Keep from the invading Krakians.  Never given a proper burial, they have become mindless undead, threatening the Keep's foes and innocent travelers alike.  With these ashes, Taggrin intends to give these noble lost souls the final rest they so rightfully deserve." />
+        <string name="2" value="Taggrin was impressed that I manage to collect the ashes from the Elder Wraiths.  I can now speak to #bFiona#k about #bupgrading any Raven Ninja gear#k I may have!  Taggrin also mentioned that the talented ninja smith has experimented with some weapon designs of her own; I should speak to her about the possibility of #bcrafting new items#k from scratch. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032010" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="The ashes!  If I may take them from you?  Please... handle them with reverence" />
+            <string name="1" value="You have earned my respect.  While you are not one of us, I welcome you as a fellow clan member." />
+            <imgdir name="yes">
+                <string name="0" value="Go speak to Fiona.  In addition to being a skilled fighter, she is a talented weapon smith.  If you have earned any of our Raven gear from Joko, Fiona can reforge these items to become even more powerful than they already are.  You may also wish to speak to her about some of her unique creations." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032010" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8225" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8226s" />
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

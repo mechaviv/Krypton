@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3626.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on Hongbu and Nolbu (Hongbu)" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook after helping out Hongbu. Where did it go? Should I go see Hongbu again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get #b#t4031235##k for him. Hmmm ... I'm pretty sure I received it the last time I helped Hongbu out, but I can't seem to find it. After discussing the matters with Hongbu, he promised to give me the storybook if I gather up #b10 #t4000168#s#k and give them to the Swallow with the injured wing.\n\n#t4000168# #b#c4000168##k/10" />
+        <string name="2" value="I gave Swallow 10 #t4000168#s just as Hongbu requested to reacquire #t4031235#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000168" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031235" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, hello! It's so good to see you!! How have you been? I guess you have been sticking around the Folk Town for a little bit. I know, my house may still not be the most hospitable place for visitors, but please stay. Have some tea." />
+            <string name="1" value="Thanks to your tremendous work, our family won't ever have to starve again. Again, thank you so much for all that. Anyway, how can I help you this time around? Did something terrible happen? If you need me for a favor, I'm all yours. Just tell me." />
+            <string name="2" value="You lost the storybook that I gave you? Don't worry about it too much. There's a way to obtain another copy. I'll tell you how." />
+            <imgdir name="yes">
+                <string name="0" value="I think you've met it before. Head over to the town entrance, and Swallow should stlil be there. Its wings still have not been healed, and that's why it's still in town. I've been visiting it everyday, helping it cure its wings. I suggest you go there today. 날개가 다 낫지 않아서 아직 마을에 머물고 있죠. 제가 매일 찾아가서 상처를 치료해주고 있는데, 오늘은 당신이 한번 가보세요." />
+                <string name="1" value="Try talking to Swallow and bring #b10 #t4000168#s#k with you; it has the same storybook that I had, and it'll be more than willing to trade for it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here because you needed the storybook? If not, then how can I help you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey! I heard you gave that seed to Hongbu. I guess that seed was meant for Hongbu afterall. Hongbu told me you were looking for the storybook? Well, I have one myself. If you give me that delicious #t4000168#, then I'll give you the storybook." />
+            <imgdir name="yes">
+                <string name="0" value="Yeah~! It's #t4000168#! By the way, what do you plan on doing with that storybook? I admit, the book seemed quite interesting when I skimmed through it while I was bored. I mean, the book was ... um ... the book was ... I don't remember..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Man, I'm hungry~ I better eat well and get well soon so I can fly south. I'd love to have some #b#t4000168#s#k right about now. #b10#k should definitely fill me up." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000168" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3615" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3608" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031235" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

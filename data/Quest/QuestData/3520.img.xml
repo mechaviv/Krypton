@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3520.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Goddess' Blessing" />
+        <string name="parent" value="Road to Oblivion" />
+        <int name="order" value="1" />
+        <int name="area" value="46" />
+        <string name="0" value="I received permission from #p2140000#, but once I went deep inside the temple, something was stopping me and I couldn't go in further.  What did I lose this time?  I should go see #b#p2140000##k." />
+        <string name="1" value="#p2140000# scratched his head and said he didn't know what happened this time.  He said unless I lost my Oblivion, which doesn't even make sense, there should be no reason I can't pass through the Road to Oblivion. \n\nHe suggested that maybe the #bGoddess' Promise#k has been broken and told me to go see  #b#p2140003##k to check the records of the promise." />
+        <string name="2" value="I met with #p2140003#.  He said he had been waiting for me and began explaining things as if he already knew what was going on.  He said that the blessing of the Goddess of Time, can never disappear or be taken away, and it was still valid... However, he said there is another reason why I can't go deep into the temple." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Wait a minute.  Don't tell me that you can't get into the deepest part of the temple?  It should be no problem. \r\n#L0# #bIs it the same as before?  You can go there, but the way is blocked.  You don't think my oblivion was burnt by #o8220006# flames, do you?" />
+            <string name="1" value="An oblivion isn't a piece of paper or something that can catch fire.  That's strange.  You passed the test and got your permissions, there isn't anything that should be stopping you... What do we do here... \r\n#L0# #bIs there a solution?  " />
+            <string name="2" value="Your other problems were expected.  But, this is different.  An oblivion never disappears.  If it were to disappear that could only mean that the #bGoddess' promise#k had been broken...That can't be.... \r\n#L0# #b(The Goddess' promise?)" />
+            <string name="3" value="There's no reason to believe that yet, but we should check just in case.  Go visit #b#p2140003##k and ask what happened to the Goddess' promise.  He is the Record Keeper of everything, so he is the only one who would be able to tell you." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If the promise has been broken, we might need to wake the Goddess up from her sleep." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This doesn't simply concern the Temple of Time but it can affect the entire Maple World and its people.  Don't just brush it off that easily." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="I've been waiting for you, young adventurer.\r\n#L0# #b I came because I have something to ask you.  " />
+            <string name="1" value="Long ago, the Goddess of Time gave humans the blessing of forgetfulness known as Oblivion.  This gift was to never disappear or be taken away, forever to remain with humans....\r\n#L0# #bSo...what happened... " />
+            <string name="2" value="The Goddess' promise has not been broken.  It is still valid.  The fact that you have oblivion is evidence.  There's another reason why the deepest part of the temple is blocked off.  \r\n#L0# #bThe reason is..." />
+            <string name="3" value="Well, I can't tell you the exact reason why.  #p2140000# should know.  Just tell him what I said, and he should know.  Goodbye." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to see #b#p2140003##k?  #p2140003# is at the #b#m270030411##k somewhere on the Road to Oblivion." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3519" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="135" />
+        </imgdir>
+    </imgdir>
+</imgdir>

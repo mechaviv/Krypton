@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4307.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Ghosts" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9120003##k of #b#m800000000##k seems to have something to tell me. I wonder what it is..." />
+        <string name="1" value="#p9120003# told me I have a whole bunch of #o9400003#s around me. That's creepy, to say the least. I better kill off #b80 #o9400003#s#k right now.\n\n#o9400003# #r#a43071#" />
+        <string name="2" value="After letting #p9120003# know that I've killed 80 #o9400003#s, she tells me that there aren't any #o9400003#s hovering around me. Phew..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="거기 너! 자네 말이야! 자네에게는 지금 절실한 조언이 필요한 것 같은데... 어때 들어보지 않겠느냐? " />
+            <imgdir name="yes">
+                <string name="0" value="혹시 요즘 이상하게 뒤통수가 뻐근하고 허리가 결리며 팔다리에 힘이 없고 쉽게 지치지 않느냐? 아무리 빨간 물약을 먹어도 금새 체력이 사라지고, 아무리 파란 물약을 먹어도 도움도 되지 않는 것 같은 기분이 들지는 않고? 들지 않는다고? 들 텐데? 들고 말 텐데?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="네가 피곤한 이유는 #o9400003# 때문이야! #o9400003#이 붙은 거지! 당장 그걸 퇴치해야 해! 자, 당장 #o9400003# 100마리를 퇴치하게!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey you! Yes, you! You look like someone that can seriously use a good advise right now. What do you think? Do you want to hear it?" />
+            <imgdir name="yes">
+                <string name="0" value="Have you been feeling heavy on your neck, with your back aching and your legs shaking, and you feel fatigued for no apparent reason? You feel tired even with the red potion in your hand, and you just can't seem to do anything even after taking the blue potion. I know you might be going through that right now. Right? No? Right? No, it SHOULD be right!" />
+                <string name="1" value="The reason you seem lethargic is because you're stuck with #o9400003#! With #o9400003#!! You need to get it off immediately! Now, go out there and kill #b80 #o9400003#s#k!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...hmmm, so you are saying no to a sound advise. That's your loss." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, did you really kill all those #o9400003#s?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Now that #o9400003#s are nowhere to be found, my, I mean, our lives will be a little easier. You don...t believe me? Well, then ... I don't know what to tell you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Huh? You haven't killed them all yet! You need to kill #b100 #o9400003#s#k! All of them!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120003" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400003" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120003" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

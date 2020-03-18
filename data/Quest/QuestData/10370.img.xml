@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10370.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Master of Combos" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You reach Level 15 and #b#p9010010##k approaches you to start a conversation..." />
+        <string name="1" value="Highest Score : #e#r#R10335##b#n Combo#k\n" />
+        <string name="2" value="You were able to check your highest combo score. You're think you're starting to get used to combos now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, Aran! How's it feel to return to Maple World? Are you still sore? Do your muscles ache? Haha, we know you're still struggling to adapt to the new world, so we prepared a nice #bevent#k for you. Wanna hear what it's all about?" />
+            <imgdir name="yes">
+                <string name="0" value="The event is called Find the Master of Combos! You know combo attacks are your specialty, right? This event is all about combos! When your Combo score reaches a certain level, you'll be acknowledged as a master of combos and get a medal! " />
+                <string name="1" value="#i1142134# Over 50 #t1142134#\n#i1142135# Over 200 #t1142135#\n#i1142136# Over 500 #t1142136#\n...Doesn't look that easy, does it? But I think you can do it." />
+                <string name="2" value="If you don't know what your highest combo record is, don't worry. I'll tell you. Anytime you check your score, if you meet the requirements, you'll get a medal! Isn't that cool?" />
+                <string name="3" value="Oh, and one more thing. The MapleStory website is currently running a web event related to this as well. Anyone that has received a medal will automatically be entered into a raffle for some some amazing prizes!" />
+                <string name="4" value="Oh, I almost forgot to tell you the most important thing. The event runs from #bDecember 10th to January 19th#k. That means you only have a limited time to show off your skills. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? You're not interested in the event? If you change your mind, let me know!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q10370e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="15" />
+            <string name="end" value="2010012000" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

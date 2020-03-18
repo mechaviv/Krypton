@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1036.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Robin the Walking Encyclopedia" />
+        <int name="area" value="20" />
+        <string name="0" value="#bRobin#k, who mutters excitedly to himself as he stands at Snail Hunting Ground 1, knows a lot about job advancement. Perhaps you should speak with him." />
+        <string name="1" value="Robin promises to teach you everything you could ever want to know about stats, AP, and job advancement. But you have to take a quiz afterwards. He seems awfully fixated on that quiz... Guess you should talk to him and study up before continuing with the quest 'Robin the Walking Encyclopedia.'" />
+        <string name="2" value="You passed Robin's quiz! He looked a little wistful as you walked away, as if he wanted to give you another one..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="40" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A new traveler! You should have some #bAP#k by now. Did you #bdistribute it#k? No? Then, allow me to teach you a thing or two. I'll give you a #bquiz#k at the end to make sure you understand stats, AP, and job advancement. Oh, I do so love any excuse for a quiz!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Click on me again and ask me all your questions! Once you're confident you have all the answers, click on the #bRobin the Walking Encyclopedia#k quest to start the quiz! Hehehe, quizzes make me sooo happy!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aha! You think you already know everything, eh? If so, then I dare you to take my quiz. Do it! Make my day!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Ready for the quiz? Yippee! First question! When you level up, you get #bAbility Points, or AP for short#k. You use AP to raise your #bSTR, INT, DEX, and LUK#k stats. As a #rBeginner#k, is it possible to raise your #bHP and MP#k with AP?  \r\n#b#L0# Yes, it's possible. #l\r\n#L1# No, it's not possible. #l" />
+            <string name="1" value="I'm so happy with your correct answer I could cry! Pardon me... Ahem, as I was saying, yes, you can only use AP to raise your HP and MP after your first job advancement. Next! When you reach a certain level, you can make your job advancement. #bNormally, you have to be Level 10,#k but which job #blets you make a job advancement at Level 8#k?\r\n#b#L0# Warrior #l\r\n#L1# Magician #l \r\n#b#L2# Bowman #l \r\n#b#L3# Thief #l \r\n#b#L4# Pirate#l" />
+            <string name="2" value="Ding, ding, ding! Yes! Only Magicians can undergo job advancement at Level 8. Laaaaaast question! Here's a list of jobs and the locations where you undergo job advancement. #bWhich of these do not match?#k\r\n#b#L0# Warrior  -  Perion #l\r\n#L1# Magician  -  Ellinia #l \r\n#b#L2# Bowman  -  Henesys \r\n#b#L3# Thief  -  Nautilus" />
+            <string name="3" value="Yesssss! #bThieves must go to Kerning City!#k Only #bPirates go to the Nautilus for their job advancement#k! Bravo! Now you'll have no trouble picking a job when the time comes. Thank you for humoring me. This quiz totally made my day!" />
+            <imgdir name="yes">
+                <string name="0" value="Plan ahead and think about what job you'd like. When you make your job advancement, your AP will be redistributed to fit your new job. So you don't need to worry about your AP just yet." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Please reconsider." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="WRONG!! Only Magicians can make their job advancement at Level 8, because users that have raised INT to become a Magician have a rougher time leveling up at first. RESTART!" />
+                    <string name="2" value="WRONG!! Only Magicians can make their job advancement at Level 8, because users that have raised INT to become a Magician have a rougher time leveling up at first. RESTART!" />
+                    <string name="3" value="WRONG!! Only Magicians can make their job advancement at Level 8, because users that have raised INT to become a Magician have a rougher time leveling up at first. RESTART!" />
+                    <string name="4" value="WRONG!! Only Magicians can make their job advancement at Level 8, because users that have raised INT to become a Magician have a rougher time leveling up at first. RESTART!" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Noooo!! Hehe, I love saying that. Warriors to go Perion, Magicians go to Ellinis, Bowmen go to Henesys...and Thieves go to Kerning City. I gave you the answer, so now...start over from the BEGINNING. Muahaha!" />
+                    <string name="1" value="Noooo!! Hehe, I love saying that. Warriors to go Perion, Magicians go to Ellinis, Bowmen go to Henesys...and Thieves go to Kerning City. I gave you the answer, so now...start over from the BEGINNING. Muahaha!" />
+                    <string name="2" value="Noooo!! Hehe, I love saying that. Warriors to go Perion, Magicians go to Ellinis, Bowmen go to Henesys...and Thieves go to Kerning City. I gave you the answer, so now...start over from the BEGINNING. Muahaha!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2003" />
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

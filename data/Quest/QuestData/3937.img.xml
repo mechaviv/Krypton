@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3937.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The True Identity of Sand Bandits" />
+        <int name="area" value="44" />
+        <string name="0" value="You have passed all the tests, and you have heard from each member of the Sand Bandits that they accept you. Now you should find their secret headquarters." />
+        <string name="1" value="The captain of the Sand Bandits, #b#p2101010##k, tells you a story about the queen of #m260000000#. He then requests that you look around #m260000000# and decide if you really want to join the Sand Bandits." />
+        <string name="2" value="You are finally member of the Sand Bandits, thanks to #p2101010#. As a member, your job is to do your best for the people of #m260000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="자네가 바로 #p2101011#, #p2101003#, #p2101002#가 말하던 바로 그 사람이군. 지금까지 단원 테스트를 잘 통과해 주었네. 그럼 자네에게 #m260000000#에 대한 이야기를 해주지. " />
+            <string name="1" value="#m260000000#는 니할 사막을 떠돌던 유목민들이 만든 나라라네. 척박한 사막이지만 오아시스와 #t4011008#이 있기에 교역의 중심이 되고 있다네. #t4011008#은 사막에서만 만들어지는 특별한 광석이지. 비싼 값에 거래되기 때문에 #m260000000#를 부유하게 만드는 주요 자원이지." />
+            <string name="2" value="하지만 마을을 보게. #m260000000#는 절대 부유해 보이지 않는다네. 그 이유는 단 하나. 왕비 때문이야. 요정 출신이라는 왕비는 사치스럽고 잔인하지. #m260000000# 주민들이 내는 세금은 모두 그녀가 보석을 사는데 쓰이고 만다네. 어떤가? 이제 #m260000000#에 대해 좀 알겠는가?" />
+            <imgdir name="yes">
+                <string name="0" value="좀 더 #m260000000#를 다니면서 이곳의 분위기를 파악해 보게. 모래그림단으로서의 각오가 선다면, 다시 와서 말을 걸어주게나. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아직 모르겠는가? 그렇다면 다시 이야기를 해주겠네." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031581" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be the one that #p2101011#, #p2101003#, and #p2101002# have been talking about. You've done well passing their tests. Now, let me tell you a story about #m260000000#." />
+            <string name="1" value="#m260000000# was founded by wanderers in Nihal Desert. Now, the place may not look like much, but thanks to #t4011008# and the oasis, Ariant has become a center of commerce. #t4011008# is an ore found only in the desert. Since it's very valuable, it's the main source of wealth for #m260000000#." />
+            <string name="2" value="But look around. Where has that wealth gone? #m260000000# is falling apart around us, and there's only one reason: the queen. This so-called fairy queen is frivolous and heartless. Our taxes go to pay for her jewels while #m260000000# suffers! Do you understand now the pain of #m260000000#?" />
+            <imgdir name="yes">
+                <string name="0" value="Then wander through #m260000000# some more and open your eyes. See what this place is really like! If you are sure you want to be a part of the Sand Bandits, let me know." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You still don't get it? Then I'll tell you the story again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you ready to fight the queen as a member of the Sand Bandits, for the sake of #m260000000#?" />
+            <imgdir name="yes">
+                <string name="0" value="Then from here on out, I proudly accept you as an official member of the Sand Bandits. Go now to meet the brothers and sister who stand by your side." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3930" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3933" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3936" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

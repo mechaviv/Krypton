@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2071.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stranger's Request" />
+        <string name="parent" value="Mystery of Naora Hospital" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard there is someone in Naora Hospital in Kerning City..." />
+        <string name="1" value="I met #b#p1052105##k in Naora Hospital in Kerning City. #b#p1052105##k wanted to see how the surgery went, but there was no mirror. #b#p1052105##k asked me to hunt down a #bWild Boar#k and collect #b20#t4031155##k...\n\n#t4031155# #c4031155#/20" />
+        <string name="2" value="For the Stranger I met in Naora Hospital, I actually collected #t4031155# and brought back to her." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031155" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2072" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Man, why is it so cold here??? Um, hey ... do you know where Dr. Naora is, by any chance? Today's the day I get these bandages off, but I can't see anything. I need to see if the surgery went right. Well, if you got time, can you help me out??" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, thanks a lot. I need to get these bandages off and look at myself in the mirror, but there seems to be no mirror around here. I heard that #b#o2230102##k, that live in the mountains, may give out #b#t4031155##k. Please get me #b20 #t4031155#s#k, I'll greatly appreciate it. By the way, why is it so cold around here????" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="............ I guess that's a no. Why is it so darn cold around here?? And where is Dr. Naora??" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up #b20 #t4031155#s#k yet. Please get them for me ... it is waaaay too cold around here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031155" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052105" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8018.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sakura's Crying" />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go see Sakura, who's crying. I wonder if I can help..." />
+        <string name="1" value="I better talk to Sakura, who still weeps in sorrow. There must be something that I can do, but what?" />
+        <string name="2" value="Sakura murmured something while crying. Perhaps this is the reason behind the flowing tears..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8008" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sakura must be still crying. Go see what's up with her." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Sniff... sniff..." />
+            <imgdir name="yes">
+                <string name="0" value="Would you please sit down and listen to my story?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You didn't go see Sakura yet? You are so mean~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8007" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

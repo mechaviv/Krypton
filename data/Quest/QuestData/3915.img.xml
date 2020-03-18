@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3915.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Schegerazade's Storybook" />
+        <string name="parent" value="Schegerazade the Storyteller" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="As suggested by #p2040052#, #p2101008# put her stories together into a book. All you have to do now is give this to #b#p2040052##k, right? Okay off to #b#m222020000##k." />
+        <string name="2" value="#p2040052# saw the pages that #p2101008# wrote and was clearly happy with it. Hopefully this book will allow #p2101008# to concentrate on her work... Better get back to #p2101008#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031572" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031572" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="As you requested, I've combined all the pages of the stories I know into a book. Can you please give this to #b#p2040052##k of #b#m222020000##k?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Without your help, I would have been trapped in here, worried sick..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's a long, long way from here to Helios Tower. I understand if you don't feel the urge to return there." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, so you went all the way back to #m260000000# where #p2101008# is! I can tell because you're covered in sand. So. That's the storybook compiled by #p2101008#? Ohh... Ahh… Hmm... Amazing! There are so many good stories in here!" />
+            <imgdir name="yes">
+                <string name="0" value="Now, I'll give you the book for #p2101008#. Where did I put it... Can you hold on one second?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #b#m222020000##k? It's far from here, so you may want to hurry." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="When will I be able to receive #b#p2101008##k's storybook? I am anxious to see what's inside...." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the storybook I gave you? Fortunately, the guard in the palace found it and returned it to me. It's the only copy that exists, so please handle it with utmost care." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031572" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3914" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="36" />
+        </imgdir>
+    </imgdir>
+</imgdir>

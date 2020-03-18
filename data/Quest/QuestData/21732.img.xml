@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21732.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Black Wings' Conspiracy" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="The document you extracted from #o9300344# turns out to be a Black Wings document! Unfortunately, the document is written in code. What should you do? Go to #b#m104000000##k and talk to #b#p1002104##k for some advice." />
+        <string name="1" value="Looks like the only person that can decode the document is #p1201000#. Head over to #b#m140000000##k and ask #b#p1201000##k to help." />
+        <string name="2" value="The document says that the Black Wings possess an item known as the #t4032323#. #p1204002#, the puppeteer, is utilizing his special skills in mob manipulation to look for a certain Seal Stone. But what does that mean? What exactly are the Black Wings after?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032341" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032341" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Who is the person that can break the code? Simple. It's #b#p1201000##k! Books on Prophecies and other old documents are always written in code, and #p1201000# has always had a knack for figuring them out. #p1201000# will probably be able to break the code in no time!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll hand this back to you now, and I want you to return to #b#m140000000##k with it. I'm sure #p1201000# will be able to help us." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, hey, hey, what are you saying? What's more urgent than this? Are you worried that #p1201000# might get mad at you for forgoing some training? You just have to explain it to her." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...? Aran? What are you doing here? You should be training. What? You want me to decipher this document?" />
+            <string name="1" value="…I have no clue what's going on, but judging from the look on your face, it looks like something very important. Okay, I'll go ahead and decipher it. Just give me a few moments. It looks pretty complex, but I don't think this will take too long." />
+            <string name="2" value="Okay, done. This is a report written by one of the members of the Black Wings that details their future plans. I'll explain to you exactly what's being said here." />
+            <imgdir name="yes">
+                <string name="0" value="I don't know why, but the Black Wings are desperately in search of something here in Victoria Island. What they are looking for is called the #bSeal Stone#k. The #o9300344# #p1204002# is controlling monsters to look for the Seal Stone that disappeared. The document reads, #b'there were some unforseen disturbances from an outside force, so we were not able to complete the mission. We need more Teddies to help us so we can find it fast.'#k So they're going to involve more monsters to find it. And that's all it says." />
+                <string name="1" value="The Seal Stone… I wonder what that is. Whatever it is, I'm sure it is somehow #brelated to the Black Mage#k since the Black Wings are after it. As for the outside disturbances that's mentioned in this document, they may be referring to you." />
+                <string name="2" value="Not only have you stood in the puppeteer's way a number of times, but you have also discovered their strategy and plans. The puppeteer probably hates you more than anything else right now. Besides, the puppeteer knows your face, right? Please be extra careful. #bSurely, he will come after you#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#m140000000##k yet? The one person that can decipher that book is #b#p1201000##k, I'm telling you. Once the book is deciphered, we'll be able to figure out what the Black Wings are looking for. Hurry! We don't have much time!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What is it? What brought you back here? I thought you were suppoed to be diligently training. I thought I told you the only way you'll recover your abilities is through endless practices and training, didn't I?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Wow, Aran, I never saw you in that light… I didn't think you'd be so clumsy. How can you drop a pivotal item like this in the streets? Good thing another informant immediately returned this to me. Anyway, I'll give you another one right now. Make sure not to lose it, okay? Go to #b#m140000000##k and deliver it to #b#p1201000##k." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032341" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21731" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

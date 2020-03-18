@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Basic Fitness Training 2" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Basic Training continues. If you want to start the second stage of Basic Training, you should talk to #b#p1201000##k." />
+        <string name="1" value="#p1201000# says that this time you have to go to #b#m140020100##k and defeat some #r#o0100132#s#k. Come to think of it, #p1201000# seems different from the time you first saw her, back when she had that mystical aura about her..." />
+        <string name="2" value="You defeated the #o0100132#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="450" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000023" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shall we continue with your Basic Training? Before accepting, please make sure you have properly equipped your sword and your skills and potions are readily accessible in Hotkeys." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. This time, let's have you defeat #r#o0100132#s#k, which are slightly more powerful than #o0100131#s. Head over to #b#m140020100##k and defeat #r15#k of them. That should help you build your strength. Alright! Let's do this!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready to hunt the #o0100132#s yet? Always proceed if and only if you are fully ready. There's nothing worse than engaging in battles without sufficient preparation." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you were able to defeat all the #o0100132#s like I asked? You do look like you have gotten a bit stronger. Somewhere on the scale of...penguins flapping their wings?" />
+            <imgdir name="yes">
+                <string name="0" value="Train a bit more, and you may one day be strong enough to carry a penguin all by yourself. Now talk to me when you're ready to move on to the next level." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated all the #r#o0100132#s#k yet. Please let me know when you have defeated all #r15#k of them. It's not that hard, is it? Come on, head to #b#m140020100##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100132" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21015" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21016s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

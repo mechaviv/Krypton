@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Test from the Head of Zenumist Society" />
+        <string name="parent" value="Joining Zenumist" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Bourne of a true union of science and magic... #bZenumist, is a society of pure alchemy#k. With the conflict raging in #m261000000#, however, Zenumist doesn't seem to accept outsiders. I really want to join them, though... I better go see #b#p2111007##k." />
+        <string name="1" value="#p2111007# told me in order to join Zenumist, I'll have to run the rigorous test of showing my lab results to the president of the Zenumist Society. But he also said if I can get him #b2 ores of jewels, regardless of type#k, then he'd take care of the rest..." />
+        <string name="2" value="After giving #p2111007# 2 ores, he told me to wait.  I hope I get in!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="원하는 것이라면 무엇이든 구해주지. 물론, 메소를 준다면 말이야... 자, 네가 원하는 건 뭐지?\r\n#b#L0#제뉴미스트에 가입하고 싶어요.#l" />
+            <string name="1" value="호오~ 제뉴미스트 말인가? 거긴 가입하기 쉽지 않아. 정통 학파랍시고 아주 까다롭게 굴거든. 제뉴미스트에 가입하려면, 연금술사로서 그동안 연구한 성과물을 협회장 앞에서 연성해 보여야 한다고. \r\n#b#L0#그럼 불가능하다는 이야기인가요?#l" />
+            <string name="2" value="그럴리가... 후훗. 이 #p2111007#은 고객이 원하는 건 뭐든지 들어준다고. 30000메소만 주면 제뉴미스트에 가입할 수 있도록 해주지. 어때, 해보겠어? 장담하건데, 이 #m261000000#에서 널 도울 수 있는 사람은 이 #p2111007# 뿐이야. " />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Do you really think Magatia is a town full of scholars with pure intent on research? That's nonsense. There's no other town that bickers over territory for their own good like them. The days of scholars purely searching for the truth is long gone... well, that's perfect for brokers, though.\r\n#b#L0#Is there a big conflict?#l" />
+            <string name="1" value="Yes, which makes life harder for travelers like you. People are in so much conflict between one another that it's hard to join either of the two forces. There's so much mistrust in the air that the outsiders will have a hard time entering their tight circle. If you ever went there, you know what I am talking about.\r\n#b#L0#A little bit...#l" />
+            <string name="2" value="If you want to know more about the situation in Magatia, you will have to join either Zenumist or Alcadno, and be part of the group. Even that is going to be difficult, but... your humble broker knows a way or two to get in. What do you think? Are you interested in joining #bZenumist#k? \r\n#b#L0#I am interested in becoming a part of Zenumist.#l" />
+            <string name="3" value="Hahaha... I knew you would Say that. An adventurer like you would never reject an opportunity like this. I have to warn you, though, that joining the Zenumist sect is not easy. They believe that they are the true scholars, and they treat themselves as an exclusive bunch. In order to join Zenumist, you'll need to present to them your work as an alchemist. \r\n#b#L0#Does that mean it's impossible?#l" />
+            <string name="4" value="Of course not... haha. I, #p2111007#, find ways to satisfy every client that pays me. If you can bring me 2 ores of a jewel that can be turned into mesos, then I'll help you join them. I am telling you, I am the only person here that can help you here in #m261000000#." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="That's the right decision. Come back to me when you are ready to make the deal. I don't care which jewel it is, just get me #b2 jewel ores#k that'll make me some money. It's not that hard, is it? That should be enough for me to help you join the Zenumists..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You declined? You must be very confident in conducting alchemy in front of those scholars." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111007" />
+            <string name="endscript" value="q3301e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

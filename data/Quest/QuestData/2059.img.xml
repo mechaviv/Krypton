@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2059.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Special Taste of Florina Beach II" />
+        <int name="area" value="30" />
+        <string name="0" value="Riel in Florina Beach askes me a question about Florina Beach. Piece of cake~ I can answer that  before I start my work." />
+        <string name="1" value="I have to prepare the recipe for 12 people, and bring it to Riel in Florina Beach.\n\n#t4000136# #c4000136#/#r12#k \n#t4000043# #c4000043#/#r130#k\n #t4000029# #c4000029#/#r12#k" />
+        <string name="2" value="I answered all the questions that Riel gave me. I passed Riel's tests and she took the recipe for 12 people." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="7500" />
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="-12" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="-12" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000043" />
+                    <int name="count" value="-130" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I'm sure you know this and all, but I'll still ask. Which of these monsters will you not be seeing at the Florina Beach? \n\n#L0##bTortie#l\n#L1#Clang#l\n#L2#Croco#l" />
+            <string name="1" value="I'm glad you know the basic stuff around here. I'm just worried you may wander around and hunt around stuff without knowing what you'll be facing. Well, shall we get this started?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="You'll find Tortie at the right side of the beach..." />
+                    <string name="1" value="One of the more renowned treats at the Florina Beach is the 'Clang's Claw' special!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll explain to you more about this job. I need #b12 #t4000136#s#k for some coconut juice, #b130 #t4000043#s#k for the meals, and #b12 #t4000029#s#k for the desert. Please get me the freshest materials available!! \n\n #i4000136# 12 #t4000136#s\n#i4000043# 130 #t4000043#s\n#i4000029# 12 #t4000029#s" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect them all? If the materials aren't fresh, I may not pay you for your service. Of course, you also can't be short on those. Now, let's see ..." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, you got them all!!! The sweet-smelling coconut ... the tasty-looking claws ... and the fresh batch of bananas ... good job!! We have been booking more tourists lately, and I can sure use someone like you again. If you're looking for more work, then come talk to me. I feel like I can trust you to take on some of the harder tasks. I should even raise your pay, then!!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I think you're lacking some. Please check and see if you have all of the #b15 coconuts, 150 of Lorang's Claws, and 15 of Lupin's bananas.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="12" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="12" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000043" />
+                    <int name="count" value="130" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2058" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

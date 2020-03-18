@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3507.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Memory Keeper" />
+        <string name="parent" value="Memory Lane" />
+        <int name="order" value="2" />
+        <int name="area" value="46" />
+        <string name="1" value="I went to go see #p2140001# just as #p2140000# told me to.  He immediately knew that I lost my memory and said in order to retrieve the lost memory, I would need to go back to the beginning where my adventure began... " />
+        <string name="2" value="After talking to the Memory Keeper, I went to my previous job post at Victoria Island to retrieve my memory.  I wonder if I got my memory back?  I guess I'll know when I try to go past Memory Lane..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="359900" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The memory you lost... The memory of those innocent days when you were just a new adventurer learning the ropes.  If you want to restore those memories, you have no choice but to return to that time..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go back to the starting point when your adventures began.  The place where everything was new and fascinating, where you were filled with curiosity, excitement, and anticipation..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't underestimate the power of a memory.  You are who you are today because of the memories you have..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You are now filled with all of your memories again.." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140001" />
+            <int name="infoNumber" value="7081" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3506" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="103" />
+        </imgdir>
+    </imgdir>
+</imgdir>

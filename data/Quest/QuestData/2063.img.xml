@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2063.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mrs. Ming Ming's Second Worry" />
+        <string name="parent" value="Mrs. Ming Ming's Second Worry" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard Mrs. Ming Ming in Henesys has a new worry..." />
+        <string name="1" value="I met Mrs. Ming Ming again in Henesys who was preparing for the village festival. She said she needs food to prepare for the festival, and asked me to collect #b20 Pig's heads, 60 Octopus Legs, and Estelle's Special Sauce#k. To get the special sauce, I think I'll have to go find Estelle near Ellinia." />
+        <string name="2" value="I met up with #bEstelle#k near Ellinia to get her #bSpecial Sauce#k, but she apparently she doesn't want to give it to me for free..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2400" />
+            <int name="nextQuest" value="2064" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you're back! I'm putting the materials you got me last time to good use. The town is ready for the Carnival that's coming up really soon. Unfortunately, there's another problem at hand. Do you want to hear me out?" />
+            <imgdir name="yes">
+                <string name="0" value="I can't thank you enough for saying yes. Decorating the town for the Carnival is important, but it's much more important to offer the tourists some food, you know? The problem is that we've run out of the materials for the big feast." />
+                <string name="1" value="Can you please get me #b20 #t4000017#s, 60 #t4000006#s, and 1 #t4031154##k? You can find #t4031154# through #b#p1032105##k , who should be around Ellinia.. Good luck!!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you were going to help. If you feel like changing your mind, though, then please come see me. I need as much help as I can get!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I need lots of materials for the big feast at the Carnival. Can you please get me #b20 #t4000017#s, 60 #t4000006#s, and 1 #t4031154##k? You can find #t4031154# through #b#p1032105##k , who should be around Ellinia.. Good luck!!!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032105" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2062" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="21" />
+        </imgdir>
+    </imgdir>
+</imgdir>

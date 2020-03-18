@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4952.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Infernal Toy Machine" />
+        <int name="area" value="50" />
+        <string name="0" value="I keep hearing the groans and bellows of machinery echoing through the house.  What is making this racket?  Is it where these infernal toys are coming from?" />
+        <string name="1" value="I found Jonas Prendergast in his Toy Workshop at the top of the house, in front of a huge toy machine which seems to be the source of all these infernal toys!  It seems that his machine is not functioning properly.  If I collect #b50 Firewood#k, #b25 Screws#k, and #b25 Loaded Springs#k, Jonas can build the replacement part to get his machine working properly again.  I know that the Rocking Horses will have the #bFirewood#k and the Psycho Jacks will have the #bScrews and Loaded Springs#k.  I've got to get what Jonas needs-perhaps this will stop it from churning out all these crazy toys!" />
+        <string name="2" value="I collected the parts Jonas needed to fix his machine.  I hope I haven't simply helped a madman create more of his messed up toys." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000399" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Who's disturbing me?  Sophilia... my darling girl, is that you?  Eh?!  You're not her!  Who are you?  Why are you bothering my work?\r\n\r\n#L0##bUm... Are you the one responsible for all these crazy toys?#l#k" />
+            <string name="1" value="Toys?  Toys!  Yes!  I am Jonas Prendergast, Master Toymaker!  My toys bring delight to children all over Maple World!  Yes... I must continue to make more... for the children.  Unfortunately, I've run into a bit of a jam.  Where is Edmunds when you need him?  Edmunds!  Hmmm... maybe you can help me?\r\n\r\n#L0##bUm, sure.  What do you need?#l#k\r\n#L1##bI think it's a good thing your machine is broken." />
+            <string name="2" value="There's something wrong with my Toy Machine.  I tried to recalibrate the automation system, and one of my tools fell into the gears.  You should've seen the smoke!  It's a good thing I wasn't sucked into the machinery!  That would have been very nasty.  In any case, I finally figured out what's wrong... yes, yes, one of the Assembler Actuators must have gone kaput.  I'll need to build a replacement to get the machine working properly again.  Only thing is, I don't have the materials to it.  Say, think you can help?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hmph... not like my darling Sophilia at all!  My beautiful daughter would help her father in an instant!  Now where did she go?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Excellent!  If you can get me #b50 Firewood#k, #b25 Screws#k, and #b25 Loaded Springs#k, I think I can build a new Assembler in no time!  Tick-tock, time's a wastin'!  Where can you get these materials?  Why, I used them to build all the toys I make... I'm sure you can find them lying about.  Do, hurry and collect them!  Remember, there are many children out there waiting for my wonderful, wonderful toys!  We mustn't keep them waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmph... not like my darling Sophilia at all!  My beautiful daughter would help her father in an instant!  Now where did she go?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, yes!  This is exactly what I need to fix my Toy Machine.  Very good!  I shall begin building the part immediately." />
+            <imgdir name="yes">
+                <string name="0" value="Come back in a little while and I may have some more work for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I see you haven't gotten all the materials I need to build a new Assembler.  Tick tock, time's a wastin'!  Every second lost is another child without a toy!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201077" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000399" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201077" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4945" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

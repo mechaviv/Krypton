@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="How Well Do You Know Your Skills?" />
+        <int name="area" value="15" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Get some information on skills from #b#p1102006##k. " />
+        <string name="1" value="#p1102006# informed you that you can open your Skill window by pressing the #bK key#k and suggested that you hunt #r3 #o100121#s#k and bring #b1 #t4000483##k to prove that you know how to use your skills." />
+        <string name="2" value="You've come back after hunting the #o0100121#s and brought back a #o0100121#'s feather. #p1102006# says #p1102007# is waiting for you. Proceed to the left." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You've defeated the #o0100121# and brought me the #o0100121# Feather. I'm impressed! I'm going to assume that you've completely understood and processed how to use the skill now. Let's go on to the next stage then." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You either have not yet defeated 3 #o0100121#s, or you haven't acquired the #o0100121# Feather. You'll be able to accomplish your mission if you just keep hunting the #o0100121#s. " />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You either have not yet defeated 3 #o0100121#s, or you haven't acquired the #o0100121# Feather. You'll be able to accomplish your mission if you just keep hunting the #o0100121#s. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000483" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q20012e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100121" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20012s" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title - Spirit Diviner" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142137" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You can apparently acquire the title of #b&lt;Spirit Diviner&gt;#k by eliminating undead monsters and sending them back to nirvana…" />
+        <string name="1" value="#b#eTitle - Spirit Diviner#k#n\r\nEliminate undead monsters and send them back to where they came from.\r\n&lt;Collect at least 1 Monster Card&gt;\n#b#t2382040#\n#t2382049#\n#t2383002#\n#t2383005#\n#t2383008##k\n\n&lt;Eliminate Monster&gt;\n#o4230101# #r#a290161##k\n#o4230114##r#a290162##k\n#o4230115# #r#a290163##k\n#o4230126# #r#a290164##k\n#o4230102# #r#a290165#\r\n" />
+        <string name="2" value="You were able to eliminate the undead monsters and acquired the title of #b&lt;Spirit Diviner&gt;#k." />
+        <string name="demandSummary" value="#t2382040# 1\r\n#t2382049# 1\r\n#t2383002# 1\r\n#t2382063# 1\r\n#t2383005# 1\r\n#t2383008# 1\r\n#o4230101# #a290161#\r\n#o4230114# #a290162#\r\n#o4230115# #a290163#\r\n#o4230125# #a290164#\r\n#o4230126# #a290165#\r\n#o4230102# #a290166#\r\n" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1142137:# #t1142137:# 1 \r\nGo on to 'Title - Soul Conjurer' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142137" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey… you seem interested in supernatural beings. Do you wish to walk in the path of wherever your spirit moves you?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Have you heard of the &lt;Spirit Diviner&gt;? Spirit Diviners are people with the ability to hear the crying voices of those in purgatory. This could also mean that their spirits are that much purer and cleaner than everyone else's. Increase your efforts to send those spirits back up to nirvana, and you'll be able to become a Spirit Diviner as well. Eliminate #bZombie Lupins, Platoon Chronos, Master Chronos, Mummydogs, and Wraiths#k to remove their ties to this world and help them connect to their next life. That's when you'll acquire the title of &lt;Spirit Diviner&gt;." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="May your dark spirit be comforted…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Do you feel their presence here with us, Spirit Diviner…?" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Did you gather up the cards that embody their spirits?" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="They all need to be incinerated and be sent back to nirvana. But it seems like you're a bit short on something…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mbcard">
+                <imgdir name="0">
+                    <int name="id" value="2382040" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2382049" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2383002" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2383005" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2383008" />
+                    <int name="min" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230101" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4230114" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4230115" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4230126" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4230102" />
+                    <int name="count" value="444" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

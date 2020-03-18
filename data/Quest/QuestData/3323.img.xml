@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3323.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Phyllia's Concern" />
+        <string name="parent" value="The Fairy in Despair 1" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="At #b#m261000000##k, there's a fairy that seems to always wear a sad face, #b#p2111004##k. I wonder what really saddens her." />
+        <string name="1" value="#p2111004# says although her daughter #p2111005# may seem exuberant and lively on the outside, she is very much concerned about her failing health. She wants to cure her declining health by acquiring medicine from #b#p2012018##k of #b#m200000000##k." />
+        <string name="2" value="#p2012018# seems to know something about #p2111004#. Maybe he'll help #p2111004# out." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031706" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031706" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahh... What should I do... I wish he was here right now, so he can help me with this... what should I do..." />
+            <string name="1" value="Ah... are you a traveler? It's really hard to find anyone willing to travel to Magatia... Nice to meet you. The kid you see right there is my daughter, and her name is #p2111005#. She may have an ever-present smile on her face, but she is actually a very sick child." />
+            <string name="2" value="Even our best magcian, the president of the Zenumist Society, told me he can't do anything about #p2111005#. Alcadno? ...Alcadno wouldn't want to do anything with the kid... I don't know what to do ." />
+            <string name="3" value="If I could get a hold of him, then he could very well help... but it's so hard to contact him... Ah! Excuse me, but have you ever been to #b#m200000000##k? If you have, then can you do me a big favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Do you know of #b#p2012018##k at #m200000000#? He is very proficient with Fairy potions, and I'd like for him to help us out. I know he's capable of curing #p2111005#. If it's about #p2111004#, then I am sure he'll help out, no questions asked.  Please visit him and ask for me, okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It must be a difficult favor to ask. I see... sigh, what should I do, what should I do..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm...? What is it? I am busy right now. I have to play with Nero... what? You're here on behalf of #p2111004#? Do you even know who #p2111004# is?!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see #b#p2012018##k yet? He's at #b#m200000000##k...." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Ah... you must have lost the letter. I can always write another one for you, as long as you promise me you'll deliver it to #p2012018#." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031706" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111004" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

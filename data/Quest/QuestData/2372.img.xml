@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2372.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eighth Mission: In the Presence" />
+        <string name="parent" value="Eighth Mission: In the Presence" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Lady Syl has something to ask of you." />
+        <string name="1" value="Lady Syl has finally recovered from her shock and says that she now knows the direction that the Dual Blades must travel. For the Dual Blades to rise from the shadows and become an organization recognized by all, it must receive the recognition of #bArec#k, the elder thief in El Nath. She asks that you meet with Arec as her messenger and find out how the Dual Blades can receive his official recognition..." />
+        <string name="2" value="Lady Syl after recovering from her shock said that she now knows the direction that the Dual Blades must travel. She said that for the Dual Blades to rise from the shadows and to become an organization recognized by all, it must receive the recognition of #bArec#k, the elder thief in El Nath. She asked that you meet with Arec as her messenger and find out how the Dual Blades can receive his official recognition... What will Arec require for the Dual Blades to receive his recognition?" />
+        <string name="rewardSummary" value="EXP 70,000\r\nProceed to 'Arec's Test' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="70000" />
+            <int name="nextQuest" value="2373" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I seem to have neglected my duties for too long. I'm still confused as to what I should believe, but I have been thinking about it much since you left. No, I'm not ready to meet the Dark Lord just yet, but I have been wondering about the future of the Dual Blades. " />
+            <string name="1" value="I've been so focused on the Dark Lord that I've ignored the Dual Blades who have stayed hidden in the shadows. I think it's about time that the Dual Blades received some proper recognition. Please go see #bArec#k at El Nath." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If we can earn his recognition, a new future will open up for the Dual Blades. Please go see him as our official messenger." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you need time to think about your life as a Dual Blade? Well, I trust that you will return in time..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="I sense a strange connection. Who are you?\r\n#L0##bI've come as a representative of the Dual Blades.#l\n#k" />
+            <string name="1" value="Ah yes, the Dual Blades... I have heard about your group. A different type of thieves, a group born out of hate... So, what business do you have with me?\r\n#L0##bI have come that we might gain your recognition.#l\n#k" />
+            <string name="2" value="Gain my recognition? You stand in direct opposition to the current Dark Lord, the rightful successor. How is it that you expect my recognition?\r\n#L0##bEverything was based on a misunderstanding. We acknowledge our mistakes and will put an end to that. Instead, we look forward to a new future in a different direction.#l\n#k" />
+            <string name="3" value="A new future...interesting. If that is truly the case, then I will give you a chance." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="If we can earn his recognition, a new future will open up for the Dual Blades. Please go see him as our official messenger." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1056000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2369" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="54" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9372.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search for the One Who Remembers..." />
+        <int name="area" value="50" />
+        <string name="0" value="You defeated the monsters that attacked the town and brought the #t4031282# to #p9010000#. #p9010000# sees the dangerous #t4031282# and shivers..." />
+        <string name="1" value="#b#p9010000##k, who saw the #t4031282# and felt that it was dangerous, introduces you to someone who could seal the #b#t4031282##k. His name is b#p1061011##k... To find him, travel to #r#m105040300##k, a town located inside a dungeon..." />
+        <string name="2" value="You were able to find #p1061011# at #m105040300#, a town inside a dungeon." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="가지고 계신 #b#t4031282##k은 #b#m105040300##k에 살고 있는 #b#p1061011##k님에게 가져가면 악의 기운을 다시 봉인 할 수 있다고 합니다. 다시 한번 악의 기운을 완전히 봉인해 주시기 바랍니다." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="가지고 계신 #b#t4031282##k을 #b#m105040300##k에 살고 있는 #b#p1061011##k님에게 가져가면 악의 기운을 다시 봉인 할 수 있다고 합니다. 다시 한번 악의 기운을 완전히 봉인해 주시기 바랍니다." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="그리고 이후로도 #b#t4031282##k을 회수하는 즉시 #b#p1061011##k님에게 가져가셔서 봉인해주세요. #b#t4031282##k을 빨리 봉인하지 않으면 사악한 몬스터들이 부활할 수 있답니다." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="그대로 #t4031282#을 가지고 계시면 당신이 위험해질지도 몰라요..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="음... 사악한 기운이 아주 가까이에서 느껴지는군... 당신 뭔가 안 좋은 물건을 가지고 있는 건 아닌가? 불길하고 위험한 물건이라면 어서 빨리 버리는 것이 좋아." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#r#m105040300##k에 계신 #b#p1061011##k님을 찾아가 보세요." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9370" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="8" />
+            <string name="start" value="2006112400" />
+            <string name="end" value="2007092400" />
+        </imgdir>
+    </imgdir>
+</imgdir>

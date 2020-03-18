@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22503.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Bite of Pork" />
+        <int name="area" value="7" />
+        <string name="0" value="What would a Dragon eat? Talk to Mir." />
+        <string name="1" value="You guess that Dragons are probably carnivores. Hunt the #r#o1210100##ks  to obtain some #b#t4032453##k for #p1013000#.\r\n\r\n#i4032453# #t4032453# #b#c4032453# / 10#k" />
+        <string name="2" value="#p1013000# says that he doesn't think he'll be able to digest the #t4032453# very well..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1850" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032453" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="22504" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Oh, is this what you brought me to eat? So this is the #t4032453# you were taking about? Let me try. " />
+            <imgdir name="yes">
+                <string name="0" value="(Chomp, chomp, gulp...)" />
+                <string name="1" value="Uggh... This doesn't taste too bad but I don't think I can digest it. This isn't for me..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't find anything for me to eat yet? That thing you mentioned earlier... #bPark#k? #bPorr#k? I wanna know what that tastes like. Please get it for me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032453" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22502" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22503s" />
+            <int name="lvmin" value="11" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

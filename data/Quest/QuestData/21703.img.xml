@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21703.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Train or Die! 3" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="This #b#p1202006##k is so full of it, but you might as well receive more training from him." />
+        <string name="1" value="According to #p1202006#, the third lesson involves eliminating #r#o9300343#s#k. He says it's a terribly scary monster to fight, but seriously, how scary could a #o1210100# be, really... \r\n\r\n#o9300343##r #a217031##k" />
+        <string name="2" value="You finished off the #o9300343#s without breaking a sweat! #p1202006# then tells you he's taught you everything that he knows about combat and says that you can go back down the mountain. What…?! You're not even standing on a mountain!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000022" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000023" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Are you struggling to defeat #r30 #o9300342#s#k? You must be too afraid to face those monsters. It's understandable, since #o1210102#s are born fighters, but if you wish to become a true hero, you must overcome these odds!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202006" />
+            <string name="endscript" value="q21703e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300343" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21702" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21703s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6272.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" Lava of the Abandoned Mine" />
+        <string name="parent" value="Clean water from the Lava" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2020009##k recognized the book right away." />
+        <string name="1" value=" #b#p2020009##k told me to go see  #b#p2030008##k, the guardian of the Abandoned Mine in El Nath, if I want to get #q2121003#. He drinks lava?? I know he's the guardian of the Abandoned Mine, but would he really know such a thing?" />
+        <string name="2" value="The guardian of Abandoned Mine, #b#p2030008##k said it's impossible to drink lava. However, #q2121003##k is too appealing for me to give up now. He says that the blacksmith, #b#p2020000##k, could make a container that can hold the lava..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="To sum up my study of #b#q2121003##k, 'swallow' in the sentence means literally, you swallow something, rather than a metaphor. It's worth a shot! " />
+            <string name="1" value=" You look like one of the best magicians who deals with fire. You can get #q2121003# that you long for, if you are willing to trust the book." />
+            <string name="2" value=" It won't be easy. As an elder magician of Ossyria, I can give you a clue about #r#q2121003##k. Would you like to get #q2121003# magic?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you want to get #q2121003# magic, go to see the keeper of the snow mountain in El Nath, #b#p2030008##k. I'm sure if this book is real or not, but it's worth testing it! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you don't want to do the work, then you don't deserve #q2121003#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What can I do for you?" />
+            <imgdir name="yes">
+                <string name="0" value="Magic book? #q2121003#? I'm not a magician so I have no idea. One thing for sure is that humans can't drink lava. Humans can't even make the container to drink lava. That's nonsense." />
+                <string name="1" value="Although...there may be someone who can make it.#b#p2020000##k is the best blacksmith in El Nath. Do you know him?  Maybe he can make a bottle strong enough to carry the lava..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Aren't you going to see Adobis? You are afraid of learning #q2121003#? Strange...why reject such power?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6271" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="212" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

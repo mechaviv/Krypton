@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10008.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Information on Master M" />
+        <int name="area" value="50" />
+        <string name="0" value="You collected 5 Intelligence documents.  Where was Agent C supposed to be again?" />
+        <string name="1" value="You delivered the 5 Intelligence documents you gathered from the party quests to Agent C.  For your good work, Agent C gave you a receiver.  " />
+        <string name="2" value="You delivered the 5 Intelligence documents you gathered from the party quests to Agent C.  For your good work, Agent C gave you a receiver.  " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9000033" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10007" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001192" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10008s" />
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

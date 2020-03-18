@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1009.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rain's Maple Quiz 1" />
+        <string name="parent" value="Rain's Maple Quiz" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="You're not a beginning anymore. Talk to Rain and take the Maple Quiz!" />
+        <string name="1" value="You're not a beginning anymore. Talk to Rain and take the Maple Quiz!" />
+        <string name="2" value="Rain's first question was about which hotkey to press to open the Item Inventory. The answer is I!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2" />
+            <int name="nextQuest" value="1010" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello! How're you liking Maple World so far? Let me give you a brief rundown of the place, and then I'll give you a quiz. If you answer my questions correctly, I'll give you something handy. Interested?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hehe! Let me warn you, don't underestimate my quiz. There's a lot to learn, so pay attention!" />
+                <string name="1" value="You've hunted monsters already. Remember what keys you had to use? #bCtrl to attack#k and #bAlt to jump#k, right? And #bz to pick up the items? #nYou can also use the #rKey Config#k on the bottom right of your screen to recalibrate the buttons to your liking." />
+                <string name="2" value="But what you haven't experienced yet is Job Advancement. To become a more powerful traveler, you need a job! To get one, you'll first have to leave this place, Maple Island, and head to Victoria Island. \nYou need to be at least at level #b10#k to become a Warrior, Bowman, or Thief, and at least level #b8#k to be a Magician. Each job has its pros and cons, so choose carefully." />
+                <string name="3" value="I didn't tell you EVERYTHING you need to know for the quiz, so make sure to focus. Ready for the questions?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm, you could learn a lot through my quiz. I think you should try it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What do you press to open the item inventory? \n\n#L0##b I#l\n#L1# K#l\n#L2# S#l\n#L3# E#k#l" />
+            <string name="1" value="That's right!! To open up the item inventory, you press #rI#k." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="K is for the Skill Window. You'll be able to use skills once you get yourself a job. Don't you remember the shortcut key for the, ahem, i-tem inventory?" />
+                    <string name="2" value="No, no. S is to check out your stats and your Ability Points. Come on, think!" />
+                    <string name="3" value="Eh? E is to check out your equipment. Try again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12101" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

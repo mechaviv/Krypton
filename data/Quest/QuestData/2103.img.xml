@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nella's Dream" />
+        <string name="parent" value="Fanzy the Mysterious Cat" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently, #p1052103# of Kerning City had a weird dream ..." />
+        <string name="1" value="I heard a really weird dream story from #b#p1052103##k, who lived in Kerning City. She ran into a cat in the middle of a green forest full of trees... and she can't tell if it's a dream or for real." />
+        <string name="2" value="In the middle of the forest in #m101000000#, I found the mysterious cat that #p1052103# had seen in her dream." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2104" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="That was just really, really weird. \r\n#L0# #bThe world is full of weird things. \r\n#L1# What is it? #k" />
+            <string name="1" value="I had a really weird dream last night, and I can't seem to forget it. It's completely stuck in my head. \r\n#L0# #bWhat kind of a dream was it? #k" />
+            <string name="2" value="Last night, I had a dream, and I was walking around a huge forest. The whole area was covered with green trees that were so tall, they were kissing the sky with ease. Suddenly, out of nowhere, I heard a cat cry. I ran straight to where the crying occurred. There, I saw a striped cat, crouching down in a tree hole, staring at me. I carefully laid out my hand to pet it, then suddenly, the cat seemed to blur for a second, then just plain disappeared! Right in front of my eyes!! \r\n#L0# #bWhoa, that much be one interesting cat. What happened afterwards? #k" />
+            <string name="3" value="I was so shocked, so I looked around here and there, but I couldn't find the cat. Suddenly I heard someone talk from behind. So I looked back, and to my very amusement, the cat was back in the spot, as if nothing ever happened. The real shock, however, was just about to come. \r\n#L0# #bThe real shock?#k" />
+            <string name="4" value="That cat proceeded to talk to me. I think it was asking me to find something that it lost... and while I stopped for a second to gather my thoughts, it disappeared on me again. The weird thing is, it does not feel like a dream at all. I feel like if I go there again, I'll find that cat, sitting at the same spot, in that same crouch. I think you have an affinity for interesting stories... how about you finding that cat for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="That's true... it shouldn't be so strange, considering it all happened in a dream..." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You must be really curious about this cat, too. Remember, this all happened in my dream, nothing else. I don't know if there's ever going to be a cat quite like that around here. If you find a way to find that green forest, however, then that's a different story... " />
+                <string name="1" value="But then again, I've never seen a place quite like that. #bA place surrounded by humongous green trees...#k well I've heard of a huge forest somewhere down on the East side, but I've never been there..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Anyway, this was all just a dream, so... I don't think there's ever a cat quite like that in real life. Oh no, this has taken a lot of time... thanks for listening to my dream story. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Meow~! \r\n#L0# #bAren't you the talking cat? \r\n#L1# Hey kitty kitty! Isn't it nice out here today? Did you find the stuff you lost?#k" />
+            <string name="1" value="I can't believe you actually talked to a cat in a straight, sincere tone... you must be quite strange! And how did you know I lost something? \r\n#L0# #bHaha, I know anything and everything that goes around here. \r\n#L1# I heard of Nella's dream at Kerning City." />
+            <string name="2" value="It's true that I went into her dream and asked her to find an item that I lost, but for you to hear that story and actually find me here... you must be something!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Meow?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="...Right... but I don't feel like asking you for help! I do appreciate you making your way here, but I don't really need your help~!" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Can't find the forest I saw in the dream? Well, there's a chance that the place doesn't even exist. #bA place surrounded by humongous green trees...#k I don't think I've ever heard of such place. Even if you find it, I can't guarantee that there's such thing as a #bcat that talks and becomes transparent#k. I mean, that's just freaky... " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1040002" />
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="5000001" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5000002" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5000003" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="5000004" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="5000005" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="5000006" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="5000007" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="5000008" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="5000009" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="5000010" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="5000011" />
+                </imgdir>
+                <imgdir name="12">
+                    <int name="id" value="5000012" />
+                </imgdir>
+                <imgdir name="13">
+                    <int name="id" value="5000013" />
+                </imgdir>
+                <imgdir name="14">
+                    <int name="id" value="5000015" />
+                </imgdir>
+                <imgdir name="15">
+                    <int name="id" value="5000018" />
+                </imgdir>
+                <imgdir name="16">
+                    <int name="id" value="5000020" />
+                </imgdir>
+                <imgdir name="17">
+                    <int name="id" value="5000017" />
+                </imgdir>
+                <imgdir name="18">
+                    <int name="id" value="5000023" />
+                </imgdir>
+                <imgdir name="19">
+                    <int name="id" value="5000022" />
+                </imgdir>
+                <imgdir name="20">
+                    <int name="id" value="5000024" />
+                </imgdir>
+                <imgdir name="21">
+                    <int name="id" value="5000025" />
+                </imgdir>
+                <imgdir name="22">
+                    <int name="id" value="5000026" />
+                </imgdir>
+                <imgdir name="23">
+                    <int name="id" value="5000029" />
+                </imgdir>
+                <imgdir name="24">
+                    <int name="id" value="5000030" />
+                </imgdir>
+                <imgdir name="25">
+                    <int name="id" value="5000031" />
+                </imgdir>
+                <imgdir name="26">
+                    <int name="id" value="5000032" />
+                </imgdir>
+                <imgdir name="27">
+                    <int name="id" value="5000033" />
+                </imgdir>
+                <imgdir name="28">
+                    <int name="id" value="5000041" />
+                </imgdir>
+                <imgdir name="29">
+                    <int name="id" value="5000039" />
+                </imgdir>
+                <imgdir name="30">
+                    <int name="id" value="5000034" />
+                </imgdir>
+                <imgdir name="31">
+                    <int name="id" value="5000037" />
+                </imgdir>
+                <imgdir name="32">
+                    <int name="id" value="5000044" />
+                </imgdir>
+                <imgdir name="33">
+                    <int name="id" value="5000045" />
+                </imgdir>
+                <imgdir name="34">
+                    <int name="id" value="5000014" />
+                </imgdir>
+                <imgdir name="35">
+                    <int name="id" value="5000036" />
+                </imgdir>
+                <imgdir name="36">
+                    <int name="id" value="5000048" />
+                </imgdir>
+                <imgdir name="37">
+                    <int name="id" value="5000049" />
+                </imgdir>
+                <imgdir name="38">
+                    <int name="id" value="5000050" />
+                </imgdir>
+                <imgdir name="39">
+                    <int name="id" value="5000051" />
+                </imgdir>
+                <imgdir name="40">
+                    <int name="id" value="5000052" />
+                </imgdir>
+                <imgdir name="41">
+                    <int name="id" value="5000053" />
+                </imgdir>
+                <imgdir name="42">
+                    <int name="id" value="5000055" />
+                </imgdir>
+                <imgdir name="43">
+                    <int name="id" value="5000058" />
+                </imgdir>
+                <imgdir name="44">
+                    <int name="id" value="5000042" />
+                </imgdir>
+                <imgdir name="45">
+                    <int name="id" value="5000060" />
+                </imgdir>
+                <imgdir name="46">
+                    <int name="id" value="5000066" />
+                </imgdir>
+                <imgdir name="47">
+                    <int name="id" value="5000067" />
+                </imgdir>
+                <imgdir name="48">
+                    <int name="id" value="5000100" />
+                </imgdir>
+                <imgdir name="49">
+                    <int name="id" value="5000101" />
+                </imgdir>
+                <imgdir name="50">
+                    <int name="id" value="5000102" />
+                </imgdir>
+                <imgdir name="51">
+                    <int name="id" value="5000070" />
+                </imgdir>
+                <imgdir name="52">
+                    <int name="id" value="5000071" />
+                </imgdir>
+                <imgdir name="53">
+                    <int name="id" value="5000038" />
+                </imgdir>
+                <imgdir name="54">
+                    <int name="id" value="5000056" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052103" />
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="5000001" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5000002" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5000003" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="5000004" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="5000005" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="5000006" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="5000007" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="5000008" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="5000009" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="5000010" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="5000011" />
+                </imgdir>
+                <imgdir name="12">
+                    <int name="id" value="5000012" />
+                </imgdir>
+                <imgdir name="13">
+                    <int name="id" value="5000013" />
+                </imgdir>
+                <imgdir name="14">
+                    <int name="id" value="5000015" />
+                </imgdir>
+                <imgdir name="15">
+                    <int name="id" value="5000018" />
+                </imgdir>
+                <imgdir name="16">
+                    <int name="id" value="5000020" />
+                </imgdir>
+                <imgdir name="17">
+                    <int name="id" value="5000017" />
+                </imgdir>
+                <imgdir name="18">
+                    <int name="id" value="5000023" />
+                </imgdir>
+                <imgdir name="19">
+                    <int name="id" value="5000022" />
+                </imgdir>
+                <imgdir name="20">
+                    <int name="id" value="5000024" />
+                </imgdir>
+                <imgdir name="21">
+                    <int name="id" value="5000025" />
+                </imgdir>
+                <imgdir name="22">
+                    <int name="id" value="5000026" />
+                </imgdir>
+                <imgdir name="23">
+                    <int name="id" value="5000029" />
+                </imgdir>
+                <imgdir name="24">
+                    <int name="id" value="5000030" />
+                </imgdir>
+                <imgdir name="25">
+                    <int name="id" value="5000031" />
+                </imgdir>
+                <imgdir name="26">
+                    <int name="id" value="5000032" />
+                </imgdir>
+                <imgdir name="27">
+                    <int name="id" value="5000033" />
+                </imgdir>
+                <imgdir name="28">
+                    <int name="id" value="5000041" />
+                </imgdir>
+                <imgdir name="29">
+                    <int name="id" value="5000039" />
+                </imgdir>
+                <imgdir name="30">
+                    <int name="id" value="5000034" />
+                </imgdir>
+                <imgdir name="31">
+                    <int name="id" value="5000037" />
+                </imgdir>
+                <imgdir name="32">
+                    <int name="id" value="5000044" />
+                </imgdir>
+                <imgdir name="33">
+                    <int name="id" value="5000045" />
+                </imgdir>
+                <imgdir name="34">
+                    <int name="id" value="5000014" />
+                </imgdir>
+                <imgdir name="35">
+                    <int name="id" value="5000036" />
+                </imgdir>
+                <imgdir name="36">
+                    <int name="id" value="5000048" />
+                </imgdir>
+                <imgdir name="37">
+                    <int name="id" value="5000049" />
+                </imgdir>
+                <imgdir name="38">
+                    <int name="id" value="5000050" />
+                </imgdir>
+                <imgdir name="39">
+                    <int name="id" value="5000051" />
+                </imgdir>
+                <imgdir name="40">
+                    <int name="id" value="5000052" />
+                </imgdir>
+                <imgdir name="41">
+                    <int name="id" value="5000053" />
+                </imgdir>
+                <imgdir name="42">
+                    <int name="id" value="5000055" />
+                </imgdir>
+                <imgdir name="43">
+                    <int name="id" value="5000058" />
+                </imgdir>
+                <imgdir name="44">
+                    <int name="id" value="5000042" />
+                </imgdir>
+                <imgdir name="45">
+                    <int name="id" value="5000060" />
+                </imgdir>
+                <imgdir name="46">
+                    <int name="id" value="5000066" />
+                </imgdir>
+                <imgdir name="47">
+                    <int name="id" value="5000067" />
+                </imgdir>
+                <imgdir name="48">
+                    <int name="id" value="5000100" />
+                </imgdir>
+                <imgdir name="49">
+                    <int name="id" value="5000101" />
+                </imgdir>
+                <imgdir name="50">
+                    <int name="id" value="5000102" />
+                </imgdir>
+                <imgdir name="51">
+                    <int name="id" value="5000070" />
+                </imgdir>
+                <imgdir name="52">
+                    <int name="id" value="5000071" />
+                </imgdir>
+                <imgdir name="53">
+                    <int name="id" value="5000038" />
+                </imgdir>
+                <imgdir name="54">
+                    <int name="id" value="5000056" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

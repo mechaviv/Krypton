@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2288.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Say &quot;NO&quot; to Plagiarism" />
+        <int name="area" value="30" />
+        <string name="0" value="Master Rho doesn't seem like he's ready to hand over the new song even though you've already paid the fee. Why is he so hesitant? Ask #bMaestro Rho#k if everything is okay." />
+        <string name="1" value="Spirit of Rock is playing Maestro Rho's music without proper approval. Defeat Spirit of Rock and listen to the last song he plays.\r\n\r\nIt is highly recommended that you turn up the volume a bit in the system options so you don't miss any important parts of the song while you're listening." />
+        <string name="2" value="You have destroyed Spirit of Rock as Maestro Rho requested. But he's still reluctant to let go of his Composition Notes. You don't have much time left. Ask #bMaestro Rho#k for the new song." />
+        <string name="demandSummary" value="#i4000538:# #t4000538:# #c4000538# / 1&#xD;&#xA;#o4300013# #a22881#&#xD;&#xA;" />
+        <string name="rewardSummary" value="48,500 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="48500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000538" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2293" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh no. My new song... My new song is getting dirty. Filthy. Defiled!\r\n#L0##bWhat are you talking about? How is your new song getting dirty? And shouldn't you hand me those Composition Notes you promised?#l\n#k" />
+            <string name="1" value="Spirit of Rock somewhere in Kerning City is playing my song without permission! He's ruining it, too. If this continues, Blake could be accused of plagiarizing.\r\n#L0##bPlagiarizing? No way! That Spirit of Rock or whoever, I'll go teach him a lesson! I hate people who illegally access content that doesn't belong to them.#l\n#k" />
+            <string name="2" value="Is that so?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Grr. Spirit of Rock is probably hiding somewhere. Someplace neglected, where people don't visit frequently, like a construction site. You can probably ask June, the public service worker in Kerning City, where Spirit of Rock is." />
+                <string name="1" value="Find #rSpirit of Rock#k and destroy him. You must also collect #bSpirit of Rock's Music Score#k. We may not be able to read his music score, so you must also pay close attention to what his playing. #bI suggest you turn up the volume in your system options so you can really listen to Spirit of Rock's most recent song.#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="But I can't just give you a song for free." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated Spirit of Rock! Let me see his music score." />
+            <imgdir name="yes">
+                <string name="0" value="Just as expected. I can't read his music score. Do you happen to remember the last piece Spirit of Rock was playing? I suppose I should give you my Composition Notes even if you can't remember the song, but... Wait, where did my notes go?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please defeat #rSpirit of Rock#k and bring me #b1 Spirit of Rock's Music Score#k. You must remember the last song he plays when he dies." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please defeat #rSpirit of Rock#k and bring me #b1 Spirit of Rock's Music Score#k. You must remember the last song he plays when he dies." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052120" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000538" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4300013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2287" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

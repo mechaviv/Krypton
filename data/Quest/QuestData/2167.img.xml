@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2167.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sea Firefly1" />
+        <int name="area" value="30" />
+        <string name="0" value="Sharyl, the Prince of Whales, hanging out on the lower deck of The Nautilus, says he's got another problem. Let me see what he has to say.  " />
+        <string name="1" value="Sharyl, the Prince of Whales tells me some mystical story about a Sea Firefly. I guess there are many other mystical objects on The Nautilus besides the Shining Stone? Anyway, according to Sharyl, the Prince of Whales, the mystical Sea Firefly's powers are diminishing, which is making him worried. I'd better help Sharyl, the Prince of Whales by going to the #bMuse#k of the #bAquarium#k to fill the magic flask with some  #bVigor of the Sea#k. " />
+        <string name="2" value="I went to see the Muse who filled the magic flask with the Vigor of the Sea." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031841" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031841" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah hello there! You must be the one that experienced the power of the Shining Stone before. Doesn't it seem like it's a bit darker here these days? It's that the ones that light up The Nautilus, the Water Fireflies, are getting weaker by the day.\r\n#L0##bWater Firefly?#k#l" />
+            <string name="1" value="Yes. Water Fireflies are these mysterious creatures that emit bright lights by consuming the Vigor of the Sea deep in the ocean. Once The Nautilus reached Victoria Island, they have never had a chance to go back under the deep sea, so their lighting has dimmed little by little. If you have some time to spare, can you get us some Vigors of the Sea for the sake of Kyrin and the fireflies?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Vigor of the Sea can actually be found through #bMuse of the Aquarium#k. Please fill up this Magic Flask with #bVigor of the Sea#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you busy? Oh no... what will we do..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I've already received word from Prince Sharyl. Can you give me the Magic Flask you received from him?" />
+            <imgdir name="yes">
+                <string name="0" value="Collecting the Vigor of the Sea will require some time. Please wait for a bit." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You can find Muse at the Aquarium. Please get the Vigor of the Sea for me. Please...." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You broke the Magic Flask? You'll really need to be careful with it, because it's made out of glass. I'll give you another one, so place fill up the flask with the Vigor of the Sea and bring it back to me." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031841" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2166" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

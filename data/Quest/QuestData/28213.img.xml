@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28213.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="This Feather, For Some Reason, Seems To Be Related to Perion..." />
+        <string name="parent" value="A Strange Burglary Case" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032104:##k in #bEllinia#k says she's not sure what the #rGolden Feather#k is." />
+        <string name="1" value="Let's take the #rGolden Feather#k over to #b#@9201119:##k in #bPerion#k." />
+        <string name="2" value="#b#@9201119:##k in #bPerion#k says there is something you need in order to identify the #rGolden Feather#k." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'The Secret of the Golden Feather' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I know I'm pretty and smart, but I'm only human. I don't know everything there is to know in the world, and I certainly don't know about this.\n\nBut I know someone who knows a lot about this stuff. Care to know?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Usually, the people in #bPerion#k are very knowledgeable when it comes to things related to animals.\n\nWhy don't you go see #b#p9201119##k in #bPerion#k. You'll find your answer." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How dare you decline this pretty face!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're not from here, are you?\nYou have something you want to ask me?" />
+            <imgdir name="yes">
+                <string name="0" value="What is this #rGolden Feather#k? Something's not right." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p9201119##k is in #bPerion#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201119" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28212" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

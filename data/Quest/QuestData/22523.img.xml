@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22523.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Investigating Strange Mushrooms" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1040000#, the guard standing at the #m106010100#, seems to have something he wants to say to you. Go to the #b#m106010100##k and talk to #b#p1040000##k." />
+        <string name="1" value="#p1040000# says that he heard from #p1010100# how strong you are and asks for you assistance in investigating the Blue Mushrooms that have started acting strange. You simply need to get #b40 #t4000009#s# as samples and bring it to #p1012111#, who studies mushrooms in #m100000000#.\r\n\r\n#i4000009# #t4000009# #b#c4000009# / 40#k" />
+        <string name="2" value="When you show the #t4000009# to #p1012111#, he gets a serious look on his face." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000009" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, are you Evan? I'm #p1040000#, a Guard in charge of the #m100000000# Dungeon Entrance. I heard a lot about you from #p1010100#. She told me that you're strong for your age... Is that true? If so, I have a favor I'd like to ask." />
+            <string name="1" value="You may have heard from #p1010100# already, but the #o2220100#s near the #m106010100# area have become very strange. Some #o2220100#s appear to be crying. They also attack people who pass by. I think a detailed investigation is needed. Can you help?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Luckly, there is a scholar named #p1012111# in #m100000000# who studies Mushrooms. I think you may be able to ask him for help. Please bring him #b40#k #b#t4000009#s#k that he can use as samples in his study." />
+                <string name="1" value="Oh...and are you sure that the lizard next to you isn't dangerous? Maybe you should leash him so he can't attack or bite people. What? Hey, don't take offense. It's always smart to restrain your pets." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh...is it too difficult? I was hoping you could help because I was told that you're strong enough to defeat #o2220100#s... I guess I'll have to find someone else..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh? Aren't you Evan? Is there something I can do for you? Huh? These are #t4000009#s. #p1040000# wants me to investigate the #o2220100#s?" />
+            <imgdir name="yes">
+                <string name="0" value="The #o2220100#s are becoming violent? Could it be related to that other incident...?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to #b#p1012111##k yet? He is in #m100000000#. Please bring #b40 #t4000009#s#k to him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hey Evan. How are you? How is #p1013103# doing? Huh? Something strange is happening to the #o2220100#s. Hmm... I really don't know what to tell you without any #bsamples#k... I'm sorry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000009" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22522" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

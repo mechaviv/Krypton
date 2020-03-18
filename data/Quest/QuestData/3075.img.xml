@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3075.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Carta the Sea Witch" />
+        <string name="parent" value="Carta the Sea Witch" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="#p2060006#, who works at the Aquarium Zoo, asked me for help, and wanted me to go see her at the Aquarium. What does she need from me...?" />
+        <string name="1" value="#b#p2060006##k, who works at the Aquarium Zoo, asked me to go see her. #b#p2060006##k said she wanted to find out the whereabouts of her boyfriend #bGail#k, who has volunteered to be part of the exploration team that heads deep in the underwater, and asked me if I could go talk to #b#p2060100##k the sea witch about him." />
+        <string name="2" value="At the request of #p2060006#, I went to see #p2060100# the sea witch. #p2060100# lived inside the cave at #m230040000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <int name="lvmin" value="90" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <int name="nextQuest" value="3076" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for making your way here. I need to ask you for a favor. Would you like to find out what it is?" />
+            <imgdir name="yes">
+                <string name="0" value="That's good to hear. I can't thank you enough for saying yes because the favor I want to ask of you involves a very personal matter. See, I have a boyfriend named #bGail#k, a sweet-hearted fella with a passion for the ocean." />
+                <string name="1" value="A while ago, he volunteered to go on an expedition to investigate the signs of anomaly that were occuring at the deep ocean. I was able to keep in touch with him for a bit, but I haven't been able to talk to him the past few days. I'm concerned about his well-being, because the deep part of the ocean is not to be messed with, a dangerous place for anyone to venture into. So dangerous, in fact, that I can't even fathom going there myself." />
+                <string name="2" value="A few days ago, Melias of the Armor Store told me this interesting story. He said there's a sea witch living at the entrance of the deep ocean called #b#p2060100##k, and apparently, she is a great fortune-teller who sees everything." />
+                <string name="3" value="Go talk to that sea witch and ask her the whereabouts of #bGail#k. I'm too weak to go all the way down to the bottom of the ocean, but you seem more than strong enough to do so. I'm sure you'll run into her there. Thanks~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It may be a difficult task, so please think carefully, and if you want to change your mind, please talk to me. I'll give you the details then." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="For you to voluntarily walk into a dangerous place like this, you must be either really foolish or really brave. Now, what can I do for you? \r\n#L0# #bI want you to look into my future. I have something I need to find out.#k" />
+            <string name="1" value="You must have heard some foolish nonsense from someone on your way here. There's no such thing as fortune-telling, understand? The future isn't set in stone, contrary to popular belief. It's ignorant people like you that refuse to believe in that fact and ask me to see their future." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <int name="lvmin" value="90" />
+        </imgdir>
+    </imgdir>
+</imgdir>

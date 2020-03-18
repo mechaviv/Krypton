@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maplemas Surprise Party!" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="There's an awesome Maplemas party going on in Happyville!" />
+        <string name="1" value="Extra extra! Happyville is holding an amazing party for Maplemas! For more details, please go see Rooney." />
+        <string name="2" value="I talked to Rooney about the impending Maplemas party. Apparently it's a dress-up party, so I better go talk to Cliff about a possible potion for transformation." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have good news for everyone! Happyville is holding a grand party to celebrate Maplemas! Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Haha, I knew you would. For more details, you should go talk to Rooney." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh really? It's going to be really fun! That's too bad, but... if you want to change your mind, just let me know!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must be eager to know what the party is all about. Here are the details. Ready?" />
+            <imgdir name="yes">
+                <string name="0" value="It's a dress-up party that takes place in Happyville during the whole Maplemas period." />
+                <string name="1" value="Go to Happyville, and you'll find a house with a huge chimney. The only way you can enter the house is actually through the chimney. The way you're dressed up right now, however, you won't be allowed in at all. You must be transformed into a new state." />
+                <string name="2" value="You can get the transformation potion from Cliff in Happyville. I hear that if you give him 50 #t4032176#s, you'll be able to trade in for that potion. It'd be a good idea for you to have it prepared before seeing him." />
+                <string name="3" value="Now hurry before you miss out on the party..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go see Rooney for more details on the Maplemas party." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250052" />
+            <string name="end" value="2009012100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8056.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 4" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="4" />
+        <int name="area" value="40" />
+        <string name="0" value="After observing the stunning scenery of Orbis, I should start up a conversation with Elma." />
+        <string name="1" value="Elma offered to take me to Ludibrium. Once I get there, she advised me to look for Marcel..." />
+        <string name="2" value="I was able to meet up with Marcel. Where will I go next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022024" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8057" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, how was Orbis? It's hard to find a more beautiful sky than the ones here. Ready to go to the next spot?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll send you to Ludibrium, a toy land to say the least." />
+                <string name="1" value="Once you arrive there, talk to #eMarcel#n, and he'll take you to another spot." />
+                <string name="2" value="Oh, and, if you step outside, you'll encounter some very adorable monsters, and it won't be such a rosy experience for you. Be careful." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey,do you really like it here? There's plenty of time, so just relax and enjoy it here!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome! Elma told me of your arrival. Have fun at Ludibrium!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8055" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

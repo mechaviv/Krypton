@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Returning to Master Sergeant Fox" />
+        <string name="parent" value="Alpha Platoon's Network of Communication" />
+        <int name="order" value="7" />
+        <int name="area" value="33" />
+        <string name="1" value="Master Sergeant Fox asked me to meet #bStaff Sergeant Charlie, Sergeant Bravo, and Corporal Easy#k in order. I met them all just as Master Sergeant Fox told me. I should be returning to him right away." />
+        <string name="2" value="Just like the way Master Sergeant Fox requested, I met his men in order of ranks and got the 3 pieces of an ancient document to him. He was really happy about it, and gave me the scroll made out of those pieces. He also wished that I could drop by sometime later and see how the other men are doing...maybe I should..." />
+        <string name="summary" value="Go back to Master Sergeant Fox" />
+        <string name="demandSummary" value="#i4031049:# #t4031049:# #c4031049# / 3&#xD;&#xA;" />
+        <string name="rewardSummary" value="7,000 EXP&#xD;&#xA;#Wprob#&#xD;&#xA;1 #i2040704:# #t2040704:# &#xD;&#xA;1 #i2040705:# #t2040705:# &#xD;&#xA;1 #i2040707:# #t2040707:# &#xD;&#xA;1 #i2040708:# #t2040708:# &#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031049" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040704" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040705" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040708" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031049" />
+                    <int name="count" value="-3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I guess you've met all the troopers of the Alpha platoon! I'm sure the other men are just doing their job. Now please notify #b#p2020003##k of our whereabouts. Thanks!" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you did meet up with my men. That was much quicker than I expected. Let's see ... and you met up with them from the highest rank down! Good, Staff Sergeant is the highest, then Sergeant, and then the Corporal ... #b#p2010000#, #p2030001# and #p2030002##k was the right order, just the way you did it." />
+            <string name="1" value="By the way, didn't the men give you #b#t4031049##k? We're actually here to find those pieces of documents. I can't tell you how this will be used because it's a top secret, but if my men are doing their job, I should have 3 pieces with me. They did tell you to give them to me, right? Let's see how they did..." />
+            <string name="2" value="My men ARE working hard, indeed! Hahaha, thank you so much for getting all of them. Finding out that my men are actually working hard gives me relief, enough so I can go on with the operation. Oh yes, this is just a token of my appreciation for your hard work. Please take it." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like what I'm giving you, the #b#t4031049##k? What do you think? I hope it helps you on your journey. And please drop by and check on my men from time to time. They are still quite inexperienced and may need help down the road. Thanks." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't we met before? Please get #b#p2020003##k the #b#t4031049##k that I gave you. Thanks! Well, then, back to work..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Please check if your inventory is full..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You must have lost the document on the way. Please take this again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031049" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3041" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

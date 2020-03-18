@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28222.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Show Me What You're Made Of-2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201118:##k in #bHenesys#k says she'll begin the second training. Let's go see her." />
+        <string name="1" value="She says you must hunt the #rOrange Mushrooms#k and collect the #rOrange Mushroom Caps#k.\n\nThe #rOrange Mushrooms#k can be easily found in #b#m104040001##k.\n\nReport back to #b#@9201118:##k in #bHenesys#k upon completion." />
+        <string name="2" value="You've completed #b#p9201118##k's second training!" />
+        <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Athena Pierce' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shall we begin the second training? Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please collect 20 #rOrange Mushroom Caps#k after hunting the #rOrange Mushrooms#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I want to see you actively engaged in the training!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good job! You did well." />
+            <imgdir name="yes">
+                <string name="0" value="You have completed my second training.\n\nIsn't collecting drop items exciting?" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201118" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28220" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

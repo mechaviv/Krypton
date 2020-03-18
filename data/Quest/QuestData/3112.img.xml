@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3112.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliza's Garden" />
+        <string name="parent" value="Goddess's Pet" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="Spiruna says that Eliza has calmed down enough, so #btalk with Eliza#k. Eliza can be found in #bEliza's Garden#k behind a fallen pillar at the Stairway to the Sky II." />
+        <string name="2" value="Met #bEliza#k sitting gracefully inside Eliza's Garden. #bEliza#k showed no traces of anger, instead looking calm." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My crystal ball seems to be strange. #bEliza#k has returned to herself but there still are some red anger spots here and there. It's as if there was a second #bEliza#k. That can't be true." />
+            <string name="1" value="Seems as though #bEliza#k's rage as calmed down; a good time to go #btalk#k to her. Without a rational mind, #bEliza#k can be frightening, but in her original state, she is gentle and calm. Go talk to her, and persuade her not to destroy Cloud Park anymore. " />
+            <imgdir name="yes">
+                <string name="0" value="Where can I find #bEliza#k? According to my crystal ball, #bEliza#k can be found in #bEliza's Garden#k behind a fallen pillar at the #bStairway to the Sky II#k. She's an ancient creature loved by the Goddess. Her nature exceeds the intelligence and nobility of human beings, so watch your manners in front of her. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="She may suddenly change when she's angry, but as long as you are polite to her, she will not do you any harm." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You are welcome if you have good intentions, but if not, please leave here quietly. I will not forgive anyone that disgraces this peaceful and beautiful garden." />
+            <imgdir name="yes">
+                <string name="0" value="Looks as though you are here to speak to me. Listening to, and exchanging one another's thoughts is a great way to advance one's consciousness. Not to mention, a delightful experience. I, #bEliza#k welcome you. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met #rEliza#k yet, haven't you? There is no need to be afraid. If you go with good intentions then she will also welcome you. Do not worry and go to Eliza's Garden. Eliza can be found behind a fallen pillar." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012026" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3111" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="83" />
+        </imgdir>
+    </imgdir>
+</imgdir>

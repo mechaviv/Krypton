@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3758.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Towards the Sky 1" />
+        <int name="area" value="41" />
+        <string name="0" value="In order to chase the Dragon Rider, you're going to need to learn to fly... Discover the secret to flight from Matada, the Halflinger Adventurer." />
+        <string name="1" value="Bring Matada the items he needs so that he can teach you how to fly." />
+        <string name="2" value="You brought #bMatada#k the items that he wanted." />
+        <string name="demandSummary" value="#i4000240:# #t4000240:# #c4000240# / 1&#xD;&#xA;#i2020015:# #t2020015:# #c2020015# / 1&#xD;&#xA;#i4001402:# #t4001402:# #c4001402# / 10&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 48,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="48000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020015" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000240" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001402" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3759" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="To pursue the Dragon Rider, you'll have to enter through the &lt;Crimson Sky Doorway&gt; to the Crimson Sky area where the Dragons live . To do that, you'll have know how to fly...\r\n#L0##bFly? Like, flap flap flap my arms? In the sky?#l\n#k" />
+            <string name="1" value="Yes. Normally, flying is impossible for humans.\r\n#L0##bNo kidding. So is all hope lost, then?#l\n#k" />
+            <string name="2" value="Well... There is a way. Many years ago, I came across a recipe for a potion that supposedly allows humans to fly. Ancient documents also contain records of humans that were able to fly.\r\n#L0##bI knew there had to be a way! So what do I need to do?#l\n#k" />
+            <string name="3" value="I can teach you the secret to flying if you bring me a few ingredients. The ingredients that you must bring me are #b1 #t04000240:#, 1 #t02020015:# and 10 Dragon's Essences#k." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please bring me the ingredients that I mentioned." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, you can't go after the #bDragon Rider#k if you can't fly." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you brought all the ingredients I need?" />
+            <imgdir name="yes">
+                <string name="0" value="Aha, looks like you've got it all. Please give me a moment to mix these together." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you're still missing a few things. Please bring me all of the ingredients." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2085000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000240" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020015" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001402" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2085000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3757" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

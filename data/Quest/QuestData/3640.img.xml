@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3640.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on the Story of Axes" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook from the Mountain God after returning the axe to the tree cutter. Where did it go? Should I go see the Mountain God again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get the storybook on the Story of the Axes. II'm pretty sure I received it the last time I helped the Mountain God out, but I can't seem to find it. After discussing the matters with the Mountain God, he promised to give me the storybook if I gather up #b1 gold ore#k and #b1 silver ore#k.\n\n#t4010006#  #b#c4010006##k / 1\n#t4010004#  #b#c4010004##k / 1" />
+        <string name="2" value="To reacquire the storybook on the Story of the Axes, I brought 1 gold ore and 1 silver ore to the Mountain God, just the way he requested." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4010006" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010004" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031298" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be the one that helped me find the tree cutter's lost axe the other day. How can I help you this time around? What? You lost the storybook that the tree cutter let you? Haha, don't worry about it. Let me find it for you, except i may need you to do me a favor." />
+            <imgdir name="yes">
+                <string name="0" value="The gold axe and the silver axe that I've been carrying around with have been rusted and ruined after years and years of usage. I'll need to fix it, so please get me 1 gold ore and 1 silver ore in order to do so. Then, and only then, will I give you the lost storybook." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You'll need to do me a favor in order to recover your storybook... please think straight." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you brought the gold ore and the silver ore. Thank you; now I can finally fix the axe. Here, please take the storybook. Finding a lost item is a piece of cake for me. So long~" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you not brought 1 gold ore and 1 silver ore?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4010006" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3636" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3639" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031298" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

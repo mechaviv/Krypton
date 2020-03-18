@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2252.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Studying the Mushroom Signals 1 (Repeatable)" />
+        <int name="area" value="30" />
+        <string name="0" value="The Rememberer requests your help so he can continue making progress in his research." />
+        <string name="1" value="The Rememberer requests your help so he can continue making progress in his research." />
+        <string name="2" value="The Rememberer requested your help so he could continue making progress in his research." />
+        <string name="demandSummary" value="#o2230101# #a22521#\r\n#o2110200# #a22522#\r\n" />
+        <string name="rewardSummary" value="EXP 2,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'd really like to conduct a comprehensive study of the signals that the mushrooms use to communicate. Can you give me a hand?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. I'll need you to defeat 20 Horny Mushrooms and 30 Zombie Mushrooms for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see. I understand..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thanks. This is going to be very helpful for my research." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please get me something that'll be helpful for my research." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230101" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2110200" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2251" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="26" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2155.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Snail Hunt" />
+        <string name="parent" value="Legend of the Snail" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="Wing the Fairy not only knew about Alloy, but also knew of the snail with #r#t2210006#, Mano#k. Wing offered to give Mano's location on one condition; save the #bsnail shells#k.\n\n#i4000019##t4000019# #b#c4000019#/10#k\n#i4000000##t4000000# #b#c4000000#/10#k\n#i4000016##t4000016# #b#c4000016#/10#k" />
+        <string name="2" value="Gave snail shells to Wing the Fairy and in return got information that Mano frequently appeared near the thicket around the beach. Let's go back to #bPia#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흐응~ 너, 이제 보니 알로이에 대해 궁금한 게 아니라 마노에 대해 궁금한 거구나? 그렇다면 그냥 알려줄 수는 없지~ 마노에 대한 정보를 얻고 싶다면, 대신 부탁을 한 개 들어줘야겠어." />
+            <imgdir name="yes">
+                <string name="0" value="그럼 달팽이의 껍질, 파란 달팽이의 껍질, 빨간 달팽이의 껍질 을 각각 10개씩 모아 줘. 뭐, 별로 어려운 일은 아니잖아? 이 일만 해주면 마노가 어디서 나타나는지 알려줄게. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="싫으면 관둬도 상관은 없지만... 마노에 대해 알고 있는 건 요정들 뿐이야. 인간들은 거의 알지 못한다고. 다른 곳에서 정보를 얻는 건 불가능할걸? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey~ it looks like you're more interested in Mano than Alloy. In that case, I can't give away information that easily~ If you really want to know about Mano, you'll have to fulfill my request first." />
+            <imgdir name="yes">
+                <string name="0" value="Bring me #b10 of each#k #bSnail Shell#k, #bRed Snail Shell#k, and #bBlue Snail Shell#k. Not difficult, is it? Do this for me, and you'll be on your way to Mano. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't have to do it if you don't want to. Only the fairies know about Mano. Not many humans know about Mano. You won't be able to ask anyone else. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you brought all the snail shells? Hmm... Let's have a look. One, two, three... good! You've brought all of them. You want to know what I'm going to do with these? Icarus asked me to get them to master the Three Snails skill. Lucky for me I had you to do the job." />
+            <imgdir name="yes">
+                <string name="0" value="Listen carefully, I'm about to tell you where to find Mano. Mano is known to roam about #bthicket around the beach next to Lith Harbor#k. Alloy also met Mano while fishing nearby, so Mano has to be there. All set?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't brought all the snail shells yet? I'll tell you where Mano is after you bring me #b10 of each#k #bSnail Shell#k, #bRed Snail Shell#k, and #bBlue Snail Shell#k, 30 shells in total. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2154" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2239.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Balrog and the Seal" />
+        <string name="parent" value="Manji and Balrog" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="Manji's apprentice, Mu Young, has a pensive look on his face. Shall we hear what he has to say?" />
+        <string name="1" value="Mu Young says his master was right to worry. He says, Balrog, who was sealed by Tristan a number of decades ago, is preparing to reemerge. He has asked you to form a Expeditionary Team to prevent Balrog from reviving." />
+        <string name="2" value="Mu Young says his master was right to worry. He says, Balrog, who was sealed by Tristan a number of decades ago, is preparing to reemerge. He has asked you to form a Expeditionary Team to prevent Balrog from reviving.\r\nBut as you tried to prevent Balrog's revival, he disappeared into thin air, and you had to tell Mu Young." />
+        <string name="summary" value="Let's form an Expeditionary Team and go into the cave where Balrog is sealed. You will do what you can to prevent Balrog from reviving and report back to Mu Young." />
+        <string name="demandSummary" value="#o8830003# #a22391#" />
+        <string name="rewardSummary" value="EXP 130,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="130000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I know he wouldn't trust just anyone with something like this. If you were sent by my master, I assume you are one heck of an adventurer and I can really use your help. Will you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I came here to investigate at the request of my master and discovered something amazing. Many decades ago, my master was able to seal Balrog in this area where Tristan the hero was buried. But I keep finding subtle signs of Balrog's impending revival. " />
+                <string name="1" value="So I went deep into the dungeon to stop Balrog from reviving, but that place was filled with powerful energy. I mean, the force of Balrog was tremendously strong even though he hasn't even revived yet. " />
+                <string name="2" value="I don't know if I'd be able to handle Balrog on my own, even if he hasn't awakened. #bCould you please form an Expeditionary Team to help me prevent Balrog's revival? " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please, think about it. I really need your help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah, you're back! What happened to Balrog?\n\n#b#L0#Hmmm... I don't know. The dungeon began to shake and he disappeared into the air.#l\n#k" />
+            <string name="1" value="Really? Where could Balrog have disappeared to? Well, at least we were able to keep him from hurting anyone. Thank you so much." />
+            <imgdir name="yes">
+                <string name="0" value="My master was right again. You are one amazing adventurer." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Balrog is sealed behind that door. I don't recommend going in alone. I think it would be best if you entered with others after forming an Expeditionary Team. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061014" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2235" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22581.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Before Receiving the Secret Organization's Third Mission" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1013202#, from the Secret Organization, starts talking to you." />
+        <string name="1" value="#p1013202# thanks you for the good job you've done so far and asks you to come to the #b#m922030000##k in #b#m220000300##k if you want to know more about the Secret Organization. He says that he will meet you there in person to tell you more..." />
+        <string name="2" value="#p1013202#'s name is #p1013203#. He says that the name of the Organization that he is in is called the Black Wings and that they are trying to awaken a great being called the Black Mage in order to make Maple World a better place to live. They are currently in the process of preparing for that event..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6600" />
+            <int name="nextQuest" value="22582" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Welcome, Evan. I think this is our first meeting face to face. I am a Black Wings Captain, and my name is #p1013203#. Nice to meet you. \r\n#L0##bWhat? The Black Wings?#l\n#k" />
+            <string name="1" value="Yes. That is the name of the organization you and I serve. It is, as you know, a secret organization, which is why we have the word Black in it.\r\n#L0##bWhat is the mission of the Black Wings, exactly?#l\n#k" />
+            <string name="2" value="The Black Wings are here to help make Maple World a better place for everyone. We do a variety of things to help out. \r\n#L0##bYou mean like making Growth Stimulators for crops and killing Zombies?#l\n#k" />
+            <string name="3" value="Sure, sure. Things like that, but we have much greater things in store. For the future of Maple World, we are doing everything we can to resurrect the great Black Mage.\r\n#L0##bThe Black Mage?#l\n#k" />
+            <string name="4" value="Precisely. I can't provide more details until you reach a higher rank within the organization. But I will say this. This organization was specifically formed to resurrect the Black Mage. Bringing the Black Mage back is the best thing that could ever happen to Maple World." />
+            <imgdir name="yes">
+                <string name="0" value="I hope that satisfies your curiosity. Alright then. I am now ready to give you your next mission." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013202" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22578" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22581s" />
+            <int name="lvmin" value="67" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

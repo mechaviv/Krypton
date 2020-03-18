@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3221.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Drumming Bunny" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Roly-Poly Worker 5 at Eos Tower" />
+        <string name="1" value="I met up with Roly-Poly Worker 5 again at Eos Tower. He was complaining about the Drumming Bunnies that seem to be bothering him at the 60th floor, and requested that I collect #b100 Toy Drums#k for him. If I get this for him, then there may be more work in store...\n\n#t4000127# #b#c4000127##k/100" />
+        <string name="2" value="Just the way the Roly-Poly Worker 5 asked, I took out the drumming bunnies and collected the toy drums. He said his work got easier when I'm around, and he wants me to help him out on some other stuff. Maybe I should chill here and help these guys out for a change. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="12000" />
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000127" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How's the Toy Factory operating these days? It concerns me a great deal that the majority of the workforce is here fixing up the tower as opposed to working at the factory. I really wish I could take care of both the work at the factory and the work here." />
+            <string name="1" value="That's why... I'd like to ask you for a favor. Not far from where we are, at the 60th floor, you'll run into a whole bunch of #b#o3230400#s#k. They used to be just cute and cuddly, but lately, they are mad and ready to fight these days." />
+            <string name="2" value="I don't know what makes them want to stop us from fixing up this tower, but it has reached the point where I can't just sit back and look at them destroy the place. That's why... I'd like to ask you to &quot;take care of&quot; some of the #b#o3230400#s#k. Can you do that for me?" />
+            <imgdir name="yes">
+                <string name="0" value="It pains me to kill these previously-adorable creatures, but it has to be done. Please take care of them and bring back #b100 #t4000127#s#k as evidence. If you do this well, I may ask you for more help down the road." />
+                <string name="1" value="Oh, and ... #b#p2050008##k of the Omega Sector may know a thing or two about #b#o3230400##k causing commotion here. I suggest you pay a visit to the General before killing them. Good luck~!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see... I thought I could count on you to take care of them. Maybe it's too overwhelming for you to kill those cute little monsters. Maybe it's just too much to ask. In any case, if you decide to change your mind, please come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thanks to your help defeating the #o3230400#s, the fixing of the tower has gotten much easier now. You're much stronger than I thought. Anyway, with great work comes great reward. This may not be much, but please take it. I know it'll help you in some way shape or form." />
+            <imgdir name="yes">
+                <string name="0" value="Did you receive #b12,000 mesos#k? Anyway, I seriously hope that those guys return to their original, adorable state. I feel like I can ask for your help once more after the great job you did on this. Please come see me again down the road, and in the mean time, watch out for those monsters ~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The previously-adorable #b#o3230400#s#k have turned into a bunch of enraged monsters interfering with out fixing of the tower. Collect #b100 #t4000127#s#k for me, and I may ask you for more help down the road. Oh, and I suggest you go see #b#p2050008##k of the Omega Sector." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000127" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3220" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="31" />
+        </imgdir>
+    </imgdir>
+</imgdir>

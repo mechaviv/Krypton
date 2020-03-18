@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2377.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dark Lord's Trivial Problem 2" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="The Dark Lord says that he has another little problem..." />
+        <string name="1" value="Heed the Dark Lord's request to eliminate the #bStumps#k in order to gain his trust. A good place to find Stumps is in the Thief Training Center at the Kerning City Construction Site." />
+        <string name="2" value="You solved the Dark Lord's problem and gained more of his trust." />
+        <string name="summary" value="Enter the Thief Training Center through #bPower B. Fore#k at the #bKerning City Construction Site#k and eliminate the Stumps. " />
+        <string name="demandSummary" value="#o130100# #a23771#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 1,500\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, and do you think you can do one more favor for me? The #bStumps#k are starting to cause some problems. They are typically docile, but once in a while they get themselves into trouble." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Can you take care of the Stumps for me? If you go to the #bKerning City Construction Site#k, you'll be able to meet an instructor named #bPower B. Fore#k. He helps train low-level thieves. You can meet the #bStumps#k by entering the Thief Training Center through him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I was just starting to feel comfortable with you. Now, I am quite disappointed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you taken care of them already? You are stronger than I expected." />
+            <imgdir name="yes">
+                <string name="0" value="I look forward to your future development. Please continue to work on behalf of the thieves." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="It looks like you haven't taken care of the #bStumps#k yet. Is this too difficult of a job for you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2353" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3802.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="No Gong's Teaching3" />
+        <string name="parent" value="No Gong's Teaching" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Despite defeating 20 #o5120503# like #b#p2091000##k asked, #p2091000# still seemed uninterested in making me the Master. Seriously, is he really an instructor? This is really getting on me, and I got to see him now, just to see what he'll ask me to do." />
+        <string name="1" value="I asked him about being the Master, but #p2091000# gave me this uninterested look and told me to defeat #r40 #o5120503#s#k. First, 10... then 20... now 40? What am I, a training dog? Despite my anger ready to spill over, I realized I couldn't stop now. Fine, I'll do what #p2091000# says.\n\n#o5120503#  #r#a38021##k" />
+        <string name="2" value="Despite defeating 40 #o5120503#s, #p2091000# still gave me that uninterested look and just nodded nonchalantly. I mean, he should be giving me some kind of a compliment for doing all that, but instead, #p2091000# iterated that I am still nowhere close to being a Master. Is he really gonna make me the Master?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="다들 열심히 훈련하는 것 같군. 좋아. 그래야지. 그래야 선인이 될 수 있지.\r\n#L0#  #b… 이제 선인이 될 수 있는 겁니까?" />
+            <string name="1" value="응? 넌 누구지…? 처음 보는 얼굴 같은데?\r\n#L0#  #b전에 #o5120503# 10마리를 잡고! 또 #o5120503# 20마리를 더 잡은 사람입니다!" />
+            <string name="2" value="아아~ 그러고 보니 그런 녀석도 있었지. 뭐야? 그럼 아직도 포기하지 않은 거야? 헛. 끈질긴 녀석이구만. 그렇게 선인이 되고 싶은가?" />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="그럼 당장 #o5120503# 40마리를 잡아. …뭘 보고 있어? 빨리 가서 잡으라니까? 못 잡으면 선인은 못 돼!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="여기까지 와서 포기하다니, 근성 없는 녀석이로군. 그 정도 근성으로 선인은 절대 될 수 없지." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="16500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Good good. Everyone seems to be diligently training. That's exactly how to become the Master.\r\n#L0#  #b... now can I become the Master?" />
+            <string name="1" value="Huh? Who are you? I don't think we've ever met.\r\n#L0#  #bWhat? I defeated 10 #o5120503#s before, then I went ahead and defeated 20 more #o5120503#s! At your order!!" />
+            <string name="2" value="Ahhh, I see. I guess I said that before? What? So you haven't given up on it yet? Hmmm ... you are indeed persistent... do you REALLY want to become the Master?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then defeat #r40 #o5120503#s#k immediately. What are you waiting for? Do it now! You can't become the Master if you don't do it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're giving up right now? After all that? You must be a quitter, then. I don't see any Master around here that has NO persistence like you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh ... you really defeated 40 #o5120503#s. You really don't let go, do you? This is sickening... but then again, one must be persistent like you in order to become the Master. In that case, I commend you." />
+            <imgdir name="yes">
+                <string name="0" value="You have now passed the 1st stage of becoming the Master. This does not warrant you becoming the Master, but this should at least qualify you to become... um... a Junior Master. Becoming the true Master requires much much more training, so I suggest you keep doing what you're doing and keep up the effort." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r40 #o5120503#s#k? The road to becoming the Master is treacherous, and you should be able to endure this, no problem." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120503" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3801" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

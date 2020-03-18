@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2383.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mr. Pickall's Advice" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Dark Lord is the title for the master of Kerning City... Does that mean there have been many Dark Lords? Figure out the details from #bMr. Pickall#k." />
+        <string name="1" value="The former Dark Lord disappeared? In any case, it seems like you've heard from all the important people, so head back to #bRyden#k." />
+        <string name="2" value="Ryden said that in order for the Dual Blades to recapture Kerning City, they must first sully the Dark Lord's reputation. He said that a plan is in the works and gave you the mission of investigating how the townspeople currently view the Dark Lord. You reported to Ryden what you discovered from the townspeople." />
+        <string name="rewardSummary" value="EXP 1,500" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The current Dark Lord is the eighth one appointed, if I'm not mistaken. This is the disciple who took over after the former Dark Lord disappeared. So, all of that means that the current Dark Lord isn't very old." />
+            <string name="1" value="Come to think of it, the disappearance of the former Dark Lord still remains a mystery. He just suddenly disappeared one day. He also had a daughter, but she disappeared, too. It was really, very strange. \r\n" />
+            <string name="2" value="Hey, aren't you #h0#, the person that Ryden has been searching for?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'm sure of it. You need to go see #bRyden#k. It seemed quite urgent." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm certain of it, #h0#. Ryden was looking for you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Okay, great. So, what did the people think?\r\n#L0##bIn general, most people trust the Dark Lord, but there were some who seem to have doubts about the thieving Spore incident, not to mention the former Dark Lord who just randomly disappeared...#l\n#k" />
+            <string name="1" value="That's very useful information. Even the strongest wall can crumble because of a small crack. You've done a good job on this mission. Now, wait until you're assigned the next mission. " />
+            <imgdir name="yes">
+                <string name="0" value="Let's act like total strangers in the meantime. People might get suspicious if they saw us conversing." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="#bRyden#k has been anxiously looking for you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2382" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="12" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

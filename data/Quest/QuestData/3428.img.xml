@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3428.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where is the Dropship?" />
+        <string name="parent" value="The Missing Dropship" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I was able to hand #bPorter#k's letter from the Command Center in the Omega Sector to #bKay the Engineer#k, who was at the Omega Sector Silo, on time. I was expecting it to be a love letter, to no avail. Instead, it was about the missing dropship, and its current location. That's boring... anyway, Kay requested that I find the Dropship, which should be somewhere around Boswell Field, and check out the pilot's livelihood." />
+        <string name="2" value="I found an empty dropship at the Boswell Field, and it appeared to have mislanded here. The pilot is nowhere to be found; a letter was found instead." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3429" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my goodness!! The Dropship that had been reported missing may have been found! The members had a huge mission to carry on, and they were on their way back to the Sector when we lost them, and we had no idea where they were from that point on. I can't believe the Dropship is found now!! Alright, here's your next  task on hand." />
+            <string name="1" value="According to the letter I have just received, the location of the Dropship has been confirmed to be around Boswell Field, so I suggest you check out the area and see if the pilot's alright, as well as the Dropship. It doesn't really matter what happened to the Dropship, as long as the pilot's fine..." />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050020" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2051001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3427" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

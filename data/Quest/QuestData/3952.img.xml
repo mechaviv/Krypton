@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3952.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Bounty Hunt" />
+        <string name="parent" value="The Desert Bounty" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101000##k of #b#m260000000##k has heard a rumor..." />
+        <string name="1" value="#r#o3220001##k, the cactus monster, is threatening the desert! The #bSand Bandits#k have put a bounty on #o3220001#'s head. The Sand Bandits? When asked, #p2101000# suggests asking #bthe leader of the Sand Bandits#k..." />
+        <string name="2" value="You met the leader of the Sand Bandits, #p2101010#. #p2101010# says that the Sand Bandits have put a bounty on #o3220001#, but there is a problem. Some people worship #o3220001# as the guardian deity of the desert. He says the first thing to do is to convince #p2100001#, the spokesman for the people who worship him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you're here to see the dance, wait until the performance... Oooooh. Are you here about the rumor? " />
+            <imgdir name="yes">
+                <string name="0" value="Oy vey! How could the dance of the amazing #p2101000# attract so few people? Ah well, so it goes. I'll tell you about the rumor then. A bounty has put on #r#o3220001##k." />
+                <string name="1" value="What? Who is #o3220001#? Are you serious? He's only the biggest threat in the desert, the ruler of all the Cactus, the most powerful monster in all the Burning Road! You should learn more about #m260000000# from Byron, honestly!" />
+                <string name="2" value="Anyway, a bounty has been put on #o3220001#. And the reward is quite generous. You've know about #m260000000#'s underground organization, #bthe Sand Bandits#k, right? That's where the rumor started." />
+                <string name="3" value="You want to hear more? If you want details, find out on your own. Maybe you should look for the #bleader of the Sand Bandits#k or something." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? Then why are you here? Oooh, are you another fan of the amazing #p2101000#?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, #h0# is that you? What is it...? Huh? A bounty...? Oh, you're talking about a bounty for #o3220001#. That means you heard the rumor from #p2101000#? It's true. The Sand Bandits have put a bounty on #o3220001#." />
+            <string name="1" value="#o3220001# is a dangerous monster out to destroy the desert. A group of merchants traveling the Burning Road has been attacked a number of times, but the sultan and the queen couldn't care less. Hence, the Sand Bandits took matters into our own hands. " />
+            <string name="2" value="But this is too much for the Sand Bandits to take care of on our own, which is why we have put a bounty on the monster... Why, you ask? Well... " />
+            <imgdir name="yes">
+                <string name="0" value="#o3220001#is an ancient #o2100104# that evolved into a monster. He's very smart. He can even use magic! That explains why some people worship him as the guardian of the desert. It sounds foolish, I know, but a good number of people actually believe that. " />
+                <string name="1" value="We can't just go out and defeat #o3220001#, as that will turn many people against the Sand Bandits. We must first convince the people... Will you take on this task?" />
+                <string name="2" value="The spokesman for the people who believe #o3220001# is the guardian of the desert is #b#p2100001##k. He is as stiff and stubborn as #t4011008#. #bConvincing#k that old man will be our first battle, before we even hunt the monster." />
+                <string name="3" value="Convincing him won't be easy. You might have to give him a #bLidium#k as a gift before you can get him to listen... Often, when you talk to someone that stubborn, it helps to #bbeat around the bush and change the subject to get him where you want him, then put your foot down and convince him when the time is right.#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="It seems you have not connected with #bthe Sand Bandits#k yet. The Sand Bandits are an underground organization. If you want to talk to them, only thing you can do is to #bbecome one of them.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3937" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

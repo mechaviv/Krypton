@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22517.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Power B. Fore's Continuing Paranoia" />
+        <int name="area" value="7" />
+        <string name="0" value="You defeated the #o9300274#s but it seems that #p1012118# still doesn't believe you. Talk to #b#p1012118##k." />
+        <string name="1" value="#p1012118# denies the results and tells you to hunt #r#o9300274##ks once again. This time he wants you to hunt #r80#k of them... What an annoying guy.\r\n\r\n#o9300274##r #a225171##k" />
+        <string name="2" value="You passed #p1012118#'s second test. Will he accept the results this time?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2400" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="22518" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="No way! This can't be! I can't accept it! There is no way that a person recommended by Stan would have such skills... This is impossible!\r\n#b#L0#Ahem, so can I start using the Training Center now?#l\n#k" />
+            <string name="1" value="I can't accept it! You're using some sort of trick! Yes, that's it! Some high level adventurer passing by must have helped you! I'm right, aren't I?!\r\n#b#L0#No one helped me...#l\n#k" />
+            <string name="2" value="Ha, an instrument of Stan would have no problems telling a lie. I can't believe you! I will give you another test! This time, eliminate #r80 #o9300274##ks!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Hehehe, even a high level adventurer would be too annoyed to help you eliminate so many of them. This time, I will uncover your mask once and for all!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Puhaha... So I was right! It was all a lie. It wasn't a bad attempt but you're far from being able to trick me!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Huh?! You're back... You...you didn't...eliminate 80 #o9300274#s, did you? What? No way! This is not possible! It's all a lie!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You weren't able to eliminate #r80 #o9300274#s#k... Puhaha, that is what I figured. There is no way you have such skills!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012119" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300274" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22516" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="16" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6121.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bahamut's Power 1" />
+        <string name="parent" value="Dragon Heart" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value=" After speaking with #b#p2081007##k, he said the dragon has not reached maturity. There must be something I can do to increase its' power..." />
+        <string name="1" value="Raul told me to gather #b25 #t4031482##k if I want to raise #q2321003#'s power. It's time to hunt! \n\n#i4031482##t4031482# #b#c4031482#/25#k" />
+        <string name="2" value="After I gave Raul #t4031482#, he awakened #q2321003#'s power. I can feel it radiating...magnificent!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031482" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="15" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You got the power of #q2321003#. Your dragon's power is still under-developed. Do you want to develop its power further?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you want to give your dragon more power, get #t04031482#. Looking at your dragon's power...I can make it work with #b25  #t04031482##k. This process is know to be flawless so long as the proper materials are brought. I await your return." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You mean you don't want the power any more? It seems strange to come so far, only to turn back now..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Ah! You gathered 25#t04031482#. It seems you want to increase your dragon's power after all!" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Your dragon has grown in power.  But still, #bthe power of your dragon is not fully developed yet.#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" You haven't got #b25#t04031482##k. It's impossible to make the power work with less than 25. When you have the needed materials, please return to me and I will increase your dragon's power." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031482" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6120" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

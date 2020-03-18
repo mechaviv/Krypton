@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3356.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Who is De Lang?" />
+        <string name="parent" value="Who is De Lang?" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="1" value="I explained to #p2111003# that the medicine might cure #p2111005#, and received the medicine from him. I did bring this half suspecting this might be a scam, but really... is it enough to cure #p2111005#? The president of Alcadno Society, #b#p2111001##k, might correctively find out the list of ingredients for this." />
+        <string name="2" value="#p2111001# said this medicine indeed cures #p2111005#'s sickness... Why in the world was #p2111003# holding on to the medicine #p2111002# made all this time??" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031743" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031743" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It's a medicine I have had since the day I first opened up my eyes. I had no idea what this was for, so I was going to throw it away, but... for some reason, I had a feeling I should not just discard it like that. I had a hunch that this is an important item, for some reason. Maybe this is for #p2111005#. \r\n#b#L0# It may indeed be for #p2111005#, so can I take a look at it first?#l&#x9;" />
+            <string name="1" value="Sure! If it's for #p2111005#, then it's a definite yes. I have the medicine with me right now, would you like to take it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then take this and go see #b#p2111001##k of Alcadno Society to have it checked out for the list of components in this. He will definitely know whether the medicine is good for #p2111005# or not. I am not sure if it really is for #p2111005# or not, but... if it does help her regain health, then I will be elated." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you busy with something? It might be a medicine for #p2111005#, so please go have it checked out soon." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good seeing you. Did you go see #p2111003#? Did he have the medicine for #p2111005# by chance? ...This is the medicine that he has kept since the beginning? Please hand it to me." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Is #b#p2111001##k not there yet? There's no one in #m261000000# who is as knowledgeable on medicine as him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you not gone to see #b#p2111003##k yet? Maybe he might have the medicine for #p2111005#..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the medicine that I gave you before. Thankfully, a friend of mine found it, and returned it to me. No one may know what this medicine is for, but it might be an important one, so please handle it with care as you give it to #b#m261000000##k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031743" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3355" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

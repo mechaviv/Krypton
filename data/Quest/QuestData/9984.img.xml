@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9984.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Putting the Maple Leaf in my mouth..." />
+        <int name="area" value="50" />
+        <string name="0" value="I should go see #b#p9010010##k.  She said she was going to tell me some special information in light of MapleStory's 4 Year Anniversary..." />
+        <string name="1" value="Collect #t04001126#? It's hard to believe that it's a #b#t01012098##k... but it is said to be very potent.  It's not like I need to collect a large amount.  I should give it a try\n\n #i04001126# #t04001126# #b#c04001126##k / 50" />
+        <string name="2" value="I got a #b#t01012098##k!  After I put it in my mouth, I feel like my abilities increasing.  It feels invigorating.  Oh, but what if it doesn't increase the abilities I need?\n...I'll just go see #p9010010# in two hours.  I'm sure she'll know what to do." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="interval" value="120" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008052600" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, #b#h0##k!  I'll tell you something special in celebration of MapleStory's 4 Year Anniversary.\n\n#i01012098# #t01012098#\n\nI heard this from #p9000021#, the Maple Tree keeper but supposedly there is a special Maple Leaf that brings out special powers if you hold it in your mouth.\nWhat do you think?  Isn't that amazing?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ha~ I like that.  That makes it fun for me as the instructor.\n#b#t01012098##k looks very similar to a generic #t04001126# so it's hard to tell them apart.  If I didn't take lessons from #p9000021# for a week, I wouldn't know how to distinguish them either. " />
+                <string name="1" value="After a lot of practice, now I can distinguish them easily~!  Collect #b50#k #b#t04001126##k which are attached to monsters and bring them to me.  I'll tell you if any of them have #t01012098# in it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't believe the effects of #b#t01012098##k?  If you just sit there doubting, another adventurer will surpass you just like that..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're not done collecting? #b#t04001126##k has been attached to monsters as of late, so try hunting monsters.  Collect #b50#k and bring them to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q9984e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+            <int name="interval" value="120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

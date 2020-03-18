@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3822.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Do Gong's Swallow" />
+        <string name="parent" value="Do Gong Seeking Swallow" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2091001##k of #b#m250000000##k seems to be concerned about something..." />
+        <string name="1" value="#p2091001# seemed worried that the #b#p2071006##k he had raised hasn't been seen around #m250000000# lately, and he seemed genuinely concerned, for #p2071006# always made time to say hello even when it was busy. #p2071006#?? I think I know who that may be... I better go see #p2071006# and let it know of #p2091001#'s words." />
+        <string name="2" value="#b#p2071006##k seem to remember things about #p2091001#, but doesn't seem 100% sure about it..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You look like someone that have traveled all over the world, which means you probably experienced meeting with various groups of people from different regions. Since you look like a well-travelled person, can I ask you for a favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Have you ever heard of #b#p2071006##k, by any chance? It may be a #p2071006#, but it was smart enough to talk in human language, and also casted spells, albeit very little. Birds like that are hard to find, and it should be pretty famous by now. It used to be just another regular #p2071006#, but after raising the bird by feeding some Peaches and #t2022143#, it became one very intelligent bird." />
+                <string name="1" value="#p2071006# may look like a baby bird at times, but it's very intelligent and kind-hearted, allowing it to fly across the world handling some of the most important informations around. Even at its busiest, it always dropped by to say hello to me, but now it's impossible to contact #p2071006#. If you, by any chance, run into #p2071006#, please let him know that #p2091001# misses him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="True...you must be really busy from sightseeinga round #m250000000# to begin with." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="My wings are not being fixed right... and I don't know if I can fly again. I have an unfinished mission to take care of, too... but... what was that mission? Hmmm? Hello? Can i help you? #p2091001# wanted me to say hello for him? ...#p2091001#... that name sounds familiar." />
+            <imgdir name="yes">
+                <string name="0" value="I am really sorry, but my migraine is so terrible that I can't even remember some things. I forget things easily to begin with, but ever since I cracked my head, my short-term memory has been even worse..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="No word on #b#p2071006##k...?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

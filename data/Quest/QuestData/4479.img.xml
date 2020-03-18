@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4479.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Santa Grandmother Finding" />
+        <int name="area" value="50" />
+        <string name="0" value="You've found Santa Encyclopedia No.2, regarding Santa's Family History.  Santa Encyclopedia No.2 has stories about the lovely wife of Santa Claus, Mrs. Claus. You should visit her by tracing the information written in Santa Encyclopedia No.2." />
+        <string name="1" value="Mrs. Claus was precisely at the location mentioned in the book. You asked Mrs. Claus about Santa Claus." />
+        <string name="2" value="You asked Mrs. Claus about Santa Claus, but she pretended as if she didn't know who he was. How will you get her to warm up to you?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do I have any business with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm, Santa Claus? I've never heard of that name. Find somebody else who could answer your question." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If not, just do what you were planning to do." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh? Aren't you the one who asked me about Santa Claus some time ago? Hmm, you just don't know how to give up, do you? Well, alright then!" />
+            <imgdir name="yes">
+                <string name="0" value="BUT! I won't say a thing about Santa Claus unless I first figure out a few things about you. So, if you wouldn't mind, indulge me in a quick test and I'll judge your qualifications. Please come talk to me again when you are ready for my pop quiz." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250051" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4477" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161038" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

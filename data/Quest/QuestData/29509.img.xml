@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29509.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Persevering Challenger" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142084" />
+        <string name="0" value="#b#eTitle Challenge - Persevering Challenger#n\nComplete the #k#bDangerous Dungeon!#k quest. Dalair, on behalf of the God of Honor, is looking for explorers who never cease to face challenges. He says anyone who defeats a lot of monsters in the dungeons in Sleepywood will receive the #bPersevering Challenger#k#n title." />
+        <string name="1" value="#b#eTitle Challenge - Persevering Challenger#n#k\nComplete 3 types of #bDangerous Dungeon!#k quests in Sleepywood." />
+        <string name="2" value="#b#eTitle Challenge - Persevering Challenger#n#k\n\nYou have acquired the #bPersevering Challenger#k title and the associated medal." />
+        <string name="demandSummary" value="- #y2111# (#u2111#)&#xD;&#xA;- #y2112# (#u2112#)&#xD;&#xA;- #y2113# (#u2113#)" />
+        <string name="rewardSummary" value="#Wbasic#&#xD;&#xA;#v1142084:##t1142084:# 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142084" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142084:# #e#b#t1142084##k\n\n- #y2111# Complete\n- #y2112# Complete\n- #y2113# Complete\n\n#nWould you like to test yourself to see whether you have what it takes to be the owner of this medal?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There is nothing harder than having to hunt a ton of monsters. Go to Sleepywood and complete the #bDangerous Dungeon#k quests. Come back and see me upon completing 3 types of #bDangerous Dungeon#k quests." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Completing a difficult mission is twice as rewarding." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wonderful! Your perseverance is admirable." />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, acknowledge you as the recipient of this honorable title, #bPersevering Challenger#k. Please come and see me whenever you wish to challenge yourself to a different title." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="#y2111# (#u2111#)\n- #y2112# (#u2112#)\n- #y2113# (#u2113#)\n\nYou don't seem quite ready to acquire the #bPersevering Challenger#k title. Come and see me when you think you're ready." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2111" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2112" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2113" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2105" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2106" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2107" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

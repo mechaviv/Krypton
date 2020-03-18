@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2378.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sixth Mission: Destroying the Evidence 2" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Assist the Dual Blades by following Ryden's order." />
+        <string name="1" value="Help with #bRyden's#k plan to completely eliminate the evidence.\r\nDefeat the Bubblings and recover 5 #b#t4032621:#s#k." />
+        <string name="2" value="You brought Ryden the #b#t4032621:#s#k in order to eliminate the evidence. What could the next mission be?" />
+        <string name="summary" value="Defeat the Bubblings at the #bSubway Line 1#k area, #bConstruction Site North of Kerning City#k, etc., and recover the #b#t4032621:#s#k." />
+        <string name="demandSummary" value="#i4032621:# #t4032621:# #c4032621# / 5&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 2,800\r\nCan proceed to 'Sixth Mission: Destroying the Evidence 3' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032621" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2379" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's still too soon to feel safe, as there are many more seals remaining. Are you ready for your next mission?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, eliminate the #b#o1210103#s#k and recover #b5 #t4032621#s#k. You should be able to find Bubblings around #bSubway Line 1#k or the #bConstruction Site North of Kerning City#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Stop acting like a coward! You've done fine on the other missions, so Lady Syl won't accept your chickening out now." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the #t4032621#s?" />
+            <imgdir name="yes">
+                <string name="0" value="Good, you're doing very well. You're completing the missions faster now. I'm proud of you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Recover #b5 #t4032621:#s#k. Hurry!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032621" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2359" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

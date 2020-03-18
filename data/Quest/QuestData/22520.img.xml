@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22520.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Receiving Power B. Fore's Certificate of Training Again" />
+        <int name="area" value="7" />
+        <string name="0" value="You lost the Certificate of Training that #p1012118# gave you. Without it, you won't be able to enter the Training Center. Go see #b#p1012118##k again." />
+        <string name="1" value="You'll be able to receive the Certificate of Training from #p1012118# again by training. Hunt 200 #o1210101#s.\r\n\r\n#o1210101##r #a225201##k" />
+        <string name="2" value="You hunted the #o1210101#s. Hmm... You're not sure how much longer you'll be able to train here." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032457" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What is it? You want to receive my training again? Puhaha! My training is so great, even people who've completed training want to receive it again! Okay, let's start training!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hunt #r200 #o1210101#s#k. Only difficult training can make you a master! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You refuse? revolting already? Now, now... You're not nearly strong enough to fight me. Hehe, why don't you cool your head and then come back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you defeated 200 #o1210101#s? Faster than I thought. This is all a result of my training. Here, take this." />
+            <imgdir name="yes">
+                <string name="0" value="You must be very happy to receive the Certificate you so desired. Puhaha." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not been able to defeat #r200 #o1210101#s#k yet? I seem to have trainees who are unable to keep up the intensity of my training, hehe." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012119" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22518" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032457" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="lvmax" value="35" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

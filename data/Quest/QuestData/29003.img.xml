@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Diligent Explorer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142000" />
+        <int name="dailyPlayTime" value="10800" />
+        <string name="0" value="#b#eTitle Challenge - Diligent Explorer#n\n#kIf I log on for 3 or more consecutive hours for 27 days within the 30 day time limit, I can earn the #e#bDiligent Explorer#k#n title.  I should go see the Monk of Honor, Dalair." />
+        <string name="1" value="#b#eTitle Challenge - Diligent Explorer#n\n#k - Time Left : #Qdaylimit#Days #Qhourlimit#Hours #Qminlimit#Minutes #Qseclimit#Seconds\n - Today's Play Count : #Dhour#Hours #Dmin#Minutes #Dsec#Seconds / #Dminhour#Hours \n - Completed Days / Goal :  #Dcount#Days / #Ddaylimit#Days\n                             #jgaugeDays#  #jperDays#%" />
+        <string name="2" value="#b#eTitle Challenge - Diligent Explorer#n\n#k - Time Left : #Qdaylimit#Days #Qhourlimit#Hours #Qminlimit#Minutes #Qseclimit#Seconds\n - Today's Play Count : #Dhour#Hours #Dmin#Minutes #Dsec#Seconds / #Dminhour#Hours \n - Completed Days / Goal :  #Dcount#Days / #Ddaylimit#Days\n                             #jgaugeDays#  #jperDays#%\n\nThe Monk of Honor, Dalair, said diligence is the first criteria of being an explorer and applauded me.  Then he gave me the '#bDiligent Explorer#k' title for successfully completing the challenge." />
+        <int name="timeLimit2" value="2592000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142000# #e#b#t1142000##k\n\n - Time Limit 30 Days\n - Play 3 consecutive hours or more for 27 days \n\n#nDo you want to test your skills to see if you're worthy of this title?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll give you 30 days to play 3 consecutive hours or more a day for 27 days.  After you do that, come back and see me.  Remember that you have to come back and see me within the time limit in order for it to be approved.  Also, unless you complete this challenge or quit first, you can't try out for another title." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You successfully played 3 hours straight for 27 days!  Great job!" />
+            <string name="1" value="Take this." />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, announce to the world that you are the owner of this honorable title.  If you want to try out for a new title, come back and see me any time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You're short on days where you played 3 hours or more.  Why don't you quit and try again next time?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142000" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

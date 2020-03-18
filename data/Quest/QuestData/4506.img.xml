@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4506.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Technical Assignment" />
+        <int name="area" value="48" />
+        <string name="0" value="Rumor has that #b#p9270029##k in CBD is kind of sick.  I should go find out what's up with him." />
+        <string name="1" value="#p9270029# asked me to gather some requirements for his school work.  Why is he asking such things from me?  He didn't seem that sick!  Anyway,  I will be kind enough to help him out this time.  But only this time though.  Let's just gather those items and deliver it to #p9270034#.\n\n#t4000374#  #r#c4000374#/2#k\n#t4000375#  #r#c4000375#/6#k\n#t4000376#  #r#c4000376#/1#k" />
+        <string name="2" value="I was able to provide #p9270034# the required items for #p9270029#.  Hope he does the same for me when I feel sick!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000375" />
+                    <int name="count" value="-6" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000376" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000374" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Arghh... I was assigned to a technical assignment that requires some motor parts by Teacher #bAiru#k. Unfortunately, I am down on flu currently. Sob~ " />
+            <string name="1" value="I was asked to find #b2 Headlights, 6 Tires and 1 Car Battery#k for that assignment. However, I don't think I have the energy to move around the area to search for all the assignment materials. Will you help me to locate all these items? Please...." />
+            <imgdir name="yes">
+                <string name="0" value="Really? It is so nice of you~ Please get me #b2 Headlights, 6 Tires and 1 Car Battery#k for my assignment. Once you have gathered all the required items, please look for Teacher Airu and pass her the items. Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Okay~ I am done for sure. Teacher Airu will punish me once I get back to school after I have recovered from my flu. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi There~.... What? You came here to see me for Johnson's favor? Oh Dear.... I should be giving you A++ for doing this..." />
+            <imgdir name="yes">
+                <string name="0" value="It is so kind of you to help Johnson to gather all the required items for the technical assignment while he is sick! Johnson is one of my favorite student~ He is intelligent and hardworking! Please accept this token~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What? You are unable to locate Teacher Airu? She is always seen walking around in CBD Area. " />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you seen Johnson lately? I have not seen him for the past 2 days. I am starting to worry about him~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270034" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000374" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000375" />
+                    <int name="count" value="6" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000376" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270029" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

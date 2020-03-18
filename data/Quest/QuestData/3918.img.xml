@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3918.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Little Prince that Loves the Stars" />
+        <string name="parent" value="For the Little Prince" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="You remember seeing a boy sitting in the middle of the desert with a rose. He must not have been thirsty, because he kept worrying about the rose. Is he doing alright?" />
+        <string name="1" value="The strange boy is gazing up at the sky, explaining sadly that he can't see a star. A star? What star is he looking at? You feel sad watching him, so you promise to get him #b#t4000333#s#k from #r#o2100108#s#k so he can see his star.  \n\n#i4000333# #t4000333#  #b#c4000333##k/20" />
+        <string name="2" value="After you gave that strange boy the #t4000333#s, he flashed that bright smile of his. He said he's from a different planet... what does he mean? Is he an alien? He's hard to understand, but seeing him smile like that made you feel less weird about him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="......  \r\n#L0# #b 왜 그렇게 멍하니 하늘만 보고 있니?" />
+            <string name="1" value="아... 전에 장미꽃을 위해 #t2022155#을 구해 주셨던 그 분이군요... 정말 감사했어요. 왜 하늘을 보고 있냐고 물으셨죠? 그건... 하늘에 별이 있기 때문이랍니다. \r\n#L0# #b 별? 별을 보고 있는 거니?" />
+            <string name="2" value="네... 저기, 저 쪽에 있는 별... 저 별을 보고 있어요. 정말 예쁘죠? \r\n#L0# #b 잘 보이지 않는데..." />
+            <string name="3" value="네... 요즘은 사막의 모래 먼지 때문에 별이 잘 보이지 않는 것 같아요. 좀 더 자세히 별을 볼 수 있으면 좋을 텐데... 혹시 괜찮으시다면... 별을 잘 볼 수 있도록 도와주시면 안 될까요? 어려운 부탁이 아니라면..." />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="아... 그럼... #t4000333#을 구해 주시겠어요? #o2100108#들이 가지고 있는 것을 본 적이 있는데... 그것만 있으면 별을 더 잘 볼 수 있을 것 같아요. 그럼... 부탁 드려요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="저 별을 손에 잡을 수 있다면... 그럴 수 있다면 좋을 텐데..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4650" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032010" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000333" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="...  \r\n#L0# #b Why are you aimlessly looking up at the sky?" />
+            <string name="1" value="Ah... You're the one that got me the #t2022155# for the rose the other day... I can't thank you enough. Why am I gazing up at the sky? Because... that's where the stars are.\r\n#L0# #b Stars? You're looking at the stars?" />
+            <string name="2" value="Yes, that star you see over therrrrrrrre... Yes, I'm looking at that one. Isn't it pretty? \r\n#L0# #b I can't really see it..." />
+            <string name="3" value="Yes, I think stars are hard to see because of the sand dust. I wish I could see the stars come clearly... Hey, if it isn't too much to ask..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ah… Can you get me #b20 #t4000333#s#k? I've seen #r#o2100108#s#k carry them around... I think I'll really be able to see the stars better with them. Thanks…" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If I could hold that star... That'd be so wonderful..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah. The #t4000333#s. With this, I'll be able to see the stars... I'm so happy now." />
+            <imgdir name="yes">
+                <string name="0" value="Look at that star! That small yet beautiful star...is actually my home. Hopefully I'll be able to go home someday." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you've gotten #b20 #t4000333#s#k yet... Was it too much to ask?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000333" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3917" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="32" />
+        </imgdir>
+    </imgdir>
+</imgdir>

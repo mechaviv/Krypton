@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21100.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Five Heroes" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="In order to begin real training, you must first figure out which of the five heroes you were, but you don't remember anything… You'd better discuss this with #b#p1201000##k." />
+        <string name="1" value="#p1201000# tells you while she was excavating heroes from ice, she found a weapon used by one of the heroes. She placed it in town. She wonders if it was yours. If it was, then you would be #bAran, the hero that used a polearm#k..." />
+        <string name="2" value="#p1201000# told you while she was excavating heroes from ice, she found a weapon used by one of the heroes. She placed it in town. She wondered if it was yours. If it was, then you would be #bAran, the hero that used a polearm#k..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <string name="startscript" value="q21100s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

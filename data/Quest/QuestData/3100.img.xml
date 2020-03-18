@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3100.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering Food to Spiruna" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard #b#p2012011##k of #b#m200000000##k have something to take care of..." />
+        <string name="1" value="According to #p2012011#, #p2032001# the crazy old lady lives with her student somewhere around Cloud Park. They usually stop by the grocery store and buy some food, but they hadn't come by over the last few days. Concerned, #p2012011# asked me to deliver the food to #b#p2032001#'s student#k for him...\n\n#i2010003# #t2010003#  #b#c2010003##k / 20  \n#i2010000# #t2010000#  #b#c2010000##k / 20 \n#i2010002# #t2010002#  #b#c2010002##k / 20" />
+        <string name="2" value="I managed to deliver the food to #p2032001#'s student." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="4000" />
+            <int name="exp" value="7500" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2010003" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is odd... they should be here, and yet they aren't. What? What am I so concerned about? It's none of your business! Then again...she may need your help. Who's the &quot;she&quot; I'm referring to? Hmm... if you'll help me out, then I'll tell you." />
+            <imgdir name="yes">
+                <string name="0" value="Her name is #p2032001#. She may be human, but she can see things most humans never pick up. She lives somewhere in #m200000000#, probably in Cloud Park with her student. She may be on the feisty side, but she's a great person, a rarity among humans." />
+                <string name="1" value="She sometimes sends her student here to buy some food, since at Cloud Park, there's nothing to eat other than some Nependeath Fruits... but it's odd she hadn't come for a while. I'm sure they ran out of food, too." />
+                <string name="2" value="I'm not interested in human problems, but since #p2032001# has been our customer, it does bother me a little that she may be hungry. Please deliver some food to #b#p2032001#'s student for me#k. I'll need #b20 each of #bapple#k, #begg#k, #borange#k. She'll pay for it. Since you're a fellow human, you should relish the opportunity to help a fellow human out." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... I knew humans don't care about anyone else but themselves. Leave me!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, I'm sorry, but she does not prefer speaking with strangers, so if you need anything... please talk to me instead. What? Kriel sent some food for us? Wow..." />
+            <string name="1" value="Now that I realized, we were just about to run out of food, and we weren't thinking about grocery shopping for the longest time... Thank you so much. Here's the total for the food. Thanks to you, we won't have to worry about food for a long time..." />
+            <imgdir name="yes">
+                <string name="0" value="I didn't know Kriel had such a soft side in her..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmmm... I don't think you've visited #p2032001#, yet... Don't tell me you ate them all on your way there. If so, you'll have to make up the difference with mesos. Lots of mesos." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="She prefers silence. You do not want to cross her... she's very scary." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2010003" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012011" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

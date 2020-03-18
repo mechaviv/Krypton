@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8008.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sakura's Request" />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="3" />
+        <int name="area" value="48" />
+        <string name="0" value="I better go talk to #bSakura#k, who's crying in front of the police station." />
+        <string name="1" value="#bSakura#k wanted me to find the #bBoss Kitty#k that stole her Orange Marble, and retrieve it from it." />
+        <string name="2" value=" I will have to get the orange marble for #bSakura#k.  I am sure she is looking for it.  So what should be my next move? Perhaps confrontation..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8009" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" My father works in a city, and comes home very rarely as a result. It's good that he brings something nice every time he comes home, but...one time, he gave me this beautiful Orange Marble, and I LOST IT to some cat! What am I supposed to do? I consider it an heirloom, and... arrgh! Please help me! Help me get that marble back! " />
+            <imgdir name="yes">
+                <string name="0" value="Thanks~! I'll be counting on you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm sorry I asked for something difficult from you. I understand you must be busy... but hey, if you ever find some time, can you please help me out? Thanks~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you look pretty strong... please help me find my lost jewelry~!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you soooooo much! Did you get scratched up by those menacing cats? What? The cat spoke to you? Whatever... I know I may look young, but I'm a little smarter than that! I don't believe you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you find my marble yet? You know it is important to me~!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8018" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

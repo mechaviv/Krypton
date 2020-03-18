@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3023.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Looking for the Wiseman in Ellinia" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="20" />
+        <int name="area" value="33" />
+        <string name="1" value="I handed Dances with Balrog 2 Power Crystals and received the 1st #bold piece of map#k. The map is cut in four pieces, each piece held by a wiseman. He wanted me to gather up all four pieces of the map, find the Book of Ancient through it, and seal it up for good. Next up: The wiseman in #bEllinia#k. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031054" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <int name="nextQuest" value="3024" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I knew that you won't let me down. With this, you can regain full strength. Well, like I promised, here's the item that may help you find #b#t4031056##k. Before you accept it, though, check and see if your etc. inventory has room." />
+            <imgdir name="yes">
+                <string name="0" value="This is a piece of a map that shows where #b#t4031056##k is hidden. It's been cut up in 4 pieces and is taken care of by us 4 wisemen. I can't just hide this for too long, though. Please find the book and then seal it tightly. Now please go visit #bthe Wiseman from Ellinia#k. I'll let him know in advance" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The map that shows where #b#t4031056##k is hidden is cut up in four pieces, and was left to us 4 wisemen. It can't be hidden forever, anyway. Please find the book and seal it up for all of us. Now go see #bthe wiseman in Ellinia#k. I'll let him know in advance." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3022" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

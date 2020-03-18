@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2415.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Using Power Strike" />
+        <int name="area" value="10" />
+        <int name="selectedSkillID" value="1001004" />
+        <string name="0" value="Power B. Fore at the training center wants you to learn how to use a new skill." />
+        <string name="1" value="Power B. Fore is teaching you how to use a new skill. Use Power Strike to eliminate some Stumps. \r\n\r\n#o130100# #a24151# (Use Power Strike)" />
+        <string name="2" value="You used Power Strike to eliminate some Stumps." />
+        <string name="summary" value="Use Power Strike to eliminate 30 Stumps." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, thanks! I was able to get back my letter of commendation thanks to you. Shall we start with the training now? You know what skills are, right? Use them wisely, and you'll be able to perform attacks that are more powerful than you're normally capable of. What do you think? Want to give it a try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now use Power Strike to defeat 30 Stumps." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you told me you wanted to train." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great... great work there. I can see you were diligent in your training, so let me give you a boost on leveling up." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated all the Stumps yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022104" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2410" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1001004" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

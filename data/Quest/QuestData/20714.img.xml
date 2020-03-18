@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20714.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mission in Kerning City Complete" />
+        <int name="area" value="15" />
+        <string name="0" value="Agent #b#p1103002##k of #m103000000# told me he had something to tell me..." />
+        <string name="1" value="#p1103002# told me this wraps up my work in #m103000000# and that I'll need to hand in the Mission Report and #t4032140# to #b#p1101002##k." />
+        <string name="2" value="After receiving the report and the doll, #p1101002# told me one of Black Mage's men is indeed a Puppeteer, and that this may all stem from him. He then told me this still needs more investigation and asked me to train harder so that I can make myself useful for the upcoming missions." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032140" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032141" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032140" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032141" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I kept going through the records, but I think we're pretty much done with our mission here in #m103000000#. Here's the written report, so I want you to take this and #t4032140# and hand them to #b#p1101002##k for me, okay?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I probably won't see you unless you receive another assignment here in #m103000000#. Based on the fact that you worked with me even with my rather unfriendly personality, I really think you'll become a great Knight. Don't be a stranger, okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#p1101002#! There's a Knight here that is really trying to coast through the assignment! Make sure to do things right before I really say these words to #p1101002#. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So it looks like you have completed the assignment in #m103000000#. There sould be a report from #p1103002#... Yes, that's it." />
+            <imgdir name="yes">
+                <string name="0" value="With the report comes the doll, again. Does this mean the #rPuppeteer#k is the one in charge? Hmmm... ah, I suppose you haven't been filled in with details about this." />
+                <string name="1" value="Based on the information we have gathered over the last few months, we managed to discover that one of Black Mage's men has the ability to control monsters through dolls. We don't know the exact name, and the Knights refer to him as just a Puppeteer." />
+                <string name="2" value="I do believe that these events that have taken place recently are closely linked to that of the Puppeteer. We do not have a concrete evidence for that as of yet, so we need to dig for more information. Well, even if  you do, you won't be able to face off against the Puppeteer with the level you're at right now, so I will most likely withhold from giving you the assignment anyway. I'll see you when you reach #bLevel 18#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to see #b#p1101002##k yet? What do you have to do here in #m103000000#? Just do whatever and hand in the report for me. Something just doesn't seem right." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... What happened to your assignment in #m103000000#? If you have completed the assignment, you should have come back with the report that #p1103002# wrote up. Did you lose it by any chance? If you did, go back to #m103000000# and get another one from #b#p1103002##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032140" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032141" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20712" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="17" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

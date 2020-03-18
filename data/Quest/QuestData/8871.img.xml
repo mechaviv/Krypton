@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8871.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Circle of Trust - Repaired Ring" />
+        <int name="area" value="30" />
+        <string name="0" value="I've lost the Ring I got from Moony on the way back to Gary and Shatima. Maybe Moony can help me out..." />
+        <string name="1" value="Moony has the Ring! I am saved. This time I should be very careful." />
+        <string name="2" value="I got the Repaired Ring from Moony again, and now Gary and Shatima can get married! Phew, a lot of work, but well worth it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031526" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, what are you doing here? Please don't tell me you are here to tell me you lost the Repaired Ring for Gary and Shatima, are you?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh my. You did lose the Repaired Ring... I knew it! I found these Rings on the ground the other day and it looked so familiar but I wasn't sure whose they were. Let me get it for you. Talk to me again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh you got the Repaired Ring? I see. I found some rings laying on the ground and I thought you lost them. But I guess you didn't. Well, you don't have a thing to worry about. Say hi to Gary and Shatima for me~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here is what you were looking for. Please don't lose it this time. This rings mean something to Gary and Shatima. " />
+            <imgdir name="yes">
+                <string name="0" value="Just go straight to Gary and Shatima this time. No fooling around!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8867" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8868" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031526" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10231.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Golden Pig's Egg" />
+        <int name="area" value="50" />
+        <string name="0" value="If you have a #b#t4001255##k, go find #bGoldrich#k across Treasure Island." />
+        <string name="1" value="Goldrich seems extremely interested in your #b#t4001255##k." />
+        <string name="2" value="When you gave #b#t4001255##k to Goldrich, he gave you EXP in return." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="2084002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001255" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10231s" />
+            <string name="end" value="2009010100" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

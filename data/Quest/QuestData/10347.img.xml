@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10347.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wolves Waiting for their Masters" />
+        <int name="area" value="50" />
+        <string name="0" value="You must first go see Cassandra in order to collect an Aran Memory Fragment." />
+        <string name="1" value="You must look for the wolves that are waiting for their masters." />
+        <string name="2" value="When you approached the wolf, it jumped up and left an Aran Memory Fragment." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The Arans will need something on the day of their revival. Something to help them do their jobs in battles. Do you know what it is?\r\n\r\n#b#L0#Hm... Is it some sort of a mount or something?#l\n#k" />
+            <string name="1" value="Bingo! It's a Wolf. Have you seen any Wolves around that seem to be waiting for their masters?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Alright. Search for the Wolves that are waiting for their masters, the heroes who will revive when the seal is broken. Surely, you'll find an Aran Memory Fragment then." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must find the Wolves before you can find the Aran Memory Fragment." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I heard someone say he saw it in Lith Harbor..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000067" />
+            <string name="endscript" value="q10347e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10346" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

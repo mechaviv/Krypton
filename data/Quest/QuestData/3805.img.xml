@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3805.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating the Spirited Monkeys" />
+        <string name="parent" value="Protecting the Peach Farm" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2091002##k, who owns a Peach Farm at #b#m250000000##k, seems to be concerned about something." />
+        <string name="1" value="#p2091002# seemed wary of fighting off the #o6130207#s that have stolen his peaches, and wanted me to eliminate #r50 #o6130207#s#k for him.\n\n#o6130207#  #r#a38051##k" />
+        <string name="2" value="I managed to eliminate the #o6130207#s that were stealing peaches. Hopefully the Peach Farm will be alright now..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <int name="lvmin" value="60" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="200" />
+                <int name="11" value="210" />
+                <int name="12" value="220" />
+                <int name="13" value="230" />
+                <int name="14" value="211" />
+                <int name="15" value="221" />
+                <int name="16" value="231" />
+                <int name="17" value="212" />
+                <int name="18" value="222" />
+                <int name="19" value="232" />
+                <int name="20" value="300" />
+                <int name="21" value="310" />
+                <int name="22" value="320" />
+                <int name="23" value="311" />
+                <int name="24" value="321" />
+                <int name="25" value="312" />
+                <int name="26" value="322" />
+                <int name="27" value="400" />
+                <int name="28" value="410" />
+                <int name="29" value="420" />
+                <int name="30" value="411" />
+                <int name="31" value="421" />
+                <int name="32" value="412" />
+                <int name="33" value="422" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="25600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you a traveler? Then I guess you are not very familiar with #o6130207#... It's a strange monkey that roams around #m250000000# carrying peaches on its back. We call it #o6130207#. If you see a bunch of those monkeys, make sure to attack them!" />
+            <imgdir name="yes">
+                <string name="0" value="Why? Those #o6130207#s steal so many peaches that the Peach Farm is currently devoid of peaches. How sad is that? I even go on a nightwatch ever so often to protect the farm, but those monkeys are so fast, and there are so many of those around, that there's no way I can prevent them from invading." />
+                <string name="1" value="As the proud owner of this peach farm, I cannot let this happen. I have now come to this; asking strangers walking around the area to catch those darn #o6130207#s for me. I would also like for you to defeat #r50 #o6130207#s#k, if that's okay with you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to do it, then ... oh well, maybe I should ask #p2091000#..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh! You taught those #o6130207#s a lesson or two! Thank you so much! This is such a relief..." />
+            <imgdir name="yes">
+                <string name="0" value="The peach from this farm is renowned for its great taste. Not only that, it is proven to increase the brain activity, as well as assisting one to quickly master new skills. It is also used as an ingredient for medicines. All that, and the #o6130207#s kept stealing those ... sigh ... well, at least now that the number of #o6130207#s decreased greatly, I may be able to re-grow these peaches and make money again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated enough #r#o6130207#s#k, yet. Think about all the damages the monkeys are causing to this Peach Farm. Please defeat #b50#k monkeys for me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6130207" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

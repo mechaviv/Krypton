@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3721.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dangerous Slimes" />
+        <string name="parent" value="Year 2021- Just Another Day" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="The year is 2021. Eliminate 50 Slimes that are threatening the boy and another 50 Slimes that are threatening the girl. Then collect 30 dropped items from each group of Slimes to prevent the Slimes from reviving and report back to the Brainy Boy." />
+        <string name="2" value="You worked hard to eliminate so many Slimes, but the population of the Slimes has not gotten any smaller. Where are these monsters coming from?" />
+        <string name="demandSummary" value="#i4000545:# #t4000545:# #c4000545# / 30&#xD;&#xA;#i4000546:# #t4000546:# #c4000546# / 30&#xD;&#xA;#i4000547:# #t4000547:# #c4000547# / 30&#xD;&#xA;#o7120103# #a37211#&#xD;&#xA;#o7120104# #a37212#&#xD;&#xA;#o7120105# #a37213#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 100,000\r\nCan participate in &quot;The Crying Girl's Sketchbook&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000545" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000546" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000547" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Don't come any closer! Who are you? Where is everyone? And where did all these monsters come from? \r\n#L0##bDon't worry. I'll help you.#l\n#k" />
+            <string name="1" value="Then defeat all of these monsters. I think they're exponentially increasing." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="It's not just here. The entire town is crowded with monsters. Please eliminate 50 of every type of monster and collect 30 of each of those monsters' dropped items to stop them from respawning." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You said you were going to help me!! You lied!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you eliminated all the monsters? Did you collect their dropped items too?" />
+            <imgdir name="yes">
+                <string name="0" value="Even now, these monsters are not going away. What's happening? Where are my mom and dad?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please collect 30 dropped items of each monster." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate 50 of every type of monster in town." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000545" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000546" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000547" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7120103" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7120104" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="7120105" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3720" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

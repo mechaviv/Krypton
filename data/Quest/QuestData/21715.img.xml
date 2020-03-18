@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21715.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tree Witness" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your second assignment as an informant and the question remains, who planted the puppet on the #o1110100#s? Talk to #b#p1032101##k in #b#m101000000##k for some answers." />
+        <string name="1" value="#p1032101# believes that #b#p1032112##k in #m100040000# may have witnessed someone placing a puppet on a #o1110100# and tells you to ask the tree." />
+        <string name="2" value="#p1032112# stated that recently a little kid was seen carrying puppets in the South Forest. Since then, the #o1110100#s have gotten much more aggressive." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#p1032112##k, who lives in the southern forest, may have seen who was responsible for placing the puppets on the #o1110100#s. Please go talk to him and find out who did such a hideous thing. If you tell him that it's a request from #p1032101#, he will tell you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#p1032112# is a special tree that I've raised since he was just a sapling. He's still young, but he's kindhearted and modest. He'll answer you respectfully." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you not know about #p1032112#? I'm sure you've seen him if you've been to the Southern Forest. He stands right in front of #m100040003#, where the #o1110100#s live. Please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="...Hmmpf! A human talking to a tree! You're an interesting fellow. Are you lonely or something? What?  #p1032101# sent you? \n#b#L0#(Wasn't he supposed to be kindhearted and modest?)#l\n#k" />
+            <string name="1" value="Geez, #p1032101#... It's bad enough that she planted me in an awkward spot like this, and now she wants me to do favors for her? Seriously, something's wrong with her. She wants me to do things like collecting cursed puppets and such. Why can't she just do it herself? Oh yeah, so what did you want again? \n#b#L0#(#p1032101# doesn't seem to have the best judgement.)#l\n#k" />
+            <string name="2" value="Someone that's responsible for planting the puppet in #o1110100#s... I am not sure. #bI did notice a strange kid dropping by the #m100040003#, and that kid had a puppet in his hand#k. Hey, come to think of it, ever since that visit, the #o1110100#s seemed much more depressed than usual." />
+            <imgdir name="yes">
+                <string name="0" value="Is that all you need? Okay, now leave me alone. Even trees need some alone time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't met #p1032112#? You'll find him at #m100040000#. He may seem quite shy and nervous at first, but he's a good kid. He'll help you with whatever you ask." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032112" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21714" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

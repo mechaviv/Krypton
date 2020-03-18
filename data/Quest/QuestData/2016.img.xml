@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mother's Gold Watch" />
+        <string name="parent" value="Alex the Runaway Kid" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="At the entrance of Henesys Park, you met Alex's father Stan, the chief of Henesys. He was even more blunt and difficult to talk to than you'd anticipated, but you finally convinced him to accept Alex back with open arms. You also got Alex's late mother's #bgold watch#k as proof. Now, all you need to do is get this watch to Alex in Kerning City." />
+        <string name="2" value="You gave Alex his late mother's #bgold watch#k. As a sign of appreciation, he gave you an earring he received from friends he met while traveling. Well, Stan forgave Alex, but it doesn't seem like Alex plans to head home right away. Maybe you should keep an eye open next time you're in Henesys." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031007" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032004" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1032005" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1032006" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1032007" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's a special watch. Make sure you don't lose it. #p1052000# is in #m103000000#, right? Please...please take care of this and...and him. So long." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? You convinced my father to let me return? That's unbelievable... I'm amazed that you changed the mind of Mr. Holier-Than-Thou. Now I can say goodbye to the life of a wanderer. Thank you so much!" />
+            <string name="1" value="Whoa, this #t4001003# is...it's my mother's, for sure. I should have been better to her when she was alive... Anyway, you did me a huge favor, so here! It isn't much, but take it." />
+            <imgdir name="yes">
+                <string name="0" value="I got this earring from friends I met while traveling all around the island. Might as well look good traveling, right? Hehe...  Hopefully it'll help you on your journey." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't been to see #p1052000# yet? Please give this #t4001003# to him. Don't lose it!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't met my father yet? He's the chief of #m100000000#. Please convince him to let me return hom. And as a sign of proof, please get the #t4001003# my mother left behind..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh my, did you lose the #t4001003#? I told you to be careful! Luckily, a townsman found it on the street. Here, take it again, and PLEASE don't lose it this time." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2015" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

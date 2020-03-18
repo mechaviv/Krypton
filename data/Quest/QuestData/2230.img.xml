@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2230.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Mysterious Small Egg" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="It sounds like someone is calling out my name. The dreamy eyes... the luscious purple hair... who are you?" />
+        <string name="1" value="The fairy with the dreamy eyes... and the luscious purple hair talked for a bit, but it wasn't understandable at all. After the fairy disappeared, I found a #bMysterious Small Egg#k inside my inventory. Didn't she say something about it being my friend...? Anyway, better go visit the fairy at #bEllinia#k, the town of Fairies.\r\n#b&lt;Message from the Fairy&gt;\nThe purple bellflower that soaks in the sun in between the skyscraping trees...Follow the path to the unknown that leads you to the bellflower. I will wait for you here." />
+        <string name="2" value="The fairy with the dreamy eyes... and the luscious purple hair talked for a bit, but it wasn't understandable at all. After the fairy disappeared, I found a Mysterious Small Egg inside my inventory. Reliving the message the Fairy left for me, I went to the area and found Mar the Fairy hiding behind a huge bellflower. Mar mentioned something about being responsible for taking care of a living being, and then gave me a pet as a gift. The mysterious small egg turned out to be a Snail's egg.\r\nAlong with a message that this small snail can only be with me for 5 hours." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032086" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I put this small, precious life in your hands...Guard it with your life..." />
+            <string name="1" value="Looking after another life...That is the inevitable mission given to you...Follow the force that leads you to me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Put your hand in your pocket. I think your friend has already found you.\n\nThe purple bellflower that soaks in the sun in between the skyscraping trees...Follow the path to the unknown that leads you to the bellflower. I will wait for you here." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do not turn away from your duties..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh, did you drop this snail egg? Come back when you find a mysterious small egg." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032102" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032086" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2230e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032102" />
+            <int name="lvmin" value="15" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

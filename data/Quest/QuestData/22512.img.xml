@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22512.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dragon Master's Calling" />
+        <int name="area" value="7" />
+        <string name="0" value="#b#p1013000##k seems anxious to tell you something. Talk to #p1013000#." />
+        <string name="1" value="#p1013000# says that he now knows what the Dragon Master is called to do. It's to help people in trouble! He came up with that notion after watching you help Chief Stan. \r\n\r\nWith that, #p1013000# wants to look for #btroubled people in #m100000000##k..." />
+        <string name="2" value="There really was a person in need of help in #m100000000#. #p1010100# seems to be in need of something." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="520" />
+            <int name="nextQuest" value="22513" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Sigh... What should I do? I wonder if there is anyone who can help me." />
+            <imgdir name="yes">
+                <string name="0" value="Huh? Aren't you Evan? Are you here on an errand?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="There must be someone in #m100000000# who dearly needs your help. Hmm...maybe a #bpretty girl#k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1010100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22511" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22512s" />
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

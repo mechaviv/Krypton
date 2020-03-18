@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28340.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mardi Gras Purple Masks" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Go see #bGaga#k if you want #ra Purple Mask#k to wear to the festival!" />
+        <string name="1" value="I'll make you #ra Purple Mask#k you can wear to the festival if you bring me #b10 Purple Mardi Gras Feathers!#k" />
+        <string name="2" value="You received #ra Green Mask#k by collecting 10 Purple Mardi Gras Feathers." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032577" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1012182" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                    <int name="prop" value="99" />
+                    <int name="period" value="7200" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1012185" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                    <int name="prop" value="1" />
+                    <int name="period" value="129600" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Woohoo! #bMardi Gras Festivals#k are so exciting, aren't they? But wait, where's your mask? You don't have one to wear to the Festival? Oh c'mon, really? Well, if that's the case, would you like me to make you one?" />
+            <imgdir name="yes">
+                <string name="0" value="Haha! Alright, I'll make you one, since #bPurple Masks#k are my specialty. But! I need the right materials to make it. I tell you what, my friend--since I'm in such a good mood, I'll make you one free of charge if you bring me the goods! All it takes is #r10 Purple Mardi Gras Feathers.#k" />
+                <string name="1" value="If you bring me all 10, I'll make you a mask you can wear for #r5 days.#k Just so you know, sometimes I get locked into the groove and turn out some ridiculously awesome masks. Of course, I can't guarantee it, but I'm just letting you know. Haha!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess somebody didn't receive the party memo?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, aren't you quite the diligent Mapler! Well, that's expected of someone who wants to participate in the festival. Here, this is my gift to you." />
+            <imgdir name="yes">
+                <string name="0" value="Enjoy the #bMardi Gras Festival!#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You need to bring me #b10 Purple Mardi Gras Feathers.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032577" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28338" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="8" />
+            <string name="start" value="2010021000" />
+            <string name="end" value="2010022200" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

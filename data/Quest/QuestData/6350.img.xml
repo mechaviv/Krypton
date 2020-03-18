@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6350.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Body of Steel" />
+        <int name="area" value="10" />
+        <string name="0" value="I've learned the super transformation skill but I don't really know how to use it freely as of yet. I can't figure out what the problem is! I'd better ask Kyrin." />
+        <string name="1" value="I apparently need to do some intense training in order to be able to freely use the super transformation skill. One of the benefits of super transformation is that it will strengthen me and give me a body of steel! I'd better go observe the Blue Dragon Turtles whose bodies are equally as hard, and try to stand up against them. To prove that I've completed the training, I must defeat #r150 Blue Dragon Turtles#k and bring #b50 Sturdy Leather #k pieces to Kyrin. \n\n#i4031871##t4031871#  #b#c4031871# / 50#k \n#o8140700#  #r#a63501##k " />
+        <string name="2" value="I took the proof of my training to Kyrin and she taught me the Demolition Skill in return. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031871" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5121004" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="512" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem concerned about something. What is it? Hmmm... are you worried that you have not mastered Super Transformation yet? Haha, don't worry about it. It just means you need more training. Keep practicing Super Transformation and one day, you'll find yourself using the skill without even thinking." />
+            <string name="1" value="There's a training method that'll allow you to master the skill more quickly. Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="The single most noticeable trait when you use the Super Transformation is the rock-hard body you'll be sporting. If you really want to see and experience what having a rock-hard body is all about... you should head to Leafre, where you'll encounter a monster called Blue Dragon Turtle. Those turtles are also notorious for possessing rock-hard bodies. I Say... how about engaging in a battle with them? Experience first hand how the Blue Dragon Turtles utilize their bodies against the opposition." />
+                <string name="1" value="If the training ends well, then I'll even give you a small reward. I'll teach you a skill that you can use through Super Transformation. What do you think? Now, go ahead and defeat #r150 Blue Dragon Turtles#k. I also need evidence that you really did slay the Blue Dragon Turtles, so I want you to bring back #b50 pieces of Sturdy Leather#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't think you understand the importance of training, yet. If you want to learn a new skill, come see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was a great training session! What was it like facing the Blue Dragon Turtle? Weren't they powerful? I am sure they were... but if you train yourself a bit harder, then you'll end up much more powerful than that. As a reward for safely completing the task, I'll teach you how to use &quot;Demolition&quot;." />
+            <imgdir name="yes">
+                <string name="0" value="Demolition is a powerful, powerful skill that can only be used when you are under the #bSuper Transformation#k. Please use this skill wisely..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You need to bring in 50 pieces of Sturdy Leather. That's what I'd call training." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You need to defeat 150 Blue Dragon Turtles. That's what I'd call training." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031871" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8140700" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="512" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5121003" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

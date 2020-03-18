@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22410.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Big Saddle" />
+        <int name="area" value="7" />
+        <string name="0" value="You lost the #t1912034#! What to do? Ask #b#p2060005##k in #b#m230000000##k to make you another saddle." />
+        <string name="1" value="#p2060005# is angry that you lost the saddle he made you and says that he will make you another saddle only if you give him #b60 million mesos#k in addition to the #bsame materials as before#k.\r\n\r\n#i4032504# #t4032504# #b#c4032504# / 10#k\r\n#i4032505# #t4032505# #b#c4032505# / 2#k\r\n#i4032477# #t4032477# #b#c4032477# / 2#k\r\n#b60000000 mesos#k" />
+        <string name="2" value="You received the #t1912034# from #p2060005# after getting all the materials again and paying double the mesos. Be careful not to lose it again..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-60000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032504" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032505" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032477" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1912034" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello. How are you enjoying your saddle? Wait, where is your saddle? Eek! You want me to make you another saddle? You didn't lose the saddle, did you?" />
+            <string name="1" value="I worked so hard to make such a nice saddle for you. How could you lose it? You really don't take care of your stuff. Honestly, I really don't want to make another one for someone like you..." />
+            <string name="2" value="But, fine. I'll make you a new one just this once. There is a condition however. You'll have to bring me the materials just like before but you'll have to pay double the fee." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You do remember what the material are right? #b10 #t4032504#s#k from #m211000000#, #b2 #t4032505#s#k from the Shipwrecked Treasure Chests deep inside Aqua Road, #b2 #t4032477#s#k, a specialty product of  #m251000000#, and..." />
+                <string name="1" value="You will also need to pay me a #bfee of 60 million mesos#k. It may seem like a lot but I'm charging you extra this time so that you won't lose it again. I will be waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you refusing because the fee is too high? You shouldn't have lost it in the first palce. I won't lower the price." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought all of the materials. Please give them to me along with the fee." />
+            <imgdir name="yes">
+                <string name="0" value="Here is the newly made saddle. Please use this incident as a lesson and be careful not to lose it again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't forget what the materials were did you? I will make a new saddle for you if you bring me #b10 #t4032504s# from #m211000000##k, #b2 #t4032505#s#k from the Shipwrecked Treasure Box deep inside Aqua Road, #b2 #t4032477#s#k, a specialty product of #m251000000#, and a fee of #b60 million mesos#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032504" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032505" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032477" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22407" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="22411" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912034" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1912035" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

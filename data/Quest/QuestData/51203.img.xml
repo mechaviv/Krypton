@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51203.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To the Energy Laboratory" />
+        <int name="area" value="50" />
+        <string name="0" value="A Mapler who seems to have arrived before you is hiding amongst the grass.\r\nYou should start a conversation." />
+        <string name="1" value="You discovered the location of the Crystanol Fragment. You must take the portal to the right of #b#p9250130##k and continue until you reach the Energy Laboratory. If you meet aliens on the way, hide in the grass." />
+        <string name="2" value="You arrived at the Energy Laboratory. \r\nBut there is an Anti-Theft Laser preventing your approach. What to do?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you come in a Time Machine? I just got here myself, a few hours ago. Things are crazy in the future!\r\n#L0##bWhat do you mean?#l\n#k" />
+            <string name="1" value="Aliens! Aliens everywhere! The world has been overrun by aliens! It's awful! \r\n#L0##bNo... That can't be... We must change this!#l\n#k" />
+            <string name="2" value="Don't just stand there! They'll find you! \r\n#L0##bWhat do you suggest I do then?#l\n#k" />
+            <string name="3" value="Hide! Hide in the grass, like me. If you see any aliens around, hide in the grass, quick as you can. r\n#L0##bI'll do that. Thanks for the tip.#l\n#k" />
+            <string name="4" value="I suppose you're looking for a #b#t4001458##k, too, right?\r\n#L0##bYes. Have you found any?#l\n#k" />
+            <string name="5" value="SHHHHHHHH!!! NOT SO LOUD!!!! \r\n#L0##bMy apologies... (It's like the pot calling the kettle black. Sheesh.)#l\n#k" />
+            <string name="6" value="That's better. \r\nNow, I've found out a few things. Want to hear?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="It turns out, the future Doctor Bing indeed manage to create Crystanol. I've even found out where he keeps it. Someone who obtained some earlier told me..." />
+                <string name="1" value="Just take that portal to the right. Follow the path until you get to the Energy Laboratory. It's in there." />
+                <string name="2" value="Problem is, that building's crawling with aliens. Guess they like Crystanol, too. \r\nSecurity's tight, so you'll have to be careful." />
+                <string name="3" value="I'm still getting my bearings. \r\nYou go on ahead." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Suit yourself. Just keep your head down and don't let them find me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Argh. Grrr. How am I supposed to get inside? Argh! Grrr! \r\n#L0##bHi there...#l\n#k" />
+            <string name="1" value="EEP! You scared the living daylights out of me! I thought you were an alien!\r\n#L0##bPeople around here seem awfully jumpy. Sorry for scaring you.#l\n#k" />
+            <string name="2" value="I'm surprised another human made it this far. You must be stronger than you look. \r\n#L0##bEr... Thank you?#l\n#k" />
+            <string name="3" value="I guess you're here to get some Crystanol, too." />
+            <imgdir name="yes">
+                <string name="0" value="Unfortunately, this place is covered with a web of anti-theft lasers." />
+                <string name="1" value="I think we can pass through using the #bTeleport Device#k located here, but I can't get it to work. Looks as if the power is off." />
+                <string name="2" value="So, what now? \r\nIf we stay here beyond the #b&lt;Time Restriction&gt;#k, the aliens will find us for sure..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Hurry!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250131" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250130" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51201" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

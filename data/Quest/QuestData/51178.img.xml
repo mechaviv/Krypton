@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51178.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Passing the Quiz" />
+        <int name="area" value="50" />
+        <string name="0" value="Meet the #b#p9250121##k." />
+        <string name="1" value="Give the correct answer to the quiz given by the #b#p9250121##k.\r\nOnly problem is...\n#rΔt = [ Δt0 ] / [ root{ 1 - ( v/c )^2} ]#k is all you can remember.\r\n" />
+        <string name="2" value="You made contact with the #b#p9250121##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032705" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <string name="npcAct" value="contact" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032702" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="...\r\n#L0##b(You throw the coin you got from the Public Phone and it bounces off the contact's head.)#l\n#k" />
+            <string name="1" value="Hey! That hurt! Why are you throwing things at me?!\r\n#L0##bI'm sorry. I thought you were the contact.#l\n#k" />
+            <string name="2" value="Lower your voice! Geez!\nI AM the contact, but you don't have to announce it like that.\r\n#L0##b(This is getting stranger and stranger.) Er, right. I just want to meet with Doctor Bing.#l\n#k" />
+            <string name="3" value="No kidding...Well, you know the drill. You'll have to answer my questions first." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Answer, if you think you can." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sheesh, don't waste my time then. Gosh." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Let's start with an easy one...\nOne plus one is?\r\n#L0##bTwo, of course.#l\n#L1#Umm, 11?#l\n#k" />
+            <string name="1" value="Let's ramp it up a bit... \n51384 x 1 is?\r\n#L0##bOne, of course.#l\n#L1#It's 51384.#l\n#k" />
+            <string name="2" value="Had to think about that one, didn't you? Next one's a toughie! \n[ Δt0 ] / [ root{ 1 - ( v/c )^2} ] is?\r\n#L0##b5068292.778#l\n#L1#Could it be... Δt?#l\n#k" />
+            <string name="3" value="Okay. You pass. Take this. It's a Bing Receiver. It's made so the aliens can't tap into the line and eavesdrop.\r\n#b#p9250125##k will contact you directly from now on." />
+            <imgdir name="yes">
+                <string name="0" value="I want to go back to my normal job... This stinks. Literally!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="What? Are you stupid or something?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Are you serious?" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="What are you talking about?" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="First time seeing a bum or something?! Stop staring!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250121" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51188" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032705" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

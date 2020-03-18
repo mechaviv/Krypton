@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4962.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Smores No More" />
+        <int name="area" value="45" />
+        <string name="0" value="MBI (Maple Bureau of Investigation) Agent Falcon has been standing in front of the Prendergast Mansion for quite some time.  Maybe I should go see why he's still loitering around." />
+        <string name="1" value="Looks like the bumbling MBI Agent Falcon just can't get a break.  Just when he was ready to pack up and leave to report the findings for his Halloween mission, a mysterious little boy appeared and stole all the Smores Falcon had cooked up for his colleagues!  Falcon has agreed to pay you 100,000 mesos (from his Agency discretionary account) if you recover #b25#k of his #bSmores#k for him.  Easy money - or is it?  The Smores look pretty tasty... I guess I'll have to try not to eat them myself as I collect them!" />
+        <string name="2" value="I collected Agent Falcon's #bSmores#k for him... they were a bit dirty but still good, so his colleagues back at the MBI Agency should be happy!  In return, Falcon paid me the 100,000 mesos he promised.  He also gave me some old medicine bottles that he'd found lying outside the house.  They look pretty potent..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022242" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022244" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="&lt;Sigh&gt; All this paranormal investigating just hasn't been too fun for me.  However, I figured that while I'm stuck out here on this mission... the least I could do was to cook up a big batch of my famous Smores to take back to the office for my colleagues!  Have you tasted them?  Back at headquarters, I'm actually quite famous for them!  You see, my superiors were already upset with me from my previous mission... So I figured that bringing back some of my delicious Smores upon my return might get me back in their good graces!  So, this whole time I've been camped out here, I've been busy... busy making Smores!\r\nBut then... disaster struck!\r\n\r\n#b#L0#And by disaster, were you referring to yourself?  Maybe you should consider a different career... like #ecooking#n.\r\n#k#l#b#L1#&lt;Sigh&gt; What happened now, Falcon?#k#l" />
+            <string name="1" value="I had just finished writing up the last part of my Summary Report and was packing up camp.  I turned my back for one second and when I looked back, there was this pale, black-haired kid standing on the Mansion steps, staring at me.  Creepy little guy... &lt;shivers&gt; Gave me the willies the way he looking at me!\r\n\r\n#b#L0#I think I know who you are talking about. What did he do to you?#k#l" />
+            <string name="2" value="At first I thought he was a trick-or-treater, but before I could react, the kid grabbed all the Smores I had cooked up and ran into the Mansion with them!  I tried to chase him but he was in that door in a flash.  My eyes might have been playing tricks on me but he moved faster than any little kid I'd ever seen before! \r\n\r\n#b#L0#Really? That sounds creepy...#k#l" />
+            <string name="3" value="After this whole fiasco--er, I mean, trying ordeal--I don't want to go back to the office empty-handed.  I need to get those Smores back!  Tell you what... all MBI agents are given access to a discretionary fund for missions.  We're supposed to use it only for emergencies, but well, dang it... I'll pay you for each Smore you bring back to me!  Please, will you help me recover my treats? " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Well, no need to be rude!  &lt;frowns&gt; " />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You will?!  Really?!  Wonderful!  You're a life saver!  Just go in there and get those Smores back for me.  I really don't care about the kid at this point, so I don't care if you find him... I just want my Smores back!  Hopefully, he hasn't eaten all of them by now.  In any case, I made a bunch but #b25 Smores#k should be enough for me to take back to the fellas at headquarters." />
+                <string name="1" value="Like I said, I'll pay you... 4,000 mesos for each Smore!  25 Smores at 4,000 mesos each is... let's see... #b100,000 mesos#k total!  Get me back those Smores and that 100K is yours!  Me and the guys back at MBI headquarters are counting on you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="&lt;Sigh&gt; I don't blame you.  I wouldn't want to go back into that house either.  Speaking of which... I wonder what that kid is doing in there?  I don't think that house is a safe place for kids!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes!  Hmmm... a bit dirty, but still good.  I guess I can't complain.  Here's the 100,000 mesos I promised you!  Don't tell anyone I gave you this money, though.  That's our secret.  Oh!  I also found these old medicine bottles lying around on the porch.  Take them!  They might come in handy!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks again for all your help!  I'm--er, I mean, the MBI is in your debt!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Still looking for all the Smores, I see.  I've got quite a few hungry colleagues back at headquarters so I'll need at least #b25 Smores#k before I can go back... and it looks like you're short.  Please... keep looking for them.  I'll be here waiting!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201075" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022244" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201075" />
+            <int name="lvmin" value="25" />
+            <string name="end" value="2009100100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

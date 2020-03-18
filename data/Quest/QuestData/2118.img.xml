@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2118.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminate Monsters from the Site" />
+        <int name="area" value="30" />
+        <string name="0" value="#p1022006# asked me to wait while he's analyzing #t4000196# and #t4000197#." />
+        <string name="1" value="#p1022006# seemed shocked to find out what he had found out through studying #t4000196# and #t4000197#, but he didn't want to divulge the information on me. He wanted me to first eliminate the monsters, so I'll do that. \n\n#o2230110# #r#a21182##k\n#o2230111# #r#a21181#" />
+        <string name="2" value="Winston claimed the monsters have decreased dramatically, but I disagree. Not only that, but I felt a strange vibe around the excavation site. What would that be..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="40" />
+                    <int name="prop" value="11" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="11" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                    <int name="prop" value="11" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2000006" />
+                    <int name="count" value="10" />
+                    <int name="prop" value="11" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="3" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2040704" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What... this... did this really exist?" />
+            <imgdir name="yes">
+                <string name="0" value="Hey you, please go take care of the monsters that keep interfering with our excavation project here. We do not have much time, for if the monsters keep interfering and we don't complete this on time, then we may all be in grave danger. Please go eliminate #r200 #o2230110#s#k and #r300 #o2230111#s#k. If you can't do it yourself, then bring your party with you and take care of it ASAP." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If we don't get this excavation complete soon, then we may all be in grave danger. Once you're done preparing to eliminate the monsters, then please come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The numbers of #o2230110# and #o2230111# sure have decreased. " />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your hard work. This should finally allow us to work on excavating without having to watch our back at all times. But then again, in order to get this done with, we'll need help from someone like you on a daily basis. If you ever walk by this area again, then please help us keep #o2230110# and #o2230111# from overtaking this area. Thanks." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate #r200 #o2230110#s#k and #r300 #o2230111#s#k. We can't afford to waste even a second here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230111" />
+                    <int name="count" value="300" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2230110" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2117" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

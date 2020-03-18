@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8067.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Man of Convention" />
+        <string name="parent" value="Freed From Darkness" />
+        <int name="order" value="3" />
+        <int name="area" value="48" />
+        <string name="0" value="#b#p1012109##k seems to catch on to something here. I'll need to hear this." />
+        <string name="1" value="He said #p9120011#'s doll that is laden with #t4000144# may be controlled by something. I can't just stand still listening to this! I'll have to gather up #b50 #t04000148#s#k from #b#o7130300##k, as well as #b50 #t04000147#s#k from #b#o7130010##k. \nSince #p9120011# is crying, I'll have to return #b#t04000147##k to her first and hand #b#t04000147##k to her, then go to where #b#p1012109##k is.\n\n#t04000148# #b#c04000148##k/50\n#t04000147# #b#c04000147##k/50" />
+        <string name="2" value="After handing #b#t04000147##k to #p9120011#, a blinding light engulfted the dolls, and then they transformed back to their original state. Too bad #b#t04000148##k disappeared in the process. What should I do? I better go talk to #b#p9120011##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000147" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2044005" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2044205" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2044105" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2041041" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="2040907" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8068" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So the doll moved by itself... MAYBE, just maybe, the #b#t4000144##k that ran away may have attached itself to the doll." />
+            <string name="1" value="That doll, plus the #b#t4000144##k that I've been looking for, I'm sure they both went returned to Eos Tower. No, in fact, they both might be controlled again. I think the monster has an ability to control the spirits." />
+            <string name="2" value="Please, can you head over to Eos Tower and take #b50 #t04000148#s#k from #b#o7130300##k, as well as #b50 #t04000147#s#k from #b#o7130010##k? If you gather those up, maybe that kid's doll, as well as the #b#t4000144##k that ran away from me, may well be recovered." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Once you gather them all up, please go see #b#p9120011##k first. You can see me after her. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see. I can't really put you in this much danger. If you can recommend this to someone near you, can you tell me who that might be?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, did you find my doll?" />
+            <string name="1" value=" (The moment I handed #p9120011# #b50 #t04000147#s#k, they were surrounded by a blinding light, followed by their transformation back to a regular doll!)" />
+            <string name="2" value="Ah, my eyes! Huh, hey... my... my doll! Wow!! It's that very doll my dad gave me! It's baaack~!!!" />
+            <string name="3" value=" (Whoa, the #b#t04000148##k that I had with me also disappeared! What... what should I do?)" />
+            <string name="4" value="Thank you so much for finding it! I'll give you this for your job well done. I don't know if this is useful to you or not, but ... please put it to good use!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Head over to Eos Tower and take #b50 #t04000148#s#k from #b#o7130300##k, as well as #b50 #t04000147#s#k from #b#o7130010##k? Once you get them all, please go visit #b#p9120011##k first." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you find my doll? If not, then please ask #b#p1012109##k of Henesys if he can figure something out." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000147" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8066" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="90" />
+        </imgdir>
+    </imgdir>
+</imgdir>

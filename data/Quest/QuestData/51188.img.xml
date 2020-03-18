@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51188.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hello?" />
+        <int name="area" value="50" />
+        <string name="0" value="A Public Phone has been placed in every town.\r\nThe phone is ringing... Should you answer?" />
+        <string name="1" value="You picked up the phone and was connected with someone on the other line." />
+        <string name="2" value="You must meet #b#p9250121##k, who is hidden in every town. Remember the formula: #rΔt = [ Δt0 ] / [ root{ 1 - ( v/c )^2} ]#k that #b#p9250125##k mentioned." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032705" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, hello!\nWho is this!?\r\n#L0##b(Hang up.)#l\n#L1#Er, YOU called ME. I don't feel obligated to answer.#l\n#k" />
+            <string name="1" value="Oh, fine. Then don't. Just listen carefully.If you want to defeat the aliens, hang up and call me back. The number is 0555. \n(The phone goes dead.)\r\n#L0##b(He hung up! How rude!)#l\n#k" />
+            <string name="2" value="#b(You put the phone back on the hook.)#k" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="(The hear nothing on the other end of the line.)" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="#b(Better call 0555... Couldn't hurt...)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Beep... Beep... Beep..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="(You dial 0555.) \r\nHello? Oh good. You are on an OSSS secure connection now. So you want to help defeat the aliens, do you?\r\n#L0##bWho the heck are you?#l\n#k" />
+            <string name="1" value="Allow me to introduce myself. I am #p9250125##k, Chief Scientist of the OSSS Secret Base Laboratory.\r\n#L0##bYou're a scientist? Are all scientists as rude as you?#l\n#k" />
+            <string name="2" value="Ah, my apologies about that. I will explain everything to you when you meet me in person at the Secret Base.\r\nNow, find my contact, who should be in town with you. The contact will be disguised in filthy clothes.\r\n#L0##b(What? Like a bum? Great disguise...)#l\n#k" />
+            <string name="3" value="When you hang up, you will find a coin in the change slot. Bring that coin to the contact.\r\n#b(The bum... Right. Got it.)" />
+            <imgdir name="yes">
+                <string name="0" value="Also, remember this.\r\n#rΔt = [ Δt0 ] / [ root{ 1 - ( v/c )^2} ]#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Beep... Beep... Beep... Beep... Beep..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250120" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

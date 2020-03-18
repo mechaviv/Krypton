@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20729.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mysterious Statue's Information" />
+        <int name="area" value="15" />
+        <string name="0" value="According to #p1061000#, there may be some clues of #o9300285# on the surface of #b#p1061006##k. I'll have to talk to #p1061006#." />
+        <string name="1" value="Something seems to be written on it, but it's hard to see. I'll have to move #p1061006# around." />
+        <string name="2" value="At the back of #p1061006#, I found some writings on it with a horrible handwriting. It said: The password is XXXXXXX is a genius #o9300285#!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b(It's #p1061006#. It's making a strange face. There's got to be a drawing somewhere...)" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b(I see a drawing on the back, but I can't see it clearly. I better rotate the body of the statue just a bit.)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b(Oh, it's too heavy. Better rest for a bit.)" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#b(I need to look closely into the writing that's engraved on the statue.)" />
+            <string name="1" value="#b(The password was XXXXXXX is a genius #o9300285#!)" />
+            <imgdir name="yes">
+                <string name="0" value="#b(It sounds like it means something...)" />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20728" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

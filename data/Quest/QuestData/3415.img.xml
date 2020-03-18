@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3415.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Alarm Clock" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Pink Mesoranger, who's somewhere around the Boswell Field..." />
+        <string name="1" value="I met up with #bPink Mesoranger#k at the Boswell Field near Omega Sector, and she looked very concerned over her never-ending habit of oversleeping. She asked if I could get her 20 #bTable Clocks#k that are dropped from monster #bTick-Tock#k. I better start heading down to the bottom of the Ludibrium Clocktower. \n\n#t4000114# #b#c4000114##k/20" />
+        <string name="2" value="I gathered up #bTable Clocks#k for Pink Mesoranger, who was stationed somewhere around Omega Sector, so she can overcome her chronic oversleeping. But then again, she always had trouble waking up, so I may have to find something more powerful for her..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000114" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020007" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Phew... I can't believe it, but I've overslept AGAIN. I've been late to work so many times, that now I don't think my boss likes me one bit. I'm in a tight spot not as a result. That's why, I'd like to ask you for some help. Will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. The thing is, I sleep a lot, and I get told on that, as a result. Even if I'm the best at what I do, there's no point of all that if I don't wake up on time, you know. That's why lately, I've been hearing it a lot from upstairs. Please help me wake up on time..." />
+                <string name="1" value="I heard that deep in the Ludibrium Clocktower, a monster by the name of #b#o4230113##k gives off #b#t4000114##k when it dies! Please collect 20 of them for me. I feel like, with 20 alarm clocks going off at once, even someone like me may be able to wake up on time! Good luck!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... you must be busy from doing a lot of things, but if you ever find yourself some free time, please come talk to me. I have something very important to ask you for..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey! Isn't this #b#t4000114##k? I can't believe you brought them all here!! Alright, then, I feel like I can wake up early and on time from here on out! Anyway, for your tireless effort, I need to hook you up with something. Before that, though, please check and see if your use inventory has any room available." />
+            <imgdir name="yes">
+                <string name="0" value="How do you like the #b50 #t2020007#s#k? I've had this food just to fight off the boredom while on a mission. I really cherish this food, but I think it's all worth it if you're the one eating them. Thank you so much for your help. I may have something else to ask you later, so please drop by from time to time again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have the clocks that I requested, just yet. Deep in the Ludibrium Clocktower, you'll find a monster called #b#o4230113##k. Defeat it, and collect 20 #b#t4000114#s#k for me. That'll probably help me overcome my oversleeping habits." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000114" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041012" />
+            <int name="lvmin" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

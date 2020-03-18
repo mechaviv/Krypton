@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28144.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spirit Week Event - Cassandra's Candle " />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Cassandra said she would reward me if I hold onto her Candle and keep it burning for 1 hour." />
+        <string name="1" value="Cassandra said she would reward me if I hold onto her Candle and keep it burning for 1 hour." />
+        <string name="2" value="Cassandra said she would reward me if I hold onto her Candle and keep it burning for 1 hour." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28140" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q28144s" />
+            <string name="start" value="2009102000" />
+            <string name="end" value="2009102100" />
+            <int name="interval" value="60" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

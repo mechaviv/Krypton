@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4576.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Off to the Fantasy Theme Park" />
+        <int name="area" value="49" />
+        <string name="0" value="Have you been to the Fantasy Theme Park lately? Well, it seems like it's not such a fun place like it used to be. #bLam#k said something scary is going on in there. Wanna know? Go see #bLam#k right now!" />
+        <string name="1" value="#bLam#k said there are 2 fierce monsters appearing in Fantasy Theme Park, threatening all visitors. If nobody stops them, Fantasy Theme Park will soon become their playground. #bLam#k said he knows how to invoke those monsters. You must bring him 10 Rodeo's Scarfs and complete Away from Kampung quest. Then he shall tell you how to defeat those creatures! \n\n#t4000471# #r#c4000471#/10#k\n\n#y4557#: #r#u4557##k\n\n#y4558#: #r#u4558##k\n\n#y4559#: #r#u4559##k\n\n#y4560#: #r#u4560##k\n" />
+        <string name="2" value="Let's talk to #bAldol#k. She is at the Entrance to the Spooky World. She will allow you to get into the Spooky World. Let's see what you and your friends can do for Fantasy Theme Park!" />
+        <string name="rewardSummary" value="#Wbasic#&#xD;&#xA;#i4032246:# #t4032246:# #c4032246# 1&#xD;&#xA;#i4032246:# #t4032246:# #c4032246# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032246" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000471" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032246" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Looking for some place exciting and fun to visit? Well, Fantasy Theme Park is just the perfect place to have fun. Well, it was. Sadly, it's rather dangerous to go near these days. Do you know why?" />
+            <string name="1" value="My dear friend, #bAldol#k told me that Fantasy Theme Park is being attacked by some deadly creatures, and she's the only one keeping the place safe from them. But they're becoming much stronger by day, and she's desperately looking for some help." />
+            <string name="2" value="I need you to help me build a sturdy merry-go-round first. Please bring me 200 Rodeo's Scarfs." />
+            <string name="3" value="I will tell you how to find those dangerous creatures after you help me. Are you willing to meet those creatures?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That's great! Those creatures are secretly hidden in the Spooky World. As they are clever creatures, I Say, not many people can see them. They hide themselves as a stone statue in the Fantasy Theme Park." />
+                <string name="1" value="They can only be invoked by the Spirit of Fantasy Theme Park. I can give you the Spirit of Fantasy Theme Park as long as you do some errands for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh no, please help us keep the Fantasy Theme Park safe and fun. Come talk to me if you ever change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, let's see if you got what I've asked for." />
+            <string name="1" value="Okay, this is what's happening to Fantasy Theme Park. Lately, there have been 2 monsters that keep coming in here, ruining this beautiful place and scaring off all the children. Several brave Maplers tried to defeat them, but these 2 monsters are so sneaky, they transform themselves into something else to hide from Maplers." />
+            <string name="2" value="The Spirit of Fantasy Theme Park #bLam#k gave you actually contains a mysterious spirit that will be used as a key to break their disguise. But I must stress, do NOT call both of them at the same time! They might appear to be somewhat smaller than other deadly monsters you've come across before, but they sure are strong and fierce enough that you can't possibly take both of them down at the same time." />
+            <string name="3" value="Now, after hearing all about them, are you sure you still want to confront them?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, here are the Spirit of Fantasy Theme Park for each statue. If you put this Spirit under the statue, you can invoke the villains. I suggest you bring as many friends as possible, since those monsters are dangerous." />
+                <string name="1" value="Now, you must talk to Aldol. She is waiting for you at the entrance of Spooky World." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I told you that I need 10 Rodeo's Scarfs. Could you bring them for me?" />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="You did not help me build a sturdy merry-go-round in Kampung, yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270062" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4560" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000471" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270062" />
+            <int name="lvmin" value="90" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

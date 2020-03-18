@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6304.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Regained Will Power" />
+        <string name="parent" value="Strong Will" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="0" value=" " />
+        <string name="1" value=" I received the #b#t4031463##k from #p2040050#.  Should I be givng this braclet to #b#p2060100##k? But I desperately need the will power.... \n\n#i4031463##t4031463# #b#c4031463# / 1#k" />
+        <string name="2" value="When I give the bracelet to #p2060100#, she gave me #b#t2280002##k. Now I got the will power back, but do I need to worry about #p2060100#?  I think #p2040050# might've put some secret device on the braclet...that makes me feel a lil better" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031463" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031463" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2280002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Finally, you came! #t4031463# is completed.  I don't feel good about this... #p2060100# has got the magical metal, #t4011002#. She is the witch under the sea. She can't have influence." />
+            <imgdir name="yes">
+                <string name="0" value="I don't think you're bad. I don't know why you deal with #b#p2060100##k. After that, please keep an eye on her. She might use bad magic. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't get this? You're not going to deal with  #p2060100#?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good. This is the old bracelet. If #t4011002#'s power is added, it will become greater." />
+            <string name="1" value="Then I'll give you medicine. The power to wake up the will. This is medicine containing #r#q1121011##k. Make good use of it. I'll Say &quot;Thank you&quot; for getting me my bracelet. " />
+            <imgdir name="yes">
+                <string name="0" value="What's this bracelet? This magic picture wasn't here. Wandering Alchemist... What did you do to my bracelet?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You're not going to Carta? That's a relief..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="If you don't give me #b#t4031463##k, I won't give you the medicine. I won't make the medicine without any reward." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You forgot #b#t4031463##k. I felt the energy of #b#t4011002##k somewhere and I found the source. It's what you gave to me. Here you are. " />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031463" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6303" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280002" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+                <int name="13" value="2112" />
+                <int name="14" value="2217" />
+                <int name="15" value="2218" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="3221008" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4221008" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2121008" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5121008" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="3121009" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="5221010" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="1221012" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="4121009" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="1121011" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="2321009" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="1321010" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="2221008" />
+                </imgdir>
+                <imgdir name="12">
+                    <int name="id" value="22171004" />
+                </imgdir>
+                <imgdir name="13">
+                    <int name="id" value="21121008" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3363.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Studying Frankenroid 1" />
+        <string name="parent" value="Keeny's Research on Frankenroid" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="23" />
+        <string name="0" value="Magatia's diminutive Fairy alchemist, #bKeeny#k, is lately studying hard on mechanical dolls, Roids." />
+        <string name="1" value="Keeny said she heard a rumor that the mysterious alchemist #bYulete#k invented a new type of Roid, and wanted to study more on his Frankenroid. Good thinking, except finding Yulete, who has been virtually banished from Magatia, and actually #btalking#k to him might be difficult..." />
+        <string name="2" value="While helping Romeo and Juliet out, I was able to learn of Yulete's true intentions and was able to meet with him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler! How have you been? Thanks to your help, I made a lot of progress researching the mechanical dolls! I feel like I will come up with something special in the end. By the way... have you ever heard of this person called Yulete?" />
+            <string name="1" value="Keeny doesn't know a lot about him, but I heard he was once a famous alchemist at Magatia. Other alchemists may talk bad about him, but... I think you can't look at other people's research and studies and make fun of it because you don't understand it, regardless of who that person is.&#x9;" />
+            <string name="2" value="Actually Keeny knows he made a mechanical doll called Frankenroid. I heard it looks a lot like human. If he was able to make a doll like that, I think he'll make my wish with Humanoid A come true faster. Can you help me with this?" />
+            <imgdir name="yes">
+                <string name="0" value="Ah! Awesome! I was worried because so many people made faces when I mentioned Yulete. Now that you agreed to it, can you please go see Mr. Yulete and tell him about Keeny's request?" />
+                <string name="1" value="No one knows where Yulete is these days. All other alchemists in Magatia can't stand him... but I hear that there are some people in town that are actively searching for him, so please go with them and find him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah... do you have something against Yulete, too? I can't ask any other alchemists in town for help because they all hate his guts..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah... it's you... I have been waiting for you to make your way here in this lab. I was able to regain my consciousness thanks to you, and I have never had a chance to fully thank you for your work. Anyway, thank you so much for doing that. Can I help you with anything? As long as it's something I can do, I'll help you with anything. \r\n#b#L0# I know of this kid Keeny that would like to know more about your Frankenroid.#l" />
+            <string name="1" value="Ohh, really? I am so happy to hear that...! After all those years of neglect and indifference, for someone to actually want to learn something from my work... this really makes me happy. It's been decades since I first entered the world of alchemy, and I have never felt quite as happy as I am right now... wait, I don't have time for this. You said Frankenroid, right? Hold on one second!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have met Yulete yet. I heard there's a couple out there that's dying to find him in Magatia... what were their names? I think it's like Romo and Julia...something like that. Anyway, find them first, and you'll be able to find him later!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112014" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3331" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <int name="lvmax" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

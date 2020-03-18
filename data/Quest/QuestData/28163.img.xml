@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28163.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Advanced Training 1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201119:#k in #b#m102000000##k says he'll begin the first training." />
+        <string name="1" value="#b#@9201119:##k's first training requires you to hunt #r#o1110101#s#k.\n\n They can be easily found in #b#m101040000##k and #b#m102010000##k. Let's report to #b#@9201119:##k in #b#m102000000##k upon completion." />
+        <string name="2" value="You have completed #b#p9201119##k's first training!" />
+        <string name="summary" value="Monster Hunt" />
+        <string name="demandSummary" value="#o1110101# #a281631#" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;Able to proceed to 'Reporting the Training Results' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready to begin your first training?" />
+            <imgdir name="yes">
+                <string name="0" value="Good, I have respect for those who are not afraid to face challenges head-on.\nYour first assignment is monster hunting.\n\nHunt 30 #r#o1110101#s#k.\n\nIt won't be too easy since they're rather powerful." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do I sense fear?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, that was rather quick. Impressive. My expectations of you will be much higher from here on out, Warrior." />
+            <imgdir name="yes">
+                <string name="0" value="You did a fine job. You've become much stronger through this training." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't caught 30 #r#o1110101##ks yet. Try a little harder." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201119" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28162" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

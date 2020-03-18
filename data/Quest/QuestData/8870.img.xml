@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8870.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spot On : Go See Mr. Spot" />
+        <string name="parent" value="Spot On" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="Mr. Spot is in Kerning City, and he has something that could help Mom and Dad. I'd better go see my parents first before I visit him." />
+        <string name="1" value="I visited Mr. Spot and got the Mouse for Mom and Dad. I can get a #bNexon Prepaid#k from Mr. Spot if I ask them for #bAllowance#k. I'll cross my fingers..." />
+        <string name="2" value="I got my #bNexon Prepaid#k! I should keep it, because it will turn into Maple Points soon! SWEET!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031542" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031529" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031530" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="95" />
+                    <string name="dateExpire" value="2007020123" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031531" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="5" />
+                    <string name="dateExpire" value="2007020111" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi! I'm Mr. Spot and your Mom and Dad told me you might be coming here. I have the mouse for them, but first I'd like to tell you about something else I have. Would you like to hear it?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, I have something here called a #bNexon Prepaid#k. It comes in 2 kinds: #b100 points#k and #b250 points#k. These are available wherever you see the store that I work in, #rTarget#k. You will need your #bAllowance#k from Mom and Dad to get one, though. I can give you the Mouse you want for free if you come back later to get a #bNexon Prepaid#k. Keep the card, and in two weeks it will turn into actual Maple Points you can use. Here's the mouse you need. Hurry back!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can see that you aren't going to change your mind anytime soon. That's sad. When you're ready to finish your chore, come back!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, back already I see, ready to get your #bNexon Prepaid#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Excellent, well, here you go! Remember to keep it, after the Event ends, it will become #rMaple Points#k you can use in the Cash Shop!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you have some dirt, but not your #bAllowance#k. When you get your #bAllowance#k from Mom and Dad, be sure to return!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8869" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031529" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8869" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="1" />
+            <string name="end" value="2007012423" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

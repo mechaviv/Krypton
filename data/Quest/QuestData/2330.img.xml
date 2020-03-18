@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2330.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stop the Wedding" />
+        <int name="area" value="30" />
+        <string name="0" value="The time has finally come for the showdown. You should go see #b#p1300001##k." />
+        <string name="1" value="You need to eliminate #bKing Pepe#k and his #b3 Yeti Brothers#k." />
+        <string name="2" value="You eliminated #bKing Pepe#k and his #b3 Yeti Brothers#k." />
+        <string name="summary" value="You need to eliminate #bKing Pepe#k and his #b3 Yeti Brothers#k." />
+        <string name="demandSummary" value="#o3300005# #a23301#\r\n#o3300006# #a23302#\r\n#o3300007# #a23303#\r\n" />
+        <string name="rewardSummary" value="EXP 33,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="33000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, dear hero. I have been keeping up with your phenomenal work from what my men have been reporting to me. #b(Cough)#k I am but a foolish king that lost his castle... It's embarassing to have to see you like this. Since my #bPrime Minister#k is nowhere to be found, you are literally our only hope. Please slay King Pepe and rescue my #b#p1300002##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#bKing Pepe#k is trying to arrange a marriage with his dumb son and my #b#p1300002##k. I must prevent that wedding from taking place, so I need you to defeat King Pepe. He has three Yeti brothers guarding him at all times, so it won't be an easy task. Best of luck to you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready to leave yet? Please prepare yourself for this journey, because there's simply not much time....#b(Cough)#k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you…did you really defeat #bKing Pepe#k?" />
+            <imgdir name="yes">
+                <string name="0" value="This is beyond comprehension. I can't thank you enough for saving the Empire from such danger! Thank you, thank you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Looks like you have yet to defeat #bKing Pepe#k and his trusty Yeti guards. Please defeat them all." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3300005" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3300006" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3300007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2323" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

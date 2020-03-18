@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10332.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Special Order! Find Agent S!" />
+        <int name="area" value="50" />
+        <string name="0" value="Agent M says to go see Agent S. Get the information you need from the Maple Admin and find out where Agent S is." />
+        <string name="1" value="You must answer some questions if you want to become an Honorable Mesoranger. Get your thoughts together and tackle Agent S's questions." />
+        <string name="2" value="Shall we head over to see Agent O now?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000064" />
+            <string name="endscript" value="q10332e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000064" />
+            <int name="infoNumber" value="10330" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="100" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10332s" />
+            <string name="end" value="2009071600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

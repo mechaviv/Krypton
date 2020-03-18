@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6281.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Whereabouts of the Grail" />
+        <int name="area" value="10" />
+        <string name="0" value=" #p2081100# told me to go see #p2060101# if I want to know about #t4031454#'s whereabouts." />
+        <string name="1" value=" #p2060101#, the one I met in the deep sea said he'll give me #b#t4031454##k, which he got during his exploration, if I get him 10 #t4000180#'s #b#o8150100##k to produce exploration tools.\n\n#i4000180##t4000180# #b#c4000180#/10#k" />
+        <string name="2" value="I gave #p2060101#  10 #o8150100#'s #t4000180# and received #t4031454#.." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="여기까지 무슨 일인가요? #b#t4031454##k를 찾으러 왔다구요? #t4031454#라면... 얼마 전 제가 심해 바닥에서 건져올린 물건이 아닌가 싶은데요...얼마 전 심해 바닥에서 황금빛 잔을 건져 올렸는데 그 빛이 신비롭더군요." />
+            <string name="1" value="당신이 필요하시다면 그 물건을 내어드리겠습니다. 대신 저의 부탁을 한 가지 들어주셨으면 하는데... 어떠세요?" />
+            <imgdir name="yes">
+                <string name="0" value="오랫동안 탐사활동을 하다보니 탐사물품들이 모두 고장이 나버렸지 뭡니까. 그래서 수리를 해야하는데 #m230000000#까지 다녀 올 시간은 없고해서. 단단한 #b#t4000180##k으로 수리를 해볼까하는데, #b#o8150100##k가 주는 #b#t4000180# 10개#k를 가져다 주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="어렵게 건져 올린 물건을 드리겠다는데 최소한의 성의 표시는 해주셔야 하지 않겠어요?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000180" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031454" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What are you doing here? Looking for  #b#t4031454##k? I guess I got #t4031454# from bottom of the sea. A few days ago, I picked up a gold glass. It looked miraculous." />
+            <string name="1" value=" I can't give it to you if you need it. But would you do me a favor?" />
+            <imgdir name="yes">
+                <string name="0" value=" I explored the sea for a long time and my equipment is all broken. To fix it. I have to go to #m230000000# but don't have enough time. So I'm thinking of using a sturdy #b#t4000180##k to fix everything. Can you get #b10 #t4000180##k from #b#o8150100##k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It was tough to pull it up. It's worth it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Finally, you came back. Thank you. This is what I picked up from the sea. Is this what you're looking for?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. I don't know where you're going to use it. It's valuable. Please keep it safe!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Where is #b10 #t4000180##k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000180" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6280" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031454" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031455" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="122" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1221003" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1221004" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

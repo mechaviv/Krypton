@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2086.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Ingredients for the Flying Pill" />
+        <string name="parent" value="Icarus and the Flying Pill" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="I meet Wing the Fairy at Ellinia, and he doesn't seem to like people in general. How is he best friends with Icarus in the first place?? Anyway, he says in order to make #b#t4031163##k, he'll need #b50 #t4000036#s#k and #b20 #t4031165#s#k. So that's all it takes?\n\n#t4000036# #c4000036##k/50\n#t4031165# #c4031165##k/20" />
+        <string name="2" value="As Wing the Fairy asked, I got her mysterious medicine and leaves of witch grass. Could she make Flying Pill with these?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031165" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2087" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What's a human doing here? I have nothing to talk to you. Please leave.\r\n#L0##bI don't think I want to talk to you, either!#l\r\n#L1#About the &quot;Flying Pill&quot;...#k#l" />
+            <string name="1" value="Hey, how can a human like you know of such a medicine? Well, even if you know of it, I don't think I feel like talking about it to someone like you! \r\n#L0##bYou are one rude, despicable kid!!#l\r\n#L1#I really need that pill, though.#l#k" />
+            <string name="2" value="What?!! A kid? Trust me, I am NOT a kid!! !!\r\n#L0##bSorry, didn't mean to be rude#l\r\n#L1#Aren't you much too young to talk to me like that anyway?#l\r\n#L2#I wouldn't even be here if not for Icarus...#k#l" />
+            <string name="3" value="Icarus? You're here for him? He's the only friend of mine that is human ... and since you're here at his request, I'll make you the pill. You'll need to know that the ingredients I need are really hard to find. I wonder if you are qualified enough to gather them all up." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Whatever. Leave!" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Whether you need it or not, that's your business, not mine." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Get out of my face. Bye!" />
+                    <string name="1" value="Hey, you're talking to a fairy! Of course I've lived much longer than you! In any case, I don't feel like talking to you, so just leave!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Okay. You seem like the kind of person that really cares about the promises made with friends. You're not as bad as I thought. Get me #b50 #t4000036#s#k and #b20 #t4031165##k and I'll make you the #b#t4031163##k. The Witch Grass Leaves grows on swamps, and it's not the easiest to extract. You HAVE to #bextract from the right side#k in order to do it right. Good luck on that." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I knew you'd be like this. It's way too tough for a weakling like you. At least you're aware of your limitations. Now get out of here!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Whoa you got them all? What's this? The leaves are dry! How am I going to make the Flying Pill with crappy ingredients like this? \r\n#L0##bHey, what's your problem??#l\r\n#L1#They look fine to me.#k#l" />
+            <string name="1" value="What are you trying to say? You don't even know what you're talking about! I'll use these ingredients for now, but it's not my responsibility if it comes out less than perfect. The ingredients you got me stink!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="What? I don't feel like making it right now. Come back some other time." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Were you even listening to what I was saying? I need #b50 #t4000036#s#k and #b20 #t4031165#s#k! Get it??" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031165" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2085" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="42" />
+        </imgdir>
+    </imgdir>
+</imgdir>

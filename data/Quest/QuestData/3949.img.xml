@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3949.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jiyur's Palace Entry Pass" />
+        <string name="parent" value="In Search for His Sister" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101001##k says he is going to see his sister. You're a little worried what he means by that." />
+        <string name="1" value="#p2101001# really misses his sister. #p2101001# plans to buy a #b#t04031582##k from #b#p2101004##k to get into the palace. Since #p2101001# has no money, you agree to buy it for him.\n\n#i04031582# #t04031582#  #b#c04031582##k / 1" />
+        <string name="2" value="#p2101001# looked so happy when he received the #b#t04031582##k ..Just like that, he ran off to the palace. You should ask him about it later. But...was he supposed to write his name on the #t04031582#? You've never heard of that before." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="모험가님, 안녕하세요. 저 누나를 만나러 가기로 결심했어요! 궁전으로 들어갈 방법을 알아냈어요. \r\n#L0##b궁전으로 들어갈 방법? (설마... #p2101004#을 통해서?)#l" />
+            <string name="1" value="어른들께 물어보니 #p2101004#이라는 분에게 돈을 내면 궁전에 들여보내 주기도 한다더라구요. 그런데 저에게는 돈이 없어요. 모험가님께서 좀 빌려주시겠어요? 나중에 제가 커서 돈을 많이 벌면 꼭 갚아 드릴께요.\r\n#L0##b그래. 그 정도야 가뿐하게 빌려줄 수 있지.#l\r\n#L1##b안돼! 나도 요즘 돈이 없는걸?#l" />
+            <string name="2" value="와앗! 감사합니다. 이 돈이 있으면 누나를 만날 수 있어요.  그런데 #p2101004#이라는 사람한테는 어떻게 말하면 좋죠? 전 그 분을 멀리서 봤는데 진짜 무서워 보이던데...\r\n#L0##b내가 대신 가 줄까?#l\r\n#L1##b하나도 안 무서워. 정말 괜찮은 친구지.#l" />
+            <string name="3" value="정말 그래도 괜찮으세요?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="앗... 돈이 없으시군요. 모험가분들은 전부 부자라고 생각했는데..." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="괘, 괜찮은 사람이라고요? ...그런 평을 하는 사람은 지금까지 모험가님밖에 못 봤어요..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031582" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I decided go see my sister! I discovered a way to get into the palace.\r\n#L0##b A way into the palace? (Does he mean...#p2101004#?)#l" />
+            <string name="1" value="I talked to some grown-ups and they said I can pay a man named #p2101004# to give me a #t04031582#. Only thing is, I don't have any money. Can buy it for me? When I grow up and make lots of money, I'll pay you back. I promise!\r\n#L0##bSure, I can do that for you.#l\r\n#L1##bNo way! Do I look like I'm made of money?#l" />
+            <string name="2" value="Wow! Thanks! With the #t04031582#, I can go see my sister. But, what should I say to #p2101004#? I've seen him from afar and he doesn't look friendly...\r\n#L0##bDo you want me to get it for you?#l\r\n#L1##bHe's not scary. Nice guy, actually. (Don't be lazy, kid.)#l" />
+            <string name="3" value="You would really do that for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Oh... You don't have any money?  I thought adventurers were rich..." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="He's a ni...nice? You're the first person I've ever hear say that..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Sniff. Thank you so much. I will never forget this. After you buy the #b#t04031582##k from #b#p2101004##k, please bring it to me. I'll be waiting here." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you change your mind, come see me.  I'll be here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow!! You really got me the #t04031582#?\nThank you so much!" />
+            <imgdir name="yes">
+                <string name="0" value="So this is the #t04031582#? With this, I can get inside the palace, right? Hm...? What's this empty space for? Am I supposed to write my name here? *Scribble, scribble*  Hehe, sister, here I come! " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you go see #b#p2101004##k? #b#p2101004##k is the man who stands guard at the Ariant palace entrance. I heard he will give you a palace entry pass if you bring him 2000 mesos." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031582" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3908" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="48" />
+        </imgdir>
+    </imgdir>
+</imgdir>

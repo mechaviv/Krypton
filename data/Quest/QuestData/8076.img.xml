@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8076.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Committee Challenges" />
+        <string name="parent" value="The Committee Challenges" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="Sabitrama of Sleepywood has been looking for me. Something must have happened. I should drop by when there's time." />
+        <string name="1" value="Sabitrama found the clues needed for the 3rd Herb.\nThe message was still too hard to understand. The archive said something like this! ...\nWhat kind of an ominous herb is this?? This herb cannot be placed near a human being, so seal up the force in a spherical object, and never let it see the day of light again...\n\nIf it's anything like the herbs before, then I'll still have to obtain this through monsters again. Arrgh, this is frustrating!" />
+        <string name="2" value="We found the 3rd Herb, but it is tightly sealed inside Lazy Buffy's Marble. It seems like it's been attached for so long, that I don't think we can just pluck it out of the sphere. Sabitrama then mentioned something like applying modern science to opening this. We've come so far, that there's no way we're about to give up.\nBut then again, who am I supposed to find?&quot;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000129" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome back. \nThere were some much-needed progress made regarding the clues for the 3rd Herb." />
+            <string name="1" value="The lost page of the archive was found at a rather interesting place. Mr. Wetbottom, who stays at the VIP Sauna, well, his ancestory had it.\nObserving only far objects like a lighthouse, your focus does not match right when looking close. I think it means assuming someone's personality based on the appearance is never a good thing." />
+            <string name="2" value="Now, onto the real thing, I really don't think we can easily obtain this, either. The skills behind the 3rd Herb reads like this." />
+            <string name="3" value="...\nWhat kind of an ominous herb is this?? This herb cannot be placed near a human being, so seal up the force in a spherical object, and never let it see the day of light again..." />
+            <string name="5" value="For someone like you, who found 2 of 3, I am confident that you can find the 3rd one. I will spare no expense in searching for this Herb. We're here, so might as well finish the job, right?" />
+            <string name="6" value="Good luck, committee member! \nAll hail the Committee!" />
+            <string name="4" value="That's what it say here. Compared to the herbs before this, I really don't have much counted on this, but I really do not want to give up on this right now, just because of the more treacherous path it leads to obtain it." />
+            <imgdir name="yes">
+                <string name="0" value="I knew you wouldn't Say no. From a personal point of view, I believe that Herb possesses incredible magical power, coupled with the fact that it's been sealed so no amount of force may leak out. Even after we find it, we'll have to take care of it in a very delicate matter. \n\nAlright, good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There's nothing to fear here.\nThe ones written in the archive may look astounding, but I don't think they can be called the herbs laden with spells. Do you want to change your mind?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How did it go? Did you find the 3rd Herb?" />
+            <string name="1" value="Hmmm, so you're telling me #b#t4000129##k is the herb?" />
+            <string name="2" value="Ahh, I see I see! I thought this was nothing more than a hat accessory, but this was in fact possessed by the Lazy Buffy. Yes, I can feel the force from here. I can't believe the 3rd Herb is actually inside this." />
+            <string name="3" value="Wait, something that cannot be next to humans... hmmm ... I see! I have no idea how to remove this. The outer layer is thinly covered by another layer, and I can't even touch it. The herb is definitely being sealed up inside the marble...! Pretty much what the archive said came true." />
+            <string name="4" value="Is this it...?" />
+            <string name="5" value=" No, not yet. It's too early to give up on this. It may have been impossible to remove the sphere back in the day, but if we apply modern science to this, then...!" />
+            <string name="6" value="Committee member! Can you please find a way to remove the herb from the sphere? I have no idea who's currently practicing modern science. Please find out for me. This is the money you may need to locate that person. Good luck." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Too bad we're woefully short on sample size, so there's no way to tell whether it's the 3rd Herb.. Please gather up some more. I see ... I think a 200 each should be sufficient enough for this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000129" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8075" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

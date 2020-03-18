@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21738.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sealed Garden" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You wonder if #m200000000# will come crashing down because of the sheer weight of the #o9300347#s. You'd better talk to #b#p2032001##k who lives in #b#m200050000##k before that happens." />
+        <string name="1" value="#p2032001# says that she's worried about the possibility of the #o9300347#s causing #m200000000# to sink, but she says she's actually more worried another issue entirely. The fact that the Nependeaths in Orbis have grown so huge maybe connected with the path to #m920030001#. #m920030001#? This may be related to the Seal Stone somehow. You'd better keep asking #b#p2032001##k more questions." />
+        <string name="2" value="#p2032001# first had her doubts about whether you could be trusted and was shocked to discover your true identity. She says that she has seen your grand fate…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You, there. Your destiny seems to be special. Your long life, your history, that terrible curse, and the willpower you used to overcome all that… Who are you exactly?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, anything's fine. The fortune already tells me that I should tell you everything there is to know about #m920030001#..." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21737" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21738s" />
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

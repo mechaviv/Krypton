@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Talking to Stan" />
+        <string name="parent" value="Alex the Runaway Kid" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="At the entrance of Henesys Park, you meet Alex's father, Stan, the chief of Henesys. You couldn't even start up a conversation with him. He wants you to get him #b30 Evil Eye's tails and 60 pig ribbons#k before he'll even talk to you.\n\n#t4000007# #b#c4000007##k/30\n#t4000002# #b#c4000002##k/60" />
+        <string name="2" value="You talked with Alex's father, Stan, and settled the father-son misunderstandings. You got Alex's mother's gold watch in return." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="-60" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2016" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want to talk to me? I'm the chief of this town, and I have no time for a conversation. If you really want to talk to me, then collect these materials for the town. #b#e30#n #t4000007#s#k and #b#e60#n #b#t4000002#s#k. Then we'll talk." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Who are you? I don't think we've met.\r\n#b#L0# I'm just a traveler.\r\nDon't mind me.#l\r\n#L1# I'm here on #p1052000#'s behalf.\r\nJust give me five minutes.#l\r\n#L2# Haha...isn't it beautiful today?#l" />
+            <string name="1" value="#p1052000#? Ha, I no longer have a son with that name. Get out of here!\r\n#b#L0# Ah... Yes, sir. Sorry for bothering you.#l\r\n#L1# But #p1052000# wants to come home.#l\r\n#L2# Cut it out! #p1052000# is sorry for running away!#l" />
+            <string name="2" value="Eh? Confronting me now? Yelling at me in public? Hmm, you must be somebody important. Fine. How's #p1052000# doing?\r\n#b#L0# #p1052000# is having a hard time since he ran away.#l\r\n#L1# #p1052000# is getting sick of wandering around.#l\r\n#L2# Why don't you ask #p1052000# yourself?#l" />
+            <string name="3" value="Ask him myself? Hahahaha! I like you. That makes me wonder. What do YOU think of ME?\r\n#b#L0# I think you are a great chief.#l\r\n#b#L1# I think you are too harsh on Alex.#l\r\n#b#L3# I think you hide the fact that you're actually a person of warmth.#l" />
+            <string name="4" value="Yes, like you said, I'm the chief, but ever since #p1052000# left, I've been losing face!\r\n#b#L0# #p1052000# knows he made poor decisions, but now he's asking for forgiveness. What he needs right now is a compassionate father.#l\r\n#b#L1# Are you worried less about your son and more about your image in this town? You've got to be kidding me!#l\r\n#b#L2# #p1052000#'s been unsettled since his mother past away. Your strict nature hasn't helped him any. How about forgiving him?#l" />
+            <string name="5" value="You know THAT much? I suppose it's true that #p1052000# has been more rebellious since Anna passed away. I've been busy with my chiefly duties, and perhaps I've neglected him. Perhaps this is my fault..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="What do you think I am, a tourist attraction? Shame on you...and get out of my face." />
+                    <string name="2" value="Ah yes, such a beautifuly day...or not! I have no time for idle chit chat. Scram!" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="3" />
+                    <string name="0" value="What a chicken.You tell me you know #p1052000# and then want to flee when I get angry? I don't even want to speak to you. Get out of here." />
+                    <string name="1" value="He wants to come home? Hahaha...! That's a lie! I'm sure he's happy that he can do whatever he wants now, especially since he took my money, too." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="He's having a hard time? Good! Please give him this message: #bStay away. Feel the pain. Experience the hard life! Then maybe you'll learn a thing or two about being independent." />
+                    <string name="1" value="Sick of it?! He wants to come home now that he's sick of living alone? Hahahahahahha! As of this moment, I know no #p1052000#! What an ungrateful... Argh." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <string name="1" value="You are brutally honest. I usually like honesty, but I don't appreciate your candor one bit right now. Are you trying to make me mad?" />
+                    <string name="2" value="Hahaha! You're either very observant or you're a kiss-up. Either way, it doesn't matter. I'm busy. Scram." />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="3" />
+                    <string name="0" value="You don't know #p1052000# like I do. What were you offered in return for helping #p1052000#? It doesn't matter, I can never forgive him. Please leave..." />
+                    <string name="1" value="Maybe, maybe not! But I have responsibilities! I've served longer as chief of this town than you've been alive. Who are you to chastise ME?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You want to talk to me? I'm the chief of this town, and I have no time for a conversation. If you really want to talk to me, then collect these materials on behalf of the town. #b#e50#n #t4000007#s#k and #b#e100#n #b#t4000002#s#k. Then we'll talk." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20504.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Saddle Making" />
+        <int name="area" value="15" />
+        <string name="0" value="Seems like you'll be able to get the #t1912005# required for mounting monsters from #b#p2060005##k..." />
+        <string name="1" value="#p2060005# says that making a #t1912005# is not difficult but that you'll have to pay for the materials. He says that since you were referred by #p1102002#, he will give it to you for the low price of #b10 million mesos#k...\n\n #b10 million mesos" />
+        <string name="2" value="You paid #p2060005# 10 million mesos and received a #t1912005#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="#t1912005#을 구하러 오신 분이군요! 안 그래도 요새 라이딩을 시작하는 기사단 분들이 많아서, 손이 바빠지고 있어요. 그런데, 알고 오신 건가요? #t1912005# 만드는 건 별로 어렵지 않지만... #t1912005#에 드는 재료비는 주셔야 하는데..." />
+            <imgdir name="yes">
+                <string name="0" value="#p1102002#의 소개로 오신 분이니 특별히 싸게 해드릴게요. 어디보자, 그럼 가격이... 10000000메소네요. 아, 0이 너무 많아서 읽기 힘드시다고요? 간단히 말해 천만 메소예요. 좀... 비싼 편이죠? 이것도 싸게 한 거예요." />
+                <string name="1" value="구입할 메소를 충분히 모아 오시거든 #t1912005#을 드릴게요. 자, 그럼 나중에 봬요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="앗, 재료비에 대한 이야기는 못 들으신 모양이군요. 죄송해요.저도 동물원도 유지비도 그렇고 사료비도 그렇고 만만치가 않아서 그냥 드릴 수는 없어요..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-10000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912005" />
+                    <int name="count" value="1" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20503" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912005" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <string name="end" value="2008120200" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2174.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Report to Muirhat" />
+        <string name="parent" value="A Mysterious Presence On-board The Nautilus" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="0" value="Baine discovers that the Black Magician's Disciples have been secretly observing The Nautilus. And with that discovery, Baine's report is now ready to be delivered to Muirhat. Baine wants me to bring the report to Muirhat myself, since I gave him so much help with writing the report... " />
+        <string name="1" value="This report contains the Black Magician's Token which I found, plus a description of the strange sound waves that Baine had heard. It also includes information about the suspicious movements that Bart saw. I should take this to #bMuirhat#k." />
+        <string name="2" value="When Muirhat receives the report, he is surprised and shocked to find that the Black Magician's influence has spread as far as here." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031862" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031863" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031862" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031863" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thanks to your help with the Black Magician's Token, I was able to complete the report much earlier than expected. I'll now have to give this report to Muirhat, but since you were the number one contributer with the Token and all, I think it's only fair that you hand in this report yourself. No?" />
+            <imgdir name="yes">
+                <string name="0" value="If things end up working out because of the report, then you may become the hero of The Nautilus. Please hand it in to #bMuirhat#k. Muirhat can be found #bin front of the Navigation Room#k on the #bupper hallways of The Nautilus#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="He can seem like a man of very few words, and you may feel like he'd be unapproachable. In fact, the opposite is true, so I suggest you summon up the courage and talk to him. I mean, you'll also take the lion's share of the praises if this all goes well. You have nothing to lose!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you just say the spies from the Black Magician? What? They are here, all the way to The Nautilus...?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm... if it is indeed as stated in the report, then this is a serious, serious issue..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Muirhat should be standing in front of the Captain's Room." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I can't believe you just lost that. I'll give you another copy of the report, as well as the token that someone else had picked up. Please don't lose them again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031862" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031863" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2173" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

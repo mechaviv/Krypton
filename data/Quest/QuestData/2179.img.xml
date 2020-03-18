@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2179.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Protect The Nautilus' Emergency Food Supply" />
+        <string name="parent" value="Special Recipe for The Nautilus" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently, pigs and ribbon pigs have been coming onto The Nautilus every night to eat up the ship's emergency food supply. At this rate, the people on The Nautilus may end up starving! I should go see Tangyoon, the ship's Head Chef and talk to him about this." />
+        <string name="1" value="Tangyoon says pigs and ribbon pigs keep coming onto The Nautilus' emergency food supply and eating up all the food, and there's only a little bit left in storage! I'm gonna have to teach these #rpigs#k and #rribbon pigs#k a lesson they'll remember. \n\n#o1210100# #r#a21791##k \n#o1210101# #r#a21792##k" />
+        <string name="2" value="I think they must've learned their lesson by now. They'd better stay away from The Nautilus' food supply!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no! Our food! Those darn pigs came in late at night and ate our food again! Hey you there, help me out here. I don't see a lot of people crossing path, so that's why I'm asking you for help." />
+            <imgdir name="yes">
+                <string name="0" value="Phew, you're a much nicer kid than I thought. What I want is for you to eliminate some #rpigs#k and #rRibbon Pigs#k around the area. Those hungry creatures always come in to our food storage area and eat some overnight. If this keeps happening, we'll all be starving soon. That's why I want you to eliminate some of those dastardly creatures. #b30 each#k. I can't wait!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah... young kids these days... sigh..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh... what should I make for dinner... hey, you're back!" />
+            <imgdir name="yes">
+                <string name="0" value="You were able to eliminate it already. That's amazing! Oh, to be young again! Thanks to you, those pigs won't be sniffing around the food storage area anytime soon." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please teach 30 pigs and 30 Ribbon Pigs a lesson, so they won't ever sniff around the food storage again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092000" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

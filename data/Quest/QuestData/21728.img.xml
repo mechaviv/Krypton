@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21728.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Puppeteer's Cave" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your fourth assignment as an informant and it involves #p1061019#, who apparently remembered something when he looked at the #t4032321# retrieved from #o2230101#. Go talk to him at #b#m105040300##k." />
+        <string name="1" value="#p1061019# says that he saw a kid carrying around a #t4032321# some time ago. That must have been the Puppeteer! According to #p1061019#, the puppeteer may be hiding near the Evil Eye Cave… You should #bgo up to the Evil Eye Cave and look for the Puppeteer's Headquarters#k." />
+        <string name="2" value="You spotted the Puppeteer's Headquarters, but you need a password to enter." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A while ago, I saw this strange-looking kid wearing a robe pass by this area. The kid looked suspicious from head to toe, from his clothing to the way he was carrying a #t4032321# along. I tried talking to him but the kid was a total punk! What did he talk about? Well..." />
+            <string name="1" value="I want to become just like my brother and defeat Balrog myself, but I need to pass the Evil Eye Cave before getting there, and..the Evil Eyes look very scary. I don't know how I am going to pass by them.'" />
+            <string name="2" value="The conversation went something like that, but is that kid really living inside that cave? Wow…that would be so scary. Living under the same roof as Evil Eyes? Oh, no way. That kid is so strange." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Eh? Aran, are you really going to #benter the Evil Eye Cave to see if the kid really lives there#k? Wow, no way! Who cares if it's true or not? Why would you want to volunteer to go in there? No way... You're brave, that's for sure!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You don't find the kid strange? I think you may be as strange as that boy." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you manage to reach the Evil Eye Cave? Did you really find the kid living there?\n#b#L0#(You tell him about getting to the entrance of the Puppeteer's Cave.)#l\n#k" />
+            <string name="1" value="So I guess he really does live there... But a password... Why would he need a password? Who would even visit that place?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061019" />
+            <int name="infoNumber" value="21761" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="0" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061019" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21727" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

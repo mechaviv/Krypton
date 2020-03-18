@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3201.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning Up the Inner Parts of Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Marcel now..." />
+        <string name="1" value="Marcel asked me to take care of  #b40 #o2230103#s#k and #b40 #o3210205#s#k living in Eos Tower.\n\n#o2230103# #r#a32011##k\n#o3210205# #r#a32012#" />
+        <string name="2" value="I took care of the #b50 #o2230103#s#k and #b50 #o3210205#s#k, just the way Marcel wanted, but it seems like there's more outside..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000009" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000011" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow, great timing! I actually have something else to ask you for a little help on. A few days ago, one of the guys from us reported that Eos Tower is now full of even nastier monsters than last time, and so I thought of you as the enforcer ... so can you do it instead of me??" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. It's similar to others last time. The tower that connects Ludibrium and ground, Eos Tower, is now infected with dirty spiders and black rats. So please go in and take care of some of them." />
+                <string name="1" value="Please take care of #b40 #o3210205#s and #b40 #o2230103#s#k that are roaming around in Eos Tower. They are a bunch of huge black rats with springs on the back, and spiders making spider webs on the wall. I'll be here waiting until you take of all of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really. This task isn't that difficult, and I think you can do it. If you have any free time, then come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Awesome! You took them all out again! There must have been quite a few #b#o2230103#s#k and #b#o3210205#s#k around Eos Tower. Anyway, thank you for helping me out. I'll give you an item that you'll need to use for hunting. Please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="Here they are, #b50 #t2000009#s and 50 #t2000011#s#k. Thank you so much for your help, but it seems like Eos Tower is still full of nasty monsters. I have a lot to ask of you, so if you have any free time, please come talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you did what I asked of you. Please head to Eos Tower and take out #b50 #o3210205#s#k and #b50 #o2230103#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230103" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3210205" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

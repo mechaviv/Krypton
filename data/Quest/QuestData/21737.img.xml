@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21737.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Giant Nependeaths Appear" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="It seems that something related to the Black Wings is happening in #b#m200000000##k. You should talk to #b#p2012012##k." />
+        <string name="1" value="#p2012012# the fairy has noticed that the number of #r#o9300347#s#k has been steadily increasing in #b#m200060001##k and wants you to look into the #o9300347#s there. Apparently, if you're not careful and enter the wrong path from #b#m200060000##k, you may end up in #m200060001# instead, so you should head there right now, eliminate the #o9300347#s, and retrieve any strange items they might drop.\r\n\r\n#i4032324# #t4032324# #b#c4032324# / 5#k" />
+        <string name="2" value="After defeating the #o9300347#s, you brought back a #t4032324#. #p2012012# was curious to see who would do such a thing and seemed to worry even more that the sheer weight of the Nependeaths might cause Orbis to sink. She wanted you to discuss the problem about #m200000000# with someone who might know more." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="29500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032324" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ahhh…my head hurts. There's nothing worse for fairies than fatigue from lack of sleep. What can I do for you? Seeing how you've talked to more than once, it must be something very important...\n#b#L0#You explain that you heard there's something strange going on in #m200000000#...#l\n#k" />
+            <string name="1" value="Oh, how did you know? I mean, lately, we've been hearing a loud, thumping noise every other second all throughout #m200000000#. It's so loud that none of the fairies can get any sleep. \n#b#L0#(Is there a way to find out what's going on here?)#l\n#k" />
+            <string name="2" value="Of course I wanted to get to the bottom of this myself, so I tried looking into it… But I don't think it's something I can do on my own. If you don't mind, can you help us with this? I'll reward you for your work.\n" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I followed the thumping noise and it led me to #b#m200060001##k, a remote place that even residents of #m200000000# never visit. Then, I saw. It was a #rgiant Nependeath#k! One that's a few times bigger than regular Nependeaths." />
+                <string name="1" value="How in the world did a Nependeath like that come about? I have no idea. Nependeaths in #m200000000# are not the type that grow like this one. We'll need to look for the cause behind this. Can you eliminate #r#o9300347#s#k and find out the #bcause#k of all of this?" />
+                <string name="2" value="#m200060001#, where #o9300347#s are found, can be accessed through #b#m200060000##k. You must go through an obscure road to get there. Head over to #m200060001#, defeat #o9300347#, and if you happen to find an item that you think could have triggered this, then please bring it to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can't help us, then there's nothing we can do about it. Seriously, how can a giant, giant Nependeath like that even exist?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you manage to eliminate the #o9300347#s? Did you find any items that could have caused them to grow so big?" />
+            <imgdir name="yes">
+                <string name="0" value="#t4032324#? Who gave this to Nependeath? No wonder the Nependeath grew out of control. Wait, that's not the problem!" />
+                <string name="1" value="I don't know if you know this, but #m200000000# is a town that floats in the air. However, it has started to sink gradually over the years. If #m200000000# gets heavier, it can sink to the ground." />
+                <string name="2" value="I need to find out if #m200000000# will sink to the ground. I'm sure #b#p2032001##k in #b#m200050000##k would know the answer. Please go talk to #p2032001#. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you defeated the #r#o9300347#s#k yet? Go to #b#m200060000##k and take the less visible path, and you'll soon find yourself in #b#m200060001##k. There, you must defeat #o9300347#s and look for the reason that has caused this monster to grow unlike anything else." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Haven't you defeated the #r#o9300347#s#k yet? Go to #b#m200060000##k and take the less visible path, and you'll soon find yourself in #b#m200060001##k. There, you must defeat #o9300347#s and look for the reason that has caused this monster to grow unlike anything else." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032324" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21736" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8062.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Doll in the Dark 2" />
+        <string name="parent" value="Doll in the Dark" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p2041022##k said he looked for some subjects that may go along with the book that's being written. What do I need to do now? I better ask him." />
+        <string name="1" value="#p2041022# requested me to defeat #b#o6230400##k and collect #b50 #t04000143#s#k so I can hand them to #b#p1012109##k. I don't know if #p1012109# wants to be in on this, but I'll ask first." />
+        <string name="2" value="Just the way #p2041022# ordered, I gathered up #b50 #t04000143#s#k from #b#o6230400##k, and gave them to #p1012109# of #m100000000#. #p1012109# seemed very ecstatic, and rewarded me for my effort, but will that really help him write the next chapter?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000143" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2041031" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040609" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040409" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2040011" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2040813" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="2040909" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="2041037" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="2040013" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="2041035" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="2040407" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So #b#p1012109##k's having a hard time writing a new history book?" />
+            <string name="1" value=" I see. How about showing #b#p1012109##k the items that are being dropped by the monster he's looking for?" />
+            <imgdir name="yes">
+                <string name="0" value="If it's about the doll monsters. then I advise you to hold on to #b#t04000143##k. I think you'll find it by defeating #b#o6230400##k. I suggest you gather up 50." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see. IF so, then I can't think of another one. I'm sorry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How was it? Did #p2041022# give you any advise?" />
+            <string name="1" value="Wow, thanks a lot! I'll divulge into this monster more now. Hmmm, and ... I want to give this to you as my way of thanks. What should I give you? Ah, that's right, I chose this over other items, so please take it." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What? #b50 #t04000143#s#k! I'm sure you can get it from #b#o6230400##k... once you get done collecting them, please hand them over to #b#p1012109##k" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you receive any advise from #b#p2041022##k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012109" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000143" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041022" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8061" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

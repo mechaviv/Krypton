@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2159.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping Roel" />
+        <int name="area" value="30" />
+        <string name="0" value="Riel, Rael and Roel starts betting on who will be offered to King Clang. The winner gets to be the sacrifice! How can I help these girls get to their senses? Let's meet with #bRoel#k." />
+        <string name="1" value="Roel looks just like Riel but with a tougher attitude! Her dare was to take out #r50 Lorangs#k. Roel asks me to help her win the bet. I'd better help her with this, and then talk about how ridiculous this bet is. \n\n#o3230102# #r#a21591##k" />
+        <string name="2" value="Defeated all Lorangs for Roel." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm. Are you the adventurer #bRael#k talked about? Thanks for becoming the judge but... I hope you are honest, and that you won't help #bRael#k because you both know each other. I will never give this role up!" />
+            <string name="1" value="Still... this challenge is a burden. How can I defeat Lorang? I've never even given it a thought before. Nobody can succeed, except well... someone adventurous like yourself. Ohhh... what should I do...?" />
+            <string name="2" value="You actually don't seem to be busy right now. And you don't seem to have helped Rael, meaning that you aren't fond of her. Anyway, this dare is almost impossible for me to complete by myself. It's decided, then! You are going to help defeat the #rLorang#k!" />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha! You really are a brave adventurer! I was right. Then I'll leave the #r50 Lorangs#k to you to hunt down!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You're refusing? Hmph! But that doesn't mean you can go help Rael. Promise?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh good! You've already defeated the #bLorang#k? How wonderful! You really are courageous!" />
+            <imgdir name="yes">
+                <string name="0" value="What? You want me to back out of this bet? Why would I do that?! Something like this doesn't come by often here in quiet Florina Beach! I can't back out now. Thanks for helping me, but I will not give this up!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmm... You haven't defeated #r50 Lorang#k yet? I might lose because of your laziness! Hurry up. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081101" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3230102" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2157" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

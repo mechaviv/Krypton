@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2077.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Path of a Warrior" />
+        <int name="area" value="10" />
+        <string name="0" value="What does it mean to be a Warrior? Talk to #p1002101# in Lith Harbor." />
+        <string name="1" value="#p1002101# in Lith Harbor says you can choose to become a #bWarrior#k if you're at least #bLevel 10#k. He tells you to see #r#p1022000##k in #rPerion#k. If you'd like to walk there, check your World Map. (#rW#k)" />
+        <string name="2" value="You learned what it takes to be a true Warrior from #p1022000#. You have a feeling this is the right path for you." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, a Warrior, eh? You chose that because I look so proud as a Warrior, right? Once you're ready, press ACCEPT." />
+            <imgdir name="yes">
+                <string name="0" value="A #rWarrior#k favors #bstrength(STR)#k with a bit of dexterity (DEX). Head over to #rPerion#k to talk to #b#p1022000##k." />
+                <string name="1" value="Passing by me and go further, you can find #bWarrior Statue#k to teleport to #bPerion#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Not so sure you want to be a Warrior? Fair enough. Once you decided on a job, come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you here to become a Warrior? Then you've come to the right place..." />
+            <imgdir name="yes">
+                <string name="0" value="Once you get to #bLevel 10#k, I can transform you into a #bWarrior#k. Please see me when you're ready to take the next step." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #b#p1022000##k yet? He's in #rPerion#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2079" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2080" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2081" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2212" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2078" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

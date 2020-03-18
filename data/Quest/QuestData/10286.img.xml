@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10286.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Gift" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Cassandra says she'll give you a pair of gloves to celebrate MapleStory's 5th Anniversary. Go talk to Cassandra to find out more." />
+        <string name="1" value="Cassandra claims that she can make gloves out of maple leaves. Go collect some maple leaves!" />
+        <string name="2" value="You were told if you have Maple Gage currently equipped or in your Inventory, you can't receive it again. Failed equipment should be thrown away." />
+        <string name="demandSummary" value="#i4001126:# #t4001126:# #c4001126# / 800" />
+        <string name="rewardSummary" value="#Wbasic#" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1082252" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="-800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="By now, everyone must know that MapleStory has reached its 5th Anniversary! To commemmorate, I've prepared a special item. Would you like to see?\r\n#e#t1082252# : #v1082252:##n\r\n#b#L0#These gloves aren't even that great...#l\n#k" />
+            <string name="1" value="I knew you'd say that! That's why I've prepared something else as well. It's the #b‘[5th Anniversary] Scroll for Gloves'#k. This scroll is exclusively for the ‘#bMaple Gage#k', which you can obtain from the #e#bMaple Administrator#k#n by trading in Maple Leafs. Oh, and I also have good news and bad news. Why don't I tell you about the good news first?\r\n#b#L0#Good News?#l\n#k" />
+            <string name="2" value="The administrator will supply you with an unlimited number of this scroll during the 5th Anniversary Event. Keep in mind that this scroll has a whopping #b70% success rate!#k. Isn't that great? \r\n#b#L0#So, what's the bad news?#l\n#k" />
+            <string name="3" value="Well, unfortunately, there is a chance that this scroll will destroy the Maple Gage when used. But no need to sweat it, I'll give you more Maple Gages anytime. So, what do you think? Do you want to try?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Okay, great! Bring me 800 #bMaple Leafs#k and I will make it for you right away. You want to know where to find #bMaple Leafs#k? You can obtain them from hunting or by finding them at Maple Hill, which you can reach by having the #bMaple Administrator#k send you. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? Fine then, it's your loss." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great, I'll give you the #b‘Maple Gage'#k. You can trade in #bMaple Leafs#k for #b[5th Anniversary] Scroll for Gloves#k, so keep collecting and making gloves!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="To make a glove, 800 Maple Leafs are needed. I don't think you have all 800 yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1082252" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2010061600" />
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

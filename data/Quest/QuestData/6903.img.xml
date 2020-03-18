@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6903.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Harmonia's third story" />
+        <string name="parent" value="The Warrior's Extreme Path" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081100##k said she'll tell me the final story and told me to come talk to her again when I'm ready." />
+        <string name="2" value="#b#p2081100##k told me about a lake stopped in time, which is the third truth.  Then she said come back and talk to her when I'm ready to prove my skills." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The third is the story about the lake where time stopped. Do you wanna listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, you do have the right to listen to this story. Talk to me when you are ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid? You came this far. Don't be discouraged..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="When you go to the north, there's a big lake. Bigger than a forest! People call this lake Ludus or the lake where  time stopped." />
+            <string name="1" value="Near the Lake lies Ludibrium Castle, supported by huge towers. The Holy Power of the clock tower in the middle of Ludibrium Castle protects the castle by stopping the time there." />
+            <string name="2" value="But the dimensional crack in Ludibrium castle is getting wider and wider. A wicked power has invaded through the crack and changed the castle. You could probably feel the power of beings from the other dimension. They are called Alishar and Papulatus, and both are getting stronger." />
+            <imgdir name="yes">
+                <string name="0" value="You know why I'm telling you this story. The 4th job advancement requires more responsibility. You must know what you'll be up against." />
+                <string name="1" value="You have to understand the Maple World more and behave as a true hero. Now I'll give you the last task for the 4th job advancement." />
+                <string name="2" value="Talk to me when you're ready." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6902" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="111" />
+                <int name="1" value="121" />
+                <int name="2" value="131" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

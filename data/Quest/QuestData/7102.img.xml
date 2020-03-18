@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7102.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Time Sphere" />
+        <string name="parent" value="Protect Ludibrium" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="0" value="I may need to take care of some more business while creating the time sphere. I should go see #p2041021#." />
+        <string name="1" value="#p2041021# wanted me to collect #t4031179:# through #p2041023#...\n\n#t4031179:# #r#c4031179#/1#k" />
+        <string name="2" value="I found the #t4031179:# that #p2041021# was talking about. Apparently, to defeat Papulatus, we need to be at least lvl 80 or higher..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="15000" />
+            <int name="exp" value="5600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm making the Time Sphere as we speak with the materials that you got me. In the mean time, we'll need to find #b#t4031179##k to seal up the cracked dimension in the generator." />
+            <imgdir name="yes">
+                <string name="0" value="Nice. Well, I'll need a piece that can effectively seal up the crack in dimension. You should go visit #p2041023# for this, who should be standing on the left side of the Path of Time. Flo should tell you all you need to know about the #b#t4031179##k. You'll need to gather up #t4031179:# from him. \n\n#r1#k #t4031179#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Simply re-creating Time Sphere will not be enough to supply all the power Ludibrium needs. In order to eliminate the monster that made its way here that abused the power of Time Sphere, you'll need to effectively seal up the cracked dimension it used to enter here in the first place. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you here for #t4031179:#? The Time Sphere should be well on its way, but we still need some time for this." />
+            <imgdir name="yes">
+                <string name="0" value="I think this is right one. I can feel the ultimate force of Papulatus here... this Time Sphere, as soon as finished, will be returned back to the power generating room. Until then, we need to destroy the old Time Sphere that provided incredible power to Papulatus Clock, and kick Papulatus out of here. When you are ready to take on this hard task, let me know. You need to be at least over level 80 to be able to handle this." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Didn't you get it confirmed by #p2041023#?" />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="What the, are you sure you brought the cracked piece of dimension the way it should be brought?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7104" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7101" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

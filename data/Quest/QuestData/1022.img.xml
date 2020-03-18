@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1022.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lucas' Cute Daughter" />
+        <int name="area" value="20" />
+        <string name="0" value="Elder #b#p12000##k in #b#m1010000##k has a request." />
+        <string name="1" value="#p12000# is worried that his daughter in #b#m60000##k is too scared of monsters to come home. To clear a path for her, he asked you to defeat 7 #r#o0130101#s#k and let #b#p20100##k know. \n #k \n#o0130101# #r#a10221# #k" />
+        <string name="2" value="You let #p20100# know you got rid of all those troublesome #o0130101#s. Yes!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="70" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010009" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmm, seems you just started an adventure. Good for you. My daughter, on the other hand, is still young and not brave enough to travel around...\r\n#b#L0#You have a daughter?#l" />
+            <string name="1" value="I sure do. She is the cutest and nicest creature in the entire world. She went to #b#m60000##k to look at the sea and hasn't come back yet. I'm sure she's afriad of the monsters on the path home. Could you help her?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then please eliminate #r7 #o0130101#s#k. There are tons of #o0130101#s from #m1010000# to #m60000#. They're what's keeping #p20100# from returning home, you know. When you get rid of them, let #b#p20100##k know it's safe to come home. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm, I see…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you need soemthing? Huh? You were asked to eliminate #o0130101#s for me? That wasn't the reason I didn't go home… Anyhow, thank you nonetheless. Sorry for making you go through all that trouble." />
+            <imgdir name="yes">
+                <string name="0" value="Some day, I'll leave here and see beyond Maple Island." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmmm... Haven't you met #b#p20100##k yet? Try to find the most beautiful girl in #b#m60000##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="If you want to leave Maple Island, speak with that handsome captain." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130101" />
+                    <int name="count" value="7" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

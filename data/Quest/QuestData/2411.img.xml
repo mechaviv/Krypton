@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2411.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Regaining Confidence" />
+        <int name="area" value="10" />
+        <string name="0" value="You handed Power B. Fore his precious letter of commendation, but he seems upset that there's a stain on it." />
+        <string name="1" value="He's so enraged about the stain that he wants you to get revenge on the monsters.\r\n\r\n\r\n#i4000004:# #t4000004:# #c4000004# / 10\r\n" />
+        <string name="2" value="You got revenge, as requested. He finally seemed satisfied." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="9002" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="200" />
+                        <int name="1" value="210" />
+                        <int name="2" value="220" />
+                        <int name="3" value="230" />
+                        <int name="4" value="211" />
+                        <int name="5" value="221" />
+                        <int name="6" value="231" />
+                        <int name="7" value="212" />
+                        <int name="8" value="222" />
+                        <int name="9" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Noooo!! The stain on the letter won't come off!!\r\n#b#L0#Hey... it's time for you to help me train!#l\n#k" />
+            <string name="1" value="Time for revenge!! I mean, time for your second training session! Hey explorer, go slay those monsters!\r\n#b#L0#Hey, don't put your personal vendetta ahead of my training sessions...#l\n#k" />
+            <string name="2" value="Eh? Why? You don't want to do it?!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Good, your task is to eliminate Slimes in the area and to bring me back the Squishy Liquids they drop. Bring me 10 of them!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to, then fine! We'll just do away with training and everything!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Good! This will now teach them a lesson on not messing with other people's belongings!\r\n#b#L0#Okay, time for 'training'...#l\n#k" />
+            <string name="1" value="Eh? Training? Wait, let me see. Okay, I'll teach you the Monster's Weakness skill. Here, take this and let's see... " />
+            <imgdir name="yes">
+                <string name="0" value="Eh? Since when did you become this powerful? We can do away with beginner training sessions! You're going straight to the intermediate training program!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You don't have 10 Squishy Liquids with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032113" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032113" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2406" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <int name="lvmax" value="20" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

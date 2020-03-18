@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6131.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Method of Contradiction" />
+        <string name="parent" value="Caron's Notebook" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value=" I went to see #p2060100# with #t4001107#. #p2060100# says I have to burn the book with cold flames in order to read it. A strange, but effective way of hiding the infromation contained within. The information has to be important if someone went through all this trouble. She's agreed to help me. I must gather  #b5 #t4000008#, 50#t4000081#, and 100#t4000150##k to make #t4001108#  which is needed to burn cold flames. Can I trust this witch? I hope she does not lead me down the wrong path...\n\n#i4000008##t4000008# #b#c4000008#/5#k \n#i4000081##t4000081# #b#c4000081#/50#k \n#i4000150##t4000150# #b#c4000150#/100#k" />
+        <string name="2" value="Success! I gave all the ingredients to #p2060100# to make #b#t4001108##k. Now, I must find a place to properly burn the book...perhaps the sea?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000150" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" If you want to see the truth that this book hides, you should open it with a contradiction method--a riddle of sorts. Contradiction methods can be something akin to a &quot;delicious poison,&quot; where at first glance, it seems impossible until you think about it. Books and items such as these are too dangerous to open with normal means. In this case, the contradiction method you can use would be a cold fire. Therefore, if you burn the book in the #bcold flame#k, you can read the book. " />
+            <string name="1" value="What do you think? Would you like to make #bcold flame#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. The cold flame is alive only in the #bcold altar#k of the deep sea where there is no sun. The cold flame disappeared a long time ago. Re-lighting the altar is possible, but a #t4001108##k is required... I will make #t4001108# for you, but I will need a few components to make it." />
+                <string name="1" value="If you want to make a #t4001108#, you will need #b5 #t4000008#, 50 #t4000081# , 100 #t4000150##k. I'll be waiting..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... You mean you don't want it? Why? Afraid? The dark is a comfortable place to be once you get used to it..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yeah... Do you have the ingredients? Wow... you've got everything! You really want to have this power, don't you?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. I can make #b#t4001108##k with this. It'll take time to make it. Talk to me in a few minutes and it should be ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" if you want this power, I'll need 5#b#t4000008#, 50#t4000081# , 100#t4000150#. #kIf you don't have all the ingredients, I can't make #t4001108#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000150" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6130" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3423.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The New Control Program" />
+        <string name="parent" value="The Control Program for Rombot" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Kay the engineer at the Omega Sector." />
+        <string name="1" value="I met Kay the Engineer again at the Silo of the Omega Sector. She first wanted to make sure that I didn't forget that I volunteered to be her assistant. Then, she said she needed a number of memory cards that contain Rombot Control Program, and asked me to collect 3 #bRombot's Memory Cards#k, which can be found through Rombot the monster at the Eos Tower. Then, I'll have to pay a visit to #bPorter#k at the Command Center in the Omega Sector and have him decipher the memory cards, and then hand her the #b3 Deciphered Memory Cards#k to her." />
+        <string name="2" value="I defeated the Rombots that have been hidden in Eos Tower and got a hold of the #bRombot's Memory Cards#k. I then handed them to Porter to decipher the code." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3424" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You are back. Thanks to the fuel of MT-09, I was able to create a remote transporting device. It's still in its experimental stage, but once the experiments are over, we'll be able to navigate through the Sector much easier. By the way, I've been in need of my assistant, and I'm so glad you're here!" />
+            <string name="1" value="This time, I need a special item for my new robot program, which I am currently working on. You'll see a monster called #b#o4130103##k every once in a while at the Eos Tower. I'll need at least #b3 #t4000124#s#k from you through that monster, alright?" />
+            <string name="2" value="All the #b#t4000124##k that have been collected afterwards, please send them to #b#p2050013##k at the Sector Command Center for deciphering. He's not really the one to be depended upon, so I'm worried about that, but...#b3 #t4031118#s#k from him for me, okay? Alright, let's get going!" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have #b#t4031118##k, yet. Find #b#o4130103##k around Eos Tower, collect #b3 #t4000124#s#k, then bring them to the Command Center in the Omega Sector. #b#p2050013##k will then decipher it, and will give me #b3 #t4031118#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2051001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3422" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

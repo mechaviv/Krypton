@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3085.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Muse is Cooking" />
+        <int name="area" value="33" />
+        <string name="0" value="Is #p2060006# done cooking?" />
+        <string name="1" value="#p2060006# made what seemed like a very tasty dish from the ingredients I got for her. I couldn't see the dish because it was inside a box, but judging from the tasty aroma that filled the room, I knew this was indeed a winner. #p2060006# warned me that this was best eaten when hot, and wanted me to get this to #b#p2060000##k before it turned cold. Basically, I have #r1 hour#k to deliver this to #b#p2060000##k. Can I do this?" />
+        <string name="2" value="I delivered the food that #p2060006# made to #p2060000# on time. I had to really run to make it here in 1 hour. Phew, at least seeing #p2060000# chow down on the dish made it all worthwhile." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031281" />
+                    <int name="count" value="1" />
+                    <int name="period" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040805" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031281" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've waited long enough, and now, the food is ready. Please deliver this to #b#p2060000##k." />
+            <imgdir name="yes">
+                <string name="0" value="And please remember this one thing! This food is worth eating only when it's hot. That's also the reason why I've wrapped it up in multiple layers inside the box. Despite all that, it only keeps the food hot for #r1 hour#k, then it's going to get cold fast. PLEASE get this to Nanuke in #r1 hour#k! Got it?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#p2060000# should be nervously waiting for it... oh man, what to do?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoa, what's this delicious smell! Is it the food that #p2060006# made? Really?" />
+            <imgdir name="yes">
+                <string name="0" value="Ohh, it's still warm. Thank you so much! I never thought I'd ever eat something like this. I can't thank you enough for your hard work... FOR ME! Here, take the scrolls. This is really nothing compared to what you just did for me... please use them well!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go see #p2060000#. If you don't get there in #r1 hour#k, the food is going to get cold and may need to be thrown away as a result." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="So where's the food?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Ahhh... you wound up not giving the ingredients to #b#p2060000##k in #r1 hour#k like you were told. I made it clear that you had to be on time. Thankfully, you brought all the necessary ingredients, so I'll make it again for you. This time, please give them to #b#p2060000##k in #r1 hour#k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031281" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3084" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

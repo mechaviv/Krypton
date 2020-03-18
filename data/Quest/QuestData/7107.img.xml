@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7107.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Piece of Crack" />
+        <int name="area" value="37" />
+        <string name="0" value="I lost the #t4031179# that #p2041023# gave me. I better go back to  #p2041021# and tell him the truth" />
+        <string name="1" value="I lost the #t4031179# that's been given to me by #p2041023#. After telling #b#p2041021##k of the situation, he wanted me to talk to Flo again. I'm afraid #b#p2041023##k may be less than pleased by the fact that I lost a very valuable #b#t4031179##k." />
+        <string name="2" value="After telling #p2041021# that I lost #t4031179#, he wanted me to go see #p2041023# again and talk to him. #p2041023# was pretty upset that I lost the valuable #t4031179#, but then wanted me to really make sure not to ever lose it again, while giving me the #rlast remaining #t4031179##k that he kept to himself. He warned me that this is the last one, and that if I ever lose it again, #rI won't be able to get it back ever again.#k. I better make sure not to lose it, and give it to #p2041021#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you met #p2041023#? Did you bring back the #t4031179# that I asked you to get? \r\n#L0# #bI'm sorry. I somehow lost the #t4031179# that #p2041023# gave me...\r\n#L1# Hahaha... I... um... haven't met #p2041023# yet. I seriously cannot find a way to locate this person! Haha... ha... There is NO WAY I'd ever lose the  #t4031179# that #p2041023# gave me. Hahaha... ha... ha..." />
+            <string name="1" value="What? #t4031179# is REALLY difficult to get! If #p2041023# ever finds out that you lost the piece of crack, then all hell may break loose. The more important problem here is that without the piece of crack, there is no way we can cover up the crack of time at the Generator. Man... are you honestly really trying to help me restore Ludibrium back to its original state?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Really?? Did I not tell you where #p2041023# is? I am so sorry; I must have forgotten. Please head over to the #bEntrance to the Warped Path of Time#k, which is located at the opposite end. That's where you'll meet #b#p2041023##k. Seriously, you haven't really lost it, have you? Hahaha..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I understand. Everyone makes mistakes. I see that you're trying to help me with good intentions, and I apologize for acting like the way I did to you. Oh well... please go visit #b#p2041023##k. Hopefully he does not get too terribly upset by this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't mean what you say, then I seriously suggest that you take your hands off this task. There will be much more difficult and challenging tasks that lay ahead and this is not something that should be taken lightly. Come back when you're 100% ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What's going on? Did you give #p2041021# the #t4031179# that I gave you? \r\n#L0# #bAh... um... I haven't met #p2041021#, yet. I've been really busy lately. I better get going... right... now...\r\n#L1# Well, the truth is... I lost the #t4031179# that you gave me." />
+            <string name="1" value="What? How? How in the world did you lose it? You should have taken that and give it to #b#p2041021##k immediately! You fought hard against dangerous monsters to obtain that item! Well... there's no choice now. I had another one of #b#t4031179##k for emergency purposes like this. I'll give that to you." />
+            <imgdir name="yes">
+                <string name="0" value="And #rPLEASE listen#k to what I'm about to tell you. The #b#t4031179##k that I gave you, I luckily found it somewhere deep in the Warped Path of Time  because some monster dropped it. What I'm saying is, #rif you lose #t4031179# again, then there's no way I can help you around it#k. Now PLEASE take care of it." />
+                <string name="1" value="There's not much time left. Please go see #b#p2041021##k and give him the #b#t4031179##k. Please remember that the cracked piece represents your very #rLAST CHANCE#k at doing this. Here's wishing you a good luck." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Ah... you were busy, but then... #b#p2041021##k is located right across here, at the #bEntrance of Forgotten Path of Time#k. Please get this and give it to him immediately. It is very important that you do NOT lose the piece of crack this time around." />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please go see #b#p2041023# immediately. He may not like what he hears, but he understands the significance of this situation, so just be #btotally honest#k to him, and he may help you out. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7102" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7104" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

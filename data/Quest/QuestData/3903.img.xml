@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3903.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Queen's Tea 1" />
+        <string name="parent" value="Queen's Tea" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Famous for being frivolous to a fault, the queen of #b#m260000000##k is also known for her picky taste... You better go see #b#p2101007##k." />
+        <string name="1" value="The queen #p2101007# is complaining that tea made with #t4000331#, considered the finest in this world, is not up to her taste. After some more complaining, she decides to drink a different tea, and asks you to get a #b#t4031577##k from #b#p2012012##k in #b#m200000000##k." />
+        <string name="2" value="When you asked #p2012012# for #t4031577#, #p2012012# gave you an awkward, disapproving look." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ick, this is gross! Tea from barbarians. They may consider this drivel the finest around, but it does me no good. It's like drinking the very finest vinegar. A fairy with sensitive taste buds like me can't possibly drink tea made out of #t4000331#. You! Get #b#t4031577##k for me. NOW!" />
+            <imgdir name="yes">
+                <string name="0" value="You can't say no to a queen. Hahaha! #b#t4031577##k can be purchased from #b#p2012012##k of #b#m200000000##k.They might not want to sell it to you, but...that's your problem. I want to drink tea right this instant, so go to #m200000000# immediately." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? saying no to the queen? How idiotic... Don't think you'll last long in #m260000000# with that kind of attitude!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is it? Huh? Do I know a fairy named #p2101007#?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What is this, you still haven't gotten the #b#t4031577##k? Go see #b#p2012012##k right now. Seriously, this instant, or face my wrath…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="23" />
+        </imgdir>
+    </imgdir>
+</imgdir>

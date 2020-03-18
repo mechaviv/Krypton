@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2249.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zombie Mushroom Signal 1" />
+        <string name="parent" value="Strange Mushrooms" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="0" value="The Rememberer needs help figuring out what drove the mushrooms into a rage." />
+        <string name="1" value="The Rememberer suggests that someone should study the Zombie Mushrooms.\r\n\r\n\r\n#o2230101# #a22491#\r\n" />
+        <string name="2" value="You've helped further the study of Zombie Mushrooms." />
+        <string name="rewardSummary" value="EXP 8,000\r\nCan proceed to 'Zombie Mushroom Signal 2' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I just completed my research on the Horny Mushrooms, and...I just feel like I'm missing something. So I was thinking, if Zombie Mushrooms send out signals similar to those of the Horny Mushrooms, then maybe it'd be easier for us to figure out their codes.\r\nYou know how mushrooms make a peculiar noise right before they die? Well, I think it has something to do with the communication signals they use. I know you have slain your fair share of mushrooms. What kind of sound do they make right when they die?\r\n#b#L0#Kwaaak..#l\n#L1#Arrgh..!#l\n#L2#I have no idea...#l\n#k" />
+            <string name="1" value="I guess this isn't the type of stuff you pay attention to. Could you find out what kind of sound they make when they die? Eliminate about 80 of them, and I bet you'll be able to duplicate the sound perfectly. Good luck!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Hmmm… sounds similar…or maybe not…" />
+                    <string name="1" value="Hmmm… sounds similar…or maybe not…" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Listen carefully to the noise the Zombie Mushrooms make right as they die." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am sorry. I must be working you too hard. I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh you are back! What kind of a sound do they make?\r\n#b#L0#Keck… Something like that?#l\n#k" />
+            <string name="1" value="Okay! I'll enter that into the equation now, and…" />
+            <imgdir name="yes">
+                <string name="0" value="#b‘K.Pepe', ‘Swerve', ‘Lv 30'#k\r\nIt's still a mystery… if nothing else, it's even worse than the last set of information!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="That's not it…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230101" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2248" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9986.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Latest Information" />
+        <string name="parent" value="Snow Silk and the Mysterious Fabric " />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra, maple world's informant, is said to have obtained some new information hot off the press.  I'm curious what it is. " />
+        <string name="1" value="Cassandra told me about the Snow Silk.  But for some reason she wouldn't explain in detail and kept telling me to just go see the archeologist, #bWinston#k..." />
+        <string name="2" value="Maple world's informant, Cassandra, notified me of her latest information, the Snow Silk.  I went to go see Winston, the archaeologist who is looking for this Snow Silk." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="9987" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you heard of the Snow Silk by any chance?  Judging by your look, you don't have a clue, do you?  You gotta get with the program... If you want to learn about #t4001166#, go see Winston, the archaeologist.  According to rumors, he has been gathering information regarding Snow Silk." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Dr. Winston is said to be at the East Rocky Mountain in Perion.  One can only wonder what he is doing in such a bleak and desolate place." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess sharing up-to-date information with you was pointless.  I should warn you...  With that kind of dull brain of yours, you'll go no where!  You hear me?  No where!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you come here for me?  What can I do for you?\r\n#b#L0#I was hoping to learn about the Snow Silk.#l" />
+            <string name="1" value="Snow Silk?  Oh~ you're talking about the Mysterious Fabric.  That's right~ I was inquiring about the Snow Silk recently.  Did you hear something about the Mysterious Fabric as well?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I already told you to go see Dr. Winston at the East Rocky Mountain in Perion. This is getting frustrating." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+        </imgdir>
+    </imgdir>
+</imgdir>

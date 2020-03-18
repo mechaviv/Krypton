@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3451.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Piece of the VIP Ticket" />
+        <int name="area" value="37" />
+        <string name="0" value="Where did the ripped piece of the VIP ticket go? I better go see Kevin the Soldier." />
+        <string name="1" value="The ripped piece of the VIP Ticket has disappeared, so I asked Kevin the Soldier for some help.." />
+        <string name="2" value="Fortunately, even after losing a ripped piece of VIP ticket, Kevin the Soldier was picking up after me. Phew... thanks a lot =)" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="당신을 기다리고 있었어요. 당신이 떠나고 난 뒤에 보니 찢어진 자유여행권을 흘리고 가셨더군요. 여기 어디다가 잘 두었는데 찾아볼게요. 잠시 후에 다시 말을 걸어주세요." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031207" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031243" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been waiting for you here. You left a torn VIP pass on the ground after you left here. I'll check out the place and see if I can find it. Talk to me in a little bit." />
+            <imgdir name="no">
+                <string name="0" value="Didn't you leave this here?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here you go. I think you left this here." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3441" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3443" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031243" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031207" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

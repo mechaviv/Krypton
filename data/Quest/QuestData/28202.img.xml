@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28202.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Reporting the Training Results to Dark Lord" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in #bKerning City#k says you've finished all the training courses and that you must report the results to #b#@1052001:##k. Let's head over to #b#@9201120:##k" />
+        <string name="1" value="Let's go see #b#@1052001:##k in #bKerning City#k to report the results." />
+        <string name="2" value="You have completed both of #bErvine#k's additional training courses." />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;#Wbasic#&#xD;&#xA;#i2000002:# #t2000002:# #c2000002# 100&#xD;&#xA;#i2000003:# #t2000003:# #c2000003# 100&#xD;&#xA;Able to proceed to 'Meeting Jay' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've done very well. It's obvious that you're very gifted. Haha!\n\nYou must now go see #b#p1052001##k in #bKerning City#k and report your training results." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You know where #b#p1052001##k is, don't you? He's in Kerning City, so head over there and try not to get lost!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Compared to the training courses you've gone through, reporting to someone is much easier." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you're here. You're here to tell me that you've completed all of the additional training courses, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Job well done. But you're just a novice Thief. You still have a long way to go.\n\nYou've done very well in your trainings. I'll give you a mission when you come back and see me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1052001##k is in #bKerning City#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28200" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="28201" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

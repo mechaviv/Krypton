@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28229.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Fairies Like..." />
+        <string name="parent" value="The Legend of Ancient Bow" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012003:##k in #bHenesys#k says he'll tell you what the fairies like. Let's talk to him." />
+        <string name="1" value="The fairies are very fond of the sound of Ocarina.\n\n\n\n#b#@1012003:##k says he will make you an Ocarina if you bring back the following items.\n\n#rTree Branch#k(a drop item from #rStumps#k that can be easily found in #b#m100050000##k.)\n#rEllinia Tree Barrel#k(a drop item from #rDark Stumps#k that can be easily found in #b#m100040000##k.)\n\nReport back to #b#@1012003:##k in #bHenesys#k when you finish collecting all the items." />
+        <string name="2" value="#b#@1032101:##k in #bEllinia#k will welcome you if you give her the Ocarina. Let's go see her." />
+        <string name="demandSummary" value="#i4001347:# #t4001347:# #c4001347# / 1&#xD;&#xA;#i4000003:# #t4000003:# #c4000003# / 10&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 3,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032481:# #t4032481:# #c4032481# 1&#xD;&#xA;Able to proceed to 'Solomon's Bow' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001347" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032481" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Yes, you've heard correctly. The fairies don't like to talk to strangers, especially humans, because they're very guarded. But what do you think you can entice them with? Food? Potion? Water? Don't you think they'd like Music?" />
+            <string name="1" value="Yes, yes, the fairies love music, especially if you play the Ocarina for them. I can make you one if you bring me the necessary materials. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then bring me 10 #rTree Branches#k  by eliminating #rStumps#k, and 1 #rEllinia Tree Barrel#k by eliminating #rDark Stumps#k. I'll quickly make you one if you bring me those items." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to, that's fine with me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You didn't even take notes, but you remembered everything I've asked you to collect.\n\n" />
+            <imgdir name="yes">
+                <string name="0" value="It doesn't look too fancy, but it'll make a clear, beautiful sound.\nThe fairies will love it.\n\nAs #b#p9201118##k may have suggested, go see #b#p1032101##k in #bEllinia#k. And don't forget to play the Ocarina! Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bring me 10 #rTree Branches#k and 1 #rEllinia Tree Barrel#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001347" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28228" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

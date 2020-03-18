@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2070.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Progress on Fossil Research" />
+        <string name="parent" value="Dr. Betty's Research on Plants" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard Dr. Betty has finished the research on plants. Maybe I should go and see how it is." />
+        <string name="1" value="I met Dr. Betty again. Doctor told me the research was finished, and explained it to me. Then Doctor told me to take the Research Report and deliver it to Dr. Winston in Perion. Dr. Betty also informed me that if I take #b100 #t4000005#s, 50 #t4000018#s, 1 #t4031153#, and 1 pair of #t1032000##k, Dr. Winston would be really happy. \n\n#t4000005# #c4000005#/100\n#t4000018# #c4000018#/50\n#t4031153# #c4031153#/1\n#t1032000# #c1032000#/1" />
+        <string name="2" value="I delivered Dr. Betty's Fossil Research Report to Dr. Winston in  Perion. Along with the report, I also gave him the leaves, firewoods, Stump's tear, and earrings. In return, Dr. Winston gave me the Leaf Earrings." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031152" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031153" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1032000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1032025" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4031152" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Been a while. Thanks to you, I have successfully completed the studies." />
+            <string name="1" value="The fossils you've gotten me were critical materials. Those fossils contain clues that may lead us to discover the secrets behind the special abilities of the prehistoric life. Use them well, and it will help us regular people out tremendously." />
+            <string name="2" value="I need to send Dr. Winston of Perion the final report on the results of the studies. Can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd help me out. Please get the final report to Dr. Winston. Oh, and before coming up to him, gather up #b100 Leaves#k, #b50 logs of Firewood#k, #b1 Stump's Tear#k, and #b1 pair of Weight Earrings#k. Dr. Winston will be very pleased with the report and may reward you with something nice." />
+                <string name="1" value="Ahhh, you may have never heard of #b#t4031153##k. #b#t4031153##k is a rare crystal you can only get from the Dark Axe Stump's." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be very busy. I'll have to ask someone else for this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome, welcome. You're the one that helped me get my fossils back the other day. I heard that you've also helped Dr. Betty with her studies. She said she gave you the final report for me to look at. Did you bring it?" />
+            <string name="1" value="Please also give me the materials that you've gathered up. Those materials will be used to conduct the studies regarding the final report. Dr. Betty did tell you this in advance, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Wow ... a huge secret laden in the fossils!! The more you dig up the fossils, the more you're amazed by them. It never ceases to surprise me on many levels." />
+                <string name="1" value="Do you like the earring? It's the result of the studies we have conducted here. It is laden with the abilities of the Stump, so use it wisely!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please deliver the report I gave you to Professor #bWinston#k. Oh, and don't forget to bring him #b100 Leaves, 50 Firewood, 1 Stump's Teardrop, and 1 pair of Weighted Earrings#k. " />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What's up? Aren't the fossil studies going well? I'm more than ready to take a look at the results ..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you lose the final report??? My oh my, you better be really careful. Good thing I made a number of copies in case something like this happens. Now, please get this to Dr. Winston SAFELY." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031152" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031153" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2069" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="23" />
+        </imgdir>
+    </imgdir>
+</imgdir>

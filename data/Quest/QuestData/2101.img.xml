@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2101.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Korean Folk Town : Through the Sky" />
+        <int name="area" value="30" />
+        <string name="0" value="How about going to the Korean Folk Town through the sky?" />
+        <string name="1" value="Through Camila's request, I have decided to travel to Korean Folk Town through the skypath and meet her pen pal, Kong Ji. Camila said she'll give me a few essential items for the trip. What must those be?" />
+        <string name="2" value="Through Camila's request, I have decided to travel to Korean Folk Town through the skypath and meet her pen pal, Kong Ji. Okay, so I first go from #bEllinia#k to #bOrbis#k, then to #bLudibrium#k? And once I get there, I'm supposed to walk my way down there through #bHelios Tower#k. That's pretty far..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="1012108" />
+            <int name="lvmin" value="35" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2100" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready to travel?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now I'll tell you how to get to Korean Folk Town through the sky. First, head over to the station in #bEllinia#k. The ship that heads to #bOrbis#k should leave every 15 minutes. The station at Orbis is gigantic, and once there, you'll need to switch the flight to the ship that heads to #bLudibrium#k. At Ludibrium, it  features two humongous towers, and you need to head over to #bHelios Tower#k and descend your way all the way down until you reach Korean Folk Town." />
+                <string name="1" value=" Alright, now talk to me once more so I can give you all the necessary items for the travel." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This ticket will enable you to get on board for the flight. Please use it wisely." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012108" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012108" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2100" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2102" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

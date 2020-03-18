@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28424.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tourist Site: A Wild Monkey Mess" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9000078#, the #b#m950100000##k PR Manager, seems to be encountering some problems. Talk to #b#p9000078##k." />
+        <string name="1" value="#p9000078# says that the number of #t4000574#s being thrown away by the #o9409011#s are becoming a nuisance for tourists visiting the #m950100000#. Help #p9000078# by eliminating #r100 #o9409011#s#k and gathering #b50 #t4000574#s#k. You can enter the Monkey Temple by talking to #b#p9000080##k.\n\n#i4000574# #t4000574# #b#c4000574# / 50#k\n#o9409011##r #a503131##k" />
+        <string name="2" value="Even though you eliminated the #o9409011#s and cleaned up the #t4000574#s, the #m950100000# still doesn't seem very clean. #p9000078# plans on continuing his clean-up of the place and asks that you come see him #bafter 1 hour#k, if you'd like to help." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="176500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000574" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Geez! I can't seem to do anything because of those stupid monkeys! I should have gotten rid of them a long time ago! Why are the village elders so against it? ...Oh, welcome to the #m950100000#! Location guide? Lost and Found? Local product purchase? I have everything you need. What can I help you with?" />
+            <string name="1" value="Is there a problem? Oh, it's not that big of a deal. It's just that the #o9409011#s are giving me a headache. Many tourists visiting the #m950100000# have been slipping on the #t4000561#s they've been throwing all over the place. " />
+            <string name="2" value="After turning this place into a tourist attraction and even asking #p9010010# to publicize it, I'm finally starting to see some tourists coming in. But these monkeys are ruining everything! I wanted to rid them from this place, but the village is against it... Sigh, it'd be nice to have some help with this." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You'd really want to help me? You're that confident, eh? Well, I'll take all the help I can get! Please eliminate #r100 #o9409011#s#k and bring back #b50 #t4000574#s." />
+                <string name="1" value="They should be in the Monkey Temple near the Golden Temple. You'll be able to enter by bringing a Golden Ticket to #b#p9000080##k. Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Not up for it, eh? I guess people only do things for rewards nowadays. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You defeated the #o9409011#s and brought the #t4000574#s! Alright! The #m950100000# certainly looks a bit cleaner, thanks to you! I wish I had something to give you in return... " />
+            <imgdir name="yes">
+                <string name="0" value="Despite all that you've done, there still seems to be a lot of #t4000574#s lying around. There are just too many #o9409011#s! If you would like to help me out again, can you come see me #bin 1 hour#k?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Have you not eliminated the #o9409011#s yet? If you defeat #r100 #o9409011#s#k and collect #b50 #t4000574#s#k that they've thrown away, the #m950100000# is sure to look spick and span! Please go see #b#p9000080##k to enter the Monkey Temple." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000078" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000574" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9409011" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000078" />
+            <int name="lvmin" value="120" />
+            <string name="end" value="201007140000" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

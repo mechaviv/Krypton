@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2134.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Magician's Third Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're definitely getting stronger. #b#p1032001##k suggests another training session." />
+        <string name="1" value="#p1032001# wants you to eliminate #r35 #o0210100#s#k. You feel like you've got this handled. Shouldn't be hard at all. Go and get those #o0210100#s! \n\n#o0210100# #r#a21341##k" />
+        <string name="2" value="You eliminated 35 #o0210100#s. Haha! You're feeling quite proud of yourself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="두번째 수련을 마친지 얼마나 되었더라... 그 동안 자네 실력은 또 한 걸음 앞으로 나아갔군. 그렇게 성실하게 계속 수련을 하다보면, 언젠가는 높은 경지에 오를 수 있을 것이네. ...하지만 아직은 초보 마법사일 뿐이니, 이 하인즈의 도움을 받게나. " />
+            <imgdir name="yes">
+                <string name="0" value="이번에 해야 할 일은 슬라임 35마리 퇴치라네. 많다고? 물론 적은 수는 아니지만, 자네가 처치하기 어려운 숫자도 아니지. 강해지고 싶다면 더 참고 인내하는 법을 배워야 한다네. 어서 가서 슬라임을 퇴치하게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="스스로 수련을 할 수 있다면 그보다 좋은 것은 없지." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="345" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" You finished your second training session! You're improved. If you keep training yourself, you can be the best. Now, you're still a beginner and you'll need #p1032001#'s help." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Your mission is to kill #r35 #o0210100##k. Too many? It's not a small number for sure. But, you can handle it. If you want to be stronger, you must learn to train hard. Go and eliminate #o0210100#. I wish you luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's the best if you can train by yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You killed 35 #o0210100#s! I'm mildly astonished by your skill thus far. See me if you want another traning session!" />
+            <imgdir name="yes">
+                <string name="0" value="You shouldn't be satisfied with this. Until we meet again...keep training hard!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r35#o0210100##k. Don't make haste. Take your time but be alert when hunting." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="35" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2133" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

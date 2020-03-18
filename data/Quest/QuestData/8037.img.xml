@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8037.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lionel's Necklace 1" />
+        <string name="parent" value="Lionel's Necklace" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Anyway, how's that baby Lioner doing? I better check on it at Maya's house." />
+        <string name="1" value="Maya decided to disguise Lionel as a housecat by dressing it up with a necklace. Since buying one at a local department store may give it away, she wanted me to ask Teo of Lith Harbor for help." />
+        <string name="2" value="Teo decided to help make Lionel's necklace." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8038" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there. Don't worry. I won't forget all you've done for me. \nLook, look at Lionel! The baby's cured!\nHahah, look at Lionel nuzzling against your legs! Lionel must really like you!" />
+            <string name="1" value="It really is one quiet, subdued baby, to the point where I can't imagine it being a monster. I'd love to be with it until the end, but I know that's not going to happen. I plan on freeing Lionel once it is fully healthy. The problem is that, until I do so, I HAVE to keep it inside this house. I know it's not right to keep it indoors at all times, but... no one else better recognize what's in here. Lionel may not come out here alive if that happens." />
+            <string name="2" value="Oh yeah! \nIf we disguise it to where it doesn't look like a monster, by dressing it up with... a necklace! It'll make Lionel look like a housecat. \nLook! It's so small and adorable. I think it's a great idea! Let's make a necklace for Lionel!" />
+            <string name="3" value=" ...but, if I buy it here, I'll attract unwanted attention anyway. But...if I ask Teo of Lith Harbor for a little favor, he'll do it for me. Can you ask him for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Please Say hi to Teo for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see. If you ever change your mind, please talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey there, long time! \nWhat? What did Maya do? Is she sick again?" />
+            <imgdir name="yes">
+                <string name="0" value="...hmmm, I understand what you're saying. \nThere's an old saying that &quot;the sickness starts from within,&quot; and it makes sense that she's been healthy ever since adopting a new &quot;pet&quot;. I am not an expert at this, but anyway, I'll do anything for that little girl." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8036" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

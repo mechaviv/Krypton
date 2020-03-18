@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2324.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Over the Castle Walls (4)" />
+        <int name="area" value="30" />
+        <string name="0" value="You should get the #b#t2430015##k from the #b#p1300004##k and climb over the castle walls." />
+        <string name="1" value="You should use the #b#t2430015##k on the castle walls." />
+        <string name="2" value="You used #b#t2430015##k to eliminate the thorns from the vines that cover the castle walls." />
+        <string name="demandSummary" value="You used the #b#t2430015##k on the castle wall to enter the Mushroom Castle." />
+        <string name="rewardSummary" value="EXP 3,300" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The #b#t2430015##k is ready. Here, take it." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hopefully this will help you infiltrate the castle." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't you need some #b#t2430015##k? Well, just come see me when you do need some." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Were you able to successfully enter the castle?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, okay, you're doing fine. Just work a little harder so we can all escape from this terrible situation." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Go ahead and use the #bThorn Remover#k to enter the Mushroom Castle." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300004" />
+            <int name="infoNumber" value="2324" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2323" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

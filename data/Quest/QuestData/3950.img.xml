@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3950.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dealing with Tigun" />
+        <string name="parent" value="In Search for His Sister" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="You feel bad for #p2101001#. He really wanted to get in the palace... Maybe you can convince #b#p2101004##k to let him in.  A fine of #b50000 mesos#k... Sigh, you should pay it off for #p2101001#.\n\n#b50000 mesos#k" />
+        <string name="2" value="#p2101001# still wasn't able to meet his sister but at least they can send letters to each other.  But, #p2101004#! That delivery fee was a ridiculous!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-50000" />
+            <int name="exp" value="35000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Sniff, sniff... Wahh! \r\n#L0# #b #p2101001#! Why are you crying? Didn't you get to see your sister?" />
+            <string name="1" value="#h0#!  No, I didn't get to see my sister...\r\n#L0# #b What happened? You had a #t04031582#!" />
+            <string name="2" value="Tigun said...sniff...because I wrote my name in that empty space...sniff...that I can't use that entry pass anymore...sniff.  Plus...plus, he said I have to pay a fine for scribbling on such an important pass! He said he'll throw me in prison if I don't! Wah!!  I want my sister!\r\n#L0# #b (Oh boy. How did this get so complicated?) Now, now, stop crying. I'll take care of this. How much is the fine?" />
+            <string name="3" value="Sniff... It's #b50000 mesos#k...\r\n#L0# #b(Whoa! That's a lot of money. What a mess...) Do I just give the money to Tigun?" />
+            <string name="4" value="I think so...sniff... Will you really help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Sniff, thank you so much. You know where to find #b#p2101004##k, right? He's probably still at the palace entrance.  Thank you, #h0#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh... Oh I see... Sniff, sniff... Thanks anyway." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="#p2101001#? That little bratty kid?! Ha! I let people in the palace if they have the #b#t04031582##k, but I'll never accept a pass that's been scribbled on like that! Do you know the work I put into those entry passes!? Ha, if he doesn't pay 50000 mesos, I'll throw him in prison!\r\n#L0# #bSigh... Then I'll pay you the 50000 mesos instead.#l" />
+            <string name="1" value="Huh? Really?\r\n#L0# #bUnder one condition. Let that kid, #p2101001#, meet his sister, #p2101008#.#l" />
+            <string name="2" value="I can't do that! She's very important to the queen. She is the queen's storyteller... How about this? I'll deliver letters to her instead... Sound like a good deal?" />
+            <imgdir name="yes">
+                <string name="0" value="Very well, hehe. Any time the kid brings me a letter, I promise on my sacred name to deliver it to his sister. If she wrote one for him, I'll give pass it to him, too. I'll collect #b50000 mesos#k as a small delivery fee though." />
+                <string name="1" value="I'll explain it to #p2101001# when he comes to see me, so you can be on your way. What? Okay ,okay. I won't mention the delivery fee. Hehe. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Did you talk to #b#p2101004##k? He said to bring #b50000 mesos#k if I don't want to go to prison..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What is it? You want to scribble on a #t04031582# too? If you don't want to pay the 50000 mesos, then fine, go to prison." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101004" />
+            <int name="endmeso" value="50000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3949" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

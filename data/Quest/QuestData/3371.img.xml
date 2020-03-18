@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3371.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Juliet's Feelings" />
+        <string name="parent" value="Juliet's Response" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="31" />
+        <string name="0" value="Juliet received a Snowfield Rose with Romeo's true feelings laden in it. I better go see her and see how she feels about the present." />
+        <string name="1" value="Juliet was so happy about Romeo's Present that she wanted to give Romeo something in return. After taking some time wondering what would be the perfect present for him, she decided to... make him some clothes. She's an alchemist... how will she make clothes for him? Anyway, since Juliet asked for help, I'll need to see #bSirin#k of #bAriant#k." />
+        <string name="2" value="When I told Sirin of Juliet's story, she told me to wait for a second. She didn't seem to be sweating it one bit." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler. You were the one that gave me Romeo's present, right? I was so elated at the time that I never got to properly thank you for your work. Thank you so much for the help. Haha, I can't believe Romeo actually took time to make a present like that for me... which means, it's time for me to give Romeo a present." />
+            <string name="1" value="A nice answer to that beautiful present needs to be made by me, and I want to make Romeo a nice set of clothes. I've never done tailoring, but... I know Romeo will be happy to receive a present like that, so I'll at least try to make it as nice as I can! That got me thinking... can you help me a little on this?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you, traveler! I looked up some things on clothes, and I found out that #bSirin#k of #bAriant#k is the best at tailoring. I am sure she is an expert in making beautiful clothes, so can you please go talk to her and find out how to make beautiful clothes like her?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahh... You must be busy. In that case... can I make clothes using alchemy...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm? What is it? It's not time for performance yet, so if you want to see my amazing dance, you'll have to wait... what? Wait, you're not talking about my performance, right? Then what are you here for? What? You want to learn how to make beautiful clothes? " />
+            <imgdir name="yes">
+                <string name="0" value="Hmm... so you're saying, this girl Juliet from Magatia wants to make beautiful clothes, right? Well, I won't ever teach others my secret dance moves, but clothes? They don't pay bills for me, so I'll be more than happy to help you. Hold on one second." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you met up with #bSirin#k already? She's at #bAriant#k. Please go see her." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2112003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3370" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

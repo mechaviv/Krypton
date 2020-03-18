@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2205.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Strange Dish 2" />
+        <int name="area" value="30" />
+        <string name="0" value="Tangyoon says he's found a new ingredient to work with. I wonder what Tangyoon has in mind now?" />
+        <string name="1" value="Tangyoon has been experimenting with a new dish as of late, using an ingredient that no one has ever used before. This time, he says he's been working with Curse Eye Tails! He says that he could make something new and fresh  if only I would bring him #b50 Curse Eye Tails#k... Hope it comes out tasty! \n\n#i 4000013##t 4000013#  #b#c 4000013#/50#k" />
+        <string name="2" value="Just as I'd thought... Curse Eye Tails aren't meant to be eaten." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="오랜만이군. 이번에도 새로운 요리 재료가 생각나서 자네를 불렀지. 하하~ 이번에도 도와줄 수 있는가?" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 이번에 선정된 재료는 바로 커즈아이의 꼬리지. 이블아이의 꼬리는 별로였지만… 이번엔 훌륭한 요리를 만들어 내겠네. 그럼, #b커즈아이의 꼬리 50개#k만 구해다주게. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="나의 요리 실력을 믿지 못하는건가? 실망이군." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="24000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022003" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000013" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been a while! I called you up because I just thought of a new ingredient to use for a new delicacy. Can you help me out once more?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, this time. I need the Curse Eye Tails. Evil Eye Tails weren't all that, but... I think this will come out much better than last time. Now go ahead and get me #b50 Curse Eye Tails#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you not trust my cooking skills? That's disappointing." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay! Shall we cook now?\n(Stir... heat... toss... toss... thwap!)" />
+            <string name="1" value="Whoa! This is amazing! I just made an Unagi with Curse Eye Tails! Check out the smell... and the taste... this is practically indistinguishable from eels. Will this finally bring the day where Unagi is inexpensive and easy to eat? I am a cooking genius!" />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha, I know it was made out of Curse Eye Tails, but it looks exactly like the real Unagi. I'll give you this as my token of appreciation. Try it, but... I don't think I'll ever want to make this again. I did not like the feeling of the Curse Eye Tails." />
+                <string name="1" value="(Mmmm... this is really Unagi! Was this really made out of Curse Eye Tails... or is it a cover-up because he screwed up the real dish?)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please get me 50 Curse Eye Tails" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000013" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2204" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

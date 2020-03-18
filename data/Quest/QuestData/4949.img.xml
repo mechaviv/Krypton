@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4949.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The M-Files" />
+        <int name="area" value="50" />
+        <string name="0" value="I heard there's a MBI (Maple Bureau of Investigation) agent in the Phantom Forest! I should investigate what he's investigating!" />
+        <string name="1" value="I spoke with MBI Agent Falcon. He's on the trail of a dangerous specter, but it looks like that crafty ghost gave him the slip by scattering his #b#t4031764#s#k all over the place. I've agreed to collect #b50#k of them so he can continue the hunt!" />
+        <string name="2" value="I tracked down all 50 of Agent #b#t4031764#s#k that he asked for!  In return, he's given me Smores! Mmm...if only he had a napkin..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022244" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031764" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Nice to meet you. I'm Agent Falcon. I work for the Maple Bureau of Investigation. Think you could spare a second to help out on a paranormal investigation? \r\n\r\n#L0##bYea right. Are you sure this isn't some kind of joke?#l#k\r\n#L1##bMBI, huh? You guys suck. I hope you stay lost.#l#k" />
+            <string name="1" value="I assure you it's not. We at the MBI do not have a sense of humor... at least one that we're aware of. So, here's the situation: I'm trying to apprehend a dangerous ghost who goes by the alias of Mr. Bones. I've been on his trail for a while, and just when I thought I had him, he scared the bejeezus-I mean, caught me by surpise, and I dropped my #bParanormal Activity Report#k.  Now the pages are strewn all over this place!  Crafty bugger.  My rather extensive report contained all the information I've gathered on my target's movement patterns, possible hiding spots, favorite disguises.  Without my notes, I'm lost!  Can you help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Sorry to hear you say that---but I guess it goes with the job.  &lt;Sigh&gt; No one seems to like authority figures.  Come back if you change your mind..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I've been able to find some of the pages of my report, but I don't have enough data to work with anymore.  The bigger problem is I think those annoying #b#o9400556#s#k around here have been eating them!  Er... I don't know how you're going to get those pages out of them, but if I can get enough of those pages back, I can put my report back together and pick up Mr. Bones' trail again.  #b50#k more should be enough to get me back on track!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sorry to hear you say that---but I guess it goes with the job.  &lt;Sigh&gt; No one seems to like authority figures.  Come back if you change your mind..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Now I can go get some answers from this spook! Thanks a bunch.   Here... take this." />
+            <imgdir name="yes">
+                <string name="0" value="I cooked these Smores while I waited for you.  Eat up and enjoy!  I'm off to get Bones!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Making your way there, I see. You haven't got them all yet---remember, I'll need at least #b50 #t4031764#s#k to continue the hunt.  I'll be here waiting!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201075" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031764" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201075" />
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

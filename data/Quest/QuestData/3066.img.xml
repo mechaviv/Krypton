@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3066.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hughes's Weird Invention" />
+        <int name="area" value="33" />
+        <string name="0" value="#p2012017#, the mad scientist who lives at the basement of Orbis Tower, apparently has invented something incredible. " />
+        <string name="1" value="I went to the basement of the Orbis Tower to see the mad scientist, Hughes. He claimed to have invented an equipment that will allow us to breathe underwater. Not bad... He said with a few materials, he can also make one for me. I better start gathering up.... \n\n#t4000153# #b#c4000153##k/50\n#t2022040# #b#c2022040##k/50\n#t4011001# #b#c4011001##k/5\n#t4003000# #b#c4003000##k/30" />
+        <string name="2" value="I went to the basement of the Orbis Tower where Hughes lives, gave Hughes all the materials needed, and got #b#t1102061##k in return, to breathe underwater." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000153" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022040" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011001" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1102061" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What are you doing standing around there? Of course, you're here to see me ... hahaha. Did my latest invention already leak out to everyone else around the world? Are you just going to stand there? You're here to check out my new invention. How are you gonna see it from there? #b\n#L0#Well, I'm not really here to see that...#I" />
+            <string name="1" value="#kLook at this, I made this! Hahaha ... with this, you can finally breathe underwater like you always do. I'm a genius, a genius!!!#b\r\n#L0#Well, I'm not THAT thrilled about watching a movie like this...#l" />
+            <string name="2" value="I'm sure you'd want to take something as cool as this. I know, I know. Since this is not the first time seeing you, if you gather up the materials, I'll make one for you myself." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Of course, no fool would Say no to something as genius as this. Hahaha ... what you need to gather up now are #b50 #t4000153#s, 50 #t2022040#s, 5 #t4011001#s, and 30 #t4003000#s#k. #t4000153# can be obtained through #b#o3210450##k, which lives at the underground of Orbis. #t2022040# can be found through #o3210450# or #o4230200#. Gather those up, and you're looking at the greatest invention ever!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I offered to make you something special since I know you and all, but you turned out to be a fool. You'll regret saying no to me for the rest of your life." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let's see ... the materials are all in. You must have really wanted this anyway! I can see that someone has a taste for a good invention. Hold on one second..." />
+            <string name="1" value="(kaboom!)(twist of faith)(clang clang clang)\nAlright, take it." />
+            <imgdir name="yes">
+                <string name="0" value="This is called an oxygen tank. The oxygen is compressed in this bottle, ready to be breathed in. Consider it an honor that you're riding this car. Best of luck to you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you want my invention, then you'll have to wait. This is a discovery of the century, with #b50 #t4000153#s, 50 #t2022040#s, 5 #t4011001#s, and 30 #t4003000#s#k. #t4000153# can be obtained through #b#o3210450##k, which lives at the underground of Orbis. #t2022040# can be found through #o3210450# or #o4230200#. Gather those up, and you're looking at the greatest invention ever?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022040" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011001" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000153" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3065" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

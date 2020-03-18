@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6120.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dragon's Guardian" />
+        <string name="parent" value="Dragon Heart " />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2081007##k, guardian of the holy dragon Nine Spirit. I heard he knows a lot about dragons." />
+        <string name="1" value="I met Raul, who introduced himself as the knight who guards the holy dragon, Nine Spirit. He needs help making the dragon grow and I've agreed to assist him. He told me to get #b#t04031449##k in order to make the baby dragon display it's potential power. #t04031449# can only be obtained from a living dragon....If I catch a Wyvern, I'm sure I can get it. \n\n#i4031449##t4031449# #b#c4031449#/20#k" />
+        <string name="2" value="After a bit of Wyvern hunting, I brought #t4031449#, Raul breathed power to the baby dragon. Now the baby dragon has #r#q2321003##k's power!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031449" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value=" Ugh... I'm hurt...\n\r#L0# #bAre you Ok?#k" />
+            <string name="1" value="Phew... I'm ok. This injury is from a long time ago. Thanks for asking, I'll be fine. Who are you? I feel the energy of a dragon coming from you... I guess you can call upon a dragon.. Which is still a baby dragon in terms of power.\n\r#L0# #bHow do you know this?#k" />
+            <string name="2" value="My name is Raul. I'm a knight who has vowed to protect the holy dragon known as Nine Spirit. As you can see, I can't do my duty due to the injury, but I know everything about the power of dragons. Your dragon is not using it's full power. I know the ritual to unlock it's true power and will show you. Do you want to unleash the dragon's full power?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" It's good of you to help the wounded. You don't seem like someone who will misuse their power, so I'll show you this technique." />
+                <string name="1" value="Generally, the mother dragon makes the power of the baby dragon work, however your dragon has a weak connection to this power. That's why your dragon needs #b#t04031449##k. #t04031449# is the main source of the dragon's power. If you have it, you can reconnect the dragon with this power, and harness it to make your dragon stronger." />
+                <string name="2" value=" If you want to empower your dragon, get 20#b#t04031449##k. I will make it work." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" No need to talk about it if you don't want the harness your dragon's power." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Impressive! You found #t04031449#! You can attain the mighty power of dragons with this!" />
+            <imgdir name="yes">
+                <string name="0" value=" As an honorable knight of protection for the holy dragon, Nine Spirit, I gave you real power. Now you have the power of the holy dragon, #r#q2321003##k. Remember, Your dragon's power must #bbe completed#k. There is a ritual that may be performed to increase this dragon's power..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found all of #t04031449# yet. Don't forget you need to have 20#b#t04031449##k to unleash the dragon's true power..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031449" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

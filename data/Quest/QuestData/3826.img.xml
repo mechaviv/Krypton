@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3826.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Swallow Isn't Alone" />
+        <string name="parent" value="Do Gong Seeking Swallow" />
+        <int name="order" value="5" />
+        <int name="area" value="44" />
+        <string name="0" value="Did #b#p2091002##k finish making the medicine for #p2071006#? I better go see #p2091002# right now..." />
+        <string name="1" value="#p2091002# seemed very concerned about #p2071006#'s injury, and worked hard to make #b#t4031555##k for it. Now all I need to do is deliver this medicine to #b#p2071006##k..." />
+        <string name="2" value="I managed to deliver the medicine to #p2071006#. People from all over the area seem to really go out of their way to help #p2071006# out. Hopefully it manages to feed off the love from those people and be able to fly high once more...!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031555" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031555" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, are you here to deliver the medicines for #p2071006#? Wow, you really seem to be one great human being! You are worthy of being a Master, as a matter of fact!" />
+            <imgdir name="yes">
+                <string name="0" value="A number of #bmedicines#k are included in this to not only fix its wings, but also its occasional amnesia. Please deliver this to #b#p2071006##k, and tell it #p2091002# say HI!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you still have something to do here at #m250000000#? Then we should take care of that now." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're that great person that sent me #m250000000#'s best wishes! Wow, hello there! Are you here to travel #m222000000#? What? #p2091001# asked #p2091002# for the medicine? Wow... for you to go all the way to #m222000000# just to deliver a medicine... thank you soooo much!" />
+            <imgdir name="yes">
+                <string name="0" value="Once the wings are fixed, I don't care about what I have to do, but I better head over to #m250000000#! I miss each and everyone there..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to #b#p2071006##k, yet? Since #p2071006# seems to be hurt, please hurry so it can buy some time for recovery." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="How come you haven't gone to #m250000000#? You must be traveling through #m222000000#." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You misplaced the #b#t4031555##k that's for #b#p2071006##k? Sigh... you should have been more careful, considering it's a long-distance delivery! I'll make you another one since it's for #p2071006#, but please be careful." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031555" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3825" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

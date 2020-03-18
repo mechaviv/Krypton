@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21401.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Taming the Polearm" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="Something must be wrong with the #b#p1201002##k. What's going on, you wonder? Why is he in so much pain?" />
+        <string name="1" value="#p1201002# confesses that, because he spent the last few hundred years without a master, the hint of darkness that existed in his heart has begun to spiral out of control in the form of rage. He's begging you to get rid of the rage. Apparently, if you defeat #p1201002#, the rage will stop. It doesn't look easy by any means, but it is what a master must do. You'd better take on the #r#o9001014##k.\r\n\r\n#o9001014##r #a214011##k" />
+        <string name="2" value="You were able to defeat the #o9001014#. Once the rage subsided, #p1201002# helped awaken more of your past powers." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Why do I look like this, you ask? I don't want to talk about it, but I suppose I can't hide from you since you're my master..." />
+            <string name="1" value="While you were trapped inside ice for hundreds of years, I, too, was frozen. It was a long time to be away from you. That's when the seed of darkness was planted in my heart." />
+            <string name="2" value="But since you awoke, I thought the darkness had gone away. I thought things would return to the way they were, but I was mistaken." />
+            <string name="3" value="Please, Aran. Please stop me from becoming enraged. Only you can control me. It's out of my hands now. Please do whatever it takes to #rstop me from going berserk#k!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Ahhh… you couldn't handle it? If you want to try again, I suggest you forfeit this quest and talk to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <string name="endscript" value="q21401e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001014" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21400" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21401s" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="2111" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2013.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jane's Final Challenge" />
+        <string name="parent" value="Jane the Alchemist" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="For this last experiment, Jane promises to make you a mysterious scroll. For that, she needs #ba moon rock, 20 dragon skins, and 10 saps of ancient tree#k. Maybe you should ask the fairies at Ellinia for the moon rock." />
+        <string name="2" value="You got the materials Jane needed and the scroll for glove for ATT was made without a hitch. Sweet! Jane expressed a strong desire to keep experimenting. Maybe next time you return you'll be able to buy something from her that's not sold in stores..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011007" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2012002" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040804" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2040805" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, this time, I'm even more ambitious! Want to help me with my third ever alchemy experiment?" />
+            <imgdir name="yes">
+                <string name="0" value="Perfect! Get me 1 #b#t4011007##k, 20 #b#t4000030#s#k, 10 #b#t2012002#s#k. This time, I'm hoping to make a scroll." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, now. If you don't have time to listen to a poor girl's plea... Fine, just let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah! You got me #b1 #t4011007##k, #b20 #t4000030#s#k, and #b10 #t20120021#s#k. Whew, I need a minute to mentally prepare myself..." />
+            <string name="1" value="While I do this, make sure you have an empty slot in your Use inventory. Okay, okay, breathe, breathe. Steady hands, and mix, and pour, and..." />
+            <imgdir name="yes">
+                <string name="0" value="Oh my. Oh my goodness. OH MY! I am sooooo talented! Look! I made a #r#t2040804##k! I think I'm going to faint from happiness. I couldn't have done it with you, so here, take it. It's yours." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #b1 #t4011007##k, #b20 #t4000030#s#k, and #b10 #t2012002#s#k yet. You can get them all from monsters. Keep trying!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4011007" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2012002" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2012" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

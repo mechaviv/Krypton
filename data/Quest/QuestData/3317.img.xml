@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3317.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. De Lang's Friend" />
+        <string name="parent" value="Alcadno and the Missing Alchemist" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="After I gave him his fee, #p2111007# told me something in his smirky way. He asked me if I knew #b#p2040050##k. ... #p2040050#? Well, he's also an alchemist, I suppose... Which means he may have a connection with #m261000000#! What was his relationship with #p2111002#? I better go see #p2040050#." />
+        <string name="2" value="#p2040050# was friends with #p2111002#. According to him, #b#p2111002#'s Secret Notes#k can be found somewhere... Secret Notes? #p2040050# told me he can't find the location where the Secret Notes are hidden either, but he was sure the key was #bmade out of silver#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="70000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It seemed like #p2111002# was conducting a very dangerous experiment. He took drastic measures to make sure that no one came close to his house. He used to have so many booby traps around his house... now most of them have been removed by other alchemists. Anyway, here's the information you might be interested in. Are you ready?" />
+            <imgdir name="yes">
+                <string name="0" value="For someone who chose not to contact anyone around him... he had one person, a friend who he constantly talked to all the time. Do you want to know who? It's #b#p2040050##k... Have you ever heard of him?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... What? Why do you all of a sudden refuse to listen to the story? Let me know if you want to hear more of it. I already got paid, so I might as well give you the full scoop." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey there, are you a traveler? If you need any help, just let me know...what? Do I know anything about #p2111002#? ...Who... Who are you? How do you know #p2111002#? \r\n#b#L0#I'm from Magatia. I heard that you are the person to talk to regarding #p2111002#, who is currently missing...#l" />
+            <string name="1" value="What... #p2111002#...is missing? That can't be... I knew that he had been struggling for some time, but ... I had no idea. What exactly did he do...\r\n#b#L0#I need your help to find out exactly what happened to him.#l" />
+            <string name="2" value="You don't seem like an alchemist. Maybe that's why I feel like I can trust you for this. #m261000000#... It's a place that's plagued with violence and mistrust... but since you're not from there, I will give you some information on #p2111002#. I feel that that would be a good way to help #p2111002# out... \r\n#b#L0# Is there a way we can find out about #p2111002#'s experiment?#l" />
+            <string name="3" value="I have to say, I don't know too much about him myself... but I do know that he has such a meticulous personality that he always recorded everything he did in research and experiments, which means if we can find his #bSecret Notes#k, then we may be onto something. \r\n#b#L0#Secret Notes?! Do you know where we can find them?#l" />
+            <string name="4" value="...Unfortunately, no. No alchemist would share that information, even if it's their best friend. That being said... I think I have a clue where they MIGHT be..." />
+            <imgdir name="yes">
+                <string name="0" value="I believe the #bkey to the place where the Secret Notes may be#k is #bmade out of silver#k. #p2111002# was an expert at putting magic into a layer of silver, making it react to other types of magic. If there's anything silver, how about using it to try opening the door?" />
+                <string name="1" value="If you find out whatever happened to #p2111002#, or at least his whereabouts, please let me know. I may have abandoned my hometown and wandered around from place to place, but... I have never ever forgotten about #p2111002#. I felt so useless when I wasn't able to help him when he was at his lowest, so  I want to help him out before it's too late." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Hmm... You haven't gone to see #p2040050# yet? Well, it doesn't matter if you go or not, just don't block my way." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3316" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

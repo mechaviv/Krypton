@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22402.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Meeting the Dragon Rider" />
+        <string name="parent" value="Dragon Mount" />
+        <int name="order" value="2" />
+        <int name="area" value="7" />
+        <string name="0" value="Follow #p1032001#'s suggestion and go find the person named #bFangBlade#k in #b#m102000000##k. He is supposed to be very powerful so maybe he is in the Warrior's Sanctuary." />
+        <string name="1" value="You meet #p9901000#. He is very friendly, promising to tell you about mounting a Dragon but says you need a saddle first. He mentions that people who came from #b#m130000000##k have very cool saddles. You should go to #m130000000# and bring back a saddle.\r\n\r\n#i1912033# #t1912033# #b#c1912033# / 1#k" />
+        <string name="2" value="After you went to the Aquarium and brought back a saddle,  #p9901000# taught you the Monster Rider skill." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="20011004" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2200" />
+                        <int name="1" value="2210" />
+                        <int name="2" value="2211" />
+                        <int name="3" value="2212" />
+                        <int name="4" value="2213" />
+                        <int name="5" value="2214" />
+                        <int name="6" value="2215" />
+                        <int name="7" value="2216" />
+                        <int name="8" value="2217" />
+                        <int name="9" value="2218" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello. My name is #p9901000#. Would you like advice on how to be a powerful Warrior? Hm, you're not a Warrior... What can I do for you?\r\n#L0##bI heard that you know how to mount a Dragon... Is that true?#l\n#k" />
+            <string name="1" value="Yes, it's true. I am able to mount a Dragon thanks to the blessing of the Goddess, though I was quite surprised when I discovered that fact. But why do you ask?\r\n#L0##bWell, I would also like to mount a Dragon and want to know how! Can you teach me?#l\n#k" />
+            <string name="2" value="Well, to get a Dragon from the Goddess, you need to reach Lv. 200 with an Adventurer character. As you may know, that is no easy task. It actually took me several years.\r\n#L0##bOh, you don't have to worry about that! I already have a Dragon!#l\n#k" />
+            <string name="3" value="That thing standing next to you? It looks so different from my Dragon that I thought it was just a really big lizard! I don't think you are Lv. 200. How did you get it?\r\n#L0##bI found it. Hehe.#l\n#k" />
+            <string name="4" value="You found it? There must be a story behind this... In any case, I will tell you about mounting Dragons. But just having a Dragon doesn't mean you can mount it. You'll need to prepare some items.\r\n#L0##bSure. Like what?#l\n#k" />
+            <string name="5" value="The first thing you'll need is a very #bstrong saddle#k. Without one, the hard scales will destroy your bottom...\r\n#L0##bWhere can I get a strong saddle?#l\n#k" />
+            <string name="6" value="I'm not sure. I actually had my saddle naturally upgraded through the Goddess's blessing.\r\n#L0##bI see. Well, do you have any guesses?#l\n#k" />
+            <string name="7" value="Hmm... Those #bpeople who ride birds#k seem to have nice-looking saddles... Maybe you can get a strong saddle from wherever they get theirs. At the very least, you'd get more info..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I believe those people who ride birds come from #b#m130000000##k. Maybe you should over there." />
+                <string name="1" value="I'm sorry I couldn't be of more help. But if you are able to get a strong saddle, I will go ahead and teach you the Monster Rider skill." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... You haven't seen the people who ride around on birds? Perhaps someone in their homeland makes their sandles for them..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you got a saddle! It looks strong enough to protect you from the Dragon's scales. I will now teach you the Monster Rider skill." />
+            <imgdir name="yes">
+                <string name="0" value="I've taught you the Monster Rider skill. With this skill and a saddle, you should be able to mount your Dragon freely." />
+                <string name="1" value="Just remember that you have to get off your Dragon when you use skills. Otherwise, your Dragon may get hurt. Also remember that you will not be able to mount in certain areas." />
+                <string name="2" value="I hope you have great adventures mounted on your Dragon." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you still not been able to find a strong saddle to protect your bottom from the Dragon's scales? The people who ride around on birds seem to all have really nice saddles... Why don't you try going to their homeland? I heard that they are from #b#m130000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9901000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1912033" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9901000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22400" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

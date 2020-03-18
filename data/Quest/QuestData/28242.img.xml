@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28242.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Reporting the Training Results to Kyrin" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1092007:##k in #bNautilus#k says you must report the results to #b#@1072008:##k. First, let's go find #b#@1092007:##k." />
+        <string name="1" value="Let's go over to #b#@1072008:##k in #bNautilus#k and report the training results." />
+        <string name="2" value="You've successfully completed both of #b#p1092007##k's additional training courses." />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;#Wbasic#&#xD;&#xA;#i2000002:# #t2000002:# #c2000002# 100&#xD;&#xA;#i2000003:# #t2000003:# #c2000003# 100&#xD;&#xA;Able to proceed to 'The Mystery of the Green Portion' as next quest.&#xD;&#xA;Able to proceed to 'Dirty Treasure Map' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've completed both my of training courses. They may have been easy for you, but I'm sure they've helped you grow stronger.\n\nIt is now time for you to report your training results to #b#p1072008##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please go to #bNautilus#k and report your training results to #b#p1072008##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b#p1072008##k is very nearby." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Haha! I see you got through the training safely. How do you feel? Do you feel like you've gotten stronger?\Good job.\n\nNow that you've gone through the training, I can entrust you with a new mission. Here, this is for you." />
+            <imgdir name="yes">
+                <string name="0" value="Why don't you get some rest and talk to me again in a few." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1072008##k is in #bNautilus#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28240" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="28241" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

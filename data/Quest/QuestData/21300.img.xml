@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Weapon Never Leaves Its Owner" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 70, #b#p1201000##k strikes up a conversation with you…" />
+        <string name="1" value="#p1201000# tells you that the polearm is acting strange once again and that it might be trying to tell you something. What's the problem this time? You'd better head over to #b#m140000000##k." />
+        <string name="2" value="#p1201002# told you that a thief came to the island late one night and removed a Red Jade from his body! He asked you to catch the thief and told you that the thief headed toward #m140020300#..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How is training going? Hm, Lv. 70? You still have a long way to go, but it's definitely praiseworthy compared to the first time I met you. Continue to train diligently, and I'm sure you'll regain your strength soon!" />
+            <string name="1" value="But first, you must head to #b#m140000000##k. Your #b#p1201001##k is acting weird again. I think it has something to tell you. It might be able to restore your abilities, so please hurry." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, I thought it was really something that a weapon had its own identity, but this weapon gets extremely annoying. It cries, saying that I'm not paying attention to its needs, and now... Oh, please keep this a secret from the Polearm. I don't think it's a good idea to upset the weapon any more than I already have." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did you know that you can use even more powerful skills if you undergo job advancement when you've reached Lv.70? Don't save your SP, though, because you can't apply the to your 3rd job skills. Well, it doesn't necessarily mean that #p1201001# will allow job advancement, but you should still keep that in mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Where the heck did you go while leaving me alone here? What? Training? Hmmm, you're Level 70! Wow, that's a lot better than last time, when you couldn't even hear my voice! That's amazing...wait, wait, why are we talking about you? That's not why you're here!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you still not gone to see the polearm? It lights up like a disco ball, and I can't sleep because of it. Please go see the weapon and calm it down." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <string name="startscript" value="q21300s" />
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

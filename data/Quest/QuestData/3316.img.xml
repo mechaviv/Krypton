@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3316.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Han the Broker's Info" />
+        <string name="parent" value="Alcadno and the Missing Alchemist" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="We need someone that can reveal the truth, said #p2111001#. He then proceeded to tell me a story about #p2111002#. According to him, #p2111002# was in close contact with #p2111007# before he turned up missing, which means I'll have to go see #b#p2111007##k. In order to talk to Han the Broker, I'll have to come up with some mesos..." />
+        <string name="2" value="#p2111007# seems to know something about #p2111002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-50000" />
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I don't think I can totally trust you... but maybe that's the reason why I can let you work on this. I want you to see #p2111002# in a 3rd person's point of view, unaffiliated with the past of Zenumist and Alcadno, what he wanted, and make a decision on whether it was the right thing to do." />
+            <imgdir name="yes">
+                <string name="0" value="Apparently, just before he went missing,  #p2111002# had been in close contact with a suspicious character. Have you heard of #r#p2111007##k? ...he's a man with a very questionable reputation. Regardless, I also hear that he is very trustworthy in business deals, so I think he'll be good. You may get some information on #p2111002# through him..." />
+                <string name="1" value="Oh, and... know this one thing. #p2111007# loves money. He doesn't even speak to people that don't have a substantial amount of mesos with them, so I highly advise you to prepare some before the meeting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you too afraid to encounter the truth? If so, then there's nothing I can do... maybe it's a wise thing not to pursue matters on #p2111002# any further." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...Just tell me what you want, and I'll get it for you. An item? Information? Dirt on someone? Just tell me anything, and I'll get it for you. What? A missing alchemist? You mean, #p2111002#... ? Hmm... yes. He frequently visited yours truly just before his disappearance. Anyway, what about it? What? You want some information on #p2111002#?" />
+            <string name="1" value="Fine. The information will cost you #b50,000 mesos#k. If you pay up the fee, then I'll give you the information as promised." />
+            <imgdir name="yes">
+                <string name="0" value="Tsk tsk... This is definitely an unexpected source of income. This is good! Now, as promised, I'll give you the information on #p2111002#, as long as you're ready to pay me. Come see me when you're ready.&#x9;" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#p2111007##k yet? He's a salesperson... one that sells the darkness of evil... so you won't be able to talk to him without money." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111007" />
+            <int name="endmeso" value="50000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3315" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

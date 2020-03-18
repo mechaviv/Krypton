@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8053.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 1" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Olaf of Lith Harbor offered to take me to numerous famous spots in the Maple World." />
+        <string name="1" value="According to Olaf, Riel will take me to the next stop. Where must that be?" />
+        <string name="2" value="I was able to meet up with Riel. Where will I go next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2001000" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8054" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you! Care to experience something totally new?" />
+            <imgdir name="yes">
+                <string name="0" value="That's right! I like that attitude. I'll send you directly to Florina Beach. Once you get there, talk to #eRiel#k and she'll take you to another awesome spot." />
+                <string name="1" value="Yes, you'll encounter powerful monsters outside town, so if you aren't ready for them, I advise you to stay within town." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh ho, a young fella who has no wild side! You'd make a great accountant!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, Olaf sent you here? Alright! Have yourself a watermelon here and chill. There's nothing quite like a cold watermelon under the glaring sun." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002101" />
+            <int name="pop" value="1000" />
+            <int name="lvmax" value="1" />
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

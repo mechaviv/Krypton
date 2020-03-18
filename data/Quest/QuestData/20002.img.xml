@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku the Training Instructor" />
+        <int name="area" value="15" />
+        <string name="0" value="As stated by #p1101002#, you have to first raise your level to 10 and become a Knight-in-Training. You have to visit #b#p1102000# the Training Instructor#k and enter the Training Forest." />
+        <string name="1" value="You met with #p1102000# at the entrance of the Training Forest. According to #p1102000#, Ereve is bereft of monsters, and instead, everyone trains against fantasy creatures created by #p1101001# called 'Mimi'. He then proceeded to give you a potion called #p1102000#..." />
+        <string name="2" value="#p1102000# shot a warning saying that training will be tough. You better pack up the potions that he gave you and get ready for the training." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20001" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20002s" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

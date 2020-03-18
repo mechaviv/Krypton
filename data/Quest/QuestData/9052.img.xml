@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9052.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beat the Heat &lt;Easy&gt; - 2nd Stage" />
+        <string name="parent" value="Beat the Heat &lt;Easy&gt;" />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="0" value="I should go visit Maple Administrator for Beat the Heat, 2nd Stage." />
+        <string name="1" value="For the 2nd Stage task, the Maple Administrator asked me to gather up #b10 #t4031167#s#, which can be obtained by hunting #b#o1110100##k and #b#o1110101##k.\n\n#t4031167# #b#c4031167##k/10" />
+        <string name="2" value="I met the Maple Administrator, and passed the 2nd stage of the Easy level of #bBeat the Heat#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2001000" />
+                    <int name="count" value="15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031167" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're the one that completed Stage 1, right? Would you like to move up and tackle on the Level 2 training?" />
+            <imgdir name="yes">
+                <string name="0" value="The task for the 2nd stage of the &lt;Easy&gt; level will be to gather up items. I hung up #b#t4031167##k on #b#o1110100##k and #b#o1110101##k for the sake of this task. Please gather up #b10 #t4031167#s#k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This event goes on until September 2nd, so if you decide to change your mind, you should definitely participate in this event!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Woo hoo!!! Congratulations on completing the Level 2 training!" />
+            <imgdir name="yes">
+                <string name="0" value="Here are some watermelons for you to forget the dog days of the summer. Please come see me if you want to tackle on Stage 3." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Here's your task for Stage 2: Gather up #b10 #t4031167#s#k that are hanging around the bodies of #b#o1110100##k and #b#o1110101##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031167" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9051" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005082400" />
+            <string name="end" value="2005090300" />
+        </imgdir>
+    </imgdir>
+</imgdir>

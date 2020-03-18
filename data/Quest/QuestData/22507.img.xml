@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22507.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What is a Dragon Master?" />
+        <int name="area" value="7" />
+        <string name="0" value="It does seem as if #p1013000# has gotten a bit stronger. Ask #b#p1013000##k how it happened." />
+        <string name="1" value="#p1013000# says that #bonce a Dragon and Human are connected through a pact, when one party grows stronger, the other party grows stronger too#k. With that, he excitedly tells you to use his strength..." />
+        <string name="2" value="#p1013000# says that once a Dragon and a Human are connected through a pact, when one party grows stronger, the other party grows stronger too. With that, he excitedly tells you to use his strength... but it's not like you have someone to fight..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22506" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22507s" />
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

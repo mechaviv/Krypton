@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28108.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Demise of a Madman" />
+        <string name="parent" value="The Terror of MV!" />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="0" value="Charles has prepared a second task for us. Let's go find him! (You have to form a party for this task)" />
+        <string name="1" value="Charles has asked us to eliminate the madman known as &quot;MV&quot;.  \n\n#o9400705# #r#a50661##k" />
+        <string name="2" value="You've accomplished your task and gained EXP, 2500 mesos and a special gift!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="2500" />
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032248" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, Maplers! Good to see you again. For this quest, you need to eliminate the madman called &quot;#rMV#k&quot;.   You'll need at least 3 friends to tackle this formidable foe.  Do you want to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! I will move you guys down to the place for the quest soon. Get ready and good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you sure? I mean... If I were you, I wouldn't have missed this chance, but... anyway, I get what you mean. Feel free to come talk to me anytime if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh my! You guys really eliminated #o9400589#! I mean.. I knew you wouldn't let me down. I will give you a reward as I promised." />
+            <imgdir name="yes">
+                <string name="0" value="Outstanding!  Here's your reward.  You have earned my trust!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Did you eliminate #b#o9400589##k?  I understand that he's a very powerful monster.. but.. I know you guys can do this! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9220018" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400589" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9220018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28107" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032248" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2007112700" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

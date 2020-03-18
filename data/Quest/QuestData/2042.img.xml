@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2042.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maya's Third Collection" />
+        <string name="parent" value="Collecting For Maya" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="This time, Maya requested #b10 Lupin Dolls and 50 each of Cold Eye's tail, Tortie's shell, and Iron Hog's Steel Hoof#k. Apparently I can get those through monsters at the highland, beach, and prarie. This is getting harder now..." />
+        <string name="2" value="I got them all for Maya. I'm still not getting anything?? How many more times do I have to do this??" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000026" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000023" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000045" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000039" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh... Are you ready? Don't go too fast, though~ Okay, would you please get #b10 #t4000026# and #t4000023#, #t4000045#, #t4000039#, 50 of each#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks! I think you have to travel all over the places to get these items. If you have collected them all, please get back to me. I will wait right here." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh you must be really busy now... But please get back to me if you have time later. I would like to get the stuff by myself, but I am not fully recovered..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow~!! You got them all! This one was little bit harder than the last one, right? But Nothing will be hard for you... Anyway, thanks, but they are not enough, though." />
+            <imgdir name="yes">
+                <string name="0" value="I got the stuff. Thanks you so much~ But I need much more stuff, though... So please get back to me when you are ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #b10 #t4000026# and #t4000023#, #t4000045#, #t4000039#, 50 of each#k ... Come on~ I will give you something good if you do these things for me~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000039" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000023" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000026" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000045" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2041" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

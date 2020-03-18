@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3372.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sirin's Tailoring Methods" />
+        <string name="parent" value="Juliet's Response" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="32" />
+        <string name="1" value="Sirin was more than happy to accommodate, by giving me the pattern to the nicest clothes she has in store. So all I need to do is give this to Juliet?...hmmm... something tells me this might not end up the way I had in plan. Anyway, I better give #bJuliet#k the patterns first." />
+        <string name="2" value="After giving Juliet the pattern, she jumped for joy. That's the good part. Can she really make the clothes based on the pattern, though?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031776" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031776" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you wait for a long time? Well, your wait is over. Here, take this! It's the sewing pattern to the most beautiful dress I have. I even wrote all the materials needed to make this in great detail, so even a novice tailor can make this in a hurry. Do you want to take this?" />
+            <imgdir name="yes">
+                <string name="0" value="Tell Juliet to make sure to make the dress just right for her. Tell her also that if she wants to learn my dance moves, then come to Ariant and watch me perform. I'll see you around." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... do you have anything to do in Ariant? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello traveler... did you get to see Sirin...? Ahh... so this is the sewing pattern that features Sirin's tailoring methods. Thank you so much.&#x9;" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Wait, did you not go see #bJuliet#k yet? If she asked you to walk all the way over here for the patterns, then I am very sure she is dying to put on that beautiful dress... I suggest you quickly make your way back there." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't you gone to see #bSirin#k yet? I really want to make this clothes for Romeo... I'll have to account for a number of mistakes I'll make, so please hurry." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hmm? What? You lost the pattern? Hey... if you're handling someone else's item, then I expect you pay a bit more respect towards the item. If you get her hopes all up, only to come back to her empty-handed, then how much disappointment would she go through? I'll give you another blueprint for now, but please don't lose it this time.&#x9;" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031776" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3371" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28198.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Marbas the Demon!" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032001:##k in #bEllinia#k says #rMarbas#k must be defeated. Let's talk to him." />
+        <string name="1" value="If you go to #b#m101010102##k, you will find the Demon's Doorway to where #rMarbas#k is hiding. You will be able to enter if you have #rMarbas' Emblem#k.\n\nDefeat #rMarbas#k.\n\nReport back to #b#@1032001:##k in #bEllinia#k after defeating #rMarbas#k." />
+        <string name="2" value="You have defeated #rMarbas#k whose seal had been broken. However, who or what is responsible for releasing the seal remains a mystery." />
+        <string name="demandSummary" value="#o9400612# #a281981#" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i1003032:# #t1003032:# #c1003032# 1&#xD;&#xA;#i4032496:# #t4032496:# #c4032496# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032495" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1003032" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032496" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I wonder who broke #rMarbas#k's seal. I was able to seal him back then when I was younger and stronger, but I can't do that anymore in my old age. You must do it for me. What do you say? Do you think you can do it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I knew I could count on you.\nIf you go to #b#m101010103##k, you'll find a Demon's Doorway where #rMarbas#k is hiding.\nYou can enter using #rMarbas's Emblem#k, so go in and defeat #rMarbas#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you scared?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You really did it! You'll make a fantastic Magician!" />
+            <imgdir name="yes">
+                <string name="0" value="I can't believe you faced the demon on your own. But as I mentioned before, there must be an even stronger force behind all of this. You must keep training diligently." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to defeat #rMarbas#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400612" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28197" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22501.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hungry Baby Dragon" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1013000#, the Baby Dragon, seems to be very hungry. But what do Dragon's eat? Ask #b#p1013000##k." />
+        <string name="1" value="#p1013000# says that he also doesn't know what to eat and asks that you be a good master and find him something to eat. Hmm, what would taste good to a Dragon? You have no idea. Maybe #bDad#k would know. Try asking him." />
+        <string name="2" value="Dad seems to be a bit confused too." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="180" />
+            <int name="nextQuest" value="22502" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What is it, Evan? You want to know what Dragons eat? Why do you... Huh? You found a Dragon?\r\n#L0##b(You show #p1013000# to Dad.)#l\n#k" />
+            <string name="1" value="Eh...that's a Dragon? Are you sure it's not just a big lizard? Well, all life is precious, so I guess you can keep it... \r\n#L0##b(Dad doesn't seem to believe that #p1013000# is a Dragon. Well, he is pretty small. Would Dad believe it if he heard #p1013000# talk?)#l\n#k" />
+            <string name="2" value="If it were a real Dragon, it would be too dangerous to keep. What if it breathed fire? I don't really think it's a Dragon, but maybe we should ask an adventurer to come kill it, just in case.\r\n#L0##b(What?! Kill #p1013000#?! But he didn't do anything wrong!!)#l\n#k" />
+            <string name="3" value="Of course, I'm pretty sure it's not a Dragon. Dragons only appear in #m240000000# on the Ossyria Continent. \r\n#L0##bHa... Ha... You're definitely right! I doubt he's a Dragon. He's probably just a lizard! Definitely!#l\n#k" />
+            <string name="4" value="Yeah, I'm pretty sure. It's a bizarre-looking lizard, but it doesn't look dangerous. Guess you can keep it.\r\n#L0##b (For his own safety, you better not let anyone know that #p1013000# is a Dragon.)#l\n#k" />
+            <string name="5" value="Oh, you said you were looking for something to feed the lizard? I'm not sure... Let me think about it for a moment." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Oh, I'm so hungry... Sooo hungry..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013103" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22500" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22501s" />
+            <int name="lvmin" value="11" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

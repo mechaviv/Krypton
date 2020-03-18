@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22010.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Strange Farm" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22010" />
+        <string name="0" value="Dad seems to have something he wants to ask you to do. Talk to Dad." />
+        <string name="1" value="Dad asks you to help him calm the #o1210100#s who are jumping around like crazy. Disciplining a few #r#o1210100##ks might calm them down... Go to the #b #m100030310# to your left#k and take care of those pigs.\r\n\r\n\r\n#o1210100##r #a220101##k" />
+        <string name="2" value="You disciplined the #o1210100#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="980" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022621" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022622" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Forget about the #o9300385#es. Since you're here, want to help me out again? I think the only way to calm the #o1210100#s is by disciplining them. Why don't you go take care of a few of the #r#o1210100#s#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The crazy pigs can be found starting at the #b#m100030310##k. Head over and take care of just #r20#k of them. Hey, kiddo, you've really become a huge help to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? Are you scared of the #o1210100#s? They are jumping around like crazy, but you shouldn't be scared of them..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you disciplined the #o1210100#s. Good job! Thank you." />
+            <imgdir name="yes">
+                <string name="0" value="Now I'll just get back to work." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="It looks like you haven't disciplined all of the #o1210100#s yet. Go to the #b#m100030310##k and take care of those high-spirited #o1210100#s." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013103" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22009" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

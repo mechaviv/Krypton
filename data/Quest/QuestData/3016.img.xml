@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hella is Found!" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="13" />
+        <int name="area" value="33" />
+        <string name="1" value="Hella requested that I get this #bpendant#k to Jade. She also mentioned something about an old diary that she found at home years ago, and it mentioned the existence of the Book of Ancient, and that the owner lost it somewhere deep in the valley of the snowfield. Jade should fill up the rest for me. I got to go see him right now and inform him of her whereabouts." />
+        <string name="summary" value="I should deliver Hella's pendent to Jade in El Nath." />
+        <string name="demandSummary" value="#i4031052:# #t4031052:# #c4031052# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="12,320 EXP&#xD;&#xA;#Wprob#&#xD;&#xA;1 #i2040701:# #t2040701:# &#xD;&#xA;1 #i2040702:# #t2040702:# &#xD;&#xA;1 #i2040707:# #t2040707:# &#xD;&#xA;1 #i2040708:# #t2040708:# &#xD;&#xA;Can proceed to the &quot;The Small Grave That's Hidden&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031052" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="12320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031052" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040701" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040702" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2040708" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3017" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I guess there's no point of hiding now. Yes, I'm Hella, the person you've been looking for. After losing my mother, I went under Spiruna to learn the in's and out's of becoming a powerful sorcerer. Am I the descendant of the author of #b#t4031056##k? Where did you hear that from? From Alcaster...? Hmmm ... I guess I can't hide from that, either. Yes, I'm the descendent of the author of #t4031056#." />
+            <string name="1" value="At first I wanted to get the book myself and learn the secrets of the powerful spells from there, but I know that I am much too weak to fully conquer the book. Will you find the book and safely seal it away for good? I tried hard looking for it with no success. Hmmm ... but there's one thing I want to go over. I've only told Jade this, but..." />
+            <string name="2" value="#b#t4031056##k in the deep valley of the snowfield. It was lost so long ago that you won't be able to find it easily. But then again, Jade may know a thing or two, since he's been studying the history of this place. Anyway, please get this pendant to Jade and ask him about #t4031056#." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is the #bpendant#k that I gave Hella back when we were kids, which means you did meet her! How is she?? I can finally concentrate on my studies now that I know that Hella is doing alright. She told you to give this pendant to me? Okay, then. I'll hold on to it until the day I see her again. Here's my reward for your hard work." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="This is the #bpendant#k that I got from Jade when we were kids. Once he sees this, he'll know that I'm doing quite alright here and concentrate solely on his studies. Please give this pendant to #bJade in El Nath#k. As for the #b#t4031056##k, ask him about it while mentioning my name, then Jade will trust you and tell you about it." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Maybe the old lady is #bSpiruna#k, who lives in a small house around Orbis Park surrounded by monsters. You should stop by that house once." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031052" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3015" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

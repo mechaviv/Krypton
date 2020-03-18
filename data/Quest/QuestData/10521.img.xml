@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10521.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Nostalgic Reminiscing II" />
+        <int name="area" value="50" />
+        <string name="0" value="Go to #b#p1002001##k, who helped you before." />
+        <string name="1" value="#b#p1002001##k wants you to prove how strong you've become." />
+        <string name="2" value="You proved to #b#p1002001##k that you've gotten much stronger." />
+        <string name="demandSummary" value="#i4000024:# #t4000024:# #c4000024# / 80&#xD;&#xA;#i4000020:# #t4000020:# #c4000020# / 100&#xD;&#xA;" />
+        <string name="rewardSummary" value="200,000 mesos\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000024" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000020" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#h0#!#k It's good to see you again. How have your adventures been? I'd like to test just how strong you've become. Will you accept?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, then please gather #b80 #t04000024#s#k and #b100 #t04000020#s#k. If you can do that, I will acknowldege that you have truly become stronger." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you're not confident enough yet. If you want to prove your strength, feel free to come back anytime." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, that's amazing! You gathered them so quickly... You've definitely become much stronger." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the money? It should be very useful to you in your travels. Take care of yourself." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... It looks like you haven't been able to gather them all yet. Did I expect too much of you? Please gather #b80 #t04000024#s#k and #b100 #t04000020#s#k. I know that you can do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000024" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000020" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10520" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="worldmin" value="29" />
+            <string name="worldmax" value="29" />
+            <string name="end" value="201002220000" />
+            <imgdir name="job">
+                <int name="0" value="110" />
+                <int name="1" value="120" />
+                <int name="2" value="130" />
+                <int name="3" value="111" />
+                <int name="4" value="121" />
+                <int name="5" value="131" />
+                <int name="6" value="112" />
+                <int name="7" value="122" />
+                <int name="8" value="132" />
+                <int name="9" value="210" />
+                <int name="10" value="220" />
+                <int name="11" value="230" />
+                <int name="12" value="211" />
+                <int name="13" value="221" />
+                <int name="14" value="231" />
+                <int name="15" value="212" />
+                <int name="16" value="222" />
+                <int name="17" value="232" />
+                <int name="18" value="310" />
+                <int name="19" value="320" />
+                <int name="20" value="311" />
+                <int name="21" value="321" />
+                <int name="22" value="312" />
+                <int name="23" value="322" />
+                <int name="24" value="410" />
+                <int name="25" value="420" />
+                <int name="26" value="411" />
+                <int name="27" value="421" />
+                <int name="28" value="412" />
+                <int name="29" value="422" />
+                <int name="30" value="510" />
+                <int name="31" value="520" />
+                <int name="32" value="511" />
+                <int name="33" value="521" />
+                <int name="34" value="512" />
+                <int name="35" value="522" />
+                <int name="36" value="1110" />
+                <int name="37" value="1111" />
+                <int name="38" value="1112" />
+                <int name="39" value="1210" />
+                <int name="40" value="1211" />
+                <int name="41" value="1212" />
+                <int name="42" value="1310" />
+                <int name="43" value="1311" />
+                <int name="44" value="1312" />
+                <int name="45" value="1410" />
+                <int name="46" value="1411" />
+                <int name="47" value="1412" />
+                <int name="48" value="1510" />
+                <int name="49" value="1511" />
+                <int name="50" value="1512" />
+                <int name="51" value="2110" />
+                <int name="52" value="2111" />
+                <int name="53" value="2112" />
+                <int name="54" value="2211" />
+                <int name="55" value="2212" />
+                <int name="56" value="2213" />
+                <int name="57" value="2214" />
+                <int name="58" value="2215" />
+                <int name="59" value="2216" />
+                <int name="60" value="2217" />
+                <int name="61" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

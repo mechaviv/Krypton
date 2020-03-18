@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4488.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Warm Milk Delivery" />
+        <string name="parent" value="To sleep Icarus" />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="Dalphs#b#9220005##k in Happyville has a favor to ask of you." />
+        <string name="1" value="You met with Dalphs#b#p9220005##k in Happyville. He asked if you could bring a glass of warm milk to #bIcarus in Kerning City#.\n\n#t4031884# #b#c4031884##k/1" />
+        <string name="2" value="You delivered a glass of warm milk to Icarus#b#p1010100##k in Kerning City." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031884" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="4489" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, poor Icarus still can't fall asleep during the Christmas season? Hmm, I really hope Santa Claus doesn't pass over his house again. For the past few years, Santa Claus wanted to give him some gifts, but he had to skip his house because Icarus was still awake! How can we help him this year? Oh, yes! I heard that a glass of warm milk will help him sleep like a baby!" />
+            <string name="1" value="So, will it be possible for you to deliver a glass of warm milk to Icarus on my behalf?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks! That's very kind of you. I'm sure Icarus will get a present from Santa Claus with your help. And your kindness will not go unrewarded either, I'm sure! Icarus is in Kerning City; you should be able to purchase a glass of warm milk from the store there. Please deliver that to Icarus before it gets cold!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, I guess you are too busy to do a small favor for the good of Maple World! I'll have to find somebody else then!  " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Ah, I can't go to bed! I'm not sleepy at all! I really hope I can fall asleep early this Christmas." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you not met with #b#p1052106##k yet? You better hurry up and deliver the milk." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031884" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9220005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4483" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

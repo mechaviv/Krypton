@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10426.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="폴라로이드가 필요해요." />
+        <int name="area" value="50" />
+        <string name="0" value="달사진을 찍을 폴라로이드가 필요하다면 #b아기 월묘#k를 찾아가 보자." />
+        <string name="1" value="달사진을 찍을 폴라로이드가 필요하다면 #b아기 월묘#k를 찾아가 보자." />
+        <string name="2" value="폴라로이드는 보름달 가까이에서 더블클릭해야 사진을 찍을 수 있다." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430031" />
+                    <int name="count" value="1" />
+                    <string name="dateExpire" value="2009101900" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="달사진을 찍는데 실패하셨나요?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="걱정마세요. 달사진을 찍을 폴라로이드는 언제든 다시 드릴 수 있으니까요. 어라? 어디갔지? 잠시 후에 다시 말을 걸어주시면 폴라로이드를 찾아 드릴게요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="부끄러워 하실 건 없어요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="자, 폴라로이드에요. 꼭 보름달 가까이서 예쁜 사진을 찍어서 현상이 되면 저에게 가져와주세요." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9001102" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9001102" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10425" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430031" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032430" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032431" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032432" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032433" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009101900" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

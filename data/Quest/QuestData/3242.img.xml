@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3242.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Messenger of the Toy Palace  1" />
+        <string name="parent" value="The Messenger of the Toy Palace" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="#p2041004#, the security guard of #m220000000#, has something in plan for me. I should go visit #p2041004#." />
+        <string name="1" value="I went to #m220000000# to visit #p2041004#, the security guard of #m220000000#, because he had an offer for me. #p2041004# requested that I, as a representative of the #m220000000# castle, visit a place called #m240000000#, and if I was really interested in heading there as a messenger of #m220000000#, then I should eliminate #r10 Ratz, 10 Black Ratz, and 10 Red Ratz#k first.\n\nRetz #r#a32421##k\nBlack Ratz #r#a32422##k\nRatz #r#a32423##k" />
+        <string name="2" value="At the suggestion from #p2041004#, the security guard of #m220000000#, I headed to #m240000000# as the messenger of #m220000000#. #p2041004# graciously provided me with #b#t4161013##k. What's the item I'm supposed to give him, though?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="당신의 도전정신을 시험해 보시지 않겠습니까? #m220000000#에서는 이번에 새롭게 발견된 지역인 #m240000000# 마을과 우호관계를 맺기위해 전령사를 보내기로 결정했습니다. #m220000000#을 대표하는 전령사가 되고 싶지 않으신가요?" />
+            <imgdir name="yes">
+                <string name="0" value="#m220000000#을 대표하는 전령사가 되기 위해서는 몇 가지 자격조건이 필요합니다. 장기간 여행을 해도 될 정도로 건강하다는 것을 증명하기 위해 탑에 서식하는 #r#o3110102# 10마리, #o3210205# 10마리, #o3210208# 10마리#k를 잡고 돌아와 주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#m220000000#을 대표한다는 것은 정말 명예로운 일이 될텐데요. 물론 #m220000000#에서는 각종 지원을 아끼지 않을 것입니다." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3243" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you seeking for new challenges? Are you interested in some action? Well, #m220000000# is trying to set up a friendly affair with the newly-discovered town of #m240000000#, and we'd like to send a messenger on their way. Would you like to become the messenger that represents #m220000000#?" />
+            <imgdir name="yes">
+                <string name="0" value="In order to become the messenger of #m220000000#, you'll need to pass a test. In order to prove that you are healthy enough to endure long-distance journeys, please kill #r10 #o3110102#s, 10 #o3210205#s, and 10 #o3210208#s#k. They can all be found in the tower." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Representing #m220000000# will be the greatest honor of your life! Of course, #m220000000# will be supporting your every step." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Unbelievable. You are more than qualified to become our messenger. I'll now give you the items that should be provided to you from #m220000000#." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3110102" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3210205" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3210208" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2120" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

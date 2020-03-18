@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28162.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Meeting the Training Instructor" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #b#m102000000##k says he will help you train." />
+        <string name="1" value="He says you can receive additional training from #b#@9201119:##k in #b#m102000000##k." />
+        <string name="2" value="The Path of a Warrior.." />
+        <string name="summary" value="Please go see #b#p9201119##k in #b#m102000000##k." />
+        <string name="rewardSummary" value="Exp 500&#xD;&#xA;Able to proceed to 'Advanced Training 1' as next quest.&#xD;&#xA;Able to proceed to 'Advanced Training 2' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've made it through the basic training! Good... But it is only the beginning. Are you ready for something more challenging?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You definitely have the mind-set of a Warrior.\n\nGo find #b#p9201119##k in #b#m102000000##k.\n\nHe has more challenging training exercises prepared for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're weaker than I thought." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, so you've come to see me. Welcome." />
+            <imgdir name="yes">
+                <string name="0" value="My training courses are known to be quite rigorous. Let me know when you're prepared." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#bTraining Instructor#k is in #b#m102000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201119" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

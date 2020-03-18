@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10585.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What the White Mama Monkey Stole" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9000077#, a fruit seller at the #b#m950100000##k, seems to be very angry. Talk to #b#p9000077##k." />
+        <string name="1" value="#p9000077# was angry that the #o9500386#s stole the #t4032604#s that he had left out to sell to the tourists. Eliminate the #r#o9500386#s#k and recover #b20 #t4032604#s#k at #p9000077#'s request. You can enter the Monkey Temple by talking to #b#p9000080##k. \n\n#i4032604# #t4032604# #b#c4032604# / 20#k" />
+        <string name="2" value="You eliminated the #o9500386#s and recovered the #t4032604#s. Still, the #o9500386#s have their eyes on the #t4032604#s. Please come back #bin 1 hour#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="17200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032604" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sheesh! What's the point of having these tourists if I can't sell a thing?! Huh? You want to buy some #t4032604#s? No! I can't sell them even if I wanted to! The #o9500386#s stole them all! And here I thought I was finally going to make some money... Sigh, I wish someone could help me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Huh? You want to help me? Well, do you think you can handle it? The #o9500386#s aren't as weak as you might think... But if you're willing to help, just eliminate the #r#o9500386#s#k and recover #b20 #t4032604#s#k for me." />
+                <string name="1" value="The ones who stole the limes went to the Monkey Temple. You can enter the temple by talking to #b#p9000080##k. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's what I thought. Well, it's my life and I got to deal with it..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You retrieved the #t4032604#s! Thank you! I'll be able to run my business again with these limes!" />
+            <imgdir name="yes">
+                <string name="0" value="I used to practice kung-fu... But there's not much you can do with kung-fu in this town. I was wondering how I would make a living, when #p9000078# suddenly came up with the idea of turning the village into a tourist attraction. So, I started selling fruits to the tourists. Little did I know that I would encounter such problems..." />
+                <string name="1" value="The #o9500386#s never used to steal things from the village, but maybe they are acting this way because of the tourists. I'm starting to wonder if #p9000072# was right... #p9000072# was against turning the #m950100000# into a tourist attraction." />
+                <string name="2" value="Ah, I shouldn't be blabbering, anyway. The #o9500386#s have their eyes on my cart. Who knows when they'll try to make an attempt at my #t4032604#s? I should keep my eyes on the cart for at least #b1 hour#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't recovered the #b20 #t4032604#s#k yet? I told you the #r#o9500386#s#k weren't going to be easy... You can enter the Monkey Temple by talking to #b#p9000080##k. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000077" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032604" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000077" />
+            <int name="lvmin" value="34" />
+            <int name="lvmax" value="42" />
+            <int name="premium" value="1" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

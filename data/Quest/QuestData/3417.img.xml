@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3417.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Sleeping Monster" />
+        <string name="parent" value="Delivering the Alarm Clock" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Pink Mesoranger, who's somewhere around Boswell Field." />
+        <string name="1" value="I ran into Pink Mesoranger again at Boswell Field, near the Omega Sector. She said that the items I gathered up for her last time has been sent to #bKevin the Soldier#k of Omega Sector, and that he should be ready with the #bSuper Alarm Clock#k. My task is to get it from him for her. I hope she'll be able to wake up on time with this baby." />
+        <string name="2" value="I received a request from Pink Mesoranger to receive the Alarm Clock from Kevin the Soldier for her. The clock looks very well-made." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="3418" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Arrggh, I was actually waiting for you!! I worked so hard trying to build the ultimate alarm clock, and they were not easy at all. While doing all this, I found something I'll need help on. Can you please help me out one last time?" />
+            <imgdir name="yes">
+                <string name="0" value="You should be a busy person to begin with, but you're still finding some time to help me out. Thank you so much. Anyway, I wrote down how to assemble the clock, and I sent it to #b#p2050011##k of Omega Sector. It's been a week since then, and the clock should be completed by now." />
+                <string name="1" value="He told me to pick up the clock after a week, but I am still not done with this mission, and that's why I keep finding myself waking up late, again and again. Anyway, please head over to the Omega Sector and pick up the Alarm Clock from #bKevin the Soldier#k for me, okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... you must be busy from doing a lot of things, but if you ever find yourself some free time, please come talk to me. I have something very important to ask you for..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have found #b#t4031108##k, yet. The parts you gave me the other day, those have been sent to #b#p2050011##k of the Omega Sector. The clock should be done by now, but I can't move one bit thanks to the fact that I'm in the middle of work. Please get that Clock for me..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3416" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

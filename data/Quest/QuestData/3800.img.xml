@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3800.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="No Gong's Teaching 1" />
+        <string name="parent" value="No Gong's Teaching" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="At #b#m250000000##k, there is an instrcutor that trains the Masters, an instructor by the name of #b#p2091000##k. Maybe I can become a Master myself if I train with him." />
+        <string name="1" value="Without any explanation, #p2091000# ordered to me to take on #r10 #o5120503#s#k.   \n\n#o5120503# #r#a38001##k" />
+        <string name="2" value="Even though I was successful in taking on all the #o5120503#s, #p2091000# didn't compliment my work one bit. What is he? Is he really going to help me become the Master?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="선인에게 가장 중요한 덕목은 무엇보다 끈기지. 끈기가 없는 사람은 절대 선인이 될 수 없어. 그러니 다들 끈기있게 노력하게! …그런데 자넨 누구지?\r\n#L0#  #b당신이 #p2091000#이신가요?" />
+            <string name="1" value="수련장에는 무슨 볼 일이지? 수련을 방해하는 것은 용서 못 한다.\r\n#L0#  #b선인이 되고 싶어서 찾아왔습니다." />
+            <string name="2" value="선인이 되고 싶어하는 사람처럼 보이지는 않는데. 진심인가? 믿어지지 않는구만. 정말 선인이 되고 싶다는 거지?" />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="그럼 당장 나가서 #o5120503# 10마리를 쓰러뜨리게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="선인이 될 생각이 없다면 뭐하러 여기 온 거야? 훈련을 방해하지 말라구." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="15500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The most important quality of a Master is persistence. Persistence is a must if you desire to become the Master. I need each and every one of you to strive towards becoming the Master with persistence, okay? By the way ... who are you?\r\n#L0#  #bAre you #p2091000#?" />
+            <string name="1" value="What can I do for you here in this training ground? I do not tolerate anyone interrupting the training.\r\n#L0#  #bI am here because I want to become the Master." />
+            <string name="2" value="You ... don't look like someone that wants to become the Master. Are you sure? I don't believe this. You really want to become the Master?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then get in the training ground and defeat #r10 #o5120503#s#k right now." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you do not desire to become the Master, then what are you doing here? I despise anyone that interrupts my training without any reason." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm. You really got 10 #o5120503#s! Interesting..." />
+            <imgdir name="yes">
+                <string name="0" value="Well, anyone can do that! You can't call yourself the Master just by doing that." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You can't even get #r10 #o5120503#s#k... you are weak. You need persistence and desire along with talent to become a master." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120503" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

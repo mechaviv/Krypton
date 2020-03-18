@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8022.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yoona's Quiz on Shopping 2" />
+        <string name="parent" value="Yoona's Quiz on Shopping" />
+        <int name="order" value="3" />
+        <int name="area" value="20" />
+        <string name="0" value="I better solve Yoona's 2nd question on shopping." />
+        <string name="1" value="What's the 2nd question on Yoona's Quiz on Shopping? I have to remember if I want to get it right..." />
+        <string name="2" value="I learned something about avatar item equipment. I can obtain stylish decorations for my weapons, armor, face, hair at any time!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8023" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Here's the 2nd question. Get ready!" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Can you equip the hats and clothes purchased at the Cash Shop AND the items obtained in the game AT THE SAME TIME?\n\n#L0##bYeah! #l\n#L1#No WAY! #k#l " />
+            <string name="1" value="Nicely done! You may equip both the game items and the cash items at the same time! This means you can enjoy the benefits of the game items while dressed up sharply in Cash Items!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="WRONG! Don't you think it'll be tough to travel around if you can't wear both of them at once?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8021" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

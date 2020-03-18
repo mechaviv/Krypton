@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3500.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Path to the Past" />
+        <int name="area" value="46" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="I arrived at the majestic temple high above the sky, the Temple of Time.  A fussy looking #b#p2140000##k standing in front of the three doors begins to talk to me..." />
+        <string name="1" value="#p2140000# said there was an incident recently where an intruder broke in through the Door to the Past and that until the case is resolved, they will not be letting regular visitors inside the Temple of Time.  He says if I really want to go in, I can, but it will be a waste of time...  Well, should I just #bgo in for now#k?" />
+        <string name="2" value="#p2140000# said because time goes backwards in Memory Lane, you can't go forward unless you are given permission.  He says I would need to get permission from the Goddess... How do I get permission from the Goddess? " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="May the blessing of the Goddess be with you.  Welcome to the Temple of Time.  Unfortunately, we are not accepting regular visitors at this time.  Why?  Look at the door over there." />
+            <string name="1" value="Not too long ago, some #rintruder#k destroyed the #bDoor to the Past#k and broke into the temple.  Until we solve this case, we are not opening the temple to the public. " />
+            <string name="2" value="If you still insist on entering after everything I've told you, go ahead..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You're just wasting your time.  It's impossible to walk down the Path to the Past. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You've made the right decision.  The Goddess is currently sleeping anyway, so just wish her a good night sleep and go back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Time goes backwards in the Path to the Past.  Even if you try going forward, you'll keep coming back to where you started.  If you want to go forward, you must receive permission from the Goddess." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <int name="lvmin" value="90" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="270000000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Victoria Explorer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="1" />
+        <int name="viewMedalItem" value="1142112" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="Challenge yourself and explore Victoria Island!\r\nBeginner Explorer\nSleepywood Explorer\nYou must earn a total of two titles." />
+        <string name="1" value="#b#eTitle - Victoria Explorer#n#k\r\n● Requirement(s)\nCan acquire after earning the Beginner Explorer and Sleepywood Explorer titles.\r\n#b● Status\n#y29005# : #u29005#\n#y29014# : #u29014#\r\n#k" />
+        <string name="2" value="You have finally acquired the #b&lt;Victoria Explorer&gt;#k title for exploring various places on Victoria Island." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142112" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="You've completed your exploration of Victoria Island. Good job." />
+            <imgdir name="yes">
+                <string name="0" value="How did you like exploring Victoria Island? I'm sure you have the entire island memorized by now. Hahaha. I will grant you the #b&lt;Victoria Explorer&gt;#k title. Job well done, Explorer." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Please come back and see me after you've acquired two titles, the #bBeginner Explorer#k and the #bSleepywood Explorer#k titles." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29005" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="29014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000066" />
+            <int name="lvmin" value="40" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

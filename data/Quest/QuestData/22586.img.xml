@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22586.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Secret Organization's Fourth Mission" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1013203# starts talking to you. It must be about the Secret Organization's fourth mission. Respond to #p1013203#." />
+        <string name="1" value="#p1013203# tells you to go get the #b#t4032472##k from #b#p2092001##k in #b#m251000000##k. He says he will explain what it will be used for later... Go to #m251000000# for now.\r\n\r\n#i4032472# #t4032472# #b#c4032472# / 1#k" />
+        <string name="2" value="You gave the map to #p1013203#. #p1013203# asks you to wait as he will give you your next mission..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="68100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032472" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I didn't think I'd be seeing you so soon. I've actually received intel a bit earlier than expected. So now I have your fourth mission." />
+            <string name="1" value="The fourth mission is to retrieve the map of an island. Don't worry, it won't be too difficult to find. #b#p2092001##k in #b#m251000000##k has the map, so all you need to do is get it from him." />
+            <string name="2" value="Just tell #p2092001# that you need the #b#t4032472##k and he'll know what you're talking about. I'll tell you what the map is for after you bring it to me." />
+            <string name="3" value="Hehe... What luck! I had no idea that I was standing next to #rsomeone with an Onyx Dragon#k. Hmm. No, it's nothing. Just go ahead and complete the mission." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="What, you're refusing? Oh no, oh no. Why is everyone being so defiant today?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've brought the #t4032472#? Show it to me. I want to make sure it is the one that we are looking for." />
+            <imgdir name="yes">
+                <string name="0" value="Haha. Looks like you've got the right one." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten the #b#t4032472##k yet? I thought I made it clear that #p2092001# in #m251000000# has the map." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032472" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013203" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22585" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

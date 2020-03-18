@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3321.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. De Lang, the Missing Alchemist" />
+        <string name="parent" value="Parwen's Memory" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="With a sad, yet calm look on his face, #p2111002# did not look like someone that would scare off other people by conducting terrible experiments. Observing the words he candidly spoke, I realized that his wife was #b#p2111004##k! He said he wanted to give Phyllia a #bSilver Pendant#k... \n\n ...A Silver Pendant? Come to think of it, didn't #p2040050# say something like the key to #p2111002#'s secret note is made out of silver? I can't believe that pendant has been lying around in #p2111002#'s house..." />
+        <string name="2" value="Thanks to #p2111006#'s amazing abilities, I was able to talk to #p2111002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="...Hmm... You look quite indifferent. I thought the person you mentioned was that alchemist, so I brought you to him but... was he the right person? I guess not... I mean, unlike you, he has that dark, gloomy shadow that's cast over him. He's someone that's hard to approach. \r\n#b#L0#Any idea where he is?#l" />
+            <string name="1" value="Where? Hmm... there's no such place where he resides. It's just a afterimage from the past.\r\n#b#L0#Can you tell me where he is right now?#l" />
+            <string name="2" value="There's no way you can tell. Like I said, it's just a afterimage. It's nothing important, so just forget about it." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3320" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3321s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

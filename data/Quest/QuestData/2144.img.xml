@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2144.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Truth of the Rumor" />
+        <string name="parent" value="The Old Tree" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="The archeologist, Doctor #p1022006#, currently does research at a camping site in #m102000000#. He recently called me about a strange rumor he heard. " />
+        <string name="1" value="During the excavation, Doctor #p1022006# said he heard a rumor about a very old tree living in #m102000000#. However, he had no clue on what kind of tree it was, or where exactly it was located. That's why he's asked me to visit #b#m102000000# village to collect information on this particular tree.#k\n\n#y2148# #b (#u2148#)#k\n#y2149# #b(#u2149#)#k\n#y2150# #b(#u2150#)#k\n#y2151# #b(#u2151#)#k\n#y2152# #b(#u2152#)#k" />
+        <string name="2" value="Told Doctor #p1022006# what the villagers of #m102000000# talked about. Could #o3220000# mentioned by #p1020000# be the same tree Doctor #p1022006# is looking for?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you heard the rumors?\r\n#b#L0#What rumors?#l" />
+            <string name="1" value="There are rumors about the Ghost Tree roaming around Perion.\r\n#b#L0#A Ghost Tree? Could there really be a Ghost Tree?#l\n#L1#No way~ ghosts don't exist.#l" />
+            <string name="2" value="I guess so. I don't believe the rumors either. However, I've also heard of something else. There is a legend of a tree that has grown in Perion since the olden days. You must have heard about it, right?\r\n#b#L0#Well... I don't recall...#l" />
+            <string name="3" value="Well, if the tree in question were actually real, then it'd help my research a lot. That said, I don't have enough evidence. Not many know about this particular tree.  The Indians of Perion seem to know something, but they won't answer my questions.\r\n#b#L0#Could they be hiding something?#l" />
+            <string name="4" value="This is why I need your help. I've heard you're closer to the Perion Indians than I am. Would you please help and collect information about that tree?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Of course there isn't anything like it!" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I see your curiosity got the better of you. In that case start your journey to #b#m102000000##k and find someone who knows about the tree. Anyone must have heard about the tree at least once." />
+                <string name="1" value="Try talking to #b#p1020000#, #p1022007#, #p1022002#, and #p1022000##k. All right! Wouldn't the botanist, Doctor #b#p1032104##k in #m101000000#, know something about the tree?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Where has your thriving curiosity gone? If you thought it was bothersome, then why didn't you say so in the first place? What a waste of time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you found something? Well, what is it?\r\n#b#L0#I didn't have much luck.#l\n#L1#But I did hear some interesting stories.#l" />
+            <string name="1" value="(Told Doctor Winston of what I heard from the Perion residents.)\n\n\nHmm... so the rumor must be #b'#o3220000#'#k? You've done well. " />
+            <imgdir name="yes">
+                <string name="0" value="You may go now, but please don't go too far. I may need to reach you for your help on this rumor." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="It can't be. There must be someone who knows about it. Keep asking questions." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="I can't stop thinking about the story of the old tree. How did it go with the villagers?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2151" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2152" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2148" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2149" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2150" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

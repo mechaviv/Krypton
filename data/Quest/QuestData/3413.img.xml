@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3413.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Chief Gray" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Black Mesoranger, who should be somewhere around Kulan Field." />
+        <string name="1" value="I met with Black Mesoranger again at a field around Omega Sector. She wanted me to take out #bChief Grays#k, considered as a high rank among the Grays, as well as collect 3 of their #bnotes#k from them. Chief Grays are very rare among all Grays and they are few and far between. How am I going to find them? \n\n#t4031102# #b#c4031102##k/3" />
+        <string name="2" value="I took 3 #bnotes#k from the Chief Grays and gave them to Black Mesoranger, who was at a field around Omega Sector. Apparently, these notes contain the history of the Grays... hopefully these notes can be deciphered soon!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="25000" />
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031102" />
+                    <int name="count" value="-3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're the one that helped me get rid of #b#o4230116##k the other day at the Kulan Field, right? The research on the force controlling them is just about to be concluded, and it's taken longer than expected, but I'm glad you're here now. I have something else to ask you for a favor. Will that be alright? Would you like to at least take a listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks a lot. I told you about the class-driven nature of the Grays, right? I finally found the high-ranked Gray that is in charge of this area, and it's called #b#o4240000##k. It was hard to find them, because there just aren't many of them." />
+                <string name="1" value="Anyway, please find #b#o4240000##k, defeat them, and collect #b3 #t4031102#s#k from them, after which you should bring them back to me. I have a feeling #t4031102# contains the kind of secret information we may not be ready to devour and accept. Please come to me as soon as you get done with this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really...? I understand. Everyone seem to get a tad hesitant when dealing with ugly aliens like them. If you ever change your mind, however, I'll be right here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh... I can't believe you actually gathered up all 3 #b#t4031102#s#k! That's just increadible! It took me days to find out they even exist... I better start tightening up, or I may lose my place here! Anyway, thank you for the job well done. I know this isn't a lot, but please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Now, let's try to decipher this note. Just as I thought, this is written in alien language, so it's near impossible to understand what's written here, but with a little time, I'm confident that we can decipher this book. I gotta get this going, so I'll see you around!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gotten #b3 #t4031102#s#k that I asked you to get, just yet. Please find #b#o4240000##k, one of the higher ranks among the Grays, defeat it, and bring #b3 #t4031102##k back to me. I have a feeling #b#t4031102#s#k pack more secrets than we even dare to know." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031102" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3412" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="43" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20202.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knighthood Exam: Blaze Wizard" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="According to #p1101002#, you can take your Knighthood Exam if you see #b#p1101004##k, the Chief Knight of Fire. Better head over to Ereve and meet #p1101004#." />
+        <string name="1" value="The Knighthood Exam has started. The test itself is actually quite simple. You just need to reach the end of the Training Forest, enter #bthe 2nd Drill Hall#k, and defeat the Mimis inside while bringing back #t4032097#. Better find #b30 #t4032097#s#k and bring them back to #p1101004#\n\n#i4032097# #t4032097# #b#c4032097# / 30#k" />
+        <string name="2" value="You have successfully completed the Knighthood Exam and officially dropped the &quot;in-Training&quot; from your title. As a bonafide Cygnus Knight, do your best to work hard so you will never be ashamed of yourself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you wish to take the Knighthood Exam? Wow, you are really fast. Based on your contributions to Cygnus Knights so far, it makes sense for you to take the Knighthood Exam. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The test is actually not complicated at all. Remember the Training Forest in which you trained when you were a Noblesse? At the end of it, you'll find #bthe 2nd Drill Hall#k. There, your job is to defeat the Mimis and bring back #b30 #t4032097#s#k in return." />
+                <string name="1" value="If you can bring all the #t4032097#s, then I will grant you the right to become a Knight. At this point, I need your skills to do the talking." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose you're not ready to take the test yet. Let... me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have acquired #b30 #t4032097#s#k yet. Did you forget where to find it by chance? Go to the very end of the Training Forest, and you'll find #bthe 2nd Drill Hall#k. Find the Mimis inside, defeat them, and bring back #b30 #t4032097#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032097" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q20202e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="1200" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

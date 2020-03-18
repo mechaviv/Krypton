@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2314.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Exploring Mushroom Forest (1)" />
+        <int name="area" value="30" />
+        <string name="0" value="In order to break through the barrier in Mushroom Forest and rescue the princess…" />
+        <string name="1" value="You should investigate the barrier inside Mushroom Forest and report the results to the #bSecretary of Domestic Affairs#k.\r\n#bInvestigate the barrier in Mushroom Forest : #R2314# / 1 complete." />
+        <string name="2" value="You looked at the obstruction and saw that it was a powerful magic barrier that cannot be physically broken through. The Secretary of Magic of Mushking Empire might know what to do." />
+        <string name="summary" value="You should investigate the powerful barrier inside the Mushroom Forest and report the results to the #bSecretary of Domestic Affairs#k." />
+        <string name="demandSummary" value="Investigate the barrier at Mushroom Forest : #R2314# / 1 complete." />
+        <string name="rewardSummary" value="EXP 8,300\r\nCan proceed to 'Exploring Mushroom Forest (2)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8300" />
+            <int name="nextQuest" value="2315" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="In order to rescue the princess, you must first get through Mushroom Forest. King Pepe set up a powerful barrier to block anyone from entering the castle. Please investigate this matter for us." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You'll find the barrier in Mushroom Forest by heading east of where you are standing right now. Please be careful. I hear that the area is infested with crazy, fear-inducing monsters." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please do not give up on the Mushking Empire!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have thoroughly investigated the barrier in the Mushroom Forest. What was it like?" />
+            <imgdir name="yes">
+                <string name="0" value="So I see it wasn't an ordinary barrier by any means. Great work! If it weren't for your help, we wouldn't have had a clue." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Please journey all the way to the end of the Mushroom Forest and investigate the barrier for us." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300003" />
+            <int name="infoNumber" value="2314" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2313" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2314s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

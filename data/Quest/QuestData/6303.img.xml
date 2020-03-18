@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making a Mithril Bracelet" />
+        <string name="parent" value="Strong Will" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value="#p2040050# knew about #p2060100#.  However, he/she said that I shouldn't deal with her.  But I really need the will power... #p2040050# said he needs #p2060100#, #b#t04031464##k and #b10 #t4011002##k to make #p2060100#..Griffey would have old bracelet. \n\n#i4031464##t4031464# #b#c4031464#/1#k \n#i4011002##t4011002# #b#c4011002#/10#k" />
+        <string name="2" value=" #p2040050# told me that it'll take some time to build #t4011002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031464" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4011002" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#p2060100# told you to bring a Mithril bracelet? I don't know her #t4031464#. It must be something with magic. If #p2060100# used it, it would be possible to compound with Mithril." />
+            <string name="1" value="It's #p2060100#'s request...Do you have to work with her?" />
+            <imgdir name="yes">
+                <string name="0" value="Phew. I can't help it then. Get me 10 #t4011002# and her #t4031464#. I will make #t4031463#." />
+                <string name="1" value="Do you want me to keep the old bracelet? You got it from Carta, didn't you? Did she ask you to get the old one from Griffey? That's tough. Anyway, the old bracelet and 10 #t4011002# . Don't forget!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Good decision. Sea witch #p2060100# is evil. She's sinned. She say she has her reasons, but sin is sin. It's not a good idea to deal with her." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You gathered everything. This is the #p2060100#'s old bracelet... It's not just a normal bracelet. It will take some time to compound it. Come back in a few minutes." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't got 10 #b#t4011002##k and #b#t04031464##k. I can make #t4031463# when I have every ingredient." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031464" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4011002" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6302" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+                <int name="13" value="2112" />
+                <int name="14" value="2217" />
+                <int name="15" value="2218" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1121011" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

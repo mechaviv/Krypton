@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pheromone Perfume" />
+        <int name="area" value="10" />
+        <string name="0" value="0 = #b#p2060005##k is performing further research about monster riding. I wonder if he's finished researching #t4031507#? Time to grab my swimming trunks and head back to Aqua Road!" />
+        <string name="1" value="#p2060005# said that he not only did more research on #t4031507#, he's discovered a way to make it work! However, he'll need a special perfume from #bChief Tatamo from Leafre Village#k to make #t2270000# which trains the monster. Leafre is in Ossyria, so I've got a bit of a journey on my hands...\n\n#i4031509##t4031509# #b#c4031509#/1#k." />
+        <string name="2" value="After a long journey to Leafre, I traveled back to the Aquarium with the perfume in hand and gave it to #p2060005#. He believes that this method should work and gave me #b#t2270000##k for the monster.  He told me that if I take it somewhere in the #bnext town# I would be able to train wild boars!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="17000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031509" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2270000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" Ah, you are the one who protected Oinkers from attackers! What good timing! Finally, I have the results of #t4031507#. When you train monsters, you shouldn't use #t4031507# as it is. When you use #t4031507# as it is, monsters can become violent. I need something to neutralize #t4031507#. I have an idea, but it will require a bit of a journey on your part..." />
+            <string name="1" value="Do you know the town of Leafre? The leader of that town, Chief Tatamo, sells a #bspecial perfume bottle#k. I've done research and apparently, if you put #t4031507# into the perfume bottle, you can calm monsters, making them much easier to train. The power of the bottle can remove the dangerous scent of #t4031507#. Can you get the bottle? Again, I will make it worth your while!" />
+            <imgdir name="yes">
+                <string name="0" value="Excellent! Then go to town of Leafre and get #b#t4031509##k. Leafre is on Ossyria, so it's a good distance from here. And just so you know...Tatamo's #t4031509# is precious, so you may need a pretty penny to convince him to part with it..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You won't help me again? Even though you already have the monster riding skill and #t1912000#? That's disappointing, but I understand. Come back when you're ready to help me again!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Wow! This is #t4031509#! Perfect. Now if I put this into #t4031507# which I gathered before... Done! This will train monsters: #b#t2270000##k!" />
+            <imgdir name="yes">
+                <string name="0" value=" Take this to #bKorean Folk Town#k. There are pigs just like Oinkers that you can train somewhere in the wild. You might want to look in the Tiger Ridge map, there should be some rubble lying about--it's actually a portal. Travel through that and you'll be in a new area with the pigs. Use the perfume when you're close to one and you should capture it. After that, equip the Mount and the saddle, and use your Monster Riding skill to call the mount. I hope I can see your trained monster next time you come to the Aquarium!" />
+                <string name="1" value="This technique will help people accept the idea of peaceful co-existence with monsters. More people can live with monsters thanks to this, can't they? It was worth it! I can't thank you enough!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you got #b#t4031509##k yet? It's expensive, but I need it. Come back when you have it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031509" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

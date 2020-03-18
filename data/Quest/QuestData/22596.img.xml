@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22596.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rage" />
+        <int name="area" value="7" />
+        <string name="0" value="All of the things that the Black Wings had told you to do were bad. #b#p1013000##k, who had wanted you to help people as the Dragon Master, seems very upset..." />
+        <string name="1" value="#p1013000# says that he can't just let this go and suggests that you go to the #b#m922030001##k in #m220000300# where you met #p1013203# in person. Maybe #p1013203# is still there... Go teach #p1013203# a lesson.\r\n\r\n\r\n#p1013203##r #a225961##k" />
+        <string name="2" value="#p1013203# tried to appease you but you fought him without mercy. Unfortunately, he escaped... Having discovered the truth, you and #p1013000# decide to do whatever it takes to fight the Black Wings and stop the Black Mage." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="68100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="All of the things that the Black Wings had us do...were for evil! We wanted to help people but instead, we ended up causing them more problems!" />
+            <string name="1" value="Master, let's go to the #b#m922030001##k in #m220000300#. The house where we met #p1013203# in person. Let's go there and teach #r#p1013203##k a lesson! How could he trick us like this?!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Master, I think you are too cautious at times. We have to right to be angry!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Darn it... We just about had him but he ran away. Then again, a guy who could trick us so many times is probably great at running away. He probably won't show up here again.\r\n#L0##bYeah, you're right. Geez... He was such a suspicious guy. We were so foolish to have believed him!#l\n#k" />
+            <string name="1" value="Well, we could've been more careful. But I still think the deceiver deserves more blame than the deceived! \r\n#L0##bOf course!#l\n#k" />
+            <string name="2" value="They said that their ultimate goal was to revive the Black Mage, the being that destroyed my race and trapped #p1205000# in ice... Master, if I said I wanted to take revenge on the Black Mage, would you help me?\r\n#L0##bOf course!! Personal reasons aside, the Black Mage is an evil being who wants to destroy Maple World. It's only right that an Onyx Dragon and his master stop him!!#l\n#k" />
+            <string name="3" value="Yeah! Master, you and I are on the same page! We lost to #p1013203# this time but next time we'll get him. We won't let the Black Wings revive the Black Mage! For the Onyx Dragons and for Maple World!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Master, let's hurry to the #b#m922030001##k in #m220000300#! #r#p1013203##k is probably still there! Let's make him pay for tricking us!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300393" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22592" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

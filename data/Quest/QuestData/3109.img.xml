@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3109.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Holding Back the Snowman" />
+        <string name="parent" value="Snowfield Giant" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="1" value="Scadur says the Snowman is angry because the Spirit of the Sculpture is damaged, and adds that we need to restore it. However, restoring the sculpture will take some time, and somebody needs to hold the Snowman back from attacking anyone else.\n\n#o8220001# #r#a31091##k" />
+        <string name="2" value="Blocked the Snowman and came back to Scadur. He says Alcaster has completed his preparations to restore the sculpture and tells me to go see him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="539700" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I understand that Snowman may be angry, if the Spirit of the Snow Sculpture is broken. According to the legend, the Snowman is the snow spirit's offspring. Anyone as gentle as a Snowman would get angry seeing his mother's statue shattered into pieces. Who would have done such a thing?" />
+            <string name="1" value="First things first. We need to restore the sculpture and quiet down the Snowman's anger. However, to restore the sculpture we need to buy some more time. I need you to hold down the Snowman while the sculpture is being restored so he won't start up an avalanche." />
+            <imgdir name="yes">
+                <string name="0" value="You can find the Snowman deep in the snowfield. Please hurry before an avalanche occurs. I'll conjure up a plan to restore the Spirit of the Snow Sculpture. I know just the person to ask to restore the sculpture." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You still don't understand? If the Snowman's anger starts up an avalanche, all of El Nath will disappear!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It looks like you've done a good job in holding down the Snowman, since we're not buried in snow yet. You've done well. I've heard the Snowman is really strong, as he is half a fairy." />
+            <imgdir name="yes">
+                <string name="0" value="You're right on time. I've asked Alcaster to restore the sculpture, and he just finished preparing for it. Go meet Alcaster." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please hold down Snowman until the sculpture is restored." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3107" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

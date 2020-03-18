@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8254.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hatch the egg" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="There are things to be done in order to tend Lazy Daisy's egg successfully. Let's go see the GM. " />
+        <string name="1" value="You must go find the GM every day from Monday through Friday, and receive the growth powder and apply it on the egg. " />
+        <string name="2" value="You receive the growth power for today. Hurry up and apply it on your chicken." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032135" />
+                    <int name="count" value="1" />
+                    <int name="period" value="1440" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, you must be taking care of Lazy Daisy's egg. Of course it's simply not enough to simply hunt and spread your energy. " />
+            <string name="1" value="You need one more thing. You have to apply this growth powder on your egg once a day... every day from Monday through Friday. " />
+            <string name="2" value="Tending an egg is not that easy, huh? Would you like to receive the growth power now? " />
+            <imgdir name="yes">
+                <string name="0" value="Yes, you have to devote yourself to the egg. Oh, wait... can you come back? Hmm, where did I put the growth powder... " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm, you might need this growth powder. I guess you can do without." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Found it! Here it is. Please take this and apply it to your egg with love and care." />
+            <imgdir name="yes">
+                <string name="0" value="You have to apply it once a day. The effect will wear out after one day. Don't forget." />
+                <string name="1" value="If you come back tomorrow, I'll give you the growth powder. " />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8251" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8251" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="dayOfWeek">
+                <string name="mon" value="1" />
+                <string name="tue" value="1" />
+                <string name="wed" value="1" />
+                <string name="thu" value="1" />
+                <string name="fri" value="1" />
+            </imgdir>
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

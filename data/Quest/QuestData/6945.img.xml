@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6945.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tatamo's Suggestion" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2081500##k tells me that I should go see #b#p2081000##k in Leafre if I want to rescue #b#t4031517##k and #b#t4031518##k using my intelligence. " />
+        <string name="1" value="#b#p2081000##k tells me to bring him #b#t4031348##k if I want #b#t4031517##k and #b#t4031518##k. Apparently the scroll shop clerks in the other towns know about the secret spell scroll... \r\n#i4031348##t4031348##k #b#c4031348#/1" />
+        <string name="2" value="I brought the #b#t4031348##k to him and received #b#t4031517##k and #b#t4031518##k in return." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031348" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031860" />
+                    <int name="count" value="1" />
+                    <int name="job" value="63" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031861" />
+                    <int name="count" value="1" />
+                    <int name="job" value="63" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have heard of your story through the priest at the Minar Forest. Is it true that you are trying to make the 4th job advancement?" />
+            <string name="1" value="What you are looking for are probably #b#t4031343##k and #b#t4031344##k. If you can do this one thing for the good people in this town, then I will give you an item that you've been looking for. What do you think? Do you wish to prove yourself as a hero to all of us?" />
+            <imgdir name="yes">
+                <string name="0" value="This forest and the dragons have protected us Hafrings, and we the Hafrings do our job protecting the eggs of the dragons. Lately, however, we have come to realization that we'll have to one day find ways to protect ourselves as well." />
+                <string name="1" value="From what I hear, the merchants selling scrolls from other towns also sell #b#t4031348##k, a scroll which protects the one that uses it. I feel that the scroll will be able to protect the town and the Minar Forest as well." />
+                <string name="2" value="Will you be able to acquire the scroll for our town?\r\nIf you get us the scroll, then I'll give you the item you've been looking for." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't need to necessarily take up my offer on it. I know you are resourceful enough to try other methods to find those items." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You successfully found #b#t4031348##k! Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="I can't thank you enough for your kindness. This scroll that you worked so hard to get us will be of great help for everyone in this town. \rI truly believe you have the heart of gold, a hero to all of us." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not ready with #b#t4031348##k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031348" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6944" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031861" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031860" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="511" />
+                <int name="1" value="521" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

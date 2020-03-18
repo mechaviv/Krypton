@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8887.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Summer Break: Cody's BBQ.." />
+        <int name="area" value="50" />
+        <string name="0" value="Hooray for Summer! I heard Cody's having a barbecue! I better head over and see if I can help!" />
+        <string name="1" value="I spoke with Cody, and it looks like he needs help. I'll need to grab 30 #b#t4031658#s#k and bring them back to Cody so he can finish cooking. Just the sound of all that makes me hungry! " />
+        <string name="2" value="I got all the ingredients Cody needed to start the barbecue! With the items he gave me, I can continue to enjoy the summer in style!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031658" />
+                    <int name="count" value="0" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022184" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! Nice to see you on this hot summer day. Makes me want to snag something to drink. Think you can help me out with a little barbecue?" />
+            <imgdir name="yes">
+                <string name="0" value="Enthusiasm! Always good to see. Well, I'm preparing a barbecue for some of friends and we're running low on ingredients. It starts pretty soon, so I'll need you to gather #b30 #t4031658##k (#i4031658#), After that I can finish the barbecue! Thanks a bunch. I'll be waiting!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Er, Maple BBQ isn't exactly animal meat if you are in any case vegetarian, but I understand. Come back if you change your mind!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Fantastic! Everything's here. I'll be able to whip some mighty fine barbecue now! I've got some serious cooking to do. Now just give me a minute..." />
+            <imgdir name="yes">
+                <string name="0" value="Yes, I'm done cooking! This BBQ turned out to be just right! Here, take one of these BBQs I cooked with the ingredients you gave. It's still hot, so be careful with it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you haven't got all the ingredients yet, champ! Get going!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031658" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8218" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="69" />
+            <string name="start" value="2008062500" />
+            <string name="end" value="2008071600" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8251.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping the daughter of the poultry farm owner, Lazy Daisy" />
+        <int name="area" value="50" />
+        <string name="0" value="Let's go to the Maple 7th Day Market and find Lazy Daisy, the daughter of the poultry farm owner." />
+        <string name="1" value="You will be rewarded for tending to Lazy Daisy's egg. The egg grows every time you hunt, and leaving the UI open will bring optimal results. And for the egg to grow into a chicken, you must apply the growth powder which is distributed by the Maple Admin daily. If you have succeeded in growing your egg to a chicken, you should go see Lazy Daisy who is visiting Henesys on Saturday." />
+        <string name="2" value="You have successfully hatched Lazy Daisy's egg! You will be rewarded if you succeed more than 5 times, so let's try again! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9209008" />
+            <string name="endscript" value="q8251e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9209007" />
+            <imgdir name="dayOfWeek">
+                <string name="sun" value="1" />
+            </imgdir>
+            <string name="startscript" value="q8251s" />
+            <int name="lvmin" value="10" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

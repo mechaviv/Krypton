@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7100.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Protect Ludibrium" />
+        <string name="parent" value="Protect Ludibrium" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="A mysterious power appeared in Ludibrium, then suddenly disappeared. Chaos ensued. Now is the time to straighten up the screwed-up time of Ludibrium. I'll need to go see #b#p2041021##k, who's at the #bPath of Time#k under Ludibrium." />
+        <string name="1" value="I met up with #b#p2041021##k at the Path of Time. I promised him to find a new source of energy that may replace the original Time Sphere, which had been the main source of powerfor Ludibrium." />
+        <string name="2" value="I gathered up enough #b#t4031170#s#k and gave them to #b#p2041021##k as a replacement for the Time Sphere. I think he can make a new source of power with #i4031170#. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="3270" />
+            <int name="exp" value="2700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031170" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="7101" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you know the #bsource of power#k that makes Ludibrium run? Well, it's missing, and that's why the time has stopped. We do not know exactly what happened, and many questions are still left unanswered. One thing I'm certain is the fact that I can't do this by myself, so... I have a favor to ask you... can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. Hmmm ... the source of power can be described as the #bTime Sphere#k, located at the very bottom of the power generator, but it went missing a while ago. We've sent some people down for investigation, and the answer they gave was... well, we'll have to replace the Time Sphere." />
+                <string name="1" value="What I'll need are 10 of the energy replacements that may in fact be able to replicate as the source of power of Time Sphere. The monsters around here have turned evil ever since obtaining that power. You will, however, be able to recover that power if you defeat the monsters." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you think finding it is hard? Just head downstairs, and kill the monsters that you see. It's that simple." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find the item I was talking about? I want to see how it reacts..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... to see how the reaction goes, I'll need 10 energy replacements. I don't think you have all 10, though. Talk to me once you have all 10 of them with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031170" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

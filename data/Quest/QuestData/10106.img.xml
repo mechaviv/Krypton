@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10106.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Book of Cygnus Vol. 3" />
+        <string name="parent" value="Book of Cygnus" />
+        <int name="order" value="3" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Time to find Vol.3 of Book of Cygnus. You wonder what's written on it this time." />
+        <string name="1" value="Time to find Vol.3 of Book of Cygnus. You wonder what's written on it this time." />
+        <string name="2" value="You feel like you're getting the hang of what the Cygnus Knights represent. Apparently, if you pass Cygnus' Pop Quiz, then you'll be blessed with something. You better use this book right now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you able to understand what the Cygnus Knights is all about? This is the last copy, and I really hope you succeed in this. Remember that once you complete the quest, you'll be able to open 'Cygnus' Pop Quiz'." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you've gathered all 20 of them, then go ahead and use it. Wait, you don't even have those 20 pieces!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430002" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10106e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10105" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2009071500" />
+            <string name="end" value="2009072900" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+                <int name="1" value="100" />
+                <int name="2" value="110" />
+                <int name="3" value="111" />
+                <int name="4" value="112" />
+                <int name="5" value="120" />
+                <int name="6" value="121" />
+                <int name="7" value="122" />
+                <int name="8" value="130" />
+                <int name="9" value="131" />
+                <int name="10" value="132" />
+                <int name="11" value="200" />
+                <int name="12" value="210" />
+                <int name="13" value="211" />
+                <int name="14" value="212" />
+                <int name="15" value="220" />
+                <int name="16" value="221" />
+                <int name="17" value="222" />
+                <int name="18" value="230" />
+                <int name="19" value="231" />
+                <int name="20" value="232" />
+                <int name="21" value="300" />
+                <int name="22" value="310" />
+                <int name="23" value="311" />
+                <int name="24" value="312" />
+                <int name="25" value="320" />
+                <int name="26" value="321" />
+                <int name="27" value="322" />
+                <int name="28" value="400" />
+                <int name="29" value="410" />
+                <int name="30" value="411" />
+                <int name="31" value="412" />
+                <int name="32" value="420" />
+                <int name="33" value="421" />
+                <int name="34" value="422" />
+                <int name="35" value="430" />
+                <int name="36" value="431" />
+                <int name="37" value="432" />
+                <int name="38" value="433" />
+                <int name="39" value="434" />
+                <int name="40" value="500" />
+                <int name="41" value="510" />
+                <int name="42" value="511" />
+                <int name="43" value="512" />
+                <int name="44" value="520" />
+                <int name="45" value="521" />
+                <int name="46" value="522" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

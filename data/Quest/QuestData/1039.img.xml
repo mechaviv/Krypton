@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1039.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping Out Yoona" />
+        <int name="area" value="20" />
+        <string name="0" value="#bYoona#k is in a bit of trouble after wandering out of Amherst." />
+        <string name="1" value="Yoona is trapped by monsters between her and Amherst. To help her return home, she needs you to take care of some#rBlue Snails#k and #rShrooms#k.\n\nBlue Snail #r#a10391##k  \nShroom #r#a10392##k" />
+        <string name="2" value="You took care of the Blue Snails and Shrooms and told Yoona." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahhhh! What can I do?! Someone help me! Hey, aren't you a new traveler? Can you...hunt #rBlue Snails#k and #rSpores#k by any chance?" />
+            <imgdir name="yes">
+                <string name="0" value="I heard Maria was going to pick some mushrooms, so I headed out of town to find her, only to be surrounded by monsters! Please! Take care of #r10 Blue Snails#k and #r10 Spores#k for me! Pretty please!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Nooooo! What can I do, then? How else can I get home safely?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You cleared out the Blue Snails and Spores! That's amazing! Thank you! Now I can safely walk home." />
+            <imgdir name="yes">
+                <string name="0" value="If you're looking for Amherst, head west. If you're looking for Southperry, it's southeast of here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated all the #rBlue Snails#k and #rSpores#k yet. Please hunt #r10 of each#k for me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100101" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="120100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

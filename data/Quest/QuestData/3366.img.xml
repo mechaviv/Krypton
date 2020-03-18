@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3366.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the Reagent" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="26" />
+        <string name="0" value="To help Yulete out, I volunteered to assist him on his research. What can I do for him? I better go see #bYulete#k." />
+        <string name="1" value="Yulete asked me to help him #bmake the Reagent#k. I'll need to pour the prepared liquid in the beaker and make the reagent, but I heard that the liquids have to be poured in sequencce. .. and the sequence is #bred, green, yellow, blue, and purple#k! Let's make this. \n\n#i4031798##t4031798# #b#c4031798##k/1" />
+        <string name="2" value="After successfully making the reagent, I reported the results to Yulete. He thanked me for helping him with something that he considered was a difficult task." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031798" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What I want you to do is help me make a reagent. Making a reagent requires precise calculations, but I've already done that for you, so all I need from you is to take care of this in a speedy manner. Can you do this?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to the left, and you'll see one three doors that leads to the lab. Enter the #bfirst door#k, and you'll see a beaker inside. Your job is the pour the liquid I gave you inside to make the #bcompleted reagent#k. Be care, though, you can't just put in the ingredients and expect to make a reagent." />
+                <string name="1" value="The ingredients for the reagent that I gave you must be placed in the order of #bred, green, yellow, blue, and purple.#k. If the order's incorrect, you'll have to make the reagent all over again, so please don't forget the order! That's Red, green, yellow, blue, and purple!" />
+                <string name="2" value="As long as you watch out for the order, making the reagent shouldn't be hard. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There must be something that's holding you back. If you have time down the road, please come see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great work making the reagent. I know it must have been not easy to complete the task. Great work there. Thanks to your work, the reagent for the next experiment should be ready right away." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you've gotten me a finished reagent yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112014" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031798" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2112014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3365" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

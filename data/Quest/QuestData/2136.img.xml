@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2136.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Bowman's First Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're now a Bowman! Now what? Perhaps #b#p1012100##k can help you." />
+        <string name="1" value="#p1012100# suggests monster hunting as a form of basic training. She wants you to hunt #r16 #o210100#s#k. #o210100#s can be easily found near #m100000000#.\n\n#o210100# #r#a21361##k" />
+        <string name="2" value="You eliminated 16 #o0210100#s and reported that #p1012100#. Too easy. What's next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="젊은 궁수여. 초보자에서 벗어났지만 아직은 어려움이 더 많을 거라 생각 되어요. 당신 스스로의 힘으로 전투를 하는 것이 쉽지 않겠군요. 당신을 위해 당신의 수련에 약간의 지침을 마련해줄까 하는데... 어떤가요? 수련을 해보겠나요?\r\n#L0# #b수련을 하겠습니다.#l  \n\n#L1# 스스로의 힘으로 할 수 있습니다. #I" />
+            <string name="1" value="스스로의 한계를 인정할 줄 아는 마음이야말로, 더 강해지기 위한 바탕이 되지요. 당신을 강하게 만들어 드리겠어요." />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="스스로의 힘으로 할 수 있다니 대견하군요. 당신의 성장을 지켜보겠어요." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="590" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Young Bowman! You are no longer a beginner. I guess you still have many difficulties. It's hard to fight by yourself, isn't it? I can show you some guidelines for your training. What do you say? Would you like to go for it?\r\n#L0# #bI want to be trained.#l \n\n#L1# I can do it by myself. #I" />
+            <string name="1" value="Accepting your limit will make you stronger. I'll make you stronger." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="It's good that you can train by yourself. I'll see how you improve." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You're not familiar with controlling a bow. It's better to hunt #o0210100# and learn how to hunt. Please go and hunt #rsixteen #o0210100##k.#o0210100# live near #m100000000# town. It's easy to find them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not ready to be trained." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You killed 16 #o0210100#. Good. You can't be stronger if you're happy with this. It is just first step as a Bowman." />
+            <imgdir name="yes">
+                <string name="0" value="I'll call you when you need another training session. Until we meet again...keep training hard!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #rsixteen #o0210100##k yet. Try hard if you want to be stronger." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="16" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2088.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Reason Behind the Mushroom Studies" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go see Bruce in Henesys..." />
+        <string name="1" value="I got to meet Bruce, who has been studying the monsters and animals in general in Henesys. His bright smile and the easy-going demeanor belies the painful fact that his daughter has been missing for some time, and that he's been studying the mushroom monsters for the sake of finding a clue on his daughter's whereabouts. He asks me if I can help him out, and I just can't say no to a worthy cause like this...\n\n#t4000011# #b#c4000011##k/10 \n#t4000001# #b#c4000001##k/40 " />
+        <string name="2" value="I helped Bruce gather up the materials necessary for his studies. Will these help him find his daughter?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there, kid. Yes, you! I am a scientist that specializes in the field of monsters and animals in this world. If you have any time available, would you mind helping the old man out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I have been currently studying the mushroom monsters, and ... speaking of mushroom monsters, this reminds me of something." />
+                <string name="1" value="Years ago, my daughter and I went out of town in search of research materials. While we were busy excavating, we were ambushed by an enormous mushroom monster." />
+                <string name="2" value="By the time I regained my consciousness, I had been severely battered and bruised, while my daughter was nowhere to be found. Ever since the incident, I have been studying the mushroom monsters in hopes for finding some clues for my daughter's whereabouts." />
+                <string name="3" value="Oh, I'm rambling on again. Anyway, I would appreciate it a great deal if you can get me #b10 Mushroom Spores and 40 Orange Mushroom Caps#k. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I would appreciate a good deal if you could help me out, but alas, you are busy." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought them all here! Thank you thank you! I shall start studying these samples carefully. Oh, I almost forgot to reward you for your hard work." />
+            <imgdir name="yes">
+                <string name="0" value="Here's a small gift to you. This should help you on your journey. I will see you around." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected all the items I requested. These are the ones you'll need: #b10 Mushroom Spores#k and #b40 Orange Mushroom Caps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21721.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Your Third Informant Assignment" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You have now reached Level 23, which means #p1002104# will soon be giving you your third assignment as an informant. You should head to #b#m104000000##k and talk to #b#p1002104##k." />
+        <string name="1" value="#p1002104# suspects that the #o1140100# case in #m102000000# is similar to the ones in #m100000000# and #m101000000# and asks you to gather some information related to the present case. To get the details, you have to head over to #b#m102000000##k and talk to #b#p1103004##k... " />
+        <string name="2" value="You met with #p1103004# in #m102000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="400" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How's the training going for you? I have a new assignment for you. Lately, the #b#o1140130#s in #m102000000##k have been acting strange... Doesn't this sound familar? The puppeteer is at it again, doing the same thing that he did at #m100000000# and #m101000000#." />
+            <string name="1" value="If you want the details, you should talk to #b#p1103004##k, who's at #m102000000#. She is currently investigating the excavation site, so she might know some things about this." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You know where #m102000000# is, right? I'm sure you've become quite familiar with Victoria Island by now. It's located at the very north of Victoria Island. There, find the cutest girl you see, and she's the one to talk to. Her name's a bit strange, but yes, she's a girl." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... We're not gathering information this time just to make money, but to investigate and battle the Black Wings that are following the Black Mage.Think about it again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh…. Are you Aran by any chance? I have heard good things about you through #p1002104#. I hear that you're here to help out on at the excavation site." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#m102000000##k yet? #b#p1103004##k is waiting for you, you know. It looks like it's related to the puppeteer again, so I suggest you go there and conduct a thorough investigation." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21720" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="23" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

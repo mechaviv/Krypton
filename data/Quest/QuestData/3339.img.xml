@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3339.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. De Lang's Underground Study" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2111004##k is the wife of the missing alchemist #p2111002#. If I need to investigate more on #p2111002#, I better go talk to her." />
+        <string name="1" value="When I told #p2111004# of my intentions to investigate more on #p2111002#, she contended that she'd rather prefer me conducting this as opposed to people from Alcadno or Zenumist. She then proceeded to tell me something that no one is aware of: #p2111002#'s #bunderground study#k. It may have been gathering dust from no one visiting, but I may be able to find a clue or two there..." />
+        <string name="2" value="At #p2111002#'s underground study, I was able to locate a strange book. Maybe this book contains Dr. De Lang's Secret Notes! A hole that's found in the middle of the book looks like if I find the right item, it may fit perfect in the hole... if the key to the Secret Notes is made out of silver, as mentioned by the Wandering Alchemist, then maybe #b#t4031744##k is the key." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Even if #p2111002# really committed a sin, it doesn't matter. I love him dearly, and even if he's guilty, I will still love him. Forever... \r\n#b#L0# Will you give me your blessings to investigate more on #p2111002#?#l&#x9;" />
+            <string name="1" value="There's no one in #m261000000# that will prove #p2111002#'s innocence. If you can launch an independent investigation into #p2111002# and his research, that would actually be better for me. I just really wish I could find out exactly what happened to #p2111002#." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="There's one thing, actually... that I did not notify the president of the society of. I didn't think there was much to investigate, anyway, but... the thing is, inside #p2111002#'s home, if you place the handle in a certain direction, you'll be able to enter the #bunderground study#k. It's a place only #p2111002# and I know of." />
+                <string name="1" value="You won't find anything special in there. I went through that room multiple times in hopes of finding more clues on #p2111002#, but that place wasn't made for scientific studies or experiments. That place was a small, private place for personal use..." />
+                <string name="2" value="But who knows... I want you to look through the study. Play around with the pipe, and if you hit the spot, it'll ask you to enter the password. The password is... #bmy love Phyllia#k. Hey, don't look at me like that... it's embarrassing. Please let me know if you find a clue on this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...are you one of those alchemists from #m261000000#, too?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(I saw a book sprawled on the floor. It doesn't look like anything's out of the ordinary, yet... I can't shake this feeling that something might be up. I better open up the book...)" />
+            <imgdir name="yes">
+                <string name="0" value="(It may have looked like a regular book, but when I opened it, the center of the paper that made up the books had a #bcircular hole#k. It looks like if I place a #bround, flat object#k inside, then it'll work pretty well... and I can think of an item that may fit in this.)&#x9;" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I guess you haven't checked the #bunderground study#k yet. You never know, so I suggest you check out the place. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111016" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3322" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

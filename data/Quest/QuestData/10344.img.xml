@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10344.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dim Aran Memories" />
+        <int name="area" value="50" />
+        <string name="0" value="Go over to #bCassandra#k if you're curious about the Arans." />
+        <string name="1" value="She says you must collect Dim Aran Memories if you wish to find out more about the Arans." />
+        <string name="2" value="You have finished collecting an Aran Memory Fragment. What happens when you collect all 12?" />
+        <string name="demandSummary" value="#i4032367:# #t4032367:# #c4032367# / 20" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ahhhh! Why are you laughing at me?! #b#h0##k Did you...did you look at my pictures?\r\n#b#L0#(Oh, how did she know? Hahaha.) Of...of course not!#l\n#k" />
+            <string name="1" value="I knew I could trust you. You wouldn't look at my pictures, would you? Now, shall we go find the Aran Memory Fragment?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Oh, I don't remember much anymore. All of their memories...They're so faint. But if you collect #b20#k  #b#t4032367##ks, I'll be able to remember everything." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What! Did you look at my pictures or something?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Collecting 20 #b#t4032367##ks must be difficult indeed." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032367" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10344e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10343" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2331.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Seal of the Empire" />
+        <int name="area" value="30" />
+        <string name="0" value="Seems like #b#p1300003##k wants to tell you something…" />
+        <string name="1" value="You need to find the stolen Royal Seal of the Mushking Empire and bring it to #b#p1300003##k." />
+        <string name="2" value="You found the #bPrime Minister#k, who stole the #bRoyal Seal of the Mushking Empire#k. You reclaimed the seal and returned it to #b#p1300003##k." />
+        <string name="summary" value="You need to find the stolen Royal Seal of the Mushking Empire and take it to #b#p1300003##k." />
+        <string name="demandSummary" value="#i4001318:# #t4001318:# #c4001318# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 22,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="22000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001318" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I…actually have something that I'd like for you to look for on my behalf." />
+            <string name="1" value="When King Pepe invaded our castle, we were so busy trying to evacuate from the premises that I couldn't find the Royal Seal that was supposed to be locked inside the castle's safe. The Royal Seal is the symbol of our kingdom, and I can't imagine who would have stolen it from us. Please find it for me…" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If that Royal Seal turns out to be in King Pepe's possession, then it'll allow him to officially announce the wedding between his son and Princess Violetta, not to mention take over of the Empire. The only ones who have the authority to open the safe are #bMushking#k himself, #bVioletta#k, the #bPrime Minister#k and myself... Anyway, we must find that Royal Seal at once." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please think about it and reconsider. The future of our Empire is at stake." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found the Royal Seal! Thank you so much!" />
+            <imgdir name="yes">
+                <string name="0" value="Yes… I have heard. Never in my life did I suspect that our very own #bPrime Minister#k would have been behind this. He was such a noble, loyal man, but he was blinded by his greed. Anyway, now that we have the Royal Seal back, our job is to restore the Empire to its original state." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The Royal Seal is the symbol of our Empire. We must retrieve it at once!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001318" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2323" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21704.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Baby Steps" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="After receiving some lessons from #p1202006#, you remembered the Combo Ability skill! You'd better relay this to #b#p1201000##k." />
+        <string name="1" value="#p1201000# says you were probably able to regain your memories of the skill because you swung your polearm around just like how you did in the past. Muscle memory, or something. She seems confident that the more you train, the stronger you will become and the more skills you will remember." />
+        <string name="2" value="The small step of remembering the Combo Ability skill has opened a world of possibilities for you. You now have the confidence to continue training in the hope of one day returning to your old, heroic self." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21703" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21704s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

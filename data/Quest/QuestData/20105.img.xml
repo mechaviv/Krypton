@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20105.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Path of a Thunder Breaker" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The time has come. If you want to find out more about Thunder Breaker, the Pirate of Lightning, talk to #b#p1101007#, the Chief Knight of Lightning#k." />
+        <string name="1" value="If you want to become a Cygnus Knight as a Thunder Breaker who thoroughly enjoys thrilling adventures, you should select #p1101007#." />
+        <string name="2" value="You are now a Thunder Breaker!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to become a Knight? Awesome, awesome! Welcome! My name is #p1101007#, the #bChief Knight of Lightning, leading the Thunder Breakers#k of Cygnus Knights. Wow, it's good seeing you! If you wish to become a Thunder Breaker, then we'll be seeing more of each other." />
+            <string name="1" value="Thunder Breakers are Brawlers at heart. This job requires a healthy dose of #bSTR and DEX. Use your padded fists to fight your opposition#k! With fancy and successive combo moves, you can probably consider yourself ready to become a Thunder Breaker... but that's not all." />
+            <string name="2" value="Thunder Breakers are the special few that receive divine protection from the Spirit of Thunder. Yes, that means if you become one, you'll be able to #bsummon Fulgar the spirit of lightning! Lightning will provide you protection and even fight for you. You may also use skills that are very powerful from the depths of the heart#k. Doesn't that sound exciting?" />
+            <string name="3" value="Fighting the Black Mage will be a difficult task, yes... but it's no fun having to cringe everytime you run into a brick wall like this. You should enjoy it, always with a smile on your face! Being a #bThunder Breaker#k will allow you to experience dynamic life experiences that you may not face anywhere else. Are you interested?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I know you'll make a sound decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101007" />
+            <string name="endscript" value="q20105e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20102" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20103" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20104" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20100" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20101" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

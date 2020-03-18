@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8059.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 7" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="7" />
+        <int name="area" value="30" />
+        <string name="0" value="After carefully observing Omega Sector, I should start up a conversation with Jr. Officer Medin." />
+        <string name="1" value="Scadur offered to take me back to Lith Harbor. Once I get there, I better get back to Olaf..." />
+        <string name="2" value="I met up with Olaf again. What's this creepy scroll for...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002019" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, how was Omega Sector? Did you like it there? Well, you seem to have traveled and observed a whole bunch of diverse towns here. Are you ready to go back to Lith Harbor now?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll take you back to Lith Harbor." />
+                <string name="1" value="Once you return to Lith Harbor, talk to #eOlaf#n and he may give you something very interesting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must have some unfinished business to take care of here. Let me know when you're ready to leave this place." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, that was fast. How was it? Did you get to realize just how huge this world really is? Alright, here'a small gift for you." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8058" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

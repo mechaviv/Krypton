@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Papulatus" />
+        <string name="parent" value="Protect Ludibrium" />
+        <int name="order" value="4" />
+        <int name="area" value="37" />
+        <string name="0" value="Everything is ready. Now all we need to do is eliminate the evil force that is #o8500001#." />
+        <string name="1" value="Enter the power-generating room by finding the #b#t4031172:##k by defeating the monsters guarding the gate. I also need to place #b#t4031179:##k at the crack to call #o8500001# out.\n\n#t4031172:# #r#c4031172#/1#k\nEliminate #o8500001# #r#a71031##k" />
+        <string name="2" value="Finally got to eliminate #o8500001#, the evil force-dripping monster that was hogging the Time Sphere and stealing out all kinds of power through Ludarium! The Clocktower shall emit forces of nature, and Ludibrium shall be brought in peace." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="150000" />
+            <int name="exp" value="78000" />
+            <int name="pop" value="30" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102057" />
+                    <int name="count" value="1" />
+                    <int name="var" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Only thing we have to do now ...is to make #o8500002# disappear forever... are you ready?" />
+            <imgdir name="yes">
+                <string name="0" value="I'll explain to you what you need to do from here on out. \nTo enter the power-generating room, you'll need to pass either #bForgotten Passage#k or the #bWarped Passage#k. Once you defeat whichever monster that is guarding the passage, you can obtain #b#t4031172:##k, which is needed to enter the power-generating room." />
+                <string name="1" value="Then enter the room through the door in the middle. It's going to be MUCH quieter than you imagined. The Time Sphere should be hidden in a state undetectable in our eyes... but if you seal up the crack in dimension, the #o8500002#, panicking because its exit route is sealed up, will make its appearance there." />
+                <string name="2" value="Drop the #b#t4031179:##k that I returned to you to seal up whatever crack you see that #o8500002# may have used to enter this dimension in the first place. Then it'll come out of the Time Sphere and show everyone its true appearance. Please, please kill it and then come back. \n\nCollect #r1 #t4031172:##k\nEliminate #r#o8500001##k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh really. Do you need more time? I'm fully confident that you'll help me out before the Time Sphere is formed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Time Sphere is almost complete. Have you eliminated the #o8500002#?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. #n#o8500002##k is finally gone. We'll need to get this newly-made Time Sphere right back to where it belongs.\n\nThis cape is a cape with Ludibrium symbols stitched on it. This one's for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="When you enter the room, please have the medal on you." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="#o8500001#...isn't eliminated yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031172" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8500002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7102" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7104" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

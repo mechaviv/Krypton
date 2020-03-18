@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6107.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spiritual Stone of Darkness" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="8" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p1061012##k says he can send me to the Bowman's training place if I bring him #b#t4031466##k which is carried by #m910500000#. \n\n#i4031466##t4031466# #b#c4031466# / 50#k" />
+        <string name="2" value="I gave 50 #t4031466#, which is needed to enter #m910500000#, to #p1061012#. I am one step closer to obtaining this ultimate skill. The anticipation is growing within me..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="700000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031466" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This book was written by an old training partner of mine. He was a famed Bowman long ago! He showed me how to perform the skill in return for me teaching anyone who had this book. Looks like that's you! You will learn this ultimate skill, won't you?" />
+            <imgdir name="yes">
+                <string name="0" value="Good! It feels good to have a student again...you'll have to do something before starting. You can't just pass through the place of training, it's way too tough there! You've got to have 50#b#t4031466##k. Once you have them, return to me!" />
+                <string name="1" value="Good hunting! #b#o6230100#, #o7130100#, #o7130101#, #o8130100##k have #b#t4031466##k. It's tough but do your best!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" You mean you don't to learn how to perform this skill? This is your destiny! I beg you to reconsider!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" You gathered #b50#t4031466##k. We're in business! Now I can open the door to a different world. I'll prepare everything for you to start training. When you're ready, I'll let you know how to begin!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Haven't you gathered 50#b#t4031466##k? We'll need them to proceed!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031466" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6106" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

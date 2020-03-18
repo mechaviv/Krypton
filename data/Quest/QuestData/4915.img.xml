@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4915.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Subani's Legacy - Deliverance" />
+        <string name="parent" value="Subani's Legacy" />
+        <int name="order" value="3" />
+        <int name="area" value="45" />
+        <string name="0" value="John has finished deciphering the markings! I need to get back to the Temple Hive now!" />
+        <string name="1" value="John and I spoke again, and something unforeseen happened. I'll have to track down #b50 MesoGears Map Pieces#k so he can put together the map! He mentioned the robots he &quot;borrowed&quot; for some assistance went all crazy, kept saying &quot;#bI.AM.ROBOT#k&quot; as they scurried into the Krakian Jungle..." />
+        <string name="2" value="Finally done! I took the pieces back to John, and he's going to start piecing the map together. However, he did come across a strange ring that passed on to me. If this was the first treasure, I wonder where the rest is..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9800" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031681" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022238" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Right on time! We've got a problem..." />
+            <imgdir name="yes">
+                <string name="0" value="Ok, I &quot;borrowed&quot; a few robots from Foxwit's hidden lab to help me decipher the markings, but the second they finished, those frigging robots went nuts! It was like they were being controlled...Anyways, they have the #bMesoGears Map Pieces#k. All of #b50#k of them. I'll need you to hunt them down and bring them back so I can start assembling the map. I'll poke around a bit in the MesoGears and see what I can find..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="ust when you were getting good... I guess it was too good to be true. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="A+ plus, kid. Truly outstanding! I'll start putting those pieces together right now! \n\n#L0##bI'm just wondering... Have you heard from your brother yet?#k#l" />
+            <string name="1" value="No...we haven't spoken for a while now. I hope something hasn't happened to him... \n\n#L0##bYou mentioned another world in the prophecy; do you think we could travel there?#k#l" />
+            <string name="2" value="You know, that's probably a better question for Elpam or The Glimmer Man. But I will Say this, trouble's gonna find you anyway, so you might as well have fun looking for it! Ok. Time for me to get back on the map. Before that, I've got something for you. " />
+            <imgdir name="yes">
+                <string name="0" value="Might not be the treasure we wanted off the bat, but when I'm done putting this map together, you and I are going hunting, Barricade Bros. style!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I like the effort you're showing kiddo, but #b50 MesoGears Map Pieces#k is what we need to put the MesoGears Map together. I'm headed back into the MesoGears to see what I can dig up..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201051" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031681" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4914" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="44" />
+        </imgdir>
+    </imgdir>
+</imgdir>

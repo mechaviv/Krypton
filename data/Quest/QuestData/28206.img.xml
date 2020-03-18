@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28206.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Returning the Book to Jay" />
+        <string name="parent" value="Lost Book" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201118:##k in #bHenesys#k says to return the #rLost Book#k to #b#@1012109:##k in #bHenesys#k.Let's go see #b#@9201118:##k." />
+        <string name="1" value="Let's take the #rLost Book#k over to #b#@1012109:##k in #bHenesys#k and return it to him." />
+        <string name="2" value="#b#p1012109##k's #rLost Book#k disappeared because #b#p9201118##k borrowed it and lost it, but it was found in #b#m104040001##k.\n\nBut what in the world is the Statue of Leafre?" />
+        <string name="rewardSummary" value="Exp 1000&#xD;&#xA;Able to proceed to 'Meeting Kyrin of The Nautilus' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001352" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I should return the book to #b#p1012109##k since I finally found it." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You know that #p1012109# is in #bHenesys#k, right? Take the #rLost Book#k to #b#p1012109##k.\n\nOh, and I forgot to thank you for your help. If it weren't for you, I would have lost #p1012109#'s trust. #p1012109# has a lot of useful books I may want to borrow in the future. Hee hee!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Can't you just do me this one last favor?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found my book! Thank you so much." />
+            <imgdir name="yes">
+                <string name="0" value="So he did lose the book.\nIt's a good thing you helped him find it.\n\nOh, but some of the pages are missing now. Oh well, it won't matter too much. It's an extremely old book, so it shouldn't matter too much. Again, thank you so much for your help." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012109##k is in #bHenesys#k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you not found the #rLost Book#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012109" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28205" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

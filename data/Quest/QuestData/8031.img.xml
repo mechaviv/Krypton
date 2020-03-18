@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8031.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Protect Lucas's Farm" />
+        <int name="area" value="20" />
+        <string name="0" value=" It seems like the snails around Amherst are causing great grief around the area because of their actions on the farm. How can I help solve this problem, perhaps I should talk to Lucas!" />
+        <string name="1" value="The snails around Amherst has been causing great damage to farms in the area, and Lucas is really counting on me to come through for them. I'll have to take them out! \n#o100100#  #r#a80311##k \n#o100101#  #r#a80312##k \n#o130101#  #r#a80313#" />
+        <string name="2" value="The snails are gone! Hopefully this will protect the farms for a little bit. Too bad the Work Gloves Lucas gave me smelled like old bananas and fish...yuck! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1082002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1082145" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1082146" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1082147" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1082148" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1082150" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So you've sent Maria the letter. Thank you. Actually, the letter Maria wrote reads something like this." />
+            <string name="1" value="Recently there's been a sudden increase of snails around town. At first, none of us worried about them, until they started destroying our farms here and there. At this pace, we may have a big problem when we start harvesting. Any ideas? - Maria" />
+            <string name="2" value="So, on the letter I wrote for her, I wrote this." />
+            <string name="3" value="I just found a great solution to this matter. Don't worry. - Lucas" />
+            <string name="4" value="Hmm... you look like someone who's dying to know what that plan is." />
+            <imgdir name="yes">
+                <string name="0" value="The master plan I have is this. I think it's a great idea." />
+                <string name="1" value="It's the story of a soon-to-be-legendary traveler who decides to save Amherst from its troubles and leaves the town a savior! The people in town will benefit greatly from your work, and your reputation will be flawless. What do you think? Isn't that a great idea?" />
+                <string name="2" value="That's right! I hope you can go around Amherst and defeat #r5 each#k of #o100100#, #o100101#, and #o130101#. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? That's not good. There's a lot of helpful tips you may need for your journey down the road that will be available with this job. What a shame..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let me check and see how well you've done your job." />
+            <imgdir name="yes">
+                <string name="0" value="That's great. You've just taken the first step towards becoming a legendary adventurer. This is a reward for your job well done. This is the worker glove I wore while growing vegetables in the farm during my days as a traveler myself." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="In order to become a legendary adventurer, you'll need to do things left and right! Keep working!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100100" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="100101" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="130101" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1006" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2001010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

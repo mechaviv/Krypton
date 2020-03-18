@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3812.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating the Pirates" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="11" />
+        <string name="0" value="I heard #b#p2094000##k the bellflower is planning something. What would that be?" />
+        <string name="1" value="#p2094000# had a plan to release the Bellflower that were being treated as slaves to the pirates. Unfortunately, he couldn't do it by himself, and asked me if I could go up to the pirate ship and defeat #r200 #o9300117#s#k and #r200 #o9300118#s#k. There are many different types of pirates under Lord Pirate, and the ones in command act differently from others. Apparently, they only make a quick appearance, then disappear. I better remember how they look, and eliminate the right ones. \n\n#o9300117#  #r#a38121##k\n#o9300118#  #r#a38122##k" />
+        <string name="2" value="I was able to defeat the #o9300117#s and #o9300118#s at the pirate ship. Unfortunately, there are still plenty of pirates, and Lord Pirate is still alive and well. Wiill this be enough to save those Bellflowers?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040708" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be a traveler. Young traveler, if you are indeed a powerful and honorable person, then perhaps you should help me and join the cause to help out the poor Bellflowers escape from a dire situation. Yes or no?" />
+            <imgdir name="yes">
+                <string name="0" value="As you may know, next to #m251000000#  lies the #bLair of the Pirates#k, and you will also find some Bellflowers inside helping out the pirates. However, you should know that those Bellflowers aren't there because they volunteered to become pirates. Those Bellflowers are being used as slaves, controlled by a powerful being. That's why they are acting like pirates." />
+                <string name="1" value="#rLord Pirate#k! That despicable pirate is the one reason why the peace-loving Bellflowers are becoming pirates. I have attempted numerous times to free the Bellflowers from the evil grasp of Lord Pirate, but there were too many pirates for me to overcome..." />
+                <string name="2" value="Young traveler, will you be honorable enough to exert your vast energy towards freeing those poor Bellflowers? If you can defeat #r200 #o9300117#s and #r200 #o9300118#s#k, then it should help us tremendously in freeing those Bellflowers." />
+                <string name="3" value="The ones in command, unlike the regular pirates, only appear in seconds, so keep an eye on them. I know it's a difficult task, but I'll be counting on you to come through with this. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you were a traveler who knew the true value of honor. Instead, you are no different than those pirates..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you have defeated the pirates. Thank you very much! With your help, the Bellflowers were able to escape from this despicable torture! Thank you!!" />
+            <imgdir name="yes">
+                <string name="0" value="Unfortunately, the number of pirates remain far too many. I wonder when the Bellflowers will fully escape the wrath of the pirates..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value=" You have not defeated #r200 #o9300117#s#k and #r200 #o9300118#s#k, yet. I understand that it's a lot to ask, but the Bellflowers will not be able to taste freedom unless you defeat all of them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2094000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300117" />
+                    <int name="count" value="200" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9300118" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2094000" />
+            <int name="lvmin" value="55" />
+            <int name="lvmax" value="100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

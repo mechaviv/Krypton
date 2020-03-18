@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28320.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Father: &quot;Dirty House&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="Well, the hallway is clear, but it doesn't appear like Joe is ready to move. What is it now?" />
+        <string name="1" value="Joe wants you to go #rfetch his butler, Steward#k, for him. Who does he think you are--his butler?" />
+        <string name="2" value="You finally located #rSteward the butler#k in the right room. He doesn't appear to be too happy at your arrival, though. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You see...I grew up in a pigsty, so I adopted this habit of making sure everything's pristine. My action figure collection, books, chess pieces are all spotless! That's why I can never leave the house without everything being...squeaky clean and exactly where it needs to be. No dust, no fuss. So...would you?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good, good... Oh, but I forgot to mention, I don't do it myself... Oh no, never! That's a peon's job. I mean...I'm allergic to dust. Anyways, I have a butler named Steward... He should be around here somewhere. Do you think, you know, it'd be too much for #byou to fetch him#k for me?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmpf! May your bed be cursed with...with filthy little cockroaches tonight!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello. I am Steward, the butler. Is that sir, Joe, indeed, looking for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Who does Joe think I am? Even though I am the most experienced servant in this house and have the responsibility of managing it, cleaning is not my job! I will tell you what you can do for Joe. Please talk to me a bit later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Are you having trouble locating #bSteward, my butler#k? Sorry, but I wish I knew which direction to point you toward." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201143" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201137" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28319" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

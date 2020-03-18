@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3458.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Revolutionary Defensive Wall Construction Plan" />
+        <int name="area" value="37" />
+        <string name="0" value="#b#p2050009##k in #b#m221000000##k wants to share his new plans with someone.  " />
+        <string name="1" value="#b#p2050009##k suggested that we help #b#p2050008##k.  He says we can prevent aliens from attacking by using solid #b#t04000101##k to build a defensive wall around #b#m221000000##k.  In order to find out if this plan is possible, we need to get #b#t04000101##k and get it tested by #b#p2050001##k.\n\n#i04000101##t04000101# #b#c04000101#/20\n\n#r30 minute time limit" />
+        <string name="2" value="It's sad that #b#p2050009##k really thinks his idea is brilliant but #b#p2050001##k is right.  This plan clearly makes no sense and doesn't even need scientific testing in order to prove that...  Ugh, next time I should think things through before I offer to help.  I hope I grew at least a little bit." />
+        <int name="timeLimit" value="1800" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000101" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My name is #b#p2050009##k.  Have you met #b#p2050008##k by any chance?  He is truly a wonderful person.  I feel so privileged to serve under him.  As I was training the staff recently, I thought of this great plan that would help him.  Would you like to hear my plan?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="So the plan is...to make a #b#t04000101##k wall!  You don't seem impressed~  Think about it.  This is a revolutionary idea.  There are countless #r#o4230109##k around our base.  If we can construct a defensive wall by using these limitless #r#o4230109##k, #b#p2050008##k won't have to ever worry about alien attacks!" />
+                <string name="1" value="What do you think?  Since now you know, get moving!  When you finish collecting #b#t04000101##k, take it to #b#p2050001##k and get it appraised for me.  Oh, remember that he is a very busy person.  He is said be starting a very important research project in #r30 minutes#k, so you must go see him #rbefore that#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What!  Are you saying there is something more important than a matter that regards #b#p2050008##k!?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This isn't some place anyone can just come in.  If you're going to be loud, go outside so you don't bother the research. \nHm... This is...  Why did you bring these to me?  He said to bring it to me?" />
+            <imgdir name="yes">
+                <string name="0" value="#b#p2050009##k...  His obsessive loyalty is his problem.  Otherwise, he is a great soldier but sometimes he thinks of really strange things like this.  His idea of constructing a wall using #b#t04000101##k is not such a bad idea...  It would easy to stack them up... " />
+                <string name="1" value="But think about it.  What good is a wall when aliens can fly through the sky?  In other words, all the work you and #b#p2050009##k have been doing was for nothing.  #b#p2050008##k and I will take care of the alien problem so you don't have to worry about it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Make sure to show it to Dr. Kim." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="This isn't some place just anyone can come in.  If you're going to be loud, go outside so you don't bother the research." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000101" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050009" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

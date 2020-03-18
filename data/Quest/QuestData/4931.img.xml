@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4931.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Rememberer's Passion Part 2" />
+        <string name="parent" value="The Rememberer's Passion" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="I found it! I found Bob again! He must have escaped from The Rememberer by himself! I feel really terrible that I let this kind of things happen. I am going back to The Rememberer to tell him to lighten up." />
+        <string name="1" value="I don't think The Rememberer gets the whole idea of me doing this. Bob may be just another monster but I know what is right or wrong. And I am going to pay back just the way he did to me. I need to get 1 #b#t4000019##k other than Bob's to pull this off." />
+        <string name="2" value="I got him! The Remeberer will always remember this day. The day he got tricked by me! Ok. I should stop doing things like this though." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="... oh. You are back to me with Bob again..." />
+            <imgdir name="yes">
+                <string name="0" value="I've been looking for him. Bob magically disappeared from my collection set of monsters..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="... I guess you don't want to talk to me about Bob anymore..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="If you are still interested, I'll give you reward for handing Bob back to me... \r\n\r\n#L0##b Huh. really...#k#l" />
+            <string name="1" value="I did give you the reward last time I got Bob's snail shell from you, didn't I?\r\n\r\n#L0##bI guess so. Here, take him.#k#l\r\n#L1##bI'm not falling for that again!#k#l" />
+            <string name="2" value="Thank you. Let me look up what I can give you." />
+            <imgdir name="yes">
+                <string name="0" value="I guess you've come around. Sorry for last time. Monsters are there to be hunted, not to be protected, you know... Wait... this doesn't seem right. How come this #bsnail shell#k looks so... clean?" />
+                <string name="1" value="Hey! You thief! You switched Bob's snail shell with just another snail shell, didn't you?!\r\n\r\n#b(Good time to run, I think)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="... I thought you understood me..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have what I need..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4930" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4928" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

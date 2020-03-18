@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3362.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alcadno and the Ostracized Research" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="22" />
+        <string name="0" value="Apparently, #bRussellon#k, an alchemist from Alcadno, wants something..." />
+        <string name="1" value="Russellon mentioned that there was an alchemist that has been ostracized by everyone for trying to combine the works of Zenumist and Alcadno, #bYulete#k, and he was interested in obtaining the Lab Report. He wanted me to acquire #b#t4031774##k for him, and in order to do so, I'll have to find someone that is aware of #p2112014#'s current whereabouts... \n\n#i4031796##t4031796# #b#c4031796##k/1 " />
+        <string name="2" value="I was able to find Yulete's Lab Report, and gave it to Russellon. According to him, Yulete's studies were released at the height oc the conflict between Zenumist and Alcadno, and mentioned that if he released it at an opportune time, then he could have received a much more favorable response." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="50000" />
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031796" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey... Do you know of the name #bYulete#k? You look like you have never encountered that name before... that's understandable, since he's been off the face of the earth for a while now... he was an alchemist that was banished by both Zenumist and Alcadno for his strange work. How sad is that to be abandoned by even Alcadnos..." />
+            <string name="1" value="His work focused on combining Zenumist and Alcadno methods into one giant project, and he claimed that that was the true form of alchemy. Sadly, no one really accepted his work, and... although Yulete was enraged, he couldn't do anything about it. Soon, his work was forgotten." />
+            <string name="2" value="But I believe that in order to truly reach the highest level of alchemy, one needs to adapt the progressive approach that he took, which means we need his Lab Reports. It'd be so much easier if we could simply find him... what do you think? Do you want to help me find #bYulete's Lab Report#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes... then I suggest you find some people that are looking for Yulete. I hear that a number of people in Magatia have been searching for him for quite some time. If you find them, I'm sure you'll also be able to locate his lab. If you hunt the monsters there, you may end up with the Lab Report." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't force you to do it if you don't want to... but I do feel like giving you a Russellon Special Potion." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So this... is Yulete's Lab Report? Wow... It'll be interesting to peek into the mind of the banished alchemist.&#x9;" />
+            <imgdir name="yes">
+                <string name="0" value="&quot;In order to combine the methods of Zenumist and Alcadno, one should understand that the two studies are actually derived from the same root.&quot;... That sounds like Yulete. No wonder people despised him..." />
+                <string name="1" value="He could have had a much better set of reaction if he didn't announce it right when the conflict between Zenumist and Alcadno were at its worst... it was way ahead of its time. That's unfortunate. Alchemy as a whole would benefit greatly if Yulete is alive... anyway, thanks." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you not been able to locate the lab of #bYulete#k? I heard there were people from Alcadno looking for him as well... I think her name was #bJuliet#k? If you find her, you'd find Yulete's lab just as easily." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031796" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3361" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <int name="lvmax" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

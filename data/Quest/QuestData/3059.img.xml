@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3059.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Request from Moppie" />
+        <int name="area" value="33" />
+        <string name="0" value="I should check up on Moppie, as he is waiting for his master who left him with the words &quot;I'll be back&quot; as he went on his studies." />
+        <string name="1" value="I should find Moppie's master, Huckle, since he was the one that Moppie with the words &quot;I'll be back&quot; as he went on his studies. Huckle should be somewhere safe in Orbis Tower working on his studies ... but where exactly?" />
+        <string name="2" value="I found Huckle, who was diligently working on his studies at the Orbis Tower. He looked like he hadn't bathed in weeks." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="Bark, I'd love to go see him myself, but I don't think I can handle the monsters yet, so ... bark! You! I think you can handle those monsters outside ... so what do you think? Can you find my master for me? Bark bark, just to see if he's doing alright, bark!" />
+            <string name="0" value="Did my master safely run past those scary monsters? Bark ... it's been a long time since he left me out here to pursue his studies ... and I can't believe he's been gone this long without saying a word." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks, bark! You must be an incredibly kind person, bark! I have a feeling something good may happen to you, bark!!" />
+                <string name="1" value="My master is doing his studies at a safe place in Orbis Tower, bark. His name is HUCKLE! Bark bark!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="My master should be somewhere around Orbis Tower, bark bark. Please find my master..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you interested in my work? Well, the results are still a big secret. What? No? Then what are you here for? Moppie? Who's ... Moppie??" />
+            <string name="1" value="My Moppie? The cute, little Moppie that followed my every move? I have totally forgotten about him ... he may have been tiny, but he was a very loyal dog ..." />
+            <string name="2" value="What, Moppie's all grown up now? Has the time gone by that fast? I remember he used to fit in my bag when I got here ... and now Moppie's waiting for me..." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for finding me here. You even took care of my Moppie. I must Say, you're a person of great heart. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't found my master, bark? He's at Orbis Tower!! His name is HUCKLE! Bark bark!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012019" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3058" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

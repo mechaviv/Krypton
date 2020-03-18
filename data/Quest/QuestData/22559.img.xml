@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22559.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminate the Golems" />
+        <int name="area" value="7" />
+        <string name="0" value="Tell Chief Stan what #p1012108# told you." />
+        <string name="1" value="Chief Stan says the culprit the Golems change may be inside the door with the puppet. He askes you to #benter that door, defeat the Enraged Golems, and bring back the culprit#k. He seems to think it might be a #bdoll or puppet#k...\r\n\r\n#i4032466# #t4032466# #b#c4032466# / 1#k" />
+        <string name="2" value="You eliminated the Golems and brought the #t4032466# to Chief Stan. Chief Stan says if the puppet had been left alone, the Golems would certainly have attacked  #m100000000#. He thanks you for saving #m100000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="14200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032466" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2211" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What did #p1012108# say? Hm, so that #rsuspicious door with the strange puppet sitting on top#k has something to do with this. I have a feeling there is an object of some sort that changes the Golems behind that door. It could very well be a puppet." />
+            <string name="1" value="There have been many incidents involving puppets near #m100000000# lately. But it was mostly the Mushrooms causing a ruckus." />
+            <string name="2" value="Golems are much scarier. But the cause of their change appears to be linked to the other incidents that have happened in #m100000000# and other towns." />
+            <string name="3" value="But we can't assume anything until we see what's behind that door with the puppet ourselves. Could you look into this?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go to #m106010102# and enter through the #bdoor with strange puppet sitting on top#k. When you see #rEnranged Golems#k, defeat them and bring me a #bPuppet#k if you happen to find one. Good luck." />
+                <string name="1" value="I never thought I'd depend on #p1013103#'s second child like this. Ha, life really is full of surprises." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't think you can do it? I thought you'd be confident in yourself. Must I find a stronger adventurer?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So? What did you find behind that door? Isn't this a #t4032466#? Who could be behind all of this?" />
+            <imgdir name="yes">
+                <string name="0" value="If we had left the doll, more Golems would have turned violent and attacked #m100000000#. You have saved us, Evan. Thank you. You are a hero that has saved #m100000000#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you gone over to #b#m910600000##k yet? The main instigator in all of this must be behind #bthat door with the strange puppet sitting on top#k! Rush over there!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032466" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22558" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

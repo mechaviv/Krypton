@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1020.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pio and the Recycling" />
+        <int name="area" value="20" />
+        <string name="0" value="You gathered the recycling materials that Pio asked for, and he said he'd make you something nice in return." />
+        <string name="1" value="Pio promised to make you a nice relaxing chair with the recylicing materials you gathered for him." />
+        <string name="2" value="You helped Pio gather recycling materials, and he made you a nice comfortable chair in exchange." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3010000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I got the recycling materials you got me, and I some leftovers that I don't need. Would you like me to make something nice with it for you?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahh, the green cloth should be here somewhere... Hmm, and I should cut this wood, and put the screws on, and… Please come back in a little bit. I'll get this done by then!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? You don't doubt my skills, do you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Perfect timing! How did you know that I'm done? Very impressive!" />
+            <imgdir name="yes">
+                <string name="0" value="Doesn't it look comfy? This chair is very handy. When you're low on HP and MP, just take the chair out and rest!" />
+                <string name="1" value="It'll let you relax and you'll be able to recover more quickly. Because of that, I've named the chair…The Relaxer! Great name, right? Don't forget that The Relaxer was made by yours truly, the great Pio!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="10000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="10000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1008" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

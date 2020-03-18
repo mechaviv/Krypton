@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51241.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="OSSS Mission 5: Infiltrating the Mothership" />
+        <int name="area" value="50" />
+        <string name="0" value="You can now infiltrate the alien mothership!\r\nGet a new OSSS mission from #b#p9250146##k at the mothership crash site." />
+        <string name="1" value="Enter the Cube in the air through the mothership. \r\nDefeat all the aliens inside and return to #b#p9250146##k to get a medal.\r\n\r\nYou can enter the mothership up to 3 times a day, but you can only get a medal for it once a day." />
+        <string name="2" value="Return tomorrow to infiltrate the mothership again.\r\nDon't forget that the future of Maple World is in your hands." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This mission may be much more difficult than the ones you've done so far. Please take that into consideration before accepting." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You are very brave. I will issue you OSSS Mission 5." />
+                <string name="1" value="As I've already mentioned, that mothership is designed so you can teleport to other cubes once inside. That means we have access to all the alien ships still in the sky. We can take this opportunity to launch an attack." />
+                <string name="2" value="Please put on the #bVisitor Suit#k and enter the mothership.  Defeat all the enemies inside.\r\nOnce inside, don't take off that suit. A foreign energy will detect it and attack you if you do." />
+                <string name="3" value="When you complete the mission, the OSSS will issue you a medal.\r\n\r\nPlease remember that #bonly 1 medal will be issued to you each day#k for entering the mothership.\r\nHowever, you can enter the ship up to #b3 times a day#k." />
+                <string name="4" value="Doctor Bing and I will be in touch with you via radio." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am disappointed, but I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You haven't ventured into the mothership yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250146" />
+            <string name="endscript" value="q51241e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420067" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250146" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51196" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="lvmax" value="200" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

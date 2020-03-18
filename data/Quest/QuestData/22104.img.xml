@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22104.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dragon Master 5th Job Advancement" />
+        <int name="area" value="7" />
+        <string name="type" value="[Job Advancement]" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="Dragon Master 5th Job Advancement" />
+        <string name="1" value="Dragon Master 5th Job Advancement" />
+        <string name="2" value="Mir has grown again. He is getting bigger and bigger... He's getting kind of scary?!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22103" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22104s" />
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="2212" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

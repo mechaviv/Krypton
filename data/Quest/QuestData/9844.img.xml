@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9844.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Regulate the Star Pixies" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="Hunt the Star Pixies that are casting magic on anyone and everyone, and report to #b#p2012020##k. \n\n#o3230200# #r#a98441##k" />
+        <string name="2" value="You regulated the Star Pixies that were out of control." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Testing one, two, three! Come in, over! Respond if you can hear my voice, over." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'm glad you can hear me all the way from Cloud Park. Do you know Alfonse Green? You must have seen him while walking around... In any case, he says that he can't freely travel because of the Star Pixies who use their magic on anyone who passes by." />
+                <string name="1" value="So eliminate #r100 #o3230200#s#k and deliver the news to #b#p2012020##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Are you trying to act as if you didn't hear me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I told you to defeat #r100 Star Pixies#k and go see #bAlfonse Green#k..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please take care of the #rStar Pixies#k. Eliminate #r100#k of them and then return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012020" />
+            <string name="endscript" value="huntUP4" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3230200" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="30" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="200020000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

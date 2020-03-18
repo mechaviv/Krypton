@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10485.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Fourth Gift for the Dragon Master" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lv. 80, #p9010010# starts talking to you..." />
+        <string name="1" value="#p9010010# congratulates you for reaching Lv. 80 and asks that you come see her so that she can give you the scroll she mentioned before. How will she react after seeing how much the Dragon she called cute before has grown? Go to town and meet with #b#p9010010##k." />
+        <string name="2" value="You received a scroll from #p9010010#. She says that she will give you another scroll if you reach Lv. 100 by #bMay 5#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040212" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Watching someone develop really warms my heart! Congratulations on reaching Lv. 80, Evan! The really awesome scroll that I told you about before is ready so come find me!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Huh? That was a mistake right? You're not really refusing my gift. Get the quest again, and this time make sure you press the ACCEPT button!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi Evan! Whoa, that huge Dragon next to you... How did that cute Dragon get so big? I don't think I can call him cute anymore..." />
+            <string name="1" value="A Dragon Master that has such an awesome Dragon surely deserves better equipment. Now use this scroll to improve your #t1022097#." />
+            <imgdir name="yes">
+                <string name="0" value="#bI still have more scrolls#k! I will give you the next scroll if you reach #bLv. 100 by May 4#k. Lv. 100 seems really far away. I believe in ya! You can do it!" />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10484" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+            <string name="end" value="200906010000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

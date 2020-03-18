@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3311.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Clue" />
+        <string name="parent" value="Zenumist and the Missing Alchemist" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2111000# asked me to search Dr. De Lang's house, and if I find any information inside, I have to report it to him. I better head off to the missing alchemist's house." />
+        <string name="2" value="There were some writings found at the missing alchemist's house, but nothing seems significant. It did mention a pendant multiple times, though... a pendant? What does that have to do with his studies?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="4" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="60000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What I want you to do now is to search the house of the alchemist that has gone missing. It's the very place where the accident occurred. We've already searched the house a number of times, but I'm sure there's still a lot that hasn't been found, especially #bDe Lang's Secret Note#k..." />
+            <string name="1" value="That's why I want you to go there and find even the smallest piece of evidence. It'd be fantastic if you can find the Secret Note, but even if you can't, a nondescript sentence will be better than nothing." />
+            <imgdir name="yes">
+                <string name="0" value="I do believe that someone like you, who never knew about the missing alchemist, can provide a fresh eye to this investigation and find something we may have missed..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you are not interested, then that's okay. Just don't ever mention the incident ever again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="How was the search? Did you find anything particularly interesting? Any clues? \r\n#b#L0#I wasn't able to find anything.#l \n#b#L1#(What did it Say again...)#l \n#b#L2#I saw a formula to making a mechanical glove.#l \n#b#L3#It really wasn't much... just a story about a pendant...#l" />
+            <string name="1" value="...really? A pendant... a pendant... maybe that's...\r\n#b#L0#What do you mean by that? Is there a special meaning to the word Pendant that was written on the wall?#l" />
+            <string name="2" value="No! It's nothing. We better find out more information about the missing alchemist. Thank you for your help. Now, if you'll excuse me..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Hmm... How was it? I thought a fresh eye like you who doesn't know anything about the missing alchemist would find something new..." />
+                    <string name="2" value="A formula for the mechanical glove? The missing alchemist was an Alcadno, so of course he should have something like that." />
+                    <string name="1" value="Why aren't you saying something? Did you forget the clue already?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111000" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3310" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

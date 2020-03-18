@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3940.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mission Complete!" />
+        <string name="parent" value="First Mission of Sand Bandits" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2101010# should be done with the Tigun Transformation Potion. Go see #b#p2101010##k." />
+        <string name="1" value="You got the transformation potion that allows you to change into #p2101004#. The potion doesn't look appetizing... Oh well. You should take the #p2101004#  transformation potion, head to #b#m260010600##k, and steal some #bsilk#k from #b#p2101013##k.\n\n#i4031571# #t4031571# #b#c4031571#/1#k" />
+        <string name="2" value="You received the queen's order of silk from #p2101004# and gave it to #p2101010#. Awesome! Your first mission as a Sand Bandit...complete!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2210005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031571" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040701" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, you're back. The Tigun Transformation Potion is now complete. Drink the potion and go to #b#p2101013##k to receive an order of silk. The merchant that deals with the queen should be around #b#m260010600##k." />
+            <imgdir name="yes">
+                <string name="0" value="Once you have transformed into #p2101004#, you can't attack anyone. If you accidentally use a skill when using the disguise, everything will be ruined. Also, if you're attacked, the transformation will end. To summarize, do not engage in a fight on your way to #p2101013#." />
+                <string name="1" value="You will be transformed for #b1 hour#k. During that time, you should #bnever attack or be attacked#k. In that time, you must also get an order of silk from  #p2101013# and safely come back. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did the potion scare you off? Hmmm, then who should I ask to do this? #p2101003#, since he looks a lot like Tigun?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhhh, you're back. Did you get the order of silk from #p2101013#?" />
+            <imgdir name="yes">
+                <string name="0" value="Brilliant. Instead of fighting our fellow residents to steal the queen's treasures, it's much better to steal like this, nice and quiet, with no one realizing exactly what happened." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... Haven't obtained the #b#t4031571##k yet? With the money we'll earn from that, the residents of #m260000000# won't go hungry for a while." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hmmm? You lost the #p2101013#-transformation potion? You didn't throw that away because it looked gross, did you? Don't worry. I made lots of potions using #p2101013#'s beard, so I'll give you another one." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031571" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3938" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

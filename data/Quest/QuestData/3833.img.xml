@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3833.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gathering Up the Lacking Ingredients" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2092000##k of #b#m251000000##k told me he needed to tell me something." />
+        <string name="1" value="#p2092000# has been short on herbs that should be sent to #p2091002# due to the dastardly ways of Lord Pirate. #p2092000# told me other herbs will be needed to replace the original herb, and asked me to gather up as much #b#t04000294##k as possible...\n\n#i4000294# #t4000294# #b#c4000294##k" />
+        <string name="2" value="I wound up giving #p2092000# #t04000294#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh...this is really not good. I don't even have herbs stored now... what should I do..I am really short on ginseng now... sigh... And #p2091002# just asked for more ginseng... what should I do... hey you over there! What are you looking at? Are you willing to help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Hoh... you're much nicer than most travelers. Well then, please get me some #b#t04000294##k. They aren't as potent as ginsengs, but they are close... it just requires more to achieve the same potency. I just want you to #bgather as many #t04000294#s as you possibly can#k. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you're not interested, then just leave! What are you looking at?!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2092000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000294" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q3833e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2092000" />
+            <int name="lvmin" value="56" />
+        </imgdir>
+    </imgdir>
+</imgdir>

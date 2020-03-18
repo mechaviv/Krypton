@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28278.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] Destructively Strong Pigs" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1092001:##k in #b#m120000300##k says she needs your help." />
+        <string name="1" value="She wants you to eliminate 30 #rPigs#k that have been ramming into and damaging the ship. They can be easily found in #b#m100030000##k.\n\nReport back to #b#@1092001:##k in #b#m120000300##k upon completion." />
+        <string name="2" value="You have eliminated 30 of the #rPigs#k that have been destroying the ship!" />
+        <string name="demandSummary" value="#o1210100# #a282781#" />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm so tired. I keep repairing my ship, but it's never-ending! It keeps leaking!\nThis is all because of those #rPigs#k. They keep ramming into my ship, puncturing through the stern of my ship!\n\nCould you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It's nothing too major. Could you simply eliminate 30 #rPigs#k that keep ramming into my ship?\nYou'll be able to find a lot of them in #b#m100030000##k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm no Joan of Arc… but I'll sacrifice myself for The Nautilus." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you gotten rid of all the #rPigs#k? I don't hear the banging outside anymore." />
+            <imgdir name="yes">
+                <string name="0" value="Woohoo! I can finally rest tonight, thanks to you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't hunted 30 #rPigs#k yet? No? I'm tired…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092001" />
+        </imgdir>
+    </imgdir>
+</imgdir>

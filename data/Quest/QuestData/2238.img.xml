@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2238.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Who is the Owner of the Mysterious Note?" />
+        <string name="parent" value="The Mysterious Note" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="While talking to Mu Young, you were suddenly transported to a foreign place and a Jr. Balrog appeared right in front of your eyes. Let's defeat the Jr. Balrog. " />
+        <string name="2" value="While talking to Mu Young, you were suddenly transported to a foreign place and a Jr. Balrog appeared right in front of your eyes. As soon as you defeated the Jr. Balrog, Tristan's Spirit appeared. You were able to hear the story of his past life." />
+        <string name="summary" value="Let's go into Tristan's Tomb and talk to his spirit after defeating the Jr. Balrog." />
+        <string name="rewardSummary" value="EXP 50,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm, I don't know who the owner is, but it sure isn't me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hey! You!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you alright?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, young adventurer." />
+            <string name="1" value="I'm very impressed! I can't believe you were able to defeat the illusory Jr. Balrog I created. That was awfully brave of you. There, there, don't be shocked. You and I live in different worlds, so there is no reason to be afraid of me. " />
+            <string name="2" value="My name is Tristan. I took my last breath here a few decades ago. Balrog and I both died here, but the force of Balrog could not be consumed by death. Manji, who was an ambitious young adventurer at the time, sealed the force of Balrog with the help of my spirit. " />
+            <string name="3" value="But as time passes, the power of the seal is getting weaker and weaker. Balrog, the Prince of Darkness, is going to reemerge any day now. Oh, young adventurer, please save Maple World from evil. Please. " />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I really don't know who this note belongs to." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061015" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2237" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2238s" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

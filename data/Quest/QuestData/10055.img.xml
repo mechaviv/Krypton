@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10055.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ericsson's Tale" />
+        <int name="area" value="50" />
+        <string name="0" value="The Maple Administrator says that she has something to tell you." />
+        <string name="1" value="You should take the Maple Administrator's advice and talk to Ericsson, the brave adventurer in Ossyria. #bGo see Ericsson#k in Orbis. Don't forget the Maple Administrator's advice to bring #b1 Dry Treat#k as a gift for his pet." />
+        <string name="2" value="The Tale of Ericsson, the famous adventurer in Ossyria, is famous even amongst people who've never seen him. You brought a Dry Treat for his pet cat Nero and received his tale in return." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="ㅁㄴ" />
+            <imgdir name="yes">
+                <string name="0" value="허화ㅓㅘ" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="ㄱ쇼교" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001205" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2120008" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been tough collecting the tales I've requested, hasn't it? Let me inform you of one thing that might help you, #h0#. Maple World is filled with experienced heroes and they have more stories to tell than anyone else in the world." />
+            <string name="1" value="Tales you acquire from them will be extremely valuable. So  how about finding and talking to #bEricsson#k in Orbis?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ericsson has a black cat named Nero, and I recommend you bring him 1 #bDry Treat#k as a gift for his pet." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It would be helpful to hear Ericsson's tales." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Arrrg! Oh, hey! I didn't see you there. What brings you here?\r\n#b#L0#I want to hear your tales.#l" />
+            <string name="1" value="Tales, huh? I don't have any to tell. I'm just enjoying life with my cat. Oh, Nero seems hungry.#b\r\n#L0#I brought a Dry Treat for your pet.#l" />
+            <string name="2" value="Thank you. Nero won't eat anything but Dry Treats. I want to reciprocate the kindness you have shown me... Do you just need to hear my tales?#b(Ericsson takes out a pencil and begins to scribble something.)#k\nI'm not a very articulate speaker and writing is much easier for me. I'm a little embarrassed, so please don't read it here." />
+            <imgdir name="yes">
+                <string name="0" value="Go on, now. I have to take Nero for a walk soon." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Go see Ericsson in Orbis." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Oh, Nero seems hungry. What do I do? My Nero is a picky eater and won't go near anything but Dry Treats." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2120008" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <int name="infoNumber" value="10057" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="000" />
+                </imgdir>
+                <imgdir name="1">
+                    <string name="value" value="100" />
+                </imgdir>
+                <imgdir name="2">
+                    <string name="value" value="010" />
+                </imgdir>
+                <imgdir name="3">
+                    <string name="value" value="110" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10052" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001205" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <string name="start" value="2008101300" />
+            <string name="end" value="2008103000" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

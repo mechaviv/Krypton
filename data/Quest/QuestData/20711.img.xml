@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20711.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fake Doll" />
+        <int name="area" value="15" />
+        <string name="0" value="Agent #b#p1103002##k of #m103000000# found a new information he'd like to share with me." />
+        <string name="1" value="#p1103002# told me that the dolls inside the trash can were fake and that the real dolls may have already been absorbed by #o1210103#s. He then assigned me to defeat #r100 #o1210103#s#k and bring back #b30 #t4032137#s#k...\n\n#o1210103##r #a207111##k \n#i4032137# #t4032137# #b#c4032137# / 30#k" />
+        <string name="2" value="I was able to eliminate the #o1210103#s and bring back #t4032137#s to #p1103002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032137" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, bad news. The doll you found inside the trash can is fake! I think the real dolls have already been absorbed by #o1210103#! In this case, your mission right now is to eliminate #o1210103# and bring back #t4032137# in return. You can do it, right?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll need you to slay about #r100 #o1210103#s#k, and bring back #b30 #t4032137#s#k from #o1210103#. That should be enough to have at least one real doll mixed in." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You refurse to do it? Do you want me to file a report to #p1101002# right this minute?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay so you managed to defeat #o1210103# and retrieve the doll. Let's see..." />
+            <imgdir name="yes">
+                <string name="0" value="...Come to think of it, that's a lot of dolls you brought here. How am I ever going to find out which one of these is real? Okay... so while I go through these dolls one by one, I want you to go out and train... I mean, see me when you reach #bLevel 17#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please defeat #r100 #o1210103#s#k and bring back #b30 #t4032137#s#k. The odds should be in our favor that at least one of them is real." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Please defeat #r100 #o1210103#s#k and bring back #b30 #t4032137#s#k. The odds should be in our favor that at least one of them is real." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032137" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210103" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20710" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="16" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

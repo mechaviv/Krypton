@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="5069.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Easter : Mad Bunny's Easter(Red)" />
+        <int name="area" value="50" />
+        <string name="0" value="I heard Mad Bunny isn't too happy with Easter. I should go talk to him and see what's up.." />
+        <string name="1" value="Mad Bunny needs #b10 Red Easter Eggs#k and an #bEaster Basket#k from me. He may be one angry bunny, but he did promise to pay me well for my service. \n\n#t2022538# #b#c2022538#/10#k\n#t4031283# #b#c4031283#/1#k" />
+        <string name="2" value="I gave him #b10 Red Easter Eggs#k with the #rEaster Basket#k and he gave me an #bEaster Charm#k with some EXP. Not bad." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4140903" />
+                    <int name="count" value="1" />
+                    <int name="period" value="129600" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022538" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031283" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Yeah, you heard me right, I hate Easter. I come from a long line of Easter Bunny's, but I'm not down with all that painting and scavenger hunting nonsense.\r\nDon't get me wrong. I did my time at Easter Bunny School, but they told me I don't have painting skills. I got skillz... graffiti skillz that is!" />
+            <string name="1" value="Besides, you think I want to walk around all night climbing trees and looking for bushes to plant some stupid boiled eggs. Hells no! You should join my crew and take down Easter. If you do, I'll hook you up." />
+            <imgdir name="yes">
+                <string name="0" value="Good. My cousin is an Easter Bunny and he's been planting eggs all week long. What's worse is that his buddy has been giving away Easter Baskets. Get me #b10 Red Easter Eggs#k and #b1 Easter Basket#k and I'll give you something worth your while!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You just wasted my breath. Get lost!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have the #bEaster Basket#k and the #b10 Red Easter Eggs#k like I asked you to get. I'm sure it was a piece of cake for you to get all those." />
+            <imgdir name="yes">
+                <string name="0" value="My posse and I will be putting these to good use, if you know what I mean. Oh yeah...I always pay my debts on time. Talk to me later and we'll do it again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You trying to scam me! I need #b10 Red Easter Eggs#k and #b1 Easter Basket#k! Remember the plan..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9200001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031283" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022538" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200001" />
+            <int name="lvmin" value="70" />
+            <string name="end" value="2009040700" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

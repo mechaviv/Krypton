@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8073.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="2nd Code" />
+        <string name="parent" value="A Puzzling Code" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="After solving the code, I found out there's a clue in Sleepywood! I better go there immediately." />
+        <string name="1" value="Based on the bizarre-looking statue in Sleepywood, I was enable to find another code. What would this code imply?" />
+        <string name="2" value="After solving the code written on the bizarre-looking statue, I headed over to a small grave." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="nextQuest" value="8074" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(Something's engraved on the statue. It seems like a sentence. I should try reading this...)" />
+            <imgdir name="yes">
+                <string name="0" value="I'm here as your savior. \nChosen out of millions of possibilities, and \nhave been silently with you from then on out. \nTake the fit body of mine, and engrave your mark on my chest. \n If you blow on me while standing still. \n People want you, and gather up in front of me, and they'll have to just pray... \n\nWho am I?" />
+                <string name="1" value="(This... is the 2nd Code? What does this mean...?? Where am I supposed to go after this?)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="(Hmmm ... should I not read this, yet?)" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(Based on the code, I found myself standing in front of a small grave in the middle of snow valley. If I deciphered to code right, something should be here...)" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="(What's the meaning of the 2nd Code?)" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8072" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="69" />
+        </imgdir>
+    </imgdir>
+</imgdir>

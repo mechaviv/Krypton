@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10481.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Maple Administrator's Congratulations" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lvl. 20, the #p9010000# starts talking to you..." />
+        <string name="1" value="The Maple Administrator congratulates you for reaching Lvl. 20 and casts the Dragon's Blessing on you. According to her, #p9010010# is also very excited about the growth of the Dragon Master... #bShe says that you can receive a gift from #b#p9010010##k by reaching #bLv. 30#k by May 5." />
+        <string name="2" value="The Maple Administrator congratulates you for reaching Lvl. 20 and casts the Dragon's Blessing on you. According to her, #p9010010# is also very excited about the growth of the Dragon Master... #bShe says that you can receive a gift from #b#p9010010##k by reaching #bLv. 30#k by May 5." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <string name="startscript" value="q10481s" />
+            <int name="lvmin" value="20" />
+            <string name="end" value="201005050000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2172.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What is it that Bart saw?" />
+        <string name="parent" value="A Mysterious Presence On-board The Nautilus" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="Let me take Bart's status report to #bBaine#k." />
+        <string name="2" value="I've delivered Bart's report to Baine. By the look on Baine's face, it seems that there's something fishy going on." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031845" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031845" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2173" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, here it is! Can you please give this to Baine for me?" />
+            <imgdir name="yes">
+                <string name="0" value="This document is very important, and you must not lose it. Please give this to #bBaine#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not a hard task, but if you are too busy... there's nothing I can do." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? Is that true? So Bart detected something strange as well? Oh no... this is serious now. If that strange being is indeed a spy for the Black Magician, then this is going to throw the world upside down. I better read the report carefully!" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm... I better start reading this report thoroughly." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I told you to take it to Baine." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="For you to lose such a valuable item like that... you must be subpar at keeping things around. I'll give you another copy, but don't lose it this time." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031845" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1094000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2171" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

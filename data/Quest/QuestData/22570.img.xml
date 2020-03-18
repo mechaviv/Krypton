@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22570.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Crew Member's Voyage Log" />
+        <string name="parent" value="Information about the Slumbering Dragon Island" />
+        <int name="order" value="2" />
+        <int name="area" value="7" />
+        <string name="0" value="Get the book containing a clue about Onyx Dragons from #b#p1032001##k in #b#m101000000##k." />
+        <string name="1" value="The book is a Voyage Log written by some crewmember. #bRead through the book#k and ask #p1032001# about the book's author." />
+        <string name="2" value="The book's author is a person named #p0020000# who lives in #b#m104000000##k. Go see #p0020000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161051" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161051" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This book was written by a crew member. It's a Voyage Log he wrote. It contains all the struggles he encountered, but towards the end, it mentions something rather interesting. I think that's the part that would help you. Here, take the book." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I don't have to explain everything. It's really up to you to use it to your benefit. Go ahead and read it. It isn't too long, so #bread through it and return it to me soon#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm... What's wrong? Do you have too many things in your Inventory? I'll wait so talk to me again when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you finish reading the #t4161051#? That was fast. You're a speed reader! Which page had information about Onyx Dragons?\r\n#L0##bPage 15#l\n#L1#Page 17#l\n#L2#Page 18#l\n#L3#Page 20#l\n#k" />
+            <string name="1" value="Right, that was the page. And the date the crewmember wrote that was... Wait, when was it again?\r\n#L0##bJune 29th#l\n#L1#July 8th#l\n#L2#July 13th#l\n#L3#August 2nd#l\n#k" />
+            <string name="2" value="Do you remember the name of the crew member's ship? It was really unique... \r\n#L0##bThunder Bolt#l\n#L1#Thunder Bird#l\n#L2#Under Bolt#l\n#L3#Usain Bolt#l\n#k" />
+            <string name="3" value="It says there was a giant Dragon in the island the crewmember arrived in. Do you remember how many horns the Dragon had?\r\n#L0##bNone#l\n#L1#One#l\n#L2#Two#l\n#L3#Four#l\n#k" />
+            <string name="4" value="Oh, right. That's why I said the Dragon mentioned in the Voyage Log might be an Onyx Dragon. Most Dragons don't have that many horns. I'm sure the Dragon this crew member saw was an old Onyx Dragon. But for all I know, he could have just made it up.\r\n#L0##bWhat can I do to find the truth?#l\n#k" />
+            <string name="5" value="That's simple. You can just go find the author and ask him yourself. If you read the book carefully, you should have caught the name of the author. Do you remember the name of the crew member who wrote the Voyage Log?\r\n#L0##bRetired Crewmember #p0020000##l\n#L1#Retired Crewmember Teo#l\n#L2#Retired Crewmember Kyrin#l\n#L3#Retired Crewmember Gustav#l\n#k" />
+            <string name="6" value="Right, that was his name. If you find #p0020000# and ask him, I'm sure you'll get information about the island where he saw the Onyx Dragon. Oh, you know know #p0020000#? He lives in #m104000000#. Go to #m104000000# if you want to find him." />
+            <imgdir name="yes">
+                <string name="0" value="I heard he's already retired, but I'm not sure." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Was there something about a Dragon on that page? I don't think so..." />
+                    <string name="2" value="Was there something about a Dragon on that page? I don't think so..." />
+                    <string name="3" value="Was there something about a Dragon on that page? I don't think so..." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="3" />
+                    <string name="0" value="I don't think that's the correct date. Read it again." />
+                    <string name="1" value="I don't think that's the correct date. Read it again." />
+                    <string name="3" value="I don't think that's the correct date. Read it again." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I don't think that was his name..." />
+                    <string name="2" value="I don't think that was his name..." />
+                    <string name="3" value="I don't think that was his name..." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Hm, I don't think that's the correct number..." />
+                    <string name="1" value="Hm, I don't think that's the correct number..." />
+                    <string name="2" value="Hm, I don't think that's the correct number..." />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hm... He hasn't retired yet." />
+                    <string name="2" value="Kyrin is a very active pirate. Haha." />
+                    <string name="3" value="Did you forget who your father is? Haha!" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Haven't you read the book yet? Huh? You lost the book? Why don't you forfeit the quest and talk to me again?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh boy, you dropped the book. Here you go. Be careful with it and return it to me in one piece." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161051" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22569" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

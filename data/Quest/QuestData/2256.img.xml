@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2256.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Karcasa's Memory 2" />
+        <string name="parent" value="About the Mushroom Castle..." />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="You gave in to Karcasa's demands in order to find out more about the Mushroom Castle. Now, he seems like he's going to ask you for another favor! Does he even know anything about the castle?" />
+        <string name="1" value="How could an oasis be created with water bought from a store? Anyway, you need to give in to his demands in order to find out more about the castle, but he seems awfully suspicious.\r\n" />
+        <string name="2" value="Is he trying to make a fool out of you?" />
+        <string name="demandSummary" value="\r\n#i2022000:# #t2022000:# #c2022000# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 2,000\r\nCan proceed to 'Karcasa Relents' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, now I remember! Mushroom Castle is a palace where mushrooms live. It's currently in danger, thanks to a mass betrayal. Do you want to know more?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, then I'll need one more thing from you. This one's simple. I need you to head over to Ariant and get me a bottle of #bPure Water#k, since I need to fill up an oasis nearby." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Guess you're not as interested about Mushroom Castle as you said you were..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Ohh, nice. There's nothing that captivates the visitors of a desert quite like an oasis! Ah, anyway, what did you need me for again?\r\n#b#L0#Mushroom Castle! Come on!#l\n#k" />
+            <string name="1" value="Oh yeah. You're talking about the Mushroom Castle, right? It's part of the Mushking Empires. I've heard that Mushking is going through some troubles as of late. Do you want more on this story? \r\n#b#L0#You already told me this earlier!#l\n#k" />
+            <string name="2" value="Ah… Did…did I really?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What? You don't even know where you can find that? Buy it at a department store in Ariant." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2255" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3315.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maed's Experiment" />
+        <string name="parent" value="Alcadno and the Missing Alchemist" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The missing alchemist from Alcadno who caused that terrible explosion... He must have done some significant research and experiments. The only person that is still aware of his work seems to be the president of Alcadno, #bMaed#k..." />
+        <string name="1" value="#p2111001#, the head of Alcadno Society, told me if I wanted to know more about the missing alchemist, then I'll have to prove him my worth by destroying #r#o7110301##k.\n\n#o7110301# #r#a33151##k " />
+        <string name="2" value="As ordered by #p2111001#, I was able to destroy all the #o7110301#s. Now, maybe he'll share a secret or two about the missing alchemist..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You... are the young alchemist that received #t1102136# not too long ago... how can I help you? Do you need help on your research? Hmm? A missing alchemist? A missing alchemist... that must be... #r#p2111002##k. I advise you not to delve too deep into this. He concocted an experiment that endangered many lives...\r\n#b#L0#Don't you think a true Alcadno alchemist would pursue the answer at all cost, even if in danger?#l" />
+            <string name="1" value="...Well... If you say it like that, then I don't know what to say. I do know that I can't tell you everything about #p2111002#. You do not have the right to know, and I do not have the right to share it with others. No one knows anything substantial about that alchemist. There's no way anyone would know.\r\n#b#L0#I don't think it's a good idea to just cover up the truth.#l" />
+            <string name="2" value="...You're not wrong on that. Actually, you are right on that. Maybe it's time to search for the truth... and we need someone who's capable of carrying out this project... but that doesn't mean I'll have to share the story of De Lang with you. I want you to prove your worth first. If you do, then I will share more information on #p2111002#. " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="As a proud alchemist of Alcadno, I want you to do something for Alcadno. It's not going to be easy, but... what you'll need to do is eliminate #r100 #o7110301##k. Zenumists secretly attack us in the middle of the night with them, so... by destroying them, it'll really help Alcadno out." />
+                <string name="1" value="I am telling you this in advance, but #o7110301# is very powerful... Maybe you'll have to risk your life to do this, but if you can't pull this off... then how can I put my trust in you on other tasks? Please head over to the #bbasement lab of Zenumist#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't help you if you can't find a way to prove your worth. I can't tell you anything about De Lang.&#x9;" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you were able to defeat #o7110301# and come back safe. I can't say I have total trust in you, but... I am at least sure that you are NOT a Zenumist. That's enough. It's impossible to shield it from other people for too long, anyway... so... I'll now put you in charge of #p2111002#'s investigation. " />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you were able to slay all #r100 #o7110301#s#k... Please make me believe in you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7110301" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3314" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102136" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

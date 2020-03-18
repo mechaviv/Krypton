@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8024.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yoona's Quiz on Shopping 4" />
+        <string name="parent" value="Yoona's Quiz on Shopping" />
+        <int name="order" value="5" />
+        <int name="area" value="20" />
+        <string name="0" value="I better solve Yoona's 4th question on shopping." />
+        <string name="1" value=" I can see the light at the end of the tunnel--I'm nearly done! Time to solve question number 4!" />
+        <string name="2" value=" I learned something about number of uses on an item. I can only use an item so such until it vanishes. At that point, I'll have to acquire another one if possible..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8025" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, you're more than halfway done now! Can you answer the 4th question?" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Memo #v05090000# can be sold according to the number of uses, what is not the number of bundles sold in the cash shop?\n\n#L0##bOnce#l\n#L1#11 times#l\n#L2#35 times#k#l" />
+            <string name="1" value="Excellent ! I'm impressed!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="I think without the 1-time-use ones, it'll be difficult to use it. Check the Cash Shop again." />
+                    <string name="1" value="Hey, maybe you're confused with some other item Check the memo again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8023" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

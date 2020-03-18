@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21739.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To the Sealed Garden" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You'll find #m920030001# in #m200000000#... You wonder if it's related to the Seal Stone. You bet #b#p2032001##k in #b#m200050000##k can explain a thing or two." />
+        <string name="1" value="According to #p2032001#, #m920030001# is where the #bSeal Stone is hidden#k. The only way to enter #m920030001# is through a stem of the Nependeath which connects #m200060001# to #m920030001#. An intruder has actually grown the #o9300347# for this specific purpose. #p2032001# is desperately asking you to prevent the intruders from entering..." />
+        <string name="2" value="So you came face to face with a #o9300348# in #m920030001# and successfully defeated it, but ended up losing the Seal Stone to a member of the Black Wings, #o9300349#, who snatched it away from you. When you asked #p2032001# what you should do, she told you that she doesn't know what they want the Seal Stone for and sat quietly with a grim expression." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Honestly, I don't know much about #m920030001# either. All I know is that under the order of the Empress, the #bgarden with the hidden Seal Stone#k is off limits to anyone trying to enter the premise. It's that sacred." />
+            <string name="1" value="There's only one way to get to #m920030001#. There's a #bflower pot at the center of#k #m200060001#, and you must make the Nependeath inside the pot grow so it'll connect to #m920030001#. Then you climb up the branches all the way to #m920030001#." />
+            <string name="2" value="Which means… The reason the #o9300347# was found in #m200060001# is because #rsomeone is trying to enter #m920030001##k. Although the intruder failed because their approach was incorect, they will be back, and they will succeed. We'll need to prevent them from doing that, and... it'll be up to you to stop them." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Your fate is so deep and so complex that I can't read it all, but one thing is sure. You're the protector of Maple World. Now go do what you're here to do…" />
+                <string name="1" value="Now please head over to #b#m920030000##k. If you see a #bpath of Nependeath stems there, that means someone has already intruded#k! Please eliminate the intruders for us. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You can't escape your destiny. This is your calling." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Haven't you gone to #b#m920030001##k yet? The intruder is probably still there! Go catch him!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+            <string name="endscript" value="q21739e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300348" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21738" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

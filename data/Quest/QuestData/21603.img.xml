@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21603.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ryko the Wolf Pup" />
+        <int name="area" value="6" />
+        <string name="0" value="Is the #t4032332# ready? You should talk to #b#p2060000##k of #b#m230010201##k." />
+        <string name="1" value="You receive the completed #t4032332# from #p2060000#. This should be enough to raise the Wolf Pup for a bit. You should head to #b#m140000000##k right away and give #b#p1202007##k the formula. Pucci is probably waiting somewhere around the #bSnowy Field 2#k." />
+        <string name="2" value="Having finished the formula, the Wolf Pup seemed to have taken a liking toward you. #p1202007# ended up giving you the wolf pup, which he named #t1902015#, to raise. You vow to take good care of him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032332" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032332" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, here's the #t4032332#! This should really do the trick for your growing wolf pup! Would you like to put the formula in your inventory right now?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, make sure to give your pup the formula before it gets too cold. If you have any other questions about raising wolves, feel free to ask me, okay? Have fun!" />
+                <string name="1" value="#b(You get the formula for the wolf pup. Time to return to Pucci. He should be somewhere around Snowy Field 2.)#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please think again. The formula won't taste as good if it's cold." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You're back! Did you meet #p2060000#? Wait…is that #t4032332#? Did you get that for the wolf pup? Oh my goodness, thank you so much! I'm going to feed the pup right now!" />
+            <imgdir name="yes">
+                <string name="0" value="Oh my goodness, the pup just opened its eyes! The formula must be really doing the trick. Wait a minute, the pup…looks like it wants to follow you around, dear hero…" />
+                <string name="1" value="I guess even the wolf pups recognizes someone that's saved their lives. Seriously, it's really following you! *Sigh* If that is the case, I give up. There's no other choice but for you to raise this adorable wolf pup." />
+                <string name="2" value="I named it #t1902015#. Isn't that an awesome name? You'll be taking care of this wolf pup from here on out, okay?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you not deliver the #t4032332# yet? It's a pup, so it needs to be fed constantly or it'll be weakened beyond help. Please go see #bthe wolf pup's guardian#k. Hurry." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't you gone to see #b#p2060000##k yet? I'm sure #p2060000# knows what you have to do to take care of wolf pups…" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no…did you lose the #t4032332#? Good thing there's enough for another batch. I'll give you the rest, so please don't lose it this time!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032332" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21601" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

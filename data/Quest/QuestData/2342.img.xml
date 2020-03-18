@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2342.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Recovered Royal Seal" />
+        <int name="area" value="30" />
+        <string name="0" value="#bPrincess Violetta#k says she has something for you." />
+        <string name="2" value="You recovered the lost #t4001318#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1300002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2333" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001318" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2342s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

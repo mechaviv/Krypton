@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20611.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Another New Skill for Dawn Warriors" />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="I better ask #b#p1101003##k about this new skill per comments from #p1101002#." />
+        <string name="1" value="#p1101003#told me that if I wanted to learn a new skill, I'll have to prove my skills again by entering #bHall #4#k at #m130020000#, where a tougher test will take place... \n\n#i4032125# #t4032125# #b#c4032125# / 1#k" />
+        <string name="2" value="I managed to defeat the boss monster again and brought back #t4032125# in return. #p1101003# told me I have proven that I deserve to learn the new skill and taught me Advanced Combo Attack." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032125" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="11110005" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="1111" />
+                        <int name="1" value="1112" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...What is it? A new skill? ...It must be #p1101002# again. I already know how stubborn you are with this, so I will teach you the skill, with one caveat of course." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to #bthe 4th Drill Hall#k of #m130020000#, and take the test. After that, bring back #t4032125#, and I will teach you the new skill as promised." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You once had a stubborn will to succeed... Where did it go? I miss that about you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I am impressed to see that you have brought back #t4032125#. You are definitely ready to learn this skill." />
+            <imgdir name="yes">
+                <string name="0" value="I will now teach you a new skill for the Dawn Warriors, #bAdvanced Combo Attack#k. Use this skill to bring honor to the Empress." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have yet to bring back #b#t4032125##k, which is understandable. The test is set up at #bthe 4th Drill Hall#k of #m130020000#. It's a similar spot, but the difficulty has been raised quite significantly." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032125" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20610" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="110" />
+            <imgdir name="job">
+                <int name="0" value="1111" />
+                <int name="1" value="1112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

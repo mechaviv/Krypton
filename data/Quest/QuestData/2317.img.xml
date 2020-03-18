@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2317.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Killer Mushroom Spores (1)" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1300007##k the mushroom scholar told you that he knows how to create a #bKiller Mushroom Spore Potion#k… Now you should do something about it." />
+        <string name="1" value="You need to gather the #b100 Poison Mushroom Caps#k required to make the #bKiller Mushroom Spore Potion#k and take them to #b#p1300007##k." />
+        <string name="2" value="You gathered the #b100 Poison Mushroom Caps#k required to make the #bKiller Mushroom Spore Potion#k and gave them to #b#p1300007##k." />
+        <string name="summary" value="You need to gather the #b100 Poison Mushroom Caps#k required to make the #bKiller Mushroom Spore Potion#k and take them to #b#p1300007##k." />
+        <string name="demandSummary" value="#i4000500:# #t4000500:# #c4000500# / 100\r\n" />
+        <string name="rewardSummary" value="EXP 13,500\r\nCan proceed to 'Killer Mushroom Spores (2)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="13500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000500" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2318" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah! If I am not mistaken, I think I saw something about the #bKiller Spore Potion#k in a book way back when I was a little kid. Now I remember… It's made out of powerful poisons extracted from Poison Mushrooms, which means you'll need some Poison Mushroom Caps. If you can get me some of those caps, I should be able to make the potion." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please defeat some #bPoison Mushrooms#k and bring back #b100 Poison Mushroom Caps#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Breaking through the barrier requires Poison Mushroom Caps. Talk to me when you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring back 100 Poison Mushroom Caps like I asked you to?" />
+            <imgdir name="yes">
+                <string name="0" value="I am amazed that you were able to collect 100 Poison Mushroom Caps, which is considered a difficult feat. I think I'll be able to make a #bKiller Spore Potion#k out of these." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Making the #bKiller Spore Potion#k will require 100 Poison Mushroom Caps." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000500" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2316" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2211.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Deliver the Tattered Map to Black Bark" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder what it is that Bartol wants me to do?" />
+        <string name="1" value="I should deliver this #bTattered Map#k to #bBlack Bark#k in the #bCentral Conference Room of The Nautilus#k." />
+        <string name="2" value="I've delivered the Tattered Map to Black Bark. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031892" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031892" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="First, give this ripped piece of the map to Black Bark." />
+            <imgdir name="yes">
+                <string name="0" value="This map was found in the treasure chest that was discovered yesterday, and... I think Black Bark would really love this. Who knows, this map may lead to lots of treasures you know. Black Bark is always at the #bmeeting room in the middle hallway of The Nautilus#k, so go see him." />
+                <string name="1" value="Do the three favors I asked you to do, and you'll get the Warp Card. Keep going!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't feel like doing it anymore?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Bartol told you to give this map to you? Ohh, so this is a very old map." />
+            <imgdir name="yes">
+                <string name="0" value="In fact, it is so ancient that the way they used symbols and outlines here looks like this map is at least a few hundred years ago. This really is making me feel excited about the maps. Hahaha, thank you so much for the find, and tell Bartol I said hello, too." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please give this map to Black Bark." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Are you here to learn how to read the map from me?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost it, right? I just picked these off the floor, you know. Don't lose it, because it's a very precious item, and give it to Black Bark." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031892" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2208" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="200801010000" />
+            <string name="end" value="200801020000" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

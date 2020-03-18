@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3442.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Chat with Nara the Tour Guide" />
+        <string name="parent" value="VIP Ticket to Florina Beach" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="Nara said a Ripped VIP pass will not work, nor can it be re-published, but the way to leave may be easier by paying a visit to Shuri, the the Tour Guide at Orbis." />
+        <string name="2" value="Hmmm ... so something as simple as making a new ticket cannot be done, huh. Alright, since I'm here and all, why don't I just take a crack at it til the very end?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So you have my lost VIP pass? Oh no... someone ripped it out. I can't use it as the VIP pass when it's ripped like this!!" />
+            <string name="1" value="This VIP pass is no ordinary ticket; it allows the possessor to freely teleport back and forth from continents to Florina Beach. It's a very special item, so it cannot be reissued... Maybe the other Tour Guide, Shuri, has a clue on what to do with the ticket. Do you want to go see her right now?" />
+            <imgdir name="yes">
+                <string name="0" value="Shuri the Tour Guide is currently on duty guiding people on traveling around Orbis. The skies at Ludibrium look beautiful, but I'd much prefer working under the splendid skies, and weather, of Orbis." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, that's unfortunate. The ripped travel ticket really has some value to it, enough to make it a keeper. If you ever find yourself intrigued by this ticket, then talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I heard about it through Nana of Ludibrium. You have the ripped VIP ticket with you?" />
+            <string name="1" value="Will you show it to me?" />
+            <imgdir name="yes">
+                <string name="0" value="This is the VIP pass, indeed. I wonder who would rip it up like this... but then again, if you are interested in this, then I can tell you a way to fix it..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you go to Orbis? You still have the ticket ripped in pieces..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2010005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040048" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3441" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031243" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031207" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

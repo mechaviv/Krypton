@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9840.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. Winston's Research" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="You must eliminate the monsters that are getting in the way of Dr. #b#p1022006##k's research and report back. \n\n#o0130100# #r#a98401##k \n#o1110101# #r#a98402##k" />
+        <string name="2" value="You were a great help in Dr. #b#p1022006##k's research." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello! Hello! Can you hear me? If you can hear me, I need a favor!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Whew! I've been yelling so much I'm all out of breath. Give me a second. Gasp... Gasp... Why have I been yelling so much you ask? It's because I have a favor to ask. Professor Winston says that the increasing number of Stumps are wreaking havoc on his research." />
+                <string name="1" value="So please eliminate 30 #r#o0130100#s and 20 #r#o1110101#s and deliver the news to Professor #b#p1022006##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you trying to act like you can't hear me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Eliminate 30 #r#o0130100#s and 20 #r#o1110101#s that are interefering with the Professor's research and deliver the news to Professor #b#p1022006##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate 30 #r#o0130100#s and 20 #r#o1110101#s that are interfering with my research." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022006" />
+            <string name="endscript" value="huntUP1" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="101030400" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

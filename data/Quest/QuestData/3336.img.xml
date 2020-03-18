@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3336.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Acquiring the Seed for the Snowfield Rose" />
+        <int name="area" value="33" />
+        <string name="0" value="The #t4031696# that #p2111003# requested can only be obtained through #b#p2020005##k at #b#m211000000##k. I better go talk to #p2020005#." />
+        <string name="1" value="#p2020005# said #t4031696# is something only the alchemists are aware of, and seemed surprised that I knew it. He then promised to give me #t4031696# as long as I defeat #r100 Leattys#k for him. \n\n#o5300000# #r#a33361##k" />
+        <string name="2" value="I finally received #t4031696# from #p2020005#. Good, now I better get back to #p2111003#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="What do you want from an old guy like me? If it's about magic or alchemy, I can help you, but...what? A Snowfield Rose seed? Yes, I have a few, but how in the world did you know about that? " />
+            <string name="1" value="The Snowfield Rose is a flower borne out of alchemy.  Some may say its an abomination of nature, but I look at it as enhancement of nature's flawed qualities.  Most people don't know that. I don't think you are an alchemist either, so I am baffled as to how you found out about it..." />
+            <string name="2" value="The seed of the Snowfield Rose is a special, rare item. I can't give it to you for free...however, if you do me a favor, then I will give you one. Deal?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to defeat 100 Leattys. Everyone in town have been vocal about how they are destroying Orbis Tower, so if you help them out by defeating Leattys, then I'll give you the seed of the Snowfield Rose." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you decline this offer, then I can't give you the seed of the Snowfield Rose either. I am sorry, but its much too valuable, even dangerous in the wrong hands. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031696" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What do you want from an old guy like me? If it's about magic or alchemy, I can help you, but... what? #t4031696#? Yes I do have those, but... how do you know about it?" />
+            <string name="1" value="#t4031695# is a flower borne out of alchemy. Most people don't know that. I don't think you are an alchemist either, so I am baffled as to how you found out about it..." />
+            <string name="2" value="#t4031696# is a special, rare item. I can't give it to you for free... but if you do me a favor, then I will give you one. Deal?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to defeat #r100 Leattys#k. Everyone in town have been vocal about how they are destroying Orbis Tower, so if you help them out by defeating Leattys, then I'll give you #t4031696#. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you decline this offer, then I can't give you #t4031696# either. I am sorry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh.... So you were able to defeat all 100 Leattys. I am very impressed. Here, please take it. It's #t4031696#." />
+            <imgdir name="yes">
+                <string name="0" value="But in order to put this in full bloom, an alchemist will have to help you do that. I don't know how you are going to try to put #t4031695# in full bloom, but... the seed itself isn't worth much." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r100 Leattys#k yet... please hurry. Leattys are causing much distress to the people here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5300000" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3334" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031696" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6302.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Carta's Worn Bracelet" />
+        <string name="parent" value="Strong Will" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value="#p2060100# said that the will power needs to be made into medicine for it to be absorbed back. However, she said she won't do it unless I bring her her #b#t4031463##k.  She says I can get it from #b#p2040050##k." />
+        <string name="2" value=" Would #b#p2040050##k know about  #p2060100#'s bracelet?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="35000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The Will was broken into pieces and, as you can imagine, quite difficult to re-assemble. I don't have to help you with that. It's not easy to make such medicine. It's not what a witch is supposed to do. \r\n#b#L0#That's because you threw it away into the cracked dimension.#l" />
+            <string name="1" value="...Humans deserve it. \n\n#b#L0#What do you mean?#l" />
+            <string name="2" value="...I can't do it any more. I tell you this. Grendel the Really Old in Ellinia and Robeira in El Nath can't do it. It's me, #p2060100#, who can do it.  \n\n#b#L0#(Is Carta that great?)#l" />
+            <string name="3" value="It's fine if you don't want to.  What else are you going to do with the Pieces of Will? *laughs*" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Good. Griffey would have my bracelet. It's worn out. Don't bring it as it is. Give it to Wandering Researcher, #p2040050# so that he will compound it with #t4011002#. When you bring me a perfect Mithril bracelet, I'll give your Will back to you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's fine if you don't want to. What are you going to do with the Pieces of Will?  *laughs*" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello! Magic, metal, plants and mineral... I'm studying everything! If you have any questions, I'll help you." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You couldn't get #t4031463#. I can't give you the medicine." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6301" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+                <int name="13" value="2112" />
+                <int name="14" value="2217" />
+                <int name="15" value="2218" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1121011" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

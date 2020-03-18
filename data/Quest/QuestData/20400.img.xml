@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20400.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chasing the Knight's Target" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1101002# seems to have a new assignment for me." />
+        <string name="1" value="I have received a new assignment. The assignment deals with supporting Advanced Knight #p1103000# that is chasing the Black Wings that are targeting the Empress. The last trace of #p1103000# was found in #b#m211000000##k, and he has instructed me to go to #m211000000# to find #p1103000#." />
+        <string name="2" value="I have received a new assignment. The assignment deals with supporting Advanced Knight #p1103000# that is chasing the Black Wings that are targeting the Empress. The last trace of #p1103000# was found in #m211000000#, and he has instructed me to go to #m211000000# to find #p1103000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="It's a new mission. According to the information we acquired, a member of the #rBlack Wings#k is targeting the Empress. In order to prevent that, Advanced Knight #b#p1103000##k has been secretly tracing that individual, but it doesn't look too good from here." />
+            <string name="2" value="If it's Victoria Island, at least we know everything that goes on there. This one's Ossyria, where not even the intelligence officials know everything inside out. This means the Advanced Knight will need help. Please provide help to #p1103000#. The last place she contacted was at #b#m211000000##k, so try looking for #p1103000#." />
+            <string name="0" value="It's been a while since I last saw you. I can't even recognize you now, seeing how powerful you have become since our last meeting. I can honestly say that you just might be one of the most powerful Knights in all of Cygnus Knights, Chief Knights included. Okay, enough pleasantries. Let's get down to business." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Hmmm... you seem way too at ease. It's a waste of talent and firepower for an accomplished individual like you to just sit around, being content with the way things are..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Well, I know I may have talked to you like this is a joke, but it is true that you are one of the better Knights, and that is why you are given a task with a huge responsibility. I'll be looking forward to your work." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <string name="startscript" value="q20400s" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="1111" />
+                <int name="1" value="1211" />
+                <int name="2" value="1311" />
+                <int name="3" value="1411" />
+                <int name="4" value="1511" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

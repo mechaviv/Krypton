@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4917.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="ReVersal" />
+        <int name="area" value="45" />
+        <string name="0" value="Elpam has adjusted his compass, but he still needs my help. I should travel back and see what he needs!" />
+        <string name="1" value="I went back to Elpam for more information, and he's explained that while he was able to adjust the compass, he needs to head back to the moment of his travel glitch to get back to his home safely. I have to hunt down #b60 Temporal Fragments#k and hand them over. That's a full minute and the perfect amount of time for him to travel back. The Tick-Tock monsters should have them, since they tend to keep time. HA!" />
+        <string name="2" value="I got all #b60 Temporal Fragments#k and returned them to Elpam. In return, he's given me a very nice prize he found floating in the rift...!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9500" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031675" />
+                    <int name="count" value="-60" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040810" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="So glad to see you, friend. I've got the compass adjusted, but could still use a hand if you're willing to lend it. \n\n#L0##bSure, as long as you give it back.#k\n#L1##bYou're sick! No way am I giving you my hands! They're mine!#k#l" />
+            <string name="1" value="Ha. Ha. Ha. That was a joke, as you call it? Fascinating. I'll need to travel back to the exact moment that everything went haywire. Doing so will allow me to go to my intended place and get home as normal. However, I'll need #b60 Temporal Fragments#k to give me enough time to do it. I believe the creatures you refer to as Tick-Tocks will have them, although it is a rather rare item. I will remain here until your return." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="You misunderstand...or maybe I do. Any rate, please return when you can help me." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I will need #b60 Temporal Fragments#k if I am to make the journey home. Please acquire them, and return to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ok... Please return when you can help me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Fantabulstanding work! My apologies if that phrase did not turn out the way I planned. I can now make the journey home. \n\n#L0##bHold on, Hold on! I have questions... like... tell me something crazy about Versal!#k#l" />
+            <string name="1" value="Very well, you have aided me, the least I can do is tell you a few tidbits about my home. The creature known as Mushmom is the most dangerous creature there...and she's not alone. \n\n#L0##bWHAT?#k#l" />
+            <string name="2" value="Your surprise is expected, but nevertheless, it remains the truth. It puzzles me as to why she is regarded as cute and lovable here... \n\n#L0##bWhy are you so pale?#k#l" />
+            <string name="3" value="Hmm. I do not believe my skin to be pale, it is a natural pigment. The sun only shines in Versal for a period of...3 munf? No, 3 months...out of one...what do you call them...year? I believe that is the correct measurement. At any rate, it is nice to see the sun glow so brightly here for an extended period. \n\n#L0##bHow do you get there?#k#l" />
+            <string name="4" value="I am still working on my way back, but when I do figure out how to bring others there, I will most assuredly notify you. In the mean time, in return for your effort, here is something I found between worlds." />
+            <imgdir name="yes">
+                <string name="0" value="May it serve you well and see you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="It seems as if you have, quite literally, &quot;lost time&quot;. I will need #b60 Temporal Fragments#k if I am to make the journey home. Please acquire them, and return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201055" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031675" />
+                    <int name="count" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201055" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4916" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

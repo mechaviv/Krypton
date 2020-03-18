@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8823.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Thanksgiving : Pumpkin Pie" />
+        <int name="area" value="50" />
+        <string name="0" value="Hmm...there's an old woman over in Henesys...maybe she needs some help cooking?" />
+        <string name="1" value="I spoke with that kind old woman, Grandma Benson, and she needs some help with baking the pies. I've agreed to gather #bthe ingredients#k for her, maybe she'll give me a pie to take with me...I hope so! \n\n#t4031418# #c4031418# / #r1#k\n#t4031419# #c4031419# / #r1#k#k\n#t4031420# #c4031420# / #r1#k#k\n#t4031421# #c4031421# / #r1#k" />
+        <string name="2" value="I finished gathering the ingredients for Grandma Benson, and she can finally bake the pies. I received a taste in return, and in something that can help me during a tough battle." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022113" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031418" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031419" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031420" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031421" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My, you look like a fine young spirit! Care to help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! I'm trying to make some pie, but those pesky monsters stole my ingredients! I'm sure gathering them will be no problem for a seasoned adventurer like yourself! I'll need #bPie Crust, Pumpkin, Flour, and Sugar#k. Bring them back to me, and I'll give you something that'll fix you right up! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Darn, I was hoping you'd help! Oh well, come back and see me soon!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Fantastic! This looks like enough to make the pie. As promised, here is a reward for your kindness. Don't let it get cold, eat up!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for your help! There's also a contest to see which guild can gather the most Pumpkin Pies. Check Nexon.net for details and come back soon!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have everything yet. Trying to fool an old woman? I've been your age, but you've never been mine. Remember, I need #bPie Crust, Pumpkin, Flour, and Sugar#k! Get going!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201029" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031418" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031419" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031420" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031421" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201029" />
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007121000" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

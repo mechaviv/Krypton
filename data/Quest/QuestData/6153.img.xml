@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6153.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sayram's Skill" />
+        <string name="parent" value="Song of forgotten warrior" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value=" #b#p1061012##k said the picture on the necklace points to #m910500200#, the deepest part in the entrance of the Shrine. He said that I would find the Singing Shield there.  However, he said #m910500200# would be locked so I would have to eliminate #o9500139# to get the key....Will I really get Sayram's shield there? The Insignificant Being tells me to try taking the key I already used for another world to #b#p2040052##k as well...This is getting interesting, I'd better keep my weapon close! \n\n#i4031471##t4031471# #b#c4031471#/1#k\n#i4031475##t4031475# #b#c4031475#/1#k" />
+        <string name="2" value=" I went to  #b#p2040052##k of #b#m222020000##k to find the singing shield. While talking to the Wiz, Wiz found the skill book from the singing shield.  This WAS the great warrior Sayram's skill! I have learned a new technique! Quite unexpected but excellent nonetheless. I shall use this in battle to defeat my enemies!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031471" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031475" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1121010" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="112" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1320006" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="132" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1221011" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="122" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I looked at the necklace you gave me. Though it was old, there are no spells casted on it. It is painted in details and not damaged at all. It must be valuable. Even a small necklace has value.. Unlike me.. Oh Well..." />
+            <string name="1" value="Sayram had this picture. He painted picture in the necklace to give it to #o8180001#...Is that right?" />
+            <string name="2" value="This picture shows #b#m910500200##k. Do you know? Sayram always kept precious things there. Perhaps you should visit there..." />
+            <imgdir name="yes">
+                <string name="0" value=" Hmm. Then go to the entrance of the Shrine. There is a way to the #bForgotten Shrine#k inside of the entrance" />
+                <string name="1" value="You have to catch #b#o9500139##k. They have a key. Without #b#t04031475##k, you can't go to #b#m910500200##k. Make sure you get it..." />
+                <string name="2" value="First, get #bSayram's shield#k and take it with the #bKey To Forgotten Shrine#k to #b#p2040052##k who asked for it. Do you wonder how I know all this? Age and wisdom tend to go hand-in-hand. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you willing to go there? Then I don't have to say you should go to #m910500200#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're looking for a singing shield! #t4031471# means Sayram really existed. What's this key? Ah! Key of the Forgotten Shrine?! Was there really a Forgotten Shrine? If there is enough evidence, then it means that the book is not just a legend, but an ancient book of true adventure! I'm excited. " />
+            <string name="1" value="This is the singing shield. Why isn't it singing? Maybe because he doesn't have his owner? Or is it broken? Or has the spell worn off? I think I can press this button on the side... Looks like I've got something here! A book...? Traveler, do you know about this book?" />
+            <string name="2" value="I see! This is Sayram's technique! I'm surprise to see it in the shield itself. The great warrior left this technique behind. It must be a great one. You deserve to use this technique as you helped a lot to study Sayram's legacy. Please learn this technique and show me what Sayram did. " />
+            <imgdir name="yes">
+                <string name="0" value="I hope you live up to the legend of Sayram. Someday, I wish to read a book about your adventures in the library." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Defeat the Junior Balrog at the entrance of the Shrine. They have a Key to #bForgotten Shrine#k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't you got Sayram's shield? Anyhow, we don't even know if it exists or not..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031475" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031471" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6152" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

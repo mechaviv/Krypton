@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29901.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Junior Adventurer" />
+        <int name="area" value="51" />
+        <int name="viewMedalItem" value="1142108" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="Adventurers who complete the 2nd Job Advancement will receive the #b&lt;Junior Adventurer&gt;#k title." />
+        <string name="1" value="Adventurers who complete the 2nd Job Advancement will receive the #b&lt;Junior Adventurer&gt;#k title. Let's go find NPC #p9000040#, who can be found in every town." />
+        <string name="2" value="You have earned the #b&lt;Junior Adventurer&gt;#k title by completing the 2nd Job Advancement as an Adventurer." />
+        <string name="demandSummary" value="Report to NPC #b#p900040##k and receive the honorable #t1142108# Medal." />
+        <string name="rewardSummary" value="#Wbasic#" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <string name="endscript" value="q29901e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142108" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29901s" />
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="110" />
+                <int name="1" value="120" />
+                <int name="2" value="130" />
+                <int name="3" value="111" />
+                <int name="4" value="121" />
+                <int name="5" value="131" />
+                <int name="6" value="112" />
+                <int name="7" value="122" />
+                <int name="8" value="132" />
+                <int name="9" value="210" />
+                <int name="10" value="220" />
+                <int name="11" value="230" />
+                <int name="12" value="211" />
+                <int name="13" value="221" />
+                <int name="14" value="231" />
+                <int name="15" value="212" />
+                <int name="16" value="222" />
+                <int name="17" value="232" />
+                <int name="18" value="310" />
+                <int name="19" value="320" />
+                <int name="20" value="311" />
+                <int name="21" value="321" />
+                <int name="22" value="312" />
+                <int name="23" value="322" />
+                <int name="24" value="410" />
+                <int name="25" value="420" />
+                <int name="26" value="411" />
+                <int name="27" value="421" />
+                <int name="28" value="431" />
+                <int name="29" value="412" />
+                <int name="30" value="422" />
+                <int name="31" value="432" />
+                <int name="32" value="433" />
+                <int name="33" value="434" />
+                <int name="34" value="510" />
+                <int name="35" value="520" />
+                <int name="36" value="511" />
+                <int name="37" value="521" />
+                <int name="38" value="512" />
+                <int name="39" value="522" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

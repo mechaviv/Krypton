@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sakura, the Kitty, and the Orange Marble" />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="7" />
+        <int name="area" value="30" />
+        <string name="1" value="I will need to gather up #b300 fried chickens#k for each time it get it wrong and answer all the questions right, then I'll receive the Orange Marble. I better take it back to Sakura.\n\n#b#c4031064#/1#t4031064#" />
+        <string name="2" value="I was able to safely hand the #bOrange Marble#k back to Sakura." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031064" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040715" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, are you ready to answer the questions?" />
+            <imgdir name="no">
+                <string name="0" value="Well, if you aren't ready, then there's nothing I can do about it~ Come back when you are ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yay, you're back!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you soooooo much! Did you get scratched up by those menacing cats? What? The cat spoke to you? Whatever... I know I may look young, but I'm a little smarter than that! I don't believe you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Are you ready to ace the quiz?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Sniff sniff... what should I do? Where's my Orange Marble?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031064" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8010" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

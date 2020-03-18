@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3400.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chief Stan's Letter" />
+        <int name="area" value="30" />
+        <string name="0" value="Chief Stan wants to ask me for something... I wonder what it is..." />
+        <string name="1" value="I met with #bChief Stan#k, who was at Henesys in Victoria Island. He handed me what appeared to be an old, sealed letter, and wanted me to deliver it to Dr. Kim of Omega Sector. He said to get to Omega Sector, I'll need to first get on board on a ship ride from Ellinia to Orbis, followed by the ride to Ludibrium from there." />
+        <string name="2" value="I met Dr. Kim at Omega Sector, and handed him the #bsealed letter#k that Chief Stan gave me. This place seems to be full of facilities designed in anticipation of the alien invasion... I should talk to Dr. Kim whenever I have a chance..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031099" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="7500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031099" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hoh... I've been looking for someone like you. Great! The thing is, someone from this town picked up this letter from the streets that seems to be very dangerous. He didn't know what to do with it, so he gave it to me, but this looks like something that should be sent somewhere, and I really hope you can be the delivery person for me. What do you think ... would you like to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Please give this letter to the person written here. My eyes may have failed me, but I can read this, and it say #b#p2050001# of Omega Sector#k. I have never heard of a person like this, but I'm sure someone like you that likes to travel all over the world may be able to run into that person..." />
+                <string name="1" value="Go to Ellinia and board on the ship to Orbis, after which you should board on the ship to Ludibrium. Here's hoping you can get this letter to the right person. I'll see you around!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you don't feel comfortable handling a strange letter like this. If you ever change your mind, however, please talk to me. This letter concerns me more than it should." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... nothing wrong with the machine, as is the fuel, the gas, etc. Hmm, so I need to debug this critical error on the alpha system, and ... hmmm? Can I help you? What? You received a letter from a place far far away and brought it all the way here? Is that so? Then let's see..." />
+            <string name="1" value="Oh ho... I didn't think I'd receive the much-anticipated #b#t4031099##k from a total stranger like you. So you brought this here all the way from that place? Thank you so much. I'll have to reward you for your work bringing it here. It's not much, but I hope this helps you on your journey." />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm ... this is a very interesting material, indeed. A letter from an unknown, living thing from a place far far away... I guess it was aware of my existence from all the way there, but I don't think it knew the exact place I am in. I'll have to study this letter more. Please, make yourself at home." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please give #b#t4031099##k to #b#p2050001# of Omega Sector#k, then board on the ship that heads to Orbis. After that, get on board to the ship that heads to Ludibrium, and you'll be fine! Here's hoping you deliver the letter to the right person. I'll see you around~!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... where exactly is the #b#t4031099##k? I think you might have lost it on your way here. I'm sorry, but I'm very busy conducting a new project as we speak, so you'll have to excuse me for this. Oh, and please don't touch any of the machines here at Omega Sector HQ. Now, if you'll excuse me..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no ... did you lose the #b#t4031099##k that I gave you, by any chance? You should have been more careful. Thankfully, someone from this town picked it up from the streets, so I'll give this to you again. Please don't lose it this time, however. Now, please deliver #t4031099# to #p2050001#, who should be at the Omega Sector." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031099" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

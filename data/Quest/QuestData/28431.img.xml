@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28431.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lucky Gift " />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Administrator is waiting for you." />
+        <string name="1" value="She says that the item is currently being made. " />
+        <string name="2" value="You received a Lucky Gift from the Administrator." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="StartDate" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2450000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're the one who received a Lucky Gift from me last time, right? Well, I want to give you another gift if you'd like." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Looks like I better start making it. I'm not sure what I have in mind, but come see me in 2 to 3 days and it'll be ready by then. Isn't this exciting?&#xD;&#xA;" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You don't want it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're here! I've been waiting for you. Now, let me give you your gift!" />
+            <imgdir name="yes">
+                <string name="0" value="Do you like your gift? Please continue to enjoy your adventures in Maple World!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="info">
+                    <string name="0" value="It hasn't been 2 days yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <int name="infoNumber" value="28431" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2" />
+                    <int name="cond" value="101" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q28431e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28432" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2010071400" />
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

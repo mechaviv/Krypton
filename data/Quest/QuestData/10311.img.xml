@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10311.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Petrified Mouse" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You have found an interesting artifact." />
+        <string name="1" value="If you take this Mouse to a Maple Admin, you will receive something as a token of appreciation." />
+        <string name="2" value="You have taken the Mouse, which was once involved in a Macro, to a Maple Admin. The Maple Admin thanked you and reminded you that MapleStory is much more fun when you actually play the game than when you use some illegal program to play it for you. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow, you found a mysterious artifact. A Petrified Mouse, huh? How about you report it to a #bMaple Admin#k?" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="If you let the Maple Admin know, you'll receive an awesome reward. But it's up to you whether you want to." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, thanks for bringing it. Blah blah blah." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't reported it to a Maple Admin yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <string name="endscript" value="q10311e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001303" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

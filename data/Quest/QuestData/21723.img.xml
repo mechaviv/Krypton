@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21723.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Puppet" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your third assignment as an informant and you're at #b#m102000000##k with #p1103004#, investigating the causes of the #o1140130#s' erratic behavior. You should talk to #b#p1103004##k." />
+        <string name="1" value="#p1103004# tells you that the #o1140130#s' erratic behavior was caused by a puppet, but the puppet is not necessarily on the #o1140130#s' bodies, but somewhere outside. You should search the #bPile of Relics#k in #b#m101030101##k and find the #b#t4032319##k.\r\n\r\n#i4032319# #t4032319# #b#c4032319# / 5#k" />
+        <string name="2" value="You retrieved all of the #t4032319#s. #p1103004# seemed genuinely shocked that the puppets were used for such a purpose and told you she'd have to write a report on this. A report? What report?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032319" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am quite certain the puppet plays a part in the #o1140130#s' strange behavior. This detector shows the force of darkness emanating from the puppet and displays it on the screen. If the puppet was inside the #o1140130#s, then it would have been moving, but look, it's not moving at all." />
+            <string name="1" value="That means the puppet is somewhere around the #o1140130#s, but not necessarily being carried by them. Nearby the excavation site, you'll see a #pile of relics#k lying around. Maybe the kid hid the puppet in there." />
+            <string name="2" value="In order to stop the #o1140130#s from continuting to be violent, we'll have to defeat them all and retrieve the puppet. Your task right now is to head over to the #b#m101030101##k, blast all the piles of relics, and find the #t4032319#s. The monitor shows that there are #b5#k puppets out there. Please retrieve them all." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You do know how to break apart a pile of relics, right? Just use a #bregular attack#k on it, and the pile will crumble." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh...? You don't want to do it? I already gave #p1002104# a reward for helping me out and all…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you managed to find all the #t4032319#s in the area. Okay this is going straight into the report." />
+            <imgdir name="yes">
+                <string name="0" value="First, we have to wrap up this project, and that'll take a bit of time, so I want you to stop by later, when you turn Lv. 25." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have yet to find #b5 #t4032319#s#k? Find a #bpile of relics#k at #m101030101# and break it apart using #bregular attack#k to find the #t4032319#s." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032319" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21722" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="24" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3205.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Guard" />
+        <int name="area" value="37" />
+        <string name="0" value="A lost guard is found somewhere around Eos Tower..." />
+        <string name="1" value="I found the lost guard at the 93rd floor of Eos Tower. He needs to get to 59th floor to go back to work, but is too scared to go with the monsters around, and wants me to gather up #b15 worn-out goggles#k and #b15 propellers#k.\n\n#t4000103# #b#c4000103##k/15\n#t4000123# #b#c4000123##k/15" />
+        <string name="2" value="I ran back to the lost guard at the 93rd floor of Eos Tower and gave him the proof of eliminating the monsters in the vicinity of where we were. In return, I was able to get the Scroll of Eos Rock, which activates the Eos Rock located in a number of places at the Tower. By activating the rock, it'll enable us to teleport to the next Eos Rock. And since he needs to get down to 59th floor, I'm sure there's more mess to come..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001020" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000123" />
+                    <int name="count" value="-15" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000103" />
+                    <int name="count" value="-15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm ... where am I?? I'm in charge of security for the 59th floor of Eos Tower, but I have nooo idea where I am at right this minute. Dang ... this place is also full of monsters, which makes it impossible for me to do my duty here. Can you help me out, if it's okay with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright! It's a simple request, actually. Please take out the monsters that are on my way to the 59th floor of Eos Tower, and hand me the leftovers as a proof. It'll be much easier for me to go to the 59th floor if the numbers of the monsters decrease on my way there." />
+                <string name="1" value="The ones you'll need to take down are #b#o3230307##k and #b#o3210206##k. Take those down and hand me #b15 #t4000123#s and 15 #t4000103#s#k. I'll be here waiting for you, my friend. Good luck!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow ... you really took them all down. I knew I had an eye for talent. Anyway, thank you for your hard work. As a sign of appreciation, I'll give you #b#t4001020#s#k, something I've cherished for a long time. I'll tell you how to use it after you receive it." />
+            <imgdir name="yes">
+                <string name="0" value="The #b#t4001020##k that I gave you is an item that is very essential in activating the four stones within Eos Tower. It'll allow you to use #b#p2040024##k at the 100th floor, #b#p2040025##k at the 71st floor, #b#p2040026##k at the 41st floor, and #b#p2040027##k at the 1st floor. Use those rocks to teleport to other rocks. Please drop by again ~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected all the items I asked of you. Please take down the monsters within Eos Tower and collect #b30 #t4000123#s and 30 #t4000103#s#k for me. I can't get to the 59th floor where I am in charge of the security because of those darn monsters. Please help me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040023" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000103" />
+                    <int name="count" value="15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000123" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040023" />
+            <int name="lvmin" value="20" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

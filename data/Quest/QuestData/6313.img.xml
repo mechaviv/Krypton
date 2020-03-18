@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6313.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" The Summoned Being's Structure" />
+        <string name="parent" value=" Inverse Attributes " />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2012017##k asked me to wait while he makes #b#t4031451##k." />
+        <string name="1" value=" #b#p2012017##k Now that he finished making #b#t4031451##k, #b#p2012017##k said his job was done. I'll have to go see #b#p2020005##k to learn how to give it magic power.    \n\n#i4031497##t4031497# #b#c4031497#/1#k" />
+        <string name="2" value=" #b#p2020005##k asked me talk to him later while he works on how to give magical power to #b#t4031451##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031497" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031497" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="First, make a frame with the appropriate ratio of minerals to get element-based magic strong enough...and let it work with a switch! Ok! Done! #b#t4031451##k to make true element-based magic!" />
+            <imgdir name="yes">
+                <string name="0" value="It looks perfect! Now just give the magical power to\r\n#b#t4031451##k so that it can contain the spirit. That's your job--use magic!" />
+                <string name="1" value="Ah! #p2020005# is an expert in magic. Maybe #p2020005# will know the method. It's #p2020005# who made the principle of inverse element-based magic. Go to #b#p2020005##k with #b#t4031451##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to? You came a long way. Why stop now?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="A Summon! Interesting theory! Is #b#p2012017##k a magician? Scientist? It's exciting..." />
+            <string name="1" value="Just giving my magical power won't work. Even if element-based magic is possible, your element-based magic is too strong. Then the summon can't receive it's correct power." />
+            <string name="2" value="Hmm, I'll think about how to do this. Give me #b#t4031451##k and talk to me later." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="How are you going with inverse element-based magic? Let me know if you need my help." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost #b#t4031451##k? Luckily, I have some more. Don't lose it!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031497" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6312" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

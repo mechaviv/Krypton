@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20725.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mission in Sleepywood" />
+        <int name="area" value="15" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1101002# wants to talk to me about an assignment..." />
+        <string name="1" value="#p1101002# told me he detected a strong force of darkness around #b#m105040300##k and wanted me to look into #r#o9300285##k. The problem is there's not a single agent currently assigned there, so he wanted me to gather up the information from scratch by myself..." />
+        <string name="2" value="I was able to gather up all the information and write up a report to #p1101002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I knew it was too quiet for comfort. The detector has detected a force of darkness, and it's located at #b#m105040300##k. It'd be nice to figure it out in detail, but the force of #m105040300# is so strong that we can't delve any more into it. We'll just have to go there with our bare feet and experience it first hand." />
+            <string name="1" value="Unfortunately, not a single agent is stationed at #m105040300#. I'd like to gather up more information on the area, but no one's there. Which means... I'll have to ask you to gather up the information from scratch." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Gathering up information on Black Mage is another one of the pivotal roles every Knight needs to master. Please gather up the information, then report the results back in #bEreve#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do not feel the need to have the agents do all the dirty work for you. You may not know this, but they are knights just like you, except their assignments are a bit more specialized. The ability to gather up information is critical for every Knight." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I am guessing you have gathered up all the information on #o9300285#. Please compile all the information into a single report for me." />
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="I don't think you have gathered up all the information on #o9300285#, yet. Don't you think the #bresidents of #m105040300##k would know a thing or two?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20729" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20726" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20727" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20728" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20724" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

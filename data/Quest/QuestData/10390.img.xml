@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10390.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Nostaligic Reminiscing I" />
+        <int name="area" value="50" />
+        <string name="0" value="You can apparently get some help from #b#p1002001##k at Lith Harbor..." />
+        <string name="1" value="You run into #b#p1002001##k at Lith Harbor. #b#p1002001##k takes one look at you, then tells you how you remind him of himself in his younger, traveling days, so he feels the need to help you. He says if you can gather #b100 #t4000016#s#k and #b50 #t4000004#s#k, he'll acknowledge that you are worthy and give you his support. Ha, this should be quite a breeze for a great adventurer like you.\n\n#t4000016# #b#c4000016#/100#k\n#t4000004# #b#c4000004#/50#k" />
+        <string name="2" value="You showed #b#p1002001##k at Lith Harbor what you were made of as an adventurer. #b#p1002001##k recognized the potential in you and gave you some money to use on your journeys. You're going to put this to good use and become an excellent adventurer." />
+        <string name="demandSummary" value="#i4000016:# #t4000016:# #c4000016# / 100" />
+        <string name="rewardSummary" value="&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <string name="start" value="2006072000" />
+            <string name="end" value="2006100100" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! You setting out on an adventure? You look a little weak for that. It reminds me of... Well, when I was young, I was like you, eager to travel the world and soak up every experience I could. I miss those days. Ain't nothing quite like going on an adventure." />
+            <string name="1" value="It was difficult at first, though. I didn't have any experience and I wasn't well-prepared. Seeing you reminds me of the tough times I faced…" />
+            <string name="2" value="I'm telling you this because I like you. If you can prove your worth as an adventurer, I will provide you with my full support for your upcoming journey. Deal?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, then gather #b100 #t4000016#s#k and #b50 #t4000004#s#k and to bring them back to me. If you can do that, I'll acknowledge your skills as an adventurer." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? I was willing to help… if you change your mind, let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, it's amazing you were able to finish my task so quickly! I knew I had an eye for talent. I have no doubt that you will become one of the very best adventurers out there." />
+            <imgdir name="yes">
+                <string name="0" value="That money I handed you just now... I know it's not much, but it should still help a beginner like you. Here's hoping I'll see you all grown up down the road, with improved abilities and fancy gear." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hm, you didn't gather the stuff I requested. Maybe I overestimated your abilities… I want you to bring me #b100 #t4000016#s#k and #b50 #t4000004#s#k. I know you are capable of doing this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <int name="lvmin" value="10" />
+            <string name="worldmin" value="10" />
+            <string name="worldmax" value="10" />
+            <string name="end" value="2010012000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

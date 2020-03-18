@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2357.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Falsified Remnant" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Ryden says that he has a plan to trick the Thief Job Instructor..." />
+        <string name="1" value="Ryden asks that you give the Thief Job Instructor falsified evidence that'll deceive him. He wants you to bring him a falsified secret map that has been planted in Bubblings and Green Mushrooms, which would indicate the secret organization's supposed hideout..." />
+        <string name="2" value="As Ryden had requested, you brought the falsified evidence gathered from Bubblings and Green Mushrooms to the Thief Job Instructor. He was convinced that the map indicated the secret organization's hideout, as he acknowledged that it was very important information." />
+        <string name="summary" value="Hunt Green Mushrooms or Bubblings to collect the #bSecret Map#k and deliver it to the #bThief Job Instructor#k." />
+        <string name="demandSummary" value="#i4032620:# #t4032620:# #c4032620# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 3,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032620" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Puahaha... An interesting thought just occurred to me. Would you like to hear?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You should be able to obtain Secret Maps by hunting Green Mushrooms and Bubblings. Those are falsified maps that I had planted in them beforehand. When you collect 20 of them, they will form a map that indicates a fake location of our hideout. Collect the 20 Secret Maps and bring them to that foolish Job Instructor." />
+                <string name="1" value="Don't worry, that map is fake. It just leads to some mountainous area near Perion. But that stupid Job Instructor will think otherwise. Quite a plan, no? Collect 20 Secret Maps and bring them to the Job Instructor. I suggest you head over to the Kerning City Subway Line 1, as the place is crawling with Bubblings." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't tell me you're as foolish as that Job Instructor! You sure you don't want to hear it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="So, did you talk to that suspicious guy?\r\n#L0##bYes, and I was able to obtain this. It looks like some sort of map...#l\n#k" />
+            <string name="1" value="Oh, let me see! This... This is amazing! A secret map that indicates their headquarters. Looks like you gotta piece the 20 pages together before it can be read. Very clever, I'll give them that. Let's see here... Their headquarters seems to be located in Perion, which is not far from here. I better have this area searched immediately... You may be young, but I see that you are very capable. " />
+            <imgdir name="yes">
+                <string name="0" value="I will let the Dark Lord know what an incredible job you've done." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Did you talk to that suspicious guy?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you talk to that suspicious guy?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1072003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032620" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2356" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

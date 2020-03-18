@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding Sophia" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="In Lith Harbor, you meet a heavily-bearded crewmember of The Victoria called Teo. He says he has some #bWeird Medicine#k but he isn't willing to give it up for free. Instead he says he'll trade it for a #bsparkling rock#k. He seems like he knows Maya pretty well, yet he still wants a favor first, knowing how sick Maya is? Creep. Anyway, to get the #bsparkling rock#k, you should head to Perion and talk to #rSophia#k, the daughter of the owner of the department store there." />
+        <string name="2" value="You met Sophia. To make the sparkling rock, she said she needs #bArcon's blood#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2004" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Well, I do happen to have some #b#t4031006##k, but I can't give it to you for free. Hmm, if you get me a #b#t4031004##k, though, I may reconsider...meaning I would be willing to trade with you." />
+            <string name="1" value="Want to know how to get that stone? I wouldn't be asking for your help if I knew! Here's the deal, head over to the department store in #b#m102000000##k, ask for the daughter of the owner, #r#p1022100##k, and ask her about its whereabouts. She may have a clue..." />
+            <string name="2" value="Please don't tell me you have no idea how to get to #m102000000#! Ok fine! Take the exit to the right out of the harbor, go through #m103000000# to the north, and then keep going east until you reach #m102000000#." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Didn't get the #b#t4031004##k yet? Oh well, it's not the easiest things to acquire. Ah, so gorgeous when it shines like a star... Hurry and go see #r#p1022100##k at the department store in #b#m102000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

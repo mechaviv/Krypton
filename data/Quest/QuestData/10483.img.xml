@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10483.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Second Gift for the Dragon Master" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lvl. 50, #p9010010# starts talking to you..." />
+        <string name="1" value="#b#p9010010##k congratulates you for reaching Lv. 50 and asks that you come see her so that she can give you a scroll that can be used." />
+        <string name="2" value="You received a scroll from #p9010010#. She says she will give you another scroll if you reach Lv. 60 by #bMay 5#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040211" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow! Evan, you've already reached Lv. 50? That was much faster than I expected! In that case, let me give you the scroll that can be used on the Dragon Glasses as I promised before. Be sure to come see me!" />
+            <string name="1" value="You do know where I am right? Just come to a town. I'm always here." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Hmm. You're not implying that you don't like the gift that I, #p9010010#, prepared for you, right?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've come! My, you really have grown! And the Dragon also looks nothing like it used to. Although, it's still really cute..." />
+            <string name="1" value="Now, let me give you the gift that I've prepared. It's a scroll that can only be used on a Dragon Glasses. I made it myself, of course." />
+            <imgdir name="yes">
+                <string name="0" value="Hehehe... Acutally, this isn't #bthe end#k of my scrolls. I'm never cheap with my gifts! I can give it to you now, but that'd be no fun. Get to #bLv. 60 before May 5#k this time. I will give you another scroll that you can use on the #t1022097#." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10482" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <string name="end" value="200906010000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

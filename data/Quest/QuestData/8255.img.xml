@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8255.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost Spirits" />
+        <string name="parent" value="Lost Spirits" />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="A new traveler is in the town of El Nath, I wonder what his story is...perhaps something to do with Zakum? I should pay him a visit; I heard his name is Adonis." />
+        <string name="1" value="I visited El Nath, and found Adonis. He's speaking to me now..." />
+        <string name="2" value="Adonis and I had an enlightening conversation about Zakum, and the residents of the former town. It appears that Zakum gains additional power from what Adonis calls &quot;Zakum Diamonds&quot;.  They are souls of those who fell in battle against the mighty Zakum.  As they were fellow warriors and adventurers like me, their souls must be released.  If I can find a relic of the old town, such as a Crystal Blade, Miner's Hat, El Nathian Cape or Cloak of Corruption and combine it with a Zakum Diamond, I can perform a 'Liberation Ritual&quot; that will free the soul by transferring their power into that item.  I can then wear the enchanted item for extra strength in battle!  Only thing is, Zakum Diamonds only come from one place, Zakum himself.  This won't be easy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Remember, you can only obtain a Zakum Diamond if you fight Zakum." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201106" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201106" />
+            <string name="startscript" value="q8255s" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

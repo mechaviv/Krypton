@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3073.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Robinson's ID" />
+        <string name="parent" value="Lost in the Ocean" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="I met Robinson in the middle of the island right at the center of the ocean, and he said that he used be a pilot for the army of Omega Sector, but while in a combat against the aliens, he ran away from the scene, only to be swept by strong currents that led you to where you were. He wishes to get back to the Omega Sector, but currently we have no idea where we are, and he's been covered with scars. As a result, he asked me if I can go to the Omega Sector, notify #b#p2051001##k of his troubles, and ask for some relief. Where is the Omega Sector?" />
+        <string name="2" value="I went to see #b#p2051001##k at the Omega Sector, and handed him a card of Robinson's ID. He said everyone's been wondering of his whereabouts, and wanted me to describe the position of the island in detail." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031210" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031210" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3074" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hah, now I fell like living. I didn't know a simple bottle of water will really mean a lot me. Thank you so much! You're my hero, the one that saved my life. Since you came all the way here after reading the email, I'd like to ask you something...special." />
+            <imgdir name="yes">
+                <string name="0" value="I'm Robinson, the pilot of the Omega Sector army. One day, I received an order from the commander and I was on my way to delivering that item when I got ambushed by the aliens and made an emergency landing. " />
+                <string name="1" value="I wasn't seriously injured when I crash-landed, so I got out of the transport ship and ran away from the aliens. To further avoid the aliens, I dove into the ocean, not knowing I was about to be swept away by a huge tidal wave, and I lost conscious. By the time I woke up, I found myself here in this remote island, so I wrote a letter and float it on the water looking for help." />
+                <string name="2" value="I'm glad my effort didn't go unnoticed, seeing that you're here after reading the letter. Now that you are here, please help me. I need to return to the Omega Sector immediately, but I have no idea where I am at, and I am considerably weaker than I was before. I can't even think of getting out of here by myself, so please go to the Omega Sector in place of me and notify them of my situation so they can send some people here to rescue me." />
+                <string name="3" value="This is my ID. Hand this to #b#p2051001##k of the Omega Sector so he can send me some help here. Thanks!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you going to leave me here? Alone in this island? Please help me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, there. Can I help you? As you can see, I'm really busy right now. We've been in combat against the aliens, and that really increases the number of machines to be fixed." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hello there. Can I help you? As you can see, I'm really busy right now. Please don't bother me unless it's something important. " />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You'll need to take my ID in order for the Omega Sector to send me some help here. Good luck!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2051001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031210" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3072" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

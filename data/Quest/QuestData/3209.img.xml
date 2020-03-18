@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3209.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nemi's Dilemma" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Nemi, who's in Ludibrium..." />
+        <string name="1" value="I met up with Nemi again at a small house in Ludibrium. Lately she had been experiencing some weird things where the food had been disappearing right after being made, and was suspecting that the rats might have done it. That's why there's a toy mouse called Ratz, which is a toy mouse with rat traps, but instead of catching rats, they became alive as monsters. At Nemi's request, I'll have to take out Ratz and collect #b45 Rat traps#k, and give them back to her.\n\n#t4000095# #b#c4000095##k/45" />
+        <string name="2" value="I collected all the rat traps that Nemi needed in Ludibrium. I can't believe the amount of rat traps she made, judging from the fact that every single Ratz in Eos Tower is her creation." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000095" />
+                    <int name="count" value="-45" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002097" />
+                    <int name="count" value="1" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1002023" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002036" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4198404" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1002163" />
+                    <int name="count" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1002174" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="1002622" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no... what should I do... oh hi!! You came by again! I have run into yet another problem. I am so sorry that I keep asking you for favors, but I seriously can't find a way to wiggle out of this by myself. Can you help me out...?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I am sure you're terribly busy but still. Well, here's a problem. It has happened before, but it has happened much more often lately. Every time I make food, it disappears. I am sure it's the rats, but I can't prove it." />
+                <string name="1" value="I work hard at making the best food possible, and as soon as I leave, even for a few minutes, the food just disappears. It's so disheartening. The thing is ... this has happened before, and because of that, I got some #o3110102#s as a toy rat, and I set up rat traps on them to catch rats." />
+                <string name="2" value="But as you can see, they have since turned into monsters and are attacking people now. It's all my fault... and because of that... can you go back to Eos Tower and defeat #b#o3110102##k? Please gather up #b45 #t4000095#s#k afterwards, and do it ASAP. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... you must be swamped with other things yourself. If you ever find some time, then please come talk to me. I can always use some help, you know~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh no, those rats must have taken my lunch ... whoa, hello! You're back already! That's much faster than I thought! Sigh ... I'm just glad it's over now. With these traps, I can at least surround my food with them. This may not seem like much, but please accept it. Thanks." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the hat that I gave you? I've been saving up the hat in case I venture outside Ludibrium, but it looks like you need it more than I do right now. Now I'll have to set these traps up before making the dinner. I'll see you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please head over to Eos Tower and collect #b45 #t4000095#s#k by defeating the #b#o3110102##k so I can chase off the rats from my food. I'll have to get the #t4000095#s back from the rats. Thanks again!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000095" />
+                    <int name="count" value="45" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3208" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

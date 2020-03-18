@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2066.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering a Box of Fossil" />
+        <string name="parent" value="Winston's Fossil Dig-up" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="#b#p1022006# the Archeologist#k said that it is not safe to put the valuable fossils in the tent. He asked me to take the fossil and deliver it to #bDr. #p1032104##k in Ellinia. He also wrote a letter of introduction for me to show him. " />
+        <string name="2" value="#b#p1022006# the Archeologist#k in Perion said that it is not safe to put the valuable fossils in his tent. He asked me to deliver it to #bDr. #p1032104##k in Ellinia. Dr. Betty said it is going to be really busy from now. He asked me to stop by again and give him a hand afterwards. Fossils huh...? Should I give it a try?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031148" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031149" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="30000" />
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031148" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031149" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2066" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="Please get that letter of introduction to #bDr. Betty#k of Ellinia, who's a renowned Biologist. Please get this #bFossil Box#k to her. I trust you on this!" />
+            <string name="0" value="Oh my, these are it!! Thank you so much! I finally got these back!! Phew, that saved me from losing my years of work. Since you did such a fine job recovering those for me ... can you help me out one more time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. You're unlike any of the young people that seem so selfish and self-absorbent. I think leaving the fossils that you worked hard to recover here in the tent is too dangerous. You never know when the monsters will raid again. I can't leave this place, though, because I have more fossils to recover." />
+                <string name="1" value="Please get that letter of introduction to #bDr. Betty#k of Ellinia, who's a renowned Biologist. Please get this #bFossil Box#k to her. Thank you, and good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I may have asked you for too big a favor. I'm sure you must be busy and all. I may have to ask someone else for this. Take care." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Dr. Winston sent you for me? He must be at Perion recovering fossils ..." />
+            <imgdir name="yes">
+                <string name="0" value="Ohh, this is the fossil. Seeing the letter, it looks like Dr. Winston trusts you quite a bit. I may need some help once I start investigating these, so please drop by and see me if you have some time. This is the reward for your job well done. I'll see you around." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="And ... who are you?? I'm a very busy person, and if you don't have anything for me, then please leave. When is that person that Dr. Winston sent coming?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="I think you left this here ... you have to be more careful than that." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031148" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031149" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2065" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20705.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Cynical Orange Mushroom" />
+        <int name="area" value="15" />
+        <string name="0" value="I'll need to talk to Agent #b#p1103001##k of #m100000000# in order to receive the next assignment." />
+        <string name="1" value="According to #p1103001#, #o1210102# has been looking suspicious lately. Some of the #o1210102#s appear to offer a cold, cynical look, and #p1103001# believes they may be linked to the Black Mage. He then assigned me to hunt down #r#o9300274##k... \n\n#o9300274##r #a207051##k \n#i4032190# #t4032190# #b#c4032190# / 1#k" />
+        <string name="2" value="I was able to hunt down all the #o9300274#s that were out there. #p1103001# then told me to come back later, as he decided to continue to investigate on other suspicious creatures in this area." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032190" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wait, we have no time for this. We've been short on workers agents anyway, so I'm glad you're on board. Lately #m100000000# has been chaotic to say the least, and there have been informations on the monsters of the Black Mage. What's the information? Well..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Have you heard of the monster called #o1210102#? You've seen them while you were in Ereve taking on the Acclimation Training, right? Apparently, some of the #o1210102#s in #m100000000# have been displaying some suspicious behavior. They've been seen with sadistic looks on their faces, and they are always found together." />
+                <string name="1" value="Considering that #o1210102#s are famous for their black, yet bright smiles, this sounds quite a bit odd, don't you think? After further investigation, they were collectively under the spell from Black Mage, and with the Wizard's instruction, they are now ready to attack town anytime soon. Please make sure #o1210102#'s plans do not go as planned!" />
+                <string name="2" value="Regular #o1210102#s have no clue. All you need to do is hunt down the suspicious-looking #r#o9300274#s#k around #m100000000#. I suspect their home is #bsomewhere east of town#k... I need you to defeat #r50#k of them. Thanks and good luck!" />
+                <string name="3" value="Oh, and if you find any suspicious items while hunting #o9300274#, then please bring it back to me. I have a feeling there's something more to it than just those monsters." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... since our conversation has to be discreet, do you want to meet up somewhere less overt? Where's a private place to meet up in #m100000000#? I don't think there is one though... let's just talk here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you were able to defeat all 50 #o9300274#s! That was quite incredible, I say. Knights are definitely more dependable than others. Thanks to your help, we were able to prevent #o1210102#s from taking over #m100000000#!" />
+            <imgdir name="yes">
+                <string name="0" value="I'll stay here and look for Black Mage's whereabouts. I'll contact you the moment I spot something abnormal, so in the meantime, I'd like for you to keep training to make yourself into a mighty Knight. A good site for training can be #bHenesys Hunting Ground 1#k. Come see me when you reach #bLevel 14#k!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Were you not able to defeat #r50 #o9300274#s#k? They should be near #m100000000#. I hear that somewhere around #b#m100010000##k. there's a secret path that leads to their home..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to defeat #r50 #o9300274#s#k? They should be near #m100000000#. I hear that somewhere around #b#m100010000##k. there's a secret path that leads to their home..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032190" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300274" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20704" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

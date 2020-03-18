@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3238.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mac the Mechanic's Maintenance Manual" />
+        <int name="area" value="37" />
+        <string name="0" value="I'll need to have a word with Mac the Mechanic." />
+        <string name="1" value="I met up with Mac the Mechanic at the Toy Factory in Ludibrium. Mac was panicking because of the fact that all the blueprints and #bMaintenance Manual#k of the factory were stolen by Toy Trojan. If I destroy the boxes around the Toy Factory, I may find a hidden path that'll lead me to a clue." />
+        <string name="2" value="I found the documents Mac the Mechanic lost, and he seemed very much relieved by it. Something's strange, though. Why would the toy soldiers feel the need to steal this in the first place...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031130" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2100019" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my gosh, what can I do? I lost something very important, the one that'll help me fix the machinery. Without that, I can't do a thing ... can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="You're really helping me out? Awesome! I told you I'm the head engineer in this factory, right? Well, the stuff I need to work with went missing a few days ago. What I lost were the blueprints for the machines in this factory, as well as documents detailing the references I need to fix the machines." />
+                <string name="1" value="The one I'm suspicious of is the knight-look-alike monster called #b#o9300011##k. I don't think it's a work of a regular monster, though. I think whoever stole #b#t4031130##k, wound up making a shadow of himself and hide inside the box with secret path." />
+                <string name="2" value="The secret path can be reached by destroying the boxes of the toy factory. If you open up a box inside the secret path, then you'll face a bunch of #b#o9300011##k coming right at you. One of them will cough up the #b#t4031130##k. I know you can do it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know it's hard to say yes to a favor from stranger. That's alright. I'll try asking someone else. But if you feel a change of heart, then go ahead and talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're back! HEY! That's the #b#t4031130##k that I lost!! Phew ... I can't believe it's here again. Thank you so much for your hard work. Here's something for you." />
+            <imgdir name="yes">
+                <string name="0" value="What do you think of the #b5 #t2100019#s#k? Inside the sack you'll find #b#o9300011##k and #b#o3210203##k. If you use it, those buys will come out and cause a scene, so you may want to be at a quiet place where you can be ready to handle it. Again, please be careful with it." />
+                <string name="1" value="Let's see the documents ... thankfully, other than a few, the rest are all in here. The ones that aren't here, probably the ones that stole the manual lost it on their way out. I can't do anything about that. I can make another one. Thank you so much for helping me out. I'll see you around." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're back, but I don't think you have found #b#t4031130##k yet. Break the boxes you see at the Toy Factory, and you may find yourself a secret path every once in a while. Please open the box, and kill the #b#o9300011##k that pops out so you can bring #b#t4031130##k back with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041020" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031130" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041020" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

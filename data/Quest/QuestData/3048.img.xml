@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3048.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Elma's Nependeath Juice" />
+        <string name="parent" value="The Chaos behind Alfonse Green and the Nependeath Juice" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="0" value="I should ask Elma the Housekeeper to make a glass of Nependeath Juice." />
+        <string name="1" value="Elma promised me to fix me a nice Nependeath Juice, but she'll need the following ingredients to do so...\n\n #t4031201# #b#c4031201##k/1 \n #t2022039# #b#c2022039##k/1 \n #t4000136# #b#c4000136##k/20" />
+        <string name="2" value="Elma fixed me a tasty-looking Nependeath Juice. I better get this to Alfonse Green quickly!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031200" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-20000" />
+            <int name="exp" value="7500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031201" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2022039" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3050" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there~ we meet again! You must have gotten #b#t04031200##k this time around! I told you. Get something for Nero, and #p2012018# will be only too happy to make #b#t4031200##k. So are you going to use this sap to make #b#t4031202##k?" />
+            <imgdir name="yes">
+                <string name="0" value="I can tell Alfonse wants to drink #b#t4031202##k again! Okay, I'll fix him a very nutritious, tasty #b#t4031202##k." />
+                <string name="1" value="I need some ingredients in order to make the #t4031202#. I'll need #b#t4031200#, 20 #t4000136#s, 1 #t4031201#, and 1 #t2022039##k, along with my service charge of #b20,000 mesos#k." />
+                <string name="2" value="Surprised that the juice requires a lot of ingredients? Well, you have #b#t4031200##k already, so that's out of the way. #b#t4000136##k can be found at the #bFlorina Beach#k. As for #b#t4031201##k ... I've used up the last of that a few days ago, so I'll have to get some more of it." />
+                <string name="3" value="I got that from #b#p1032105##k of Victoria Island years ago. Look for #b#p1032105##k, because she's the one that gave me it. #b#t2022039##k can be found through hunting #b#o4230105##k." />
+                <string name="4" value="I know it's not easy to gather all of them up, but please do so. That way, I can fix Alfonse a hearty glass of Nependeath Juice." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't need #t4031202#? If you have a change of heart, please feel free to see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up all the ingredients yet. I need all of them in order to make a hearty Nependeath Juice." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022039" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031201" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3047" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031200" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

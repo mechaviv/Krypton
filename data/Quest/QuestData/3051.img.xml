@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3051.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lisa's Letter of Recommendation" />
+        <string name="parent" value="Scadur's New Fur Coat" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="I should go see Lisa of Orbis." />
+        <string name="1" value="I've decided to go see Scadur of El Nath with the help of Lisa." />
+        <string name="2" value="He said he needed my help in order to make a new fur coat." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031204" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031204" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3052" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Um, excuse me, traveler~ If you have any spare time, then please hear me out." />
+            <imgdir name="yes">
+                <string name="0" value="I wanted to talk to you because I could tell you're mighty powerful. Have you heard of #bScadur the Hunter#k of #bEl Nath#k? Lately he has been itching to throw away his old fur coat and don a new one. It is difficult to gather up the finest materials for the fur coat, because the finer the quality, the stronger the monsters are, and the harder it is to obtain the fur." />
+                <string name="1" value="That is why #b#p2020007##k wanted me to look around and recommend a strong person whom he could ask for help later on. Please take this letter of recommendation to #b#p2020007##k. You'll be of great help to him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be a busy person. If you have any spare time, then please come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have met up with #b#p2020007##k of #bEl Nath#k yet. Please go see him immediately." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the letter of recommendation? Oh no ... here, I'll write it again. Please be careful with it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031204" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

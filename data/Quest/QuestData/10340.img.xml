@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10340.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="They're Coming Back!" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra, looking into her Crystal Ball, says they will soon return… But who are 'they'? For details, let's go see #bCassandra#k." />
+        <string name="1" value="Cassandra said you'll find answers if you look into the Crystal Ball." />
+        <string name="2" value="What you saw in the Crystal Ball was the revival of the Arans. The Arans… Don't you want to know more about them?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q10340s" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

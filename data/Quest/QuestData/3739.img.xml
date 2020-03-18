@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3739.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Isabella's Search" />
+        <string name="parent" value="Year 2216- The Ruins" />
+        <int name="order" value="4" />
+        <int name="area" value="41" />
+        <string name="1" value="Ken, who you met in the ruins of the city in the year 2216, requests that you investigate the eastern regions where he received a rescue signal. You must hurry and find the person who he suspects to be a teenage female. Begin your search right away." />
+        <string name="2" value="Ken, whom you met in the ruins of the city in year 2216, requested that you investigate the eastern regions where he received a rescue signal. You found a teenage female who appeared to be passed out from exhaustion. Fortunately, she was conscious when you talked to her." />
+        <string name="rewardSummary" value="EXP 50,000\r\nCan participate in the &quot;What Was That I Saw?&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm glad you came. I received a request for help, but I can't detect the exact location. We have to dispatch a search party, and I need you to lead it. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay. The signal is coming from east, and we suspect the victim is a teenage female. Please investigate the eastern regions and let me know as soon as you find someone." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Somebody's life depends on this. We don't have time to sit and wait around!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Help! Help me! Are you here to rescue me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I've drained all my energy, but I'm hanging in there. I didn't think anyone would ever get here. I was so scared." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please search the eastern regions and let me know as soon as you find someone." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082016" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3738" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

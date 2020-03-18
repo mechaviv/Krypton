@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2361.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shiba's Story" />
+        <string name="parent" value="Visiting The Secret Garden" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="1" value="You meet Shiba at The Secret Garden who tells you about the reasons he became a Dual Blade. After finishing his story, Shiba tells you to go see #bYun#k to hear the rest of the story." />
+        <string name="2" value="You met Shiba at The Secret Garden who told you about the reasons he became a Dual Blade. After he finished his story, Shiba told you to go see #bYun#k to hear the rest of the story. You went up to the next level using the stairs and met #bYun#k, who was standing on top of an owl." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <int name="nextQuest" value="2362" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Well, that's enough from me. You can hear the rest from Yun. #bYun#k should be upstairs. You should go make your way to see her now." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="You should talk to Yun." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello #b#h0##k, my name is Yun. I've heard a lot about you from Brother Ryden. I assume that you've already met Brother Shiba?" />
+            <string name="1" value="In that case, there really isn't much more for me to tell you. If you'll allow me, I would like to make a request on behalf of Sister Syl.\r\nYou should already know this, but Sister Syl is the daughter of the former Dark Lord. During the days of the former Dark Lord's reign, Sister Syl and Jin spent many joyous days together. After all, Jin was the most prized disciple of the former Dark Lord. " />
+            <string name="2" value="One day, the former Dark Lord disappeared without leaving any last word or instruction. Lady Syl waited anxiously until Jin finally left to search for the Dark Lord." />
+            <string name="3" value="Not long after, Jin returned. He returned with the Dark Lord's personal items, along with news that he had passed away. The people then appointed Jin to be the next Dark Lord, but Lady Syl didn't understand what was happening. It all seemed too contrived..." />
+            <string name="4" value="Then one day, a traveler delivered shocking news to Lady Syl. He said that Jin had murdered the former Dark Lord. From then on, Lady Syl vowed revenge. She swore to oust Jin from his position as the Dark Lord and to unveil the truth to the public. " />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Well, that's enough from me. You can hear the rest from Yun. #bYun#k should be upstairs. You should go make your way to see her now." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2360" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

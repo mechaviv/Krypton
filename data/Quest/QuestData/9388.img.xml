@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9388.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jane's Errands" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p1002100##k, who lives in Lith Harbor, wants to join the MapleStory 3rd Anniversary Bonanza..  I better help #b#p1002100##k make her way to the party." />
+        <string name="1" value="#b#p1002100##k says she can't go to the party until she takes care of the errands her dad gave her. I better help #b#p1002100##k make it to the party. \n\n#o2230100#  #r#a93881##k\n#o3230100#  #r#a93882##k \n#r!Warning : Do not lose #b#t1002508##k." />
+        <string name="2" value=" After helping #b#p1002100##k in her quest to go to the party, she strengthened my #b#t01002508##k as promised." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002510" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, isn't that the #b#t01002508##k for the 3rd anniversary of MapleStory? I really wanted to go to the party myself, but my dad's not letting me go. He's very strict and protective of me. Not only that, but I haven't finished doing errands for him. Can you help me go to the party by helping me take care of the errands?  If you can, then I'll upgrade the #b#t01002508##k that you have right now. Don't worry, I studied this, and I know what I'm doing." />
+            <imgdir name="yes">
+                <string name="0" value="My dad told me to take out some monsters that are bothering the travelers from their journey. The problem is, I'm too scared to face them myself. The monsters he asked me to take out are one-eyed lizards, and they really freak me out. I can't even look at them straight. Please help me slay #b50 #o2230100#s and 50 #o3230100#s#k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" I really want to go to the party, too. Please help me take care of the errands!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you really did it. You didn't get hurt though, right? Good, because it's time to party! Oh yeah, as promised, I have just upgraded your #b#t01002508##k. Hope you like it!" />
+            <imgdir name="yes">
+                <string name="0" value="Enjoy the party!!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="And please don't lose #b#t1002508##k!!!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="The monsters you'll have to slay for me are #b50 #o2230100#s and 50 #o3230100#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230100" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3230100" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9386" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9387" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="70" />
+            <string name="start" value="2008050100" />
+            <string name="end" value="2008051400" />
+        </imgdir>
+    </imgdir>
+</imgdir>

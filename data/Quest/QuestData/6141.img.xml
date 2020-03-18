@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6141.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" The Night Warrior" />
+        <string name="parent" value="The One Hidden in the Shadow" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value=" #p1052001# says he has a good suggestion and has offered to tell me more. Perhaps I should accept. I've heard it is unwise to refuse a request from the Dark Lord." />
+        <string name="1" value="#b#p1052001##k said he wanted me to be his disciple and has entrusted me with disciplining his other students.  He told me to defeat his other #b6 disciples#k who are disguised as him and earn their loyalty.  He told me if I'm interested to come back to him and ask #bI want to know about being a Thief#k...Is this some sort of game? The Dark Lord is known for his wily tricks and deceitful ways, but also for great power...I will see where this path leads me, hopefully to a new skill! \n\n#o9300088# #r#a61411##k" />
+        <string name="2" value=" I defeated the imposters and earned their loyalty. I made #o9300088#, a powerful Thief, into my shadow partner. I can now use him and the other five students in battle to great effect. My enemies will never know what hit them..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2700000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="4221004" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="422" />
+                        <int name="1" value="0" />
+                    </imgdir>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4121004" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="412" />
+                        <int name="1" value="0" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" Now since you're quite talented as a Thief, I guess you need some disciples. It will be much better to work with others that you can teach." />
+            <string name="1" value=" There are some nice guys, I've taught them for quite a long time. They don't have much experience in battle though. I hope you can train them. Ah, don't worry. If you win them over, they will follow you. " />
+            <string name="2" value="Why do I suggest this? Because I want to train them. I won't ask you to do it if you are weak. #p2081400# recognized that you are strong. Plus, I'd like to test your power. Are you afraid?" />
+            <string name="3" value="No more words. What do you say? Would you like to accept my proposition?" />
+            <imgdir name="yes">
+                <string name="0" value=" Good.  #b6 disciples#k are waiting for you in the place of training. They all disguised themselve as #p1052001#. After you make them your disciples, return to me." />
+                <string name="1" value="Uh-huh. I almost forgot... The password is: #bI'd like to know about a Thief.#k. Someone who looks like me may visit you, so I made a password. Keep it in mind. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to? Hmm, perhaps next time..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" #kWonderful action. You proved your ability to fight, the disciples will obey you. " />
+            <imgdir name="yes">
+                <string name="0" value=" Fine. Those guys learned to attack by hiding themselves. You can use this technique! They lay an ambush and attack rapidly. Do you like the idea of attacking unseen? Try and use it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value=" #r6 disciples#k who look like me are waiting for you. Try to control them, you may have to use a bit of strength to persuade them to your line of thinking. You know the password, right? The password is: #bI'd like to know about a Thief.#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300088" />
+                    <int name="count" value="6" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6140" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="412" />
+                <int name="1" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

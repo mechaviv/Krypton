@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3353.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What De Lang Wants" />
+        <string name="parent" value="Who is De Lang?" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="I entered #m261020401# without really thinking too much about it... As usual, #b#p2111006##k the talkative ghost starts up a conversation. I don't really want to listen to him go on and on about his life. What should I do?" />
+        <string name="1" value="When I asked about #p2111002#'s past that I saw through him in the past, Parwen's face lit up and showed me #p2111002# again. Hmmm... he looks like a bit of time has passed since I last saw him..." />
+        <string name="2" value="I tried to start up a conversation with an obviously tired #p2111002#. His face may have the look of exhaustion, but he managed to smile just a bit. He may have failed the experiment, but he said he has succeeded in creating a new medicine for #p2111005#..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Um... can I help you? I don't think we have ever met. You cannot just walk into a lab like that, but... I am in such a great mood today, that nothing really bothers me today. Haha..." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Huh? You didn't meet with De Lang yet? What are you doing just standing around here then?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3346" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3353s" />
+            <int name="lvmin" value="75" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="261020401" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

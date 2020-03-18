@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20102.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Path of a Blaze Wizard" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The time has come. If you want to find out more about Blaze Wizard, the Magician of Fire, talk to #b#p1101004#, the Chief Knight of Fire#k." />
+        <string name="1" value="If you want to become a Cygnus Knight as a #bBlaze Wizard#k with flaming expectations for the future missions, you should select #p1101004#." />
+        <string name="2" value="You are now a Blaze Wizard!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are... are you here to become a Knight? My name is #p1101004#. I'm the #bChief Knight of Fire leading the Blaze Wizards#k in Cygnus Knights. Nice to meet you. If you indeed select the path of a Blaze Wizard, then I'll see you much more often..." />
+            <string name="1" value="Blaze Wizards are magicians at heart, which means each one of them possesses a #bhigh level of INT and magic powers#k. Just like other magicians, Blaze Wizards aren't adept at melee combat, and we don't possess a high level of stamina, either. That's not the only thing that defines the Blaze Wizard, though..." />
+            <string name="2" value="Blaze Wizards are the special few that receive divine protection from the Spirit of Fire. If you indeed take on the path of the Blaze Wizard, you will be able to summon #bthe spirit of fire to accompany you in battles#k. You can even combine your powers with lgnis to create lethal magic to combat the monster, something the regular magicians aren't capable of doing..." />
+            <string name="3" value="You... you can become the Blaze Wizard if you have the desire and perseverence to keep striving for your goal, along with the determined set of eyes that never deviate from the opponent. If you are willing to take these steps and become the #bBlaze Wizard#k, then please come back." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I expect you to make a sound decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101004" />
+            <string name="endscript" value="q20102e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20103" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20104" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20105" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20100" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20101" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1052.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Becoming a Thief" />
+        <int name="area" value="20" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Maple Administrator told me that I may be best suited to be a thief." />
+        <string name="1" value="The Maple Administrator told me she'll take me to Kerning City now to help me make the job advancement as a thief." />
+        <string name="2" value="Should I go ahead and make the job advancement as a thief?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <int name="infoNumber" value="7631" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="400" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1048" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q1052s" />
+            <int name="lvmin" value="10" />
+            <int name="lvmax" value="20" />
+            <string name="end" value="2009010100" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

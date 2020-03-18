@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2006.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Getting Arcon's Blood" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="5" />
+        <int name="area" value="30" />
+        <string name="1" value="You gather #b40 Charms of the Undead#k and give them to Manji in Perion. Still cocky but following through with his promise, he hands over the #bArcon's blood#k. Maybe he isn't so horrible... Anyway, now you need to make sure you have #b50 squishy liquids, 50 leaves, 20 octopus legs, and 1 Arcon's blood#k for Sophia. If you don't, better go gather the ingredients." />
+        <string name="2" value="You brought the Charms of the Undead to Manji and finally got some Arcon's Blood. Hurry back to Sophia..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031005" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000006" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2007" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="By the way what are you going to do with the #b#t4031005##k? It's used as an ingredient for important items, so are you going to take it to #p1022100#?" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How did you get all these items? You must be really good! Especially the #t4031005#. Wow... Anyway, now we can make a #b#t4031004##k!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="By the way what are you going to do with the #b#t4031005##k? It's used as an ingredient for important items, so are you going to take it to #p1022100#?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="If you have 50 #b#t4000004#s#e#n #k, 50 #b#t4000005#s#e#n #k, 20 #b#t4000006#s#e#n#k, 1 #b#t4031005##e#n#k, you can make 1 #b#t4031004##k. You should ask #r#p1022002##k about the #t4031005#... I think he is somewhere around #m102000000#" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="By the way what are you going to do with the #b#t4031005##k? It's used as an ingredient for important items, so are you going to take it to #p1022100#?" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000006" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031005" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2005" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

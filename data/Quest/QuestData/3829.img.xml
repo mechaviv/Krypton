@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3829.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Captain Lord Pirate" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="17" />
+        <string name="0" value="#b#p2092001##k, who's in charge of freight for #b#m251000000##k, seems to know something about #b#t4031438##k..." />
+        <string name="1" value="#p2092001# told me the location of #t4031551# is written in here, and wanted me to find #t4031551#. The box of #t4031551# is located at a relatively unknown place inside the Pirate Ship, at #bthe deck where the bellflowers are guarding#k, and I'll need #t4031437# to open it... I guess I'll have to get #b#t4031437##k first. In order to get #t4031437#, I'll have to enter the lair of  Lord Pirate.\n\n#i4031551##t4031551#  #b#c4031551##k/1" />
+        <string name="2" value="I opened the box of #t4031551#, took out all the treasures, and gave them to #p2092001#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031438" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="60000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031551" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040804" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="7" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040805" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I can't imagine all the damage Lord Pirate dished out to me... what am I supposed to do? Hopefully I can get some help from #b#t4031551##k. Hmm? What's #t4031551#? Why are you paying attention to that? I mean no one knows where it's hidden. Anyway, what? you have #b#t4031438##k?" />
+            <string name="1" value="Come to think of it, you must be the traveler that ventured into the lair of Lord Pirate. In that case, I'll let you know what happened. All those jewelries that have been accumulated by Lord Pirate roaming around Ossyria, those jewelries are hidden somewhere on the ship. It's called #b#t4031551##k." />
+            <string name="2" value="It's incredible that you've defeated Lord Pirate, but it's hard to tell where the jewelries are based on looking at the map. It's encoded, so no regular person will be able to read it. If you promise me one thing, however, I'll be more than happy to chip in on translating the commands. What do you think? Do you want to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, so you must be as curious about #t4031551# as others. Now let's look at his travel logue. Since I have enjoyed the beach before moving permanentlyh to #m251000000#, this should be a piece of cake. As for #t4031551#... right inside the ship is a #bthe deck where the bellflowers are guarding#k. Apparently, that's where it is." />
+                <string name="1" value="Lord Pirate seems to be a hard guy to handle. Looking at this travel log, it looks like the only way the box can be open is through a key held by Lord Pirate, so I think we'll need to receive #b#t4031437##k from Lord Pirate, and investigate #bLord Pirate's lair#k. With this much info, we'll be able to find #t4031551#." />
+                <string name="2" value="Okay, I'd like for you to one thing. If you ever get to find #t4031551#, I want you to use those treasures to help out #m251000000#. Thanks to Lord Pirate living nearby, the poor residents suffer as a result. Hopefully those treasures will aid in their path towards recovery. You promised!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm. You're not interested in #t4031551#? Or are you just not interested in listening to any favors? Either way, I believe it's a foolish choice." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You have finally found #t4031551#! For you to be here, you must be here to help out #m251000000#? It blows my mind to think that a young traveler is not here to satisfy his/her greed, but to think of getting these to help others out... that's special." />
+            <imgdir name="yes">
+                <string name="0" value="We have lost so many herbs thanks to the attacks made by Lord Pirate. This should be enough compensate for the attack. I'm so glad you'd be of help to #m251000000#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The place where #b#t4031551##k can be found is at the #bthe deck where the bellflowers are guarding#k. In order to open the treasure chest, we'll need a #b#t4031437##k to do so." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2092001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031551" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2092001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031438" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+            <int name="lvmax" value="100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21605.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Missing Wolf" />
+        <int name="area" value="6" />
+        <string name="0" value="#t1902015# is missing! What should you do? You'd better go to #b#m140000000##k and ask #b#p1202007##k what to do." />
+        <string name="1" value="#p1202007# says that #t1902015# returned to him in tears and chastised you for not taking better care of it. He then tells you that you need to buy some medication in order to restore poor, weakened #t1902015#'s health.\r\n\r\n#b20,000,000 mesos#k" />
+        <string name="2" value="You were able to get #t1902015# back. You promise to never, ever lose it again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-20000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wait a minute. I didn't think I'd see you like this. I thought you promised to take care of your wolf! How can you treat #t1902015# like that? #t1902015# came back to me with tears in its eyes!" />
+            <string name="1" value="I can only imagine how negligent you must've been, because #t1902015# looked absolutely malnourished. So skinny, too! If you wish to get #t1902015# back#b, you'll need to pay enough mesos to heal your #o5130104##k! Mesos aren't important, but I cannot in good conscience return #t1902015# to you if you are going to treat it like this." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The total cost for healing #t1902015# is #b20 million mesos#k. Expensive, you say? That's nothing compared to the amount of emotional pain it had to go through! You have no right to call that expensive!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not about mesos. It's about effort. If you truly believe that #t1902015# is important, then that's the least you could do!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring 20 million mesos with you? Okay…that should be enough to buy some formula for #t1902015#. Normally I'd take much more than that, but… Anyway, I'll stop myself right here. Here, please take #t1902015# back. With open arms." />
+            <imgdir name="yes">
+                <string name="0" value="Do you feel that it not only got smaller, but that it actually got younger as well? Come to think of it, I did feel that it had gotten much too small compared to the amount of weight that it had lost... I guess the wolf must have suffered too much and had actually regressed in its development. I am not an expert on wolves, but I do know that #t1902015# is a sensitive creature." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you bring #b20 million mesos#k? I used two formulas to restore the wolf's health, so you can at least pay for that." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21603" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902016" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1902017" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902018" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

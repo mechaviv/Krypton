@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3515.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The One Who Walks Through the Road to Oblivion1" />
+        <int name="area" value="46" />
+        <string name="0" value="After having regained my emotions, I was able go past the Door of Oblivion.  Of course, I couldn't go beyond #m270030100#...  If I want to go in further, I'll probably have to take another one of #b#p2140000##k's test..." />
+        <string name="1" value="#p2140000# said if I want to go in further, go to #b#m270030100##k and defeat #r999 #o8200009##k. \n\n#o8200009# #r#a35151##k" />
+        <string name="2" value="I defeated 999 #o8200009#.  #p2140000# granted me permission.  Of course, this permission only allows me to go up to #m270030200#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="940300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It seems like your emotions have been thawed.  Do you want to proceed further now?  Of course, you'll have to take a test..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then go to #b#m270030100##k and defeat the #r#o8200009##k.  If you defeat #r999#k of them, I will grant you permission to continue.  " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's too hard for you?  That's too bad then.  I guess that's just your limit." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated 999 #o8200009#.  That's amazing.  I grant you permission, just as I promised." />
+            <imgdir name="yes">
+                <string name="0" value="#dAs the representative of Rhinne, the Goddess of Time, I grant you permission to look back at your 2nd oblivion#k." />
+                <string name="1" value="You can go on your way now.  You should be able to go up till #b#m270030200##k.  After that, you'll be blocked again.  If you want to go further... you'll have to take a new test. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r999 #o8200009##k yet.  I don't think you are strong enough to walk against the flow of the past yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8200009" />
+                    <int name="count" value="999" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3514" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="121" />
+        </imgdir>
+    </imgdir>
+</imgdir>

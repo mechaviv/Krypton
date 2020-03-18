@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6152.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Singing Shield" />
+        <string name="parent" value="Song of forgotten warrior" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value=" I brought the necklace back to Tatamo, the chief of Leafre. He looked at the picture inscribed on the #o8180001#'s necklace, and said that since #b#p1061012##k knows about Sayram, I should go show him the necklace. Off I go! \n\n#i4031467##t4031467# #b#c4031467#/1" />
+        <string name="2" value="On Chief Tatamo's recommendation, I spoke with #p1061012#, who knew about the necklace and the Singing Shield. I must ask him for more information about the shield! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031467" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031467" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I remembered the necklace that you showed me before.I am sure that it is the one that Griffey got from #bSayram#k. I'm surprised the necklace is still with Griffey... Hoho.. Now, are you all done here?" />
+            <string name="1" value="Huh? Still have questions?" />
+            <imgdir name="yes">
+                <string name="0" value=" Ah. You asked me about a singing shield. This necklace doesn't remind me of anything, but I know someone who knows more about Sayram. Show the necklace to him... What was his name...? I'm not sure, but #bhe's insignificant#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="maybe, you can find some clue from the necklace. I'm not sure though. Hohoho. The necklace? Sayram released #o8180001# on the forest later. I think #b#o8180001##k in #bMinar forest#k would have it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Phew... I doubt if I have a body.... Huh? Who are you? Do you want to see this #p1061012#?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm. You came here to ask about this necklace. Certainly, humans don't use this. Who wears this? I think I've seen it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Having trouble? Well, I can't remember his name. Anyhow, #bhe's an insignificant being!#k" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What can I do to help you without clues?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" How could you lose the necklace? It's a nice necklace although it was held by Griffey~ Luckily, a kind traveler brought it to me." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031467" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6151" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

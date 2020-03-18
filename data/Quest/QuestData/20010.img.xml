@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20010.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Welcome to Ereve" />
+        <int name="area" value="15" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You have entered Maple World with a determination to become a #p1101000# Knight. But where is this place? Double-click #b#p1102004##k and start a conversation." />
+        <string name="1" value="At the request of the Empress, #p1102004#, with his brothers, guides Noblesses who aspire to become a part of  #p1101000# Knights. If you #bfollow the arrow to the left#k you'll meet #p1102004#'s brother #b#p1102005##k." />
+        <string name="2" value="You met #p1102005# as you were asked to do in the quest you received from #p1102004#. #p1102005# seems to have some information for you as well." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to see #p1102005# yet? If you follow the arrows and use the portal to get to the left side, you'll see #b#p1102005##k there. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102005" />
+            <string name="endscript" value="q20010e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102004" />
+            <int name="infoNumber" value="20022" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20001" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20002" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20003" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20004" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20005" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20006" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20007" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20008" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20100" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20010s" />
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

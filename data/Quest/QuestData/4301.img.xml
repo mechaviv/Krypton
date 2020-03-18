@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kino Konoko vs Fire Raccoon" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9110002##k, who resides in the Mushroom Shrine, is having a bit of trouble with Fire Racoons. I should see if I can help!" />
+        <string name="1" value="Kino Konoko tells me that the food vendors and restaurants in #m800000000# are suffering from #b#o9400001#s#k attacking their places. I better help them out. I would not want to miss out on some great food around here! Now, where can I find #o9400001#?\n\n#o9400001# #r#a43011##k" />
+        <string name="2" value="I let #p9110002# know that I took care of 100 #o9400001#s. She was ecstatic, to say the least. Hopefully that'll keep the #m800000000# food from disappearing..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕하세요? #m800000000#는 정말 멋진 곳이죠? 그런데 요즘 #m800000000#에도 골치 아픈 일이 생겼어요. #o9400001#가 음식점을 습격하는 일이 자주 생기고 있거든요. #m800000000#의 또 다른 매력은 다양한 음식들을 파는 상점들인데... #o9400001#가 음식들을 마구 훔쳐 먹는데다가, 태워버리기까지 해서 주민들의 걱정이 이만저만이 아니에요." />
+            <string name="1" value="당신은 강한 분처럼 보이는데... 괜찮으시다면 주민들을 대신해서 #o9400001#를 퇴치해 주시지 않겠어요? #m800000000# 특제 음식들을 위해서라도요. " />
+            <imgdir name="yes">
+                <string name="0" value="도와주시겠다니! 정말 감사드려요! #o9400001# 100마리만 잡은 후에 알려주세요. 그 정도면 마을 주민들의 피해도 적어질 것 같으니까요. 부탁 드려요!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아... 곤란한 부탁을 드린 모양이네요. 그럼 #o9400001#들은 어떻게 해야 한다...? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022022" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello! Isn't #m800000000# just beautiful? Unfortunately, we've been experiencing some troubles around #m800000000# lately. The restaurants around here have been ambushed by packs of #b#o9400001#s#k, ruining our food in the process. The #m800000000# is famous around the Maple World for its beauty and fantastic food from many areas. People are afraid of being attacked by #o9400001#s now, so they've stopped coming. We have to turn this around somehow..." />
+            <string name="1" value="You look quite strong, though ... can you do us all a favor and drive off the #o9400001#s? You'll have to hunt them, but you'll help us preserve the #m800000000#'s beauty and legendary food. What do you say?" />
+            <imgdir name="yes">
+                <string name="0" value="Really? Thank you so much! Okay, I'd like for you to eliminate #b80 #o9400001#s#k, then come see me. 80 should be enough to decrease the suffering these people are going through. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahhh ... I'm sorry. I must have asked for too much. Hmmm... what should we do with #o9400001#, then?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You really did eliminate all those #o9400001#s. Wow... I really asked for a lot, though..." />
+            <imgdir name="yes">
+                <string name="0" value="I really don't know what to say... except thank you SO much for your help! Hopefully the people here won't be gripped with fear as they try to eat at restaurants again. Here's a small reward for your work; a homemade food from the people of #m800000000#. Thank you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have gotten all of the #b#o9400001#s#k, yet. I mean, a 100 of them are a lot to handle. Keep going!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9110002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400001" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9110002" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

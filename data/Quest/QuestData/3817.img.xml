@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3817.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Body &amp; Physics Medicine2" />
+        <string name="parent" value="Making Body &amp; Physics Medicine" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Is #b#t2022144##k just about ready? I better ask #b#p2091002##k." />
+        <string name="1" value="I finally received #b#t4031552##k from #p2091002#. Hmmm... it smells much better than I thought! I better take this to #b#p2091000##k immediately." />
+        <string name="2" value="I managed to deliver #t2022144# to #p2091000#. I actually feel a little envious of the students that will be taking this to further strengthen their training... fortunately, #p2091000# gave me some #t2022144#, too. Will this taste alright?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031552" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="13000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031552" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022144" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, where are the herbs used for headaches? Hmmm? Weren't you here last time to take care of your arthritis? No? Ahhh, you were the one asking for #t2022144#. Fortunately, #t2022144# is now ready. Would you like to take #b#t4031552##k with you right now?" />
+            <imgdir name="yes">
+                <string name="0" value="Here you go. You know how to take this, right? Heat it up and take it 30 minutes past a meal. Also, please tell #b#p2091000##k that training is good and all, but he should also take care of himself and go easy at times to avoid injuries." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You don't want to take it with you? You must be busy with something..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring #t4031552#? Ahhhh, this is that smell of goodness. Heat it up just right, and this medicine tastes as good as any. Great job there, my friend. Since you went through all the trouble to get this, you should have some yourself." />
+            <imgdir name="yes">
+                <string name="0" value="I better give this to the students fast. Once they're rejuvenated, it's back to work!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you not go see #b#p2091000##k yet? If you hold on to it for too long, it'll get cold and it won't work as well. Please go there immediately." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Is #b#t2022144##k still not ready? We can't hold off the training much longer. Go see #b#p2091002##k immediately." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? Did you lose #t4031552#? Oh no... you should have been more careful with that medicine. I'll give you another one for now, since the students at #p2091000# really need them, but please don't lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031552" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3816" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

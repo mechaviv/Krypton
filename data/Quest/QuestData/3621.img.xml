@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3621.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Wooden Hoe That Snapped" />
+        <string name="parent" value="Kong Ji's Request" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard that Kong Ji is in need of help. I should go check it out..." />
+        <string name="1" value="I went to visit Kong Ji again. She was sitting down, looking dejected. Her stepmom ordered her to plow the field by lunch, but her wooden hoe, which had been used for years and years, finally coudln't handle the pressure and snapped. Kong Ji felt that only a durable steel hoe can help her plow the field, so I have decided to get #t4031222# for her. I heard that I can obtain the #t4031222# by eliminating the Blins, who reside at the Black Mountain... \n\n#t4031222# #b#c4031222##k/1" />
+        <string name="2" value="I found a way to acquire #t4031222# through Blins at the Black Mountain, and gave them to Kong Ji, who still seemed devastated by the 'snapping' of the wooden hoe. Needless to say, she was ecstatic when given the steel hoe. She was thankful for my work, and went out to start weeding the garden.. Kong Ji's been through a lot; hopefully something good happens to her down the road." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흑흑 ... 안녕하세요... 어떻게 해요. 새어머니가 밭을 다 갈아놓으라고 하셨는데 나무 호미가 너무 낡아서 부러져 버렸어요. 새어머니가 시키신 일을 다 못하면 크게 꾸중을 들을 텐데 어쩌죠? 매번 저를 도와주셨으니까 이번에도 마지막으로 한번만 더 도와주시면 안되나요?" />
+            <imgdir name="yes">
+                <string name="0" value="마을 대장간에도 가봤는데 무쇠호미는 만들지 않는다고 하더라고요. 사람들한테 듣기로는 까막산에 살고 있는 깨비들 중에 가끔 무쇠호미를 가지고 있는 놈들이 있다고 해요. 그런데 깨비들은 너무 난폭해서 전 가까이 갈 수도 없답니다. 당신은 강해 보이니까 깨비들이 가지고 있는 #t4031222# 1개만 가져다 주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흑흑... 전 이제 어떻게 하면 좋죠?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="17000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031236" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031222" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sniff sniff ... oh, hi ... What should I do? My stepmother wanted me to plow the field, but the old wooden hoe snapped on me. I am afraid my stepmother might really yell at me if I don't finish this soon. I know you have been of tremedous help in the past. Can you please help me out once more?" />
+            <imgdir name="yes">
+                <string name="0" value="I even went to the blacksmith's shop, but they told me they don't make any steel hoes. From what I hear, some Blins that reside in the Black Mountain possess steel hoes. Unfortunately, I am not strong enough to get close to them, nevermind going up against them. You look strong enough, though, so please help me acquire #b1 #t4031222##k through the Blins." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sniff... sniff ... what's going to happen to me...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back! Did you find the steel hoe? That's great!! I heard that the Blins are a bunch of rascals pulling out pranks from left and right, making them really hard to deal with!! But here you are, with the steel hoe in hand ... it's the third time you've helped me out already. I'll never forget this, much like the first two. Thank you sooo much~" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If I can't find the iron hoe quick, then the sun will set, and my stepmother won't be too happy with me..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031222" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3620" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3302.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zenumist Cape" />
+        <string name="parent" value="Joining Zenumist" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="After visiting the Broker once more, he gave me a bottle that contained some strange-looking water. He then told me to take it to #bZenumist Society#k, and place it next to the blue alchemy pillar, which will automatically create the item for me. He then told me to give it to #b#p2111000##k... is the broker really telling the truth?  Seems impossible..." />
+        <string name="2" value="When I left #t4031705# next to the alchemy pillar, I heard a deafening explosion, followed by the creation of a useless tree branch. I had no idea what that was, but I gave it to #p2111000#. He seemed VERY satisfied with the result, and gave me #b#t1102135##k in return.  Why would he want a tree branch?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031705" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031703" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102135" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh you're here! I, the broker who caters to every client's need, have prepared the item for you. Here, take this and the test of #p2111000# should be a breeze. Take it." />
+            <imgdir name="yes">
+                <string name="0" value="Take this to the Zenumist Society and drop it in on the blue alchemy pillar in front of #p2111000#, and something will be made in front of your eyes. Don't worry about what's going to happen afterwards. Just show it to the leader, and he'll definitely let you in as a Zenumist." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... What? You don't trust the item I have in store for you? I mean, I already got my end of the bargain, but... the broker's reputation rests solely on legit transactions!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was good alchemy work there. For you to make that so easily, I see that you are ready to join Zenumist society. Just making the pillar react to your alchemy, however, is not enough. Your work itself was great, but no one knows the end result of this, right?" />
+            <string name="1" value="Please show me the item you've made through the alchemy. ...Hmm... brilliant. This should be enough. You're definitely someone that has mastered alchemy down to the core. I will #badmit you as a member of Zenumist.#k" />
+            <imgdir name="yes">
+                <string name="0" value="Alchemy... The union between magic and science isn't just a scholastic union. It's uncharted territory, so discovery is important. Your studies will definitely affect the whole continent in one way or the other. Think about the Flying Ship. The inventions made by the alchemists enrich the lives of everyone in this world.&#x9;" />
+                <string name="1" value="But don't forget about this one crucial point. This has to be achieved without disturbing the nature's course. You shall never stray away from that, like the Alcadnos. If you partake in their questionable methods, then you may end up losing what power you may have right now." />
+                <string name="2" value="Anyway, you are now officially a Zenumist. Please wear the cape wherever you go. Without it, no one will recognize you as a Zenumist, so don't ever lose it. It's the cape that ultimately differentiates Zenumist from Alcadno.  Along with our sense of humor. Ha." />
+                <string name="3" value="Keep this in mind. If you want to engage in serious conversations with other Zenumists, you MUST wear the cape. #bWear it#k, not just carry it around in your inventory." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmm... you didn't go see #p2111000# yet? Take that water bottle I gave you, head to Zenumist Society, and perform alchemy with the bottle on the magic pillar and show the results to the head of the society. It's really simple. Do you need even more instructions?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmm... what is it? In order to join Zenumist, you'll have to show me the results of your work." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost the bottle? My goodness... do I have to pick up after you? Sigh...I'll give you another one of #t04031705#, so don't lose it this time. Jeez..." />
+                <string name="1" value="If our deal was purely me giving you #t04031705# instead of making you a member of Zenumist, then I definitely would not have given you another one..." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031703" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3301" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3089.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Sprayer Elma Borrowed 1" />
+        <string name="parent" value="Orbis in Danger" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="1" value="The key tool used to fix the Orbis clouds is the Cloud Sprayer, but ever since Elma the Housekeeper borrowed it some 50 years ago, the sprayer hasn't been seen since. 50 years, and still no return??? I better go see #bElma the Housekeeper#k." />
+        <string name="2" value="I met up with Elma and received the #t4031308# that she borrowed 50 years ago. I should go back to Spiruna's house now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have one more thing to ask; would you like to help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="To put together the #t4031309# and blend it in with the existing clouds, I'll need #t4031308# with me. It was supposedly held by #p2032001# before, but 50 years ago, she lent it to #bElma the Housekeeper#k, who was anxious to see the pictures. Now, your job is to go see Elma and get #b#t4031308##k from her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's been over 50 years since I lent it away, and ... I guess I shouldn't put too much hope up on this..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="How can I help you? I'm in the midst of cleaning up place, so I do not have much time with me. It looks like you'll be covered with dirt in no time if you just stand there..\r\n#L0# #bI'm here to collect the #t4031308# that you have borrowed 50 years ago.#k" />
+            <string name="1" value="#t4031308#? Isn't that the item I lent to #p2032001 50 years ago. Maybe I haven't returned it yet. Please wait." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="The person that borrowed #b#t4031308##k 50 years ago was... #bElma the Housekeeper#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3088" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

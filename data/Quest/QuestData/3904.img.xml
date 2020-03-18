@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3904.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Queen's Tea 2" />
+        <string name="parent" value="Queen's Tea" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2012012# says that she doesn't know who #p2101007# is and she can't just hand over a #t4031577#. But she'll give you a #t4031577# if you eliminate #r30 #o5200000#s#k. \n\n#o5200000#  #r#a39041#" />
+        <string name="2" value="You eliminated 30 #o5200000#s and went back to #p2012012#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What can I do for you? What? You want a #t4031577#? I don't sell that to outsiders... What? A fairy named #p2101007# from #m260000000# wants it? #p2101007#...? But I've never heard that name before…" />
+            <imgdir name="yes">
+                <string name="0" value="You look like you really need it. But Fairy Tea Leaves are hard to get, even for fairies. Ah, I know. I'll give you a Fairy Tea Leaf if you do me a favor! Just slay #r30#k #r#o5200000#s#k around #m200000000#..." />
+                <string name="1" value="Actually, the reason I'm not selling Fairy Tea Leaves to outsiders is that it's really hard to get these days. The Fairy Tea plant is very sensitive and needs to be grown in a quiet place, but that's hard to do because of the #o5200000#s." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't give you a #t4031577# unless you really, really need it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you eliminated 30 #o5200000#s! Thank you so much! Now hold on one second while I bring the #t4031577# to you." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You must be having a tough time slaying the #r#o5200000##k. Unfortunately, if you can't slay #r30#k for me, I can't give you the #t4031577#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5200000" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3903" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="23" />
+        </imgdir>
+    </imgdir>
+</imgdir>

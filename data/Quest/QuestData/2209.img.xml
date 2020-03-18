@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2209.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bring a Lemon for Shulynch" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder what it is that Bartol wants me to do?" />
+        <string name="1" value="Bartol wants me to take this lemon to #bShulynch, who is in the ship's Training Room on the upper deck#k.  \n\n#i 2010004##t 2010004#  #b#c 2010004#/1#k" />
+        <string name="2" value="I've delivered the lemon to Shulynch." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="바르톨의 부탁으로 왔다고? 어휴, 쪼끄만한게 노인네처럼 움직이길 싫어해서... " />
+            <imgdir name="yes">
+                <string name="0" value="고마워. 요새 육지 바람 때문에 피부가 상한 것 같아서~ 레몬 팩좀 하려고~ 호호호." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="레몬을 주기 싫다구?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010004" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="First, please give this lemon to Shulynch." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! #bShulynch#k told me last night to buy her a #blemon#k, and I totally forgot about it. You can buy one from Gali who's right there. Shulynch is usually at the training ground, so go see her there. The #btraining ground#k can be found at the #beast end of the upper hallways in The Nautilus.#k" />
+                <string name="1" value="Do the three favors I asked you to do, and you'll get the Warp Card. Keep going!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't feel like doing it anymore?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you're here on behalf of Bartol? A lemon... that kid is so lazy, I swear." />
+            <imgdir name="yes">
+                <string name="0" value="Please tell Bartol thanks!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Can you please give Shulynch 1 lemon? If you do all this, then I'll give you the warp card. Fair deal, right?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What's going on?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2208" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="200801010000" />
+            <string name="end" value="200801020000" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

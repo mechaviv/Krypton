@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3250.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Operation Strategy 3: A Cute Baby Bird" />
+        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <int name="order" value="3" />
+        <int name="area" value="37" />
+        <string name="1" value="#p2041026# seems to be preoccupied with raising birds. According to the new research conducted, #o5220003#s have undergone changes under the management of Papulatus, but can make great pets when tamed. He has given you a cute baby bird, saying you can feed the bird #b#t4031992#s#k that can be obtained from the Clocktower Monsters. He has asked you to return the bird when it's fully grown." />
+        <string name="2" value="The baby bird has become full-fledged since you've been diligently feeding the bird #t4031992#s. Although it's sad to let go of the bird to which you have grown attached, but you have no choice but to return the bird to Ghosthunter Bob. Be well, bird." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220046" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow! I fed this one, this one... did I feed this one? No! I haven't fed the 3rd one yet! Here, have some food. Hehehe~it fills my appetite to just see them eat... Oh, are you here? " />
+            <string name="1" value="Pheeeew... I've been running around all day. Some researchers have said that #o5220003#s, though they've undergone changes under the management of Papulatus, can become cute, obedient birds when you tame them. Since all the monsters have been wiped out, I've decided to raise birds with all the time in my hands." />
+            <string name="2" value="But it's so much work to raise not just one, but ten birds at once... not to mention how hard it is to find food to feed all of them. Well, they're much too cute, though. Would you like to raise one?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Here, I'll give you one. Please take good care of it. You can feed them #b#t4031992##k that feed off of monsters at the Clocktower." />
+                <string name="1" value="#o5220003#s must be returned to their original habitat when full-fledged, so bring the #o5220003# back to me #bwhen it's fully grown#k. I'll be counting on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... guess you're not a huge fan of animals. But how? They're so cute... I'd even give them my hamburger." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041026" />
+            <int name="infoNumber" value="7067" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="3000" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220046" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q3250e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041026" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3249" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3250s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

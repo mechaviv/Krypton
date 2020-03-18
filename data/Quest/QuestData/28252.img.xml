@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28252.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for the Treasures" />
+        <string name="parent" value="The Completed Treasure Map" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012003:##k in #bHenesys#k claims to know the location indicated on the #rDirty Treasure Map#k. Let's go find him." />
+        <string name="1" value="He says he's certain that he's seen it while he was visiting #bNautilus#k, and suggests you go to #b#m100030000##k to search and investigate the area.\n\nReport back to #b#@1012003:##k in #bHenesys#k upon completion." />
+        <string name="2" value="#b#@1012003:##k in #bHenesys#k says it is necessary that you look into the emblem on the #rOld Worn-out Paper#k. Let's talk to him." />
+        <string name="demandSummary" value="#i4001363:# #t4001363:# #c4001363# / 1&#xD;&#xA;#i4001362:# #t4001362:# #c4001362# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;Able to proceed to 'Where Are the Treasures?' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm sure this place isn't too far from here. I've seen it before.\nI think I was on my way to #bThe Nautilus#k.\n\nOh, I remember!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This place must have been in #b#m100030000##k.\nIn fact, I'm sure of it. If you go there, you'll be able to find the place on this Map.\n\nGo and scope things out in that area. And by scoping things out, I mean using your Regular Attacks." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you curious?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back already? Let's see what you found." />
+            <imgdir name="yes">
+                <string name="0" value="This was definitely not worth an entire trip around Victoria Island.\nI can't help but feel somewhat irritated looking at the drawings on this piece of paper." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you find the treasures?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001363" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001362" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28251" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

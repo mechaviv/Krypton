@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8868.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Circle of Trust 2 (A Bond is Forged)" />
+        <string name="parent" value="Circle of Trust" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="An unhappy couple in Amoria? I should go find out what's wrong..." />
+        <string name="1" value="I spoke with Gary and Shatima, and it looks like their rings were broken and taken in to #b20 Ring Fragments#k by some Tweeters. When I have them all, I am going to head over to Moony." />
+        <string name="2" value="I returned to the Ring fragments to Moony, and now Gary and Shatima can get married! Phew, a lot of work, but well worth it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031525" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031526" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, are those Gary's and Shatima's rings?" />
+            <imgdir name="yes">
+                <string name="0" value="Absolutely! Gary's an old friend of mine. Hand that ring over and I'll mend it back perfectly. They won't even know it was broken." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, ok. Take your time and let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="There we go...good as gold! Tell Gary I said to take this with my best wishes. You're all set." />
+            <imgdir name="yes">
+                <string name="0" value="I already repaired the ring. Gary and Shatima are expecting it when you get a chance." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not enough pieces to meld the rings. I'll help you, but only after you've got all the pieces." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031525" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8867" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031525" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

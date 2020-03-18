@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4948.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Father's Love" />
+        <int name="area" value="50" />
+        <string name="0" value="Jonas gave me a new doll he made to give to his daughter.  I don't think Sophilia'll like it as much her favorite one, but I guess I should give it to her anyway, per her father's wishes." />
+        <string name="1" value="I gave Sophilia the new doll her father made.  It made her sad.  She asked me give Annabelia, the first doll Jonas made for her, back to her father." />
+        <string name="2" value="Jonas was very confused by the doll I gave him. He was almost speechless. I hope he is not going any more insane than he is right now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031811" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031768" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031811" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Thank you for finding my doll!  Annabelia say 'Hello'!\r\n\r\n#L0##bHere's a gift from your father.#l#k" />
+            <string name="1" value="What's that?  You went and saw Daddy?  And he said he had a gift for me?\r\n\r\n#L0##bYes.  Here it is.#l#k" />
+            <string name="2" value="Another new doll?  &lt;frowns&gt;  This doesn't look much like me at all, I should think.  Poor Daddy.  Sometimes I wish he would spend less time making toys and more time with me.  Could... could you do something else for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Here..." />
+                <string name="1" value="Can you give Annabelia to him?  I don't like to be parted from her again, but I think my Dad needs her more than I do." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please... it would mean a lot to both me and Daddy if you do this.  And he really needs my help now.  I hope you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Why, what's this old ragged thing? \r\n\r\n#L0##bSophilia told me to give this to you.  It's her favorite doll.#l#k" />
+            <string name="1" value="My daughter asked you to give me this?  But why?  It's dirty and old... I've made hundreds of different dolls better and more advanced than this one!  But wait... I remember this one... this... this is the first doll I made for her, when I was but a fledgling Toy Maker.  She kept it?  All this time?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You haven't given my doll to my Dad yet?  Please find Daddy and give my doll to him.  Annabelia will help him." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hey, you're back!  &lt;frowns&gt;  I found Annabelia lying on the ground.  I hope you didn't leave her on purpose.  Please, take her to Daddy.  It's very important that he has her." />
+                <imgdir name="yes">
+                    <string name="0" value="Just don't forget it this time. I am counting on you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201077" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031811" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201078" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4947" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031768" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

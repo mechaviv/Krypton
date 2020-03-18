@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2117.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shawn the Excavator's Request" />
+        <int name="area" value="30" />
+        <string name="0" value="#p1022006#, who resides at the East Rocky Mountain, said Shawn the excavator asked him for a favor..." />
+        <string name="1" value="Lately, the excavation site has been hit with an unknown monster. As a result, #p1022006# requested that I study the reason behind the monster's creation. To conduct the research, I'll have to collect #b5 each of #t4000196# and #t4000197##k that #b#o2230110##k and #b#o2230111##k use. \n\n#t4000196# #b#c4000196##k/5 \n#t4000197# #b#c4000197##k/5" />
+        <string name="2" value="He said studying #t4000196# and #t4000197# will take some time. I better wait til it gets done with." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000196" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000197" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have a friend who's busy excavating at the Excavation Site near Perion. His name is #p9040002#, and he asked for some help. Apparently he's never seen these monsters before, and they are interfering with the excavating process, and so he has asked me for help in eliminating them. Can you help us out?" />
+            <imgdir name="yes">
+                <string name="0" value="I appreciate your willingness to help me here. Before eliminating the monsters, I need you to do something else first. The only way to prevent the monster from ever coming back is to scientifically study the origin of the monster. The best way to do it would be for me to take a look at them myself, but I have so many other researches to conduct that I need you to gather up #b5 each of #t4000196# and #t4000197##k that #r#o2230110##k and #r#o2230111##k possess. " />
+                <string name="1" value="Don't know how to get to the Excavation Site? Head East for a while, until you run into #rRocky Road III#k, then look up to see a portal. Go there, and you'll be sent directly to the Site." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't know if I've asked for too much... but the monsters need to be taken care of ASAP..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring 5 #t4000196#s and 5 #t4000197#s?" />
+            <imgdir name="yes">
+                <string name="0" value="Good job. Now please wait here while I look into these, #t4000196# and #t4000197#. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring 5 #t4000196#s and 5 #t4000197#s with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000197" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000196" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

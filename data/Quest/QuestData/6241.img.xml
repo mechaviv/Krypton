@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6241.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Phoenix" />
+        <string name="parent" value="The Legendary Fire Bird" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081001##k said I'll have to take the egg to the highest nest in the sky to wake up #b#t4001113##k... \n\n#o9300089# #r#a62411#" />
+        <string name="2" value=" I battled #o9300089# after it hatched from the egg and I put him under my control." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="3121006" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="312" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Good news! I know how to hatch #t4001113#! It's not complicated. Do you know the sky nest? Great! Then it's simple--in the sky nest, you just put eggs in the highest nest and it should wake up. If you're not busy, would you like to hatch it?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Look at #o9300089# carefully and be wary--it may attack you! Please tell me how it goes! I want to watch it with you, but I have to look after these rare dragon eggs. Bummer I can't go... " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Are you busy? Darn! Where could I find someone to go to the sky nest...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You hatched #o9300089#! Fantastic! Now it can fly by itself!" />
+            <string name="1" value=" Huh? Did #o9300089# attack you? I told you to be careful! #o9300089# has its own identity and is very strong even if it's young. It doesn't know you, so that's why I think it attacked you. But you won so #o9300089#  will follow you now. That's their rule. Good job! You've got yourself a Phoenix!" />
+            <imgdir name="yes">
+                <string name="0" value="You can be a nice owner of #o9300089#. Please take care of it! It can help you in your travels!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="When you kill #r#o9300089##k, which hatches in the sky nest,  #o9300089# will follow you afterwards!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300089" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6240" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001113" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

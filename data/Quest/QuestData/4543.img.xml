@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4543.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I am Bored!" />
+        <string name="parent" value="Malek's Joy of Music" />
+        <int name="order" value="3" />
+        <int name="area" value="49" />
+        <string name="0" value="People in Kampung village seems not as perky as they used to be. Talk to #b#p9270061##k and see what else he needs to bring the energy back to village." />
+        <string name="1" value="#b#p9270061##k and entire village are bored and they need me to hunt #b100 #t4000466#s#k so they can entertain themselves with their favorite songs. \n\n#t4000466# #r#c4000466#/100#k" />
+        <string name="2" value="Kampung village is now full of delightful melody playing with finest #b#t4000466##k." />
+        <string name="demandSummary" value="#i4000466:# #t4000466:# #c4000466# / 100&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 30,000&#xD;&#xA;8,000 Meso&#xD;&#xA;Able to proceed to 'All taken away!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="8000" />
+            <int name="exp" value="30000" />
+            <int name="pop" value="8" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000466" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dear traveler, it's nice to see you coming to our Kampung Village. Hope you will have a great time here. Kampung life is great, but nothing is more boring than staying inside the village with nothing to do, you know?" />
+            <string name="1" value="Unfortunately, recently, we're been bored here ourselves... And as a chief of the village, I feel the responsibility of bringing certain items as a source of our entertainment. But since I, myself, cannot possibly leave for hunting. Would you help me bring laughter to our village? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I believe #b100 #t4000466#s#k will do just fine. Hope it won't take too long for you to gather them. Now, hurry on!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's so boring here without any music. You must understand how dull one's life could be without music!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is just great! What a fine instrument a #b#t4000466##k is, don't you think? " />
+            <imgdir name="yes">
+                <string name="0" value="Now, we will be able to enjoy ourselves as we play all the great traditional melodies of Kampung. Thank you very much!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected enough #b#t4000466##k yet. Without them, we're just as dull as a wooden stick!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270061" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000466" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270061" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4542" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

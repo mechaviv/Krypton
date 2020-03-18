@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10420.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Winter Bingo" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="There's no better time for Bingo than in the middle of a dreary winter! Check the Bingo board every day and receive some awesome prizes when you've filled up the entire Bingo board! Try making it to the game every day!\n\n&lt;Event Periods&gt;\nFebruary 22, 2010 - March 26, 2010" />
+        <string name="1" value="There's no better time for Bingo than in the middle of a dreary winter! Check the Bingo board every day and receive some awesome prizes when you've filled up the entire Bingo board! Try making it to the game every day!\n\n&lt;Event Periods&gt;\nFebruary 22, 2010 - March 26, 2010" />
+        <string name="2" value="There's no better time for Bingo than in the middle of a dreary winter! Check the Bingo board every day and receive some awesome prizes when you've filled up the entire Bingo board! Try making it to the game every day!\n\n&lt;Event Periods&gt;\nFebruary 22, 2010 - March 26, 2010" />
+        <string name="summary" value="Gather 20 #b#t4032422#s#k dropped by monsters and take them to Cassandra." />
+        <string name="demandSummary" value="#i4032422:# #t4032422:# #c4032422# / 20" />
+        <string name="rewardSummary" value="Winter Bingo Stamp" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We're already in the middle of winter. Time flies, doesn't it? Feels like there should be an event to cheer up this dreary time of year. I know! How about Winter Bingo? Find 20 Bingo Necklaces from monsters, and I'll put a stamp on your Bingo Board." />
+            <imgdir name="yes">
+                <string name="0" value="The event will start now! You must bring me 20 Bingo Necklaces!\n\n#i4032422# 20 #t4032422#s" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You know, if you fill up your Bingo Board, you'll get a treasure chest full of items. Are you sure you're not interested?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032422" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10420e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="91" />
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010032700" />
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

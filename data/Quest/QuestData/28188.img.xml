@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28188.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding Chief Stan in Henesys" />
+        <string name="parent" value="Don't Catch a Cold!" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says she has a favor to ask. Let's talk to her." />
+        <string name="1" value="Let's hear what #b#@1012003:##k in #bHenesys#k has to say." />
+        <string name="2" value="#b#@1012003:##k in #bHenesys#k has asked you to find the ingredients she needs to make Cold Medicine. Let's talk to her." />
+        <string name="rewardSummary" value="Exp 1000&#xD;&#xA;Able to proceed to 'Ingredients for the Cold Medicine' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I heard there is something going on in #bHenesys#k.\n\nThis might be a good chance for you to familiarize yourself with different maps. Won't you go over there and find out what's wrong?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for offering to help in such short notice.\nIt's just that I heard that something has happened in #bHenesys#k.\n\nPlease talk to #b#p1012003##k and investigate the issue." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome! (*cough cough*) #b#p1072008##k in #bNautilus#k sent you, right?\nI was just about to ask for help. #b#p1072008##k sure knows what I need! Haha!" />
+            <imgdir name="yes">
+                <string name="0" value="I heard you were studying magic in Ellinia. Thank you for coming this far to help me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012003##k is in #bHenesys#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28187" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

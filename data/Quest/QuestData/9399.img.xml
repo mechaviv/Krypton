@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9399.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mysterious Monster Crystal Statue" />
+        <int name="area" value="50" />
+        <string name="0" value="Apparently, #b#p2040050##k discovered the hidden secrets behind the Mundane Monster Statues. I better go visit #b#p2040050##k." />
+        <string name="1" value="I better find the gems #b#p2040050##k is looking for.\n\n#t04020000:# #b#c04020000#/3#k \n#t04020001:# #b#c04020001#/3#k \n#t04020005:# #b#c04020005#/3#k" />
+        <string name="2" value="After gathering up the gems, #b#p2040050##k gave me a new Monster Crystal Statue. I can turn into a monster for a short period of time with this!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020000" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4020001" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4020005" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2210000" />
+                    <int name="count" value="3" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2210001" />
+                    <int name="count" value="3" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2210002" />
+                    <int name="count" value="3" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there, I'm #b#p2040050##k. For the longest time, no one believed or cared about the legend of these Mundane Monster Figures. I, for one, believed in those, though, and set out to prove that those legends were in fact, true." />
+            <string name="1" value="And after much research and traveling, I finally discovered the secrets behind these Monster Figures. Do you want to know more about it, too?" />
+            <imgdir name="yes">
+                <string name="0" value="This may be a long story. I set off to travel a long way in hopes of discovering the truth behind the legends of the Monster Figures, and while traveling, I ran into a wise man who had a tribe to himself in the middle of the desert. The story behind the Guardian that wise man told me turned out to be a great clue." />
+                <string name="1" value="That tribe had a Guardian that protected their tribe. It may look like nothing more than a bunch of hay disguising itself as a 'figure', but it had immaculate jewelry on it's head. When the wise man placed the jewelry on its head, the previously ragged-looking 'doll' was engulfed in a mysterious beam of light, and became a powerful Guardian." />
+                <string name="2" value="That's when I thought of the small hole behind the Monster Figure, and hurriedly returned to town and placed a gem I picked up from the street on it. That's when the statue became engulfed by the mysterious light and emerged with mysterious power. If you give me a gem, I'll make a Monster Crystal Figure with mysterious powers surrounding it." />
+                <string name="3" value="The gems I'll place on the back of the Statue are #b3 #t04020000##ks, #b3 #t04020001##ks, and #b3 #t04020005#s#k. Wthen you get me the gems, I'll make you the Monster Crystal Figure." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not interested in the mysterious powers of these Statues? It's a mistake if you ask me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Wow, you brought all the gems. Now remove them from your inventory, and I'll turn this into a Monster Crystal Figure, with mysterious powers engulfing the structure." />
+            <imgdir name="yes">
+                <string name="0" value="Here it is! From a mundane statue into a mysterious Monster Crystal Figure! With this statue, you'll be able to transform into a monster for a period of time. Please know that #bonce you get attacked by monsters or receive damage, you'll be changed back into a human#k." />
+                <string name="1" value=" Hope you have a great time on your journey, and if you need more of the Statues, then please let me know!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" In order to create the Monster Crystal Figure, I'll need #b3 #t04020000#s#k, #b3 #t04020001#s#k, and #b3 #t04020005#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020005" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4020000" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4020001" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9398" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="8" />
+            <string name="start" value="2008042900" />
+            <string name="end" value="2008061700" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

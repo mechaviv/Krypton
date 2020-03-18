@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Richie Gold is Here" />
+        <int name="area" value="50" />
+        <int name="oneShot" value="1" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="A new, potentially powerful individual is creating a lot of buzz in the world of Maple. Click on the light bulb that's flashing on top of the individual's head." />
+        <string name="1" value="Try to make a deal with #b#p2084001##k." />
+        <string name="2" value="You engaged in a transaction with #b#p2084001##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am Richie Gold, and I have a number of rare items that you won't find in any store. Are you interested in making a deal with me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can find me at the Free Market or Lith Harbor." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? I am not interested in dealing with poor folks." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is a small gift that commemorates our first transaction." />
+            <imgdir name="yes">
+                <string name="0" value="Nice meeting you. Please come often." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2084001" />
+            <int name="infoNumber" value="10201" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2084001" />
+            <int name="lvmin" value="20" />
+            <string name="end" value="2007112700" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28275.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] You Were Bitten by a Green Mushroom?" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1032104:##k in #b#m101000000##k says she has a favor to ask you." />
+        <string name="1" value="She wants you to hunt 40 #rGreen Mushrooms#k because she was bitten by one. They can be easily found in #b#m101010102##k.\n\nReport back to #b#@1032104:##k in #b#m101000000##k." />
+        <string name="2" value="You have eliminated 40 #rGreen Mushrooms#k that bit #b#p1032104##k in #b#m101000000##k." />
+        <string name="demandSummary" value="#o1110100# #a282751#" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my, let me tell you a story. Something crazy happened to me a few days ago!\nI was inspecting the woods in the forest and something kept circling my feet. I looked down, and it was a #rGreen Mushroom#k!" />
+            <string name="1" value="I was caught off-guard so I screamed, and the monster bit my foot! Look, it's still swollen! Please, please, please do me a favor!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can probably guess what my favor is.\nEliminate those #rGreen Mushrooms#k that had the audacity to bite my beautiful foot!\n\nI think 40 should do. You 'll find a lot of them in #b#m101010102##k. Go on now, get 'em!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How can you say 'no' to this pretty face?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Tee hee! Did you show them not to mess with me ever again?\nHow dare they even come near my beautiful, perfect feet." />
+            <imgdir name="yes">
+                <string name="0" value="Please step on those #rGreen Mushrooms#k if you ever see them around. Hee hee!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't caught 40 #rGreen Mushrooms#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101000" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <int name="lvmin" value="14" />
+        </imgdir>
+    </imgdir>
+</imgdir>

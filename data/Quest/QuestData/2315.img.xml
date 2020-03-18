@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2315.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Exploring Mushroom Forest (2)" />
+        <int name="area" value="30" />
+        <string name="0" value="You must find a way to break through the powerful barrier in Mushroom Forest." />
+        <string name="1" value="The #bSecretary of Magic#k of Mushking Empire might have an idea about what to do." />
+        <string name="2" value="You reported the condition of the barrier in Mushroom Forest to the #bSecretary of Magic#k of Mushking Empire." />
+        <string name="summary" value="You should find the #bSecretary of Magic#k of Mushking Empire." />
+        <string name="rewardSummary" value="EXP 4,000\r\nCan proceed to 'Exploring Mushroom Forest (3)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <int name="nextQuest" value="2316" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A powerful barrier of magic, huh? Then what should we do? If we can't find a way to break that barrier, then we won't be able to save the princess. If it's impossible to physically break through, as you mentioned, then how about requesting help from our #bSecretary of Magic#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please go see him immediately. The #bSecretary of Magic#k may seem a bit on edge, but he's very knowledgeable, and I'm sure he'll know what to do." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please do not forget our plea for help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? You investigated the barrier in the Mushroom Forest?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm… this is interesting. It's a barrier set up by someone with a powerful force of magic, which means there's no way we can manually break through it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go see the Secretary of Magic." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2314" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

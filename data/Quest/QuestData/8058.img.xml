@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8058.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 6" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="6" />
+        <int name="area" value="40" />
+        <string name="0" value=" After observing the magnificent view of El Nath, I should start up a conversation with Scadur" />
+        <string name="1" value="Scadur offered to take me to Omega Sector. Once I get there, he advised me to look for Jr. Officer Medin..." />
+        <string name="2" value="I was able to meet up with Jr. Officer Medin. Where will I go next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2002011" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8059" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you like El Nath? I know it's cold here, but isn't it nice? Ready to go to the next spot?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll send you to the farthest town in the world, Omega Sector." />
+                <string name="1" value="Once you arrive there, talk to #eJr. Officer Medin#n, and he'll take you to another spot." />
+                <string name="2" value="Oh yes, if you step outside, you'll be encountering strange, out-of-this-world creatures that are creeping up around town, so I advise you not to wander around!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I'm glad to hear that you actually like it here." />
+                <string name="1" value="You can always transfer to another town, so have yourself a ball here!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Nice job getting here, a town located Obviously far from anything else. I heard of your arrival through Scadur. There's really nothing much here, so take your time observing the area." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050009" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8057" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

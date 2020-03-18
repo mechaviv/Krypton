@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3408.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Aliens" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Dr. Kim at the Command Center in the Omega Sector." />
+        <string name="1" value="Dr. Kim of the Command Center notified me that a powerful new Alien has appeared somewhere around the Boswell Field, and wanted me to eliminate it for them. He said he had to ask me for help since the new robot isn't ready just yet... I need to head over to the hidden place at the Boswell Field and defeat at least 5 #bMT-09#k's.\n\n#o5120100# #r#a34081#" />
+        <string name="2" value="I managed to eliminate all 5 MT-09's that Dr. Kim of the Command Center requested. I really hope that the new robot is made soon, so I don't have to ever do this again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1032011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... we have ourselves an emergency. We received a word that a group of imposing, threatening aliens are on their way here. The problem is, the new robot is still on its developmental stage... arrght, this is driving me crazy! You... if  that's fine with you, will you please help us out? We need your word right now." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! The word is, there's a group of Mateon aliens on their way here, and one of the most powerful Mateons around, #b#o5120100##k, is already undercover, waiting around the Boswell Field. #b#o5120100##k is definitely unlike anyone else you've ever faced, and even our army is having a difficult time handling it. I guess it's too powerful a monster for even a disciplined army like ours." />
+                <string name="1" value="What I'm asking from you is simple. Please go and defeat 5 #b#o5120100#s#k, which is operated by the aliens. #b#o5120100##k is the culmination of advanced technology from the aliens, so they are much more devastating than anything you've ever run into. I strongly suggest that you take them on with a party, not just by yourself. I'll be waiting for you here. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really...! I thought you'd be there to help us out. This is quite disappointing. I'll have to find someone else eager to join forces with us. Now, if you'll excuse me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh my goodness... did you really find a way to defeat #b5 #o5120100#s#k? I knew you were something else, but this just blows my mind!! Alright... since you helped us protect the Omega Sector as well as Ludibrium, I'll have to reward you accordingly. This will definitely help you on your journey, so please take it." />
+            <imgdir name="yes">
+                <string name="0" value="What do you think about #b#t1032011##k? I can't even begin to thank you for all your hard work done for the Omega Sector and myself. I am sincerely thankful to have run into someone like you in times of need. Now, it's my job to fully develop the new robot so I don't put all your work in vain. Please drop by to say hello every now and then, alright? Bye!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have completed my task, yet. Head over to the hidden area of Boswell Field defeat #b5 #o5120100#s#k for us." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120100" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3407" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

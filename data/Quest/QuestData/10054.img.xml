@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10054.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gwin's Tale" />
+        <int name="area" value="50" />
+        <string name="0" value="The Maple Administrator says that she has something to tell you." />
+        <string name="1" value="You should take the Maple Administrator's advice and talk to Gwin, who started his adventures alongside the very first adventurers in Maple World. Take 1 #bDrake's Blood#k and #bgo see Gwin#k who is somewhere in Victoria's Central Dungeon." />
+        <string name="2" value="Gwin, who was one of the first adventurers in Maple World, has yet to stop adventuring. You gave him a Drake's Blood and received his tale in return." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001204" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2012000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been tough collecting the tales I've requested, hasn't it? Let me inform you of one thing that might help you, #h0#. Maple World is filled with experienced heroes and they have more stories to tell than anyone else in the world." />
+            <string name="1" value="Tales you acquire from them will be extremely valuable. How about finding #bGwin#k, who has set out to travel the central dungeon of Victoria?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Gwin went on a new adventure to the central dungeon of Victoria but has not yet returned. He must be running out of items by now... Will you take him #b1 Drake's Blood#k and show your support, #h0#? Surely, it would help him a lot." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It would be helpful to hear Gwin's tales." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah... Is this the end...?#b\r\n#L0#Are you alright, Gwin?#l" />
+            <string name="1" value="Who's there? This is a dangerous place... #b\r\n#L0#I've traveled far just to hear your stories.#l" />
+            <string name="2" value="My tales...? Meh... Look at me, I'm pathetic. I've run of out items.#b\r\n#L0#I've brought some things for you.#l" />
+            <string name="3" value="Oh, this is Drake's Blood! With this item, I'll be able to survive here for at least a month! Thank you. Did you say you've come to hear my stories? I can't talk long since I haven't found what I'm here to find, but I'll give you this. This is my documentation of everything that has happened to me." />
+            <imgdir name="yes">
+                <string name="0" value="I better power up! My adventure hasn't come to an end yet." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Find Gwin, who has embarked on an adventure in the central dungeon of Victoria Island." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Ah, I've run out of items... It would be great if I just had 1 #bDrake's Blood#k..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2012000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <int name="infoNumber" value="10057" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="000" />
+                </imgdir>
+                <imgdir name="1">
+                    <string name="value" value="100" />
+                </imgdir>
+                <imgdir name="2">
+                    <string name="value" value="001" />
+                </imgdir>
+                <imgdir name="3">
+                    <string name="value" value="101" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10052" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001204" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <string name="start" value="2008101300" />
+            <string name="end" value="2008103000" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29019.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title - Saint Exorcist" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142140" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You can apparently acquire the title of #b&lt;Saint Exorcist&gt;#k by eliminating undead monsters and sending them back to nirvana…" />
+        <string name="1" value="#b#eTitle - Saint Exorcist#k#n\r\nEliminate undead monsters and send them back to where they came from.\n\n1 #t2386000# \n1 #t2386004# \n1 #t2386010# \n1 #t2387002# \n1 #t2387003# \n\n#o8140600# #a290191#\n#o8142000# #a290192#\n#o8143000# #a290193#\n#o8190003# #a290194#\n#o8190004# #a290194#\r\n" />
+        <string name="2" value="You were able to eliminate the undead monsters and acquired the title of #b&lt;Saint Exorcist&gt;#k." />
+        <string name="demandSummary" value="#t2386000# 1\r\n#t2386004# 1\r\n#t2386010# 1\r\n#t2387001# 1\r\n#t2387002# 1\r\n#t2387003# 1\r\n#o8140600# #a290191#\r\n#o8142000# #a290192#\r\n#o8143000# #a290193#\r\n#o8170000# #a290194#\r\n#o8190003# #a290195#\r\n#o8190004# #a290196#\r\n" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1142140:# #t1142140:# 1 \r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142140" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Your spirit is more hardened than ever, and your history supports that theory. That being said, I see your eyes lingering with doubt. Are you beginning to question your identity? Well, the answer can be found within yourself. Do you wish to conclude the trip that allowed you to seek for the answer?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Evil spirits at times use their powerful force to influence the pure spirits nearby. Please stop them from doing so. Then, and only then, will you acquire the title of &lt;Saint Exorcist&gt;..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's okay if you don't trust me, but it's not okay for you to lose faith in yourself. That's what's important." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The spirits of darkness will no longer be able to attack you anymore, because you are now a &lt;Saint Exorcist&gt;…" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="They should all be incinerated and sent to nirvana, but I don't think you have enough experience to make that happen yet." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Did you gather up the cards that embody their spirits?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mbcard">
+                <imgdir name="0">
+                    <int name="id" value="2386000" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2386004" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2386010" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2387002" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2387003" />
+                    <int name="min" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8140600" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8142000" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="8143000" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="8190003" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="8190004" />
+                    <int name="count" value="444" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29018" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="92" />
+        </imgdir>
+    </imgdir>
+</imgdir>

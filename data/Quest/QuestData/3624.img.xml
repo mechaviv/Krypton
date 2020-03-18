@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3624.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on Brotherly Love" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook after helping out the brothers Chil Sung and Chil Nam. Where did it go? Should I go see Chil Nam again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get #b#t4031237##k for him. I was pretty sure I received it while helping out the brothers Chil Sung and Chil Nam, but I can't find it for some reason. I visited Chil Nam and explained the matters to him, and he made a deal with me. If I give his brother #b5 #t4000095#s#k, then he'll give me the storybook.\n\n#t4000095# #b#c4000095##k/5" />
+        <string name="2" value="I acquired 5 #t4000095#s and gave them to Chil Sung, as requested by Chil Nam, in order to reacquire #t4031237#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031237" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000095" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, it's you. How have you been? You seem to have gotten a lot stronger these day! Hahaha! What are you doing here? You look like you want to ask me something." />
+            <string name="1" value="Did you really lose the storybook I gave you? Well, I can give you another one, but not for free. That book contains important lessons regarding the power of the brotherhood, and if you can work a little bit for us brothers once more, then I'll give you the book." />
+            <imgdir name="yes">
+                <string name="0" value="My brother is worried about something big these days. See. his storage has been littered with rats these days, and they have been busy eating away his sack of rice. Please get him #b5 #t4000095#s#k for me. I heard you can get those at the #bEos Tower#k. Thanks~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Aren't you here because you need the storybook? Rumors suggest that #b#p2040052##k is re-collecting the storybook." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Chil Nam told me about the story. So you're going to get me some rattrap? Thank goodness, because I have been worried sick about those rats these days. Did you bring them?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahhh ... I've only heard of these; I've never seen these before. This is called a rattrap... I really hope this works, because those rats are literally taking food away from me. Thank you for helping us brothers out once more. This time, pleeeaaase hold on to the storybook." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This didn't happen before, but recently my storage has been invaded by a bunch of mice, eating away my rice. Chil Nam said he requested for the rattrap from this trustworthy person, but no word. Rattrap is a device that catches rats that can be obtained at Eos Tower, but I've never seen it, and I'm very curious to find out how it looks like." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000095" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3605" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3617" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031237" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

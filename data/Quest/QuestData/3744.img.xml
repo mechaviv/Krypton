@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3744.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Defeat the Mavericks" />
+        <string name="parent" value="Year 2230- Imminent Collapse!" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="Hoya, the boy you met at the lobby of the dangerous tower in the year 2230, has asked you to eliminate the pesky Mavericks and report it to Nalo." />
+        <string name="2" value="Hoya, the boy you met at the lobby of the dangerous tower in the year 2230, asked you to eliminate some pesky Mavericks. You did so and reported it to Nalo at the top of the tower. Nalo seemed concerned about Hoya's immature and irresponsible actions." />
+        <string name="demandSummary" value="#o8120104# #a37441#&#xD;&#xA;#o8120105# #a37442#&#xD;&#xA;#o8120106# #a37443#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 90,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="90000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Yoohoo! Here! Over here! How did you get in here? This tower could collapse any minute, you know. Since you've come so far, you're probably here to rumble with the Mavericks. Am I right? Then would you do me a favor?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Nalo says I'm too young and can't take on any major tasks. So he asked me to watch the Mavericks' movement patterns. But I know I can handle bigger things. I have something to investigate, so could you eliminate the Mavericks for me and report it to Nalo upstairs? Just 30 Mavericks of each type. Easy, huh? Then I'll see you later!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come on, it'll be fun!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Who are you? You want something from me?\r\n#b#L0#I did a favor for Hoya, and I'm here to report it.#l\n#k" />
+            <string name="1" value="Why, that little rascal. I can't believe he dumped his responsibilities on you! I apologize. He doesn't think things through! How could he entrust a stranger with his duties?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your help. Hoya will get an earful from me later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="All you have to do is eliminate 30 Maverick Type A, 30 Maverick Type S, and 30 Maverick Type D and report to Nalo." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate 30 Maverick Type A, 30 Maverick Type S, and 30 Maverick Type D." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082012" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8120104" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8120105" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="8120106" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3742" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

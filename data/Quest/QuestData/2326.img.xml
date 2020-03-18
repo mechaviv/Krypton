@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2326.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="James's Whereabouts (2)" />
+        <int name="area" value="30" />
+        <string name="showLayerTag" value="james2" />
+        <string name="0" value="You should help #b#p1300008##k make his escape." />
+        <string name="1" value="You need to bring a #b#t4001317##k to #b#p1300008##k to help him escape." />
+        <string name="2" value="You brought a #b#t4001317##k to #b#p1300008##k to help him escape." />
+        <string name="summary" value="You should bring a #b#t4001317##k to #b#p1300008##k to help him escape." />
+        <string name="demandSummary" value="#i4001317:# #t4001317:# #c4001317# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 12,000\r\nCan proceed to James's Whereabouts (3) quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="12000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001317" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2327" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="There might be a way to escape this place. Can you help me with one thing?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Before I hid here, I think I saw a penguin walking around the area with a strange-looking helmet. If you can get me that helmet, then I think I'll be able to disguise myself as one of the penguins and escape this place. Please get me the #b#t4001317##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please take me back to my brother… please…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring back a #b#t4001317##k for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! I can finally go home! Thank you so much." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Without a #b#t4001317##k, there's no way I can escape the castle. It's too dangerous…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001317" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2325" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

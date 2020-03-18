@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3757.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Dragon Rider's Identity 2" />
+        <int name="area" value="41" />
+        <string name="0" value="Learn about the strange things that have been happening in Leafre from #bChief Tatamo#k." />
+        <string name="1" value="Go into #bThe Forest That Disappeared#k in Minar Forest and investigate the whereabouts of the Dragon Rider." />
+        <string name="2" value="You discovered the identity of the Dragon Rider from #bMatada#k, the Halflinger Adventurer." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="nextQuest" value="3758" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Like I said, we Halflingers have enjoyed years of peace thanks to our smart diplomacy with the Dragon face. But recently, we've discovered that some of our grain storages were destroyed and our livestock killed. We were horrified." />
+            <string name="1" value="For our own safety, we formed security groups. That's when we discovered who was attacking our livestock. A dragon! The twist is that there was someone riding and controlling the dragon..." />
+            <string name="2" value="We call him the #bDragon Rider#k. We chased him, but lost him during a fierce battle in #b#eThe Forest That Disappeared#k#n. Many Halflingers were hurt, so we can't continue the investigation ourselves. #b#h0##k, would you assist us?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. The Dragon Rider was last seen in #bThe Forest That Disappeared#k. Please investigate there first." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="The problem is bigger than it may seem. Please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Is there something I can do for you?\r\n#L0##bI'm here in pursuit of the Dragon Rider.#l\n#k" />
+            <string name="1" value="The Dragon Rider... Ah. You must be here at the request of the Halflingers.\r\n#L0##bYes. Chief Tatamo in Leafre asked me to come.#l\n#k" />
+            <string name="2" value="I see. I'm investigating that myself. I'm also a Halflinger born in Leafre. I've been exploring the world and just happened to be returning home when I felt a strange energy within the Dragon race." />
+            <imgdir name="yes">
+                <string name="0" value="So. They call him the #bDragon Rider#k, eh? I observed some of his movements from here, though I couldn't quite make out his features. In any case, he headed with the Dragon toward the #b&lt;Crimson Sky Doorway&gt;#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Investigate where the Dragon Rider could have escaped to from #bThe Forest That Disappeared#k in Minar Forest. Perhaps someone saw him?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2085000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3756" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

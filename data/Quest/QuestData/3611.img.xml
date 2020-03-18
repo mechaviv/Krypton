@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3611.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminate Goblins" />
+        <string name="parent" value="Goblin at Black Mountain" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="Armed with 3 types of food that Goblins cannot resist, the quest to defeat the Goblins has now officially begun. Chumji advised that I drop the baits at various spots near the abandoned house in the Black Mountain to draw the Goblins out, and proceeded to give me the details on exactly where to drop them: roasted pork in front of a stack of rocks; buckwheat paste inside a tree hole; rice wine in a stone lantern?\n\n#o7130400# #r#a36113##k\n#o7130401# #r#a36111##k\n#o7130402# #r#a36112##k\n#t4031232# #b#c4031232##k/1\n#t4031233# #b#c4031233##k/1\n#t4031234# #b#c4031234##k/1" />
+        <string name="2" value="I brought roasted pork, buckwheat paste, and rice wine and made my way up to the very top of the Black Mountain, where the abandoned house is located. I was able to successfully draw the 3 King Goblins out from the house and defeated all of them. When the Goblins were defeated, they dropped a bunch of jewelry, and after bringing them all to Chumji, he decided to give me one as a gift." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031232" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031233" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031234" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002483" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1322033" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1102064" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4031238" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, now take these to the top of the Black Mountain. At the very top, you'll see an abandoned house with 3 King Goblins from the storybook hidden inside. It'll be near impossible to find them just by looking at them, you know; Goblins are very good at hiding from human sight. I'll ask you this one more time: Are you sure you can handle this? This is not going to be easy." />
+            <imgdir name="yes">
+                <string name="0" value="Very trustworthy. Hahaha... Okay, now I'll teach you how to draw those Goblins out. The #bYellow King Goblin#k is a Goblin that gets easily frightened like a chicken. It's the Goblin that once was so scared by the cracking sound of a hazelnut bite that it ran without picking up its own bat. Now, this Goblin is a big fan of pork, so if you head over to the abandoned house and place roasted pork on a stack of rocks near the house, it'll show up for sure." />
+                <string name="1" value="Next up is the #bBlue King Goblin#k, who is prone to forgetting things here and there. This Goblin manages to lose things quite frequently, once even losing the Goblin Hat. Some petty thief picked it up and tried stealing other things, until he got caught by the people and got heavily punished for it. This Goblin prefers #bRice Wine#k. There's a #bStone Lantern#k around the abandoned house; pour the Rice Wine in it, and it'll surely come out of the house." />
+                <string name="2" value="Last, but not least, the #bGreen King Goblin#k likes to engage in some Korean Wrestling. There are times in the middle of the night where it'd pop out in front of an unsuspecting soul in the middle of the night, and engage in Korean Wrestling, wearing the person out in the process. This Goblin is very fond of #bbuckwheat paste#k, and if you place it inside the #btree hole#k at a tree near the abandoned house, it'll surely appear." />
+                <string name="3" value="Your task is to defeat all 3 King Goblins and bring back the items that they'll drop: Goblin bat, Goblin hat, and the Goblin cape. This may be too hard for you to handle alone, so I suggest you team up with a couple of your friends." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Yes, it's a tough task, and I totally understand if you're not ready for it. Once you gain the confidence to beat the Goblins, bring back the 3 baits and talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is incredible! Just incredible! How did you defeat all 3 King Goblins? Thanks to you, we were able to send the Goblins back to the storybook. For your hard work, I'll let you take one of the three Goblins items you brought back." />
+            <imgdir name="yes">
+                <string name="0" value="You wanted that? I see... and as for the restored 'Goblin Story', Wiz the Librarian might be looking for it, so take it with you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="After defeating the King Goblin, you must pick up the item that it drops. If you have run out of baits, then please consult the people in town." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Have you defeated the King Goblin? You haven't? Well, it's understandable ... if you have run out of baits, then please consult to people in town." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031234" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031232" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031233" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7130401" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7130402" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="7130400" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3610" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022050" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022051" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022052" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

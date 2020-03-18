@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3630.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Retrieving the Storybook : The Kids That Became the Sun and the Moon" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard the Helios Tower Library has been ruined. I need to go check it out..." />
+        <string name="1" value="Wiz the Librarian seemed very concerned about the mix-up of the storybook on The Kids That Became the Sun and the Moon, and he wished to get the story straight and find the storybook that actually does present the story in the right order." />
+        <string name="2" value="Through the request from Wiz the Librarian, I have managed to straighten out the story of the Kids That Became the Sun and the Moon, and acquired the fixed storybook, afterwhich I headed back to Wiz and gave him the book." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="큰일났군요. 해와 달이된 오누이 이야기책이 루디브리엄에서 시작된 차원의 균열의 여파로 내용을 알아볼 수 없게 뒤엉켜버렸어요. 아마도 지금쯤 아랫마을에 살고 있는 햇님이와 달님이에게도 무슨 문제가 생겼을 거에요." />
+            <string name="1" value="하지만 전 이 도서관 밖으로 나갈 수 없어요. 도서관에서 책들을 관리하는 것이 저의 일이거든요. 절대 자리를 비워서는 안돼요. 혹시 아랫마을로 가시는 거라면 해와 달이된 오누이 이야기를 바로 잡고 온전한 #b#t4031270##k을 한 권 가져다 주세요." />
+            <imgdir name="no">
+                <string name="0" value="이 도서관이 복구되지 않는다면 아랫마을은 이야기들이 뒤엉켜버려서 영원히 혼란 속에 빠질 텐데 큰일이군요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031270" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020012" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, no. the storybook on Haetnim and Dalnim have been affected by the cracked dimension caused in Ludibrium, and now the pages are totally out of whack. About now, something bad might have happened to Haetnim and Dalnim who both reside in the Folk Town." />
+            <string name="1" value="Unfortunately, I cannot leave this library right now. It's my duty to stay in the library and take care of the books. It's not something I can skip. If you are on your way to the Folk Town by any chance, then please straighten out the story of Haetnim and Dalnim and give me the real, straightened-out version of #b#t4031270##k." />
+            <imgdir name="no">
+                <string name="0" value="If this library is not fixed soon, the numerous stories of the Folk Town will be jumbled up, and the whole town will be in a state of chaos." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have gotten the story straight. If you return this book to its exact spot in the library, the library will probably return to its peaceful state. Thank you so much for contributing to the Library Restoration project." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please straighten up the story and bring me the fixed storybook." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031270" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

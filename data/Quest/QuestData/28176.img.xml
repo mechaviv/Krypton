@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28176.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Solving the Mystery" />
+        <string name="parent" value="Who is the suspect?" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032001:##k in #b#m101000000##k is known to love wine. Let's go find him." />
+        <string name="1" value="The suspect was #b#@1040000:##k in #b#m106010100##k. Let's rush over to #b#m100000000##k and inform #b#@1012003:##k." />
+        <string name="2" value="You have revealed the hidden secret of the Iron Fragment and found the suspect. It was #b#@1040000:##k in #b#m106010100##k. A random thought: collecting ingredients for the wine was a lot of work." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Catching the Suspect' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Isn't this the #rV.I. Orange Mushroom Wine#k? This is a precious bottle of wine! You must be a special guest, haha! I'm not a drunkard or anything, I just like to enjoy it once in awhile. It's more of a hobby than anything, really. So, anyway, you're here for a favor?" />
+            <string name="1" value="Hmm, let's see. Wait, this #rIron Fragment#k is cast with some sort of magic spell. Let me take a good look at it." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This magic can control humans. Are you curious about who this magic has controlled in the past?\nOf course, that's the least I can do for someone who has brought me a bottle of #rV.I. Orange Mushrrom Wine#k. Haha!\n\nFirst step is chanting a magic spell. Wait, wait. \n\nOh, right... A... then B... then *AHEM* CDEFG!!\n\nNow, it'll show you who it is if you look into the Crystal Ball." />
+                <string name="1" value="Hmm...? That's #b#p1040000##k, who guards the dungeon entrance in #b#m106010100##k.\nWait, so it was #b#p1040000##k who attacked #b#p1012003##k? I've seen him a few times passing by, but he didn't seem like the violent type." />
+                <string name="2" value="Seeing how this is cast with magic, I can only assume that there is someone behind all of this.\nFirst, go back to #b#m100000000##k and tell #b#p1012003##k about this.\n" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You there, are you teasing me with bottles of #rV.I. Orange Mushroom Wine#k? Just hurry up and accept!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Is that so? You found the suspect.\n\nWho? #b#p1040000##k?" />
+            <imgdir name="yes">
+                <string name="0" value="I don't understand why #b#p1040000##k would do such a thing. I'm just glad I finally know the truth.\n\nAll-out war could have broken loose in Perion if I hadn't known any better." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012003##k is in #b#m100000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28175" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

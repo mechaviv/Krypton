@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9881.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wanted: Stumpy" />
+        <int name="area" value="50" />
+        <string name="0" value="#bCassandra#k has something to tell you. Rush over to her." />
+        <string name="1" value="Defeat Stumpy, who controls the stumps, and return to #bCassandra#k. \n\n#o3220000##r #a98811##k " />
+        <string name="2" value="You have done #bCassandra#k a favor. Help her once a day until September 28th." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Come back after you defeat #rStumpy#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q9881e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q9881s" />
+            <int name="lvmin" value="31" />
+            <int name="lvmax" value="40" />
+            <string name="start" value="2007081600" />
+            <string name="end" value="2007092000" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

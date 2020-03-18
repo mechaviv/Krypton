@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2344.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mushking Empire in Danger" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Mushking Empire is in danger!" />
+        <string name="1" value="Take the #bRecommendation Letter#k that Mike has written and go to #b#p1300005##k in the Mushking Empire." />
+        <string name="2" value="You took the Job Instructor's Recommendation Letter and met with the Mushking Empire Head Security Officer." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Who are you? You look like an adventurer exploring Maple World. Our kingdom needs true warriors to rescue us from our desperately dangerous situation. If you have no business here, be on your way." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032375" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2344e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040001" />
+            <string name="startscript" value="q2344s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+            <imgdir name="job">
+                <int name="0" value="2210" />
+                <int name="1" value="2211" />
+                <int name="2" value="2212" />
+                <int name="3" value="2213" />
+                <int name="4" value="2214" />
+                <int name="5" value="2215" />
+                <int name="6" value="2216" />
+                <int name="7" value="2217" />
+                <int name="8" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

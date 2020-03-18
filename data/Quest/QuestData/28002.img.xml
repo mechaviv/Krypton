@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Secret Note" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="A secret note came from the Snow Spirit of Happyville. I wonder what happened?" />
+        <string name="1" value="I finally realized the true intent of the Snow Spirit as she strives to protect Happyville from disaster. In order to ruin Scrooge's plan, she asked Alcaster of El Nath for some much needed help. I better go find him immediately!" />
+        <string name="2" value="I gave Alcaster a note from Snow Spirit. Now it's time for me to wait for his reply." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032091" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032091" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there, #b#h0##k. My name is Snow Spirit. It's that time of the year again here in Happyville. Maplemas is coming, and the whole town is eager to enjoy the festivities. One person, however, seems intent on ruining all that for us. Have you heard about Scrooge and his plans? He is trying to take away our Maplemas, and he is currently holed up somewhere hatching a plan to do just that. I don't understand why he'd want to do such a terrible thing... but since I am the protector of Happyville, I am here to ask you for help in our mission to defeat Scrooge and save Maplemas. Would you like to join me?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! I knew you'd volunteer to help out. Now allow me to explain to you what we do for Maplemas here in Happyville. Every year, the residents of Happyville get together and hold a festival in preparation for Maplemas by creating one giant snowman. On the eve of Maplemas, the residents will gather up in front of the snowman, Say their prayers, and make new year's resolutions as well. (Shhh... this is just between you and me, but while the residents Say their prayers, I cast a spell on them for good luck.) Anyway, the good people here have been very busy making the giant snowman in hopes of successfully celebrating the biggest holiday of the year, but... there's this man named Scrooge... he lives a world away here, and he's trying to hatch a plan to ruin our Maplemas. He had already been banned from Maple World for various offenses, he once tried to cook the Easter Bunny, and even got in a fight with Cody. The problem is... he somehow found his way into Happyville, without anyone knowing. His plan is to remove the giant snowman and ruin the holidays for everyone here. This is why we must alert this to Alcaster in El Nath! He's very wise, and he will figure out the best way to handle this crisis. Unfortunately, I can't leave this place, but El Nath isn't too far from here, so I am sure you can make your way there and let him know in place of me. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahhh... #b#h0##k, without your help, Maplemas this year will be ruined for everyone here in Happyville. Please reconsider!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm... how can I help you...? ... What do you have in your hand? That must be from Snow Spirit. Something did not seem right the past few days, and... unfortunately, I may have been right. Okay, please hand me the note immediately." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Now let's see what's written here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Oh no! Please hand the note to Alcaster immediately! He's in El Nath, and we don't have much time! Thanks!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032091" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9105003" />
+            <string name="end" value="2008123100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

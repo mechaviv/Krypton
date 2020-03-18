@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10620.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dual Blade: Top Secret" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Cassandra is collecting information about the newly-arrived Dual Blades." />
+        <string name="1" value="Cassandra is gathering information about the highly secretive Dual Blades and asks that you collect the #bSecret Reports#k her agents have hidden amongst monsters. (Agents...? How far does Cassandra's influence reach?) Collect #b20 Secret Reports and deliver them to Cassandra.#k\r\n#bCan be repeated every 30 minutes." />
+        <string name="2" value="Cassandra was gathering information about the highly secretive Dual Blades and asked that you collect the #bSecret Reports#k her agents had hidden amongst monsters. You recovered 20 Secret Reports by hunting monsters and delivered them to Cassandra. In return, you received a nice reward.\r\n#bCan be repeated every 30 minutes." />
+        <string name="demandSummary" value="#i4032630:# #t4032630:# #c4032630# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Randomly given based on Cassandra's feelings." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032630" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The rumored Dual Blades have finally appeared! Although there are many mysteries surrounding the Dual Blades and The Secret Garden, I, Cassandra, will reveal them to you! My agents have already started investigating and sending me reports about them. #b#h0##k, you look like you have some time on your hands, so can you do me a favor? Based on how I feel, I just might reward you handsomely.  " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The #bTop Secrets#k that my loyal agents have gathered about the Dual Blades have been hidden in monsters so that no one else can find them. Go gather #b20#k of those documents for me. They are hidden in monsters all throughout Maple World, so make sure you hunt in different locations." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I was going to offer you a part-time job, but I guess you don't know how to take advantage of an opportunity!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The #bTop Secrets#k that my loyal agents have gathered about the Dual Blades have been hidden in monsters so that no one else can find them. Go gather #b20#k of those documents for me. They are hidden in monsters all throughout Maple World, so make sure you hunt in different locations." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032630" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10620e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="201008180000" />
+            <int name="interval" value="30" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

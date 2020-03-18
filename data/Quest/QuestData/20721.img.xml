@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20721.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mission in Perion" />
+        <int name="area" value="15" />
+        <string name="0" value="#b#p1101002##k told me there's an item that I'll need to deliver that is crucial to this upcoming assignment." />
+        <string name="1" value="#p1101002# wound up giving me #t4032145#. He told me I'll soon discover the reason for the item and asked me to deliver #t4032145# to #bAgent #p1103004##k of #b#m102000000##k." />
+        <string name="2" value="I wound up giving #t4032145# to #p1103004#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032145" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032145" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're here. Unlike other assignments, this one will start here. That's why I have asked you to come all the way to Ereve." />
+            <string name="1" value="Your assignment is to deliver an item. You must take #t4032145# and deliver it to #bAgent #p1103004##k somewhere in #b#m102000000##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="After the delivery, #p1103004# will brief you on the rest of your assignment. You will know where #t4032145# will be used later on." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Now that you're in Ereve, do you have some unfinished business to take care of? If so, then I'll just wait for you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're one of those rookie Knights, right? Your name is... #h0#? I heard a lot about you through #p1103001#, #p1103002#, and #p1103003#. Nice to meet you, my name is Agent #p1103004#, and #m102000000# is my district. Weird name, right? I named myself after the residents of #m102000000# in hopes of blending in, and... that's what happened." />
+            <imgdir name="yes">
+                <string name="0" value="Ah, so this is the #t4032145# that #p1101002# was talking about. Before starting the mission, I must start #t4032145# first. Please wait for a minute." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met #b#p1103004##k yet? She is stationed at #b#m102000000##k. She won't be hard to find." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="...Eh... Haven't I seen you somewhere before...? Anyway, #b#p1101002##k told me you'll be giving me #b#t4032145##k..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032145" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20720" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

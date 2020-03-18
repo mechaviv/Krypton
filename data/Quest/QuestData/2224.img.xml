@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2224.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rage, Resentment, and Revenge" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="#p1040002# has told you that the entrance to #m910100000# is in #m100040105#. If you want to meet the ghost Fanzy was talking about, head over to #r#m910100000##k. But it seems like the ghost only appears during certain hours... Let's keep track of time since the ghost is said to appear #rfrom 5 p.m. to 7 a.m. of the following day#k." />
+        <string name="2" value="The ghost of the cursed forest, #t1032107#. He seems to be cursing someone ceaselessly..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you found the entrance to #b#m910100000##k, meow?! The entrance is in #b#m100040105##k, meow~meow~! You'll find a strange #bghost#k there, controlling #o5220002#. Go on, now. Hurry~meeeow~" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The passage to #m910100000# has been warped so you'll easily spot it~meow~ But the ghost that controls #o5220002# only appears #rfrom 5 p.m. to 7 a.m. of the following day#k so you have to go there during those hours~meeeow~!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Meow...? Are you afraid of the grim forest?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="...mumble mumble... \n\r#L0##b(Let's go close and see what the murmuring is about)#l#K" />
+            <string name="1" value="Arwen... Arwen... I cannot forgive Arwen..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You haven't found #b#m910100000##k yet~meow? Roam around #b#m100040105##k, meow. The entrance to the cursed forest is near the warp." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032107" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2223" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

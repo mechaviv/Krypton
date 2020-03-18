@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4482.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Socks Actual Creation Action" />
+        <int name="area" value="50" />
+        <string name="0" value="Mrs. Claus has finally discovered the frame for the socks. You should ask her again." />
+        <string name="1" value="Mrs. Claus gladly lent you a frame necessary for making Christmas Socks. She also said that yarn with good flexibility is a must. These yarns seem to have been taken by the #bSnowman#k who is highly suspected as the culprit behind the robbery. You can make socks by collecting the yarn and attaching them to the sock frame.\n\n#t4220022# #b#c4220022##k/1" />
+        <string name="2" value="Finally, you made the Socks by getting the necessary amount of yarn. Of course, don't forget to thank Mrs. Claus who taught you the craft." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="info">
+                    <string name="0" value="I see that you haven't made the Sock yet, do you need more Qualified Knitting Balls? Please try to finish making it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250051" />
+            <int name="infoNumber" value="4482" />
+            <imgdir name="info">
+                <string name="0" value="3000" />
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220022" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q4482e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4481" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161039" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q4482s" />
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

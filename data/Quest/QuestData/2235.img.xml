@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2235.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Manji's Request" />
+        <string name="parent" value="Manji and Balrog" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Manji, a solitary warrior in Perion, has asked to see you. He's never been the type to initiate a conversation, let alone a meeting! It must be something important. Let's go see Manji in Perion." />
+        <string name="1" value="Manji says he felt a threatening energy coming from the deep end of the dungeon, so he asked his young apprentice, #bMu Young#k, to investigate. Unfortunately, he hasn't heard from Mu Young since! He'd like you to find the young man. If the last time Manji heard anything from Mu Young was when he was investigating the central dungeon of Victoria, couldn't he still be inside? " />
+        <string name="2" value="Manji says he felt a threatening energy coming from the deep end of the dungeon, so he asked his young apprentice, #bMu Young#k, to investigate. Unfortunately, he hasn't heard from Mu Young since! He'd like you to find the young man. If the last time Manji heard anything from Mu Young was when he was investigating the central dungeon of Victoria, couldn't he still be inside? \r\nYou were able to find Manji's apprentice, Mu Young, in the Underground Temple of the central dungeon." />
+        <string name="summary" value="Let's go find Mu Young, who is somewhere in central dungeon of Victoria. He probably went down to the Underground Temple to investigate the root of a threatening and mysterious energy." />
+        <string name="rewardSummary" value="EXP 50,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, good to see you. I asked you to come because I have a favor to ask. I'll give you the details if you wish to accept my request, since it's not something I can share with just anyone. What do you say? Will you agree to do this favor for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'm sure I've told you before, but a long time ago, I challenged the mighty Balrog to a duel. Thanks to the great hero, Tristan, I was able to come out alive, but I still have flashbacks of Balrog's vicious eyes." />
+                <string name="1" value="Those evil red eyes... It's horrifying beyond words and you wouldn't  understand it unless you've seen them yourself. Anyway, since then, I haven't been able to get that image out of my mind. I thought I was over it... but.... " />
+                <string name="2" value="I felt those vicious eyes on me again shortly after sundown. What a creepy feeling it was. It was as if he were calling me... And I couldn't shake the feeling off! After much mental struggle, I asked my apprentice #bMu Young#k to go into the central dungeon of Victoria and investigate. " />
+                <string name="3" value="He said he'd let me know if he found anything, but it's been a month with no word. I'm getting worried. Can you go search for Mu Young? The last time I heard from him was when he sent this message:  \r\n#b'Master, I am going to get to the bottom of this, and to do so, I'm going to start from the place where it all began. I'll keep you posted!'#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No need to explain further..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You're the first human I've seen in a long time. Who are you?\n\n#b#L0#I'm #h0#. Are you Mu Young?#l\n#k" />
+            <string name="1" value="Yes, that's correct. I'm Mu Young. How in the world did you know my name?\n\n#b#L0#I came to find you at the request of your master Manji.#l\n#k" />
+            <string name="2" value="Ah, I didn't mean to worry him. I've been nothing but a burden..." />
+            <imgdir name="yes">
+                <string name="0" value="I appreciate that you came all this way to find me. We both know how tough it is to get here... I'm so sorry you had to go through all that trouble. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="As I've told you before, the last time I heard from Mu Young was when he said he'd go deeper into the dungeon and start investigating from the very beginning. Perhaps it would be wise to look for him there. Please, I'm counting on you to find Mu Young." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061014" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2047" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

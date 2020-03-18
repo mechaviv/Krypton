@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9011.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's reminiscence" />
+        <int name="area" value="50" />
+        <string name="0" value="I think I can get some help from Teo in Lith Harbor..." />
+        <string name="1" value="I met #bTeo#k at Lith Harbor. Teo told me I remind him of his youth when he went for many journeys. Reminiscing his past, Teo told me he wanted to help me. He said if I bring #b50 #t4000016##k and #b30 #t4000004##k, he will recognize my potentials and support me...ha! This is a Piece of cake!" />
+        <string name="2" value="I proved how good I am to Teo at Lith Harbor. Teo has acknowleged my abilities and financially supported me. With this support, I'll be a great adventurer." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="30000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there ... are you about to embark on a journey? You look a bit too weak to take on such a task. When I was young, I was eager to prove my existence to the world by roaming around the world, experiencing everything ... I miss those days. There's nothing quite like traveling around in different exotic places, soaking in everything I could soak in..." />
+            <string name="1" value="I was green and unaware of what exactly was in store for me, so I had my share of hard times. Seeing you right now brings back those memories..." />
+            <string name="2" value="You know, I am saying this because I think you have great potential, but if you prove me right by completing a task I'm about to give you, then I'll help you get started with your journey. Do you want to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. Please gather up #b50 #t4000016#s#k and #b30 #t4000004#s#k for me, then I'll see what I can do to help you out." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? I was just trying to help... if you ever change your mind, come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast! I knew you'd be good, but this is better than I expected. I can safely Say that you'll become quite a traveler around here. I truly believe that." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the money? I know it's not much, but this may be very useful to someone like you who has just begun the journey. It would be nice to run into you someday and see you mature into a complete package." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten all the items I asked you to get. Maybe I have overestimated your abilities. Please gather up #b50 #t4000016#s#k and #b30 #t4000004#s#k as fast as you can. I know you are more than capable of doing so." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <int name="lvmin" value="10" />
+            <string name="worldmin" value="16" />
+            <string name="worldmax" value="16" />
+            <string name="end" value="2002122100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

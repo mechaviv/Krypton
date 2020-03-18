@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20104.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Path of a Night Walker" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The time has come. If you want to find out more about Night Walker, the Thief of Darkness, talk to #b#p1101006#, the Chief Knight of Darkness#k." />
+        <string name="1" value="If you want to become a Cygnus Knight as a Night Walker that embraces the darkness for the sake of light, you should select #p1101006#." />
+        <string name="2" value="You are now a Night Walker!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to become a knight? Hmmm...  you must have very interesting tastes, to visit the #bChief Knight of the dark, leading the Night Walkers#k in Cygnus Knights. My name is #p1101006#, and if you indeed wish to become the Night Walker, I'll have to go with you then." />
+            <string name="1" value="Night Walkers are thieves before all else, using throwing stars as weapons. Becoming one requires a lot of #bLUK and DEX, with a bit of a cunning brain#k. You'll be attacking primarily from long distance, so this shouldn't be too dangerous. Of course, Night Walkers are more than that..." />
+            <string name="2" value="Night Walkers are the special few that receive divine protection from the Spirit of the Darkness. If you indeed take on the path of the Night Walker, then you'll be able to summon #bUmbra the spirit of darkness#k. It is, however, foolish to pin all your hopes on the power of the spirits. We're slightly different fom the rest of the world, in that we are the &quot;different&quot; ones searching for an answer using the power of poison." />
+            <string name="3" value="We're the ones walking in the path of darkness, not necessarily that of a saint, but we aren't full of anger and hatred like the Black Mage either. Darkness is required for us because we are responsible for enforcing justice in places where light is not ready available. If you wish to follow the darkness fixed by light and become the #bNight Walker#k, then I won't stop you." />
+            <imgdir name="yes">
+                <string name="0" value="I expect you to make a sound decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101006" />
+            <string name="endscript" value="q20104e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20102" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20103" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20105" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20100" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20101" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

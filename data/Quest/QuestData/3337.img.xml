@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3337.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Importance of Life Alchemy" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#m261000000##k's alchemist #b#p2111009##k seems to be very proud of his work as an Alcadno combining the machinery and alchemy into one great body of work." />
+        <string name="1" value="#p2111009# warned me of the dangerous nature of #r#o2110301##k, and wanted me to slay #r80#k of them while acquiring #b#t4000351##k necessary to make a medicine.\n\n#i4000351##t4000351# #b#c4000351##k/40 \n#o2110301# #r#a33371##k" />
+        <string name="2" value="#p2111009# told me he lost his right eye in the past because of an attack from #o2110301#, but thanks to the Life Alchemy practiced by the Alcadnos, he was able to live a new life with a new right eye. He also contends that poison, if used right, can be a great source of medicine, and that just because it's dangerous, doesn't mean people should stay away from the merging of machinery and alchemy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Did you see scorpions outside this town...? They look a little funny, but they aren't to be messed with. Unless you are a skilled warrior, they can be very tough to handle.  Their sting is no joke!" />
+            <string name="1" value="How do I know this so well?  I was abused by them before, that's why. Let's just say that I paid the price of taking them lightly. &lt;He rubs the right side of his face&gt; I know it looks natural, it's made quite well for something that's mechanical from the get go." />
+            <string name="2" value="I still haven't found a way to fully integrate the machine into my life. I have to take medication on a daily basis in order to save my sight...and now that I think about it, you shouldn't have trouble acquring the ingredients for the medicine... can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to eliminate 100 scorpions to obtain 50 scorpion stings. The poison on the venomous stinger is mainly used for medicine, you know. While you're at it, by the fact that you're there, if you can also eliminate #o2110301#, which will benefit everyone. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to do it? For someone as powerful as you, this should be a piece of cake..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8050" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000351" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you see #o2110301# outside this town...? They look a little funny, but they aren't to be messed with. Unless you are trained traveler, they are very tough to battle against..." />
+            <string name="1" value="How do I know this so well? I was abused by them before, that's why. My right eye is missing right now because of that... What? It looks natural? Of course it does... it's made very well for something that's mechanical from the get go." />
+            <string name="2" value="I still haven't, however, found a way to fully integrate the machine into our lives. I have to take some pills at a given time in order to save my sight... and now that I think about it, you shouldn't have trouble acquiring the ingredients for the medicine... can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to eliminate #r80 #o2110301#s to obtain #b40 #t4000351#s#k. The poison on the venomous needle is mainly used for medicines, you know. While you're at it, by the fact that you're there, if you can also eliminate #o2110301#, which will be for everyone's good." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to do it? For someone as powerful as you, this should be a piece of cake..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good work... now I can make the medicine. Isn't it ironic? That the very eye I had lost due to poison from scorpions will be saved using the very same poison. Sometimes, the ones that are the most dangerous are the ones that can be put to great use. Something like the experiments conducted by Alcadno..." />
+            <string name="1" value="Yes, I used to be an alchemist for Zenumist. However, after I lost my eye, and was unable to continue my studies, the Zenumists stopped accepting me as one of their own. I mean, for alchemists, eyes are everything... and despite all that, the Alcadnos accepted me." />
+            <string name="2" value="The president of the society had also lost his eye before, and at the time he was working on incorporating machine into his body. Thanks to his work, he was able to obtain a new eye. That's when I started working extensively on the Life Alchemy..." />
+            <imgdir name="yes">
+                <string name="0" value="Life Alchemy... It is a dangerous territory, indeed, one that's very risky to begin with. However, there's no denying its importance. If people are avoiding it just because of its dangerous nature, then no one will benefit from it." />
+                <string name="1" value="There was a time when the studies conducted by Zenumist were considered the very best. Not anymore, though. They are just basking in their past glory, complacent in their work. As long as they keep staying in that &quot;comfort zone,&quot; they will never advance to new heights, which will turn out to be their downfall." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have defeated #r80 #o2110301#s#k and bring back #b40 #t4000351#s#k yet. Please keep going." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r80 #o2110301#s#k and bring back #b40 #t4000351#s#k yet. Please keep going." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000351" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2110301" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111009" />
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

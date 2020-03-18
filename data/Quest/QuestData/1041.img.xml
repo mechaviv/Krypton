@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1041.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's First Training" />
+        <string name="parent" value="Mai's Training!" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="Lucas introduces you to someone who can train you. #bEast of Amherst#k, you can find #bMai#k. Better head over." />
+        <string name="1" value="Mai instructs you to hunt #r5 Stumps#k and collect #b3 Tree Branches#k. \n\nStump #r#a10411##k #i4000003# #t4000003# #b#c4000003# #k/3" />
+        <string name="2" value="You managed to hunt 5 Stumps, gather all the branches, and report it all to Mai." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1332066" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="150" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="-3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="1042" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! Lucas send you, right? I'm Mai. I used to fight in Victoria Island, but I hang around here these days, recharging and training. Don't worry, I can make time to help you." />
+            <string name="1" value="Shall we start? I'll start your training off easy. Ready?" />
+            <imgdir name="yes">
+                <string name="0" value="Here. Take this #bRazor#k. It's a type of dagger. It should be slightly more powerful than what you currently have. To hunt well, you need good weapons, so take this one as a gift.  Don't forget to #bequip#k it!" />
+                <string name="1" value="Now, go hunt #r5 Stumps#k and bring back #b3 Tree Branches#k. Stumps have a lot of HP, but they're so slow that you shouldn't have too much trouble. Enter the portal to my right to find them. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's dangerous to start training if you aren't mentally prepared. Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't defeated #r5 Stumps#k and brought back #b3 Tree Branches#k yet. Some Stumps drop branches. Others don't. Just be patient and keep hunting." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r5 Stumps#k and brought back #b3 Tree Branches#k yet. Some Stumps drop branches. Others don't. Just be patient and keep hunting." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1040" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

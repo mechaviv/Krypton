@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1033.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What Sen Wants" />
+        <string name="parent" value="Nina's Request" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="1" value="What Sen wants is some nice, tasty #bMushroom Candy#k. You better tell this to #bNina#k." />
+        <string name="2" value="You told Nina what Sen wanted to eat." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7" />
+            <int name="nextQuest" value="1034" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Who-who are you? Oh. My sister asked you to find out what I want to eat? Mmmm... Oh yeah, that #bmushroom candy#k she made for me the other day! Can you please tell her I'd like some delicious Mushroom Candy? Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="You know where my sister is, right? I mean, you just talked to her..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Awww... You aren't going to tell her?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't talked to #bNina#k yet? Awww... I want some Mushroom Candy..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2102" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1032" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

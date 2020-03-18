@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28128.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Search of the Miwok Artifact" />
+        <int name="area" value="50" />
+        <string name="0" value="I heard Kopee Relicseeker is looking to find the #bMiwok Artifact#k. Let's go ask Kopee Relicseeker what she's after." />
+        <string name="1" value="Kopee Relicseeker and Toh Relicseeker say they are looking for Miwok Artifacts that have been lost. Let's acquire the #bMiwok Artifact Piece#k from the monsters and take them to her. " />
+        <string name="2" value="Kopee Relicseeker was so happy to find a sign of the Miwok Artifact. She and Toh Relicseeker said they would stay for a while and further search for the Miwok Artifact. " />
+        <string name="demandSummary" value="#i4032404:# #t4032404:# #c4032404# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,000&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032404" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, I'm Kopee. Toh Relicseeker and I are looking for the Miwok Artifacts. I think someone found out the secret place where my ancestors hid the artifacts because they are now missing." />
+            <string name="1" value="We must find the person who stole our Miwok Artifacts... Would you like to help us out?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, thank you a whole bunch! First, I want to find out whether the artifacts are nearby or not. We are suspicious of the monsters, so will you bring me the #bMiwok Artifact Piece#k if you happen to discover it while you hunt the monsters? I'll be counting on you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're busy? Oh well. If you find some time to spare in the future, come back and help me, okay? We can't stay here forever, you know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're here early. Have you found anything that will trace back to the artifacts? Oh, what's that in your hand? That seems like a fragment of our Miwok Artifact! May I take a look at it?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh my, I don't believe this! It is a part of our Miwok Artifacts. I've been searching for any remnants that would help me find the artifacts. So Toh was right. It was the monsters who stole the artifacts. It saddens me to know that our ancestors' artifacts are now in the hands of those monsters. " />
+                <string name="1" value="By the way, Toh Relicseeker has a very special gift. Toh Relicseeker can use the scroll written in our esoteric tribal language and release the seal on the #bMiwok Artifact#k. You must visit the #rcash shop#k if you want to acquire the #bEnchanted Scroll#k. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you found out who it was that stole our Miwok Artifacts? We're assuming it was those monsters. If you happen to find the artifacts, please make sure you bring them to me. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201116" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032404" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201116" />
+            <int name="lvmin" value="12" />
+            <string name="end" value="2009082600" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3068.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hughes's Research Material" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard Hughes ran out of materials to conduct research ... I should go check him out." />
+        <string name="1" value="The mad scientist living at the basement of Orbis, Hughes, wanted me to gather up some materials for his new research. \n\n#t4000155# #b#c4000155# / 20#k \n#t4000156# #b#c4000156# / 20" />
+        <string name="2" value="I got him #t4000155# and #t4000156# for his research." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000006" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000155" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000156" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, it's been a while! What do you think about that stuff I made for you? Haha. Of course, I'm sure you're constantly amazed by the sheer genius the item brings, right?" />
+            <string name="1" value="I've been working on something new these days, because as you know, the true geniuses never stand still. I've been working on this one so hard that I realized that I have run out of materials needed to continue my studies. Can you help me out here?" />
+            <imgdir name="yes">
+                <string name="0" value="Just get me #b20 #t4000155#s#k and #b20 #t4000156#s#k needed for this. I'm running out of them now." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to help me out, do you? Have you got not an ounce of gratitude toward me, after I made you an oxygen tank??" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You came in just the right time. I just used up my last material, and I was getting very worried." />
+            <imgdir name="yes">
+                <string name="0" value="Ok ok this should do. Thank you, and here it is. Take it. Please come by again some time. I can always use some help in gathering up some materials for the study." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I said #b20 #t4000155#s#k and #b20 #t4000156#s#k!! Were you even listening??" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000156" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000155" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3066" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102061" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

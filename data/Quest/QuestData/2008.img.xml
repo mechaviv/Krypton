@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2008.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering the Weird Medicine" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="7" />
+        <int name="area" value="30" />
+        <string name="1" value="You traded the #bsparkling rock#k to Teo in Lith Harbor for the #bweird medicine#k. Now, to get it to #rMaya#k. Anyway, the medicine looks quite tasty. If you're ever thirsty and have no water handy, you'd be tempted to drink it yourself!" />
+        <string name="2" value="You returned to Henesys and handed Maya the weird medicine. Hopefully she'll get better after taking this. As a sign of thanks, Maya gave you 5,000 mesos and a #bbrown bamboo hat#k. The hat, er, well, it should keep your head protected under the hot sun, but it's kind of old and raggedy. And when you wear it, you feel like insects are crawling around. Nah, must be your imagination, right?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="5000" />
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031006" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002026" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you! Please take this medicine. #r#p1012101##k from #b#m100000000##k is sick again. This wil take care of the sickness a little bit..." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Darn... My whole body aches! Uggggh. What, oh my...isn't that the #b#t4031006##k? How did you get it?? You're amazing! Cough...cough..." />
+            <string name="1" value="Um...can I take that medicine? I'll give you something for it... I beg you...please. I really need that medicine..." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! This may cure my longtime illness... Here's something for you... Here are some mesos also as a sign of my appreciation." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hurry and give #p1012101# the #b#t4031006##k that I gave you. #m100000000# is very far from here so make sure you don't lose that medicine...!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't met #r#p1002001##k, yet? #p1002001# from #b#m104000000##k can definitely help you find some #p1002001#. Please find him." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Thank you! Please take this medicine. #r#p1012101##k from #b#m100000000##k is sick again. This wil take care of the sickness a little bit..." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2007" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

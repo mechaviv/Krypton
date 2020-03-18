@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4550.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I need Vitamin C" />
+        <string name="parent" value="Nuri's Health and Beauty" />
+        <int name="order" value="2" />
+        <int name="area" value="49" />
+        <string name="0" value="After eating #b#t2022203##k, #b#p9270059##k had a terrible stomach ache. It seems like someone must help her immediately before she is carried off to the hospital." />
+        <string name="1" value="Fresh fruit will put #b#p9270059##k's stomach at ease.\n\n#t2010000# #r#c2010000#/5#k \n#t2010003# #r#c2010003#/5#k" />
+        <string name="2" value="Maybe #b#p9270059##k has learned her lession which is to eat proper amount at a time." />
+        <string name="demandSummary" value="#i2010000:# #t2010000:# #c2010000# / 5&#xD;&#xA;#i2010003:# #t2010003:# #c2010003# / 5&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 8,000&#xD;&#xA;Able to proceed to 'My Lovely Scarf' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010003" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I feel so uncomfortable after I had all those #b#t2022203##k. I guess it was just too much to eat all at once." />
+            <string name="1" value="Maybe a glass of fruit juice will make me feel better. Will you be able to bring me #b5 #t2010000#s#k and #b5 #t2010003#s#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="They will put my stomach at ease... Please hurry, before I have an accident..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You wouldn't just leave me here, sick and miserable, would you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="At last! This is just perfect. Fresh fruit is the best medicine!" />
+            <imgdir name="yes">
+                <string name="0" value="Finally, I feel better now. You might have saved my life!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You did not bring back enough fruits. Please hurry, I feel even worse!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270059" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010000" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010003" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270059" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4549" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

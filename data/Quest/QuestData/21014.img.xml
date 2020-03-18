@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21014.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lilin's Account" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Now that you're safely in town, you should listen to #b#p1201000#'s#k account of what happened in the past, and how you became a hero in the first place." />
+        <string name="1" value="According to #p1201000#, a few hundred years ago, a group of #bheroes#k valiantly fought against the #rBlack Mage#k who controlled Maple World. Apparently, you're one of them. But because of the Black Mage's curse, you lost your memories and abilities, and was frozen in ice until you were awakened recently." />
+        <string name="2" value="According to #p1201000#, a few hundred years ago, a group of #bheroes#k valiantly fought against the #rBlack Mage#k, who controlled Maple World. Apparently, you're one of them. But because of the Black Mage's curse, you lost your memories and abilities, and was frozen in ice until you were awakened recently." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="140" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be confused in more ways than one. It's totally understandable, seeing that you just recently awoke inside the ice cave with no recollection of your past. Add to that my calling you a hero, and...I totally understand. I'll explain to you in detail exactly what happened." />
+            <string name="1" value="A few hundred years ago, the whole world was under the reign of the evil Black Mage. Using his tremendous power, the Black Mage led Maple World closer and closer to destruction, and he almost succeeded." />
+            <string name="2" value="Many people valiantly tried to keep the Black Mage from ruining their lives, but they were not strong enough. It reached the point where the whole world was on the verge of utter destruction, and that's when a few brave souls made a pivotal decision. They would battle the Black Mage head-on, all by themselves, to buy the rest of us time to find refuge in places far, far away." />
+            <string name="3" value="No one knows the details of the battle, only the results: The Black Mage was sealed away while the heroes made the ultimate sacrifice and disappeared. Thanks to them, Maple World finally found peace and...that was that. Sadly, it didn't take long for people to forget the heroes." />
+            <string name="4" value="A lot of time passed, then a Book of Prophecy appeared out of nowhere. According to that book, the Black Mage had cast one final curse on the heroes before he lost his powers. That final curse wiped the heroes of all their memories and abilities, and trapped them in ice for hundreds of years." />
+            <string name="5" value="Everyone thought the book was a bunch of garbage, but one race thought otherwise and began conducting research on the Book of Prophecy. I am the last remaining member of the race, and that's why I've been waiting on this island, knowing that one day, the heroes would reawaken." />
+            <string name="6" value="And here you are! One of the very heroes that the Book of Prophecy mentions. One of the heroes that saved Maple World, only to be tragically forgotten by Maplers over the years. And I am certain that you're the hero that will save us once more. Do you get it now?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Are you sure? Because you look a bit dazed. Hmmm, just to make sure you really processed everything I just said, I'm going to give you a pop quiz about it. Tell me when you're ready to start." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be a bit overwhelmed with everything that I threw at you just now. If you didn't catch it all, I'm more than happy to tell you the story once more. Tell me when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Okay, first question. What was the name of the wizard that held Maple World in his evil hands?\n#b#L0#White Mage#l\n#L1#Black Mage#l\n#L2#Pale Mage#l\n#L3#Brown Mage#l\n#k" />
+            <string name="1" value="Second question. The heroes, including you, decided to battle the Black Mage to buy everyone else time to find refuge somewhere far away. The result of this final battle was mentioned in the Book of Prophecy. What was the result?\n#b#L0#Defeated the Black Mage#l\n#L1#Made peace with the Black Mage#l\n#L2#Sealed away the Black Mage#l\n#L3#Became lovers with the Black Mage#l\n#k" />
+            <string name="2" value="Here's the last question. Maple World may look peaceful on the surface, but it's really on the verge of chaos. That's because there's a rumor circulating about the Black Mage's impending resurrection. If that rumor turns out to be true, the Black Mage will make sure that he is successful this time, and the Maple World will not stand a chance. What should you do when this happens?\n#b#L0#Defeat the Black Mage and save the world#l\n#k" />
+            <string name="3" value="I see that you've been paying attention to everything that I've been telling you! You may have lost your memory and abilities, but…you're still a hero to all of us." />
+            <imgdir name="yes">
+                <string name="0" value="The Book of Prophecy also states that the heroes will one day revive and defeat the Black Mage once and for all. You will fight the Black Mage again some day, with the fate of the whole world on your shoulder…" />
+                <string name="1" value="I'm sorry to catch you off-guard with all this talk. Let's make this simple. Your job now is to train hard to ensure that you can defeat the Black Mage when he makes his inevitable return. What do you say? Pretty simple, eh?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="White Mage… I hear that there's someone that heavily resembles that description on Victoria Island, but…that's not who we're talking about here." />
+                    <string name="2" value="…a Pale Mage? That's strange. Is that even a name of a wizard?" />
+                    <string name="3" value="Brown Mage…sounds a bit fishy, don't you think? No, that is incorrect." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="3" />
+                    <string name="0" value="If the Black Mage had been soundly defeated back then, then we wouldn't have to worry anymore. Unfortunately, that's incorrect." />
+                    <string name="1" value="Made peace with the Black Mage…? Is that even possible? He's evil!" />
+                    <string name="3" value="What? In a relationship with the Black Mage…? Um, that wasn't even funny." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <int name="lvmin" value="5" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

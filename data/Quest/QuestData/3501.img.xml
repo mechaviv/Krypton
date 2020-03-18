@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3501.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The One Who Walks Down Memory Lane1" />
+        <int name="area" value="46" />
+        <string name="0" value="I went inside the temple through the broken Door to the Past, but I kept circling back to the same place.  This Temple of Time...I can't go forward unless I get permission from the Goddess.  How do I get permission from the Goddess?  I should ask #b#p2140000##k." />
+        <string name="1" value="He says the Goddess is in eternal sleep but if I get permission from the Goddess' representative, #p2140000#, I can go through Memory Lane.  #p2140000# said that he needs someone to #binvestigate the break in#k, and that if I agree to do it, he will grant me permission.\n\nWhen I said I would gladly do it, #p2140000# said he will have to first #btest#k me and see if I can withstand the flow of energy that governs Memory Lane.  The test is none other than defeating #r999#k #r#o8200001#k in #m270010100#... \n\n#o8200001# #r#a35011##k" />
+        <string name="2" value="I defeated 999 #o8200001#.  #p2140000# was impressed, and I was able to go further in.  But..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="189700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want to receive permission from the Goddess?  The Goddess is in eternal sleep so it's impossible to meet her.  But, there is another way.  As the representative of the Goddess, I can grant you permission. " />
+            <string name="1" value="This works out perfectly.  I have an offer.  Since you seem like a powerful adventurer, how about you promise to #binvestigate the intrusion#k that happened recently?  If you agree to do so, I will give you permission to explore the temple.  What do you say?  Deal?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That was a wise choice.  But first, I'll need to #btest#k your strength.  Even if you are given permission to enter the temple, it would be useless unless your skills hold up.  #bIn order to counter the flow of the past, you need a certain amount of strength#k." />
+                <string name="1" value="The test is simple.  Go to #b#m270010100##k, the only area that you're allowed in right now, and defeat the #o8200001#.  If you defeat #r999 #o8200001##k, I will grant you permission to explore the temple." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's too hard?  That's too bad.  Thank you for visiting the Temple of Time.  I'm sure the Goddess would have been very pleased.  Goodbye." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated 999 #o8200001#.  That's amazing.  I will grant you the permission as promised." />
+            <imgdir name="yes">
+                <string name="0" value="#dAs the representative of Rhinne, the Goddess of Time, I grant you permission to look back at your 2nd memory.#k" />
+                <string name="1" value="Go on." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r999 #o8200001##k yet.  I don't think you are strong enough to walk against the flow of the past yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8200001" />
+                    <int name="count" value="999" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3500" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="91" />
+        </imgdir>
+    </imgdir>
+</imgdir>

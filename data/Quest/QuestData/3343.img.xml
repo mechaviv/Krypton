@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3343.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Hidden Words" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="5" />
+        <int name="area" value="44" />
+        <string name="1" value="When I showed #p2020005# #t4161031#, he took a good look at it, and told me if I wanted to unveil the hidden message, I'll have to bring #b#t4031737##k. \n\n#i4031737##t4031737# #b#c4031737##k/1" />
+        <string name="2" value="I brought #t4031737# as ordered by #p2020005#. Without any hesitation, #p2020005# poured the blood all over #t4161031#..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="This note has been cast with a very sophisticated set of alchemy. Whoever wrote this note must be a highly-trained alchemist. This is not going to be an easy task. It will take a bit of time to extract the hidden text." />
+            <string name="1" value="But...if you are a strong, powerful individual, then there's a much, much easier way to extract the hidden text. Are you interested in taking that route instead?" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to bring some Homunsculer's Blood for me. It contains a mysterious power that reveals the truth from anything, but it's very difficult to extract.   Blood from that angry, formidable monster is rather hard to come by, you know. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can't do that, then I'll have to break the spell with alchemy, but... the items required for this are just as hard to obtain. Not only that, it'll take me about...197 years, 6 weeks, 2 days, 4 hours and 16 minutes to create a potion that'll allow us to read the hidden message. Are you okay with that?  Or, should I say, will your children be ok with that?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031737" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This note has been cast with a very sophisticated set of alchemy. Whoever wrote this note must be a highly-trained alchemist. This is not going to be an easy task. It will take a bit of time to extract the hidden text." />
+            <string name="1" value="But... if you are a strong, powerful individual, then there's a much, much easier way to extract the hidden text. Are you interested in taking that route instead?" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to bring me #b#t4031737##k. #t4031737# contains a mysterious power that reveals the truth from anything, but it's very difficult to extract blood from that angry, formidable monster." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can't do that, then I'll have to break up the spell with alchemy, but... the items required for this are just as hard to obtain. Not only that, it'll take me about a 100 years to formulate that potion that'll allow us to read the hidden message. Are you okay with that?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm... so did you bring #t4031737#? Ohh...... yes, this is it. This should finally allow us to read the hidden message in the note. How do we do that? Like this." />
+            <imgdir name="yes">
+                <string name="0" value="(Without any hesitation, #p2020005# poured #t4031737# all over #t4161031#.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I suppose you haven't obtained #b#t4031737##k yet... that monster can only be found in #m261000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031737" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3342" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9985.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Maple Syrup" />
+        <int name="area" value="50" />
+        <string name="0" value="I should go see #p9010010# and learn how to make #b#t01012098##k better." />
+        <string name="1" value="#bMaple Syrup#k?  I should get this done right away.  I can enhance my Maple Leaf by doing just that?  What a bargain!.\n\n#i04001126# #t04001126#  #b#c04001126##k / 25" />
+        <string name="2" value="#p9010010# really made the Maple Syrup for me just like that.  I wonder if she didn't already have it pre-made.   #p9010010# said to come back in 30 minutes and she'll make Maple Syrup for me again.  \n I did hear that Maple Syrup can corrode the #t01012098# so I should use it carefully." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi!  Are you using the #b#t01012098##k well that I gave you awhile ago?" />
+            <string name="1" value="I knew you would love it...  Even having one #t01012098# is amazing but did you know you can increase the power of the #t01012098#?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh~ You must've heard about it already?  It makes sense...after all, you are an adventurer...  There's something called #bMaple Syrup#k. " />
+                <string name="1" value="Every year around this time, #bMaple Syrup#k is made by finely crushing #b#t04001126##k and adding heat to it.  It's not difficult to make but because mastering the timing and proper temperature is hard, people rarely attempt it.  But recently I learned how to make it from #p9000021# and now I'm pretty good at it~" />
+                <string name="2" value="I can confidently Say that I am the best Maple Syrup maker in all of Maple World!  To make #bMaple Syrup#k, you'll need #b25 #t04001126##k...  Come back to me once you have 25 #t04001126# ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You didn't know...?  Come back after you learn a thing or two about Maple Syrup." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Collect #b25 #t04001126##k for me.  You should be able to easily get them by hunting monsters." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001126" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q9985e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9984" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061623" />
+            <int name="interval" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

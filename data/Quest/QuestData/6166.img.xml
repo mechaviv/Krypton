@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6166.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Robeira and Shammos" />
+        <string name="parent" value="Shammos's past" />
+        <int name="order" value="7" />
+        <int name="area" value="10" />
+        <string name="1" value=" #p2022003# became quiet for some reason. What's the matter? Let's go talk to #b#p2022003##k." />
+        <string name="2" value=" #p2022003# seems to have regained consciousness." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem you don't understand why I let #p2022003# be like that. I understand, but you must realize that he is no longer a human being--he threatened humans with magic! Still #p2022003# has a mission to do. This is why I haven't killed him. " />
+            <string name="1" value="...Strangely,  #p2022003# is quiet. Is this just my feeling? Would you please go to see him?" />
+            <imgdir name="yes">
+                <string name="0" value="If #b#p2022003##k say something strange, let me know!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ca you here #p2022003#'s voice?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="......." />
+            <imgdir name="yes">
+                <string name="0" value="Um...Hmmm... Look at #p2022003#. How miserable. #p2020009#... #p1032001#... Too bad! We used to know each other. Hahaha..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Can't you hear #p2022003#?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2022003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6165" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

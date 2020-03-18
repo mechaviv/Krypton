@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3737.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Central Robot Aufheben" />
+        <string name="parent" value="Year 2216 - The Ruins" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value="Andy has requested that you travel to the ruins of the city in the year 2216 and defeat Aufheben, the central robot that controls all electronic devices in the city. Andy says if Dunas was an android, it is very likely that Aufheben is also an android." />
+        <string name="2" value="Andy requested that you travel to the ruins of the city in the year 2216 and defeat Aufheben, the central robot that controlled all electronic devices in the city. As suspected, Aufheben was an android. The battle between humans and robots seems interminable." />
+        <string name="demandSummary" value="#o8220011# #a37371#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 170,000\r\nCan participate in the &quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="170000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The purpose of this next time travel is to defeat Aufheben. Aufheben is the name of the central robot that began controlling all electronic devices after the City Center was bombed. Since Dunas was an android, it is quite likely that Aufheben is also an android. Do you think you can defeat Aufheben?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Aufheben is strong beyond your imagination. It won't be easy destroying Aufheben. Best wishes." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready? Now, that's a problem. We don't have much time left." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're getting stronger and stronger. I can't believe you've defeated Aufheben. You are a true hero and an incredible time traveler." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please defeat Aufheben, the central robot that controls all electronic devices in town. That might be the last step to changing the past and setting things right." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220011" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3736" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

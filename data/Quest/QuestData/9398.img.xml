@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9398.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Secrets Behind the Mundane Statue" />
+        <int name="area" value="50" />
+        <string name="0" value="Apparently, the truth behind the long-time legend of mysterious Monster Statue is out... I better go see #b#p9010000##k and hear the story behind it." />
+        <string name="1" value="I better go see #b#p2040050##k, the one responsible for uncovering truth behind these strange Monster Crystal Statues." />
+        <string name="2" value=" I met up with #b#p2040050##k, who knows the secret behind these Monster Crystal Statues..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there. You must have heard the news, too. Yes, it's true. The various Mundane Monster Figures that you've seen everywhere are in fact, legendary structures that possess mysterious powers. Would you like to know more about these mysterious Monster Figures?" />
+            <imgdir name="yes">
+                <string name="0" value=" No one used to believe in these Mundane Monster Figures, myself included. Not only that, these statues were in fact given to #b#p2040050##k, who was just passing by. He was, in fact, looking for the history of these statues, and after a long time, he finally found the history behind these previously mundane structures." />
+                <string name="1" value="I didn't hear too many details myself, but if you have some time, you should go visit #b#p2040050##k and hear the story yourself." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Maybe you're not interested in the mysterious powers of the Monster Figures..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello there. I'm #b#p2040050##k, the one that recently discovered the hidden powers of these Monster Structures. I am still quite tired from all that traveling, so come see me later, and we'll talk about the secret, mysterious powers of these Monster Figures." />
+            <imgdir name="yes">
+                <string name="0" value="If you really want to know more about the secrets of Monster Figures, then you should see me later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" If you want to delve more into the true history behind the Monster Figures, you should go see #b#p2040050##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <int name="lvmin" value="8" />
+            <string name="start" value="2008042900" />
+            <string name="end" value="2008061700" />
+        </imgdir>
+    </imgdir>
+</imgdir>

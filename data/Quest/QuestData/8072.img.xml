@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8072.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="An Old Code" />
+        <string name="parent" value="A Puzzling Code" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="Kinokonoko of the Mushroom Shrine apparently found something. I should check it out." />
+        <string name="1" value="Kinokonoko asked me if I could solve this puzzling code. What does this code mean...?" />
+        <string name="2" value=" I managed to solve the code Kinokonoko gave me--answers lie in Sleepywood." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="nextQuest" value="8073" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh~! This is just perfect. Hey there, stranger, will you lend me a hand?" />
+            <string name="1" value="I'm sorry. I was just cleaning up, and I found this. I can read this, but I have no idea what this means..." />
+            <string name="2" value=" (Received an old piece of paper from Kino Konoko. It looked quite fuzzy, but it had something written on it.)" />
+            <string name="3" value="It reads &quot;K H E L P □&quot;... with the last letter being blank. What must that letter be...??" />
+            <string name="4" value="(It clearly reads &quot;K H E L P&quot; plus a blank after the P. Other than that, no signs of letters or drawings whatsoever on it.)" />
+            <string name="5" value="I can feel something unusual with that piece of paper. Can you help me solve this code?" />
+            <imgdir name="yes">
+                <string name="0" value="Good luck. I'll be awaiting your word on this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see. I can tell you're a busy person. Oh well...!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" (Based on the codes learned from Kino Konoko, I went to section 7-2, and... what the? The statue seems to have something engraved on it.)" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you solve the code? I'll be waiting for the good news..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9110002" />
+            <int name="lvmin" value="69" />
+        </imgdir>
+    </imgdir>
+</imgdir>

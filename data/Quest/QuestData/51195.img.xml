@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51195.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Correcting the Past 4: Destroy, Destroy, Destroy!" />
+        <int name="area" value="50" />
+        <string name="0" value="Future Doctor Bing is looking for someone to destroy the OS3A machine that is defending the Processing Plant." />
+        <string name="1" value="Go to the Processing Plant in the past using the #b#p9250138##k and defeat #b#o9420074#s#k, who is commanding the plant's defense." />
+        <string name="2" value="You stopped #b#o9420074##k, who was defending the Processing Plant." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032725" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032729" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4310006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you remember what happened at the Processing Plant? You rode the OS3A Machine and defended the Processing Plant." />
+            <string name="1" value="I will send you to the Processing Plant of the past using a black whole activation device.\r\nThere, you will fight the OS3A machines like the one you rode in the past." />
+            <string name="2" value="Defeat as many machines as you can, so that the Processing Plant cannot be defended! \n\rDon't worry. The people in the machines won't be hurt." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Don't worry, the pilots won't get hurt. Now, hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Everything will return to normal if we correct the past..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You made it back! Good! Thanks to you, the plant doesn't have as many people to defend it!" />
+            <imgdir name="yes">
+                <string name="0" value="Still, the Processing Plant continues to operate. Please help us again tomorrow!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="There are still many OS3A Machines defending the Processing Plant! Return to the past!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250124" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420074" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250124" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51191" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032725" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

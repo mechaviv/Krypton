@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4510.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The secret of the past" />
+        <string name="parent" value="The Secret of Ghostship" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="#b#p9270030##k in Boat Quay looks like he could use some help of mine.  He seems very scared of something.  Let's go find out." />
+        <string name="1" value="#p9270030# told me this weird story about a ghost ship and ghosts along the coast line. Shall I believe him? He is just a nameless wanderer in town, but he seemed to be serious about the story. Let's go and find out if he is telling me the truth. There should be #b#o9420509##k and #b#o9420510##k somewhere around Boat Quay and I am about to eliminate them!\n\n#o9420509#  #r#a45101##k\n#o9420510#  #r#a45102##k" />
+        <string name="2" value="What a surprise!  #p9270030# was telling me the truth!  I should go see him again since I feel that there are more stories he wants to tell me!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022212" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022214" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... It is rare to see someone talking to me. Let me tell you a story~ I was once a captain of a group of sailors. My sailors and myself were sailing along the peninsular, we encountered something that we could never forget in our entire life! We saw a Ghost Ship travelling along the coast way! Vividly, we could see a bunch of fearsome Ghosts roaming freely along the ship~" />
+            <string name="1" value="And of course, upon seeing all these ghosts, we fled in terror. From that day forward, we never went out to sea again. We had related our encounters to most people around. And wouldn't you know it! All of them thought we were lying! No one ever believed our story! Oh well." />
+            <string name="2" value="Sob~ Sob~ I miss my good old days.... Anyway, do you believe me? Can you believe me?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm... You are one of fews who believes my story. Alright, if so, will you seek out the Ghost Ship along the coast area and help me to eliminate them. I hate them for causing me to lose all my crew members. Destroy #b100 #o9420509# and 100 #o9420510##k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Expected!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Ghosts in Ghost Ship caused me to lose my job!" />
+            <imgdir name="yes">
+                <string name="0" value="So you have really found the Ghost Ship and successfully eliminated all the monsters I mentioned? Incredible! Please... accept this~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Nah... I don't think you have eliminate 100 slimy and 100 Pac Pinky." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270030" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420509" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9420510" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270030" />
+            <int name="lvmin" value="58" />
+        </imgdir>
+    </imgdir>
+</imgdir>

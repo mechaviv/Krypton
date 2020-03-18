@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3329.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Keeny's Research on Roid" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#m261000000##k's favorite little Fairy #b#p2111005##k. Her dream is to one day become an alchemist herself, and apparently, she has already started a new research..." />
+        <string name="1" value="#p2111005# was studying #o5110301#, the ones that the alchemists from Alcadno came up with. She said to thoroughly investigate #o5110301#, she'll need #t4000364#... I better get her #b80 #t4000364#k from #o5110301# for her, so she can continue her research.  \n\n#i4000364##t4000364# #b#c4000364##k/80 " />
+        <string name="2" value="I gave #p2111005# all the #t4000364#s she asked for. She broke out a wide grin while observing the complex-looking #t4000364#. She may be young, but she sure looks like an alchemist." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕? 모험가님? 마가티아의 연금술사 키니예요. 어리다고 무시하진 말아요. 정식 연금술사는 아니지만, 정식 연금술사 못지 않은 실력을 가지고 있다고요. 정말이에요! 헤헷. " />
+            <string name="1" value="요정이 연금술을 익히다니, 이상하다는 사람도 많지만 뭐 어때요. 배우고 싶은 걸 배우는 게 중요한 거 아니겠어요? 연구하는 건 정말 재밌어요!" />
+            <string name="2" value="최근엔 로이드의 연구를 하고 있어요. 알카드노의 연금술사들이 만든 기계 인형인데, 굉장히 흥미롭거든요. 그런데... 사실 그것 때문에 조금 곤란한 일이 있어요... 그래서 말인데, 모험가님이 키니의 연구를 조금 도와주시면 안 될까요?" />
+            <imgdir name="yes">
+                <string name="0" value="에헤헷. 감사합니다! 그럼 로이드의 설계도 조각을 구해 주세요. 로이드가 너무 복잡해서, 설계도 없이는 연구가 힘든 것 같거든요. 다른 연금술사 아저씨들이 알면 로이드 같은 건 연구하지 말라고 할 테니까 비밀로! 그럼 부탁드려요!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="에엣? 모험가님도 바쁜 일이 있으신 모양이에요? 혹시 연구 때문에? 그럼 함께 연구해요!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="43000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000364" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there, traveler! I am #p2111005#, the Alchemist of #m261000000# What? I don't look like one? You should never judge a book by its cover, and even though I may not be an alchemist myself, I am good enough to match their skills.  They're not the only ones who know how to do hypnosis or make a potion, you know!" />
+            <string name="1" value="I hear it from a lot of people that Fairies shouldn't be learning alchemy, but... who cares. Isn't it more important to learn what you've always wanted to learn? I think studying alchemy is really fun!" />
+            <string name="2" value="Nowadays I have been studying #r#o5110301##k. #o5110301# is a mechanic doll that the alchemists at Alcadno made, and it's quite interesting. That's... also the reason why I am in a bit of a tight spot. Can you help me learn more about #p2111005#?" />
+            <imgdir name="yes">
+                <string name="0" value="Please defeat #r#o5110301##k and acquire #b80#k #b#t4000364##k from it. If I study the power lines that connect #o5110301#, then I think I'll be able to better understand the science behind the structure of #o5110301#!" />
+                <string name="1" value="Since other alchemists at Zenumist will advise me not to study things like #o5110301#. Please keep this a secret, okay? Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Whaaat? Even a traveler like you seems busy these days. Is it because of the research? Then work with me!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You really did bring #b80 #t4000364#s#k! That is just amazing! I feel like with this, I'll be able to understand the whole structure behind #o5110301#. Thank you thank you!&#x9;" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... I don't think you have gathered 80 #b #t4000364#s#k yet. #t4000364# is absolutely required in order to study more on #o5110301#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000364" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111005" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

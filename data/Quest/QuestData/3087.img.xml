@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3087.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lightening Up Orbis" />
+        <string name="parent" value="Orbis in Danger" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="I ran into a mysterious girl at #p2032001#'s house. She mentioned that the reason Orbis is sinking is because there are too many monsters around at the Cloud Terrace these days. She requested that I take out #b80 each#k of #r#o3210200#, #o3210201#, and #o3210202##k.\n\n#o3210200# #r#a30871##k\n#o3210201# #r#a30872##k\n#o3210202# #r#a30873##k" />
+        <string name="2" value="Just the way the mysterious girl at #p2032001#'s house requested, I took out a 80 each of #o3210200#, #o3210201#, and #o3210202#. Doing this may have slowed down Orbis's inevitable crash, but that still means it'll crash later. By the way, who is this girl? She must be aware of the danger that's befallen Orbis. I should talk to her again..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4010001" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010000" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4010002" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4010005" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4010003" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="2" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4010004" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4010006" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello. I was able to hear everything you and #p2032001# talked about. Please do not bother #b#p2032001##k, for she is busy meditating on how to save Orbis." />
+            <string name="1" value="Actually, #p2032001# had been expecting this for quite some time, and had been looking for ways to remedy this problem. Although no clear-cut answer has been mentioned yet, the theory of heavy Orbis had been gaining steam there. That's why... I have a quest that I need help on. Will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="The reason why Orbis has been getting heavier is because of the plethora of monsters residing in this area. I especially think the numbers of #o3210200#, #o3210201#, and #o3210202# have been ridiculous. For now, the best thing we can do is lessen the weight of Orbis to delay the inevitable crashing or Orbis to the ground." />
+                <string name="1" value="Please head to the garden immediately and defeat #b80 #o3210200#s, 80 #o3210201#s, and 80 #o3210202#s#k. Defeating that many monsters may be the only way to lessen the weight of Orbis." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am asking you for help so Orbis won't be sinking down low by the minute..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're back! I've been hearing your heroic efforts through travelers all around. Thanks to you, they Say the numbers of #o3210200#, #o3210201#, and #o3210202# have definitely decreased. That's just amazing, and thanks to your efforts, I can proudly Say that the numbers of #o5120001#, #o5120002#, and #o5120003# have also decrease substantially." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to your help, the speed in which Orbis is falling has slowed down a bit, but that doesn't mean it's stopped altogether. What is the reason behind this anyway? #p2032001# is still meditating. This really concerns me..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="How's the stuff I asked you to take care of? I'm sure it'll require you to take a long time to eliminate the monsters and collect #b100 #o3210200#s, 100 #o3210201#s, and 100 #o3210202#s#k in the process." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3210200" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3210201" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3210202" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3086" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

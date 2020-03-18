@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22500.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Baby Dragon Awakens" />
+        <int name="area" value="7" />
+        <string name="0" value="Whoa, a dragon really hatched from the egg?! What is he going to say? #bTalk to him by clicking on the Baby Dragon#k." />
+        <string name="1" value="You're not really sure but you seem to have made some sort of pact with #p1013000# the baby Dragon. He says that as his master, you must take care of him...\r\n\r\nAs you stand there confused, #p1013000# says that he will show you his power by using his skill to defeat the #o1210100#s. He tells you to simply give the command by using a skill...\r\n\r\n#o1210100##r #a225001##k" />
+        <string name="2" value="#p1013000# used his incredible power to defeat the monsters!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1270" />
+            <int name="nextQuest" value="22501" />
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2200" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Ha! What do you think of that?! My skills are amazing, right? You can use them as much as you want. That's what it means to be in a pact with me. Isn't it amazing?" />
+            <imgdir name="yes">
+                <string name="0" value="Oooh... I'm so hungry. I used my energy too soon after being born..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I'll show you my abilities! Command me to attack the #r#o1210100#s#k! I'll eliminate #r30#k of them for you right away!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22100" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22500s" />
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

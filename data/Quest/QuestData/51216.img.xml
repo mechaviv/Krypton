@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51216.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Clearing Party Quests" />
+        <int name="area" value="50" />
+        <string name="0" value="Each time you clear a party quest, OSSS will issue you a #b#t04310004##k. \r\n\r\nParty Quest List:\r\n#b&lt;Moon Bunny&gt;, &lt;First Time Together&gt;, &lt;Ariant Coliseum&gt;, &lt;The Crack of Dimensions&gt;, &lt;Forest of Poison Fog&gt;, &lt;Monster Carnival&gt;, &lt;Monster Carnival 2&gt;, &lt;Remnant of the Goddess&gt;, &lt;Lord Pirate&gt;, &lt;Romeo and Juliet&gt;, &lt;Dragon Rider&gt;#k &#xD;&#xA;" />
+        <string name="1" value="Return to #b#p9250134##k after clearing the party quest to receive a #b#t04310004##k.\r\n\r\nJust remember that you can only get credit for 1 party quest a day.\r\n" />
+        <string name="2" value="You cleared the party quest and received a #b#t04310004##k from #b#p9250134##k.\r\n\r\nHold on to the #b#t04310004##k as it can be used to upgrade the Bing Machine-Alpha and Visitor equipment." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been thinking... If the aliens realized how united Maplers are, they might think twice about invading." />
+            <string name="1" value="So the OSSS will issue a #b#t04310004##k to anyone who clears one of various party quests." />
+            <string name="2" value="It doesn't matter which of the following party quests you clear. Just remember that you can only receive a medal for this once every day. \r\n\r\n#bParty Quest Type:\r\n#b&lt;Moon Bunny&gt;, &lt;First Time Together&gt;, &lt;Ariant Coliseum&gt;, &lt;The Crack of Dimensions&gt;, &lt;Forest of Poison Fog&gt;, &lt;Monster Carnival&gt;, &lt;Monster Carnival 2&gt;, &lt;Remnant of the Goddess&gt;, &lt;Lord Pirate&gt;, &lt;Romeo and Juliet&gt;, &lt;Dragon Rider&gt;.&#xD;&#xA;" />
+            <string name="3" value="We ask for your assistance.\r\nYour help is greatly needed if we are to scare off those aliens." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good luck.\r\nRemember that the future of Maple World is in your hands." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Who then will stand up for Maple World...?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've cleared one of various party quests." />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You haven't completed your assignment yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250134" />
+            <int name="infoNumber" value="51238" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q51216e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250134" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51211" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q51216s" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

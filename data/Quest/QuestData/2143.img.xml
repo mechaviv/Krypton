@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2143.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Thief's Last Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to look like a Thief. #b#p1052001##k wants to help you with one last training session." />
+        <string name="1" value="#p1052001# wants you to slay #r10 #o1120100#s#k as a test. #o1120100#s are one of the strongest monsters around #m103000000#. Stay alert. \n\n#o1120100# #r#a21431##k" />
+        <string name="2" value="You destroyed 10 #o1120100#. Wasn't easy, but you feel like you're well on your way to becoming an amazing Thief." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="애송이 도적 친구. 지금까지 수련을 잘 따라와줬네. 여전히 허술한 구석이 있지만 그래도 어느 정도 도적다운 모습이 된 걸 보니 정말 기쁘구만. 그럼 이제 자네의 실력을 한 번 점검해 봐야겠지? " />
+            <imgdir name="yes">
+                <string name="0" value="실력 점검은 간단해. 옥토퍼스 10마리를 사냥하면 되는 거니까. 뭐 지금까지 상대했던 녀석들보다 훨씬 옥토퍼스가 강하기야 하겠지만... 자네가 지금까지 수련을 열심히 했다면 그리 어렵지 않은 상대일 테니 어서 가서 해치우라고." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="시험이 두려운 건가? 쯧. 겁쟁이로군. 겁 먹을 필요 없어. 자네가 통과하지 못할 정도로 어려운 과제는 아예 애초부터 안 낼 거니까 말이야." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="840" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Beginner Thief. You've been doing a good job till now. I can see some of your weak points. But you're a Thief now. Let me test you." />
+            <imgdir name="yes">
+                <string name="0" value=" It's simple:Hunt #rten #o1120100##k. They're much stronger than #o0130100# which you've dealt with. If you've been doing well with training, it's not that hard. Now go and get them!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid of the test? Don't be! I won't give you any test that you can't pass!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You succeeded to eliminate ten #o1120100#. Hahaha. Quite good. You were beginner who can't do anything. Now you made it thanks to Dark Lord. Haha. I'm really happy." />
+            <imgdir name="yes">
+                <string name="0" value="But this is only beginning as a Thief. There is a long way to be a real Thief. The way of Thief...It is tough. If you make efforts, you can make it. Be calm and concentrate on your job." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #rten #o1120100##k yet. Don't make haste or you can't concentrate. Relax and focus on your goal." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1120100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2142" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="411" />
+                <int name="3" value="412" />
+                <int name="4" value="420" />
+                <int name="5" value="421" />
+                <int name="6" value="422" />
+                <int name="7" value="430" />
+                <int name="8" value="431" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

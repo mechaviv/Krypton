@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20004.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku's Second Training Session" />
+        <int name="area" value="15" />
+        <string name="0" value="Visit #b#p1102000# the Training Instructor#k and receive some training." />
+        <string name="1" value="The second session involved facing off against the 2nd weakest Mimi in all of Ereve, #r#o0100121##k, and defeating #r10#k of them in the process. You better hunt down those #o0100121#s at or near #b#m130010000##k. \n\n#o0100121##r #a200041##k" />
+        <string name="2" value="You managed to defeat all 10 #o0100121#s and return. Off to the next session." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="두 번째 수련은 이 섬에서 두 번째로 약한 #m0100121#를 잡는 거야. 이번에도 10마리만 사냥해 볼까? " />
+            <imgdir name="yes">
+                <string name="0" value="수련의 숲1에서 왼쪽으로 포탈을 타고 가면 수련의 숲2에 도착할 수 있는데, #m0100121#들은 거기에 많이 있어. 자, 그럼 수고해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아직 준비가 덜 된 모양이지? 사냥에 앞서 준비를 철저히 하는 건 좋은 습관이지. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000020" />
+                    <int name="count" value="15" />
+                    <int name="job" value="64512" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000021" />
+                    <int name="count" value="15" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This time, you'll take on #r#o0100121#s#k, the second weakest monster in this island. Try slaying #r10#k, okay?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You didn't see any #o0100121# at #m130010000# or nearby?  I know they can certainly be found there. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready to hunt yet? Well, it's always good to fully prepare yourself for tasks like this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh, that was pretty fast. I thought it'd take a while for you to slay 10 #o0100121#s..." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, we'll go ahead with the next stage!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="What? You weren't able to slay #r10 #o0100121#s#k yet? You can definitely find #o0100121# at or near #b#m130010000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100121" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20003" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

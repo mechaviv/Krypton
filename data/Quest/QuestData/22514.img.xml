@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22514.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Let's Train" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1013000# seems to be very upset that you won't be assisting #p1010100#. How will you be able to appease #p1013000#? Talk to #b#p1013000##k." />
+        <string name="1" value="#p1013000# suggests than that you train until you are able to easily defeat the #o2220100#s and asks that you find a training center. Hmm... What to do... Maybe you should ask #b#p1012003##k since he did tell you to ask him if you need anything." />
+        <string name="2" value="You started talking to Chief Stan." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="420" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Evan? You haven't gone home yet? Do you have something else left to do in #m100000000#? A Training Center? Yes we do have one but..." />
+            <imgdir name="yes">
+                <string name="0" value="To enter the Training Center, you have be at least Level 15... If you reach Level 15, I'll look into it for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="(Mir is probably going to start nagging again, so hurry and ask Chief Stan about the Training Center. )" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22513" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22514s" />
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

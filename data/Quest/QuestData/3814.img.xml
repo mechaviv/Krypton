@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3814.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pirate's Map" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p9000009##k of #b#m104000000##k apparently has been waiting for the right time to do something big.." />
+        <string name="1" value="#p9000009# seemed eager to fight the stormy sea, and wanted me to find #b#t4001119##k, the map that featured the secret path through the stormy sea. According to #p9000009#, the one that has all 6 divided pieces of #b#t4001118##k happens to be the only person that has survived the stormy sea, #rLord Pirate#k... Hey, that means I have to go through the lair of Lord Pirate! \n\n#t4001118#  #b#c4001118##k/6" />
+        <string name="2" value="I was able to gather up all the #t4001118#s from the lair of Lord Pirate and gave them to #p9000009#. Obtaining the map, #p9000009# seemed ecstatic to finally be able to tackle on the stormy sea. I mean, he's acutely aware of the dangers that lurks over him, and yet he seemed to eager to attack the water. #p9000009# really must be one heck of a traveler." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001118" />
+                    <int name="count" value="-6" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#m104000000# is a serene area, always peaceful. The sea around here is likewise very calm. The ocean that connects the Maple Island and the Victoria Island is calm and peaceful. It's a haven for all the fishermen around the area." />
+            <string name="1" value="But for me, the true descendent of the Viking, #m104000000# is nothing but an empty space. A true Lord of the Sea longs for treacherous winds and overcoming huge tidal waves and rainstorms to emerge victorious! I truly believe tornadoes and storms are there for people like me to endure! I mean, you are a traveler, you know exactly what I am talking about, right?" />
+            <imgdir name="yes">
+                <string name="0" value="But the Tornado Sea on Ossyria is way too treacherous for anyone to enter. It would be of great help if I could find someone who is very familiar with the Sea, but the only ones that really are familiar are the #rpirates of the Lord Pirate#k. Lord Pirate possesses the #t4001119# that has a path drawn on the Tornado Sea, supposedly the only path that enables the sailors to navigate through the treacherous sea. So lucky!" />
+                <string name="1" value="I hear rumors that Lord Pirate is currently located somewhere at a #btown in Ossyria#k. He apparently gave #t4001118#s to his pirates, so I suppose it's possible we can find it if we enter their lair. Hey, traveler, since you said you understood my predicament, I want you to get #b#t4001118#, 6 #i4001118##k for me. Please." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I don't think you fully comprehend the predicament that I, the Lord of the Sea, am currently situated in..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh!! This is the very path of the Tornado Sea! You brought the #t4001118# from Lord Pirate! You may not be the Lord of the Sea like me, but you are really something! Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="Okay. This should allow me to finally crack the Tornado Sea. I'll have to see for it myself how treacherous the path really is!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found the #b#t4001118##k yet! I need  #b6#k of them to complete the map that lets me see the exact path of the Tornado Sea. Return to the lair of Lord Pirate immediately and find it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001118" />
+                    <int name="count" value="6" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000009" />
+            <int name="lvmin" value="55" />
+            <int name="lvmax" value="100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

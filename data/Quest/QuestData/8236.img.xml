@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8236.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="One Step A-Head." />
+        <string name="parent" value="Bounty Hunter.." />
+        <int name="order" value="2" />
+        <int name="area" value="45" />
+        <string name="0" value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I'll bet that she's willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I'll be on my way to New Leaf City!" />
+        <string name="1" value="I spoke with Lita, and she told me the tragic origin of the Headless Horseman. He was a former warrior of Crimsonwood Keep that was experimented on the mysterious Alchemist, the same one who corrupted the Krakians. He now roams the Phantom Forest, and I must bring his Jack O'Lantern head to Lita as proof of my triumph! " />
+        <string name="2" value="It was a tough fight, but I brought down the mighty horseman and returned his Jack O'Lantern to Lita. I wonder how many other lives the mysterious Alchemist has ruined..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <int name="exp" value="75000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031903" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Excellent! You've brought me the Jack O'Lantern! The Phantom Forest is much safer now, thanks to your efforts! Be sure to come back to me for more work-I can always use a hand!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, looks like you're short of 1Jack O'Lantern I asked for. I can understand if you want to rest, Just be sure to get them all before you return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201054" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031903" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201054" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8235" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8236s" />
+            <int name="lvmin" value="75" />
+            <int name="interval" value="2880" />
+        </imgdir>
+    </imgdir>
+</imgdir>

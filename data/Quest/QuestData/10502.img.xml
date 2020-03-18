@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10502.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for Remnants of the Dragon Master 2" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Search for remnants of Dragon Master Evan" />
+        <string name="1" value="Find an #b#t4032534##k in Maple World and bring it #bCassandra#k." />
+        <string name="2" value="You discovered an #b#t4032534##k, a remnant of Dragon Master Evan." />
+        <string name="demandSummary" value="#i4032534:# #t4032534:# #c4032534# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="660" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032534" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We are a day closer to the introduction of the Dragon Master. Please find another remnant of the Onyx Dragon." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please find an #b#t4032534##k this time. Thanks." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't miss out on the chance to receive some great Dragon Equipment." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the #b#t4032534##k that I asked for?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahh, you found it. This is the Onyx Dragon Footprint. That such things are being found throughout Maple World is a sign that the revival of the Dragon Master is not far. I will ask you for another favor soon..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, you didn't bring back the #b#t4032534##k. Hurry up and go find it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032534" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10501" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="200912090000" />
+            <string name="end" value="200912170000" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

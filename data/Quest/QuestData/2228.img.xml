@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2228.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Reef's Gratitude" />
+        <int name="area" value="30" />
+        <string name="0" value="#p1032100# and #p1032001#, #m101000000# and #o5220002#. And Reef... The air seems to have been cleared. Although Faust still loiters around the forest,  #b#p1032108##k probably feels relieved for the time being. Let's go find #p1032108#." />
+        <string name="1" value="Appeased, #p1032108# thanks you for your work." />
+        <string name="2" value="Appeased, #p1032108# thanks you for your work." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="pop" value="8" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1032108" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2227" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2228s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

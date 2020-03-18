@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2051.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sabitrama's Anti-Aging Medicine" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard that Sabitrama in Sleepywood is making a new medicine..." />
+        <string name="1" value="I ran into #bSabitrama#k again in front of the Sleepywood hotel, the same one I helped get herbs before. This time, he said he found a place where I can get the important herb that he needed for his new medicine. He asked me if I could go into that forest and grab #bDouble-rooted Red Ginseng#k for him. The root is in two, and red ... I should remember it well and find the same one once I get to the top. The place where this may be at is #bShane#k of Ellinia ..." />
+        <string name="2" value="Thankfully I got the one that Sabitrama asked me to get, and for that, I got rewarded with a mysterious rock. And from here on out, I don't have to pay Shane everytime I go in the Forest of Patience. From what I hear, that anti-aging medicine Sabitrama is working on may be what Shane needed ... if I have time, I should go back in there ..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021009" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031032" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ohhh, you're the traveler that helped me out a lot the other day! I made the diet medicine with the herbs you got me and made some money ... and this time, I'd like to make a different kind of a medicine. What do you think? Do you want to help me out one more time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. The place where you can find the mysterious herb is actually the place you've been to before, #m101000000#. I heard someone's accepting an entrance fee at the entrance ... you have the mesos to go in, right? This time you'll be going in much deeper than before so be prepared ..." />
+                <string name="1" value="Yes! I'll explain to you about the herb you'll be getting for me. Remember there are similar herbs around so make sure you know this. The herb you'll need to get is #b#t4031032##k, and the root looks like this #i4031032#. Look carefully and please get the same one as I described for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really. You look like you can just breeze through there ... please come back here when you have time. I'll be waiting for you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... this is IT! With #b#t4031032##k, I can finally make the anti-aging medicine!!! Hahaha, if you ever become old and weak, find me. By then I may have a special medicine for just that!" />
+            <string name="1" value="Oh, I almost forgot. Since you helped me out, I should thank you for your hard work ... #b#t4021009##k is something I found at the very bottom of a valley a lont time ago in the middle of a journey. It'll probably help you down the road. I also boosted up your fame level and from here on out, #p1032003# may let you in for free. Well, so long..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten the herb yet. The herb you need to get is #b#t4031032##k. The roots look like this #i4031032#. Remember it and get it from #p1032003# in #m101000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031032" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2050" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

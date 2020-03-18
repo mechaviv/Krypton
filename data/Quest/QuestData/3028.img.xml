@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3028.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dark Lord and His Recovery" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="25" />
+        <int name="area" value="33" />
+        <string name="1" value="The wiseman of Kerning City, #bDark Lord#k, promised to give me the map piece in exchange for #b2 LUK Crystals#k. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005003" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3029" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I heard about you through #b#p1012100##k from Henesys. We don't need to necessarily talk to each other to communicate; we communicate through our minds. You've worked hard to get here. But hey...you're looking for #b#t4031056##k? Of course I also happen to have the piece of the map that shows the book's whereabouts. I've forgotten about it for a while..." />
+            <string name="1" value="But I can't just give you that. I also have been giving away a little bit of my power to all the thief-hopefuls for hundreds of years, but there have been a sudden rush of people wanting to be thieves, I've used up most of my power as a result. Get me #b2 #t4005003#s#k and I'll help you find #b#t4031056##k. What do you think? Do you want to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice. #t4005003# is something you can acquire from the monsters on land. Of course it won't be easy to get them but still, I think you are capapble of doing it. I'll be waiting for you here. Best of luck to you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm...but without my help you won't ever be able to find #b#t4031056##k...Anyway if you have a change of heart, feel free to come back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Exploring is good, and getting stronger is good and all...but don't you want to enjoy living the life as you know it? How about becoming a Rogue like us and really LIVE the life? Sounds fun, isn't it?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten #b2 #t4005003#s#k yet. You'll find it from time to time through the monsters at land. Of course it won't be easy to get them, but still, I think you are capable of doing it. I'll be waiting for you here. Best of luck to you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005003" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3027" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2197.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tienk, the Monster Book Salesman" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you arrive in  #m104000000#, find #b#p0002006##k, the motor-mouth salesman." />
+        <string name="1" value="As soon as you arrive in  #m104000000#, find #b#p0002006##k, the motor-mouth salesman." />
+        <string name="2" value="You've talked to #b#p0002006##k the salesman about the #bMonster Book#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, I'm #b#p0002006##k, the salesman who will give you the best deal of your life! I'm sure you're all very busy, but I've prepared something very special for you today. I am here to introduce the 'Monster Book' to the beginning Maple warriors and explain how this book will change your life! Set aside some time for this once-in-a-lifetime opportunity and you won't regret it~! " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can find me at the place where they build boats near the pier." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's quite alright. I'll call you again when you visit #m104000000#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2006" />
+            <string name="endscript" value="q2197e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2006" />
+            <int name="lvmax" value="10" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="104000000" />
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3060.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Food-Hunting for Moppie" />
+        <int name="area" value="33" />
+        <string name="0" value="Moppie's master Huckle had completely forgotten about his trusty dog as he was conducting his studies in Orbis Tower. He felt so horrible that he wanted to at least feed Moppie with something..." />
+        <string name="1" value="Huckle asked me for a favor, and wanted me to get some fish for Moppie, his favorite dish. I better head downstairs at the bottom of Orbis Tower and collect the fish that Jr. Pepe has. A 100 should be fine. \n\n#t4000088# #b#c4000088#/100#k" />
+        <string name="2" value="I gathered up 100 of Jr. Pepe's Fishes and got them to Moppie as a favor from Huckle. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020006" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2120000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001019" />
+                    <int name="count" value="4" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, I have totally forgotten about Moppie. Poor thing is still waiting for me at the same spot. I better do something about it." />
+            <string name="1" value="I would like to at least send him some food that he loves, but as you can see, I'm all tied up at work now, and I can't leave this place. Can you get Moppie some food? Please? #b100 Jr. Pepe's fishes#k should do." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! I may even put your name in one of the studies I have conducted over the years. Moppie loves the fishes that the Jr. Pepe's drop at the bottom of Orbis Tower. Please get him a bunch of those! Thanks!" />
+                <string name="1" value="Once you gathered up the fishes, please give them directly to Moppie! Please make sure to tell him that I sent those fishes for him. He'll be ecstatic ... so the next time you stop by the Orbis Tower, please feel free drop bye... I'll be here waiting. \n\n#i4000088# #t4000088# #b100#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I have no spare time these days. Can you please help me, for Moppie's sake?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So my master is fine? Bark bark!!" />
+            <imgdir name="yes">
+                <string name="0" value="Hey, this is a bag full of fish!! Bark! And you're telling me my dad planned it and sent you these fishes through me! Bark, I can't believe it. A workaholic dad buys me some fish to eat? That's awesome!" />
+                <string name="1" value="Owwww~~ ow~~ my master never forgot about me! Thank you so much for bringing good news to my life~ Bark bark! I think you're one compassionate person ..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bark bark?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012019" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3059" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

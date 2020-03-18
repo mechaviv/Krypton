@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3052.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Acquiring Materials for the Fur Coat" />
+        <string name="parent" value="Scadur's New Fur Coat" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="0" value="I better go introduce myself to Scadur of El Nath with this letter of recommendation from Lisa." />
+        <string name="1" value="Apparently Scadur had been waiting to change his fur coat for quite some time, for his is worn out. He asked me if I could gather up the finest set of materials for his new fur coat.\n\n #t4000051# #b#c4000051##k/250 \n #t4000052# #b#c4000052##k/250 \n #t4000049# #b#c4000049##k/80 \n #t4020005# #b#c4020005##k/50" />
+        <string name="2" value="I helped Scadur make the finest fur coat available in Ossyria." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="27000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040504" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040501" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040516" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2040513" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="-250" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000052" />
+                    <int name="count" value="-250" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4000049" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="4020005" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You came here through Lisa? Hmm, you look strong enough. Lisa knows how to pick out great people from the crowd. Okay, then, will you help me with my work?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd be interested. Here's the situation. Lately it's been even colder than usual, and I need to make myself a much better fur coat than the one I am wearing right now to combat the coldness." />
+                <string name="1" value="That's why it would be nice if you can gather up the items needed to make the fur coat. I can definitely use a strong person like you, and don't worry, you will be handsomely rewarded for your effort, so please help me." />
+                <string name="2" value="To make a new fur coat, I'll need #b250 #t4000051#s, 250 #t4000052#s, 80 #t4000049#s, and 50 #t4020005#s#k. Good luck~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Okay, so what's the pointing of saying no now?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Incredible! You brought all of them! Now I can spend the rest of the icy winter break wearing my fur coat and relax." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much~ here, please take it. I don't need it anymore." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up all the materials necessary to make my new fur coat. Please hurry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020005" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000049" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="250" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000052" />
+                    <int name="count" value="250" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3051" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

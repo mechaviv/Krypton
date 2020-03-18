@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8295.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Festival of Lights - Building the Altar" />
+        <string name="parent" value="Festival of Lights" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Hmm, that woman looks like she's preparing some sort of celebration... I should check it out." />
+        <string name="1" value="I spoke with Hannah, and she's preparing a Festival of Lights. I've agreed to help her build the Altar by gathering 25 Altar Pieces. She mentioned that the monsters would already have an axe stuck in them, so I should hunt those." />
+        <string name="2" value="I collected the 25 Altar Pieces and returned to Hannah. She was happy, and began building the Altar. She also mentioned that I could come back for more work when I have a chance" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031445" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022121" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Greetings, traveler. My name is Hannah and I'm currently organizing a Festival of Lights for the Holidays. If you could help me out, I'd greatly appreciate it!" />
+            <imgdir name="yes">
+                <string name="0" value="Excellent. I'd like to build an altar for the festival, so we'll need 25 Altar Pieces. Some others attempted to help me, but their axes got stuck in the wood. Fighting those monsters should give you the needed pieces. Thank you and hurry back!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Truly a shame, I suppose that I will have to find another good soul to assist me...Fare thee well!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wonderful! These should be enough pieces to build the Altar. Thanks for your help! I've got one other thing for you when you get a chance..." />
+            <imgdir name="yes">
+                <string name="0" value="Ok, I'll start building the Altar. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh my, it looks like you don't have enough pieces to build the altar yet. Be sure to hurry back when you do!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201031" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031445" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201031" />
+            <int name="lvmin" value="23" />
+            <string name="end" value="2009012100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

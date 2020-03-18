@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51180.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Building a Time Machine" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p9250125##k is waiting for someone to collect materials for the Time Machine today." />
+        <string name="1" value="Help #b#p9250125##k build a Time Machine.\r\n\r\nIf you complete the missions given to you by #b#p9250126##k, you will receive Completion Certificates.\r\n\r\nTake all 6 Completion Certificates to #b#p9250125##k." />
+        <string name="2" value="You spent the day helping #b#p9250125##k build a Time Machine." />
+        <imgdir name="resignedTogetherQuest">
+            <int name="0" value="51181" />
+            <int name="1" value="51182" />
+            <int name="2" value="51183" />
+            <int name="3" value="51184" />
+            <int name="4" value="51185" />
+            <int name="5" value="51186" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <string name="npcAct" value="say" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032707" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032791" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032792" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032793" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032794" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4032795" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4032796" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're here to help? Excellent! Then complete a mission to help us build the Time Machine!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Go see #b#p9250126##k at the Hangar, he'll give you a mission. You saw #b#p9250126##k at the entrance when you came to the base, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There's no time to waste. We must complete the Time Machine quickly!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, you completed today's mission. Thanks to you, the Time Machine is coming along quite nicely." />
+            <imgdir name="yes">
+                <string name="0" value="Please help me again tomorrow!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="According to Randall's report, there is a mission that hasn't been completed yet. Please come back after completing today's mission." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250125" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032791" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032792" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032793" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032794" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032795" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4032796" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q51180e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250125" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51179" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032706" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

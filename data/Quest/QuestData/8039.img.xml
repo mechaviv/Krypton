@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8039.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lionel's Necklace 3" />
+        <string name="parent" value="Lionel's Necklace" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value=" After handing Teo the items, he sent it to the jeweler, who made it for him fairly quickly. A beautiful necklace with Alligator and Dragon skin. I better show this to Maya now." />
+        <string name="2" value="With the necklace, Lionel sure doesn't look like a monster now. Phew!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2050004" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Please take this necklace to Maya." />
+            <imgdir name="yes">
+                <string name="0" value="Please tell her to take care of herself as well as the pet." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? Please let me know when you have time. I'll be here waiting." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome back. That's a lot of traveling you did going back and forth from here to Lith Harbor. I got some green tea here from Ellinia, so have a seat while I make one for you." />
+            <string name="1" value="Ahh, this is the necklace. \nOh my goodness, it's beautiful! Let's put this on Lionel right now. \n (Lionel doesn't seem to mind the necklace, and sticks by Maya) \nLionel, it looks good on you!" />
+            <string name="2" value="Thank you so much. With this, I can finally go outside with Lionel. I'll write up a thank-you letter to Teo. \nOf course, I haven't forgotten about you. This isn't much, but please take it. " />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8038" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

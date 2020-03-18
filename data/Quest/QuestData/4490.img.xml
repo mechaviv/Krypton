@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4490.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bicho's snowman" />
+        <int name="area" value="50" />
+        <string name="0" value="Bicho in Happyville looks too weak to make a snowman all by himself, but he is doing quite well so far. But it seems like he is looking for someone." />
+        <string name="1" value="Bicho asked you to find the person who helped him make the snowman. He said that the person is somewhere in Maple World.\n\nHis friend's name is #b#Q4490##k" />
+        <string name="2" value="Due to Bicho's misunderstanding, you were not able to find the Mapler who had helped him earlier. Wait, Bicho is thinking of another name now? You should go visit him!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="searching" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="info">
+                    <string name="0" value="You couldn't find the Mapler yet?  I will tell you once again. The name of the Mapler is #b#Q4451##k . Don't forget this time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250054" />
+            <int name="userInteract" value="1" />
+            <imgdir name="info">
+                <string name="0" value="Done" />
+            </imgdir>
+            <string name="endscript" value="q4490e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250054" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4483" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q4490s" />
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21746.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mu Gong's Test" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You wonder what #p2091007# is going to say about #o9300351#'s letter. You should meet with #b#p2091007##k on the #btop floor of #m925020000##k and find out. You can get there via the shortcut in the back alley that #p2091005# told you about." />
+        <string name="1" value="When you ask #p2091007# about the Seal Stone of Mu Lung, he says that #o9300351# is a dangerous fellow, but tells you that he also has his guard up around you. He also says that he's wants to test you to see if you're trustworthy. All you have to do is beat #o9300350# in battle.\r\n\r\n#o9300350##r #a217461##k" />
+        <string name="2" value="You emerged victorious over #o9300350#. #p2091007# seemed absolutely shocked to see someone using skills from hundreds of years ago…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="The skill you used just now was used a long time ago in a real battle. A skill that was rumored to have been used by the great heroes! Who are you exactly? Are you the successor of one of the heroes?" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have shown my clone everything you're capable of. If you wish to take the test once more, forfeit the quest and try again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300350" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21744" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21746s" />
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

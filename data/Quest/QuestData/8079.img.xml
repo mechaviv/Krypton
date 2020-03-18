@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8079.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Umi Needs Money" />
+        <string name="parent" value="Umi's Ambition" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="I heard #r#p9120005##k of Showa Town is setting up a master plan. I better hear this." />
+        <string name="1" value="She wanted to purchase a machine owned by #r#p2050002##k which is made out of the finest technology in the universe, but was short on money, so #r#p9120005##k asked me to pitch in for her. #n5,000,000 mesos is a LOT of money..." />
+        <string name="2" value="I handed #r#p9120005##k 5,000,000 mesos. Can she buy it, though?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-5000000" />
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahh, just a little more money, and I may be able to purchase the dream machine... um, hey stranger! How would you like to invest in a Dream Machine and buy it with me?" />
+            <imgdir name="yes">
+                <string name="0" value="The dream machine is actually a device owned by #r#p2050002##k that consists of the most advanced technology known in the universe, and what it does is it changes a matter into something else." />
+                <string name="1" value="The machine can change #b#t4011005##k into various different items." />
+                <string name="2" value=" With this, I can always use #b#t4011005##k to make either a powerful weapon, a rare item, or something else. This will make me RICH!" />
+                <string name="3" value="The problem is, recently a competitor has emerged and started taking profits away from my store, which has put a dent on trying to come up with the fund to purchasing the machine. This is why I want you to invest #r5,000,000 mesos#k in this machine for me." />
+                <string name="4" value="In any case, I do not have much time, so I would appreciate it if we take care of this quickly." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" I'm disappointed in you. To the common folk, a slick-looking device is always more attractive than a great invention." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, that was fast! Well, then I'll get started with the purchasing, so give me the money the next time you come back here~" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have enough money, yet. That' #b5,000,000 mesos#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120005" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

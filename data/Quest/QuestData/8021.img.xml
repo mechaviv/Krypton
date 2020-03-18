@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8021.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yoona's Quiz on Shopping 1" />
+        <string name="parent" value="Yoona's Quiz on Shopping" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="0" value="I better solve Yoona's 1st question on shopping." />
+        <string name="1" value="What's the 1st question on Yoona's Quiz on Shopping? I have to remember if I want to get it right..." />
+        <string name="2" value="I learned something about expanding the inventory through Cash Shop.  I can store extra equipment and items using this method!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8022" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, we'll start right off with the 1st question. Are you ready?" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Can you expand your item inventory at the Cash Shop?\n\n#L0##bYeah, of course#l\n#L1#Um, no!#k#l " />
+            <string name="1" value="That's correct! You may expand your item inventory through the Cash Shop; That's how you store so many items at once." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Yikes...please go take a look at it yourself at the Cash Shop." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8020" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

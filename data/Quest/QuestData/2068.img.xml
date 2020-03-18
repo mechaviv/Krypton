@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2068.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Research on Animal Fossils" />
+        <string name="parent" value="Dr. Betty's Research on Fossils" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="Dr. Betty in Ellinia told me that she needs #b1 #t4031151##k for her research. She asked me to find her daughter near Henesys, and bring it back to her. Where would Anne be?" />
+        <string name="2" value="I met Dr.Betty's daughter, Ann, playing near Henesys by herself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <int name="nextQuest" value="2069" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="These are indeed 20 samples. They are in pretty good shape, too. Thank you for your hard work. This will help me immensely on my studies with the plant fossils. Just the way Dr. Winston designed it. Well, I have one more favor to ask... will you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="To start working on the animal fossils, I'll need samples I can compare with. Looking at these fossils, Drake's skulls seem like a perfect sample for comparison. Can you get me some of Drake's skulls?" />
+                <string name="1" value="Ah, don't be too shocked. I know Drakes are not to be messed with for most people. I have #b#t4031151##k that I've gathered up a few years ago. The problem is, I didn't bring it with me to Ellinia because I'm here right now for plant fossils. Since I can't leave this place, I'm hoping you can get it for me." />
+                <string name="2" value="Around Henesys, you'll find my daughter. Ask her for #b#t4031151##k. Her name is #bAnne#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you were going to help me out there ... oh well, I'll see you around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Can I ... help you?? \r\n#L0# #bYour dad asked me to see you.\r\n#L1# Your mom asked me to see you.#k" />
+            <string name="1" value="My mom sent you here? For what? \r\n#L0# #bShe asked me to get some preserved Drake's Skulls from you..#k\r\n#L1# #bShe asked me to get a crushed Drake's Skull from you.#k" />
+            <string name="2" value="I know I have them. I'll have to check and see if you're indeed sent by my mom, though. What's her name?\r\n#L0# #bBettie#k\r\n#L1# #bBatty#k\r\n#L2# #bBetty#k" />
+            <string name="3" value="Where did you meet my mom? \r\n#L0##bPerion#k\r\n#L1# #bEllinia#k\r\n#L2# #bKerning City#k\r\n#L3# #bHenesys#k\r\n#L4# #bSleepywood#k" />
+            <string name="4" value="What's the color of her shoes? \r\n#L0# #bBlack#k\r\n#L1# #bBlue#k\r\n#L2# #bRed#k\r\n#L3##b #bYellow#k" />
+            <string name="5" value="What's the color of the book that my mom is holding? \r\n#L0# #bBlack#k\r\n#L1# #bBlue#k\r\n#L2# #bRed#k\r\n#L3# #bGreen#k" />
+            <string name="6" value="Last question. What's the color of the earrings that my mom is wearing? \r\n#L0# #bBlack#k\r\n#L1# #bBlue#k\r\n#L2# #bRed#k\r\n#L3# #bYellow#k" />
+            <string name="7" value="Oh my goodness, you got them all right! My mom DID send u here." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Hey, I don't have a dad. You CREEP!!!! Who are you???" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I don't have any of crushed Drake's skulls here. Something's not right about you." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="You're wrong. A stranger indeed." />
+                    <string name="1" value="You're wrong. A stranger indeed." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Liar!!! Who are you!!!! HELP!!" />
+                    <string name="2" value="Liar!!! Who are you!!!! HELP!!" />
+                    <string name="3" value="Liar!!! Who are you!!!! HELP!!" />
+                    <string name="4" value="Liar!!! Who are you!!!! HELP!!" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="3" />
+                    <string name="0" value="You're wrong. A stranger indeed." />
+                    <string name="1" value="You're wrong. A stranger indeed." />
+                    <string name="3" value="You're wrong. A stranger indeed." />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Wrong. Are you sure you've met my mom?" />
+                    <string name="2" value="Wrong. Are you sure you've met my mom?" />
+                    <string name="3" value="Wrong. Are you sure you've met my mom?" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="answer" value="4" />
+                    <string name="0" value="You're wrong. A stranger indeed." />
+                    <string name="1" value="You're wrong. A stranger indeed." />
+                    <string name="2" value="You're wrong. A stranger indeed." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012110" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2067" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="22" />
+        </imgdir>
+    </imgdir>
+</imgdir>

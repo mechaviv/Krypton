@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3825.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Swallow's Medicine" />
+        <string name="parent" value="Do Gong Seeking Swallow" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2091001# asked me to visit #b#p2091002##k as he prepares a #bmedicine#k for #p2071006#..." />
+        <string name="1" value="#p2091002# was more than willing to make the medicine for #p2071006#, but...I have to gather up the missing ingredients for it...\n\n#i4000292##t4000292#  #b#c4000292##k/20   \n#i4000276##t4000276#  #b#c4000276##k/50    \n#i4000279##t4000279#  #b#c4000279##k/50" />
+        <string name="2" value="#b#p2091002##k told me to wait for a second as he makes the medicine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="자네가 바로 #p2091001#이 말한 여행자로군. #p2071006#가 어디 있는지 알려 줬다지? 정말 고맙네. #p2091001#이 길렀다고는 해도 #p2071006#는 #m250000000# 마을 전체에서 사랑받던 녀석이지~ 약이라면야 얼마든지 만들어 주겠네. 자네도 #p2071006#를 도와 주겠지?" />
+            <imgdir name="yes">
+                <string name="0" value="고맙네. 하지만 약의 재료가 조금 모자라는구만. 인간에게 줄 약이 아니라 #p2071006#한테 줄 약이라, 평소에 안 들어가는 재료들이 필요하거든. 마침 자네가 도와주기로 했으니 #t4000276# 50개와 #t4000279# 50개, 산삼 달인 물 20개만 구해다 주게나. 그 녀석, 상처 치료약 말고 건망증 치료약도 만들어 줘야겠어." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="응? 약을 만들어야 #p2071006#한테 배달도 할 텐데. 배달해주기로 했으니 이왕이면 재료도 모아다 주면 안 되는가?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000276" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000279" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000292" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So you're the traveler #p2091001# was talking about. #p2071006# told you about the whereabouts, right? Thank you so much. #p2091001# might have raised it, but #p2071006# is a beloved bird here at #m250000000#~ If you need a medicine, I can certainly make it for you. I am confident that you'll also help #p2071006# out. Right?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Unfortunately, I am a little short on ingredients necessary for the medicine. Since this medicine isn't for humans but rather, for #p2071006#, you'll find ingredients there that you'll normally not see. Since you have decided to help out, I'd like for you to find #b50 #t4000276#s, 50 #t4000279#s, and 20 #t4000292#s#k. I'll have to make a medicine for it not just to take care of its injuries, but also to fix its occasional amnesia." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? I'll need to make the medicine in order to deliver it to #p2071006#. Since you have decided to help me deliver the medicine, wouldn't it be nice if you can help me gather up the ingredients for the medicine?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, you have gathered up all the ingredients necessary to make #p2071006# a fine medicine. Great work there! I like the fact that you have decided to step up and help #p2071006# out, after seeing its wings clipped." />
+            <imgdir name="yes">
+                <string name="0" value="I will make the medicine as soon as possible. Please wait for a second." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What? Did you forget the contents for the medicine? I need #b50 #t4000276#s, 50 #t4000279#s, and 20 #t4000292#s#k. Please don't forget it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000292" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000276" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000279" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3824" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

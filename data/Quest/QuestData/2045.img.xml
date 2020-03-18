@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2045.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What Pia has Borrowed" />
+        <string name="parent" value="Pia's Present For a Friend" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="I went to see Rina at Henesys, and instead, she tells me she took that red cape because Pia didn't return the items she borrowed from her. She said, if she gets her items back, then the cape is hers again...the borrowed stuff are #b1 black crystal, 1 ancient scroll, and 30 horns of Tauromacis." />
+        <string name="2" value="I went to Rina to get Pia's cape, but Rina told me that she is keeping the cape until Rina brings back what she borrowed from Rina. She said she will return the cape if she gets back what Pia has borrowed from her." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021008" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001005" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000028" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2046" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="Hmm... If you really need this, you should give the thing, which #p1012102# took, to me. Then, I will give #b#t4031043##k to you. Of course, the thing, which #p1012102# took, is very precious~" />
+            <string name="0" value="Hi~ Nice weather~ isn't it? What? You want #b#t4031043##k, which I brought from #p1012102#? Hmm... I should say... &quot;no&quot;... because I didn't borrow it from #p1012102#. #p1012102# took my precious thing and never gave it back to me. So I took this cape from him. Therefore, I can't give this cape to you." />
+            <imgdir name="yes">
+                <string name="0" value="Really? You must be really close to #p1012102#. Anyway, okay. I need #b1 #t4021008#, 1 #t4001005#, 30 #t4000028##k. I spent years to collect all these and #p1012102# just took them all!!! Well... If you give these back to me, I will definitely give #b#t4031043##k to you, in return." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Okay. You don't have to pay the dept, which you didn't borrow. Anyway, please talk to #p1012102# that if he wants to get the cape back, he should pay the things, which he took from me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #b1 #t4021008#, 1 #t4001005#, 30 #t4000028# #k. I will give #p1012102#'s #b#t4031043##k back to you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1010100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021008" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000028" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1010100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2044" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="411" />
+                <int name="3" value="412" />
+                <int name="4" value="420" />
+                <int name="5" value="421" />
+                <int name="6" value="422" />
+                <int name="7" value="430" />
+                <int name="8" value="431" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

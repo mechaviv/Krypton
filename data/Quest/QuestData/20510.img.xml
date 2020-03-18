@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20510.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mimio's Birth" />
+        <int name="area" value="15" />
+        <string name="0" value="You raised the #t1902005# by feeding it Concentrated Formula. Can you now mount the #t1902005# that's finished shedding? Find out from #p1102001#." />
+        <string name="1" value="The #t1902005# has completed its shedding but the process caused it to become so weak that you won't be able to mount it yet. Feeding it some #b#t4032117##k should make it become stronger... Go to #m230000000# and purchase some #t4032117# from #b#p2060005##k." />
+        <string name="2" value="You gave the #t4032117# to #p1102001#. #p1102001#, who fed the #t4032117# to #t1902005#, handed you a #t1902006# full of energy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032117" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032117" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20509" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <string name="end" value="2008120200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

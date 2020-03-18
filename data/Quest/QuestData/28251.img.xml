@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28251.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Completed Treasure Map" />
+        <string name="parent" value="The Completed Treasure Map" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k wants to see the #rDirty Treasure Map#k. Let's go find him." />
+        <string name="1" value="#b#@1052001:##k in #bKerning City#k says he doesn't have a clue where this location is, and instead, suggests that you visit #b#@1012003:##k in #bHenesys#k." />
+        <string name="2" value="#b#@1012003:##k in #bHenesys#k claims to know the location indicated on the #rDirty Treasure Map#k. Let's go find him." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Searching for the Treasures' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, it's been completed. Let me see...\nHmm, I'm not sure which region this map is indicating.\n\nBut I know one person who would be able to tell you exactly where this place on the map is." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Find #b#p1012003##k in #bHenesys#k.\nI'm sure he'll be able to tell you exactly where \n\nthe map is directing you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm lazy." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What brings you here?" />
+            <imgdir name="yes">
+                <string name="0" value="A Treasure Map? How interesting! A Treasure Map in this day and age, huh?\n\nLet me see...\b\bThis place seems familiar. Give me a few moments to think about this." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012003##k is in #bHenesys#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28250" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

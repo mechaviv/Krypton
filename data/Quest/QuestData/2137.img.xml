@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2137.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Bowman's Second Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You feel your muscles forming along your upper arms, but you've got a long way to go. Talk to #b#p1012100##k again." />
+        <string name="1" value="#p1012100# says the best way to learn is to keep hunting monsters. She says to hunt #r40 #o210100#s#k... \n\n#o210100# #r#a21371##k" />
+        <string name="2" value="40 #o0210100#s, slain and looted. You reported the news to #p1012100#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="당신의 기량이 전보다 늘었군요. 하지만 그것으론 부족하지요. 당신에겐 아직 더 많은 수련이 필요하다고 판단되는군요. 어떤가요? 당신만 원한다면, 이 헬레나가 당신의 수련을 도와주도록 할게요. " />
+            <imgdir name="yes">
+                <string name="0" value="그렇다면 슬라임 40마리를 사냥해 보세요. 한 번 사냥해 본 몬스터이니 그리 어렵지는 않을 거예요. 슬라임을 모두 사냥한 후 다시 이곳으로 와서 당신이 한 일을 말씀해 주세요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="스스로의 힘으로도 수련할 자신이 있다면, 그렇게 하는 것도 좋겠지요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="610" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've improved. That's not enough though. I believe you need more training. What do you say? If you want, #p1012100# can help you out with training." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then hunt #r40 #o0210100##k.You've hunted them before so it won't be hard. After hunting all #o0210100#, come back here to tell me what you did." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's good to train by yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've eliminated forty #o0210100#. Fantastic. I'm happy with your enhancement. Please don't be satisfied with this. You're still weak compared to many monsters in Maple World." />
+            <imgdir name="yes">
+                <string name="0" value="I'll call you when you need more training. Until we meet again...keep training hard!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r40 #o0210100##k. You can do it. Don't be afraid and face them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2136" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

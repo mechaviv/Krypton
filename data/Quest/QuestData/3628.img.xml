@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3628.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on the Goblin Story" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook from Chumji after defeating 3 King Goblins. Where did it go? Should I go see Chumji again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get #b#t4031238##k for him. Hmmm ... I'm pretty sure I received it after I defeated the King Goblins, but I can't seem to find it. After discussing the matters with Chumji, he promised to give me the storybook if I gather up #b10 #t4000173#s#k for him.\n\n#t4000173# #b#c4000173##k/10" />
+        <string name="2" value="I gave Chumji 10 #t4000173#s just as he requested to reacquire #t4031238#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000173" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031238" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there. Having fun traveling around places? I heard you've been helping out Wiz the Librarian lately. That definitely earns my respect. How can I help you today?" />
+            <string name="1" value="You lost the storybook that I gave you? Oh no ... you should have been more careful with it. Don't worry, though; I have another copy with me. Before I give you this, though, can you do me a favor? It is going to be a piece of cake for you." />
+            <imgdir name="yes">
+                <string name="0" value="It has been a tremendous relief for everyone here thanks to you eliminating 3 King Goblins, but the truth is there are still many Goblins roaming around the Black Mountain. Blins, especially, love to pull some nasty pranks on people, which is definitely a concern here. I want you to fight those Goblins and bring #b10 #t4000173#s#k to me. This should be easy for you, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This should not be difficult for you. Don't you need the storybook?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring it? Let's see... indeed, 10 brooms. Here's the storybook. Please take good care of it this time." />
+            <imgdir name="yes">
+                <string name="0" value="Now that the brooms are here, I think it'll be a good time for the people here and myself to sweep up and clean up this town. Lately our town has been frequently visited by the outsiders, and I thought our town could use some cleaning for quite some time. Anyway, so long~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you defeat Blins, they'll cough up a #b#t4000173##k. Bring back #b10#k of those." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000173" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3611" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3618" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031238" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4916.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost!" />
+        <int name="area" value="45" />
+        <string name="0" value="There's a mysterious traveler in New Leaf City-he doesn't look like he's from anywhere around here. I should ask him what's going on. It could be interesting..." />
+        <string name="1" value="I spoke with Elpam Gorlab, and he's a traveler from Versal, the mirror-world of MapleStory. He traveled here to observe us and our celebration, but due to the appearance of Amoria, he was thrown off-course and landed in New Leaf City. I've agreed to help get him home by collecting #b30 Elpam Magnets#k. He's mentioned that the only creatures that have them here are the Barnard Grays. I'll have to head to Omega Sector and track them down. I didn't know that there was a mirror-world...I wonder if I have a double there..." />
+        <string name="2" value="I got the #b30 Elpam Magnets#k and returned them to Elpam. In return, he gave me an Elpam Elixir, something that's sure to help me. It looks like he needs more help though..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8500" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2002015" />
+                    <int name="count" value="7" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031674" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, my name is Elpam Gorlab. I am in need of assistance, do you think you can spare a moment? \n\n#L0##bYes. At the very least, you can tell me why you look so different.#k#l" />
+            <string name="1" value="Ah. Therein lay the tale of my current predicament. I am from Versal. It is best described as a parallel dimension to the Maple World, as many things are different, yet familiar. I travel here for certain occasions to observe the people that inhabit this land. However, this time when I traveled here, I noticed that I was in a strange place. In speaking with the one called Icebyrd Slimm, I discovered my calculations were off due to the appearance of the new land, Amoria. I need to get home, but I have to adjust my enchanted compass first. I will need 30 Elpam Magnets to do this properly?I believe the Barnard Grays are the only creatures in this world that may have them. I have translated this to your Quest Journal from my native language. I wish you luck, and shall await your return! \n\n#L0##bTell me more about your world, Versal.#k\n#L1##bNo way. You smell like old cheese!#k#l" />
+            <string name="2" value="It can be thought of as the mirror dimension for the Maple World. There are similarities, but many differences as well. For instance, you may have noticed my last name is a monster here. In our world, they are benevolent creatures, and it is a mark of honor to be associated with them. It seems strange to me that they are so fearsome here... Would you help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Er...well, cheese is a popular form of cologne in our world...please see me again should you change your mind." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If I am to re-calibrate this compass, I'll need more #bElpam Magnets, 30 to be exact#k. I await your return." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please see me again if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes! This will do it. I can now adjust my enchanted compass! Thank you so much! " />
+            <imgdir name="yes">
+                <string name="0" value=" If you should have the time, please see me again, for I require a final task. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If I am to re-calibrate this compass, I'll need more #bElpam Magnets, 30 to be exact#k. I await your return." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201055" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031674" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201055" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

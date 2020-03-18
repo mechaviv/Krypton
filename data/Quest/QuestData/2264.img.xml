@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2264.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mr. Lim and the Subway" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#eJake#k, who works at the #eKerning Ciy Subway Turnstile#k, wants to ask you for a favor. You'd better go talk to him.\r\n#bTip - At the entrance of the subway station in Kerning City, you'll see Shumi sitting down in front." />
+        <string name="1" value="Jake at the Kerning City subway station needs help. Up north, there's a #e#bsubway station that stopped midway through construction#k#n. Apparently the place is infested with monsters. #e#bMr. Lim#k#n has been sent there to assess the damage, and Jake wants you to follow to see how bad the damage is.\r\nYou should head over to the #e#bConstruction Site North of Kerning City#k#n and find the subway station that's under construction, so you can find Mr. Lim." />
+        <string name="2" value="Jake, who works at the Kerning City subway station, requested that you meet Mr. Lim at the Construction Site North of Kerning City. Mr. Lim then pleaded with you to check out the old subway platforms for him." />
+        <string name="demandSummary" value="You talked to #bMr. Lim#k, who was inside the #bAbandoned Subway Train#k located at the Construction Site North of Kerning City." />
+        <string name="rewardSummary" value="EXP 1,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there, #b#h0##k. I have contacted you to make a special request. Have you ever been to #bConstruction Site North of Kerning City#k?" />
+            <string name="1" value="There's an old station building that has ceased construction. Lately, I have received reports that a flurry of monsters have been roaming around the area. #e#bMr. Lim#k#n was sent there to assess the damage, but he just sent word that he needs another person to help and requests that I send someone dependable." />
+            <string name="2" value="#b#h0##k, you're the most dependable person I know here, so I'd like for you to go and see what's going on. Will you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for accepting such a tough request. I am sure you know your way around Victoria Island much better than I do, but just to make sure, here's how to get there: \nHead east of Kerning City, and you'll see a path that heads north that leads to Perion. Follow that route, and you'll reach #bConstruction Site North of Kerning City#k. It's huge, but in that area, you'll find an entrance that leads to the #bAbandoned Subway Station#k. Once there, tell Mr. Lim I sent you there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy helping someone else. That's too bad, because I can't think of anyone else who could do this job." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Only authorized personnel beyond this point! The area is still under construction, and it's very dangerous.\r\n#b#L0#I'm #h0#, and Jake sent me here to help you.#l\n#k" />
+            <string name="1" value="Jake sent you? Then you're here to help me investigate the platform, right? Awesome! I've been waiting for you. Now I can breathe a sigh of relief. It's nearly impossible for me to investigate this huge platform by myself." />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, I'd like for you to stop by every now and then and see if anything's going on. Once you've successfully done that, I'll give you #b#t4001321##k as a reward. Train 999 is the area where you'll find a number of special Bubblings. Those Bubblings tend to gather up shiny, useful items, which means you might be able to get some of them through drops. I'll be seeing you often here. Good luck!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Head east of Kerning City, and you'll see a path that heads north that leads to Perion. Follow that route, and you'll reach #bConstruction Site North of Kerning City#k. It's huge, but in that area, you'll find an entrance that leads to the #bAbandoned Subway Station#k. Once there, tell Mr. Lim I sent you there." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052115" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052006" />
+            <int name="lvmin" value="25" />
+            <int name="lvmax" value="30" />
+            <string name="end" value="2009010100" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

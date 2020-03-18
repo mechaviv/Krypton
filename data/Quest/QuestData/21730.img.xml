@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21730.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Cave's Password" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your fourth assignment as an informant and  even though you found the puppeteer's cave, you couldn't enter because you didn't have the password. The code might be written on #p1061006#. Go talk to #p1061006# at #m105040300#." />
+        <string name="1" value="Rotating the #p1061006# might reveal the scribbles, but it's not moving. Wait a minute, the statue seems to be talking to you directly. 'I want 100 #t4000007#s.' Now you've heard of some outrageous demands, but a statue demanding something from you? Really? Oh well, better find some #t4000007#s.\r\n\r\n#i4000007# #t4000007# #b#c4000007# / 100#k" />
+        <string name="2" value="You found the scribble on #p1061006#. It's written in a near-illegible scribble, but you can still make it out. It says: 'Francis is a genius puppeteer!' All the words in the password have to be exact, including the capitalization and spacing, so be careful." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b(It's a #p1061006#. It has a funny face. There must be a scribble here somewhere… Something's not right. It's as if the #p1061006# is talking to you. What? Bring 100 #t4000007#s?)#k" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b(There seems to something scribbled on the statue but you have to turn it to see it. The statue however won't budge. Do you have to do what the statue wants?)#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b(Why should you listen to a statue? Ignore it.)#k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#b(You leave 100 #t4000007#s below the statue and try turning it. Voila, it starts moving. You better have a closer look at the scribbles engraved on it.)#k" />
+            <string name="1" value="#b(The code is 'XXXXXXX is a genius puppeteer'!)#k" />
+            <imgdir name="yes">
+                <string name="0" value="#b(It looks like there's some substance to this. Maybe it has to do with the password. You should discuss this with Tru.)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="#b(The statue doesn't want to budge. You'll have to give it what it wants. Bring it 100 #t4000007#s.)#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21729" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

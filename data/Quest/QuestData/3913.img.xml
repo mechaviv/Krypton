@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3913.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Schegerazade's Fear" />
+        <string name="parent" value="Schegerazade the Storyteller" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Inside #b#m260000300##k, there's a storyteller who know so many stories that she has enough to go nonstop for the next 1,000 days. Her name is #b#p2101008##k. You should go see her." />
+        <string name="1" value="#p2101008# was unjustly dragged over to the palace simply for knowing so many stories. She seems worried that one day, she'll run out of stories. To help #p2101008#, you should head to #b#m222020000##k, and rent a book so she has more stories.." />
+        <string name="2" value="You told #p2040052# about #p2101008#. He seemed genuinely shocked." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, traveler... What kind of a story would you like to hear? A story of a monster trapped in the mountain of snow? A story of a beautiful town inside the ocean? If not, then a story of a race, unlike any other, deep inside the forest?  \r\n#L0# #bI want to hear your story, actually." />
+            <string name="1" value="My story? It's not a fun story to listen to. It's a story of a regular girl with a reputation for great storytelling, living in a regular town, who was dragged into the palace to... weave new stories while constantly trembling with fear. \r\n#L0# #b What are you afraid of?" />
+            <string name="2" value="I am afraid of the day when I've told every single story I know. It'd be nice if I were sent back home then...but would the queen really do that? I doubt it. I'm scared of what she WOULD do. So I want to get new books, so I never run out of stories. Could you help me get some?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I am sure you've heard of the #m222020000#, considered the biggest and best library in the world. Don't you think a library like that must contain a story or two that's never been heard before?" />
+                <string name="1" value="This might not work, but... #b#m222020000##k is the only place I can think of. If I can find a way to get my hands on new storybooks, maybe I can buy more time. Please help me, traveler. Please borrow a book from #b#p2040052##k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, I see. I guess there's no such thing as a courageous adventurer like in the stories…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome to #m222020000#. All the knowledge and records of Maple World is stored in here. Which book would you like to read...? What? You want me to help #p2101008# of #m260000000#?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you've gone to #b#m222020000##k yet... You can get there through #m220000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="36" />
+        </imgdir>
+    </imgdir>
+</imgdir>

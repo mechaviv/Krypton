@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22542.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where's the Book? 2" />
+        <string name="parent" value="Where's the Book?" />
+        <int name="order" value="2" />
+        <int name="area" value="7" />
+        <string name="1" value="When you ask #p1002100# about the book, she says that she gave it to #b#p1002001##k who said he needed it. Ask #p1002001# about the #t4161050#." />
+        <string name="2" value="#p1002001# says that he borrowed the book because he thought that #p1012101# might be bored and that he gave it to #p1012101# already. Go to #b#m100000000##k and meet #b#p1012101##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to ask me about my wonderful and impressive concoction? No? A book? Oh, #t4161050#? I thought, with that book, I'd be able to concoct something that would give me a Dragon's power, but I was wrong." />
+            <string name="1" value="I wasn't going to read it anyway, so I gave it to #p1002001# since he wanted it. He even told me he'd return the book himself, so if anything, #p1002001# would have it. Ask #b#p1002001##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, you have a strange lizard as a pet. Could I pet it? Oh my, it looks scary. I think I'll just stand back and observe." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why are you asking me so many questions when you're not even that curious? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, my face itches. Hm? I haven't seen you here before. What can I do for you? I wasn't planning on going out to the sea for a while... Hm? A book? Are you talking about #t4161050# by any chance? If you are, I don't have it." />
+            <string name="1" value="A man of the sea like me has nothing to do with Dragons. I didn't borrow it for me. I borrowed it for #p1012101# since she's too weak to go anywhere. I already sent it to #b#m100000000##k, so if you want it, talk to #b#p1012101##k." />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, what is that weird pet you've got there? Not too long ago, I saw an adventurer with a Jr. Balrog! People are starting to travel with some strange creatures..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I've already given that book to #b#p1002001##k! Ask #p1002001#. He's right there." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22541" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

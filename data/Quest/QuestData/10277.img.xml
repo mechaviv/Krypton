@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10277.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="MapleStory 5th Anniversary Party Preparation!!!" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9010010# is preparing for a huge party to celebreate MapleStory's 5th Anniversary and is in need of lots of materials." />
+        <string name="1" value="Collect #t04032301#s and bring them to Cassandra." />
+        <string name="2" value="You delivered the party materials to #p9010010#." />
+        <string name="summary" value="Gather some party materials for #p9010010#." />
+        <string name="demandSummary" value="#i4032301:# #t4032301:# #c4032301# / 20&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm glad you're here #b#h0##k. I've been preparing for the MapleStory 5th Anniversary party, and there are many things that I need. Do you think you can help me collect some materials?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I should have #b#p9000021##k do this since he is perfect for it. But I can't seem to find him for some reason... Maybe he went on vacation without telling me. In any case, I just need you to bring me #b#e20 #t04032301:#s#k#n. Thanks!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you refusing? I guess you don't want to help us celebrate MapleStory's 5th Anniversary. I've never seen any good happen to those who refuse me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn't look like you've collected all the party supplies yet. Check to see if you have #b20 #t04032301#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032301" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10277e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="71" />
+            <int name="lvmax" value="200" />
+            <string name="end" value="2009052800" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3933.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ardin's Sand Bandits" />
+        <string name="parent" value="Sand Bandits According to Ardin" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="0" value="You passed all of #p2101003#'s test, so he will accept you as a member of the Sand Bandits…right? Better go talk to #p2101003#." />
+        <string name="1" value="#p2101003# tells you the Sand Bandits need to get stronger to fight the queen, and says if you beat him, he'll accept you as a member of the Sand Bandits. Will you be able to defeat #p2101003#? \n\nArdin's Other Self#r#a39331##k" />
+        <string name="2" value="He may look slow and clumsy, but #p2101003# was much more powerful that you had envisioned. You won anyway, though. #p2101003# said you now have to gain the acceptance of the other Sand Bandits. Come to think of it, the #p2103001# also mentioned a bow, arrows, and a dagger." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2012000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2012002" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Wow! I don't think I've had that much fun battling in a long time. To battle the queen, who's overly zealous and uses weird spells, we need to place her against a very formidable foe. Someone as powerful as you is definitely useful for the Sand Bandits." />
+            <imgdir name="yes">
+                <string name="0" value="That doesn't mean you're a member just yet. You may have passed my test, but you still haven't taken all the tests required to join the Sand Bandits. You'll need to find other members and pass their tests, too. Personally, I hope you become one of us." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="If you beat me in a battle, then I'll accept you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101003" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9100013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3932" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3933s" />
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

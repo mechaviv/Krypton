@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3924.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sirin Speaks" />
+        <string name="parent" value="Sand Bandits and Red Scorpions" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Apparently #p2101012# of #b#m260010400##k is very angry. Why, though? Didn't you just get him a ring? What's going on?" />
+        <string name="1" value="#p2101012# said he hid the treasure behind a rock, and someone apparently stole it. He thinks the person responsible is #p2101000#, the dancer. Better go talk to her." />
+        <string name="2" value="Seems like #p2101000# indeed took it, but...something doesn't feel right." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Argh!! I can't believe it! The jewel I stole just got stolen. I won't let whoever stole it get away with this! Oh! You're here. Thanks for coming. Someone stole the jewel you worked so hard to get us. I didn't even have time to store it safely in the cave. I just stashed it behind that rock over there. I think I know who took it, too. Can you help?" />
+            <imgdir name="yes">
+                <string name="0" value="It was #b#p2101000##k, the dancer. How do I know this? Because besides #p2101000#, no one else ever come here! I should've been more suspicious when she started practicing her dance moves out here. It had to be #p2101000#! Please, get the jewel back from her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What?! The Sand Bandits' precious stolen jewel just got stolen, and you aren't curious who did it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What's going on? It's almost showtime, and I'm practicing my new moves. I'll show them to you later... What? Did I steal a piece of jewelry that was hidden behind a rock?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm, a jewel hidden behind a rock... Ohh, that! Yes, I took it and gave it away to feed the hungry. Why do you ask? What? I'm interfering in the work of the Sand Bandits? No way! What are you saying?" />
+                <string name="1" value="I, Sirin, know more than anyone how much the Sand Bandits help the people of #m260000000#, and I would never disturb their work. The jewel hidden behind the rock was stolen by real bandits. That's why I took it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I'm just about positive #b#p2101000##k is the one who took it. No one else comes here besides me and #p2101000#!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3923" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="27" />
+        </imgdir>
+    </imgdir>
+</imgdir>

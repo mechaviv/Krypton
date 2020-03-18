@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8225.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Right Path" />
+        <int name="area" value="45" />
+        <string name="0" value="Jack Barricade has given me the #bMap of Phantom Forest#k that he took from Taggrin.  He explained that he was forced to steal it from Taggrin, who had refused to give it to him even after he'd won it in a bet fair and square.  Now that Jack's made it up to the Crimsonwood Mountain, he's given the map to me for my own use.  Perhaps I should return it to Taggrin?  If I keep it, the map will come in handy while navigating the tricky Phantom Forest, #ballowing me to use the marked shortcuts#k and save time traveling.  But at the same time, there's a part of me that feels that this map still rightfully belongs to Taggrin.  What should I do?  It's a dilemma..." />
+        <string name="1" value="I told Taggrin that I'd found Jack up the Crimsonwood Mountain, and explained Jack's purpose.  Taggrin was surprised when I offered to return his Map of Phantom Forest to him... and was moved by my gesture. He seems to have warmed up to me, and ask that I return and speak to him. What could he want?" />
+        <string name="2" value="In return for making the honorable gesture of returning his map, Taggrin let me in on a secret of his own: he and his band are not bandits at all, but are actually #bRaven Ninjas#k, descendants of the ancient #bShadowknights#k!  They're here to discover what happened to their ancestral Keep and the reason behind the disappearance of Masteria.  As such, Taggrin is offering a bounty on the Keep's unrightful occupiers.  I can now speak to Joko to redeem any #rBadges#k I find off these corrupted warriors (the #rWindraiders#k, the #rStormbreakers#k, the #rFirebrands#k, and the #rNightshadowsRk) for #bmeso bounties#k, and possibly even #bRaven Ninja gear#k!  I can make #bone Badge Bounty Redemption per day#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3992040" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="I want to thank you again for returning our map.  This gesture tells me something of who you are.  Perhaps someone to be trusted... a potential ally.  Time will tell if my faith is misplaced." />
+            <string name="1" value="You asked me once what we were, if not bandits. &lt;smiles&gt; So I tell you this now: We are members of the #bRaven Ninja Clan#k, and hail from an island called the Isle of Vigilance off the northern shores of Masteria.  " />
+            <string name="2" value="We Raven Ninjas trace our lineage back to the ancient Masterian guild of the #bShadowknights#k, so you could consider Crimsonwood Keep our ancestral home.  Our mission here is to discover the reason for Masteria's disappearance and its return.  It is almost certainly tied with the current events at the Keep, and what you and this Jack Barricade are pursuing." />
+            <string name="3" value="Based on what you have told me, I have expanded our mission to include the elimination of these trespassers that now occupy Crimsonwood Keep.  &lt;smiles&gt;  It's what we do best.  But we will #bpay a bounty for the badges#k of those you happen to dispatch as well.  Consider yourself a contractor.  My brother #bJoko#k will handle the details so you should speak to him." />
+            <imgdir name="yes">
+                <string name="0" value="Oh, and keep this map.  Jack may have been right to entrust you with it.  Until we meet again, friend." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8224" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="3992040" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8225s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

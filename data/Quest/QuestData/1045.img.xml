@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1045.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bari's Test" />
+        <int name="area" value="20" />
+        <string name="0" value="#bStanding close to Mai#k, #bBari#k seems to be looking for you..." />
+        <string name="1" value="Bari has been instructed by Mai to test your skills. He wants you to defeat the most powerful monster on Maple Island, an #rOrange Mushroom#k, and bring back #b1 Orange Mushroom Cap#k. \n\nOrange Mushroom #r#a10451##k\n#i4000001# #t4000001# #b#c4000001# #k/1" />
+        <string name="2" value="You defeated an Orange Mushroom and brought back an Orange Mushroom Cap to Bari. Ah, Mai's training...officially complete! Ready to take on Victoria Island?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be #h0#. I've been waiting for you. Mai told me to give you an ultimate test to gauge your hunting skills. Since you can reach Southperry after passing me and get a ride to Victoria Island that way, she wanted me to test you one last time before you leave." />
+            <string name="1" value="Of course, this test is not mandatory. If you feel that you're ready head to Victoria Island right now, by all means, please go. But if not... Well, do you want to take the test?" />
+            <imgdir name="yes">
+                <string name="0" value="Your test is to hunt an #rOrange Mushroom#k, the most powerful monster on Maple Island. To pass this test, you must defeat #r1 Orange Mushroom#k and bring back #b1 Orange Mushroom Cap#k as evidence. Head straight up to find Orange Mushrooms. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you're that confident, I can't MAKE you do it. I'll let Mai know you declined." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? You really did slay Orange Mushroom and bring back 1 Orange Mushroom Cap! That's...why, that's just amazing! There's a reason why Mai has been saying all those good things about you!" />
+            <imgdir name="yes">
+                <string name="0" value="You have now passed every test Mai has to offer. Once you meet the requirements for the job advancement, you'll be ready to take on Victoria Island." />
+                <string name="1" value="If you want to learn more about Victoria Island before you actually head there, go to #bSouthperry#k and look for #bBiggs#k. He has acquired extensive knowledge on Victoria Island and should be a great help to you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you've defeated #r1 Orange Mushroom#k and brought back #b1 Orange Mushroom Cap#k yet. Climb up the ropes nearby to find Orange Mushrooms." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you've defeated #r1 Orange Mushroom#k and brought back #b1 Orange Mushroom Cap#k yet. Climb up the ropes nearby to find Orange Mushrooms." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210102" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1044" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

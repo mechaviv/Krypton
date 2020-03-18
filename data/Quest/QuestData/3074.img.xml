@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3074.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sending Relief" />
+        <string name="parent" value="Lost in the Ocean" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="1" value="Kay of the Omega Sector complained of the lack of members available due to the battle against the aliens, and asked me if I could give this warp capsule, specially made in Omega Sector, to Robinson. A warp capsule that takes the person to the Omega Sector regardless of the place of origin? That's awesome!! I want to take it myself for a split second, until I found out that only the Omega Sector members can use it. Darn it..." />
+        <string name="2" value="Kay needed help from me, since he couldn't send the rescuers to save Robinson, and so I got the specially-made warp capsule and gave it to Robinson. Now he can go back to the Omega Sector and get himself fixed." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031221" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031221" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002047" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1002153" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                    <int name="job" value="4198404" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002166" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1002181" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1002020" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="1002625" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah, this ... this is... Robinson's!! Did you... did you meet him? Where is he? Everyone at the Sector had given up on looking for him, since he was so hard to locate. Where is he? \r\n#L0# I found him at a remote island right in the middle of the ocean." />
+            <string name="1" value="How did he end up there? Is he doing alright? Is he okay??\r\n#L0# He got injured while being swept away by the tidal wave. He wants to be rescued." />
+            <string name="2" value="Oh yes, we should be sending the rescuers there, but the Sector is currently in the middle of combat against the aliens, and we just cannot send any men out for any other reason. Since you're here and all, can you help us out?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The warp capsule that I'm giving you is specially designed in Omega Sector that adds new features to the existing warp capsule. It'll enable you to warp to the Omega Sector from anywhere in MapleStory. Please get this to Robinson right now." />
+                <string name="1" value="I know you want to test out the capsule, but please refrain yourself from doing so. The only people that know how to use this warp capsule are the members of the Omega Sector. Here's wishing you good luck. I would like to see him soon." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know it's a difficult task, one that puts you in hesitation. But please remember that this involves a man's life, so please reconsider your decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, how come you came back by yourself? What about the rescuers? \r\n#L0# I was told to give you this." />
+            <string name="1" value="Oh, this is the #t4031221# that was supposedly in development. With this, I can return to the Omega Sector in a hurry. Thank you so much, and as a sign of thanks, I'll give you my equipment." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Now I can head back to the Sector with ease. I'll never forget this. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hey, how come you came back by yourself? What about the rescuers?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="This is a very precious item. Please don't lose it again. Be careful." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031221" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2051001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3073" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

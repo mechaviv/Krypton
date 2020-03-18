@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10330.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Challenge! Honorable Mesoranger" />
+        <int name="area" value="50" />
+        <string name="0" value="Dr. Kim at the Omega Sector HQ is holding a Physical Fitness Event! Check the #bEvent Schedule on the website#k to see what time the event will occur on your world." />
+        <string name="1" value="Transform into an Alien Gray and go to the top of the Henesys Pet-Walking Road after you answer the agents' questions. The Maple Admin will tell you which agents you need to meet." />
+        <string name="2" value="You have completed Dr. Kim's Omega Physical Fitness Footrace." />
+        <int name="timeLimit" value="1800" />
+        <string name="timerUI" value="Default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="buffItemID" value="2210034" />
+            <string name="info" value="000" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ta-da! I'm Agent M! The aliens are abducting every human they see, but you, #b#h0##k, seem like you have what it takes to become a Mesoranger and rescue everyone!" />
+            <string name="1" value="If you want to become an Honorable Mesoranger, you must first transform into an alien yourself so they don't abduct you. However, the transformation will last for 30 minutes, which means you'll be stuck as an alien that whole time. Do you still want to try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You have 30 minutes, starting now, to follow the Maple Admin, meet the secret agents, and pass their tests. The first person to meet Agent C will become the Honorable Mesoranger. Now, why don't you first go and see if you can collect some clues from the Maple Admin and meet #bAgent E#k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why did you even ask if you weren't interested?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Have you met all the agents?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000062" />
+            <int name="infoNumber" value="10330" />
+            <int name="morph" value="40" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="111" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10330e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000061" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142123" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009071600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9994.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Repairing the Maple Cape" />
+        <int name="area" value="50" />
+        <string name="0" value="I think my Maple Cape has a hole.  I should go see Francois." />
+        <string name="1" value="When I went to go see Francois to repair my Maple Cape, she told me she doesn't know how to repair it.  Instead, she told me to go see #Lisa#k from Orbis who taught her how to make the cape.  She also told me to take #b10 Snow Silks#k just in case she needs it to repair the cape.\n\n#i4001166# #t4001166# #b#c4001166# / 10\n#i1102166##k #t1102166# #b#c1102166# / 1" />
+        <string name="2" value="Francois told me to go see #bLisa#k in Orbis to repair the hole in the Maple Cape... When I took the Maple Cape along with 10 Snow Silks to Lisa, she not only perfectly repaired it with her hidden sewing skills but she also made the cape stronger than before.  I had no idea Lisa had this kind of skill.  " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102166" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102167" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What brings you here?  How's the cape I made for you?  Hehe\r\n#L0##bSpeaking of which... There's a hole in the cape.#l" />
+            <string name="1" value="What did you do...?  Items made with Snow Silk are known for being durable.  Unfortunately, there's nothing I can do to fix your cape.  I don't even know how to sew.  Why don't you go see Lisa who taught me how to make the cape?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Who is Lisa, you ask?  She is quite the hidden talent in Maple World.  You can meet her in #bOrbis#k.  She's a very pretty lady.  Her only flaw is that she is always pouting about something.  Make sure to take #b10 Snow Silks#k when you go see her.  You just might need it for the repair." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to repair it, you can just wear it as is.  The hole isn't even that big." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey!  Hello~  What brings you here?\r\n#b#L0#My Maple Cape has a hole in it.  Francois told me to come see you.#l" />
+            <string name="1" value="What!?  It's really rare for an item made with the Mysterious Fabric to form a hole.  In order to repair it, I'll need #b10 Snow Silks#k...\r\n#b#L0#I already came prepared.#l" />
+            <string name="2" value="Well, that makes things easier.  Give me the cape and the Snow Silks and wait right here." />
+            <imgdir name="yes">
+                <string name="0" value="Here~ It's all finished.  It should be good as new.  If anything, the power in the cape has become stronger.  It should also fit you better.  Make sure not to put any more holes in it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="#bLisa#k from Orbis is the one who taught me how to make the cape.  She has many hidden talents." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="In order to repair the cape, I need to have the #bcape and 10 Snow Silks#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001166" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102166" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9988" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102166" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <string name="end" value="2009061623" />
+        </imgdir>
+    </imgdir>
+</imgdir>

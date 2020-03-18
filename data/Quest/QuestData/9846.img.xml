@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9846.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Clocktower" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="Take care of the problem at the Clocktower and report to #b#p2040029##k. \n\n#o4230113# #r#a98461##k \n#o4230114# #r#a98462##k" />
+        <string name="2" value="You took care of the problem at the Clocktower." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Is there anyone there?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'm glad that you're there. I just used my crystal ball to discover the reason for the Clocktower problem. Some time ago, time became distorted and it looks like it's the work of the Tick-Tocks and the Platoon Chronos." />
+                <string name="1" value="So eliminate #r50 #o4230113#s#k and #r50 #o4230114#s#k. Once you're done, deliver the news to #b#p2040029##k, who has been dispatched Deep Inside the Clocktower to deal with this problem." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm...so you're just going to refuse my request?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040029" />
+            <string name="endscript" value="huntUP6" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230113" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4230114" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="35" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="220040200" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

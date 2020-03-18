@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10218.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="가가의 크리스마스 추억" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="어렸을 적 가가가 받았던 크리스마스 선물은 뭘까? 따뜻한 집에서 행복하게 보낸 크리스마스의 추억을 그리워하는 가가에게 가 보자." />
+        <string name="1" value="가가에게 크리스마스의 추억을 떠올릴 수 있는 물건을 가져다주자! 가가가 어렸을 적 받았던 선물을 모아 가가에게 가져다주면 보답을 하겠다고 한다. 어떤 물건이었지? 으음... 이번에는 어쩔 수 없네. 기억이 안 나면 가가에게 다시 가서 물어보는 수밖에..." />
+        <string name="2" value="가가가 부탁한 선물을 찾아 주었다. 어릴 적의 행복했던 크리스마스를 회상하느라 마음이 여유로워진 가가는 손수 만들었다는 루돌프의 빨간코에만 붙일 수 있는 특제 반창고를 주었다. 다시 갖고 싶은 선물이 또 있었는데...라고 중얼거리는 가가를 보니 다음에 말을 걸면 또 다른 선물을 부탁할 것만 같다. 10분 후에 다시 와 봐야지..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <string name="endscript" value="q10218e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <string name="startscript" value="q10218s" />
+            <string name="end" value="2008122600" />
+            <int name="interval" value="10" />
+            <imgdir name="equipSelectNeed">
+                <int name="0" value="1012011" />
+                <int name="1" value="1012012" />
+                <int name="2" value="1012013" />
+                <int name="3" value="1012014" />
+                <int name="4" value="1012015" />
+                <int name="5" value="1012016" />
+                <int name="6" value="1012017" />
+                <int name="7" value="1012018" />
+                <int name="8" value="1012019" />
+                <int name="9" value="1012020" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

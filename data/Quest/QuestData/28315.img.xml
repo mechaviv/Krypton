@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28315.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jonas: &quot;Jonas' Presence&quot; 2" />
+        <int name="area" value="50" />
+        <string name="0" value="What in the world is Jonas doing, still hanging around? Whatever the reason, this haunting stuff needs to stop. You're about to have the chance to tell him face-to-face." />
+        <string name="1" value="It appears Jonas would like you to retrieve #rSophilia's Favorite Doll#k. He mentioned that Sophilia kept her favorite doll inside a crate in one of her rooms. Bring it back to him. Where in this big ol' house could it be?" />
+        <string name="2" value="So, you finally got your hands on #rSophilia's Favorite Doll#k. Will this do the trick?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000517" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022245" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#e[&quot;Will you please stop it already, with all this haunted house stuff? It's time you let Olivia's father go and end this charade.&quot;]#n" />
+            <string name="1" value="I have no idea what you're talking about. I'm not haunting anybody. In fact, if anybody's doing any haunting, it's certainly you! But since you brought it up...I am kind of curious about one thing. I've seen my daughter around the house, and it's rather strange that she'd be here. How did she end up here? Anyways, give this place a run-around and see if you can find her." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="She appears to be all over the place. I suppose she likes to play a little hide n' seek. In either case, find her for me. And be sure to get me #rSophilia's Favorite Doll#k while you're at it! " />
+                <string name="1" value="Sophilia used to keep her dolls in a toy crate. If that crate is found, finding the doll should only be a matter of time. The toy crate should be in Sophilia's room. You hear me? Good. Now, back to my work! Time's a'tickin'!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You just wasted a precious minute of my life. Now leave me alone. Scram!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring back #rSophilia's Favorite Doll#k as I asked? Let's see." />
+            <imgdir name="yes">
+                <string name="0" value="Yes, this is it. Sophilia's favorite toy! Since you seem to be braver and wiser than you look, I will tell you a secret. The butler's greatest mission is to protect a very secret and dangerous place. I will allow you to enter it. Go ask the butler about the Secret Room. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need to have it. I must have it! Get me #rSophilia's Favorite Doll#k! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201138" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000517" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201138" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28314" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

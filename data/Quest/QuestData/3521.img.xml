@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3521.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Force Field" />
+        <string name="parent" value="Road to Oblivion" />
+        <int name="order" value="2" />
+        <int name="area" value="46" />
+        <string name="1" value="When I told #p2140003# everything I heard from #p2140000#, he knew right away.  He said the reason the inside of the temple is blocked is because of an #rintrusion by an outside force#k!  #p2140000# said it must be because a #rforce field has been set by an intruder#k and that I need to break the force field and find out who the intruder is.  He says I need the power of the Guardians of the Past in order to break the force field... \n\n#i4000446##t4000446# #b#c4000446##k/10\n#i4000451##t4000451# #b#c4000451##k/10\n#i4000456##t4000456# #b#c4000456##k/10  \n#i4000460##t4000460# #b#c4000460##k/1 \n#i4000461##t4000461# #b#c4000461##k/1 \n#i4000462##t4000462# #b#c4000462##k/1" />
+        <string name="2" value="I brought him all the items.  The Keeper of the Temple gave me a marble with special powers, and said that I should be able to break the force field with this..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="#p2140003#는 만나고 오신 겁니까? 그는 메이플 월드의 모든 역사를 기록하는 자, 그가 모르는 것은 아직 발생하지 않은 일 뿐이지요. 질문하지 않아도 당신이 알고 싶어하는 것을 이야기해 주었을 테지요. 자, 그는 뭐라고 했습니까? \r\n#L0# #b(#p2140003#의 말을 전해 주었다.)" />
+            <string name="1" value="역사를 발설하지 않는다는 제약 때문에 정확한 이유는 말해 주지 않은 모양이군요. 하지만 오직 진실만을 말한다는 제약 역시 있으니, 그의 말에 거짓은 없을 터. 그렇다면 여신의 약속은 여전히 잘 지켜지고 있는 것이 분명한데... \r\n#L0# #b그렇다면 더 이상 가지 못하는 이유는 뭔가요?" />
+            <string name="2" value="시험은 이미 통과했습니다. 허가 역시 내려졌지요. 당신의 망각또한 무사히 남아 있습니다. 신전의 모든 것이 당신을 허락했는데도 들어갈 수 없다는 건... 오직 하나! 신전 외의 힘이 개입한 겁니다!\r\n#L0# #b신전 외의 힘?" />
+            <string name="3" value="침입자가 신전 깊은 곳으로 들어가 결계를 친 건 같습니다. 그게 아니라면, 당신이 들어가지 못할 리가 없지요. 무슨 생각으로 그런 곳에... 아무튼 결계를 무효화시켜야 하는데... 아, 그러고 보니 당신께서 침입사건을 도와주시기로 약속했었죠?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000460" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000461" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000462" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000446" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000451" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000456" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4032002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you go speak to #p2140003#?  He records all of Maple World's history.  The only things he doesn't know are things that have yet to occur.  He probably answered all your questions before you even asked.  So, what did you say? \r\n#L0# #b(I relayed what #p2140003# said.)" />
+            <string name="1" value="Hmm, he must have held back the exact reasons because he is bound not to reveal the secrets of history.  But I'm sure he's telling the truth.  Then the Goddess' promise isn't the problem... \r\n#L0# #bSo what's blocking me then?" />
+            <string name="2" value="You already passed the test.  You were given permission.  Your oblivion is still intact.  The fact that you meet all the qualifications but still can't enter... It means there is an outside force that has infiltrated the temple!\r\n#L0# #bForce outside the temple?" />
+            <string name="3" value="An intruder must have gone deep into the temple and put up a force field.  That's the only explanation I can think of.  What is this intruder planning...?  Anyway, the force field needs to be taken down... Oh, you promised to help with this mystery anyway, right? " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Bring me #b10 #t4000446#, 10 #t4000451#, 10 #t4000456##k and  #b1 each of #t4000460#, #t4000461# and #t4000462##k.  If I have those ingredients, I should be able to make an item that can destroy any force field." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please, don't back out on me now. That would be dishonorable." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got all the ingredients.  I will combine the ingredients and make you the #t4032002#." />
+            <imgdir name="yes">
+                <string name="0" value="Marble of Chaos, which contains the power of confusion, should be able to break the force field." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't get all the ingredients yet?  Go to the #rPriest and Memory Monk Trainee#k and get #b10 #t4000446##k, go to the #rPriest and Qualm Monk Trainee#k and get  #b10 #t4000451##k, go to the #rPriest and Oblivion Monk Trainee#k and get #b10 #t4000456##k, go to #r#o8220004##k and get #b#t4000460##k, go to  #r#o8220005##k and get #b#t4000461##k, and finally go to #r#o8220006##k and get #b#t4000462##k.  That's what you promised to do, right?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000446" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000451" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000456" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000460" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000461" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000462" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3520" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="135" />
+        </imgdir>
+    </imgdir>
+</imgdir>

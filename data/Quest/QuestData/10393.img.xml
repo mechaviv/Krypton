@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10393.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Nostalgic Reminscing II" />
+        <int name="area" value="50" />
+        <string name="0" value="You'd better visit #b#p1002001##k, who gave you a helping hand the last time." />
+        <string name="1" value="#b#p1002001##k wants to see how much more powerful you've become and gives you a test to find out.\n\n#t04000024# #b#c04000024#/80#k\n#t04000020# #b#c04000020#/100#k" />
+        <string name="2" value="You were able to emphatically prove to #b#p1002001##k that you've gotten much stronger since the last time you met." />
+        <string name="demandSummary" value="#i4000024:# #t4000024:# #c4000024# / 80" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000024" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000020" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#h0#!#k It's been a long time! How's the journey going for you? It gives me a great sense of pride to see you all grown up like this! I actually want to give you a test to see how powerful you've become. Humor me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I want you to gather #b80 #t04000024#s#k and #b100 #t04000020#s#k. If you can do it, I'll acknowledge you as a formidable adventurer." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't seem confident in your abilities. Must be a bad day. When you're feeling better, talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, amazing! I can't believe you're done already! You have indeed become much more powerful than even I anticipated." />
+            <imgdir name="yes">
+                <string name="0" value="Did you receive the money I gave you? It should be enough for you to travel to a few new places. Best of luck to you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm…you're still short on those items? Did I overestimate your abilities? Nah. Get me #b80 #t04000024#s#k and #b100 #t04000020#s#k. I know you can do this with ease." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000024" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000020" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10392" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <string name="worldmin" value="28" />
+            <string name="worldmax" value="28" />
+            <string name="end" value="2009101000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

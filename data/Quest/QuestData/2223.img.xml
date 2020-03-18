@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2223.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Name He Calls" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="#p1040002# knew exactly who #r#o5220002##k the black monkey monster was. #o5220002# seems to have something to do with Arwen...  #p1040002# says to bring back #b#t4031925##k from #r#o5300100##k if you wish to find out more about #o5220002#. \n\n#i4031925##t4031925#  #b#c4031925##k/10 #k" />
+        <string name="2" value="When given #t4031925#s, #p1040002# says to wait while it finds the entrance to the #m910100000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031925" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to see meeeeeow? Has #p1032001# sent you here to see meeeeeow? Hmm, my master likes #p1032001#! If you're desperate to seek help from a cat, I suppose I can help you~meow~ Of course, I won't help if I have to go out of my way~meow~ Meow? You want meeeeeeeeeow to tell you about a black monkey monster?" />
+            <string name="1" value="Are you talking about #o4230101# meow? Then you must be asking meeeeow about #r#o5220002##k? Hmm... I don't know much about him. We can't communicate because that monster speaks some weird language~meow~ He only keeps murmuring 'Arwen'~meow~" />
+            <string name="2" value="#o5220002# carries around a strange doll on his back and that's where he gets his strength~meow~ Meeeeeeeeow thinks #rFaust is being controlled by that doll#k~meow~ Is there anything more you want to hear about #o5220002#?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then defeat #r#o5300100##k and bring me #b10 #t4031925#s#k that #o5300100# carries around~meow~ Meeeeeeeow has to identify the scent of darkness from #t4031925#s so I can find #r#m910100000##k where the same scent exists~meow~ so meeeeeeeeeeow needs #t4031925#s." />
+                <string name="1" value="Meow? You want to know if meeeow can help you that much? Meow~meow~of course~ #p1032001# is meeeeow's master's friend, and you are #p1032001#'s friend. Of course meeeow will help you~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Meow~you don't need any more information from meeeeeow?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Meow. Did you bring meeeow #t4031925#s? Give meeeow a minute. Meeeow will find you the entrance to the cursed forest." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't fond meeeow #b10 #t4031925#s#k yet? Sometimes you can get some from #r#o5300100##k, so good luck~" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1040002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031925" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2222" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21617.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Reacquiring the Life Water Ingredients" />
+        <int name="area" value="6" />
+        <string name="0" value="You need to make the #t4032334# again.  You know #b#p2060005##k in the #b#m230000003# of #m230000000##k sells this so you'd better go see #p2060005# for another #t4032335#." />
+        <string name="1" value="#p2060005# tells you it'll cost you 100 million mesos to buy the #t4032335# because the supply has become more limited since the last time you purchased it.\r\n\r\n#b100 million mesos#k" />
+        <string name="2" value="You paid #p2060005# 100 million mesos and purchased the #t4032335#... You'd better make some #t4032334# right now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-100000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032335" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you so much for purchasing the #t4032335# the other day. It really helped the #m230000003#'s finances! How can I help you this time? Do you need some more #t4032335#?" />
+            <string name="1" value="Oh no… remember what I told you before, that #t4032335# is so rare that the price cannot go down. Coupled with the fact that I had just recently given you #t4032335#, that's one less in the stock, which means a price hike." />
+            <string name="2" value="Simply put…#b100 million mesos#k. Are you sure you want to buy one?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Really? Really? I can't believe there's someone out there that would actually spend 100 million mesos! That's amazing! Wait, I shouldn't act like this. Okay, please bring 100 million mesos with you, then I'll have the #t4032335# ready immediately." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="100 million mesos IS too much, right? That's totally understandable. Hahaha… if you have a change of heart, let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow… you really did bring 100 million mesos! Wow, that's amazing! Okay, take this right now!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to you, the #m230000003# is no longer in trouble. Wait, we can even expand now! Thank you so much!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Do you have enough to cover #b100 million mesos#k? I mean, even someone like you would have a hard time justifying that fee…but I still believe that you can come up with it somehow. Haha… I'll be waiting right here!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21616" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032334" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032335" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="150" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

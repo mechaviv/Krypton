@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2336.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Truth Revealed" />
+        <int name="area" value="30" />
+        <string name="0" value="Now that everything has been revealed, you get the unenviable task of explaining it all to his highness, the Mushking." />
+        <string name="1" value="You have to bring the #b#t4032387##k given to you by #bPrincess #p1300002##k to #b#p1300000##k and explain what really happened." />
+        <string name="2" value="You explained to #b#p1300000##k everything that happened." />
+        <string name="summary" value="You have to bring the #b#t4032387##k given to you by #bPrincess #p1300002##k to #b#p1300000##k and explain what really happened." />
+        <string name="demandSummary" value="#i4032387:# #t4032387:# #c4032387# / 1\r\n#i4032386:# #t4032386:# #c4032386# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 6,600\r\n#Wbasic#\r\n#i1082254:# #t1082254:# 1 \r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032387" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032386" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032387" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032386" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1082254" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My father must be concerned about me, and I must notify him of what's going on. I don't think he's going to believe that the #bPrime Minister#k was the traitor. Take this #bEmblem#k with you. That's the only thing that'll make him believe you." />
+            <string name="1" value="And also… Please take this #b#t4032386##k to him as well. It's a symbol of their surrender, so we should keep it within our Empire and use it to let the whole world know of King Pepe's evil plot to overthrow the Empire." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I trust you to get this done. Please let my dad know that I want nothing more than to eliminate these cronies and see him safely in the castle soon." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="He won't believe you unless you take this emblem with you. Take it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What…?! What? The #bPrime Minister#k was behind all this? No…! No way…! Wait, this is…!" />
+            <string name="1" value="Oh, it really is our #b#t4032387##k. How could this have happened? I trusted him with everything. It really is all my fault. It's all my fault for failing to take good care of my family and letting my empire down. *Sniff sniff*" />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, thank goodness all this is done. Now we can concentrate on removing the rest of their army and reclaiming what is rightfully our castle. Thank you." />
+                <string name="1" value="The #b#t1082254##k that I have given you is a glove that has been passed down for generations throughout the history of our great empire. Please put it to good use." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go visit my dad." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What? What are you saying? Are you accusing the #bPrime Minister#k of being the culprit? Then show me some proof…!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032387" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032386" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2334" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="39" />
+        </imgdir>
+    </imgdir>
+</imgdir>

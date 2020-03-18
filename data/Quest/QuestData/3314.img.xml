@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3314.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Life Alchemy, and the Missing Alchemist" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Out of the blue, Alcadno's #p2111009# told me he wanted to reward me for helping him out with various favors... something doesn't seem right, but I'll just think of it as a positive event. I should go see #b#p2111009##k." />
+        <string name="1" value="#p2111009# seemed grateful that I've helped him, and asked me to take a pill that he left for me at the top of the table in the upper lab. He also asked me to come down and see him again before the effect wears off. What is this, is he conducting an experiment on me?" />
+        <string name="2" value="I knew it! I knew the medicine was dangerous. Fortunately, I was able to receive an antidote, but this is crazy! According to Russellon, the experiment he conducted was something he did with the #bmissing alchemist#k, a friend of his. The missing alchemist must have worked on something like changing the human's body form..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="12500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022199" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022224" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022225" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2022226" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2022227" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="5" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2022228" />
+                    <int name="count" value="20" />
+                    <int name="prop" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, you really did come back, newbie. You may be new, but you really worked hard! You have been of great help, and... to properly thank you for that, I have a small present for you. Do you want it?&#x9;" />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha...(smile) Good, then I want you to go to #b#m261020200##k. On top of the desk lies some pills that I have recently concocted, so take it... Oh, and since I am eager to see the effects of it, I want you to take it, and then come back to me. #bYou must take the pills first, and then come back#k. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did you just Say no? ...I can't believe you declined my well-intentioned present. I, #p2111009#, am very hurt by this..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111009" />
+            <string name="endscript" value="q3314e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3313" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102136" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

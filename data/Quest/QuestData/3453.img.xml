@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3453.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zeno, the Formidable Enemy" />
+        <int name="area" value="37" />
+        <string name="0" value=" #b#p2050001##k from #b#m221000000##k has requested your cooperation to save the world..." />
+        <string name="1" value="Boasting a firm build and intelligence, #o6220001# is a new type of robotic ordnance. But #o6220001# has been acting strangely as of late... It attacks everything including the Grays. #p2050001#, curious as to why #o6220001# has suddenly turned ill-tempered, has asked you to talk to #b#p2050002##k to gather information about #o6220001#." />
+        <string name="2" value="When asked about #o6220001#, #p2050002# denies knowing anything about it... Hm, he seems suspicious." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The #p2050002#s vigilantly waiting to take over the world have added a new type of robotic ordnance. #r#o6220001##k. It's just as powerful and sturdy as a robot, but has the intelligence that rival that of Grays. Even the Mesorangers couldn't easily defeat Zeno." />
+            <string name="1" value="But #m221000000# can't back down. A command has been given to protect the world against enemies no matter how powerful they may be. The problem lies somewhere else. #o6220001# has been acting rather strangely as of late... will you look into this?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Strangely, #o6220001# has been attacking not only the #m221000000# but the Grays as well. We need to find out whether it's simply a rebellion, or something has happened amongst the Grays. Please gather information for #b#p2050002##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... it seems you're not qualified for this job." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is it? We, the Alien Grays, enjoy talking to humans, but we don't have time for a chat... What? You want to know about Zeno? Why are you so curious? Huh? Is there something going on with Zeno?" />
+            <string name="1" value="No... No way. Hahahaha. Of course there isn't anything going on. This human friend is so curious! I'm not in charge of Zeno so I don't know much. What's with the face? You don't believe me? If you don't have anything else to ask, get out of here!" />
+            <imgdir name="yes">
+                <string name="0" value="#b(Hmmm... a bit suspicious... Let's report it to Dr. Kim.)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't talk to an #bAlien Gray#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <int name="lvmin" value="65" />
+        </imgdir>
+    </imgdir>
+</imgdir>

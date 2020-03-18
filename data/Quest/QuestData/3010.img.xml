@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3010.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Cracked Black Crystal" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="7" />
+        <int name="area" value="33" />
+        <string name="1" value="I found Spiruna's #bBlack Crystal#k underneath a rock at the snowfield, but it has some serious cracks on it. Anyway I should give this back to Spiruna immediately." />
+        <string name="summary" value="I should go back to Spiruna in Orbis.." />
+        <string name="demandSummary" value="#i4031050:# #t4031050:# #c4031050# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="5,240 EXP&#xD;&#xA;Can proceed to the &quot;To Restore the Crystal&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031050" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5240" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031050" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3011" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Amidst the pile of snow-covered rocks I see a something shining. Will you stretch your hand out and grab that object?" />
+            <imgdir name="yes">
+                <string name="0" value="The object found in there was indeed the one Spiruna lost, the #b#t4031050##k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="There's a little bit of space at the bottom of a rock. Looked carefully inside but found nothing." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't found my crystal yet. A few days ago I went to the snowfield looking for some materials for this spell I'm currently working on, and wound up losing my precious #bBlack Crystal#k. If you find that crystal, then I'll tell you everything I know of. Good luck." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="안쪽으로 손을 뻗어 물건을 가져오겠습니까?" />
+                <imgdir name="yes">
+                    <string name="0" value="바위 속에 있던 것은 스피루나가 잃어버린 것으로 보이는 #b#t4031050##k이었습니다." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031050" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3009" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

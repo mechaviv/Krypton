@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2325.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="James's Whereabouts (1)" />
+        <int name="area" value="30" />
+        <string name="showLayerTag" value="james1" />
+        <string name="0" value="The #bHead Security Officer#k says that he has something to tell you." />
+        <string name="1" value="You should find #bJames#k, who's somewhere hiding inside the castle." />
+        <string name="2" value="You found #bJames#k, who was hiding inside the castle." />
+        <string name="summary" value="You should find #bJames#k, who's somewhere hiding inside the castle." />
+        <string name="rewardSummary" value="EXP 6,000\r\nCan proceed to 'James's Whereabouts (2) quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <int name="nextQuest" value="2326" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! I heard that you were finally able to enter the castle. Is that true? Well then, please… Could you please find my brother for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Both of our parents passed away when we were young, so I basically raised my brother growing up. Ever since I became a Security Officer, we lived together within the castle walls, but when the evacuations happened, I was too busy protecting the Mushking to realize that I had left my brother inside." />
+                <string name="1" value="He's lived there practically since birth, so he knows every corner of the castle. He's probably hiding quietly somewhere inside, hoping to be rescued. Please rescue my brother for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="He's my only brother… please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I… I am scared… Please…please help me…" />
+            <imgdir name="yes">
+                <string name="0" value="What? My brother sent you here? Ahhh… I am safe now. Thank you so much…" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please…please save my brother #b#p1300008##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300008" />
+            <string name="endscript" value="q2325e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2323" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2148.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Truth of the Rumor-Blackbull" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1020000##k lived in #m102000000# for a long time. Let's go ask about the rumor." />
+        <string name="1" value="#b#p1020000##k lived in #m102000000# for a long time. Let's go ask about the rumor." />
+        <string name="2" value="Asked #p1020000# about the rumor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What's the matter?\r\n#b#L0#Have you heard about the Ghost Tree?#l" />
+            <string name="1" value="A ghost tree? Ah, you must be talking about the giant stump, right? I heard from my father that his father used to see such trees when he was young. The story says that each branch of the tree bears a red piece of cloth, which was dyed in the blood of ghosts. I have never seen it in person, so I don't know whether or not it's true.\r\n#b#L0#You didn't catch anything else?#l" />
+            <string name="2" value="I'm sorry, but I'm not really good at following rumors." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1020000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2144" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2148s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

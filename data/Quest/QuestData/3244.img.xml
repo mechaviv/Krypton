@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3244.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Disgruntled Roly-Poly Worker" />
+        <int name="area" value="37" />
+        <string name="0" value="#p2040013# apparently has been skipping lunch these days because of heavy workload... I better check it out." />
+        <string name="1" value="#p2040013# complained to me that he had been missing lunch lately because of the #o3210205#s that were all over Eos Tower. The angered #p2040013# wanted me to kill #b20 #o3210205#s#k and bring him #b5 #t4000096#s#k.\n\n#i4000096##t4000096# #b#c4000096#/5#k\n#o3210205# #r#a32441##k" />
+        <string name="2" value="I was able to help out #p2040013#, who had been missing lunch almost everyday because of the #o3210205#s invading Eos Tower, by killing off those #o3210205#s and giving him some walnuts in the process." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아~ 정말 배고프다. 오늘도 도시락은 도착하지 않는건가? 너무 배고파서 꼬르륵 소리가 더 크게 들리는 것 같아. 나는 여기서 하루종일 열심히 일하지만 거의 매일 점심을 먹지 못하고 있어요." />
+            <string name="1" value="왜 그러냐구요? 그거야 당연히 저 밉살스러운 #o3110102#떼 때문이죠. 특히 #b#o3210205##k는 덩치가 크고 식탐이 많아서 #m220000000#으로부터 배달오는 내 점심 도시락을 매번 훔쳐먹는다구요. 더 이상은 못 참겠어요. 저를 도와주시지 않겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="매일 저의 도시락을 뻇어 먹는 밉살스러운 #b#o3210205# 20마리#k를 잡고, 배고픔을 달랠 수 있게 #b#t4000096# 5개#k를 가져다 주세요. 온 몸에 힘이 없어서 더 이상 일을 할 수가 없어요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="그럼 전 오늘도 쫄쫄 굶으면서 일을 할 수 밖에 없겠네요... 아~ 배고프다." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000096" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001020" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ahhh~ I'm starving. No lunchbox for me again? I am so hungry that I am sure people can hear my stomach growl from miles away. I work hard here everyday, but I almost always miss lunch these days..." />
+            <string name="1" value="Why so? Of course that's because of that detestable #o3110102#. I especially can't stand #b#o3210205##k, the big boy that's perpetually hungry and always stealing my lunchbox delivered from #m220000000#! I can't take this anymore. Can you please help me?" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to kill those annoying #b#o3210205#s. 20 of them#k. Also, to relieve some hunger, can you please get me #b5 #t4000096#s#k? I am so exhausted from lack of food that I don't think I can work anymore for today." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="In that case, I'll have to keep working here, while starving like no other. Arrrrgh, I'm hungry!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! Thank you so much! You were able to kill off all those #o3210205#s! And those walnuts!! Great job!!" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to your help, I was able to fill up my belly for a bit with those walnuts. Thank you so much! Hopefully my lunchbox gets here safely tomorrow!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I... am... starving. Did you kill all #b20 #o3210205#s#k? What about the #b5 #t4000096#s#k that I asked for?" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I... am... starving. Did you kill all #b20 #o3210205#s#k? What about the #b5 #t4000096#s#k that I asked for?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000096" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3210205" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040013" />
+            <int name="lvmin" value="20" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

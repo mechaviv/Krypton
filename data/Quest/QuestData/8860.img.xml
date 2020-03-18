@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8860.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Beauty or Beast!" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard there's a new girl at the Amoria Hair Salon that needs material for her new hair gel. I wonder what she'd offer in return?" />
+        <string name="1" value="I talked to Claudia, she needs #b25 Squishy Liquids#k for her new hair gel. She's offered to give me a free EXP Hair Salon coupon in return. She seems like a nice enough gal..." />
+        <string name="2" value="I got the Squishy Liquids for Claudia and she gave me an EXP Hair Salon coupon for her shop. I can use it once to get my hair done for free!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031528" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! My name's Claudia and I'm new around here. To help my clients' hair hold up a little better, I'm working on a new hair gel formula, called &quot;Slick Slime&quot;. I'll need 25 Squishy Liquids though. Think you can help?" />
+            <imgdir name="yes">
+                <string name="0" value="Ha-ha, good one! You know how to negotiate! Ok, I'm game. If you can get me #b25 Squishy Liquids#k, I'll grant you a free haircut. Hurry though; I have a long line of customers!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's a shame. If you change your mind, pay me a visit!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wonderful! My masterpiece of &quot;Slick Slime&quot; hair gel will at last be completed! So, as promised, here's your free EXP Hair coupon! See me when you're ready for your free haircut!" />
+            <imgdir name="yes">
+                <string name="0" value="See me when you're ready for your free haircut!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I still need the #bSquishy Liquid#k, #b25#k to be exact; don't return until you've got them all! Next!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201039" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201039" />
+            <int name="lvmin" value="13" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6263.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" The Ultimate Icepick" />
+        <string name="parent" value="Ancient Ice Stone" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value=" The guardian of Snow Mountain, #b#p2030000##k told me that if I want to break the ancient ice stone, I would have to go see #b#p2020000##k to make a hammer strong enough." />
+        <string name="1" value=" Bogen said that although he's not sure if it will break the ancient magic, it's worth a try and asked me to get him the ingredients to make the hammer. #b#p2020000##k. The Ingredients are  #b#t04000150#, #t4011005# and #t4011007##k.\r\n#i4000150##t4000150# #b#c4000150#/30#k\n#i4011005##t4011005# #b#c4011005#/2#k\n#i4011007##t4011007# #b#c4011007#/1" />
+        <string name="2" value="With #b#p2020000##k's I got the hammer that will break the ice stone.  Alright, let's go to see Jeff.  I'm excited!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000150" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011007" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031450" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I'm #b#p2020000##k, the best blacksmith around. If I can't make the thing you want, nobody else can! So, do you want anything?" />
+            <string name="1" value="The hammer to break the ancient snow stone? Do you mean the snow stone in the snow mountain? I wanted to make a hammer that can break the snow stone for a long time now. But I couldn't make that kind of hammer with normal components. I need special ingredients. " />
+            <string name="2" value="You have to gather all the components for the hammer. And I'll make it for you. If we work together, we can conquer the rock! Are you ready?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Gather #b30 #t4000150# , 2 #t04011005# , 1 #t04011007##k. Then I can make the hammer!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you can't get all the components, I can't make it! " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Excellent! I can make it now. I have made hundreds of hammers. The most important things are the base components!" />
+            <imgdir name="yes">
+                <string name="0" value="I don't know why you want to break the ancient ice stone. Good luck! I made the best Orihalcon hammer for you. Are you going to see the Ancient Ice Stone now?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Hey, I lack ingredients! I'll need #b30 #t4000150#, 2#t04011005#, 1#t04011007##k. If I don't have all of them, I can't make it. Get all of them!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? Did you lose #b#t4031450##k? How can you lose it? It's so heavy. I have a spare hammer. I was going break the ancient ice stone later myself if you didn't! Take it with you ." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000150" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4011007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6262" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031450" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2280011" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2221003" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

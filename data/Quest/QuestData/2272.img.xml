@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2272.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Convince Robby Fray" />
+        <int name="area" value="30" />
+        <string name="0" value="#bRobby Fray#k needs a favor? If that's what it takes to convince a seven star chef to cater Blake's party, then that's what it takes. Get to it!" />
+        <string name="1" value="Robby Fray needs Bubbles to make his specialty cocktails. Head over to the 1st-2nd floor of Kerning Square and collect Bubbles from the Bubble Teas." />
+        <string name="2" value="#bRobby Fray#k needs a favor? Well, you gotta do what you gotta do to help Blake make his debut. Talk to Robby Fray again." />
+        <string name="demandSummary" value="#i4000539:# #t4000539:# #c4000539# / 30&#xD;&#xA;#i4000540:# #t4000540:# #c4000540# / 30&#xD;&#xA;#i4000541:# #t4000541:# #c4000541# / 40&#xD;&#xA;" />
+        <string name="rewardSummary" value="14,800 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="14800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000539" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000540" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000541" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2273" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're back. Naturally, you are here to say you'll do me this favor, hmm?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright! Then... I need #b30 Cherry Bubbles! 30 Melon Bubbles! And 40 Mango Bubbles!#k On the double! They will be the foundation of my specialty cocktails for the party! They will be marvelous! Just marrrrvelous! Oh yes, er, take the escalator to the 1st-2nd floor of the Shopping Center to find the Bubble Teas." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I won't cater Blake's debut party if you don't agree to do this for me. I tell you, I won't. I refuse!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Here, quick! Hand those fresh ingredients to me. Heehee!" />
+            <imgdir name="yes">
+                <string name="0" value="Superb! With this, I'll be able to whip up those fruity, delicious drinks I mentioned earlier. OH NOOO! Something awful, no, something just so utterly TERRIBLE has happened! Oh, tragedy!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Take the escalator to the 1st-2nd floor of the Shopping Center, and bring me #b30 Cherry Bubbles, 30 Melon Bubbles, and 40 Mango Bubbles#k by hunting Bubble Teas. Quickly now." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052123" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000539" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000540" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000541" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052123" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2271" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2257.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Karcasa Relents" />
+        <string name="parent" value="About the Mushroom Castle..." />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="0" value="Something doesn't seem right. He keeps repeating what he's already said. Does he really know?" />
+        <string name="1" value="You knew it! Karcasa was just spitting out rumors he heard. Maybe the Camel Cab can help you out instead?" />
+        <string name="2" value="You visited the Camel Cab and asked for some information on the Mushroom Castle." />
+        <string name="rewardSummary" value="Complete this quest as the Meerkats Listen During the Day quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I'm sorry… Actually, I don't know much about Mushroom Castle, just the rumors that've been floating around. Well, since I got most of this info from Camel Cab, maybe you should talk to him instead?\r\n#b#L0#If you're trying to fool me again...#l\n#k" />
+            <string name="1" value="Of course not… You should go see him. Do you want to know where you can find Camel Cab?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Camel Cab hangs out around the north entrance of Ariant as well as the Sahel region. The camel hears and remembers everything the passengers talk about during the ride so you should definitely go talk to Camel Cab." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm not lying this time!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Camel Cab hangs out around the north entrance of Ariant as well as the Sahel region. The camel hears and remembers everything the passengers talk about during the ride so you should definitely go talk to Camel Cab." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110005" />
+            <string name="endscript" value="q2257e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2256" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

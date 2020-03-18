@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1019.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sam's Suggestion" />
+        <int name="area" value="20" />
+        <string name="0" value="Sam suggests that you talk to Mai." />
+        <string name="1" value="When you talk to Sam, he tells you to head to the east and hunt #r10#k #b#o100100##k before meeting #p12100#. \n\n#b#o100100# #r#a10191##k" />
+        <string name="2" value="As Sam suggested, you hunted #r10#k #o100100#s#k, then met #p12100#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, I'm Sam. You look like someone who should go talk to #p12100#. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="#p12100# is one of the very best fighters in MapleStory. To prepare yourself properly, I suggest you take down #r10#k #o100100#s before seeing her." />
+                <string name="1" value="After defeating #r10#k #o100100#s, go see #b#p12100##k, who should be standing on a fork in the road out to the east." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Trust me, you'll want to prepare yourself before meeting Mai…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you the one that #p2005# mentioned? Do you need me for something...?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, defeating #r10#k #b#o100100#s#k is a piece of cake! Haha!" />
+                <string name="1" value="I will allow you to proceed onto the next training after you increase your abilities. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to #b#p12100##k yet? She is the pretty gal at #b#m50000##k. Don't forget to eliminate the #r#o100100#s#k before you see her!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I'm sure #p2005# told you to defeat #r10#k #b#o100100#s#k. Press #rQ#k to check your quest progress." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="7" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

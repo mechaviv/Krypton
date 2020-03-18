@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4921.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Urban Jungle - Continued" />
+        <int name="area" value="45" />
+        <string name="0" value="There's a Masked Man in New Leaf City... what's his deal?" />
+        <string name="1" value="I spoke with Jack Masque, he's a bandit prince from Amoria. He's in love with Princess Restless, and is trying to win her love from afar. He's got a passionate hatred for Wolf Spiders, as one bit her just as she was giving him a kiss. So, I've agreed to hunt down 100 Wolf Spiders in return for his thanks and something special he picked up. I should be able to find them in the Temple Hive..." />
+        <string name="2" value="*Phew* I wiped out 100 of those pesky Wolf Spiders, and in return, I received a Leaf Crystal from Jack Masque. I can come back every 72 hours to help him if I want. I wonder what he did to get kicked out of Amoria...? " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022194" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome back! Are you ready for another hunt?" />
+            <imgdir name="yes">
+                <string name="0" value="Ok, then! Same as last time. 100 Wolf Spiders for one Leaf Crystal. See you when you return!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Unfortunate. Be on your way then!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Fantastic! I'll be able to face her again without worrying if one of those pesky Wolf Spiders will spoil the moment. As promised, here is your reward. Enjoy! And in three days time, you may return to me for another hunt!" />
+            <imgdir name="yes">
+                <string name="0" value="As promised, here is your reward. Enjoy! And in three days time, you may return to me for another hunt!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Tsk, tsk. So sad. I said #b100 Wolf Spiders#k. Not 74, not 32, not 99. 100. Come back when you have something to show for your effort-besides a tired face. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201053" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400545" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201053" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4912" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+            <int name="interval" value="4320" />
+        </imgdir>
+    </imgdir>
+</imgdir>

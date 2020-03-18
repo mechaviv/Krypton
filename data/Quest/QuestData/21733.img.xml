@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21733.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gathering Some Strange Information" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The moment you reach Level 31, you receive a message from #b#p1002104##k. Is it about a new Informant Assignment? But he's never mentioned anything about it before…" />
+        <string name="1" value="#p1002104# says he has an urgent message for you and asks you to come to #b#m104000004##k right away. You wonder what's going on." />
+        <string name="2" value="So it turned out that the message was from a fake #p1002104# who belongs to the Black Wings. In other words, the whole thing was a trap laid by the puppeteer to throw you off guard. Luckily, you were able to defeat the puppeteer, but he got away at the last second again. Meanwhile, #p1002104# was ambushed while waiting for a skill from #p1201000# to arrive. Luckily, he kept it safe and gave you the #bCombo Mastery#k skill." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Yo, where are you? We have a situation here! \r\n#b#L0# (Yo...? #p1002104# always called me &quot;hero,&quot; not &quot;yo&quot;...)#l" />
+            <string name="1" value="I have some very important information! Quick, come to #b#m104000004##k!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="It's seriously urgent! Come as quickly as possible!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What are you saying? I'm in a rush right now! Stop with the nonsense and just come over here!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <int name="infoNumber" value="21762" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21733e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1204007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21732" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21733s" />
+            <int name="lvmin" value="31" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

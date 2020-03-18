@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2204.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Strange Dish 1" />
+        <int name="area" value="30" />
+        <string name="0" value="I've lost my appetite as of late... I wonder if Tangyoon could help me find a newfound appreciation for food by cooking me something new? I'm definitely ready for the challenge now so I should go talk to Tangyoon in The Nautilus' cafeteria. Oh yea, the cafeteria's on the upper deck." />
+        <string name="1" value="Tangyoon has been experimenting with a new dish as of late, using an ingredient that no one has ever used before. He's apparently been working with Evil Eye Tails! He says that he could make something new and fresh if only I would bring him #b40 Evil Eye Tails#k... But come on, Evil Eyes? Does he even know if those things are edible? \n\n#i 4000007##t 4000007#  #b#c 4000007#/40#k" />
+        <string name="2" value="Man, just as I'd suspected, Evil Eyes definitely aren't as tasty as I had hoped. But in a burger, well, it's not all that bad after all." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="호오~ 새로운 음식을 찾아헤매고 있는 맛의 청년이군. 그렇다면 날 도와주게. 나도 요새 새로운 맛을 연구하는 중이니…" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 난 남들이 먹지 않는 재료로 요리를 시도해보고 있지. 언제나 성공하는 것은 아니지만 대부분 성공이야. 빅토리아 아일랜드로 왔으니 이곳의 특이한 재료로 음식을 만들어보려고 해. 그 재료는 바로 이블아이의 꼬리지. #b이블아이의 꼬리 50개#k만 구해다주게. 새로운 맛을 찾아 줄 테니!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="나의 요리 실력을 믿지 못하는건가? 실망이군." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="-40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020004" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hoh... you must be looking for new types of delicacy. If so, then please help me here. I've been looking for ways to experiment with the basic menu.  I know that the crew gets tired of the same old thing to eat.  They've eaten so much Cold Shark coldslaw, I think they might grow gills!" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome. Specifically, I've been trying out a new menu with ingredients people don't usually use. It doesn't always work out the way I want it, but it works well most of the time. Now that I am in Victoria Island, I plan on trying out new ingredients, you know, and that ingredient is... the tail of an Evil Eye. I want you to get me #b50 Evil Eye Tails#k, and I'll show you what a gourmet food really is!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you not trust my cooking skills? That's disappointing." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay! Shall we cook now?\n(Stir... heat... toss... toss... thwap!)" />
+            <string name="1" value="Ahhh! I just made a hamburger made out of Evil Eye Tails. It's charcoaled, so the meat should smell really good! But you know... from here on out, I think I'll just use a regular meat for hamburgers." />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha, and here's a hamburger to you! Thanks for getting the meat for me. Try it! Well, I'm going to try some other food now, but I'm definitely not using Evil Eye Tails ever again." />
+                <string name="1" value="(Mmmm... this is weird. The meat tastes like... beef.)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please get me 50 Evil Eye Tails" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092000" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

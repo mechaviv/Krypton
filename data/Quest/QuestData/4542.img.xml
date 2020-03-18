@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4542.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Too Hot!" />
+        <string name="parent" value="Malek's Joy of Music" />
+        <int name="order" value="2" />
+        <int name="area" value="49" />
+        <string name="0" value="Boy... The Weather is hotter than ever!" />
+        <string name="1" value="#b#p9270061##k says that the villagers need 100 more of those #b#t4000465##k to cool themselves down. \n\n#t4000465# #r#c4000465#/100#k" />
+        <string name="2" value="The villagers are happy now to cool down with nice cool coconut juice! Cool refreshment was what exactly they needed. " />
+        <string name="demandSummary" value="#i4000465:# #t4000465:# #c4000465# / 100&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 20,000&#xD;&#xA;5,000 Meso&#xD;&#xA;Able to proceed to 'I am Bored!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="5000" />
+            <int name="exp" value="20000" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000465" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The weather is getting too hot. Maybe we need more refreshments to get away from this heat." />
+            <string name="1" value="You are back again! Can you please help me collect more #b#t4000465#s#k? My villagers need more of those to cool themselves down." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Really, it's quite simple. You can easily get them by hunting #b#o9420527#s#k running around the field." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, I can see clearly that you haven't forgotten the delicious taste of coconut juice we made you before, right? Haha! Please do us a favor once again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It sure was a hot day for hunting, but you did it! Thanks once again!" />
+            <imgdir name="yes">
+                <string name="0" value="My villagers can cool down now. Nothing is better than nice, cool coconut juice as a thirst quencher!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have not collected #b100 #t4000465##k yet. It sure is hot for hunting, but we beg of you, please...!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270061" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000465" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270061" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4541" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

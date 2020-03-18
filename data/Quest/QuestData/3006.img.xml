@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3006.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where's Hella?" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="1" value="Jade suspected that Hella may have gone on a search to find the #bkeepsake of her late mother#k, and told me to go see Hella's housekeeper again. " />
+        <string name="summary" value="I should go back to Housekeeper Elma in Orbis." />
+        <string name="rewardSummary" value="2,000 EXP &#xD;&#xA; Can proceed to the &quot;One Clue&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3007" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You are looking for Hella? It is true that I've been friends with her for years, but this time, she really took off without much of a word...I've gone everywhere, going to every place that had anything to do with her, to no avail. Hella left home soon after #blosing her mother a few months ago#k. It ... will be hard to find her. I think you should give up on the search, too." />
+            <string name="1" value="You are not giving up, are you? Well, I have one place I can think of right this minute. I remember Hella mentioning her #bkeepsake from her late mother#k the other day. One day it got stolen by someone, and I think she may have gone looking for it. Maybe that's what she did. #bElma the Housekeeper#k may know a thing or two about it so how about going back to Hella's house and ask Elma about it?" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hella may have left home to look for her lost #bkeepsake of her late mother#k. #bElma the housekeeper#k should know some things about it, so I suggest you head back to Hella's house." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3005" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3384.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gordon's Magic Iron" />
+        <string name="parent" value="Gordon Passes His Magic" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="Just as Gordon says, being a great craftsman requires patience and stamina. Gordon then gave me a test where he assigned me to gather up some Jr. Yeti Skin, which are also used as primary materials for shoemaking. I wonder what that secret technique is... I better come back ASAP.\n\n#i04000048# #t04000048# #b#c04000048##k / 50" />
+        <string name="2" value="I finally found the secrets to Gordon's technique! Well, the important aspects here are the two types of Magic Pentagrams that's used to create a new scroll, and the Magic Magic Iron that helped press them. The Magic Magic Iron that Gordon gave me... it seemed like it had some sort of a story behind it, but I was not able to listen to it in detail. I should ask him about that the next time I see him.\nAccording to Gordon, when summoning the Maker skill, when I have the Magic Magic Iron equipped in my hand, then I'll be able to create new scrolls." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1122013" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm? You are back already? I do realize that young people like you get things done quickly. Once you pass my test, I will teach you my secret technique and make sure you master it. As for the test... hahaha, don't worry. It's not that difficult." />
+            <string name="1" value="The test is... I need you to bring #b50 pieces of Jr. Yeti's Skin#k. It's a test that can also be served as a tuition. Haha, actually I'm just making a request to you so you can help me make more shoes. What do you think? Can you do that for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Here's one of the secrets of my technique: Magic Pentagram. You must learn how to draw the perfect Magic Pentagram without fail, and doing so requires ample amount of practice. What I am trying to tell you is that 'patience' and 'stamina' are the two most important aspects of learning my secret technique. Understood? Now get to work!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm? Are you telling me it's way too easy and therefore beneath your abilities? Hah... I didn't think you'd be so shortminded. Kid, remember that if you can't achieve small things, you will definitely not come close to achieving big things. Understood?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... Brilliant. This proves to me that you will easily master my secret technique. The other secret to my success is this, the 'Magic Iron'. This is the one I refer to as 'that object'.\n(#i01122013##b#t01122013##k - A Magic Iron that Gordon received from an alchemist. It heats up with the power of magic, and it is used to imprint a small Magic Pentagram on an object.)" />
+            <string name="1" value="This iron is a precious gift I received from some alchemist way back when I was young. I spotted this alchemist coming to Magatia for the very first time, on the verge of freezing to death, and rescued her by taking her to my place. She wound up staying at my house for about a month or so... She was quite an adorable one. Hmmm... I don't remember which of the two sides she stood for in Magatia." />
+            <string name="2" value="Anyway, after learning the basic theory of alchemy from that alchemist, I discovered a method that lets me use this ?? to imprint a small Magic Pentagram on an object, which helps store some magical effects onto the object. Unfortunately, the alchemist had to leave, telling me that she had to go take care of something important. And then she just left me, leaving me alone with this Magic Iron..." />
+            <string name="3" value="Sigh... a long time has passed since then. My secret technique is actually creating new scrolls that allows one to apply the new magic effects previously unseen onto the objects through the Magic Pentagram imprinted on the scroll. What do you think? Are you ready to master this craft?" />
+            <imgdir name="yes">
+                <string name="0" value="I'll teach you how to draw the Magic Pentagram on the scroll. Here it is. Memorize each stroke of the pentagram. Practice is the only way you will perfect the drawing of this Magic Pentagram." />
+                <string name="1" value="Oh, and one important thing. Do you know how to make items on your own? Oh... a Maker skill? Moren was very successful with that skill. If you learned that skill, then you'd have no trouble using this ??." />
+                <string name="2" value="Equip yourself with the Magic Iron and use the Maker skill, and you'll be able to create a new scroll. It's up to you to choose the types of scroll you'd like to make, and hopefully you'll practice hard enough to make the scroll without fail. I will give you this Iron, hoping that you will put it to good use. Remember that you will always be a student of this lonely old man, and I also hope that you will put my methods to good use." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... maybe this is too much for you. Hmmm? It isn't? Then prove it to me that you are more than this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000048" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3383" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

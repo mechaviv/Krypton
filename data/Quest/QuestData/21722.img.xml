@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21722.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ghost Stumps" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your third assignment as an informant and this one involves studying the strange-acting #o1140130#s with #p1103004# in #b#m102000000##k. You'd better go talk to #b#p1103004##k." />
+        <string name="1" value="#p1103004# seems to already know that the #o1140130#s' erratic behavior was caused by a puppet and tells you to enter #m101030101# to defeat #r100 #o1140130#s#k and retrieve #o1140130#'s puppet. She also says that if you can't find the puppet even after eliminating 100, you should just come back to see her...\r\n\r\nRegardless of Personality #o9101002##r #a217221##k" />
+        <string name="2" value="You defeated 100 #o1140130#s but didn't find any puppets. #p1103004# told you that #o1140130#'s puppet has been detected nearby and that something seems very wrong…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3900" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have been spending some time investigating the strange turn of events that have taken place here at #b#m101030101##k, and the #o1140130#s suddenly becoming violent is one of those issues. I was having a hard time doing all this by myself, but now that you have offered to help, I can finally breathe a sigh of relief. Thank you for coming." />
+            <string name="1" value="After a number of tests, I came up with the conclusion that the Ghost Stumps are acting strange because of this strange puppet called a #t4032319#. This means we'll have to #reliminate #o1140130#s#k and remove the #t4032319# as well. Maybe defeating #r100#k would help you find one?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It hasn't been long since the #o1140100#s started acting strange. Frankly, I'm not sure which of the two, the #o1140130#s or #o1140100#s, actually carries the puppet." />
+                <string name="1" value="So #rI just suggest eliminating any form of #o1140100#s#k. Oh by the way, if you manage to defeat all 100 of them, but still can't find a puppet, then just come back here. We'll have to rethink the situation then." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Is 100 too few for you? How about 500, or even 1,000? Think about it, then talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have defeated 100 #o1140130#s. Did you happen to find the puppet? What, no?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm… I knew something wasn't right. The detector indicated that the puppet is here somewhere... Maybe they're using a different way of affecting the #o1140130#s' behavior." />
+                <string name="1" value="I'll try to figure out what other method may be being used. In the mean time, why don't you work on leveling up? I'll see you at Lv. 24." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Haven't you defeated #r100 #o1140130#s#k yet? Even if you can't find a puppet, that's fine. Just come back to me when you finish eliminating the #o1140130#s." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101002" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21721" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="23" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3025.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Looking for the Wiseman in Henesys" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="22" />
+        <int name="area" value="33" />
+        <string name="1" value="I met my end of the bargain by handing Grendel the Really Old the 2 Wisdom Crystals, and he met his end of the bargain by handing me the 2nd #bold piece of the map#k. Next up: The wisewoman at #bHenesys#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031054" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <int name="nextQuest" value="3026" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I knew you wouldn't let me down. I had no doubt in my mind you would be able to do it. This will help me recover my health. Like I promised, here's the item that may hold key to finding #b#t4031056##k. Before that, though, check and make sure your etc. inventory has room for an item." />
+            <imgdir name="yes">
+                <string name="0" value="This is the 2nd piece of the map that shows where #b#t4031056##k is hidden. The map has been cut to four pieces and given to the 4 of us wisemen. The book won't stay hidden forever, though...Please find the book and seal it up tight for all of us. Now go see the #bWisewoman from Henesys#k. I'll let her know in advance." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The map that shows where #b#t4031056##k is hidden is cut up in four pieces and is currently taken care of by the four of us wisemen. But it can't stay hidden forever...please find the book and seal it up tightly for us. Now go see the #bWisewoman from Henesys#k. I'll let her know of the situation." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3024" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

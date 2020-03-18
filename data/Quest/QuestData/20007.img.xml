@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku's Last Training Session" />
+        <int name="area" value="15" />
+        <string name="0" value="Visit #b#p1102000# the Training Instructor#k and receive his fifth training session." />
+        <string name="1" value="#p1102000# said you've done a good job, and wanted you to defeat #b3 #o0100124#s#k for the last time. He warned you that unlike other Mimis, #o0100124# has significantly higher stamina, so you better be careful... \n\n#o0100124##r #a200071##k" />
+        <string name="2" value="You managed to defeat the #o0100124#s and return. #p1102000# greeted you with a smile and said you are now eligible to become a Knight-in-Training. He then advised you to go see #p1101002# again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="벌써 기초수련의 막바지군. 자네 정말 성장이 빠른걸? 그럼 지금까지의 수련을 테스트하는 의미에서 조금 어려운 티티와 싸워보도록 하지." />
+            <imgdir name="yes">
+                <string name="0" value="수련의 숲5에 가면 #m0100124#라는 녀석이 있는데, 그 녀석은 다른 티티에 비해 강하고 체력도 높아. 단단히 대비한 후에 3마리만 잡도록 해. 자, 그럼 수고해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="테스트라는 단어 때문에 겁먹은 거야? 걱정하지 마. 넌 이미 통과할 수 있을 만큼 강해져 있으니까." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="750" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We have already reached the final stage of the basic training. I can literally see you make progress before my very own eyes. This time, let's take it up a notch and have you face the formidable Mimi." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to #b#m130010200##k, and you'll run across #o0100124#. They are comparatively more powerful with more stamina than other Mimis. Brace yourself for some difficult combat, and slay #r3 #o0100124#s#k for me. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid of the fact that these Mimis are more powerful than anything you've faced before? Don't worry about it. You've been defeating monsters that you once thought were more powerful than those previous." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Amazing! You were able to take on the #o0100124#s and emerge victorious! I have to say, it's not often I get to see a Nobless like you making such quick strides. #p1101002# should be pleased with the results." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to defeat #r3 #o0100124#s#k? Ah, come to think of it, I didn't tell you where #b#m130010200##k was. I thought you'd be able to figure it out yourself. From #m130000100#, take the left portal out, and you'll enter #m130010200#. That's where you'll defeat #o0100124#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100124" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20006" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3042.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering a Mysterious Item" />
+        <string name="parent" value="To the New World" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go see Wing the Fairy, who should be in Ellinia." />
+        <string name="1" value="I met up with Wing the Fairy of Ellinia. He grabbed me and asked me if I wanted to explore to a new world and train myself there. Unfortunately, that's not what he really meant by it. He just wanted me to be the delivery person and get this item to his friend #bKriel the Fairy#k in Orbis." />
+        <string name="2" value="I went to Orbis and gave Kriel the Fairy a bottle of Tears of Kelvelos." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031197" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031197" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3043" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you, human! Yeah, you! You look quite strong enough. Are you interested in becoming even stronger?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd be interested. Have you heard of Ossyria? I think you'll be much stronger once you start training there. Face new monsters, interact with new surroundings, and train yourself to become much more powerful than you ever were in Victoria Island." />
+                <string name="1" value="If you ever stop by Orbis, please meet up with my friend #b#p2012011##k. I have to give her something. It's called #b#t4031197##k, and it's been passed down from generation to generation." />
+                <string name="2" value="Ever since Kriel saw this, she's been badgering me on and on about giving it to her. She's the one that makes all the wizard-related items and weapons at Orbis, and she thinks she can make something powerful out of it. Anyway, if you ever drop by Orbis soon, I want you to give this to her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Not interested? You don't want to make yourself stronger, huh?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi, how can I help you? Hey, that's ... isn't that ... are you from Ellinia? That's definitely my friend Wing's, and how did you ... oh, Wing wanted you to give it to me?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't met #bKriel the Fairy#k? She's at Orbis." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031197" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032106" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

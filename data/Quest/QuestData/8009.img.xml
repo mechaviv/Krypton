@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8009.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Learning to Speak the Kitty Language" />
+        <string name="parent" value="Sakura, the Kitty, and the Orange Marble" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="0" value="Where's the #bBoss Kitty#k that stole Orange Marble?" />
+        <string name="1" value="I went up to the #bBoss Kitty#k and asked something, only to hear some language I've never even heard of in my life. I better ask #bScarred Kitty#k for some kitty language, then I may be able to pick up on it." />
+        <string name="2" value=" I learned the kitty language through #bThe Scarred Kitty#k! Now I can probably communicate with #bBoss Kitty#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8019" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hoo~~~~! Meow~! Meow~!" />
+            <imgdir name="yes">
+                <string name="0" value="Hoo~!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Meow~!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Did something happen? Meow~ That's the Boss Kitty you're talking about, meow~ The Boss probably tried to say something to you, meow~ Maybe I should teach you some kitty language~ But remember, even kitty language has dialects, and you may only communicate with the kitties in this town, okay? Meow!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Don't you need to speak to Kitty first to learn the Kitty language?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8008" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28214.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Secret of the Golden Feather" />
+        <string name="parent" value="A Strange Burglary Case" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201119:##k in #bPerion#k says there is something you need in order to identify the #rGolden Feather#k." />
+        <string name="1" value="Let's collect the following materials in order to accurately identify the #rGolden Feather#k.\n\n20 #rLeaves#k (a drop item from #rDark Stumps#k that can be easily found in #b#m101040000##k and #b#m102010000##k.)\n5 #rFlints#k (a drop item from #rDark Stumps#k.)\n\nReport back to #b#@9201119:##k in #bPerion#k when you finish collecting all the items." />
+        <string name="2" value="#b#@9201119:##k in #bPerion#k says you must inform #b#@1032001:##k in #bEllinia#k of this." />
+        <string name="demandSummary" value="#i4001356:# #t4001356:# #c4001356# / 5&#xD;&#xA;#i4000005:# #t4000005:# #c4000005# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;Able to proceed to 'A Burglar Demon' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001356" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Looking at this #rGolden Feather#k makes me uneasy.\nOh, but I have a traditional magic spell that can reveal the mystery of this feather. First, I need you to collect some items for me." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I need to build a fire that emits monster's aura, and in order to do so, I need 20 #rLeafs#k and 5 #rFlints#k. You can acquire both of those items from  #rDark Stumps#k that can be easily found in #b#m101040000##k and #b#m102010000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Are you saying you don't want to?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've brought everything I've asked you to collect.\nShall we begin the magic spell now?\n\n(The Training Instructor lights a fire and begins to set the Golden Feather on fire.)\n\nThis must be..." />
+            <imgdir name="yes">
+                <string name="0" value="What is this monster?\nIt looks like a lion, yet it also resembles a mule.\n\nIt looks like a demon! It couldn't be a real demon, right? This gets me so nervous!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bring me 20 #rLeafs#k and 5 #rFlints#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201119" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001356" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201119" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28213" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

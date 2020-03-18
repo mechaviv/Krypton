@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22569.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Another Clue about the Onyx Dragon" />
+        <string name="parent" value="Information about the Slumbering Dragon Island" />
+        <int name="order" value="1" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1032001# in #m101000000# starts talking to you. Could there be some more information about Onyx Dragons? Respond to #p1032001#'s call." />
+        <string name="1" value="#p1032001# says that there is a new book that came into the #b#m101000003##k that is very interesting. He says that it may be a clue about the Onyx Dragons and asks that you come check it out." />
+        <string name="2" value="You met #p1032001# and asked about the book." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2213" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been a long time, researcher of Onyx Dragons. I have called you because I found a book you might be interested in. This book appears to be an ordinary diary, but it contains a line that might interest you." />
+            <string name="1" value="I think it will help you with your research, so if you want to read it, come to #m101000003##k in #b#m101000000#. I'll hold on to the book and won't let anyone borrow it." />
+            <string name="2" value="It has an explanation that seems to indicate something about Onyx Dragons. No one knows whether what it says here is true or not, but that is why you must verify the facts. I'll be waiting." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="You can't come? That's too bad. I'll have to make the book available for anyone that wants to borrow it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, I'm glad you came. Wait here for a second. I'll take out the book I told you about. Let me see where that Voyage Log is..." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22565" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

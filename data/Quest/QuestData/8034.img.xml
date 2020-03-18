@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8034.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maya's Concerns 1" />
+        <string name="parent" value="Maya's Concerns" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value=" By the way, how's Maya doing? I better go check her out!" />
+        <string name="1" value="Maya was attending a baby monster that's been deeply wounded. I know this is not what people would want us to do, but Maya wanted to do it, and I have to help her out. Oh well... in order to fix the wound, she said she needs #b50 #t02050003#s#k, #b20 #t04000086#s#k, and #b20 #t04000023#s#k. \n\n#t02050003# #b#c02050003##k/50\n#t04000086#  #b#c04000086##k/20\n#t04000023#  #b#c04000023##k/20" />
+        <string name="2" value="The wound is sanitized, but the baby Lioner should rest.  It seems very tired from the ordeal." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000086" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000023" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2050003" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8035" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you so much for your work the other day. Thanks to you, I feel much healthier than ever, and I owe you a whole lot fo r this. \nActually... I have something to discuss with you today. I haven't found anyone willing to discuss something big like this, so ... will you be my friend and listen to my story? I know that you'll keep this a secret." />
+            <string name="1" value="Please look.\n (Maya slowly moves around, and looks at the bottom of the bed.)\n (Below is a little kitty, huffing and puffing for breath. It's also badly scarred. This kitty is...)" />
+            <string name="2" value="It's the baby Lioner. \nSurprised? Yeah, I know ... it's a baby and all, but it's a monster nonetheless. I was on my way to dig out some herbs when I found it crawled up in between the rocks. I know it's a monster, but ... I couldn't just walk by and ignore it. I know how that feels like..." />
+            <string name="3" value="This is my plea to you. Please save this poor baby. If the people ever find out I'm nursing this, I may not be able to live here anymore.\nThat's alright, though. Please help.\nYou're the only one I can ask for something like this." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. You're such a nice person. Please save these two babies. \nFirst, we'll need to sanitize the wounds, and to do that I'll need a whole lot of #b#t02050003##k." />
+                <string name="1" value="I can't leave these babies by themselves, so can you get me #b50 #t02050003#s#k, #b20 #t04000086#s#k with #b#t02050003##k on, and #b20 #t04000023#s#k to settle the wounds. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? I see. I can see how this may be a distraction to you. I do not want to put you in jeopardy. Just forget about it. I'll do what I can here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you so much. I'll sanitize the wounds immediately." />
+            <imgdir name="yes">
+                <string name="0" value="（After putting #b#t02050003##k on #b#t04000086##k, Maya proceeded to apply this to the wounds where it'd no doubt sting. Baby Lioner screamed in agony.）" />
+                <string name="1" value="Oh no, I'm sorry. Please hold on.\nIf I don't sanitize the area, the wounds will be infected... \nYou're a boy, right? Don't cry then~.\m (Maya talks to it as if it's a human baby)" />
+                <string name="2" value="Okay, the wound is cleaned up. This should make sure the wound doesn't get infected. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have enough to sanitize the wounds. Since the wound is very deep, I'll need #b50 #t02050003#s#k, #b20 #t04000086#s#k, and #b20 #t04000023#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000086" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000023" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2050003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2008" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

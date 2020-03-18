@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28250.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mystery of the White Portion" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="8" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says he may be able to reveal the white portion of the #rDirty Treasure Map#k. Let's talk to him." />
+        <string name="1" value="#b#@1052001:##k in #bKerning City#k has asked you to bring him #rInk#k (a drop item from #rOctopuses#k) in order to uncover the mystery of the Treasure Map. He says there is a hidden portal that will take you to a location filled with #rOctopuses#k near the yellow barricade in #b#m103010000##k.\n\nReport back to #b#@1052001:##k in #bKerning City#k upon completion." />
+        <string name="2" value="The #rDirty Treasure Map#k is covered in Green, Red, and White.\n\nGreen was removed from the map using the Slime Eraser.\nRed was vaporized by the Flint, and the curse of the animal's blood was released using Ayan Mercury's Microphone.\nWhite, after being sprayed with the special Ink, quickly revealed the map.\n\nThe map has finally been completed!" />
+        <string name="demandSummary" value="#i4001361:# #t4001361:# #c4001361# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 3,500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032489:# #t4032489:# #c4032489# 1&#xD;&#xA;Able to proceed to 'The Completed Treasure Map' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001361" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032489" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Looking at your map, I see you've uncovered the secrets behind the green and red portions of the map.\nYou seem to have only the white remaining. Am I correct? Ha! This mission seems way too easy." />
+            <string name="1" value="Of course, it's only if I'm not mistaken, that is. But this map, the more I look at it, is poorly drawn!\n\nAnyway, you must bring me some items in order for me to uncover the last secret of this map." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you go to #b#m103010000##k, you will see a yellow barricade where you will find portals that will lead you to different places. They're called Hidden Streets, and they're all over Maple World, so keep a close eye on them. " />
+                <string name="1" value="If you go there, you'll find a lot of #rOctopuses#k. Can you hunt them and collect 20 sacks of #rInk#k? Stop asking questions--just do as I Say! You don't have to go to the exact place I mentioned. It's just a suggestion as to where you can find a lot of Octopuses." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Weren't YOU the one that was curious?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've finished collecting the #rInk#k.\n\nLet me make you what you need. It will only take a few seconds." />
+            <imgdir name="yes">
+                <string name="0" value="I can tell you now.\n\nI'm not removing the white, but I'm spraying black to trace the lines to make out what's hiding underneath." />
+                <string name="1" value="Open the #rDirty Treasure Map#k and drag the #rInc Sack#k over it.\n\nCome back and see me when the map is complete." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Collect 20 sacks of #rInk#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001361" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28249" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

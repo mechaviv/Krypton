@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2153.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Old Snail" />
+        <string name="parent" value="Legend of the Snail" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Heard #bPia#k in #bHenesys#k got her hands on a strange book. What kind of book could it be? Let's go see her. " />
+        <string name="1" value="The book is about the #boldest snail#k in Maple World and its #b#t2210006##k. It looks like Pia is interested in the snail's shell because it makes wishes come true. Jay is the original owner of the book; he must know something about the author. Let's go see him. \n\n#i4161035##t4161035# #b#c4161035#/1#k" />
+        <string name="2" value="Jay said that the author of Legend of the Snail was his great-grandfather, also known as \n#bAlloy, Mrs. Ming Ming's grandfather, Alloy#k. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161035" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161035" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you heard about the rumor of #b#t2210006##k? It's a special gift that can only come from the oldest snail in Maple World. Rumor has it that it can make wishes come true! Wow! I'd give anything to have one ~ " />
+            <string name="1" value="What? You think this rumor is a lie? It can't be! It's here in this book. This #bLegend of the Snail#k book has details of \n#t2210006#. It has to be true! " />
+            <string name="2" value="However, the book doesn't describe where to find the snail. If only I had a clue on where to find the snail, I'd go for it immediately and get the rainbow snail shell for myself. I must try to gather information... " />
+            <string name="3" value="So how about you? I'd let you in on it if you're Interested, too. If we do get our hands on #t2210006#, I promise I will share it with you fairly. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay then, first go meet with #bJay#k. It's because this book was borrowed from him. He has tons of books, and knows a lot about them. I must know who wrote Legend of the Snail. We will start tracking the snail shell with him and eventually find out where the snail is. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... not interested? How can you turn down a treasure like this? Your loss." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, you look like an adventurer. How may I help you? Oh, #bPia#k asked you to return the book back to me? Pia, you shouldn't have gone through all this trouble. It's not a long distance away, anyway. " />
+            <string name="1" value="Thank you for returning this. If you're interested in books, please come by anytime. What? You want to know about the author of Legend of the Snail?" />
+            <imgdir name="yes">
+                <string name="0" value="Of course I know the author. #bAlloy#k is not only the author of that book, but he's also my #bgreat-grandfather#k. He was a seaman at Lith Harbor, who loved adventures more than his work. Sure, he had his part in adventures. " />
+                <string name="1" value="So you're interested in my great-grandfather? He is somewhat famous, and people sometimes stop by to ask about him. Why don't you visit my mother, #bMrs. Ming Ming#k? She can tell you more. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You don't look like you've met #bJay#k yet. Have you lost your way? Henesys isn't a big town to get lost in. You're terrible with directions, aren't you?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="An adventurer, right? First time in Henesys? " />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hey, wait! Don't leave books anywhere, especially if it isn't yours! Fortunately, someone I know picked it up. What would have happened if the book were lost? Jay is usually gentle, but reconsiders when it has to do with people who lose their books!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012109" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161035" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012102" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

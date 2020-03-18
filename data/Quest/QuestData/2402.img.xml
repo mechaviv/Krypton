@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2402.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Training Center for Beginning Thieves" />
+        <int name="area" value="10" />
+        <string name="showLayerTag" value="thiefQuest" />
+        <string name="0" value="After making a job advancement as a Thief, you need to find a training center that'll help you level up faster." />
+        <string name="1" value="After making a job advancement as a Thief, you should follow the arrows from Kerning City that lead you to a training center. You won't be able to enter once you reach Level 20." />
+        <string name="2" value="You found the training center for beginning Thieves. You'll be able to receive your first set of training lessons from the trainer, Power B. Fore." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="900" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Congratulations on making the job advancement as a thief. I can see you're exuding the quiet confidence of a powerful thief, and yet...you seem to lack something. I suggest you train a bit more at the Training Center, where you can become even more formidable. I'll teach you how to get to the Training Center. Are you interested?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That's great! Go outside, and you'll see a series of arrows pointing in a certain direction. Follow them and you'll see the entrance to the Training Center, where you can train to become even more powerful!" />
+                <string name="1" value="I suggest you go there before you reach Level 20, because you won't be allowed inside afterwards." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, really? Well, the Training Center can be found nearby, so maybe you can find it on your own. Best of luck to you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome, welcome. #bDark Lord#k has already contacted me about this. So you're a beginner thief? Train with me for a bit, and you'll be able to improve in a jiffy." />
+            <imgdir name="yes">
+                <string name="0" value="Before we start, let me show you this letter of commendation I received for being an exemplary adventurer. I don't like to brag, but I used to be quite the adventurer, you know! Hold on one second, while I find that letter…" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Here, you can rapidly move up the ranks and become an intermediate-level thief." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052113" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <int name="lvmin" value="10" />
+            <int name="lvmax" value="19" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

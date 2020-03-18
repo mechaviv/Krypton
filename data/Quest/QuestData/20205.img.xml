@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20205.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knighthood Exam: Thunder Breaker" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="According to #p1101002#, you can take your Knighthood Exam if you see #b#p1101007##k, the Chief Knight of Lightning. Better head over to Ereve and meet #p1101007#." />
+        <string name="1" value="The Knighthood Exam has started. The test itself is actually quite simple. You just need to reach the end of the Training Forest, enter #bthe 2nd Drill Hall#k, and defeat the Mimis inside while bringing back #t4032100#. Better find #b30 #t4032100#s#k and bring them back to #p1101007#. \n\n#i4032100# #t4032100# #b#c4032100# / 30#k" />
+        <string name="2" value="You have successfully completed the Knighthood Exam and officially dropped the &quot;in-Training&quot; from your title. As a bonafide Cygnus Knight, do your best to work hard so you will never be ashamed of yourself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What? Knighthood Exam? Are you taking that already? Wow, that was fast! Not a lot of time has passed since you first came here... but then again, seeing your contributions to the Cygnus Knights, it only makes sense. Okay, I'll let you take the test. Do you want to take it right now?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The test is simple. At the end of the Training Forest, you'll find a training hall. At #bthe 2nd Drill Hall#k, you'll defeat a number of Mimis and bring back #b30 #t4032100#s#k." />
+                <string name="1" value="Once you bring all the Proofs of Test, everyone will consider you a bonafide Knight. Enjoy it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmmm... do you have anything you want to prepare for? Okay, I will wait for you. Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up #b30 #t4032100#s#k yet.  Did you forget where the 2nd Drill Hall was? I understand if you're not good with directions, because neither I am... hahaha. Anyway, go to the end of the Training Forest, and you'll find #bthe 2nd Drill Hall#k, where you can find #t4032100#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q20205e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="1500" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

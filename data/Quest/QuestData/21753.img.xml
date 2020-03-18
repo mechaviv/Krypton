@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21753.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Seal Stone of Ellin Forest" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="It turns out that the Seal Stone of Ellin Forest was taken by #o9300353# of the Black Wings. How did this happen? You'd better go talk to #b#p2131000##k in Ellin Forest." />
+        <string name="1" value="#p2131000# reveals that she has a letter that contains information about another Seal Stone and promises to hand it to you. Unfortunately, you can't take the letter since #b#p2131000# and you are from two separate times#k. \n\nJust when you think it's all over, #p2131000# tells you that she's a fairy with a very long life, and that she will in fact carry the letter to your time. What you need to do now is leave Ellin Forest and #bmeet #p2131000# in your own time#k. You wonder where #p2131000# is? You'd better ask #b#p1002104##k." />
+        <string name="2" value="You asked #p1002104# whether he knew anyone named #p2131000#. It turned out that #p1002104# is one of the most well-known people in all of Victoria Island. You should head to #m100000201# in #m100000000# to meet Athena Pierce at the Bowman Instructional School." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Oh, you're back! Did you visit the past? Did you meet someone you know? What, are you really asking if I know #p2131000#?" />
+            <imgdir name="yes">
+                <string name="0" value="Of course I do. She's one of the most famous people in all of Victoria Island. The protector of #m100000000#, the master of all bowmen. #bThe person in charge of job advancements in #m100000201# #m100000000#. Job instructor #p2131000##k! Seriously, who doesn't know her? But why do you ask? Are you planning on meeting her? Then you should head over to the Bowman Instructional School immediately." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#bPlease find me in your time period#k! I'll be waiting for you even then, waiting to fulfill the promise we made here today…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2131000" />
+            <int name="infoNumber" value="21764" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21751" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21753s" />
+            <int name="lvmin" value="63" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

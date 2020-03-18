@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10581.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Recycled Golden Ticket" />
+        <int name="area" value="50" />
+        <string name="0" value="You've used the #t4001431#. You can receive another by doing a quest given by #p9000078#, the PR Manager of the #b#m950100000##k, so pay him a visit." />
+        <string name="1" value="#p9000078# says that he would like to save resources. If you bring him #b10#k #bGolden Ticket Pieces#k, he will issue you another #t4001431#. You can obtain Golden Ticket Pieces from #rany monster#k. \n\n#i4032605# #t4032605# #b#c4032605# / 10#k " />
+        <string name="2" value="You obtained a Golden Ticket in return for 10 Golden Ticket Pieces. If you want another #t4001431#, you can come back after a day has passed." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032605" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001431" />
+                    <int name="count" value="1" />
+                    <int name="period" value="180" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome to the #m950100000#! Location guide? Lost and Found? Local product purchase? I have everything you need. What can I help you with? Hmm... A #t4001431#? Of course, I can give it to you. But there is one thing I have to ask you to do first." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In order to save natural resources, we are recycling the #t4001431#s. So, if you bring me #b10 Golden Ticket pieces#k, I will give you one #t4001431# in return. You can find the pieces by hunting #rany monster#k for them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, you know what they say...nothing in life is free. Please reconsider." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've brought the 10 Golden Ticket pieces!" />
+            <string name="1" value="(In a barely audible whisper)...Hmm, stronger than I thought... What? Oh, nothing, nothing. " />
+            <imgdir name="yes">
+                <string name="0" value="Here is your #t4001431#. This will allow you a one-time entry to any mini dungeon near #m950100000#. You can receive additional #t4001431#s by completing the quests I assign once a day, so please feel free to come back!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It looks like you haven't obtained the #b10 Golden Ticket pieces#k yet. You can get them from hunting #rany monster#k. There is also a simpler way... " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000078" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032605" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000078" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10580" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="201007140000" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

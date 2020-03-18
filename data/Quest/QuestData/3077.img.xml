@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3077.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Carta's Fortune-Telling" />
+        <string name="parent" value="Carta the Sea Witch" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="0" value="I gathered up all the materials that #p2060100# asked me get. Maybe I can now find out what happened to Gail." />
+        <string name="1" value="According to #b#p2060100##k, something terrible indeed happened to Gail. What can possibly happen underwater? Anyway, I should let #b#p2060006##k of this immediately. I hope he takes it well..." />
+        <string name="2" value="I told #b#p2060006##k the result of #b#p2060100##k's fortune-telling. What does it mean by the dark fog that surrounds Gail? #p2060006# was trying to act calm, but I could tell she's feeling nervous about Gail. Is #p2060100#'s stuff really worth believing?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102048" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Now, let's put these inside and wait until the color changes. So, who's this person I should look into?\r\n#L0# #bA young man by the name of Gail, who is sent abroad to explore the deep parts of the ocean." />
+            <string name="1" value="Oh... I can see it now. It looks like I'm looking into the past. I see a rock that features patterns on it. I also see the entrance to a cave and... huh? What is that fog? And what's this bad vibe I'm feeling looking at it? I've never seen anything like it ... and that black fog surrounding them ... and it's ... swallowing them up ... deeper ... and deeper into a darker place ... and ... they are gone. \r\n#L0# #bWhat? Anything else? Can you see anything else?Oh... I can see it now. It looks like I'm looking into the past. I see a rock that features patterns on it. I also see the entrance to a cave and... huh? What is that fog? And what's this bad vibe I'm feeling looking at it? I've never seen anything like it ... and that black fog surrounding them ... and it's ... swallowing them up ... deeper ... and deeper into a darker place ... and ... they are gone. \r\n#L0# #bWhat? Anything else? Can you see anything else?" />
+            <string name="2" value="That's all I can see for now. I don't know what's going on, but I don't like this feeling. Now, please tell this to the lady that brought you here." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I've lived in here for a long long time, but I've never felt a negative vibe quite like this. Something may happen really soon. Oh, and I may be just fortune-telling, but please think carefully. Just because you know everything, doesn't mean it's necessarily the best. Sometimes, it's better to not know at all, especially a bad one like this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You can't deliver the bad news to her? But doesn't she have a right to know the truth? Please don't lie to her just to make her feel better. It's better to tell the hard-hitting truth, as opposed to telling a sugar-coated lie." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You're back. I was beginning to worry about you, since you haven't showed up in so long. Have you met the Sea Witch? What did she Say? \r\n#L0# #bNot good. She said Gail is swallowed up by a black fog, which cannot be good, and because of that she can't see anything else." />
+            <string name="1" value="I see... something really must have happened ... oh no, I feel like I'm gonna lose it. Who am I supposed to ask for help? I better alert the townspeople first." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your work. It must have been really difficult for you, but you came through. This isn't much, but please take it. Now I'll have to discuss this matter with the townspeople, so I'll see you around." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3076" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

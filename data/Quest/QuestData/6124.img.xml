@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6124.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bahamut's Completion" />
+        <string name="parent" value="Dragon Heart" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="0" value="I once again seek to enhance the power of the dragon. After speaking with #b#p2081007##k, he says the dragon still hasn't reached its full power.  I must see this through to the end. The full power of the dragon must be a sight to behold. I must ask Raul for assistance once more to unleash the power of the dragon. " />
+        <string name="1" value="The final step to unlock the dragon's power is at hand! Raul says if I get #b40#t4031485##k he will awaken #q2321003#'s power.  He says this will complete the dragon's power. My heart trembles with anticipation... \n\n#i4031485##t4031485# #b#c4031485#/40#k" />
+        <string name="2" value="At last, the dragon's power is complete. And it shall truly be a sight to behold! I will use this power wisely..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="홀리 드래곤의 소유자. 당신이 가진 용의 힘은 강하오. 거의 완성에 가까운, 거대한 힘을 가지고 있소. 그런데도 더 큰 힘을 원하시오? 용의 힘을 완성하기를 바라는 것이오? " />
+            <imgdir name="yes">
+                <string name="0" value="이제 #b40개#k의 #b#t04031485##k를 구해온다면, 용의 진정한 힘을 찾게 될 것이오. 하지만 기뻐하기만 해서는 아니 되오. 경계하는 마음을 가져야 할 것이오. 그토록 큰 힘을 갖는다는 것에..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="곧 있으면 드래곤의 힘이 완성되는데... 아쉽소." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="250000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031485" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2321003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="30" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="232" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" Ah! The owner of #q2321003#. Your dragon's power is strong. It's great power nearly complete. Do you want stronger power still? Do you want to complete your dragon's power?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you get #b40#k of #b#t04031485##k, you will unlock all of your dragon's power. There's one thing you should do before celebrating, though. Remember to be careful when you use this power...its power is much too great to be abused." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Please be patient. The power of #q2321003# will be complete soon." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" You gathered 40 #t04031485#. I can increase your dragon's power! #K" />
+            <imgdir name="yes">
+                <string name="0" value=" Now, #byour dragon has discovered its real power.#k. Your dragon's power -- I mean, your power -- has grown to enormous proportions...truly a sight to behold!" />
+                <string name="1" value="I remember you didn't ignore the injured and at least spoke with me to make sure I didn't need help. I trusted you, so I performed the ritual that unlocked your dragon's true power...Don't betray my faith in you. Use this power wisely!" />
+                <string name="2" value="I trust you. May your newfound power destroy your enemies!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't gather 40#b#t04031485##k yet. You must try harder to unlock the true power of your dragon." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031485" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6123" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

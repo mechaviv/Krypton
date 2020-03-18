@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2362.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In the Presence of Lady Syl" />
+        <string name="parent" value="Visiting The Secret Garden" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="1" value="When you meet Yun, she tells you the story of Lady Syl, Jin (the current Dark Lord), and the former Dark Lord. She asks that you help Lady Syl and suggests that you go see her. Go meet with Lady Syl. \r\n#i3800009#" />
+        <string name="2" value="When you met Yun, she told you the story of Lady Syl, Jin (the current Dark Lord), and the former Dark Lord.\r\nAfter listening to Yun's story, you entered Lady Syl's Room in order to seek her guidance. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="To be honest, I don't know what to believe. Regardless, it doesn't matter as much as how Sister Syl is feeling right now. She may seem strong on the outside, but I know she is hiding a lot of pain deep inside. #h0#, I humbly ask that you assist our Lady Syl. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Now, go meet Sister Syl. She is in her room on the right side.\r\n#i3800009#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? You, of all people, have the ability to help her!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've finally come, #b#h0##k. I've been eagerly awaiting your arrival. I have heard many stories about your accomplishments, and I have great expectations for you as a Dual Blade." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Now, go meet sister Syl. She is in her room on the right side.\r\n#i3800009#" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1056000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2361" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

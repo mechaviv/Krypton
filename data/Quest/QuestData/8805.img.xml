@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8805.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Independence Day : Alien Invasion" />
+        <int name="area" value="30" />
+        <string name="0" value="#bAgent Marco#k of the Omega Sector is looking for heroes to protect our World. I need to get to him before all hope is lost." />
+        <string name="1" value="#bAgent Marco#k needs help on exterminating the #rPlateons#k on Boswell Fields. I heard that a tremendous number of Plateons are taking over the Boswell Fields and coming toward the Omega Sector. I need to take out bunch of Plateons and bring #b100 Plateon Helmets#k to Agent Marco of the Omega Sector as a proof of my mission's success.\n\n#t4000121# #b#c4000121##k/100 " />
+        <string name="2" value="After I gave Agent Marco all #b100 Plateon Helmets#k, I received the #bStars and Stripes#k. This flag represents my support for the independence of our World." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1302057" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000121" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Good Lord! Aliens are striking us harder than ever! Hey! Would you be interested to fight aliens for the independence of our world?" />
+            <imgdir name="yes">
+                <string name="0" value="Just as I thought! I knew you'd be the one to help us out. There was a tremendous invasion of #rPlateons#k somewhere around Boswell Fields. Terminate the ugly suckers and bring back #b100 Plateon Helmets#k to me as a proof of your work. I better not find you hiding in a hole!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh... If you are scared, I guess we have to take care of this by ourselves. However, if you can get those nerves under control, come talk to me again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You made it! Now I know we can win this battle! As token of our gratitude, we shall award you with #bthe Stars and Stripes#k. Good work soldier!" />
+            <imgdir name="yes">
+                <string name="0" value="How do you like the Stars and Stripes? It is a flag specially designed to commemorate this Independence Day!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Boswell Fields are still suffering from the invasion of Plateons. Take them out!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000121" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050012" />
+            <string name="end" value="2006070600" />
+            <int name="interval" value="11520" />
+        </imgdir>
+    </imgdir>
+</imgdir>

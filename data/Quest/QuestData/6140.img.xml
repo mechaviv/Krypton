@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6140.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Return of the Dark Lord" />
+        <string name="parent" value="The One Hidden in the Shadow" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#p2081400##k says he has something to tell me...perhaps I should pay him a visit." />
+        <string name="1" value=" #b#p2081400##k told me to meet #b#p1052001##k. Now that I think about it, it's been a long time since I've seen the Dark Lord. He never seems to age..." />
+        <string name="2" value="#p1052001# said he has some interesting suggestions and that if I'm interested, he'll tell me more." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You have the 4th Job advancement. Do you still have things to do? If not, I'd like to suggest something you may find interesting." />
+            <imgdir name="yes">
+                <string name="0" value="Wise choice. I thought you would accept my suggestion. Don't worry, this will be helpful for you too." />
+                <string name="1" value=" Do you know #b#p1052001##k? I thought you would know him as he made you a Thief. Go to see him. He might need you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you do not try something you're not familiar with, you are not a true Thief." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Since you are here, you must be a Thief. You look familiar... You came here when you were a beginner, didn't you? Wow, look at you.You became a wonderful Thief. Are you the one #p2081400# sent?" />
+            <imgdir name="yes">
+                <string name="0" value=" That's right. I saw something special in your eyes. I have a suggestion for you. Come back to me if you are interested." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1052001##k is expecting you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081400" />
+            <imgdir name="job">
+                <int name="0" value="412" />
+                <int name="1" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

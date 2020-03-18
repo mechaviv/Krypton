@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3327.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ericsson's Ingredients for Medicine 2" />
+        <string name="parent" value="The Fairy in Despair 2" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="According to #p2012018#, #p2111005# isn't a 100% Fairy, but rather half human, half Fairy, which is the reason why the Fairy medicine doesn't really work for #p2111005#... #p2012018# decided to up the potency and asked me to get #b10 #t4000068#s#k and #b100 #t4000061#s#k.  \n\n#i4000068##t4000068# #b#c4000068##k/10   \n#i4000061##t4000061# #b#c4000061##k/100" />
+        <string name="2" value="Once I got him all the ingredients, #p2012018# told me to wait as he made a new batch of medicine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="키니는 요정이 아니야. 아니, 정확히 말하면 완전한 요정이 아니라고 할 수 있지. 그 애는 인간과의 혼혈이니까. 그렇기 때문에 요정을 위한 약이 잘 듣지 않아. 별로 좋은 선택은 아니지만... 하는 수 없지. 좀 더 강력한 약을 써봐야겠어. 이번에도 도와주겠지?" />
+            <imgdir name="yes">
+                <string name="0" value="그럼 페어리의 더듬이 20개와 러스터픽시의 태양조각 50개를 구해다 줘. 조금 너무 강력할 것 같아서 걱정이긴 하지만... 그래도 어쩔 수 없지. 그 정도는 되어야 약이 효과가 있을 것 같으니..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="치사하게 여기까지 와서 안 할 생각이야? 너무하다고 생각 안해?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000061" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="For #p2111005#, regular medicine would not work for her. That's because she's not 100% Fairy.  She's half human, half Fairy. That's why the medicine for Fairies don't really work for her.  Not quite the best of both worlds, know what I mean?" />
+            <string name="1" value="I know this may be unwise, but...there's no other way. I think I'll have to raise the potency of the medicine. You'll help me this time, too, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Then please get me #b10 #t4000068#s#k and #b100 #t4000061#s#k. It's so potent that it usually isn't used on a young kid like #p2111005#, but... there's nothing else we can do at this point. I think it's the only way we may be able to save her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You came all the way back, and now you don't want to do it? Don't you think that's just wrong?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good, you brought everything. Now just wait for a bit, as I make a new batch for my niece..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you got all the ingredients yet. Did you forget it already? I need #b10 #t4000068#s#k and #b100 #t4000061#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000061" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3326" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+        </imgdir>
+    </imgdir>
+</imgdir>

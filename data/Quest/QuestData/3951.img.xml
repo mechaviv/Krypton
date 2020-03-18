@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3951.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Tree Cutter's Test" />
+        <int name="area" value="37" />
+        <string name="0" value="#b#p2071011##k in #b#m222010102##k is looking for you? That's strange.  What does he want...? " />
+        <string name="1" value="#p2071011# observes that you come here often and wants you to stay away from such a dangerous place. But, seriously? He's afraid to walk around the forest because of the #o5100003#s? If you don't convince #p2071011# that you're strong enough to handle yourself here, he might physically drag you out of  #m222000000#.!\n\n#r30 minute time limit\n#k#o5100003#  #r#a39511##k" />
+        <string name="2" value="#p2071011# was amazed you were able to hunt all the #o5100003# in such a short time.  But after all that work, all you got was permission to freely roam around the forest... Wonderful." />
+        <int name="timeLimit" value="1800" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕하세요~! 지난 번에는 너무 감사했어요. 나중에 #p2101004# 아저씨에게 듣고서야 어떻게 된 일인지 알았지 뭐에요. 모험가님의 덕분으로 누나를 만나지는 못했지만 편지를 주고 받을 수는 있게 됐답니다.  \r\n#L0##b잘됐구나. 축하해.#l" />
+            <string name="1" value="그런데 걱정이 있어요. 누나는 왕비님께 선물을 드린 적이 없다고 하네요. 왕비님은 욕심이 많은 분이라 누나가 다른 분들보다 힘들게 지내고 있는 것 같아요. 누나를 도와 주고 싶은데 왕비님께 줄 선물은 뭘 준비해야 할지 가르쳐 주시겠어요? \r\n#L0##b왕비님이라면 그 뚱뚱... 아니 건강하신 분을 말하는 거지? 나도 만나뵌 적이 있지. 그 분이라면 예쁘고 반짝이는 것을 아주 좋아하시는 것 같아. #t4000332#가 어떨까?#l" />
+            <string name="2" value="#t4000332#요? 음... 제가 모르는 거네요. 혹시 모험가님께서 찾아와 주시겠어요? 너무 적은 양이면 곤란하니 앞으로도 계속 쓰도록 50개 정도만 구해주세요. 괜찮으시죠? \r\n#L0##b(#p2101001#가 많이 컸구나... 당당하게 이런 부탁도 하고...) 으... 응. 물론이지! 날 믿어. 난 실력있는 모험가라구!#l" />
+            <string name="3" value="와앗~ 감사합니다! 역시 모험가님이 최고에요!" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, there!  I've seen you around quite often these days... Do you even know what kind of place this is?\r\n#L0##bYes, of course. It's a charming little forest.#l" />
+            <string name="1" value="You have guts. Do you know how many #o5100003# roam around this forest?\r\n#L0##bOh, #o5100003#?  That's okay!  I'm stronger than you think.#l" />
+            <string name="2" value="Sigh... As a protector of this forest, it's also my duty to protect ignorant adventurers like you. This place is too dangerous.  You need to go back down to town. Please don't come back up here again.\r\n#L0##bOk, got it!  I'll be on my way then.#l\r\n#L1##bWhat are you talking about right now?  I'm really strong!#l" />
+            <string name="3" value="Mmm... And really stubborn. Fine. If you hunt #r50 #o5100003#s#k in 30 minutes, I won't say another word about you being in this forest. You want to try?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Sigh...  Adventurers... They don't know how dangerous this world can be..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If it gets too dangerous, just come right back.  If you get in trouble, even I can't help you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why did you come here if knew you it was dangerous?  Anyways, return to town as quickly as you can. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're finally here!  I was getting worried." />
+            <imgdir name="yes">
+                <string name="0" value="You really hunted 50 #o5100003#s?! Judging by your appearance, you went through quite a bit. Earlier, you looked so neat and clean. Anyways, you are really strong! It hasn't even been 30 minutes! Alright then, with that kind of power, I guess you can roam around the forest as you please." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="30분 내로 #r#o5100003# 50마리#k를 잡아 오셔야 해요. 그 정도라면 이 숲을 노 다닐 실력이라고 말할 수 있죠." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5100003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071011" />
+            <int name="lvmin" value="53" />
+        </imgdir>
+    </imgdir>
+</imgdir>

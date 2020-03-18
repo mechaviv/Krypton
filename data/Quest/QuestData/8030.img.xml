@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8030.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Movie Star" />
+        <int name="area" value="48" />
+        <string name="0" value=" I should talk to Furano, a world-famous movie director. I wonder what he's made? I hope it wasn't something awful, like &quot;Rampage of the Merciless Onions&quot;..." />
+        <string name="1" value=" The final audition is pretty simple. I need to just take on #b#o6130101##k at the inner corner of Henesys. I'll have to destroy it at all costs! \n#o6130101#  #r#a80301##k" />
+        <string name="2" value="No way, I'm in the movie already? Darn! No Makeup or anything! If I had known about this, then I would have at least tried to look a bit nicer. Anyways, I can't wait to see how my awesome array of skills come out on film--maybe I'll even get a close-up! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="30000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040009" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040011" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2040013" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh~ You're the one Mariwaka was talking about. We don't need to discuss this any further; let's get straight to the final audition." />
+            <imgdir name="yes">
+                <string name="0" value="This is a blockbuster action flick that features two main characters bravely taking on the Mushmom that's harassing the citizens of Henesys, and kill it. Isn't that cool?" />
+                <string name="1" value="I've decided not to use stunt double for this flick, making it a fast, thrilling action flick for everyone to enjoy." />
+                <string name="2" value="You know what I'm talking about, right? Alright, the final audition is... defeat the king of Henesys, Mushmom. Okay? Action!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, what do you think you're doing? You're talking about starring in a movie by the world-renowned Furano." />
+                <string name="1" value="Once you're featured in my movie, your path to superstardom is pretty much clear. You must be cuckoo to reject that opportunity!" />
+                <string name="2" value="Well, you may not be ready to take on the Mushmom right now, so if you change your mind, talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Hahaha, you don't need to hurry. I got the footage already! This wasn't an audition; I filmed it all for the movie, and it's in the can now! You were absolutely fantastic--the skill, speed! It was an honor to film it. Don't worry, you'll be credited as 'J.Doe', doesn't that sound great? You'll be a big star!" />
+            <string name="1" value="Thanks to your help, this is going to be a fantastic movie. Yes, yes, yes, here's your movie guarantee. The movie should be out soon, so wish us luck!" />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hey! I don't think you've killed #b#o6130101##k yet. You can't be in a movie like THAT!  *shakes head* No special effects, no sale!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6130101" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8029" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

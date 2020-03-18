@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28272.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] Intimidating Octopuses" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1052106:##k in #b#m103000000##k has a simple favor to ask you." />
+        <string name="1" value="He wants you to hunt 30 #rOctopuses#k that have been pestering him. They can be easily found in #b#m103010000##k.\n\nReport back to #b#@1052106:##k in #b#m103000000##k upon completion." />
+        <string name="2" value="As requested, you have hunted the #rOctopuses#k that have been pestering #b#p1052106##k in #b#m103000000##k." />
+        <string name="demandSummary" value="#o1120100# #a282721#" />
+        <string name="rewardSummary" value="Exp 1,300&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Let me tell you about the time I almost died.\nI was playing outside when something popped out of nowhere and tried to strangle me. I looked up to see what it was and it was a gigantic #rOctopus#k that wouldn't let me go!\n\nYou don't understand how scary it was!\n\nSo, it brings me to what I wanted to ask you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you go to #b#m10301000##k, you'll see a lot of #rOctopuses#k. You should regulate on them so they don't bother me ever again! Eliminate about 30 of them for me, would you?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You, too, are afraid of the #rOctopuses#k, right?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you really eliminated all those scary Octopuses already?\nWow, I feel so safe now!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I can go outside and play whenever I want now!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you finished hunting all the #rOctopuses#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1120100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052106" />
+            <int name="lvmin" value="12" />
+        </imgdir>
+    </imgdir>
+</imgdir>

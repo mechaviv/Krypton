@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6273.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lava Mug" />
+        <string name="parent" value="Clean water from the Lava" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value=" The guard of the Abandoned Mine, #b#p2030008##k told me to go see #b#p2020000##k if I want a container that can hold lava." />
+        <string name="1" value=" #b#p2020000##k isn't sure if he can make a container that will hold lava but he says he'll try. He'll need #b#t4000081#, #t4021007#, and #t4021009##k.\r\n#i4000081##t4000081# #b#c4000081#/30#k\n#i4021007##t4021007# #b#c4021007#/2#k\n#i4021009##t4021009# #b#c4021009#/1" />
+        <string name="2" value="With help from #b#p2020000##k, I was able to make a container that'll hold lava. Let's go back to the Abandoned Mine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4021007" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4021009" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001109" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm... If I, #b#p2020000##k can't make it, nobody can. Do you want anything else?" />
+            <imgdir name="yes">
+                <string name="0" value=" A container that holds lava? What are you going to do with it? Drink lava? You're out of your mind! But whoever you are, I'm going to make it for you. It will be a nice challenge for me." />
+                <string name="1" value="You need to gather all ingredients I need. #b2 #t4021007# , 30 #t4000081#, 1 #t4021009##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you can't, I can't make the container!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm. If I have ingredients, I can make it now. The most important thing is ingredients. Usually, they can't make it because they don't know how to gather what I need." />
+            <imgdir name="yes">
+                <string name="0" value="You know, I don't know why you want to drink lava, but good luck! I made the best container for you. Are you going to the Abandoned Mine? There must be something there, a keeper..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hey, I don't have enough ingredients. I'll need #b30 #t4000081#, 2 #t4021007# , 1 #t4021009##k. If I don't get them, I can't make it. Gather everything!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" #b2 #t4021007# , 30 #t4000081#, 1 #t4021009##k. Then I can make it." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" Did you lose #b#t4001109##k? You have to recycle it as it can't be broken. I made some glass bottles. I'll give it to you. Don't lose it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021007" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4021009" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6272" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001109" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2280000" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="212" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2121003" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

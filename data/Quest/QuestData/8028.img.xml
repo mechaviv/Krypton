@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8028.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Veggies are Awesome" />
+        <int name="area" value="48" />
+        <string name="0" value="Recently, the price of veggies have skyrocketed. What happened? Last thing I need is an extra expense--mesos are tight these days!" />
+        <string name="1" value="According to Umi, #b#o8140500##k went crazy at the farm, ruining the harvest in the process. I wonder what's going on here? It seems very strange, as if evil spirits have overcome the town. I can't let that happen! \n#t4000080#  #b#c4000080##k/200" />
+        <string name="2" value="By eliminating #b#o8140500##k, I feel like I did my part in protecting the food table of each and everyone in Showa Town. I better start eating my veggies..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000080" />
+                    <int name="count" value="-200" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2001000" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The prices on vegetables have been skyrocketing lately, and I don't like it one bit! Don't you think it's not right?" />
+            <imgdir name="yes">
+                <string name="0" value="Right? Right? You just can't live a healthy life without eating your vegetables." />
+                <string name="1" value="Pretty much all the vegetables that are sold here are apparently being plucked out of the farm near the Desolate Cemetery." />
+                <string name="2" value="There's been a sudden increase of menacing animals around here, especially the #b#o8140500#s#k that have been causing great havoc. Please eliminate them for me. I'm not sure what's going on--I once thought that there was a band of raccoons that seemed to be the ringleaders, but I haven't seem them for quite some time...ever since this strange evil aura appeared in the middle of the night. It was gone by the morning, but I wondered if that has anything to do with the strange occurrences here..." />
+                <string name="3" value="As a sign of proof, please get me #b200 #t4000080#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh no no... you hate veggies?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast~! They were so strong that everyone had trouble with them. Thank you so much! Hope you like this as a reward!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected #b#t4000080##k, yet. Keep trying." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000080" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120005" />
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

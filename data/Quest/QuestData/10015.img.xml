@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Obtain the Special Agent Badge!" />
+        <string name="parent" value="Today's Mission! " />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <int name="autoComplete" value="1" />
+        <string name="1" value="Today's Mission! \r\n&lt;Hunt in the mini dungeon and obtain #b1 Special Agent Badge#k!&gt;\r\nToday's mission is to obtain a #bSpecial Agent Badge#k from the mini dungeon...\nYou should go see Agent O.  If I haven't been introduced to #bAgent O#k yet, you should first go see #bAgent Gaga#k." />
+        <string name="2" value="Today's mission has been completed." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022336" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want to receive today's mission again?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In order to retrieve the #bSpecial Agent Badge#k, you need to go into the mini dungeon.  If you have already helped #bAgent O#k once before, go see #bAgent O#k. If you haven't helped him before, first go see #bAgent Gaga#k. Let's hurry and solve the mystery of #e#rMaster M's#k#n identity.  " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you want to receive it again, just let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good job.  You have completed today's mission.  Your mission performance file is scheduled to be reported to headquarters." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000036" />
+            <int name="infoNumber" value="10024" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="clear" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000036" />
+            <int name="infoNumber" value="10024" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="ing" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

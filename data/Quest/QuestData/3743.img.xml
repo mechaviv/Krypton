@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3743.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The New and Improved, Oberon" />
+        <string name="parent" value="Year 2230- Imminent Collapse!" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value="Andy says, based on the findings from the previous time travels, it is likely that the Fifth Time Sand is in the year 2230. He wants you to defeat Oberon, an android even more advanced than Aufheben, and bring back the Time Sand." />
+        <string name="2" value="As Andy suspected, Oberon had the Fifth Time Sand. You have successfully defeated Oberon and found the Fifth Time Sand in the dangerous tower in the year 2230." />
+        <string name="demandSummary" value="#i4032518:# #t4032518:# #c4032518# / 1&#xD;&#xA;#o8220012# #a37431#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 200,000\r\nCan participate in the &quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032518" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You'll now travel through time a fifth time.. An android known as Oberon appeared in the year 2230. He is even more advanced than Aufheben. From what we've studied, there's a good chance that Oberon has the fifth Time Sand. Defeat Oberon and get me that Time Sand." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="We don't have much time!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you saying you want to give up? Now?! Geez..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I was right. Oberon had the Time Sand. We're finally getting somewhere. Thank you again." />
+            <imgdir name="yes">
+                <string name="0" value="Now, I suppose we one last time to travel to..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Travel to the year 2230, defeat Oberon, and bring back the Time Sand." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Travel to the year 2230, defeat Oberon, and bring back the Time Sand." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032518" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220012" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3742" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

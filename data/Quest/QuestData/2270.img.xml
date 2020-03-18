@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2270.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="My dream is to..." />
+        <int name="area" value="30" />
+        <string name="0" value="Blake has a dream...but he wants you to talk to him about it in a little bit, since he's in the middle of something." />
+        <string name="1" value="Blake wants to be a singer! Will his dream come true? Talk to #bLana#k the CEO of Big Hit Records. She's shopping in Kerning Square." />
+        <string name="2" value="Will Blake's dream ever come true?" />
+        <string name="rewardSummary" value="1,320 EXP\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1320" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, my name is Blake and I'm a public service worker in charge of Kerning Square's Lost and Found. Currently, my job is to find lost belongings and return them to their owners, but I have bigger and better things planned. Would you like to hear my dream?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="My dream is to become a famous singer and perform at the new concert hall in Kerning Square! I had an audition with Big Hit Records, and I just know the CEO will give me a chance to perform there one of these days. I'm on duty so could you, #b#h0##k, talk to #bLana#k of Big Hit Records and put in a good word? She's out shopping today." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I have a dream!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Are you here to become a star? But your sense of style is all wrong. Tsk. \r\n#L0##b(How rude! If it weren't for Blake... Argh...) No, I am not here to be a star, ahem. I'm here for Blake, the public service worker at the subway station in Kerning Square.#l\n#k" />
+            <string name="1" value="Oh, right.  Blake. That boy's got talent. \r\n#L0##bBlake says his dream is to perform in Kerning Square. Could you give him a chance?#l\n#k" />
+            <string name="2" value="Hm, I'll have to think about it. I'm not sure he's ready to make his debut just yet. " />
+            <imgdir name="yes">
+                <string name="0" value="Give me some time to think." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You haven't talked to Lana, the CEO of Big Hit Records, yet? I'm sure you'll find her if you go up those stairs and enter the Shopping Center." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052117" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2292" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

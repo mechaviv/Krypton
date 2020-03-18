@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9841.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Violent Monkeys" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="Teach those violent monkeys and Malady a lesson and report back to Estelle.\n\n#o3210800# #r#a98411##k \n#o4230101# #r#a98412##k\n#o5300100# #r#a98413##k" />
+        <string name="2" value="You eliminated the monkeys that were pestering Estelle." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hurry! This is urgent! Please promise me that you'll help!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Whew! Thanks. Now, do something about those monkeys. What monkeys? Those horrible monkeys that throw bananas at anyone who passes by! Estelle hasn't been able to go anywhere because of those violent monkeys." />
+                <string name="1" value="Eliminate #r50 #o3210800#s#k and #r40 #o4230101#s#k. While you're at it, please eliminate #r10 Witch #o5300100#s#k as well.  Once you're done, be sure to let #b#p1032105##k know that you eliminated the monkeys." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="So you're saying you don't want to help me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Eliminate #r50 Lupins, 40 Zombie Lupins, and 10 Maladys#k. Once you're done, report back to #bEstelle#k and let her know." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Have you received the request from #bCassandra#k yet? Please defeat #r50 Lupins, 40 Zombie Lupins, and 10 Maladys#k so that I can walk around freely." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032105" />
+            <string name="endscript" value="huntUP2" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3210800" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4230101" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5300100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="30" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="100040101" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

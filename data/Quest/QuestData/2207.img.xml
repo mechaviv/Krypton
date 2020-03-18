@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2207.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lazy Little Calico" />
+        <int name="area" value="30" />
+        <string name="0" value="At The Nautilus, there's a kid who is forever curious and loves to make pranks. Bartol tells me now he has a good prank to pull on someone. If I want to join in, I better head over to the middle hallway of The Nautilus to find Bartol!" />
+        <string name="1" value="All #bCalico#k ever does is sleep, sleep, sleep, when what he should be doing is keeping an eye out on the crew's bedrooms. Bartol thinks it would be funny to throw an #bEvil Eye Tail#k onto Calico and see how he reacts. Might be a fun little prank, no? \n\n#i 4000007##t 4000007#  #b#c 4000007#/10#k " />
+        <string name="2" value="Calico awakes, in total shock. C'mon, Calico, you've got to stop falling asleep!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕~! 저기 복도 끝에 선원들이 자는 침실이 있는데… 혹시 가본적이 있어? 있다구? 그 앞에 있는 갤리코형을 본 적이 있나? 음… 매일 졸고 있는 사람이야. 알고있구나! 그 형을 골탕먹이려고 하는데, 어때? 같이 해보는게?" />
+            <imgdir name="yes">
+                <string name="0" value="갤리코형은 밤마다 딴짓하느라 잠은 안자고 낮에 저렇게 서서 졸아. 낮잠자느라 밤에 잠을 안자는 건지도 모르지만… 아무튼, 갤리코형에게 이블아이 꼬리를 던져서 깜짝 놀래켜주면 재미있을 것 같지 않아? 하하하!" />
+                <string name="1" value="재미있겠지? 그럼 #b이블아이의 꼬리 10개#k만 구해서 #b갤리코#k형앞에 던져봐. 꼭 뱀이 나타났다고 소리도 질러야해. 알았지? 하하하. 기대된다." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="에이~ 이런 재미있을 것 같은 일에 동참하지 않다니. 나중에 후회하지 말라구." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <string name="npcAct" value="quest" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there! At the end of the hallway, you'll find the bedroom where the crews sleep, and... have you ever been there before? Really? You have? Have you seen Calico standing in front of the door? Yeah, he's the one that always falls asleep on duty. Oh, so you know him! I'm trying to pull something hilarious on him. What do you think? Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Calico always does something weird at night instead of sleeping, so whenever he's on duty in the afternoon, that's all he does, nod off. Maybe he doesn't sleep at night because he's asleep in the afternoon, but... anyway, I want to freak Calico out by tossing an Evil Eye Tail on his face. Don't you think he'll freak out like crazy?? Hahaha!" />
+                <string name="1" value="Sounds awesome, right? Then can you get #b10 Evil Eye Tails#k and toss one in front of #bCalico#k? You need to also yell that there's a snake on the loose, okay? Hahaha, this is going to be a classic." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Booo, you aren't going to do it? Seriously, it's going to be fun! Don't regret it!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Zzzz... meat... meat... rice... yum...Zzzz..." />
+            <string name="1" value="#b(It's a snake! A snake!)#k" />
+            <imgdir name="yes">
+                <string name="0" value="#rAhhhhhhhhhhhhhhh~~~~~~~~~!#k" />
+                <string name="1" value="Hey, I didn't fall asleep! What was that all about. I kenw it was an Evil Eye Tail. I was just pretending to be surprised..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I want 10 Evil Eye Tails to freak out Calico." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Zzzz.." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000007" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092011" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1025.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maria's Nutritious Juice" />
+        <string name="parent" value="Maria and Shanks" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="#b#p2103##k wants to speak to you..." />
+        <string name="1" value="#p2103# wants to make some #bnutritious juice#k and asked you to get these ingredients: #b#t4000004##k and #b#t4000011##k... Wonder what kind of juice this is...\n\n#i4000004##t4000004# #b#c4000004##k/1 \n#i4000011##t4000011# #b#c4000011##k/5" />
+        <string name="2" value="You gathered all the ingredients for #p2103#.  #p2103# seemed to need another favor..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi? You're an adventurer, aren't you? Hmm... May I ask you for a favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Ah! Thank you. It's not that hard. You only have to find healthy ingredients for juice. The ingredients are one #b1#t4000004##k and 5 #b#t4000011#s#k.It shouldn't be hard to find them." />
+                <string name="1" value="You can get #t4000004#s from #o0210100#s and #t4000011#s from #o0120100#s. Slimes are green jumping monsters. They're fast and strong, so be careful!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... Since you just started your adventure, I guess you're quite busy. When you are free, come back to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! You have all ingredients to make some nutritious juice. Fantastic! Now, it will only take a second to make the juice!" />
+            <imgdir name="yes">
+                <string name="0" value="Would you please wait until I make the juice?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... I think you haven't gathered the ingredients yet. You need #bone#t4000004##k and #bfive#t4000011#s#k. If you want to know how many ingredients you have gathered, please check your inventory or quest window." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

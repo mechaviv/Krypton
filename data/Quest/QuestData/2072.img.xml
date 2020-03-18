@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2072.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stranger's Identity" />
+        <string name="parent" value="Mystery of Naora Hospital" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="The Stranger I met in Naora Hospital was shockingly a Ghost! She was waiting for Naora, not knowing that she herself is dead... This Stranger wouldn't believe that she is dead. She told me that she needs #b100 Charms of the Undead#k in order to live again, and asked me to find it. Can she really live again with just these...? \n\n#t4000008# #c4000008#/100" />
+        <string name="2" value="#p1052105# who I met in Naora Hospital was a Ghost. She was staying in the Hospital, not knowing that she's dead. She couldn't live again with #t4000008#. It seems that she already knew she couldn't make it...I really hope she returns to heaven." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102053" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah ... this may be cracked a little, but I can definitely see myself in it." />
+            <string name="1" value="Thank you so much. I need to get out of here as soon as I get these bandages off. It's waaay too cold in here." />
+            <string name="2" value="What the!!!! No way!!!! What ... what happened here?? Why can't I see myself through the mirror? Did I ... die?????? No way, that cannot be true!! I can't be dead yet!!! Hey there, please help me out once more!!" />
+            <imgdir name="yes">
+                <string name="0" value="When you defeat the #b#o2230101#s#k, they gives off #b#t4000008##k, and from what I've heard, that charm has the power to revive the dead. Please get me the charm. #b100 #t4000008##k and maybe I may come back alive." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How can you be so cold!!! I'll be cursing you forever!!!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahh, thanks for getting me the charms. I can't believe you got me all that ... well, I'll have to be honest with you. Even with those charms, I don't think I'll be coming back to life." />
+            <string name="1" value="Even if I come back alive with these charms, I won't be fully alive, per se, kind of like a zombie. I can't believe I figured this out just now ... but I will never forget the fact that you took great lengths to help me out. Thank you so so much." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the cape that I gave you? It's a cape made of the devastating powers of  the Charms of the Undead. I'll see you ... around ... somewhere ... somehow ..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't get #b100 #t4000008#s#k? Please hurry ... man, it's cold around here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052105" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052105" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2071" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

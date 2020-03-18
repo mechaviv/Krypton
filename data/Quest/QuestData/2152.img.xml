@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2152.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Truth of the Rumor-Betty" />
+        <int name="area" value="30" />
+        <string name="0" value="Let's ask botanist #b#p1032104##k in #m101000000# about the rumor." />
+        <string name="1" value="Let's ask botanist #b#p1032104##k in #m101000000# about the rumor." />
+        <string name="2" value="Asked Doctor #p1032104# about the rumor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Welcome. How can I help you?\r\n#b#L0#Do you know anything about a ghost tree?#l" />
+            <string name="1" value="You must be helping Doctor #p1022006#‘s research, right? Well, I did a bit of research myself after he asked me, but I didn't get much. The only thing I figured out was that the forest on the border between #m102000000# and Ellinia is drying up very quickly. It may not look so fast from the surface, but it is very drastic.\r\n#b#L0#Indeed. Thank you very much for your time.#l" />
+            <string name="2" value="I'm sorry I can't be of much help." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2144" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2152s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

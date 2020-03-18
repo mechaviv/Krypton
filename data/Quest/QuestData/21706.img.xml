@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21706.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="An Information Dealer's Work" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You should start training in Victoria Island and ask #bthe Information Dealer of #m104000000##k, named #b#p1002104##k, for some help." />
+        <string name="1" value="#p1002104# tells you there's no better way to learn the inner workings of the world than to be an Information Dealer, and he offers you a position working with him. #p1002104# then gives you a simple quest to introduce you to the roles of an Information Dealer and informant. The quest involves finding out the latest rumors the crewmembers of #b#p1002001##k have been talking about.\r\n\r\n#y21707# #b(#u21706#)#k" />
+        <string name="2" value="You relayed to #p1002104# all the rumors you heard from #p1002001#. You guess this is the type of thing that informants do all the time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="620" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you want to gain life experience through training, you've come to the right place. Becoming an informant would be perfect for that! What's an #binformant#k, you ask? It's simple really." />
+            <string name="1" value="The role of the Information Dealer is to gather up information collected from various regions and sell it to people willing to pay a price for that information. The role of the informant is to gather that information for the Information Dealer. Wait, I think it'd be better for you to just go out and try it." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="See #b#p1002001##k on the left side of #m104000000#? He's one of the more famous crewmembers. Your task is to ask him for the latest rumors that the other crewmembers might be talking about, okay? Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm…so I don't think you understand the role just yet. I'll explain it to you again, so talk to me when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you manage to squeeze some valuable information out of #p1002001#? Spill the details for me.\n#b#L0#(You tell him what you learned from #p1002001#...)#l\n#k" />
+            <string name="1" value="Okay, that's pretty good. Wasn't that simple? #bGathering up information like this, that's the role of an informant#k, okay?" />
+            <imgdir name="yes">
+                <string name="0" value="I seriously think you have a talent for being an informant. Continue to work like this, and you'll gain some valuable experience on gathering valuable information. Shall we move on to the next task?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="Haven't you gone to see #b#p1002001##k yet? Your job is to gather up the latest information that's circulating among the crewmembers by talking to #p1002001#. If #p1002001# #basks for something in return, then you'll have to give him whatever he wants in exchange for the information#k. It's just gathering up rumors, so he won't ask you to do much." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21707" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21705" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

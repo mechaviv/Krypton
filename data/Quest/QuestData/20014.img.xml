@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20014.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Empress is Waiting" />
+        <int name="area" value="15" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Start a conversation with #b#p1102008##k." />
+        <string name="1" value="In a courteous tone of voice, #p1102008# said he wanted to quiz you on your newly-gained knowledge to make sure that you learned the necessary basics of Maple World. When you completed the quiz, #p1102008# gave you a #t4032269# and asked you to report to #bEmpress #p1101000##k." />
+        <string name="2" value="You went to see Empress #p1101000#, and the pale and fragile Empress welcomed you with a warm smile." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032269" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="140" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032269" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Welcome, #h0#. I've been waiting for you. I'm sure my brothers have been teaching you the basics of Maple World. It is now time for me to test your newly-gained knowledge. Are you ready?\n#b#L0#Yes, I am.#l\n#L1#What? A quiz? NOOOO!#l\n#k" />
+            <string name="1" value="Here is your first question. The favors or requests of the citizens of Maple World are called 'Quests.' In order to view the quests that are available to you, or to check the quests that you have either completed or are currently in the process of completing, what hotkey do you press?\n#b#L0#A#l\n#L1#I#l\n#L2#Q#l\n#L3#Z#l\n#k" />
+            <string name="2" value="Here is the second question. You can acquire items by completing a quest, hunting monsters, or breaking boxes. The items you acquire get stored in your Inventory, but which hotkey do you press to open the Inventory window?\n#b#L0#W#l\n#L1#I#l\n#L2#K#l\n#L3#M#l\n#k" />
+            <string name="3" value="Here is your third question. Earning EXP allows you to level up, and leveling up allows you to earn Skill Points. How many Skill Points do you receive each time you level up after you've become a Knight at Lv.10? \n#b#L0#1#l\n#L1#3#l\n#L2#5#l\n#L3#10#l\n#k" />
+            <string name="4" value="Here is your fourth question. In Maple World, you can defeat monsters by using regular attacks or special skills. But which do you use to break open boxes? \n#b#L0#Regular Attacks#l\n#L1#Skill Attacks#l\n#k" />
+            <string name="5" value="Bingo! You have answered all the questions correctly. If you take #t4032269# to the Empress #p1101000#, you will be recognized as a Noblesse of #p1101000# Knights. Would you like to receive the #t4032269# right away?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Technically, it is a quiz, but it's really not that hard. And you can always retry. Stop worrying so much and just go for it!" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Wrong. Pressing 'A' won't do much although you can assign a keyboard function to that key. Please try again." />
+                    <string name="1" value="Wrong. 'I' is used to open the Inventory window. Please try again." />
+                    <string name="3" value="Wrong. 'Z' is used to pick up items. Please try again." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Wrong. 'W' is used to view the world map. No one's told you about this key yet! How wonderful that you knew this key had a function! But you're still wrong. Please try again. " />
+                    <string name="2" value="Wrong. 'K' is used to view your skills. Please try again." />
+                    <string name="3" value="Wrong. 'M' is used to view the Mini Map. Please try again." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Wrong. Isn't 1 too small a number? Please try again. " />
+                    <string name="2" value="Wrong. It's less than 5. Please try again." />
+                    <string name="3" value="Wrong. Isn't 10 too big a number? Please try again." />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Wrong. You cannot attack boxes using your skills. You won't even scratch them using skills. Please try again." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The Empress can be found in the center of Ereve, so follow the arrows on your left to head to Ereve. Don't worry if you happen to lose the #t4032269#. I'll write you as many as you need." />
+                <string name="1" value="I wish you the best!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm? If you don't receive your Certificate right away, you are going to have to answer the questions again from the very beginning. I suppose it won't take long since you already know all the answers." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You really came! I'm so happy to see you. Thank you for becoming a knight. For a long time, I've waited for someone like you to protect Maple World from the Black Mage. " />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to see the Empress yet? The Empress can be found in the center of Ereve, #bright next to #p1101001##k. Press #bW#k to view it on the World Map." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You seem like a new Noblesse visiting Ereve. You don't have a #t4032269#. Did you lose it somewhere? If so, please go and see #b#p1102008##k and bring a #b#t4032269##k..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh, no! Have you lost your Noblesse Certificate? Well, I'll write you another one. Please present it to the Empress." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032269" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20013" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

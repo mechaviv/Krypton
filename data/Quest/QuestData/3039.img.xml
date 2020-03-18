@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3039.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Request from Staff Sergeant Charlie" />
+        <string name="parent" value="Alpha Platoon's Network of Communication" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="1" value="I found Staff Sergeant Charlie at Orbis, and he asked me to get him #b2 refined #t4011005#s#k while giving me an item which is to be given to Master Sergeant Fox." />
+        <string name="2" value="I gave Orihalcon to Sergeant Charlie. What would he give Master Sergeant Fox?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3001" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What? You came all the way to here by #b#p2020003##k's request? I thought I was the only survivor. I knew that nothing can hurt #b#p2020003##k. HAHA!" />
+            <string name="1" value="It is good to hear that he is alive. So he is working at El Nath huh? Okay... I found #b#t4031049##k and this would be somewhat related to our mission." />
+            <string name="2" value="So #b#p2020003##k will also be wating for this. I will give this to you if you give me 2 #b#t4011005#. You can't say that you have met me without this." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="So #b#p2020003##k will also be wating for this. I will give this to you if you give me 2 #b#t4011005#. You can't say that you have met me without this." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="So #b#p2020003##k will also be wating for this. I will give this to you if you give me 2 #b#t4011005#. You can't say that you have met me without this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011005" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

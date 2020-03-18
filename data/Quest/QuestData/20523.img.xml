@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20523.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Riding Mimiana" />
+        <int name="area" value="15" />
+        <string name="0" value="How does a fully-grown #t1902005# act? I better talk to #b#p1102002# the Mount Trainer#k for the answer." />
+        <string name="1" value="#p1102002# told me that #t1902005# may have grown quite a bit, but it's not ready to be mounted, and told me I'll need to make it stronger by feeding #t1902005# with some of #b#p2060005#'s Supplements#k. He then instructed me to go purchase #p2060005#'s Supplements. Aren't they quite expensive?" />
+        <string name="2" value="#p1102002# handed me a mountable #t1902005# and #t1912005#, and taught me the Monster Mount skill." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032117" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1912005" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="10001004" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="1000" />
+                        <int name="1" value="1100" />
+                        <int name="2" value="1110" />
+                        <int name="3" value="1111" />
+                        <int name="4" value="1112" />
+                        <int name="5" value="1200" />
+                        <int name="6" value="1210" />
+                        <int name="7" value="1211" />
+                        <int name="8" value="1212" />
+                        <int name="9" value="1300" />
+                        <int name="10" value="1310" />
+                        <int name="11" value="1311" />
+                        <int name="12" value="1312" />
+                        <int name="13" value="1400" />
+                        <int name="14" value="1410" />
+                        <int name="15" value="1411" />
+                        <int name="16" value="1412" />
+                        <int name="17" value="1500" />
+                        <int name="18" value="1510" />
+                        <int name="19" value="1511" />
+                        <int name="20" value="1512" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#t1902005# is all grown up right now, but you can't ride it yet. First of all, #b#t1912005##k for Mounts must have bones that are more solid than regular #t1912005#, and that takes decades for it to happen. Of course, there's also a way where you won't need to wait that long." />
+            <string name="1" value="Do you know #b#p2060005##k of #b#m230000000##k? He has spent a long time taking care of animals and along the way, he made some unique discoveries. #bSpecial Supplements#k are one of those discoveries. All you need is #t4032117#, and #t1902005# will become healthy and sturdy enough to be Mounted on." />
+            <string name="2" value="Go to #m230000000# and purchase Special Supplements from #p2060005#. Please remember that they won't be cheap by any means." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In the mean time, I'll be here training #t1902005# so once it takes the supplements, it'll be ready to go." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... You've raised #t1902005# this far, and you're giving it up now? Don't you think all that time might go to waste if you are giving up now?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So here are the supplements from #p2060005#. Let's feed this to #t1902005# right now. Ha! Oh, this is really kicking in. It may be pricey, but #p2060005#'s supplements really do the trick. Okay, your #t1902005# is now ready to be mounted. Take good care of #t1902005#, okay?" />
+            <imgdir name="yes">
+                <string name="0" value="I have also taught you the Monster Mount skill so you can actually ride #t1902005#. I have also given you a #t1912005# as a bonus, so happy Mounting!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Were you unable to obtain #b#t4032117##k? I understand... it's not cheap by any means." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032117" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20522" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

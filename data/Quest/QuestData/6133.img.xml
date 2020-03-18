@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6133.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Caron's Note" />
+        <string name="parent" value="Caron's Notebook" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value=" According to #p2060100#, the author of this book appears to be Caron, a boatman at the River of Death who takes spirits to the underworld. He wrote stories about ferrying those who died to the underworld; but yet returned, somehow brought back to life. As I continued to read, I noticed a familar name. It was #b#p1061011##k of #bSleepywood#k... #p2060100# told me I could find out about the secrets of death if I meet those who returned from the grave. There is a secret here that I must discover!" />
+        <string name="2" value=" #p1061011# knew about Caron as #p2060100# said. It appears there is a way to learn how to bring back the dead back to life. Such a technique would certainly come in handy during encounters with dangerous monsters. I must learn it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161017" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161017" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Caron... It's a name that everyone will eventually get to know. Caron is the boatman of the death river. He takes spirits to the other world, and he alone is the author of this book. " />
+            <string name="1" value=" Interesting. Those names written..." />
+            <string name="2" value=" You...are you interested in the secret of cheating death?" />
+            <imgdir name="yes">
+                <string name="0" value="Very well, look at the book carefully. There may be the #bnames you know#k. If you go and see him, you might get the answer. Be careful. In order to have this type of power, you may have to pay a terrible price..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Perhaps you are right not to proceed further. You never know what you might have to give up..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" ..Do you want to see me?...it is not your time. Yet." />
+            <imgdir name="yes">
+                <string name="0" value=" ...#b#t4161017##k... Yeah. You saw my name on it... and knew I'm here...Very well. Let us proceed. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" Read the book carefully and if you recognize any names, go and see them." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="...Do you want to see me?...I believe you are missing something, young traveler..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" Foolishly, you lost Caron's Note. Fortunately, I cast a Return Spell on Caron's Note to get it back. Here you are. This is Caron's Note--do not be so careless next time. " />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161017" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6132" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

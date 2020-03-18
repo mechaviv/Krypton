@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6161.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Magician's Story" />
+        <string name="parent" value="Shammos's past" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="#p2040052# said the book #p2020009# left for me is quite strange, and relates to Magicians somehow. I'm supposed to deliver it to #b#p1032001##k if I'm finished with it. Magician's story? What could it be? Maybe I can ask #p1032001##k.\n\n#t4161020# #b#c4161020# / 1#k" />
+        <string name="2" value=" Upon delivering the book to #p1032001#, I decided to ask about the book. My words met with a empty look and eerie silence. I may have just hit a nerve..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161020" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161020" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I found it. This is what #p2020009# asked me to keep. She said it's a good book so I read it several times. It's so hard for me to understand! " />
+            <string name="1" value="When you're finished reading the book, would you please give it to #b#p1032001##k of Ellinia? Robeira has kept this book quite a long time. #p2020009# said it's ok to give the book to #p1032001#. Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. This book is very old and you need be extra careful with it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Ah... You look busy anyways..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh. You brought the book. Thank you. Although I study spells in #m101000000#, I sometimes feel frustrated. We have various books to study, but it's still hard to be a master... That's why I looked for this book. \n\r#L0# #bWhat kind of book is this?#k" />
+            <string name="1" value="......." />
+            <imgdir name="yes">
+                <string name="0" value=" It's hard to explain about this book. If you really want to know, please come back. I need time to think..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="After reading the book, give it to #p1032001#." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" Welcome!  Are you here to study spell-casting? " />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You picked #t4161020# up before. Because it is #p2020009#'s, it is meant to be returned to the library. Be careful. There are many out there who need to read this book." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161020" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6160" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

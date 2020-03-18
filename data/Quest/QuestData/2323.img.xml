@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2323.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Over the Castle Walls (3)" />
+        <int name="area" value="30" />
+        <string name="0" value="You think the #bSecretary of Magic#k might shed some light on how to climb past the wall.\r\n" />
+        <string name="1" value="You need to gather #b100 #t4000501#s#k to bring to the #bSecretary of Magic#k for creating the #bThorn Remover#k." />
+        <string name="2" value="You gathered #b100 #t4000501#s#k and gave them to the #bSecretary of Magic#k." />
+        <string name="summary" value="You eliminated the #bIntoxicated Pigs#k and gathered up #b100 #t4000501#s#k." />
+        <string name="demandSummary" value="#i4000501:# #t4000501:# #c4000501# / 100" />
+        <string name="rewardSummary" value="EXP 17,000\r\nCan proceed to 'Over the Castle Walls (4) quest\r\nCan proceed to 'James's Whereabouts (1)' quest\r\nCan proceed to 'Sending Provisions (1)' quest\r\nCan proceed to 'Stop the Wedding' quest\r\nCan proceed to 'The Seal of the Empire' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="17000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000501" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2324" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah! There might be a way! If you utilize the Thorny Vine that we'd planted for the protection of our castle, you just might be able to enter the castle's premises!" />
+            <string name="1" value="If you can somehow remove the thorns from the Thorny Vine, then you should be able to climb over the castle walls just by stepping over the vines. Of course, that would also require a Thorn Remover…" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="A #bThorn Remover#k is created out of the extracts of the mysterious herbs in the highlands of El Nath. King Pepe used these herbs to intoxicate pigs and take over the Mushroom Forest. #b#t4000501##k is where you'll find the extracts of the herb. Please gather #b100 #t4000501#s#k and bring them to #bSecretary of Magic#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is your only hope of entering the castle. Please think it through and come back to see me if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What? You need a #bThorn Remover#k? Wow, always asking for things that are so difficult to obtain… Well, have you brought all the ingredients for making the remover?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm, so this is the tail of a pig that was intoxicated by the magic herbs found in the highlands, eh? I can't believe King Pepe controlled his monsters with this… Anyway, you should extract its concentrate, then use spells to purify the extract." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Gather #b100 #t4000501#s#k, then take them over to #b#p1300004##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm? You want me to make a #bThorn Remover#k for you? Simple, you'll need to bring me the ingredients. No point standing here without any ingredients to work with." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000501" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2322" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

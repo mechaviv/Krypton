@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1023.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Here Little Piggy..." />
+        <int name="area" value="20" />
+        <string name="0" value="#b#p20002##k in #b#m60000##k looks upset. What's going on?" />
+        <string name="1" value="#p20002# heard that somebody says he looks like a #o1210100#. That's why he's so mad. To be honest, he does sort of look like a… Anyway, for #p20002#'s sake, you should defeat #r2#o1210100##k. \n #k \n#o1210100# #r#a10231# #k" />
+        <string name="2" value="You defeated 2 #o1210100#s! #p20002# seemed satisfied." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Argh! I've had it up to here! I can't stand it! Someone is spreading rumors that I look like a #o1210100#! What an insult! I need your help!" />
+            <imgdir name="yes">
+                <string name="0" value="Clear out all the #o1210100#s around #m60000#! If all the #o1210100#s disappear, so will the rumor. What? There are too many #o1210100#s? Oh, come on. Fine, just kill #r2 #o1210100#s#k. You can handle that, can't you?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to help me? Are you saying I look like a #o1210100#?!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes! You killed two #o1210100#s! Wonderful! Thank you so, so much! That rumor should go away now." />
+            <imgdir name="yes">
+                <string name="0" value="You saved my life. If I ever find out who spread that rumor, he's a dead man." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You still have #rtwo#o1210100#s#k to defeat. You can do it if you're willing to. Please try! My reputation is at stake!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

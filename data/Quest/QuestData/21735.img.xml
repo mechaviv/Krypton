@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21735.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Seal Stone of Victoria Island" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You weren't able to gather any information on the #t4032323#, but #p1002104# seems strangely confident about where you stand. Go talk to #b#p1002104##k." />
+        <string name="1" value="#p1002104# says that ever since he got ambushed by the #o9300346#s, he's been using any means necessary to find the Seal Stone. He feels that holding on to the Seal Stone would be dangerous, so he wants to store it in #b#m140000000##k, the deserted island. I'd better deliver the #bSeal Stone to #p1201000##k." />
+        <string name="2" value="#t4032323#. No one knows what its purpose is, but it is obvious that Black Wings want it. Desperately. You can't let that happen… Just as you're thinking this, #p1201000# hands you a new skill called the #bCombo Drain#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032323" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="I've been receiving updates about the Black Wings from Tru. I heard he even got attacked not too long ago. What about you? Are you alright? Mmm... Is this really the #t4032323#? So Tru did end up finding the #t4032323# before they could." />
+            <string name="1" value="I don't know what this item even does, but I do know that it has something to do with the Black Mage. As long as they are looking for this, we'll have to protect it. No matter what it takes, you must become stronger." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to see #b#p1201000##k yet? Don't worry, don't worry. Even most information dealers don't know much about #m140000000# Island. #b#m140000000##k is the safest spot. Trust me on this and let #p1201000# handle the Seal Stone." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="...? What is it? Have you completed your training? Since #o9300346# is still alive, you must train harder. You should ask #bTru#k for some help." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032323" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21735e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21734" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21735s" />
+            <int name="lvmin" value="37" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

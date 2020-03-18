@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21726.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Your Fourth Informant Assignment" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You have now reached Level 28, which means #p1002104# will be giving you your fourth assignment as an informant today. Head to #b#m104000000##k and meet with #b#p1002104##k." />
+        <string name="1" value="Many reports have been filed concerning a bunch of depressed #o2230101#s in #m105040300#. This has to be the work of the puppeteer. Head over to #b#m105040300##k and talk to the person who first discovered this. They say it's a boy named #b#p1061019##k." />
+        <string name="2" value="You met with #p1061019# in #m105040300#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You look like you've been gaining a lot of EXP. I've received some new information. Apparently, the #b#o2230101#s in #m105040300# are suffering from depression. Don't you think it's closely related to the puppeteer...?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The person who first reported this finding was a boy named #b#p1061019##k. Go over to #b#m105040300##k and talk to him about the #o2230101#s, okay? If you find something that leads to the puppeteer, don't just attack right then and there. Make your way back here and let me know, and we'll plan from there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm…really? Well, if you say its probably not related than maybe you're right....? Just think about it again and let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, hello there. Are you the one that #p1002104# was talking about? Nice to meet you! My name is #p1061019#, and I have been exploring Victoria Island in hopes of one day becoming stronger." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #b#m105040300##k yet? You know how to get there, right? #m105040300# is the dungeon located at the center of Victoria Island. There's a way that leads to that town wherever you are in Victoria Island. If you really can't find the way there, then you can take the #bVIP cab#k instead." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061019" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21724" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

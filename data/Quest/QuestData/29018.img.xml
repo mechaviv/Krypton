@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29018.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title - Soul Guardian" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142139" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You can apparently acquire the title of #b&lt;Soul Guardian&gt;#k by eliminating undead monsters and sending them back to nirvana…" />
+        <string name="1" value="#b#eTitle - Soul Guardian#k#n\r\nEliminate undead monsters and send them back to where they came from.\n\n1 #t2384004# \n1 #t2384014# \n1 #t2384018# \n1 #t2385000# \n1 #t2385020# \n\n#o6230400# #a290181#\n#o6230500# #a290182#\n#o6110301# #a290183#\n#o8140300# #a290184#\n#o7130300# #a290185#" />
+        <string name="2" value="You were able to eliminate the undead monsters and acquired the title of #b&lt;Soul Guardian&gt;#k." />
+        <string name="demandSummary" value="#t2384004# 1\r\n#t2384014# 1\r\n#t2384018# 1\r\n#t2384019# 1\r\n#t2385000# 1\r\n#t2385012# 1\r\n#t2385020# 1\r\n#o6230400# #a290181#\r\n#o6230500# #a290182#\r\n#o6110301# #a290183#\r\n#o8140200# #a290184#\r\n#o8140300# #a290185#\r\n#o7130010# #a290186#\r\n#o7130300# #a290187#\r\n" />
+        <string name="rewardSummary" value="#Wbasic#\r\n#i1142139:# #t1142139:# 1 \r\nGo on to 'Title - Saint Exorcist' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142139" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sometimes, even the spirits need a dose of harsh reality. Life is hard but life hardens the spirit that much more. I think it's time for you to walk the path of a &lt;Soul Guardian&gt;. Are you willing to take on the challenge?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There are dark spirits out there that are still obsessed with the life they had back in the day. Soul Teddies, Master Soul Teddies, Dark Clarks, Saities, and Master Death Teddies are such spirits. Their obsessions are causing chaos for the people residing in the area. I suggest you lead them to where they need to go." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand your fears, but the path of a Soul Guardian is treacherous. If you do not believe in spirits, then it may be worth reconsidering." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up the cards that embody their spirits?" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="They should all be incinerated and sent to nirvana, but I don't think you have enough experience to make that happen yet." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Did you gather up the cards that embody their spirits?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mbcard">
+                <imgdir name="0">
+                    <int name="id" value="2384004" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2384014" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2384018" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2385000" />
+                    <int name="min" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2385020" />
+                    <int name="min" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6230400" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6230500" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="6110301" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="8140300" />
+                    <int name="count" value="444" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="7130300" />
+                    <int name="count" value="444" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29017" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="67" />
+        </imgdir>
+    </imgdir>
+</imgdir>

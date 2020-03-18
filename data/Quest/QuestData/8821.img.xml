@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8821.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Thanksgiving : Turkey Yellow Egg hunt" />
+        <int name="area" value="30" />
+        <string name="0" value="It looks like Cody of Henesys needs help finding Turkey eggs..." />
+        <string name="1" value="I'm on a mission to find as many #bYellow Turkey eggs#k as I can for Cody, who has a strange liking for Turkey Egg omelets. I'm going to find as many as I can and bring them back to Cody for prizes! I've heard tamed turkeys can be found around Victoria Island.\n\n#k\n#t4031416# #c4031416# / #r1#k" />
+        <string name="2" value="The event is over, and I was able to help Cody find #bsome Yellow eggs#k. He looked pretty happy, but I think he got so many eggs he'll start to chirp...ha!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031416" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031425" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <string name="dateExpire" value="2006121400" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="25" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2020029" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="150" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="50" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="50" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="2020030" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="224" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there! You look like you've been out on a few adventures! I'm in dire need of some high-quality Turkey Eggs for a Thanksgiving breakfast I'm cooking. Do you have any Yellow eggs for me?" />
+            <imgdir name="yes">
+                <string name="0" value="I'm in dire need of some high-quality Turkey Eggs for a Thanksgiving breakfast I'm cooking. Will you gather some #bYellow Turkey Eggs#k for me? Yellow Turkey Eggs can be obtained from tamed turkeys. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, ok.  Be sure to come back, because I won't wait forever to get my eggs!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Excellent work! That is a fine Turkey egg you've got...in return, let me dig around in the backpack here...I think I do have something here for you..." />
+            <imgdir name="yes">
+                <string name="0" value="Take this and I hope it helps out in your travels! Thank you! Find me more eggs and I'll reward you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, looks like your bag has some lint, but no #bYellow Turkey Eggs#k! Collect some #bYellow Turkey Eggs#k and I'll make it worth your while!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031416" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9200000" />
+            <int name="lvmin" value="15" />
+            <int name="lvmax" value="29" />
+            <string name="end" value="2006120700" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

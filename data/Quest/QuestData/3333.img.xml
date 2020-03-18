@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3333.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Present for Keeny" />
+        <string name="parent" value="A Present for Keeny" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2111003# made a present for #p2111005#. What, he's not human, but he can perform alchemy? \n\nAnyway, #p2111003# made #t4031693#. I didn't think the present seemed girly enough, but in the world of alchemy, this might be the norm... I better give this to #b#p2111005##k right now." />
+        <string name="2" value="#p2111005# was very ecstatic to receive this gift. She must be really close with #p2111003#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031693" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031693" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, good thing you are here. I have produced a present for #p2111005#. Take a look at it. It's #t4031693#.\n\n#i4031693##t4031693# \n\n #p2111005# is very interested in alchemy, so she'll be very happy with it. Now that the present is ready, can you help me once more by delivering it to her?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Once she finds out you lent a helping hand in making this, #p2111005# will be that much happier. Now please give this to her." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh why? Are you too shy to give it to her? Don't worry about that one bit. Remember, it can also be your present to her." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmm? Do you need me for something? Ehh? This is... wow! It's #t4031693#! This is awesome! Hey, but... are you really giving to me?" />
+            <string name="1" value="Wow, it really is a present from #p2111003#! Yes! I really wanted one, you know. How did he know? And you helped him make this, too... this is so awesome. Thank you so much! I am so happy right now." />
+            <imgdir name="yes">
+                <string name="0" value="Hehe... I better Say thanks to #p2111003# too!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #b#p2111005##k yet? I am sure she'll be ecstatic to see this. Please deliver that to her." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmm? Do you need me for something?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost #t4031693#? Oh no... good thing I made a spare. Please give this to #p2111005#." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031693" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3332" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

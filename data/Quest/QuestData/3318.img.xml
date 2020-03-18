@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3318.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Parwen the Ghost" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When I entered a lab full of #o6110301#, I heard a strange voice somewhere inside... this is not good." />
+        <string name="1" value="Following along the deep, mature voice, I found myself having accrossed the #bstrange #o6110301##k." />
+        <string name="2" value="A strange #o6110301#... Apparently it's the alchemist that worked here before, called #p2111006#. What? Does that mean he's... a ghost! For a ghost, he certainly does not seem intimidating..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7800" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...who's there? I can tell you're here. I don't know who you are, but please come help me..." />
+            <imgdir name="yes">
+                <string name="0" value="Here... right here...!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Nice to meet you... I am #p2111006#, a researcher in this lab... Hmm... why are you looking at me like that? You look like you've just witnessed something horrific..." />
+            <string name="1" value="Anyway it's so good to encounter someone here. It's been a long time since I last talked to a person. I wonder what's wrong with the alchemists these days... they just never drop by the lab." />
+            <string name="2" value="Why did I call you? Well... Hmm... I actually just called you because it was so good to see someone here. Hahahaha... there's actually nothing that I need from you. I just felt like talking for once... hahaha!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <int name="lvmin" value="52" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="261020401" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

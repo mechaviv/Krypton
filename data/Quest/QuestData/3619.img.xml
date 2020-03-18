@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3619.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pot with a Hole" />
+        <string name="parent" value="Kong Ji's Request" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard that Kong Ji is in need of help. I should go check it out..." />
+        <string name="1" value="Kong Ji, who lives at a tavern in Folk Town with her stepmom, is a nice girl who does everything her stepmom asks her to do, however ludicrous the task may be. This time, the stepmom ordered her to fill up a pot with water, but the pot had a hole at the bottom, which made it impossible to fill up the pot. She asked me if I could get her a new #t4031230#. I heard that Grandma Yeon, who lives at the place where the water mill is, sells pots, and if I keep her up to date on his husband's whereabouts, then she may give me the pot. \n\n#t4031230# #b#c4031230##k/1" />
+        <string name="2" value="I gave Kong Ji, who was panicking because her pot had a hole at the bottom, the #t4031230# that Grandma Yeon made at the water mill. Apparently, Grandma Yeon only sells these pots to the closest few. I should go check on Kong Ji again down the road." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031230" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no ... the pot is cracked! My stepmom ordered me to fill up this pot with water by nighttime, and ... what should I do? I already have so many things to do here that I don't have time to buy a new one. I'm sorry, but ... can you please help me?" />
+            <imgdir name="yes">
+                <string name="0" value=" Thank you so much. You'll find a water mill somewhere in this Folk Town. Go there, and you'll find #bGrandma Yeon#k. She is known for selling her pots only to her closest and dearest. I'm not sure if she'll make one for a stranger like you, but ... please help me get the #bnew pot#k. Thank you." />
+                <string name="1" value="From what I've heard, Grandma Yeon has been wondering how her husband is currently doing. He's been out fishing all day, and I have a feeling that if you keep her up to date on his whereabouts, then she may indeed give you a new pot." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be really busy. Oh well ... nothing can do. Anyway, how am I going to fill up this pot with water... ?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you received Grandma Yeon's brand-new pot. You must have a great personality! My oh my, look at this ... it's so shiny." />
+            <imgdir name="yes">
+                <string name="0" value="I better go get some water right now and fill it up. My stepmom will be here soon, checking on the pot to see if it's full. Thank you so much for your help. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Didn't Grandma Yeon make the pot for you? Well, then I advise you to go see Tae Gong, her husband. He left home at dawn to go fishing. He should be in the middle of the ocean enjoying his catches." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031230" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071004" />
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

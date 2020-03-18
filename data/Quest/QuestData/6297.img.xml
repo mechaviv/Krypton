@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6297.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Black Spirit's Blessing Power 2" />
+        <string name="parent" value="Spirit Blessing" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2041023##k told me to bring the #bViking's Sail#k if I want to fully awaken #q1321007#'s power. \n\n#i4000134##t4000134# #b#c4000134# / 500#k" />
+        <string name="2" value=" We used #t4000134#  to draw out #q1321007#'s memory and fully awakened his blessing power." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="검은 영혼의 힘을 더 깨우고 싶으신가요? 그의 기억을 흔들면, 그의 능력은 저절로 각성된답니다." />
+            <imgdir name="yes">
+                <string name="0" value="그의 능력을 원하신다면 #b#t4000134# 500개#k를 구해오세요! 그 정도는 되어야 검은 영혼의 힘을 깨울 수 있을 것 같네요. 그의 과거에 가장 크게 자리한 물건이 있어야만 그의 기억을 흔들 수 있답니다." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="헤에. 이런 방법은 마음에 안 드시는 모양이네요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="150000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000134" />
+                    <int name="count" value="-500" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1320009" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="25" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="132" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you want to awaken #r#q1321007##k's power more? If you restore his memory, his power will awaken." />
+            <imgdir name="yes">
+                <string name="0" value=" If you want more power from the #q1321007#,\r\nget me #b500 #t4000134##k! That will do the trick of awakening Beholder's power. The object meant a lot to him in the past! You have to restore his memory! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ok...you don't like this method?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got 500#t4000134# . Good! I woke up the blessing power #q1321007# had." />
+            <imgdir name="yes">
+                <string name="0" value="Actually I can awaken his power, but it will be dangerous. If his memory's restored, I'll be punished by #p2081100#. I'll stop now.  An excellent magician should know how far he can go... " />
+                <string name="1" value="Make good use of  #r#q1321007##k's power." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" If you can't have #b500 #t4000134##k, it's hard to restore  #q1321007#'s memory." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000134" />
+                    <int name="count" value="500" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041023" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6296" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3455.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Endangered Lives of Grays" />
+        <int name="area" value="37" />
+        <string name="0" value="How well does the Wave Translator work? Let's hurry over to #m221040100# and try talking to #b#p2050002##k." />
+        <string name="1" value="While hiding the #t4031927# behind your back, you approached #p2050002#. #p2050002# tells you that nothing is going on but says something completely different through the ultrasonic waves." />
+        <string name="2" value="You've gotten a bunch of #ruseless information#k... which means the Wave Translator probably malfunctioned. Let's return to #b#p2050001# and have him build you a new #t4031927#.#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031927" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You... you're back. My human friend, it's nice to see you again but I really don't have time to chat. Perhaps next time? \r\n#L0# #b(Activate the Wave Translator.)#k" />
+            <string name="1" value="You can ask about Zeno all you want but I don't have anything to say. The seniors are in charge of Zeno, so I don't know anything.(Oh no, my palate is getting accustomed to human food. Everything about me is becoming more and more human.) \r\n#L0# #b(Wave Translator activated)#k   " />
+            <string name="2" value="More importantly, what happened to you, my human friend? You're not cooperating with the hypocrites in the Omega Sector, are you?(Even my standards for attractiveness is becoming human too. Agent Marco is probably the most handsome human ever.) \r\n#L0# #b(Wave Translator activated)#k  " />
+            <string name="3" value="The Grays do not want to hurt the humans. We want to get closer. Don't you know? (No, forget it! If Prince finds out, he'll be furious!) \r\n#L0# #b(Wave Translator activated)#k " />
+            <string name="4" value="Don't be afraid of our guidance. Grays are on humans' side. We will lead the humans to their glory.(Let's think of more practical things... like washing my chute and drying food... I'm going to get alien's eczema soon.) \r\n#L0# #b(Wave Translator activated )#k" />
+            <string name="5" value="So... would you like to cooperate with us now?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You must have decided to side with the Grays! Here, sign this contract to pledge your loyalty!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Too bad. Well, I guess I'll see you around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Seems like you've made up your mind. Haha! Are you truly THAT happy to have signed your life away to the Grays? ... What? Am I joking around?" />
+            <string name="1" value="What, what are you talking about... You seem so serious... Hmmm... I guess I don't have what it takes to read human facial expressions yet..." />
+            <imgdir name="yes">
+                <string name="0" value="#b( Alien Gray has nothing more to say... It seems you've collected a bunch of useless information... The Wave Translator must have malfunctioned. Let's ask Dr. Kim to build another Wave Translator.)#k" />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3457" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031927" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3455s" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

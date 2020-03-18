@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3436.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Plateon" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Green Mesoranger, who should be somewhere around Boswell Field." />
+        <string name="1" value="I met up with Green Meoranger again at the Boswell Field of Omega Sector. This time, Green Mesoranger said that the #bPlateons#k, which are far more dangerous than the Mateons, are threatening the Omega Sector and that I'll have to take care of them, while bringing #b80 Plateon's Helmets#k as evidence.\n\n#t4000121# #b#c4000121##k/80" />
+        <string name="2" value="I took out the Plateons and collected 80 Plateon Helmets, just the way Green Mesoranger from Boswell Field asked. The duties of the Mesorangers don't seem to be over, though, so if I have some time to spare, then I maybe I should go check Green Mesoranger then." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020009" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000121" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I keep getting new tasks thrown at me from the Sector, and I'm busy beyond belief as a result. I've been actually waiting for your arrival. The news is, the aliens threatening the Sector now are much more powerful than the #o4230119# that you've previously faced." />
+            <string name="1" value="The alien in question is #b#o4230120##k, and they are much higher ranked than #o4230119#, with the power to show for. What do you think? These may be much tougher than you've ever faced off against, but... will you do the honor of defeating each and every one of them?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd Say yes. Somewhere around this field, you'll have to defeat #b#o4230120##k, and bring me the helmet it wears as a proof. Bring me #b80 #t4000121#s#k, and your mission will be deemed a success. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't think this would necessarily do you any harm. If you have a change of heart, please talk to me. Until then, if you'll excuse me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back~ Wasn't #b#o4230120##k too difficult to handle? Let's see... #b80 #t4000121#s#k, just as advertised. I'll send these to the Sector, and your mission will be deemed accomplished. Here...here's an item from the Sector. Please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the #b50 #t2020009#s#k? This mission sure is more difficult that the last one, but I'm sure you had an easy time completing it. There are still some missions left from the Sector, so whenever you have time, please talk to me, alright?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have completed the mission from the Sector, just yet. Please defeat the #b#o4230120##k that's been threatening the Sector's safety, as well as pick up #b100 #t4000121#s#k along the way as a proof. They are much more powerful and higher-classed, so please be careful on that. Good luck!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000121" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3435" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="41" />
+        </imgdir>
+    </imgdir>
+</imgdir>

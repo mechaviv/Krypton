@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2150.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Truth of the Rumor-Ayan" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1022007##k looks kind enough to let us in on the rumor." />
+        <string name="1" value="#b#p1022007##k looks kind enough to let us in on the rumor." />
+        <string name="2" value="Asked #p1022007# about the rumor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hi, traveler. What brings you here today? How can I help you?\r\n#b#L0#Do you know anything about a ghost tree?#l" />
+            <string name="1" value="Oh, my! You also heard about the story? #p1012108# of #m100000000# said she saw the ghost on the way back to her home after visiting #m102000000#for her mom's errand.\r\n#b#L0#Are you serious?#l" />
+            <string name="2" value="Yes, she was going back to #m100000000# late at night. She stepped or tripped over a tree branch or something in the dark. She got scared and looked around, and you know what? She found a big eye staring into her as if it would eat her alive.\r\n#b#L0#That's terrible...#l" />
+            <string name="3" value="#p1012108# was terrified and simply passed out at that moment. After dawn, a number of adults went up there, but found nothing. It must be ghosts. What can we do? I don't think I can even get out of town. I'm too scared!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2144" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2150s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

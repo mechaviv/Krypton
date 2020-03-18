@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3922.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Request from a Member of the Sand Bandits?! 2" />
+        <string name="parent" value="A Request from a Member of the Sand Bandits?!" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101012##k lives outside #b#m260000000##k. He claims to be a member of the Sand Bandits, the secret organization in #m260000000#. If he's a Sand Bandit, then he's helping the people. What can you do to aid him?" />
+        <string name="1" value="#p2101012# says he needs Poisoned Needles to steal a treasure from the queen, and asked you to collect #b#t4000330#s#k for him. \n\n#i4000330# #t4000330#  #b#c4000330##k/50" />
+        <string name="2" value="You gave #p2101012# all the #t4000330#s required for the Poisoned Needles. The Sand Bandits require a lot of stuff to help everyone." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="쉿. 목소리를 낮추시오. 당신은 전에 #t4000330#를 구해준 그 사람이군... 전에는 무척 고마웠소. 당신이 구해준 덕분에 독침바늘을 많이 만들 수 있었지. 후후후..." />
+            <string name="1" value="하지만 아직 왕비의 보물을 탈취하기에는 장비가 좀 부족하군. 튼튼한 밧줄이 있으면 일이 수월해질 것 같은데... 당신이 밧줄 구하는 것을 도와줄 수는 없겠소? 모래그림단을 돕는 일이잖소." />
+            <imgdir name="yes">
+                <string name="0" value="후후후... 사막에서는 밧줄을 #t4000329#로 만든다오. 카투스를 잡아 #t4000329#를 구해 주시오. 50개 정도면 충분할 것 같소. 그럼, 기다리겠소." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흠. 일이 귀찮아진 거요? 그렇다면 옆으로 좀 가주시오. 사람들 눈에 띄어서 좋을 게 없으니까..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000330" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shush! Lower your voice. You're the one that got me the #t4000329#s the other day... Thanks to you, I was able to make some rope. It should prove very profitable…for the people of Ariant, of course." />
+            <string name="1" value="Honestly, though, our work isn't done. The transport group will be guarded, you see, and to defeat the guards, we'll need Poison Needles. Can you help? It's for the Sand Bandits, remember." />
+            <imgdir name="yes">
+                <string name="0" value="Haha, I knew you'd agree. To make Poisoned Needles, we just need #b#t4000330#s#k since I already have the poison. You can get them from #r#o2100103#s#k, so get me around #b50#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? You're not willing to help the Sand Bandits? I'm shocked! You are about that?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought the #t4000330#s. This should be more than enough for the Poisoned Needles. As a member of the Sand Bandits, I thank you deeply." />
+            <imgdir name="yes">
+                <string name="0" value="We Sand Bandits have a lot on our plates. If people like you didn't help us out, then we'd definitely be struggling." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have #b50 #t4000330#s#k yet. All you need to do to get it is defeat #r#o2100103#s#k. This is for Sand Bandits. Please work harder." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000330" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3921" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="27" />
+        </imgdir>
+    </imgdir>
+</imgdir>

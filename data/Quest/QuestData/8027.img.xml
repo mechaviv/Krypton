@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8027.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Read the Newspaper!" />
+        <int name="area" value="48" />
+        <string name="0" value=" Apparently, Tsuri of Showa Town is going through a dilemma. What must that be? I should inquire further..." />
+        <string name="1" value="I met Tsuri at Showa Town, and he wanted me to bring him #b1 #t1002418##k. Should I help him out? \n#t1002418#  #b#c1002418##k/1" />
+        <string name="2" value=" I gave him one #t1002418##k. What? He wanted to read the toons? TOONS? Seriously? *sigh*." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040509" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002418" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I was just reminiscing about the good old days, and decided to look at the newspaper, only to find the clipping I saved was missing. Can you help me find it?" />
+            <imgdir name="yes">
+                <string name="0" value=" It's a newspaper clipping, and apparently the kids in this neighborhood made a paper hat out of it. The problem is, the kids don't remember where the hat is right now..." />
+                <string name="1" value="Say, can you help me find the #b#t1002418##k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be lacking intellectual curiosity. That clipping has loads of interesting articles..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh, brilliant! This... this is the best one right here! Of course, the BEST cartoon ever is &quot;The Diary of the Snails,&quot; published daily on Maple Times." />
+            <string name="1" value="Yes, yes, you seem tired from all that work you had to go through to get this. Here's a reward for your hard work. This should help you immensely on your journey." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found #b#t1002418##k yet. I'm counting on you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002418" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120008" />
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

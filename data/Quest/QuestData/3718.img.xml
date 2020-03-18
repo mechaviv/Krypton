@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3718.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Andy the Time Traveler" />
+        <string name="parent" value="The Truth Behind that Man" />
+        <int name="order" value="4" />
+        <int name="area" value="41" />
+        <string name="1" value="Andy the Time Traveler has asked you to help him find the Pocket Watch, the key to the Time Gate, which he's lost in Minar Forest." />
+        <string name="2" value="The Pocket Watch has chosen you as the new Time Traveler. You begin to wonder what you've got yourself into." />
+        <string name="demandSummary" value="#i4032511:# #t4032511:# #c4032511# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 40,000\r\n#Wbasic#\r\n#i4001393:# 1 #t4001393:#\r\nCan participate in the &quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="40000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032511" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001393" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Why have you followed me here? I don't know who you are.\r\n#b#L0#Why did you attack the Alcadno Society?#l\n#k" />
+            <string name="1" value="Alcadno? Oh, you're talking about those fools that rely on machines. They don't think about how their actions will affect the future. Those fools will spend a lifetime regretting what they've done. But I've come too far. It's too early. This isn't where I was trying to visit.\r\n#b#L0#What in the world are you talking about? Where did you come from? Tell me what's going on!#l\n#k" />
+            <string name="2" value="Can you handle it? You could get lost in time like me. It's a dangerous risk. And I may not be able to complete my mission.\r\n#b#L0#I'll help you. What is this mission you're talking about?#l\n#k" />
+            <string name="3" value="You... You seem trustworthy. I can feel it. You can't tell a soul what I'm about to tell you. Can you promise to keep this a secret? Can you handle that?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'm from the year 2503. I came from Neo City to change the errors of the past. But this isn't Neo City. I think I may have transcended time and space. Everything is a mess. And I seem to be lost." />
+                <string name="1" value="That door you see over there is called the #bTime Gate#k. It's a the key to traveling through time. I'm from Neo City in the year 2503. Machines have taken over our city and are attacking humans. We could not find a solution to the chaos, so I came to the past to set things right." />
+                <string name="2" value="But I've arrived somewhere, or somewhen, totally unexpected. I was running around like a headless chicken, thinking this was the Neo City of the past, but I realized I was in the wrong place and time. I must go to the right time! But I lost the Pocket Watch that acts as the key to the Time Gate." />
+                <string name="3" value="Help me find the key to the Time Gate! I will compensate you. I must undo the mistakes in the past, but I can't find the Pocket Watch anywhere. It must be somewhere in the forest, though. Right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you telling me not to trust you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes, this is the Pocket Watch! Let me see it!" />
+            <string name="1" value="Oh no... It's not working. I can no longer carry out my mission. The Pocket Watch only works when its possessor is in an appropriate time. It also checks its possessor's mental and physical state. It probably detects my exhaustion." />
+            <string name="2" value="Wait a minute. I have an idea. Put the Pocket Watch on your palm!\r\n#b(You place the Pocket Watch on one hand and cover it with the other. The Pocket Watch begins to glow, and then the glow disappears.)#k" />
+            <imgdir name="yes">
+                <string name="0" value="You! You might be the one! Please, take over my mission and change the past! I hand over the Pocket Watch to you. Please, you must do this!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="The Pocket Watch has my name engraved on the back. I'm pretty sure I lost it somewhere in Minar Forest. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032511" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3717" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

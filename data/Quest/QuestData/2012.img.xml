@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Jane's Second Challenge" />
+        <string name="parent" value="Jane the Alchemist" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="This time, Jane promises to make an even better item, so she needs you to gather #b1 Mushmom Spore, 3 vials of Drake's Blood, 100 Medicine with Weird Vibes, and 30 Malady's experimental frogs#k. She said something about making Power Elixirs, something that restores both HP and MP." />
+        <string name="2" value="You got Jane the materials she needed. If she does well, you'll get some nice elixirs . If not...er, you're not sure you really want to take what she gives you..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000040" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2012000" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000041" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you enjoy the stuff I gave you last time? Hehe, now I want to make more complicated stuff. Want to help?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. I need #b1 #t4000040##k, #b3 #t2012000#s#k, #b100 #t4000036##k and #b30 #t4000041#s#k. This time, I'm hoping to make #t2000005#s, hehe!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, now. If you don't have time to listen to a poor girl's plea... Fine, just let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got #b1 #t4000040##k, #b3 #t2012000#s#k, #b100 #t4000036##k, and #b30 #t4000041#s#k. Excellent! Time to mix... Heh, heh, heh." />
+            <string name="1" value="Okay, this is only my second experiment ever. Hope it turns out okay. Check to make sure you have an empty slot in your Use inventory, and then hold out your hand..." />
+            <imgdir name="yes">
+                <string name="0" value="Whoa! I'm amazing! I made 15 #r#t2000005#s#k! Whee! What a huge success. Thanks for your help!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #b1 #t4000040##k, #b3 #t2012000#s#k, #b100 #t4000036##k, and #b30 #t4000041#s#k yet. You should be able to get them off of monsters. Keep trying!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2012000" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000040" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000041" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000036" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2293.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Last Song" />
+        <int name="area" value="30" />
+        <string name="0" value="Try to remember the last song Spirit of Rock performed.\r\nIf you can't remember, the only thing left to do is to destroy Spirit of Rock again." />
+        <string name="1" value="Try to remember the last song Spirit of Rock performed.\r\nIf you can't remember, the only thing left to do is to destroy Spirit of Rock again." />
+        <string name="2" value="You told Maestro Rho the last song Spirit of Rock performed." />
+        <string name="rewardSummary" value="32,500 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052120" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2288" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2293s" />
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

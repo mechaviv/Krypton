@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10482.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Gift for the Dragon Master" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lvl. 30, #p9010000# starts talking to you..." />
+        <string name="1" value="#p9010000# says that you can now receive a gift from #p9010010# and that you should go to town and meet #b#p9010010##k. She will be very happy to see you..." />
+        <string name="2" value="You received a #t1022097# that #p9010010# made herself. Work harder and reach Lv. 50 before #bMay 5#k to receive a scroll that can be used on it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1022097" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello Evan! Congratulations on reaching Lv. 30! Do you remember what I told you before? #p9010010# has a gift for you!" />
+            <string name="1" value="Please go see #b#p9010010##k to receive the #bgift#k that she has personally prepared." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Congratulations once again for reaching Lv. 30! I look forward to seeing you becoming even more powerful!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, you must not like the gift. I really thought you would like it... " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you must be Evan! Nice to meet you! You really do look like a Dragon Master! Maybe I shouldn't refer to a Dragon Master as cute, but you're adorable!" />
+            <string name="1" value="You heard from the #p9010000# right? I, #p9010010#, have made this gift especially for you! I'm sure you're going to love it! Tada! A #t1022097#!" />
+            <imgdir name="yes">
+                <string name="0" value="I made it because I thought it might be fitting for a Dragon Master. Actually I also prepared a #bscroll#k that can be used on the #t1022097#, but I can't give it to you yet. I will give it to you when you reach #bLv. 50#k so be sure to come back to me before #bMay 5#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to see #p9010010# yet? #p9010010# should be somewhere in town..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10481" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <string name="end" value="200906010000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

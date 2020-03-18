@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21725.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="10 Boogies's Request" />
+        <int name="area" value="6" />
+        <string name="0" value="After the #o1140130# case closed, #p1103004# still seems to need you for something. You wonder what. Better go talk to #b#p1103004##k and find out." />
+        <string name="1" value="#p1103004# thanks you for helping her solve the mystery, but tells you she has a little predicament: She can't leave her post to submit her report! She wonders if you could deliver the report to her boss for her. So your task is to deliver the #t4032320# to #b#p1101002##k in #b#m130000000##k." />
+        <string name="2" value="You delivered the report to #p1101002# and received a reward. You noticed that he had a very peculiar way of speaking which, to you, seemed totally inappropriate yet absolutely proper in tone. It reminded you of someone…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032320" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032320" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Um… hi, Aran. I know that you're busy, but can you help me out once more? This time, it's not about the information #p1002104# has been looking for. It's a personal favor, and I will reward you separately for your work. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to your help, I was able to complete the investigation, and now it's time to turn in the reports…but I can't leave this place knowing that the puppeteer may show up anytime. Do you think you can go to #b#m130000000##k and submit this report to #p1101002# for me?" />
+                <string name="1" value="Do you know how to get to #m130000000#? Head over to #b#m101000000##k, and there should be a #bferry available to #m130000000##k. You'll get there in about 2 minutes, so it's not too bad of a trip. Thanks in advance." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, I guess you're too busy. What should I do? I wonder if there are any knights-in-training with some free time around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is it? Hmmm? Isn't that from #t4032320#? How could she have a stranger send such an important report? What if confidential information is leaked? I will have to cut #p1103004#'s pay... Hahaha, just kidding. This report doesn't include anything that's classified." />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, thank you for your help. Just to let you know though, #m130000000# is not a place that really welcomes strangers. So unless you're interested in becoming a Knight, you should leave soon. The island is already overflowing with #bKnights who are training to stop the Black Mage#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #b#m130000000##k yet? Please go to #m130000000# and submit the report for me. Otherwise, #b#p1101002##k will throw a fit, and I don't like being grilled by #p1101002#..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Welcome to #m130000000#, that is, if you've come to become a knight. If you're not here to become a knight, you are not welcome, so please move aside." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032320" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21724" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

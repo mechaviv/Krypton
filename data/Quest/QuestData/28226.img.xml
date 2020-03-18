@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28226.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Back to Hill" />
+        <string name="parent" value="Antique Search" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says she's being pestered by #rRibbon Pigs#k. Let's talk to her." />
+        <string name="1" value="#b#@1072008:##k in #bNautilus#k says the #rRibbon Pigs#k are too loud and requests that you eliminate the #rRibbon Pigs#k.\nShe says you can easily find them in #b#m100030000##k.\n\nReport back to #b#@1072008:##k in #bNautilus#k upon completion." />
+        <string name="2" value="Let's take the Antique to  #b#@9201118:##k in #bHenesys#k." />
+        <string name="demandSummary" value="#o1210101# #a282261#" />
+        <string name="rewardSummary" value="Exp 2,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4001353:# #t4001353:# #c4001353# 1&#xD;&#xA;Able to proceed to 'The Cost of Delivery' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001353" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dear beginning Bowman!\nThe #rRibbon Pigs#k in #bNautilus#k are causing a ruckus here. I can't even load and unload my luggage without having to worry about the luggage getting damaged because of the Pigs.\n\nWon't you hunt some of those #rRibbon Pigs#k for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This will help you become much stronger.\n\nYou'll find a lot of #rRibbon Pigs#k in #b#m100030000##k. Please hunt 30 of them.\n\nI'll give you the #rAntique#k you want if you do that for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not really that hard." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast. That wasn't too hard now, was it?\n\nYou've probably become much stronger than #rRibbon Pigs#k. I'll give you the #rAntique#k as promised." />
+            <imgdir name="yes">
+                <string name="0" value="It's much more quiet and peaceful around here now. The crewmen are enjoying their work more now.\nAnd I hope this benefitted you as well, since you're training and all.\n\nTake this #rAntique#k over to #b#p9201118##k in #bHenesys#k. It really isn't a very practical item, so don't steal it or anything. Make sure you deliver it! Tee hee." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please hunt 30 #rRibbon Pigs#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28225" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

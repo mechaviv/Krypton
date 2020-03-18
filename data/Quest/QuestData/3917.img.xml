@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3917.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Little Prince that Loves Roses" />
+        <string name="parent" value="For the Little Prince" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="There was a strange boy in the middle of the Nihal Desert. Dressed differently from everyone else, with blonde hair that matched the color of the sand... Maybe you should head to #b#m260010500##k and see if he's all right." />
+        <string name="1" value="The strange boy seemed concerned about his wilting rose. A rose? Who cares about a rose? You're more worried by the fact he's sitting in the middle of the desert. Maybe you should just get him some #b#t2022155#s#k for his roses. Maybe you'll be able to talk some sense into him after that. \n\n#i2022155# #t2022155#  #b#c2022155##k/5" />
+        <string name="2" value="You gave the strange boy some #t2022155#s. He smiled in relief. Who is this kid anyway? What's he doing here?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="사막은... 왜 이렇게 넓은 걸까요. 너무 넓어서 오히려 아무것도 보이지 않는 것 같아요...  \r\n#L0# #b 왜 이런 곳에 있는 거니? 목 마르지 않니?" />
+            <string name="1" value="목... 그러고 보니 아까부터 장미꽃이 시들어가고 있어요.  사막의 태양이 이 아이에게는 너무 뜨거운 모양이에요. 괜찮으시다면 장미꽃을 위해 #t2022155#을 구해 주시겠어요?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022155" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Why is the desert so big. It's so big that I can't see a thing...  \r\n#L0# #b What are you doing here? Aren't you thirsty?" />
+            <string name="1" value="Come to think of it, this rose has been dying for a while. The desert heat must be too much for her. Can you get some #t2022155# for this little rose?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Wow... Thank you. I think #b5 #t2022155#s#k should be enough for the rose. It's such a small little thing." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why is there no pond in the desert?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Wow… You brought some #t2022155#... You must like flowers, too. \r\n#L0# #b (I'm not worried about flowers. I'm worried about you...)" />
+            <string name="1" value="With this, I am sure the rose will not be mad anymore. It's been cranky at me for a while since it's been so thirsty. Thank you so much for your help..." />
+            <imgdir name="yes">
+                <string name="0" value="She's the prettiest, nicest rose you'll find in this world." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I don't think you've gotten #b5 #t2022155#s#k yet. I'm sorry, but she's quite selfish, and she demands more and more." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022155" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101006" />
+            <int name="lvmin" value="32" />
+        </imgdir>
+    </imgdir>
+</imgdir>

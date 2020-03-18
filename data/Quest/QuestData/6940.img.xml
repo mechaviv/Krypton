@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6940.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pedro's Introduction" />
+        <string name="parent" value="The Ultimate Stage of the Pirate" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="My training as a Pirate has reached its limit. Is this as far as I can go? I should go find #b#p2020013##k who helped me make my 3rd level advancement and ask about life as a Pirate." />
+        <string name="1" value="#b#p2020013##k is telling me to go talk to #b#p2081500##k, the Priest of the Minar Forest, to find the secrets of the final path of a Pirate." />
+        <string name="2" value="#b#p2081500##k is telling me that he will teach me how to gain the greatest power of the Pirate." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031859" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031859" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It has been a long time. I have kept tabs on your steady progression. Seeing you standing before me, healthy and strong, I can sense that a lot has happened since our last encounter. Have you finally uncovered the freedom within you all this time? If so, then there must be a reason why you came all the way to see me. What is it?\r\n#b#L0# I'd like to make the 4th job advancement.#l" />
+            <string name="1" value="I see... I have known that this day will someday come. Unfortunately, I do not have the powers to fulfill your wish. In order for you to complete this process, you'll have to head over to the #bMinar Forst#k and meet #b#p2081500##k, who should be meditating as you walk in. He may be enough to fulfill your wish. Would you like to pay a visit?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I will write up a recommendation letter for you right now. I hope you come out of this with a wealth of new power at your disposal." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here to see me to make the 4th job advancement? If not, then don't mind me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What made you come all the way here to see me, young Pirate?\r\n#b#L0# I'd like to make the 4th job advancement. I have already received a letter of recommendation from #p2020013#.#l" />
+            <string name="1" value="#b#p2020013##k... Are you talking about the one in El Nath? If he's the one that recommended you, then you must be legit." />
+            <imgdir name="yes">
+                <string name="0" value="Hello young Pirate, the one who strives to walk the path of the ultimate. I have a story I must share with you. When you are ready to see the truth, talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Remember the name. The priest of Minar Forest, #b#p2081500##k. Visit him." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you misplace #b#t4031342##k? I will write you another one, but please do not lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031859" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020013" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="511" />
+                <int name="1" value="521" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

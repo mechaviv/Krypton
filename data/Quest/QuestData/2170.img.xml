@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2170.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Information for Dr. Kim" />
+        <int name="area" value="30" />
+        <string name="0" value="Do you know Rolonay, the smartest genius alive in all of The Nautilus? He is possibly the smartest person in all of Maple World. But he's apparently stuck in a jam, because of all the requests he's been getting from people asking for more and more information. I'd better give Rolonay a hand- But first, I should go see him in the central corridors of The Nautilus. " />
+        <string name="1" value="Rolonay's been working hard to compile all the information #bDr. Kim#k had requested, but says he's too tied up with all the analysis he has to do, to bring the research documents all the way to the Omega Sector. I should help out Rolonay and bring all the research documents to the Omega Sector for him. " />
+        <string name="2" value="I've delivered all the research documents to Dr. Kim, on Rolonay's behalf. That Rolonay, despite his looks, is quite a brainiac!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031844" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031844" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ahhh, I'm so busy. Hey there, walking right past me. Are you busy right now? \r\n#L0##b Hey! Aren't you...???#k#l" />
+            <string name="1" value="...Wha...what? Ha...haven't you seen a pe...person wearing glasses and a beard? \r\n#L0##b Hmmm... you just looked suspicious...#k#l" />
+            <string name="2" value="I am busy right now, so let's talk about that some other time. Right now, I am in a major pinch, and I need your help. I need to turn in this report to Dr. Kim, yet I have so much stuff to do that I can't possibly get to Omega Sector right now. Can you please help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. I'll never forget this. Please gather up these reports and give them to #bDr. Kim#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be really busy. I see..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're here on Rolonay's behalf? Oh thank you for this... please send him my gratitude." />
+            <imgdir name="yes">
+                <string name="0" value="Rolonay is really a genius. Look at this graph that depicts the relation between the wave of the alien's powers and the power of the ancient magicians. This is perfection!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Dr. Kim is at Omega Sector." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="It's a very important &amp; confidential report, and you lost it? The information inside cannot be made public..." />
+                <imgdir name="yes">
+                    <string name="0" value="I'll give you another copy for now. Please don't lose it again!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031844" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092012" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

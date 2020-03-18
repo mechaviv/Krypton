@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6251.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Bowman's Inner Eye" />
+        <int name="area" value="10" />
+        <string name="0" value="Let's go see my former trainer, #b#p2081300##k." />
+        <string name="1" value=" #b#p2081300##k told me about his past and suggested that I go see #b#p1012100##k to find his missing #b#t4031487##k if I feel like I've reached a plateau in my training. He says Kentaurus should have the gloves... \n\n#i4031487##t4031487# #b#c4031487#/1" />
+        <string name="2" value="#p1012100## remembered the gloves that he gave to a boy long time ago and taught me a new skill called #r#q3221001##k.  It makes the arrow stronger as it penetrates the enemy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031487" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="3221001" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="322" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You completed the 4th job advancement. How does it feel to have your new power? You don't look that happy. Kinda feel like you're lost in the forest? I felt the same at first... " />
+            <string name="1" value=" A long, long time ago, I was actually lost in the forest. Sound strange? Think of it as a metaphor, as I've never been to the forest. I'm blind. A strong and kind Bowman saved me from tje cold weather and fear of the unknown. It was #p1012100#." />
+            <string name="2" value=" I believed that I could use a bow even without sight. I became a disciple of #p1012100# and trained as hard as I could. Everybody said it's impossible for a blind to learn to shoot arrows. Look at me now! I'm a master! There is always a path to success even if you can't see it." />
+            <string name="3" value="Do you mind if I give you some advice since you don't know where to go?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to see #b#p1012100##k. He's the only one who can teach a master like you. He's very strict. He would tell you to find your way by yourself." />
+                <string name="1" value=" I lost my gloves that I got from him. Try to find them and then go see him. The gloves are really worn out as I wore them everyday for training. If he still remembers me, he will teach you." />
+                <string name="2" value=" I was hunting in the region with #bKentaurus#k. I believe that they have the gloves. I never went back for them. I don't even go to that place anymore..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" You don't need my advice? You believe that you can find a way to train by yourself? Too much pride, I Say..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value=" ...You are the one who decided to be a Bowman, are you not? I can see your skill with a bow has improved a lot. As I helped train you to be a Bowman, I'm so glad. What are those?  \nThese are ...the gloves that I gave to a little boy long time ago. Why do you have them?\r\n#b#L0#Someone asked me to give them to you." />
+            <string name="1" value=" I see. Well, he's given his work to you. He wanted to be a strong so I taught him how to shoot a bow. Although he worked hard, he still had a few bad habits to get rid of. His effort paid off to be a the best Bowman...If he's given these gloves to you, that means you're also looking for a new technique. Right?" />
+            <imgdir name="yes">
+                <string name="0" value=" You're already strong. You can find your way... You remind me of my disciple. I'll show you something new!" />
+                <string name="1" value=" You looked at the enemy with your eyes and targeted it to attack. For a master, that's not enough. It's meaningless to see from your position. Don't look at it with just your eyes. If you have your target, you should be able to get it right without looking at it. It's more important is to determine what and where your enemy is. " />
+                <string name="2" value=" If your Eye of Heart penetrates your enemy, the arrow will follow it. It is a skill that you don't depend on your eyes for, but power and concentration. That's  #r#q3221001##k." />
+                <string name="3" value="Please keep this in mind: If your Eye of Heart penetrates your enemy, your arrow will hit it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Try to find the gloves that I lost in the area of Kentauruses." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" What can I do for you? I welcome you if you are a Bowman." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031487" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081300" />
+            <imgdir name="job">
+                <int name="0" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

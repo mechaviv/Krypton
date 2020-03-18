@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4946.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Family Jewels" />
+        <int name="area" value="50" />
+        <string name="0" value="Oh...looks like Ludmilla is not quite done with me yet. I'd better head back and see what that nag wants now..." />
+        <string name="1" value="I spoke with Ludmilla, and big surprise---her Cherry Pie Ghoulash didn't lure Jonas out. I think he probably pushed a bookcase in front of the door to ensure he never sees her again, but that's just a theory. At any rate, it looks like now her prized jewelry has mysteriously disappeared. She thinks Sophilia's taken it, but I'm not sure if I buy that, seeing as how she's...not around to do that. I have to gather #b20 #t4031769#s#k and #b10 #t4031770#s#k and bring them back to her.  The woman complains way too much... sheesh. " />
+        <string name="2" value="I found Ludmilla's beloved jewelry for her.  In return she gave me a worn, but well-loved doll. It's seen better days, but it has charm. Someone is probably looking for this..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031767" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031769" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031770" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, you again!  I told you I would need your services soon... why have you been gone so long?    What, you haven't?  Really?  Well, I must Say, the days have not been kind to your face.  Have you tried a cleansing facial mask?  Or a paper bag, perhaps?\r\n\r\n#L0##bWhatever, Matilda. What do you want from me now?#l\r\n#L1#You know something? Enough. I've had it with you! No wonder Jonas is locked in his workshop---you drove him there!#l" />
+            <string name="1" value="Matilda? She's a good friend of mine, though we look nothing alike. I'll have to add 'can't see anything' to your list of deficiencies. Well, it's rather embarrassing to be honest...I don't know if I should tell you... ?\r\n\r\n#L0##bJust tell me. I can already tell you want to.\r\n#L1#You know something? Enough. I've had it with you! No wonder Jonas is locked in his workshop---you drove him there!#l" />
+            <string name="2" value="Ok, you've wrung it out of me.  First, the Cherry Pie didn't work. I set it near his workshop, and...nothing! I thought I saw a shadow, but it wasn't him!  After being ignored for so long, I've had enough.  Being a good wife is for the birds. And I've tried so hard!  So, rather than take care of a man who only sees the forest for the wooden toys he obsessively creates, I've decided to simply live the life of luxury he owes me---I'm his wife after all. \r\n\r\n#L0##bEr, congratulations?\r\n#L1#You know something? Enough. I've had it with you! No wonder Jonas is locked in his workshop---you drove him there!#l " />
+            <string name="3" value="Why, thank you! I knew you had some brains beneath that rough canvas you call a face. At any rate, I'm supposed to attend a ball later, driven in a fine carriage, although the horses have been acting up lately, I'm still looking forward to it... but... there is one problem and that's where I need your help with. " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="#rHOW DARE YOU!#k  Get out of my sight this instant!" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="#rHOW DARE YOU!#k  Get out of my sight this instant!" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="#rHOW DARE YOU!#k  Get out of my sight this instant!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The only problem is that I seem to be missing my jewelry!  I can't find it anywhere! Worst of all, I had several pieces commissioned by two very famous --and very expensive-- jewelers and now every piece is gone!  My prized #b#t4031769#s#k and #b#t4031770#s#k have vanished!  There is no way I'm showing up to a ball without the right accoutrements!  That would simply be embarrassing!" />
+                <string name="1" value="Where could they be?  I used to catch Sophilia playing with my jewelry, and spanked the brat more than a few times for it. But now that she's... passed, I certainly can't blame her, can I?  I'd blame the help, but as most of them have deserted, well... why, I don't know who to blame!  But it must be around here somewhere!  So, could you be a sweetheart and find my jewelry?" />
+                <string name="2" value="If you do this, I'll be sure to put in a good word for you to Edmunds when he hires more help!  I am pretty sure I had at least #b20 #t4031769#s#k and #b10 #t4031770#s#k.  Bring them to me, and I'll even give you something I found in return..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What?!  Don't tell me you have more important matters elsewhere!  Impossible!  Hmmph!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Perfect! Still a bit late for my tastes, but you have all of my jewelry!  As promised, here is your something- here, take this ragged doll." />
+            <imgdir name="yes">
+                <string name="0" value="I remember finding this at the bottom of the stairs some time ago, so I threw it in my shoe closet... I had forgotten about it, really, until I was organizing my shoes just now." />
+                <string name="1" value="What, you don't like it? You honestly thought I was going to give you some of MY jewelry as a reward?  Get real.  Besides, this doll is more suitable for a child like you!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks as if you haven't found my collection of #t4031769#s and #t4031770#s yet.  How am I to decide what would be the most appropriate to wear, if I don't have all of them?  Simpleton.  Return when you have everything--- #b20 #t4031769#s#k and #b10 #t4031770#s#k, and not a moment sooner!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Why if it isn't the ungrateful wretch!  What, my reward wasn't good enough for you?  Take this!  I don't want this doll lying around in my house!" />
+                <imgdir name="yes">
+                    <string name="0" value="I feel cleaner now. Now go!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201076" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031769" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031770" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201076" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4945" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

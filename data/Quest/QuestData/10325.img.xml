@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10325.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stan's Cleat" />
+        <int name="area" value="50" />
+        <string name="0" value="Find the legendary Cleat that Vaughn Lee, Stan, and Louie made together in their youth. But which of them deserves to receive the Cleat once it's found?" />
+        <string name="1" value="You have decided to return the Cleat to Stan. Let's take the Cleat over to Stan in Magatia!" />
+        <string name="2" value="When you hand over the Cleat to Stan, he praises you, saying you're a great judge of character." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001307" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10325e" />
+        </imgdir>
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001307" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

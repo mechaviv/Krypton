@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10271.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gaga's Love Letter 3" />
+        <int name="area" value="50" />
+        <string name="0" value="The shy #p9000021# has a concern. Go find out what #p9000021# is troubled about." />
+        <string name="1" value="#p9000021# wants to know what #p9020000# thinks of him. He wants to express his feelings without facing her reaction... Bring him some materials so that he can write a letter. If she refuses him, he can always say that it's April Fools' Day!" />
+        <string name="2" value="Love requires a pure heart and true courage. Don't be like him and confess your love pretending it is a April Fools' Day joke. Muster up your courage and confess your true love." />
+        <string name="summary" value="Bring Gaga the materials he needs to write a letter!" />
+        <string name="demandSummary" value="#i4032279:# #t4032279:# #c4032279# / 10&#xD;&#xA;#i4032282:# #t4032282:# #c4032282# / 10&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032282" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032279" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="저 실은..#p9020000#의 마음을 알아보고 싶지만 용기가 나지 않아요. 싫다고 하면 어쩌죠?" />
+            <string name="1" value="‘만우절의 거짓말이었어'라고 하면 상처가 덜하지 않을까요? 빨리 편지를 써야겠어요. 저를 좀 도와주시겠어요?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="예쁘게 편지를 쓰려면 편지지와 연필이 필요해요. 지금 빨리 #b#t4032279# 10장#k과 #b#t4032282# 10개#k를 구해주시겠어요?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#p9020000#의 마음이 궁금한데, 도와주세요~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="&quot;누..누난 내여자니깐... from #p9000021#&quot;, 이렇게 쓰면 될까요?" />
+            <imgdir name="yes">
+                <string name="0" value="&quot;To #p9000021#, 이런 식의 장난은 곤란합니다. From #p9020000#&quot; 답장이 왔는데.... 역시 진실된 고백을 해야 했어요. 만우절이라고 사람의 마음을 떠보는 거짓말은 어리섞은 짓 같아요." />
+                <string name="1" value="사랑하는 사람이 있다면 저처럼 마음을 떠보지 마시고 용기내어 진심으로 고백해보세요." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="아직 재료가 다 모이지 않았어요! 편지를 쓸 수 있게  도와주세요." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032279" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032282" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10271e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <int name="lvmin" value="51" />
+            <int name="lvmax" value="80" />
+            <string name="start" value="2009030100" />
+            <string name="end" value="2009041300" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

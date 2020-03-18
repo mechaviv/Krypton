@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10021.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="You are a True Special Agent!" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9000021##k is said to have prepared a special gift for you for saving Maple World in the summer of 2009..." />
+        <string name="1" value="#b#p9000021##k is said to have prepared a special gift for you for saving Maple World in the summer of 2009..." />
+        <string name="2" value="2009 summer… You were a true agent. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아니! #b#h0# 요원!#k 그 입은 옷을 보니 특수요원 임무를 열심히 수행하셨군요. 하지만 조금 부족한 부분이 있다고 생각하지 않으세요?" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1072368" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey!  Agent #b#h0# !#k  Judging by your clothes, you must have successfully completed your special agent task.  But don't you think you're lacking something?  " />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="If you don't think so, that's fine..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="The magic on your shoes is running out.  I have specially given you #b#t01072368##k.  The moment you put them on, you will transform into a true special agent. " />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <string name="end" value="2009082600" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1002800" />
+                <int name="1" value="1032058" />
+                <int name="2" value="1102174" />
+                <int name="3" value="1072366" />
+                <int name="4" value="1082245" />
+            </imgdir>
+            <imgdir name="equipSelectNeed">
+                <int name="0" value="1052167" />
+                <int name="1" value="1052166" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

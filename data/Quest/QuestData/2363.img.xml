@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2363.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dual Blade: Time for the Awakening" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Lady Syl, the master of The Secret Garden, says that the time has come. Time for what...?" />
+        <string name="1" value="Lady Syl, the master of The Secret Garden, says that the time has finally come. Now, she wants to test whether you are truly ready to walk the path of a Dual Blade. She says that if you get the Opalescent Glass Marble by hitting it and then double-clicking on it, you'll be able to obtain the Mirror of Insight that only appears to those who are qualified to be its owner." />
+        <string name="2" value="Lady Syl, the master of The Secret Garden, said that the time had finally come to test whether you were truly ready to walk the path of a Dual Blade. She said that if you got the Opalescent Glass Marble by hitting it and then double-clicking on it, you'd be able to obtain the Mirror of Insight that only appears to those who are qualified to be its owner... You obtained the Mirror of Insight, then gave it to Lady Syl, who congratulated you for awakening as a Dual Blade." />
+        <string name="demandSummary" value="#i4032616:# #t4032616:# #c4032616# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Job Advancement" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032616" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#h0##k, the time has come for you to awaken as a Dual Blade. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good. I like your confidence. In order to awaken as a Dual Blade, you must satisfy 2 conditions.\r\nThe first is that you must be Lv. 20 or above, and the second is that you must bring back the #bMirror of Insight#k, a legendary treasure that can only be obtained by one qualified to possess it." />
+                <string name="1" value="The Mirror of Insight is a treasure that is said to give its owner the gift of insight. They say that it will only appear to a master it finds suitable. Leave this room and follow the hallway to your left until you reach the Marble Room. Inside the room, you'll find marbles placed on a stand. When you hit these marbles, one will fall and turn into an opalescent color.  " />
+                <string name="2" value="You can obtain the Mirror of Insight by breaking the opalescent marble. Of course, that is only if you are qualified to be the master of the Mirror of Insight... Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please come back when you feel you are ready. I hope that I won't have to wait too long." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Good. I like your confidence. In order to awaken as a Dual Blade, you must satisfy 2 conditions.\r\nThe first is that you must be Lv. 20 or above, and the\r\nsecond is that you must bring back the #bMirror of Insight#k, a legendary treasure that can only be obtained by one qualified to possess it." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Good. I like your confidence. In order to awaken as a Dual Blade, you must satisfy 2 conditions.\r\nThe first is that you must be Lv. 20 or above, and the second is that you must bring back the #bMirror of Insight#k, a legendary treasure that can only be obtained by one qualified to possess it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1056000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032616" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2363e" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1056000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2362" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="19" />
+            <int name="subJobFlags" value="2" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

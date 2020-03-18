@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22505.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tasty Milk 2" />
+        <int name="area" value="7" />
+        <string name="showLayerTag" value="22505" />
+        <string name="0" value="Maybe Dad would know what Mir likes. Talk to Dad." />
+        <string name="1" value="Dad says that if he is still a baby then maybe he should be drinking #bmilk#k. He says that you should ask for some milk from the #b#p1013105##k at the #b#m100030310##k. " />
+        <string name="2" value="You started talking to #p1013105#. Now ask for some milk." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1150" />
+            <int name="nextQuest" value="22506" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="He's so big I didn't realize he was a baby. He probably can't digest meat yet. My guess is that all #bbabies need milk#k first." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can get milk from the #b#p1013105##k at the #b#m100030310##k. Why don't you go ask her to give you some?" />
+                <string name="1" value="Oh, and once you're done feeding the lizard, can you come back to me? I have something to talk to you about." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... I think most babies are the same. Think about it and let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Mooo!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to the #p1013105# yet? She may be big but she's very gentle, so ask her to give you some milk." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013105" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22504" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="12" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

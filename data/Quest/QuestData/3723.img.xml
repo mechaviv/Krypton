@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3723.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Boy and the Girl" />
+        <string name="parent" value="Year 2021- Just Another Day" />
+        <int name="order" value="5" />
+        <int name="area" value="41" />
+        <string name="1" value="The Brainy Boy swore that he would find more Loose-Leaf Pages from the Crying Girl's Sketchbook, including her drawing of a Robot. This sounds like something Andy mentioned. Perhaps you should tell him about this." />
+        <string name="2" value="When Andy heard the story about the kids, said it was a useful piece of information and that you should prepare yourself for your next time travel. " />
+        <string name="rewardSummary" value="EXP 30,000\r\nCan participate in &quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I think she's disappointed because she didn't find all of the pages from her Sketchbook. She was so proud of her new robot drawing, too. Could you just keep an eye out for pieces of paper you might see lying around?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It really was an incredible drawing. I hope she isn't too bummed out about it, though I know she is." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I wasn't asking you to go out of your way to find them. I just thought you could keep an eye out for them in case you saw any. If you're too lazy to do that... Then...fine." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What is it?\r\n#b#L0#I think you should know something.#l\n#k" />
+            <string name="1" value="What? Did you learn something?\r\n#b#L0#I'm not sure, but I met a boy while I was investigating a little town during year 2016, and he mentioned something about a robot.#l\n#k" />
+            <string name="2" value="Is that so? Hmm.\r\n#b#L0#Yes, but the kids lost the drawing. I know it's just a child's scribbles, but I couldn't just ignore it.#l\n#k" />
+            <string name="3" value="I see. It really isn't anything definite. But I can't simply ignore it. either. Thank you. Nothing is for sure, but we may have found a clue." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. I think it's time you got ready for your next time travel. Let me know when you're prepared." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Where have all the grown-ups gone?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3722" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

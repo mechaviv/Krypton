@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29915.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mu Lung Dojo Vanquisher" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="1" />
+        <int name="viewMedalItem" value="1142064" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="#b#eTitle - Mu Lung Dojo Vanquisher#n#\r\n#k#b&lt;Mu Lung Dojo Vanquisher&gt;#k, a coveted title given only to Mu Lung Dojo experts. \r\n●Requirement(s) : Acquire the #bMu Lung Dojo Vanquisher Medal#k from #bMu Lung Dojo#k." />
+        <string name="2" value="You have earned the #b&lt;Mu Lung Dojo Vanquisher&gt;#k title by defeating all of the master monsters in Mu Lung Dojo." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142064" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q29915s" />
+            <int name="lvmin" value="25" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

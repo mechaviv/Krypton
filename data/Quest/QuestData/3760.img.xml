@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3760.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dragonoir's Horn" />
+        <int name="area" value="41" />
+        <string name="0" value="Chief Tatamo has one more thing to ask you..." />
+        <string name="1" value="Chief Tatamo has asked that you defeat the Dragon Rider and bring back the Dragon's horn." />
+        <string name="2" value="You brought back the horn as Tatamo requested. You just hope that the injured animals get better soon..." />
+        <string name="demandSummary" value="#i4001401:# #t4001401:# #c4001401# / 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="522000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001401" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#h0##k, you've done so much already but do you mind doing one more thing for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The animals that were attacked by the Dragon are not recovering from their injuries. So, that Dragon the #bDragon Rider#k is riding... We need it's horn! It's the only medicine that might work!" />
+                <string name="1" value="Please eliminate him and bring back 1 #b#t4001401##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're the only one who can help us..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You finally defeated him. Now please pass me the horn before the animals die." />
+            <imgdir name="yes">
+                <string name="0" value="Yes, making a tonic with this horn is sure to help them recover. Thank you so much for all that you have done." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please eliminate the Dragon Rider and bring back the #b#t4001401##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001401" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3757" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

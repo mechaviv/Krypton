@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28166.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Meeting Ervine" />
+        <string name="parent" value="Drought in Perion" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #b#m102000000##k says he has a favor to ask. Let's go see him." />
+        <string name="1" value="#b#m102000000##k gets its water from other regions, as it has always been a region of very little moisture.\n\nBut as of late, the water supply has been cut off, resulting in a drought across Perion.\n\nGo talk to #b#@9201120:##k, the plumber in #b#m103000000##k." />
+        <string name="2" value="#b#@9201120:##k in #b#m103000000##k says there might be a problem with the Water Pipe." />
+        <string name="summary" value="Please see #b#p9201120##k in #b#m103000000##k." />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;Able to proceed to 'Inspecting the Water Pipe' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Look at how strong you've grown. You're resembling a Warrior more and more each time I see you. I called you here because I had a favor to ask.\nDo you want to hear what it is?\nWell, you'll have to do as I request either way, haha!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b#m102000000##k is almost perfect, but it doesn't have enough water. So it gets its water from its neighbor, #b#m103000000##k. Victoria Island is just a caring place in which towns are willing to assist one another when necessary." />
+                <string name="1" value="But the water supply has been decreasing. Won't you go and see what the problem is?\n\nFind #b#p9201120##k the plumber in #b#m103000000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, come on. Please?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you must have come from #b#m102000000##k. Welcome." />
+            <imgdir name="yes">
+                <string name="0" value="Nice to meet you. My name is #b#p9201120##k, and I'm responsible for the plumbing.\n\nIs there a problem?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p9201120##k is in #b#m103000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28165" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

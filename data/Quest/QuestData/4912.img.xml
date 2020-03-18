@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4912.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Urban Jungle " />
+        <int name="area" value="45" />
+        <string name="0" value="There's a Masked Man in New Leaf City... what's his deal?" />
+        <string name="1" value="I spoke with Jack Masque, he's a bandit prince from Amoria. He's in love with Princess Restless, and is trying to win her love from afar. He's got a passionate hatred for Wolf Spiders, as one bit her just as she was giving him a kiss. So, I've agreed to hunt down 100 Wolf Spiders in return for his thanks and something special he picked up. I should be able to find them in the MesoGears..." />
+        <string name="2" value="+Phew* I wiped out 100 of those pesky Wolf Spiders, and in return, I received a Leaf Crystal from Jack Masque. I can come back every 72 hours to help him if I want. I wonder what he did to get kicked out of Amoria...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="55000" />
+            <int name="pop" value="5" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022194" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there. Do you have a moment to spare? " />
+            <imgdir name="yes">
+                <string name="0" value="Wonderful. Name's Jack. Jack Masque. I'm from Amoria, but that neither here nor there...it's a long story why I left...but since you're still here, I'll give you the short version. I'm in love! I am lost in the throes of passion with the most beautiful creature I have laid eyes upon...a Princess. Princess Restless to be exact. I'm competing for her with some snob-nosed prince. We were out on our first date, and the time was perfect. The sun was shining, birds were tweeting, and just as I was about to receive a kiss from her sweet lips, this strange spider attacked us! I fought the beast off, but that was a one in a million chance with her! I swore to wear this mask in shame until I could return to Amoria with honor. But I must hurry, that accursed Prince Vince is sure to attempt to steal her away...So, I want you to go and eliminate 100 Wolf Spiders, which should ensure that this never happens again. If you're successful, I have a particularly rare crystal that may suit you...get going!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Unfortunate. Be on your way then!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Fantastic! I'll be able to face her again without worrying if one of those pesky Wolf Spiders will spoil the moment. As promised, here is your reward. Enjoy! And in three days time, you may return to me for another hunt! \n\n#L0##bActually, can you tell me more about yourself?#k#l" />
+            <string name="1" value="Anything else you wish to know? \n\n#L0##bWhy is that mask really on your face?#k#l" />
+            <string name="2" value="I'm a prideful man, and the thought that I lost my chance due to spider is...rather embarrassing to be honest. Icebyrd offered me a chance to redeem myself, and I took it. I won't take off this mask until I can return to Amoria with honor! You've helped me and I never forget a favor. I may have a few tasks for you in the future. With your help, I'm sure that I'd get a leg up on that walking waste of space known as Prince Vince... Does this answer your question?" />
+            <imgdir name="yes">
+                <string name="0" value="As promised, here is your reward. Enjoy! And in three days time, you may return to me for another hunt!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Tsk, tsk. So sad. I said #b100 Wolf Spiders#k. Not 74, not 32, not 99. 100. Come back when you have something to show for your effort-besides a tired face. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201053" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400545" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201053" />
+            <int name="lvmin" value="80" />
+        </imgdir>
+    </imgdir>
+</imgdir>

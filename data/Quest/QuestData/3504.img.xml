@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3504.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The One Who Walks Down Memory Lane4" />
+        <int name="area" value="46" />
+        <string name="0" value="I received permission to go all the way to #m270010400#.  If I want to go beyond that, I need to take a test.  I should go to #b#p2140000##k to receive the test." />
+        <string name="1" value="#p2140000# said if I want to go in further, go to #b#m270010400##k and take out #r999 #o8200004##k. \n\n#o8200004# #r#a35041##k" />
+        <string name="2" value="I defeated 999 #o8200004#.  #p2140000# granted me permission.  Of course, this permission only allows me to go up to #m270010500#. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="323500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you want to go in further, you'll need to take a harder test... Makes perfect sense, right?  So what do you want to do?  Do you want  another test? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then go to #b#m270010400##k and defeat the #r#o8200004##k.  If you defeat #r999#k of them, I will grant you permission to go beyond that." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh well. Too bad if you think it's too hard for you. I guess that's your limit." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated 999 #o8200004#.  That's amazing.  I will grant you permission as promised." />
+            <imgdir name="yes">
+                <string name="0" value="#dAs the representative of Rhinne, the Goddess of Time, I grant you permission to look back at your 5th memory." />
+                <string name="1" value="Go on.  You should be able to go up till #b#m270010500##k.  As you may have guessed, you can't go beyond that.  If you want to go further... you'll have to take a new test. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r999 #o8200004##k yet.  I don't think you are strong enough to walk against the flow of the past yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8200004" />
+                    <int name="count" value="999" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3503" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="101" />
+        </imgdir>
+    </imgdir>
+</imgdir>

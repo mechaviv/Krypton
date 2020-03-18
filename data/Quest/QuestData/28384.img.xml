@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28384.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I Need to Prove Myself to My Daughter   " />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Uh-oh. Bruce seems to be having a family crisis like he did five years ago. Go to Henesys and lend him a sympathetic ear." />
+        <string name="1" value="Bruce says that he needs to prove himself to his daughter, Ayan, but can't really do it himself. He needs you to bag stomping out #bIron Hogs#k and fetching #b50 Metal Hooves#k for him." />
+        <string name="2" value="Bruce seems to be having a family crisis like he did five years ago. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh! *sniffle* It's you. *sniffle* It's been a while since you've seen me so distraught, hasn't it? \n\n&#xD;&#xA;(Bruce wipes his eyes furiously with the sleeve of his jacket.)" />
+            <string name="1" value="Five years, I think? Oh, please excuse my red eyes and runny nose. It's just that I'm, well, miserable. Maybe you could help? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you, thank you, thank you! You have no idea what this means to me. Remember how you found my long-lost daughter Ayan a while back? Well, she still doubts that I'm really her father! It's because I'm not all buff and tough like she is. " />
+                <string name="1" value="Long story short, we got into a bit of a tiff and I said I'd prove that I'm her father by killing some monsters. But you know me. Slaying monsters is not my forte. " />
+                <string name="2" value="But it's yours, right? I promised her I'd take out Iron Hogs and fetching #b50 Metal Hooves.#k No big deal to someone of your caliber, right? You probably won't even break a sweat." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="*gasp* What? You won't help me...? Oh. T-t-that's okay. I'm sure you're busy. *sniffle* Can you leave? I don't want you to see *sniffle, sniffle, sob* a grown man cry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <string name="endscript" value="q28384e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28398" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+            <string name="start" value="2010060200" />
+            <string name="end" value="2010061600" />
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

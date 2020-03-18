@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2283.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Freesia Scent" />
+        <int name="area" value="30" />
+        <string name="0" value="Lana says the rose scent is perfect for the Kid Mannequin's Bunny Suit. Time to let #bLala#k know." />
+        <string name="1" value="Rush to #bLana#k before the scent fades and ask her which costume this freesia scent would best complement." />
+        <string name="2" value="#bLana#k said the freesia scent would go best with the Female Mannequin's Wig. Go tell #bLala#k." />
+        <string name="rewardSummary" value="2,300 EXP" />
+        <int name="timeLimit" value="40" />
+        <string name="timerUI" value="default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="buffItemID" value="2022632" />
+            <string name="message" value="상큼한 프리지아향기가 온몸을 감싸는 순간 이상하게 머리가 아프고 발걸음이 무거워 진다. 향기가 사라지기 전에 라나에게 가보자." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So Lana thinks the rose scent would go best with the Kid Mannequin's Bunny Suit? Okie dokie. Could you ask about the Yellow Perfume next?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I've sprayed the Yellow Perfume on you. Rush to #bLana#k before the fresh scent of freesia fades." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is the scent embarrassing you? It makes me feel so dreamy..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Need my help again? \r\n#L0##bYup! Which goes better with this scent? The Female Mannequin's Wig or the Male Mannequin's Fedora?#l\n#k" />
+            <string name="1" value="Mmmm, freesia. Hmm, this would go perfectly with the Female Mannequin's Wig." />
+            <imgdir name="yes">
+                <string name="0" value="Please let #bLala#k know." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="What smell? Why don't you ask Lala to spray you with more perfume?" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please hurry to #bLana#k and ask her before the scent fades." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+            <string name="buff" value="2022632" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052119" />
+            <string name="exceptbuff" value="2022631" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2282" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2284" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

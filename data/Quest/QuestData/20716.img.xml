@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20716.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maybe it's Arwen!" />
+        <int name="area" value="15" />
+        <string name="0" value="I better talk to Agent #b#p1103003##k of #m101000000# about a new assignment." />
+        <string name="1" value="#p1103003# told me she suspects that #b#p1032100##k might be controlled by the Puppeteer, and asked me to give Arwen #b#t4032142##k, which can be purchased at #b#m101010103##k. Her theory was that if Arwen is controlled, then she would dread it; if Arwen is free, then she'd be ecstatic over it... \n\n#i4032142# #t4032142# #b#c4032143# / 1#k" />
+        <string name="2" value="Arwen thanked me for giving her #t4032142#, for she was very thirsty at the time and proceeded to finish it in one giant gulp." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032142" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You... are aware that there have been a number of unfortunate events related to the puppeteer, right? No one knows how these monsters are being controlled by a central power. Everything around here needs to be scrutinized and suspected. Come to think of it... don't you think #b#p1032100##k is a tad bit suspicious as well?" />
+            <string name="1" value="Arwen seems strange! Otherwise, how else can you explain the fact that she always losing her glass shoes? A fairy who loves forest, and she's standing in #m102000000#! I think she's just doing that to disturb the great people of Maple. Maybe #rshe's being controlled by the Puppeteer#k! We need to look into this!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There's one way we can tell whether Arwen is controlled or not: #b#t4032142##k, which can only be purchased at #b#m101010103##k ... For an innocent Fairy, it works as a potent medicine, but for a devious character, it turns into a poison. Can you give that to Arwen for me?" />
+                <string name="1" value="If Arwen comes out unscathed from this.. Then great. If not... hahaha... like I said, everything that seems remotely suspicious must be investigated." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You don't want to do this with me? How can you say that? If Arwen winds up working for Black Mage, then will you take the full responsibility for this?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is it? I am not fond of humans... wait, is that #t4032142#? Is that for me? I can't believe there's a human being out there that is sensitive enough to offer me something as great as this. I knew my beauty would work in the human world, as well." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. This will make my skin look 10 years younger. Yay!" />
+                <string name="1" value="#b(Arwen seems unaffected by it. Too unaffected.)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see Arwen yet? I thought I told you to find #t4032142# at #m101010103#, and give her the medicine." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What does a human need from me? Are you here to give me the glass shoes?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032142" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20715" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

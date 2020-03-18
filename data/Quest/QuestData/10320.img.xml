@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10320.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Artifact Hunt 2500 points acquired!" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You have acquired 2500 points in Artifact Hunt." />
+        <string name="1" value="You have acquired 2500 points in Artifact Hunt." />
+        <string name="2" value="When you reached 2500 points in Artifact Hunt, the Maple Admin cast magic to enhance your Weapon Attack and Magic Attack. He says he'll cast more magic when you reach 4000 points and give you another boost." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <string name="endscript" value="q10320e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <int name="infoNumber" value="10310" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2500" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10320s" />
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

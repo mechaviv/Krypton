@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3376.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Juliet is Impressed" />
+        <string name="parent" value="Juliet's Lunchbox" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="36" />
+        <string name="0" value="Juliet seemed very much in love with Romeo after receiving the letter, which meant one thing. Juliet wants to repay the love with a present of her own. I better go see #bJuliet#k." />
+        <string name="1" value="Juliet decided the best way to respond to the letter was to cook for him by making a lunchbox. ...A lunchbox by an alchemist from Alcadno... I better help her make one before Juliet poisons Romeo to death with her toxic cooking skills. I better buy the #blunchbox recipe#k from #bHan the Broker#k. \n\n#i4031785##t4031785# #b#c4031785##k/1 " />
+        <string name="2" value="I handed Juliet Han the Broker's recipe for lunchbox." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Hello traveler! What do you think Romeo likes more, Stir-Fried Scorpion Tail or Seasoned Bellamoa? Ahh, it might be a little far from here, but how about a Poison Popper Stew? What do you think?\r\n#b#L0# I almost threw up.  Please tell me you're not thinking about serving that to your boyfriend!#l" />
+            <string name="1" value="Why, yes!  I just received a letter from Romeo. I can't just sit here and do nothing, so I decided to make a delicious, special dish for the love of my life. Don't you think he'll love it if I make an exotic lunch for him? \r\n#b#L0#...If he lives after eating it...#l" />
+            <string name="2" value="I've never cooked before, can you tell?  But I've also made some clothes, this can't be that much different. I just don't know what kind of food he'll like, though... what do you think?\r\n#b#L0# How about a plain dish?  Something that won't make him break up with you?#l" />
+            <string name="3" value="A plain dish? Well... maybe a plain dish that's delicious can be more special than anything else! Well, in that case, can you please help me?  I want to make this lunch special!" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031785" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello traveler! What do you think Romeo likes more, #rStir-Fried Scorpion Tail#k or #rSeasoned Bellamoa#k? Ahh, it might be a little far from here, but how about a Poison Popper Stew? What do you think?\r\n#b#L0# What... what are you talking about?#l" />
+            <string name="1" value="I just received a letter like that from Romeo. I can't just sit here and do nothing, so I decided to make a delicious, special dish for Romeo. Don't you think he'll love it if I make a lunch box for him? \r\n#b#L0#...(Hopefully he'll be alive after eating them!)#l" />
+            <string name="2" value="I've never cooked before, but since I also successfully made some clothes, I don't think this will be much different. I just don't know what kind of food he'll like, though... what do you think?\r\n#b#L0# How about a plain dish?#l" />
+            <string name="3" value="A plain dish? Well... maybe a plain dish that's delicious can be more special than anything else... well.. In that case, can you please help me get a recipe for a delicious lunch?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="There's only one place in Magatia that you can get a recipe for delicious food, through #bHan the Broker#k. He also has items that have nothing to do with alchemy, so please get a #blunchbox recipe#k from him." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... you must be really busy right now. Maybe I should try #rDark Wyvern Wing Stew#k..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you purchased a recipe from Han the Broker. Thank you so much! I'll have to start making the lunchbox out of this right this minute... with all my heart for Romeo." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gotten the #blunchbox recipe#k yet. The only person in Magatia that sells the recipes is #bHan the Broker#k, so please ask him." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031785" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2112003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3375" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

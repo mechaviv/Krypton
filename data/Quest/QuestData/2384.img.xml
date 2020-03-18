@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2384.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Quieting the Ribbon Pigs" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="Something seems to be bothering Ryden. What could have happened? Go talk to #bRyden#k." />
+        <string name="1" value="Ryden says that Lady Syl hasn't been able to get any sleep recently because of the loud ruckus being caused by pigs. He wants you to quiet down the pigs. #bHead left of Kerning City to the Construction Site and enter L Forest II through the portal located in the bottom right.#k Once you're there, eliminate the #rRibbon Pigs#k." />
+        <string name="2" value="You eliminated the Ribbon Pigs so that Lady Syl can get some sleep." />
+        <string name="demandSummary" value="#o1210101# #a23841#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 3,800\r\n#Wbasic#\r\n#i2001502:# #t2001502:# 30 \r\nCan Proceed to 'Octopuses Do Your Body Good' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2001502" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, what should I do?\r\n#L0##bWhat's wrong? Has something happened?#l\n#k" />
+            <string name="1" value="Lady Syl hasn't been able to get any sleep recently. The loud noise coming from the pigs are keeping her up at night. I have to remain at watch here, so why don't you go put those pigs to sleep? " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Do you hear that? The pig noise is coming from across the Construction Site. Just take the portal at the end of the left side and then take the portal at the right most bottom. When you pass by a forest, you'll arrive at a place called #bL Forest II#k. You'll need to somehow sedate the pigs and make them fall asleep..." />
+                <string name="1" value="If sedating them doesn't do the trick, just eliminate about #r30 Ribbon Pigs#k. How you get them to shut up is up to you. Just get it done!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must not care at all about Lady Syl." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So, were you able to make the Ribbon Pigs fall asleep? Ha! Eliminating them was probably an easier task, huh?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, thank you for your hard work. Have a nice drink of this potion. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Forget about making the Ribbon Pigs fall asleep, just eliminate #r30#k of them! Go towards your left and pass through the forest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2355" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

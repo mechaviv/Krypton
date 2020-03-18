@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28161.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spirit Week Event - October 26th" />
+        <int name="area" value="50" />
+        <string name="0" value="I think #b#p9010010##k has something special for me." />
+        <string name="1" value="#b#p9010010##k says I can trade in a scroll for a scroll cast with her magic spell, which will increase my Success Rate by 5%. I must make wise decisions, since I can only trade 5 times today." />
+        <string name="2" value="#b#p9010010##k has given me a scroll with a higher success rate in return. She's got a kind heart." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The Spirit Week Event! I, Cassandra, am casting a magic spell on regular scrolls every Monday in October, which will increase the Success Rate by 5%. But once I cast a magic spell on your scroll, you won't be able to trade it. What do you say? Would you like to try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll #rcast a magic spell and increase the Success Rate by 5%#k if you bring me a scroll with 10% or 60% success rate. So, decide on a scroll you'd like and come talk to me. You can trade in a scroll of your choice by selecting #bCast a Magic Spell#k. Make sure you make the right decision, though, since you can only trade 5 times.  " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Casting magic on scrolls is harder than it looks, which is why I'm only offering it every Monday of October. Come and see me on a Monday in October if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q28161e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="10" />
+            <string name="start" value="2007102600" />
+            <string name="end" value="2007102700" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

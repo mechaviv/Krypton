@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3700.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ito's Request" />
+        <int name="area" value="41" />
+        <string name="0" value="I'd better go see #p2081002# at #m240000000#." />
+        <string name="1" value="#p2081002#, who's in charge of taking care of the egg for #m240000000#, wanted to keep the egg warm at all times, and wanted to cover it up with fluffly feathers of #o7130500#. I was asked if I could gather up some feathers of #b#t4000226##k and #b#t4000229##k.\n\n#i4000226##t4000226#  #b#c4000226##k / 55\n#i4000229##t4000229#  #b#c4000229##k / 75" />
+        <string name="2" value="As requested by #p2081002#, I gathered up some furballs of Rash. #p2081002# proceeded to put the feathers together and covered the egg up with it." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕? 난 #b#p2081002##k라고해. 지금 난 내가 돌보고 있는 알이 따뜻할 수 있도록 보호해 주고 있는 중이야. 그런데 알이 너무 커서 내가 아무리 따뜻하게 안아주려고 해도 그럴 수가 없어. 따뜻한 레쉬의 털이 있다면 알을 따뜻하게 감싸줄 수 있었을텐데... 알이 따뜻하게 자랄 수 있도록 레쉬의 털을 모아다 주지 않겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="고마워. 따뜻한 #b#t4000226# 55개#k와 부드러운 #b#t4000229# 75개#k만 있다면 알을 따뜻하게 감싸줄 수 있을 것 같아." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="알이 추운가봐. 더 따뜻하게 안아줄 수 있으면 좋을텐데..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="33000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000226" />
+                    <int name="count" value="-55" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000229" />
+                    <int name="count" value="-75" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022089" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey? I'm #b#p2081002##k. I'm here protecting the egg from cold by warming it up as much as possible. The problem is, the egg is rather large, and as much as I tried to warm it up by hugging, I can't do that. If I had some furballs from Rash, I'll be able to cover up the egg with the furballs, and really warm it up. Can you gather up the furballs for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I'll need #b55 #t4000226#s#k and #b75 soft #t4000229#s#k, and I'll be able to cover the egg up with them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="The egg must be really cold. Hopefully I can hug it a little tighter and make it a little warmer..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow!! Awesome! That looks WARM! Hey eggy, hold on one second. I'll keep you warm now!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! If the egg is kept warm, the baby dragon will be hatching out of the egg really soon." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="In order to keep the egg warm, I'll need #b55 #t4000226#s#k and #b75 #t4000229#s#k. Rashes live West of town." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000229" />
+                    <int name="count" value="75" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000226" />
+                    <int name="count" value="55" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081002" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

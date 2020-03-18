@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20404.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Stolen Egg" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="#o9001010#? Something about it seem suspicious... I better ask #b#p2081012##k, the Dragon Outcast." />
+        <string name="1" value="#p2081012# told me if I wanted to find out more about #o9001010#, then I'll have to eliminate one #r#o8180000##k and one #r#o8180001##k. He wanted to leave the house, but not with those creatures out there... I better help #p2081012# out. \n\n#o8180000##r #a204041##k \n#o8180001##r #a204042##k" />
+        <string name="2" value="The one responsible for stealing the dragon's egg in #m240000000# turned out to be #o9001010#. Even the name seemed quite suspicious. Maybe #p1103000# looked into #o9001010#. I better go visit #o9001010# right now. #b#o9001010#'s cave is located near the dragon's nest#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What are you doing staying here? Do you still have something else to take care of? Because I don't.\r\n#b#L0#You look bored. Do you want to hang out with me?#l\n#L1#Why does Tatamo not like you? #l\n#L2#Do you know what happened to #p1103000#? #l\n#L3#Please tell me more about the #o9001010# that you just mentioned.#l\n#k" />
+            <string name="1" value="No I won't! Why should I do it? If you really want to know, then you better do something for me in return!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="4" />
+                    <string name="0" value="Who, who, who's looking bored here! I'm not bored! NOT ONE BIT!" />
+                    <string name="1" value="Who cares about that old man? I'm sure he's not happy that the creature from his egg turned out to be only half-dragon. Well, I did blow up some things a number of times while experimenting in Leafre a while back, but he wouldn't be holding grudges about that, would he?" />
+                    <string name="2" value="I told you I don't know! He was asking about the scales, this and that, then he just left as if he gave up. He was persistent, that's for sure. He was trying to look for something else around Leafre but... I don't know." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ah... really? So you'll do it? (Smiles) Great! I had been looking for a top-tier talent for this, anyway..." />
+                <string name="1" value="You know where this house is, right? It's located right in between #b#m240020401##k and #b#m240020101##k. Both areas contain some of the most dangerous monsters around, which means I can't leave my house! That's why I want you to go out there and eliminate all the #r#o8180000#s#k and #r#o8180001#s#k. You can do this, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then get out of here! Why are there so many unruly people barging into people's houses?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh... I really wasn't expecting this, but you did indeed defeat all the #o8180000#s and #o8180001#s. Hey... you're much stronger than I thought. I mean, I could have gone out there and wiped out the #o8180000#s and #o8180001#s myself, but... that was good work. Not bad for a human." />
+            <imgdir name="yes">
+                <string name="0" value="#o9001010#? She's a lady that lives way deep in the area near the #rDragon's Nest#k, and... she's one scary woman. Apparently, she handles all those powerful monsters around Dragon's Nest with her eyes closed. Even scarier than that..." />
+                <string name="1" value="...I overheard a number of Kentauruses gossiping around, and... they think she's the #rone responsible for the Egg-Theft#k. I don't know what she's trying to do with those eggs, but I don't think it'll be for good use. She just seems very dangerous..." />
+                <string name="2" value="Okay, the information stops here. I don't really like you, but since you helped me here, I'll give you an advice. I strongly advise you not to get too close to #o9001010#. You don't want to risk your life being associate with someone like #o9001010#. Maybe that gentleman #r#p1103000# might have been swept by that, as well#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not wiped out #r#o8180000#s#k and #r#o8180001#s#k yet? Just wait around a bit longer. Those guys don't appear too often. What? You're telling me to just go out when those guys aren't around? Are you kidding me? What would happen if I step out and was immediately atacked by those monsters? I could die!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081012" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8180000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8180001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20403" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1110" />
+                <int name="2" value="1111" />
+                <int name="3" value="1112" />
+                <int name="4" value="1200" />
+                <int name="5" value="1210" />
+                <int name="6" value="1211" />
+                <int name="7" value="1212" />
+                <int name="8" value="1300" />
+                <int name="9" value="1310" />
+                <int name="10" value="1311" />
+                <int name="11" value="1312" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+                <int name="16" value="1500" />
+                <int name="17" value="1510" />
+                <int name="18" value="1511" />
+                <int name="19" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

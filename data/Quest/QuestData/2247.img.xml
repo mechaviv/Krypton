@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2247.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Raging Horny Mushrooms" />
+        <string name="parent" value="Strange Mushrooms" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="The Rememberer of Sleepywood claims to be studying the changes that are taking place with the strange-looking Horny Mushrooms and needs some help." />
+        <string name="1" value="The Rememberer says that he must continue his research and that the raging Horny Mushrooms must be stopped in the meantime.\r\n\r\n\r\n#o2110200# #a22471#\r\n" />
+        <string name="2" value="You helped the Remember of Sleepywood with his research again, but you better talk to him about the progress he's made in his studies on the strange mushrooms." />
+        <string name="demandSummary" value="#o2110200# #a22471#\r\n" />
+        <string name="rewardSummary" value="EXP 8,000\r\nCan proceed to 'Understanding the Horny Mushroom Signals'\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been diligently studying the Horny Mushroom Caps you have given me, but I keep getting reports that the Horny Mushrooms are causing major damage in the area. I think we'll need to put an end to this by hunting down a significant number of them. Can you please eliminate 80 Horny Mushrooms?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great, thank you. I'll keep working on my research in the meantime." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, really? I'll have to put my research on hold for now then and go survey the damaged area." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh great work. I just got done with my research, too. Please hold on for a bit." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I'm in the middle of my research on the Horny Mushrooms…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2110200" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2246" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

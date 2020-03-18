@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28311.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Olivia: &quot;Bring My Daddy&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="Is she still looking through those keys? Maybe she could benefit from some helping hands." />
+        <string name="1" value="Olivia handed you her letter asking that you deliver it to her father right away. You can rescue Joe by using the key inside the letter. Now, let's see where this place is and get him out of there quick!" />
+        <string name="2" value="There must be some relief since you were able to unlock the Piano Room and get that letter to her father. But wait, you might just have another monkey on your back..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032442" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032442" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, so I have the key to the Piano Room. All it needs is just a brave person—you—to take it right to the door. Would you please unlock the door and bring my daddy here safely? I beg of you!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! I've placed my letter and the key that can open the Piano Room door in this envelope. Could you please give this to him, too? It's to let him know that I'm safe out here and that he can trust you to lead him out." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine, just leave a little girl out here all by herself... How do you sleep at night?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wh-wh-who are you? What do you want with me?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I've placed my letter and the key that can open the Piano Room door in this envelope. Could you please give this to him, too? It's to let him know that I'm safe out here and that he can trust you to lead him out." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Who are you? Have you spoken to Olivia? Didn't Olivia ask you to deliver something to me? If you've lost it, please go see Olivia again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201137" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032442" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q28311e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201136" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28310" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

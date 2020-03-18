@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2292.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Blake's Dream" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Jake, who works at the subway station at the center of Kerning City has something on his mind.\r\nHead over to #bJake#k and see what's going on.\r\n" />
+        <string name="1" value="Jake says he wants nothing more than to see Blake achieve his dream. Who's Blake anyway?\r\nPass through the turnstile and go over to Kerning Square Station.\r\n" />
+        <string name="2" value="Blake has asked you to wait, as he was in the middle of something." />
+        <string name="rewardSummary" value="2,400 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2400" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="*sigh* It's too bad. It's just too bad. Do you want to know what's too bad?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I have a coworker named Blake who has a dream that can easily come true with a little bit of help. He definitely has the talent, but I'm on duty and I can't just leave to help him, you know?" />
+                <string name="1" value="Will you please go see Blake and help him out? You'll run into #bBlake#k if you enter through the Kerning City Subway Turnstile and head over to #bKerning Square Station#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, that's too bad." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Please hold on. I'm already looking for someone's lost belonging. I'll be right with you in just a few." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You'll run into #bBlake#k if you enter through the Kerning City Subway Turnstile and head over to #bKerning Square Station#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052117" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052006" />
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2277.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Marshall's Refusal" />
+        <int name="area" value="30" />
+        <string name="0" value="Marshall refuses to help. What is stopping him? Report the bad news to #bLana#k." />
+        <string name="1" value="Find the Locker Key Marshall lost and open the #bLocker#k at the subway station. He supposedly lost his Locker Key on the 5th-6th floor of the Shopping Center." />
+        <string name="2" value="You found the Locker Key #bMarshall#k lost, but the locker closed shortly after you opened it. Try opening the locker one more time." />
+        <string name="demandSummary" value="#i4032506:# #t4032506:# #c4032506# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="13,200 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="13200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032506" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2278" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What? He declined? \r\n#L0##bYes, I think he's going through a tough time.#l\n#k" />
+            <string name="1" value="The rumor I heard must be true, then. Apparently, he can't do anything without the Legendary Scissors.\r\n#L0##bThe Legendary Scissors? What's that? #l\n#k" />
+            <string name="2" value="Ah, a simple trim with those Legendary Scissors could grant you style beyond your imagination! Marshall treasured those scissors and locked them safely away in his locker near the subway station entrance after work. But I hear he's lost his Locker Key. You probably know what I'm hinting at. Want to find the Locker Key for him?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="According to the rumor, he lost it while shopping on the 5th and 6th floors of Kerning Square. My guess is that one of the Mannequins picked it up, but no one knows which Mannequin has it. Please hunt Mannequins and find his #bLocker Key#k. When you find it, try opening the locker at the subway station." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come on, it's an easy task. Think about your friend Blake..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="...\r\n#L0##b(This locker is locked tight. It cannot be opened without the key.)#l\n#k" />
+            <string name="1" value="#b(With the quick flick of the key, the locker opened! There is something inside.)#k" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Find the #bLocker Key#k and open the locker located at the subway station." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" #b(The #bLocker Key#k is needed to open this locker.)#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052118" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032506" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2276" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21754.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Info on Another Seal Stone" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You met #p1204031# in the #b#m100000201# of #m100000000##k. Thankfully, the letter hadn't gotten lost, but you think #p2131000# must have been shocked to see you. You'd better to talk to #b#p2131000##k." />
+        <string name="1" value="#p1012100# flashed a big smile, saying that she knew she'd someday meet you again. She then handed you the letter. It's a great feeling, knowing that you have a friend that remembers you hundreds of years later. You'd better show the letter to #b#p1002104##k." />
+        <string name="2" value="#p1002104# tells you that the letter is unreadable and that it actually might be cursed. He recommends that you show #p1201000# the letter. Since she seems to be good with spells, she might be able to break the curse." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="56800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032328" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, you know you surprised me by popping out of nowhere, asking for #p2131000#, then disappearing into thin air. Did you end up meeting #p2131000# after all? Why her? \n#b#L0#(You explain about #p2131000# and #t4032328#.)#l\n#k" />
+            <string name="1" value="Oh… so you and #p2131000# go waaaaay back? And you're saying she's been the master of all bowmen for hundreds of years, right? Yet you two are friends...? Wow… I can only speculate how old you are!\n#b#L0#I am not old.#l\n#k" />
+            <string name="2" value="Hahaha, I was just kidding, Aran. I didn't know you'd be so sensitive about it. Anyway, a letter that contains information on the Seal Stone? Let's me take a look." />
+            <imgdir name="yes">
+                <string name="0" value="Wait a minute, I can't read this." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Oh, did you lose that letter? Aran? Seriously, you tend to drop things here and there, and really, old habits die hard! If you want to receive the letter again, you must #bforfeit the quest#k and then talk to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032328" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <int name="infoNumber" value="21765" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21753" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21754s" />
+            <int name="lvmin" value="63" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

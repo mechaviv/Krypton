@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2084.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Icarus and the Balloon" />
+        <int name="area" value="30" />
+        <string name="0" value="I wonder how Icarus's doing with the glider...maybe I should go check up on him at Kerning City." />
+        <string name="1" value="Icarus had failed to create a working Hang Glider, and is now attempting to create a flying balloon on his never-ending quest for flight. This looks just as preposterous as his last attempt, but I don't think I can stop him. To make the flying balloon, he needs #b100 #t4000035#s#k and #b10 #t4031164#s#k. Hope this works...\n\n#t4000035# #b#c4000035##k/100\n#t4031164# #b#c4031164##k/10" />
+        <string name="2" value="I got the materials needed for #p1052106# to make the flying balloon and realize his dream of flying. I don't know if his &quot;flying balloon&quot; will indeed fly, but there's a chance that it may indeed work. I'll check up on him around the time when the flying balloon should be ready to take flight and see if he's for real this time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="11000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031164" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, you're the one that got me the items for the hang glider...\r\n#L0##bDid you make the hang glider?#k" />
+            <string name="1" value="Oh, that ... well ... I faced MINOR, I mean, MIIINOR technical difficulties, and ... well don't worry about it!! Icarus does NOT let MINOR obstacle like affect him! Anyway, I was thinking of a much safer way to fly, and I think I have a great plan. Are you willing to help me out again?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I knew you'd help me out. We'll make the best flying balloon in the world! It should consist of a huge balloon, with a basket at the bottom big enough to fit both of us. To make it, I'll need #b100 #t4000035#s#k for the huge balloon, and #b10 #t4031164#s#k for the sandbags that'll be needed to keep the balloon balanced." />
+                <string name="1" value="I have the basket ready. As for the Alligator Skin Pouch, it's made exclusively out of #bLigator#k skin, and you can get them by hunting the Ligators at the swamp. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Trust me, we'll be flying this time! Wouldn't it stink to give it up right now, when we're so close?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I've been working on the basket, to see if it is sturdy enough to hold both of us. Now all we need is a big balloon. Did you gather up the materials that I asked you for?" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, that's a lot!! Well, I will have to get started on making the balloon. Please drop by sometime later, for I should be done by then. We'll be floating our way to Ossyria in no time!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you get all the materials I asked? I don't think you have all of them! Please gather up #b100 #t4000035#s#k and #b10 #t4031164#s#k for me. You can get #b#t4031164##k through Ligators. Please hurry~ the faster you get them for me, the faster we'll be floating up in the air!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031164" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000035" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2083" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

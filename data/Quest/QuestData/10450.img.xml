@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10450.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rainbow Week: Red Monday Magic" />
+        <int name="area" value="50" />
+        <int name="selectedMob" value="1" />
+        <string name="0" value="Rainbow week, during which you can benefit from the seven colors of the rainbow, has started. They say that #b#p9010010##k can cast Red Monday magic on you..." />
+        <string name="1" value="Red Monday. With #b#p9010010##k's magic, you can receive bonus EXP when hunting monsters. The magic will last all day on April 19.\r\nReceive  #r#x10450# additional EXP when hunting #b#r#M10450##b." />
+        <string name="2" value="Red Monday was a day for hunting designated monsters! You received bonus EXP while hunting monsters thanks to #b#p9010010##k's magic." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Red Monday is a #bDesignated Monster Hunting Day.#k Are you ready to have fun hunting today?" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="You might regret it if you miss out today!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh? You want to stop hunting already? If you stop now, the effects of the Red Monday magic will disappear. But not to worry, you can talk to me again to receive a new magic effect." />
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="\r\nYou can obtain an extra #r#x10450##b#k EXP when hunting #r#M10450#s#b. If you want to select a different monster, press the Q button to open the Quest window, forfeit the quest, and then talk to me again. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="q10450s" />
+            <int name="lvmin" value="13" />
+            <string name="start" value="2010041900" />
+            <string name="end" value="2010042000" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

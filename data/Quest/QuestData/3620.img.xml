@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3620.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Extracting Artemesia" />
+        <string name="parent" value="Kong Ji's Request" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="0" value="I heard that Kong Ji is in need of help. I should go check it out..." />
+        <string name="1" value="I went to see Kong Ji again. Kong Ji seemed swamped with work at home. Her stepmom wants some Artemesia Rice Cake, which means she had to extract #t4031231#, but she is stuck at home trying to finish the laundry before the day is over. Obviously, she has no time to extract Artemesia, and that is why she's asking for my help. I've decided to extract some #t4031231# for poor Kong Ji. \n\n#t4031231# #b#c4031231##k/12" />
+        <string name="2" value="I went through the town and mountains and extracted some Artemesia for Kong Ji, who was stuck at home doing house chores. Kong Ji seemed to be stuck at home working way too hard. I better go see her again down the road." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="오랜만이에요. 그 동안 잘 지내셨어요. 전 오늘도 눈코 뜰 새 없이 바쁘답니다. 오늘 안으로 이 많은 빨래를 모두 끝내야 하거든요. 그런데 새어머니께서 쑥떡을 먹고 싶다고 하시네요. 쑥을 캐러 갈 시간이 없는데 이번에도 절 좀 도와주시겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="마을 구석진 곳이나 까막산에 올라가보면 쑥이 자라있을 거에요. #t4031231# 12개만 캐다 주시겠어요? 그 정도는 있어야 떡을 만들 수 있거든요. 부탁 드려요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="바쁘신가요? 이 많은 빨래를 하다 보면 날이 저물 텐데 언제 쑥을 캐러 가지?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="16000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031231" />
+                    <int name="count" value="-12" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, long time~ How have you been? You might have guessed it, but I am still busy like no other. I need to finish all this laundry before the end of the day, you know. Despite all this, my stepmother wants some Artemesia Rice Cake. I don't even have time to extract some Artemesia to begin with ... can you help me out once more?" />
+            <imgdir name="yes">
+                <string name="0" value="If you want to find Artemesia, I suggest you go to either the deepest corner of the Folk Town, or climb up the Black Mountain. Can you extract #b12 #t4031231#s#k for me? I'll need that much to make the rice cake. Thanks~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you busy? I can't even think about the possibility of doing all this laundry, as well as extracting Artemesia before sunset..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Has the artemesia grown quite a bit?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for your help each time. This should be enough for me to make rice cakes. Anyway, when should I start ...?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need at least 12 #t4031231#s to make the rice cake. Please bring some more." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031231" />
+                    <int name="count" value="12" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3619" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

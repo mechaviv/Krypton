@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3234.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Clocktower Headache" />
+        <int name="area" value="37" />
+        <string name="0" value="I should check on #p2040029#, who is working hard at the Lost Time." />
+        <string name="1" value="Deep in the Lost Time of Ludibrium, I met up with #p2040029#. He seemed to be annoyed by the fact that the tiny Ticks have been going inside the clocktower and destroy parts of it, making his job much harder than it should have been. For the sake of #p2040029#, I'll need to take out #b80 Ticks#k. \n\n#o3210207# #r#a32341#" />
+        <string name="2" value="I took care of the request #p2040029# made, by taking out the #bTicks#k. The Ticks were another one of the reasons the clocktower seemed to have something wrong at all times, so this should give #p2040029# a good night's sleep." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000010" />
+                    <int name="count" value="120" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Glad to see you again here. The spring you got me last time, that was good enough for me to be 100% healthy again. Does it never run out? Well, it ain't #t4031098# for nothing. It's very well-made, so I don't have to worry about that one bit." />
+            <string name="1" value="I have recovered, but there's another set of problems killing me now. Some random, unqualified monsters are the ones opening up the Clocktower, and ruining things. My workers are also not doing so well right now... because of this, I'll need your help one more time." />
+            <imgdir name="yes">
+                <string name="0" value="I can't believe you said yes! Well, here's the details. There have been monsters contaminated with the dark force that seems to emanate here, and one of the worst seems to be #b#o3210207##k, but I can't do a thing about it." />
+                <string name="1" value="They use their small bodies to penetrate their way into the huge clock and cause all kinds of troubles this way. The clock is vulnerable in multiple spots to begin with, and they tend to attack in bunches, so the workers have a hard time fixing it. That's why..." />
+                <string name="2" value="Please take down #b80 #o3210207#s#k that should be around here. It'll be better for us if they just decrease in numbers. #o3210207# is a bug-like monster that has a clock on its back, so it won't be hard to locate it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="We need your help desperately. Who am I going to ask for this ... if you have a change of heart, then please talk to me" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What took you so long!! I've been waiting for you here. From what I've heard, you took care of the #b80 #o3210207#s#k just the way you promised. It may have taken you some time, but we're more than thankful for helping us. Here's a small present for your hard work." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the #b120 #t2000010#s#k that I gave you? Thank you so much for all your help. Now that the #b#o3210207#s#k are much lesser than they were before, I hope they don't go in the clock of Clocktower and destroy things anymore. There are still lots of problems that remain unsolved, though. I'll be here waiting for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please take out a 100 #b#o3210207#s#k, the number 1 reason for all those nicks and bruises the clock takes." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040029" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3210207" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040029" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3233" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="34" />
+        </imgdir>
+    </imgdir>
+</imgdir>

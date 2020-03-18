@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3224.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helping Fix Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go check out Roly-Poly 8 at Eos Tower" />
+        <string name="1" value="I met up with Roly-Poly 8 again at Eos Tower. He seemed worried that there's a lot of places to fix at Eos Tower, only to have the monsters stop him from doing so. He asked if I could take out #b25 #o3230103#es#k and collect #b20 Plastic Crowns#k in the process. I can do this... \n\n#o3230103# #r#a32241##k\n#t4000100# #b#c4000100##k/20" />
+        <string name="2" value="I took out a bunch of #o3230103#s and collected #c4000100#s just the way the Roly-Poly 8 of Eos Tower asked. How long is this maintenance job going to last anyway? This should get done soon so I don't have to do them any more favors." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1082002" />
+                    <int name="count" value="1" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1082035" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1082055" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4198404" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1082069" />
+                    <int name="count" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1082047" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1082192" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4000100" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm ... this area has been fixed only days ago, and here's another hole ... what is going on here?? Oh, hi! We've met before. What brings you here this time? If you aren't that busy, then can you hear me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Cool. Just like the other roly-poly workers here, my job is to fix whatever is wrong with the tower, but because of the monsters around this area, all that fixing goes for naught. They keep drilling holes and destroy things in this tower, and I can't do a thing about it." />
+                <string name="1" value="I hope you can kill off some of the monsters around this area. #b#o3230103##k is the one I have the most trouble with, Please defeat 25 of them, while collecting #b20 #t4000100#s#k that they drop. Thanks." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahh, you must be busy right now. I really didn't want help on this, but this is beyond my power. If you have a spare time, please drop by." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh you're back! Seems like you've taken a little longer than I thought you would. Haha. Let's see ... you took down all 25 of the #b#o3230103#es#k, and you also collected 20 #b#t4000100#s#k. Thanks for making the time for me. This may not be much, but please accept it." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get it? It's a glove I bring out everyday, thinking I may need it for work, but I think you'll need it more than I do. I'll have to get back to work now. Take care!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're back. Let's see... you've taken down all 30 #b#o3230103#es#k, but I don't think you've collected all the #b#t4000100#s#k that I asked of you. Please bring back #b25 #t4000100#s#k with you. I can't stand those monsters anymore." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You're back, but I don't think you've taken down all the monsters that I asked of you. Please take down #b30 #o3230103#s#k and bring back #b25 #t4000100#s#k with you. I can't stand these monsters anymore." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000100" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3230103" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3220" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

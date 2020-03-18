@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3332.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Keeny's Pal Humanoid A" />
+        <string name="parent" value="A Present for Keeny" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="At #b#m261000000##k, there's this strange form of life that resides in town. Humanoid may be a machine on the outside, but he can also be classified as a human being... I better pay a visit to #b#p2111003##k." />
+        <string name="1" value="#p2111003# did not remember anything from the past. He does not even remember who created him. He did tell me, however, that he has a friend and that's why he doesn't feel alone, and that friend is #p2111005#... a tight bond between Humanoid and a Fairy? That's interesting! He wanted to give #p2111005# a present, and asked me to get #b#t4000357##k and #b#t4000358##k for him, so he can make one for her. \n\n#i4000357##t4000357# #b#c4000357##k/100  \n#i4000358##t4000358# #b#c4000358##k/100" />
+        <string name="2" value="I gave #p2111003# all the materials he asked for. He then told me to wait as he began making the present." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Hello traveler! I am sure you've traveled to many different places, but... I don't think you've encountered a Humanoid before. You seem very surprised. That's understandable...even in Magatia, there's only one Humanoid, and you're looking at him!" />
+            <string name="1" value="I don't remember the past. I mean, I may not even have one. I don't even remember who made me. It's just like one day, I found myself standing here.  Quite odd to merely exist, with no prior memories.  Imagine if you couldn't remember what your mother looked like?  Or your first kiss? Its strange for others to speak of this, as I have no comparable experience." />
+            <string name="2" value="That doesn't sadden me, however. I am very satisfied with where I am right now. I know it sounds weird for a Humanoid to use the word &quot;satisfied&quot;, but ... that's true. I like it here. I even have a friend here, Keeny." />
+            <string name="3" value="My little Fairy friend always makes sure to drop by. Thanks to her, I find myself losing track of time because I am having so much fun with her. That's why I want to give her a small present to show her my gratitude. Can you help me find one?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Can you get me 100 pieces of Steel and 100 pieces of Mithril? Those are the items I'll need to make a present for her. Something that Keeny will really love." />
+                <string name="1" value="Steel and Mithril pieces can be found through Iron Mutae and Mithril Mutae, respectively." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suggest you talk to Keeny, too. She's very vibrant, the only bright light in the somber, dark aura of this town. Talk to her for a while, and you'll find yourself smiling. I am sure the feelings I feel are a bit different from what the humans may feel, but still...I am...happy whenever she's near me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="9500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000357" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000358" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello traveler! I am sure you've traveled to many different places, but... I don't think you've encountered a Humanoid before. You seem very surprised. That's understandable... even in #m261000000#, there's only one Humanoid, and you are looking at it." />
+            <string name="1" value="I don't remember the past. I mean, I may not even have one. I don't even remember who made me. It's just like one day, I found myself standing here." />
+            <string name="2" value="That doesn't sadden me, however. I am very satisfied with where I am right now. I know it sounds weird for a Humanoid to use the word &quot;satisfied&quot;, but ... that's true. I like it here. I even have a friend here, too. That's #b#p2111005##k." />
+            <string name="3" value="#p2111005#, my little Fairy friend, always makes sure to drop by. Thanks to her, I find myself losing track of time because I am having so much fun with her. That's why I want to give her a small present to show her my gratitude. Can you help me find one?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. Can you get me #b100 #t4000357#s#k and #b100 #t4000358#s#k? Those are the items I'll need to make a present for her. Something that #p2111005#  will really love." />
+                <string name="1" value="#t4000357#k and #b#t4000358#k can be found through #r#o4110300##k and #r#o4110301##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suggest you talk to #p2111005#, too. She's very vibrant and bright, unlike the somber, dark aura this town presents. Talk to her for a while, and you'll find yourself really lightening up. I am sure the feelings I feel are a bit different from what the humans may feel, but still..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello traveler. Did you bring all the items for Keeny's present? Ah, you did. Thank you so much. This should be enough for me to make a special present for her. Aren't you excited to see what I have in store?&#x9;" />
+            <imgdir name="yes">
+                <string name="0" value="Making the present will take up some time, so please wait here as I start working on this.&#x9;" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have #b100 #t4000357#s#k and #b100 #t4000358#s#k yet. I need all those items in order to make the perfect present for #p2111005#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000357" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000358" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

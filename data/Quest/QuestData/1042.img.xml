@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1042.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Second Training" />
+        <string name="parent" value="Mai's Training!" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="1" value="After you finished hunting Stumps, Mai thought you had some talent and turned the training up a notch. This time, you must hunt #r5 Red Snails#k. They are faster than Stumps, so watch out. \n\nRed Snail #r#a10421##k" />
+        <string name="2" value="Red Snails have much higher endurance than Snails and Blue Snails. They also move faster than Stumps. You better not underestimate those sneaky creatures." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="175" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010002" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010003" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="1043" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa, that was fast! You've got a talent for hunting... Impressive! Okay, moving on. This time, hunt #r5 Red Snails#k." />
+            <imgdir name="yes">
+                <string name="0" value="Red Snails have more HP than Snails and Blue Snails. They are also faster than Stumps, so don't underestimate them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Five Red Snails too much for you? I'm telling you, enduring hardships like will help you progress!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't hunted #r5 Red Snails#k yet. If it's too hard, just take your time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130101" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1041" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

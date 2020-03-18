@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3232.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grandpa Clock's Crisis" />
+        <string name="parent" value="A Delivery to a Lost Time" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="After obtaining the #b#t4031094##k by destroying the dollhouse the monster disguised as, I went down to the Lost Time to find #p2040029#. But it seemed like instead of him helping me fix the clocktower, he was about to die first, so he wanted me to take down some monsters called #bTick-Tock#k and pick up the #b#t4031098##k that they possess. I better get them before #p2040029# dies." />
+        <string name="2" value="I got the #t4031098# from Tick Tock. I need to get this to the #p2040029# before it's too late." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031098" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3233" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm ... I'm #b#p2040029##k, indeed, but...how can I help you? What? #b#p2040002##k wants me to plug #b#t4031094##k somewhere appropriate? So that the Clocktower will run right ...? Hmmm ... that's not a problem, except ... there's ... one problem ... with ... me" />
+            <string name="1" value="I know where to put it ... but ... I've been working so hard ... that ... I need to be rewound very soon ... please take #b#o4230113##k down ... and obtain one #b#t4031098##k for me ... thanks ..." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks ... I need to be rewound ... to the point ... where ... even talking ... is hard ... anyway, please go get #b#t4031098##k ... by killing #b#o4230113##k ... I don't have ... much time ... so please ... hurry ... I'll be here ... waiting..." />
+                <string name="1" value="I'll be ... taking care ... of #b#t4031094##k ... good luck ..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm ... you must be busy with other stuff, but without me, there won't be anyone else that can put #b#t4031094##k in place. If you want the Ludibrium Clocktower working again, then you may want to do me a favor. If you have a change of heart, please talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh ... you must have finally found #b#t4031098##k. Thank goodness. I can probably ... start ... wor...king ...right now ... let's see if ... this ... fits on ...me. Then I'll put #b#t4031094##k where ... it ... be...longs." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you ... have gotten ... #b#t4031098##k, yet ... Around this abandoned place, you'll ... find ... a monster called #b#o4230113##k. Kill it, and get one #b#t4031098##k ... and bring ... it ...to me... I don't ... have...much time ... please ... hurry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040029" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031098" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040029" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3231" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="33" />
+        </imgdir>
+    </imgdir>
+</imgdir>

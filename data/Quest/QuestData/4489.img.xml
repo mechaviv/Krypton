@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4489.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivery the word Thank " />
+        <string name="parent" value="To sleep Icarus" />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="1" value="You delivered a glass of warm milk to #b#p1052106##k. Hope he can go to bed early from now on. You should tell #b#p9220005##k in Happyville about this delivery, as he was worried." />
+        <string name="2" value="You told Dalphs#b#p9220005##k that the glass of warm milk was successfully delivered to Icarus." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031885" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm, what's this? Dalphs wanted you to deliver this glass of warm milk to me? Oh, so it's supposed to help me fall asleep after I drink it. I'm crossing my fingers!" />
+            <imgdir name="yes">
+                <string name="0" value="I really hope so. I don't know why I can't fall asleep on Christmas Eve. Maybe I'm too excited about it! I was really sad the past two years since I didn't get anything from Santa Claus, but now that you've told me about it I can finally go to bed. Thanks! Santa Claus will come visit me this time, right? Please thank Dalphs for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Any unfinished business in this town?  Okay, please make sure to extend my thanks to Dalphs." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I can see that you have successfully given him the milk. He should be in la-la land by now.  Good job! I would like to reward you for what you've done." />
+            <imgdir name="yes">
+                <string name="0" value="Here, take this recommendation to the Christmas Tree and something nice will happen to you. Have a great holiday! Merry Christmas!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met Dalphs#b#p9220005##k yet. Please tell him I said &quot;thank you.&quot;" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You have to get Icarus#b#p1052106##k a glass of warm milk soon or Santa Claus will just pass his house like he did last year!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9220005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4488" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

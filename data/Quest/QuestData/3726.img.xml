@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3726.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Policeman in Danger" />
+        <string name="parent" value="Year 2099- The Harbor" />
+        <int name="order" value="3" />
+        <int name="area" value="41" />
+        <string name="1" value="The Policeman you met at Midnight Harbor in the year 2099 wants you to help him eliminate some monsters that have been taking over the harbor. Specifically, 50 Overlord A and 40 Overlord B monsters." />
+        <string name="2" value="The Policeman you met at Midnight Harbor in the year 2099 asked you to help him eliminate some monsters, so you eliminated Overlord A and Overlord B monsters." />
+        <string name="demandSummary" value="#o7120106# #a37261#&#xD;&#xA;#o7120107# #a37262#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 72,000\r\nCan participate in the &quot;Shelter Key&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="72000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="It's dangerous here. Please go somewhere safer. A bunch of unidentifiable monsters appeared and took over the harbor.\r\n#L0##bWould you like me to help you?#l\n#k" />
+            <string name="1" value="Would you? I'm trying to eliminate the monsters that have taken over the harbor, but they outnumber me and I don't know if I can handle all of them on my own. Would you help me eliminate these monsters?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If you can, please eliminate 50 Overlord A's and 40 Overlord B's while I evacuate the people." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's dangerous here. Please get yourself to the nearest shelter where it's safe. Hurry!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="How did it go?\r\n#b#L0#I took care of the monsters as you requested.#l\n#k" />
+            <string name="1" value="Thank you. Thank you so much for your hard work. Thanks to you, the people at the harbor were able to evacuate safely." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please eliminate 50 Overlord A's and 40 Overlord B's while I evacuate everyone. Please help us. Hurry!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7120106" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7120107" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3724" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

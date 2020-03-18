@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3842.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Do Gong's in Trouble" />
+        <string name="parent" value="Eliminating King Sage Cat" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="Master Goblin, who calls himself the King Sage Cat, proclaims that he's the true Master, and althought he may have been ridiculed by Do Gong, he was willing to let it slide and offer a truce. Also wanted to offer a miracle medicine to #bDo Gong#k as a sign of truce. Well, I better give Do Gong the red marble like he said." />
+        <string name="2" value="The stuff Master Goblin gave to Do Gong wasn't the Miracle Medicine!!! It's a POISON!!! Will Do Gong be able to survive this? I better check his pulse right now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031788" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="750" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031788" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have no intention of being angry at Do Gong. I, the King Sage Cat, am forgiving and generous, and I can't let petty quarrel stand in our way of peaceful harmony, right? I may have been ridiculed by Do Gong, but I do not wish to fight him. I only wish to kiss and make up. Of course, you the traveler will help fascilitate this, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Hohohoho~ I knew you would Say that. Now, please take this #rMiracle Medicine#k to #bDo Gong#k. It's a great Miracle Medicine that should help everyone focus while training. This should also help Do Gong on his spells. Hopefully this will open the doors for us to be on friendly terms again. Ho ho ho!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't wish to help us be back on friendly terms? Traveler, you... have some issues, I think." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back... now, if you did what you needed to do, then it'll greatly decrease the powers of Master Goblin... hmmm, what's that you're holding there?" />
+            <imgdir name="yes">
+                <string name="0" value="...Huk!!! That.. That's poison?!! A poison made out of magic?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #bDo Gong#k yet? I want to be on friendly terms with Do Gong ASAP! Ho ho ho!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... it doesn't seem like the power of Master Goblin has been decreasing or anything, but..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Whaaaaat?? You lost the red marble? That precious marble...! How... how did you??? Hmmph, I can't lose dignity over this. Okay, I will forgive you for now. I will give you the red marble one more time, so ... PLEASE! PLEASE give that to Do Gong." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031788" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3841" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="77" />
+        </imgdir>
+    </imgdir>
+</imgdir>

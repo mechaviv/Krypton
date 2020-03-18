@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3647.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Retrieve a Soul" />
+        <string name="parent" value="Legends of Hometown" />
+        <int name="order" value="4" />
+        <int name="area" value="37" />
+        <string name="1" value="Chil Sung was trilled to here how to retrieve Chil Nam's soul from the Old Fox, but soon became sullen. He says he doesn't have the nerve or strength to get the Old Fox's tail. Let's help Chil Sung and hunt down the #rOld Fox#k and bring back the #bOld Fox's Tail#k!  \n\nOld Fox #r#a36471##k \n#i4031793##t4031793#  #b#c4031793##k/1" />
+        <string name="2" value="Tickled Chil Nam's nose with the end of the Old Fox's Tail, and after sniffling a bit, Chil Nam suddenly returned to his old self." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="오셨군요! 산신령님께는 가보셨나요? 칠남이를 왜 이렇게됐는지 알아오셨습니까? 아... 구미호에게 당해서였군요... 그러니까 요새처럼 여우 소리가 요란할 때는 까막산에 가지 말라고 그렇게 말했건만... 말을 안 듣더니! 그럼 고치는 방법은..." />
+            <string name="1" value="아, 다행히도 고치는 방법도 알아오셨군요. 그 방법이... 구미호의 꼬리를 구하는 것이라고요? ...그런! 구미호와 같은 요괴에게서 어찌 꼬리를 구해올지... 모험가님... 혹시 당신은 구미호의 꼬리를 구하는 게 가능하십니까?" />
+            <imgdir name="yes">
+                <string name="0" value="그렇다면 제발 구미호의 꼬리를 구해 칠남이를 구해 주세요. 이대로 혼도 없이 두기에는 너무 아까운 아이입니다! 부탁드립니다! " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="204300" />
+            <int name="pop" value="15" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031793" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="Oh, so you've also learned how to save him. How do we do it? We need the tail of an Old Fox? That is impossible! How can someone defeat a monster like the Old Fox and bring back its tail? Adventurer... can you bring the tail of the Old Fox for me instead?" />
+            <string name="0" value="You're back! Have you met the Guardian Spirit? Have you learned why Chil Nam became this way? Oh... so it was the Old Fox's doing... they Say that it's dangerous to go to Kamak Mountain when foxes are growling... but Chil Nam didn't listen! Is there a way to turn him back..." />
+            <imgdir name="yes">
+                <string name="0" value="The only way to save my little brother #bChil Nam#k is to bring the #bOld Fox's Tail#k  He is still too young, and has a bright future ahead of him! Please help me! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't force you to do it. But what about my brother, Chil Nam?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="(Chil Nam sits still and stares at the sky. Let's try tickling his nose with the tail of the Old Fox.)" />
+            <string name="1" value="Achoo!" />
+            <string name="2" value="Sniffle... cold? What? Who are you? What are you doing here? What? I was possessed by a fox? " />
+            <imgdir name="yes">
+                <string name="0" value="Ah... I remember helping a beautiful young woman while looking for wood in Kamak Mountain. And I can't remember anything else after that. So she was the Old Fox! Ahhh... Just the thought of losing my soul to an Old Fox... it gives me the goose bumps!" />
+                <string name="1" value="If it weren't for you, I'd still be under the Old Fox's spell. How can I ever thank you enough?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please do your best and bring the tail of the Old Fox so that #bChil Nam#k will return to normal." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="(The Old Fox's tail disappeared! I'll have to go get another one.)" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031793" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7220001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3643" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

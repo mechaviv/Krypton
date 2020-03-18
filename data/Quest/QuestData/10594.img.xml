@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10594.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Secret Part-Time Job" />
+        <int name="area" value="50" />
+        <string name="0" value="There is a rumor around town that Cassandra has been collecting Owl Tail Feathers as part of her secret part-time job. Wait, but if it's a secret..." />
+        <string name="1" value="An Owl Tail Feather that came from a sealed box. Is this what Cassandra has been looking for? Go see Cassandra. \n\r\n\r\n#i2430052:# #t2430052:# #c2430052# / 5" />
+        <string name="2" value="You brought the Owl Tail Feather. Since you've completed the secret part-time job, I'll let you perform a secret trade with the great Cassandra." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sshh! You there! Are you interested in a part-time job? It's really quite simple. What do you think?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, great! Well, have you ever seen an owl's tail feather? Sshh! It's a secret, but I've been collecting them on behalf of Lady Syl. Unfortunately, I'm a few short of what she has requested. Could you bring me #r5 Owl Tail Feathers#k? Oh, here's a tip: the Owl Tail Feathers are contained inside #rSeal Boxes#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you must be busy. Fine, but just don't tell anyone that I'm collecting feathers. Sshh!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected #r5 Owl Tail Feathers#k yet. You haven't forgotten about my request, have you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430052" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10594e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="13" />
+            <string name="start" value="201006300000" />
+            <string name="end" value="201007140000" />
+        </imgdir>
+    </imgdir>
+</imgdir>

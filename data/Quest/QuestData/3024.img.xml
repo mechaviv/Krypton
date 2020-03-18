@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3024.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grendel the Really Old and His Recovery" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="21" />
+        <int name="area" value="33" />
+        <string name="1" value="The wiseman of Ellinia, #bGrendel the Really Old#k, promised to give me the map piece in exchange for #b2 Wisdom Crystals#k. " />
+        <string name="2" value="I gave Grendel the Really old Wisdom Crystals. Now I can get the map piece." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005001" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3025" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I heard about you through #b#p1022000##k from Perion. We don't need to necessarily talk to each other to communicate; we communicate through our minds. You've worked hard to get here. But hey, you're looking for #b#t4031056##k? Of course I also happen to have the piece of the map that shows the book's whereabouts. I've forgotten about it for a while..." />
+            <string name="1" value="But I can't just give you that. I also have been giving away a little bit of my power to all the magician-hopefuls for hundreds of years, but there have been a sudden rush of people wanting to be Magicians, I've used up most of my power as a result. Get me #b2 #t4005001#s#k and I'll help you find #b#t4031056##k. What do you think? Do you want to do it?" />
+            <imgdir name="yes">
+                <string name="0" value="Good choice. #t4005001# is something you can acquire from the monsters on land. Of course it won't be easy to get them but still, I think you are capapble of doing it. I'll be waiting for you here. Best of luck to you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm. Without my help you won't ever be able to find #b#t4031056##k. Anyway, if you have a change of heart, feel free to come back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't collect #b2 #t4005001f#s#k yet? You'll be able to find it from the monsters on land from time to time. It won't be an easy task, but I think you are more than capable of getting them. I'll be waiting for you here. Good luck!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005001" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3023" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10396.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="류호의 도전자" />
+        <int name="area" value="50" />
+        <string name="0" value="류호월드의 주민이라면 마을에 있는 #b카산드라#k를 찾아가 보자." />
+        <string name="1" value="30레벨을 달성을 하면 마을에 있는 #b카산드라#k를 찾아가 보자.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;#n\n#k\n - 레벨 : #b#jlevel##k / 30" />
+        <string name="2" value="30레벨을 달성하여, #b카산드라#k에게 선물을 받았다." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="It looks like you haven't reached Lv. 30 yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q10396e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10395" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10396s" />
+            <int name="lvmin" value="1" />
+            <string name="worldmin" value="28" />
+            <string name="worldmax" value="28" />
+            <string name="end" value="2009102900" />
+        </imgdir>
+    </imgdir>
+</imgdir>

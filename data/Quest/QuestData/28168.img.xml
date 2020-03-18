@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28168.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sticky Slimes!" />
+        <string name="parent" value="Drought in Perion" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in #b#m103000000##k says he knows the reason why the Water Pipe is clogged." />
+        <string name="1" value="#r#o210100##k was responsible for the clogged Water Pipe.\nLet's go over to #b#m102040000##k and hunt 30 #r#o210100#s#k! Report back to #b#@9201120:##k in #b#m103000000##k upon completion." />
+        <string name="2" value="In your first mission as a Warrior, you have stopped the drought in Perion." />
+        <string name="summary" value="Monster Hunt" />
+        <string name="demandSummary" value="#o210100# #a281681#" />
+        <string name="rewardSummary" value="Exp 3000&#xD;&#xA;Able to proceed to 'Visiting Henesys' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thanks to you, now I know why the Water Pipe was clogged. Would you like to help out again and fix this thing up once and for all?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The clogging was due to the sticky gunk that came from the Slimes in #b#m102040000##k.\n\nPlease eliminate exactly 30 #r#o210100##ks nearby." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I didn't think that you'd actually decline." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you're fast. I can already hear the sound of water rushing through the Water Pipe." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to you, the Water Pipe is supplying water to #b#m102000000##k appropriately.\nI happen to be heading over to Perion, so I'll report your work for you while I'm there.\n\nOh, and I have something to tell you, so don't go anywhere and talk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't caught 30 #r#o210100##ks yet. Give it a little more effort." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28167" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

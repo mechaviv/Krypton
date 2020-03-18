@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8057.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 5" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="5" />
+        <int name="area" value="40" />
+        <string name="0" value=" After I get done touring around Ludibrium, I should start up a conversation with Marcel" />
+        <string name="1" value="Marcel offered to take me to El Nath. Once I get there, he advised me to look for Scadur..." />
+        <string name="2" value="I was able to meet up with Scadur. Where will I go next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022026" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8058" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Was Ludibrium a blast? Isn't it just a fun place to be around? Now, ready to go to the next spot?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll send you to El Nath, a land covered in snow." />
+                <string name="1" value="Once you arrive there, talk to #eScadur#n, and he'll take you to another spot." />
+                <string name="2" value="Oh yes, if you step outside, you'll be encountering massive, violent wolves wandering around town, so unless you're really powerful, you won't even be able to hit them once!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, you like it here, huh? Make yourself comfortable then~" />
+                <string name="1" value="After taking care of your business here, just talk to me, and I'll take you to another spot." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome! Marcel told me of your arrival. Well, there's not much here besides snow, so check it out! Watch your step--it's slippery!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8056" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20718.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maybe it's Grendel!" />
+        <int name="area" value="15" />
+        <string name="0" value="I better talk to Agent #b#p1103003##k of #m101000000# about a new assignment." />
+        <string name="1" value="#p1103003# told me #p1032001# looked very suspicious. She said she always had #p1032001# in mind every since she found out about his past, which involved dabbling with dangerous black magic. She then assigned me to visit #b#m101000003##k, where #p1032001# lives, and wanted me to conduct a #bfull search in his house#k while #p1032001# is away." />
+        <string name="2" value="While conducting a full search in #p1032001#'s house, I was ambushed by a black shadow. Thankfully, I came out alive. After telling her what happened, #p1103003# stopped and started thinking about something..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I don't know if you are aware of this, but the chief of #m101000000#, #p1032001#, used to lay his hands on a dangerous form of magic. These days, he steers clear from the past and moved on to become a wiseman, but since he does have a past, his name is always mentioned on the list." />
+            <string name="1" value="I received a word that the Puppeteer may be connected to him. It is true that his forte used to be putting curses on the dolls, so it's not totally out of question, so I'd appreciate it if you can find out some more information on #p1032001#." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I will bring #p1032001# out by telling him that I need to talk to him about something. While I hold on to #p1032001#, your job is to enter #p1032001#'s #b#m101000003##k and #bsearch through every part of his library#k. This is just in case we find an item that may put all of us in grave danger." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Appearance-wise, #p1032001# has the look of a warm-hearted old wizard, but... appearance is definitely not everything. We can only prevent the rebirth of Black Mage by questioning everything we see." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...a black shadowy figure came out and attacked you? How can this take place at #p1032001#'s house? This sounds like one big conspiracy here..." />
+            <imgdir name="yes">
+                <string name="0" value="I'll have to sort this all out in my mind. Talk to me in a bit." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103003" />
+            <int name="infoNumber" value="20732" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20717" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="19" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

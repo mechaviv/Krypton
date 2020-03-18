@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3820.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Mastery Medicine" />
+        <int name="area" value="44" />
+        <string name="0" value="The resident pharmacist of #b#m250000000##k, #b#p2091002##k, seems to be in the midst of creating a special medicine..." />
+        <string name="1" value="#p2091002#, who claims to be working on a medicine that'll take a regular person much closer to becoming a Master, requested that I gather up the ingredients for him. The ingredients required are: #b10 #t4000288#s#k, #b10 #t4000292#s, 10 #t4000294#s, 6 #t4000281#s, and 4 #t4000283#s#k...\n\n#i4000288##t4000288#  #b#c4000288##k/10   \n#i4000292##t4000292#  #b#c4000292##k/10   \n#i4000294##t4000294#  #b#c4000294##k/10   \n#i4000281##t4000281#  #b#c4000281##k/6     \n#i4000283##t4000283#  #b#c4000283##k/4" />
+        <string name="2" value="I managed to give #p2091002# all the required ingredients. It actually looks good enough to be a medicine to speed up the recovery from, say, fatigue, but will this really make us become Masters?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="#m250000000#에 온 걸 보면 자네도 선인이 되길 원하는 사람인 것 같군. 하지만 선인이 되기란 결코 쉽지 않지… 오랫동안 수련을 해도 선인이 되지 못하는 사람은 많다네. 그래서 새로운 방법으로 신선에 가까워질 수 있게 되는 약을 제조하고 있는 중이지. 어때? 자네도 관심이 있나?" />
+            <imgdir name="yes">
+                <string name="0" value="약의 이름은 #t2022143#이야. 먹으면 신선에 가까워질 수 있는 특별한 약이지. 다른 재료는 모두 구했는데, 몇 가지 재료가 부족해서 아직 약을 완성시키지 못하고 있다네. 나머지 재료를 구해다 준다면 자네에게도 약을 좀 나눠 주도록 하지. " />
+                <string name="1" value="구하지 못한 재료는 #t4000288# 10개, #t4000292# 6개, #t4000294# 10개, #t4000281# 6개, #t4000283# 4개야. 이거면 #t2022143#을 완성시킬 수가 있을 걸세. 자, 어서 재료를 구해 주게." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="관심이 없다니, 선인이 될 생각이 없다는 건가? #m250000000#에 어울리지 않는 친구로구만…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000283" />
+                    <int name="count" value="-4" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000294" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000288" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000281" />
+                    <int name="count" value="-6" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000292" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2022143" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="For you to step foot here in #m250000000#, you must be interested in one day becoming a true Master. The path towards becoming one, however, is long and treacherous. There's a lot of people that have spent countless years training to become one, only to fall short. This is why I'm creating this medicine, to create opportunities for others to become true Masters themselves. What do you think? Are you interested in one?" />
+            <imgdir name="yes">
+                <string name="0" value="The name of the medicine is #b#t2022143##k. It's a special medicine that allows one to become much closer towards becoming a Master. I got most of the ingredients here, but I am lacking some. If you can gather those up for me, then I'll be more than happy to share the medicine with you." />
+                <string name="1" value="The ingredients I couldn't find are #b10 #t4000288# s, 10 #t4000292#s, 10 #t4000294#s, 6 #t4000281#s, amd 4 #t4000283#s#k. All I need are those, and I'll be able to make the incredible #t2022143#! Now go on, gather up those ingredients as fast as you can!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not interested? You're not interested in becoming a true Master? You don't fit the mold of a resident here in #m250000000#..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you gathered up the ingredients! Hopefully this will enable me to make #t2022143#. Okay now, hold on one second, I'll give you some, too." />
+            <imgdir name="yes">
+                <string name="0" value="Take #t2022143# and hopefully you will become a true Master like me~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... this is not enough. I need ALL the ingredients here to make #b#t2022143##k. I need #b10 #t4000288#s, 6 #t4000292#s, 10 #t4000294#s, 6 #t4000281#s, and 4 #t4000283#s#k. I suggest you write these down, for you'll need to gather up numerous types of ingredients." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000283" />
+                    <int name="count" value="4" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000292" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000294" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000288" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000281" />
+                    <int name="count" value="6" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

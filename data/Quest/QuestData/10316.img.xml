@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10316.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Quest Completion Book" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You have found an interesting artifact." />
+        <string name="1" value="You have found a Quest Completion Book. Just as you are about to  report it to a Maple Admin, you wonder what it was used for." />
+        <string name="2" value="Upon returning it to the Maple Admin, he thanked you and said more and more Maplers participate in quests nowadays." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, doesn't this look familiar to you? This is the book that used to appear upon completing a quest! Tee hee. Let's report it to a Maple Admin." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Oh well, it's up to you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, thanks for bringing it. Blah blah blah." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't reported it to a Maple Admin yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <string name="endscript" value="q10316e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001308" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="start" value="2010022200" />
+            <string name="end" value="2010030800" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

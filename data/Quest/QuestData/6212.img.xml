@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6212.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Porter's Durable Battery" />
+        <int name="area" value="10" />
+        <string name="0" value=" If I need #b#t4031478##k, I should go see #b#p2050013##k in #b#p2050013##k in#m221000000#." />
+        <string name="1" value="#p2012017# said he left #b#t4031478##k with #b#p2050013##k and told me to get it from him. But #p2050013# says that he doesn't remember anything about #t4031478# but he might if I bring him #b#t4001084##k. ...He's cunning, I certianly wouldn't guessed that by looking at him.\n\n#i4001084##t4001084# #b#c4001084# / 1#k" />
+        <string name="2" value=" I gave him #t4001084# and received #t4031478#. At last!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어, 안녕하세요. 뭘 찾으시나요?" />
+            <string name="1" value="...휴즈에게 주기로 한 오래가는 건전지요? 어. 글쎄요. 휴즈에게 언제 건전지를 주기로 했는지 기억이 잘 안 나는데... 요새 파풀라투스 때문에 정신이 없거든요. 그거 움직이는 원리 때문에 워낙 바빠서요. 어쩌면 파풀라투스의 증표를 가져다 주시면, 오래가는 건전지가 떠오를지도 몰라요." />
+            <imgdir name="yes">
+                <string name="0" value="#b파풀라투스의 증표#k를 가져다주시겠다고요? 오오. 굉장히 친절한 분이시로군요. 그럼 기다리겠습니다." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="파풀라투스의 증표... 오래가는 건전지요? 그게 뭐더라..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001084" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031478" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" Hi! What are you looking for?" />
+            <string name="1" value=" ... durable batteries that were supposed to given to Hugh? Well.. I can't remember when I told him that... I'm so busy with working on the principle of Papulatus's movement. If you can get me the Seal of Papulatus, I should be able to spare some effort on making durable batteries. What do you say?" />
+            <imgdir name="yes">
+                <string name="0" value=" Return to me with the #bSeal of Papulatus#k! I'll wait right here!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Seal of Papulatus....durable battery? What's that?..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Oh... That's the Seal of Papulatus.Thank you. ...Yeah? durable battery? Ah, yes! I built one for you while you were off getting the Seal. Here you go!" />
+            <imgdir name="yes">
+                <string name="0" value="How's Hugh? Tell him to cheer up!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Hmm... The principle of Papultus' machine consumes me--how could it work? I can't think of anything else, much less how to build a durable battery." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001084" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6210" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031478" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

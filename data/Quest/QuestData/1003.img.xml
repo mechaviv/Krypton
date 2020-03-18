@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="What Sen wants to eat" />
+        <string name="parent" value="Nina and Sen's Dinner Menu" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="Talk to Nina." />
+        <string name="1" value="Nina is wondering what to make her brother, Sen, for dinner. Go talk to Sen, who's next to Nina, and ask him what he wants to eat." />
+        <string name="2" value="You asked Sen, Nina's brother, what he wants for dinner. He said he wants #bMushroom Soup#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="1004" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="That's my little brother, #r#p2001##k. Will you please ask him what he wants for dinner?" />
+            <string name="0" value="Oh, a traveler! Nice, right on time... I have a favor to ask. Head towards your right and you'll find a boy." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Oh, I guess you're very busy. Still, it's not too difficult of a job, so please help if you can." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You didn't talk to #p2001# yet? Please, open you eyes!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2102" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

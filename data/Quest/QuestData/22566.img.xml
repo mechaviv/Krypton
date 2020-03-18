@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22566.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Permission to Join the Secret Organization" />
+        <int name="area" value="7" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The #p1063018# starts talking to you. Have you finally been allowed to join the organization that #p1063018#'s master is in? Respond to the #b#p1063018##k." />
+        <string name="1" value="The #p1063018# says that he hasn't been able to contact you sooner because his master is in a precarious situation and has been on the run. He says that you'll be able to join the Secret Organization as a temporary member. Go to the #b#m200080601##k in #b#m200080600##k. He says that it's the room with a #bwing-shaped sign#k on the entrance..." />
+        <string name="2" value="You went into the secret room that the #p1063018# mentioned and searched behind the #p2012034#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142155" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2212" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, lifesaver! Long time no see! I'm sorry I couldn't contact you earlier. My master has been very busy... To tell you the truth, my master was fighting against his enemy and got himself in trouble, so he's running away. I think he's safe for now, though." />
+            <string name="1" value="Oh, but that's not why you're here. Congratulations! You have been approved to join the secret organization! More accurately, you're a temporary member of the organization, but you will soon be promoted and become an official member like my master!" />
+            <string name="2" value="I don't know what kind of tasks you will be given, lifesaver. If you wish to receive a mission as a member of the secret organization, go to the #b#m200080601##k in #b#m200080600##k. If you look in the #b#p2012034##k, you'll be able to view the mission you have been given." />
+            <string name="3" value="It's really hidden, isn't it? That's how the organization delivers its missions. Once you get promoted, you'll be able to meet with other members and decide on the missions you want to accept, like my master." />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Huh? Don't you approve of the way you receive missions? But it's a secret organization and everything must be done discreetly..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#b(Could this be the #p2012034# the #p1063018# was talking about? This brick that's popping out appears to be movable. Try picking up the brick.)#k" />
+            <imgdir name="yes">
+                <string name="0" value="#b(A medal came out along with the brick! Something else might be in there...)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you forgotten where to go? Just find #b#m200080601##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012034" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1063018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22561" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="46" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

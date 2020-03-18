@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3925.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="True or False" />
+        <string name="parent" value="Sand Bandits and Red Scorpions" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="After listening to #p2101000#, you discover there may be another secret organization besides the Sand Bandits. The Red Scorpions... Who are they?" />
+        <string name="1" value="#p2101000# said that since the ring is from the Red Scorpions, who bully people in the neighborhood, she stole it from them and gave it to others. What? So #p2101012# is a Red Scorpion? But he told me he's a Sand Bandit…" />
+        <string name="2" value="#p2101000# said #p2101012# is a fake, and you should find the Red Scorpions' hideout, which should be nearby. She said only a special password can open the door. As revenge, she suggests stealing their treasure and giving it to others. But what did she mean by &quot;You already know the password&quot;?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh... you look so clueless. Think! The Sand Bandits are based in #m260000000#. They hide their identities so no one suspects them of going against the queen. You really think they'd hide their treasures out in the open outside town?" />
+            <string name="1" value="And the guy you said you helped... It sounds fishy to me. Why would he stand in the middle of the desert when everyone else is here in Ariant, doing their best to defy the queen? " />
+            <string name="2" value="And the guy ordered you to steal the queen's ring, right out from under her nose? No, no, that's too risky. Imagine if you were caught! The Sand Bandits would be totally compromised. No, they'd never ask you to do that. You definitely weren't working with a member of the Sand Bandits..." />
+            <string name="3" value="Seriously, who fed you that junk? It's a mound of dung, my friend, one so large that a Mushmom could sprout out of it. Ah ha! I'll bet it was #p2101012#? I'm right, aren't I? He sounds like a member of the #rRed Scorpions#k. What? You don't even know about the Red Scorpions? Jeez... I'd better explain, lest you find yourself on the wrong end of a pointed sword. Will you listen?" />
+            <imgdir name="yes">
+                <string name="0" value="The Red Scorpions are a notorious band of thieves based right outside #m260000000#. Unlike the Sand Bandits, they are in it for their own good, and they disturb the peace and take things from the innocent. I think you got duped by the Red Scorpions." />
+                <string name="1" value="You've been tricked by the Red Scorpions all this time! You are quite gullible. Perhaps I should offer to sell you a rare and magical Flaming Sword for the low, low price of 550 million mesos... HA! I mock you, my friend, but I don't think you're a bad person. Hmm, are you interested in getting revenge on the Red Scorpions? They did play you like a trumpet, after all..." />
+                <string name="2" value="If you want some payback on the Red Scorpions, let me know. I'll tell you exactly what to do." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I've been telling you the truth, and you don't trust me? Quite a complex you have there, my friend..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back, so I suppose you really want to turn the tables on the Red Scorpions. The way to do that is quite simple. Take their stolen treasures and give them out to the residents here. You're not only hurting the Red Scorpions, but you're also helping out the good people of Ariant. Poetic justice, don't you think?" />
+            <imgdir name="yes">
+                <string name="0" value="The Red Scorpion's hideout is in The Scorching Desert, so the treasures they've stolen should be there as well. A suspicious man stands in front of the hideout like a guard. The thing is, even if you find the place, you won't be able to go in. The door can only be open by yelling out the magic words." />
+                <string name="1" value="So you need to discover the password, then go to their hideout and steal their stolen treasures. What's the password? Hah...#byou probably already know it#k. It is a bandit hideout in the middle of a desert, after all. Afterwards, drop those treasures at secret stash spots in various homes in town. That's what I'd call revenge, served piping hot in this case!" />
+                <string name="2" value="Oh, and if you see an X on any of the houses, then that means it belongs to a known thief, so stay away. Once you've robbed the robbers, let me know, alright? I'd love to hear details on how the Red Scorpions got a taste of their own medicine." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3924" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="27" />
+        </imgdir>
+    </imgdir>
+</imgdir>

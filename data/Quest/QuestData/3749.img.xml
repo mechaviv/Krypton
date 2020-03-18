@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3749.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nibelung's Song" />
+        <string name="parent" value="Year 2503- From the Sky" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value="In the end, Andy says the answer is in the year 2503, where he's from. He wants you to travel to the year 2503 to destroy Nibelung and report it to Ashura. Will this solve the problem?" />
+        <string name="2" value="You destroyed Nibelung and reported that to Ashura. She showed her gratitude and wished for peaceful days in the future." />
+        <string name="demandSummary" value="#o8220015# #a37491#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 220,000\r\n#Wbasic#\r\n#i1003039:# #t1003039:# 1\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="220000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1003039" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="After all that time traveling, I feel like nothing got resolved. Judging from all the Time Sand we've collected, I think the key clue is in year 2503, where I'm from. Please travel to the year 2503, destroy Nibelung, and report it to Ashura." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ashura will be somewhere in Air Battleship Hermes." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you going to quit? Give up? Just like that? When we're so close?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've destroyed Nibelung. If you're here to tell me about Andy, I already know. I owe you a debt of gratitude. Of course, this doesn't solve everything. I don't think you fully understand yet, but someday you will. It just isn't time yet." />
+            <imgdir name="yes">
+                <string name="0" value="I will not forget you, time traveler..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go talk to Ashura..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Nibelung will soon begin attacking. I'm afraid. Do you think we'll be able to destroy it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082013" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3748" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

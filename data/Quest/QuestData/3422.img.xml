@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3422.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fuel for MT-09" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Kay the engineer at the Omega Sector." />
+        <string name="1" value="I met an engineer named Kay at the Omega Sector Silo. She said she'd been looking for an assistant, and asked if I could help her out. For my first task, since she's trying to develop a new machine that recycles MT-09's fuel, she wanted me to collect #b5 MT-09's Fuels#k.\n\n#t4000126# #b#c4000126##k/5" />
+        <string name="2" value="I went around and collected the fuel for MT-09. This was for Kay the Engineer, who was at the Silo of the Omega Sector. I wonder what kind of a machine Kay will make with the fuel..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000126" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am the master of my domain at recycling throwaway machines into something totally new. Lately I've been working on recycling the fuel of MT-09 for something, but I desperately need more people to help me out here. Say, would you like to work for me as my assistant?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, nice! I've been waiting for someone like you, actually, and this is going to be great!! I'll be counting on you as my trusty assistant. Anyway, here's your first task. I told you something about recycling the fuel of MT-09, right? Well, I need the materials necessary to conduct the studies, and therefore I've been delaying it for a while now." />
+                <string name="1" value="Around Omega Sector, you'll find a hidden field or two, where you'll run into a monster named #b#o5120100##k. Your job is to defeat #o5120100# and gather up #b5 #t4000126#s#k in the process. I'll be here continuing my research." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I think you can be a great assistant for me... you must be really busy right now. Please remember that for the sake of Omega Sector, we really need your help, so if you change your mind, please tell me so." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're finally back. Let's see... yes, this is indeed #b#t4000126##k, the fuel for the aliens. With this, we can seriously make new machines for our benefits. Great job collecting these for me. Since you did your job as my 'assistant', I'll give you some items directly from my bosses. These will indeed help you out." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the #b50 #t4003000#s#k? These are the leftovers from a research, and I'm sure you'll need it, too. Now, the first part of the task is over, but please remember that you're still my assistant. I may need your help down the road, so please drop by often, okay? Bye!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up the necessary items for my research. Find the hidden fields around Omega Sector. Every once in a while, you'll run into a machine called #b#o5120100##k. Defeat the machine, and collect #b5 #t4000126#s#k in the process, okay? I'm counting on you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2051001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000126" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2051001" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

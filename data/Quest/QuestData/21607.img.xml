@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21607.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Adolescent Wolf" />
+        <int name="area" value="6" />
+        <string name="0" value="#b#p1202007##k, a penguin from #b#m140000000##k, wants to talk to you about something." />
+        <string name="1" value="According to the data #p1202007# has studied, wolves go through a kind of puberty during their adolescent years. They say that if you don't take special care of wolves during this time, they might not grow properly! #p1202007# then mentions that in order to raise #t1902015# well, you should ask advice from some veterans of wolf-raising.\r\n\r\n#y21608# #b(#u21608#)#k\r\n#y21610# #b(#u21610#)#k" />
+        <string name="2" value="After listening to everyone's advice on how to raise a wolf, you noticed that your #t1902016# had grown a bit. You need to take good care of your wolf now that it is going through puberty." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902016" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there. How's #t1902015# doing? Has is been acting rebellious, by any chance? I've been studying wolves and I've learned… Well, I've learned that wolves actually go through a kind of puberty during their adolescent years." />
+            <string name="1" value="Apparently, wolf pups that don't go through puberty fail to grow properly, which means you'll have to really take care of #t1902015# in order for it to reach its maximum potential. Maybe #basking for advice from others#k might help you." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to seek advice from people who know about wolves, like #b#p2060000##k and #b#p2020007##k. I really want you to handle #t1902015#'s adolescent period with extra care." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm… So, do you actually believe in raising your wolf all by yourself and think that asking for help is bad? I say, hearing advice from others can never hurt." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you receive a lot of good advice from others before you came here? So what do you think? Do you think it helped #t1902015#? Let's see how much #t1902015# has grown since the last time we talked. Please hand me #t1902015#." />
+            <imgdir name="yes">
+                <string name="0" value="Oh, I can see that #t1902016# has grown considerably! You can't even call it a pup anymore! It's gone through adolescence, so… maybe a teen wolf?" />
+                <string name="1" value="It's all because you were able to take such good care of my #t1902016# during its adolescent years. Please take care of my #t1902016# for me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you receive all the advice you need on how to raise a wolf pup? Please go talk to #b#p2060000##k and #b#p2020007##k, and follow their advice. That should be enough for #t1902015# to weather the storm of adolescence." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21608" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="21610" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21604" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

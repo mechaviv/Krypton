@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4511.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the path to the sea" />
+        <string name="parent" value="The Secret of Ghostship" />
+        <int name="order" value="2" />
+        <int name="area" value="48" />
+        <string name="0" value="#b#p9270030##k has more secrets to reveal!  Let's go see him again!" />
+        <string name="1" value="#b#p9270030##k has told me that he wishes to sail again with his crew.  However, he isn't sure if he can go out to the sea like the old days because of the Ghosts along the coast line.  I really want to help him get his dream back by eliminating #b#o9420510# and #o9420511##k.\n\n#o9420510#  #r#a45111##k\n#o9420511#  #r#a45112##k" />
+        <string name="2" value="Yes indeed!  I did help #p9270030# to get back to the sea again.  But I wonder, he has something more worried about.  I think I should go see him again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022213" />
+                    <int name="count" value="10" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022215" />
+                    <int name="count" value="10" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey Traveler. I thank you for assisting me in eliminating the ghosts last time. Let me tell you another secret of mine. I am actually planning to re-sail again. What's stopping me are the remaining ghosts that roam freely along the coast! So, before I am daring enough to start my sailing, I need safety first. Can you help me out on this?" />
+            <imgdir name="yes">
+                <string name="0" value="Please eliminate #b120 #o9420510##k and #b120 #o9420511##k. Good Luck to you Maplers! May god be with you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come on~ This isn't the right time to chicken out!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Ghosts in Ghost Ship caused me to lose my job!" />
+            <imgdir name="yes">
+                <string name="0" value="You are simply unbelievable! I believe we will have a chance to work together again~ Don't you think so? Geeez~ Now, accept this!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Nah... I don't think you have eliminated #bSilkie Jr. and Pac Pinky#k yet... I am counting on you..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270030" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420510" />
+                    <int name="count" value="120" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9420511" />
+                    <int name="count" value="120" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270030" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4510" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="63" />
+        </imgdir>
+    </imgdir>
+</imgdir>

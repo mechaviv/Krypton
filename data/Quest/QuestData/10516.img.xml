@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10516.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Evan Launch Commemoration 2PM Event" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Go to Cassandra to receive the gift she has prepared to celebrate the launch of Dragon Master Evan." />
+        <string name="1" value="You have to go grab Cassandra's gift that you didn't get earlier. You have to get it within the alloted time. \r\n" />
+        <string name="2" value="You received the gift that Cassandra prepared in celebration of the launch of Dragon Master Evan." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You weren't able to receive the gift because you had no space left in your inventory. You're not too late. Here is your gift!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="infoNumber" value="10517" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="gift0102" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10516s" />
+            <int name="lvmin" value="13" />
+            <string name="start" value="201001021446" />
+            <string name="end" value="201001021546" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

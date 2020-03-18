@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28175.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Special Wine" />
+        <string name="parent" value="Who is the suspect?" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1092002:##k says he'll make something #b#@1032001:##k likes. Let's go find him at the Basement of the Nautilus." />
+        <string name="1" value="He says he needs the following ingredients in order to make the #rV.I. Orange Mushroom Wine#k.\n\n1 #rPig Shaped Bottle#k (a drop item from Ribbon Pigs)\n1 #rPig Ribbon#k (a drop item from Ribbon Pigs)\n20 #rOrange Mushroom Caps#k (a drop item from Orange Mushrooms)\n\nReport back to #b#@1092002:##k in #bthe Nautilus#k when you collect all the items." />
+        <string name="2" value="#b#@1032001:##k in #b#m101000000##k is known to love wine. Let's go find him." />
+        <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20&#xD;&#xA;#i4001342:# #t4001342:# #c4001342# / 1&#xD;&#xA;#i4000002:# #t4000002:# #c4000002# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 4,500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032478:# #t4032478:# #c4032478# 1&#xD;&#xA;Able to proceed to 'Solving the Mystery' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="4500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001342" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032478" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#b#p1032001##k in #b#m101000000##k loves wine. If you bring me the ingredients, I'll make you a special bottle of wine." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Surprisingly, he enjoys wine although he doesn't seem like the type. On top of that, his taste in wine is very particular, so he won't drink just any old wine. He must drink wine made with grapes and Orange Mushroom Cap extract from Victoria Island. Oh, and don't forget to wrap it nicely with a Red Ribbon!" />
+                <string name="1" value="Let me summarize what you need to bring.\n1 Bring me #rPig Shaped Bottle#k, 1 #rPig Ribbon#k, and 20 #rOrange Mushroom Caps#k.\nI'll make you a bottle of tasty #rV.I. Orange Mushroom Wine#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't believe you declined, especially after all that I've told you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let me see...you did alright. Shall I get started now?" />
+            <imgdir name="yes">
+                <string name="0" value="Ta-da! You really should let it sit for a few years, but since you're in such a hurry, just take it.\nHe'll be so excited!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not enough. Bring me 1 #rPig Shaped Bottle#k, 1 #rPig's Ribbon#k, and 20 #rOrange Mushroom Caps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001342" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28174" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

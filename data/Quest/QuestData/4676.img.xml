@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4676.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Naomi's Invitation 2" />
+        <int name="area" value="50" />
+        <string name="0" value="I better talk to #p9105002# again and hear more about the event." />
+        <string name="1" value="#p9105002# explained to me in greater detail about the event that's taking place. It looks like I'll need to gather some #t4032056#s, bring them all to #p9105002#, and receive a special prize in return." />
+        <string name="2" value="I gave #p9105002# some #t4032056#, and she gave me a present in return. I guess I can only enter this event once a day. Seriously, is there no way I can enter again today? Perhaps I could find a ticket elsewhere..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="That ticket is to enter the area where the Secret Event is being held." />
+            <string name="1" value="Joining this event is easy! Do you remember the #bMini Dungeons#k that are located all over the world of Maple? Use the ticket I just gave you and enter one of the dungeon maps. Once you use the portal inside, you'll be able to move to a special Mini Dungeon that is slightly different from the ones you've been used to." />
+            <string name="2" value="Ah, the dungeon will look the same on the outside. The big change is the item the monsters drop. One of the items they'll drop will actually be #bThe Secret Something#k." />
+            <string name="3" value="The #bSecret Something#k......that something is actually a crystal called #b#t4032056##k. I want you to gather up as many of those as you can, and then come back to me. Depending on how much you bring, I'll give you a special, special reward that you'll surely love!" />
+            <string name="4" value="Oh, and while setting up this event, I have changed the Mini Dungeon settings a bit. Please take note of the following: \n1, Once you enter the dungeon, you can only be inside for 5 minutes. After that, you'll be automatically removed from the dungeon.\n2,You may enter the Mini Dungeon up to 6 times per day.\n3, You can't enter the dungeon if you are affiliated with a party at the time of entrance.\n4, You cannot use special skills once inside the dungeon." />
+            <string name="6" value="For Skill Books and Mastery Books, please check the event page of the website for details!" />
+            <string name="7" value="These prizes are based on the number of #t4032056#s you own, so please check your inventory first before coming to me. You can have as many #t4032056#s as you want, so gather them up as many as you can until you reach the target number you need to earn that special prize." />
+            <string name="8" value="Now, what are you doing just standing here? Go get some crystals!! I'll be here waiting!" />
+            <string name="5" value="&quot;What? You want to know what you can receive by trading in #b#t4032056##k? Hmmm... this information is supposed to be a top secret... but I'll give you the list JUST FOR YOU! I'm only going to say this once, so remember it, write it down, do something! Here are the prizes. \n\n100 : Change to Mouse(10) \n\n200 : Power Elixir(20) \n\n500 : Energy Drink(10) \n\n700 : Necomimi(1) \n\n1000 : Summoning Superslime(1) \n\n1500 : Moon Star Chair(1) \n\n2000 : Under the Maple Tree(1) \n\n2500 : Sword Earrings or Shield Earrings(1)" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back! How many did you wind up gathering? Are you interested in trading them in for a prize right now?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, now based on how many #b#t4032056#s#k you have, you'll be receiving this. I'll give out 1 free event ticket per day, so I'll be expecting to see you here tomorrow!" />
+                <string name="1" value="What? You want to join this event again today? Well... if you really insist, we sell the special tickets that'll allow you to participate in this event more than once in one day! You can find them at the Cash Shop, so... good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh I see. Please let me know when you are ready to make the exchange!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh no, you don't have enough #t4032056# yet? Take the Event Ticket and enter the dungeon to gather them up by defeating the monsters. Good luck!!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9105002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032056" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="4676e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9105002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4675" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2008121600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

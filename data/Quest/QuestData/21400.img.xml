@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21400.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Weapon Starts a Fight… with His Owner?" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 120, #b#p1201000##k strikes up a conversation with you…" />
+        <string name="1" value="#p1201000# alerts you that #p1201002# is acting strange once again and urges you to visit #b#m140000000##k immediately. She also warns that she's never seen it act this way…" />
+        <string name="2" value="#p1201002# seemed to be in great pain. What's going on here?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How is the training going? I know you're busy, but please come to #b#m140000000##k immediately. The #b#p1201002##k has started to act weird again... But it's even weirder now. It's different from before. It's...darker than usual." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I have a bad feeling about this. Please come back here. I've never seen or heard #p1201002#, but I can sense the suffering it's going through. #bOnly you, the master of #p1201002#, can do something about it#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm not joking! Something is seriously wrong... Something must have happened to #p1201002#!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh…" />
+            <string name="1" value="Aren't you… Aran? What are you doing here? I see… So that cocky little girl brought you here. I warned her not to…" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please, go and take care of #b#p1201002##k! I have a feeling that if you don't go soon, it may be too late!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <string name="startscript" value="q21400s" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="2111" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

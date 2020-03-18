@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2358.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fifth Mission: Fabrication" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Ryden says that he has a new mission for you. Go to Kerning City and meet with Ryden." />
+        <string name="1" value="Ryden says that the time has come to expose the Dark Lord's true nature. He asks that you put up posters at the Construction Site North of Kerning City and the Subway Ticketing Booth, which state that the current Dark Lord assassinated the Former Dark Lord. Also, he would like you to plant a bomb at the Jazz Bar, the location of the Dark Lord. \r\n#i3800012# #i3800015# #i3800014#" />
+        <string name="2" value="Ryden said that the time had come to expose the Dark Lord's true nature. He asked that you put up posters at various places in Kerning City, which stated that the current Dark Lord assassinated the former Dark Lord. Also, he asked you to plant a bomb at the Jazz Bar, the location of the Dark Lord. You had completed both these tasks." />
+        <string name="rewardSummary" value="EXP 4,000\r\nCan proceed to 'Sixth Mission: Destroying the Evidence' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="100" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The time has finally come. Everyone must know the truth about the Dark Lord. Here, take these posters... Your mission is to place these posters where everyone will be able to see it. Is that clear?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Once you're finished with the posters, plant a bomb inside the Dark Lord's Jazz Bar. You can install the bomb behind the blue bottle at the counter. Relax, the bomb isn't meant to kill anyone. It's just to draw people's attention and serve as a warning that we've come to punish the Dark Lord." />
+                <string name="1" value="Place the posters at the Construction Site North of Kerning City and the Subway Ticketing Booth. You'll find the right spot by looking at the walls.\r\n#i3800012# #i3800015#" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you nervous? Your nerves are only going to get in the way of this mission." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good job. The bomb will be going off soon, so it's best you hide. Someone might notice if you stay around here." />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Once you've placed the posters at the Construction Site North of Kerning City and the Subway Ticketing Booth, plant a bomb inside the Dark Lord's Jazz Bar. You can plant the bomb behind the blue bottle at the counter. Relax, the bomb isn't meant to kill anyone. It's just to draw people's attention and serve as a warning that we've come to punish the Dark Lord. \r\n#i3800012# #i3800015# #i3800014#" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <int name="infoNumber" value="2358" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="211" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2386" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="16" />
+            <int name="subJobFlags" value="2" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

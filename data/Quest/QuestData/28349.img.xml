@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28349.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Fourth Gift for the Dragon Master" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lv. 65, #p9010010# starts talking to you..." />
+        <string name="1" value="#p9010010# congratulates you for reaching Lv. 65 and tells you that she will give you the scroll she mentioned before when you reach Lv. 70. How will she react after seeing how much the Dragon she called cute before has grown? Go to town and meet with #b#p9010010##k when you are Lv. 70." />
+        <string name="2" value="You received a scroll from #p9010010#. She says that she will give you another scroll if you reach Lv. 80 by #bMay 4#k." />
+        <string name="demandSummary" value="Reach Lv. 70" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040229" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Watching someone develop really warms my heart! Congratulations on reaching Level 65, Evan! When you reach Level 70, I'll give you a really awesome scroll!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Huh? That was a mistake right? You're not really refusing my gift. Get the quest again, and this time make sure you press the ACCEPT button!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi, Evan! Whoa, that huge Dragon next to you... How did that cute Dragon get so big? I don't think I can call him cute anymore..." />
+            <string name="1" value="A Dragon Master that has such an awesome Dragon surely deserves better equipment. Now use this scroll to improve your #t1022097#." />
+            <imgdir name="yes">
+                <string name="0" value="#bI still have more scrolls#k! I will give you the next scroll if you reach #bLevel 80 by May 4th#k. Level 80 seems really far away. I believe in ya! You can do it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Your Level is still a bit low. When you reach Level 70, you can receive a special gift that will only be given out during the event period. The event ends on May 4th, so be sure to hurry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <int name="level" value="70" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28348" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+            <string name="end" value="201005050000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22300.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hero's Succession" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lv. 200, #p1205000# starts talking to you. What could it be about? Respond to #p1205000#." />
+        <string name="1" value="#p1205000# says that he didn't expect you and #p1013000# to grow this strong and asks that come to the #bIsland where he sleeps#b so that he can pass on a forgotten power." />
+        <string name="2" value="#p1205000# teaches you Hero's Echo, a skill that was once used by Freud. He says that he is happy another Hero has appeared in Maple World that can take the place of Freud and asks that you continue to fight for Maple World alongside #p1013000#. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142158" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="20011005" />
+                    <int name="skillLevel" value="1" />
+                    <int name="masterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2218" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Evan and #p1013000#... You've become so strong. In this state, you should be able to use the power that Freud once held... " />
+            <string name="1" value="Come to my island...." />
+            <string name="2" value="Now it is time to choose the forgotten power's successor..... " />
+            <string name="3" value="And that is you......" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Dragon Master's strength clearly shows the relationship between Humans and Onyx Dragons." />
+            <string name="1" value="When the relationship between the two are not in harmony, the Onyx Dragon is only at half power. But when the two are in perfect harmony, the Onyx Dragon's power explodes." />
+            <string name="2" value="You are both young, yet you have great powers. Freud and I were not as strong at that age... That is because the two of you are bonded so tightly." />
+            <string name="3" value="Onyx Dragons are a race drawn to strong spirits. Just looking at you two, it is obvious how strong your spirits must be... There is no doubt that you are qualified to receive this skill..." />
+            <imgdir name="yes">
+                <string name="0" value="#bHero's Echo#k... This is a skill that was used by Freud, my former master. I trust that you will use the skill well... Please take good care of Maple World...and of #p1013000#." />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1205000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1205000" />
+            <int name="lvmin" value="200" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

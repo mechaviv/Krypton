@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3047.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ericsson's Reward" />
+        <string name="parent" value="The Chaos behind Alfonse Green and the Nependeath Juice" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="0" value="I need to look for Ericsson." />
+        <string name="1" value="I got Ericsson a present for his cat, and he was so ecstatic over it that he promised to make me a #bSap of Nependeath#k. \n\n #t4000058# #b#c4000058##k/150\n #t4000062# #b#c4000062##k/80" />
+        <string name="2" value="I got the #bSap of Nependeath#k from Ericsson. I should take this to #bElma the Housekeeper#k immediately!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031200" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000058" />
+                    <int name="count" value="-150" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000062" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh wow, this wristband is gorgeous~ No doubt this should look great on my cat Nero. Is this really for Nero??" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much! I can't believe you got this for my cat ... alright! You said you needed #b#t4031200##k, right? I'll make it for you! Just remember, in order to make #t4031200#, you'll need to hunt the ever-so-dangerous Nependeath." />
+                <string name="1" value="You look strong enough, so that shouldn't be too much of a problem. To make a sap, I'll need #b200 #t4000058#s and 100 #t4000062#s#k. You can get them, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If that's not for my lovely Nero, then why are you even showing it to me? Are you trying to make me mad? Get out of my sight!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought all the ingredients I asked you to get! Wait here, as I make #t4031200# for you." />
+            <imgdir name="yes">
+                <string name="0" value="Here, take it! Take this to Elma the Housekeeper; she is the best at making the #b#t4031202##k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have all the ingredients yet. Hurry up and get them!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000062" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000058" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3045" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

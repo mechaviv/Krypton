@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3334.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Humanoid A" />
+        <string name="parent" value="Humanoid Just Wants to be Human" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2111003# is the one being that cannot be fully categorized as either a robot, or a human. He apparently has something he desires more than anything else. I better go see #p2111003#." />
+        <string name="1" value="#p2111003#. He wanted to give #p2111004# a present, #t4031695# by that. He then asked me to get him #b50 #t4000353#s#k, #b100 #t4000359#s#k, and #b#t4031696##k. #t4000353# can be found through #r#o3110300##k, #t4000359# through #r#o4110302##k, and #b#t4031696##k through #b#p2020005##k.  \n\n#i4000353##t4000353# #b#c4000353##k/50   \n#i4000359##t4000359# #b#c4000359##k/100   \n#i4031696##t4031696# #b#c4031696##k/1  " />
+        <string name="2" value="Once I got him all the materials, #p2111003# gave me a sincere thanks for the work. He seemed so happy... but why does he want to give Phyllia a present? Does he love her...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="14500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000353" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031696" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000359" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler. Have you...seen #b#t4031695##k by any chance? It's snowy white, kind of transparent rose... with a gorgeous scent. I really want to give that to #p2111004#... Can you help me make my wish come true?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I need #b50 #t4000353#s#k, #b100 #t4000359#s#k and... #b#t4031696##k too. #t4000353# can be found through #r#o3110300##k, #t4000359# through #r#o4110302##k... And #t4031696# through #b#p2020005##k. Thanks in advance..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...If it's too much, then I understand. I guess things like this should be taken care of alone..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah.... You brought them all. Thank you so much... Now I need to make #t4031695#..." />
+            <imgdir name="yes">
+                <string name="0" value="I believe #p2111004#... will really like #t4031695#. I don't know why, but... I just feel that she'll like it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I think you forgot what I asked of you. Can you get me 50 #t4000353#s from #r#o3110300##k, 100 #b#t4000359#s from #r#o4110302##k, and #t4031696# from #b#p2020005##k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031696" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000359" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000353" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <int name="lvmin" value="65" />
+        </imgdir>
+    </imgdir>
+</imgdir>

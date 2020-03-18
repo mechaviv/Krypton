@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10019.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Invade the Watermelon Field!" />
+        <string name="parent" value="Today's Mission!     " />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <int name="autoComplete" value="1" />
+        <string name="1" value="Today's Mission!\r\n&lt;Obtain #bChumji's Watermelon#k from the watermelon field!&gt;\n\nToday's mission is to gather Chumji's watermelons. There has been intelligence that #rMaster M#k has planted bombs in Chumji's watermelon field. Get to the watermelon field by talking to the Maple Admin and bring back watermelons to #bAgent W#k at the agent headquarters." />
+        <string name="2" value="Today's mission has been completed." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022336" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You want to receive today's mission again?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Today's mission is to retrieve Chumji's watermelons.  There has been intelligence that #rMaster M#k has planted bombs in Chumji's watermelon field. Get to the watermelon field by talking to the Maple Admin and bring back watermelons to #bAgent W#k at the agent headquarters." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you want to receive it again, just let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good job.  You have completed today's mission.  Your mission performance file is scheduled to be reported to headquarters." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000036" />
+            <int name="infoNumber" value="10028" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="clear" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000036" />
+            <int name="infoNumber" value="10028" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="ing" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

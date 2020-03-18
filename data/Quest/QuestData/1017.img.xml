@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1017.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Final Training" />
+        <string name="parent" value="Mai's Training" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="0" value="Ready for Mai's last training?" />
+        <string name="1" value="Mai wants you to try hunting stronger monsters now. \n\n#o1210102# #r#a10171# #k" />
+        <string name="2" value="After Mai's traning, you feel much, much stronger. Time to get off Maple Island! Go to South Ferry and take the boat to Victoria Island." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="300" />
+            <int name="exp" value="50" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow, you're fast! That's awesome. We'll head straight to the next quest. It's important to know your limits, but it's also important to test your abilities. Want to try defeating some powerful monsters?" />
+            <imgdir name="yes">
+                <string name="0" value="This time, you'll be hunting #o1210102#, which you WON'T find just casually wandering around. You'll have to go into every portal to find them. I want you to defeat #r10#k! Oh, and Biggs is collecting something about dropped by the #o1210102#s. I suggest you help him out while training. \n\n#o1210102# #r#a10171# #k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If it seems too difficult for you, come back after training against easier monsters. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you've taken care of the Orange Mushrooms? Weren't they hard to find? Let's see how strong you have become..." />
+            <imgdir name="yes">
+                <string name="0" value="Great job! You're now strong enough to hold your own against any monster here. You'll have to start making job decisions once you reach level 8. If you haven't met Rain of Amherst yet, go do that. Rain will give you some valuable information. Well then, until we meet again..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you're quite done yet. Press Q to check the quest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210102" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1016" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

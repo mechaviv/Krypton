@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3114.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliza's Eternal Sleep" />
+        <string name="parent" value="Goddess's Pet" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="1" value="#bEliza#k plans to sleep again until her goddess is released from Papa Pixie. She asks me to play an #binstrument#k to help her go to sleep. To play a goddess' harp... this won't be easy." />
+        <string name="2" value="Glanced over at #bEliza#k as I finished playing the instrument, and noticed that she is already asleep. Sweet dreams." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161036" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="pop" value="20" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Thank you, adventurer. I feel a little relieved knowing that there is an adventurer that can eliminate those shadows. I must continue my eternal sleep, until my Goddess returns. Eternal sleep.#E \n\n#L0# #bIt will be a very long nap.#k#l" />
+            <string name="1" value="Yes, of course. Ah... do you like music, adventurer? There is nothing like falling asleep while listening to beautiful music. I used to fall asleep while my Goddess played the harp. I guess it would be difficult.#E \n\n#L0# #bMay I help you?#k#l" />
+            <string name="2" value="Ah...? You must have profound knowledge in music. Please play for me." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Here... this is my Goddess's harp music book. Please play each note precisely. I am really looking forward to your music." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Haha... I might have asked a lot from you. Very well. It will take some time, but I will eventually fall asleep." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="......" />
+            <imgdir name="yes">
+                <string name="0" value="(Eliza seems to be in deep sleep.)" />
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Seems you lost a book with the notes to Little Star. Here is another one. Please play it for me." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012026" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="42" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012026" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3113" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="83" />
+        </imgdir>
+    </imgdir>
+</imgdir>

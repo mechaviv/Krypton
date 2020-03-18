@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4955.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Psycho Jack" />
+        <int name="area" value="50" />
+        <string name="0" value="When I gave Sophilia's favorite doll to Jonas, it seemed to have awaken him from his madness.  He's realized that his Toy Machine has been corrupted and is churned out twisted versions of his former creations.  Because the machine can't be destroyed, Jonas has asked me to destroy as many of his creations as possible.  For every 50 Psycho Jacks, 50 Nightmares, or 50 Sophilia Dolls I destroy, Jonas has promised to reward me with something special. " />
+        <string name="1" value="Looks like he wants me to destroy #b50 Psycho Jacks#k. It shouldn't be too hard, I think." />
+        <string name="2" value="I destroyed some of Jonas' creations and he rewarded me with some of his fantastic Toymaking gear!  It seems like a grim endless battle against the tireless Infernal Toy Machine... " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002677" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Please, destroy the #bPsycho Jacks#k!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you!  Once you have destroyed 50 of them come back to me!  I will be here waiting..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No!  You must help me!  I beg you... The Prendergast name must not be sullied!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="My beloved Jack... it pains me to think what might have caused you to become so crazed.  But no matter... You have done well in destroying these hopping maniacs.  Here, take this cap.  I have built many gadgets into it to help me work, so it is much more beneficial than just any old hat." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please, you can't stop now.  Help me destroy my former creations... for every 50 Psycho Jacks, Nightmares, or Sophilia Dolls you destroy, you will be rewarded!  We can't let any of them escape the house... what will the children think if they were to see these monstrosities come out of the Prendergast Toy Factory?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201077" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400558" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201077" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4954" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

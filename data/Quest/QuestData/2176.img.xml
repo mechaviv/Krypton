@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2176.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning The Nautilus 1" />
+        <int name="area" value="30" />
+        <string name="0" value="Mrs. Reade, who is in charge of keeping The Nautilus clean, says she is in need of help. Apparently the wash cloths that she uses for cleaning the ship have become tattered from incessant cleaning and she's in need of some new wash cloths... I should go talk to Mrs. Reade myself in the upper deck corridors where she's cleaning." />
+        <string name="1" value="I'll go find a #bpig's ribbon#k which Mrs. Reade can use as a wash cloth." />
+        <string name="2" value="Looks like Mrs. Reade's making good use of the pig's ribbon I brought her, but poor Mrs. Reade, she's cleaning all day long...as usual." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Sigh... what's with all this dust! I keep cleaning and cleaning, yet I don't see any difference whatsoever! Now my towel's about to be completely torn off... and now, it is. Oh no... what should i do...\r\n#L0##b Is there something going on there?#k#l" />
+            <string name="1" value="Sigh... look at this cleaning towel. I wiped away so much dust that it's already ragged and torn off. I don't have any spare with me... and yet, look at all this dust! How am I going to clean all this? Where can I find a spare cleaning towel?\r\n#L0##b Do you want me to find one for you?#k#l" />
+            <string name="2" value="Oh, that's very nice of you! Will you do that?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I hear that the Ribbon Pig on Victoria Island wears a ribbon with such a tightknit fabric that it's very good for soaking up dusts. I would love for you to get me #b50 Ribbons from the Ribbon Pigs#k. I know it's a lot, but I think I'll go through that quickly, too." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Look at all this dust! Don't tell me I don't need a cleaning towel right this minute... well, but if you don't clean, this doesn't matter much to you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast! Let's see, did you bring all 50?" />
+            <imgdir name="yes">
+                <string name="0" value="1, 2, 3,...., 50. That's it! That's it! How can I thank you for this? I love it so much that, even if you mess this place up a bit, I will just let it slide." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I said 50 Ribbons. If you can get me more, that would be suuuuper." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092009" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

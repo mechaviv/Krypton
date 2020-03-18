@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21717.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rowen's Request 1" />
+        <int name="area" value="6" />
+        <string name="0" value="You wonder how #p1032101# is doing overseeing the forest. You feel like you should head to #b#m101000000##k to see her." />
+        <string name="1" value="It seems like the kid with the puppets was once again seen in #m100040000#. Time to eliminate the #r#o1110100#s#k so you can retrieve the #bpuppet#k. \r\n\r\n\r\nRegardless of Personality #o9101000##r #a217171##k\r\n#i4032317##t4032317# #b#c4032317# / 1#k" />
+        <string name="2" value="You defeated the #o1110100#s and retrieve the #t4032316#, but you were unable to apprehend the actual criminal. Hopefully the kid will show up again…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032317" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2050004" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Apparently, #rthe kid carrying the puppet#k appeared in the Southern Forest again. It's definitely reliable information since #p1032112# was the one that said it. When the kid entered the dungeon, he had a #t4032317# with him, but after he left, he no longer had it. I'm sure it has to do with making the #o1110100#s violent again." />
+            <string name="1" value="It'd be nice to find the one that's responsible for this, but #p1032112# said that the kid literally shows up everywhere, so catching him red-handed will be difficult for now...but that doesn't mean we are going to let the #o1110100#s behave like that. We must recover the puppets so we can bring peace back to the Southern Forest. Will you please help us?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to head over to the #b#m100040003##k and eliminate some #o1110100#s. Right now there's a mixture of monsters that have changed and monsters that are relatively unaffected, so it's hard to tell who actually has the puppet." />
+                <string name="1" value="But your task is simple. Forget about whether they've changed or not. Just eliminate #r100#k of them. Any #o1110100##k will do. Try defeating as many as you can and gather up as many #b#t4032317##k as you can find." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, I thought you were here to help me out. If you change your mind, let me know. If you don't complete this quest, then you won't be able to proceed with the next Informant Assignment." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you've defeated the #o1110100#s. Have you also retrieved the #t4032317#?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahhh, thank goodness. Just thinking about getting these #o1110100#s back to their usual selves is a draining experience, but this is at least a start." />
+                <string name="1" value="But there's no way to tell when the kid will come back and plant another puppet. #bIf he comes back, I'll call you for help#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have yet to eliminate #r100 #o1110100#s#k and retrieve the #b#t4032317##k. Even the most average looking #o1110100#s are affected by the #o1110130# so don't worry about that and just bring me the puppet." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You have yet to eliminate #r100 #o1110100#s#k and retrieve the #b#t4032317##ks. Even the most average looking #o1110100#s are affected by the #o1110130# so don't worry about that and just bring me the puppets." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032317" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101000" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21716" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="19" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

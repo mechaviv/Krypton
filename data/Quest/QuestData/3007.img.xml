@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="One Clue" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="4" />
+        <int name="area" value="33" />
+        <string name="1" value="Elma the Housekeeper told me she heard Hella mention something about an #bold lady#k. She also told me to go talk to Jade again if I want to know more about her. " />
+        <string name="summary" value="I should go see Jade in El Nath." />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;Looking For the Old Lady&quot; quest. &#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3008" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you see Jade from El Nath? So he has no clue, too. You heard about Miss Hella's late mother's keepsake? Oh yes...one pitch black night someone stole the item and Miss Hella hasn't been the same since ... but I have no clue who stole the item." />
+            <string name="1" value="Oh yes! A few days before Miss Hella left, I heard her mentioning something about an #bold lady#k. We don't have an old lady in this town, so I don't know exactly what she was talking about ... perhaps #bJade#k may know something about the her. Jade loves traveling around the island, and is aware of things outside this town." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="A few days before Miss Hella left I heard her mention something about an #old lady#k. We don't have an old lady in this town, so I didn't know exactly what she was talking about...perhaps #bJade#k may know something about the her. Jade loves traveling around the island." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3006" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20507.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Knight's Dignity" />
+        <int name="area" value="15" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1101002# seems like he has something to tell you again..." />
+        <string name="1" value="#p1101002# says that riding on a normal #t1902005# when you've reached Lv. 90 is not befitting the dignity of a high level Knight and gives you new information about monster mounting. He says that you should go to  #b#p1102002# the Mount Instructor#k to find out about a more powerful mount..." />
+        <string name="2" value="#p1101002# says that riding on a normal #t1902005# when you've reached Lv. 90 is not befitting the dignity of a high level Knight and gives you new information about monster mounting. He says that you should go to  #b#p1102002# the Mount Instructor#k to find out about a more powerful mount..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20505" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1912005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20507s" />
+            <int name="lvmin" value="100" />
+            <string name="end" value="2008120200" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2329.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sending Provisions (2)" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1300005##k tells you his troops need some more equipment…" />
+        <string name="1" value="You need to eliminate the #bRoyal Guard Pepes#k and collect #b200 #t4000503#s#k." />
+        <string name="2" value="You gave #b#p1300005##k #b200 #t4000503#s#k." />
+        <string name="summary" value="You should eliminate the #bRoyal Guard Pepes#k and collect #b200 #t4000503#s#k." />
+        <string name="demandSummary" value="#i4000503:# #t4000503:# #c4000503# / 200\r\n" />
+        <string name="rewardSummary" value="EXP 17,800\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="17800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000503" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Since you came and helped us out once… I'd like to ask you for another favor. Can you gather up some more supplies for the soldiers?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The helmets you gathered up for us took care of some of our needs, but we also need some weapons. #bRoyal Guard Pepes#k use #b#t4000503#s#k. Can you get us #b200#k of those?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand that you are busy, but do come and see me if you happen to change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wait, did you collect them all already?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so, so much. These supplies will be given to the soldiers that will help provide support for you while you battle to regain our kingdom." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="That's not enough. We need #b200 #t4000503#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000503" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2328" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

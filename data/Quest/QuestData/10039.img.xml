@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10039.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Surprise Event: Special Alphabet" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="Cassandra will be giving out a Special Alphabet Letter on Back To School day! The Cassandra is only giving it out on that one day, so you'd better go get it now!" />
+        <string name="1" value="Cassandra is apparently giving out one letter you ask for." />
+        <string name="2" value="You received a Special Alphabet letter on Back To School day as part of MapleStory's Surprise Back To School event." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You know that energetic and anxious feeling you get every September... Like, you're ready to tackle the world of academia?! To commemorate such an exciting time of the year, I'd like to give you a special gift! Whad'dya say?" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Wha... what? You don't want my gift? But it is a letter that you desperately need! It's just one letter so... what's the big deal?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q10039e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10034" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2009092300" />
+            <int name="dayByDay" value="1" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

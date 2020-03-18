@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20005.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku's Third Training Session" />
+        <int name="area" value="15" />
+        <string name="0" value="Visit #b#p1102000# the Training Instructor#k and receive some training." />
+        <string name="1" value="The third session involved facing off against the third weakest monster of Ereve, #r#o0100122##k, and defeating #r15#k of them in the process. You better hunt down those #o0100122#s in #b#m130010100##k. \n\n#o0100122##r #a200051##k" />
+        <string name="2" value="You managed to defeat all 15 #o0100122#s and return. Off to the next session." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="세 번째 수련은 이 섬에서 세 번째로 약한 #m0100122#들을 잡는 거야. 이번에는 좀 수를 늘려서... 15마리 정도만 잡아 볼까?" />
+            <imgdir name="yes">
+                <string name="0" value="아, 그럴 리가 없다고 생각해서 안 말했는데... 스킬은 사용하고 있어? 일반 공격으로 사냥하는 건 아니지? 레벨이 올라가면 sp를 받을 수 있는데, 그걸로 스킬 레벨을 올릴 수 있어. 일반 공격보다 스킬 공격이 훨씬 강하니 사냥하기 쉬워질 거야." />
+                <string name="1" value="수련의 숲2에서 포탈을 타고 왼쪽으로 가면 수련의 숲3이 나와. 거기에 가면 #m0100122#들을 볼 수 있을 거야. 자, 그럼 수고해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="스킬 레벨부터 올릴 생각이야? 스킬을 잘 사용하는 것만큼 중요한 것도 없다고." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="250" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This time, you'll have to take on #r#o0100122#s#k, the third weakest monster in this island. Let's increase the number this time... how about #r15#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I didn't say this because I assumed you already knew, but... are you using skills? Don't tell me you've been hunting just by slashing your way through all this time! Everytime you level up, you'll earn some SP, and SP's are used to raise your skill level. Use those attack skills effectively, and hunting will become much easier for you." />
+                <string name="1" value="Take this portal, then walk all the way to the left, and you'll see #b#m130010100##k. You'll find #o0100122#s there. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you intent on raising your skill level? It's very important for you to use the skills effectively in order to survive in this world." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have succeeded in slaying 15 #o0100122#s. Great work! At the rate you're going, you'll be able to quickly become the kind of Knight-in-Training that #p1101002# is looking forward to seeing. I don't even want to think about how upset #p1101002# would be if the training takes longer than expected. I'm sorry, but just the thought of #p1101002# makes me sick to my stomach..." />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm, that's not it. In that case, talk to me when you're ready to take on the next step." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="#r15 #o0100122#s#k shouldn't be too hard for you, though... are you still a long way from finishing it? Go to #b#m130010100##k and hunt right now." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100122" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20004" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

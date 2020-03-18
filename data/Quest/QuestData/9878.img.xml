@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9878.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Magatia, the City of Alchemy" />
+        <int name="area" value="50" />
+        <string name="0" value="A new region has been discovered recently. If you wish to find out about the city of alchemy, talk to Cassandra, who claims to know everything about Maple World." />
+        <string name="1" value="Cassandra says she can use her magic to send you over to Magatia. If you are determined to go to Magatia, talk to #bCassandra#k." />
+        <string name="2" value="You have arrived in Magatia, the city of alchemy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is amazing news! A new town has been discovered in Maple World! It's the town of Alchemy that has been hidden for so long! Don't you want to find out more about the town of Alchemy?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#bMagatia#k, the town of Alchemy, was discovered in the Nihal Desert in Ossyria. The town is located next to Ariant. If you'd like, I will use my magic to send you there." />
+                <string name="1" value="Talk to me again if you want to go to Magatia. Until then, I will be gathering my magical powers." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you curious about Magatia, the town of Alchemy?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q9878e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="end" value="2007080100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

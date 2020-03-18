@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3341.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dr. De Lang's Secret Notes" />
+        <string name="parent" value="Dr. De Lang's Notes" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="I found something inside that strange book, and that was #p2111002#'s Secret Notes. Let's see what's inside... based on the information inside, I'll have to figure out #bthe person that #p2111002# trusts the most#k, and then go to that person to clarify it." />
+        <string name="2" value="The person that #p2111002# trusts the most is actually #p2111002#'s friend #p2040050#. When I handed #p2040050# the #t4161031#, he looked concerned as he peered through the notes..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161031" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161031" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(When I opened the strange book again, I was able to find a small note hidden inside. This might be #b#t4161031##k... should I take it?)" />
+            <imgdir name="yes">
+                <string name="0" value="(After carefully removing the note, I closed the book. Once closed, it looked just like any other book.)" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="(I left the note in the book and closed it.)" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you... wind up finding any additional information on #p2111002#? Where he disappeared, why he disappeared... were you able to find any one of that? Ah... that book... that must be #t4161031#. Mind if I look through it?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="(The book had turned back to... normal. It's just another ordinary book now. I am amazed by the power of alchemy...)" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="(Once I opened the book I found #t4161031# inside! This page had a drop of potion wetting the corner of the page that I dropped right before I lost the book! How did this happen? Anyway, I better remove the note from the book this time.) " />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040050" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161031" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111016" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3340" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3017.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Small Grave That's Hidden" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="14" />
+        <int name="area" value="33" />
+        <string name="1" value="I gave Jade the pendant from Hella, and I could immediately sense that he was pleased to know that his friend is alright after all. That small grave Jade mentioned should be somewhere in the snowfield." />
+        <string name="summary" value="I should go to the small grave in the snowfield Jade mentioned. " />
+        <string name="rewardSummary" value="3,500 EXP&#xD;&#xA;Can proceed to the &quot;An Old Ring&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <int name="nextQuest" value="3018" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you saying Hella wants to ask me about #b#t4031056##k? It's been recorded that the book's been lost somewhere in the snowfield, and hmmm ... Right! A few days ago, while checking out the landscape around town I found a #bsmall tomb#k deep in the valley of the snowfield. Maybe that tomb has something to do with it..." />
+            <imgdir name="yes">
+                <string name="0" value="I wanted to find out what that tomb was so I tried getting close to it, only to realize that it was impossible because of all the scary monsters around that area. I think you're strong enough, though, to find a way to go in there and thoroughly check out the tomb. The place where I found it was #bdeep in the valley of the snowfield#k. I'll pray for your safety throughout this trip." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="A few days ago, while checking out the landscape around town I found a #bsmall tomb#k deep in the valley of the snowfield. I wanted to find out what that tomb was so I tried getting close to it, only to realize that it was impossible because of all the scary monsters around that area. I think you're strong enough, though, to find a way to go in there and thoroughly check out the tomb. The place where I found it was #bdeep in the valley of the snowfield#k. I'll pray for your safety throughout this trip." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="In the tomb there was some moss, a corpse, and not much else. Looked further in but still found nothing." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030004" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3016" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4554.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Daddy's Birthday Party" />
+        <string name="parent" value="Surprise Birthday Party" />
+        <int name="order" value="2" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270058##k's daddy is planning to invite 50 most close friends to his birthday party. #b#p9270058##k suggested an idea of giving them with rare gift at the party. What would be the perfect gift to all of the guests?" />
+        <string name="1" value="#b#p9270058##k thought of #b#t4000470##k as a special gift to all guests to her daddy's birthday party. She now needs #b50 #t4000470##k before the party begins. \n\n#o9420532# #r#a45541##k \n#t4000470# #r#c4000470#/50#k " />
+        <string name="2" value="#b#t4000470##k was a superb gift and every guests who came to birthday party of #b#p9270058##k's daddy were surprised at the unexpected gift and had a jolly time together. " />
+        <string name="demandSummary" value="#i4000470:# #t4000470:# #c4000470# / 50&#xD;&#xA;#o9420532# #a45541#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 16,000&#xD;&#xA;Able to proceed to 'Unexpected Guest' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="16000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000470" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My daddy is planning to throw a big birthday party that would include all of his best friends. And I thought maybe some sort of surprise gift for the guests would make the party even more exciting." />
+            <string name="1" value="They would be thrilled to receive #b#t4000470##k as a surprise gift because they're such a rare item. Where could I get them? Would you help me to get #b50 #t4000470##k from #b#o9420532##k for 50 guests?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="While you're hunting #b#o9420532##k you should be really careful. They aren't as weak as you 'd think." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It will make this party so much fun. Just imagine all those surprised faces! Don't you want to help me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, that was quick! Now, I have enough time to gift wrap them before the party. Thanks!" />
+            <imgdir name="yes">
+                <string name="0" value="It will be so much fun to watch all those surprised faces. Don't you think? Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="#b#o9420532##k could be dangerous, but I desperately need those #b#t4000470##k..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="#b#o9420532##k could be dangerous, but I desperately need those #b#t4000470##k..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270058" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000470" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420532" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270058" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4553" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

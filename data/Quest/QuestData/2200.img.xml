@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminate the Mixed Golems" />
+        <int name="area" value="30" />
+        <string name="0" value="Muirhat is worried about the evil spirits that have infiltrated Victoria Island as of late. I wonder what I could do to help? I should go see Muirhat on the top deck of The Nautilus." />
+        <string name="1" value="Victoria Island has already been infused with evil spirits. But I refuse to give up like this. I need to eliminate #r100 Mixed Golems#k to stop these evil creatures from further spreading their evilness in Victoria Island. \n\n#o 5150000# #r#a22001##k" />
+        <string name="2" value="I've eliminated 100 Mixed Golems. I wonder if I've made a difference in Victoria Island?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="1092007" />
+            <int name="lvmin" value="58" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2198" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="110000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for the wonderful job you did last time. Unfortuntely, I don't think that was enough to prevent the evil spirits from reaching further. Can you help me once more?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. This time, it's going to be #r100 Mixed Golems#k. They are much more powerful than the Dark Stone Golems you faced last time. Please take care of yourself." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be busy with other endeavors. That's unfortunate. I'll just have to look for other willing warriors." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was fast. I knew you'd be able to do it. Hopefully your efforts will result in bringing in peace on Victoria Island." />
+            <imgdir name="yes">
+                <string name="0" value="Once you make yourself more powerful, I'll contact you again for more help." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Please defeat 100 Mixed Golems. They can be found in the deepest part of Victoria Island." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5150000" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2199" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="58" />
+        </imgdir>
+    </imgdir>
+</imgdir>

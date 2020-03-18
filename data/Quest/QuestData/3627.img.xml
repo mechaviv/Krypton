@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3627.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on Hongbu and Nolbu (Nolbu)" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook after teaching Nolbu a lesson. Where did it go? Should I go see Nolbu again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get #b#t4031235##k. Hmmm ... I'm pretty sure I received it the last time I taught Nolbu a lesson, but I can't seem to find it. When I went to visit Nolbu and ask for the storybook, Nolbu went on a tirade and decided to give me the storybook only after giving him #b2 #t4000100#s#k.\n\n#t4000100# #b#c4000100##k/2" />
+        <string name="2" value="I gave Nolbu 2 #t4000100#s just as he requested to reacquire #t4031235#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000100" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031235" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You ... you ... it's you!!! What are you doing here! Get out of here! I don't want to see you! I still can't believe I lost all that gold and jewelry because of a scumbag like you!!!\r\n#L0# #bEasy, easy. I came here because I lost the storybook that you gave me last time. Do you have an extra copy by chance?#k" />
+            <string name="1" value=" What if I DO have it? I will NEVER, EVER give it to a scumbag like you, so don't get your hopes up and leave immediately!\r\n#L0# #bI'm not here to ask you to give it to me for free. I'll get you something you want in return.#k" />
+            <string name="2" value="Really? Okay! No turning back, now! Understand?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I heard this story a few days ago from a stranger that visited this town. Apparently, there's an octopus-looking monster at Eos Tower, and it drops a shiny, glittering #bcrown#k when killed. If you give me that crown, then I'll give you the storybook. I'll need 1... no, #b2#k of those! Understand?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Forget it! I can't trust you either! You're the one losing out on this!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring it? Huh? Give it to me! (snatch) I don't know what you need this old, ragged for, but take it. Muahahaha, I'm going to be rich! This crown will definitely make me become rich again! Muahahahah!" />
+            <imgdir name="yes">
+                <string name="0" value="Hey, what's this? This is a toy crown!!! Not a real one, but a fake one! Oh my goodness ... I'm ruined!!!!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you bring that shiny, glittering #bcrown#k with you? I need 2, #b2!!!!#k Understand? Then bring it, if you really need this storybook." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000100" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3607" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3615" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031235" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

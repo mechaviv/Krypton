@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21748.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Stolen Seal Stone of Mu Lung" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You lost the Seal Stone of Mu Lung. What does this mean? You'd better head over to #b#m104000000##k and talk to #b#p1002104##k to get some advice." />
+        <string name="1" value="When you tell #p1002104# about everything that took place in #m250000000#, #p1002104# felt it was necessary for you to tell #b#p1201000##k in #b#m140000000##k about it." />
+        <string name="2" value="#p1201000# stated that you did get something significant out of this, in that you found out the heroes were the ones that personally delivered the Seal Stone to those towns, and that by making that connection, you can focus on studying those heroes which will in turn lead you to new information. She then gave you a newly-decoded skill called #bFinal Charge#k!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, you're back. How did the thing in #m250000000# go? Well, you don't look too happy, which means things didn't go as planned. What happened?\n#b#L0#(You tell him about the Seal Stone of Mu Lung.)#l\n#k" />
+            <string name="1" value="Is it #o9300352# again? Seriously, the Black Wings are quite formidable opponents, I'd say… But you're also gaining quite a bit of experience yourself. You'll be able to defeat them next time. Keep your head up." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Before all that, I think it's best for you to tell #b#p1201000##k about this. #p1201000# knows a lot about the heroes, and she can help us." />
+                <string name="1" value="Furthermore, I think #p1201000# deciphered yet another skill, so you should head over to #b#m140000000##k immediately. If I find more useful information on the Black Wings, I will let you know. I'll see you later! Say hello to #p1201000# for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aran, you may be a hero and all, but you need to loosen up a bit." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #b#p1201000##k yet? Don't let your failures get you down. #p1201000# won't even bat an eye because she knows what's really important." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <string name="endscript" value="q21748e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21747" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4505.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stop the Speeder!" />
+        <int name="area" value="48" />
+        <string name="0" value="#p9270028# in CBD is really concerned about growing number of  speeding violations.  Let go find him and see what is happening in CBD!" />
+        <string name="1" value="#p9270028# asked me to collect #b#t4000371# and #t4000370##k to warn people how important it is to follow the law.  He emphasized that this is only to keep us safe from any danger.\n\n#t4000371#  #r#c4000371#/100#k\n#t4000370#  #r#c4000370#/100#k" />
+        <string name="2" value="I feel so good that I have contributed myself making Singapore a better and safer place to live in." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2043701" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000370" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000371" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey Traveler~! It's you again! Thanks for the help on the previous encounter. Erm... Could you help me with another task? Please?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew it! You are such an helpful person! Okay, here's how it goes.... Currently, I notice a lot of riders fail to travel at a safe speed along the expressways. This could result in fatal accidents!" />
+                <string name="1" value="If you are kind enough, please get me #b100 Speed Limit Sign#k and #b100 Metal Pole#k, as I will need them to be installed along the expressway to remind all the riders about speed caution. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=".................................... oh Yeah? You don't really care anything but hunting... What a LOSER!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Where can I find more Speed Limit Signs and Metal Poles? Do you have any idea for it?  " />
+            <imgdir name="yes">
+                <string name="0" value="This is the 2nd time you gathered all the required items in such a short time! Thanks for the help! " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you gathered #b100 Speed Limit Signs and 100 Metal Poles#k?  " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270028" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000371" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000370" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270028" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4504" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

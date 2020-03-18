@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grako's Request" />
+        <string name="parent" value="Find Mariwaka's Purse!" />
+        <int name="order" value="1" />
+        <int name="area" value="48" />
+        <string name="0" value="I need to go see Grako!!" />
+        <string name="1" value="Grako of Showa Town has a stomach ache which seems to have stemmed from indigestion. I wanted to get Grako some medicine, but she said she doesn't think she'll need a medicine; instead, she wants to drink soft cider. I should go get some cider for her..\n\n#t2022002#  #b#c2022002##k/1" />
+        <string name="2" value="I gave Grako the cider, but... oh man, he's been FAKING IT! Arrrgh... and anyway, he said he actually wants to ask for another favor, this one being REAL. Should I trust him this time?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022002" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8003" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my gosh, my stomach hurts like craaaaazy!! Can you help me out here, if you have any time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. You know, I've just ate, and ... I think I have a stomach ache, and ... I think it'll go away with a nice bottle of cider..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Argh... I'm sick!! My gosh, my stomach is killing me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, the cider is here!!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you sooo much~~ Ahh, this feels sooo goood! You know, you seem like a really nice person! And... I think I have something to tell you. I... don't have a stomach ache actually; I just really wanted to drink some cider. Sorry~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What? You didn't buy it yet? Sooo Disappointed!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120018" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120018" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

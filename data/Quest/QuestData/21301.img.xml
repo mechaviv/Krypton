@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Catch that Thief!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="So what exactly happened to make you return to the island? You'd better go talk to #b#p1201002##k." />
+        <string name="1" value="#p1201002# was devastated to have his #t4032312# stolen! The thief responsible for this mess, #o9001013#, apparently headed toward #m140020300#. Maybe he's planning to escape on a boat. You need to go to #m140020300# and battle #r#o9001013##k.\r\n\r\n#o9001013##r #a213011##k" />
+        <string name="2" value="You successfully eliminated #o9001013#, but the #t4032312# was nowhere to be found. When #p1201002# found out what happened, he went crazy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="There's a robber on this island! I don't know who it is, but the thief removed a #b#t4032312##k from my body! I'm sure the thief disguised himself as a penguin, so no one would notice him, and then he just walked right out with it!" />
+            <string name="1" value="I kept screaming, but no one paid any attention, so that really got me frustrated. Worse, that girl #p1201000# kept trying to tie me up because I was making too much noise. Seriously, I can't deal with human beings." />
+            <string name="2" value="Wait, we don't have much time. You must catch the thief before he leaves the island! He took the #t4032312# and headed towards the #bharbor#k. He was walking, as casually as could be, so I'm sure he is still on this island. Catch that thief for me!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Who's the thief? That's easy! Which bird loves gems? Crows of course! #r#o9001013##k's the thief!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? What?! You don't want to? I thought you said I have to look my best for you to use your skills, and now you're telling me this? No way! You must do this for me!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You still haven't captured #r#o9001013##k yet? He's probably headed toward the #bharbor#k, so maybe you'll find him there? Hurry up!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <string name="endscript" value="q21301e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001013" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

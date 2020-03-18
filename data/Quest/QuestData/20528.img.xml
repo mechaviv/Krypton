@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20528.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Raising Mimio" />
+        <int name="area" value="15" />
+        <string name="0" value="I better ask #b#p1102002# the Mount Trainer#k about an enhanced Mount." />
+        <string name="1" value="Since #t1902005# acquired a wealth of experience, it is now eligible to acquire more power. The problem is, I'll have to feed it with only the top-notch kind of food. To have it resemble the greatness of a dragon, I'm going to feed it with the Special Formula for the dragons in #m240000000#. Pam is the one that sells the Formula." />
+        <string name="2" value="I was able to purchase all the Formulas and feed them to #t1902005#. Once that took place, #t1902005# went through shedding and became #t1902006#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032196" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032197" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032198" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902006" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#t1902005#, with an extensive amount of experience stored in it, will become a much more powerful creature through shedding. But that will also require some food that is much more nutritious and potent than the ones that are available. If you want to see if your #t1902005# can become as powerful as a dragon, how about feeding it a #bspecial formula used for the dragons of #m240000000##k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to bring back the Concentrated Formula that #bPam#k makes. Formulas should be fed in different levels, and you'll need to bring #bStep 1, 2, and 3 Concentrated Formulas, 3 each#k." />
+                <string name="1" value="I'll be waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... I take it that you are not interested in having your #t1902005# shed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, so you were able to bring in all the Formulas. Now, let's go ahead and have #t1902005# undergo shedding. First, we'll feed Formula: Step 1... then Step 2... then Step 3..." />
+            <imgdir name="yes">
+                <string name="0" value="That's some shedding there. Wait, it's not #t1902005# anymore, but #t1902006#. #t1902006# will be a much more formidable and trustworthy companion for you as you travel your way around the world. Happy Mounting." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I don't think you have brought the ingredients ready for shedding. #bPam#k of #b#m240000000##k is famous for making #bConcentrated Formulas#k for the #t1902005#s, and... I want you to purchase #b3 concentrated formulas from each step#k, then bring them back along with your #t1902005#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032196" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032197" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032198" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20527" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902006" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902005" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1902007" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="10001004" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

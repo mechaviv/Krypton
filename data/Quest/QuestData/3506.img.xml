@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3506.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost Memory" />
+        <string name="parent" value="Memory Lane" />
+        <int name="order" value="1" />
+        <int name="area" value="46" />
+        <string name="0" value="I defeated #o8220004# as #p2140000# told me to, but strangely, I can't go past #m270010500#.  Something doesn't seem right... I should go ask #b#p2140000##k." />
+        <string name="1" value="Whale of Time, #o8220004#, eats memory as its staple food.  #p2140000# said that my memory was eaten by #o822004# while I was fighting it and therefore I couldn't pass through Memory Lane.  He said I might be able to retrieve my lost memory if I go see #b#p2140001##k, the Memory Keeper." />
+        <string name="2" value="I met #p2140001#, the Memory Keeper." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What is it?  What?  You can't go past #m270010500#?  That doesn't sound right... There's nothing wrong with the permission.  Hm... Then... the problem must be with you.  What kind of problem?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The Whale of Time, #o8220004#, lives in Memory Lane and eats memories for sustenance.  A part of your memory must have been eaten by #o8220004# while you were fighting it.  Because of your lost memory, you can't pass through Memory Lane." />
+                <string name="1" value="You won't be able to pass through Memory Lane until you find your lost memory.  But you already destroyed #o8220004#, who ate your memory... You have no choice but to seek help from #p2140001#.  #b#p2140001##k... He is the one who sees all memories with the purity of his heart.   He'll probably know what to do about your lost memory." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't think it's a big deal, then that's fine.  You just can't go beyond Memory Lane.  Does that work for you? " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...You are... empty.  There is a hole in your heart that used be filled with a memory.  Now it's just empty. " />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still didn't find #b#p2140001##k?  He is at a #b#m270010111##k, somewhere on Memory Lane." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3505" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="103" />
+        </imgdir>
+    </imgdir>
+</imgdir>

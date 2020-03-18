@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22552.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kerning City's Honor Restored" />
+        <int name="area" value="7" />
+        <string name="0" value="Is #p1061005#, who got his herbs back, no longer suspicious of the thieves in #m103000000#? Talk to #b#p1061005##k in #b#m105040300##k." />
+        <string name="1" value="#p1061005# says that he is sorry for being suspicious of the thieves in #m103000000# and ask you to give his apologies. Go to #b#p1052103##k and tell her that #m103000000#'s honor has been restored." />
+        <string name="2" value="#p1052103# thanks you for clearing #m103000000#'s name." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142154" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="2211" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="A tiny bit of my Herb is missing, but I suppose I can live with that. I was ready to give up, but I'm so glad you found it! \r\n#L0##bI only managed to find your Herb because #p1052103# in #m103000000# helped me.#l\n#k" />
+            <string name="1" value="Is that right? I thought it was the Thieves in #m103000000# who stole it. I'm so embarrassed. I shouldn't have jumped to conclusion like that. I'm sorry. Will you tell that girl, #p1052103#, that I am truly sorry?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you for your help. I know it isn't easy to help someone, especially when you don't really know that person... You're even more wonderful than #p1040001# said. Thank you again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm, if you don't tell her, #p1052103# in #m103000000# will still think that I am falsely accusing the Thieves. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, Evan! So what happened? Did you catch the culprit that stole the Herb? What a relief! \r\n#L0##b#p1061005# asked me to tell you he's sorry.#l\n#k" />
+            <string name="1" value="Hehehe. #p1061005# won't blame #m103000000# anymore, right? That's excellent! I'm so relieved that the honorable name of #m103000000# has been restored. Here. This is for you." />
+            <imgdir name="yes">
+                <string name="0" value="I'm giving you this as a token of my appreciation for clearing the name of #m103000000#. Thank you again. You're strong and kind... You're simply the best!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to #b#m103000000##k yet? Please tell that girl, #b#p1052103##k, that I'm very sorry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052103" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22551" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="32" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

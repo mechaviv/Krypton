@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21749.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Back to the Past" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Level 63, #b#p1002104##k sends you a message." />
+        <string name="1" value="According to #p1002104#, one of the clocktowers in #m220000000# has broken down. This clocktower manages time, and when it broke, it somehow created a path to the past. Exploring the past could reveal some information about Seal Stones. #bThe busted clocktower with the time-control room can be accessed through the ladder on the top floor of Helios Tower#k, so you should make you way over there." />
+        <string name="2" value="According to #p1002104#, one of the clocktowers in #m220000000# has broken down. This clocktower manages time, and when it broke, it somehow created a path to the past. Exploring the past could reveal some information about Seal Stones. #bThe busted clocktower with the time-control room can be accessed through the ladder on the top floor of Helios Tower#k, so you should make your way over there." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, hello there. You've leveled up so much that I didn't even recognize you at first. This task should be a breeze for you then. What task, you ask?" />
+            <string name="1" value="While you were training, #p1201000# and I have been thoroughly looking into your past and the Seal Stone. And guess what? We received an interesting piece of information just recently. Do you know the town that consists of toys for kids known as #m220000000#?" />
+            <string name="2" value="There are two clocktowers in #m220000000# that control time. These towers allow time in #m220000000# to remain frozen. I hear the clocks stop time because the toys will become useless if the kids grow up." />
+            <string name="3" value="But apparently, one of the clocktowers broke. No one knows why or how, but the broken clocktower has #bcreated a time gap in #m220000000#, allowing people to travel to the past#k. Oh, and this is where it gets interesting..." />
+            <string name="4" value="Based on the information we've collected from people that've entered the time portal, we were able to conclude that the time they traveled to in #p1201000# is #bclose to the time when you were around#k! The way people dressed, the items they used, the surroundings, it all points to that time! We might be able to find more information on the Seal Stone then, don't you think?" />
+            <string name="5" value="I mean, I am not worried about the Seal Stone itself. I just thought there was a possibility of you meeting someone that knew you back in that time period." />
+            <string name="6" value="#bThe right clocktower#k... Specifically, the Helios Tower, is the broken one. Inside #bthe building that resembles a pink bunny head#k, you will find a device that manages time. #bTake the ladder to the top of Helios Tower and continue going up#k. You'll be able to enter the past from there." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21748" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21749s" />
+            <int name="lvmin" value="63" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

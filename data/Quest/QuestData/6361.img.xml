@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6361.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Papulatus' Key" />
+        <string name="parent" value="The Secret Behind Space-Time Transformations" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="I should take Papulatus' key to the #bOrigin of the Clocktower#k." />
+        <string name="2" value="Where am I? There's someone here!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031870" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031870" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Papulatus' key is not usable here right now. If you head over to the Origin of the Clocktower, then you may be able to find the machine that uses this key. Can you please head back there?" />
+            <imgdir name="yes">
+                <string name="0" value="Please find the clues behind the key at the #bOrigin of Clocktower#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you deathly afraid of Papulatus?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, how did you get in here?? And who are you? Wait, that key you have in your hand... I have that too... how do you have that? There should only be one key of this kind in this world..." />
+            <string name="1" value="Please show me the key that you have in your hand." />
+            <imgdir name="yes">
+                <string name="0" value="It is the key I have with me. How is it that there's two of its kind?? This is strange." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please head over to the Origin of Clocktower. I am sure you can do something with the key there." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Please leave this place immediately." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no, you lost the key? Thankfully I made several copies, so here you go. Please don't lose it again. It's an important piece of the puzzle I'm trying to complete." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2043000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031870" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6360" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - PQ Mania" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142001" />
+        <string name="0" value="#b#eTitle Challenge - PQ Mania#n\n#kYIf I achieve rank S in 5 party quests, I can get the #e#bPQ Mania#k# title? Dalair is waiting for a warrior that can earn this honorable title." />
+        <string name="1" value="#b#eTitle Challenge - PQ Mania#n\n#k \n - Party Quest S Rank : #b#jscnt##k / 5 \n                              #jgaugePqS# #jperPqS# %" />
+        <string name="2" value="#b#eTitle Challenge - PQ Mania#n\n#k \n - Party Quest S Rank : #b#jscnt##k / 5 \n                              #jgaugePqS# #jperPqS# %\n\nI got rank S in 5 party quests!  Dalair, the representative or the God of Honor, gave me the title of '#bPQ Mania#k'.  He said this title is only for a small number of explorers like me who devote themselves to party quests." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142001# #e#b#t1142001##k\n\n - Get Rank S in 5 Party Quests\n\n#nDo you want to test your skills to see if you're worthy of this title?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I wish you the best.  There isn't a specific time limit, so whenever you think you're ready, come back and see me.  Also, you should know that unless you complete or quit this quest first, you won't be able to try out for another title." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You successfully achieved rank S in 5 party quests!  That's a great accomplishment." />
+            <string name="1" value="Take this." />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, announce to the world that you are the owner of this honorable title.  If you want to try out for a new title, come back and see me any time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="In order to get the PQ Mania title, you must get rank S in 5 party quests.  If you don't think you can do it, why don't you quit and try for another medal?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <int name="partyQuest_S" value="5" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142001" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

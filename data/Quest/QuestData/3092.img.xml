@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3092.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Aqua Road Photo Album" />
+        <string name="parent" value="The View of the Ocean" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="0" value="I heard #b#p2060006##k of Aquarium sells #t4031310#..." />
+        <string name="1" value="I met with #p2060006#, the person who sells #t4031310#. Unfortunately, she mentioned that the photo album is sold out. After relentlessly asking her questions about it, she relented and told me she'll give me the photo album that she kept for herself. In return, she wanted me to show her #t4031312#, since she's never seen snow before in her life. #b#t4031312##k is made by #r#p2020005##k of El Nath." />
+        <string name="2" value="After receiving the request from #p2060006# to see the Snow Crystal Sphere, I headed off to El Nath to see #p2020005#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="#t4031310#? Yeah, I sell them, but those were special, limited editions, and they are all sold out. \r\n#L0##bReally? Is there a way I can get it? I really, really need it...#k" />
+            <string name="1" value="Hmmm... there's this photo album I made for myself, but ... oh well, if you really, really need it, then I'll sell it to you. But you'll have to do me one favor..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I have never been out of water in my whole entire life. I've heard from various travelers that there's this thing called SNOW on land, and they all mentioned how beautiful the snow crystal looks like. I really wanna see it myself, but unfortunately, snow melts very quickly inside the ocean." />
+                <string name="1" value="To keep it from melting even in the middle of the ocean will require the special magic of #r#p2020005##k, the head wizard of El Nath. I heard he can make the Snow Crystal Sphere by collecting the snow crystals. Please get me the object that surely looks like this #b#i4031312# #t4031312##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I cannot give you the photo album if you don't want to help me out here..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What's going on? Are you here to see me? I'm sorry, but I'm currently in the middle of something, so please talk to me later, okay? Thanks." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you met #p2020005#?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3091" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

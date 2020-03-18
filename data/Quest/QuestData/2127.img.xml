@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2127.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To the Desert..." />
+        <int name="area" value="30" />
+        <string name="0" value="I'm now ready to go to whereever #p1022002# is going to take me. I should go see #p1022002# now." />
+        <string name="1" value="Where is #p1022002# going to take me..." />
+        <string name="2" value="#p1022002# have sent me to Nihal Desert." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you ready to leave? You seem a bit tense, since this is your first time. Don't worry, I think you'll do just fine." />
+            <imgdir name="yes">
+                <string name="0" value="Ah, I should tell you this right now. With my abilities, I can only take you there five more times after this. If you're ready for the path ahead, please give me a moment to focus, and speak with me once more." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022002" />
+            <string name="endscript" value="q2127e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2122" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="lvmax" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2369.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dual Blade: Time for the Awakening" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Lady Syl has something to ask of you." />
+        <string name="1" value="Lady Syl says she is furious after hearing Manji's story. She has decided to initiate a war against the Dark Lord and asks that you go to the hidden room inside the Jazz Bar to recover the former Dark Lord's diary. She asks that you exercise caution since the current Dark Lord could have potentially set a trap... You are to come see her again with the Diary once you've reached Lv. 30." />
+        <string name="2" value="Lady Syl said that she had become furious after hearing Manji's story. She decided to initiate a war against the Dark Lord and asked that you go to the hidden room inside the Jazz Bar to recover the former Dark Lord's diary. \r\nInside the secret room in the Jazz Bar, you were attacked by the Dark Lord's subordinates. Luckily, you were able to defeat them and come out with the diary. When you returned to Lady Syl with the diary after reaching Lv. 30, she advanced you as a Blade Acolyte." />
+        <string name="demandSummary" value="#i4032617:# #t4032617:# #c4032617# / 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032617" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ever since you told me Manji's story, I haven't been able to get any sleep. I've been consumed with thoughts of an all-out war against the Dark Lord! I will make him shed tears of repentance...! But before that, I must ask something of you. You won't refuse, will you? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Inside the Jazz Bar, where the Dark Lord resides, there is a secret room. Within that room lies the last remaining article left by my father. It's his #bDiary#k. Please go there and return with the Diary before the entire place is engulfed in war. \r\nTo enter the secret room, you'll have to enter through a small door towards the back of the #bJazz Bar#k counter. Be careful and make sure that the Dark Lord doesn't see you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You seemed determined to oppose me. If I call for a war, this involves all Dual Blades. Don't you understand that?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="I told you to come back when you're Lv. 30." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Inside the Jazz Bar, where the Dark Lord resides, there is a secret room. Within that room lies the last remaining article left by my father. It's his #bDiary#k. Please go there and return with the Diary before the entire place is engulfed in war. \r\nTo enter the secret room, you'll have to enter through a small door towards the back of the #bJazz Bar#k counter. Be careful and make sure that the Dark Lord doesn't see you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1056000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032617" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2369e" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1056000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2367" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

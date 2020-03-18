@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21611.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rebellious Wolf" />
+        <int name="area" value="6" />
+        <string name="0" value="The wolf that you lost, then recovered, seems to have decreased in size and has quite an attitude too. What should you do? Better head to #b#m140000000##k and talk to #b#p1202007##k." />
+        <string name="1" value="According to #p1202007#, a wolf who has lost its way is often unable to get over its trauma, to the point where it shrinks and even acquires a rebellious attitude. The owner, apparently, needs to re-teach the wolf some life lessons. They say you need to invest in some educational expenses...\r\n\r\n#b80,000,000 mesos#k" />
+        <string name="2" value="You paid the educational fees and let the wolf just enjoy himself for once. Fortunately, the wolf seemed to be back to normal size." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-80000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902016" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What is it? What? Your #t1902016# is abnormally small? Well, that's a given, considering that once you lose your wolf just once, it goes through bouts of depression, which means it'll get smaller in size and even change it's personality a little." />
+            <string name="1" value="If you want to restore #t1902016#'s growth and his happiness, then I'll take care of #t1902016# for a bit. I'll make sure to get this wolf back on track. But I can't do it for free. It's going to cost you some money." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b80 million mesos#k and I will reteach #t1902016# everything, and give him back to you. Too expensive? Remember, that's the amount of damage you caused on Ryko's life. Mesos are not important, but if you don't pay up now, then you may be prone to repeating the same mistake down the road, so...that's about the right amount, I say." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you are too scared to pay up, then that's that. Never did I expect you to treat Ryko like that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring 80 million mesos with you? Okay, now please hand over #t1902016# to me. I'll take care of the rest." />
+            <imgdir name="yes">
+                <string name="0" value="As we completed the training, #t1902016# returned to its original state. Please do not lose Ryko again, okay?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bring #b80 million mesos#k and #t1902016# with you, and I will reteach Ryko everything. Don't say that it's too expensive. Only if you pay a steep price like that will you be more mindful not to lose #t1902016# again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21607" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1902015" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902016" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

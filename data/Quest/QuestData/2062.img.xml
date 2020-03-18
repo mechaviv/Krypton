@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2062.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mrs. Ming Ming's First Worry" />
+        <int name="area" value="30" />
+        <string name="0" value="I hear that Mrs. Ming Ming in Henesys is worried about something..." />
+        <string name="1" value="I ran into Mrs. Ming Ming in Henesys, who flushed with concerns here and there. She said there is not enough decoration for the village festival, and asked me to get #b50 Bubbling's Huge Bubble, 20 Slime Bubbles, and 100 Pig's Ribbons#k. \n\nBubblings Huge Bubbles : #c4000037#/50\nSlime Bubbles : #c4000010#/20\nPig's Ribbons : #c4000002#/100" />
+        <string name="2" value="I brought back all the stuff Mrs. Ming Ming asked me for, but I'm sure these decorations are not the only things needed for the festival..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000037" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000010" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, there. I'm #b#p1012106##k. Why am I pacing around like this? The Carnival is coming up really soon, and I need to prepare for a lot of things, but one thing I'm lacking is a helping hand. Can you help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Carnival is all about being extravagant and fancy, but the town is seriously lacking flashy materials to decorate with. Thankfully the monsters drop some items that are. As you can see, however, I'm no good in terms of hunting." />
+                <string name="1" value="Can you help me gather up #b50 #t4000037#s, 20 #t4000010#s, and 100 #t4000002#s#k? The bubblings and the ribbons are the perfect decorations, you know. I'll be here waiting for you. Good luck!!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you were going to help. If you feel like changing your mind, though, then please come see me. I need as much help as I can get!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, you got them all!!! This is plenty enough for me to decorate the town! Thank you so much for your help! The job isn't done, however, and I may need your help again soon, so if you have time, then please come see me." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have gathered up all the items I asked you to get. To decorate the town for the Carnival, I'll need #b20 #t4000037#s, 50 #t4000010#s, and 100 #t4000002#s#k. Please get them for me quickly!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up all the items I asked you to get. To decorate the town for the Carnival, I'll need #b50 #t4000037#s, 50 #t4000010#s, and 100 #t4000002#s#k. Please get them for me quickly!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000010" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000037" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012106" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

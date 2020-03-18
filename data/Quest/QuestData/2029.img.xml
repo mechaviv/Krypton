@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2029.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Don Hwang's Request" />
+        <string name="parent" value="Nella &amp; Kerning City Citizen's Request" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard that I can get a job if I go see Nella at Kerning City..." />
+        <string name="1" value="I gave Nella 1000 mesos as a commission for hooking up Kerning City citizen's request. First request was to get the materials for Don Hwang, the owner of armor shop. The materials for making new armor are #b50 Green Mushroom caps#k and #b50 Bubbling's huge bubbles#k. It wouldn't be that hard, since I can easily find Green Mushrooms near the Ellinia and Bubblings at the Subway." />
+        <string name="2" value="I gave what Don Hwang asked for and I got bunch of lemons for return. I wonder what kind of armor would Don Hwang make. Nella said there are many more requests I can do. I should visit Nella every once in a while." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="money" value="-1000" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000037" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2010004" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa, I haven't seen you before! I'm guessing you're not from here, since I don't recognize you and all. My name's #b#p1052103##k, the one you turn to for information around here. If anything happens in this town, I'm always the first one to know,  pure and simple!" />
+            <string name="1" value="For #b1000 mesos#k, I can gather up some information on the townspeople here, and I can even hook you up with a couple of them. It's like, if someone in town needs help, I'll introduce YOU to that person! What do you think? Wanna give it a shot?" />
+            <imgdir name="yes">
+                <string name="0" value="Awesome! Like I promised, you give me 1000 mesos, I give you the hook-ups. We have an urgent request from one of the towmsmen, so that'll be your first job. #b#p1051001##k from the armor store has been collecting rare items for a new armor he's trying to create." />
+                <string name="1" value="He needs #b50 #t4000012#s#k and #b50 #t4000037#s#k. It may be just a piece of cake for you, anyway. Don't worry, he promised he'll reward you well for your service. Well, come back to me once you have gathered them all up, alright? I'll be waiting ..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This may not be the kind of request you normally would get, but it won't hurt you one bit, trust me. It's your call, and if you feel like changing your mind, then come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoa ... you came back much earlier than I thought! I knew I picked the right person for this ... Sweet! Since you have done such a wonderful job following through the request, here's your reward. #b#p1051001##k is giving you a bunch of #b#t2010004#s#k that'll help you on your journey, so go ahead and take them all!" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, if you need work sometime down the road, feel free to come back and see me. This town sure can use a person like you for help!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't collected all the items #b#p1051001##k requested yet, right? To make a new armor, he'll need #b50 #t4000012#s#k and #b50 #t4000037#s#k. All you need to do is see me after you've collected them all, so keep trying!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000037" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052103" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

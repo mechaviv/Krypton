@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3612.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chil Sung's Roasted Pork" />
+        <int name="area" value="37" />
+        <string name="0" value="Apparently, the place that makes the best roasted pork in Korean Folk Town is Chil Sung's..." />
+        <string name="1" value="I went to Chil Sung's place because he was apparently the best at making roasted pork in Folk Town. He asked for 5 Moon Bunny's Pounders and 1,000 mesos in return for roasted pork.\n\n#t4000169# #b#c4000169##k/5" />
+        <string name="2" value="I gave Chil Sung 5 #t4000169#s and 1,000 mesos for 1 roasted pork." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2071005" />
+            <int name="interval" value="1440" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000169" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022050" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, it's been a while. How can I help you? \r\n#L0# #bCan I get some roasted pork?#k" />
+            <string name="1" value="Roasted pork? Well, I can Say with great confidence that I'm the best at making those. Since you have helped us last time, I'll promise to make you a plate full if you can help me out a little bit here." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" I've been stacking up the crops and pounding them on the mortar, but the Pounder broke. If you can get me #b5 Pounders#k from the Moon Bunnies, then I'll make the roasted pork for you for only #b1000 mesos#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Didn't you come because you needed some roasted pork?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh my gosh, you really found it! Well, now that you brought the Pounder, here's the roasted pork." />
+            <imgdir name="yes">
+                <string name="0" value=" If you ever find yourself in need of roasted pork, then please come talk to me. It'll take me around 2 hours to make a plate full of it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I'll give you roasted pork after you get me 5 Pounder." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000169" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3605" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="37" />
+            <int name="interval" value="120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alcaster's Cape" />
+        <string name="parent" value="Warm El Nath" />
+        <int name="order" value="2" />
+        <int name="area" value="33" />
+        <string name="0" value="According to #p2020003#, the person that gave him the magical cape is a man over 300 years old. Really? If so, then wouldn't he be none other than #p2020005#? I should go see #p2020005#." />
+        <string name="1" value="The person who gave #p2020003# the cape was indeed #p2020005#. The one #p2020003# had turned out to be #t1102109#, the cape he made to combat the cold of #m211000000# when he went there to study magic. After asking for the cape, he asked me to get him some items so he can make another one for me.\n\n#i4021000# #t4021000#  #b#c4021000##k / 4 \n#i4006000# #t4006000#  #b#c4006000##k / 2  \n#i4000087# #t4000087#  #b#c4000087##k / 40 \n#i4000051# #t4000051#  #b#c4000051##k / 2" />
+        <string name="2" value="I brought all the materials back to #p2020005#, and in return, he gave me #t1102109#, a magic-laced cape designed to combat even the toughest weather. Now I feel like I can totally hunt at #m211000000# now!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="300년을 했지만 아직도 마법의 연구는 끝이 없구나... 응? 자네는 누군가? #p2020003#의 망토를 아냐고? #p2020003#... #p2020003#라... 아, 예전에 #m211000000# 앞에서 추위로 꼼짝도 못하던 그 청년 말이로군. 온화한 망토라면 준 게 맞네." />
+            <string name="1" value="#m211000000#에 마법 연구를 하러 왔는데 너무 추워서 견딜 수가 있어야지. 그래서 만들었는데, 300년이나 지내다 보니 이제는 추위를 견딜 수가 있게 되어서 그 청년에게 주었지. 응? 자네에게도 달라고? 이런... 망토는 그거 하나밖에 없었는데 어떻게 한다? 다시 만들려면 재료가 있어야 하는데 구할 수 있겠는가?" />
+            <imgdir name="yes">
+                <string name="0" value="그렇다면 망토를 만들 수 있도록 #t4021000# 4개와 #t4006000# 2개, #t4000087# 50개, #t4000051# 20개를 구해 오게. 그것만 있다면 망토를 만드는 것은 어렵지 않으니, 얼마든지 만들어 주도록 하지." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="재료를 구하기 어려운 모양이군. 그렇다면 하는 수 없겠지. 재료를 구할 수 있게 되거든 다시 오게. 그 때 필요한 재료를 알려 주도록 하지." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="14500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021000" />
+                    <int name="count" value="-4" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4006000" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102109" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000087" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been studying magic for over 300 years, but I see no end to it... Hmmm? Who are you? Do I know about #p2020003#'s cape? #p2020003#... #p2020003#... Ahh, you must be talking about the gentleman in front of #m211000000#  who couldn't withstand the harsh cold weather. If it's the cape, then yes it is." />
+            <string name="1" value="I went to #m211000000# to study magic, but it was unbearably cold, so that's how I got to make the cape. After 300 years, however, my body had gotten much tougher to the point where I can now withstand the cold, so I gave the young man the cape. What? You want one, too? Oh no... that was the only cape I had... what should I do? If you want to make one, we'll have to gather the materials. Can you get them for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now I'll need #b4 #t4021000#s#k, #b2 #t4006000#s#k, #b40 #t4000087#s#k, and #b2 #t4000051#s#k. That should be enough for me to make the cape." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be having trouble gathering the materials. That's unfortunate. Let me know when you are ready to get some. I'll tell you the materials required to make the cape." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you get all the materials? Then please wait. Once I have the materials in place, it's easy for me to make one." />
+            <string name="1" value="Alright, THIS is the magic cape that helped me withstand the cold, #t1102109#. With this, cold will never be an issue, even at #m211000000#. Use this well." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have all the matierls yet. In order for you to get #t1102109#, get me #b4 #t4021000##k, #b2 #t4006000##k, #b40 #t4000087#s#k, and #b2 #t4000051#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000087" />
+                    <int name="count" value="40" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4006000" />
+                    <int name="count" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4021000" />
+                    <int name="count" value="4" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3102" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

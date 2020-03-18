@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2320.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Friendship with Bruce" />
+        <int name="area" value="30" />
+        <string name="0" value="#bScarrs#k says that he has something for you." />
+        <string name="1" value="You need to hand a #bSample of Killer Mushroom Spore Potion#k to #bBruce#k in #bHenesys#k." />
+        <string name="2" value="You handed a #bSample of Killer Mushroom Spore Potion#k to #bBruce#k." />
+        <string name="summary" value="You need to hand a #bSample of Killer Mushroom Spore Potion#k to #bBruce#k in #bHenesys#k." />
+        <string name="demandSummary" value="#i4032389:# #t4032389:# #c4032389# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 8,800\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have just one more request for you. Would you be willing to listen?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="To be honest, this #bKiller Spore Potion#k is not completely my own work. Do you remember #bBruce#k from #bHenesys#k? I have been friends with him since childhood, and the formula for the #bKiller Spore Potion#k was completed only after Bruce shared the results of his studies with me. This was all thanks to him, so I'd like for you to deliver this to him for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I wanted you to share this great piece of news with #bBruce#k, but I understand if you're busy." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You're here on behalf of #bScarrs#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahh, so this is the #bKiller Spore Potion#k that I was studying way back when! I had a tough time gathering up all the ingredients, so I left my research in a state of mere hypotheticals. I guess Scarrs was able to complete it. And he even had you bring a sample as well. Please tell him thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go visit Bruce." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What brought you here?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032389" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2318" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

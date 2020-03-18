@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6163.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shammos!" />
+        <string name="parent" value="Shammos's past" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value="When I asked #p2022003# about #p1032001#, I could tell he was very resentful towards #p1032001# and #p2020009#. Let's go back to #b#p1032001##k and tell him about #p2022003#." />
+        <string name="2" value=" #p1032001# looked disappointed as he said how #p2022003# used to be a great Magician..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I'm sick of being here. Until when should I be here?... \n\r#L0# #b...do you know about Grendel the Really Old?#k" />
+            <string name="1" value="#p1032001#! #p1032001#! Oh! I definitely know them! #p1032001# a friend of Shammos! #p1032001# betrayal! He took all my power with the help of #p2020009# and put me in this dark and damp prison!  I hate #p1032001#!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="He was jealous! Because he couldn't get the magic! I, #p2022003# made! Even #p2020009# and #p1032001# couldn't do it!!! Tell #b#p1032001##k that the best magician is #p2022003#!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" #p1032001#! Curse you!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you meet #p2022003#? Did he come back to his senses by any chance? It seems that he fades in and out of consiousness these days..." />
+            <string name="1" value="...Did he talk about #p1032001#? It's impossible. He lost all his memory as a human being, but his memory is coming back to him." />
+            <string name="2" value=" #p2022003# is a genius in magic and a friend of this #p1032001#. We didn't keep in touch for a long time, learning magic. I don't even know he was indulged in that kind of magic. When I met him again, he was a Hobi..." />
+            <string name="3" value=" I know he still blames #bme#k and #bRobeira#k for he has been imprisoned for a long time. His magic skills were excellent... If they were not so dangerous, he be a living legend even now." />
+            <imgdir name="yes">
+                <string name="0" value="#p2022003# is really talented." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Let me out! Please! #p1032001#... You were my friend!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2022003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6162" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28210.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Commotion on the Ship, No More!" />
+        <string name="parent" value="Commotion on the Ship" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="Talk to #b#@1092002:##k in #bNautilus#k to deliver #rKyrinvana's Guitar#k and ask about the #rLost Statue#k." />
+        <string name="1" value="Let's talk to #b#@1092002:##k in #bNautilus#k." />
+        <string name="2" value="You have fulfilled the request of #b#p1072008##k in #bNautilus#k and completed the #rKyrinvana's Guitar#k. In addition, you have managed to minimize the damage of the Pigs and solve the mystery behind the #rLost Statue#k." />
+        <string name="demandSummary" value="#i4032484:# #t4032484:# #c4032484# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Next Stop, Ellinia' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032484" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="*Sigh* Life is so hard...\nI pulled an all-nighter last night and the night before, and I'm still swamped with work today!\n\nThere is never a dull moment here.\n\nSo, what brings you here?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, are you here because of the Statue?\nHmm, I'm too tired to talk right now.\nCome back and talk to me again a little later, will you?\n\nOh, and it would be nice if you could bring me something that could help me re-energize." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, it was nothing!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! Isn't this the #rKyrinvana's Guitar#k?\nThe sound of this guitar makes me sing and dance no matter how tired I am!!\n\nThank you so much for your present. I'm feeling good!" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, are you talking about that Statue that came from #bLeafre#k?\nOh, I already found it. Somebody told me the #rRibbon Pigs#k ate it, but I found it in the deep end of the forest. I thought I had lost it at first, but I've got it right here." />
+                <string name="1" value="Everything seems to be going smoothly. Why don't you get some rest? Don't let the guitar sounds scare you at night, though. Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What did you bring?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032484" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28209" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032484" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

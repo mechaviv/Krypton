@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20613.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Another New Skill for Wind Archers" />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="I better ask #b#p1101005##k about this new skill per comments from #p1101002#." />
+        <string name="1" value="#p1101005#told me that if I wanted to learn a new skill, I'll have to prove my skills again by entering #bHall #4#k at #m130020000#, where a tougher test will take place... \n\n#i4032127# #t4032127# #b#c4032127# / 1#k" />
+        <string name="2" value="I managed to defeat the boss monster again and brought back #t4032127# in return. #p1101005# told me I have proven that I deserve to learn the new skill, and taught me Bow Expert." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032127" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="13110003" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="20" />
+                    <imgdir name="job">
+                        <int name="0" value="1311" />
+                        <int name="1" value="1312" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What is it? A new skill? I can't believe #p1101002# spilled the information on that again, and I can't say I am surprised. Also, I had a feeling that you'd come back for that again. Okay, I'll teach you the skill, as long as you pass the test." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Head over to #bthe 4th Drill Hall#k of #m130020000#, pass the test that's given to you, and bring back #b#t4032127##k so I can teach you the new skill." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Just know that this test is significantly more difficult than the previous test. You can even take this test with your party members, if you feel that you need help. Recruiting your party members for this is a skill in and of itself, so I'll let you do that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you did manage to bring back #t4032127#. ...You... you're just incredible. Here's the new skill." />
+            <imgdir name="yes">
+                <string name="0" value="It's a new skill for the Wind Archers, called #bBow Expert#k. Please put this skill to good use." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Ah, were you not able to find #b#t4032127##k...? You can get it at #bthe 4th Drill Hall#k of #m130020000#. Of course, you know that it's the getting part that's the hardest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032127" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20610" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="110" />
+            <imgdir name="job">
+                <int name="0" value="1311" />
+                <int name="1" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

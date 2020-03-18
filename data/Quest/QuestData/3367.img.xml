@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3367.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Organizing the Lab Report" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="27" />
+        <string name="0" value="To help Yulete out, I volunteered to assist him on his research. What can I do for him? I better go see #bYulete#k." />
+        <string name="1" value="Yulete asked me to organize his Lab Report. At his #bLab 2#k, there are so many reports that he had written that have been spread out all over the place, that it needs to be organized in the worst way. I better start gathering up some #breports#k. \n\n#i4031797##t4031797# #b#c4031797##k/20 " />
+        <string name="2" value="I gathered up the reports and gave to Yulete. Organizing all these reports will keep Yulete busy for a while." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031797" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What I want you to do is to organize the Lab Report. All this time, I had been just jotting down notes here and there, and they are spread out all over the place, so I can't possibly think of organizing all these reports. All I want you to do is to find all the old reports that may be spread out all over the place. What do you think? Can you do that for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Go to the left, and you'll see one three doors that leads to the lab. Enter the #bmiddle door#k, which will lead you to Lab 2. Scour through all the bookshelves, and find the missing reports. #b20 Lab Reports#k should do. Thank you in advance." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... it's not even a tough task to do. I wish you wouldn't worry so much about it. If you want to do it again, then please let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh! You were able to recover all the lab reports from the bookshelf! Thank you so much! I am sure these lab reports were spread all over the shelf... that's a lot of work you just did. Thank you." />
+            <imgdir name="yes">
+                <string name="0" value="Anyway, when will I be able to re-organize all these documents? Now that we have them all, we'll have to organize them in such way that it's easily accessible. Hmm...l can't even imagine organizing all of them by myself." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... so you haven't all the #blab reports #k last year. I mean, it's not easy to find all #b20#k of them... please hurry a bit." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2112014" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031797" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2112014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3365" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

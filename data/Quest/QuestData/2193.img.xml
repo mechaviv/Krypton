@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2193.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Beginner Pirate's First Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're now a Pirate! Now what? Perhaps Kyrin can help you." />
+        <string name="1" value="Kyrin suggests monster hunting as a form of basic training. She wants you to hunt #r11 Pigs#k. There are apparently a lot of Pigs near Henesys. \n\n#o1210100# #r#a21931##k" />
+        <string name="2" value="You eliminated 11 Pigs and reported the results to Kyrin. No sweat!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="해적이란 직업이 아직 어색하지? 경험이 없으니 당연한거야. 경험이야 말로 정말 중요한 거라구. 아직 혼자서 경험을 쌓기는 힘들거야. 내가 약간 도와줄 수 있는데 수련을 하겠어? \r\n#L0##b 수련을 하겠습니다.#k#l \n#L1##b 스스로의 힘으로 할 수 있습니다.#k#l" />
+            <string name="1" value="스스로의 한계를 인정할 줄 아는 마음이야말로, 더 강해지기 위한 바탕이 되지. 네가 강한 해적이 되도록 도와주겠어." />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="수련할 준비가 되지 않은 모양이군..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="590" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Is the whole Pirate job still foreign to you? That's because you don't have much experience as one. Right now, it may be a bit tough for you to gain experience on your own. I can help you a bit with that. Do you want to train with me? \r\n#L0##b Yes I will.#k#l \n#L1##b I can do it by myself.#k#l" />
+            <string name="1" value="The moment you accept your limitations, you are ready to break that barrier and go further than that. I'll make sure you'll become a more powerful Pirate than when you first walked in." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Maybe you're not ready to train yet..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Still not used to using a Knuckler or a Gun? Try hunting the pigs first to get acclimated to the Pirates' way of hunting. Try hunting #r11 pigs#k first. The pigs can be easily found at the harbor of The Nautilus, so that should be easy. You can even find some nearby at Henesys." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Maybe you're not ready to train yet..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great job slaying 11 pigs. This is only the beginning, though. You've only taken a baby step towards the mastery of Pirate." />
+            <imgdir name="yes">
+                <string name="0" value="I'll let you know when I see that you'll need another set of training. In the mean time, keep training... and hopefully I'll see a different you the next time up." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have slayed all #r11 pigs#k yet. If you want to become stronger, you'll need to put in the effort to do so." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="11" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

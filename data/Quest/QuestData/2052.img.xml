@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2052.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="John's Pink Flower Basket" />
+        <int name="area" value="30" />
+        <string name="0" value="Let's go meet John at Lith Harbor." />
+        <string name="1" value="At Lith Harbor, I met a fisherman named John. He wanted to get his wife a nice flower basket for their upcoming anniversary. He asked me if I could get him #b10 Pink Violas#k for her. According to him, a mysterious statue can lead me to where the flower is. Sleepywood ... SLEEPYWOOD ??? That's FAR !!!" />
+        <string name="2" value="I got John all #b10 Pink Violas#k. With these, he can make a beautiful flower basket for his wife on their anniversary. As a sign of appreciation, John got me a whole bunch of screws left over from ships here and there. By the way, if there are this many screws that have fallen out of ships, then how in the world are they even working ...? Are they carrying passengers on it ???" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031025" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003000" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How's traveling these days? I actually have a favor to ask you ... this time, my wedding anniversary is coming up and I need flowers. Can you get them for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! This time I'd like to give my wife #b#t4031025##k ... It has a very pleasant scent, and I heard it's found deep in the forest ... I heard the place where it exists doesn't let everyone in; only a select few, I think. Something about #p1061006# at #m105040300# and something something ..." />
+                <string name="1" value="Please get me #b10 #t4031025#s#k. I think 10 will cover the house with that pleasant scent. Please hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand ... my wedding anniversary is coming up and I am screwed! Please come back if you have some spare time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh ... you got me #b10 #b#t4031025#s#k~! This is awesome ... I can't believe you went deep into the forest and got these flowers ... there's a story about this flower where it supposedly doesn't die for 100 years. With this, I can make my wife happy." />
+            <string name="1" value="Oh, and ... since you have worked hard for me, I should reward you well. I found some #t4003000# in the ship. Some travelers leave things here and there. It looks like something you may need, so take it." />
+            <imgdir name="yes">
+                <string name="0" value="If you have time, why not try going back into the forest? You may find an important item in there. I can't guarantee it since obviously I've never been there before, so please don't come back complaining if all you can find is trash." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gotten #b#t4031025##k yet. There's #p1061006# at #m105040300# and I heard that with that you can go to the place where #t4031025##k is. Please go into the forest and collect #t4031025##k for me. I need 10 to make my wedding anniversary" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031025" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20000" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

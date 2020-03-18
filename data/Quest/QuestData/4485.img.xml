@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4485.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Torr's Whereabouts" />
+        <string name="parent" value="Cliff's Rudolph" />
+        <int name="order" value="2" />
+        <int name="area" value="50" />
+        <string name="0" value="You took the picture as Cliff had requested, but Torr was not there! Cliff began to worry greatly about Torr. Let's listen to his unfinished story." />
+        <string name="1" value="Cliff asked you to check if the reindeer crying around the corner of Happyville is Torr. And if it is, he asked you to #btell Torr#k that he will be waiting on the 2nd floor at the Center Tower of Happyville." />
+        <string name="2" value="You've sent Torr back to lonely old man Cliff. It will be a warm and happy holiday, at least for those two." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031885" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, my! This chimney is so D-I-R-T-Y! If I were Santa, I would never enter that house! But it seems like very nice children are living in that house. It'd be sad if they didn't receive any Christmas gifts... ALRIGHT! I guess I'll clean the chimney for them. Oh wait! I don't have the cleaning tools. I just need a #bChimney Sweep and a Flashlight#k. Perhaps, you'd be kind enough to bring me those?" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Thank you so much! What a fine Mapler you are! You should be able to get the  #bChimney Sweep#k and the #bFlashlight#k from #bRina in Henesys#k. I have something else to do in this town, so please get me those two cleaning tools." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You refuse? Hmm, okay. I'll find somebody else who can help me. If you change your mind, please come talk to me again. After all, the children in this house deserve to have Christmas presents." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met Rina#b#p1010100##k yet. I want to get started soon before Santa Claus comes to town." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2002002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2001000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4484" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2284.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lavender Scent" />
+        <int name="area" value="30" />
+        <string name="0" value="Lana says the freesia scent is perfect for the Female Mannequin's Wig. Better tell #bLala#k." />
+        <string name="1" value="Rush to #bLana#k before the scent fades and ask her which costume this lavender scent would best complement." />
+        <string name="2" value="#bLana#k said the lavender scent wasn't exactly perfect for the Fedora, but that it would work. \r\nAsk #bLana#k what other tasks are left on her to-do list." />
+        <string name="rewardSummary" value="2,300 EXP" />
+        <int name="timeLimit" value="40" />
+        <string name="timerUI" value="default" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="buffItemID" value="2022633" />
+            <string name="message" value="달콤한 라벤더향기가 온몸을 감싸는 순간 이상하게 머리가 아프고 발걸음이 무거워 진다. 향기가 사라지기 전에 라나에게 가보자." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2300" />
+            <int name="nextQuest" value="2285" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The freesia scent goes with the Wig. Got it. So now we're left with the Blue Perfume and the Fedora, but ugh, I don't think the two go together at all. What do you think? \r\n#L0##bI don't know. I don't think we have any other choice.#l\n#k" />
+            <string name="1" value="But I really don't think these work. I'm sorry, but could you ask #bLana#k one last time?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I've sprayed the Blue Perfume on you. Rush to #bLana#k before the lavender scent fades." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is the last favor I need from you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hm, so you want me to tell you which scent goes well with which costume again? \r\n#L0##bYes, we only have the Male Mannequin's Fedora and this lavender-scented perfume, but Lala says these two just don't go with each other. She wanted your opinion.#l\n#k" />
+            <string name="1" value="I think a citrus smell would go great with the Fedora, but we can work with the lavender. We have more things to take care of, so we can't be waste time. Let's just go with that." />
+            <imgdir name="yes">
+                <string name="0" value="I'll tell #bLala#k myself. Could you help me with the next thing on my list? What's next... Oh, we don't have any music. We must decide on the songs Blake will perform. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="What smell? Why don't you ask Lala to spray you with more perfume?" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please hurry to #bLana#k and ask her before the scent fades." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+            <string name="buff" value="2022633" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052119" />
+            <string name="exceptbuff" value="2022632" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2283" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2285" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2229.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Way to Fight Off Sleep" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go see #b#p1040001##k in #b#m106000300##k." />
+        <string name="1" value="I met with #b#p1040001##k.  #b#p1040001##k says he can't stand guard at the dungeon entrance because he keeps falling asleep.  If this continues, something bad is bound to happen.  I need to find a potion that can fight off sleepiness and give it to #b#p1040001##k.\n\n#i02000000##t02000000# #b#c02000000#/1\n#k#i02000001##t02000001# #b#c02000001#/1\n#k#i02000002##t02000002# #b#c02000002#/1#k\n#k#i02000003##t02000003# #b#c02000003#/1#k" />
+        <string name="2" value="I fed the potion to #b#p1040001##k but it was no use.  But  #b#p1040001##k was very appreciative of my efforts." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1700" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...Snore~ Ahh!  Was I dozing off again?  I'm so tired these days, I can hardly stay awake at work.  Stop looking at me like that.  It's probably hard for you to understand but try staying under this warm sunlight all day..." />
+            <string name="1" value="I want to stop dozing off and do my job right, protecting this place, but I don't know how to keep myself from falling asleep.  Do you think you can help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Once #b#p1022000##k told me that if the mind and body are both healthy, they can fight off sleep.  I guess I should be eating something that's good for my body but I don't know what to eat exactly." />
+                <string name="1" value="I trust you to discern and bring me things you think will be good for me.  If you are a great adventurer, I'm sure you're familiar with various items and their effects." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't see the dungeon entrance?  I have a sacred responsibility to protect this entrance.  If I keep falling asleep, anyone will try to enter this dangerous place.  Are you okay with that?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...Snore~  Oh!  It's you!  You really must be a great adventurer.  I didn't think you'd be back so soon.  Why don't you start giving me one potion at a time?  I'm sure I'll find one that will work. " />
+            <imgdir name="yes">
+                <string name="0" value="I've tried every single one of them... but I don't feel any different.  Don't worry though.  I won't forget everything you've done for me.  Plus, you never know..." />
+                <string name="1" value="Maybe the effects will kick in later.  That's usually how medicine works, right?  It's supposed to heal me right away?  Haha!  I don't know about that... It's not like this is a video game or something." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="...Snore~  Oh no!  I fell asleep again.  Hey, you didn't find me a cure yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1040001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000001" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1040001" />
+            <int name="lvmin" value="23" />
+        </imgdir>
+    </imgdir>
+</imgdir>

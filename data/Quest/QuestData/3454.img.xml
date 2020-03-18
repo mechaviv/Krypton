@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3454.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wave Translator" />
+        <int name="area" value="37" />
+        <string name="0" value="Let's go to #b#m221040100##k to find #b#p2050002##k." />
+        <string name="1" value="When you tell #p2050001# that you couldn't get any useful information from #p2050002#, he suggests he build #b#t4031927##k. He asks you to find the materials so that he can build the translator that can decode the ultrasonic waves that Grays send each other using their tentacles. \n\n#i4000119##t4000119# #b#c4000119#/30#k\n#i4000118##t4000118# #b#c4000118#/30#k\n#i4000125##t4000125# #b#c4000125#/1#k\n#i4031926##t4031926# #b#c4031926#/10#k" />
+        <string name="2" value="When you brought him all the materials he's asked for, #p2050001# made you a #t4031927#. Hmm, but he says this one might malfunction since he hasn't had the time to test it..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000119" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000118" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000125" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031926" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031927" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4031928" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you gone to see an #p2050002#? ...Oh? I guess you haven't gotten much out of it. Of course, not. The Grays are way too intelligent to reveal their weaknesses. Shall we go with option number 2 then?" />
+            <string name="1" value="I have found through extensive research that the Grays converse by sending ultrasonic waves from their tentacles. Unlike talking with their mouths, only truths are told through the waves. You will abe able to get to the bottom of this if you direct the conversation in the right way using the waves, and encourage them to respond to your question." />
+            <string name="2" value="Of course, you can't just decode the waves. I'm still in the beginning stages of my research, so I need a number of materials to build a Wave Translator. Won't you find me the materials so I can build a #b#t4031927##k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There are a number of things you must get. First, I need #b30 Small Spaceship#k, #b30 Receiving Apparatus#k, #b1 Chief Gray's Sign#k... and #b10 Gray's Tentacles#k. I need all these things to build a #t4031927#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... you seemed competent enough to get those things done easily..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you've brought all the materials I need. Give me a few moments. I will build you a Wave Translator." />
+            <string name="1" value="#b(...Bang! Bang! Bang!)#k" />
+            <string name="2" value="#b(...Cling! Cling! Cling!)#k" />
+            <string name="3" value="#b(...Creeeeak...)#k" />
+            <string name="4" value="#b(...POW!)#k" />
+            <imgdir name="yes">
+                <string name="0" value="Here it is. The completed Wave Translator. I haven't had the chance to test it since I built it in such a hurry... so don't be alarmed if it malfunctions. Just come back to see me if it doesn't work properly. I'll make another one for you if you just bring me the materials." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It seems you haven't found all the materials necessary to build a #bWave Translator#k. Did you forget what I've asked you to bring? I need #b30 Small Spaceship#k, #b30 Receiving Apparatus#k, #b1 Chief Gray's Sign#k... And #b10 Gray's Tentacles#k. Don't forget!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000119" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000118" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000125" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031926" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3453" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3456" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3457" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031927" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031928" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

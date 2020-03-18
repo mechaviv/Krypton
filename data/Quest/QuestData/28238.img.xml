@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28238.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Final Battle with Amdusias" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012100:##k in #bHenesys#k says it is now time to defeat #rAmdusias#k the demon. Let's talk to her." />
+        <string name="1" value="She says you can find the Demon's Doorway where #rAmdusias#k is hiding if you go to #b#m104040002##k. You can enter using #rDarkween's Monster Drum#k.\n\nDefeat #rAmdusias#k!\n\nReport back to #b#@1012100:##k in #bHenesys#k upon completion." />
+        <string name="2" value="You have defeated #rAmdusias#k whose seal has been broken. Who or what is responsible for breaking the seal, however, still remains a mystery." />
+        <string name="demandSummary" value="#o9400610# #a282381#" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i1003034:# #t1003034:# #c1003034# 1&#xD;&#xA;#i4032496:# #t4032496:# #c4032496# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1003034" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032496" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem prepared. Are you ready to face #rAmdusias#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You will find a Demon's Doorway in #b#m104040002##k.\nThat is the hiding place of #rAmdusias#k. You can enter the portal using the #rDarkween's Monster Drum#k.\n\nPlease defeat the demon!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was incredible.\nEspecially for a novice bowman...\nI'm so proud of you." />
+            <imgdir name="yes">
+                <string name="0" value="But you must continue to train diligently. I've just received some information that proves that the reason #rAmdusias#k's seal was broken wasn't entirely your fault. #b#p1052001##k say there is a powerful force behind all of this. I have a bad feeling about this." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You have not been able to defeat #rAmdusias#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400610" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28237" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

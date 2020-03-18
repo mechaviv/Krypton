@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3938.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="First Mission" />
+        <string name="parent" value="First Mission of Sand Bandits" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The Sand Bandits are here for the residents of #m260000000#. Now that you are a member, you should go get your first mission! Talk to #b#p2101010##k." />
+        <string name="1" value="#p2101010# says he wants to steal an expensive order of silk that the queen is buying and use it to pay for food for the people. The plan is for someone to transform into the guard from the palace to trick the merchant into giving up the silk! But first, you need to get a piece of #b#p2101004#'s hair#k. \n\n#i4031570# #t4031570# #b#c4031570# /#k1#k" />
+        <string name="2" value="You gave #p2101010# a piece of #p2101004#'s hair, er, beard. Now you just have to wait for the potion to be completed..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="모래그림단이 되었는데 임무가 없어서 심심했지? 이번에 왕비가 사기로 한 비단을 빼돌리는 일을 하기로 했는데... 이 임무를 자네에게 맡겨 보고 싶군. 어떤가? 할 수 있겠는가?" />
+            <imgdir name="yes">
+                <string name="0" value="왕비의 물건을 직접 가지고 오는 것은 너무 위험해서, 조금 색다른 방법을 계획했네. 보물은 마을 밖에 있는 상인에게 경비병 #p2101004#이 가서 가져오게 되어 있으니, #p2101004#으로 변장하여 물건을 가져오는 것이지. 어떤가? 훌륭한 계획 아닌가?" />
+                <string name="1" value="엘리니아의 마법사들에게서 변신약은 이미 구해 왔다네. 하지만 특정 인물로 변신하려면 한 가지 더. 그의 머리카락이 필요해. 그러니 자네가 가서 #p2101004#의 머리카락을 가져오게. 그러면 바로 #p2101004# 변신약을 만들어 주겠네." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아직 임무를 맡기엔 부족한 모양이군..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031570" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The Sand Bandits want to steal an batch of silk that the queen ordered, and I want you to do the job. Are you up for it?" />
+            <imgdir name="yes">
+                <string name="0" value="It's much too dangerous to just carry around an item stolen from the queen, so we have a different plan. Since the merchant is supposed to give the item to the guard #p2101004#, you should dress up as #p2101004# and pick up the item in his place. Brilliant, right?" />
+                <string name="1" value="I already have a Transforming Potion from the magicians of #m101000000#. To transform into a specific person, however, you also need a piece of their hair. So grab a #bpiece of hair from #p2101004##k. Once you do that, I'll make the transforming potion for #p2101004#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you're not ready to take on a mission yet." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is #p2101004#'s hair? Er, it doesn't look like head hair... What? Ohhh, from his beard? Well, hair's hair, so it shouldn't be a problem. Please wait as I get the Transforming Potion ready." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I need some of #p2101004#'s hair. One piece is all I need." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031570" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3937" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2168.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sea Firefly2" />
+        <int name="area" value="30" />
+        <string name="0" value="Shouldn't I be getting the bottle back from the Muse and heading back to The Nautilus?" />
+        <string name="1" value="The Muse gave back the magic flask to me, filled with the Vigor of the Sea. I'd better get the bottle to #bSharyl, the Prince of Whales#k right away, before it starts getting dark. " />
+        <string name="2" value="As the Vigor of the Sea is unleashed in The Nautilus, the overall atmosphere turns bright. But why is it that Sharyl, the Prince of Whales is blushing while saying that Kyrin should be so happy?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031842" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <string name="npcAct" value="quest" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031842" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The Magic Flask has been filled with Vigor of the Sea. Are you ready to return to The Nautilus?" />
+            <imgdir name="yes">
+                <string name="0" value="Here it is. Please give this to Prince Sharyl ASAP." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know when you are ready. The Prince seems to be in a hurry, so it'll be nice if you can get yourself ready fast." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh you brought it! The Nautilus will be dim no more!" />
+            <imgdir name="yes">
+                <string name="0" value="I am sure Kyrin will be relieved of this. Hopefully she'll be happy with what's about to take place." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone there yet? Please head back to The Nautilus immediately and hand this Vigor of the Sea to Prince Sharyl." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Still not ready?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no... did you lose it?" />
+                <imgdir name="yes">
+                    <string name="0" value="Gathering the &quot;Vigor of the Sea&quot; requires a lot of work. It is that hard to obtain, so please don't misplace it again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031842" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2167" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

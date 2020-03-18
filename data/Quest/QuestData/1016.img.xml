@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Training" />
+        <string name="parent" value="Mai's Training" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="Mai on Maple Island seems like a martial arts specialist who can train beginnings." />
+        <string name="1" value="You're under the tutelege of the famous swordmaster, Mai, in Amherst. She wants you to hunt Snails, Blue Snails, and Shrooms.\n\n#o100100# #r#a10161# #k\n#o100101#  #r#a10162# #k\n#o120100# #r#a10163##k\n\n Ah, Mai also said to meet with #p20002# in South Ferry to get another quest." />
+        <string name="2" value="Mai trained you, and you feel stronger." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="70" />
+            <int name="nextQuest" value="1017" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmm, you look like you're in serious need of my guidance. Is it your first time here? What you need more than anything right now is FOCUS. So...want me to train you?" />
+            <imgdir name="yes">
+                <string name="0" value="It's simple actually. All you need to do right now is to hunt monsters. I'll assign you a few tasks, and you'll be surprised to see how much you grow." />
+                <string name="1" value="Head out of town, and you'll run into lots of monsters. The weakest is the Snail, a tiny green snail, and it's a piece of cake. Next are the Blue Snails and the Shrooms. Listen, feast on the weaker monsters until you can handle bigger, stronger, and faster monsters. It's all about hunting the right monsters. \n\n#r10#k #o100100#s\n#r10#k #o100101#s\n#r10#k #o120100#s#k" />
+                <string name="2" value="Oh, and press W to see the World Map and locate Southperry. Go there and meet #p20002#. He may have something for you. You can accept #p20002#'s quest while training with me, so I suggest you meet him pronto." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... So, you don't want to receive training? It's good that you have so much confidence. But if you change your mind, come talk to me again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you been training by preying on the weak? Let me see..." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you understood what I told you. You haven't defeated enough monsters. You know you can check on your quest progress by pressing Q, right?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100100" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="100101" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="120100" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1019" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="7" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

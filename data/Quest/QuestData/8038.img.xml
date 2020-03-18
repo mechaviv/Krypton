@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8038.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lionel's Necklace 2" />
+        <string name="parent" value="Lionel's Necklace" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="Teo decided to help make Lionel's necklace. I better ask him right now." />
+        <string name="1" value="Teo seemed really busy, so I decided to gather up the items myself. I better gather up #b50 #t04000033#s#k, #b50 #t04000030#s#k, and #b7 #t04000061##k and give them to Teo.\n\n#t04000033#  #b#c04000033##k/50\n#t04000030#  #b#c04000030##k/50\n#t04000061#  #b#c04000061##k/7" />
+        <string name="2" value=" After handing Teo the items, he sent it to the jeweler, who made it for him fairly quickly. A beautiful necklace with Alligator and Dragon skin. I better show this to Maya now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000061" />
+                    <int name="count" value="-7" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000033" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8039" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...but then again, I'm really busy myself. Say... I'm sorry, but can you gather the items to make the necklace for me? Well, I can at least introduce you to the jewelry store where they can make it for you." />
+            <imgdir name="yes">
+                <string name="0" value="I'm sorry, but in order to make the necklace, you'll need #b50 #t04000033#s#k, with #b50 #t04000030#s#k to cover the leather, and #b7 #t04000061#s#k for decoration purposes. Please gather them up and bring them to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'd do anything for that girl, but I really am busy here. Please help her out for me. Please change your mind in this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you. I'll send this to the jewelry store immediately. This should be made fairly quickly, so please wait." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, here it is! Wasn't it fast? Alligator skin + dragon scale, combined to make a one-of-a-kind necklace!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm? \nI don't think you have enough items here. Please check again and then come to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000061" />
+                    <int name="count" value="7" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000033" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8037" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

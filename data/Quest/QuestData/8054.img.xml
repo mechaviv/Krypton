@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8054.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traveling Around Maple 2" />
+        <string name="parent" value="Traveling Around Maple" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="After soaking up the sun at Florina Beach, I should start up a conversation with Riel." />
+        <string name="1" value="Riel offered to take me to Showa Town. Once I get there, she advised me to look for Skye..." />
+        <string name="2" value="I was able to meet up with Skye. Where will I go next?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022014" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8055" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, how was Florina Beach? Did you like it? Ready to go to the next spot?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright, I'll send you to Showa Town. It's a very interesting place with a nice view to boot." />
+                <string name="1" value="Once you arrive there, talk to #eSkye#n, and she'll take you to another spot." />
+                <string name="2" value="Oh yeah, if you step outside, you'll encounter very scary individuals, so if you aren't ready for them, I suggest you to stay inside." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, you like it here, huh? Make yourself comfortable here~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're here through Riel? Go have yourself a bath at the bathhouse, and you'll find yourself relieving stress." />
+            <string name="1" value="In any case, have yourself a skewer and check out the area!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120006" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8053" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2005010100" />
+            <string name="end" value="2005010200" />
+        </imgdir>
+    </imgdir>
+</imgdir>

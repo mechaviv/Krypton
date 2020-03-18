@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22572.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Advice" />
+        <string name="parent" value="Information about the Slumbering Dragon Island" />
+        <int name="order" value="4" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1002001# says that it won't be easy getting to the island marked on the map. There must be some other way. Ask #b#p1002001##k again." />
+        <string name="1" value="#p1002001# says that the only sailor in #m104000000# who has the ability to sail to the island marked on the map is #b#p1002101##k. But #p1002101# stopped sailing a long time ago... If you bring him some #t4032470#, maybe #p1002101# will change his mind. Go to #b#m110000000##k and bring back a #b#t4032470##k.\r\n\r\n#i4032526# #t4032526# #b#c4032526# / 1#k\r\n#i4032470# #t4032470# #b#c4032470# / 1#k\r\n" />
+        <string name="2" value="#p1002101# gladly agreed to sail after receiving the #t4032470#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032526" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="38900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032526" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032470" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Must you go to the island on this map? If so, I can't help you. But I know someone who might be able to... #b#p1002101##k. He's retired now, but #p1002101# is the best crew member I know." />
+            <string name="1" value="Like I said, #p1002101# retired a long time ago. He doesn't miss it much, either... He may not want to help you, but I know something that might change #p1002101#'s mind." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you bring #p1002101# some #t4032470#, he might change his mind. Go to #b#m110000000##k and see if you can find some #b#t4032470##k. They don't make it often, so it might be hard to get..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm, I guess you're not THAT interested." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, I don't think we've met. But you seem quite competent. It's rare to find someone so strong that I haven't trained myself. But what brings you here? Eh? You want me to take you to the island on this map?" />
+            <string name="1" value="Hahaha, someone must have told you that I was the best crew member in town! But I'm retired. I don't have any desire to get back on a ship. I'm just here to guide adventurers and offer advice." />
+            <string name="2" value="Oh, isn't this...#t4032470#? Oh, boy! There's always a shortage of this in Florina Beach. It smells delicious... Are you giving it to me?" />
+            <imgdir name="yes">
+                <string name="0" value="Haha, what a generous person you are! Alright, why not? I'll take you to the island on the map. It'll be a nice change of pace." />
+                <string name="1" value="Wait, where is this island? Let me look at the map again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to see Olaf? Don't go empty-handed. Take him some Tropical Fruit Punch or something. You'll be able to get some in Florina Beach." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hm, what is it? I don't mind guiding a beginner adventurer, but you are much too strong to be a beginner..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You're clumsy. Look, you dropped the map. Here, don't lose it again." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032526" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032470" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22571" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

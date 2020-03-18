@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2225.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Cause and Effect" />
+        <string name="parent" value="The Forest of Evil" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="1" value="#p1032107#, once an apprentice of #p1032001#, wanted to get close to Arwen, but Arwen could not even remember #p1032107#, and #p1032107# began to take revenge by casting an evil spell on #o4230101# to turn it into #o5220002#... Let's go inform #bArwen#k." />
+        <string name="2" value="At first, Arwen is shocked and upset at what #p1032107# has done, but seems deep in thought now... " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Arwen... Arwen... Arwen... I cannot forgive Arwen... Never... Ever... Arwen... Who, Who are you?! How did you get here?! \n\r#L0##bWho are you? You can't forgive Arwen for what?#l#K" />
+            <string name="1" value="Ummm... It's not an entertaining story. It's rather a story full of intolerable foolishness of the humans. Do you still want to hear about it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I... lived in Ellinia serving my apprenticeship under Grendel the Really Old. I dedicated my life to learning magic... especially the magic of the fairies. And that's how I got close to the fairies... but I've always wanted to become close to Arwen more than any others..." />
+                <string name="1" value="To tell you the truth, she's the reason why I began to study the magic of the fairies. I wanted to study magic with her... But, you know she doesn't like humans, right? She... wouldn't give me the time of day." />
+                <string name="2" value="No matter how hard I tried, I couldn't get her to see past her hatred towards humans... I didn't expect her to like me or anything, but I want to leave her a good impression of myself. But, of course, she didn't even remember my name... I know it wasn't her fault... but..." />
+                <string name="3" value="I wanted to take revenge on her in any way I could. No matter how foolish. I know...  I know... but anything I say would sound like a bad excuse.  Will you tell #bArwen#k that I'm sorry... for the past... and the present... for everything...." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...It's better not to hear the story anyway..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Is there a plan to defeat the monster? What did #p1032001# have to say? #p1032107#...? Who is #p1032107#? Oh... Was the name of #p1032001#'s apprentice #p1032107#? But what about it? Why are you bringing up the past?" />
+            <imgdir name="yes">
+                <string name="0" value="What? #p1032107# is responsible for creating #o5220002# by casting an evil magic on #o4230101#? He's fallen into the magic of darkness?  Ha! How foolish! Like master, like apprentice! ...What? #p1032107# did that to seek revenge on me? " />
+                <string name="1" value="No way! How could he be so shameless? How dare he shove friendship down my throat and take revenge for not reciprocating! How self-centered and foolish humans are! Don't you blame me for any of it! I don't want any #bguilt trips#k!" />
+                <string name="2" value="...Guilt trips? Did I just say guilt trips? Why did I say that? If I didn't care, I wouldn't have said that... Maybe... I..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #bArwen#k yet? Is she still the same arrogant Arwen?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032107" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2224" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

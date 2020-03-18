@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6700.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Bowman's Road" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value=" They say there's a special gift that Athena gives to those whose finished the bowman's job." />
+        <string name="1" value="They say she bids the bowman success and gives a special gift." />
+        <string name="2" value=" Athena bid me success as a bowman and gave me an arrow as a gift." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="드디어 궁수로의 길로 접어 들었군. 앞으로 자네가 멋진 궁수로 거듭나길 바라며 내가 작은 선물을 준비했네. 받을 준비가 되었나?" />
+            <imgdir name="no">
+                <string name="0" value="나의 선물따윈 필요 없다는 얘긴가?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="These are for you. Choose anything you need." />
+            <imgdir name="yes">
+                <string name="0" value="Please be a excellent bowman. Take care." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <string name="endscript" value="q6700e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <int name="lvmin" value="10" />
+            <int name="lvmax" value="30" />
+            <string name="end" value="2005051102" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="100000200" />
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="300" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9845.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Wailing White Fang" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p2030001##k seems to have something to tell you." />
+        <string name="1" value="Eliminate the White Fang and report to #bCassandra#k. \n\n#o5140000# #r#a98451##k" />
+        <string name="2" value="You defeated the White Fang that was wailing loudly." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Soldier! What are you doing in my district? Never mind, that doesn't really matter. Since you are here, please do me a favor." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Do you see all the White Fangs around here? #bCassandra#k says that the cries of these wolves have given her insomnia. Defeat #r100#k of these #rWhite Fangs#k and deliver the news to Cassandra immediately. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How can you so easily refuse the request of Sergeant Bravo?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Your mission is the eliminate #r100 White Fangs#k and deliver the news to #bCassandra#k. Snap to it!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I can't sleep because of all the noise the wolves are making. Please eliminate about #r100 White Fangs#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="huntUP5" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5140000" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030001" />
+            <int name="lvmin" value="50" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="211050000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

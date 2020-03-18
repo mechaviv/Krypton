@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10035.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Great Maple Book Drive" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="#b#p9010014##k in #b#m100000200##k has lost the books she collected for the Great Maple Book Drive." />
+        <string name="1" value="#p9010014#, has asked me to help her find #b#t4000515##k . She says set off a beautiful #bfireworks display#k if I help her." />
+        <string name="2" value="#p9010014#, has asked me to help her find #b#t4000515##k . She says set off a beautiful #bfireworks display#k if I help her." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022004" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hiya! I'm #p9010014#. I love to make firecrackers, but I'm back in school now. I had a bunch of books ready for my school's book drive, but monsters stole them. Will you, #h0#, help retrieve #b#t4000515##k? If you do, I'll decorate the sky above #b#m100000000# Park#k with pretty fireworks." />
+            <string name="1" value="Whenever I get enough of #t4000515# back, I'll thank you with a display of my fireworks. I'll announce the fireworks before I set them off, so come by when you see the announcement. See you there!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010014" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010014" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000515" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="13" />
+            <string name="end" value="2009092300" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

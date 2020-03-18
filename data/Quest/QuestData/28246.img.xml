@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28246.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mystery of the Red Portion" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1020000:##k in #bPerion#k says he may be able to uncover the red portion of the #rDirty Treasure Map#k. Let's talk to him." />
+        <string name="1" value="#b#@1020000:##k in #bPerion#k says he can recover the portion of the map covered in red if you bring him a #rFlint#k. (a drop item from #rDark Stumps#k that can be easily found in #b#m102020100##k.)\n\nReport back to #b#@1020000:##k in #bPerion#k upon completion." />
+        <string name="2" value="#b#@1020000:##k in #bPerion#k suggests that you go to #b#@1022007:##k in #bPerion#k for additional information. But first, let's talk to #b#@1020000:##k." />
+        <string name="demandSummary" value="#i4001356:# #t4001356:# #c4001356# / 2&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 3,000&#xD;&#xA;Able to proceed to 'Something's Lacking' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001356" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Let me take a look at the map.\nWhat are all these colorful markings?\nIt seems like someone intentionally colored this map to prevent people from discovering what's on the map. I'm sure the map is hand-drawn, but it seems a bit too primitive." />
+            <string name="1" value="I'm really curious about it. The prospect of finding treasures is quite exciting! Haha!\n\nI think I might be able to do something about the red area right here if you bring me a few things." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You're just as curious too, aren't you?\nMy experienced instinct tells me that you're not supposed to erase the red portion, but evaporate it using fire." />
+                <string name="1" value="You'll be able to get #rFlints#k from hunting #rDark Stumps#k, and I just need 2 of them to build a fire that can evaporate the red ink. You'll be able to find a lot of #rDark Stumps#k in #b#m102020100##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Stop getting me so curious!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you get everything? Here, let me see!" />
+            <imgdir name="yes">
+                <string name="0" value="Here is the #rImproved Flint#k.\n\nYou'll see some changes if you open the map and place it over the Improved Flint.\n\nThen come talk to me again. Hurry! I'm dying to know what happens!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you bring me 2 #rFlints#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1020000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001356" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28245" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

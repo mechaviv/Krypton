@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2073.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Camila's Gem" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard that #p1012108# in Henesys is worrying about something..." />
+        <string name="1" value="I met #p1012108# in Henesys. #p1012108# asked me to deliver #b#t4031156##k to #b#p1012107##k for her, because she is afraid. I heard I could get to #m900000000# through #m100030000#..." />
+        <string name="2" value="I delivered #p1012108# to #p1012107#. I'm sure they are really close freind, since they give what's most precious to them. I wish I could meet a friend like that during my journey..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031156" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031156" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020002" />
+                    <int name="count" value="30" />
+                    <int name="prop" value="7" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1322031" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have a friend named #b#p1012107##k whom I've grown up with, and it's his birthday in a few days. I've decided to give #b#t4031156##k to him as a birthday present." />
+            <string name="1" value="There's a problem, though. #p1012107# hasn't been coming uptown lately, probably because he's been swarmed with work. I'd like to go there and give it to him myself, but the #o1210101#s that he raises scare me to death. Well ... if you have any time, can you get this marble to #p1012107# for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Really? Thank you, thank you so much!! Here's the marble. I even carved a message for #p1012107# on it. You can get to Utah's farm through the Eastern forest of Henesys. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, I see. Sorry for asking. You must be a very busy person ... #p1012107# might be disappointed ... sigh ... what should I do now??" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Who are you? Whoa, isn't that the marble that #p1012108# so preciously takes care of? How did you get that??? What? #p1012108# asked you to get me that for my birthday? Wow, that's just awesome. This is a very precious item, you know. Now that the farming is almost done, I may have to go see #p1012108# to say thanks." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for delivering Camila's present to me. Did you get my reward? Hopefully it'll help you on your journey." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Oh, that crystal... did you not see Utah yet? Please get him the present before his birthday passes. Did you lose your way to his farm by any chance?" />
+                    <string name="1" value="Head to the Eastern forest of Henesys and you'll see an entrance to Utah's pig farm. Avoid the Ribbon Pigs and traps and navigate your way through the hidden paths, and you'll find him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Who are you? This is our farm, and we raise a bunch of #o1210101#s. They are much stronger than the #o1210101#s that are raised out in the wild. Anyway, how can I help you?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Ah, did you lose the marble that I gave you by any chance? Someone picked it up from the streets a couple of minutes ago. This is something I really cherish, so please take good care of it, and get it to Utah ASAP." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012107" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031156" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012108" />
+            <int name="lvmin" value="23" />
+        </imgdir>
+    </imgdir>
+</imgdir>

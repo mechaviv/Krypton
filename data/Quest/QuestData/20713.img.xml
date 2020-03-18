@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20713.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Deal With Mr. Pickall" />
+        <int name="area" value="15" />
+        <string name="0" value="Per #p1103002#'s order, I better go up to #b#p9000008##k and ask for the real #t4032138#." />
+        <string name="1" value="#p9000008# told me he couldn't give me the real doll because he wasn't paid a dime for this work. In fact, he wanted me to pay him the fee for it. He even suggested that if I couldn't pay for it, then I'll have to work. I'll need to give him #b#t4032139##k, which is very common among #r#o1210103#s#k, in order for him to cough up the real doll. \n\n#i4032139# #t4032139# #b#c4032139# / 10#k" />
+        <string name="2" value="I was able to give #t4032139# to #p9000008# and received the real #t4032138#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032139" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032138" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here for that doll #p1103002# asked for, Ha? I can't give you the doll, ha! #p1103002# never paid for this, ha! If you can't pay for it, do something for me then, ha!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Inside the subway, there's a lot of #o1210103#, ha! I need you to get me some #b#t4032139#s#k from #r#o1210103##k, ha! If you can get me #b10#k of them, I'll give you the real #t4032138#, ha!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you can't do it, then forget it, ha! I can't give you the doll for free!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found the key, ha? Let me see... hmmm... this is good, ha! Let's trade that key for #t4032138#, ha!" />
+            <imgdir name="yes">
+                <string name="0" value="Also, tell #p1103002# to pay his I.O.U.'s, ha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you not find  #b10 #t4032139#s#k, ha? You can easily find them through #r#o1210103##k in the subway, ha!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032139" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20714" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20712" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032138" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="60" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

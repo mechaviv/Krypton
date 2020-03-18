@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28234.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Revival of the Demon" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1022000:##k in #bPerion#k wants to know more about #rSolomon's Bow#k." />
+        <string name="1" value="Initially disappointed at the weak bow, #b#@1022000:##k further did some inspection and found a faded emblem that was once sealed on the bow.\n\nThis must mean that the seal of the demon has been broken!\n\nRush over to #bKerning City#k and talk to #b#@1052001:##k, a very dependable source of information." />
+        <string name="2" value="#b#@1052001:##k in #bKerning City#k says he's discovered the location of the demon, but you can't enter without a certain item. Let's talk to him." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'So the Demons Like Noise?' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I didn't think the legendary bow would be this weak! How disappointing.\n\nLet's take a closer look at this. (Inspects the bow.)" />
+            <string name="2" value="The demon somehow released the seal and escaped after getting rid of the power of the bow. This can't be good. I'm sure the demon is somewhere hurting the townspeople. Right now, the first thing you must do is…" />
+            <string name="1" value="Wait, I can kind of see something here. It's been erased, but I can sort of make out the shape. It must be the emblem that sealed the demon.\nDid you say the bow talked to you? You fool! That was the demon telling you to release the seal!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="First, go find #b#p1052001##k in #bKerning City#k and gather the latest information about the bow. I'm sure he's heard something about it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't have much time...I'm getting antsy!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you the one who released the seal of the demon?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, I've already heard about the demon.\nI think the demon is hurting the townspeople in #bHenesys#k.\n\nBut we may have discovered where the demon's hiding place is." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1052001##k is in #bKerning City#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28233" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10349.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Preparing for Their Arrival" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra says she needs your help." />
+        <string name="1" value="Cassandra has asked you to bring a weapon from the town Weapons Shop for the heroes who will be reviving soon." />
+        <string name="2" value="The weapon you brought will be used by the legendary Arans. Isn't that exciting?" />
+        <string name="demandSummary" value="#i1442000:# #t1442000:# #c1442000# / 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The heroes will soon revive, and they'll need a number of things then. Don't you think so?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, I'm talking about something they can use as a weapon...Like a Pole Arm or something. Their critical hit consists of a series of consecutive attacks which includes waving around a Pole Arm. They'll need a lot of weapons when they revive." />
+                <string name="1" value="Please find a #bPole Arm#k that the heroes can use. You can probably get one from the town Weapons Shop." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't you care at all?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You can easily acquire a #bPole Arm#k from the town Weapons Shop." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1442000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10349e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10348" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

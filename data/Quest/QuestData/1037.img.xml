@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1037.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Help Hunt the Snails" />
+        <string name="parent" value="Sam's Request" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="#bSam#k in the Dangerous Forest is wondering where Maria is. Maybe you can help him..." />
+        <string name="1" value="Sam wants you to take care of some snails to help #bMaria#k, who wants to collect some mushrooms. Slay #r10 Snails#k, then tell Maria that the field is clear.\n\nSnail #r#a10371##k" />
+        <string name="2" value="You told Maria that you took care of the snails." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흐음... 마리아는 잘 하고 있을까...? 아, 여행자님. 안녕하세요? 지금 혹시 달팽이사냥터를 가로질러 동쪽으로 가고 계신가요? 그렇다면 부탁 하나만 들어주시지 않겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="암허스트에 사는 마리아가 버섯을 따러 이 근처로 오기로 했는데 통 오질 않네요. 아무래도 달팽이들이 무서워서 움직이지 못하는 것 같아요. " />
+                <string name="1" value="그러니 당신께서 가는 길에 달팽이 10마리만 퇴치해 주시면 안 될까요? 달팽이를 퇴치한 후 마리아에게 걱정하지 말고 움직이라는 말까지 전해 주시면 감사하겠습니다." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흠... 뭔가 바쁘게 움직이시는 모양이네요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="60" />
+            <int name="nextQuest" value="1038" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I wonder where Maria is... Oh, hello traveler! Are you, by any chance, heading east? If so, can you do me a favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Maria, who lives in Amherst, promised to pick mushrooms with me, but she still isn't here. I have a hunch it's because of her fear of #rSnails#k. She's probably paralyzed in terror by the mere thought of them!" />
+                <string name="1" value="Could you please hunt #r10 Snails#k, so she can walk here without fear? Afterwards, please notify #bMaria#k and let her know it's safe." />
+                <string name="2" value="You can reach Amherst by traveling east. Also, you can check the World Map by pressing the #bW key#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... But think of Maria!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmmm... Defeat #r10 Snails#k, then keep heading right until you see Maria." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Hmmm? Are you here on Sam's behalf? Then please hunt #r10 Snails#k first then talk to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2103" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100100" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2005" />
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

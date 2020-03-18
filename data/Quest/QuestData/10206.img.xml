@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10206.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Remnants of Black Mage" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Maple Admin is calling your name." />
+        <string name="1" value="Within the black aura of the Black Mage, let's try to find #t4001237#. \n\n#i4001237# #t4001237# #b#c4001237# / 20#k" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It feels like the force of the Black Mage has increased since Empress Cygnus appeared in Maple World. I even heard that an item got altered because of the force of the Black Mage. If other monsters consume this item, they may turn into more powerful and harder-to-handle monsters. I'll need to find a way to get a hold of this and thoroughly investigate. Will you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. The black aura surrounding this altered item... is enough to change you as well. I would like for you to find... #b#t4001237##k for me. You can gather up the altered items and bring them either to me, or you can give them to Gaga or Cassandra as well. Since we're all conducting different experiments, the rewards will be different as well. Thanks in advance." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be afraid of them. That's unfortunate. I'll have to ask someone else for help." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected all the items yet. Try hunting down monsters of similar level." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001237" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q10206e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <string name="startscript" value="q10206s" />
+            <int name="lvmin" value="13" />
+            <int name="lvmax" value="30" />
+            <string name="end" value="2009082523" />
+            <int name="interval" value="0" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

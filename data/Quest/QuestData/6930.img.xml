@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6930.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Arec's Letter of Introduction" />
+        <string name="parent" value="The Thief's Extreme Path" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" I've reached a limit to my training as a thief.  Is there a level beyond this? I should ask  #b#p2020011##k who helped me with the third job advancement." />
+        <string name="1" value=" #b#p2020011##k told me to see the bishop  #b#p2081400##k in Minar Forest if I want to find the path of becoming a more secretive thief" />
+        <string name="2" value=" #b#p2081400##k said he will guide me to the path that will lead me to the thief's extreme power." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031516" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031516" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Long time no see. I heard about you. You seem to have had a hard time. Did you find darkness within you? Then you must have a reason for being here. What can I do for you?\r\n#b#L0# I want the 4th job advancement.#l" />
+            <string name="1" value="I knew that you would return to see me someday. But I have no power to make your wish come true. Go to #bMinar Forest#k. If you find  #b#p2081400##k, he may be able help you.  Would  you like to meet him?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'll write a recommendation letter for you. Hope you get a new power." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here for the 4th job advancement? If you don't want to that's fine." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What are you doing here, young Thief?\r\n#b#L0# I want the 4th advancement. I have a recommendation letter from #p2020011#.#l" />
+            <string name="1" value="#b#p2020011##k?... The one in El Nath? Then I can trust you." />
+            <imgdir name="yes">
+                <string name="0" value="A young Thief dreaming of a being a Nightlord or Shadower. I have a few stories to tell you, my stealthy friend. Talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Remember? It was #b#p2081400##k, the priest of Minar Forest. Go find him." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What are you doing here?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost #b#t4031342##k? I will write again but be careful." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081400" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031516" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020011" />
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="411" />
+                <int name="1" value="421" />
+                <int name="2" value="433" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

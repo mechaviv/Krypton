@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22513.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rina's Worries" />
+        <int name="area" value="7" />
+        <string name="0" value="#b#p1010100##k in #b#m100000000# seems to be worried about something. Talk to #p1010100#." />
+        <string name="1" value="#p1010100# says that she wants to make some Blue Mushroom porridge for #p1012101# who is sick but that they are difficult to get because the #o2220100#s have become so violent. You tell her that you will get them for her but #p1010100# says not to because it is so dangerous..." />
+        <string name="2" value="#p1013000# is quite upset that you won't be helping Rina." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="360" />
+            <int name="nextQuest" value="22514" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Huh? Am I worried about something? Well, the truth is that #p1012101#'s health has been getting worse these days so I want to make her some Blue Mushroom Porridge but it's so difficult to find any #t4000009#s.\r\n#L0##b Are #o2220100#s rare?#l\n#k" />
+            <string name="1" value="No, there are a lot of them at the #m106010100#. But the #o2220100#s have become so violent these days, it's difficult to get Blue Mushroom Caps... I really want to make some Blue Mushroom Porridge for #p1012101#... Sigh...\r\n#L0##bShould I get some #t4000009#s for you?#l\n#k" />
+            <string name="2" value="You?! No way! What are you thinking? You can't handle the #o2220100#s!  #o1210102#s and #o2220100#s are totally different. For your own safety, don't even think of going anywhere near them! Okay?\r\n#L0##bBut...#l\n#k" />
+            <string name="3" value="No buts! If I ask #p1040000#, the Security Guard, and he tells me that he's seen you, I'll ask Chief Stan to deny you entrance to #m100000000#! Okay? You promise?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Okay... Don't do anything dangerous. I'll just ask another adventurer who happens to pass this way." />
+                <string name="1" value="Oh and um... Please don't take this the wrong way but... Why are you walking around with a lizard? A pet? I guess he is kind of cute but...you have a pretty peculiar taste..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't even think about it! Don't you dare go there! Never!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Master, she is in trouble! We can help her!\r\n#L0##bNot this time. She says it's dangerous.#l\n#k" />
+            <string name="1" value="If we avoid it just because it's dangerous, how can we call ourselves heroes? We have to do it!\r\n#L0##bWell, you're kind of right, but we made a promise and breaking a promise is wrong. I think a hero would keep his word.#l\n#k" />
+            <string name="2" value="Well, I suppose... Bu...but...\r\n#L0##bNo is no. Besides I don't think we can win against the #o2220100#s.#l\n#k" />
+            <string name="3" value="So if we can beat the #o2220100#s, we can go?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You can't do it so don't even think about going near the #o2220100#s! I'm not kidding! And this isn't one of those quests where you're supposed to do the opposite!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1010100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22512" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

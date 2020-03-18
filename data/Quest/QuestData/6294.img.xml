@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6294.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Forgotten Blessing Power" />
+        <string name="parent" value="Spirit Blessing" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="Since my last job, I got a strange spirit named #r#q1321007##k.  For a spirit, it doesn't have any special powers but I just kept him with me.  But supposedly #b#p2081100##k knows about a special blessing power that this spirit has..." />
+        <string name="1" value=" #p2081100# said #q1321007# has great power that simply needs to be awakened. He told me to go see #b#p2041023##k if I want to awaken his power." />
+        <string name="2" value="#p2041023# seems to know how to use #q1321007#'s power." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Long time no see. You need to have something extra even if you completed the 4th job advancement. What am I talking about? I'm asking you if you need magic to give you more power." />
+            <string name="1" value=" You seem to be puzzled. Don't worry. #r#q1321007##k, the spirit that is within you, will learn the magic skills, not you. It used to be a spirit of a wicked man, but it has since been purified and is a pure spirit now. You can awaken his power..." />
+            <string name="2" value="#q1321007# has power called #bblessing power#k. This magic will give more power to those who seek it. Are you curious? #q1321007#'s power will become your power. No harm in having it." />
+            <imgdir name="yes">
+                <string name="0" value=" Then go to see the magician, #b#p2041023##k standing in #b#m220050300##k. He would know about the history of  #r#q1321007##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm.. If you don't want to, then that's fine. Take care of #q1321007#!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" You came all the way to #m220050300#!  Did you come to see #p2041023#'s magic? I'm willing to show......No? You are the one #p2081100# talked about!  Can you show your spirit?" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, this is #q1321007#. He used to be bad. He looks cute without his memories..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go to see#b#p2041023##k in #b#m220050300##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="job">
+                <int name="0" value="132" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1321007" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

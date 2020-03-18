@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4559.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Gift for Brother" />
+        <string name="parent" value="Away from Kampung" />
+        <int name="order" value="3" />
+        <int name="area" value="49" />
+        <string name="0" value="When #b#p9270062##k was in the city for travel, he was so excited that left the gift he got for his brother waiting in Kampung village. Little brother must be so disappointed to find out thre is no gift at all." />
+        <string name="1" value="#b#p9270062##k must hurry and bring back those forgotten gift for his brother. \n\n#o9420538# #r#a45591##k \n#t4000476# #r#c4000476#/200#k" />
+        <string name="2" value="#b#p9270062##k's little brother was so thrilled to receive #b#t4000476##k as a gift. What a joy of giving presents to someone you really care for." />
+        <string name="demandSummary" value="#i4000476:# #t4000476:# #c4000476# / 200&#xD;&#xA;#o9420538# #a45591#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 44,500&#xD;&#xA;Able to proceed to 'Merry-go-round in Kampung' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="44500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000476" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh boy! I was so excited in the city that I forgot the gift I got for my brother! I'm in deep trouble now." />
+            <string name="1" value="I need someone to bring as many #b#t4000476##k as quickly as possible. Perhaps you could do me a favor?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Great! Thanks a million. Please hunt #b200 #o9420538##k and bring #b200 #t4000476##k back to me as soon as possible." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="C'mon! I don't want to make my little brother disappointed." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You sure did a great job collecting all these #b#t4000476##k in such a short period of time!" />
+            <imgdir name="yes">
+                <string name="0" value="Yes! My little brother will be thrilled to see this gift!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hurry up! My little brother will be here any minute now. I need enough #b#t4000476##k to surprise him." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="#b#o9420538##k is the only one you can get #b#t4000476##k from. More to go!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270062" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000476" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420538" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270062" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4558" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

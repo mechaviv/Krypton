@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7105.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Piece of Crack" />
+        <int name="area" value="37" />
+        <string name="0" value="If I ever lose the piece of cracked dimension, then I better go see Mr. Bouffon again." />
+        <string name="1" value="I told #rMr. Bouffon#k that I lost the piece of cracked dimension. He told me he was going to give me another chance and that I should go see #rFlo#k immediately." />
+        <string name="2" value="I was able to regain the lost piece of dimension from Flo. I should seriously take care of Papulatus this time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, did you find the piece of cracked dimension by any chance? That's a rare, precious item, and without that, you won't be able to enter the center of the clocktower. Oh no... well, are you willing to take one more crack at it?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. I may not be blessed with many abilities, so you may need to talk to #bFlo#k, who's at the left side of the Path of Time." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to take another crack on the challenge. I know it's not easy taking on Papulatus." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I heard about what happened through Mr. Bouffon. You lost your cracked piece of dimension? I'll give you my cracked piece right now." />
+            <imgdir name="yes">
+                <string name="0" value="How do I have cracked pieces of dimension? That's a secret, kind of like magic. Please drop by every once in a while." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#bFlo#k is at the entrance towards #bWarped Path of Time#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7103" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031179" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

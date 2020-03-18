@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3326.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Keeny's Secret" />
+        <string name="parent" value="The Fairy in Despair 2" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2111004# is a fairy who always wears a sad face. Is her daughter #p2111005# getting better now? I better go see #b#p2111004##k again." />
+        <string name="1" value="#p2111004# told me #p2111005# still hasn't been fully cured, and asked me to go see #b#p2012018##k once more and get another medicine from him." />
+        <string name="2" value="#p2012018# acted as if he knew I'd come back...why?  Perhaps there is more to this than I realized..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ah, you... you are the one that delivered the medicine for #p2111005# the other day. I can't thank you enough for that, but...\r\n#b#L0#How is #p2111005# doing?#l" />
+            <string name="1" value="Still not good. For a while we thought she was responding to the treatment, but now we're back to square one. Sigh... excuse me, traveler... if it's all right with you, can you please help us once more?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. #p2012018# told me she might not respond to the medicine, and told me to visit him once more. I think he knew it might not work for her. That's why, I want you to go back to #b#m200000000##k and acquire a different medicine from #b#p2012018##k. I'll be waiting for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see... I forgot the fact that you also have some things to take care of. I'm sorry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, you're the one that delivered the news of #p2111004# the other day... if you're here again, that means #p2111005#'s not doing well, correct? Sigh... if she was a fairy, then it would have been much easier to treat her... but she's not it." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you've gone to see #b#p2012018##k yet. Since you've already been there once, I'm sure you can find him easily this time around." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3325" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+        </imgdir>
+    </imgdir>
+</imgdir>

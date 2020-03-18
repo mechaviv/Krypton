@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3359.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for the Master Key" />
+        <string name="parent" value="The Secret, Quiet Passage" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="I told #p2111006# that his pass was useless, and he told me that since it's such an old pass, that its verification code might have expired. Why did I put so much hope into this? But, says #p2111006#, he will do everything in his power to give me an entry to the Secret Passage, and asked me to find #b100 #t4000363#s#k from #r#o6110301##k.\n\n#i4000363##t4000363# #b#c4000363##k/100" />
+        <string name="2" value="I fell for #p2111006#'s promise, and got 100 #t4000363#s from #o6110301#. That's when #p2111006# started making new combination of verification codes out of the #t4000363#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="Sigh... I suppose the pass is so old that it did not get verified with their new security system. That's unfortunate... time flew by so fast that now I can't get verified... but that doesn't mean you can't get in. I, Parwen, will pull out all of my tricks in order for you to gain access to the secret passage, okay?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you to get 100 entry passes from Cytis. If we make some combinations out of those verification numbers, we may be able to figure out the Master Code that will let us gain access to the Secret Passage!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are... are you telling me you don't believe me? Parwen, the man of integrity and trust? Terrible!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="60000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000363" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh... I suppose the pass is so old that it did not get verified with their new security system. That's unfortunate... time flew by so fast that now I can't get verified... but that doesn't mean you can't get in. I, #p2111006#, will pull out all tricks in order for you to gain access to the secret passage, okay?" />
+            <imgdir name="yes">
+                <string name="0" value="Then I want you go and get #b100 #t4000363#k from #r#o6110301##k. If we make some combinations out of those verification numbers, we may be able to figure out the Master Code that will let us gain access to the Secret Passage." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are... are you telling me you don't believe me? #p2111006#, the man of integrity and trust? Terrible!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You managed to get all 100 of the #t4000363#s. That's brilliant! Now let's make a combination of these verification numbers to come up with the Master Code..." />
+            <imgdir name="yes">
+                <string name="0" value="This requires a great amount of concentration, so please leave me alone for a while." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have not managed to obtain #b100 #t4000363#s#k yet. I'll need about that much in order to find the Master Code." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000363" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3358" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

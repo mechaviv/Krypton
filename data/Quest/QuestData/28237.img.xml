@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28237.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Legendary Revival" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012100:##k in #bHenesys#k says she knows how to restore the power of Solomon's Bow. Let's talk to her." />
+        <string name="1" value="She says you need a #rDevil Hunting Scroll#k in order to restore the power of #rSolomon's Bow#k.\n\nReport back to #b#@1012100:##k in #bHenesys#k upon completion." />
+        <string name="2" value="You have restored the power of the legendary, demon-hunting #rSolomon's Bow#k and identified the location of #rAmdusias#k!" />
+        <string name="demandSummary" value="#i1452083:# #t1452083:# #c1452083# / 1&#xD;&#xA;#i4001351:# #t4001351:# #c4001351# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i1452084:# #t1452084:# #c1452084# 1&#xD;&#xA;Able to proceed to 'The Final Battle with Amdusias' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001351" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1452084" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, the demon has taken the power of #rSolomon's Bow#k.\nYou won't be able to defeat the demon without the power of the bow.\n\nBut don't worry. I'll be able to find out how to restore the power of the bow using the ancient book that's been passed down to me.\nPlease wait a few minutes." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, it's here.\n\n&quot;How will you defeat the demon...Ah, this is giving me a headache...&quot;\n\n(omitted)\n\n&quot;I've figured it out! There is a special spell that can inflict damage on the demon!\n I'm so sick of #rBlue Mushrooms#k now.&quot;" />
+                <string name="1" value="\n\nSee?\nYou'll be able to acquire something called #rDevil Hunting Scroll#k if you continue to hunt #rBlue Mushrooms#k. I'll restore the power of #rSolomon's Bow#k if you bring me that scroll. For your reference, #rBlue Mushrooms#k can be easily found in #b#m106010100##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, that was fast. \n\nLet me see...\nI can tell this is the right scroll upon first glance.\n\nI'll begin the restoration process now.\nPlease wait." />
+            <imgdir name="yes">
+                <string name="0" value="Finally, #rSolomon's Bow#k has been restored!\n\nAh, it's incredible to see this legendary bow in person! I can already feel the unstoppable force.\n\nBut the demon is hurting the townspeople as we speak! Only the final battle remains." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please find the #rDevil Hunting Scroll#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001351" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28236" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

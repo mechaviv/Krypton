@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rain's Maple Quiz 4" />
+        <string name="parent" value="Rain's Maple Quiz" />
+        <int name="order" value="4" />
+        <int name="area" value="20" />
+        <string name="0" value="Time to answer #b#p12101##k's fourth question." />
+        <string name="1" value="You can answer Rain's questions if you think carefully." />
+        <string name="2" value="Rain's fourth question was about using Z to pick up items from the ground. 0 on the numpad also works." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10" />
+            <int name="nextQuest" value="1013" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright! You're on question number 4, out of 7 questions total. Talk to me when you're ready." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="What do you press to pick up an item on the ground?\n\n#L0##b X#l\n#L1# S#l\n#L2# I#l\n#L3# Z#k#l" />
+            <string name="1" value="That's correct. #bZ#k is used to pick up items dropped by monsters. You can also use #b0 on the number pad#k. As for X, you use that to sit on a chair, which lets you recover much faster." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="4" />
+                    <string name="0" value="If you see a chair or a bench, you can sit on it. Unfortunately, you won't find any chairs in Maple Island. You'll have to head over to Victoria Island to do that. When you find one, press X, and you'll recover much faster!" />
+                    <string name="1" value="You can raise your ability stats using the AP you earn each time you level up. To check your AP, simply press S." />
+                    <string name="2" value="I is used to check your item inventory. It is one of the most useful functions in the game." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

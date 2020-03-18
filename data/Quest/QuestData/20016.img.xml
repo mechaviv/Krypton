@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20016.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Do You Know the Black Mage?" />
+        <int name="area" value="15" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="If you've finished exchanging pleasantries with #p1101000#, it's time to meet #p1101000#'s tactician, #b#p1101002##k, and ask about your immediate duties." />
+        <string name="1" value="#p1101002# said you weren't strong enough to fight for Maple World,  let alone appoint you as a Knight-in-Training. He said you must undergo a training course that has been prepared for you.  Let's go see #p1102000#, the training instructor." />
+        <string name="2" value="#p1101002# said you weren't strong enough to fight for Maple World, let alone appoint you as a Knight-in-Training. He said you must undergo a training course that has been prepared for you. Let's go see #p1102000#, the training instructor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20015" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20016s" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

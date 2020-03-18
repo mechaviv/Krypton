@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3245.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spider's Out at Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="The King's #b#p2041022##k is in need of help. What must it be? I better head over to #b#m220000400##k." />
+        <string name="1" value="#p2041022# received an order to deliver the king's royal letter to #m221000000#. The problem is, he's hesitant to go, because to go to #m221000000#, he'll have to go through Eos Tower, and is afraid of descending down the Tower because of the spiders. Oh well, I'll have to kill off #r20 #o2230103#s#k #r20 #o2230104#s#k for #p2041022#.   \n\n#o2230103# #r#a32451##k   \n#o2230104# #r#a32452##k" />
+        <string name="2" value="I was able to eliminate #o2230103# and #o2230104#. I'm sure now #p2041022# can do his job. I thought #p2041022# was unafraid of anything else in life besides the King. Spiders? That was unexpected..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4004004" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hoh... what should I do? I can never go against his royal highness, but... the spiders... the spiders... hmmm... what? How can I help you? How can Tigun help you? \r\n#L0# #b You seem very concerned. What's going on?" />
+            <string name="1" value="What concern... I am the King's aide, and I should not be concerned about anything. It is really nothing... NOTHING. N.O.T.H.I.N.G... haha...\r\n#L0# #bYou seem pale. You're drenched in sweat..." />
+            <string name="2" value="What... what sweat? Oh... it's nothing. I am just concerned about how to best complete the King's order in a timely manner. Hmmm, you there... are you trustworthy?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If... if so, then ... can you help me out? A while ago, I received a word from his royal highness that I deliver his letter to #m221000000#, but... well... it is not easy to get there... you're aware that in order to go to #m221000000#, you have to go through Eos Tower, right?" />
+                <string name="1" value="Well,, the Eos Tower... is... full of spiders, right? What? Am I afraid of the spiders? Nonsense!! I am NOT afraid of the spiders. I am... just ... uncomfortable to be around them. If you can eliminate #r20 #o2230103#s#k and #r20 #o2230104#s#k at Eos Tower, then I will not have trouble completing the King's orders." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I cannot Say anything to a person who is not trustworthy. Hmm hmm..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you managed to eliminate #o2230103# and #o2230104#? Ohh, that's fantastic! Without them, going through Eos Tower is a piece of cake. Great work there. I will notify the King of your noble achievement." />
+            <imgdir name="yes">
+                <string name="0" value="I am definitely not afraid of the spiders. I just... dislike them. Every person has his or her share of dislikes in life." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated the spiders? All you need to do is defeat #r20 #o2230103#s#k and #r20 #o2230104#s#k. This is to complete the King's order, so I expect you to do so in a timely manner." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041022" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230103" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2230104" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041022" />
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

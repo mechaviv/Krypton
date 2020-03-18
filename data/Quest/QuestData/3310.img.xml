@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3310.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Carson's Experiment" />
+        <string name="parent" value="Zenumist and the Missing Alchemist" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="I found out through Bedin about the incident that happened a long time ago, and there are two ple that hold the final clues.  One is the missing alchemist himself, the other is the president of the society!   Seems like he knows something about the missing alchemist..." />
+        <string name="1" value="Carson told me if I wanted to know more about the incident, then I'll have to prove him my worth, by entering the #bclosed-off lab#k where #rHomun#k is, and acquire the Magic Control Device and control the monsters through that.  Once I throw the device into the Pentagram of Alchemy in the lab, the monsters can be controlled in an instant, and then I'll need to bring back #b#t4031709##k as evidence...  \n\n#i4031709##t4031709# #b#c4031709##k/1" />
+        <string name="2" value="After I told him I successfully controlled Homunclu, that's when the president started discussing serious matters with me." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031709" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmm... You must be the new alchemist that came not too long ago. I heard that you have made yourself quite useful these days. Thank you for your hard work. I do have, however, one thing... that concerns me a bit. I heard you have also been paying much attention to... something other than conducting experiments. \r\n#b#L0#What do you mean?#l" />
+            <string name="1" value="I heard you asked about That Incident. The incident caused by a neglect of one alchemist that wound up affecting everyone in Magatia. It's not something I wanted to share with a newcomer like you, since it's nothing to boast about. Are you... interested in knowing more about that incident, though?\r\n#b#L0#Yes, but...#l" />
+            <string name="2" value="I understand your interest in the incident, but I suggest you stay away from it from here on out. I don't think you have the right to know more about the incident. It is related to the darkness of the alchemists that reside here... it's something I don't feel you are equipped to handle.\r\n#b#L0#You never know.#l" />
+            <string name="3" value="...You seem quite confident. I do remember #p2111008# mentioning how strong you are... Maybe you can find something new from the house of #r#p2111002##k. ..What do you think? I know this will not be an easy task, but can you search the house of the missing alchemist, #p2111002#? You will be rewarded well for this work." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then before starting this, I'd like to see what you are capable of. I'll be testing your ability to handle tough assignments. The test is simple, actually. Head off to the #bClosed Lab#k and rein in the dangerous #r#o6110300#s#k. " />
+                <string name="1" value="Controlling #o6110300# can be done through the Pentagram of Alchemy, which is located at the center of the closed lab. Slay the #o6110300#s that are inside, recover the #b#t4031698##k that they have stolen, and throw it in the Pentagram of Alchemy. It will then be activated, which will control #o6110300#." />
+                <string name="2" value="As a proof that you have successfully controlled #o6110300#, bring #b#t4031709##k back after using it all. Then, and only then, will I trust you to handle the more difficult task. If you think it's going to be tough, then you can bail out from this. If you bail out, however, you won't be able to obtain crucial clues on the missing alchemist." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you are not interested, then that's okay. Just don't ever mention the incident ever again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you have successfully controlled #o6110300#..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't see #b#t4031709##k in your hand. If you have successfully controlled #o6110300#, then you should have brought the evidence." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost #t4031698#? Oh no... please don't misplace items that are important. It won't be hard to give you another one, but if you keep losing it, then I'll have to think twice about trusting you to handle serious tasks." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031709" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3309" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="equipAllNeed">
+                <int name="0" value="1102135" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2095.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Taking Out the Alligators 2" />
+        <string name="parent" value="The Alligators at the Swamp" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="0" value="Ayan of Perion is desperately looking for me. Is something wrong??" />
+        <string name="1" value="I found Ayan, and she seemed to be in a state of panic. She was walking around the swamp when she ran into a bigger, stronger, and more dangerous group of alligators than the previous ones. She ran back to Perion and had been looking for me ever since, so I could help her out once more. This time, I'll need to kill #b120 #o5130103#s#k and take #b50 #t4000033#s#k along the way. \n\n#o5130103# #r#a20951##k\n#t4000033# #b#c4000033##k/ 50" />
+        <string name="2" value="I took out 120 #o5130103#s from the swamps, just like the way Ayan asked me to. I'll have to revisit that spot from time to time and take out the alligators before they spawn out of control." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000033" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2041013" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2041016" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2041019" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2041022" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Good to see you again. Actually, I have been waiting for you. I have never had a chance to formally thank you for taking out the Ligators at the swamp before. Thanks to your heroics, the people at the tribe had been feeling safe passing by the area." />
+            <string name="1" value="Lately, however, we have found out that a bunch of #b#o5130103#s#k have been residing at the deeper part of the swamps. #b#o5130103##k is much more powerful and intimidating than the Ligators, and it can create a havoc unlike any of the alligators in this world. So here I am, asking you for help one more time. Please help us take out the alligators. Can you do that for us?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. I honestly couldn't think of anyone else to ask for such a task like this. Please head to the swamps and take out #b120 #o5130103#s#k and bring back #b50 #t4000033#s#k with you. Don't worry; you'll be rewarded well for this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah ... please think about it. We need your help, but ... I am sure you are busy with something else. But please think about it, and if you have a change of heart, then talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You are incredible, indeed. You single-handedly took out all those #b#o5130103#s#k! Thanks to your incredible effort, we can all feel safe now walking across the swamps." />
+            <string name="1" value="Here's your reward. Please choose the one of your liking." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Your heroics will be recorded and be passed down from generation to generation amongst our tribe, and we'll take good care of #b#t4000033##k. It's a high-quality leather, one that can be used on multiple purposes. Hope you have a safe journey. Best of luck to you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please head over to the swamp and take out #b120 #o5130103#s#k while bringing back #b50 #t4000033#s#k with you." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Please head over to the swamp and take out #b120 #o5130103#s#k while bringing back #b50 #t4000033#s#k with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000033" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5130103" />
+                    <int name="count" value="120" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2094" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="52" />
+        </imgdir>
+    </imgdir>
+</imgdir>

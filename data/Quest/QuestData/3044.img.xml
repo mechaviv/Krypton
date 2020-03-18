@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3044.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Nependeath Juice" />
+        <string name="parent" value="The Chaos behind Alfonse Green and the Nependeath Juice" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="I should go see Alfonse Green, who should be somewhere near Orbis." />
+        <string name="1" value="I met up with Alfonse Green, and needless to say, he is a big fan of the Nependeath Juice. He asked me if I could make one for him. To make one, I'll need to acquire the Sap of Nependeath, and I'll need Ericsson for that." />
+        <string name="2" value="I met up with Ericsson." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <int name="nextQuest" value="3045" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there, if you aren't busy and all, then please hear me out. I have something I really want to drink right now, and I need your help. Can you please help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for saying yes. I am a huge fan of Nependeath Juice, you know. Just thinking about it makes me drool..." />
+                <string name="1" value="The problem is that the main ingredient for the Nependeath Juice, the seed of Nependeath, can only be obtained by killing the dangerous Nependeath. It's also hard to squeeze out the rock-solid seed with my bare hands." />
+                <string name="2" value="I only know of one person that can do it in Orbis, and that person is Ericsson. Too bad I've come up to him for the juice way too often, to the point where he doesn't want to make it for me." />
+                <string name="3" value="So here's the deal. Can you please come up to Ericsson in place of me and get the Nependeath Juice made for me? If you're the one asking, I'm sure he'll Say yes to that." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please help me out here. If you changed your mind, then please talk to me. I have something I really want to drink." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go see Ericsson. Only he can make the #bSap of Nependeath#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012018" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012020" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3090.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Sprayer Elma Borrowed 2" />
+        <string name="parent" value="Orbis in Danger" />
+        <int name="order" value="5" />
+        <int name="area" value="33" />
+        <string name="1" value="I received #t4031308# from Elma the Housekeeper. It looks like a significant amount of time has passed since I came here. I better get back to #p2032001#'s house immediately.\n\n#t4031308# #b#c4031308##k / 1" />
+        <string name="2" value="I received the Cloud Sprayer from Elma the Housewife. The cloud fixing should be a breeze now with this in store. This better stop the freefall of Orbis." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031308" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031308" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, here it is!! I should have returned this much sooner... Please tell Spiruna I sincerely apologize for not returning it sooner. I had been swamped with work, and I guess this is a way to put off work until the last second. I won't ever do that again..." />
+            <imgdir name="yes">
+                <string name="0" value="I don't think anything's wrong with it. It's just currently covered in dust, thanks to the fact that this item has not been used for so long... " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Isn't this the item you've been looking for? This is the only item that's been borrowed from Spiruna exactly 50 years ago..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought the Cloud Sprayer! Thanks to you, we can finally start fixing up the clouds. The citizens of Orbis will be very thankful of your efforts. Thank you so much." />
+            <imgdir name="yes">
+                <string name="0" value="Did you get the item I gave you? Spiruna wanted me to give you the item in person. She may look angry at all times, but she was very concerned about this. She's very thankful of your efforts." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I can't believe I'd be THE PERSON to borrow the item, only to keep it with me for FIFTY YEARS! I feel horrible now... and please tell Spiruna I feel bad about this..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Did you bring the Cloud Sprayer that Elma the Housekeeper borrowed? Did you meet Elma in the first place?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="How can you leave the Cloud Sprayer here when you told me you need to give that to Spiruna? Here, take it. Please tell Spiruna I'm really sorry for returning it really late." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031308" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3089" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

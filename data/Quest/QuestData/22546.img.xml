@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22546.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dragon Types and Characteristics (Vol. II)" />
+        <int name="area" value="7" />
+        <string name="0" value="Get #t4161050# from #b#p1022006##k in #b#m101030401##k." />
+        <string name="1" value="You should read through #t4161050#, which you received from Winston. It may help you understand #p1013000# a little bit better. Once you're finished reading it, be sure to return it to #b#p1032001##k in #m101000000# #m101000003#.\r\n\r\n#y22547# #b(#u22547#)#k" />
+        <string name="2" value="#p1032001# says that he will let you know if a new book regarding Dragons comes in or if new information arrives from #p2081000#, his friend in #m240000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161050" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161050" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for getting rid of those #o3210100#s. I don't need this #t4161050# anymore so #byou take the book and read it, and then return it to the #m101000003# in #m101000000##k when you're done. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I hope there isn't a late fee or anything like that... No way, I guarded this book with my life! They couldn't possibly ask for more." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm? Didn't you defeat the #o3210100#s because you needed the book? If you don't want it, I'll hold on to it a little longer and read a bit more. Let me know if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Huh? Haven't you found #t4161050# yet? From what I heard from Dr. #p1032104#, you've already gone to see #b#p1022006##k in #b#m101030401##k to get the book..." />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Have you not returned the book yet? Please return it to #m101000003##k in #b#m101000000# as soon as possible. It's already late." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hm? Haven't you found #t4161050# yet? From what I hear from Dr. #p1032104#, you've already gone to see #b#p1022006##k in #b#m101030401##k to get the book..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="How could you lose the book? What would have happened if I hadn't picked it up? It could have been burnt by a #o3210100#. Please be careful and return it to the #m101000000# #m101000003# in one piece." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22547" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161050" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q22546e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22545" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kiku's First Training Session" />
+        <int name="area" value="15" />
+        <string name="0" value="Visit #b#p1102000# the Training Instructor#k and receive some training." />
+        <string name="1" value="The first session involved facing off against the weakest Mimi in all of Ereve, #r#o0100120##k, and defeating #r5#k of them in the process. You better hunt down those #o0100120#s in #b#m130010000##k \n\n#o0100120##r #a200031##k" />
+        <string name="2" value="You managed to defeat all 5 #o0100120#s and return. Off to the next session." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="준비는 다 된 모양이지? 그럼 수련을 시작하지. 일단은 간단한 것부터 해보자고. 이 섬에 있는 티티들 중에 가장 약한 건 #m0100120#야. #m0100120#를 5마리 정도 잡아보는 거 어때?" />
+            <imgdir name="yes">
+                <string name="0" value="왼쪽에 포탈을 타면 수련의 숲1에 도착하는데, 그곳에 가면 #m0100120#들이 많이 있어. 그리 잡기 어렵지는 않을 거야. 자, 그럼 수고해." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="어려울 것 같은 거야? 걱정하지 마. 약한 녀석들이니까. 혹시라도 위험해지면 포션을 마셔가면서 하라고." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="80" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be ready to do this. Okay then, let's begin the training. Let's start things off with something simple. You'll see plenty of Mimis in this island, and the weakest Mimi is #o0100120#. How about slaying #r5#k #r#o0100120#s#k for a start?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Here at #b#m130010000##k, you'll face a lot of #o0100120#s. They won't be too hard to handle. Don't die!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you think it'll be difficult? No need to worry. They are quite weak, you know. If you're still unsure of that, then do yourself a favor and carry some potions with you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must have managed to defeat all 5 #o0100120#s. Wasn't too bad, was it?" />
+            <imgdir name="yes">
+                <string name="0" value="Now, talk to me when you're ready to take the next step." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to defeat #r5 #o0100120#s#k yet? You can find plenty of them at #b#m130010000##k..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="100120" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20002" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20010" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20011" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20012" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20013" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="20014" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="20015" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="20016" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="20017" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="20018" />
+                </imgdir>
+                <imgdir name="10">
+                    <int name="id" value="20019" />
+                </imgdir>
+                <imgdir name="11">
+                    <int name="id" value="20020" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

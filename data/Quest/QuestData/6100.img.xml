@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6100.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Book of Invisible Ink" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="I found a mysterious book deep in the #m230000000# sea while exploring.  It is Bowman-related and mentions mastery of a skill known as Eye of the Heart. There's also a fading inscription about obtaining something from the book itself. Could this be a skillbook? I must find out!  #p2040052# knows a lot about books.  I should ask if he can decipher anything useful from this book..." />
+        <string name="1" value=" #b#p2040052##k read the book and speculated that the book must've been written with invisible ink to conceal valuable information. Clever...but not impossible to break. He says I have to get a special type of ink in order to read it. He can use the ink to restore the inscriptions so it is once again readable. The ingredients are #b#t04000183#, #t02022000#, and #t04006000##k...I hope this isn't all for naught...\n\n#i4000183##t4000183#  #b#c4000183# / 50#k\n#i2022000##t2022000#  #b#c2022000# / 10#k\n#i4006000##t4006000#  #b#c4006000# / 30#k\n#i4161018##t4161018#  #b#c4161018# / 1#k. " />
+        <string name="2" value="I found the ingridients and returned them to #p2040052#. He said making the ink takes a bit of time, so I'll have to wait until it's ready. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="핼리오스탑 도서관에 오신 걸 환영합니다. 보고 싶은 책이 있으시다면 말씀하세요. 네? 그 책에 대해서 알고 싶으시다고요? 흐음... 이 책은... 제작 방식이... 종이가... 호오! 이 책은 투명한 잉크로 쓰여진 책이군요. 투명한 잉크에 대해서는 알고 있었지만, 직접 본 적은 없었는데 신기하군요. " />
+            <string name="1" value="투명한 잉크는 만들기가 매우 까다로워서 보통은 사용하지 않습니다. 사용한다면, 아주 특별하고 귀중한 정보를 다른 사람에게 유출시키지 않고 기록할 때에만 간혹 쓰던 것인데... 이런 귀한 것을 보게 되어서 무척 기쁩니다. " />
+            <string name="2" value="혹시 이 책을 읽을 생각이 있으신가요? 예전에 이와 관련된 자료를 본 기억이 있습니다만..." />
+            <imgdir name="yes">
+                <string name="0" value="이 책을 읽기 위해서는 투명한 잉크를 보이게 만들 특별한 잉크가 필요하답니다. #b#t04000183# 50개, #t02022000# 10개, #t04006000# 30개#k를 적절히 섞여 잉크를 만들고, 그 잉크를 백지 위에 뿌리면 책에 잉크가 스며들어, 점차 글자를 보이게 만든답니다. " />
+                <string name="1" value="감추는 것도, 보이게 하는 것도 쉽지 않은 책입니다. 만드는 법이 담긴 책을 예전에 본 기억이 있으니 재료를 구해 오시면 만들어 드리도록 하겠습니다. 이런 귀한 자료를 보게 해 주셨으니 그 정도는 당연히 해드려야죠." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="책을 읽지 않으실 모양이군요. 이런 책이라면 그 안에 쓰인 것도 대단한 것일 터인데..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="700000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000183" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4006000" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4161018" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome to #m222020000#. If you want to read any of the books here, please let me know. Yes? Do you want to know about that book? Hmm...the paper seems strange. There's depression marks as if someone wrote, yet no words are here... Oh! This book is written in #binvisible ink#k. I know about this ink, it's way to keep information or techniques hidden. But this is the first time I've actually seen it used. Wow!" />
+            <string name="1" value=" It's hard to make invisible ink, so it's hardly used. It is used only when #btop secret information#k shouldn't be revealed. I still can't believe I'm looking at it, this must be important!" />
+            <string name="2" value="Do you want to try and read this book? Whatever information lies within its pages, you may find it useful. " />
+            <imgdir name="yes">
+                <string name="0" value="In order to read this book, you need a special type of ink. Lucky for you, I can make the special ink by mixing 50#b#t4000183#, 10#t2022000#, 30#t4006000##k. When you spray it on the paper, you'll be able to read what's written." />
+                <string name="1" value="When you get the right ingredients, I can make it for you. Seeing this ink used was a big treat for me, so the least I can do is help you see what's written. You deserve it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not going to read the book?! This book must have something important inside...I beg you to reconsider!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Oh! You've gathered everything. I'm not sure how well this will turn out, I've only made it once you know... Hold on a second..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" You haven't gathered the needed ingredients. I'll need 50#b#t4000183#, 10#t2022000#, 30#t4006000##k. When you have all of them, I will make it for you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4006000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000183" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4161018" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161018" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

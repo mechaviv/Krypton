@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10505.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searching for Remnants of the Dragon Master 5" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Search for remnants of Dragon Master Evan" />
+        <string name="1" value="Find an #b#t4032537##k in Maple World and bring it to #bCassandra#k." />
+        <string name="2" value="You discovered an #b#t4032537##k, a remnant of Dragon Master Evan." />
+        <string name="demandSummary" value="#i4032537:# #t4032537:# #c4032537# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="660" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032537" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The missions continue! This time you need to find an #b#t4032537##k! It shouldn't be too hard." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Bring me an #b#t4032537##k. I'm running low on #bDragon Equipment#k so speed it up!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You've done so much already, don't give up now! Just imagine the great #bDragon Equipment#k you'll get." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the #b#t4032537##k that I asked for?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, this is the Onyx Dragon Scale. It's very rare. Good job." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... You didn't bring back the #b#t4032537##k. Hurry up and go find it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032537" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10504" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="200912120000" />
+            <string name="end" value="200912170000" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

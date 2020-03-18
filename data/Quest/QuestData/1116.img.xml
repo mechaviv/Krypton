@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1116.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rowen's Proof of Love" />
+        <int name="area" value="30" />
+        <string name="0" value="To receive a #t4031684#, go see Rowen." />
+        <string name="1" value="Rowen the Fairy asks that you prove your love by bringing her #b20 #t4003005#s#k.\n\n#i4003005##t4003005# #b#c4003005# / 20#k" />
+        <string name="2" value="You received a Proof of Love from Rowen." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕하세요. 사랑의 증표를 얻고 싶으시다고요...? 진실한 사랑의 힘은 대단하다고 들었어요. 사랑의 힘으로 제 병도 고쳐졌으면 좋으련만. 당신의 사랑은 진실한가요? 그렇다면 저의 테스트를 통과해 보세요. 어때요?" />
+            <imgdir name="yes">
+                <string name="0" value="#b#t4003005# 20개#k를 모아오신다면 당신의 사랑이 진실하다는 것을 믿겠어요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="당신의 사랑은 진실하지 못한가요? 아니면 용기가 없는건가요?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003005" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031684" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <int name="infoNumber" value="1100" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="ing" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031684" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

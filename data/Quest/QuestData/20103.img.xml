@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Path of a Wind Archer" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The time has come. If you want to find out more about Wind Archer, the Bowman of the Wind, talk to #b#p1101005#, the Chief Knight of the Wind#k." />
+        <string name="1" value="If you want to become a Cygnus Knight as a Wind Archer with broad perspectives on life, you should select #p1101005#." />
+        <string name="2" value="You are now a Wind Archer!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to become a Knight? My name is #p1101005#, and although I feel like I still have room to grow, I am the #bChief Knight of the Wind, in charge of the Wind Archers#k in Cygnus Knights. If you wish to become a Wind Archer, then this is only the first of many encounters with me..." />
+            <string name="1" value="Wind Archers are bowmen first and foremost, using regular bows. Like bowmen, Wind Archers pride themselves in being the master of long-range attacks. #bIt is a given that all prospective Wind Archers need a high level of DEX for accurate attacks#k... but that's not all." />
+            <string name="2" value="Wind Archers are the special few that receive divine protection from the Spirit of the Wind. If you indeed take on the path of the Wind Archer, then you'll be able to summon #bVentus the spirit of wind#k. Ventus will be there to provide you the much-needed protection, and provide some power to you and your bow for added weight." />
+            <string name="3" value="Wind represents freedom, but unconditional freedom is nothing more than just being uncontrollable. When logic and freedom collide, that's where Wind Archer comes in. If you wish to free your mind and become the #bWind Archer#k, let me know..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I fully expect you to make a wise decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101005" />
+            <string name="endscript" value="q20103e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20102" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="20104" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="20105" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="20100" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="20101" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

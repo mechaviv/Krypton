@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2285.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Music Preparation" />
+        <int name="area" value="30" />
+        <string name="0" value="Lana says she needs to pick out a song for Blake. Talk to #bLana#k for more details on what she needs." />
+        <string name="1" value="Blake needs a song to perform. Find the CDs at the music shop on the 7th-8th floor and deliver them to #bLana#k." />
+        <string name="2" value="Lana said the existing hits weren't good enough and asked you to get a new song from #bMaestro Rho#k." />
+        <string name="demandSummary" value="#i4000528:# #t4000528:# #c4000528# / 50&#xD;&#xA;#i4000529:# #t4000529:# #c4000529# / 50&#xD;&#xA;" />
+        <string name="rewardSummary" value="15,100 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000528" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000529" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's time to pick out the music Blake is going to perform. First, we have to listen to a lot of popular hits. Could you bring me some CDs from Kerning Square?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The music shop is located on the 7th and 8th floors. Please bring me #b50 Latest Hits Compilation CDs and 50 Greatest Oldies CDs#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="We can't have Blake perform without music. Obviously." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the CDs? Hand them over. I have to listen to them." />
+            <imgdir name="yes">
+                <string name="0" value="Hm, the latest hits are all right...but we can't captivate an audience with them. We need a brand new song, composed just for Blake. Ah, Maestro Rho would be perfect. He's a little arrogant, but he's a genius at composing. With his music, Blake will become a star in no time. We need a song from #bMaestro Rho#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me #b50 Latest Hits Compilation CDs and 50 Greatest Oldies CDs#k from the 7th-8th floor of Kerning Square." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000528" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000529" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052121" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2284" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

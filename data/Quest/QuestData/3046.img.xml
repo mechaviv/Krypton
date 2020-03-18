@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3046.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Present for Nero" />
+        <int name="area" value="33" />
+        <string name="0" value="I need to see Elma the Housekeeper, who is in Orbis." />
+        <string name="1" value="She said the only way to convince Ericsson is by making a present for his kitty. After a long though, I have decided to make a Lunar Wristband for Nero the Cat.\n\n #t4000059# #b#c4000059##k/100 \n #t4000060# #b#c4000060##k/80" />
+        <string name="2" value="I got Nero's present through Elma. Now if only I can convince Ericsson..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-10000" />
+            <int name="exp" value="7500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031199" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000059" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000060" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're looking for the sap of Nependeath? Only Ericsson can make that." />
+            <string name="1" value="Ericsson blew you off to hang out with his cat? Hmm ... then how about this? Make a small present for his cat Nero. Ericsson will then be happy enough to make you one." />
+            <imgdir name="yes">
+                <string name="0" value="The owner's not here right now, so I'll just help you out here. I am no slouch either, and I can make #b#t4031199##k myself." />
+                <string name="1" value="Give that to Ericsson for his cat, and he'll love it. To make the Lunar Wristband, I'll need #b100 #t4000059#s and 80 #t4000060#s#k. For #b10,000 mesos#k, I'll make it for you right here on the spot." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="All the materials are here. Great job! Hold on one second. The wristband should be out in no time." />
+            <imgdir name="yes">
+                <string name="0" value="Here it is! Take this to Ericsson, and he cannot possibly Say no to making #b#t4031200##k for you. Good luck!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up all the materials yet. I'll tell you what I need to make the wristband: #b100 #t4000059#s and 80 #t4000060#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000059" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000060" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3045" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fixing Blackbull's House" />
+        <int name="area" value="30" />
+        <string name="0" value="You hear that Blackbull in Perion is fixing up his house." />
+        <string name="1" value="In the dusty town of Perion, you run into an oddly-dressed man named Blackbull. He needs to fix his house and wonders if you can help by getting #b30 tree branches and 50 firewoods#k. If you do, you'll get a nice shield. But what if you refuse? You wouldn't be...EATEN BY HIM...right? You hope not." />
+        <string name="2" value="You brought Blackbull of Perion #b30 tree branches and 50 firewoods#k. With them, he can fix his house. You got a shield as a reward and well, with scratchmarks all over it, it looks pretty old. Is it even usable?" />
+        <string name="summary" value="You need to gather materials to fix Blackbull's house." />
+        <string name="demandSummary" value="#i4000003:# #t4000003:# #c4000003# / 30&#xD;&#xA;#i4000018:# #t4000018:# #c4000018# / 50" />
+        <string name="rewardSummary" value="EXP 300&#xD;&#xA;#Wprob#&#xD;&#xA;#i1092000:# #t1092000:# #c1092000# / 1 &#xD;&#xA;#i1092001:# #t1092001:# #c1092001# / 1 &#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="300" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1092000" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="9" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1092001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Can you get me #b#e30#n #b#t4000003#es#k and #b#e50#n #t4000018#s#k? I want to fix up my house. If you do, I'll hook you up with a nice #bshield#k that I don't need. You can find plenty of materials if you take down the monsters that look like trees." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Incredible! Hmm... alright, the shield is yours. It's my favorite one. Please take good care of it." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What happened? Do you have the #b#e30#n #t4000003#es#k and #b#e50#n #t4000018#s#k I need?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1020000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

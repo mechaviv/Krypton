@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3912.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Deliver the Fancy Sword" />
+        <string name="parent" value="Dancer Sword" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="You got #t4031569# from #p2100001#. Unlike other swords, this blade is dull, yet light and beautifully decorated. It should look good on #p2101000#." />
+        <string name="2" value="After receiving the new sword, #p2101000# confidently declared she will one day perform in the castle. Will all this preparation, she should be accepted into the palace..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031569" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031569" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're back. I'm just about done with the sword for #p2101000#. Take a look. It's more of an accessory than a sword, but for a dancer, this is the ultimate prop. Will you accept it?" />
+            <imgdir name="yes">
+                <string name="0" value="#p2101000#  is a smart young woman. She used the very first sword I made her for her very first dance. If not for the Queen's tyranny, I would've given her a sword as a gift. Please take this sword to #b#p2101000##k right now. Your kindess shall not go un-rewarded." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you busy with something? Sirin is waiting for her sword…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you go see #p2100001#? Did you get the fancy dancer sword for me? Wow! So these are the #t4031569#! Amazing!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! This will let me enter the castle with more pizzazz than anyone. I WILL enter the castle. I will be #p2101000#, the greatest dancer of #m260000000#, performing in front of the Sultan. You just wait and see!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#p2101000##k, yet? I'm sure she's eager to see the new sword... Please deliver these #t4031569# to #p2101000#." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You still haven't gone to #b#p2100001##k, yet? Find an old man who looks stubborn. His sword-making is the best in town, so ask him to make one for me." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What are you thinking? I took all that time and effort to make one for  you, and you lose it? Good thing this person I knew picked it up and returned it to me... What would you do if that person didn't do that? Anyway, please give this to #b#p2101000##k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031569" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2100001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3911" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="32" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Quest Specialist" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="2" />
+        <int name="viewMedalItem" value="1142002" />
+        <string name="0" value="#b#eTitle Challenge - Quest Specialist#n\n#k A warrior who completes 800 quests, not including event quests... I don't even know if that's possible.  The Monk of Honor, Dalair, said a title called #e#bQuest Specialist#k#n will be given to the one who accomplishes this amazing feat." />
+        <string name="1" value="#b#eTitle Challenge - Quest Specialist#n\n\n#k - Completed Quests : #b#jcmpcnt##k / 800(excluding events)\n                              #jgaugeQCnt# #jperQCnt# %" />
+        <string name="2" value="#b#eTitle Challenge - Quest Specialist#n\n\n#k - Completed Quests : #b#jcmpcnt##k / 800(not including events)\n                               #jgaugeQCnt# #jperQCnt# %\n\nI finished 800 quests, not including event quests!  On behalf of the God of Honor, Dalair awarded me with the title, '#bQuest Specialist#k'. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142002# #e#b#t1142002##k\n\n - Complete 800 Quests(Not including event quests)\n\n#nDo you want to test your skills to see if you're worthy of this title?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I wish you the best.  There isn't a specific time limit, so whenever you think you're ready, come back and see me.  Also, you should know that unless you complete or quit this quest first, you won't be able to try out for another title." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You successfully completed 800 quests!  Considering we didn't even count event quests, that's an amazing accomplishment." />
+            <string name="1" value="Take this." />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, announce to the world that you are the owner of this honorable title.  If you want to try out for a new title, come back and see me any time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="In order to become a Quest Specialist, you must complete 800 quests, not including event quests.  If you think that's too much, you can quit now and try for another title." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <int name="questComplete" value="800" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142002" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

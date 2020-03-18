@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8061.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Doll in the Dark 1" />
+        <string name="parent" value="Doll in the Dark" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p1012109##k of #b#m100000000##k in Victoria Island has apparently started writing a book." />
+        <string name="1" value="#p1012109# of #m100000000# has requested my help in writing his book. For more information, he recommended me to talk to #b#p2041022##k in #b#m220000400##k of Ludibrium. Should I go there...?" />
+        <string name="2" value="#b#p2041022##k asked me to look for some subjects worthy of writing a book on. I should talk to him when the research is over." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8062" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you so much for bringing that Maple History Book the other day. Actually since then, #p2041022# asked me if I could compile some data missing from the history book and write a new book on it. Ah! This is going to be a long story, so please be seated." />
+            <string name="1" value="Well, I've run into a problem here. I was able to compile enough data for the missing information on Book 1 and 2 for the new book, but Book 3... the book on Monsters. That's the one I'm still terribly lacking on." />
+            <string name="2" value="It's a stretch to find every single information from the book, and ... I would really love to face them myself, if only I could, but I'm not strong enough to face them." />
+            <string name="3" value="Can you please help me out here? I would personally like to request a little help from you, for the sake of the book." />
+            <imgdir name="yes">
+                <string name="0" value=" Thank you so much! I'm currently researching the doll monsters, but I have no clue exactly which monster I'm supposed to study on. I'm sure someone like #b#p2041022##k may give you an advise on this." />
+                <string name="1" value="Please meet #b#p2041022##k at #b#m220000400##k of Ludibrium, and ask him what I should research on." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see... then do you have someone you can recommend? Please help me... if only I was strong enough to take on the monsters myself..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahhh, you're the one with the History Book ... it's been a while. Good seeing you. What? #b#p1012109##k is struggling to write a book as we speak?" />
+            <imgdir name="yes">
+                <string name="0" value=" Doll monsters? Well, you'll find some at the Eos Tower. I don't know exactly which one will help him write his book. Alright, I'll look for some information on this. Can you give me some time? Talk to me later, okay?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you go see #b#p2041022##k, he may give you helpful advice about this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041022" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012109" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2074" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8060" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

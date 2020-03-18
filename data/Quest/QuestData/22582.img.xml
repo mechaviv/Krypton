@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22582.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Secret Organization's Third Mission" />
+        <int name="area" value="7" />
+        <string name="0" value="It's certain that this Secret Organization called the Black Wings are working for the benefit of Maple World. Go to #b#p1013203##k at the #b#m922030000##k to receive your third mission." />
+        <string name="1" value="#p1013203# tells you to go deep inside the Clock Tower in #m220000000#, hunt #r#o6230500#s#k, and bring back the #b#t4000144#s#k that come out of the #o6230500#s.\r\n\r\n#i4000144# #t4000144# #b#c4000144# / 100#k" />
+        <string name="2" value="You collected the #t4000144#s and gave them to #p1013203#. What is he going to do with these..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000144" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Your third mission is to collect #t4000144#s. Please hunt down some #r#o6230500#s#k which are found in #m220000000#'s Clocktower. They sometimes drop #b#t4000144#s#k, so bring me back #b100#k of them." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I plan to stay here, so just bring them back to me." />
+                <string name="1" value="By the way, quite an interesting lizard you have there. Almost looks like a Dragon! Of course, it couldn't possibly be a Dragon but... Hmmm." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Doesn't look like you've got the attitude of a real Black Wings member." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You still haven't collected #b100 #t4000144#s#k? Go to the Clocktower and hunt those #r#o6230500#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000144" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q22582e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013203" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22581" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="67" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

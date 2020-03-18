@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8023.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yoona's Quiz on Shopping 3" />
+        <string name="parent" value="Yoona's Quiz on Shopping" />
+        <int name="order" value="4" />
+        <int name="area" value="20" />
+        <string name="0" value="I better solve Yoona's 3rd question on shopping." />
+        <string name="1" value="Almost halfway done! Time to solve question number 3! I have to get it right..." />
+        <string name="2" value=" I learned something about expiration dates. I can move my cursor over my acquired items and view the expiration date, so I know when I have to change style or re-select it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8024" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, you're about halfway done now. Here's the 3rd Question!" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="How long do Gachapon tickets, which can be purchased at Cash Shop, last? \n#L0##b10 days #l \n#L1#20 days #l \n#L2#30 days#k#l" />
+            <string name="1" value="Wooo, niiiice! That's correct. This item will definitely make your journey a whole lot easier to handle." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Yikes...please go take a look at it yourself at the Cash Shop." />
+                    <string name="1" value="Wrong...please go take a look at it yourself at the Cash Shop." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8022" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

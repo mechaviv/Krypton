@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3954.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Defeat Deo" />
+        <string name="parent" value="The Desert Bounty" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <int name="selectedMob" value="1" />
+        <string name="0" value="You've managed to convince #p2100001# somehow. Go report to #p2101010#." />
+        <string name="1" value="You report that #p2100001# has been convinced. #p2101010# grins, nods, and then suggests that you defeat #r#o3220001##k. Hmm, now he wants you to defeat a monster? Sigh...but don't forget that there is a bounty. That should motivate you a little. \n\n#k#o3220001#  #r#a39541##k" />
+        <string name="2" value="You defeated #o3220001# and told #p2101010#. #p2101010# laughed heartily and said you did well. Huh? Is that it? What happened to the bounty? #p2101010# said the bounty didn't include members of the Sand Bandits. No way!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="흠... #p2100001#는 설득한 겐가? 훌륭하네. 아주 장해. 모래그림단원들이 전부 달려들어도 그 노인의 고집은 꺾지 못했는데... 정말 훌륭하군. 자네야말로 모래그림단의 자랑이야.\r\n#L0##b(...이렇게까지 칭찬 들을 일이었던가?)#l" />
+            <string name="1" value="흠흠. 아무튼 그런 자네이니, #o3220001#를 퇴치하는 일도 당연히 맡아주겠지? #o3220001#를 없애자고 말하던 자네가 이제와서 못하겠다고 하진 않을 거라 믿네.\r\n#L0##b(아깐 설득만 하라고 했으면서!?)#l" />
+            <string name="2" value="자, 어서 가서 #o3220001#를 퇴치해 주게. 자네라면 그리 어려운 일은 아닐 거라 믿네." />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="55500" />
+            <int name="pop" value="6" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You convinced #p2100001#? I'm impressed. No member of the Sand Bandits has been able to win over that stubborn old man... You're incredible. You are the pride and joy of the Sand Bandits.\r\n#L0##b(Er, was it that big of a deal?)#l" />
+            <string name="1" value="Since you were able to do something no one has been able to do, you'll also defeat #o3220001# for us, won't you?\r\n#L0##b(Hmmph, what happened to convincing that old man being half the battle!?)#l" />
+            <string name="2" value="Now, go and defeat #r1 #o3220001##k for us. It shouldn't be too difficult. Not for you. " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You want to know where #o3220001# is? Well, I'm not sure. Given that he's the leader of Cactus, wouldn't he be in #b#o2100104##k Desert? I don't think he appears that frequently, so be patient. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Too much for you? Not something I expected to hear. But, come closer and listen to me... There is a bounty being offered..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated #o3220001#! You're incredible! You have what it takes to protect this Desert! What? You want a reward?" />
+            <imgdir name="yes">
+                <string name="0" value="HAHAHA! The Sand Bandits offered a bounty to the anyone who defeat #o3220001#, but that doesn't include members of the Sand Bandits! It's your duty to protect the desert! It's only right that you helped. HAHAHAHA! Mmm..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #r1 #o3220001##k yet? I'm counting on you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101010" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3220001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3953" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

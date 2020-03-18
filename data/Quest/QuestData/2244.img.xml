@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2244.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tristan's Successor" />
+        <int name="area" value="10" />
+        <string name="0" value="You hear Tristan's Spirit calling you from the Underground Temple. Let's rush over to Tristan's Tomb." />
+        <string name="1" value="Tristan's Spirit says he'd acknowledge you as his successor if you prevent Balrog from reviving. Wow, the successor of a legendary hero of Maple World? That's a once-in-a-lifetime opportunity! Let's do it!" />
+        <string name="2" value="Upon preventing Balrog's revival 200 times, you have been named Tristan's Successor. " />
+        <string name="summary" value="Let's stop Balrog from reviving 200 times." />
+        <string name="demandSummary" value="Stop Balrog from reviving 200 times." />
+        <string name="rewardSummary" value="EXP 6,800" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Brave adventurer, the aura of evil is spreading throughout the entire underground dungeon. Our job right now is to prevent Balrog from reviving until he finally gives up. This is easier said than done, but I know you'll be able to pull through if you are a true warrior. What do you say? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Your job is to stop Balrog from reviving. If you can stop him 200 times, you will be known as a true warrior of Maple World. If you can accomplish this mission, I will accept you as my successor. Believe in yourself. I am counting on you, young adventurer. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I appreciate that you're thinking things through carefully, but we don't have much time. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061017" />
+            <string name="endscript" value="q2244e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061017" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20600.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Training Never Ends " />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#p1101002# seems eager to talk to me about something..." />
+        <string name="1" value="#p1101002# told me that being at Level 100 still means I have some training to do. He suggested I learn from the Chief Knights who never stop training. He even told me I may one day be able to acquire a new skill..." />
+        <string name="2" value="#p1101002# told me that being at Level 100 still means I have some training to do. He suggested I learn from the Chief Knights who never stop training. He even told me I may one day be able to acquire a new skill..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#h0#. Have you been slacking off in training since reaching Level 100? We all know how powerful you are, but the training is not complete. Take a look at these Chief Knights. They train day and night, preparing themselves for the possible encounter with the Black Mage." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I suggest you visit other Chief Knights and ask for some words of advice. Who knows? You may be able to learn a #bnew skill#k in the process." />
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <string name="startscript" value="q20600s" />
+            <int name="lvmin" value="100" />
+            <imgdir name="job">
+                <int name="0" value="1111" />
+                <int name="1" value="1112" />
+                <int name="2" value="1211" />
+                <int name="3" value="1212" />
+                <int name="4" value="1311" />
+                <int name="5" value="1312" />
+                <int name="6" value="1411" />
+                <int name="7" value="1412" />
+                <int name="8" value="1511" />
+                <int name="9" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8081.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Arrogant Alien Gray" />
+        <string name="parent" value="Umi's Ambition" />
+        <int name="order" value="3" />
+        <int name="area" value="48" />
+        <string name="0" value="I better negotiate with #r#p2050002##k so the machine can be sent to Showa Town ASAP." />
+        <string name="1" value="After eating lunch, #r#p2050002##k claims that he'll send the machine to Showa Town, no problem. \nThis really irritated me, but I'll have to gather up #b400#k #b#t4000117#s#k in order for that to happen.\r\n#t4000117# #b#c4000117##k/400" />
+        <string name="2" value="Just as #r#p2050002##k demanded, I got him #b400 #t4000117#s#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000117" />
+                    <int name="count" value="-400" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2030010" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I know I can send you the machine... but...I'll do it if you get something for me. What do you think?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, it's nothing big ... and I need some stamina to transport this machine, you know, and I feel like eating lunch beforehand." />
+                <string name="1" value="And so, I would like to eat my favorite, #b400#k #b#t4000117#s#k, so it would be nice for you to bring me lunch..." />
+                <string name="2" value="Hey, you seem strong enough. Just take care of the monsters around the area, and you'll have enough in a hurry. Hahaha!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? That's alright. It's not like I'm going through too much trouble here, but I suggest you do things my way." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wooo, not bad for a human. Well, let's be friends now~" />
+            <string name="1" value="As promised, the machine will be sent to #r#p9120005##k, so you should go there too and see it for yourself." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Are you kidding me? Don't mess with me, or I am not giving you the machine!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000117" />
+                    <int name="count" value="400" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8080" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

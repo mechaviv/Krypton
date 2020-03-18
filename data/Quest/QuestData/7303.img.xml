@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7303.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the Secret Medicine for Transformation" />
+        <int name="area" value="41" />
+        <string name="0" value=" I want to enter the Cave of Life one more time...I wonder if I could get the transformation medicine again.  Let's go see Moira again." />
+        <string name="1" value="Moira told me to bring her all the ingredients if I want the transformation medicine again. Let's get back to Moira with all the ingredients.\n\n#i4001103##t4001103#  #b#c4001103##k / 1\n#i4000267##t4000267#  #b#c4000267##k / 1\n#i4001104##t4001104#  #b#c4001104##k / 1\n#i4001105##t4001105#  #b#c4001105##k / 10\n#i4001078##t4001078#  #b#c4001078##k / 1" />
+        <string name="2" value=" I gave Moira all the ingredients again and she made me a tarnsformation medicine that allows me to transform into  Cornian." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="변신의 비약이 필요해서 오셨군요. 아직 혼테일을 물리치시지는 못했나보죠? 당신이 원한다면 다시 한번 비약을 만들어 드리죠. 드래곤 변신 비약을 만드시겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="재료는 지난 번과 같습니다. 드래곤 변신 비약을 만들기 위해서는... \n\n#i4001075#  #t4001075# #b1개#k\n#i4000267#  #t4000267# #b1개#k\n#i4001076#   #t4001076# #b1개#k\n#i4001077#  #t4001077# #b10개#k\n#i4001078#  #t4001078# #b1개#k가 필요하답니다. \n\n모두 외우셨나요?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <int name="buffItemID" value="2210003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001103" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001104" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001105" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4001078" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You came here to get a secret medicine. Haven't you beat off Horntail. I can make a secret medicine for you again if you want. Do you want it?" />
+            <imgdir name="yes">
+                <string name="0" value="The same ingredients. I need   #b\n #i4001103# 1 #k#t4001103# #b\n#i4000267# 1 #k#t4000267# #b\n#i4001076#  1 #k#t4001076# #b\n#i4001077# 10 #k#t4001077# #b\n#i4001078# 1 #k#t4001078#.  #b\n\nDid you memorize all?" />
+                <string name="1" value="You can get Cornian's Marrow and skull shoulder guard from #rCornians#k, Manon's crying sound from #rManon#k in Minar Forest.  You also can get tough dragon leather from #rDrakes#k in Victoria Island." />
+                <string name="2" value="Most important thing, Cornian's short sword can be earned by the best blacksmith #bMos#k in Leafre town. Hurry up! I'll be waiting for you. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Without secret medicine, it's impossible to get into the Cave of Life." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather everything? Let me see...Great!!! Wait a minute." />
+            <string name="1" value="When you take this medicine, you look like Cornian for a while. Keep in mind that the medicine stops working if you're out of the town. Don't forget that." />
+            <imgdir name="yes">
+                <string name="0" value="Good luck to you. Please beat Horntail off." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Do you remember what I said?In order to make a secret medicine to transform into dragon, I need \n\n#i4001075# 1 #k#t4001075# #b\n#i4000267# 1 #k#t4000267# #b\n#i4001076# 1#k#t4001076# #b\n#i4001077# 10#k#t4001077# #b\n#i4001078# 1#k#t4001078# #b#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001078" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001103" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001104" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4001105" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000267" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7301" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="80" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

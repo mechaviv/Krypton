@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28232.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Another Storyteller" />
+        <string name="parent" value="Solomon's Bow" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1020000:##k in #bPerion#k may also know something about Solomon's Bow. Let's talk to him." />
+        <string name="1" value="#b#@1020000:##k says he's certainly seen the bow before, but that was about it.\n\nThen he suggests #b#@1022000:##k in #bPerion#k must know more about the bow. Let's talk to him." />
+        <string name="2" value="#b#@1022000:##k in #bPerion#k says he has something else he wants to say about #rSolomon's Bow#k." />
+        <string name="demandSummary" value="#i4032483:# #t4032483:# #c4032483# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Putting the Legend to a Test' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This bow is...?\nWhere did you get this bow?\nI'm sure this is #rSolomon's Bow#k, the one I saw in #bHenesys#k when I was young." />
+            <string name="1" value="I heard this is the legendary bow that defeated the demon... But I'm a little skeptical that it's actually right before my very eyes.\nDo you want to know more about the bow?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Then go talk to #b#p1022000##k in #bPerion#k. He'll be able to tell you everything you want to know about it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you curious?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome, beginner bowman.\n\nWait, isn't this #rSolomon's Bow#k?\n\nHow do you have this legendary bow, which is said to have been sealed ages ago?" />
+            <imgdir name="yes">
+                <string name="0" value="(Tells him everything that's happened.)\n\nMmm, so that's what happened.\n\nI have something else I want to tell you about the bow.\n\nTalk to me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1022000##k is in #bPerion#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28231" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

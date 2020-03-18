@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2423.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Slime's Weakness" />
+        <int name="area" value="10" />
+        <string name="0" value="Power B. Fore, the instructor at the training center, claims to know the weakness of Slimes. You'd better go hear what he's got to say." />
+        <string name="1" value="You acquired the Slime's Weakness skill. You should take advantage of the skill when hunting Slimes.\r\n\r\n#o210100# #a24231#\r\n\r\n" />
+        <string name="2" value="You used Slime's Weakness to effectively hunt Slimes." />
+        <string name="summary" value="Eliminate 60 Slimes." />
+        <string name="demandSummary" value="\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Okay, now you have mastered the Slime's Weakness skill, right? Now let's use it to hunt some Slimes.\r\n#b#L0#How do I use this skill?#l\n#k" />
+            <string name="1" value="There's no need to worry about that now. The skill will be applied regardless of the type of attack you are using. You see the Slime's weak points? Try eliminating around 60 of them!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Okay. Eliminate 60 #bSlimes#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to do it, I have to say, it's your loss." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Okay, okay. Great work! You look like you can see and attack the weak points of the Slimes.\r\n#b#L0#Do other monsters have their weak points as well?#l\n#k" />
+            <string name="1" value="That is an excellent, excellent question! Monsters' weak points have yet to be revealed to everyone, but I do believe they will become known someday. I was able to find the weak points of these monsters, but I didn't train hard enough to make myself a famous adventurer. But I have a feeling you have the potential to achieve much more than that." />
+            <imgdir name="yes">
+                <string name="0" value="Keep training. Don't stop until you become a famous adventurer!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have slain 60 Slimes yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032113" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032113" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2411" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="20" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="9002" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

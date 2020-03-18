@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3537.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Breaking the Force Field" />
+        <int name="area" value="46" />
+        <string name="0" value="I wanted to go deep inside the temple, but I couldn't because of the intruder's force field.  I should try making the item that can destroy the force field with help from #p2140000#." />
+        <string name="1" value="In order to make the #t4032002#, the item that can destroy the force field, I need 10 Smiley Masks, 10 #t4000451#, 10 #t4000456# and 1 each of #t4000460#, #t4000461# and #t4000462#.  All these items can only be found in the Temple of Time." />
+        <string name="2" value="When I brought all the ingredients to #p2140000#, he made me the #t4032002#.  Now I should be able to go deep inside the temple again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <int name="interval" value="1440" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3521" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000446" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000451" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000456" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000460" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000461" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000462" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4032002" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The force field has reappeared at the deepest part of the temple?  The intruder must've put it up again...  This just shows that the intruder's powers have not weakened.  We'll have to make another #t4032002# to break down the force field again." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You already know all the ingredients, right? 10 #b#t4000446#, 10 #t4000451#, 10 #t4000456##k and #b1 each of #t4000460#, #t4000461# and #t4000462##k.  Bring me those and I will make you another  #b#t4032002##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you're not planning to go in, you won't need the marble either." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got all the ingredients.  I will combine the ingredients and make you the #t4032002#." />
+            <imgdir name="yes">
+                <string name="0" value="The #t4032002# should be able to destroy the force field.  However, you can only use it once and it'll last only for a short period of time.  Remember, if you need to go in again, you'll have to make another  #t4032002#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't get all the ingredients yet?  Go to the #rPriest and Memory Monk Trainee#k and get #b10 #t4000446##k, go to the #rPriest and Qualm Monk Trainee#k and get  #b10 #t4000451##k, go to the #rPriest and Oblivion Monk Trainee#k and get #b10 #t4000456##k, go to #r#o8220004##k and get #b#t4000460##k, go to  #r#o8220005##k and get #b#t4000461##k, and finally go to #r#o8220006##k and get #b#t4000462##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000446" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000451" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000456" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000460" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000461" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000462" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3536" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032002" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="1440" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

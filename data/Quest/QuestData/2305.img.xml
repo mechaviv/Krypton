@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2305.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Endangered Mushking Empire" />
+        <int name="area" value="30" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Mushking Empire is in dire straits and in desperate need of help!\r\n" />
+        <string name="1" value="You should take the #bletter of recommendation#k from the job instructor and visit #b#p1300005##k in the Mushking Empire." />
+        <string name="2" value="You took the letter of recommendation from the job instructor and met with the Head Security Officer of Mushking Empire." />
+        <string name="demandSummary" value="#i4032375:# #t4032375:# #c4032375# / 1\r\n" />
+        <string name="rewardSummary" value="EXP 6,000" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, I have a request for you.#b#L0#How can I help you?#l\n#k" />
+            <imgdir name="stop">
+                <imgdir name="0" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Who are you? You look like someone who's exploring Maple World. Our kingdom is in serious danger, and we need someone dependable that can save us. If you can't help us, then I suggest you move on." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032375" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2305e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101003" />
+            <string name="startscript" value="q2305s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+            <imgdir name="job">
+                <int name="0" value="1110" />
+                <int name="1" value="1111" />
+                <int name="2" value="1112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

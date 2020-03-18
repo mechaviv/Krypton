@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6310.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="End of Attributes" />
+        <string name="parent" value=" Inverse Attributes " />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" I have reached the highest level of the attributes. Is there a stronger attribute magic that I can learn? Let's go ask #b#p2020005##k." />
+        <string name="1" value="#b#p2020005##k mentioned about inverse attributes, and suggested that we research it. He wants me to bring him the ingredients for the research....\r\n#i04000081##t04000081# #b#c04000081#/50#k\n#i04000232##t04000232# #b#c04000232#/10#k\n#i04000240##t04000240# #b#c04000240#/10 " />
+        <string name="2" value=" I got all the ingredients. But will #b#p2020005##k do a good job?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="400000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000232" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000240" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're an excellent magician. I can feel the strong power of ice magic. #bThe one who mastered in ice element-based magic#k... I've learned magic for a long time but never seen anyone who knows element-based magic as well as you. I'm really excited to see you to talk about the element-based magic." />
+            <string name="1" value="Hmm? You reached the peak of the ice element-based magic. What does that unhappy look mean? Are you complaining because there's nothing to learn? Haha... Your passion made you a master. You need something new! Why don't you have some #bcopernican revolution#k?" />
+            <string name="2" value="What do I mean? Simple. Try to learn the magic of the opposite element. I mean inverse element-based magic. Before, if you chose one element-based magic and learned it, you'd reach your limits. But now you can learn something new! Isn't it interesting?" />
+            <string name="3" value="You'll be interested in it. Do you want to work with me?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh! Are you interested? Then go and gather the ingredients. #b50 #t4000081#, 10 #t4000232# and 10 #t4000240##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... Seems like you're not interested. Maybe you want to continue working on your normal element-based magic." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You got all the ingredients. I'll do some experiments based on my previous studies. Wish me luck! Talk to me later..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you gathered the ingredients? Try harder." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000081" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000232" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000240" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020005" />
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2221003" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

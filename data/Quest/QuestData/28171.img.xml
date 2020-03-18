@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28171.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Reason Why Chief Stan is Livid" />
+        <string name="parent" value="What's going on in Henesys?" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="It's been said that #b#@1012003:##k in #b#m100000000##k greatly enjoys playing the guitar." />
+        <string name="1" value="Talk to #b#@1012003:##k in #b#m100000000##k." />
+        <string name="2" value="#b#@1012003:##k in #b#m100000000##k needs help investigating the incident. Let's talk to him." />
+        <string name="rewardSummary" value="Exp 1500&#xD;&#xA;Able to proceed to 'Searching for Clues' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032480" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Th-th-this is the Stanlica's Guitar! Where did you get this? I know you're from Perion, but you seem alright. I don't know where you heard about my passion for this guitar, but you're a sharp one!\nHaha!\nSo, are you interested in my story?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll tell you why I'm angry.\n\nWhen I visited Perion awhile back, I received a traditional Statue of Perion as a gift of friendship. That was pretty common back then, since the two towns had built a very co-dependent and caring relationship. But the problem followed immediately after that." />
+                <string name="1" value="On my way back to Henesys, I was attacked by a warrior from Perion and had my Statue stolen! What's the logic behind their custom? You give a present, then steal it back from the recipient? Can it get more incredibly offensive than that?\nFortunately, I was able to save myself from danger, yet I can't help but harbor these feelings against all things related to Perion." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmpf! Thought you'd be curious... Suit yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="And my story ends here." />
+            <imgdir name="yes">
+                <string name="0" value="I have another favor to ask of you, so come back and talk to me when you're ready." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28170" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032480" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

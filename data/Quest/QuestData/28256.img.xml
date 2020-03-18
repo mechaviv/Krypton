@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28256.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Treasure, and Crocell the Demon" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says it is now time to defeat #rCrocell#k. Let's go find her." />
+        <string name="1" value="If you go to #b#m100030000##k, you will find the Demon's Doorway where #rCrocell#k is hiding. You can enter using #rCrocell's Emblem#k. Defeat #rCrocell#k!\n\nReport back to #b#@1072008:##k in #bNautilus#k upon completion." />
+        <string name="2" value="Although you have defeated #rCrocell#k, whose seal had been broken, who or what is responsible for the broken seal still remains a mystery." />
+        <string name="demandSummary" value="#o9400611# #a282561#" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i1003035:# #t1003035:# #c1003035# 1&#xD;&#xA;#i4032496:# #t4032496:# #c4032496# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1003035" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032496" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem to be ready.\n\nAre you prepared to fight #rCrocell#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You will find a Demon's Doorway in #b#m100030000##k. That is where #rCrocell#k is hiding. You'll be able to enter with #rCrocell's Emblem#k you received from the Treasure Chest in the Bottom Floor - Hallway. Go and defeat the demon at once!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you scared?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Not bad for a novice. You're going to be of great help in the future." />
+            <imgdir name="yes">
+                <string name="0" value="But you cannot get lazy or overly confident here. I'm pretty sure there is a stronger force behind all this. Continue to train diligently." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you not defeated #rCrocell#k yet?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400611" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28255" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

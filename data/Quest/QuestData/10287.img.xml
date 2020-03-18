@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10287.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Aramia's Golden Maple Leaf" />
+        <int name="area" value="50" />
+        <string name="0" value="A shiny gold colored Maple Leaf has fallen off a fully grown Maple Tree. Bring it to #p9000055# who is in charge of the Maple Tree." />
+        <string name="1" value="Take the Golden Maple Leaf to #p9000055# who is in charge of the Maple Tree." />
+        <string name="2" value="When you brought a Goldem Maple Leaf, that fell off a fully grown Maple Tree, to #p9000055#, the Maple Tree caretaker, said that the Golden Maple Leaf can be used as a seedling for a Maple Tree and gave you a gift as your reward." />
+        <string name="demandSummary" value="#i4001168:# #t4001168:# #c4001168# / 1" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9000055" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001168" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10287s" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009061600" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

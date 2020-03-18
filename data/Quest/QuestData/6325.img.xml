@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6325.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maple Warrior Skill Book" />
+        <int name="area" value="10" />
+        <string name="0" value="If you somehow lose the Maple Warrior Skill Book, you should go visit #b#p1201002##k." />
+        <string name="1" value="This should do, right? You'd better go talk to #b#p1201002##k." />
+        <string name="2" value="You received a new skill book from #b#p1201002##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hmmm? What is it? Did you lose something?\n#b#L0#I lost the Maple Hero Skill Book...#l\n#k" />
+            <string name="1" value="What? You lost something that valuable? Seriously, you weren't like this before, but ever since you woke up from that deep sleep, you've been losing things left and right. Hold on one second…" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'll write you another one, so talk to me in a bit." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine, if you don't want it, then I won't help you. I was going to play nice for once, but…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, here's another copy of the Maple Hero Skill Book. Take it." />
+            <imgdir name="yes">
+                <string name="0" value="Maybe you're acting slow and dull because the world's currently at peace. What are you going to do if the Black Mage shows up again? Get your act together!" />
+            </imgdir>
+            <imgdir name="stop" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280003" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2112" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="21121000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

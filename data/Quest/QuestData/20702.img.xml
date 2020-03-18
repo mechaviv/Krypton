@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20702.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="2nd Acclimation Training" />
+        <int name="area" value="15" />
+        <string name="0" value="I shall receive the 2nd Acclimation Training from #b#p1102000##k." />
+        <string name="1" value="This time, the monster in question for Acclimation Training is #r#o9300272##k. I'll need to enter #bthe 1st Drill Hall#k and battle against #o9300272#... \n\n#o9300272##r #a207021##k" />
+        <string name="2" value="I managed to defeat 30 #o9300272#s." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000020" />
+                    <int name="count" value="40" />
+                    <int name="job" value="64512" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000021" />
+                    <int name="count" value="40" />
+                    <int name="job" value="64512" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, are you ready to take on the next training session? I'm sure #p1101002# told you this already, but if you talk to #p1101001#, you'll be divinely blessed, which will help you go through the training that much easier. If you forgot to do so, then go get it right now. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This time, the targets are #r#o9300272#s#k, which are monsters you'll run into quite often in Victoria Island. Honestly, I've never been there, so I don't know if that statement is legit." />
+                <string name="1" value="Like I said last time, enter #bthe 1st Drill Hall#k and you'll see a group of #o9300272#s ready to battle. I need you to defeat #r30#k of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you forgot something, then I suggest you take care of that first before going off to battle. There's nothing worse than looking for an item in the heat of the battle, only to realize you left it at home." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, did you manage to defeat 30 #o9300272#s? I have to say, you're doing quite well right now. Let's do one final session. Talk to me when you are ready." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r30 #o9300272#s#k yet. Don't tell me you've gone all the way to Victoria Island in search of #o9300272#s, right? Find the entrance to #bthe 1st Drill Hall#k at the end of the Training Forest, and you'll see a number of #o9300272#s ready to battle." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1102000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300272" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1102000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20701" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <int name="lvmax" value="15" />
+            <imgdir name="job">
+                <int name="0" value="1100" />
+                <int name="1" value="1110" />
+                <int name="2" value="1111" />
+                <int name="3" value="1112" />
+                <int name="4" value="1200" />
+                <int name="5" value="1210" />
+                <int name="6" value="1211" />
+                <int name="7" value="1212" />
+                <int name="8" value="1300" />
+                <int name="9" value="1310" />
+                <int name="10" value="1311" />
+                <int name="11" value="1312" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+                <int name="16" value="1500" />
+                <int name="17" value="1510" />
+                <int name="18" value="1511" />
+                <int name="19" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

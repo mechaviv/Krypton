@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3335.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Rose from the Snowfield" />
+        <string name="parent" value="Humanoid Just Wants to be Human" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2111003# said that the flowers on #t4031695# should be blooming, but it can't be removed unless with a warm hand of a human, and asked me if I could take one #t4031695# for him and give it to #b#p2111004##k as a gift. He said all this with a sad look on face... \n\nTo make #t4031695# bloom, I'll need #t4000361#, so I better get #b#t4000361##k first, then head to the place where #p2111003# planted #t4031695#. \n\n#i4031695##t4031695# #b#c4031695##k/1" />
+        <string name="2" value="I gave #p2111004# the #t4031695#. She seemed very surprised by the gesture, followed by a complex look on her face... Will #p2111003#'s love finally bloom as well?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3334" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="67800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031695" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello traveler. I really appreciate all the help you gave me from last time. Thanks to your help, I was able to safely plant #t4031695#. Now I think it's time for it to bloom." />
+            <string name="1" value="#t4031695# may be cold, but the flower can only be snapped away with a human's warm hand. If a Humanoid like me touches the flower... it'll break into pieces..." />
+            <string name="2" value="That is why I am here asking you... to snap #t4031695# away and give this to...#p2111004#." />
+            <imgdir name="yes">
+                <string name="0" value="#t4031695# is a brittle flower that can't bloom by itself. You'll need to acquire #t4000361# and place it on the scale where #t4031696# is asleep. When the flower blooms, snap #b#t4031695##k away, and hand it to #b#p2111004##k." />
+                <string name="1" value="Come back and see me once you are ready to grow the rose from the snowfield. I'll take you to the place where it can be grown." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand if you find this too difficult. If I was a human, then I wouldn't have even asked you to do this..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="...What is it? Is this... a flower? It's #t4031695#... This is a very precious flower. How did you get this? What? It's from #p2111003#?" />
+            <imgdir name="yes">
+                <string name="0" value="This... is my favorite flower. I just don't know why he'd give me this... #p2111003#... He's a great person, I mean, a great Humanoid, but I already have a husband..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I don't think you have gone to see #b#p2111004##k yet. Please get #b#t4031695##k and give it to her. #t4031695# needs #b#t4000361##k in order to have a full bloom." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What is it? Please don't talk to me unless it's something important." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031695" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3334" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="65" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2289.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The New Song" />
+        <int name="area" value="30" />
+        <string name="0" value="He must have found his Composition Notes by now. Go and get the Composition Notes from #bMaestro Rho#k." />
+        <string name="1" value="Deliver the #bComposition Notes#k to #bLana#k, the CEO of Big Hit Records." />
+        <string name="2" value="All preparations for Blake's debut performance are now complete. Go over to #bBlake#k and give him the good news." />
+        <string name="demandSummary" value="#i4032507:# #t4032507:# #c4032507# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="1,320 EXP" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032507" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032507" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2290" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dum dum de dum... Oh, you're back. I'll give you my new song as promised." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Here you go, my precious Composition Notes. Please tell #bLana#k at Big Hit Records to make sure Blake performs my new song at his debut concert." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you declining my new song? Unbelievable!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What took you so long? Here, give me the new song." />
+            <imgdir name="yes">
+                <string name="0" value="So we have a song... What are we missing?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please deliver my Composition Notes to #bLana#k, the CEO of Big Hit Records." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Where did the Composition Notes go?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="How dare you drop my Composition Notes! Do you know what could have happened if I hadn't picked it up? Ugh, I don't even want to think about it. I'll give it to you again. Make sure you deliver it to #bLana#k, huh? Geez." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052121" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032507" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2288" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

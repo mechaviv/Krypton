@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2087.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering the Flying Pill" />
+        <string name="parent" value="Icarus and the Flying Pill" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="1" value="#bWing the Fairy#k of Ellinia asked me to take the Flying Pill to Icarus. So this little pill is all it takes to fly? I need to get this to Icarus ASAP." />
+        <string name="2" value="I got Icarus the Flying Pill that Wing the Fairy of Ellinia made. I hope it works for him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031163" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="13000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031163" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102054" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102055" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1102056" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, I mix this with that, and add that with this, and ... okay, I'm done! Here, take it." />
+            <imgdir name="yes">
+                <string name="0" value="It's a very rare pill, and it should only be taken by Icarus, and no one else. If you have any desire to take that pill for yourself, then don't even think about it. It will only work on Icarus." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What, you don't need it anymore? That's fine with me. Humans are not only self-centered, but also very fickle." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh you're back!! Did you meet up with Wing? What about the pill? The pill! Did you bring it?" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, this is it. This pill will enable me to fly anywhere I desire and finally realize my dream of flying. Thank you so much for all your help. Here's a little thank you present from me. Hopefully it'll help you down the road. I'll see you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't given the pill to Icarus yet? I thought I told you the pill doesn't work on anyone else but him, meaning YOU CAN'T FLY WITH IT. Now that you know, go see Icarus immediately and give him the pill, alright?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="How is the medicine that Wing promised to make coming along? You haven't received it yet? Why don't you try visiting Wing again? I'm sure she's made it by now. " />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the medicine...? Are humans always this clumsy? I'd rather not do this, but since my friend Icarus is waiting, I'll give it to you again. This time, go straight to Icarus, okay?" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031163" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2086" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="42" />
+        </imgdir>
+    </imgdir>
+</imgdir>

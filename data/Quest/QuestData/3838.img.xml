@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3838.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Defeat Tae Roon" />
+        <string name="parent" value="The Forgotten Master" />
+        <int name="order" value="4" />
+        <int name="area" value="44" />
+        <string name="1" value="Since Do Gong's spell was unfortunately interfered by Master Goblin, No Gong, with sadness in his eyes, told me the following... for the sake of Tae Roon, if he ever loses it again, he told me to take him down.\n\n#o7220000# #r#a38381##k" />
+        <string name="2" value="I went to go see No Gong again after defeating Tae Roon. No Gong believed that this would actually lighten the pressure Tae Roon might have felt with the spell controlling his every move. He said this with equal parts sadness and relief. \n\nNow that I have learned the truth about Tae Roon, I better go see #bTae Soo#k once more." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="215400" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="When Tae Roon attacks humans, it's really just him being controlled by Master Goblin's spells. Even so, he'll probably think everything's his fault. Don't you think it's a better idea just to stop him from committing those acts of violence?" />
+            <string name="2" value="That's why... I want you to take down #rTae Roon#k if he shows signs of violence. Don't hesitate to attack that boy if he loses it and starts attacking innocent people. As cruel as this may be, I think it's one of the ways to help Tae Roon." />
+            <string name="0" value="So what did Do Gong Say? ...really? So the very same emotion that calls for Tae Roon to redeem himself is actually the reason why he's still bound to that spell? Poor kid... I feel so ashamed to be just standing here, not knowing what to do... sigh.." />
+            <imgdir name="yes">
+                <string name="0" value="As twisted as this may sound, I think it's better to hurt him on the outside as opposed to hurting his feelings. If physically damaging the kid will result in freeing him from the wrath of evil, then so be it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you defeated Tae Roon? Okay. Hopefully this will ease the burden he's been carrying with him." />
+            <string name="1" value="I wish he was shallow enough to think that this one beating will wash away all his sins, but he isn't. The very reason everyone at Mu Lung loved him was because he was so straight-edged, with unwavering belief in goodness." />
+            <string name="2" value="If Tae Roon chose the path of constant defeat as a way of redeeming himself for the sins, then as a teacher, I have no choice but to observe his every step until the very end. It's heartbreaking to say the least, but that's for Tae Roon's best." />
+            <imgdir name="yes">
+                <string name="0" value="Ah, I just remembered that Tae Soo had been wondering about Tae Roon's whereabouts." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #rTae Roon#k yet. Please do this for me... and especially for Tae Roon." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3837" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="71" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3437.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminating Plateon and Mecateon" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Green Mesoranger, who should be somewhere around Boswell Field." />
+        <string name="1" value="I met up with Green Meoranger again at the Boswell Field of Omega Sector. As a last task, Green Mesoranger asked me to eliminate the #bPlateons#k again, and collect #bMecateon's#k weapons, which are very high-quality. I need to take out #b150 Plateons#k and collect #b120 Mecateon's Laser Guns#k for him.\n\n#o4230120# #r#a34371##k\n#t4000122# #b#c4000122##k/120" />
+        <string name="2" value="Just the way the mission stated by Green Mesoranger of Boswell Field, I took out the Plateons and collected Mecateon's laser guns. Green Mesoranger seemed genuinely surprised by the fact that I took care of all the missions, and told me it'd be a pleasure to work with me again. Now, THAT felt good!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1082002" />
+                    <int name="count" value="1" />
+                    <int name="job" value="1180673" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1082024" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1082063" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4198404" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1082072" />
+                    <int name="count" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1082076" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1082195" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4000122" />
+                    <int name="count" value="-120" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="A few days ago, you helped me take care of my missions from the Sector, so I thought I'd be chilling around here for a while, but.. ooooo! I've been saddled with the toughest task, yet, and so... would you like to work with me one last time??" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for saying yes! I remember you defeated #b#o4230120##k the other day, but the Sector wants more aliens gone from the Earth. I was also told to pick up the laser guns that they shoot, if they are available, like it's going to help them develop new types of weapons in the near future..." />
+                <string name="1" value="Please take out #b150 #o4230120#s#k, and collect #b120 #t4000122#s#k by defeating Mecateons. The laser gun should be available through #b#o4230121##k. #o4230121# rides on a big bad robot, so please be careful of that. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This wouldn't be something that would do you any harm, so it's a tad disappointing that you said no. If you ever change your mind, however, please talk to me immediately. I've got some things to do, so if you'll excuse me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What the? Are you telling me you've already taken out 150 #o4230120#s? And these ... yes, these really are 120 #t4000122#s. I was wondering how you were going to complete this mission all by yourself, but you took care of it just fine. Alright, here ... this is a very important item for me, but please take it." />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the glove? I've kept this for a while, and I was planning on using it someday, but it looks much better on you. Please put it to good use; besides, I got so much stuff from the Sector, that I don't need it anymore." />
+                <string name="1" value="Thank you so much for fulfilling your missions as one of the Mesorangers. I've told the Sector about your successful story, and the Sector seems to be very pleased with you, too. Hopefully you'll keep working with us. Bye~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected all the #t4000122#s necessary. Please gather up #b150 #t4000122#s#k #o4230121#." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have completed the mission, yet. Please take out #b200 #o4230120#s#k and collect #b150 #t4000122#s#k before returning to this place." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040017" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000122" />
+                    <int name="count" value="120" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230120" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040017" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3436" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="41" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28316.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Olivia: &quot;Help Me&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="The poor girl standing outside the mansion looks so frightened and alone. Let's see what she needs help with." />
+        <string name="1" value="Olivia will not return inside to the Mansion until the #b100 Twisted Jesters#k are defeated.  " />
+        <string name="2" value="The #b100 Twisted Jesters#k have been defeated. Olivia is now able to enter her home, but this might just be the beginning." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I just went outside to play, trying to catch some pretty butterflies, when suddenly some horrible-looking zombies and ghosts snuck into our house. Now my daddy's trapped inside and I can't go back because these monsters are guarding the gate! Please help me return to my family!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You will? Thank you so much! Now, if you could defeat #b100 Twisted Jesters#k then I might just be willing to take a step in there. I believe in you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What...? You're going to abandon this scared, lonely little girl? You have no heart!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Can you rid the house of zombies and ghosts? I'm afraid to go inside alone." />
+            <imgdir name="yes">
+                <string name="0" value="Oh, I'm so grateful to you. For a minute, I thought you'd never return. I hope Daddy and my doll collection are still intact." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think I can go back inside yet. I still see those #b100 Twisted Jesters#k lurking around the corner." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201136" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400640" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201136" />
+            <int name="lvmin" value="61" />
+            <string name="end" value="2009112500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

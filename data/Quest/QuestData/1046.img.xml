@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1046.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Biggs's Story on Victoria Island." />
+        <int name="area" value="20" />
+        <string name="0" value="Go to #bSouthperry#k and meet up with #bBiggs#k to learn more about Victoria Island, like Bari suggests." />
+        <string name="1" value="Biggs tells you the basics of Victoria Island and advises that you speak with Olaf once you land there. Okay, gotta remember that. #bLith Harbor#k. Meet #bOlaf#k. Okay!" />
+        <string name="2" value="Olaf seemed genuinely happy to meet a new traveler and said, if you want to learn more about job advancement, he's your man!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000014" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000013" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be new. You've made your way to Southperry, so I suppose you're ready to head to Victoria Island, right? Making a journey to an unknown place requires preparation. Would you like some information on #bVictoria Island#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Victoria Island is a #bhumongous#k island! That place, along with the continent of Ossyria, takes up the majority of Maple World. I heard Victoria Island used to be one with Ossyria..." />
+                <string name="1" value="Anyway, Victoria Island consists of #bfour towns#k and #bone port#k, with Sleepywood in the center. Each town has a #btown chief#k. These chiefs are also the #bmasters of each occupations#k. They are the ones you need to visit to make a job advancement." />
+                <string name="2" value="Maple Island can't possibly compare to Victoria Island in size. I hear that Orange Mushrooms, the strongest monsters on Maple Island, are nothing compared to the grisly beasts on Victoria Island!" />
+                <string name="3" value="Beginners that set foot in Victoria Island should be very careful. But no worries. The first place you'll land at Victoria Island, #bLith Harbor#k, has someone that specializes in helping out Beginners like you." />
+                <string name="4" value="Look for #bOlaf#k at #bLith Harbor#k. He'll help you get acclimated to Victoria Island. He shouldn't be hard to find. Good luck on your journey!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... If you don't need information, then oh well..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must be new... I can smell it! Muahaha! Have you just arrived from Maple Island? If so, then I, the great Olaf, shall help you." />
+            <imgdir name="yes">
+                <string name="0" value="This world may be full of dangerous monsters, but people oughta stick together and help each other out, am I right or am I right? Especially a youngling like you, who's the future of the Maple World." />
+                <string name="1" value="Ah, lessee. I can help you out with your first job advancement. I'm friends with all the chiefs on this island, so I know a ton about every occupation. I'll help you find the perfect job!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't made your way to Victoria Island yet. It's a good idea to quietly train here until you're ready to make a job advancement. Once you are, then head to Victoria Island and find #bOlaf#k at #bLith Harbor#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1045" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

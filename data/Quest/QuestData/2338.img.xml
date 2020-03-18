@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2338.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Killer Mushroom Spores, Again" />
+        <int name="area" value="30" />
+        <string name="0" value="If you've lost the #bKiller Mushroom Spore Potion#k, go visit #bScarrs#k." />
+        <string name="1" value="You're visiting Scarrs to get another #bKiller Mushroom Spore Potion#k." />
+        <string name="2" value="You received a new #bKiller Mushroom Spore Potion#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you happen to lose the #bKiller Spore Potion#k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I really had a tough time making this, so please don't lose it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, are you sure you don't need it anymore? Then come see me when you do." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2318" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2322" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2430014" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2338s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

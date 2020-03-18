@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4549.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hunger calls" />
+        <string name="parent" value="Nuri's Health and Beauty" />
+        <int name="order" value="1" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270059##k looks so down and depressed. Maybe there's something you can do to make her feel better." />
+        <string name="1" value="#b#p9270059##k is standing with a growling stomach. She doesn't want to eat anything else but famous #b#t2022203##k from Local Speciality Shop in Singapore or Kampung? Let's get #b10 \n#t2022203##k for her. \n\n#t2022203# #r#c2022203#/10#k" />
+        <string name="2" value="Nothing taste better than #b#t2022203##k for an empty stomach." />
+        <string name="demandSummary" value="#i2022203:# #t2022203:# #c2022203# / 10&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 6,000&#xD;&#xA;Able to proceed to 'I need Vitamin C' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022203" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="*Grook Grook* Oh no, this is embarrassing. Now, I'm sure you're aware of my hunger. At least it's not gas? Haha!" />
+            <string name="1" value="I don't know why, but I have such a big craving for the famous #b#t2022203##k. A craving for exactly 10 of them. Will there be anyone who can get it for me from Local Speciality Shop in Singapore or Kampung?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Hee hee. Really?! How nice of you to be going all the way to Singapore. Thanks!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh no, I'm going to be hungry for the rest of the day." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yummy! #b#t2022203##k is one of my favorites!" />
+            <imgdir name="yes">
+                <string name="0" value="This is more than I normally eat, but they are just so delicious! Yum yum!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh no, I'm so hungry........" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270059" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022203" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270059" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

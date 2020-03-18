@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Even More Challenging Training 1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in #bKerning City#k says he'll begin the first training. Let's talk to him." />
+        <string name="1" value="He says to hunt 30 #rOrange Mushrooms#k.\nThey can be easily found in #b#m102040000##k. Report back to #b#@9201120:##k in #bKerning City#k upon completion." />
+        <string name="2" value="You've completed #bErvine#k's first training!" />
+        <string name="demandSummary" value="#o1210102# #a282001#" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Dark Lord' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shall we begin the first training course? Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Please hunt 30 #rOrange Mushrooms#k that have been pestering the adventurers.\nYou'll find a lot of them in #b#m102040000##k.\nThey're stronger than you think, so be careful." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know whenever you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you already finished? You're stronger than I thought!" />
+            <imgdir name="yes">
+                <string name="0" value="Congratulations on successfully completing my first training. I just have one advice for you. It's wise to drink potions when your life is in danger. I'm saying that saving potions for later is foolish when you're in a critical situation.\nLife is precious!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You must catch 30 #rOrange Mushrooms#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210102" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28199" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

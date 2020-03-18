@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2028.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting 1000 Cursed Dolls" />
+        <string name="parent" value="Rowen the Fairy and the Cursed Doll" />
+        <int name="order" value="5" />
+        <int name="area" value="30" />
+        <string name="1" value="Rowen asked me one last time, this time #b1000 cursed dolls#k. Why does she need that much? Is she trying to sell them all???" />
+        <string name="2" value="I took down a bunch of Zombie Lupin's on a forest near Ellinia, and collected all #b1000 cursed dolls#k for Rowen. In return, she gave me a nice hat. I've collected so many of those for her, but it looks like Zombie Lupin's aren't decreasing in any way shape or form ... what's going on? Anyway, at least it seems that the fairies may not have such animosity towards humans now ... and that's fine with me hehe ..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <int name="pop" value="3" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000031" />
+                    <int name="count" value="-1000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002021" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1002154" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4330501" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002170" />
+                    <int name="count" value="1" />
+                    <int name="job" value="8200" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1002185" />
+                    <int name="count" value="1" />
+                    <int name="job" value="16400" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1002628" />
+                    <int name="count" value="1" />
+                    <int name="job" value="32800" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, traveler. You're back ... I'm really sorry I keep asking you to gather up #t4000031#. This will be the last time, I promise. Can you please gather up 1000 #b#t4000031##k?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. #o4230101# are being seen at a monkey forest near #m101000000#. Please collect #b1000 #t4000031#s#k. I'll definitely reward you well for your work." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I see ... I thought you could be the one helping us out ... I understand that you're busy, but if you ever have a change of heart, please find me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh my gosh!! It's all 1000 of #t4000031#! Thank goodness. With this, the numbers of #o4230101# will probably go down a bit. This doll, however, continually multiplies itself, so it's no time to relax just yet." />
+            <string name="1" value="Oh yeah, I forgot about rewarding you for your hard work. This is just a token of my appreciation. And we fairies will spread your name all over this world with your good deed. I think you are deserving of hero status." />
+            <imgdir name="yes">
+                <string name="0" value="I have boosted up your fame a little. I am also giving you this hat that we fairies made through magic. Please put them to good use. This is pretty much all we needed. Thank you so much for your help." />
+                <string name="1" value="Maybe we fairies just had a bad perception towards humans. I'm confident that you'll protect this forest for all of us. Well then, so long..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Doesn't look like you have gotten all #b1000 #t4000031#s#k yet. Even at this moment #t4000031# is probably multiplying itself. Please gather up the dolls for me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000031" />
+                    <int name="count" value="1000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2027" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

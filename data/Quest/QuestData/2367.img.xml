@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2367.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Seventh Mission: Eyewitness" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Shiba at The Secret Garden has an urgent message for you. What could it be about?" />
+        <string name="1" value="#bShiba#k, the legendary Dual Blade, assigns your seventh mission. Your mission is to find an eyewitness to the disappearance of the former Dark Lord, but it's going to be difficult since it's been such a long time. Perhaps you should talk to Mr. Pickall, who previously told you about the former Dark Lord..." />
+        <string name="2" value="#bShiba#k, the legendary Dual Blade, assigned your seventh mission. Your mission was to find an eyewitness to the disappearance of the former Dark Lord. Although it was a difficult task, you were able to speak with Manji who was an eyewitness and discover that the former Dark Lord was very close to Tristan. " />
+        <string name="demandSummary" value="Complete the #b'Eyewitness Holding the Key'#k quest." />
+        <string name="rewardSummary" value="EXP 30,000\r\nCan proceed to 'Dual Blade: The Dark Lord's Diary' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's been relatively quiet, hasn't it? Well, you've been issued a new mission. You've probably heard from Yun, but Lady Syl has been investigating the death of the former Dark Lord and she would like to find some eyewitnesses. If there is an eyewitness, the Dark Lord won't be able to deny his crime. Your mission is to find someone who witnessed the death of the former Dark Lord." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="SInce the incident happened awhile back, this task won't be easy. Your best bet is to talk with older people. Perhaps you can try Mr. Pickall, since his business involves dealing with lots of different people and he should be well aware of what goes on. Oh, and you can report the results of this mission directly to Lady Syl." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why are you so nervous? Being nervous isn't going to help you with this mission." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="I heard that you were handling this mission. Were you able to find any eyewitnesses?\r\n#L0##bI met and spoke with Manji in Perion since he knows Tristan, who was a friend of the former Dark Lord. I figured he might know something about the former Dark Lord.#l\n#k" />
+            <string name="1" value="Yes, I suppose that's reasonable. So, what did he say?\r\n#L0##bHe said that the former Dark Lord went to the Cursed Sanctuary upon Tristan's request to join in the battle against Balrog. Unfortunately, they were somehow separated, and by the time Tristan and Manji arrived, the former Dark Lord had already passed away.#l\n#k" />
+            <string name="2" value="So...did he see anything?\r\n#L0##bManji said that when he got there...he was there...covered in blood...#l\n#k" />
+            <string name="3" value="By 'he' you mean...\r\n#L0##bA boy named Jin...#l\n#k" />
+            <string name="4" value="Hmpf! It really was him! Jin was the culprit behind the death... Now, the time has come for vengeance!" />
+            <imgdir name="yes">
+                <string name="0" value="I need to be alone right now. Please leave." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="default">
+                    <string name="0" value="Since the incident happened awhile back, your best bet is to talk with older people. Perhaps you can try Mr. Pickall, since his business involves dealing with lots of different people and he should be well aware of what goes on. Oh, and you can report the results of this mission directly to Lady Syl." />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Since the incident happened awhile back, your best bet is to talk with older people. Perhaps you can try Mr. Pickall, since his business involves dealing with lots of different people and he should be well aware of what goes on. Oh, and you can report the results of this mission directly to Lady Syl." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="Any updates on your mission? I hope to see some results soon." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1056000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2368" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2363" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

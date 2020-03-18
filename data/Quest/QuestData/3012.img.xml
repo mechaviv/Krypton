@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3012.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Word from the Assistant" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="9" />
+        <int name="area" value="33" />
+        <string name="1" value="Spiruna's assistant quietly tells me that at this point, nothing will bring her back to her senses, unless I bring an item called #bFairy Dust#k, the only item that'll restore the cracked black crystal to its original state. #bKriel the Fairy#k of Orbis Department Store may have it." />
+        <string name="summary" value="I should go see Kriel the Fairy at the Orbis Department Store." />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;To Acquire the Fairy Dust&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3013" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, #bSpiruna's Black Crystal#k is cracked! She needs it to breathe life into all of her spells. I understand you may have wrongfully been accused of this, but right now nothing will calm #bSpiruna#k down. There's one item, though, that can fix the cracked Black Crystal. If you can get me that, Spiruna won't be so mad after that..." />
+            <string name="1" value="It's an item called #b#t4031051##k. It's a collection of dust the fairies create whenever they flap their wings. That's the only thing that can restore the #b#t4031050##k to its original state. So many people have been looking for it these days that it may not be easy to obtain. Anyway, look for #bKriel the Fairy#k at the Orbis market and ask her for it." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="With #b#t4031051##k, the #b#t4031050##k can be restored to its original state. Then, and only then, Spiruna may calm down and talk to you. Anyway, look for #bKriel the Fairy#k at the Orbis market and ask her for it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3011" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

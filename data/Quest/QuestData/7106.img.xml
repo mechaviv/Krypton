@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="7106.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Medal" />
+        <int name="area" value="37" />
+        <string name="0" value="If I lost the Ludibrium Medal, then I better go see Mr. Bouffon. " />
+        <string name="1" value="I told #rMr. Bouffon#k that I lost the Ludibrium Medal. He told me he was going to give me another chance and that I should go see #rFlo#k immediately." />
+        <string name="2" value="I was able to regain the lost Ludibrium Medal from Flo. I should seriously take care of Papulatus this time." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031172" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, did you lose the Ludibrium Medal by any chance? That's a rare, precious item, and without that, you won't be able to enter the center of the clocktower. Oh no... well, are you willing to take one more crack at it?" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. I may not be blessed with many abilities, so you may need to talk to #bFlo#k, who's in Path of Time." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to take another crack on the challenge. It's not easy defeating Papulatus." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I also heard from Mr. Bouffon about the medal. I'll give you the one that I'm wearing right now, then." />
+            <imgdir name="yes">
+                <string name="0" value="How do I have this Ludibrium medal? there's a way...there's a way... kind of like magic. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#bFlo#k is at the entrance towards #bWarped Path of Time #k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041023" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="7103" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031172" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="4320" />
+        </imgdir>
+    </imgdir>
+</imgdir>

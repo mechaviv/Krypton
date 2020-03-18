@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6224.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Huckle's Spirit Pouch" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#p2012017##k says that #b#p2030012##k will know how to make the spirit's pouch. #b#p2030012##k seems to be a real expert on magical ingredients." />
+        <string name="1" value=" #b#p2030012##k told me that he would make #b#t4031468##k if I bring all ingredients to him.\r\n#i04000144##t04000144# #b#c04000144#/50#k\n#i04000146##t04000146# #b#c04000146#/50#k\n#i04000148##t04000148# #b#c04000148#/30#k\n#i04006001##t04006001# #b#c04006001#/30" />
+        <string name="2" value=" After I gathered all the ingredients, #b#p2030012##k made the spirit's pouch for me." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000144" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000146" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4006001" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031468" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value=" How is it going with your study of element-based principles of magic? I'm expecting a lot, as magic and science can make something special. What are you doing here?\r\n#b#L0#I needs #t4031468# to complete my magic.#l" />
+            <string name="1" value=" The pouch of spirit? I know how to make it. But it's hard...can you gather the ingredients?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" I knew it'd be a piece of cake for you. Gather #b50 #t04000144#, 50 #t04000146# , 30 #t04000148#, 30 #t04006001##k. That'll do the trick!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... I'm not interested in your single-principle based magic. I'm sorry." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You gathered everything. I'm ready to make the pouch of spirit...Hocus-Pocus-Focus! Ok! #b#t4031468##k is done. Here you go!" />
+            <imgdir name="yes">
+                <string name="0" value=" It's not easy magic to learn. It's good to see you try so hard. I hope that you succeed!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" #b50 #t04000144#, 50#t04000146# , 30#t04000148# , 30#t04006001##k. You need all these components to make the pouch of spirit." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000144" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4006001" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000146" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6222" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031468" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="212" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

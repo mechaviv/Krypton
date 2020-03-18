@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3304.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alcadno Cape" />
+        <string name="parent" value="Joining Alcadno" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="I received #t4031704# from the broker. I was told to give it to #p2111001# and answer the questions in the order that the broker told me in order to become a member of Alcadno... I better remember the sequences that #p2111007# gave me when I go see #p2111001#." />
+        <string name="2" value="After a number of tough, tough questions, #p2111001# finally accepted me as a member of Alcadno. Flashing his trademark glass eye as he gave me #t1102136#, the head of the Alcadno Society may look intimidating, but he's a really nice person." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031704" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102136" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031704" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Haha... good thing you came. Like I promised, I came up with a report from an alchemist I'm familiar with. It's a report that I acquired via jewel trading, so handle it with care. That said, the interview with the head of Alcadno is still much more important..." />
+            <string name="1" value="#p2111001# believes more in first impressions than the report. You'll need to answer his questions well in order to become a part of Alcadno. Don't worry about it, I have also come up with answers needed for the interview. The jewels you gave me cover the cost of the answers, too." />
+            <string name="2" value="What do you think? If you are interested in seeing #p2111001# right now, then I'll give you some information that may help you on your interview." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, then remember these three words. #bLidium, Grendel the Really Old, and Alcaster#k. The questions Maed will ask you are related to these, so... make sure to remember these three words IN ORDER." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't think you are ready yet. You don't have to get too nervous by it. #p2111001# is a much easier person to talk to than you think." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Are you here to join Alcadno? I don't know if you truly know what Alcadno is about. Alcadno may be one of the groups that studies alchemy, but... we are not only creating new things through magic, we are formulating ways to incorporate machinery into the union of magic and science. Do you still want to join Alcadno?\r\n#b#L0#Yes, I want to join Alcadno.#l" />
+            <string name="1" value="Hmph. Another one willing to enter the treacherous, abandoned path of science. Desire alone will not bring you in Alcadno, however. The report alone will not cut it, either. True skills of alchemy cannot be determined by looking at a document. I will be asking you some questions to determine whether you are qualified to become an Alcadno or not. Understand?\r\n#b#L0#Understood.#l" />
+            <string name="2" value="Alcadno is always looking for ways to turn machines into a form of life. These efforts have yielded multiple forms of mechanical dolls, ready to be tested. Dolls like Roid, Neo Huroid, etc.. Here's the question... which ore is used as the source of power to get the mechanical dolls to work?\r\n#L0# #bBlack Crystal\r\n#L1# Silver\r\n#L2# Summoning Rock\r\n#L3# Lidium" />
+            <string name="3" value="Machine dolls that use Lidium as the source of energy can be controlled by the Magic Pentagram. In order to make the basic equation that allows the Pentagram to control the movements of the machine dolls, then what would be the best book to use for this? If you have ever studied as an alchemist, then you should know this in an instant.\r\n#L0# #bBasic Mana by Grendel the Really Old\r\n#L1# Robeira's Introduction to Magic\r\n#L2# Jane's Guide to Alchemy for the Beginners!\r\n#L3# Alcaster's Compilation of Alchemy&lt;Beginner&gt;" />
+            <string name="4" value="Name this great alchemist who created the 1st Magic Rock of its kind, who also built the foundation for the Flying Ship, as well as proving the extent of the effect Mana provides on life. He was also the 3rd president of the Magatia Alchemy Society...\r\n#L0# #b Gritto\r\n#L1# Dr. Kim\r\n#L2# Alcaster\r\n#L3# Betty" />
+            <string name="5" value="..you are much smarter than I thought. Here's the last question... unlike Zenumist, Alcadno's area of studies is not yet fully accepted by the public, which means you'll run into a lot of obstacles along the way. Even with all that, are you still confident enough to conduct studies with the pride of Alcadno in your heart?\r\n#b#L0#Of course.#l" />
+            <string name="6" value="Hmm... fine. From here on out, you are #ban alchemist of Alcadno#k... Whatever adversities you may face from here on out, please fight through it for the good of mankind." />
+            <imgdir name="yes">
+                <string name="0" value="As a member of Alcadno, if you want to work with other members, it's imperative that you don the Alcadno Cape. Alcadno Cape is the best way to let everyone know of your allegiance." />
+                <string name="1" value="Even if you run into a situation where you want to deny being an Alcadno, please do not discard the cape. The only way you'll be accepted as an Alcadno is #bif you wear the cape#k." />
+                <string name="2" value="This cape may not be much for now... that's because you're still a novice alchemist. Once you start making some valuable contributions to Alcadno... you'll be rewarded accordingly." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="4" />
+                    <string name="0" value="The Black Crystal has nothing to do with machines. It's a mineral that can only be controlled with a constant source of power from humans. That's incorrect." />
+                    <string name="1" value="That's incorrect. Silver has the power of instilling a certain spell, and allowing it to be accessed for later purposes. It's also used for various purposes with mechanical dolls, but it's used to control mana, not as a source of power." />
+                    <string name="2" value="The Summoning Rock is used to summon a target to wherever you are. It's not used as a source of power for the mechanical dolls. It just doesn't have enough Mana to fully operate it. I'm sorry, but that's not the right answer." />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Robeira's book is good, but it's such a difficult book to read that most of the experienced alchemists can't figure it out, either. It's the wrong answer." />
+                    <string name="2" value="The book by Jane seems more like a novel than a scholastic book... that's not the right answer." />
+                    <string name="3" value="Wrong. Alcaster's book is great, but when he wrote this book, the mechanical studies conducted by Alcadno didn't even exist." />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="3" />
+                    <string name="0" value="You know... Gritto? You don't look like someone that would know such a great being... anyway, he's not it." />
+                    <string name="1" value="Dr. Kim...? That's actually a name? Very peculiar, indeed... no, he's not it." />
+                    <string name="3" value="Betty? Is she a friend of yours?" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #p2111001#? You remember the answers to his questions, right? If so, then what are you waiting for? Go make your way to the #bAlcadno Society#k. " />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What brought you here? Do you know what the name Alcadno stands for? Do you know what you are running into?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost #t4031704#? Oh no... of course, I have another copy of the report, but... come on, take care of your things! You're only paying me 20,000 mesos... that's not enough to cover the cost of replacing items you have lost. I'll give you another copy, but this is it." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031704" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3303" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

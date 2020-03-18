@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22543.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where's the Book? 3" />
+        <string name="parent" value="Where's the Book?" />
+        <int name="order" value="3" />
+        <int name="area" value="7" />
+        <string name="1" value="#p1012101# says that the book seemed to difficult for her to read and so she gave it to #p1012110#. Go to #m100010000##k and meet #b#p1012110##k." />
+        <string name="2" value="#p1012110# says that she sent the book to her Mom because she thought that her Mom would need it. She suggests that you meet Dr. #b#p1032104##k in #b#m101000000##k. Back to #m101000000#? You've made a full circle!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Evan, are you here on an adventure? Huh? A book? Oh, you mean #t4161050#. I'm sorry but I've given it to someone else because it was too hard for me to read. I feel bad because #p1002001# went out of his way to send it to me. Who has the book now, you ask?" />
+            <string name="1" value="I gave it to #p1012110#. I don't know if a kid like #p1012110# can understand anything written in that book, but oh well... #p1012110# should have it, so go see #b#p1012110##k in #b#m100010000##k if you really need that book." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="In any case, I think you've changed a lot, Evan. I don't mean that in a bad way. It's a compliment. You seem more confident and mature... You were always a bright one, but more so now." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm? It isn't all that important that you find the book? Then why don't you hang out with me for a bit?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Who are you? I may be bored, but I won't play with a stranger. What? A book? Hm... #t4161050#? I don't have it. I gave it to my mom because I thought she'd need it." />
+            <string name="1" value="My mom? Do you know Dr. #p1032104# in #m101000000#? She conducts research on organisms and she's interested in Dragons. If you really want to find the book, go to #b#m101000000##k and talk to Dr. #b#p1032104##k." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hm... Haven't you gone to #b#p1012110##k yet? Ah, you probably don't know #p1012110# very well. She's the kid that was brought  to #m100000000# not too long ago. Maybe it's because she doesn't have any friends. Whatever the reason, she's always sitting alone in #b#m100010000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012110" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22542" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

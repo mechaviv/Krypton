@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4947.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Lost Girl" />
+        <int name="area" value="50" />
+        <string name="0" value="There's a girl wandering around the Prendergast Mansion.  I wonder what she's looking for? " />
+        <string name="1" value="Sophilia is looking for her favorite toy - the very first doll her father made for her when she was a child.  She seems to have been looking for it for quite awhile.  She mentioned something about Ludmilla having a history of hiding her toys.  If I can find Sophilia's doll for her, maybe I can put her spirit at ease." />
+        <string name="2" value="I gave Sophilia back her favorite doll.  She was so happy to get it back that she gave me some of her favorite candy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031767" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022245" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello.  You wouldn't have seen my doll lying around anywhere would you? \r\n\r\n#L0##bA doll?  There are tons of dolls in this house!#l#k" />
+            <string name="1" value="&lt;Sigh&gt;  I know.  My daddy makes them.  He's very famous for his toys.  He's always making them up in his workshop at the top of the house.  He made a bunch of them that look like me.  &lt;Blushes&gt;  I know, it's a little embarrassing.  But I'm not looking for just any doll... I'm looking for my favorite!  I've been looking all over the house for it. \r\n\r\n#L0##bWhat does your doll look like?#l#k" />
+            <string name="2" value="It's the first one that Daddy ever made for me.  Her name is Annabelia.  She's not as fancy as some of his new dolls, and I haven't had a chance to clean her so she might be a little dirty.  Daddy keeps making fancier and fancier dolls.  But to me, Annabelia's very special.  I'm old enough to know she's just a doll but she's been my friend since I was a baby.  I... I feel like I've been looking for her forever.  If you find her, would you mind returning her to me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you!   I've tried to ask grown-ups to help me look for her but no one has... so I've just been looking by myself.  Daddy's always too busy with his toys,  and Ludmilla doesn't like me much. &lt;frowns&gt;  I try to stay out of her way but she always finds something to get mad at me for.  " />
+                <string name="1" value="Sometimes, I think she secretly takes my toys away to punish me ? even when I've done nothing wrong! - though she always denies it.\r\nMaybe Edmunds might have seen Annabelia... though Ludmilla keeps him busy " />
+                <string name="2" value="&lt;sigh&gt; I know this house is big but I'm sure someone's seen it.  I don't like the idea of Annabelia lying around somewhere, all by herself.  I hope I can find her soon..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess I'll just keep looking for her by myself then.  &lt;sigh&gt;  I've been looking for her for so long... so long..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You found her!  Thank you!  &lt;hugs her doll&gt;  There you are, Annabelia!  I promise I'll never lose you again!" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for finding my doll. I don't know where she was all this time. It's good that she's back now." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you found her yet?  No?  Please keep looking!  I've been looking for her too.  I miss her so much." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201078" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031767" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201078" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4941" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

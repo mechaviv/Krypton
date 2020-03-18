@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3920.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Recovering the Book The Little Prince 2" />
+        <string name="parent" value="Recovering the Book The Little Prince" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="You ask #p2101006# about the fox, but he didn't seem to know what you were talking about. You were at loss of what to do, until you realized something and promised to be #p2101006#'s friend. He smiled and gave you the book Little Prince. Now you should give this to #b#p2040052##k." />
+        <string name="2" value="When you told #p2040052# you promised to be friends with #p2101006#, he let out a sigh of relief and thanked you for your efforts. Hopefully this straightened out the distorted part in the book #p2101006#. It feels weird being a part of a folk tale..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031591" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031591" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020012" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I've sat in this desert for a long time, and no one else has talked to me except you... And no one has offered to help me as much as you...\r\n#L0# #b Have you seen a fox?" />
+            <string name="1" value="A fox? I've seen some rabbits and #o2100108#s, but not a single fox... Why do you need a fox? For you, I'll do anything to help.  \r\n#L0# #b Nah, I don't need anything. Aren't you lonely out here by yourself?" />
+            <string name="2" value="I am lo-- actually, no, I am not. I'm not, since you're here with me. Maybe I arrived in this desert just to meet someone like you... I do feel like that sometimes.  \r\n#L0# #bHave you ever thought of returning to where you came from?" />
+            <string name="3" value="I don't know... I do want to return home...but...that means I won't be able to see you anymore. The only reason this desert is even remotely seem beautiful to me is because you're here. \r\n#L0# #b Am I your friend?" />
+            <string name="4" value="Friend...? Is this what friendship is like...?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Honestly, this is the first time I've ever made a true friend. A friend... I like...being friends with someone. I'm so happy. You ARE a friend." />
+                <string name="1" value="As a way to celebrate our friendship, I'll give you this book. I feel like you need it for some reason. Hopefully this will help." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="A friend... Can a rose be a friend?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you got the storybook of #p2101006#! How is #p2101006#? Was he with a fox? What? He gave you the book after you told him you want to be his friend? Ah, so that's how the story found its equilibrium. I'm glad that happened." />
+            <imgdir name="yes">
+                <string name="0" value="You acted as the fox to #p2101006#, so the story of #p2101006# has straightened its course. Thank you so much. This will also help put #m222020000# back on course." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Someone out there needs this book. I can feel it. You should give the book to that person." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I don't think you've gotten the #bstorybook of #p2101006##k yet. Please observe #b#p2101006##k and discover what he's missing... If you can fill the void, he'll give you the storybook of #p2101006#." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh... You lost the book... That's okay. I'll give you another one. We're friends, right?" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040052" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031591" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3919" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="32" />
+        </imgdir>
+    </imgdir>
+</imgdir>

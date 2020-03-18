@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20603.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A New Skill for Wind Archer" />
+        <int name="area" value="15" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="If I think long and hard about #p1101002#'s words, that means I may be able to learn a new skill from #b#p1101005##k..." />
+        <string name="1" value="#p1101005# told me there is indeed a new skill, but it's dangerous for me to learn the skill right now based on my level. He also proceeded to challenge me to prove that I deserve to learn the new skill. To prove it, I must head over to #m130020000#, enter #bthe 3rd Drill Hall#k, and bring back #b#t4032121##k... \n\n#i4032122# #t4032122# #b#c4032122# / 1#k" />
+        <string name="2" value="I was able to defeat the boss monster and bring back #t4032122#. #p1101005# told me that I deserved to learn the new skill and taught me something called the Hurricane." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032122" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="13111002" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="20" />
+                    <imgdir name="job">
+                        <int name="0" value="1311" />
+                        <int name="1" value="1312" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="...What is it? A new skill...? #p1101002# must have spilled this secret. I am not surprised he did that. Yes, there is a new skill out there, but I believe your level is too low for that. It's just too dangerous.\n#b#L0#I still want to learn the skill.#l\n#L1#Since you say it's too dangerous......#l\n#k" />
+            <string name="1" value="...If you really want the skill, then there is a way. You will have to show me that you are capable of handling this new skill. It will not be easy, and it may even be life-threatening. Do, do you still want to do it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="...Sometimes, a risky proposition like this can do you a huge favor." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The test is set up at #bthe 3rd Drill Hall#k of #m130020000#. Take the test, and bring back #b#t4032122##k with you. If you can do that, then I will teach you the new skill." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...Yes, it was I who rejected it, but I have to say I am quite disappointed. I did not want to see you turn into a coward like that." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You managed to successfully bring back #t4032122#. I knew you wouldn't let me down. Okay, now that you have proven me that you are worthy of this new skill, here it is." />
+            <imgdir name="yes">
+                <string name="0" value="A news kill for the Wind Archers, #bHurricane#k. Please use this only when necessary." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you were unable to acquire #b#t4032122##k. Head over to #m130020000#, enter #bthe 3rd Drill Hall#k, take the test, and bring back #t4032122# with you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032122" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20600" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="100" />
+            <imgdir name="job">
+                <int name="0" value="1311" />
+                <int name="1" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

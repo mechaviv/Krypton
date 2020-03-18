@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28297.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Butler: &quot;The Trap&quot;" />
+        <int name="area" value="50" />
+        <string name="0" value="Things might seem rather ominous, but you must finish what you've started. Let's see what the butler, who is in the Foyer, has in mind. " />
+        <string name="1" value="It looks like you're fighting a girl ghost. And you also need to collect #r20 Cursed Dolls#k. You could very well be dreaming…" />
+        <string name="2" value="Yes, you did it! The ghost has been vanquished and you collected #r20 Cursed Dolls#k! Perhaps you've finally arrived at the end of this saga." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000521" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3010085" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Why hello there! It's nice to see that you're still alive. Yes, I decided to clean up the dust around this place. Joe is still paying me after all. This is the only untidy room left, so you've found me at the right place. Fair enough. I have good news and bad news. What would you care to hear first?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Very well. Let's start with the bad news. There is a monster, a ghost that is lurking around in some corner of this house. You will either be a conqueror or victim, and God forbid you end up the latter. The good news is that if you defeat this ghost and collect 20 Cursed Dolls, you shall receive a chair as a reward. That's right, a chair. What a thing worth risking your life for, no? Oh, and by the way, it is imperative that you join a party to assist you in your adventure. You certainly won't make it back alive any other way. Go on now, brave fighter!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose a little flake like you wouldn't have had the mental fortitude to complete the task anyhow. Suit yourself." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So, were you able to find anything in the Secret Room?" />
+            <imgdir name="yes">
+                <string name="0" value="Would you care to know the truth, dear #b#h0##k? That ghost wasn't just any ordinary ghost. It was the ghost of Olivia...the daughter of Master Jonas! She was the neglected, forgotten child. The poor girl, being spurned, returned to the land of the living to seek revenge on her father. After all, she had died of starvation. She starved to her very grave. How can you let your own child die of hunger? " />
+                <string name="1" value="But upon her return, she found Master Jonas and his family had long been dead, so she directed her wrath instead to all of Maplekind. From my understanding, she had composed all sorts of traps. But thanks to you, we no longer have to fear. " />
+                <string name="2" value="Anyway, here is your reward, as promised. It is #bOlivia's Chair#k. Sit on it, give it away, or use it for firewood. Whatever the case, I'm just glad you didn't become a victim of this cruel twist of fate. What a tragic story. It really is." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I will give you Olivia's Chair if you give me #r20 Cursed Dolls#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201143" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000521" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201143" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28315" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="28298" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009112500" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9951.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="...Pirates!?" />
+        <int name="area" value="50" />
+        <string name="0" value=" Lately I see a strange group of people wandering all over the Maple World. They display confident looks with weapons I have never seen anywhere else...and a scent of the ocean to boot. Who are they really? I better ask #b#p9010010##k for more information on these strangers." />
+        <string name="1" value="#p9010010# was making quite a scene about ''them'' having finally arrived. The &quot;they&quot; she referred to was the #bPirates#k! Cassandra proposed that if I was interested in the Pirates, then she'll allow me to experience a small dose of that. I'll just have to prove it to her that I am indeed interested in the Pirates... I better answer the #bquestions#k Cassandra asks and earn #b#t2210010##k!" />
+        <string name="2" value=" I received #b#t2210010##k from #p9010010#. With this, I may be able to experience the mysterious skills of the Pirates!  I should also stop by the Nautilus, near Hensys and see them for myself!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="They're here! They're here! They have finally returned to the Maple World! What...? Are you asking who &quot;they&quot; are?! You still don't know? THEY, are the #bPirates#k!!!" />
+            <string name="1" value="#bShe#k is now back in Victoria Island, after years of traveling the ocean as a Pirate, in search of something! She must have finally gotten over her personal agony that have haunted her for the longest time. If the Pirates can help out the Maple World, then it will be awesome! Haha... just thinking about it gets me excited!" />
+            <string name="2" value="The newest set of heroes to grace the world of Maple, the Pirates! You won't be able to ignore their presence. If you are interested in these Pirates, then... I can offer you an opportunity to experience one of their #bamazing skills#k. What do you think? Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Then prove it to me that you are interested in Pirates. I will give you #b4 questions on Pirates#k. If you can answer all four of them right, then I will give you #b#t2210010##k. Talk to me when you are ready to answer the questions." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... do not fear them. Do not keep your guards up against them, either. They will soon be your friends, your colleagues... or you might become them!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q9951e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2210010" />
+                    <int name="count" value="0" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2210011" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008111800" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

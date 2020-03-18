@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51212.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="United Against Alien Scum!" />
+        <int name="area" value="50" />
+        <string name="0" value="Talk to #b#p9250134##k about the Demoralizing Aliens Project proposed by OSSS." />
+        <string name="1" value="Find the friend #b#p9250134##k has chosen and raise their fame.\r\nIf the friend has disappeared, forfeit the quest and start again." />
+        <string name="2" value="You raised the fame of a friend in Maple World and received a medal." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Have you raised the fame of the friend assigned to you?" />
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You must raise the fame of the friend we designated for you. If the friend has disappeared, please forfeit the mission and talk to me again." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <string name="endscript" value="q51212e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250134" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51211" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q51212s" />
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

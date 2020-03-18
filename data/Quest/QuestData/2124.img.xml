@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2124.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Supply from the Sand Crew" />
+        <string name="parent" value="Assignment of a Sand Crew" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="I ran into a stray dog #p2012019# at #m200000000#. #p2012019# was carrying a small box around its neck, and the box had a message saying #b'To #p2101002# of #m260000000#...'#k." />
+        <string name="2" value="I gave the box that was hanging around #p2012019#'s neck safely to #p2101002# of #m260000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031619" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Bark! Bark bark! (There seems to be a small box around Moppie's neck.)\r\n#L0# #bExamine the box.#l" />
+            <string name="1" value="Would you like to remove the box from Moppie's neck and examine it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The box contained a phrase.\n\n#b'To #p2101002# of #m260000000#...'#k" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Bark bark-!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Bark bark-!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Don't you have something for me ...? The item that you got from #p2012019# of #m200000000#." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Bark bark-!(Moppie picked up a small box from somewhere.)" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031619" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2124e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012019" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2123" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3631.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Storybook on The Kids That Became the Sun and the Moon storybook" />
+        <int name="area" value="37" />
+        <string name="0" value="I'm sure I received the storybook from #p2071008# after helping him out. Where did it go? Should I go see Haetnim again?" />
+        <string name="1" value="#b#p2040052## from Helios Tower Library has requested me to get #b#t4031270##k for him. Hmmm ... I'm pretty sure I received it the last time I helped Haetnim out, but I can't seem to find it. After discussing the matters with Haetnim, he promised to give me the storybook if I buy #b5 #t2020001#s#k for his hungry sister.\n\n#t2020001#  #b#c2020001##k / 5" />
+        <string name="2" value="I gave Haetnim 5 #t2020001#s just as he requested to reacquire #t4031270#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아 절 도와주셨던 분이군요. 이제 곳 밤이 되면 호랑이가 내려올텐데 당신도 안전하게 피하는 것이 좋을거에요. 그런데 무슨 일로 다시 오셨나요? 하실 말씀이라도 있으신가요?" />
+            <imgdir name="yes">
+                <string name="0" value="제가 드린 동화책을 잃어버리셨다구요? 어쩌다가 잃어버리셨어요. 다행히도 저한테 한권이 더 있답니다. 제 부탁을 들어주시면 동화책을 드릴게요. 동생이 너무 배고파해서요. 동생에게 줄 #b#t2020001# 5개#k만 사와주세요. 그런데 어쩌죠...저한테는 돈이 없는데..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="동화책이 필요하다고 하시지 않았나요?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020001" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031270" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, you're the one that helped me before. It's going to be dark soon, and tigers will be roaming around the streets, so I suggest you hide in a safe place. By the way, how can I help you? Is there anything you want to tell me...?" />
+            <imgdir name="yes">
+                <string name="0" value=" Did you lose the storybook that I gave you? How did you lose it? Thankfully, I have an extra copy with me, but I'd like for you to do me a favor before I hand you the other copy. My brother seems to be really hungry right now, so if you can get me #b5 #t2020001#s#k for him, then I'll promise to give you the storybook. Oh no! I'm so sorry, but I don't have money with me right now ... " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Didn't you tell me you needed the storybook?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you very much. My brother will surely appreciate it." />
+            <imgdir name="yes">
+                <string name="0" value="Here, please take the storybook. I need to get ready here before the tiger comes." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh my gosh, my brother keeps asking for some chicken!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2020001" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3629" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3630" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031270" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

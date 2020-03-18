@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21747.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Catch the Shadow Knight!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You passed #p2091007#'s test. You should now talk to #b#p2091007##k in #b#m925020000##k and find out more about the Seal Stone. You can get there by going through the back alley that #p2091005# told you about." />
+        <string name="1" value="According to #p2091007#, the Seal Stone of #m250000000# is stored in a place called #m925040100# and the entrance is somewhere between the pillars of #m250000100# and #b#m250020300##k. Find the pillar that has &quot;Entrance&quot; engraved on it and say the password to enter the premises. The password is #bActions speak louder than words#k. You'd better enter #m925040100# and stop #r#o9300351##k, then return to Mu Gong.\r\n\r\n#o9300351##r #a217471##k" />
+        <string name="2" value="You defeated #o9300351# in #m925040100#, but the Seal Stone of #m250000000# was taken from you by the Gentleman of the Black Wings. It seems to be a recurring pattern. When you told #p2091007# that the Seal Stone was stolen, he admitted that he himself did not know the true use of that stone and reassured you that all is well in #m250000000# even if the Seal Stone has been taken." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091007" />
+            <string name="endscript" value="q21747e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300351" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21746" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21747s" />
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

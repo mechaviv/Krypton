@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3614.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Kong Ji's Rice Wine" />
+        <int name="area" value="37" />
+        <string name="0" value="Apparently, the place that makes the best Rice Wine in Korean Folk Town is Kong Ji's..." />
+        <string name="1" value="I went to Kong Ji's tavern because apparently her place was the best at making rice wine in Folk Town. She asked for 3 Three-Tailed Foxtails and 1,000 mesos in return for some rice wine.\n\n#t4000172# #b#c4000172##k/3" />
+        <string name="2" value="I gave Kong Ji 3 #t4000172#s and 1,000 mesos for 5 bottles of rice wine." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000172" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022052" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Long time no see~ have you made your way around town?\r\n#L0# #bCan I get some Rice Wine?#k" />
+            <string name="1" value="Rice Wine? Well, I have some leftover from my stepmom. My stepmom makes a very delicious Rice Wine, but I seriously cannot give them to you for free; she'll be very mad with me for that. She won't be mad, however, if you bring her something that she has been looking for." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="My stepmom really likes foxtails, especially the ones of the Three-Tailed Fox. I heard it's very furry and warm, perfect for cold weather. If you can get me #b3 tails of the Three-Tailed Fox#k and #b1,000 mesos#k, I'll give you the rice wine, and I don't think my stepmom will be too angry with it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you here because you needed Rice Wine?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh you really got it! So this is the tail of the Three-Tailed Fox. It's so soft and smooth. Thanks, and here's the rice wine. I'm sure my stepmom will love this." />
+            <imgdir name="yes">
+                <string name="0" value=" If you need more rice wine down the road, please come see me~! Just know that I can only make it #bonce#k a day..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Bring me 3 tails of Three-Tailed Fox and I'll give you some Rice Wine." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000172" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3621" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="37" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

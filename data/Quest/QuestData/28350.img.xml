@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28350.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Fifth Gift for the Dragon Master" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="When you reach Lv. 75, #p9010010# starts talking to you..." />
+        <string name="1" value="#p9010010#, in a sincere voice, congratulates you for reaching Lv. 75 and asks you to reach Lv. 80 to receive the final scroll. Go to town and meet with #p9010010# when you reach Lv. 80." />
+        <string name="2" value="You received a scroll from #p9010010#. #p9010010# says that she has given you everything she could and that all that is left is for you to work hard and believe in yourself." />
+        <string name="demandSummary" value="Reach Lv. 80" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040229" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow... You really did it, Evan. You really reached Level 75! Truth is, I didn't actually think you were going to do it... Luckily, I have one more scroll prepared for you anyway. When you reach Level 80, I will give you another really awesome scroll. Watching someone grow really warms my heart!" />
+            <imgdir name="stop" />
+            <imgdir name="no">
+                <string name="0" value="Hmm... You refuse? Please rethink your decision." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Although I've been encouraging you and cheering you on, I really didn't think you were going to do it this time. But you did it! Although I was mistaken about you, I don't feel bad at all." />
+            <string name="1" value="This is the last scroll that I've prepared for you. I really didn't think I would be giving you this. Hehehe, you really are amazing!" />
+            <imgdir name="yes">
+                <string name="0" value="I've given you everything that I could. What's left is for you to do on your own. But I'm not worried. From what I've seen you do so far, I know that you will only get better and better!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Your Level is still a bit low. When you reach Level 80, you can receive a special gift that will only be given out during the event period. The event ends on May 4th, so be sure to hurry." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <int name="level" value="80" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28349" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+            <string name="end" value="201005050000" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

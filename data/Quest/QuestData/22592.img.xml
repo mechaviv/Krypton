@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22592.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Unavoidable Truth" />
+        <int name="area" value="7" />
+        <string name="0" value="There is a lot that #p1013000# doesn't know because he was not able to enter #p1205000#'s memory. Tell #b#p1013000##k what you saw and heard." />
+        <string name="1" value="Was it wrong to help the Black Wings who's mission was to revive the Black Mage? #p1205000# says that he just can't believe it and wants to look back at all the missions you did for the Black Wings. #bGo to Orbis, El Nath, and Ludibrium to ask about the results of your actions.#k. \r\n\r\n#y22593# #b(#u22593#)#k\r\n#y22594# #b(#u22594#)#k\r\n#y22595# #b(#u22595#)#k" />
+        <string name="2" value="Everything you did seems to have helped the Black Mage's goals. None of it helped the townspeople at all. In fact, your actions have caused only problems. How could this be? All the things you did for Maple World were for naught." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <int name="nextQuest" value="22596" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Master, master! I don't understand! You and that Dragon...#p1205000# just stared at each other with blank looks and then started talking. He said something about sending you into his memory. Did you really see his past?\r\n#L0##bYeah... I heard a coversation between #p1205000# and #p1205000# from hundreds of years ago.#l\n#k" />
+            <string name="1" value="What happened and how is this related to the Black Mage? Isn't the Black Mage the great person that #p1013203# said needed to be revived for the good of Maple World? Tell me what happened!\r\n\r\n#L0##bThe Black Mage was an evil being who tried to conqure Maple World hundreds of years ago. He realized the great power that the Onyx Dragons held and told them he would complete their incomplete spirits if they betrayed their masters and follow him." />
+            <string name="2" value="What? That's impossible! A Dragon and his master are one! There is no way that they would betray their masters!\r\n#L0##bYes, the Onyx Dragons did not betray their masters. They loved humans and hated the Black Mage, who was evil incarnate. They knew that a spirit completed by the Black Mage would also become evil. That is when the Black Mage...destroyed the Onyx Dragons.#l\n#k" />
+            <string name="3" value="How...how could that be? That's why my entire race is extinct?! That's why #p1205000# is trapped in ice...?\r\n\r\n#L0##bAfter the Onyx Dragons were annihilated, #p1205000# and his master, along with the other heroes, fought the Black Mage to the end. Ultimately, the Black Mage was sealed away and Maple World regained its former peace. However, #p1205000# was trapped in ice by the Black Mage's final curse.#l\n#k" />
+            <string name="4" value="So everything was caused by the Black Mage? Then what about all the things that we've been doing? I thought they were all for the good of Maple World! Were we wrong? Master! Let's go find out!\r\n" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="The things we did in #m200000000#, the things we did in #m211000000#, and the things we did in #m220000000#... All the missions the Black Wings gave us...\r\n" />
+                <string name="1" value="Let's look at the consequences of what we've accomplished. #bLet's go to each town and ask#k. If we were tricked by the Black Wings... I won't forgive them!\r\n" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="The Growth Accelerant that we thought would make the crops grow caused problems for #m200000000# by making the #o4230105#s grow abnormally." />
+            <string name="1" value="We thought we were helping people by eliminating Zombies, but we were only gathering the material that would used to trade for a stolen #t4032471#." />
+            <string name="2" value="We defeated a monster who was guarding an important treasure in #m220000000#, causing the treasure to get stolen." />
+            <string name="3" value="This confirms it. The Black Wings were only using us. They made us perform evil tasks so that they could revive the Black Mage! I can't forgive them!" />
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Let's check the results of the three missions we were given by the Black Wings. We can go to each town and ask the townspeople. We have to #bcheck #m200000000#, #m211000000#,  and #m220000000##k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22593" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="22594" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="22595" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22591" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

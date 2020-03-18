@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6230.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maple marble" />
+        <string name="parent" value="Chaser of Darkness" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" I received #b#t04001110##k in the basement of the Ludibrium Castle. A letter with no name. I wonder who sent it... Let's go to the Cloudy Balcony, maybe there'll be some answers there..." />
+        <string name="1" value=" When I got to Cloud Balcony, I was forcifully transported to somewhere.  The man there seemed like a familiar thief I had seen before.  But I couldn't put my finger on who he has exactly....He just demanded me to bring him #b#t04031456##k. Who is this guy?  Why is he telling me to do this? I feel like I should go up to the rooftop of Guild Headquarters where I can get a maple marble.... \n\n#i04031456##t04031456# #b#c04031456#/1#k" />
+        <string name="2" value=" #b#p2041028##k spoke of #b#p2081400##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031476" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001110" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="800000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031456" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="How foolish of you to come to this place! You didn't even suspect a trap! You know you aren't good enough yet to survive! \n\r#L0# #b What do you mean?#k" />
+            <string name="1" value="You know the maple leaves on the rooftop of Guild HQ? When it shines, you have to put the marbles there. Then you can put maple leaves into the marbles. Bring them to me! \n\r#L0# #bWhy do I have to do this?#k" />
+            <string name="2" value="Because I'm the one who can give you what you want. You don't seem to understand. Are you willing to do what I asked of you?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" I thought so. I'm the only one who can give you what you want. Come back with #b#t04031456##k. You'll get #t4031456# if you follow the method I previously described. I'll wait for you here." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Are you refusing to listen to me? Then you can't get what you want!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value=" You got the Maple Marble... much better than I thought. \n\r#L0# #bNow tell me why you asked me to get it.#k" />
+            <string name="1" value=" I told you I would give anything you want. \n\r#L0# #bWhat are you going to give me?#k" />
+            <string name="2" value="A new skill. That's what you really want isn't it?" />
+            <imgdir name="yes">
+                <string name="0" value=" If you want it, talk to me again. I don't know why Hellin has such faith in you, but I'm willing to find out." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" You couldn't get #b#t04031456##k? Why does #p2081400##k hold you in such high regard?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost #b#t4031476##k? You should've been careful. Shame on you. I'll give you one more chance. Make sure you succeed!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041028" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031456" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041028" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001110" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="412" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

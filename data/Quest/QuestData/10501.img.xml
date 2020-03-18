@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10501.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Searcing for Remnants of the Dragon Master 1" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Search for remnants of Dragon Master Evan" />
+        <string name="1" value="Find a #b#t4032533##k in Maple World and bring it to #bCassandra#k." />
+        <string name="2" value="You discovered a #b#t4032533##k, a remnant of Dragon Master Evan." />
+        <string name="demandSummary" value="#i4032533:# #t4032533:# #c4032533# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="660" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032533" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dragon Master Evan... Exciting, right? Let me give you a mission. Go find the Onyx Dragon Remnants scattered throughout Maple World." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="What's an Onyx Dragon? You'll slowly find out as you complete your missions. First, find the #b#t4032533##k. Once you complete the mission, you'll receive some really great #bDragon Equipment#k, too." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's good chance to receive some great Dragon Equipment, so don't miss out." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the #b#t4032533##k that I asked for?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes, this is it. This is the horn of an infant Onxy Dragon. This was probably left behind when the Onyx Dragon grew a larger horn. You did a good job. Be sure to talk to me again tomorrow." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... You didn't bring back the #b#t4032533##k. Hurry up and go find one!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032533" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10500" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="200912170000" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

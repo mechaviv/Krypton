@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28106.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning Up The Streets  " />
+        <int name="area" value="45" />
+        <string name="0" value="There's a new sheriff in New Leaf City. I should go see who it is!" />
+        <string name="1" value="I met the new sheriff, Lita Lawless. She's an old friend of Icebyrd's, and has taken over as the new sheriff. I've agreed to help her get this town in order, by wiping out #b200 Electrophants and 200 Gryphons#k in New Leaf City. I'd better get started!" />
+        <string name="2" value="I...I did it! 200 of Electrophants and Gryphons has fallen to my might! In addition to that, I got a cool item from Lita as a 'Thank You!' I can return and help her anytime I want from now on..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1492007" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hiya Sport! I'm the new sheriff in town. You ready for some law and order? \n\n#L0##bOnly if I get to help enforce it!#k\n#L1##bLaw? Order? Please. You couldn't tame a fly. I'm leaving!#k#l" />
+            <string name="1" value="That's the attitude that got me where I am today! Ok, I'm Lita Lawless, and with your help, I'm going to corral this town into a crime-free zone." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Grumpy little thing, aren't you?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" I know how the devious monster mind works, having trained as a pirate for many years. So, you're going to have to wipe out #b200#k of two types-I believe #bElectrophants and Gryphons#k should prove a suitable test of your skills! Take your time and report back when you're done! I've got something just for your class!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Grumpy little thing, aren't you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="OUTSTANDING! I knew you were special the second I looked at you. \n\n#L0##bI have a question. So... you were a Thief?#k#l" />
+            <string name="1" value="The very best. I trained under the Dark Lord's watchful eye for many years. Once you train past a certain point, fighting becomes second nature. \n\n#L0##bHow did the Dark Lord let you leave? I've never heard of that before...#k#l" />
+            <string name="2" value="It's a long story, but The Dark Lord allowed me to leave if I touched him once with my weapon. It's much different from fighting his clone, his speed and multiple techniques are incredible. The fight was a true test of my skill...it was a stroke of luck that let me touch him. I promised to help others train as he helped me. \n\n#L0##bDid Icebyrd have anything to do with that?#k#l" />
+            <string name="3" value="In a way, yes. He showed me that my destiny is here, in New Leaf City, and to a greater extent, Masteria. It's a brave new world out there...and I want to know where my fate lies. Ok. End of the story. It's time to get paid for your work!" />
+            <imgdir name="yes">
+                <string name="0" value="Here's your class reward, as promised. I'm proud of you! You can come and see me anytime you wish perform your duty as a citizen of New Leaf City!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Come on, you're not done yet, but I have faith. You can do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201054" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400544" />
+                    <int name="count" value="200" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9400543" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201054" />
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="520" />
+                <int name="1" value="521" />
+                <int name="2" value="522" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

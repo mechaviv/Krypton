@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2161.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A brave warrior to defeat King Clang appears!" />
+        <string name="parent" value="Defeat King Clang!" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="Complaining Riel soon lightens up and says that a brave warrior must appear to rescue the beautiful girl in distress. Therefore, she asks me to take the role of the warrior and defeat King Clang. What have I done to get myself into these situations!? I'm not the warrior type, but the least I can do is help defeat #rKing Clang#k. \n\n#o5220000# #r#a21611##k" />
+        <string name="2" value="Defeated King Clang and came back to Riel. Riel joyfully says that a brave warrior saved her. It really wasn't for her sake, but Florina Beach is finally back to its peaceful state." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="133500" />
+            <int name="pop" value="10" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my... I've lost the bet, and it's all because of you! I've always wanted to be the beautiful maiden that sacrifices herself to save her village. I will never forgive you! How could you disappoint me like this?!" />
+            <string name="1" value="What? No, no. All the endings of this kind of story include a brave and handsome #bwarrior#k that comes to rescue the beautiful maiden in distress and defeats the monster! There still is a way! " />
+            <string name="2" value="Adventurer! It's up to you to complete this story with a happy ending! A warrior throwing himself to save the damsel is always heroic! You must take this role!" />
+            <imgdir name="yes">
+                <string name="0" value="I must admit, the story unraveling is somewhat different from what I planned, but this has its own merits to it too. Adventurer... no I mean, warrior! Please defeat #rKing Clang#k, and save the damsel!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No, how could you?! How can you turn down a great role like this! You are no fun at all!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You've come back, warrior! I, #bRael#k, was worried sick over you and couldn't sleep at all! \r\n#L0# #b(Absorbed in the role already!)#l " />
+            <string name="1" value="Oh, I'm so happy to see you again. Thank you, thank you very much! How can I pay you for your deed? What? You don't need anything?\r\n#L0# #b(... I didn't say a word!!)#l " />
+            <string name="2" value="You are brave but also modest. You truly are a real warrior! I will never forget you name!" />
+            <imgdir name="yes">
+                <string name="0" value="I will sing a song of a brave young warrior who never hesitated to rescue the beautiful island girl from the dreadful monster! Oh, how could you be so courageous? " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #rKing Clang#k yet? If it's a burden to you... you may back out, warrior. You don't need to throw yourself to save little old me... sniffle..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2159" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2160" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2157" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2158" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

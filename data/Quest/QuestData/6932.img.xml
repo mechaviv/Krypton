@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6932.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" Hellin's Second Truth" />
+        <string name="parent" value="The Thief's Extreme Path" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081400##k said she'll tell me the second truth and told me to come talk to her again when I'm ready." />
+        <string name="2" value=" #b#p2081400##k told me about Holycolas, which is the second truth.  She said she had one final story to tell me." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The third is the story about the lake where time stopped. Do you wanna listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Yes. You have the right to listen to the story. Talk to me if you are ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid? You came this far. Don't be discouraged." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you been to the Aquarium under the sea? It is a mysterious place, floating over the valley of the deep sea. Haven't you wondered how it floats? " />
+            <string name="1" value="There is a stone called the #bHolychoras#k underneath the valley of the deep sea. Nobody knows how came to be there, but it has been there for ages. " />
+            <string name="2" value="#bHolychoras#k has a strange power that purifies the sea. That's how Aqua Road is purified and the Aquarium can float over the valley under the sea. If  #bHolychoras#k disappears, the sea will grow dark..." />
+            <imgdir name="yes">
+                <string name="0" value="This is the end of the second story. Talk to me when you're ready to listen to the third story." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081400" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081400" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6931" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="411" />
+                <int name="1" value="421" />
+                <int name="2" value="433" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

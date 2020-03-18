@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28173.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Heading Over to The Nautilus!" />
+        <string name="parent" value="Who is the suspect?" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#@1012003:##k, who has been keeping an eye on #r#t4001341:##k, says he needs some help. Let's talk to him." />
+        <string name="1" value="He says to go over to #b#@1092012:##k in #b#m120000200##k and investigate #r#t4001341:##k." />
+        <string name="2" value="#b#@1092012:##k in #b#m120000200##k says he's finished analyzing the clues. Let's talk to him." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Investigation in Progress' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I carefully inspected the Iron Fragment, and I can assure you that this isn't from Perion. I'm sorry for overreacting... I was too quick to judge.\n\nI need to look into a few more things. Will you continue to help me?" />
+            <imgdir name="yes">
+                <string name="0" value="You're very generous. I know that this Iron Fragment didn't come from Perion, but I have no other way to find more information about it. I need an expert's help.\n\nI heard that #b#p1092012##k in #b#m120000200##k has expertise in this field. Could you rush over there?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ha! Of course, people from Perion are...I'm kidding. Come back and see me if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, I'm #b#p1092012##k. You have something you want me to look at?" />
+            <imgdir name="yes">
+                <string name="0" value="Now, let's see here. It sure looks ordinary, but I feel a strange force emanating from it.\n\nWhy don't you look around #bThe Nautilus#k and rest while I look into it a little more?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1092012##k can be found at #b#m120000200##k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28172" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="1100" />
+                <int name="11" value="1110" />
+                <int name="12" value="1111" />
+                <int name="13" value="1112" />
+                <int name="14" value="2100" />
+                <int name="15" value="2110" />
+                <int name="16" value="2111" />
+                <int name="17" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

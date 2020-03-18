@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3622.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tiger-Hunting" />
+        <int name="area" value="37" />
+        <string name="0" value="Chumji from Korean Folk Town is looking to gather up some people to fight against tigers. Should I join?" />
+        <string name="1" value="Chumji of Korean Folk Town is concerned about the fact that lately, the Hoguls have been surprising numerous people with their appearance at the Black Mountain. He asked if I could go up to the mountain, defeat 8 Hoguls, and bring back 8 Tiger Skins as proof.\n\n#t4000171# #b#c4000171##k/8\n#o5100005# #r#a36221#" />
+        <string name="2" value="Through Chumji's request, I went up to the Black Mountain and defeated 10 Hoguls, the same Hoguls that have put many residents of the Folk Town in fear. Also, as evidence, I collected 10 Tiger Skins, and gave them to Chumji. He commended my courage and for the job well done." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="젊은이 혹시 까막산에 사는 호걸에 대해 들어 본 적 있나? 호걸은 까막산에 사는 덩치가 큰 호랑이인데 예전에 굉장히 품위있는 동물이었다네. 그런데 최근 갑자기 돌변해서 사람들을 공격하기 시작했다네. 이 사태를 방치한다면 조만간 큰 일이 벌어질게야. 그래서 호걸을 사냥할 사냥꾼들을 모으고 있지. 어떤가 자네도 한번 도전해 보지 않겠나?" />
+            <imgdir name="yes">
+                <string name="0" value="호걸은 까막산 중턱에서 자주 출몰한다네. 그래서 사람들이 그 곳을 '호랑이 골짜기'라고 부르고 있지. 그 곳에 가서 호걸 10마리를 잡고 그 증거로 호랑이 가죽 10개를 가져오게나. 자네의 용맹함을 한번 시험해 보라구~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="보기보단 겁이 많은 것 같군. 하긴 제아무리 용맹한 사람이라도 호걸을 상대하려면 힘들거야." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000171" />
+                    <int name="count" value="-8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you ever heard of Hogul living in Black Mountain? Hogul is a tiger of monstrous size that used to ooze dignity and class. Lately, however, the Hoguls have transformed into a ferocious monster attacking the residents of this town. If we let this go on, then something catastrophic is bound to happen. This is why we have been recruiting people like you to hunt down the Hoguls for us. What do you think? Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Hoguls usually appear at the mid-slope of Black Mountain, and that's why people usually call it the 'Tiger Valley'. Go up there, defeat #b8 Hoguls#k, and grab #b8 Tiger Skins#k as proof. It'll be a perfect method for you to test your courage!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be much more afraid than your looks may suggest. It's understandable: even the bravest will have a hard time facing Hogul." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're back. Let's see ... it really is tough defeating Hoguls, right? What do you have in your hand? Are those the tiger skins? Okay, 1 ... 2 ... 3 ... oh, that's 8." />
+            <imgdir name="yes">
+                <string name="0" value="Incredible! Incredible! You're one courageous person! I sincerely hope you stay here for a while; people will feel safe with you around here~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You shouldn't just defeat Hoguls. You need to also bring tiger skins. I don't need many; 10 will suffice." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Eliminate 10 Hoguls and everyone will be aware of your immense strength and courage. Don't you think it'll be nice to be recognized by everyone in this town as a courageous hero?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000171" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5100005" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9291" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+            <string name="start" value="2005122400" />
+        </imgdir>
+    </imgdir>
+</imgdir>

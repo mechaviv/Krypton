@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2044.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Looking for the Red Cape" />
+        <string name="parent" value="Pia's Present For a Friend" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Let's go to Pia in Henesys" />
+        <string name="1" value="I ran into that same teddy-bear-costume-wearig Pia at the Henesys Park. I did her a favor and took care of the blue mushrooms before. This time, she wants to make a present for a friend in Ellinia who wants to go out on a journey. The claw that she wants to make for her consists of #b15 silver plates, 50 dragon skins, and 40 screws#k...and for the friend, she also wanted me to get back the #bRed Cape#k that Rina of Henesys borrowed. If I get her all these...am I going to be richly rewarded?" />
+        <string name="2" value="I decided to go to Rina to get the #bRed Cape#k back, which she has borrowed from Pia." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2045" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh you are the one who beat #o2220100# for me~ You look much stronger than the last time? Did my scroll help you? Hehe... Anyway, good. Since you look strong, I would like to ask you a favor... Would you help me?" />
+            <string name="1" value="One of my friends in Ellinia wanted to be a thief. After some training, he will start traveling... I would like to give him something special for him! So I asked #p1052002# in #m103000000# to make a good claw and he wanted some weird stuff to make it." />
+            <string name="2" value="So can you get the materials, which #p1052002# wants? I'd like to get them by myself, but I can't move, because of this stupid clothing! Of course, I will pay you, if you do this for me... If you are not busy, can you please help me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks! I need #b15 #t4011004#, 50 #t4000030#, 40 #t4003000# #k. Oh... and I need a cape for my friend! Few days ago, I lend #p1010100# in #m100000000# a cape. Can you please get it back from him? I think my friend will definitely need it. If you get these, it would be much help for my friend." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be very busy... If you have time later, please get back to me~! My friend will start traveling soon..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="So you haven't gotten all the materials, yet? Please get #b15 #t4011004#, 50 #t4000030#, 40 #t4003000# #k... You can get #t4031043# from #p1010100# in #m100000000#..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1010100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012102" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2009" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="411" />
+                <int name="3" value="412" />
+                <int name="4" value="420" />
+                <int name="5" value="421" />
+                <int name="6" value="422" />
+                <int name="7" value="430" />
+                <int name="8" value="431" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+                <int name="12" value="1400" />
+                <int name="13" value="1410" />
+                <int name="14" value="1411" />
+                <int name="15" value="1412" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

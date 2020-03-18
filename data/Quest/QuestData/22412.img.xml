@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22412.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making a Really Big Saddle" />
+        <int name="area" value="7" />
+        <string name="0" value="Go to #b#p2060005##k in #b#m230000000##k and ask him to make you a Really Big Saddle. " />
+        <string name="1" value="#p2060005# says that you are the only person who has ever asked him to make three different saddles and agrees to make a saddle big enough for #p1013000#. Bring him the required materials and mesos.\r\n\r\n#i4000270# #t4000270# #b#c4000270# / 300#k\r\n#i4000272# #t4000272# #b#c4000272# / 300#k\r\n#i4000271# #t4000271# #b#c4000271# / 300#k\r\n#b60000000 mesos#k" />
+        <string name="2" value="You received a Really Big Saddle from #p2060005#. You can only hope that you won't need any more saddles." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-60000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000270" />
+                    <int name="count" value="-300" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000272" />
+                    <int name="count" value="-300" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000271" />
+                    <int name="count" value="-300" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1912035" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi, how are you? The special animal you are raising seems to be growing well. His horn and wings have gotten so big... It looks like he's going to need a new saddle." />
+            <string name="1" value="The materials that were used to make the current saddle won't be able to handle his bigger size or his sharper and stronger scales. He's going to need a saddle made with stronger materials. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please bring me #b300 #t4000270#s#k from the #r#o8150302#s#k, #b300 #t4000271#s#k  from the #r#o8190005#s#k, and #b300 #t4000272#s#k from the #r#o8190000#s#k. With those materials, I should be able to make a new saddle that will be suitable for #p1013000#." />
+                <string name="1" value="The only thing is that those materials are much more difficult to handle than before so I'm going to have to charge you a higher fee. It's going to me 60000000 mesos. Your eyes are spinning from all those 0s. Simply stated, it will cost #b60 million mesos#k." />
+                <string name="2" value="I realize how expensive that sounds but it's an adequate price for the skill it takes to make a saddle using those materials. If the #m230000003# cost less to operate, I might be able to give you a discount, but as you can see, there are so few visitors here at the #m230000003#..." />
+                <string name="3" value="But since you're raising an animal that must cost a fortune to feed, you must be very well off. 60 million mesos is probably nothing to you. Heck, someone like you could probably buy dozens of saddles." />
+                <string name="4" value="I will be here waiting for you to bring all the materials." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... I guess you're not as rich as I thought. If it's too difficult for you, it's not a bad idea to level up a bit more and save some more money." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've brought all the materials! And the 60 million mesos as well! I knew it, I really have a good eye for picking out rich people... I mean... Nevermind. Now, please give the materials to me. I will make your new saddle right away. " />
+            <imgdir name="yes">
+                <string name="0" value="I've made the saddle strong enough to protect the rider from the sharp scales while still being very light. There is also a safety feature to protect the rider from falling off. Enjoy your new saddle and please let me know if you lose it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It looks like you haven't gathered the materials for the saddle yet. Please bring me #b300 #t4000270#s#k from the #r#o8150302#s#k, #b300 #t4000271#s#k from the #r#o8190005#s#k, and #b300 #t4000272#s#k from the #r#o8190000#s#k along with the fee of 60 million mesos." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000270" />
+                    <int name="count" value="300" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000272" />
+                    <int name="count" value="300" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000271" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22411" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+                <int name="10" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

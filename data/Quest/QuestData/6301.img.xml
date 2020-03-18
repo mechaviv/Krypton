@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" A Piece of Will" />
+        <string name="parent" value="Strong Will" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="When I asked #p2060100# to give back the human's will power, she said she threw it away in the crack of a dimension. She said if I want it back, go to #b#m923000000##k and get it myself. She says #m923000000# can be opened by #b#t4000175##k as many times as I want....As long as I have #t4000175#, she said she would open the dimension.  Arite, well, let's get #t4000175# first then. \r\n#i4031472##t4031472# #b#c4031472#/40#k" />
+        <string name="2" value=" #p2060100# said that the separated will power can't be simply absorbed back." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031472" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Didn't you here that #p2060100# doesn't like humans? I'll kick you off if you are a lost traveler. What are you doing here? What do you want?\r\n#b#L0#I want my strong will back.#l" />
+            <string name="1" value="Will.. How did you get to know about it? Give you your will....I'll give it to you in honor of your coming here to see me. I don't wanna fight with you.  \r\n#b#L0# Do you mean you're gonna give my Strong Will back??.#l" />
+            <string name="2" value="I can't just give it out. I imprisoned most of the Will inside the cracked dimension. You can open the dimension and bring the pieces of will. But it's hard. Do you want to do it?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Then I'll open the dimension. Get me a miniature Pianus. That's the key to open the dimension. Open the dimension, and get 40 Pieces of Courage. Ah, once you have a miniature Pianus, you can open the dimension with it, however every time you want to enter the dimension, you will need a miniature Pianus. Sadly, the miniature version only works once per trip for 5 minutes. But that's only for 5 minutes, which means you can go in there with as many friends as possible, but only for 5 minutes per trip." />
+                <string name="1" value="I'm a witch. I shouldn't be nice to you. Now you can get out!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want it, fine. Your Will shall remain in the dimension." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're pretty good to get 40 #t4031472#, but this is not the end. The will, when separated from the human host, can't be absorbed so soon." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you got #t04031472#? You're not as great as I thought. I heard you completed the 4th Job advancement..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031472" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+                <int name="3" value="212" />
+                <int name="4" value="222" />
+                <int name="5" value="232" />
+                <int name="6" value="312" />
+                <int name="7" value="322" />
+                <int name="8" value="412" />
+                <int name="9" value="422" />
+                <int name="10" value="434" />
+                <int name="11" value="512" />
+                <int name="12" value="522" />
+                <int name="13" value="2112" />
+                <int name="14" value="2217" />
+                <int name="15" value="2218" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1121011" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

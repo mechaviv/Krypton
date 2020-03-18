@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28189.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Ingredients for the Cold Medicine" />
+        <string name="parent" value="Don't Catch a Cold!" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1012003:##k in #bHenesys#k has asked you to find the ingredients she needs to make Cold Medicine. Let's talk to her." />
+        <string name="1" value="#b#@1012003:##k in #bHenesys#k has asked you to find the ingredients she needs to make Cold Medicine.\n\n#rOrange Mushroom Cap#k (a drop item from #rOrange Mushrooms#k)\n#rRed Ribbon#k(a drop item from #rRibbon Pigs#k)\n#rSlime Bubble#k (a drop item from #rSlimes#k)\n\nLet's go back to #b#@1012003:##k in #bHenesys#k." />
+        <string name="2" value="#b#@1012003:##k in #bHenesys#k says she must deliver the #rCold Medicine#k to #b#@1012100:##k. Let's go over to #b#@1012003:##k." />
+        <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20&#xD;&#xA;#i4000002:# #t4000002:# #c4000002# / 10&#xD;&#xA;#i4000010:# #t4000010:# #c4000010# / 2&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 3,000&#xD;&#xA;Able to proceed to 'Delivering the Cold Medicine' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000010" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="(*Cough cough*) As you can see, I'm a bit delirious from my cold." />
+            <string name="1" value="I need some more ingredients to make additional #rCold Medicine#k. Won't you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This is what's stated in the recipe of #rCold Medicine#k that has been passed down from generation to generation in #bHenesys#k.\n\n&quot;Mix an #rOrange Mushroom Cap#k and a #rSlime Bubble#k, and take the extract in a container and tie it with a #rRed Ribbon#k. Then, bury it and let it sit in the ground for a day.&quot;" />
+                <string name="1" value="I don't know why we tie it with the #rRed Ribbon#k, I can't help but question the person who suggested it, but this is the only way I know how to concoct it, so please find me the following ingredients.\n\n20 #rOrange Mushroom Caps#k\n10 #rRed Ribbons#k\n2 #rSlime Bubbles#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Cough cough… Cough cough… Cough cough!!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect them all already? You're a gifted Magician!\nThanks to you, I can finally make the #rCold Medicine#k now. " />
+            <imgdir name="yes">
+                <string name="0" value="I finished making the Cold Medicine.\n\n(Drinks the #rCold Medicine#k.)\n\nWhoa!\n\nI'm feeling better already! Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need 20 #rOrange Mushroom Cap#k, 10 #rRed Ribbons#k, and 2 #rSlime Bubbles#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000002" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000010" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28188" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+                <int name="10" value="1200" />
+                <int name="11" value="1210" />
+                <int name="12" value="1211" />
+                <int name="13" value="1212" />
+                <int name="14" value="2200" />
+                <int name="15" value="2210" />
+                <int name="16" value="2211" />
+                <int name="17" value="2212" />
+                <int name="18" value="2213" />
+                <int name="19" value="2214" />
+                <int name="20" value="2215" />
+                <int name="21" value="2216" />
+                <int name="22" value="2217" />
+                <int name="23" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

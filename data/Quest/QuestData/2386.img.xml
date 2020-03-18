@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2386.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making a Tonic" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You brought Ryden fresh Octopus Legs that will be used to make Lady Syl's tonic. Wonder how it's coming along? Go talk to #bRyden#k." />
+        <string name="1" value="So, it appears that herbs are required to complete the tonic. Use the portal at the right side of Kerning City and hunt #rDark Stumps#k that are on the way to Perion. Gather the #bLeaves#k they drop and bring them to Ryden." />
+        <string name="2" value="You can only hope that the tonic will make Lady Syl feel better..." />
+        <string name="demandSummary" value="#i4000005:# #t4000005:# #c4000005# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 3,800\r\nCan proceed to 'Fifth Mission: Fabrication' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="#h0#, I'm glad you're here. \r\n#L0##bIs something wrong?#l\n#k" />
+            <string name="1" value="I just realized that the most important ingredients in a tonic are herbs. Can you bring me some herbs while I keep my eyes on the tonic?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If you enter the portal at the right end of Kerning City and pass through the Sunset Sky towards Perion, you'll come across Dark Stumps. Hunt the #rDark Stumps#k and bring back #b20 Leaves#k. You'll have to return before I finish boiling the tonic." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="But the tonic can't be completed without the herbs..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh! You've returned. I was fanning the fire for the tonic because it was almost out. Please hand me some firewood." />
+            <imgdir name="yes">
+                <string name="0" value="Aah, this should do it. Now, I need to bring it to Lady Syl. I will have a new mission for you soon so come see me again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you enter the portal at the right end of Kerning City and pass through the Sunset Sky towards Perion, you'll come across Dark Stumps. Hunt the #rDark Stumps#k and bring back #b20 Leaves#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2385" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="16" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

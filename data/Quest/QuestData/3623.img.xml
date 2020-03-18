@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3623.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grandma Yeon's Pot" />
+        <int name="area" value="37" />
+        <string name="0" value="Word is that Grandma Yeon of the Folk Town is great at making pots." />
+        <string name="1" value="I needed a new pot for Kong Ji, so I went to see Grandma Yeon near water mill. She seemed very appreciative of the fact that I helped her husband get something done in the past, and decided to sell it to me cheap. #b5,000 mesos#k?is that really considered cheap?" />
+        <string name="2" value="I was able to purchase Grandma Yeon's pot for 5,000 mesos." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="아이고~ 오랫만이에요. 그 동안 잘 지냈수? \r\n#L0# 항아리를 사러왔어요." />
+            <string name="1" value="항아리 말이우? 간혹 사람들이 내 항아리를 사러 오긴하지. 내 특별히 싸게 드리리다." />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="5000메소만 내면 새 항아리를 드리리다. 돈이 준비되면 나에게 다시 말을 걸어요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="마음이 바뀐거요? 다시 항아리가 필요하게 되면 찾아와요. 당신한테라면 언제든지 항아리를 팔테니" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031230" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello~ it's been a long time. How have you been? \r\n#L0# #bI'm here to buy your pot.#k" />
+            <string name="1" value="Are you talking about pots? Well, people do come here every now and then for pots. I'll make it especially cheap for you." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="For #b5,000 mesos#k, I'll make a new pot for you. Let me know when you're ready with the money." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Have you changed your mind? If you need a pot down the road, let me know. You'll always be welcome here~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I'll give you the finest pot I've ever made here, I promise. Okay, this one looks really nice..." />
+            <imgdir name="yes">
+                <string name="0" value="Use it well~" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3619" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3600" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031230" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

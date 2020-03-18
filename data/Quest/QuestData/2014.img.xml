@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2014.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alex's Request" />
+        <string name="parent" value="Alex the Runaway Kid" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="There is a runaway kid called Alex in Kerning City..." />
+        <string name="1" value="At the top of a building in Kerning City, you meet Alex, who ran away from home after a spat with his father. Now, with no money and a severe case of boredom, he wants to go home. He wants you to convince his father, Stan, who happens to be the chief of Henesys, to let him return home... Not only that, he also wants you to get a #bold gold watch#k, which belonged to Alex's mother, from his father as proof that he's calmed down." />
+        <string name="2" value="As Alex requested, you looked for his father in Henesys to get Alex's mother's #bold gold watch#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2015" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, hear me out. A couple of days ago I ran away from home to get away from my very straight-laced father. So here I am, in #m103000000#, just wandering around. I've spent all the money I secretly took from my dad's safe, and to be honest, I'm sick of this. I shouldn't have run away." />
+            <string name="1" value="I don't think my dad will just let me walk back in the door... Not without beating the bejeebus out of me. Can you find a way to calm him down? I need your help, man." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! My father is #p1012003# in #m100000000#. Because he's a man of power, he's strict. He and I just can't get through to each other. My father has a LOUD personality, so you can't be too submissive when you talk to him. I'm sure you'll figure something out." />
+                <string name="1" value="To prove you've gotten my father calm enough, ask him for the #t4001003#. The #t4001003# was my mother's before she passed away. He always said he'd never give it to a guy like me, so if he does... It means he's forgiven me. I'll be waiting!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You can't do me a favor because I'm an immature kid who ran away from home, right? I understand, but I'm trying to... Ah, nevermind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="My father is the chief of #m100000000#. Please convince him to let me come back home. As proof that he's forgiven me, please convince him to give me the #t4001003#, which belonged to my mother." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052000" />
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

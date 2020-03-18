@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21711.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Enter the Cynical Orange Mushrooms!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your first assignment as an informant. You're hopeful that this time #p1012111# of #b#m100000000##k has found the cause of the #o1210102#s' strange change in behavior. You'd better go talk to #b#p1012111##k. " />
+        <string name="1" value="#p1012111# says that #ra cynical group of #o1210102##ks was seen hanging around #m100000000#. He thinks they may have influenced the regular #o1210102#s as well. He then instructs you to eliminate #r50 #o9300274#s#k and give him #banything you find that might be considered odd#k...\r\n\r\n#o9300274##r #a217111##k\r\n#i4032315# #t4032315# #b#c4032315# / 1#k" />
+        <string name="2" value="You eliminated the #o9300274# and brought back the #t4032315# for #p1012111#. He found it unusual and asked you to wait while he gives it a detailed analysis." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="970" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032315" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I came across some startling news while investigating the #o1210102#s near #m100000000#. Apparently, there's a group of #o1210102#s that have a completely different personality! We're talking about #r#o1210102#s that have turned cynical...#k. Maybe they're why the rest of the #o1210102#s are also starting to change." />
+            <string name="1" value="It must be related, so I want you to look into the #o9300274#s. Eliminate about #r50 #o9300274#s#k and #bgather anything you find that seems strange and bring it to me#k. I hear that there is something we should be looking out for…" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o9300274#s can usually be found to the right of #m100000000#, at a field #bnear the east hill of #m100000000##k. I guess you'll need to venture a little deeper into the east hill. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm…will that be too hard for you? Take some time to think it over, and let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you must have defeated the #o9300274#s. Did you find anything strange? Hmmm? Is that…a puppet? Please show me." />
+            <imgdir name="yes">
+                <string name="0" value="This puppet… Something doesn't seem right. I better look into it. Please wait for a bit." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Still short on defeating #r50 #o9300274#s#k? I need you to eliminate them and #bgather up anything strange you might find and give it to me#k. I heard that a #bpuppet#k might be found, but I am not sure. I just overheard #p1103001# talking about it." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Still short on defeating #r50 #o9300274#s#k? I need you to eliminate them and #bgather up anything strange you might find and give it to me#k. I heard that a #bpuppet#k might be found, but I am not sure. I just overheard #p1103001# talking about it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032315" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300274" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21710" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

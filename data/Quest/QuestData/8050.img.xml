@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8050.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Today's Schedule" />
+        <int name="area" value="30" />
+        <string name="0" value="I think Betty of Ellinia is stuck in a difficult spot. I'll need to talk to her on this." />
+        <string name="1" value="Betty usually operates under a strict schedule, and lives by her own routine. Hmmm, I see, so without a watch to let her know the time, there's no way she'll be able to follow a strict schedule. According to her, #b#o3230306##k has the #b#t04000115#" />
+        <string name="2" value="Betty got her watch fixed, and went right back on schedule, as if she's trying to make up for the lost time. Maybe she'd be more relaxed if the watch was never fixed...Nah..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="20000" />
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000115" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh no, this is not good. And I don't have much time!" />
+            <string name="1" value="Oh hi, traveler! Good morning. I'm sorry I had to complain about something this early in the morning." />
+            <string name="2" value="My watch is busted! I have so many things to research and...see, I have a strict schedule that I adhere to, and therefore, knowing what time it is, is everything to me. Right now I have no clue what to do at what time. Kind of like being trapped in the dark with no flashlight, know what I mean?" />
+            <string name="3" value="Anyway, I need to fix it quickly. I know the reason why it's not working. A cogwheel fell out of the watch, and so if I replace it with a new one, it'll work just fine." />
+            <string name="4" value=" I'll have to make a new schedule for today; in the mean time, I'd appreciate it if you get me a new cogwheel. Of course, I'll reward you for your work." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you, traveler!" />
+                <string name="1" value=" This cogwheel is not sold in stores. You'll have to get it from #b#o3230306##k the monster. Since it's not the strongest item in the world, every once in a while, the cogwheel may just fall off." />
+                <string name="2" value="That's why, I'd appreciate it if you get me a whole bunch of them. I'm sure there will be a clean #b#t04000115##k here and there. I'm counting on you, traveler~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Arrgh, my schedule today has gone down the drain." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Alright, did you get them?" />
+            <string name="1" value="Thank you, traveler. With this cogwheel, I can fix my watch. As a matter of fact, let me fix it right now." />
+            <string name="2" value="...hey, it's moving! It's fixed! I can now work under my schedule again." />
+            <string name="3" value="I need to play catch-up now that I've wasted so much time today. This isn't much, but please take it." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm ... I don't think there's a #b#t04000115##k that fits this. Can you bring me more?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000115" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

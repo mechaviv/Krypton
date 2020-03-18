@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3731.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Identity of the Missile" />
+        <string name="parent" value="Year 2215- The Bombing" />
+        <int name="order" value="2" />
+        <int name="area" value="41" />
+        <string name="1" value="Andy the Time Traveler has asked you to travel to the year 2215 to investigate the Bombed City Center and destroy the A.I. missile known as Dunas." />
+        <string name="2" value="Andy the Time Traveler asked you to travel to the year 2215 to investigate the Bombed City Center and destroy the A.I. missile known as Dunas. To your surprised, you discovered that Dunas was an android missile that closely resembled a human. You may have succeeded in destroying Dunas, but the Bombed City Center doesn't appear to be restorable." />
+        <string name="demandSummary" value="#o8220010# #a37311#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 140,000\r\nCan participate in the '&quot;Nex the Time Guard&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="140000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have an assignment for you in the year 2215. That year was the worst year in history, when the evolved robots bombed the City Center. The A.I. missile that bombed the City Center was called Dunas. Please travel to year 2215 and destroy the missile." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There isn't much recorded about Dunas. I don't even know what it looks like. All I can tell you is to be extra careful out there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What, are you getting scared? It's too late. Think about it. You've seen too much. You know too much about the future at this point." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Dunas is an android? Was that possible in 2215? Something doesn't add up." />
+            <imgdir name="yes">
+                <string name="0" value="I have a bad feeling about this. I feel like we're missing a huge piece of the puzzle." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="The A.I. missile that bombed the City Center was called Dunas. Please travel to year 2215 and destroy the missile." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220010" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3730" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

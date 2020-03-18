@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Borrowing Sera's Mirror" />
+        <string name="parent" value="Sera's Mirror" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="Go talk to Heena." />
+        <string name="1" value="You meet Heena, who is worried the sun will damage her skin. Go get a mirror from her sister, Sarah, so she can check." />
+        <string name="2" value="Heena asked you to get a mirror from her sister, so you walked all the way to Sarah." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="1001" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be the new traveler. I'll be giving you important information so listen up. First, if you want to talk to anyone, #bclick#k the person with your mouse." />
+            <string name="1" value="The #bleft and right arrows#k allow you to move. Press #bAlt#k to jump. Jump diagonally by pressing both together." />
+            <string name="2" value="Man, it's scorching hot today! The sun is burning my beautiful skin! Can you get me a #bmirror#k from #r#p2100##k, please? I have to check my skin!" />
+            <string name="3" value="If you want to check your progress in a quest, open the #bQuest Window#k by pressing the #bQ key#k, then press #bQuest Helper#k. You'll be able to view the progress of quests registered to the Quest Helper." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. #r#p2100##k is on the hill to the east, hanging laundry. The mirror looks like this #i4031003#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't want to? Fine, come back when you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't met with #r#p2100##k yet? She should be down a hill to the east. It shouldn't be hard to find her." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22002.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sandwich for Breakfast" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22002" />
+        <string name="0" value="You fed breakfast to #p1013102#. Come to think of it, you're hungry too... Go ask #b#p1013101##k about breakfast." />
+        <string name="1" value="#p1013101# gave you a sandwich for breakfast. He tells you to #bgo inside the house again once you're done with your sandwich#k. Mom must have something she wants to ask you to do... In any case, eat your sandwich first." />
+        <string name="2" value="Mom suddenly handed you a #t1003028#. Huh? Why did she give this to you?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Aren't you going to eat your breakfast? Once you're done, go back #binto the house#k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Oh, haven't you eaten your #bsandwich#k yet? You must be hungry, though. #bOpen your Item Inventory by pressing I, and then double-click on the items you wish to consume#k. Talk to me after #beating all of the sandwiches in your Item Inventory#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022620" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q22002e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22001" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22002s" />
+            <int name="lvmin" value="3" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21745.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="How to Meet Mu Gong" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="The letter issued by #o9300351# of the Black Wings... In order to deliver the letter to #p2091007#, you first must win over #p2091005#, who is one of his students. You'd better head over to #b#m925020000##k and start sweet-talking #b#p2091005##k." />
+        <string name="1" value="You ask nicely if you can see #p2091007#, but #p2091005#'s stance remains the same: NO. That's when you decide to sweeten the pot, as instructed by #p2090004#, by offering healthy items for the body, which worked like magic. You'd better start gathering up some #b#t4000293#s#k.\r\n\r\n#i4000293# #t4000293# #b#c4000293# / 100#k" />
+        <string name="2" value="When you brought the #t4000293#s to him, #p2091005# discreetly told you the way to #m925020000#'s back alley. In front of #m925020000# are a some flags. You need to use the portal under the green flag on the right side to get to #p2091007#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="38000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000293" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What do you want here?! This is the Training Center. Keep your attitude in check!\n#b#L0#I'd like to meet Mu Gong. It's very important.#l\n#k" />
+            <string name="1" value="Then you must take on the entire Mu Lung Dojo! Mu Gong is on the very top floor, awaiting challengers!\n#b#L0#Hey, isn't there a way I can see Mu Gong by taking a backalley shortcut or something…?#l\n#k" />
+            <string name="2" value="Nonsense! What are you saying! How dare you suggest such a dastardly way to reach the top! \n#b#L0#One word, Bellflower.#l\n#k" />
+            <string name="3" value="…Hmph...\n#b#L0#Bellflowers. The best thing a body could get.#l\n#k" />
+            <string name="4" value="…No… no… I can't. I can't.\b#b#L0#100 Bellflowers. They're good for the body.#l\n#k" />
+            <string name="5" value="…Hmmm. Humm.. Hmm. Hmmph. Follow me…" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="(Whispering) Hey you're really giving me all this, right? And you're sure that this is good for my body? I mean, I want to go get some myself, but I have had no time... Too much work at the Training Center." />
+                <string name="1" value="(Whispers) So, you're really going to give me all of that? Exactly 100? Yes, 100 Bellflowers! No less!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm. Hmmm.. How dare you try to buy your way to the top!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhhh! Oops, that was too loud. (Whispers) Did you bring what you promised?" />
+            <imgdir name="yes">
+                <string name="0" value="Ohhh…hahaha…this…this will make me even stronger than I already am. Hahaha…hey, you're still here?" />
+                <string name="1" value="Oh yes, you wanted to see our master. There's only one way to meet him without having to fight the entire training center and that is to take the shortcut. #bThere are flags outside the Mu Lung Dojo. I'll activate the hidden portal located behind the GREEN FLAG on the RIGHT#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="(Whispers) Hey, haven't you found #b100 #t4000293#s yet? You're going to keep your promise, aren't you?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000293" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21744" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="54" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

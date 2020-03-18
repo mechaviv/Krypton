@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2322.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Over the Castle Walls (2)" />
+        <int name="area" value="30" />
+        <string name="0" value="The #bSecretary of Domestic Affairs#k seems to have something to tell you regarding somehow infiltratating the castle." />
+        <string name="1" value="You should investigate the Mushking Empire and report the results to the #bSecretary of Domestic Affairs#k.\r\n#bInvestigate the Outer Walls of the Castle : #R2322# / 1 Complete." />
+        <string name="2" value="You studied the castle wall and realized it won't be easy to get passed it." />
+        <string name="summary" value="You should investigate the castle walls of the Mushking Empire and report the results to the #bSecretary of Domestic Affairs#k." />
+        <string name="demandSummary" value="#bInvestigate the Outer Walls of the Castle : #R2322# / 1 Complete." />
+        <string name="rewardSummary" value="EXP 11,000\r\nCan proceed to 'Over the Castle Walls (3)' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="11000" />
+            <int name="nextQuest" value="2323" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Like I said, just breaking the barrier is not enough cause for celebration. The Mushroom Castle is extremely secure and does not allow anyone outside the Mushking Empire to enter, so it may not be so easy to infiltrate the castle. Hmmm... To figure out a way to enter, can you investigate the outer walls of the castle first?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Walk past the Mushroom Forest and when you reach the #bSplit Road of Destiny#k, just walk towards the castle. Good luck." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really? So do you know of another way you can penetrate the castle? Well if not, just come and see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm I see… So they have completely shut off the entrance and everything." />
+            <imgdir name="yes">
+                <string name="0" value="Well anyway, good job navigating through the area." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="I don't think you've thoroughly investigated the castle walls yet. Please do so." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300003" />
+            <int name="infoNumber" value="2322" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2321" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2322s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

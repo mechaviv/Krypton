@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6380.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Observe the Spirit Vikings" />
+        <int name="area" value="10" />
+        <string name="0" value="I've learned the Battleship Skill but I don't really know how to use it freely as of yet. I can't figure out what the problem is! I'd better ask Kyrin." />
+        <string name="1" value="So I guess I still need to learn some more skills before I can use the Battleship Skill, plus I need to learn how to properly control the battleship before I can learn how to use the skill itself... Let me go watch the Vikings in Ludibrium, and to prove that I've completed my training, I must defeat #r150 Spirit Vikings#k and bring back #b50 Spirit Viking Flags#k for Kyrin." />
+        <string name="2" value="I took the proof of my training to Kyrin and she taught me the Battleship Cannon Skill in return. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="고민이 있는 듯한 표정이군. 무슨 일이 있는거야? 흐음... 배틀쉽을 아직 사용하기 어렵다는 거지? 훗~ 걱정마. 아직 배틀쉽을 이용하여 강력한 공격법을 익히지 못해서 그래. 쉽고 빠른 훈련이 있는데 한번 받아보겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 그럼 할 일을 가르쳐주지. 아직 배를 조정하는 것이 미숙할거야. 배를 조정하는 것이 능숙해야 스킬을 사용할 수 있지.그러니까 우선 남이 배를 어떻게 조정하는지 잘 살펴보는 게 어때? 또 배를 타고 어떻게 싸우는지도 말이야. 그걸 잘 파악한다면 배틀쉽을 사용하는데 문제가 없겠지? " />
+                <string name="1" value="루디브리엄에 가면 바이킹들이 있을거야. 그들을 잘 살펴보면서 150마리를 무찌르고 와. 그리고 무찔렀다는 증거로 바이킹의 깃발 50개를 가지고 와 줘. 훌륭하게 훈련을 해다고 생각되면 배틀쉽을 이용한 새로운 스킬을 가르쳐주지." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아직 훈련의 필요성을 못 느끼나보군. 새로운 스킬이 배우고 싶다면 언제든지 찾아와." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031873" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5221007" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="522" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You seem concerned about something. What is it? Hmmm... are you worried that you have not mastered the handling of Battleship yet? Haha, don't worry about it. You just haven't learned the powerful skills that go with the Battleship yet. There's a quick and easy training session for this. Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, here's your mission. You are probably still not very good at navigating around with the Battleship. You'll need to have great control over it in order to use other skills. What I'm suggesting here is... how about observing how others sail with ships, or how to fight while on it? If you really watch for it, you'll figure it out, and you'll be better with the Battleship, right?" />
+                <string name="1" value="Go to Ludibrium and you'll encounter a bunch of #rSpirit Vikings#k. Observe them carefully, and when you feel like you've picked them apart, defeat #r150#k of them. I also need to see an evidence from you that you really did slay them all, so I want you bring #b50 Spirit Viking Flags#k with you. If I see that you have really trained yourself in this session, then I'll teach you a new skill." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't think you understand the importance of training, yet. If you want to learn a new skill, come see me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was a great training session! What was it like facing the Spirit Vikings? Weren't they very adept at handling the ship? I guarantee that if you train yourself a bit harder, then you'll end up handling the ship even more adept than them. As a reward for safely completing the task, I'll teach you how to use &quot;Battleship Cannon&quot;." />
+            <imgdir name="yes">
+                <string name="0" value="Battleship Cannon is a powerful, powerful skill that can only be used when you are on the Battleship. Please use this skill wisely..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You need to bring in 50 Spirit Viking Flags. That's what I'd call training." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You need to defeat 150 Spirit Vikings. That's what I'd call training." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031873" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8141000" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6370" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="522" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5221006" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

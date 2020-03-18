@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3921.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Request from a Member of the Sand Bandits?! 1" />
+        <string name="parent" value="A Request from a Member of the Sand Bandits?!" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101012##k lives outside #b#m260000000##k. Could he be part of the Sand Bandits, a secret organization in #m260000000#? Go find out." />
+        <string name="1" value="#p2101012# confirms that he is indeed a member of the Sand Bandits. He needs some rope to help him steal the queen's treasure, and he wants to make it out of...#b#t4000329#s#k? Okay, whatever he says... Better defeat some #r#o2100102#s#k. \n\n#i4000329# #t4000329#  #b#c4000329##k/30" />
+        <string name="2" value="You gave #p2101012# 30 #t4000329#s. It isn't much, but maybe it helped the Sand Bandits." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="쉿. 목소리를 낮추시오. 사람들의 눈에 띄면 안 되니... 무슨 용건이시오?  \r\n#L0# #b 당신이 모래그림단 사람인가요?" />
+            <string name="1" value="...모래그림단? 모래그림단이라... 그건 왜 묻는 거요? 왕비의 병사처럼 보이지는 않는데... \r\n#L0# #b 모래그림단의 일을 돕고 싶습니다. " />
+            <string name="2" value="하하핫! 그런 거였군. 맞소. 내가 바로 모래그림단의 단원이오! 그럼, 내 일을 도와주겠소?" />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3750" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000329" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Shush! Lower your voice. I can't be seen... What do you want?  \r\n#L0# #b Are you a member of the Sand Bandits?" />
+            <string name="1" value="Sand Bandits...? Hm, Sand Bandits... Why are you asking? You don't look one of the queen's guards... \r\n#L0# #b I want to help the Sand Bandits." />
+            <string name="2" value="Ooh. In that case. I mean, yes. Why, yes, I'm a member of the Sand Bandits. You caught me.  So, knowing that, will you help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You know what we do, right? We steal the queen's treasures to, ah, help the poor. That's right. Help the poor. Now, to attack the transport group carrying her treasures, we need a rope. But first, I need material to craft the rope. You with me so far?" />
+                <string name="1" value="In the desert, #b#t4000329#s#k are used to create rope. Dry #t4000329#s can be pulled and stretch to make very fine rope indeed. Slay some #r#o2100102#s#k to get me #t4000329#s. #b30#k should do. I'll be waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey, if you aren't going to help, why'd you bother me in the first place?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Who-who is it?! Ohhh, you're the one that offered to help the Sand Bandits! Ah, hahaha, yes, yes. So did you get the #t4000329#s?" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, yes, this will definitely help us Sand Bandits do good in the world... It's people like you that makes my job so much easier..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're supposed to get me #b30 #t4000329#s#k to help the Sand Bandits. They drop off of #r#o2100102#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000329" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="27" />
+        </imgdir>
+    </imgdir>
+</imgdir>

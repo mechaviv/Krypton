@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4547.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tires are missing!" />
+        <string name="parent" value="Chee Wee's Worries" />
+        <int name="order" value="3" />
+        <int name="area" value="49" />
+        <string name="0" value="Lots of people are having trouble going around the town because their tires are suddenly being stolen by sneaky creatures known as #b#o9420530##k. Who could retrieve all those stolen tires from these villains? " />
+        <string name="1" value="#b#p9270060##k is eager to bring those stolen tires back from #b#o9420530##k. Why don't you step up and save all those people from such an inconvenience? \n\n#o9420530# #r#a45471##k \n#t4000468# #r#c4000468#/50#k " />
+        <string name="2" value="#b#o9420530##k may seems disppeared for now, but you can never be sure if there won't be any more of them coming back to town and stealing things from innocent people." />
+        <string name="demandSummary" value="#i4000468:# #t4000468:# #c4000468# / 50&#xD;&#xA;#o9420530# #a45471#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 33,000&#xD;&#xA;Able to proceed to 'Oly Oly is back!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="33000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000468" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've noticed that the streets are emptier these days, no? It's because there are some impudent monsters going around town stealing tires from people's cars! Can you believe it?" />
+            <string name="1" value="They are #b#o9420530##k! Such sneaky creatures! What in the world do they do with all those stolen tires? There are many people who need their tires back!" />
+            <string name="2" value="Hope you can take down #b50 #o9420530#s#k and bring back #b50 #t4000468#s#k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Well, I don't care what it takes, but I won't allow them to continue stealing people's tires." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You sure don't want to let those villains run around like this, do you?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Well, you sure have brought back enough tires to end your hunting. I'm so relieved." />
+            <imgdir name="yes">
+                <string name="0" value="My only wish is that those villains quit their stealing and leave us in peace." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Your hunting is not completed yet. Those #b#o9420530##k have stolen much more from us!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Your hunting is not completed yet...#b50 #o9420530##k can't be that much of a burden to you. C'mon!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270060" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000468" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420530" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270060" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4546" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="57" />
+        </imgdir>
+    </imgdir>
+</imgdir>

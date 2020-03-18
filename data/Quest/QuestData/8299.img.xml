@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8299.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Chief Stan's Piece of Mind of Maple" />
+        <int name="area" value="50" />
+        <string name="0" value="#bChief Stan#k knows about your quest for the #rMind of Maple#k. He is awaiting your arrival, so go prove your worth to him." />
+        <string name="1" value="Follow the instructions #bChief Stan#k, and defeat the monsters to gather up the appropriate items and prove him your worth.\n\n#t4032234:##r #c4032234#/20#k\n#t4032235:##r #c4032235#/20#k\n#t4032236:##r #c4032236#/20#k\n#t4032237:##r #c4032237#/20#k\n#t4032238:##r #c4032238#/20#k" />
+        <string name="2" value="You have finally received an item of approval from Chief Stan. What does this have to do with restoring #rMind of Maple#k?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032234" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032235" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032236" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032237" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032238" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4032239" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here, traveler? I have been waiting for you. I have heard much about you through Mr. Moneybags. I have a test for you that will prove your worth. I want you to gather up 5 types of maple pieces by hunting monsters around town. Are you up for it?" />
+            <string name="1" value="#rPiece of Courage#k is dropped by #bWild Boars, Dark Axe Stumps, and Axe Stumps#k that can be found around Perion." />
+            <string name="2" value="#rPiece of Wisdom#k is dropped by #bOrange Mushrooms, Pigs, and Ribbon Pigs#k that can be found around Henesys." />
+            <string name="3" value="#rPiece of Accuracy#k is dropped by #bOctopus', Blue Mushrooms, and Bubblings#k that can be found around Kerning City." />
+            <string name="5" value="#rPiece of Freedom#k is dropped by #bEvil Eyes, Curse Eyes, and Jr. Neckis#k that can be found around Sleepywood Dungeon." />
+            <string name="6" value="I wish you the best of luck." />
+            <string name="4" value="#rPiece of Dexterity#k is dropped by #bGreen Mushrooms, Slimes, and Lupins#k that can be found around Ellinia." />
+            <imgdir name="yes">
+                <string name="0" value="I will be here watching you work. Remember, you do not have much time. I advise you to take care of this quickly." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready yet? If you want to prove your worth to me, then you should taken on this mission. Trust your abilities." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you completed your mission?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew you wouldn't disappoint. The reason I have asked you to gather these up is not only to test your abilities, but because these pieces are required to create something special. Now wait as I make the pendant for the &quot;Mind of Maple.&quot;" />
+                <string name="1" value="Now that I know you can pull your weight, here it is; an item of approval from me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not done yet? Keep trying." />
+                    <string name="1" value="Piece of Courage is dropped by Wild Boars, Dark Axe Stumps, and Axe Stumps that can be found around Perion." />
+                    <string name="2" value="Piece of Wisdom is dropped by Orange Mushrooms, Pigs, and Ribbon Pigs that can be found around Henesys." />
+                    <string name="3" value="Piece of Accuracy is dropped by Octopus', Blue Mushrooms, and Bubblings that can be found around Kerning City." />
+                    <string name="4" value="Piece of Dexterity is dropped by Green Mushrooms, Slimes, and Lupins that can be found around Ellinia." />
+                    <string name="5" value="Piece of Freedom is dropped by Evil Eyes, Curse Eyes, and Jr. Neckis that can be found around Sleepywood Dungeon." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032234" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032235" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032236" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032237" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032238" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8298" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009022423" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

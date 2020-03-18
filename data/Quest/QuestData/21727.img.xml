@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21727.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zombie Mushrooms" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="This is your fourth assignment as an informant and you need to gather information about the erratic behavior of the #o2230101#s in #b#m105040300##k. You'd better talk to #b#p1061019##k, the witness that reported the incident." />
+        <string name="1" value="#p1061019# seems terrified to see so many #o2230101#s with such irritated faces. They are preventing him from entering the Ant Tunnel, so he's asked you to find out what has happened to the #o2230101#s. Looks like you'll have to eliminate the #r#o2230101#s#k and retrieve the #b#t4032321##k...\r\n\r\n#o9101001##r #a217271##k\r\n#i4032321# #t4032321# #b#c4032321# / 1#k" />
+        <string name="2" value="You eliminated the #o2230101#s and retrieved the #t4032321#. #p1061019# seemed to know something about the puppet…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032321" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="My whole family is made of swordsmen, and our tradition is that once you reach a certain age, we have to leave home and explore the life of a swordsman, and that's why I'm here. And since I am here, I made my way to #m105040300# so that I can follow my brother's footsteps and defeat Balrog myself." />
+            <string name="1" value="But there is a problem. The #o2230101#s in the Ant Tunnel look so scary, I can't even go inside! What? Are you asking me how I am going to take on Balrog when I can't even fight #o2230101#s? No, no, I am not afraid of #o2230101#s because of their power. I am afraid because of their scary expressions! They look so angry...!" />
+            <string name="2" value="The people in #m105040300# don't really seem to care. Maybe its because they are so enlightened. In fact, one of them even told me that nothing is wrong and that even #o1120101#s go through mood swings. But something is definitely wrong here. We really need to investigate this." />
+            <string name="3" value="#p1002104# told me this is your specialty and that I can totally trust you with this. Is that true?" />
+            <imgdir name="yes">
+                <string name="0" value="Then can you please eliminate #r300 #o2230101#s#k? I think the #o2230131#s may need to be taught a lesson for them to return to normal. According to #p1002104#, they just started changing so you can defeat any of them whether they have changed yet or not." />
+                <string name="1" value="Oh, and one more thing. #p1002104# also said that this is probably related to the puppeteer and that you should recover any puppets that are found... What do puppets have to do with this? In any case, I guess you also need to recover the #bpuppets#k as well." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? This is weird. When I asked #p1002104# for information, he told me that you have gone through this numerous times and that this should be a piece of cake for you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you managed to defeat the #o2230101#s and retrieve the puppet! So what kind of puppet is this anyway? And what were the #o2230101#s doing with it? Can I see it?" />
+            <imgdir name="yes">
+                <string name="0" value="Huh...? This intense, gross-looking puppet... I think it might be the doll which that #rkid#k was carrying around...." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You have yet to defeat #r300 #o2230101#s#k and retrieve the #bpuppet#k. I heard that you'd be good at this, but maybe I heard wrong." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You have yet to defeat #r300 #o2230101#s#k and retrieve the #bpuppet#k. I heard that you'd be good at this, but maybe I heard wrong." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061019" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032321" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101001" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061019" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21726" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

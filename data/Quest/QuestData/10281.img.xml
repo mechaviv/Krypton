@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10281.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Happy 5th Anniversary!!!" />
+        <int name="area" value="50" />
+        <string name="0" value="Send a congratulatory message through #b#p9010010##k to celebrate MapleStory's 5th Anniversary." />
+        <string name="1" value="If you truly want to congratulate MapleStory for reaching its 5th Anniversary, go see #b#p9010010##k to send your congratulatory message." />
+        <string name="2" value="You congratulated MapleStory for reaching its 5th Anniversary." />
+        <string name="demandSummary" value="Go see #p9010010# and deliver your #bMapleStory 5th Anniversary#k congratulatory message." />
+        <string name="rewardSummary" value="#Wbasic#&#xD;&#xA;#v4001126:# #t4001126# 1000개&#xD;&#xA;#fUI/UIWindow.img/QuestIcon/8/0#" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="By the way, you do know that Maple's Anniversary is #bMay 11#k, right?\r\n#b#L0#Of course I know.#l\n#k" />
+            <string name="1" value="So, have you prepared a cake? It looks like you're empty-handed.\r\n#b#L0#I didn't prepare anything...#l\n#k" />
+            <string name="2" value="Hmpf! That's what I figured.\r\nFine, since I, #p9010010#, am as kind as I am beautiful, I'll let it pass if you say the phrase, &quot;Congratulations to MapleStory for reaching its 5th Anniversary,&quot; from the bottom of your heart.\r\nWhat do you think?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="So, you're willing to do it? Great! All it takes is one simple phrase. Rehearse it and see me when you're ready to congratulate MapleStory." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you truly love Maple, don't you think you should congratulate the game on its 5th Anniversary? Come back to me if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="yes">
+                <string name="0" value="Hehe, thank you for your word of congratulations! I, #b#p9010010##k, will make sure to deliver your message all over Maple World." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="q10281e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10277" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="10278" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="10279" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="10280" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="71" />
+            <int name="lvmax" value="200" />
+            <string name="end" value="2009052800" />
+        </imgdir>
+    </imgdir>
+</imgdir>

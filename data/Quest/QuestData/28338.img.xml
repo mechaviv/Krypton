@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28338.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mardi Gras Throws" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Would you like to participate in #rthe Mardi Gras Festival?#k If so, please see #bGaga.#k" />
+        <string name="1" value="Monsters attacked the storage room and looted the Beads we were saving up for the festival, stealing everything! If you eliminate the monsters and bring me #b10 Bead Necklaces#k, I'll make you #ra Mardi Gras Feather: Green, Purple, Red#k--whichever one you want! " />
+        <string name="2" value="You have returned with 10 Bead Necklaces that will be used in #bthe Mardi Gras Festival.#kYou can participate in this event until #rFebruary 21th, 2010.#k " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001429" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032576" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                    <int name="prop" value="6" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4032578" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032577" />
+                    <int name="count" value="1" />
+                    <int name="gender" value="2" />
+                    <int name="prop" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you enjoying #bthe Mardi Gras Festival?#k Well, that makes one of us. As a member of the event committee, I'm worried sick about all the preparations. I could definitely use a helping hand. What do you say?" />
+            <imgdir name="yes">
+                <string name="0" value="Beads are a must in a Mardi Gras Festival, wouldn't you say? Originally, we had made a bunch of Bead Necklaces for the 2010 Mardi Gras Festival. But vicious monsters broke into the storage room, stole all the Bead Necklaces, and made an incredible mess!" />
+                <string name="1" value="I need you to eliminate those monsters and bring back #r10 Bead Necklaces.#k Then I'll reward you #ba Green Mardi Gras Feather, a Purple Mardi Gras Feather, or a Gold Mardi Gras Feather.#k I'm counting on you, buddy!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="How could you decline? Come back if you change your mind, but don't come too late. You can only participate until #rFebruary 21th, 2010.#k" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="No kiddin', you really brought them back. You weren't scared one bit fighting those monsters, eh? A big thanks to you, friend! Because of you, we'll now be able to enjoy the Mardi Gras festivities in 2010 as planned. Here, I have a reward for you." />
+            <imgdir name="yes">
+                <string name="0" value="Whenever you collect #b10 Mardi Gras Feathers#k of every color, you can receive a #rMardi Gras Mask.#k You can participate as many times as you want in this event until #rFebruary 21th, 2010,#k so come and see me frequently if you want that mask!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You need #b10 Mardi Gras Beads.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001429" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <int name="lvmin" value="8" />
+            <string name="start" value="2010021000" />
+            <string name="end" value="2010022200" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

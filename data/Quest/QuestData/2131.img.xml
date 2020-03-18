@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2131.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Warrior's Last Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to look like a Warrior now. #b#p1022000##k wants to give you a final training session." />
+        <string name="1" value="#p1022000# wants you to hunt #r15 #o1110101#s#k. #o1110101#s look like #o0130100#s but are way stronger. You should stay on your guard.\n\n#o1110101# #r#a21311##k" />
+        <string name="2" value="Youe wiped out 15 #o1110101#s. Thanks to #p1022000# , you're well on your path of becoming a true Warrior." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어린 전사 형제여. 지금까지 수련을 잘 따라와 주었네. 부족하되, 이제는 어느 정도 틀을 갖춘 자네의 모습이 보이는군. 정말 기쁘네. 자신만만한 자네의 눈빛을 보니 지금까지의 수련을 시험해 보아도 되겠군." />
+            <imgdir name="yes">
+                <string name="0" value="다크 스텀프 15마리를 사냥해 보게. 그것은 스텀프와 유사하게 생겼지만 그보다는 훨씬 강한 몬스터이지. 사냥할 때 긴장을 풀어서는 안 될 것이네. 하지만 걱정은 말게. 자네가 지금까지 수련을 열심히 했다면 그리 어렵지 않은 상대일 것이니." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="시험이 두려운 건가? 두려워하지 말게. 자네는 이미 한 명의 전사이니. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="840" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Young Warrior! You've been trained well. Now, though you need more training, you are ready to become a Warrior. I'm really happy. I can see confidence in your eyes. Let me test you now!" />
+            <imgdir name="yes">
+                <string name="0" value="Hunt for #rfifteen #o1110101#s#k, which looks like #o0130100#s but are much stronger. Be alert when you hunt, but don't worry; you can handle them if you trained enough." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid of the test? Please don't. You are already a Warrior." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Young Warrior! You hunted 15 #o1110101#. I knew you could made it. Fantastic. I shouldn't say you're young from now on. Someone that improved a lot in such a short time has great potential!" />
+            <imgdir name="yes">
+                <string name="0" value="You just began to be a Warrior. You have a long way to go. It definitely is hard but I want you to face it and fight. That's what Warriors are meant to be." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't hunted #rfifteen#o1110101# #k. Get out there and do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1110101" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2130" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

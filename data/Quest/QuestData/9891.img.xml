@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9891.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="카산드라의 마법" />
+        <int name="area" value="50" />
+        <int name="selectedMob" value="1" />
+        <string name="0" value="#b#p9010010##k가 새로운 마법을 연마했다고 하는데.." />
+        <string name="1" value="#b#p9010010##k의 마법으로 몬스터 사냥시 보너스 경험치를 받을 수 있다. 마법은 9월 2일까지 지속된다.\r\n#r#M9891##b 사냥시 추가 경험치  #r#x9891# #b획득#k " />
+        <string name="2" value="#b#p9010010##k의 마법으로 몬스터 사냥시 보너스 경험치를 얻었다. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I finally did it! I mastered some new magic! I am so amazing!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="\r\nYou can obtain an extra #r#x9891##b#k EXP when hunting #r#M9891#s#b. If you want to select a different monster, press the Q button to open the Quest window, forfeit the quest, and then talk to me again. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9625" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <string name="startscript" value="selectedMob2" />
+            <string name="start" value="2007090100" />
+            <string name="end" value="2007090300" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

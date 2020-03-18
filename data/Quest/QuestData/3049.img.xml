@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3049.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Estelle and the Syrup" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go check out Estelle, who should be somewhere around Ellinia." />
+        <string name="1" value="Estelle asked me to gather up the ingredients necessary to make syrup. She promised to hook me up with a very tasty syrup if I get those for her. \n\n #t4000029# #b#c4000029##k/60 \n #t2012002# #b#c2012002##k/30 \n #t4000017# #b#c4000017##k/10" />
+        <string name="2" value="Estelle fixed me a bottle of sugary sweet syrup." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="-60" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2012002" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000017" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031201" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're looking #b#t4031201##k? So you're here at the request of Elma? \nHow did I know? I made that syrup JUST FOR HER before." />
+            <string name="1" value="Alright, I'll make it again~ You'll just have to gather up the ingredients again." />
+            <imgdir name="yes">
+                <string name="0" value="I'll need #b60 #t4000029#s, 30 #t2012002#s, and 10 #t4000017#s#k. As soon as you gather them all up and give them to me, the drink will be made right there on the spot~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, all the necessary ingredients are here, but if you don't want to make it, then ... oh well ..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought all the ingredients for the juice! Great job! Now hold on one second, and this juice will be made in no time." />
+            <imgdir name="yes">
+                <string name="0" value="Here you go~ Elma must be trying to make another masterpiece with her cooking prowess... my gosh, now I'm getting hungry." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have brought all the ingredients yet. I need them all in order to make #t4031201#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032105" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="60" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000017" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2012002" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032105" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3048" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031201" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

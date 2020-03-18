@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3711.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wyvern's Sudden Attack" />
+        <int name="area" value="41" />
+        <string name="0" value="Let's go see #p2081007#, who's lying wounded somewhere in #m240040400#." />
+        <string name="1" value=" #p2081007#, who I met at #m240040400#, asked me to help decrease the number of Wyverns, who have taken over Dragon's Canyon.  Let's decrease the number of Wyverns and get back to #b#p2081007##k.\n\n#o8150300#  #r#a37111##k\n#o8150301#  #r#a37112##k\n#o8150302#  #r#a37113##k" />
+        <string name="2" value="I have cut down the number of Wyverns as #p2081007# from #m240040400# requested, but I felt uneasy because the Wyverns kept multipying and multiplying." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <int name="lvmin" value="100" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="90000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Did you see some Wyverns on your way here? I am afraid the number has been increasing lately. Wyverns are the most violent of all dragons. They used to reside at a swampy land up north, but they joined forces with Horntail to attack this forest. The Dragon Canyon used to be occupied by Newties, but now serves as the primary residence of Wyverns." />
+            <string name="1" value="Because the Wyverns blocked the path that leads to the Dragon Nest, a lot of soldiers perished right here in this spot. For you to be here relatively unscathed, I think you may be that special someone that is capable of decreasing the number of Wyverns here." />
+            <imgdir name="yes">
+                <string name="0" value="Please defeat #b18 #o8150300#s, #o8150301#s, and #o8150302#s each#k. They can all be found at the Canyon. I'll be here waiting for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is this too much for you to handle?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back. Thanks to your great work, the number of Wyverns seem to have decreased here. Thank you!" />
+            <imgdir name="yes">
+                <string name="0" value="Here's hoping the number of Wyverns do not increase again." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Defeating #b18 #o8150300#s, #o8150301#s, and #o8150302#s each#k should be a great help for us." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081007" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8150300" />
+                    <int name="count" value="18" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="8150301" />
+                    <int name="count" value="18" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="8150302" />
+                    <int name="count" value="18" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081007" />
+            <int name="lvmin" value="100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

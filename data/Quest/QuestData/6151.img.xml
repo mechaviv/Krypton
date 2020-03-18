@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6151.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Griffey's Necklace" />
+        <string name="parent" value="Song of forgotten warrior" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="#p2081000# knows about Sayram but doesn't know anything about the singing shield. He says that I might be able to find some information on it from the #b#t04031479##k which Sayram gave to Griffey, whom he dearly loved. So I'll head to Minar Forest and find the necklace from the #o8180001#. Should be a piece of cake...yea, right...\n\n#i4031479##t4031479# #b#c4031479#/1" />
+        <string name="2" value=" I found #t4031479#, and after some &quot;persuasion&quot;, obtained the necklace. Now to return to Chief Tatamo and see what he says about this." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031479" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm glad to see someone remembers Sayram... What do you want to know? Don't hesitate to ask any questions." />
+            <imgdir name="yes">
+                <string name="0" value="His legacy... a singing shield? Hmmm. Did his shield sing? I'm not sure. I know something else he really loved. Do you know #b#o8180001##k? It's horse with horns and wings on his back. Sayram rode #o8180001# and loved #o8180001# so much. He gave it a #bspecial necklace#k." />
+                <string name="1" value=" Maybe, you can find some clue from the necklace. I'm not sure though. Hohoho. The necklace? Sayram released #o8180001# on the forest later. I think #b#o8180001##k in #bMinar forest#k would have it. I wish you luck, Sayram was the only one who tamed it successfully, it might be hostile to others..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Huh? Nothing to ask? Then relax, and rest up in #m240000000#~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Huh? Is that #o8180001#'s necklace? Let me have a look ...Hmm. I can't remember it. Wait, let me think for a few minutes..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" No luck with getting #t04031479# yet? Well. I'm sure you can still find it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031479" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6150" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21718.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rowen's Request 2" />
+        <int name="area" value="6" />
+        <string name="0" value="You should talk to #b#p1032101##k in #b#m101000000##k and see if the puppet-toting kid has made any more appearances in the South Forest." />
+        <string name="1" value="#p1032101# says that the kid with the puppet has showed up once again in #m100040003# and wants you to eliminate the #o1110100#s and retrieve the puppet yet again.\r\n\r\n\r\nRegardless of Personality #o9101000##r #a217181##k\r\n#i4032318# #t4032318# #b#c4032318# / 1#k" />
+        <string name="2" value="You defeated the #o1110100# and retrieved the #t4032318#. So far, you've managed to foil the kid's plan times times. Perhaps the kid'll give up now…?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032318" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2050004" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I just received a report that the kid showed up again at the Southern Forest, and this time #p1032112# even warned the kid to stop, only to be told he'd get his branches broken off if he tried to stop the kid. Then the boy disappeared." />
+            <string name="1" value="It'd be nice to catch the kid, but since we can't, we'll just have to eliminate the #o1110100#s and gather #t4032318#s again. And just like last time, you can just defeat whichever #o1110100# you see, regardless of their personality. " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Now please head over to #m100040003# once more. There, I want you to eliminate #r100 #o1110100#s, regardless of their personality#k, and retrieve the #b#t4032318##k as well. You've already done this before, so it won't shouldn't take you too long." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am sorry I keep asking you to do the same favor over and over again… but there's nothing else we can do about it. Let me know if you have a change of heart." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you manage to eliminate the #o1110100#s and retrieve the #t4032318#? Hah… I apologize for making the same request over and over again." />
+            <imgdir name="yes">
+                <string name="0" value="We have retrieved a #t4032318# three times already. I don't see why the kid wants to make the #o1110100# more violent, but I'd like nothing more than for that kid to stop showing up and causing trouble." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You still haven't defeated #r100 #o1110100#s#k and retrieved the #b#t4032318##k? I see that you're much last stronger than last time, so I don't see why this is taking too long." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You still haven't defeated #r100 #o1110100#s#k and retrieved the #b#t4032318##k? I see that you're much last stronger than last time, so I don't see why this is taking too long." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032318" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101000" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21717" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20710.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hidden Inside the Trash Can" />
+        <int name="area" value="15" />
+        <string name="0" value="I'll need to talk to Agent #b#p1103002##k of #m103000000# about the next assignment." />
+        <string name="1" value="#p1103002# told me that sources confessed to a huge number of #bstrange dolls#k dumped inside the #m103000000# subway, and that he wanted me to bring back one of those. I'll have to dig in through the #btrash can inside the subway#k in #m103000000#... \n\n#i4032136# #t4032136# #b#c4032136# / 1#k" />
+        <string name="2" value="I managed to find #t4032136# and gave it to #p1103002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032136" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You don't really instill confidence in me, but since you're a Cygnus Knight and all... and since no one else can go on a search right now... Okay, let me explain to you what this mission is about." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="According to the information we acquired recently, the subways in #m103000000# are apparently full of strange dolls. Jake told me this, so I can say this with confidence. Those dolls do seem quite suspiscious... so I want you to bring #t4032136# back to me." />
+                <string name="1" value="Jake said any dolls found inside the subway have all been thrown out, so if you go through the trash can, then maybe  you'll be able to find one. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? Are you declining the mission? Fine, do it like that. I'll just report it straight to #p1101002#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you managed to bring #t4032136# with you! Not bad... I thought you'd be too queasy to go through trash. Not bad, not bad." />
+            <imgdir name="yes">
+                <string name="0" value="Hold on for a minute while I run through this doll. I'll need to make sure that this is the same one as the one found in #m100000000#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Were you not able to find #b#t4032136##k? I told you to go through the #bsubway trashcan#k for that." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032136" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20709" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q20710s" />
+            <int name="lvmin" value="16" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

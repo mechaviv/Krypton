@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1030.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maria's Map Reading" />
+        <int name="area" value="20" />
+        <int name="autoStart" value="1" />
+        <int name="autoPreComplete" value="1" />
+        <string name="0" value="You're at a crossroads. Where should you go? Hmm, maybe you should ask Maria for help." />
+        <string name="1" value="Maria showed you how to read the World Map. If you press W, the world map will appear. You can see some places that you haven't been..." />
+        <string name="2" value="You think the world map will make it easier to go around Maple World." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="11" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, you look lost. Well...Beginners not familiar with Maple World often are lost. Probably you don't know how to read the world map. Do you want to know?" />
+            <string name="1" value="Haha. It's very easy. Press W. You will see Maple Island and where you are. If you click the right mouse button, you can see the whole Maple World. Isn't it easy?" />
+            <imgdir name="yes">
+                <string name="0" value="It gets much easier to go around when you make use of world map. For sure, there is many areas that you can't see in the world map. Keep that in mind please. Now, do you have an idea where to go? Have a nice trip." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="2103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="fieldEnter">
+                <int name="0" value="50000" />
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

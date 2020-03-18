@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3929.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sejan's Test" />
+        <string name="parent" value="Sand Bandits According to Sejan" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="Since you brought the food, Sejan says you have to distribute it too. Hide the food in safe spots in the houses of innocent people in town. You can tell who owns a house by the mark on the door, then click around the house to find a good spot for the food." />
+        <string name="2" value="You delivered the food to the people of Ariant, as requested. Sejan still doesn't seem to fully trust you. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031580" />
+                    <int name="count" value="4" />
+                </imgdir>
+            </imgdir>
+            <string name="info" value="2222" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="It's good that you brought the food, but you need to help distribute it to the people of Ariant, too. If you are not a spy, then you have no problem with that, right?" />
+            <imgdir name="yes">
+                <string name="0" value="Here, take these food packages. Your task is to drop them off at certain houses. Do not, I repeat, do not just place them anywhere. You have no idea how many people do that... Find a safe, secure hiding place to store the food in each house, understand?" />
+                <string name="1" value="Oh, and one more thing. Ariant has more than its share of thieves and crooks. We don't need to give them any food, obviously. You only need to drop the food packages at the homes of innocent residents, marked by a #bsign on the door#k. So check doors before entering." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be a spy from the queen. It was a mistake to trust you..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was great. Now I can really tell you're not a spy from the queen." />
+            <imgdir name="yes">
+                <string name="0" value="You are definitely a good candidate to become a member of the Sand Bandits." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Wait, why didn't you drop off the food? I don't care how hungry you are, you can't have any of it…" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Wait, you lost the #b#t4031580##k? You gotta be more careful! I'll give you this one more time for the sake of the people of #m260000000#, but I'm not happy about this…" />
+                <imgdir name="yes">
+                    <string name="0" value="If you lose it again, you'll have hell to pay." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101011" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="3333" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031580" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3928" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

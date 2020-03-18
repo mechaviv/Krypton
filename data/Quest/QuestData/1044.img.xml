@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1044.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mai's Last Training" />
+        <string name="parent" value="Mai's Training!" />
+        <int name="order" value="4" />
+        <int name="area" value="20" />
+        <string name="1" value="You defeated the Slimes and brought back the Squishy Liquid to Mai. She seemed impressed and now wants you to hunt a really powerful monster, #r2 Pigs#k.\n\nPig #r#a10441##k" />
+        <string name="2" value="You defeated 2 Pigs and reported the result to Mai." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2010001" />
+                    <int name="count" value="15" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2010004" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa, you really obtained a Squishy Liquid from a Slime. You're doing much better than I expected! I think... Yes. Yes, I think you're ready to take on a really challenging monster." />
+            <imgdir name="yes">
+                <string name="0" value="This time, you need to hunt #r2 Pigs#k. They are fast and very powerful, but thankfully they aren't the Ribbon Pigs found on Victoria Island. These are just regular Pigs. If you focus, you should be able to handle two of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did I scare you? Don't worry. If you are persistent, you'll be able to handle the next assignment. I wouldn't make you hunt monsters you couldn't handle, you know. Hehe." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You did it! You hunted 2 Pigs! That's incredible. Seriously, you're doing amazingly well. You may be just a Beginner, but I have a feeling that you'll one day become a legendary hero in Maple World." />
+            <imgdir name="yes">
+                <string name="0" value="Your training is now complete. You may still have some weaknesses, but you'll be able to overcome them in no time. Keep training!" />
+                <string name="1" value="Oh, and I have one last #btask#k. If you want to push further, then talk to #bBari#k, who has a test for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't slayed #r2 Pigs#k yet. Please take care of two, then let me know of the results." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1043" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

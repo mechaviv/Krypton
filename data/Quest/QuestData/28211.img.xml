@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28211.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Next Stop, Ellinia" />
+        <string name="parent" value="A Strange Burglary Case" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#@1092002:##k in #bNautilus#k says there has been a case of burglary in #bEllinia#k as well. Let's talk to him." />
+        <string name="1" value="There has been a case of burglary in #bEllinia#k. Let's go see #b#@1032001:##k in #bEllinia#k." />
+        <string name="2" value=" #b#@1032001:##k in #bEllinia#k says there has been a huge burglary case in the village. Let's talk to him." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'The Clue to Ellinia's Burglary Case' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This guitar is really awesome. I'm so dizzy from all that head-banging last night. Haha.\n\nOh, by the way, I have something to tell you. Want to hear me out?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I heard from a collegue last night while playing my crazy awesome guitar, that there was a huge burglary case in the town above us, #bEllinia#k.\nFrom what I heard briefly, an enormous amount of Mesos has been stolen!" />
+                <string name="1" value="If you're still curious, you can go see #b#p1032001##k in #bEllinia#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Shall I play some guitar?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you've must heard the rumor in #bNautilus#k. Welcome, welcome!" />
+            <imgdir name="yes">
+                <string name="0" value="Recently, there has been an endless number of burglary cases in the entire region of Victoria Island.\n\nI knew something wasn't right!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1032001##k is in #bEllinia#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28210" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

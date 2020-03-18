@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8005.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mariwaka's Purse" />
+        <string name="parent" value="Find Mariwaka's Purse!" />
+        <int name="order" value="4" />
+        <int name="area" value="48" />
+        <string name="0" value="Apparently, Popo is so busy, he hasn't had time to handle the case of Mariwaka's missing Purse. My gosh! Mariwaka will be really disappointed if I tell her the bad news..." />
+        <string name="1" value="Mariwaka asked me if I could find the purse for her, in place of Popo. She said the thugs walking around the back alley may be the ones that stole her purse. She also mentioned that they have not seen any type of animals in the city for quite some time...I wonder what happened to them..." />
+        <string name="2" value="I returned the purse to Mariwaka, and she was crying with tears of joy. Oh yeah, I remember, she's an actress...! I wonder if she was really acting..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031139" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2050004" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What? Still?? Oh my gosh, what am I supposed to do now? I need to find it ASAP! Oh... oh yeah! YOU can help me find it! Don't worry, I'll reward you handsomely if you find it for me. Right... I got it stolem by the thugs in the back alley carrying a gun. You might find it if you teach them a lesson or two. What do you think? Will you help me?" />
+            <imgdir name="yes">
+                <string name="0" value="I'll be here waiting. That purse is very important to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? You got my hopes up, and this? I don't like people like you. Get away from me. Now." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find my purse?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh wow! This is it! Thank you so much! This is my way of saying thanks, so please take it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found it yet? Please find it!~~~! Man, this is really annoying~~! Argggh!!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120016" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031139" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120016" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8004" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

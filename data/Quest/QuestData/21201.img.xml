@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21201.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mirror of Desire" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The polearm introduces itself as Maha and demands that you remember him. What are you supposed to do? You'd better consult #b#p1201000##k about this." />
+        <string name="1" value="#p1201000# states that the voice is really #p1201001#'s voice, and that you need to remember something about #p1201001# to appease him. If you head west of #b#m140000000# to #m140030000##k, you'll find the Mirror of Desire, which has the power to display whatever you desire. Maybe you should check it." />
+        <string name="2" value="You were able to faintly encounter your past through the mirror. You saw the time you first got your polearm. When you mentioned the story, #p1201002# seemed relieved. Thanks to #p1201002#'s help, you were able to recover some of your dormant abilities." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Seriously what happened to your polearm? What? The #p1201001# talked to you in a human voice? Hmmm…that's really something. It is recorded that the heroes' weapons have identities of their own and talk like human beings, but I didn't think much of it. I guess it's true though." />
+            <string name="1" value="If it really is the voice of the polearm, then you'll need to pay attention. Just like #p1201001# said, you must find a way to get back your memory concerning #p1201001#. But how can... Wait a minute! I actually know of an item that may be perfect for this!" />
+            <string name="2" value="Head west, past town, and you'll reach a dead end made of ice cliffs. Inside an ice cave around there, you'll find a mirror made of ice known as the #b#m140030000##k. " />
+            <string name="3" value="This mysterious mirror that was made by one of the workers from a long time ago is called the #bMirror of Desire#k, because it shows what you desire deep inside your heart, but it doesn't show EVERYTHING, so it's a bit hard to use." />
+            <string name="4" value="The mirror only shows things that are directly related to you, and it only shows the concrete person or thing of your desire, nothing abstract. You need to really focus on a specific target and desire to see that target in the mirror, and it will appear." />
+            <string name="5" value="Your memories are too broad and abstract, which is too much for the Mirror of Desire to handle. But now we have a specific target, your polearm, so you may actually get to see something. Go ahead and try it." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Don't forget, it must be a specific target that's related to you. Then you might see something in the Mirror of Desire." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? Do you not like things that are unscientific? Come on, you've just reemerged from a block of ice that you were trapped in for hundreds of years and you're talking about science?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Head west of town and you'll find an ice cave. Go in the cave, and you'll see a mirror made purely of ice. Take the portal in front of the mirror, and you'll see what you truly desire through the Mirror of Desire." />
+                </imgdir>
+                <imgdir name="quest">
+                    <string name="0" value="Do you still not remember me? How can you do this to me?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21202" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21201e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21200" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

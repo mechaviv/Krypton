@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28201.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Even More Challenging Training 2" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201120:##k in #bKerning City#k says he'll begin the second training. Let's talk to him." />
+        <string name="1" value="He says to hunt #rOrange Mushrooms#k and collect 20 #rOrange Mushroom Caps#k.\nHe says you'll easily find them in #b#m102040000##k.\n\nReport back to #b#@9201120:##k in #bKerning City#k upon completion." />
+        <string name="2" value="You've completed #bErvine#k's second training!" />
+        <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;Able to proceed to 'Reporting the Training Results to Dark Lord' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="We'll begin the second training now. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The second training requires you to hunt monsters and bring their drop items. If you go to #b#m102040000##k, you'll find a lot of #rOrange Mushrooms#k.\n\nIf you continuously hunt #rOrange Mushrooms#k, you'll be able to acquire the #rOrange Mushroom Cap#k. Please bring me 20 of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Let me know whenever you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was quick! Collecting drop items entails patience and determination, so it's no easy task." />
+            <imgdir name="yes">
+                <string name="0" value="You've successfully completed the second training. Remember, you can acquire different drop items by hunting monsters!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You must collect 20 #rOrange Mushroom Caps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201120" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201120" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28199" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

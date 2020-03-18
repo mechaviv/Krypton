@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4943.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Cold Hearth" />
+        <int name="area" value="50" />
+        <string name="0" value="I heard there's an old butler in the Haunted House. Maybe he needs help cleaning it..." />
+        <string name="1" value="I spoke with Edmunds, Butler of the Prendergast Estate.  It seems that he' run out of #t4000018# to heat the house, which would explain the chill.  I've agreed to help him out and bring back #b60 #t4000018##k so he can refill the fireplaces throughout the house and re-heat the mansion." />
+        <string name="2" value="I brought back #b60 #t4000018##k to Edmunds; he can get the fireplaces going again now.  Hmmm... It seems like there are quite a few fireplaces around this labyrinthine house." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="-60" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022246" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Good heavens!  Don't startle me like that- I thought you were the ghost!  Oh, wait... you're not part of the staff!  *Ahem*  Excuse my manners, it's been awhile since we've had guests here.  May I assist you?  My name is Edmunds.  I have been the butler of the Prendergast Estate ever since Master Prendergast acquired this house.\r\n\r\n#L0##bWhat ghost were you talking about?#k#l" />
+            <string name="1" value="Things have not been the same in this house since-- No matter... There is no ghost, just some hogwash that's been circling among the household staff since... since the recent tragedy that befell us.  What happened, you ask?  It... it is not something we discuss with strangers.  But perhaps... I have been in a bit of a bind with the recent desertion of several members of our staff.  Many things still need to be done, now with fewer hands, so I require a bit of assistance...\r\n\r\n#L0##bNo problemo, I'm here to help. But first, maybe you can tell me a bit more about this place.#k#l\r\n#L1##bNo thanks!  I'm here to explore, not to do chores.#k#l" />
+            <string name="2" value="Wonderful... an extra pair of hands!  If you help me with some tasks, I'll do my best to enlighten you about this place." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Service is a noble calling, my young friend. Perhaps you should look into acquiring more maturity before you return here." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="As I mentioned, this home belongs to Jonas Prendergast, the premier toy maker in Masteria, and perhaps all of the Maple World!  Master Prendergast makes all of his wonderful toys right here, in his Workshop at the top of this house.  You have heard of the Prendergast Toy Company, haven't you?  No?!" />
+                <string name="1" value="&lt;Sigh&gt; It is as I feared.  I should say, Master Prendergast was once the premier toy maker, but as you can see, this place, and his reputation, has recently fallen into a bit of disrepair.  Master Prendergast once made the most wondrous toys, his delightful creations were beloved by all children!  His products made him rich, many times over, affording him this lavish home, and that drew the attention of many females.  Jonas has been married several times over - seven wives in all, in fact.  " />
+                <string name="2" value="However, Jonas had but a fleeting passion toward all of his wives- even this latest one.  But the only female who held his attention was his daughter, Sophilia." />
+                <string name="3" value="Ah, Sophilia.  Such a happy, darling child.  Then came that tragic day, a day which will be scarred forever in my memory... A terrible, dark day.  &lt;wipes away a tear&gt; Since that day, this house has grown so cold, so cold..." />
+                <string name="4" value="Enough of my prattling... We must all carry on, so back to the task at hand!  The groundskeeper, who used to chop and gather the firewood for the house, was one of our recent casualties...  We have no more, and it will take much to fill all the fireplaces of this manse.  If you can help me by bringing me #b60 #t4000018##k, it would get Ludmilla off my back, at least for the moment.  Ludmilla is Master Prendergast's current wife, the current lady of the house.  She has been complaining about the chill.  Do hurry with the wood, Ludmilla can be quite the merciless nag!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Service is a noble calling, my young friend. Perhaps you should look into acquiring more maturity before you return here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Wonderful!  The chill was beginning to make my joints ache!  Now we can get these fireplaces going again.  &lt;Shakes his head&gt; So many of them in this house.  But first things first, I haven't forgotten my end.  Come back and ask me what you wish, I shall do my best to enlighten you.\r\n\r\n#L0##bCan you tell me about the layout of the Mansion?#l" />
+            <string name="1" value="Certainly.  You are currently standing in the Foyer.  The Library is at the other end of the house.  You can reach that by going through a series of rooms and hallways from here.  Master Prendergast's Toy Workshop is at the very top of this mansion but it's only accessible through the doors at the top of the Library.\r\n\r\n#L0##bOk.  Thanks for pointing out the way.  Anything else I should know?#l  " />
+            <string name="2" value="Do be careful, the house is large and can be a bit confusing to navigate.  And one more thing...  In addition to the noises, I've been noticing some very odd things... What odd things?  I don't know how to explain it exactly.  Some of the rooms simply don't feel right anymore.  I've been tending to this house for decades, but somehow, it feels a bit different... almost as if the rooms are moving around on me.  &lt;shrugs&gt; Must be the time of year.\r\n\r\n#L0##bIs there anyone else in the house?#l" />
+            <string name="3" value="As I mentioned previously, most - or dare I say, all - of our household staff have left unexpectedly, complaining about strange noises and... um... sightings.  Who do you want to know about?\r\n\r\n#L0##bWhat can you tell me about the lady in the picture?#l" />
+            <string name="4" value="That's Lady Ludmilla.  You will likely find her in one of the bedrooms.  That woman assumes that everyone is here to serve her whims!\r\n\r\n#L0##bHow about the man in the center portrait?#l" />
+            <string name="5" value="Ah, that's Master Prendergast.  As for him, he is presently... busy.  He has sequestered himself in his Workshop at the top of the Mansion.  Please do not disturb him.\r\n\r\n#L0##bOk. Thanks for the info.#l " />
+            <string name="6" value="Thank you once again for lending a hand.  It has been difficult to maintain this house by myself.  Here is your reward.  It's a little concoction I cooked up... helps me get through the days I'm feeling a little ill and overworked." />
+            <imgdir name="yes">
+                <string name="0" value="Now I must go tend to my next task... apparently Ludmilla wants me to sweep out the Chimney.  Of all things!  Especially after what happened to Miss Sophilia! &lt;grumble&gt; The woman never runs out of thankless tasks for me to perform!" />
+                <string name="1" value="In fact, if you are looking for more to do, you can go see Ludmilla.  I'm sure there's a million and a half things that wretched woman needs help with.  I understand if you balk at the thought though, I know firsthand how difficult she can be.  If you are not up for being harangued, take my advice and steer clear of her... or she'll press you into her service whether you wish it or not!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="No, no, this won't do.  Do you see the size of this house, and the number of fireplaces?  At least #b60 #t4000018##k are necessary to create enough warmth to ward off this chill.  Any less and I fear it will do naught but cause smoke.  Please return when you've gathered enough!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201080" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000018" />
+                    <int name="count" value="60" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201080" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4941" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21734.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Traces of the Puppeteer" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 37, #b#p1002104##k sends you a message. Is there a new lead?" />
+        <string name="1" value="#p1002104# says that he's found hidden traces of the #o9300346# and that the puppeteer is hidden in a #bsmall cabin#k somewhere in #b#m105040200##k. He says you have the greenlight to finish off the #o9300346# if you run into him again.\r\n\r\n\r\n#o9300346##r #a217341##k" />
+        <string name="2" value="You defeated the #o9300346# without a definite clue to lead you to the #t4032323#. But then, #p1002104# flashed a comforting smile as if to tell you not to worry about a thing…" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you busy? I have been looking all over Victoria Island in search of valuable information and found something that might intrigue you. It's about #o9300346#..." />
+            <string name="1" value="I don't know if you know this, but ever since you taught #o9300346# a lesson, the entrance to the Evil Eye Cave doesn't work. It looks like #o9300346# has moved to a new hideout." />
+            <string name="2" value="I received a report that someone witnessed  #o9300346# entering a #bsmall cabin#k in #b#m105040200##k of #m105040300#. I heard it from a reliable source, so it's probably true. Rush over and defeat #r#o9300346##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Come back after defeating #o9300346#. I have some good news I want to share when you come back. Haha, you won't be disappointed." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hm? Hey, what are you saying? It's certified information provided to you by the finest source on this continent! You can trust me on this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You must have come back after defeating #o9300346#... But what's with the long face? Did something happen?#b#L0#(You explain there wasn't any information on #t4032323#.)#l\n#k" />
+            <string name="1" value="Ah, that's what's bothering you. Hahaha, you don't have to worry about that." />
+            <imgdir name="stop">
+                <imgdir name="0" />
+                <imgdir name="mob">
+                    <string name="0" value="Hey, you still haven't gone to fight #r#o9300346##k? The new hideout for #o9300346# is a #bsmall cabin#k located in #b#m105040200##k. You should eliminate him once and for all!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <string name="endscript" value="q21734e" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300346" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21733" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21734s" />
+            <int name="lvmin" value="37" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

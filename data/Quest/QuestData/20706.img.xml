@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20706.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Black Shadow in the Pig Farm" />
+        <int name="area" value="15" />
+        <string name="0" value="I'll need to talk to Agent #b#p1103001##k of #m100000000#, who seems to have some new information to share." />
+        <string name="1" value="#p1103001#, who claims black shadows have been spotted all around #b#m100020000##k, asked me if I could investigate the forest in East. He told me to #broam around my mouse cursor until I can click on something, then click on it#k." />
+        <string name="2" value="I reported the suspicious black shadow hidden in the forest that I spotted to #p1103001#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have just received a big news! I can't disclose the name, but a girl in #m100010000# allegedly found a group of suspicious shadows moving in #b#m100020000##k. Doesn't that sound questionable? I think it's something we should look into!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I want you to go into #m100020000# and search the grassy areas, especially the ones in between the weeds and thickets. If you can find anything, ANYTHING, let me know, okay?" />
+                <string name="1" value="Just in case you are not sure how to search for things... #buse your cursor to roam around the screen until you find something you can click on. When you spot something, you can click on it immediately#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? Doesn't it sound suspicious enough? Other than that, I haven't received much information on Black Mage..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="So you spotted a black shadow in between the forest? Ahh... it would have been nice if we could have captured him. But if it is indeed one of Black Mage's men, then there's no way he would have been caught that easily." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for your help! I'll be  here to check on them continually, so I want you to keep training until the next big mission comes up, okay?" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103001" />
+            <int name="infoNumber" value="20731" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20705" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="14" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

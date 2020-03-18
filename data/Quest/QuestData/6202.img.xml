@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6202.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Arec and Shadower" />
+        <string name="parent" value="Grief of darkness" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value=" #p9040002# said he is thankful to have me because this job is very dangerous and it hasn't gone through the appropriate approval process. A dangerous task that hasn't gone through the approval process...should he be asking me to do this? I wonder...let's go see #b#p2020011##k." />
+        <string name="2" value=" In return for the job...I received the Assassinate skill. This will definitely come in handy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="200000" />
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="4221001" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="10" />
+                    <imgdir name="job">
+                        <int name="0" value="422" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" You might know this. When they explore old relics, they always have many people. Usually, they have dozens of staff members.  They never ask one person to go in and find the object. But this time, they really wanted one person. I couldn't help it!" />
+            <string name="1" value=" As the excavation team leader, I shouldn't ask for a personal request. But, I really needed it. To be honest, I wasn't sure if you could succeed. #p2020011# guaranteed it, I didn't believe it. I am surprised!" />
+            <string name="2" value="You're done with relics. Go to see #b#p2020011##k." />
+            <imgdir name="yes">
+                <string name="0" value="#p2020011# recommended a talented person." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" Huh? You're not going? #b#p2020011##k will pay you for your services!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" I was told you were successful. Excellent. You became quite a good Thief. You earned many things from this request, in addition to looking stronger than before." />
+            <string name="1" value=" What does that look mean? Hmmm. #p9040002#  the old man told you everything...I see..." />
+            <string name="2" value="#p9040002#, I don't know why he ignores his duty--this is all his fault anyway. It doesn't matter to you what kind of object it was, does it? Was the request too dangerous? You shouldn't complain--you're supposed to be tough! Anyway, this battle #bmade you improve your stealth attack#k. Many will have trouble if you just stay where you are--nifty trick, isn't it?" />
+            <string name="3" value=" You don't look happy. You didn't like this mission, did you?" />
+            <imgdir name="yes">
+                <string name="0" value="What did you expect? You should have been a Dark Knight if you want to walk the straight and narrow path. You are a Thief, so you must live in the shadows." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" #p2020011# will pay you for a job well done." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020011" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9040002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6201" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="422" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

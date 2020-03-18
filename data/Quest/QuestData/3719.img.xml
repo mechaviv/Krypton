@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3719.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Nex the Time Guard" />
+        <string name="parent" value="Year 2021- Just Another Day" />
+        <int name="order" value="1" />
+        <int name="area" value="41" />
+        <string name="0" value="Andy the Time Traveler says he has something to tell you before your first time travel." />
+        <string name="1" value="Andy the Time Traveler informs you that you must pass the test Nex the Gatekeeper of Time, who lives in the Old Tree of Tera, gives you before you can travel through time. Enter the Old Tree of Tera and pass Nex's test." />
+        <string name="2" value="You have passed the first test given by Nex the Gatekeeper of Time and have earned the right to travel to another time. You can now teleport to Average Town in the year 2021. Go to the Time Gate with the Time Traveler's Pocket Watch." />
+        <string name="demandSummary" value="#o7120100# #a37191#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 80,000\r\nCan participate in the &quot;First Clue&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="80000" />
+            <int name="nextQuest" value="3720" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Before you can travel though time, you must first pass Nex's test. Nex is the Gatekeeper of Time, and he lives inside the Old Tree of Tera in Tera Forest. You must defeat him before you can time travel." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="When you defeat Nex, the Time Gate that lets you teleport to year 2021 will open." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You will not be granted authorization to travel through time unless you defeat Nex the Gatekeeper of Time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've passed Nex's first test. This means you have earned the right to travel to year 2021 using the Time Gate. You're doing great! What a relief!" />
+            <imgdir name="yes">
+                <string name="0" value="Take the Time Traveler's Pocket Watch and go through the Time Gate." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Come back after you've passed Nex's test. Nex the Gatekeeper of Time lives inside the Old Tree of Tera." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7120100" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3718" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3715" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3716" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3717" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

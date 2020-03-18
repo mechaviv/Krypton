@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2111.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="DANGER! &lt;1-G. Mushroom&gt;" />
+        <int name="area" value="30" />
+        <string name="0" value="I heard there's a warning sign on monsters somewhere Deep in the Forest..." />
+        <string name="1" value="Eliminate #b999#k Green Mushrooms, then find &quot;The Rememberer.&quot; \n\n#o1110100# #r#a21111##k" />
+        <string name="2" value="I tried eliminating the Green Mushrooms all-together, but the number didn't seem to decrease at all." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Eliminate 999 of these! #r - #p1061011# - " />
+            <imgdir name="yes">
+                <string name="0" value="Once your eliminate the monster with your guild mates, make sure to report this to #r#p1061011##k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Shhh! Silence! This requires total concentration. The study of levitation is that of an art, and even a small mistake will ruin everything. How about studying it with me? You do seem heavy for this... anyway, how can I help you? Do you have something to ... Hey! You! You must have eliminated #b999 #o1110100#s#k. I can see 999 #o1110100#s hovering behind you. Incredible!" />
+            <imgdir name="yes">
+                <string name="0" value="I can tell you're noble enough to do this without expecting anything return, but this is just my way of saying thank you for helping us out. Please take it." />
+                <string name="1" value="You're not saying that you're going to end your journey here, right? Inside the Dungeon, you'll find nothing but really powerful, dangerous monsters. I've put up bulletin boards everywhere, so find those. I'll reward you well, if the job is done right. Watch out for those monsters!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Make sure to report to #rThe Rememberer#k of the result after eliminating the monsters!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Phew... I've been quietly meditating here, and you almost ended it. Please talk in whispers. Ah, so you're having a hard time understanding the notice I put up on the notice board. Please defeat #b999 Green Mushrooms#k, then come back here." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101000" />
+                    <int name="count" value="999" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1063003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2105" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="45" />
+            <int name="interval" value="1440" />
+        </imgdir>
+    </imgdir>
+</imgdir>

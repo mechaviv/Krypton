@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28212.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Clue to Ellinia's Burglary Case" />
+        <string name="parent" value="A Strange Burglary Case" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value=" #b#@1032001:##k in #bEllinia#k says there has been a huge burglary case in the village. Let's talk to him." />
+        <string name="1" value="Let's go find #b#@1032104:##k in #bEllinia#k and ask her about the #rGolden Feather#k." />
+        <string name="2" value="#b#@1032104:##k in #bEllinia#k says she's not sure what the #rGolden Feather#k is." />
+        <string name="demandSummary" value="#i4001355:# #t4001355:# #c4001355# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'This Feather, For Some Reason, Seems To Be Related to Perion...' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001355" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="There is a huge vault I made in #bEllinia#k.\nThe living cost isn't too high, so we don't need that much Mesos to maintain our lifestyle here, but we need those Mesos for town development." />
+            <string name="1" value="So, the townspeople store their Mesos in that vault and I usually manage it, but all the Mesos are gone!\n\nI'm beyond angry, but what can I do? We do have some clues that may point to the person responsible for this crime, though. Will you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There was a #rGolden Feather#k near the vault, placed right where it's very visible as if someone meant to put it there.\n\nCould you go over to #bEllinia#k and ask #b#p1032104##k what this #rGolden Feather#k is and where it came from? She knows a lot of things, so she may know something about this." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Aren't you going to talk to me again in just a few moments? Why don't you just accept now?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What is this weird looking #rGolden Feather#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Please give me a few more minutes to look into it." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1032104##k is in #bEllinia#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001355" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28211" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

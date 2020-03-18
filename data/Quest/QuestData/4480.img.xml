@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4480.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Common Sense Of Santa " />
+        <int name="area" value="50" />
+        <string name="0" value="You made a visit to Mrs. Claus wondering about Santa Claus's condition, but she wouldn't tell you anything. Maybe you should go find #bSanta Encyclopedia No.1#k, the one that contains the history of Santa Claus, and read up a bit first.  Then you should go visit her again." />
+        <string name="1" value="Thanks to #bSanta Encyclopedia No.1#k, she finally opened up and started talking to you." />
+        <string name="2" value="Truth always prospers! You were able to discover the real reason why Santa Claus disappeared." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <int name="nextQuest" value="4481" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="1. What is the name of Santa Claus called in Germany that he dreams everyday?#l\n#L0#Odin#l\n#L1#Saint Nicolas#l\n#L2#SinterKlass#l\n#L3#Santa Claus#k#l" />
+            <string name="1" value="2. What is the date that is repeated in Santa's Dream?#l\n#L0#December 31st#l\n#L1#December 25th#l\n#L2#December 24th#l\n#L3#December 6th#k#l" />
+            <string name="2" value="3. What does little children hang by the Chimney when Santa is trying to take a rest with his horses in his dreams?#l\n#L0#Socks#l\n#L1#Glove#l\n#L2# Boot#l\n#L3#Bag #k#l" />
+            <string name="3" value="I can't believe I was suspicious about the adventurer who has such a keen interest on Santa Claus.  I am sorry. I must apologize to you.  Okay... I will answer your questions.  Would you like to listen?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="2" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="3" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="4" />
+                    <string name="0" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="1" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="2" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="1" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                    <string name="3" value="For what reason you wish to know about Santa Claus's present condition when you don't even have a basic history of Santa Claus?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="There is an article about my husband...  Well that's what media is saying but the real truth behind is this..." />
+                <string name="1" value="People say that they haven't got the presents from Santa Claus last year, but in fact, my husband DID visit every single houses in Maple World with presents.  Unfortunately, quality of the socks that the childrend hung were all bad which was inevitable for Santa Claus to leave the house without putting in the gift." />
+                <string name="2" value="You might think that the quality of the socks doesn't matter as long as they are hung inside the houses.  However, if the size or the flexibility does not meet the standard, it is really difficult to put in the gifts.  So, the all the gifts that my husband has prepared for year was left in stock.  He was very worried about paying the remainder and finally decided to leave home." />
+                <string name="3" value="I guess he was very distressed not even to tell his own wife.  I am extremely worried...  I have no idea where he is or what he is doing.  He shouldn't reach far away from here though.  I can tell that he is wandering around the usual place just like old days..." />
+                <string name="4" value="Please talk to me in a little while if you would like to continue to listen to my story.  I am getting thirsty from this conversation.  I haven't had such a long conversation like this for a long time." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I will only speak with a person who is reliable.  If you think you can answer all of my questions then talk to me again." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250051" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4479" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161043" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <string name="end" value="2010010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

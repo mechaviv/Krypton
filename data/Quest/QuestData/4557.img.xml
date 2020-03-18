@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4557.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lam wants to see the world" />
+        <string name="parent" value="Away from Kampung" />
+        <int name="order" value="1" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270062##k loves his life in Kampung village, but it seems like he wants to see other parts of the world that he has never seen before." />
+        <string name="1" value="#b#p9270062##k is super excited to travel outside of Kampung village, but first he needs plenty of #b#t4000475#s#k to go around the city. \n\n#t4000475# #r#c4000475#/100#k" />
+        <string name="2" value="Finally, all tickets have been collected for #b#p9270062##k. But someone must remind him there is much more to prepare before going on a long trip." />
+        <string name="demandSummary" value="#i4000475:# #t4000475:# #c4000475# / 100&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 15,000&#xD;&#xA;#Wprob#&#xD;&#xA;#i2041037:# #t2041037:# 1&#xD;&#xA;#i2041039:# #t2041039:# 1&#xD;&#xA;#i2044505:# #t2044505:# 1&#xD;&#xA;#i2044605:# #t2044605:# 1&#xD;&#xA;#i2044705:# #t2044705:# 1&#xD;&#xA;#i2040922:# #t2040922:# 1&#xD;&#xA;#i2040917:# #t2040917:# 1&#xD;&#xA;#i2040815:# #t2040815:# 1&#xD;&#xA;#i2040519:# #t2040519:# 1&#xD;&#xA;Able to proceed to 'Off to the City' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2041037" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2041039" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2044505" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2044605" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2044705" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2040922" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="2040917" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="2040815" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="2040519" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="4000475" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there! You don't live here in Kampung, do you? Well, I thought so, because I've lived here all my life but never saw you once before. How do you like Kampung so far?" />
+            <string name="1" value="It's nice to live an old-fashioned lifestyle in Kampung, but being here for so long, I wish I could get out of the village and see the world. If only I could find someone who could bring me a #bLucky Bus Ticket#k so I can hop on a bus and head off to the city." />
+            <string name="2" value="Say...would you find some #b#t4000475#s#k for me? You must know where to get them, right?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That's great! Please get me #b100 #t4000475#s#k so I can travel as much as possible. Thank you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please come back to me if you've changed your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This is just great! I should be off to the bus station right away!" />
+            <imgdir name="yes">
+                <string name="0" value="With all these tickets, I will be able to see many parts of the outside world!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not enough #b#t4000475#s#k to travel as much as I wish. Could you get some more of them?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270062" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000475" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270062" />
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6132.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cold Flame" />
+        <string name="parent" value="Caron's Notebook" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value=" I found an altar within a deep sea cavern that was emitting cold energy. If I start a cold fire and throw in the black book, I should find out more about the content inside--but what to do after? Perhaps taking the new book to #b#p2060100##k will yield answers. \n\n#i4161017##t4161017# #b#c4161017# / 1#k" />
+        <string name="2" value="The book's identity has been revealed. It was #bCaron's Note#k! One journey ends as another begins...now to find out more!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001108" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161017" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is #t4001108#. You can make the cold fire with this. Now let me ask a question again. Do you still want to know about this book?" />
+            <imgdir name="yes">
+                <string name="0" value="Ok...don't forget:You can make the cold fire only on the #bcold altar#k, which is deep inside of the sea... Make a cold fire with #t4001108#, and burn the book with it to reveal its contents." />
+                <string name="1" value=" Go to the #bcave where the cold energy emerges from the deep sea#k. You will find what you were looking for there. Where is the cave? Do I have to tell you? If you really want it, you have to find it by yourself even if you have to search the entire ocean floor for it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want it? What, are you afraid now? Don't get cold feet...hahaha!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How do you feel...? Have you been to the cold altar? Good. You made the cold fire. I know. I can smell it on you." />
+            <imgdir name="yes">
+                <string name="0" value=" Now, let's see what this book is about...Ah ha! It's #b#t4161017##k. I have heard about Caron. Let me keep reading..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Throw the book in the cold altar and cold fire. Don't come back until you get to know what the book is." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" What? You lost #t4001108#? Don't you want to know about #t4001107#? I'll help you this time, but be more careful in the future!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161017" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6131" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

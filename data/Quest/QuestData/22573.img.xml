@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22573.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tropical Fruit Punch" />
+        <int name="area" value="7" />
+        <string name="0" value="Before asking #p1002101# to take you to the Island, prepare some #t4032470# to give him as a gift. The #t4032470# is sold by #b#p1081100##k in #b#m110000000##k." />
+        <string name="1" value="#p1081100# says that #t4032470# is difficult to make and that she will make you some #t4032470# if you bring her the ingredients and pay her for the labor...\r\n\r\n#i4000136# #t4000136# #b#c4000136# / 5#k\r\n#i4000029# #t4000029# #b#c4000029# / 30#k\r\n#i4000044# #t4000044# #b#c4000044# / 30#k\r\n#b60000 mesos#k" />
+        <string name="2" value="You received the #t4032470# from #p1081100#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-60000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000044" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4032470" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome to #m110000000#. I hope you enjoy your stay. Yes? Is there anything I can do for you? Oh, #t4032470#? I'm all sold out of that." />
+            <string name="1" value="#t4032470# takes a lot of time and energy to make, so we don't always have enough." />
+            <string name="2" value="But if you really, really want some #t4032470#, I have a special offer for you! If you pay a service fee and bring me the necessary ingredients to make #t4032470#, I'll be more than glad to make some for you. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Wow, I've never met anyone who wanted #t4032470# so badly! Now then, please find #b5 #t4000136#s#k, #b30 #t4000029#s#k, and #b30 #t4000044#s#k. Oh, and I almost forgot! The fee is #b60000 mesos#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want it that badly, huh? Yeah, not many people choose to go through all that for a drink." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring me the ingredients? Let me have them. I just have to peel the #t4000136#s, dice the fruit, ripen the #t4000029#s, and put a few #t4000044#s in for kick..." />
+            <imgdir name="yes">
+                <string name="0" value="Tada! Here is the #t4032470#. I hope you enjoy it!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found all the ingredients for #t4032470#? #b5 #t4000136#s#k, #b30 #t4000029#s#k, #b30 #t4000044#s#k, and a fee of #b60000 mesos#k. That's all you need! Minus the mesos, you can find all of the ingredients right here in #m110000000#." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000044" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22572" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032470" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

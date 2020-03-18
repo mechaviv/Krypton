@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Missing Staff Sergeant Charlie" />
+        <string name="parent" value="Alpha Platoon's Network of Communication" />
+        <int name="order" value="1" />
+        <int name="area" value="33" />
+        <string name="0" value="Let's go meet Master Sergeant Fox." />
+        <string name="1" value="Inside El Nath, I found #bMaster Sergeant Fox#k, who seemed to have crashlanded here. He asked if I can find 3 of his men and if they are doing their job whereever they are. The ones I need to meet up are #bStaff Sergeant Charlie, Corporal Easy, and Sergeant Bravo#k, and they should be around Ossyria. He'd prefer that I meet them in the order of their ranks... that sounds pretty difficult to me ..." />
+        <string name="2" value="I found #p2010000# in #m200000000#!" />
+        <string name="summary" value="Find Staff Sergeant Charlie" />
+        <string name="rewardSummary" value="1,200 EXP&#xD;&#xA; Can proceed to the &quot;A Request from Staff Sergeant Charlie&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+            <int name="nextQuest" value="3039" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey! Attention! Oh, I'm sorry ... If you're not busy and all, can I ask you for help? Let me introduce myself. I am #b#p2020003##k from the Alpha platoon. We got on the aeroboat to get here to complete an important mission when there was an accident on the plane. We all had to parachute our way down." />
+            <string name="1" value="The problem is, I can't find any of my men that I parachuted with around here. We were supposed to gather up here, but days have passed and I still haven't heard a word from my men. Because of that, can you find them for me? They are all over Ossyria, scattered everywhere. I'm not asking you to do this for free, of course. I'll reward you for your hard work." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you! The three members from my platoon I need to find are #b#p2010000#, #p2030002# and #p2030001##k all three of them. I have a favor to ask, though. Instead of finding them randomly, can you find them according to the #rorder of the ranks#k? Of course you should know which rank is low and which one is high, right? hahaha" />
+                <string name="1" value="Since they have made emergency landings all over Ossyria following through with the operation, it'll require you to search every corner of this place, be it towns, fields, etc. Please see my men from the highest rank down, and if they have something for me, please take them and give them to me in the end. I'll be waiting you then. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you're really busy right now. But, if you ever find time later on, you'll be most welcome to come back here. My men ... if I am not there, they may just goof off and therefore, I'm worried much about them." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Ohhh ... looks like you haven't met all three of my men. Harder than you thought...right? Please meet them in the order of ranks from the highest. I'm sure you can figure that out by yourself." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Oh... are you sure you have #b2 #t4011005#s#k? If not then see if your etc. inventory is full or not, then come talk to me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2010000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020003" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

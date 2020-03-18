@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3225.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fixing Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go check out Roly-Poly 10 at Eos Tower." />
+        <string name="1" value="I met up with Roly-Poly 10 again at Eos Tower. He asked if I could get him #b30 Yellow Toy Blocks#k and #b15 Blue Toy Blocks#k to fix the tower. I think I can get those by taking out the Block Golems...\n\n#t4000101# #b#c4000101##k/30\n#t4000102# #b#c4000102##k/15" />
+        <string name="2" value="I gave Roly-Poly 10 the yellow blocks and blue blocks needed to fix this place up. A toy block used to fix a castle...where else can this happen but here in Ludibrium?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000101" />
+                    <int name="count" value="-30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000102" />
+                    <int name="count" value="-15" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1102000" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1102001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="1102002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="1102003" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="1102004" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How can I help you here? Eos Tower is always full of monsters, so you better be careful, because you never know who's going to attack you. Me? I work here, so I have no choice. Haha ... well, if you have any free time, then do you want to hear my story?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks~! Lately the monsters have gotten much angrier than usual, so that makes my job that much harder, as I have to constantly fix the damages they inflict. The problem is, I have been running out of materials to work with, so I haven't been able to do any fixing at this point. I am worried that one day, this tower may fall apart." />
+                <string name="1" value="Somewhere not far from here, you may run into monsters #b#o4230109##k and #b#o4230110##k. Please take them down and collect #b30 #t4000101#s#k and #b15 #t4000102#s#k along the way. With those in place, I can definitely get back to work in a hurry." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahh, you must be busy right now. I really didn't want help on this, but this is beyond my power. If you have a spare time, please drop by." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was incredibly fast! Golems are the kind of monsters we have trouble against, but ... wow! Thank you for gathering up these items for me! Well, I picked this up somewhere around the tower, and it looks like someone lost it. Here, please take it." />
+            <imgdir name="yes">
+                <string name="0" value="Hopefully that'll help you on your journey. Now that I have the materials ready to work with, I got to get back to work pronto! Hope you get back to town safely!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up the items yet. Somewhere not far from here, you may run into monsters #b#o4230109##k and #b#o4230110##k. Please take them down and collect #b30 #t4000101#s#k and #b15 #t4000102#s#k along the way. Thanks!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2040013" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000101" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000102" />
+                    <int name="count" value="15" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2040013" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3220" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

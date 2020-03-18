@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29013.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maple Explorer" />
+        <int name="area" value="51" />
+        <int name="medalCategory" value="1" />
+        <int name="viewMedalItem" value="1142120" />
+        <int name="autoStart" value="1" />
+        <int name="autoAccept" value="1" />
+        <string name="0" value="To be acknowledged as the ultimate explorer in Maple World, let's earn the #b&lt;Maple Explorer&gt;#k title.r\nVictoria Explorer\nOssyria Explorer\r\nYou must earn a total of 2 titles." />
+        <string name="1" value="#b#eTitle - Maple Explorer#n#k\r\n● Requirement(s)\nCan acquire after earning the Victoria Explorer and Ossyria Explorer titles.#b\r\n● Status\n#y29015# : #u29015#\n#y29012# : #u29012#" />
+        <string name="2" value="You have finally acquired the #b&lt;Maple Explorer&gt;#k title upon earning both the Victoria and Ossyria Explorer titles." />
+        <string name="rewardSummary" value="&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142120" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Congratulations on become a #b&lt;Maple Explorer&gt;#k. You will be recognized as a true explorer from this moment on." />
+            <imgdir name="yes">
+                <string name="0" value="You've finished exploring two major regions in Maple World, Victoria Island and Ossyria. I shall now grant you the #b&lt;Maple Explorer&gt;#k title. This may be a notable accomplishment, but do not stop trying. Keep exploring and face challenges to acquire other titles that will become a part of your Explorer identity. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="Please come back and see me after you've acquired two titles, the #bVictoria Explorer#k and the #bOssyria Explorer#k titles." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="29015" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="29012" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000066" />
+            <int name="infoNumber" value="27020" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                    <int name="cond" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

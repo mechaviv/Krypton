@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28271.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Hunt] That Red Isn't For Everyone!" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1052000:##k in #b#m103000000##k needs your help." />
+        <string name="1" value="He wants you to hunt 30 #rRed Ribbon Pigs#k that have the same red as his hair.\nHe says they can be easily found in #b#m103020100##k.\n\nReport back to #b#@1052000:##k in #b#m103000000##k upon completion." />
+        <string name="2" value="You have eliminated the #rRed Ribbon Pigs#k that have a red similar to #b#p10502000##k's hair. Seeing how you've done this ludicrous favor for him, it is obvious that you are a very kind and generous person." />
+        <string name="demandSummary" value="#o1210101# #a282711#" />
+        <string name="rewardSummary" value="Exp 1,300&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You know, I really like my red hair. But a few days ago, I went outside and spotted a monster that had the same color hair as me. I was just slightly peeved at first, but now I'm very offended! Will you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you go to #b#m103020100##k, you'll find #rRed Ribbon Pigs#k. I hate their Red Ribbons, because it's the exact same red as my hair!\n\nCould you eliminate 30 of them? That would really make me feel better." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, you must be quite the busy one!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you defeated them all? Ah, what a relief!" />
+            <imgdir name="yes">
+                <string name="0" value="I know it was a silly favor, but I really appreciate your help. You're going to be an awesome adventurer! Haha!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Have you defeated all 30 #rRibbon Pigs#k?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052000" />
+            <int name="lvmin" value="12" />
+        </imgdir>
+    </imgdir>
+</imgdir>

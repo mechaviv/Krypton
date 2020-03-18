@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8000.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="New Life" />
+        <int name="area" value="20" />
+        <string name="0" value="I should go see Mai right now..." />
+        <string name="1" value="I better get Mai #b10 Mushroom Spores, 10 Snail Shells, and 10 Red Snail Shells#k right now.\n#t4000011#  #b#c4000011##k/10\n#t4000019#  #b#c4000019##k/10\n#t4000016#  #b#c4000016##k/10" />
+        <string name="2" value="I took care of the challenge Mai gave me. That was easy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002424" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="job" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="100" />
+                    <int name="job" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002425" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                    <int name="job" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, do you want to try this quest I have for you?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, then! Collect these items for me: #b10 Mushroom Spores, 10 Snail Shells, and 10 Red Snail Shells#k. Good luck!" />
+                <string name="1" value="A lot of people have received my challenge, only to give up and leave the island all together. To become a great traveler requires more than just pure strength; it also requires ample amounts of patience and intensity. Now, good luck and I'll see you here!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Remember, if you ever decide to leave this island, there's no turning back. You cannot come back here, plain and simple. Can you come see me first before heading over to Victoria Island?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ahh~! It's you. Did you gather up the items I asked you to get?" />
+            <imgdir name="yes">
+                <string name="0" value="Good work there. You got me all the items I asked you to get. It must have been difficult for you to gather up those items. I'm very impressed, and I can tell you're destined to become a wonderful traveler even after leaving Maple Island. Here, take this; Hope you put this to good use!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hey, I don't think you have the right number of items I was looking for. You need to collect #b10 Mushroom Spores, 10 Snail Shells, and 10 Red Snail Shells#k for me!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000011" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000019" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

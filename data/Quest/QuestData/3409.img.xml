@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3409.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Where is Dogon's HQ?" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Chury of Omega Sector." />
+        <string name="1" value="I met with Chury at the Silo of the Omega Sector again, and he requested that I find a secret base of an apparent alien-worshipper. I'll need to find Dogon's HQ, which is hidden somewhere around the Fields nearby Omega Sector, find #bDogon's Report#k from the box at the Dogon's HQ, and give them to Chury." />
+        <string name="2" value="I gave Chury, who was waiting for me at the Silo of the Omega Sector, the #bDogon's Report#k that I found from Dogon's secret base. I can't believe someone is actually helping aliens... now THAT's quite shocking." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="15000" />
+            <int name="exp" value="9000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031107" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1032008" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... this is troubling. It seems like there is a group of people that chose to ignore the danger that lies with the aliens, and instead have begun to SUPPORT them. If this is true, then we're in deep trouble, and I'll really need help from someone like you. Will you help us out one more time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much. Like I previously mentioned, a few alien supporters have built #bDogon's HQ#k at a hidden area around Omega Sector, and have been providing classified information to the aliens. I knew the aliens have been becoming more powerful by day, but this..." />
+                <string name="1" value="The acts like this takes away the liberty and freedom of the innocent people living in this world. We need to find their hidden base and find an item that can be used as an evidence. I'm sure there's a #breport#k that's being sent to the aliens by the alien-supporters. I'll be here waiting for you! Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You must be really busy right now, but this is unlike any other emergency we've experienced, and we really need help from someone like you. If you ever want to change your mind, please talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh... you must have really found #bDogon's HQ#k. I was hoping such would be nothing more than rumors... I guess not. We really have a group of alien-supporters that provide information beneficial to aliens. This is very troubling... anyway, since you found their base, as well as bringing the #breport#k here with you, I can't express enough thanks for your hard work. As a reward, here's some money, as well as a pair of earrings." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for your help. All we have to do now is to examine the #b#t4031107##k that you brought here. I wonder what's inside... anyway, I'll have to get back to work now, so if you'll excuse me... I'll see you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I don't think you have found #bDogon's HQ#k, where a group of alien-supporters use it as their home base to provide information to aliens. Please find their secret HQ, and bring back a #breport#k they write to the aliens as evidence. It should be inside a very solid box. Good luck to you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031107" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3404" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

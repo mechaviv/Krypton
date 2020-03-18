@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3014.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Acquiring the Fairy Dust" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="11" />
+        <int name="area" value="33" />
+        <string name="1" value="I got #bKriel the Fairy#k all the items she asked for, and got the #bFairy Dust#k in return. Now all I need to do is get this to Spiruna and see what happens." />
+        <string name="summary" value="I should take the Fairy Dust back to Spiruna.." />
+        <string name="demandSummary" value="#i4031051:# #t4031051:# #c4031051# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="10,590 EXP&#xD;&#xA;#Wprob#&#xD;&#xA;1 #i2041001:# #t2041001:# &#xD;&#xA;1 #i2041002:# #t2041002:# &#xD;&#xA;1 #i2041004:# #t2041004:# &#xD;&#xA;1 #i2041005:# #t2041005:# &#xD;&#xA;Can proceed to the &quot;The Truth Comes Out...&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031051" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10590" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031051" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2041001" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2041002" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2041004" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2041005" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3015" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, you did collect all of them! Not bad at all ... she really has an eye for a talent. Anyway since you did me a huge favor, here's #b#t4031051##k like I promised. It's a very important item so make sure you don't lose it." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Isn't that #t4031051#?!? I can restore #b#t4031050##k to its original state with that! And you aren't the one that cracked the crystal? I see ... it could have been the monsters walking around accidentally stepping on it ... it's my fault anyway that I dropped something as precious as the crystal at a treacherous place like that. Thank you so much for your help. Please accept this; it's the least I can do for you." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please give #b#t4031051##k to her immediately! Who's her? Spiruna, of course. I have to go now. See you around." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I can't believe you have the nerve to show up after breaking my precious #bBlack Crystal#k!!! Thanks to you my work is set back another six months! It will be easy to fix it with an item from the fairies but I'd rather die than ask them for their help. Do I have to let my assistant do it? Arghhh..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031051" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3013" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

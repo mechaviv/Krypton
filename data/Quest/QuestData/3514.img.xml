@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3514.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Sorcerer Who Sells Emotions" />
+        <string name="parent" value="Road of Regrets" />
+        <int name="order" value="2" />
+        <int name="area" value="46" />
+        <string name="1" value="I met with #p2140002#.  He noticed right away that my emotions had been frozen and told me to buy his #bpotion#k if I want to thaw out my emotions.  He says it's not cheap but it will definitely work.  However, there's just one side effect to the potion..." />
+        <string name="2" value="I drank #p2140002#'s potion.  Due to the side effect, all of my HP and MP were drained, making me temporarily unavailable for combat, but I think I found my emotions back.  I should try going past the Road of Regrets now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="money" value="-1000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022337" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="891500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hm.  Let me guess.  You want to thaw your frozen emotions, right?  It doesn't take a rocket scientist to figure that out.  Don't' worry!  There is a medicine for #bthawing frozen emotions#k.  There's nothing impossible for the world's greatest #p2140002#!" />
+            <string name="1" value="I must tell you, however, that the potion is not cheap... But I'm sure #b1 million mesos#k won't be a problem for someone like you, right?  Do you want to buy it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This potion will be able to thaw your frozen emotions.  It's 100% effective!  It may even be better than the Flame of Oblivion.  There is just one #rside effect#k however... If you're scared, you don't have to take it... It's up to you.  I'm not a doctor so what do I know." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to buy it?  This potion will not only cure your frozen emotions but it'll cure everything else too, from headaches, toothaches, muscle aches, even rheumatoid arthritis!  Are you sure you don't want it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you take the medicine?  No matter how good a medicine, it's no use if you don't take it.  I mean, it's up to you whether you use it or not." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022337" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q3514e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3513" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

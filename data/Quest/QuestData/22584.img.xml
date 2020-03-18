@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22584.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Elminating Door Blocks" />
+        <int name="area" value="7" />
+        <string name="0" value="There seems to be something left for you to do. Talk to #b#p1013203##k at the #b#m922030000##k." />
+        <string name="1" value="#p1013203# tells you to climb up to the #m922030020# once again while the guard is gone and enter the safe to eliminate the #r#o9300390##k inside. He says that you need to eliminate the monster quicky because it is very dangerous.\r\n\r\n#o9300390##r #a225841##k" />
+        <string name="2" value="You returned after eliminating the #o9300390#. #p1013203# says that you did a great job and that you played a big role in helping Maple World. But why do you feel so uneasy...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="64900" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am going to give you one last mission. Thanks to all your great work, one of our members has unlocked the First Door of #m922030011#." />
+            <string name="1" value="You must now go back up to #m922030020# and re-enter the Safe. Go in there and eliminate #r#o9300390##k, the monster." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o9300390# is a scary, scary monster. You're going to have to eliminate him as fast as you can or we'll all be in danger. Please hurry." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What? What's the matter? Are you unhappy about something that I've discussed about our plans?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Thank you for getting rid of #o9300390#. You've done some great work. You must be tired now. Why don't you get some rest. Another member will take it from here.\r\n#L0##b#o9300390# said something strange.#l\n#k" />
+            <string name="1" value="Really? Well now, I wouldn't worry about it. #o9300390# may seem stupid, but it's actually really conniving and tries to confuse people. Don't think too much about it." />
+            <imgdir name="yes">
+                <string name="0" value="I will talk to you again when there's another mission for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r#o9300390##k yet? Just go to the Safe on the top of #m922030020# and eliminate it. Go." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013203" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300390" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013203" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22583" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="68" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

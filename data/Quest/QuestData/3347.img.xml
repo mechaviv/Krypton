@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3347.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="For Zenumist" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2111002#, the missing alchemist. What he wanted, and the dark truth behind #m261000000#... All these previously hidden facts have been revealed. Now it's the matter of choice. If I am to choose Zenumist, I'll have to head to where #r#p2111000##k is." />
+        <string name="1" value="If I handed #b#t4161033##k to #p2111000#, then the truth about #m261000000#, as well as all things #p2111002# strived for would be hidden forever. If that really is what I want for this to happen,  then I have no choice but to hand in #t1102135# and the note to #p2111000#." />
+        <string name="2" value="I gave #p2111000# #t4161033#, and received a brand new Zenumist Cape. This has made me forfeit my right to contemn the Zenumists. This has now made me an integral part of the Zenumist." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102135" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102139" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4161034" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You... are the one that was asking around for information on #p2111002#. How can I help you? ...That... that book? That's...#b#t4161033##k?! ...I see... so you have uncovered the mystery behind #p2111002#'s research... and the secret behind the origin of #m261000000# that may have had to be revealed anyway..." />
+            <string name="1" value="Sigh... Do not give me that look of anger. I admit it. I admit that #p2111002# did nothing wrong. I knew that his experiments were a tad risky to say the least, but... the fact that #p2111002# took all the blame for the war... It's only right that isn't guilty in any sense..." />
+            <string name="2" value="But, if you think about it, the alchemists at #m261000000# shouldn't be guilty of anything. They were just guilty of being too diligent with their studies. If they find out the truth about the history of town... if they find out that all the spells and methods have been derived from Black Magic? and if they get looked down upon for that very fact... then how do you think they would feel?" />
+            <string name="3" value="Alchemists are dark, closed, and insulated by heart, but they are also very proud of their work. They won't be able to handle the truth that they are derived from Black Magician. So many of the brilliant alchemists will cease work. #m261000000# will also be torn apart, never to recover... Do you honestly feel that #p2111002#'s experiment is enough to bring the whole town in flames?" />
+            <string name="4" value="Impossible. I can't just let that happen. That's the reason why I had withheld the information on the alchemists... and if I was put in that position again right after the explosion, I'd do the same thing. Please understand this as a Zenumist alchemist.&#x9;" />
+            <imgdir name="yes">
+                <string name="0" value="I am glad you understand... now I want you to hand me that #b#t4161034##k of yours. We will end this saga once and for all by destroying that note beyond recognition." />
+                <string name="1" value="If we let this slide without a hitch, then I will personally recognize you as a Senior Alchemist of Zenumist. This is for all the work you did on this issue, so please accept it. Now hand me #t1102135# and #t4161034#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Very well...I hope that you change your mind..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, now please hand over the #t4161033#... With this, we will forget all about what happened. What happened to #p2111002#, and what happened to #m261000000#... Everything..." />
+            <imgdir name="yes">
+                <string name="0" value="That cape is awarded to you, not only for what you have done, but also for what you will be doing down the road. I don't need to explain to you... what should be done, right? Never, ever Say a word about De Lang's Notes to others. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Where did you leave #b#t4161033##k? Did you lose it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161034" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1102135" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3349" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3346" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3348" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="75" />
+        </imgdir>
+    </imgdir>
+</imgdir>

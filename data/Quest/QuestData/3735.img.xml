@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3735.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Wreckage of the Missile" />
+        <string name="parent" value="Year 2215- The Bombing" />
+        <int name="order" value="6" />
+        <int name="area" value="41" />
+        <string name="1" value="Bao says that the Iruvatas and Robbies seem to come from the place the missile landed and suggests you search around there. How did he know you were looking for something? He seemed a little dull and slow, but perhaps he actually has a perceptive side. Anyway, investigate and report your findings to Andy." />
+        <string name="2" value="Bao said that the Iruvatas and Robbies seemed to come from the area the missile landed and suggested you search there. You then defeated Dunas the missile android in the bombed City Center and delivered the Time Sand you acquired to Andy." />
+        <string name="demandSummary" value="#i4032516:# #t4032516:# #c4032516# / 1&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 60,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="60000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032516" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Right over there is where the missile landed. I have a feeling the Iruvatas and Robbies are being built there. There must be something going on. If you want to investigate, head right." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You seem like you're searching for something. I'd go right. It seems suspicious. Alright, I'll see you around then." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You seem reluctant. Of course, I understand. After all, that's where the missile landed. It couldn't be safe." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="This... This is Time Sand. Time Sand stores the memories of time. This much Time Sand probably has a decent amount of memories. Good. It's definitely worth looking into. Don't you feel like we're getting somewhere?" />
+            <imgdir name="yes">
+                <string name="0" value="Keep up the good work." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="If you've found something, why don't you head over to the  person that's looking for what you've found?" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't found any clues?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032516" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3734" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

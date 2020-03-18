@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6931.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Helin's First Story" />
+        <string name="parent" value="The Thief's Extreme Path" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2081400##k said she'll tell me the first truth and told me to come talk to her again when I'm ready." />
+        <string name="2" value="#b#p2081400##k told me about Jakum, which is the first truth.  She said she still has two more stories to tell me." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The first story is about the town vanished into lava volcano. Would you like to listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Good. You have the right to listen to the story. Talk to me when you're ready." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid? You came this far. Don't be discouraged." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you ever been to the deep lava volcano in the El Nath mountains? There used to be a town there." />
+            <string name="1" value="People in the town worshipped a human shaped stone statue and the volcano. They built an altar and stone statue under the tree at the basin of the deepest volcano and worshiped the altar to prove their faith." />
+            <string name="2" value="Then disaster struck. It was the wicked Zakum's tree. Zakum's spirit didn't have a body but instead possesed the stone statue that people built. His evil rapidly spread through the town..." />
+            <string name="3" value="After that, the town disappeared. You've heard about the fearsome power called #bZakum#k sleeping under the lava volcano, as you've traveled the Maple World for a long time. Now you know how he came to be. You can guess what happened to the townspeople.." />
+            <imgdir name="yes">
+                <string name="0" value="That's the end of the first story. Talk to me when you're ready to listen to the second story." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081400" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081400" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6930" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="411" />
+                <int name="1" value="421" />
+                <int name="2" value="433" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

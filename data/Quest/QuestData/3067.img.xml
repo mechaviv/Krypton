@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3067.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Healthy Snack for the Huskies" />
+        <int name="area" value="33" />
+        <string name="0" value="I should go see #p2060000#, who's at the Whale Island that's covered in snow." />
+        <string name="1" value="I met #p2060000#, who lived with his huskies at the snow-covered Whale Island.  #p2060000# asked me if I could get him #b50 #t4000157#s#k for his huskies.\n\n#t4000157# #b#c4000157##k/50" />
+        <string name="2" value="With Nanuke's request, I brought 50 #t4000157#s over to the snow-covered Whale Island for his huskies." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2020007" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, my name is #p2060000#. You must be a traveler of some sort, for you to make your way all the way down to this remote island. I live here, raising huskies. These boys are my family, my closest friends. I know I've just met you, and I apologize in advance for asking, but would you like to help me out?" />
+            <imgdir name="yes">
+                <string name="0" value="I appreciate you saying yes. These huskies have voracious appetite, and I've just fed them the last meal I made with the food I brought from El Nath. I heard that the seals that live around here are very nutritious. Can you get me #b50 #t4000157#s#k for my huskies? Please help me~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I may have gone too far by asking for help to someone I've just met. Just forget what I said, and have fun here at the island. It would have been nice for my huskies to have a piece of that seal meat though..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I was worried about the high tidal wave. Isn't that the seal meat? Wow, I can't believe you got them all! Weren't those seals tough to deal with? This is incredible!" />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the reward I'm giving you? It's the least I can do to show my appreciation to someone that gathered up a whole lot of rare #t4000157#s. Have fun on the rest of your journey, and if you feel uncomfortable traveling around water, you will always be welcome here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Aren't the seals hard to handle? They are especially tough to handle, and if you're not used to the water, that was the end for you. #b50 #t4000157#s#k are what I need to feed the huskies." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000157" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060000" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2250.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Zombie Mushroom Signal 2" />
+        <string name="parent" value="Strange Mushrooms" />
+        <int name="order" value="5" />
+        <int name="area" value="30" />
+        <string name="0" value="The Rememberer needs help figuring out what drove the mushrooms into a rage. You should go help." />
+        <string name="1" value="Once again, the Rememberer suggests that someone should study Zombie Mushrooms.\r\n\r\n#i4000008:# #t4000008:# #c4000008# / 100" />
+        <string name="2" value="You've helped further the study of Zombie Mushrooms." />
+        <string name="rewardSummary" value="EXP 8,000\r\nCan proceed to 'Zombie Mushroom Signal 3' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="I was thinking… are you sure ‘keck' was exactly how they said it? If I remember it correctly, it sounded a little different. \r\n#b#L0#I don't know… it's not something that I can really duplicate....#l\n#k" />
+            <string name="1" value="I thought that might happen, so I brought this. It's a container that holds and records sounds, but it's incomplete...which means, it needs to be mixed with something that can soak up sounds. And that something is...Charms of the Undead! Get me 100 charms, and I'll convert them into something that can soak up sounds. I need 100 of them!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I am sorry. I must be working you too hard. I understand." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Okay, wait for a bit while I make one for you." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="That's not the sound…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2249" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

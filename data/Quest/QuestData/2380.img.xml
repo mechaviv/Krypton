@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2380.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sixth Mission: Destroying the Evidence 4" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="Assist the Dual Blades by following Ryden's order." />
+        <string name="1" value="Defeat the Dark Stumps and recover #b5#k #b#t4032624:#s#k." />
+        <string name="2" value="You were successful in eliminating all of the evidence. What will the future hold for you as a Dual Blade?" />
+        <string name="summary" value="Defeat the Dark Stumps around #bWest Domain of Perion#k and recover the #t4032624:#s" />
+        <string name="demandSummary" value="#i4032624:# #t4032624:# #c4032624# / 5&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 3,000\r\nProceed to 'Shiba's Story' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032624" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="This is the last mission. If you are successful, we'll be ready for the withdrawal. Are you ready?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="This time, you'll have to defeat the #bDark Stumps#k. They can be found at the #bWest Domain of Perion#k. Defeat them and bring back #b5 #t4032624:#s#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why are you so nervous? Being nervous isn't going to help you with this mission." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="At last, we are finally ready. Please hand over the last seals." />
+            <imgdir name="yes">
+                <string name="0" value="Okay, let's split. I need to return the seals. You should be hearing some good news soon. ...What good news? Are you naive or just plain dumb? You'll be an official Dual Blade soon! Anyways, gotta go. See you later." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I told you #b5 #t4032624:#s#k. Did you not hear me? Hurry, there isn't much time!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032624" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2379" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

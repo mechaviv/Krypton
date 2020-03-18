@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Rain's Maple Quiz 7" />
+        <string name="parent" value="Rain's Maple Quiz" />
+        <int name="order" value="7" />
+        <int name="area" value="20" />
+        <string name="0" value="This is #b#p12101##k's last question. Excited?" />
+        <string name="1" value="Finally the last question. After this, you'll no longer be a beginning." />
+        <string name="2" value="Rain advised that it's time to leave Maple Island. In Victoria Island, you can choose a job and start a lot of new adventures. Head to Southperry to get to Victoria Island!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, last question! Talk to me when you're ready." />
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="This is important! You can only make the job advancement at Victoria Island, but you're currently on Maple Island. Where do you go to get a ride to Victoria Island? \n\n#L0##bSouthperry#l\n#L1#Amherst#l\n#L2#No way I can get there#k#l" />
+            <string name="1" value="That's absolutely correct. Head over to Southperry and get on the #rship#k that heads to Victoria Island." />
+            <imgdir name="yes">
+                <string name="0" value="Once you get there, the first thing you want to do is make the job advancement. \nYou should make sure you're the right level to advance. Head to Perion to become a Warrior, Henesys to become a Bowman, Kerning City to be a Thief, and Ellinia to be a Magician. #bPress W for the world map if you get lost#k. Alright, happy Mapling!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="You won't find any ports at Amherst. Head over to the only place in Maple Island with a port to catch a ride to Victoria Island." />
+                    <string name="2" value="You won't be able to come back once you leave this place, but trust me, you CAN leave…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12101" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="12101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

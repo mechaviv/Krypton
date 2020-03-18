@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28390.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Welcome Back to New Leaf City Day 6 " />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Icebyrd Slimm, the one-man welcome wagon of New Leaf City, is itching to pick your brain. He wants to know how much you've learned about his wonderful city in the three years since it was founded. (6 of 7)" />
+        <string name="1" value="You're in the process of answering Icebyrd's daily question. Return to him and give him the correct answer." />
+        <string name="2" value="He wants to know how much you've learned about his wonderful city in the three years since it was founded. (6 of 7)" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Can you believe it's been three years since my New Leaf City became the talk of the entire Maple World? You've spent most of that time here, of course? Why not try to answer a daily question about my city? C'mon, quizzes are so in right now." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good! Quizzes are the latest craze, you know. All the cool townies are doing it. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hrmph! Well, we can't all be trendy, I suppose. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Here's my question of the day. &#xD;&#xA;&#xD;&#xA;Under our feet are bricks that serve as the foundation of our marvelous NLC buildings. How many barred windows and drain pipes are between them? Wait, multiply that number by...3!&#xD;&#xA;#b#L0#27#l\n#L1#30#l\n#L2#36#l\n#L3#39#l\n#L4#42#l\n#k" />
+            <string name="1" value="Well done! Glad you can count!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201050" />
+            <string name="endscript" value="q28390e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28398" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="start" value="2010060200" />
+            <string name="end" value="2010061600" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

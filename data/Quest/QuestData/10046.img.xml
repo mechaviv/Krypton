@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10046.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Taking Care of Baby Bird" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You haven't seen #p9000042# around these days. What could he be up to?" />
+        <string name="1" value="#p9000042# has been busy these days #btaking care of an egg#k. A bird that flew into Maple World left an egg and #p9000042# felt sorry for it. #p9000042# says that he simply can't take care of the egg by himself anymore and needs help. Time to go see #b#p9000042##k." />
+        <string name="2" value="#p9000042# has been busy these days #btaking care of an egg#k. A bird that flew into Maple World left an egg and #p9000042# felt sorry for it. #p9000042# says that he simply can't take care of the egg by himself anymore and needs help. Time to go see #b#p9000042##k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10051" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10046s" />
+            <int name="lvmin" value="13" />
+            <string name="start" value="2008092600" />
+            <string name="end" value="2008101300" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

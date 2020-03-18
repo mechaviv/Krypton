@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6292.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Black Spirit's Healing Power1" />
+        <string name="parent" value="Spirit Healing" />
+        <int name="order" value="3" />
+        <int name="area" value="10" />
+        <string name="1" value="#b#p2041021##k told me to bring #b200 #t4000148##k if I want increase #q1321007#'s power..\n\n#i4000148##t4000148# #b#c4000148# / 200#k" />
+        <string name="2" value="We woke up the black spirit's power with #t4000148# " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="1320008" />
+                    <int name="skillLevel" value="0" />
+                    <int name="masterLevel" value="15" />
+                    <int name="onlyMasterLevel" value="1" />
+                    <imgdir name="job">
+                        <int name="0" value="132" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Would you like to awaken #q1321007#'s power? Actually it's hard to do, because I might restore his memory. To prevent this, I have to control #q1321007# with #b#t4000148##k. Would you like to awaken #q1321007#'s power by doing that?" />
+            <imgdir name="yes">
+                <string name="0" value="Get me #b200 #t4000148##k. Then I can control #q1321007#'s power. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" If you don't want such power, that's fine." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You gathered 200 #t4000148#! I can control #q1321007#'s power now." />
+            <imgdir name="yes">
+                <string name="0" value=" I awakened part of the #q1321007#'s Power and yet, controlled it at the same time. If you want to awaken more of his power, talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" It's not easy to get #b200#t4000148#, is it?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000148" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6291" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22574.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Strong Sail Needed" />
+        <string name="parent" value="Information about the Slumbering Dragon Island" />
+        <int name="order" value="5" />
+        <int name="area" value="7" />
+        <string name="0" value="#p1002101#, who has been looking at the map for awhile, has a grim face... What could it be? Talk to #b#p1002101##k." />
+        <string name="1" value="#p1002101# says that going to this island with a normal sail is impossible and a stronger sail that won't rip under strong winds is needed. #p1002101# asks that you bring him some #b#t4000030#s#k... A sail made with #t4000030#s should be able to face strong winds.\r\n\r\n#i4000030# #t4000030# #b#c4000030# / 2#k" />
+        <string name="2" value="You brought the #t4000030#s to #p1002101#. #p1002101# says that the #t4000030#s are very tough and that it will take a lot of time to make the sail. He will contact you when it is completed." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="38900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="sp">
+                <imgdir name="0">
+                    <int name="sp_value" value="2" />
+                    <imgdir name="job">
+                        <int name="0" value="2213" />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh my, I didn't realize how tough it would be to get to the island. It's not even the reef or the rough waves I'm worried about. It'll be so windy out there that the sail on our boat will get ripped into pieces. We need a stronger sail." />
+            <string name="1" value="Oh, right. Are you familiar with #t4000030#? Geez! Calm down! What made you jump like that? It's not really the skin of a Dragon. It's the skin of creatures that resemble Dragons...like Drakes. People just call it #t4000030#. " />
+            <string name="2" value="Anyway! I think I could make a sturdier sail that could withstand those winds if I used Dragon Skin. Will you bring me some #t4000030#? You have to hunt Drakes inside the #m105040300# Dungeon. Think you can do it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, I'm impressed. You must be more powerful than I thought. Bring me #b2 #t4000030#s#k and we'll be on our way to the island before you know it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You look strong enough. Maybe you just need more confidence. Well, I understand. Drakes may not be real Dragons, but they're extremely strong. Alright then." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the #t4000030# I requested? Marvelous! I can see now how you have the confidence to venture to such a dangerous island. Give me a minute." />
+            <imgdir name="yes">
+                <string name="0" value="#t4000030# is so tough... This could take a while. Why don't you go and do something else while I work on this? I'll let you know as soon as I finish." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Have you not found #b2 #t4000030#s#k yet? It may take a while since they're rare. I heard that you can find them if you #bhunt Drakes deep inside Sleepy Dungeon#k..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000030" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22572" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="51" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8298.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In search of the Mind of Maple" />
+        <int name="area" value="50" />
+        <string name="0" value="There's a legendary necklace called the #rMind of Maple#k that everyone would like to have their hands on....... Once the Gate of Time opens, #bMr. Moneybags#k will bring the blessing to everyone. Do you have the #rMind of Maple#k? Only #bMr. Moneybags#k knows the secret behind the necklace. Go visit #bMr. Moneybags immediately." />
+        <string name="1" value="Gather up the items Mr. Moneybags asked you to get through #bChief Stan#k in order to restore the #rMind of Maple#k to its original state.\n\n#t4032239:##r #c4032239#/1#k\n#t4032233:##r #c4032233#/1#k" />
+        <string name="2" value="The #rMind of Maple#k has been restored to its original state. If you want one yourself, #bMr. Moneybags#k has mentioned that only the power of the guardian spirit may awaken the necklace." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032233" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032239" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4001250" />
+                    <int name="count" value="1" />
+                    <string name="dateExpire" value="2009022500" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1122039" />
+                    <int name="count" value="1" />
+                    <int name="period" value="44640" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello traveler, the Gate of Time has opened once more and I, the God of Goods, have descended back to the world of Maple to bless you. Alas, you must have the &quot;Mind of Maple&quot; with you in order to be blessed." />
+            <string name="1" value="What's the #r&quot;Mind of Maple&quot;#k? It's a necklace that brings courage and power to those that wear it. Bring me the right set of materials, and I will do the rest to restore the Mind of Maple. Are you interested in restoring it?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now it's time for you to prove your worth to me. You must first visit Chief Stan in Victoria Island and prove your worth to him. Go get a #rPiece of Mind of Maple#k from #bChief Stan#k and a #rMaple Necklace Chain#k by hunting monsters and bring them back to me." />
+                <string name="1" value="If you visit #bChief Stan#k, he will tell you what you need to do." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You are not ready? The #rMind of Maple#k can only be restored at this time through the power of the Gate of Time. Do not miss this opportunity, I Say." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello traveler. How was your journey? Have you obtained all five items from #bChief Stan#k to restore the #rMind of Maple#k?" />
+            <imgdir name="yes">
+                <string name="0" value="Great work. You must have won him over. I will give you the material needed to restore the &quot;Mind of Maple&quot; Let's combine our powers and restore this together." />
+                <string name="1" value="The &quot;Mind of Maple&quot; is now recovered. Unfortunately, the true power of this necklace has yet to be realized. To awaken this necklace requires the power of the guardian spirit. If you can bring me the #rMaple Necklace Gem#k that carries the power of the guardian spirit, I will be ready to awaken the &quot;Mind of Maple.&quot;" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I do not believe you have gathered all the materials. Get approved by Chief Stan and receive a necklace chain." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9300010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032233" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032239" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9300010" />
+            <int name="lvmin" value="10" />
+            <string name="end" value="2009022423" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

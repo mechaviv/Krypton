@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6005.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost Perfume" />
+        <int name="area" value="10" />
+        <string name="0" value="I lost #t2270000#.  I can't train the monster without it.  What should I do?  I should head back to Aqua Road and go see #b#p2060005##k. Maybe I can tell him that I met someone in Amoria and had to go on a date..." />
+        <string name="1" value=" #p2060005# says he's heard of this phenomena of people using that perfume on dates. He doesn't understand why, it smells a lot like raw garlic and hot feet to him. Luckily, he has plenty of #t4031507# and he will make me another #t2270000# if I bring him #b#t4031509##k.\n\n#i4031509##t4031509# #b#c4031509#/1#k. I'd better hurry back--I want my new mount!" />
+        <string name="2" value="I recieved  #t2270000# from #p2060005#. Phew...I should go train my monster now. On the way, I'll think of a better excuse if I lose the perfume again--this kinda does smell like hot feet..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031509" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2270000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Aren't you the one who learned the monster riding skill from me? Why didn't you get on the monster? Wait a minute...don't tell me you lost #t2270000#! Oh my gosh, I've heard of others trying to use that perfume on dates in Amoria. Seems ridiculous to me, the perfume smells like hot feet and onions--unless you don't like the person, then I could understand why you'd use it! Another mystery solved! At any rate, I have enough #t4031507# but you have to give me #b#t4031509##k. Once you bring that back, I can remake it." />
+            <imgdir name="yes">
+                <string name="0" value=" As you know, only #bChief Tatamo, the leader of Leafre#k has it, so it is expensive. If you can get #t4031509#, I will make #t2270000# again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Without #t4031509#, it's impossible to train the monster. Without training it, you won't be able to ride it. Think about it a bit more, you did Say that you wanted to learn how to ride monsters..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" Ah, you returned! And in one piece...remarkable! And you brought #t4031509#! See? That wasn't so bad, I knew Tatamo would be reasonable. Now, I'll just put #t4031507# into the bottle...stand back...I don't know what might happen...I made #b#t2270000##k! Phew! It's ready!" />
+            <imgdir name="yes">
+                <string name="0" value="Ok, this should be able to train the monster! Go to #bKorean Folk Town#k and try it out!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" #bThe leader of Leafre, Chief Tatamo#k sells #b#t4031509##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031509" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2060005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6003" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2270000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902000" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1902001" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902002" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

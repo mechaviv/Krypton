@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28254.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="There Are No Treasures?!" />
+        <string name="parent" value="The Completed Treasure Map" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1072008:##k in #bNautilus#k says the emblem signifies a demon. Let's talk to her." />
+        <string name="1" value="#rCrocell#k, who was sealed in the Bottom Floor of Nautilus, has been released. Let's go find #b#@1092013:##k in the Generator Room and sort out this situation." />
+        <string name="2" value="The Treasure Map has been completed, but it turned out to be the demon's prank!" />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Searching for the Demon' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="According to the ancient book in #bNautilus#k, this is an emblem that signifies #rCrocell#k the demon. She's a vicious demon that creates illusions that blinds humans. That Treasure Map was just one of #rCrocell#k's many pranks." />
+            <string name="1" value="But since you've gained experience and strength through this mission, let's not consider the mission a complete waste.\n\nI heard #rCrocell#k was sealed in the #bthe Bottom Floor of the Nautilus#k... Someone must have released #rCrocell#k's seal then. But from what I know, it takes someone with unimaginable force to break that seal. I have a bad feeling about this." />
+            <string name="2" value="Perhaps we should ask #b#p1092013##k in the Generator Room and see if we can get some information." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b#p1092013##k was the closest one to the location where the demon had been sealed, so he may know something. Please go talk to him and see if you can find out what is going on." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hurry! We don't have much time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes, I'm #b#p1092013##k...\n\nA demon? A seal?\n\nWhat are you talking about?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, the demon was sealed inside?\nI know what you're talking about... As far as I could tell, it was already opened. Besides, it was a long time ago...\n\nReturn to #b#p1072008##k in #bNautilus#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1092013##k is in #bNautilus#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092013" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28253" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

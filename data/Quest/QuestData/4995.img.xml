@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4995.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Spirit of Maplemas" />
+        <int name="area" value="50" />
+        <string name="0" value="To help her decide between Maplemas and Versalmas, Little Suzy wants me to go talk to Maple Claws.  I'm sure she's back in town now in Happyville." />
+        <string name="1" value="To help Little Suzy decide between Maplemas and Versalmas, I spoke to Maple Claws about Suzy's dilemma.  Maple Claws listened and asked me to deliver a message to Suzy.  I should talk to her in a bit." />
+        <string name="2" value="Maple Claws gave me a message for Suzy: that as long as she remembers the essence of the Maplemas Spirit, it doesn't really matter what holiday traditions she chooses to follow this year.  I should return to Suzy with Maple Claws' message once I've also spoken to O-Pongo." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Merry Maplemas to you, Mapler!  Are you ready to celebrate Maplemas this year?  I hope you've been good...\r\n\r\n#b#L0#I've been an excellent kid!#l#k\r\n#b#L1#I've actually been burning ants and stuff!#l" />
+            <string name="1" value="Have you?  We'll see once I check my list... &lt;purrs&gt;\r\n&lt;sigh&gt; But as it turns out, I have a situation that needs everyone's help this year!  Even if you've been bad, here's a chance to do some good for others and still receive presents from me this year.\r\n\r\n#b#L0#Sure, Maple Claws.  What happened?  What do you need?#l" />
+            <string name="2" value="Every year as you know, I begin collecting presents for all the kids in the Maple World that have been good.  It's a lot of presents so it takes quite awhile... all year in fact!  My helpers and I had finally finished gathering them all when my present storehouse was broken into... and a bunch of the presents were stolen!  These were presents that were already wrapped and simply waiting for delivery!  Without these presents and with Maplemas Day so near, thousands of children in the Maple World will go without presents this year!\r\n\r\n#b#L0#That's terrible! I'd be glad to help you with that, of course!#l" />
+            <string name="3" value="Thank you, I knew you had the Maplemas spirit in you.  I know who's taken my presents: monsters.  Monsters simply have no manners, taking what's not theirs, but they love presents as much as any kid.  In a way, my heart goes out to them. &lt;sigh&gt; If you happen to find any presents from any bad monsters who've taken them from me, please return them to me as soon as you can.  Hmmm.  But I sense that there's another reason why you've come to see me.\r\n\r\n#b#L0#Yes, Maple Claws, a little girl named Suzy asked me to speak with you.#l" />
+            <string name="4" value="So, Suzy is having a hard time finding her Maplemas spirit this year?  I see.  Sometimes, with the hustle and bustle of everyday life, it's easy for us to forget to treat each other with simple kindnesses.  This is why the holidays are important... it's a time to let us remember the best in us and our fellow Maplers.  But something tells me there's something more to Suzy's dilemma.\r\n\r\n#b#L0#Yes, she spoke to a mouse named O-Pongo who told her about something called Versalmas.  Some sort of alternate Maplemas.#l" />
+            <string name="5" value="Ah.  I've heard of this O-Pongo.  You Say he's a mouse who talks of an alternate version of Maplemas?  Curious.  But it does not surprise me that alternate worlds would celebrate holidays in different ways.\r\nI see that Suzy is excited at the prospect of a different holiday, and likely, different presents.  &lt;purrs in thought&gt;  Very well, will you take her a message from me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I had a feeling I'd seen a lump of coal with your name on it lying around somewhere in my present storehouse.  Tsk, tsk." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you.  It's important that little boys and girls don't forget what it is about the spirit of Maplemas that is important.  Please give me a moment to think about what I should exactly Say to her, and then come back to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Part of the Maplemas spirit is spreading the spirit to those who have need of it. I hope you come back when you've found it within you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I've thought of what I need you to tell Suzy.\r\nPlease tell her this: As long as she holds the spirit of kindness and goodwill in her heart all year round, it doesn't matter whether she chooses to celebrate the holidays with a Maplemas Tree, or with Versalmas customs and gifts.  Tell her that as long as she doesn't forget that, Maple Claws will remember her and bring her presents every year.\r\nWill you tell her that?  You will?  Thank you, and a Merry Maplemas to you, too!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201030" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201030" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4994" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="end" value="2008011500" />
+        </imgdir>
+    </imgdir>
+</imgdir>

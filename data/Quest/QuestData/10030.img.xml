@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10030.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Teo's Nostalgic Reminiscing I" />
+        <int name="area" value="50" />
+        <string name="0" value="You hear that you can receive help from #b#p1002001##k in Lith Harbor..." />
+        <string name="1" value="You meet #b#p1002001##k at Lith Harbor. #b#p1002001##k says you remind him of when he was younger, and he wants to help you. He says that he will recognize your potential and support you if you bring him #b100 #t4000016#s#k and #b50#t4000004#s#k... For an awesome adventurer like you, this should be a piece of cake. \n\n#t4000016# #b#c4000016#/100#k\n#t4000004# #b#c4000004#/50#k" />
+        <string name="2" value="You showed your potential to #b#p1002001##k, who you met in Lith Harbor. #b#p1002001##k recognized your potential and gave you some mesos that should come handy during your adventures. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <string name="start" value="2006072000" />
+            <string name="end" value="2006100100" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey there, you. Are you going on an adventure? When I was young, I used to explore the world, too. Ah, I miss those days. There is nothing more exciting than exploring the world." />
+            <string name="1" value="At first, it was tough because I didn't fully prepare myself and I had zero experience. You remind me of those days. I struggled quite a bit back then." />
+            <string name="2" value="I like you, kid. If you prove your competence to me, I'll support you on your adventures. What do you say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Good. Bring me #b100 #t4000016#s#k and #b50 #t4000004#s#k. You will gain my recognition then." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh? Well, alright. I was just trying to help. Talk to me again if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, unbelievable! That was really fast. I knew you were different. You'll make one heck of an adventurer in the future. I just know it!" />
+            <imgdir name="yes">
+                <string name="0" value="Did you receive the money? I know it isn't much, but it'll come in handy since you're about to embark on a new adventure. I'm looking forward to seeing the new and improved you in the near future." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you haven't finished collecting everything. Did I overestimate you? Come on, bring me #b100 #t4000016#s#k and 50 #b#t4000004#s#k already. I know you can do it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000016" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <string name="worldmin" value="23" />
+            <string name="worldmax" value="23" />
+            <string name="end" value="2008092200" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="111" />
+                <int name="3" value="112" />
+                <int name="4" value="120" />
+                <int name="5" value="121" />
+                <int name="6" value="122" />
+                <int name="7" value="130" />
+                <int name="8" value="131" />
+                <int name="9" value="132" />
+                <int name="10" value="200" />
+                <int name="11" value="210" />
+                <int name="12" value="211" />
+                <int name="13" value="212" />
+                <int name="14" value="220" />
+                <int name="15" value="221" />
+                <int name="16" value="222" />
+                <int name="17" value="230" />
+                <int name="18" value="231" />
+                <int name="19" value="232" />
+                <int name="20" value="300" />
+                <int name="21" value="310" />
+                <int name="22" value="311" />
+                <int name="23" value="312" />
+                <int name="24" value="320" />
+                <int name="25" value="321" />
+                <int name="26" value="322" />
+                <int name="27" value="400" />
+                <int name="28" value="410" />
+                <int name="29" value="411" />
+                <int name="30" value="412" />
+                <int name="31" value="420" />
+                <int name="32" value="421" />
+                <int name="33" value="422" />
+                <int name="34" value="430" />
+                <int name="35" value="431" />
+                <int name="36" value="432" />
+                <int name="37" value="433" />
+                <int name="38" value="434" />
+                <int name="39" value="500" />
+                <int name="40" value="510" />
+                <int name="41" value="511" />
+                <int name="42" value="512" />
+                <int name="43" value="520" />
+                <int name="44" value="521" />
+                <int name="45" value="522" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

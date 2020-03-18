@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3325.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Sip of the Moon" />
+        <string name="parent" value="The Fairy in Despair 1" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="With a clouded look on his face, #p2012018# gave me a medicine called #t4031700# and a letter, asking me to deliver them to #b#p2111004##k. He seemed concerned that the medicine might not be enough to cure #p2111005#..." />
+        <string name="2" value="Despite receiving the medicine, #p2111004# still seemed very much concerned. #p2111005#'s illness might be a lot worse than I thought..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031700" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031707" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="33000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031700" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031707" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030016" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Good thing you came. The medicine is now ready. Hey, and this is a letter to #p2111004#. Please deliver this to her along with the medicine. You'll go to #m261000000# right now, right?" />
+            <imgdir name="yes">
+                <string name="0" value="I tried my best, but honestly, I am not sure if that will be enough... I don't know if it will work for a special case like #p2111005#'s... I am not sure... anyway, please take the medicine and the letter and give them to #b#p2111004##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm... I guess you are not interested in going back to #m261000000# yet. If so, then come see me again before heading back to #m261000000#." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, hello traveler. Did you meet up with #p2012018#? Ahh, so this is the medicine he made for her. And the letter... I felt bad about not being able to contact my little brother for the longest time. I'm glad he found time to write this. I guess this will be enough to cure my daughter, right?" />
+            <imgdir name="yes">
+                <string name="0" value="As long as #p2111005# gets healthy, I'll do anything. Now that my husband's missing, #p2111005# is all I've got." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to #b#p2111004##k yet? I am worried sick about my niece. Go now." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't gone to see #b#p2012018##k yet? I am sure he'll set aside whatever he has to make a medicine for #p2111005#." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What....? You lost the items I gave you? Hey! That's the medicine for #p2111005#, and a letter I took time to write for my sister! Good thing I have a spare, so I'll give you another one, but don't lose it again!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031707" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031700" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012018" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3324" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

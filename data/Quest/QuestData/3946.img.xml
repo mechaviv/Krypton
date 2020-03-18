@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3946.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Proper Reward for a Good Deed" />
+        <int name="area" value="44" />
+        <string name="0" value="You got bamboozled by a Red Scorpion, thinking you were helping the Sand Bandits. Good thing you found out before it went on for too long. To compensate, you stole some of their treasure and passed them out. You feel great, but for some reason, #bSirin#k still wants to talk to you about it." />
+        <string name="1" value="Sirin says you've more than made up for accidentally helping the Red Scorpions with your other good deeds. She says you should look for some #bcompensation#k. Compensation? Who's going to pay you?" />
+        <string name="2" value="You took a bit of treasure from the Red Scorpion's treasure chest. This is more than enough compensation." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3926" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4020007" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4020005" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4020001" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4020002" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4020004" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4020006" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4020000" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="4020008" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="8">
+                    <int name="id" value="4020003" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="9">
+                    <int name="id" value="4010007" />
+                    <int name="count" value="5" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, aren't you being a little too unselfish? What you've done has been quite incredible. Thanks to you, the Red Scorpions are a mess. That won't stop them from stealing stuff in the future, but when that happens, you can steal back the stuff they stole." />
+            <string name="1" value="I know you helped the Red Scorpions, but that's because you didn't know any better. You've done a lot of good, too! It wouldn't be terrible for you to ask for a reward... Why are you so selfless?" />
+            <imgdir name="yes">
+                <string name="0" value="As you know, the people of Ariant can't afford to reward you, and of course, the queen won't do a thing. And you couldn't possibly expect anything out of a poor dancer like me, right? So...take care of your own reward!" />
+                <string name="1" value="You really don't understand what I'm hinting at? Seriously, there's a place with a ton of treasure just sitting there... Think about it. I'll look the other way this one time. You know what I'm talking about now, right?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? You really don't want a reward? You must be an angel or something..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="This giant treasure chest is full of expensive treasures. There's plenty of stuff inside. \r\n#L0# #b (It shouldn't be a problem to take just a little, right? Even Sirin said it's all right...)" />
+            <string name="1" value="#b(Well, this is probably enough...)#k" />
+            <imgdir name="yes">
+                <string name="0" value="#b(Doing a good deed definitely pays off...)#k" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gotten a reward? Come on, you've got to help yourself on this. You deserve it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2103007" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3926" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

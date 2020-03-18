@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21731.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eliminate the Puppeteer!" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You have now reached Level 29, which means it's time for you to ambush the #o9300344#, no? You should head over to #b#m104000000##k and notify #b#p1002104##k that you are ready for action." />
+        <string name="1" value="#p1002104#, seeing that you're determined to attack the #o9300344#, decides to rent a powerful weapon for you. It's a disposable weapon, but it'll be put to good use. Now everything is set for the ambush in #b#m910510201##k. Remember, the password is 'Francis is a genius Puppeteer!'\r\n\r\n#o9300344##r #a217311##k\r\nThe Black Wings' Clue #t4032322# #b#c4032322# / 1#k" />
+        <string name="2" value="You defeated the Puppeteer, but he ran away before you could finish him off. All you have left is a document the Puppeteer dropped while running away. When you showed #p1002104# the document, he suddenly looked dead serious." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1442081" />
+                    <int name="count" value="1" />
+                    <int name="job" value="2099202" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="8550" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032322" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, we know the location of his headquarters and we know the password. All we need to do now is to attack the #r#o9300344##k. Are you ready, Aran?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I figured, attacking the #o9300344# would require a powerful weapon, so I rented one from someone I know. It's a disposable weapon that will disappear the moment you log off, but it's very useful. I suggest you use it when attacking the #o9300344#." />
+                <string name="1" value="Now head over to #b#m910510201##k and eliminate the #o9300344# once and for all! Oh, and if you find any #bclues regarding the Black Wings#k, bring it back to me, okay? Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not ready yet? No need to be nervous. You're a hero, remember? You'll do fine." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Did you manage to defeat the #o9300344#? Yes! I knew you'd be able to do it! You're amazing, seriously! \n#b#L0#(You tell him about your conversation with the #o9300344# and the fact that the #o9300344# escaped.)#l\n#k" />
+            <string name="1" value="Really? So the #o9300344# escaped? Well… in that case, then he'll probably rear his ugly head sooner or later, so we'll just have to wait and see. More importantly though, the conversation bothers me a bit. Hmmm? What is that? Something that the #o9300344# dropped? Wait... this is the #bPuppeteer's Document#k...? Show me, show me! I need to see what's on it." />
+            <imgdir name="yes">
+                <string name="0" value="It's written in code, but this is a major find! This will let us know of the future plans of the Black Wings! And the thing is… I know an expert codebreaker who can figure this out in no time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You haven't eliminated #r#o9300344##k yet? Please make sure to defeat him and bring back some #bclues about the Black Wings#k, okay? You know where he is, right? Enter the password at the #b#m105070300##k and it'll lead you straight to #m910510201#!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r#o9300344##k yet? Please make sure to defeat him and bring back some #bclues about the Black Wings#k, okay? You know where he is, right? Enter the password at the #b#m105070300##k and it'll lead you straight to #m910510201#!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032322" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300344" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21729" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

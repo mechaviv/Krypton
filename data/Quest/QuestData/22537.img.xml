@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22537.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Investigating the Biology of Dragons" />
+        <int name="area" value="7" />
+        <string name="0" value="When you reach Lv. 30, #p1013000# suddenly grew?! How did this happen? Talk to #b#p1013000##k." />
+        <string name="1" value="#p1013000# doesn't seem to know how he suddenly changed either. It seems that neither of you really know much about Dragons. You really should find out more...\r\n\r\n #p1013000# suggests that you find someone with more knowledge to tell you more about Dragons. Come to think of it,  #b#p1012109##k in #b#m100000000##k is a total bookworm. Wouldn't he know something?" />
+        <string name="2" value="You asked #p1012109# about Dragons." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ma...master...\r\n#L0##bWhoa! #p1013000#, what happened to you? You're so much bigger! Your horns look sharper too. You look great, but what happened? Do Dragons always change so suddenly?#l\n#k" />
+            <string name="1" value="I don't know master! Like I told you before, the only thing I know is that I am a Dragon and that we have a pact! Wha...what happened to me? My cuteness has decreased...\r\n#L0##bCome to think of it, we really don't know very much about Dragons. This just won't do! Let's find out more about Dragons!#l\n#k" />
+            <string name="2" value="Master? Are you worried about me?\r\n#L0##bYes! What if you suddenly fell asleep in the air and broke someone's roof or something? You know how much trouble I'd be in?#l\n#k" />
+            <string name="3" value="Wait, you're worried about the roof, and not me?!\r\n#L0##bHehehe. I wonder how we can find out more about Dragons? I've heard there are other Dragons in Maple World but I've never seen one. Who would know about Dragons?#l\n#k" />
+            <string name="4" value="Way to change the topic! Well, whatever. There must be someone who knows... I mean, you knew about Dragons before you ever saw one, right?\r\n#L0##b I knew about Dragons before seeing one... That's it! Books! Reading about Dragons in books will let me learn about Dragons without having to find one in person!#l\n#k" />
+            <string name="5" value="Wow! Master! You're so smart! But do you have any books about Dragons?\r\n#L0##bI don't, but someone must. The person with the most books in our town... Yes, #p1012109#! #p1012109# reads lots of books so he must have a book about Dragons!#l\n#k" />
+            <string name="6" value="All right! Let's hurry to that human named #p1012109#!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Let's hurry back to #b#m100000000##k where you used to live!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? Why? Do you not get along with that human named #p1012109#? But I really want to know more about my race..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Huh? Evan? Hey, what are you doing here? I heard that you've been helping a lot of people. Hehe, are you here to help me too?" />
+            <imgdir name="yes">
+                <string name="0" value="Huh? Do I have any books about Dragons? Hmm... " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Let's hurry to the human named #b#p1012109##k, master! To #m100000000#!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012109" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22521" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4308.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Water Goblin's Cucumber" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#p9120003##k's farm, located at #b#m800000000##k, seems to have been robbed. What happened?" />
+        <string name="1" value="#p9120003# states that the only items stolen at her farm are the #b#t4000223#s#k, and she was very confident that it was the work of #b#o9400012##k. She asked me to eliminate 80 #o9400012#s and recover 40 #t4000223#s in the process. A monster that prefers to eat #t4000223#? Interesting, especially since most kids hate that\n\n#o9400012# #r#a43081##k \n#t4000223# #b#c4000223#/40" />
+        <string name="2" value="After eliminating #o9400012#s and recovering a whole bunch of #t4000223#s, #p9120003# had the look of satisfaction on her face." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="9120003" />
+            <int name="lvmin" value="55" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4307" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="21500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000223" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh... There seemed to be lots of #t4000223#s waiting to be plucked this year, but ... all the other #t4000223#s remain untouched EXCEPT the one in MY FARM! My goodness, what should I do? I'm sure who the real culprit is... excuse me, but do you mind catching the culprit that's responsible for the mass disappearance of #t4000223#s?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahh, thank you. I'm pretty sure #b#o9400012##k is the guilty one. It seems to really obsess in #t4000223#, more than anything else. Well, the #t4000223#s in our farm are known for their great taste, and I think it was aware of that, too. I want you to hunt #b80 #o9400012#s#k and bring back #b40 #t4000223#s#k in return." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... if you are busy, then there's nothing I can do about it. I am sure who did this, though. How am I supposed to catch it?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh... you found the Water Goblins came for more #t4000223#s before they decided to eat them all!" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, with these #t4000223#s I won't have to worry about lack of food anymore. Thanks a lot!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't found all the #t4000223#s yet? Hmmm ... even if you defeated all the #o9400012#s, without the #t4000223#s, it's nothing." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated #b#o9400012#s#k yet. You need to take care of all of them so that the #t4000223#s will stay safe. Talk to me when you defeat 100 of them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000223" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400012" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4307" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

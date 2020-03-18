@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Agent C's Intelligence Activity" />
+        <int name="area" value="50" />
+        <string name="0" value="Gaga sent you a strange message." />
+        <string name="1" value="Secret Agent Gaga tells you to collect 5 Intelligence documents from party quests and then meet Agent C. \n\n#b&lt;Party Quests where you can find Agent C&gt;\n- Moon Bunny's Rice Cake: Level 10 or higher\n- First Accompaniment: Level 21 - Level 30\n- Crack of Dimension: Level 35 - Level 50\n- Tower of the Goddess: Level 51 - Level 70\n- Lord Pirate: Level 55 - Level 100\n- Romeo and Juliet: Level 71 - Level 85\n- Poisonous Fog Forest: Level 45 - Level 55\n\n #kEach time you retrieve 5 Intelligence documents you will receive #bAgent C's old Receiver#k, and when you retrieve 100 Intelligence documents, you will receive #bAgent C's Titanium Titanium Receiver#k." />
+        <string name="2" value="Secret Agent Gaga suggested that you go see Agent C at the reward map once you get 5 Intelligence documents from the party quest. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="본부로부터 당신에게 지령이 내려왔습니다. 지금 확인하시겠습니까?" />
+            <imgdir name="yes">
+                <string name="0" value="지령의 내용은 '파티퀘스트. 요원C. 첩보문서 5개' 이상입니다. 무슨 말인지 잘 이해가 안가신다구요? 그러니까 이 지령의 뜻은 파티퀘스트에서 첩보문서 5개를 모아서 파티퀘스트 보상지역에 있는 요원C를 찾아가라는거에요." />
+                <string name="1" value="요원C는 정보처리를 담당하고 있는데 현재 현장임무를 수행하기 위해 파티퀘스트에 파견되어 있거든요. 파티퀘스트에 출몰하는 몬스터들이 '마스터M'의 수하들이라는 첩보가 있었어요. 이 몬스터들을 조사해서 첩보문서 5개를 얻으면 요원C를 찾아가 보세요. " />
+                <string name="2" value="요원C가 어디 있냐구요? 당신이 파티퀘스트를 훌륭히 수행한다면 그를 만날 수 있을거예요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="그럼 나중에 다시 확인해 주세요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="An order was sent to you from headquarters.  Do you want to check it now?  " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="The order says #r'Party Quest. Agent C. 5 Intelligence documents'#k. In other words, collect #b5 Intelligence documents#k inside the party quest and take them to #rAgent C#k at the party quest reward area. " />
+                <string name="1" value="There is intelligence that the monsters inside the party quest are #e#rMaster M's#k#n subordinates. Collect 5 Intelligence documents from these monsters and take them to Agent C." />
+                <string name="2" value="Where is Agent C? If you successfully get through the party quest, you will meet him. Each time you bring him 5 Intelligence documents, you will receive #bAgent C's Old Receiver#k, and when you collect 100, you will receive #bAgent C's Titanium Reciver#k. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then, please check later." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I have been waiting for you.  Your mission is to investigate the monsters that appear in the party quest and bring back 5 Intelligence documents.  Everything is in your hands." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go see Agent C in the party quest." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000033" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001192" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="10" />
+            <string name="start" value="2009060100" />
+            <string name="end" value="2009082600" />
+        </imgdir>
+    </imgdir>
+</imgdir>

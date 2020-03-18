@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Missing Kid 2" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You barely managed to find the kid deep in the forest. You should take him back to the ark." />
+        <string name="1" value="You barely managed to find the kid deep in the forest. You should take him back to the ark." />
+        <string name="2" value="You barely managed to rescue the kid. There's not much time left! The ark must leave before the Black Mage attacks!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001271" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I was really scared… *Sniff sniff* Please take me back to Athena Pierce!" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1209007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001271" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21001e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1209006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21001s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

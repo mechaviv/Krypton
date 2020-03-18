@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20724.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Mission in Perion Complete" />
+        <int name="area" value="15" />
+        <string name="0" value="Agent #b#p1103004##k of #m102000000# wants to talk to me about something..." />
+        <string name="1" value="#p1103004# told me the assignments for #m102000000# are now complete and asked that I turn in the Mission Report along with #t4032148# to #b#p1101002##k." />
+        <string name="2" value="I wound up giving #p1101002# #p1103004#'s report and #t4032148#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032149" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032148" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="7500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032149" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032148" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The test for #t4032148# is complete... and I think the assignment for #m102000000# is about complete. There's still a slight chance of threat, but the warriors from #m102000000# volunteered to help, so that shouldn't be a big problem.\n#b#b#L0#(That's probably because the warriors found #p1103004# very cute...)#l\n#k" />
+            <string name="1" value="I have given you the report that details this event, so please hand this over to #b#p1101002##k, along with #t4032148# as well. I'd love to keep using it here at #m102000000#, but it's a rare instrument, so I'll have to send it back to the headquarters. Please let him know how much I appreciated using this." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for your help. Without you, I wouldn't have made the progress I made with this area. Like other agents before me, I can also vouch for the fact that you are a great Knight. Hopefully I'll see you here again someday." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah... do you have some things to take care of here in #m102000000#? Like a duel between the warriors of #m102000000#?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I see that you have come back from the assignment ther ein #m102000000#. Let's see the report." />
+            <imgdir name="yes">
+                <string name="0" value="Fortunately, the test for #t4032148# wound up being successful. If we push for an upgrade in the functions, then it maybe be powerful enough to cover all of Victoria Island, which means it's only a matter of time before we locate the puppeteer." />
+                <string name="1" value="The way this is going, the assignment of eliminating the puppeteer may fall to you as well. I am just worried that you may not be strong enough to take on the puppeteer one on one. At this point, i'd like for you to train as hard as you can until you reach #bLevel 28#k. We'll talk more then." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Haven't you gone to visit #b#p1101002##k, yet? I need to use #t4032148#  fast so I can return it to them." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you completed the assignment for #m102000000#? Then I'm sure #p1103004# wrote up a report on it... where's the report? I'm also sure I asked for #t4032148# to be returned as well. What happened? Please check through #b#p1103004##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032149" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032148" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20723" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="26" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

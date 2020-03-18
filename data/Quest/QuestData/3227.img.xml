@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3227.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Man in the Black Suit" />
+        <string name="parent" value="Korin's Memory" />
+        <int name="order" value="2" />
+        <int name="area" value="37" />
+        <string name="1" value="I met #bAgent Marco#k at the Omega Sector. I asked him some questions regarding Korin, and I was able to find out that she had been kidnapped by a group of aliens that invaded the Omega Sector. He also said that in order to recover Korin's lost memories, I'll have to defeat the #bMateons#k and collect #b5 Memory Pieces#k that contain her lost memories... I'll have to head over to the Boswell Field quickly.\n\n#t4031090# #b#c4031090##k/5" />
+        <string name="2" value="I defeated the aliens that took Korin's memories, gathered up the memory pieces, and gave them to Agent Marco. He then put the pieces together and made it into one whole piece." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="5500" />
+            <int name="exp" value="2150" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031090" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3228" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Shhhh... I suggest you don't talk to me around here for your safety. Omega Sector is constantly under watch, and it's best for you to be as careful as possible around here. Hmmm... and...? So you're saying you came here at #b#p2041015##k 's request? I see ..." />
+            <string name="1" value="I wish I could Say I have no knowledge of that person, but looking at you, I don't think that's going to work. Alright, then, I'll tell you everything I know about her. Before that, though, can you please promise me that you won't tell anyone anything about matters regarding #b#p2041015##k, myself included?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, then. I'll spill out everything I know. I've actually been well aware of the fact that she'd been declared missing, but by then, it was past our hands. All we could do afterwards was to just hope for her safe return." />
+                <string name="1" value="As we had suspected, she was ... kidnapped by the forces that invaded Omega Sector. We suspect that the alien that abducted her is #b#o4230119##k. Anyway, she's now living a different life, thanks to the fact that she's currently suffering from amnesia. It'd be nice to help her find the lost memories ..." />
+                <string name="2" value="Mateon probably tried to break in by kidnapping a number of the citizens around the area. Anyway, head over to Boswell Field, and you'll be fighting #b#o4230119#s#k. Every once in a while, you may be able to pick up #b#t4031090##k, which contains the memories of #b#p2041015##k. It won't be easy, but I think you can do it." />
+                <string name="3" value="Please gather up #b5 Pieces of Memory#k for me, so I can put them all together for you. Now, I trust that you keep all this information to yourself. Please head over to Boswell Field and face them. They are difficult to fight against, so I advise you to be on your toes at all times." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is classified information, and it's a dangerous mission, to say the least, so I cannot stress this enough, but please do not reveal this information to anyone. I cannot talk to you about anything unless you promise to keep this information a secret. Well then, I'll have to get back to work, so if you'll excuse me..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great job taking down the #b#o4230119#s#k at the Boswell Field and collecting #b5 Pieces of Memory#k in the process. Alright, then. I'll try to put these pieces together and make it a whole. Here are some Mesos as a sign of thanks for taking out some aliens for us." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have collected all the pieces of #b#p2041015##k's lost memory. Please head over to the Boswell field near the Omega Sector and defeat #b#o4230119##k, in order to collect #b5 Pieces of Memory#k to recover #b#p2041015#'s#k memory." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031090" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3226" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2214.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Run-down Huts in the Swamp" />
+        <string name="parent" value="The Monster and the Evil Scheme" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="It seems like the next step entails collecting information. JM says that he is going to leave something for you inside the #bhut#k found deep inside the swamp, so you can retrieve it #bfrom 5 p.m. to 8 p.m.#k... Let's keep track of time and head over to #b#m107000300##k." />
+        <string name="2" value="You have a crumpled piece of paper containing the list of informants in your hands. Let's go find the informants listed on the paper." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="일단 정보부터 모아 보는 게 순서겠지? 누가 이런 음모를 꾸미고 있는 건지, 그리고 다일이란 몬스터는 과연 어떤 몬스터인지... 그에 관한 정보는 커닝시티 곳곳에 있는 정보원들에게 얻을 수 있을 거야." />
+            <string name="1" value="듣는 귀가 있을지도 모르는 이런 곳에서 정보원들의 정체를 밝힐 순 없지... 정보 전달 지점을 만들도록 하지. 특정 장소를 설정해서 그 곳에서 정보를 교환하는 거야. 좀 번거롭더라도 비밀 유지는 기본 중의 기본이잖아? 어때? 할 수 있겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="좋아. 그럼 늪지대 깊은 곳... 위험한 크로코1으로 가도록 해. 예전에 사냥꾼들이 쓰던 다 쓰러져 가는 오두막이 몇 채 있을 거야. 그 오두막들 중 어딘가의 내부에 정보를 놓아둘 테니 알아서 찾아서 써먹으라고. " />
+                <string name="1" value="아, 한 가지 더. 정보를 전달하는 시각은 매일 오후 5시부터 8시 사이 뿐. 그 외의 시간 동안에는 다른 사람이 정보를 발견하지 못하도록 치워 놓을 거야. 그러니 시간을 잘 맞춰서 찾아가라고. 그럼... 행운을 빌지." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="흠... 이런 비밀준수를 요하는 임무에 어울리지 않는 친구로군." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031894" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You should first gather information. Find out who is plotting this awful scheme, and what kind of monster #o6220000# really is. The informants all over Kerning City are investigating. " />
+            <string name="1" value="But I can't tell you who the informants are because someone might be eavesdropping on our conversation... Let's decide on a  #brendezvous#k where we'll meet and exchange information. It's a bit of a hassle but the secrecy must be preserved. What do you say? Do you think you can handle it? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright. Then go deep into the swamp to #b#m107000300##k. You'll find a few run-down huts the hunters built long ago. I'll leave  #bthe list of informants#k somewhere inside the #bhut#k, so use it as necessary." />
+                <string name="1" value="Oh, one more thing. The time of information delivery will be limited to #b5 p.m. to 8 p.m. daily#k, to make sure others don't find the information. So make sure to remember the delivery time. I wish you all the best." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... you don't seem like a person well-suited for a discreet task like this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Go find the knocked down trash can in a hut in the swamp." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052108" />
+            <string name="endscript" value="q2214e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2213" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

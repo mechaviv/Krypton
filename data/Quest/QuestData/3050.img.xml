@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3050.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Alfonse's Smile" />
+        <string name="parent" value="The Chaos behind Alfonse Green and the Nependeath Juice" />
+        <int name="order" value="5" />
+        <int name="area" value="33" />
+        <string name="0" value="I better go see Alfonse right now. I'm sure he's been dying to see me!" />
+        <string name="1" value="I got Alfonse Green exactly what he wanted, the Nependeath Juice." />
+        <string name="2" value="I've never seen anyone so happy over a glass of juice as Alfonse Green was with his glass of Nependeath Juice." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="13200" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Alright, the #b#t4031202##k is finally ready~ You should go see #bAlfonse#k right now. He's probably dying to see you right this minute with that in your hand." />
+            <string name="1" value="Please safely deliver the #bNependeath Juice#k! " />
+            <imgdir name="yes">
+                <string name="0" value="Alfonse is probably dreaming about the juice right as we speak. He really really loves #t4031202#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Wasn't #t4031202# for Alfonse Green? Imagine the disappointment he'll face if you didn't bring that to him..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you're back!! You won't believe how much I waited for you. I couldn't do anything today other than daydream about the wonders of #t4031202#." />
+            <imgdir name="yes">
+                <string name="0" value="I knew it! #t4031202# is by far the best thing in the world!! Thank you so much for bringing joy back into my life! Here, please take this helmet. It's my way of saying thanks to you for making me smile again. This helmet is very rare in that you can't get it anywhere else but here. See you around!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please go see Alfonse right now. He may be waiting for you." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012020" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3048" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031202" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

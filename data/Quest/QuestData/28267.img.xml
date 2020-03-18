@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28267.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Collect] I Need an Umbrella!" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1010100:##k in #b#m100000000##k says she hates getting wet in the rain." />
+        <string name="1" value="Although usually sunny, #b#m100000000##k has rainy days from time to time. Because #b#@1010100:##k hates getting wet in the rain, she has asked you to bring her some materials with which she can make an umbrella.\n\nBring 20 #rGreen Mushroom Caps#k after hunting #rGreen Mushrooms#k.\n(You can easily find them in the #b#m105050400##k.)\n\nReport back to #b#@1010100:##k in #b#m100000000##k upon completion." />
+        <string name="2" value="You have collected 20 #rGreen Mushroom Caps#k for #b#p1010100##k since she said she wanted to make an umbrella." />
+        <string name="demandSummary" value="#i4000012:# #t4000012:# #c4000012# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,600&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, adventurer. Isn't the weather in #b#m100000000##k beautiful?\n\nBut it may rain even in this wonderful weather.\n\nBut you can't buy umbrellas anywhere in #b#m100000000##k." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="So I'm trying to make my own unbrella, but I need some items. Would you help me find them?\n\nPlease hunt #rGreen Mushrooms#k and bring me 20 #rGreen Mushroom Caps#k?\nYou can easily find #rGreen Mushrooms#k in #b#m104040001##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, you're busy…?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You didn't have to rush so much, but I really appreciate it." />
+            <imgdir name="yes">
+                <string name="0" value="Ah, finally finished! My very own Green Mushroom Umbrella.\n\nDespite the fact that this umbrella is heavy and stinky, I really like it! I wish it would rain soon! Tee hee!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please collect 20 #rGreen Mushroom Caps#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1010100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000012" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1010100" />
+            <int name="lvmin" value="14" />
+        </imgdir>
+    </imgdir>
+</imgdir>

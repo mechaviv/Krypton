@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3823.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Swallow's Memory" />
+        <string name="parent" value="Do Gong Seeking Swallow" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Doesn't #b#p2071006##k from #b#m222000000##k have something to do with #m250000000#? I visited the #p2071006#, but it seems to have a case of amnesia..." />
+        <string name="1" value="After mentioning #m250000000# to #p2071006#, it seems to regain a bit of memory, but wasn't sure exactly what that was, and told me that if it could have a bite out of #ba pink, sweet-smelling fruit#k, then the memory may come back. A pink, sweet-smelling fruit... hey, isn't that the Peach from #b#m250000000##k? I better get some #t2022116# for #p2071006#'s lost memory.\n\n#i2022116##t2022116#  #b#c2022116##k/1" />
+        <string name="2" value="I gave #b#p2071006##k some #t2022116#. #p2071006# immediately dug into it... would its memories come back?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="전에 #p2091001#이라는 이름을 말씀하셨던 분이죠? #p2091001#이라는 이름, 떠올리면 떠올릴수록 뭔가 그리운 기분이 들어요. 여기 사람들과는 조금 다르게 생기신, 바둑을 좋아하는 그런 분이 아닌가요? #p2091001#이라는 분은 어디에 계신 누구인가요?\r\n#L0#  #b#p2091001#님은 #m250000000#에 있는 정신수양 교관이야." />
+            <string name="1" value="#m250000000#? 정신수양…? 무척 익숙한 이름인데… 아, 갑자기 떠오르는 게 있어요. 분홍색의 아주 달콤하고 향기로운… 여행자님, 그걸 가져다 주실 수 없나요?" />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="#m250000000#? 정신수양…? 무척 익숙한 이름인데… 아, 갑자기 떠오르는 게 있어요. 분홍색의 아주 달콤하고 향기로운… 여행자님, 그걸 가져다 주실 수 없나요?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022116" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You're the one that mentioned the name #p2091001# before, right? A name like #p2091001#... the more I think about it, the more I long for the memories... isn't he the one that looks a little different from others, the one that plays chess? Who is #p2091001#, and where is he from?\r\n#L0#  #b#p2091001# is the head Mental Trainer at #m250000000#." />
+            <string name="1" value="#m250000000#? Mental Training? That sounds awfully familiar... oh, I just remembered something. It's pink... it smells really plesant, and the taste...that sweet taste... Say, can you get that for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Everytime I think about #m250000000#, it reminds me of a #bpink, sweet-smelling fruit#k. Don't you think it's something I ate often, or at least something I'd really like? If you can get me that fruit, then I truly believe my memory will come back to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't know what that is?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh... this is that fruit... right, I think it's called #t2022116#. Thank you so much! I should try this right now." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, it's so sweet~ I feel like my memory's slowly coming back!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you get the #bpink fruit#k yet? Is it too expensive to get?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022116" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3822" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3018.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="An Old Ring" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="15" />
+        <int name="area" value="33" />
+        <string name="1" value="I found an anonymous grave somewhere deep in the valley of the snowfield. I also removed an old ring from the corpse's finger. Maybe Alcaster knows what to do with it." />
+        <string name="summary" value="I should take the ring I found at the grave and take it to Alcaster in El Nath. " />
+        <string name="rewardSummary" value="2,000 EXP&#xD;&#xA;Can proceed to the &quot;The Secrets Behind the Ring?&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031053" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+            <int name="nextQuest" value="3019" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Dug up the small tomb, and found a shining object on the finger of a corpse. Will you stretch your arm out and take the item from it?" />
+            <imgdir name="yes">
+                <string name="0" value="The item taken from the finger of a corpse is an #b#t4031053##k that seems to have been around for a long time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="In the tomb there was some moss, a corpse, and not much else. Looked further in but still found nothing." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="When you carefully examine the small dug up grave, you notice that a shiny ring has been placed on the skeleton's finger again. Will you put your hands inside to remove the ring?" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020005" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3017" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

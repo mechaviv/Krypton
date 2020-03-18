@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4522.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost White Essence" />
+        <int name="area" value="48" />
+        <string name="0" value="If I lost the #bwhite essence#k, I should go visit #bRalph the wanderer#k again." />
+        <string name="1" value="I should go eliminate Mr. Anchor once more and gather the red essence.  I should really take care of the White Essence this time if Ralph the wanderer gives me the item this time.\n\n#o9420512#  #r#a45221##k\n#t4000383#  #r#c4000383#/300" />
+        <string name="2" value="Phew... I really should go take care of the #bCapt. Latanica#k this time and bring peace to the Boat Quay Town." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000381" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000383" />
+                    <int name="count" value="-300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh.... No.... I sense something bad here.... You... did....not.... You didn't lose the #bWhite Essence#k did you?" />
+            <imgdir name="yes">
+                <string name="0" value="Oh... well.... Okay.. I should make another white essence for you then... But... I can do it all by myself... Please do eliminate #b300 #o9420512##k for me and gather #bRed Essence#k as I need the energy to form the white essence." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Pheww... You got me there...." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you really eliminate all the Mr. Anchor?" />
+            <imgdir name="yes">
+                <string name="0" value="Hoo hoo! Here you go! I am not sure if I can make another one if you lose them again. Please take care of it this time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered all the #bRed Essence#k yet... Hurry... I am running out of time here..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Nah... You didn't bring the energy with you... Please eliminate 300 Mr. Anchors and come talk to me..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270030" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000383" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420512" />
+                    <int name="count" value="300" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270030" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4513" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000381" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

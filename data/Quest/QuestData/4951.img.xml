@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4951.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The File Thickens Part 1" />
+        <string name="parent" value="The File Thickens" />
+        <int name="order" value="1" />
+        <int name="area" value="50" />
+        <string name="0" value="Agent Falcon is still hanging out in front of the Haunted House?!  Doesn't he have other ghosts to catch, myths to debunk?  Maybe I should go see if something's wrong..." />
+        <string name="1" value="I'm starting to think that Agent Falcon spends too much time writing reports, and not enough time doing actual investigative work!  The elusive Mr. Bones turns out to be Prendergast, the former owner of this house!  Falcon wants me to find Jonas in the Haunted House, give him this Paranormal Subject Questionnaire to fill out, and return the completed form to him. " />
+        <string name="2" value="I got my questionnarie from Jonas. Now is time for me to hand over this document to Falcon. Maybe he can go back to MBI if I hand him this?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031765" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031765" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031766" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="4959" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, hi again.  What?  You're wondering why I'm still standing here?  Yes, yes... well you see, after extensively analyzing the pages of my report, I've pinpointed the exact location of Mr. Bones.  It turns out he's taken refuge somewhere, er... right inside this house.  I'm just, er... writing up my plan of attack... so to speak.\r\n\r\n#L0##b Oh, really?  I suppose you need my help with that too...#l#k\r\n#L1##bYou've got to be kidding me!  It took your 1,000 page report to figure that out!?  Whatever.  I'm outta here!#l#k" />
+            <string name="1" value="&lt;Ahem&gt;  Well... I guess it's time to 'fess up.  The truth is... I'm just a Junior Agent in the MBI.  Well, Junior Agent Trainee, if you want to get technical about it.  And um... Mr. Bones isn't really a dangerous ghost... the subject I'm tracking is actually supposed to be quite mild-mannered.  And, er... I don't really need to apprehend him, I just have to interview him.  About being dead and all.\r\n\r\n#L0##bSo you want me to interview him for you?#l#k" />
+            <string name="2" value="Yes! Are you up for this?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Er, we at the MBI like to be absolutely sure before we move on dangerous subjects.  Truly, your past help has been invaluable and appreciated.  If you decide you want to assist the MBI again, I'll be right here." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ok! First, you have to find him.  Oh, and the subject's name isn't really Mr. Bones.  That's just a name I made up for him to make him sound &lt;ahem&gt; a bit more menacing.  The subject's name is... hold on... let me find the right page with that info... one sec... ah, here it is!  #rJ. Prendergast#k!   Former owner of this house.  Should be somewhere right in there.  So, if you could find him, and just give him this #bParanormal Subject Questionnaire#k to fill out, I'd be greatly indebted to you!  Oh, and then please bring the completed form back to me!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Er, we at the MBI like to be absolutely sure before we move on dangerous subjects.  Truly, your past help has been invaluable and appreciated.  If you decide you want to assist the MBI again, I'll be right here. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="#bThere's some sort of government agent outside your house who asked me to give you this to fill out.#k\r\n\r\nGovernment?!  They're always trying to say that the Prendergast Toy Company owes more money in back taxes!  Hmph!  What kind of organization taxes a company that does nothing but bring joy to children all over the world?! &lt;sigh&gt; I guess he won't be leaving until I finish this.  Here, give me that.  What is this rubbish?  I don't have time for this!  &lt;scribbles quickly&gt;  There you go.  Now hopefully they'll let me get back to my work!" />
+            <imgdir name="yes">
+                <string name="0" value="Here! Now don't talk to me about this things! I am busy!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="That looks like an empty Paranormal Subject Questionnaire form you've got there... no luck finding ol' Jonas yet, huh?  Don't give up!  He's definitely somewhere in this house... I'm sure of it!  The data doesn't lie!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You've lost my questionnarie?! Take care of that thing!" />
+                <imgdir name="yes">
+                    <string name="0" value="Just come back to me if you need another one." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201077" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031765" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201075" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4952" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4950" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2157.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sacrifice to King Clang" />
+        <string name="parent" value="Defeat King Clang!" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Rumor has it that a fearful monster is lurking about the beautiful #bFlorina Beach#k. #bRiel#k, a girl of the Florina Beach, must know something about this monster." />
+        <string name="1" value="The terrible monster #rKing Clang#k followed the warm current all the way to Florina Beach. Riel says that beautiful girls are being sacrificed to suppress King Clang's anger. Riel and her sisters, Roel and Rael, have taken a bet on who will be sacrificed to the monster, and asks me to be the judge of their dreadful bet. They can't be serious about this, right?\n\n#y2158# #b#u2158##k\n#y2159# #b#u2159##k\n#y2160# #b#u2160##k" />
+        <string name="2" value="Helping Riel" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="If you're looking for a peaceful vacation at Florina Beach, you'll have to come back later! This place isn't as peaceful as it was! A dreadful monster has taken over the beach! \n#rKing Clang#k swam all the way here following the warm current!" />
+            <string name="1" value="King Clang is covered by a gigantic turban shell, and controls other monsters with its powerful strength. Now it's reigning over Florina Beach! Everyone here in Florina Beach is afraid of King Clang. No one knows when they will be gobbled up by him!" />
+            <string name="2" value="That is why we three have made a big decision. One of us will be offered to the monster as a living sacrifice to save our village people. What? Did King Clang ask for a sacrifice? Of course he didn't... but these stories are always like this, aren't they?" />
+            <string name="3" value="Go read some books. A beautiful, young maiden sacrifices herself to save her village. A brave girl that hasn't even blossomed yet. It's in every fairytale! If you read, you'd know how important this role is! Ah... how romantic! " />
+            <string name="4" value="However, we haven't decided who will be the heroine yet. #bRoel#k and #bRael#k say they want take the role. That's why we've decided to do this in a fair manner, and single out the sacrifice ourselves. We need to start quickly so would you mind... Huh? You're also interested? " />
+            <imgdir name="yes">
+                <string name="0" value="Ah, very well then. Will you become the judge of this bet? See that no one is cheating and are doing their part in this bet. Then the job is yours!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Would you please leave? We have to start our bet." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="... NOO...! Traveler! We've asked you to be fair as a judge, so how could you cheat?! And why did you go through the trouble helping all three and not just one person! " />
+            <imgdir name="yes">
+                <string name="0" value="Now we have to change plans... what should we do? The bet is already over! " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="quest">
+                    <string name="0" value="No! The bet is still on! Please help determine who will be the winning sacrifice!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2159" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2160" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2158" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

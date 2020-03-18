@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28227.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Cost of Delivery" />
+        <string name="parent" value="Antique Search" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="0" value="Let's take the Antique to  #b#@9201118:##k in #bHenesys#k." />
+        <string name="1" value="Take the Antique you received from #b#@1072008:##k in #bNautilus#k over to #b#@9201118:##k in #bHenesys#k." />
+        <string name="2" value="You have gone to #b#p1072008##k in #bNautilus#k at the request of #b#p9201118##k in #bHenesys#k, and have come back with the #rAntique#k from Leafre.\n\nBut the Antique looks much older than anticipated." />
+        <string name="rewardSummary" value="Exp 1000&#xD;&#xA;Able to proceed to 'The Legend Has It That...' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001353" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What happened? Did you bring the #rAntique#k I asked you to find for me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You really brought it for me! It's even more amazing than I expected.\n\nAll that history behind this #rAntique#k. It's fantastic! Haha!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hurry! Bring me my #rAntique#k." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thanks for your help.\n\nLet's see, I want to give you a good reward!\n\nI don't have anything to give you, but I can tell you a story. I have a story all Bowmen would be interested in hearing." />
+            <imgdir name="yes">
+                <string name="0" value="Have you heard of the #rAncient Bow#k? It's a legend that's been around #bHenesys#k for a long time.\n\nOnce upon a time, there lived a king who was known for his wisdom. His kingdom was always affluent and his people led happy lives. But, out of nowhere, a demon appeared!" />
+                <string name="1" value="The demon cast a musical spell on the people, making them do nothing but play all day. What do you think happened to a kingdom where everyone did nothing but play? There was shortage of food and people began to starve, and with that came stealing..." />
+                <string name="2" value="The kingdom was slowly being destroyed. So, the King looked through the ancient book and made a bow, which eventually defeated the demon and the kingdom became peaceful again." />
+                <string name="3" value="Isn't it amazing that a person can make a bow to defeat a demon? It would be more amazing if the bow still existed! Of course, that wouldn't be the case, haha!" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201118" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28226" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001353" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

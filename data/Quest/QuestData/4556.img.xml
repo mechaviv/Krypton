@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4556.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Grand Finale" />
+        <string name="parent" value="Surprise Birthday Party" />
+        <int name="order" value="4" />
+        <int name="area" value="49" />
+        <string name="0" value="There's nothing betther than great bonfire as a finale of the party. But somehow, there are not enough wooden barrels to creat grand bonfire. #b#p9270058##k must work something out quickily." />
+        <string name="1" value="#b#t4000473##k would be perfect to create a hugh flame of the bonfire. #b#p9270058##k need at least 100 of them in order make the grand finale of the party. \n\n#o9420535# #r#a45561##k \n#t4000473# #r#c4000473#/200#k" />
+        <string name="2" value="What a grand finale! It was the best birthday party EVER!" />
+        <string name="demandSummary" value="#i4000473:# #t4000473:# #c4000473# / 200&#xD;&#xA;#o9420535# #a45561#&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 89,000&#xD;&#xA;10,000 Meso&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="10000" />
+            <int name="exp" value="89000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000473" />
+                    <int name="count" value="-200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="As the party is coming to an end, I am shocked to discover that there is not enough material to create a huge bonfire, which is the last activity of the party. Everybody is looking forward to this, and I must do whatever it takes to create a successful bonfire. " />
+            <string name="1" value="Could you hunt #b100 #o9420535##k and bring back #b100 #t4000473##k? They are the perfect materials to create the flame for the bonfire." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank goodness, you're here! Please hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Awww...without them there won't be a grand finale to the party!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank goodness, you're back on time! I was just about to give up on you. " />
+            <imgdir name="yes">
+                <string name="0" value="Look how wonderful the bonfire is! This is one big birthday party to remember!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh no, this is not enough to create a fire. I need more than this!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Only #b#o9420535##k has the perfect material to create a successful bonfire." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270058" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000473" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420535" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270058" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4555" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

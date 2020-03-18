@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4551.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="My Lovely Scarf" />
+        <string name="parent" value="Nuri's Health and Beauty" />
+        <int name="order" value="3" />
+        <int name="area" value="49" />
+        <string name="0" value="#b#p9270059##k, one of the most fashionable people in the city, is anxious to get trendy fashion item #b#t4000469##k faster than any others." />
+        <string name="1" value="#b#p9270059##k has made up her mind not to go out in the city without a matching #b#t4000469##k to go with her new outfit. And she needs 50 of them to choose from. \n\n#t4000469# #r#c4000469#/50#k " />
+        <string name="2" value="She does look pretty with the scarf on her. Before long, there will be many people who will want to have one of those trandy scarfs." />
+        <string name="demandSummary" value="#i4000469:# #t4000469:# #c4000469# / 50&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 15,000&#xD;&#xA;Able to proceed to 'My Scarfs are Stolen!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000469" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I look really bad without scarfs. They just bring out my style, don't you think? It's a must have item for fashion icons such as myself." />
+            <string name="1" value="I cannot possibly present myself to the public when I'm not properly dressed. Will you be able to get #b50 #t4000469#s#k for me? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It would be utter humiliation to be without a must-have fashion item." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, I will just have to stay in the house when I don't have matching #b#t4000469##k to go with my new outfit." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, don't I look gorgeous? Haha...I know I do!" />
+            <imgdir name="yes">
+                <string name="0" value="It looks so good on me. Everybody will be jealous of my new style." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Remember, I need plenty of #b#t4000469#s#k to choose from." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270059" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000469" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270059" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4550" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

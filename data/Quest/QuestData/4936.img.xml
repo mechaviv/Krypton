@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4936.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bruce's Research" />
+        <int name="area" value="30" />
+        <string name="0" value="Bruce, the monster researcher, might know something. Maybe he can tell me how old Bob actually is. If I get to know how old he is, wouldn't that be a discovery of something remarkable?" />
+        <string name="1" value="He does seem to know something about his age but he looks spooked. I shouldn't hesitate to ask him what is wrong!" />
+        <string name="2" value="Wow... Bruce told me that Bob's age is incalculable. This is getting serious, isn't it. A snail that even professional monster researcher can't tell the age. Maybe he was right about asking me to go see Winston. Maybe an archeologist knows more about the history and the age issue than Bruce." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, hi! Good to see you again. You have my thanks for helping me find my daughter. I still am just making up for the years we've lost these days.\r\n\r\n#L0##bThat's good. Hey, I have a question to ask.#k#l" />
+            <string name="1" value="Sure, anything you ask.\r\n\r\n#L0##bSince you study monsters of Maplestory, I'd suppose you know a thing or two about snails, right?#k#l" />
+            <string name="2" value="Yes, I would Say so. What's the matter?\r\n\r\n#L0##bCan you tell me how old this snail is? (shows Bob's snail shell)#k#l" />
+            <string name="3" value="Ok, let's see..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Hmm? How come this is possible? Let me recheck my books and notes one more time..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't see anything. What is that you want me to see?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="This is interesting. It might appear to be just another snail shell to you but if you look it up close, the growth rings on this shell are very densely constructed making it practically impossible for human eyes to count them.\r\n\r\n#L0##bWell, I wouldn't be surprised. He is the Legendary Bob Snale who lived with the history of Maplestory.#k#l" />
+            <string name="1" value="I wouldn't know much of a history of this world. But this is a very unique find. I bet Winston the archeologist might know more than I do for this case." />
+            <imgdir name="yes">
+                <string name="0" value="Winston is somewhere around Perion researching for the fossils. You might want to check with him about this snail shell. I have to tell you before you go there. Watch out. Winston loves attraction and fame. I've heard that from time to time he stole the research of others to take the glory in the past. I hope he is not too interested in the scholastic value of Bob's snail shell..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmm? Where did it go? I thought you wanted me to see what you have." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012111" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012111" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4928" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031447" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3948.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sejan's Good Habit" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101011##k in #b#m260000200##k seems to be in some kind of trouble... Go pay him visit." />
+        <string name="1" value="#b#p2101011##k says he didn't retrieve his arrows for a week and now he can't find them all. You tell #b#p2101011##k you would find his missing arrows, but wow, he's really missing a lot! Goodness. How many arrows does #b#p2101011##k shoot everyday? \n You might've heard somewhere that they sell #b#t02060001##k in either #r#m220000000##k or #r#m222000000##k..." />
+        <string name="2" value="#b#p2101011##k started practicing with his bow again, now that you've given him the arrows. You wanted to ask #b#p2101011##k how many arrows he shoots each day, but he looked so focused that you felt bad bothering him." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2060001" />
+                    <int name="count" value="-10000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hm? Are you one of us? Wait, it doesn't even matter...just find me my arrows. I usually collect them right after I shoot them, but a few days ago, I wasn't feeling well so I didn't. This morning, I finally got out of bed and looked all over town for my arrows, but couldn't find them all. Now I'm missing some. Can you help me find them?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I only use #b#t02060001##k. A true skillsman only uses the one type of arrow that fit them perfectly. Right now, I am missing #b10000#k arrows. Think that's a lot? In order to rescue Ariant from the queen, that's nothing. I use way more than that in a single day." />
+                <string name="1" value="Bring them to me once you find them all. You're my only hope. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="People who constantly change their mind can't be trusted.  I'll be keeping an eye on you from now on." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great. Now I can continue to fight for Ariant. I will never forget what you've done for me. But, you didn't just buy any old arrows at a store, right? I make my own, so I can tell if you're trying to fool me... If you're trying to trick me, you will regret it." />
+            <imgdir name="yes">
+                <string name="0" value="Mmm... These are it.  All #b10000#k of them. Thank you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you find all the arrows? Search carefully near town as well..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2060001" />
+                    <int name="count" value="10000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="53" />
+        </imgdir>
+    </imgdir>
+</imgdir>

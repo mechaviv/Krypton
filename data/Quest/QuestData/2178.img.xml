@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2178.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning The Nautilus 3" />
+        <int name="area" value="30" />
+        <string name="0" value="Mrs. Reade says her problems just never end..." />
+        <string name="1" value="So we took care of all the rats on The Nautilus but there's still one more problem. And that problem happens to be the main cause of all of Mrs. Reade's problems on The Nautilus- and he still needs to be cleaned! Mrs. Reade's biggest problem is Jack, the one who's to blame for every bit of the mess on The Nautilus! Let me go get some #bPure Water#k so #bJack#k can get a good wash down. \n\n#i2022000##t2022000# #b#c2022000##k / 1" />
+        <string name="2" value="Will Jack ever get clean? All this scrubbing doesn't seem to be making him any cleaner... and I'm scrubbing and scrubbing..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hahaha... hey there, kid. Can I ask you for one. More. Favor? \r\n#L0##b Wait a minute... what's this smell???#l#k" />
+            <string name="1" value="Sigh... if you see Jack, you know how he smells. Seriously, I have never, ever seen him wash up once in my life. Jack has been on board for 10 years now, and even if I clean and clean and clean some more, Jack's disgusting footprints leave a mark everywhere. I need to wash him up... and I need your help. Can you help me one last time?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Ahhh, thank you so so much. If you go waaaay down to Sleepywood, you may be able to get some #bpure water#k... and I want you to get one bottle of it, and pour it on #bJack#k. Just so he can be a tiny bit cleaner than he was earlier today." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know, I know, I keep asking you for favors. I understand if you are busy right now." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hehe, who are you? What's that in your hand? Is that food?\r\n#L0##b Hi there, are you Jack? (OMG... he really smells...)#k#l" />
+            <string name="1" value="Sniff sniff... my hair itches. (Scratches his head) let me see what you have in your hand. It looks like something I can drink...  \r\n#L0##b I am really sorry, but just stand still for a second! (Sprays water all over him.)#k#l" />
+            <string name="2" value="Whoa! That's cold!" />
+            <imgdir name="yes">
+                <string name="0" value="Sniff sniff... what are you trying to do? Did... Mrs. Reade order you to do it? Hahaha... this will not make me do what she wants me to do? Why do I have to wash up? I mean, the nature takes care of me, and I'll be naturally clean after a while..." />
+                <string name="1" value="Man, you only got my shirt wet! Oh well, it's going to dry up in a bit, right? Hahahah... oh man, my back's itching..." />
+                <string name="2" value="(Oh my... even with that impromptu shower session, there's no change whatsoever!)" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Please spray that Pure Water over Jack. If that'll help him get JUST A BIT CLEANER..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1092010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1092009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2177" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

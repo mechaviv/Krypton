@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2246.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Horny Mushroom Caps Research" />
+        <string name="parent" value="Strange Mushrooms" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="Apparently, the #bThe Rememberer#k of Sleepywood is conducting studies on mutated Horny Mushrooms. You should go to Sleepywood to find out more." />
+        <string name="1" value="Some Horny Mushrooms have been acting really mean lately, and there seems to be something suspicious going on. #bThe Rememberer#k has noticed the change and is conducting studies on these supicious Horny Mushrooms.\r\n" />
+        <string name="2" value="You helped #bThe Rememberer#k with his research on Horny Mushrooms, but he seems to need some more information." />
+        <string name="demandSummary" value="#i4000015:# #t4000015:# #c4000015# / 30\r\n" />
+        <string name="rewardSummary" value="EXP 7,000\r\nCan proceed to 'Raging Horny Mushrooms' quest\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000015" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you seen the Horny Mushrooms lately? They seem to be much more enraged than usual. From what I hear, something happened at the Mushroom Castle. I plan on conducting a thorough research on the Horny Mushrooms. Can you help me with it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I'll need 30 Horny Mushroom Caps to start things off. Can you get me those?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is just the tip of the iceberg. There's no way to tell what's going to happen next…" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you. These will help me with my research. Please wait for me for a bit, okay?" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need 30 Horny Mushroom Caps." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000015" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <int name="lvmin" value="24" />
+            <int name="lvmax" value="34" />
+        </imgdir>
+    </imgdir>
+</imgdir>

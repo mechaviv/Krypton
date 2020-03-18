@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3200.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cleaning up Eos Tower" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Marcel, who's in charge of the security for Eos Tower of Ludibrium." />
+        <string name="1" value="Marcel of Ludibrium asked me if I could take care of huge, nasty #bratz#k, 50 of them to be exact.\n\n#o3110102# #r#a32001#" />
+        <string name="2" value="I took care of the #bRatz#k just like the way Marcel of Ludibrium asked me to do, but I'm sure there are still quite a number of nasty monsters at Eos Tower." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1250" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000008" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000010" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm ... you look like someone that likes adventure. Can I ask you for a few favors? It's not going to be easy, but if you get the job done, I'll reward you well for it!" />
+            <imgdir name="yes">
+                <string name="0" value="Cool! What I am going to ask from you is simple. Ludibrium is a floating castle supported by two huge towers, so to get down to the ground level, you'll need to go through Eos Tower, a tower of mind-numbing heights." />
+                <string name="1" value="It's a very important tower, but the cleaning hasn't been done lately, and the tower is now infiltrated with filthy monsters. I can't move from my duties here as a guard, so I was hoping if you can go in the tower and take care of some monsters." />
+                <string name="2" value="Please take care of #b50 #o3110102#s#k that are roaming around in Eos Tower. They are a bunch of white rats with springs on the back, and they are a handful. I'll be here waiting until you take of all of them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Really. This task isn't that difficult, and I think you can do it. If you have any free time, then come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Awesome! You took out all of them! There must have been quite a few #b#o3110102#s#k roaming around Eos Tower. Anyway, thank you for helping me out. I'll give you an item only available in Ludibrium that you'll need to use for hunting. Please take it!" />
+            <imgdir name="yes">
+                <string name="0" value="Do you like the #b50 #t2000008#s and 50 #t2000010#s#k? Thank you so much for your help, but it seems like Eos Tower is still full of nasty monsters. I have a lot to ask of you, so if you have any free time, please come talk to me." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you did what I asked of you. Please head to Eos Tower and take out #b50 #o3110102#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="3110102" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041004" />
+            <int name="lvmin" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

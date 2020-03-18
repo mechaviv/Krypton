@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3319.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Parwen's Lab" />
+        <int name="area" value="44" />
+        <string name="0" value="There's a ghost at #b#m261000000##k! A lab ghost, #b#p2111006##k! Apparently, even a ghost like him needs help..." />
+        <string name="1" value="#p2111006# told me he couldn't stand being next to #r#o6110301##k, and wanted me to slay some #o6110301# for him. He freaks me out even more! But since a request is a request, I'll have to slay them first.  \n\n#o6110301# #r#a33191##k" />
+        <string name="2" value="#p2111006# told me as recent as a while ago, some alchemist entered this place and worked hard at his research, and yet he hasn't shown up since the explosion." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="64900" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="This lab is rarely visited by anyone these days, so I have been paying attention to you the moment you stepped foot in this lab. I just didn't think I'd be able to carry out a conversation with you. I'm glad I got to talk to you. To be honest, I've been living in fear these days.\r\n#b#L0#What's scaring you?#l" />
+            <string name="1" value="What's scary? Look around! I see a room full of #r#o6110301##k! It really scares me to death! Look at them! They are transparent! \r\n#b#L0#(Yikes... you're scaring me much much more!)#l" />
+            <string name="2" value="You do look quite powerful, by the way. I, Parwen, can see that you are a person of immense strength, so powerful that I can't believe you're an alchemist. With that... can you eliminate some #o6110301#s for me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Sniff sniff... Thank you so much. I am so glad to have met such a helpful young warrior. I'd appreciate it if you can eliminate #r200 #o6110301#s#k. It shouldn't be too hard. What? It's easy? I knew you'd Say that." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sniff sniff... that's terrible. I was just glad to find a friend whom I could talk to, and now you betray me like this?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh! You did manage to defeat all the #o6110301#s! That's just amazing! Much more useful than the last alchemist that came!" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm? The alchemist that was here before? Ahh... well, there was this fella that conducted experiments here not too long ago. He was so determined and focused in his work that I was too intimidated to talk to him. I wondered why he'd work on the Life Alchemy with such disdain for safety... " />
+                <string name="1" value="What happened to him? I don't know. He stopped coming after a while. All the reports on the experiments have been removed by others, and after that, no one used this lab ever again... I wonder why." />
+                <string name="2" value="Anyway, I think you're much much more courteous and receptive than that other alchemist. It's good to find a chat buddy , you know. Hahaha... hope to see you again here." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Look at those #r#o6110301#s#k! Ahhhhhh! Please get rid of them! #r200#k of them! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="6110301" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3309" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3318" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3314" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

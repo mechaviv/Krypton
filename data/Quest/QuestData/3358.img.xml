@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3358.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Parwen's Pass" />
+        <string name="parent" value="The Secret, Quiet Passage" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#p2111006# is the chatty ghost at the basement lab of #m261000000#. Apparently, he knows a secret passage in #m261000000# that no one is aware of... I better go talk to #b#p2111006##k." />
+        <string name="1" value="#p2111006# said that a long time ago, when he was an alchemist at #m261000000#, he had a #bpass#k that gave him access to the secret passage that connects Zenumist to  Alcadno. ...a Secret Passage? That sounds very interesting! #t4031745# believed that #rCytis#k might have taken it, so I'll have to find the pass myself and use it at the entrance of the Secret Passage.\n\n#i4031745##t4031745# #b#c4031745##k/1" />
+        <string name="2" value="I brought #t4031745# to the entrance of the Secret Passage, but the door didn't open. What the..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031745" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I, #p2111006#, know everything that goes on with #m261000000#. If you want to know what happens in #m261000000#, I am your number one source for that, too! I even know about a secret passage that the alchemists that have engaged in barred experiments used. Hahaha... do you want to know more about the secret passage?" />
+            <imgdir name="yes">
+                <string name="0" value="Unbeknownst to most everyone, there's a #bSecret Passage#k that connects Zenumist and Alcadno. It's a secret passage that almost no one knows of. Even if you are aware of it, it's off limits. You need a #bpass#k to have access to the passage." />
+                <string name="1" value="But about that pass... I can't remember where I misplaced it. I don't even remember when I lost it, either. If I had that, then I would have used that passage regularly. Maybe the #r#o6110301#s#k took it..." />
+                <string name="2" value="If you, for some reason, end up with the pass, then try using it at the entrance of the passage at either #m261010000# or #m261020200#. That should be enough to gain access to the secret passage." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to know more about it? That's strange." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohh! Yes, this is it! This is the pass I used to use way back. What? This pass doesn't work? No way..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm... you haven't found the #bpass#k yet. It's understandable. I've been looking for the pass for 90 years now, to no avail. I am sure #r#o6110301#s#k hid it somewhere safe." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031745" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3318" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

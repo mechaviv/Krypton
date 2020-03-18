@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Bigg's Collection of Items" />
+        <int name="area" value="20" />
+        <string name="0" value="Biggs has a task for you." />
+        <string name="1" value="You meet Biggs in Southperry. He wants you to get him #b10 orange mushroom caps and 30 blue snail shells#k. He doesn't look too convinced that you can do it, but it sounds like a piece of cake." />
+        <string name="2" value="You gathered #b10 mushroom caps and 30 blue snail shells#k for Biggs in Southperry. The weapon he gave you as a reward was pretty decent." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1332007" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1332005" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'll give you something nice if you get me #b#e10#n #t4000001#s#k and #b#e30#n #t4000000#s#k! Eliminate monsters to get those item, but looking at you, I don't know if you're up to the challenge..." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Oh, you sound so confident! Let's put your money where your mouth is. Make sure to bring back #b1 #t4000001# and #b5 #t4000000#s. I'll be waiting!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You'll regret not taking a chance on such a good item!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow! You really managed to gather all the stuff I asked for! Here's an item like I promised." />
+            <imgdir name="yes">
+                <string name="0" value="Wow, I didn't really think you would be able to gather it all. Okay, I'll give you the item as promised. I don't need it anyhow... Here you go! #l" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't have #e10#n #b#t4000001#s#k and #e30#n#k #b#t4000000#s#k, right? Don't worry about it. I'll be here for a while." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000000" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000001" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

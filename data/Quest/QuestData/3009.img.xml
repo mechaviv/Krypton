@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3009.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spiruna's Black Crystal" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="6" />
+        <int name="area" value="33" />
+        <string name="1" value="Spiruna promised to tell me everything that she knows, as long as I find the #bBlack Crystal#k that she lost in the snowfield while on a search for some materials for spells. Now where in the snowfield must that be..." />
+        <string name="summary" value="I should go find the Black Crystal, hidden somewhere in the snowfield. " />
+        <string name="rewardSummary" value="3,500 EXP&#xD;&#xA;Can proceed to the &quot;The Cracked Black Crystal&quot; quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <int name="nextQuest" value="3010" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am working on an important spell so don't bother me and leave this house immediately. I can't concentrate if a stranger is walking around my house. Leave! Shoo!" />
+            <string name="1" value="I can't believe you'd just barge in to a stranger's home. Are you out of your mind??" />
+            <string name="2" value="Want me to listen to your story? I'm busy." />
+            <string name="3" value="Do I know of a person named #bHella#k? I don't have time for stupid questions like that." />
+            <string name="5" value="You don't let up, do you. Alright, let's see what you're made of. You're looking for a woman named #bHella#k, right? I know her, but I can't tell you anything else. A few days ago I went to the snowfield looking for some materials for this spell I'm currently working on, and wound up losing my precious #bBlack Crystal#k. If you find that crystal, then I'll tell you everything I know of. Good luck." />
+            <string name="4" value="You've been a really annoying presence here. #bHella#k, you say? I may have heard of the name, but I'm busy right now." />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't found my crystal yet. A few days ago I went to the snowfield looking for some materials for this spell I'm currently working on, and wound up losing my precious #bBlack Crystal#k. If you find that crystal, then I'll tell you everything I know of. Good luck." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3008" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

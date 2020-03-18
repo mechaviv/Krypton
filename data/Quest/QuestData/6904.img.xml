@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6904.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value=" Hero's Quality" />
+        <string name="parent" value="The Warrior's Extreme Path" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="1" value=" #b#p2081100##k told me if I want to advance to the 4th job, I would have to prove that I am a true hero. He said to bring him #b#t4031344##k and #b#t4031343##k to prove that I am a true hero.\r\n#i4031344##t4031344# #b#c4031344#/1#k\n#i4031343##t4031343# #b#c4031343#/1" />
+        <string name="2" value="When I brought #b#t4031344##k and #b#t4031343##k to him, he said I have proved that I'm a true hero and told me to come back and talk to him when I'm ready for the 4th job." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="50000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031344" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031343" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now I'll give you the last task to do the 4th job advancement." />
+            <imgdir name="yes">
+                <string name="0" value="Go and get #b#t4031343##k and #b#t4031344##k. " />
+                <string name="1" value="It's up to you how you get it. If you want to use your power and courage, you can catch #bManon and Griffey#k. If you wanna use wisdom, you can get them through #b#p2081000##k in Leafre." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What are you afraid of? Great power awaits you.." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You proved your quality as a hero." />
+            <imgdir name="yes">
+                <string name="0" value="Now, what lies before you is the Way of a #bWarrior#k. Talk to me again if you are ready for the 4th job Advancement." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't gathered #b#t4031343##k and  #b#t4031344##k. That's will prove your quality." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031343" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031344" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6903" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="111" />
+                <int name="1" value="121" />
+                <int name="2" value="131" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

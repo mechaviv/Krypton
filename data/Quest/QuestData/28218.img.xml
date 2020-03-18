@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28218.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shumi, the Coin Maniac" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052102:##k in #bKerning City#k says she is willing to give you an item that looks valuable, though she can't just give it to you for free. Let's talk to her first." />
+        <string name="1" value="Let's catch the #rBubblings#k in the #bSubway of Kerning City#k.\n\nReport back to #b#@1052102:##k in #bKerning City#k upon completion." />
+        <string name="2" value="You have acquired a big #rModel Coin#k, which you will use as a bait to catch #rValefor#k." />
+        <string name="demandSummary" value="#o1210103# #a282181#" />
+        <string name="rewardSummary" value="Exp 5,000&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032485:# #t4032485:# #c4032485# 1&#xD;&#xA;Able to proceed to 'Catch Valefor!' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032485" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been asking people to bring me my coin, but people seem very busy these days. They don't take the time to listen to what I have to say.\n\nAnd their reason is that there are too many #rBubblings#k. You know where I'm going with this, right? I want to ask you for a favor." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I'll give you what you want if you hunt 20 #rBubblings#k in the #bSubway#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No? Alright, suit yourself!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you're better than I thought! Tee hee.\n\nBut I can't give you something that's really valuable. I'll give you a #rLarge Model of a Coin#k instead. You're going to use it as a bait anyway, right? This will do the job just fine." />
+            <imgdir name="yes">
+                <string name="0" value="Then, take this to #b#p1052001##k in #bKerning City#k." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You have to catch 20 #rBubblings#k. Try harder." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052102" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210103" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052102" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28217" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

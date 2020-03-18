@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3934.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lady with the Dagger" />
+        <string name="parent" value="Sand Bandits According to Eleska" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The word 'dagger' was written on the #p2101002#... You think it's referring to someone. There's only one person in #m260000000# carrying a dagger... Was her name #p2101002#?" />
+        <string name="1" value="#p2101002# is a member of the Sand Bandits! She looks quite intimidating, but when you summon the courage to tell her that you want to be a member, #p2101002# says you should enter the queen's treasure storage room and steal a treasure rom there. For more information, you should ask #bsomeone inside the palace#k..." />
+        <string name="2" value="Inside the palace, you asked #p2101008# the storyteller about the treasures." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Why are you looking at me like that? If you don't turn around right now, I'll take it as an offense! What? Sand Bandits? How do you know that name? \r\n#b#L0#I found you by looking at the writing on the wall that #b#p2101000# told me to look for.#l" />
+            <string name="1" value="#p2101000#?! She's still doing stupid things. I appreciate that she's trying to help the Sand Bandits, but... Argh. Anyway, what do you want from me?\r\n#L0##bI'd like to join the Sand Bandits.#l" />
+            <string name="2" value="No way. An outsider like wouldn't understand the suffering of #m260000000# enough to join Sand Bandits? Do you even know anything about the queen? Tell you what. If you have the guts to break into the queen's storage room and steal some treasure, I'll accept you as one of us." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Hah! At least you talk the talk. If you're so confident, then go into the queen's treasure storage room and steal the most expensive treasure there, #b#t4031574##k. It's at the very top of the treasure storage room, so it won't be easy." />
+                <string name="1" value="How do you get in the treasure storage room? Someone in the palace should know..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Of course you were all talk! I'm not putting up with this! Get out of here." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hello, traveler... I don't know how you made your way into the palace, but please be careful inside." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="What? You haven't gone to the palace yet? Someone in the palace will know where the queen's treasure storage room is. If you're not up to the task..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3927" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

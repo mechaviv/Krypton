@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21600.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Pucci's Request" />
+        <int name="area" value="6" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p1202007##k, a penguin from #b#m140000000##k, apparently has something to tell you. " />
+        <string name="1" value="#p1202007# says that one of the 'huskies' he was tending was actually a wolf. He doesn't know exactly what happened, but he doesn't want to abandon the infant wolf pup. He wants you to ask around for some tips on how to raise a wolf. Somewhere around Aqua Road, you know that #b#p2060000##k knows a little something about raising wolves..." />
+        <string name="2" value="You were able to meet #p2060000# at #m230010201# of Aqua Road." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello. My name is #p1202007# and I take care of huskies. I'm sorry to ask you a favor out of nowhere, but I don't have anyone else to turn to. Thing is, I've been put in a very awkward situation. If you're not in a hurry, would you mind hearing me out?" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, hey there! What brought you here? What? You want to learn how to raise a wolf pup?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Did you go see #b#p2060000##k? I hear that you can find her on Aqua Road…and apparently, #p2060000# lives #bon a whale's back#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2060000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202007" />
+            <string name="startscript" value="q21600s" />
+            <int name="lvmin" value="50" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+                <int name="1" value="2100" />
+                <int name="2" value="2110" />
+                <int name="3" value="2111" />
+                <int name="4" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

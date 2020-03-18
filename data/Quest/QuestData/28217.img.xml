@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28217.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Demon Likes..." />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1052001:##k in #bKerning City#k says he needs a valuable item that can be used as a bait to catch #rValefor#k. Let's talk to him." />
+        <string name="1" value="You need a valuable bait to lure #rValefor#k. Go talk to #b#@1052102:##k in the #bSubway Entrance#k of Kerning City." />
+        <string name="2" value="In order to find something valuable to use as bait to catch Valefor, you were told to find #b#p1052102##k in #bKerning City#k." />
+        <string name="rewardSummary" value="Exp 2000&#xD;&#xA;Able to proceed to 'Shumi, the Coin Mania' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I have no idea who it could have been that broke the seal of #rValefor#k.\nFrom what I hear, it couldn't have been someone ordinary. It must have been someone extremely powerful, and that really worries me." />
+            <string name="1" value="I know #rValefor#k will try to steal anything and everything valuable, so maybe we can use what we know to catch him. Will you assist in finding some valuables?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="There is a girl named #b#p1052102##k in the #bSubway Entrance#k of Kerning City, and she doesn't know anything but money. She'll plead with anyone she sees walking by to find her missing coin!\n\nIf you go to her, she may have something that looks very valuable. Go see what she has." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then must I go?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hi! I'm #b#p1052102##k. What brings you here?" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm, an item that looks valuable? Of course I have one.\n\nBut I can't give it to you for free." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1052102##k is in #bKerning City#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052102" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28216" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="411" />
+                <int name="4" value="421" />
+                <int name="5" value="412" />
+                <int name="6" value="422" />
+                <int name="7" value="1400" />
+                <int name="8" value="1410" />
+                <int name="9" value="1411" />
+                <int name="10" value="1412" />
+                <int name="11" value="430" />
+                <int name="12" value="431" />
+                <int name="13" value="432" />
+                <int name="14" value="433" />
+                <int name="15" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

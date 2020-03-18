@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8832.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Graham Cracked" />
+        <int name="area" value="30" />
+        <string name="0" value="What is that old man doing over there with all those Graham Crackers?" />
+        <string name="1" value="I spoke with the old man, Mr. Kit Kat, and he wants to build a Graham Cracker house, but the monsters keep eating them...not that I blame them, they look delicious...despite my hunger, I've agreed to get 50 Graham Crackers for him so he can build his dream house." />
+        <string name="2" value="I got all the Graham Cracker pieces (and resisted the temptation to eat them), returned to Mr. Kit Kat and he gave me something tasty?Banana Graham Pie. 2 of them!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031446" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022123" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hiya... think you can help an old man with building a Graham Cracker house?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you, kindly. My name is Mr. Kit Kat, I worked long and hard to find the perfect spot for my graham cracker house. Only the monsters keep eating all the pieces! I put one up and they steal it when my back is turned to eat it! They even laugh at me! I've had it. I need you to get 50 Graham Cracker Pieces and bring them back to me. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hey! Hands off! If you don't want to help, fine-but you can't eat them too!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="All 50? Great! Now I can build my house! I'd like to thank you by offering you a little something I made for you. It's my special Banana Graham pie. Use it wisely and thanks again!" />
+            <imgdir name="yes">
+                <string name="0" value="Now I can build my house! Use it wisely and thanks again!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Got em all yet? No... don't think so-get a move on! In my heyday I would've been done by now!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201032" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031446" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201032" />
+            <string name="end" value="2008011500" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

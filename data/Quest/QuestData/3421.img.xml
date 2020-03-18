@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3421.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting Meteorite Samples" />
+        <int name="area" value="37" />
+        <string name="0" value="I better go see Yellow Mesoranger at the Safety Zone." />
+        <string name="1" value="I met up with Yellow Mesoranger again at a field around Omega Sector. Displaying her faith in me, she requested that I pick up #b6 Meteorite Samples#k that's been scattered all over Kulan Field for further investigation. If I take care of this mission, I'll probably gain some more of her trust... \n\n#t4031117# #b#c4031117##k/6" />
+        <string name="2" value="I gathered up the meteorite samples from the Kulan Field and gave them to Yellow Mesoranger, who was at a field around Omega Sector. Hopefully this will jumpstart the studies." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="000000" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="16000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031117" />
+                    <int name="count" value="-6" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022003" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Been a while! As you can see, I've been given orders from upstairs, and I am flooded with work to do. It's getting to the point where I can't possibly do all this by myself. Ohhh... yeah, I want to ask you for a favor. Will it be okay if you can spend some time for us, the Omega Sector?" />
+            <imgdir name="yes">
+                <string name="0" value="Sweet! What I wanted to ask you to do is to collect samples of the asteroids that recently fell. Apparently, the aliens, while making their way here, landed hard, to the point of having quite a number of asteroids dropping around Omega Sector. My boss said that by collecting samples, it'll immensely help our level of science in Omega Sector." />
+                <string name="1" value="There's a report that a whole lot of asteroids fell on the field slightly far from here, Kulan Field. Please look through the samples there, and collect #b6 #t4031117#s#k for me. I'll be here waiting for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You seem to be pretty busy right now, and I can't do anything about that. However, if you find yourself some free time, please talk to me. I have so much work to do right now, that I don't even sleep these days. I'll see you around~" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhh, you're back! Let me see... oooh, you really picked out the best #b#t4031117#s#k available. This should immensely help our scientific studies down the road. As a sign of appreciation, I'll give you an item that's been given to me from my bosses. Please take it." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much for helping me out. I know you made a mistake of helping the aliens obtain classified information, but everyone makes mistakes... I think you can be proudly considered one of us now. Bye~!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="There are loads of asteroids all over Kulan Field as a result of the crash landing that took place while the aliens invaded this place. Check out the asteroids and pick out #b6 #t4031117#s#k for me. With these samples, some of the classified studies may receive the boost they need to finish them up." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2041011" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031117" />
+                    <int name="count" value="6" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2041011" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3420" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="44" />
+        </imgdir>
+    </imgdir>
+</imgdir>

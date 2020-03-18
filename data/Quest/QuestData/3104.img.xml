@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3104.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding #t4031190#" />
+        <int name="area" value="33" />
+        <string name="0" value="Oh no! I lost the #t4031190# that lets me talk to #p2012019#. What should I do? I better go talk to #b#p2012012##k again." />
+        <string name="1" value="#p2012012# told me since she had already made it once, making #t4031190# again shouldn't be a big problem, and asked me to gather up the materials for it. Since she said this time, it won't even require as many materials, I better go get #b50 #t4000073#s#k, #b10 #t4003004#s#k, and #b10 #t4000021#s#k? \n\n#i4000073# #t4000073# #b#c4000073#/50#k\n#i4003004# #t4003004# #b#c4003004#/10 \n#i4000021# #t4000021# #b#c4000021#/10#k#k" />
+        <string name="2" value="I gave #p2012012# all the materials needed, and I wound up getting another #t4031190#. Phew... #p2012012# told me to visit her again if I ever get to lose #t4031190# again, but I better start watching out for myself." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="안녕하세요? #p2012019#와 대화는 잘 하셨어요? 네? 어머... #t4031190#를 잃어버리셨다고요? 저런... #p2012019#하고 꼭 대화하고 싶으시다면 #t4031190# 를 다시 만들어 드릴게요. 다만 재료는 당신께서 구해 오셔야 하는데... 괜찮으시겠어요?" />
+            <imgdir name="yes">
+                <string name="0" value="한 번 만들어 본 것이니 아까보다 익숙해져서, 재료를 덜 들일 수 있어요. #t4000073# 50개와 #t4003004# 10개, #t4000021# 10개를 가져와 주세요. 그 정도면 #t4031190#를 만들어 드릴 수 있을 것 같아요." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="어려우시다면 어쩔 수 없죠... #t4031190#를 못 찾으시겠다면 다시 만들어 드릴 테니, 다시 이 곳으로 오세요." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000073" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4031190" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there? Did you have a good talk with #p2012019#? What? ... you lost #t4031190#? Oh no... If you really want to talk to #p2012019#, then I'll make you another #t4031190#. This time, however, you'll have to get the materials for me. Is that going to be okay with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Since I've made this before, I know what to do now, so it won't require as many materials as before. Please bring me #b50 #t4000073#s#k, #b10 #t4003004#s#k, and #b10 #t4000021#s#k. That should be enough to make a #t4031190#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand if it's too difficult for you. If you still can't find #t4031190#, then I'll make it for you again, so let me know when you need a new one." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring all the items for #t4031190#? Ahh, you did bring them all. This should be enough to make #t4031190#. Hold on for a second..." />
+            <string name="1" value="Okay, here's your new #t4031190#. I had a far easier time making this as opposed to last time. Please don't lose it!" />
+            <imgdir name="yes">
+                <string name="0" value="If you wind up losing #t4031190# again, please drop by again. Bring me the items, and I'll make one for you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... I don't think you've brought all the items for #t4031190#, yet. Did you forget the list of items needed to make this? I need #b50 #t4000073#s#k, #b10 #t4003004#s#k, and #b10 #t4000021#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000073" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003004" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3055" />
+                    <int name="state" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3054" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031190" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

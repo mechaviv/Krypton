@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9997.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Operation MS-07" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Agent W is on an important mission to transport something of great value. But who are the unidentified beings that are following Agent W? You begin a conversation with Agent W." />
+        <string name="1" value="You defended the memory chip Agent W entrusted to you." />
+        <string name="2" value="Agent W was headed towards headquarters to transport #b#t3994089##k #i3994089#, which contains important information about #e#rMaster M#k#n. However, some unidentified assailants started chasing him, so he had no choice but to hand the memory chip to you. \r\nHe said that he will give you an #e#rExcellent Agent Badge#k#n if you can protect the memory chip for #r1 hour#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9000032" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10000" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q9997s" />
+            <int name="lvmin" value="10" />
+            <string name="start" value="2008080100" />
+            <string name="end" value="2008081800" />
+            <int name="interval" value="60" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

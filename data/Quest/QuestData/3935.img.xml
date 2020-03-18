@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3935.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eleska's Test" />
+        <string name="parent" value="Sand Bandits According to Eleska" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="You didn't mention a word about the Sand Bandits, yet for some reason, #p2101008# tells you exactly where the treasure storage room is. A hidden path underneath an unlit lamp... now all you have to do is steal #b#t4031574##k, right?\n\n#i4031574# #t4031574# #b#c4031574#/1#k" />
+        <string name="2" value="You gave Eleska the Skyloam. Eleska seemed stunned... Maybe she is starting to accept you." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="어서 오세요, 모험가분... 어떤 이야기를 원하시나요?\r\n#L0##b고양이의 눈과 닮은 보물의 이야기#l\r\n#L1#사막의 뜨거운 열이 만든 보물의 이야기#l\r\n#L2#하늘의 힘을 가진 보물의 이야기#l" />
+            <string name="1" value="#t4031574#... 그건 하늘을 닮은 기운을 가진 보석. 햇빛을 받았을 때 가장 아름다운 보석... 하지만 지금은 빛이 들지 않는 궁성 깊숙히 숨겨져 있는 보석... 그녀는 세 개의 문과 두 개의 기둥 너머에 조용히 자리하고 있답니다. " />
+            <int name="ask" value="1" />
+            <imgdir name="yes">
+                <string name="0" value="#t4031574#에게 이 궁성은 너무도 어울리지 않는 장소였죠. 특별한 모임에 속한 분들이 그녀를 구출하신다니 너무도 기쁘네요." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="묘안석이라고 들어봤어?" />
+                    <string name="1" value="리툼은 어떻게 만들어 지는지 알고 있어?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="3750" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031574" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello, traveler... What kind of story would you like to listen to?\r\n#L0##bA Story about the Cat's Eye Jewel#l\r\n#L1#A Story about a Jewel forged from the Desert Heat#l\r\n#L2#A Story about a Jewel with Heavenly Power#l" />
+            <string name="1" value="#t4031574#... She's a jewel with Heavenly Power. A jewel that is most beautiful when shined upon by the sun... But she now sleeps somewhere in the treasure storage room, deep in the palace where there is no light. She can only be reached by a secret path... #e#basleep under the lamp that's never lit.#k#n" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="3" />
+                    <string name="0" value="A jewel that resembles a cat's eye, aptly called a Cat's Eye Jewel. This powerful jewel has the ability to mesmerize anyone that looks upon it. It is at its best when adorned by a beautiful woman. There's a saying that goes, no one is immune from falling head over heels for anyone wearing a Cat's Eye Jewel. Perfect for anyone trying to seduce someone..." />
+                    <string name="1" value="It is known as the heart of the desert, rumored to be formed by the very heat of the desert sun. It's solid, it's beautiful, it's...Lidium. Quite a surprise, isn't it?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="For #t4031574#, the palace is the worst kind of fit for her... I am glad to know that someone from a special group is trying to rescue her..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You... You brought the #t4031574#! I honestly wasn't expecting it. That's incredible! You just might be the kind of person that the Sand Bandits have been looking for..." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I think there's someone out there waiting for your story..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Haven't you gotten the #b#t4031574##k yet? I warned you it's wasn't an easy task..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031574" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3934" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

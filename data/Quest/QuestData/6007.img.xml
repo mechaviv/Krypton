@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6007.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dragon's Perfume Bottle" />
+        <int name="area" value="10" />
+        <string name="0" value=" It's time to take my mount to another level! Let's go see #p2081000# in Leafre and see if he has any methods to improve my mount!" />
+        <string name="1" value=" After reaching Leafre, I spoke with #p2081000#. He confirmed that he does have a way to improve my mount--by turning it into a powerful dragon! However, like most good things in life, this is not free. He's agreed to sell me the dragon's perfume for the low, discounted price of #r12 million meso#k because it is rare. Really rare. So rare, in fact, that he still has his original stockpile. At 20 Million mesos per, I'm not surprised..." />
+        <string name="2" value="After thinking it over, I gave #p2081000# 20 million mesos and got the dragon's perfume. I took a whiff, it smells like candy, chocolate, and roses...I'm tempted to drink it! However, I want an awesome dragon mount, so I'll have to pass. I can't wait to ride it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="-20000000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031509" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What brought you here? \r\n#L0##bI want to buy the dragon's perfume bottle and help further the reseach into monster-human relationships.#k#l" />
+            <string name="1" value=" #t4031509#...How do you know about this precious bottle? It's supposed to be a secret...\r\n#L0##bI heard Kenta's story. And as long as one other person knows, it's not a secret any more...#k#l" />
+            <string name="2" value=" It's hard to get, so you'll have to pay for it. Would you like to get one?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You know, this reminds me of how I first came across it. A long time ago, I found the #t4031509# in Minar Forest by chance. However the perfume is rare and more dangerous than any other thing in the Maple World. It can only be stored forever in #t4031509#." />
+                <string name="1" value="Though I want to give it to you for free, I only have a limited quantity so I can't. However, if you donate #r20 million meso#k to the Leafre town treasury, I will give it to you. Do we have a deal?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Take care. I hope your travels are always an adventure!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value=" I see you're interested in Monster riding. I'm not an unreasonable man...even though we have our share of dangerous monsters in this region. I'm willing to give it to you for oh, 20 million mesos, which will go into the town treasury. It's valuable, so I can't lower the price any further. Do we have a deal?" />
+            <imgdir name="yes">
+                <string name="0" value="I hope it is helpful for you. I'll use your generous donation for the sake of the town's development." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+            <int name="endmeso" value="20000000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2270000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1902000" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1902001" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1902002" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031509" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

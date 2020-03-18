@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10351.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Memory of the Heroes" />
+        <int name="area" value="50" />
+        <string name="0" value="You're getting close to collecting the 12 Memory Fragments Cassandra mentioned, but you're not quite there yet. Let's go back to #bCassandra#k." />
+        <string name="1" value="What the...She was talking as if she were going to give you an Aran Memory Fragment but...Hmpf, it's annoying, yes, but what else can you do? Let's talk to Cassandra and see what she has to say." />
+        <string name="2" value="You're close to collecting all 12 Aran Memory Fragments. But what are these...?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Have you finished collecting the Aran Memory Fragments? You're probably a bit short.\r\n#b#L0#You're right. I haven't collected all 12 yet.#l\n#k" />
+            <string name="1" value="You seem to have forgotten all about the Arans... \r\n#b#L0#What are you talking about? I didn't forget about them!#l\n#k" />
+            <string name="2" value="Okay, okay. Then tell me this. What is the name of the girl who is waiting for the heroes to break out of the seal?\r\n#b#L0#Jane#l\r\n#L1#Kong Ji#l\r\n#L2#Lilin#l\n#k" />
+            <string name="3" value="You're right! The girl who waits for the heroes in Rien is Lilin. You haven't forgotten." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="Are you going to have a party or something?" />
+                    <string name="1" value="Are you going to just sit there and do nothing?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Perhaps the girl's earnest belief has brought the Arans back to life. By the way, #h0#... You said you were after the Aran Memory Fragments, correct? But you can't always get what you want. Wouldn't you agree?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10350" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q10351s" />
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4945.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Special Delivery" />
+        <int name="area" value="50" />
+        <string name="0" value="There's a beautiful woman in the Prendergast house that looks mildly annoyed... perhaps I should speak with her." />
+        <string name="1" value="Man! I spoke-no, tried to speak with Ludmilla, and she wouldn't give me the time of day until I agreed to get her #b5 slices of #t2022190##k for Jonas from Olde Sapp Village. A bit strange that she referred to New Leaf City as that, but Miki should have them at the potion shop. What a cranky woman..." />
+        <string name="2" value="Well, I got Ludmilla her #b#t2022190##k, and learned a bit about Jonas and her love...for his money. No wonder Edmunds hates her. I should press that woman for more info about what's going on around here." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022190" />
+                    <int name="count" value="-5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022245" />
+                    <int name="count" value="4" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Yoohoo!  Oh... I thought you were one of the scullery maids.  My, you're quite an ugly one, aren't you?\r\n\r\n#L0##bExcuse me?#k#l" />
+            <string name="1" value="Also hard of hearing?  How unfortunate. I had hoped to speak with someone, since Jonas ignores me so much... with everyone gone, why there's no one to listen to my troubles!  I find myself missing the help... well, almost.  Even if I wouldn't usually converse with someone of your obvious low breeding, I guess I'll have to make an exception for now.\r\n\r\n#L0##bWhatever you say, lady. Since you don't seem to have many friends, I'll take pity on you.  Tell me what's wrong.#k#l\r\n#L1##bLady, you blew your shot with me when you opened your mouth. I'm outta here!#k#l" />
+            <string name="2" value="Friends?  Hah!  Who needs friends when you have lots and lots of money?  Although I must admit, it's better when you have more.  Well, you've no doubt heard of my husband?Jonas Prendergast, the famous toy-maker, owner of the most successful and profitable toy company in the world!\r\nBut I must admit, his business has seen better days.  Ever since his little brat-I mean, 'his precious Sophilia' died, he's been holed up in that workshop of his!  He wasn't exactly the best husband in the world before, but now it's getting absolutely ridiculous. I am being ignored!  Shunned by a man who prefers the texture of wood and plastic instead of a wife's loving touch!  And an amazingly beautiful one at that! Why, if he hadn't been so fabulously successful, I'd leave him right this very minute!\r\n\r\n#L0##bWow. Edmunds was right...#l" />
+            <string name="3" value="Just what are you saying?  Has that fat oaf been talking behind my back again?  I'll have him clean every fireplace in the house for that... \r\n\r\n#L0##bNo, no. He didn't say anything. Look, what do you need? I can only take so much of this nonsense.#l" />
+            <string name="4" value="You sound a lot like Jonas on the day he went in that workshop and locked the door behind him. I understand he is upset about the death of his child but he's got other things to take care of... namely me!  But no matter, I have a way to lure him out of that infernal workshop-#bCherry Pie#k! It's his favorite. I mean, who can turn down their favorite food?  Only the cook has disappeared on me, and she usually does the cooking.  And the food shopping.  And I... well, there's certainly no way I can do it. Would you be a dearie and go down to the store in Olde Sapp Village and fetch me #b5 slices of Cherry Pie#k?  Once you return, I'll have a special treat for you!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hmph!  Ungrateful simpleton... Begone!" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Well, then what are you still doing here?  Go fetch me #b5 slices of Cherry Pie#k immediately!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you rejecting me?!  HOW DARE YOU!  Come back when you've come to your senses, wretch!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back!  A bit on the slow side, in more ways than one, but I suppose you can't be blamed for Nature's hand.  As promised, here's your reward.  Enjoy them-they are out of stock everywhere else." />
+            <imgdir name="yes">
+                <string name="0" value="Those #b#t2022245#s#k are rare to find these days. Use them wisely. Don't go wandering too far off though... I'm sure I'll be needing your services again soon enough." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="My, I thought you might be a little slow, but maybe if I say it a little louder--- I need #b5 SLICES OF CHERRY PIE#k.  #bC-H-E-R-R-Y P-I-E.  5.#k  That's 1. 2. 3. 4. 5.  Rush back when you have them.  Run along now!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201076" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022190" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201076" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4943" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

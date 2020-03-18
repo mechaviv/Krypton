@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10587.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Threat of the Red Goblins" />
+        <int name="area" value="50" />
+        <string name="0" value="#p9000073# at the #b#m950100000##k has a very grave concern. Talk to #b#p9000073##k." />
+        <string name="1" value="#p9000073# seems to be worried about people being victimized by the #o9500388#s. For the safety of others, please eliminate the #r#o9500388#s#k and recover their #baxes#k. Talk to #b#p9000075##k to enter the Goblin Cave. \n\n#i4000563# #t4000563# #b#c4000563# / 50#k\n#o9500388##r #a105871##k" />
+        <string name="2" value="You eliminated the #o9500388#s and recovered a good number of their axes. Still, these probably aren't enough. Come back again #bin 1 hour#k to eliminate some more Goblins." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="56400" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000563" />
+                    <int name="count" value="-50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Sigh, what can I do? Is there no one who can rid the world of this evil? No... If evil exists in the world, then that means good must also exist. There must be someone who can oppose this evil. That person is...you!\r\n#L0##b(Huh? What?! What is this guy talking about?)#l\n#k" />
+            <string name="1" value="Yes, you have been chosen to protect the people from the threat of the #o9500388#s! After many years of meditation and discipline, I have learned to recognize the powers and abilities of people. I am sure you are the one. Now, go stop those dangerous #o9500388#s from tormenting the people in #m950100000#! \r\n#L0##b(But why me...? Argh... I guess I'll have to do it.)#l\n#k" />
+            <string name="2" value="Ha! I knew you would believe." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If you defeat #r100 #o9500388#s#k and recover #b50 axes#k, which they use as weapons, they will begin to see that hurting people will not be condoned. I will be waiting for you here." />
+                <string name="1" value="Just in case you're unaware, #b#p9000075##k knows the way to the Red Goblin Caves. Talk to him and he will send you there." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You still don't seem to understand your true mission. Meditate, and you shall find the path you must travel..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, you've eliminated the #o9500388#s and recovered their axes. I knew I was right about you... Heh. " />
+            <imgdir name="yes">
+                <string name="0" value="Maybe the #o9500388#s will back off for now, but they will return to their violence again after #b1 hour#k has passed. I'm sure another brave warrior will come along to stop them..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="I see that you haven't yet been able to eliminate #r100 #o9500388#s and recover #b50 #t4000563#s. Do not worry. I trust that you will accomplish your mission. Now, go see #b#p9000075##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000073" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000563" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9500388" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000073" />
+            <int name="lvmin" value="54" />
+            <int name="lvmax" value="65" />
+            <int name="premium" value="1" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

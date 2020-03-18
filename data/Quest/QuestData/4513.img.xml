@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4513.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fight for the future" />
+        <string name="parent" value="The Secret of Ghostship" />
+        <int name="order" value="4" />
+        <int name="area" value="48" />
+        <string name="0" value="I sense something that #p9270030# has not told me all of his secrets.  There is still something about this Ghosthip.  Let's go find out." />
+        <string name="1" value="Believe or not, #p9270030# told me that there is this Boss Ghost, #r#o9420513##k who controlls all other ghosts in town.  Without defeating this monster, the boat quay will never be the same.  Let go investigate the Ghostship now.  But I must be cautious since he also said the the Ghostship itself is a big maze...  I will have to eliminate #o9420513# and collect #t4000384# as a proof of elimination.\n\n#o9420513#  #r#a45131##k\n#t4000384#  #r#c4000384#/1#k" />
+        <string name="2" value="What an exprience!  I am glad that I brought peace to this town and to the sailors!  However, I feel that the ghost has not been perfectly disappeared.  I should go check every once in a while." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000384" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, it is you again. I thought you did all your work. Why did you come find me?\r\n#b#L0# Why are you still here? I thought that you were safe enough to sail back to the sea.#l\r\n#b#L1#I want to become a sailor like you.#l" />
+            <string name="1" value="Hmmm.... (This kid is Smart....) \r\n#b#L0#Hmmm? Hey, I just eliminated all those ghosts for you! Give me some more rewards!#l\r\n#b#L1#What are you hiding from me?#l" />
+            <string name="2" value="Okay, I will tell you my last secret. The very last one. Are you ready for this?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Hmmm... I think you are too young to be a sailor... Come back to me in 10 years... I might change my mind." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Talk to my hands!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You keep wondering why there are so many ghosts in this Boat Quay Area. They just keep appearing endlessly. Eliminating those ghosts are just a temporary solution. But I am so scared to tell you my last secret because I don't want you to get hurt." />
+                <string name="1" value="Yes, your assumption is correct. There is a ghost who is controlling all these other ghosts. I have never seen the #b#o9420513##k before, but the rumor has it that he lives deep inside the Ghostship. And this Ghostship is one big maze itself that will drive you crazy. As far as we know, we can never get rid of these ghosts unless we turn the Ghostship back into the beautiful Cruise before that used to take tourists around Singapore." />
+                <string name="2" value="Please... If you could defeat this notorious #b#o9420513##k and get #b#t4000384##k as a proof of elimination. Please come back safe. Oh, I almost forgot. You will need the #bwhite essence#k that will lead you to the #b#o9420513##k. Only the ones holding that essence can access to that room. This mysterious white essence I made you will summon him once dropped infornt of a door in the #bEngine room#k. I forgot which one it was." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know... I know... It is not an easy decision to make... Please come find me again if you want to find out more!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoo.... I can't believe I told you the biggest secret that I have kept for years... Hope nothing bad will happen to our town..." />
+            <imgdir name="yes">
+                <string name="0" value="You really are a brave Mapler, aren't you? This is great. This is going to be great news for my crew. Again...thank you. Thank you so much. You will never know how much this means to us." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I can't go out to the sea unless I see #t4000384# as a proof of elimination of #b#o9420513##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="He isn't is to defeat... Is he? Come on.. The future of Boat Quay lies on you!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9270030" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000384" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420513" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9270030" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4510" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4511" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4512" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8020.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yoona's Quiz on Shopping : Start" />
+        <string name="parent" value="Yoona's Quiz on Shopping" />
+        <int name="order" value="1" />
+        <int name="area" value="20" />
+        <string name="0" value="I should meet Yoona at Southperry for a little quiz!" />
+        <string name="1" value="There's a quest before the quiz starts. I better take care of that fast." />
+        <string name="2" value="I was able to safely obtain Beginner's Guide to Shopping at the Cash Shop." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031180" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="8021" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi, you must be a first-timer here~! Would you like to participate in a Shopping Quiz?" />
+            <imgdir name="yes">
+                <string name="0" value="First, before you start solving the questions, it'll be best for you to experience the Cash Shop firsthand. As long as you keep your composure and answer these questions with a steady hand, you'll be fine. The Beginner's Shopping Guide can be purchased at the Cash Shop for 1 meso, so go get your copy now! The Cash Shop can be found at the bottom right corner of the screen. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That's fine. If you ever change your mind, let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, that was fast. I think you have mastered the ins and outs of shopping. I think you're more than qualified to take on the Shopping Quiz!" />
+            <imgdir name="yes">
+                <string name="0" value="Are you ready to answer the questions?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh no, you haven't found The Beginner's Guide to Shopping? It's on sale right now, so find it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="20100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031180" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="20100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1042003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

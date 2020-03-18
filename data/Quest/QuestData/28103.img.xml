@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Amoria : Cupid's Courier - Pirate" />
+        <string name="parent" value="Cupid's Courier - Pirate" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="The wife of a sailor, eh? I'll bet she needs some help." />
+        <string name="1" value="I spoke with the lovely Angelique, and I'm going to deliver #b25 Soft Feathers#k to her husband, Richard, for her. He works on Tae Gong's ship in Aqua Road. Once I have everything, I'll head there, drop everything off, and let Angelique know her husband has everything." />
+        <string name="2" value="I delivered the materials to Richard and he thanked me. His wife must be happy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032247" />
+                    <int name="count" value="1" />
+                    <int name="period" value="1440" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4003005" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hi there! If you have a moment to spare, could I ask you for a favor?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you...my husband, Richard, is a sailor on Tae Gong's ship over in Aqua Road. He works all the time and I do love him, but I barely get to see him. I would like to send a few things to him, but I don't know how to fight. I'll need you to gather #b25 Soft Feathers#k and bring them to him on the boat along with the letter I wrote for him. If you do so, I'll have something nice for you when you get back." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Darn... oh well. I guess I'll have to find another brave fighter to help me then..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Howdy, I'm working, so I only have a second to talk. Oh... are you from Angelique? My buttercup always loves to send me things. Let me see what you've got there." />
+            <string name="1" value="Awesome! Angelique always sends me the goods. And what is this ... a letter? Ah ... such a romanticist even after all these years. It's things like this that brings joy to my otherwise mundane life at work. Thanks! " />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="That's funny, it looks like you haven't got everything yet. Could you hurry? I want Richard to get it soon." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="My wife would want me to have more than what you have in your bag... come back when you've got everything!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201038" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4003005" />
+                    <int name="count" value="25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201036" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032247" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="interval" value="1440" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

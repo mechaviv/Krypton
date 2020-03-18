@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2132.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Magician's First Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're a Magician! Yay! Er, now what? Ah, maybe you should talk to #b#p1032001##k." />
+        <string name="1" value="#p1032001# suggests that you hunt monsters as your basic training. Take care of #r8 #o0210100#s#k. You can find #o0210100#s right around #m101000000#. \n\n#o0210100# #r#a21321##k" />
+        <string name="2" value="You took care of 8 #o0210100#s and reported the news to #p1032001#. Quite easy, actually." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="이보게, 젊은 마법사. 마법사가 된지 얼마 되지 않아 어려운 점이 많겠군. 마법사가 되었다고 해도 아직은 모르는 것이 더 많은 데다가 스스로의 힘으로 사냥하는 것도 어렵고... 아닌가? 어떤가? 이 하인즈가 자네의 수련을 도와주어도 되겠는가?\r\n#L0# #b수련을 하겠습니다.#l  \n\n#L1# 스스로의 힘으로 할 수 있습니다. #I" />
+            <string name="1" value="더 큰 성장을 위해 스스로의 한계를 인정하는 건 좋은 자세이지. 좋아. 자네에게 수련을 시켜주지." />
+            <int name="ask" value="1" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="스스로의 힘으로 할 수 있다니, 그거 참 기특하군... 하지만 혼자서 수련하기란 쉽지 않을 걸세... 자네의 힘만으로 어려워진다면 언제든 찾아오게." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="290" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hey, young Magician. You have many problems as a beginner. You don't know much even though you became a Magician. I guess you find it hard to hunt. Am I right? Do you mind if #p1032001# helps you with training?\r\n#L0# #bI will train.#l \n\n#L1# I can do it by myself #I" />
+            <string name="1" value="If you can accept your limit, you are more likely to grow up. Good. I will teach how to train yourself." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <string name="1" value="It's good that you can train by yourself. It'll be hard. If you can't do it by yourself, come to me anytime." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You're too weak to compete with strong monsters. First, you had better learn how to hunt. If you hunt eight #r#o0210100#s#k, you'll master basic skills. #o0210100#s live around #m101000000#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're not ready to be trained." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh~ You killed eight #o0210100# . Much faster than I expected. Wonderful. Fantastic." />
+            <imgdir name="yes">
+                <string name="0" value="But, you can't be happy with this. Until we meet again...keep training hard!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Haven't you eliminated #r8 #o0210100##k yet? Try harder!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="8" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

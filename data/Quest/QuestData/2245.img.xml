@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2245.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="To Tristan's Tomb" />
+        <int name="area" value="30" />
+        <string name="0" value="You could not defeat the Jr. Balrog in Tristan's Tomb and you want to give it another shot." />
+        <string name="1" value="You could not defeat the Jr. Balrog in Tristan's Tomb and you want to give it another shot." />
+        <string name="2" value="You went back to Tristan's Tomb and met Tristan's Spirit after finally defeating the Jr. Balrog." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="1061014" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2238" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2245s" />
+            <int name="lvmin" value="50" />
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

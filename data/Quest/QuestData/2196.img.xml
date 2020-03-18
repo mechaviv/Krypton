@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2196.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Beginner Pirate's Fourth Training Session" />
+        <int name="area" value="10" />
+        <int name="autoStart" value="1" />
+        <int name="autoComplete" value="1" />
+        <string name="0" value="You're really starting to look like a Pirate. #bKyrin#k wants to help you with one last training session." />
+        <string name="1" value="Kyrin wants you to slay #r10 Green Mushrooms#k. Green Mushrooms are much stronger than Pigs. Stay alert. \n\n#o 1110100# #r#a21961##k" />
+        <string name="2" value="You destroyed 10 Green Mushrooms. Wasn't easy, but you feel like you're well on your way to becoming an amazing Pirate." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="지금까지 수련을 잘 따라와 주어서 고마워. 진정한 한명의 해적이 된 모습을 보니 정말 기쁘군. 하지만 정말 네가 해적이 되었음을 증명하기 위해선, 마지막 시험에 통과해야만해." />
+            <imgdir name="yes">
+                <string name="0" value="시험은 간단해.#r초록버섯 10마리#k 사냥이야. 초록버섯은 지금껏 상대해왔던 몬스터보다 훨씬 강한 녀석이니 사냥 중에 절대 긴장을 풀어서는 안 될 거야. 하지만 그렇다고 해서 너무 걱정하진 말더럭. 넌 이미 초록버섯과 싸울 수 있을 정도로 강해져 있으니까." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="시험이 두려운 건가? 이미 한 명의 해적으로서 그런 두려움을 갖는 것은 이상하다고 생각되는데. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="840" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2030000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Thank you for being able to keep up with the training. It's good to see you molding into a bonafide Pirate. In order for you to prove to everyone that you're a Pirate, however, you'll have to pass this final test." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="It's simple, really. You just need to hunt #r10 Green Mushrooms#k. Green Mushrooms are unlike any other monsters you've faced. I strongly advise you to keep your focus at all times. That doesn' t mean you should be too worried. You are already strong enough to handle them." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you afraid of the test? As a fellow Pirate, I find that behavior puzzling at best." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you were able to slay 10 Green Mushrooms! I knew you could it!" />
+            <imgdir name="yes">
+                <string name="0" value="Remember, the way of the Pirates have only just begun. The path is long, and sometime arduous, but I urge you to keep your head up, have no fear, and have the courage to look right into your opponent's eyes. That's the true mark of a Pirate." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you've slayed all #r10 Green Mushrooms#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9101000" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1090000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2195" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

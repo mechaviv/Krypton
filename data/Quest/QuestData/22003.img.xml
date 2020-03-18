@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22003.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering the Lunch Box" />
+        <int name="area" value="7" />
+        <string name="type" value="[Required]" />
+        <string name="showLayerTag" value="22003" />
+        <string name="0" value="#bMom#k seems to have something she wants you to do. Talk to her." />
+        <string name="1" value="Mom asks you to deliver the #t4032448# to #bDad#k who is working at the #b#m100030300##k. Go to the #m100030300#. Leave the house and head #bto your left#k." />
+        <string name="2" value="You delivered the #t4032448# to Dad." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032448" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="175" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032448" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022621" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022622" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="22004" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Oh, Evan! What are you doing here? Are you here to help your man? Hey, that's a Lunch Box you've got there!" />
+            <imgdir name="yes">
+                <string name="0" value="Ah, I knew I was missing something! I always am, it seems. Today it was my #t4032448#, yesterday it was my hat, and the day before it was my shoes. I'm getting so forgetful!" />
+                <string name="1" value="In any case, since you're here, will you do me a favor?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you gone to see your father yet? He's working at the #b#m100030300##k. You can get there by leaving the house and #bheading left#k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Oh, Evan! What are you doing here? Are you here to help your man? For some reason, I'm so hungry that I just don't have the energy to work." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="You lost the Lunch Box? Your clumsiness comes from your father's side of the family. Here, I packed a fresh #b#t4032448##k. Take it to to your father at the #b#m100030300##k." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013103" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032448" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22002" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q22003s" />
+            <int name="lvmin" value="4" />
+            <imgdir name="job">
+                <int name="0" value="2001" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

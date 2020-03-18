@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2421.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Using Double Shot" />
+        <int name="area" value="10" />
+        <int name="selectedSkillID" value="5001003" />
+        <string name="0" value="Power B. Fore at the training center wants you to learn how to use a new skill." />
+        <string name="1" value="Power B. Fore is teaching you how to use a new skill. Use Double Shot to eliminate some Pigs. .\r\n\r\n#o1210100# #a24211# (Use Double Shot)" />
+        <string name="2" value="You used Double Shot to eliminate some Pigs." />
+        <string name="summary" value="Use Double Shot to eliminate 30 Pigs." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, thanks! I was able to get back my letter of commendation thanks to you. Shall we start with the training now? You know what skills are, right? Use them wisely, and you'll be able to perform attacks that are more powerful than you're normally capable of. What do you think? Want to give it a try?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now use Double Shot to defeat 30 Pigs." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you told me you wanted to train." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great... great work there. I can see you were diligent in your training, so let me give you a boost on leveling up." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated all the Pigs yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1095001" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="1210100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1095001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2414" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="5001003" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

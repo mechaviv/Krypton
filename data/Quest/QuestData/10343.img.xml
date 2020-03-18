@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10343.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Cassandra's Album" />
+        <int name="area" value="50" />
+        <string name="0" value="Cassandra says something extremely bad has happened!" />
+        <string name="1" value="Cassandra says she's lost her album and suspects it has something to do with Gaga's artifacts. Hm, but you're busy collecting the Aran Memory Fragments. Perhaps that can wait until after you're done helping Cassandra, who seems desperate. If you collect artifacts, you may naturally find Cassandra's Album." />
+        <string name="2" value="You have acquired an Aran Memory Fragment for returning Cassandra's Album." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh no, what do I do? \r\n#b#L0#What's wrong?#l\n#k" />
+            <string name="1" value="I lost my album. All my baby pictures...Oh no! Can you find my album before #bGaga#k sees my baby pictures and makes fun of me? Hurry!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="My album is gone! I've never shown my baby pictures to a single soul. I know Gaga was scavenging around for things, saying he wanted to have an Artifact Hunt. He probably took my album then!" />
+                <string name="1" value="I must get my album back before Gaga sees it and makes fun of me! I'll give you an Aran Memory Fragment if you find my album and return it to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, my life is over if Gaga sees those pictures!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you found my album yet? Do NOT take my album to Gaga if you find it!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000066" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="10342" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009010100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

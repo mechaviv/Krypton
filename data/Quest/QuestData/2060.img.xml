@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2060.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Special Taste of Florina Beach III" />
+        <int name="area" value="30" />
+        <string name="0" value="Emergency for the girl living in Florian Beach." />
+        <string name="1" value="I have to bring recipe for 25 people to Riel in Florina Beach.\n\n#b#t4000136# #c4000136#/25\n#t4000043# #c4000043#/130\n#t4000044# #c4000044#/130\n#t4000029# #c4000029#/25" />
+        <string name="2" value="I worked part-time gathering recipes for cooking meals for the tourists coming to Florina Beach." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="20000" />
+            <int name="exp" value="7000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000043" />
+                    <int name="count" value="-130" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000044" />
+                    <int name="count" value="-130" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="-25" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="-25" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Remember I told you last time? I'll need much more materials since more tourists are being booked here now. It may take you some time, although the amount of time it'll take depends on your ability to get the job done. What do you think? Do you want to take a crack at it? You'll be paid quite well for this." />
+            <imgdir name="yes">
+                <string name="0" value="Alright, the visitors that are coming by this time around are quite something. They only want the specials, and #t4000043# will not do. Because of that, I'll need #r25#k #t4000136#s for the coconut juice, #r130#k #t4000043#s and #r130#k #t4000044#s for the main course, and #r25#k #t4000029#s for the desert. \n\n#i4000136# 25 #t4000136#s    \n#i4000029# 25 #t4000029#s \n#i4000043# 130 #t4000043#s \n#i4000044# 130 #t4000044#s" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is it because I'm asking you for too much? Just remember, you'll be paid accordingly ... if you feel like doing it, then please come talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you gather up all the materials I asked of you? Well, let's see..." />
+            <imgdir name="yes">
+                <string name="0" value="I knew it!!! All the materials you've gathered up are fresh and ready to be served!! The customers will be more than satisfied with it. I don't think we'll ever have a huge group of visitors like this anymore. If I find something to do, I'll definitely ask you for help. Thanks, and take care~" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please check and see if you have all of the #b30 coconuts, 150 Claws of Lorang, 150 Claws of Clang, and 30 bananas of Lupin#k. I don't think you have all of them ...." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000029" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000136" />
+                    <int name="count" value="25" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000043" />
+                    <int name="count" value="130" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000044" />
+                    <int name="count" value="130" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1081100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2059" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

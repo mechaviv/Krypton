@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3908.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Present for His Sister" />
+        <string name="parent" value="Jiyur's Sister" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="After receiving #p2101008#'s letter, #p2101001# wants to get her some #t4000331# to soothe her vocal chords. You should get #b#t4000331#s#k for #p2101001# and #p2101008#. \n\n#i4000331# #t4000331#  #b#c4000331##k/20" />
+        <string name="2" value="When she received the #t4000331#s, #p2101008# let out a smile that was brighter than anything you've seen from her. These two really care for each other...and for them to be separated like this... The queen must be really heartless." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="모험가님. 전에는 누나에게 안부를 전해 주셔서 정말 감사했어요. 누나의 편지까지 받아다 주시다니... 정말 고맙습니다. 저어... 그런데 왕성에 들어갈 수 있으시다면 한 가지만 더 부탁을 드려도 될까요?" />
+            <imgdir name="yes">
+                <string name="0" value="편지를 보니 누나는 왕비에게 끊임없이 이야기를 해줘야 하는 모양이에요. 계속 이야기만 하다 보면 아무래도 목이 아프겠죠? 누나에게 목에 좋은 카투스 꽃잎 차를 마시게 해 주고 싶어요. 하지만 카투스는 너무 강하고..." />
+                <string name="1" value="모험가님이시라면 로열 카투스도 문제 없이 잡으실 수 있으시겠죠? 제발 누나에게 카투스 꽃잎 50장을 구해 주세요. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="아... 모험가님도 피곤하실 텐데 너무 많은 부탁을 한 모양이네요. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="4900" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000331" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4010007" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I am so happy that you found my sister and told her how much I miss her. You even brought a letter from her! Can you help me with one more thing?" />
+            <imgdir name="yes">
+                <string name="0" value="Reading this letter, I realized my sister must be constantly telling stories, so her throat must ache! I want to make her some #t4000331# tea, but #o2100104# s are too strong for me to fight…" />
+                <string name="1" value="But you can handle #r#o2100104#s#k easily, right? Please get #b20 #t4000331#s#k for my sister. Please..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ahhh... you must be tired from all that traveling. Sorry for making these demands." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're the one came on #p2101001#'s behalf last time. What brings you back here? Hmm? #t4000331#s, for me to make tea? You're here on #p2101001#''s behalf again, aren't you?" />
+            <imgdir name="stop">
+                <imgdir name="yes">
+                    <string name="0" value="I was already so grateful to you last time, but wow... thank you so much. This will really soothe my throat." />
+                </imgdir>
+                <imgdir name="stop">
+                    <imgdir name="npc">
+                        <string name="0" value="You haven't met my sister yet? Please get #b20 #t4000331#s#k for her, okay?" />
+                    </imgdir>
+                    <imgdir name="item">
+                        <string name="0" value="You're the one came on #p2101001#'s behalf last time. What brings you back here? If you're here to meet the queen, please be careful." />
+                    </imgdir>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000331" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3907" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8070.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tsuri's Special Seafood 2" />
+        <string name="parent" value="Tsuri's Special Seafood" />
+        <int name="order" value="2" />
+        <int name="area" value="48" />
+        <string name="0" value="Now that Tsuri has #b#t04000153##k with him, will he be good at catching those fishes? I better go check him out..." />
+        <string name="1" value="Hah, I wound up having to catch for him. I'll need to get #b100 #t04000158#s#k from #b#o4230200##k.\n\n#t04000158#  #b#c04000158##k/100" />
+        <string name="2" value=" That bowl of rice covered in Poopa's eggs does not look enticing at all. Does it taste alright? I think I'll let others find out..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000158" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2040707" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh ho, it's you!" />
+            <string name="1" value="Check this out! I know you worked hard to get me #b#t04000153##k, but I was unable to catch #bPenguins#k because they were just too darn fast!" />
+            <string name="2" value="Have I grown really that old? Sigh...\r\nThis doesn't mean I'll stop here, though!" />
+            <string name="3" value="Can you catch #b#t04000158##k for me? If you were able to snatch #b#t04000153##k away from the penguins, then I'm sure you can pull this match off." />
+            <imgdir name="yes">
+                <string name="0" value="Alright, great choice. Gather up #b100 #t04000158#s#k, and I'll personally feed you with my new fresh gourmet dish made out of Poopa's eggs." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Once it's done, I'll make sure to feed you with this." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the egg?" />
+            <string name="1" value="I'm going to make it right now, so just wait! Don't worry, this won't take long! The beauty of this dish is that it take very little time to prepare it!" />
+            <string name="2" value="See, tada!" />
+            <string name="3" value="Ekkkk! \r\n...." />
+            <string name="4" value="I didn't think of this while making it, but ... what kind of eggs are these...? \r\nThe eggs are BLUE! A warm bowl of rice, covered in blue eggs... yuck, I feel like throwing up just imagining it..." />
+            <string name="5" value="I was expecting more in the mold of Salmon eggs, but... just because of a change in color, it totally makes this dish a turn-off." />
+            <string name="6" value="I'm afraid, this may not be available at our restaurant. I know you worked hard to get these ingredients. I'm sorry. Here, the pay for your hard work. Look for a new menu sometime soon!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't bring enough eggs for this!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120008" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000158" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8069" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+        </imgdir>
+    </imgdir>
+</imgdir>

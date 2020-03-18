@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3513.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Frozen Emotions" />
+        <string name="parent" value="Road of Regrets" />
+        <int name="order" value="1" />
+        <int name="area" value="46" />
+        <string name="0" value="I received permission from #p2140000# but I wasn't able to get past #m270020500#.  Is there another problem?  I should go talk to #b#p2140000##k." />
+        <string name="1" value="#o8220005#, the Ice Knight who protects the temple, has frozen his emotions so that regret would never cause him to fail a mission.  #p2140000# said it seems like #bmy emotions have been frozen as well#k while fighting him.  He continued to say that those with frozen emotions don't feel any regret and can't pass through the Lane of Regret... So what do I do? \n\n Then #p2140000# suggests perhaps #b#p2140002##k, who can make all sorts of things, might be able to help me." />
+        <string name="2" value="I met with #p2140002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello again.  What? You can't go past #m270020500# this time... Is that it?  I think I might know why... but first, I should tell you about #o8220005#.  Do you want to hear the story?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o8220005#, the Ice Knight, is the Goddess' knight.  He is very loyal to the Goddess, and to make sure his emotions never got in the way of his missions, he froze his emotions.  I think you have been affected by his power and #bnow your emotions are frozen as well#k." />
+                <string name="1" value="#bSomeone with frozen emotions cannot experience regret#k.  That's why you weren't able to pass through the Road of Regrets.  The Flame of Oblivion might be able to thaw your emotions, but you must pass through the Road of Regrets to find it..." />
+                <string name="2" value="You have no other choice.  This option won't be 100% reliable but go see #b#p2140002##k.  He is a greedy man, but there's nothing he can't make.  I'm sure he'll be able to make you a fire that can thaw your emotions." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you don't want to hear the story, that's too bad.  You'll just have to live your life like a robot... just completing missions day in and day out, without any emotion whatsoever." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hm... I thought I heard they weren't allowing regular visitors, but a human?  I see that your emotions are frozen, you must have already fought with #o8220005#... What brings you here?" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You didn't go see #b#p2140002##k yet, did you?  He should be at a #b#m270020211##k, somewhere on the Road of Regrets." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2140002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2140000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3512" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3729.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Time Traveler's Pocket Watch" />
+        <int name="area" value="41" />
+        <string name="0" value="In order to operate the Time Gate that leads to Neo City, you'll need the Time Traveler's Pocket Watch. They say that you can obtain the Time Traveler's Pocket Watch by fulfilling Andy the Time Traveler's request..." />
+        <string name="1" value="In order to operate the Time Gate that leads to Neo City, you'll need the Time Traveler's Pocket Watch. They say that you can obtain the Time Traveler's Pocket Watch by fulfilling Andy the Time Traveler's request...\r\n#rCan be completed once a day#k" />
+        <string name="2" value="You obtained the Time Traveler's Pocket Watch, which is needed to operate the Time Gate that leads to Neo City, by fulfilling Andy the Time Traveler's request...\r\n#rCan be completed once a day#k" />
+        <string name="demandSummary" value="#o7130002# #a37291#&#xD;&#xA;#o7130003# #a37292#&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 1,000\r\n#Wbasic#\r\n#i4001393:# #t4001393:# 1 \r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001393" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Time is like a continuum. It can either sweep you down like a raging river or jump you up like a relentless fish. My current location is... (mumble, mumble)\r\n#L0##bUm... Mr. Andy? What are you talking about?#l\n#k" />
+            <string name="1" value="What...? Nevermind. What do you want? I'm very busy. Many things to think about.\r\n#L0##bI want to obtain the Time Traveler's Pocket Watch.#l\n#k" />
+            <string name="2" value="Aah, so you want to time travel. Well, then help me with something first." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="This forest is just too noisy. Especially those bugs... what were they called... oh yes, #b'Beetles'#k. Those bugs make this annoying chewing sound on wood. And those #b'Dual Beetles'#k, they're even worse! Can you help decrease their number? Please eliminate 10 of each bug. If you indulge my request, I'll give you the #bTime Traveler's Pocket Watch#k. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Nothing given, then nothing gained. There's another law for ya. If you have no further business, please go away." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Aah, it's finally gotten a bit more quiet. Though it'll probably get louder again by tomorrow. Still, I can at least enjoy some quiet for today. Here, this is the Time Traveler's Pocket Watch... As I say time and time again, when you're time-traveling you must be very careful, lest you get caught in the vacuum of time." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="The bugs that are called #b'Beetles'#k. Those bugs make this annoying chewing sound on wood. And those #b'Dual Beetles'#k, they're even worse. Can you help decrease their number? Please eliminate 10 of each bug. If you indulge my request, I'll give you the #bTime Traveler's Pocket Watch#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082004" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7130002" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7130003" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3718" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

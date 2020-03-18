@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6190.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Plot to Kidnap Tylus!" />
+        <string name="parent" value="Conspiracy of kidnapping Tylus" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value=" I was attacked by #o8150000# while on the plane to #m200000000#. After protecting the passengers from #o8150000# and defeating him, I obtained a strange document. It was a conspiracy to kidnap #p2020008#, the elder of warriors in #m211000000#. I'm worried. Let's go discuss it with #p2081100#." />
+        <string name="1" value="#p2081100# said that I only found half of the document. He advised me to take the half sheet and go see #b#p2032001##k to find the missing part.  \n\n#t4001111# #b#c4001111# / 1#k" />
+        <string name="2" value="I told #p2032001# about the conspiracy to kidnap #p2020008# . He's thinking of a way to stop it..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="네 번째 전직을 마친 자여. 여기에는 무슨 볼 일이지? 표정이 좋지 못하군. 무슨 걱정이라도 있는 건가?" />
+            <imgdir name="yes">
+                <string name="0" value="이건 #p2020008# 납치 계획? 그런 아저씨를 납치해서 뭐가 좋다는 거지? ...아니 그것보다, 이걸 #o8150000#에게서 얻었다는 말인가? #o8150000#이 #b#p2020008#를 납치#k하려 한다는 건... 결코 좋은 목적은 아니겠군. #o8150000#은 예전부터 여러 마법물품들을 훔쳐 가는 등, 일을 많이 방해 했었는데. 흠." />
+                <string name="1" value="#o8150000#의 계획은 어떤 수단을 써서든 저지해야 해. 자네 역시 그렇게 생각하고 이 편지를 여기까지 가져온 모양이군. " />
+                <string name="2" value="하지만 이 편지를 아무리 살펴 봐도, 어디에서 납치할 것인가는 나와 있지 않아. 납치 계획이 완성되지 않은 것이라 생각하면 좋겠지만... 그보다는 다른 부분이 적혀 있는 문서는 다른 자가 가지고 있는 것 같군. 어서 #b#p2032001##k에게 가 보게. 그녀라면 다른 문서가 어디 있는지 찾을 수 있을 거야." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="응? 그럼 #m240010501#에는 놀러 온 건가? 여긴 조용해서 별로 재미있지는 않을 텐데." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001111" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" You who completed the 4th job advancement. What brings you here? You don't look too good. What's troubling you?" />
+            <imgdir name="yes">
+                <string name="0" value=" Is this a plan to kidnap #p2020008#?! Did you get it from #o8150000#? I wonder what's the motive? If #o8150000# is behind this, it must be up to no good. #o8150000# used to steal our magical accessories..." />
+                <string name="1" value="You should stop the Crimson Barlog's plans by all means. That is why you have come to hand me this letter. You have a fight ahead of you..." />
+                <string name="2" value="But it doesn't Say in the letter where he will kidnap him. I can Say the plan is not finalized. Rather, somebody else has got the other information about this plot. Go to see #b#p2032001##k. She would know where to find out more!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? Are you just standing in #m240010501# to kill time? It's very quiet here and boring." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What's the matter? You came to someone else's house without permission. I don't want to talk to a rude person! Why are so you hasty? ...#p2081100#? He's annoying even after becoming a Bishop. So, what's the matter?" />
+            <imgdir name="yes">
+                <string name="0" value="This mysterious letter is not written by a human! Crimson Balrog?! Wait a minute. Let's read carefully..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" #p2032001# is little bit cranky but an excellent magician and astrologer. He would know where to find the information you need." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What? Don't come in my house without permission! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2032001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001111" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001111" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="112" />
+                <int name="1" value="122" />
+                <int name="2" value="132" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

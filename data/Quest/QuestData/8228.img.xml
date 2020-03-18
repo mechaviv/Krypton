@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8228.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lost in Translation 2" />
+        <int name="area" value="45" />
+        <string name="0" value="I should see if John needs my help with anything..." />
+        <string name="1" value="After showing John the #bCoded Communique#k that Jack gave me, John used a Hyper Glyph to try to decipher the symbols... to no avail.  While John attempts to fix and recalibrate the Hyper Glyphs to work on these symbols, he asked me to show the letter around to the #bother experts in town#k.  Maybe they can shine some light on all this..." />
+        <string name="2" value="I told John about Elpam's translation, and John was able to fill in some more of the blanks for me.  I need to get this new information Jack and see what else he knows..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I'm still trying to get these darn Hyper Glyphs to work!  Have you spoken to the others in NLC?  No?  Hop to it, then!  We can't let Jack down.  #bProfessor Foxwit#k, #bMayor Slimm#k, or #bLita#k might all know something about this.  Who knows, maybe even the #bGlimmer Man#k or #bElpam#k may have come across this writing before!  Cover all the angles, kid!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201055" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032018" />
+                    <int name="count" value="0" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q8228e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8227" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8228s" />
+        </imgdir>
+    </imgdir>
+</imgdir>

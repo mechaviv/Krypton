@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8029.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Actor Training" />
+        <int name="area" value="48" />
+        <string name="0" value="Mariwaka of Showa Town is apparently looking for someone. Perhaps I can help find them..." />
+        <string name="1" value="Mariwaka claims that if I audition well, then I get to make my debut on the big screen. Me? An actor? Hmm, maybe. I better go take care of some #b#o9400110#s#k and #b#o9400111#s#k. \n#o9400110#  #r#a80291##k \n#o9400111#  #r#a80292#" />
+        <string name="2" value="Mariwaka did well auditioning. Oh well, I feel like I'm one step closer to becoming a movie star. Now all I need to do is meet Director Furano. Let's go!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022025" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022027" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, there! Listen up, there's going to be a movie starring me in the works, but we ran into a slight problem. Care to listen?" />
+            <imgdir name="yes">
+                <string name="0" value="Well, it is an action flick, and unfortunately, the other lead actor got injured while filming. We're currently looking for someone young who can pull off some stunts." />
+                <string name="1" value="And it looks like you fit the bill. Would you like to star opposite me in a movie?" />
+                <string name="2" value="But of course, you'll first need to be auditioned. No no no, don't get so nervous. Defeat #b10 #o9400110#s#k and #b10 #o9400111#s#k. The main point for your role is someone that can FIGHT. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't believe you're giving up the chance to actually star in a movie. You won't be offered an opportunity like this anywhere else, so think carefully." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey, not bad disposing those monsters with your incredible skills. You may have what it takes to be a star! I'll recommend you to my director, and I suggest you meet him soon~." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Your audition will consist of defeating 10 each of #b#o9400110##k and #b#o9400111##k. Good luck!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9120016" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400110" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9400111" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120016" />
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21736.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Orbis" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="As soon as you reach Level 45, you receive a message from #b#p1002104##k." />
+        <string name="1" value="#p1002104# notifies you of some new information regarding the Black Wings and asks you to head to #b#m200000000##k to meet #b#p2012012# the fairy#k. #p2012012# will probably have some more details about this." />
+        <string name="2" value="You met #p2012012# the fairy in #m200000000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Long time no see! You've leveled up a lot since the last time we met. You must be training really hard. Always hard-working. I'm not surprised. It's exactly what a hero like you would do. I'm sure #p1201000# will be happy to hear about your progress." />
+            <string name="1" value="Anyway, enough small talk. I realized that it might be more effective to search for information in places outside Victoria Island as well, so I've begun investigating in Ossyria. I began with #b#m200000000##k and immediately hit the jackpot." />
+            <string name="2" value="It seems like something strange is happening in #m200000000# in Ossyria. It's a bit different from when we were dealing with the puppeteer, but my instincts tell me it has to do with the Black Wings. Please head over to #m200000000#." />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="…I'm sorry, but if you have something to tell me, could you do so another time? I haven't been getting much sleep lately, so I am dead tired." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#m200000000##k yet? Or do you not remember how to get there? In order to go to #m200000000# from Victoria Island, you'll have to #bget on board at #m101000000##k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012012" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21735" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21736s" />
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

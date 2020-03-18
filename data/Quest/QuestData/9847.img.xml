@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9847.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Guard the Omega Sector" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="#b#p9010010##k seems to have something urgent to tell you." />
+        <string name="1" value="Eliminate the aliens that are threatening the safety of Omega Sector and then rush over to #b#p2050012##k to report your progress. \n\n#o4230118# #r#a98471##k" />
+        <string name="2" value="There are a lot of aliens remaining, so don't let your guard down yet." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow, you are really amazing. I can't believe you went into the alien hideout. In any case, something urgent has happened to Agent M... Do you want to hear about it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Agent M discovered that the alien life most dangerous to Omega Sector is the Ultra Grays. Yes, the same ones you can find all over the plac." />
+                <string name="1" value="So eliminate #r100 #04230118#s#k to protect Omega Sector and deliver the news to #b#p2050012##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="This is important for the safety of Omega Sector..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="I thought I already told you to defeat #r100 #o4230118#s#k in order to protect Omega Center and deliver the news to #b#p2050012##k..." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="The alien that is the biggest threat to the Omega Sector is none other than the #r#o4230118#s#k! Eliminating just #r100#k of them would make things so much better..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050012" />
+            <string name="endscript" value="huntUP7" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="4230118" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="30" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="221040300" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

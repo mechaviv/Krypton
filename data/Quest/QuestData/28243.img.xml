@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28243.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Mystery of the Green Portion" />
+        <string name="parent" value="Unveiling the Map" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@1032104:##k in #bEllinia#k says she may know a way to reveal the portion of the #rDirty Treasure Map#k that has been covered. Let's go find her." />
+        <string name="1" value="#b#@1032104:##k in #bEllinia#k says she'll reveal the green portion of the map if you hunt #rSlimes#k and collect #rSquishy Liquids#k. Although #rSlimes#k are found everywhere, a great number of them can be found in #b#m101010000##k.\n\nReport back to #b#@1032104:##k in #bEllinia#k upon completion." />
+        <string name="2" value="#b#@1032001:##k in #bEllinia#k says he may know of a way to unveil the rest of the map. Let's talk to him." />
+        <string name="demandSummary" value="#i4000004:# #t4000004:# #c4000004# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1500&#xD;&#xA;#Wbasic#&#xD;&#xA;#i4032486:# #t4032486:# #c4032486# 1&#xD;&#xA;Able to proceed to 'Grendel the Really Tipsy' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032486" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What, are you infatuated with my beauty? Wait, you're not?\nSorry, haha!\n\nBut what is this dirty piece of paper? Green, red, white...it's filled with different colors. This is a Treasure Map...? If that's true, I may be able to help you out a bit." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please hunt #rSlimes#k and bring me 20 #rSquishy Liquids#k. I'll help you remove the green on the map then. #rSlimes#k can be found everywhere, but they can be very easily found in #b#m101010000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ha, funny. You don't want my help?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Thank you for bringing them to me. Please hand them over to me carefully so you don't pop them.\n\nJust give me a few seconds and I'll make you something for you." />
+            <imgdir name="yes">
+                <string name="0" value="Ta-da! This is called the #rGreen Slime Eraser#k. Cute, huh?\n\nYou'll be able to remove the green on the map using this eraser.\n(Open the #rDirty Treasure Map#k and drag and place the #rGreen Slime Eraser#k above the map.)" />
+                <string name="1" value="I'm not sure what to do about the red portion of the map.\nYou should ask #b#p1032001##k in #bEllinia#k. He has a lot of experience with just about everything." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I need 20 #rSquishy Liquids#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032104" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000004" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28242" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4220153" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="500" />
+                <int name="1" value="510" />
+                <int name="2" value="520" />
+                <int name="3" value="511" />
+                <int name="4" value="521" />
+                <int name="5" value="512" />
+                <int name="6" value="522" />
+                <int name="7" value="1500" />
+                <int name="8" value="1510" />
+                <int name="9" value="1511" />
+                <int name="10" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

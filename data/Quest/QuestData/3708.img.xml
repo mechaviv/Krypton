@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3708.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Red Tree" />
+        <string name="parent" value="The Sacred Barrier of the Forest" />
+        <int name="order" value="1" />
+        <int name="area" value="41" />
+        <string name="0" value=" #p2081003#, who lives in #m240000000#, says he/she saw a strange tree in the forest..." />
+        <string name="1" value="#p2081003# said that while roaming around Minar Forest, he saw that the trees that lead to Dragon's Forest have turned #bred#k. He doesn't think the other Hafrings know about this and asked me to go tell the Chief." />
+        <string name="2" value=" As #p2081003#'s requested, I went to see #p2081000# and told him that the trees at the entrance of Dragon's Forest had turned red." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Have you just returned from the forest? If so, then you must have noticed a tree that has turned red at the path to the Dragon Forest from the split road in the middle of the forest. I don't understand how that happened. It's like the tree has turned crimson red. I don't think other Hafrings have noticed this sudden change. Please relay this story to the Chief Tatamo." />
+            <imgdir name="no">
+                <string name="0" value="The chief needs to know this..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You look like you have something to tell me. Take your time. Explain it to me slowly and in detail." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Please relay the story I told you on The Red Tree to the #bchief. Tatamo.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081003" />
+            <int name="lvmin" value="85" />
+        </imgdir>
+    </imgdir>
+</imgdir>

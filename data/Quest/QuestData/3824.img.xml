@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3824.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Tell Do Gong I Said Hi" />
+        <string name="parent" value="Do Gong Seeking Swallow" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="0" value="Will #b#p2071006##k of #b#m222000000##k regain its lost memory?" />
+        <string name="1" value="#p2071006# told me it now remembers everything that has to do with #b#m250000000##k and #b#p2091001##k, and felt saddened that it hadn't been able to repay #p2091001# for all the good things he did for it due to the injury, and wanted me to say HI to him for it." />
+        <string name="2" value="I managed to relay #p2071006#'s greetings to #p2091001#. #p2091001# seemed shocked by #p2071006#'s injuries, and wished it a speedy recovery by asking me to deliver #b#p2091002##k to it. Okay, I better go back to #b#p2091002##k, now." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah! Hey there! Aren't you the one that gave me #t2022116#? Thanks to you, I finally remember everything on #m250000000#. From learning chess by looking over #p2091001#'s shoulder... to watching #p2091000# diligently train... to seeing #p2091002# secretly eating the #t2022143# that #p2091001# gave away as presents... I REMEMBER THEM ALL!! Thank you so very much!" />
+            <string name="1" value="I wasn't even able to repay #p2091001# for all the good things he did to me... and now my wings are injured so I can't even fly there. I really feel bad about it. If you can... well, if you ever get a chance to head over to #b#m250000000##k, then please tell #b#p2091001##k that Swallow's doing well and that once the wings are healed, I'll be heading over there to say Hi. Can you do that for me?" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you so very much!!! I, #p2071006#, never forgets the good deeds from other people! I will repay you one of these days, and you know it! Have a safe trip to #m250000000#~" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you not plan on visiting #m250000000# ever again? Ahhh... I guess I'll have to wait until my wings get better." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you're the one that promised me to say Hello to #p2071006# for me. How was it? Did you get to meet #p2071006#? Did you hear anything about it? What? #p2071006# was in #m222000000#?" />
+            <imgdir name="yes">
+                <string name="0" value="So... it's injured, can't move, and ... you have to go all the way to check up on it. You must be tired...  I mean, it always forgot things even before the injury. I hope it's alright... I'll have to ask for #p2091002# to make a medicine for #p2071006#... I'll let him know that you're on your way, so you should go visit him, get the #bmedicine#k, and give it to #p2071006#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Have you not gone to #b#m250000000##k, yet? #b#p2091001##k might be very concerned right about now..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3823" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

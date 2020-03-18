@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10380.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Aran's Return" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="You reach Level 20 and #b#p9010000##k suddenly starts talking to you about something…" />
+        <string name="1" value="Aran has returned to Maple World! Maple Admin and #p1201000# have teamed up to host an event in celebration of the return of Aran. Apparently, if you reach #bLevel 30(50, 70) as Aran#k, #p1201000# will reward you with a special gift." />
+        <string name="2" value="Aran has returned to Maple World! Maple Admin and #p1201000# have teamed up to host an event in celebration of the return of Aran. Apparently, if you reach #bLevel 30(50, 70) as Aran#k, #p1201000# will reward you with a special gift." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, did you get all that?" />
+            <imgdir name="stop" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1" />
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <string name="startscript" value="q10380s" />
+            <int name="lvmin" value="20" />
+            <string name="end" value="2010061000" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

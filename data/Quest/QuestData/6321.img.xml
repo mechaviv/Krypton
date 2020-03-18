@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6321.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maple Warrior Skill Book" />
+        <int name="area" value="10" />
+        <string name="0" value=" If I lost the Maple Warrior Skill Book, I should go talk to #b#p2081200##k.." />
+        <string name="1" value="This should be good enough.  Let's try talking to #b#p2081200##k again." />
+        <string name="2" value=" I received another Maple Warrior Skill book from #b#p2081200##k " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280003" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Young warrior. Why do you want to see me?\r\n#L0# I lost #b#t2280003#.#k#l" />
+            <string name="1" value="I'll help you." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I'll give you #t2280003# again. Wait a minute." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Good bye." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It's ready for you." />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2081200" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2081200" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2280003" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="212" />
+                <int name="1" value="222" />
+                <int name="2" value="232" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="2121000" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2321000" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2221000" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

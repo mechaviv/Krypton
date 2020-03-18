@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4918.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Featherweights" />
+        <int name="area" value="45" />
+        <string name="0" value="Icebyrd looks like he needs my help. I'd better get over to New Leaf City and see him!" />
+        <string name="1" value="I spoke with Icebyrd, and he was glad to see me. He's been trying to build the new areas, but the Gryphons have been wreaking havoc on the construction crews. If that wasn't enough, those pesky Boomers are also attacking the machines. I've agreed to help by taking out #b100 Gryphons#k (located in the Highlands) and #bBoomers#k for #b150 #t4000391##k (located in the Badlands) to show them that this city is off-limits!  " />
+        <string name="2" value="Man, what a day. I de-clawed the Gryphons and defused the Boomers. Now the city can continue building in peace. Icebyrd said that they may act up again, so I should come back to see if they've been rowdy..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2002025" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2002024" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000391" />
+                    <int name="count" value="-150" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So glad to see you! I need your help!" />
+            <imgdir name="yes">
+                <string name="0" value="Perfect! We're building the new areas, but we've come under attack from Gryphons, who are destroying my cranes, and Boomers, who are damaging my machinery! It's madness! I'll need you to kick some booty-#b100 Gryphons#k and enough #bBoomers#k to gather #b150 #t4000391##k. You do that for me, and I won't forget it!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Guess we'll have to get it done without you then..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Nice, nice. You got skills, I recognize that." />
+            <imgdir name="yes">
+                <string name="0" value="Here's a little something for your trouble. Even though you beat them back, they'll be back. See me when you're ready for action!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You got jokes, I see. That's funny, cause I know I said #b150 #t4000391##k and #b100 Gryphons#k. Not &quot;way less than that&quot;. Do you understand the words that are coming out of my mouth? Get to it! " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201050" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000391" />
+                    <int name="count" value="150" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400544" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201050" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4923" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

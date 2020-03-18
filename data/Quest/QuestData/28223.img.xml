@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28223.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Reporting the Training Results to Athena Pierce" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201118:##k in #bHenesys#k says you must report the training results." />
+        <string name="1" value="Let's go over to #b#@1012100:##k in #bHenesys#k and report the results." />
+        <string name="2" value="You have successfully completed both training courses with #b#p9201118##k in #bHenesys#k and reported to #b#p1012100##k." />
+        <string name="rewardSummary" value="Exp 600&#xD;&#xA;#Wbasic#&#xD;&#xA;#i2000002:# #t2000002:# #c2000002# 100&#xD;&#xA;#i2000003:# #t2000003:# #c2000003# 100&#xD;&#xA;Able to proceed to 'Delivering the Antique' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="600" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000002" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You've done a fantastic job! I can already tell you'll make a great Bowman." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#b#p1012100##k's house is pretty far, huh? But she won't even consider moving elsewhere because she has an amazing view.\n\nYou better get going now!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Why are you declining? All you have to do is just report to her." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Good to see you again here. You must have successfully completed all your training. " />
+            <imgdir name="yes">
+                <string name="0" value="That was only the first step in becoming a Bowman.\nYou'll face a number of challenges from now on.\n\n" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1012100##k is in #bHenesys#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012100" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28221" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="28222" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

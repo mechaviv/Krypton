@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2382.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="JM From tha Streetz's Take" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="JM seems to know something indeed. Figure out the details from #bJM From tha Streetz#k." />
+        <string name="1" value="JM says that #bMr. Pickall#k would know the most about the Dark Lord and suggests that you talk with him. " />
+        <string name="2" value="Mr. Pickall sounded as if he knew more about the Dark Lord than others." />
+        <string name="rewardSummary" value="EXP 1,500\r\nProceed to 'Mr. Pickall's Advice' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1500" />
+            <int name="nextQuest" value="2383" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Then suddenly, they started stealing things. We're talking about five-finger discounts here and there. But it's weird, because no one seems to know exactly what they stole. Word on tha street is that they recently stole something belonging to the Dark Lord. That's probably the reason he's so eager to catch them...." />
+            <string name="1" value="I find it interesting, too, that the Dark Lord won't say what was stolen. Whatever the case, there are a few people around town who aren't too happy with the Dark Lord for not being able to catch them. They just wouldn't tell you face to face." />
+            <string name="2" value="That's all the info I got for ya. What...? You want to know the Dark Lord's age? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Well, in that case, you oughta talk to #bMr. Pickall#k. He might know the Dark Lord's age." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Did I hear you wrong? If you don't need anything, go away!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="You have something you want to say to me? What is it?\r\n#L0##bHow old is the Dark Lord?#l\n#k" />
+            <string name="1" value="The Dark Lord's age? Heh, funny thing is, you're not the first to ask. Well, before I answer, let me clarify. Some people from out of town think that there's only been one Dark Lord, but that's not the case. The Dark Lord, in fact, is a title that refers to the master of Kerning City. " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="I thought I told you to ask #bMr. Pickall#k for the Dark Lord's age." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2381" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="12" />
+            <int name="subJobFlags" value="2" />
+        </imgdir>
+    </imgdir>
+</imgdir>

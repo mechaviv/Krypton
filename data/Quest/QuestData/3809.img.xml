@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3809.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Legendary Being's Scroll 1" />
+        <string name="parent" value="The Legendary Being's Scroll" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2071010##k of #b#m222000000##k seems to be looking for me for a favor." />
+        <string name="1" value="#p2071010# wanted me to return the #b#t4031430:##k that he had borrowed to the meditation instructor of #b#m250000000##k, #b#p2091001:##k, and borrow #b#t4031431##k from him instead. What? So #p2071010# was only a Master in the beginning level?" />
+        <string name="2" value="As requested by #p2071010#, I returned #t4031430# to #p2091001#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031430" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031430" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello there? You look like a traveler, so let me ask you a question: Do you know of a town called #b#m250000000##k? If you know of the town, I have a small favor to ask..." />
+            <imgdir name="yes">
+                <string name="0" value="Hoh... that's good that you are aware of #m250000000#. It's really a small favor. At #m250000000#, you'll meet a Master named #b#p2091001##k. I want you to return #b#t4031430##k to him and borrow #b#t4031431##k in return. I borrowed it way back when I was training under him, and it took a long time, but I've finally finished the book. hahaha..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You aren't aware of #m250000000#? Well, it's understandable ... it's a small, obscure town to begin with." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I wholeheartedly welcome anyone and everyone that yearns to become the Master. Hmm... isn't that #t4031430#? It's a very, very rare book, and I am surprised that someone actually has it. I had a copy with me, but I lost it ages ago. What? You're going to give me the book??" />
+            <imgdir name="yes">
+                <string name="0" value="You're telling me #p2071010# of #m222000000# told you to give this book to me? Hmmm ... well, now that I think about it, a disciple of mine borrowed this book, and never returned it. So this is that book... I'm glad I got this back." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Hmm? You haven't gone to #b#m250000000##k yet? Give that book to #b#p2091001##k of #m250000000#, and receive #b#t4031431##k in return. Don't worry, I am sure he remembers me, #p2071010#. Haha..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="I wholeheartedly welcome anyone and everyone that years to become the Master. The key to becoming one requires diligent training." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Please be careful! Do you see #b#t4031430##k sitting right here? I put a spell on it so that it'll end up in the hands of its owner at all times. Otherwise, I don't even want to think about where it might end up... Now, please hand this book to #b#p2091001##k of #b#m250000000##k." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031430" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071010" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

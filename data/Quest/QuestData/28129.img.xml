@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28129.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Legendary Tribal Ring: Circle of Ancient Thought" />
+        <int name="area" value="50" />
+        <string name="0" value="Happy to have found the remnant of the Miwok Artifacts, Kopee says she has something to tell me. Let's go and see her." />
+        <string name="1" value="Kopee offered to make me a Legendary Tribal Ring using the belongings of her Miwok ancestors! I should collect every artifact I find and take my findings to Kopee. " />
+        <string name="2" value="Kopee, using the ancestors' belongings, made me a ring. I received a Circle of Ancient Thought from her! She told me she'd make me one every time I bring her an artifact. I'd better take what I find to Kopee." />
+        <string name="demandSummary" value="#i4000509:# #t4000509:# #c4000509# / 1&#xD;&#xA;#i4000510:# #t4000510:# #c4000510# / 3&#xD;&#xA;#i4000511:# #t4000511:# #c4000511# / 2&#xD;&#xA;" />
+        <string name="rewardSummary" value="#i1112407:# #t1112407:# 1&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000509" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000510" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000511" />
+                    <int name="count" value="-2" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1112407" />
+                    <int name="count" value="1" />
+                    <int name="var" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, my dearest friend #b#h0##k, I've been thinking about how I could repay you. And since you seem like an adventurous person, I'll make a unique gift just for you using my special ability. Aren't you curious what it might be?" />
+            <string name="1" value="I have the ability to make a ring using the artifacts that my ancestors have left behind. It's a marvelous ring I make which all the other adventurers will be jealous of! Only I, Kopee, know how to make that ring. But I can only make you the ring if you bring the required materials." />
+            <string name="2" value="What do you say? Would you like me to make you a legendary #bCircle of Ancient Thought#k? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright! You'll be able to find the belongings of my ancestors in the Miwok Artifacts. I need the belongings of my ancestors to make a #bCircle of Ancient#k Thought. Bring me #b3 Bluejay Feathers#k, #b2 Red Bird Feathers#k, and #b1 Old Tree Branch#k." />
+                <string name="1" value="As you may be aware already, the monsters have the #bMiwok Artifacts#k, and you must ask Miwok to retrieve the sealed treasure using the #bEnchanted Scroll#k. Hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh, hm, it's truly a special ring. Are you sure you don't want it? Toh Relicseeker and I are planning to leave here sometime soon. Make sure you come back and see me if you change your mind later. " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah! you've brought back all the materials I need! Alright, it's time for me to show you my special ability. Now, hand me what you've brought." />
+            <imgdir name="yes">
+                <string name="0" value="OOOOAAAAAH!!! Here, a #bCircle of Ancient Thoughts#k has been made just for you. What do you think? You like it? The effect of the ring differs depending on my condition at the time of making the ring. I hope you like it! If you bring me more materials, I can make you another one. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Too bad, but you haven't brought me everything I need to make the ring. I need #b3 Bluejay Feathers#k, #b2 Red Bird Feathers#k, #b1 Old Tree Branch#k in order to make the ring. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201116" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000509" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000510" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000511" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201116" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28128" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="end" value="2009082600" />
+            <int name="interval" value="5" />
+        </imgdir>
+    </imgdir>
+</imgdir>

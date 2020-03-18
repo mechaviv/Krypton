@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28001.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="In Preparation for the Party" />
+        <int name="area" value="50" />
+        <string name="0" value="I better go see Cliff so I can attend the party that takes place in Happyville." />
+        <string name="1" value="I have to gather up 50 Rascal's Snowflakes in order to receive the special potion required to transform." />
+        <string name="2" value="Now that I am ready to dress-up and transform, it's time to party!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032176" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2211000" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ho! You must be here for the party. Yes, it's one of the bigger parties I've ever seen around here. In order to enter the party, however, you'll need something. Will you help me with one thing, so you can get that item you'll need to enter the party?" />
+            <imgdir name="yes">
+                <string name="0" value="Then please gather up 50 Rascal Snowpieces from the monsters. I have a feeling someone that despises Maplemas decided to pull a prank on everyone with that. The monsters have gotten much worse these days..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I guess you are not interested in the party. I understand... the older you get, the less interested you become with the parties." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought everything I need. Great! Let's get this started." />
+            <imgdir name="yes">
+                <string name="0" value="Here's the potion. Drink this, and you'll be transformed into a completely different state for one hour. Of course, you can also switch back to your original state midway through. Enjoy the party!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You may want to hurry up and get me those snowpieces... if you don't want to miss the party." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2001000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032176" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2001000" />
+            <string name="end" value="2010010100" />
+            <int name="dayByDay" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

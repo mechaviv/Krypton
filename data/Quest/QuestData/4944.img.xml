@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4944.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Eat This!" />
+        <int name="area" value="50" />
+        <string name="0" value="I keep seeing these fireplaces around the house. I wonder if they lead anywhere...maybe Edmunds knows?  He mentioned something about a key.  I should press him a bit more." />
+        <string name="1" value="My hunch was right.  The fireplaces are interconnected through the mansion's Chimney; perhaps I can use them as an alternate way of navigating through the house.  However, they're locked and Edmunds holds the only key.  He will reluctantly give me the key if I collect #b20 of each type of Gummy Slimes#k. There's Red, Green, Purple and Orange ones; so I'll need to hunt all over the house to get them.  It'll be tempting to eat them first." />
+        <string name="2" value="Edmunds reluctantly gave me the Omni Key after I collected the Gummy Slimes for him.  With it, I can enter the fireplaces throughout the house and the Chimney to which they all connect. Hmmm... who knows where all these fireplaces lead?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031771" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022247" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022248" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2022249" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="2022250" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="2022251" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Hello there, friend.  Thank you for your previous assistance.  What might I do to assist you?  You wish to know more about this household I presume.\r\n\r\n#L0##bTell me about Sophilia. What happened to her?#l\r\n#L1##bWhere is Jonas now?#l\r\n#L2##bYou don't seem to like Ludmilla much...#l\r\n#L3##bYou mentioned Sophilia had been climbing the Chimney.  These fireplaces throughout the house... Are they all interconnected?#l" />
+            <string name="1" value="Yes.  Many rooms in this house, even Jonas' Workshop, have fireplaces and each are connected to the Main Chimney.  So yes, I suppose they are all interconnected. Or were interconnected, I should say.  Because of what befell mistress Sophilia, we've installed safety grates over each of the fireplaces since.  &lt;sob&gt;  If only we had done so sooner.  No matter... they are locked now and shall remain locked, and I keep the key.\r\n\r\n#L0##bCan I have the key?#l\r\n#L1# Yes... you should have been more careful.  You should throw away the key just to be safe!#l" />
+            <string name="2" value="You want the key to enter the fireplaces?  I don't know... the Chimney can be a dangerous place.  Hmmm... it looks like you can handle yourself.  Perhaps it is too late that we keep it locked.  Tell you what... perhaps if you do one more thing for me, I can be persuaded to give you the key." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="4" />
+                    <string name="0" value="She was the daughter any father would be proud of. Smart, pretty, lovable... whenever she walked in the room, it was like a ray of sunshine.  She was spirited, adventuresome, mischievous.  The entire household loved her, it was a joy to see her playing about the house, always embarking on some adventure of her own design.  Her smile alone could brighten anyone's day!\r\nSophilia loved playing with everything - jewelry, dolls, rocking horses, she'd get her hands on everything she could, that little girl!  Her father was often busy with his work, and her stepmother despised her, so she was often left alone to her own devices.  This house is far from town, and rather than real friends, Sophilia had to make do with her father's toys, and her own imagination.  We played with her when we could, but we were often busy with work, and tending to Master Prendergast's business and Ludmilla's needs.  A few weeks ago, we realized that none of us had seen Sophilia in awhile.\r\nThen one day, a few days thereafter, I... I found her.  No one knew what happened exactly, but it looked like she'd somehow taken to exploring the inside of the house, and had taken a fall while climbing the Chimney.  Of all places for a young child to be!  What on earth could have possessed her to do such a thing?\r\nBut I... I blame myself.  I should've watched her a bit closer.  In fact, now that I think of it, the last few times I saw that sweet girl alive, she kept asking me if I had seen her doll.  I was busy and thought nothing of it as her father had made her so many to play with.  &lt;Sob&gt;  I'm sorry; it pains me to think that a life so dear and sweet could be so easily extinguished." />
+                    <string name="1" value="No one took Sophilia's death harder than Master Prendergast.  He withdrew from Ludmilla, the household, from life.  For weeks he was beside himself with grief, refusing to eat.  He even shut down his Toy Machine and stopped all production on his toys.  A few days ago, he locked himself up in his Toy Workshop at the top of this house, and the noises of his Toy Machine began again.  He began making toys again. &lt;shudders&gt; But, these toys sound nothing like the toys he used to make before.  Can't you hear them?  I fear that his beloved daughter's death may have driven Master Prendergast past his senses.  I am afraid for him, but I am also afraid to go up to the Workshop now because of the noises.\r\nYou look brave.  If you could, please check on him for me, will you?  Master Prendergast's Workshop is located near the top of the house.  It's only accessible through one wing of the house, which is only reachable through the doors at the top of the Library.  I'd be wary-it's a dangerous place, with open machinery.  Please... see how he is.  We are all quite worried about him." />
+                    <string name="2" value="I am not alone in that, my young friend.  Ludmilla, is, shall we say, difficult.  I have been a professional manservant for decades, but she tries even my patience. &lt;trembles with rage&gt;\r\nThe woman orders me around all day, and does nothing but eat, shop, and lay about.  It's like being subject to the whim of a spoiled dog.  However, even that is within my duties... but there are other reasons for my feelings.\r\nWhen I said that Sophilia could brighten anyone's day, I meant anyone except for Ludmilla, that is.  I believe she was jealous of Master Prendergast's affection for her.  She usually ignored young mistress Sophilia but all of us could sense the resentment she bore her.\r\nBut enough, I shall remain the professional, and speak no more on this." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Please... I blame myself enough as it is already.  But perhaps you are right... perhaps it is safer that the Chimney remains inaccessible." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I've heard rumors that the ghost of Sophilia still walks the halls of this house.  Sometimes... I think I even hear her voice coming from her bedroom.\r\n &lt;shivers&gt; " />
+                <string name="1" value="Truth be told, that's the real reason why so many of the household staff have deserted the house.  They say she still wanders about, seemingly still searching for something.  I haven't seen her myself, and I can't imagine what she'd be searching for, but the thought of her not getting what she wants, even if it's only her spirit, well, it's more than I can bear." />
+                <string name="2" value="When Sophilia was alive, she couldn't get enough of Gummy Slimes, her favorite candy.  It's been a long time since we've had them in the pantry. I... I used to keep some in stock just for her.  If she's still 'here', I would feel better if we still had some around.  Bring me #b80 Gummy Slimes, 20 of each color#k (Red, Green, Orange, and Purple), and I'll give you my #dOmni Key#k, which will allow you to unlock the fireplaces and access the Chimney." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Yes... yes.  Now that you mention it, it's wiser that I keep this key.  We wouldn't want to risk another accident, would we?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yes, you've brought them!  I will place these in the pantry at once.  Here is the #dOmni Key#k as promised, albeit I give it to you reluctantly." />
+            <imgdir name="yes">
+                <string name="0" value="Thank you again for all your help.  Please, if you venture into the Chimney, do take care in there.  I couldn't live with myself if we had another accident." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You're back!  And I--oh dear, you don't have #b20 of each type of Gummy Slimes.#k That won't do at all.  Remember, they come in 4 colors.  Please bring me back those Gummy Slimes.  If her spirit is around, I want to make sure it's happy." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Didn't you lose this key somewhere? Some random person gave me this key and told me he found it on the ground. Here you go again." />
+                <imgdir name="yes">
+                    <string name="0" value="You really shouldn't lose this key. I gave you because I trusted you and I want to keep it that way. So be trustworthy!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201080" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022247" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022248" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022249" />
+                    <int name="count" value="20" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="2022250" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201080" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="4943" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+            <string name="end" value="2007103123" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8569.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Ghost-scaring Chinese Firecrackers" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Lunar New Year is dawning upon us, and unfortunately, the town has been invaded by ghosts. In Asian mythology, the firecrackers are set off on New Year's to scare away ghosts. Apparently, the firecrackers made with the mysterious Asian powers have the power to produce explosions loud enough to totally eliminate these ghosts, and bring peace to the start of the new year. Better find Mr. Moneybags in Henesys for more information." />
+        <string name="1" value="The God of Goods uses his special powers to create special firecrackers for these occasions. These firecrackers have the special power of scaring away ghosts with their ear-ringing explosions. \r\n#t4001128# #b#c4001128##k/30" />
+        <string name="2" value="I got a firecracker. Now I can able to repel ghost. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="888" />
+            <int name="exp" value="50" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022281" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4001128" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You made your way here in search of firecrackers to scare away the ghosts? Well... good thing you are here. It's the the New Year's, and the we have been short on the firecrackers because of residents like you that wishes nothing more than to scare away those pesky ghosts. In order to make one, I'll need 30 Powder Kegs. Can you get those for me?" />
+            <imgdir name="yes">
+                <string name="0" value="You can find the Powder Kegs through monsters. Every monster you see will be carrying those around, so get 30 of those for me, and I will make you a batch of firecrackers." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... The New Year's won't be so peaceful with those ghosts roaming around town at will. Let me know if you decide to change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great work getting those powder kegs. Now it's my turn to work my magic and make a special batch of firecrackers for you ..." />
+            <imgdir name="yes">
+                <string name="0" value="Please take this to town immediately. Those ghosts should not be raining on the New Year's festivities. The louder the explosion, the more intimidated the ghosts will be..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have gathered up all the items yet. You can find those powder kegs through every monster you'll see in this world." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9300010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001128" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9300010" />
+            <string name="start" value="2009012100" />
+            <string name="end" value="2009021123" />
+            <int name="interval" value="120" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

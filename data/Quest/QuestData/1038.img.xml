@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="1038.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maria's Letter" />
+        <string name="parent" value="Sam's Request" />
+        <int name="order" value="2" />
+        <int name="area" value="20" />
+        <string name="1" value="Maria is relieved the Snails are gone. Now she can now concentrate on collecting mushrooms. To make sure no one worries about her, she wants you to give this letter to #bChief Lucas#k in #bAmherst#k." />
+        <string name="2" value="After reading the letter, Lucas seemed quite relieved and told you he wanted to introduce you to someone #bwho can train you#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031800" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="40" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000000" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000003" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4031800" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Oh, hey there! You must be new and... What? Sam asked you to clear out some snails for me?" />
+            <string name="1" value="How thoughtful of both of you! You know, delicious mushrooms grow outside town. With the Snails gone, I can now safely walk over and meet up with Sam to pick some." />
+            <string name="2" value="I feel so much better. The thought of those icky Snails, with their slimy bodies and beady eyes and...ugh. I'm grateful you got rid of them, but, er, can you do me another favor?" />
+            <imgdir name="yes">
+                <string name="0" value="If I get too caught up in picking mushrooms and don't return to town until late, Lucas, the chief of this town, gets worried. Please give this letter to #bLucas#k in #bAmherst#k. What? Where's Amherst?" />
+                <string name="1" value="Are you serious? Hehe! How adorable. You're IN Amherst, silly! If you're ever unsure of your location, you can press #bW#k to open the #bWorld Map#k and see where you are." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I understand... I wish you a pleasant journey anyway." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Eh. You look new. How can I help you? Eh? Maria wrote me a letter?" />
+            <imgdir name="yes">
+                <string name="0" value="Ahh, you helped her? Maria's not afraid of much, but she's got Snail-phobia. Now, she can concentrate on picking mushrooms. She makes the most am-a-zing mushroom stew... That's why I worry so much. Without her...no stew!" />
+                <string name="1" value="Seriously, I appreciate what you did. To prove it, I want to introduce you to #basomeone that can help you get stronger.#k Fast. Let me know when you've got some time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You didn't see #bLucas#k, yet? He really cares about my safety. You can find Lucas in Amherst, just look to your #bright#k a bit..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You're new, eh? I'm the chief of Amherst. Hmmm... I wonder how Maria is. She went to collect mushrooms with Sam, but she's deathly afraid of Snails..." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Oh no, you lost the letter! I can write another one, so don't you fret." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="12000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031800" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2103" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="1037" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="10" />
+            <imgdir name="job">
+                <int name="0" value="0" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

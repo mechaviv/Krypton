@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3607.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Opening Nolbu's Gourd" />
+        <int name="area" value="37" />
+        <string name="0" value="I have this seed that Swallow gave me. Should I give this to Nolbu?" />
+        <string name="1" value="I took this seed that Swallow gave me and gave it to Nolbu. When notified that the seed was indeed from Swallow, Nolbu requested that I plant the seed on his rooftop, and when it grows into a gourd, open it and give him whatever that maybe inside." />
+        <string name="2" value="I gave Nolbu the seed that Swallow gave me. Nolbu requested that I plant the seed on his rooftop, and when it grows into a gourd, open it and give him whatever that maybe inside. When the gourd grew and was big enough to open, it contained the warrant of attachment. Greedy Nolbu collapsed and started bawling over his misfortune." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031225" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4031245" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031224" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1072141" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1072122" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1072303" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="-1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4031235" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="What? What do you want from me? If you want to ask me for a favor, then get lost! I don't have time to listen to your 'request'!\r\n#L0# #bFine! I don't want anything to do with you, either!#k \r\n#L1# #bDid you fix a swallow's leg by any chance? \nSomeone told me to give you this seed.#k" />
+            <string name="1" value="A swallow? Right, right. I did fix its legs before. You're telling me this seed is for me? Haha, alright, then. Okay, while you're here with the seed, can you do me a favor and plant it on my roof? And once it yields the gourd, open it and bring me whatever that's inside, okay?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="Get out! Leave!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Haha... wonder what kind of expensive jewelry is inside the gourd ... hey, what are you doing standing there? Go up there and plant the seed right now! What's taking you so long?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're telling me that's too much? This is why the outsiders cannot be trusted..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value=" Okay, so did you open the gourd? What came out of it? How big's the jewelry?\r\n#L0# #bJust this piece of paper.#k" />
+            <string name="1" value="What? That can't be! Give me that paper! What's this? Warrant of attachment? I need to forfeit my possessions to whoever brought this document? THIS CANNOT BE!!!!\r\n#L0# #bSo I get to take all your possessions? What should I take?#k" />
+            <string name="2" value="NO! NO! This represents everything I have!" />
+            <imgdir name="yes">
+                <string name="0" value="Oh my ... I am RUINED! I am BROKE! NOOOO!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" I told you to open the gourd! Why are you empty-handed? Go open it right now!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Hey, the seed dropped!!!" />
+                <imgdir name="yes">
+                    <string name="0" value="Hey! Plant that seed on the roof just right, okay?!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031224" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3606" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3608" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031225" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="37" />
+        </imgdir>
+    </imgdir>
+</imgdir>

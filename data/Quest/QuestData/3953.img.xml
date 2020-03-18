@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3953.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Convince Muhamad" />
+        <string name="parent" value="The Desert Bounty" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="1" value="Go talk to #p2100001#. He says to shush about the nonsense of #o3220001# being a monster. It will take more than words to convince him. Perhaps #b1 bottle of the #t4011008##k that #p2100001# likes might help the conversation. \n\n#i4011008##t4011008# #b#c4011008#/1" />
+        <string name="2" value="You have successfully convinced #p2100001#! He is infamous for being stubborn... Sweet! Report to #p2101010#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Are you here to make an item? Huh? #o3220001#? You're not here to spout that nonsense about #o3220001# being a monster, are you? " />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o3220001#? A monster, huh? What an absurd thing to say! How dare you speak of the guardian of the desert that way! Sheesh, no respect. If you're going to believe that nonsense, get out of here! I have nothing to say to you! How dare you come #bempty-handed#k and..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="What a relief. I've been rather irritable because people keep spewing that ridiculous nonsense about #o3220001# being a monster." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2100001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4011008" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q3953e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2100001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3952" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

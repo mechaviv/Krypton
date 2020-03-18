@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22568.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the Growth Accelerant" />
+        <int name="area" value="7" />
+        <string name="0" value="Go to #p2030012# and make the Growth Accelerant as instructed by the mission assignment you found behind the #p2012034#. #b#p2030012##k is in the #b#m200081201##k." />
+        <string name="1" value="The ingredients for making the Growth Accelerant are #b10 #t4000070#s, 10 #t4000071#s, 10 #t4000072#s, and 10 #t4000068#s#k. Get all of the ingredients and give them to #p2030012#.\r\n\r\n#i4000070# #t4000070# #b#c4000070# / 10#k\r\n#i4000071# #t4000071# #b#c4000071# / 10#k\r\n#i4000072# #t4000072# #b#c4000072# / 10#k\r\n#i4000068# #t4000068# #b#c4000068# / 10#k" />
+        <string name="2" value="You received the Growth Accelerant from #p2030012#. Go back to the secret room and put the Growth Accelerant behind the brick." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000070" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000071" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000072" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4032468" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="The only people who come all the way here are adventurers or those who need my research results. Do you fall under the former or the latter? \r\n#L0##bFormer#l\n#L1#Latter#l\n#k" />
+            <string name="1" value="Ah, how nice to meet someone in need of my research results! It's been a while. So, what would you like to make?\r\n#L0##bGrowth Accelerant#l\n#L1#Hair-Regrowth Medication#l\n#L2#Diet Pills#l\n#k" />
+            <string name="2" value="Growth Accelerant? I've completed my research pertaining to the Growth Accelerant ages ago, but I haven't really made it because the ingredients are so hard to find. Do you know what ingredients are required to make it?\r\n#L0##b10 Cellion Tails, 10 Lioner Tails, 10 Grupin Tails, and 10 Fierry's Wings#l\n#L1#10 Cellion Tails, 10 Lioner Tails, 10 Grupin Tails, and 100 Fierry's Tentacles#l\n#L2#10 Cellion Tails, 10 Lioner Tails, 10 Grupin Tails, and 10 Fierry's Tentacles#l\n#k" />
+            <string name="3" value="I'm glad you know the ingredients. I will make you the Growth Accelerant as soon you bring me the required ingredients. " />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2" />
+                    <string name="0" value="You must be on an adventure. Take some time to rest here if you wish." />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                    <string name="1" value="I'm sorry, but I don't know how to make such thing since I show no signs of balding. Haha." />
+                    <string name="2" value="Hm, it doesn't seem like you need to go on a diet. Exercise is the healthiest way to keep your body in shape." />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="3" />
+                    <string name="0" value="I have no idea what you can make with those ingredients." />
+                    <string name="1" value="I have no idea what you can make with those ingredients." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="I can make it in a second if you just bring me the ingredients. Go on and bring me the #bingredients for the Growth Accelerant#k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I can't make anything without proper ingredients..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've found all the ingredients I need to make the Growth Accelerant. But why do you need the Growth Accelerant anyway? Well, I suppose that's none of my business. I'll make it for you in a few." />
+            <imgdir name="yes">
+                <string name="0" value="If consumed by an animal, it will have unimaginable side effects. It should only be used on plants." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don't seem to have to ingredients for the Growth Accelerant yet. #bYou know what the ingredients are better than I do.#k" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2030012" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000070" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000071" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000072" />
+                    <int name="count" value="10" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4000068" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2030012" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22566" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032468" />
+                    <int name="count" value="-9" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="46" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

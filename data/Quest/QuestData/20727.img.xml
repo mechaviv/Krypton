@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20727.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Sabitrama's Information" />
+        <int name="area" value="15" />
+        <string name="0" value="Maybe #b#p1061005##k of #m105040300# can tell me something useful about #o9300285#..." />
+        <string name="1" value="#p1061005# told me he can give a useful information on #o9300285# if I can eliminate #r200 #o2230100#s#k for him. \n\n#o2230100##r #a207271##k" />
+        <string name="2" value="According to #p1061005#, #o9300285# lives somewhere around the Cave of #o2230100#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="...Hmmm? What is it? Do you need an herb? Do I know anything about #o9300285#? #o9300285#... No, not really, but I did find a #bstrange cave where a doll is left on the ground#k... Does that have something to do with it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Telling you where the cave is shouldn't be a problem... but I need you to do me one thing. Lately I have been gathering up the herbs, and this herb is located at the Cave of Evil Eye, but it's too dangerous a place for me to enter. I'd like for you to... go in there instead and defeat #r200 #o2230100#s#k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I don't know if that's not it, but... maybe others will know?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="It looks like you really cleaned out the #o2230100#s from the cave. Great work there, and now, I'll tell you where the cave is located." />
+            <imgdir name="yes">
+                <string name="0" value="It is located #bsomewhere in the cave of #o2230100##k. I was just running away from those monsters when I came across this cave, so I can't tell you EXACTLY where it's located. It was a cave that you can enter through a #bgiant tree hole#k..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Haven't you defeated #r200 #o2230100#s#k? I can only tell you where it is if you defeat all 200 of them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1061005" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230100" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1061005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20725" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

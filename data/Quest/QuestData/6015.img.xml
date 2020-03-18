@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6015.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Keol's Order #1" />
+        <int name="area" value="10" />
+        <string name="0" value="Keol, the pompous working partner of Moren who is as irritable as they come in all of Maple, wants a word with me. I wonder what he wants to talk about..." />
+        <string name="1" value="Moren's coworker Keol requested that I make a shoe for him. Even though Moren had already accepted me as his apprentice, it seemed that Keol didn't agree with that. Apparently, he wasn't very pleased with Moren that he was willing to divulge his item-making secrets to everyone, regardless of the skill level. Keol asked me to make a pair of shoes for him... that even a Level 1 can make with ease. Seriously... does he think that low of me? Fine, I'll make the finest pair of those he'll ever see!\n\n#i4001174# #t4001174# #b#c4001174# / 1" />
+        <string name="2" value="Moren's coworker Keol requested that I make a shoe for him. Even though Moren had already accepted me as his apprentice, it seemed that Keol didn't agree with that. Apparently, he wasn't very pleased with Moren that he was willing to divulge his item-making secrets to everyone, regardless of the skill level. Keol asked me to make a pair of shoes for him... that even a Level 1 can make with ease. Seriously... does he think that low of me? But even after seeing my work, Keol just dismissed it as little more than adequate. He also commented that I'll need lots of practice, and gave me a measly Basic Enhancement Gem. I don't like this guy... and I definitely don't like his attitude." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031966" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001174" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4250200" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4250100" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="4250300" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="4250400" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="4250500" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="6">
+                    <int name="id" value="4250600" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+                <imgdir name="7">
+                    <int name="id" value="4250700" />
+                    <int name="count" value="1" />
+                    <int name="prop" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So it is you, the new kid that became Moren's new apprentice. That's Moren's biggest drawback, that he offers to teach anyone and everyone the in's and out's of item-making, even a loser like you. And he does all this WITHOUT CONSENTING WITH US." />
+            <string name="1" value="Anyhow! Although the old man may have just carelessly put you as his apprentice, I don't care about that. There's nothing worse than an item-producer that is terrible at making items. Show me how good you are, and I'll make my own decision on whether you're worthy of working with Moren." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="That's a purchase order, the formal document people write up for the item-producer to make. It's an inquiry, a business deal. okay? Keep that in mind. First, I want you to make #b#t4001174##k, which is the very basic of all items. I don't need to tell you the materials for this, right? You may be an item-producer in name only, but it's a still a title nonetheless." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No skills, no perseverence. What a noob." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You made it? Seriously, if you quit midway through, you would have spared your dignity, but of course you're not that smart. Besides... what is this? This is garbage. Since you at least TRIED to make a facsimile of what I asked you to make, we'll put this under &quot;complete.&quot; Now get out." />
+            <imgdir name="yes">
+                <string name="0" value="And here's your fee for making the item. I suggest you go home and practice with that money." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Did you really read the purchase order I wrote for you? Or are you here to tell me you are incapable of making this easy, easy item that you will actually quit? I guess you wanted to at least keep your dignity in tact by quitting. That's a wise choice, I Say. I can't imagine an item-producer that can't even make #b#t4001174##k." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="This is preposterous. Unbelievable. How can you not even take care of the purchase order I gave you? What was Moren thinking? Seriously, un-be-lieeevable." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2110002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4001174" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2110002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6029" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6014" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="111" />
+                <int name="3" value="112" />
+                <int name="4" value="120" />
+                <int name="5" value="121" />
+                <int name="6" value="122" />
+                <int name="7" value="130" />
+                <int name="8" value="131" />
+                <int name="9" value="132" />
+                <int name="10" value="200" />
+                <int name="11" value="210" />
+                <int name="12" value="211" />
+                <int name="13" value="212" />
+                <int name="14" value="220" />
+                <int name="15" value="221" />
+                <int name="16" value="222" />
+                <int name="17" value="230" />
+                <int name="18" value="231" />
+                <int name="19" value="232" />
+                <int name="20" value="300" />
+                <int name="21" value="310" />
+                <int name="22" value="311" />
+                <int name="23" value="312" />
+                <int name="24" value="320" />
+                <int name="25" value="321" />
+                <int name="26" value="322" />
+                <int name="27" value="400" />
+                <int name="28" value="410" />
+                <int name="29" value="411" />
+                <int name="30" value="412" />
+                <int name="31" value="420" />
+                <int name="32" value="421" />
+                <int name="33" value="422" />
+                <int name="34" value="430" />
+                <int name="35" value="431" />
+                <int name="36" value="432" />
+                <int name="37" value="433" />
+                <int name="38" value="434" />
+                <int name="39" value="500" />
+                <int name="40" value="510" />
+                <int name="41" value="511" />
+                <int name="42" value="512" />
+                <int name="43" value="520" />
+                <int name="44" value="521" />
+                <int name="45" value="522" />
+                <int name="46" value="1100" />
+                <int name="47" value="1110" />
+                <int name="48" value="1111" />
+                <int name="49" value="1112" />
+                <int name="50" value="1200" />
+                <int name="51" value="1210" />
+                <int name="52" value="1211" />
+                <int name="53" value="1212" />
+                <int name="54" value="1300" />
+                <int name="55" value="1310" />
+                <int name="56" value="1311" />
+                <int name="57" value="1312" />
+                <int name="58" value="1400" />
+                <int name="59" value="1410" />
+                <int name="60" value="1411" />
+                <int name="61" value="1412" />
+                <int name="62" value="1500" />
+                <int name="63" value="1510" />
+                <int name="64" value="1511" />
+                <int name="65" value="1512" />
+                <int name="66" value="2100" />
+                <int name="67" value="2110" />
+                <int name="68" value="2111" />
+                <int name="69" value="2112" />
+                <int name="70" value="2200" />
+                <int name="71" value="2210" />
+                <int name="72" value="2211" />
+                <int name="73" value="2212" />
+                <int name="74" value="2213" />
+                <int name="75" value="2214" />
+                <int name="76" value="2215" />
+                <int name="77" value="2216" />
+                <int name="78" value="2217" />
+                <int name="79" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

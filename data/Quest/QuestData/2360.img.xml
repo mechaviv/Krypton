@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2360.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shiba's Story" />
+        <string name="parent" value="Visiting The Secret Garden" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="type" value="[Required]" />
+        <int name="autoStart" value="1" />
+        <string name="showEffect" value="0.000000" />
+        <string name="0" value="You've been contacted by Ryden, who had disappeared. Has the time come?" />
+        <string name="1" value="Ryden says that the time has come for you to enter The Secret Garden. He gives you directions to the location and says that you should first meet with #bShiba#k when you arrive at The Secret Garden." />
+        <string name="2" value="Ryden said that it was the appointed time for you to enter The Secret Garden. He gave you directions to the location and said that you should first meet with #bShiba#k when you arrived at The Secret Garden... You met #Shiba#k at The Secret Garden 1st Floor." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3500" />
+            <int name="nextQuest" value="2361" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You've been waiting for awhile now, but the time has finally arrived. Lady Syl wishes to meet with you. Come to Kerning City. I will send you to The Secret Garden.\r\n#L0##bSecret Garden?#l\n#k" />
+            <string name="1" value="Oh, I forgot to mention... #bThe Secret Garden#k is the headquarters for the Dual Blades. It's also home to Lady Syl. And now, you're finally qualified enough to enter! Since it's hidden from others, you'll need to go through me to get there. So, come see me in Kerning City." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="My job is simply to get you in. You can find out more details from #bShiba#k once you're inside The Secret Garden. Legend has it that he is capable of destroying anything he touches..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you still have some unfinished business or what? Remember, you're a Dual Blade and you'll have to enter The Secret Garden sooner or later." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome. You're the one they call #b#h0##k, right? I had received word from Ryden that you'd be coming. But I'm surprised...you look a bit weaker than I had expected. Nevertheless, I've heard about your accomplishments and I must say, I'm impressed. Well, let me tell you a little bit about the Dual Blades." />
+            <string name="1" value="We're a group of people united for one common task: to fulfill the wish of Lady Syl. Lady Syl is convinced that Jin, the current Dark Lord, came into power by assassinating the former Dark Lord.\r\nWith all the speculation surrounding him, and with evidence that seems quite convincing, the current Dark Lord is simply not suited for his role." />
+            <string name="2" value="That is why we believe Jin isn't qualified to be the true master of Kerning City. Our mission is to restore the Dark Lord's position and bring justice." />
+            <string name="3" value="For this mission, we have left everything. We have set aside our shields and picked up our blades. Our days are hard and we get no recognition. But we have chosen to walk this difficult path in hopes that one day, justice will prevail." />
+            <string name="4" value="Well, that's enough from me. You can hear the rest from Yun. #bYun#k should be upstairs. You should go make your way to see her now." />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="My job is simply to get you in. You can find out more details from #bShiba#k once you're inside the Secret Garden. Legend has it that he is capable of destroying anything he touches..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2380" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="19" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

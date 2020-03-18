@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3306.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Re-acquiring Alcadno Cape" />
+        <int name="area" value="44" />
+        <string name="0" value="Oh no...! I lost #t1102136#, the one item that proves that I'm a member of Alcadno. What should I do? I better go talk to the president of the Alcadno Society, #p2111001#." />
+        <string name="1" value="#p2111001# told me he could give me another cape, but this time, I'll have to come up with all the items required to make the cape. As long as I can get another one, gathering the items is not a problem! Those items are #b#t4000021##k and #b#t4021006##k, with #b10,000 mesos#k.\n\n#i4000021##t4000021# #b#c4000021##k/10 \n#i4021006##t4021006# #b#c4021006##k/5" />
+        <string name="2" value="I got Alcadno Cape again. Without it, I can't be accepted as an Alcadno. I better not lose it again." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="money" value="-10000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102136" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="-10" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4021006" />
+                    <int name="count" value="-5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Since you have brought all the items, I'll make you another Alcadno Cape, but... please remember this. Wearing Alcadno Cape signifies that you are a member of Alcadno. The cape is also laden with a special spell. Please don't lose it. It can only be made once every 3 days." />
+            <imgdir name="yes">
+                <string name="0" value="As a proud member of Alcadno, you should handle the cape with utmost pride and care." />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021006" />
+                    <int name="count" value="5" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000021" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3349" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="3304" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="3347" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="3348" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1102136" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3306s" />
+            <int name="lvmin" value="30" />
+            <int name="interval" value="4320" />
+        </imgdir>
+    </imgdir>
+</imgdir>

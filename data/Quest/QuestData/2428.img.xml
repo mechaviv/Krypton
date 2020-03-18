@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2428.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Team Training is Fun! (Party)" />
+        <int name="area" value="10" />
+        <string name="0" value="They say if you train in a group, the journey becomes more fun for everyone. Get details from Power B. Fore." />
+        <string name="1" value="They say if you train in a group, the journey becomes more fun for everyone. The journey is long, but if you work with others, you'll all be able to achieve your goals!" />
+        <string name="2" value="You were able to successfully complete Power B. Fore's training sessions." />
+        <string name="summary" value="Party hunting allows you to complete quests much more quickly than attempting them alone." />
+        <string name="demandSummary" value="#o210100# #a24281#\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="2500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, are you familiar with the concept of #bParty Hunting#k? It's when you venture out to hunt as a group, with the mentality of 'all for one and one for all.' If you train in a party, it will allow you to overcome some tough obstacles.\r\n" />
+            <string name="1" value="This training session will not be easy for you to complete by yourself, but if you team up and train in a party, it should be a piece of cake. Do you want to try it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Alright then. Defeat #b200 Slimes#k. It will not be easy, so try joining a party and hunting with others!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Teamwork is one of the most important aspects of your combat abilities, one that you need to nurture in order to become an excellent adventurer." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great work there. Don't forget, hunting as a party may help you complete your quests much faster." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated all those Slimes yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032113" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="210100" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032113" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2411" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

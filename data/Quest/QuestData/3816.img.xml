@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3816.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making the Body &amp; Physics Medicine 1" />
+        <string name="parent" value="Making Body &amp; Physics Medicine" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="The physical trainer of #b#m250000000##k, #b#p2091000##k, seems to be in need of something..." />
+        <string name="1" value="#p2091000# seemed concerned about his students getting injured while training, and requested to the resident pharmacist #b#p2091002##k to make some medicine using a particular set of ingredients. Apparently, it requires #b10 #t4000281#s#k to make it, so I better start gathering up those items. \n\n#i4000281##t4000281#  #b#c4000281##k/10" />
+        <string name="2" value="#p2091002# told me he'll make #t2022144# for the trainees engaging in physical training." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="자아, 그러니까. 하나, 둘, 셋… 도대체 셀 수가 없잖아. 수련을 하다 다치는 사람이 왜 이렇게 많은 거야? 어려운 수련도 아닌 것 같은데. 뭔가 부족한 걸까? 음… 거기, 자네! 혹시 괜찮다면 수련장의 일을 도와주지 않겠어?" />
+            <imgdir name="yes">
+                <string name="0" value="고맙네. 자네도 해봤다면 알겠지만, 체력단련은 자칫 잘못하면 다치기 쉬워. 요새 수련장의 수련생들 중에서도 다친 사람이 많아진 것이 아무래도 다들 기가 약해진 모양이야. 교관으로서 보약이라도 먹여야겠다는 생각이 드는걸." />
+                <string name="1" value="체력에 좋은 보약은 역시 #t2022144#이잖아? 그걸 먹으면 다들 힘이 나겠지. #t2022144#은 마을에 있는 약사 #p2091002#이 만들 줄 알지. 재료를 구해 놔야 빨리 만들어 줄 테니 #t4000281# 25개를 가지고 가서 #t2022144#을 만들어 달라고 해주게. 그 외의 재료는 #p2091002#이 알아서 줄거야. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="체력단련 때문에 그런 거라면 자네도 보약부터 먹고 하라고 충고하겠어." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000281" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, so... one, two, three ... how am I supposed to count! Why do I see so many students getting injured while training? This is not the most strenuous training around, but... is something lacking here? Hmmm... you over there, can you help me out here?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks. As you may well know, physical training, if not done right, can cause serious damage to your body. Recently, a growing number of students have been injured here, and I think the main reason is because everyone here looks... lethargic. As a trainer, I feel the need to get some medicine for these students." />
+                <string name="1" value="Of course, the best medicine for stamina is #b#t2022144##k! That should do the trick on all these lethargic students. #b#p2091002##k should know how to make it, so I guess I'll talk to him. I need the ingredients to make it, so take #b10 #t4000281#s#k and ask for #t2022144#. The rest of the ingredients will be prepared by #p2091002#." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If that's because you want to train yourself, then I strongly suggest you take the medicine first." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... where did I place that medicinal herb last time? Sigh... I must be forgetting things now that I am getting old... hmm? Weren't you here before because you had a cold? No? #p2091000# sent you here?" />
+            <imgdir name="yes">
+                <string name="0" value="You mean #t2022144#? It must be #p2091000#, then. Send me all the ingredietns that are hard to fine...but in order to make it, I'll need to steam #t4000281# very well... but then again, for physical stamina, nothing beats #t2022144#." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't gone to see #b#p2091002##k yet? Please go get #b10 #t4000281#s#k and request for a #b#t2022144##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Are you not feeling well? Is it the head, back, or leg? Don't be shy, just let me know what's hurting you.." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000281" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <int name="lvmin" value="45" />
+        </imgdir>
+    </imgdir>
+</imgdir>

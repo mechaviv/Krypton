@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6261.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Mysterious Sentence" />
+        <string name="parent" value="Ancient Ice Stone" />
+        <int name="order" value="2" />
+        <int name="area" value="10" />
+        <string name="0" value="So they say #b#p1032001##k is a magic book inscribed with ice and it contains powerful ice element magic. He/She said she's gonna break the spell on the book..." />
+        <string name="1" value="The book contains myterious writing that I can't understand. They say I need to go see  #b#p2020009##k, an elder in Ossyria who has studied magic for a long time...\n\n#t4161023# #b#c4161023# / 1#k" />
+        <string name="2" value="#b#p2020009##k explained about a magic called #r#q2221003##k and told me about a mysterious legend. According to her, she's not sure if this is a real magic book but if it's about #q2221003# it's definitely worth a try." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161023" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="500000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161023" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value=" I've unlocked the magic meaning. This sentence is of particular interest: \r\n#bThose who drink water can overcome the harsh wind.#k" />
+            <string name="1" value="Even though I have studied magic for a long time, I have no idea what is written in here. If it is really casted with a spell, you should pay attention to it! Do you want to know more about the book?" />
+            <imgdir name="yes">
+                <string name="0" value=" Go to see the magician #b#p2020009##k in El Nath. She, the elder of magicians in Ossyria, will know more about it. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmm. You don't want to know about this book? I believe all ice element-based magicians would want such power." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You look pretty strong. What are you doing here? Ah...I know that book! That book has the best ice element-based magic,#r#q2221003##k." />
+            <imgdir name="yes">
+                <string name="0" value=" According to the legend, there is a snow stone in which ancient letters are engraved in the snow mountain in El Nath. By using the piece of ice stone, you can get #r#q2221003##k. This is how to obtain the power within the book." />
+                <string name="1" value=" I have been studying for a long time to learn the extremes of ice element-based magic spells in other words, this skill, #r#q2221003##k. This is my first time to see confirmation of it being possible. Wonderful!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value=" Even if he gets busy as an elder, Robeira never skips his magic training..." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What can I do for you? If you had a book of interest to me, perhaps I could assist you further." />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="Did you lose #b#t4161023##k? *sigh* I used a summoning spell for you. Don't lose it again." />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020009" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161023" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6260" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="120" />
+            <imgdir name="job">
+                <int name="0" value="222" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

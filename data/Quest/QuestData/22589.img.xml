@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="22589.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dangerous Premonition" />
+        <int name="area" value="7" />
+        <string name="0" value="When you come out of the cave, #p1013000# seems restless. Ask #p1013000# if he is okay." />
+        <string name="1" value="#p1013000# says that he has a strange feeling about this and that you shouldn't just leave the island. He may be right. #bTurn around and return to the Peaceful Cave where the Dragon is sleeping#k!" />
+        <string name="2" value="When you talk to #p1013203#, who suddenly appeared in the cave, he attacked and said he doesn't need you anymore. What happened? Was he just using you?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="68100" />
+            <int name="nextQuest" value="22590" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Master! Something is seriously wrong! Why is #p1013203# interested in the island where my fellow creature sleeps and why does he want you to destroy the #o9300391#? How is all this supposed to help Maple World?" />
+            <string name="1" value="I have a bad feeling about this. Something is not right! We must not leave the island right now, master! #bLet's go back into the cave!#k! I need to find out what is going on!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Let's go back to the cave!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Master! Don't let your fingers slip at a time like this! Come on! This is important stuff!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I wonder what's happening. Master, why is #p1013203# trying to attack my fellow creature? And why is he saying that he doesn't need you anymore? I mean, why is he attacking us?" />
+            <imgdir name="yes">
+                <string name="0" value="I have no idea." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Master! Let's go into the #bquiet cave where the dragon sleeps#k! Let's go back in there and find out what's going on!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1013000" />
+            <int name="infoNumber" value="22604" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1013000" />
+            <int name="infoNumber" value="22600" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="22588" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2200" />
+                <int name="1" value="2210" />
+                <int name="2" value="2211" />
+                <int name="3" value="2212" />
+                <int name="4" value="2213" />
+                <int name="5" value="2214" />
+                <int name="6" value="2215" />
+                <int name="7" value="2216" />
+                <int name="8" value="2217" />
+                <int name="9" value="2218" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

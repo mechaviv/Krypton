@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2154.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Hero of the Story" />
+        <string name="parent" value="Legend of the Snail" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="Took Jay's advice and visited Mrs. Ming Ming to ask about Alloy, the author of Legend of the Snail. She said her grandfather's latest letter was about #bWing the Fairy of Ellinia#k, and suggested I go see Wing." />
+        <string name="2" value="Wing the Fairy recalls Alloy as the human who obtained Mano's shell and prolonged his lifespan. Let's ask some more questions." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I'm busy with preparing for the festival, so please make it quick. What? You're talking about great-grandfather Alloy? Did he get himself into trouble? Phew... that's a relief. It's good to know he is healthy and all, but he sometimes gets into trouble while traveling around the sea." />
+            <string name="1" value="I don't know where he is now, because he moves around too much looking for adventures. However, I do have a letter sent from him to me recently. I can show you the letter to you if you'd like." />
+            <imgdir name="yes">
+                <string name="0" value="It seems he is in #bEllinia#k now. Apparently, he boasted in his letter that he became friends with #bWing the Fairy#k. Therefore, he has to be in Ellinia with Wing the Fairy. But then again, he does move around a lot, so he may have left Ellinia already." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Don't blame you if you don't what to know. Could you please move over so I can continue preparing for the festival?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="What... are you? Aren't you human? What's your business here? What? You're asking about Alloy?! " />
+            <imgdir name="yes">
+                <string name="0" value="How can't I NOT know him?! Every fairy in Ellinia knows him! Don't matter if it's good or bad! He's such a disgusting human! He has a loud voice, too talkative, and he puts his nose into everything he can bug into! " />
+                <string name="1" value="Hmm... but he wasn't a bad person at all. Quite funny, in a... strange, sort of way. Underneath the fuss, he was intelligent and wise also. I've heard he got #bMano's Shell#k. Maybe the shell that made him like that? Still, he was a fair guy for a human being." />
+                <string name="2" value="Huh? You don't know what Mano's Shell is? It's the shell of the longest-living snail in Maple World. It's special for its rainbow color. What? You want to see Mano itself? Well... but what for?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't met #bWing the Fairy#k yet, haven't you? You don't have to if you don't want to." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="What are your intentions here in the fairy forest, human?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032106" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012106" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2153" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+        </imgdir>
+    </imgdir>
+</imgdir>

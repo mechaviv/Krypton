@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8036.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Maya's Concerns 3" />
+        <string name="parent" value="Maya's Concerns" />
+        <int name="order" value="3" />
+        <int name="area" value="30" />
+        <string name="0" value="I think we've turned the corner now. Will this be it? I need to ask Maya." />
+        <string name="1" value="To speed up the baby Lioner's recovery, Maya asked me if I could gather some fish for it, FRESH fish at that. Since #b#o5400000##k eats fresh fish, I better gather up #b100 #t4000088#s#k. \n#t4000088#  #b#c4000088##k/100" />
+        <string name="2" value="I've done all I could here. Maya can take care of the rest. I hope the Lioner gets better!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="10000" />
+            <int name="exp" value="3000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="-100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="All it needs now is to regain some strength. \nWe need to feed the baby with some food that'll surely energize it. From what I know... Lioners love fishes, but not just a regular fish, but a fresh one at that. I just don't know where I'll find them, though. It'll also look fishy if you buy a whole bunch from the fish merchant. What should I do?" />
+            <string name="1" value="Oh...oh yeah! #b#o5400000##k! I heard #b#o5400000##k only eats the freshest of the fresh fishes, too. Please get me the fishes that #b#o5400000##k caught. \n (Baby Lioner is slowly waking up, moving ever so slowly.)" />
+            <imgdir name="yes">
+                <string name="0" value="Thank you. I see ... well, it may be really small, but there's no telling how much it can eat, so please gather up #b100 \n#t4000088#s#k for me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You're the only person I can count on. Once this is taken care of, I'll surely reward you for your great deeds. Please help us." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How was it? Did you catch a lot of #b#t4000088##k?" />
+            <string name="1" value="Thank you. Look! The poison is nowhere to be found, and it can actually stand up now. Here, Lionel, a fish that's just been caught. (Eventhough the baby Lioner staggers to the food, once it got there, it started chowing down like no tomorrow.)" />
+            <string name="2" value="Phew. I can finally rest for a little bit. Ah, Lionel is a combination of Lioner and Lionella, a good friend of mine. Isn't it cute? " />
+            <string name="3" value="I'll be taking care of it for the time being. Lionel would also love to meet you, seeing that you're the lifesaver. Please drop by here ever so often. \nI can't thank you enough for saving Lionel's life. This is from the bottom of my heart. Please take it. " />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This baby may eat more than you think. Please gather up #b100 #t4000088#s#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012101" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000088" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012101" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8035" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8232.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Fool's Gold." />
+        <string name="parent" value="Bounty Hunter " />
+        <int name="order" value="2" />
+        <int name="area" value="45" />
+        <string name="0" value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I'll bet that she's willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I'll be on my way to New Leaf City!" />
+        <string name="1" value="I spoke with Lita, and it looks like there a trickster roaming about the Phantom Forest. It caused her quite a bit of trouble-surprising for a warrion of her caliber. I've agreed to help rid the Forest of these nefarious creatures, and as proof, I have to bring her#b 30 of the strange silver clovers#k-she called them #bLucky Charms#k. I'll be on guard-that forest is haunted...or so I've heard..." />
+        <string name="2" value="I ventured into the maddening Phantom Forest and came into contact with a number of the Leprechauns and after a series of battles, got 30 Lucky Charms. I returned them to Lita for the Bounty! She thanked me for my help, and mentioned that I can return to her for more bounty work!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="money" value="100000" />
+            <int name="exp" value="25000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032031" />
+                    <int name="count" value="-30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <string name="0" value="Back already, I see! Let's see how you did...10, 20...30! Excellent work! You've done an excellent service to the citizens of New Leaf City. Please take these mesos as a token of appreciation! Be sure to return once you rest-I have plenty of bounties available!" />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmm, looks like you're short of the 30 Lucky Charms I asked for. I can understand if you want to rest, Just be sure to get them all before you return to me." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201054" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032031" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201054" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8231" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q8232s" />
+            <int name="lvmin" value="40" />
+            <int name="interval" value="2880" />
+        </imgdir>
+    </imgdir>
+</imgdir>

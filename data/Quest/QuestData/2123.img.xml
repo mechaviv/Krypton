@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2123.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Special Assignment" />
+        <string name="parent" value="Assignment of a Sand Crew" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="#p1022002# of #m102000000# seems to have something to tell me..." />
+        <string name="1" value="#p1022002# received a word from a group of strangers to relay a message to me. #b'Go visit #p2012019# of #m200000000#.'#k. #p1022002# tells me he doesn't know anything else." />
+        <string name="2" value="At #m200000000#, I met #p2012019#, carrying a small box around its neck." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="그렇지 않아도 자네를 기다리고 있었네. 수상한 자가 자네에게 전해달라면서 쪽지를 전해 주고 갔어. 그런데 그만 내 부주의로 쪽지가 불에 타버리고 말았네. 하지만 내용은 확실하게 기억하고 있네. 관심있나?" />
+            <imgdir name="yes">
+                <string name="0" value="쪽지엔 이렇게 적혀 있었지. #b'#m200000000#에 있는 #p2012019#를 찾아가시오.'#k 그게 다 였네." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="관심이 없다면 굳이 내용을 알 필요가 없겠지." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="nextQuest" value="2124" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I've been waiting for you. A stranger came by and asked me to pass you this note. Unfortunately, I got careless and wound up burning the note, but I do remember what was written on it. Are you interested in hearing what I can remember?" />
+            <imgdir name="yes">
+                <string name="0" value="The note said this: #b'Pick up #p2012019# in #m200000000#.'#k That was it. I'm sorry my memory isn't better..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="If you're not interested, then there's no point of you knowing what's in it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Bark Bark!! (Wagging its tail in delight.)" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="The note said this: #b'Pick up #p2012019# in #m200000000#.'#k That was it." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012019" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2127" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="18" />
+            <int name="lvmax" value="29" />
+        </imgdir>
+    </imgdir>
+</imgdir>

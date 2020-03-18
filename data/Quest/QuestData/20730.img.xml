@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20730.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Find the Puppeteer!" />
+        <int name="area" value="15" />
+        <string name="0" value="I better report the information gathered in #m105040300# to #b#p1101002##k." />
+        <string name="1" value="#p1101002# told me he's certain the boy carrying the doll is indeed #o9300285#, and assigned me to enter the #bhome of #o9300285##k at the Cave of #o2230100# and defeat #r#p1104000# the #o9300285##k. \n\n#o9300285##r #a207301##k" />
+        <string name="2" value="I was able to defeat #p1104000# the #o9300285#. Afterwards, when I asked #p1101002# of the word &quot;Black Wings&quot; that I picked up during our battle, he revealed that the Black Wings are a group that follows the Black Mage and #p1104000# was also a member as well." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="12000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hmmm... I see. According to your information, the unruly kid carrying around a doll that the residents of #m105040300# saw was indeed #o9300285#. He was hiding himself in the confines of #m105040300# and roamed all over Victoria Island, controlling various monsters." />
+            <string name="1" value="Now that we have finally located the enemy, we won't have to hesitate much longer. I want you to head over to the Cave of Evil Eye, find the #bhome of #o9300285##k and defeat #r#p1104000# the #o9300285##k. I am pretty sure you'll be able to handle this on your own." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="When entering the home, there seems to be a #bpassword#k that blocks the entrance. Well, it's not even a password, since the answer's already out there if you've been gathering all the information. If you're still unsure of the password, then I'll tell you what it is, so start the conversation with me again." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="There's no need to worry or fear. I am giving you this assignment because I am confident that you can take care of this yourself. Believe in yourself. What? That's not ture, I don't only say encouraging things in times like that? Haha, okay, I actually hear that quite often." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You were able to defeat #o9300285#! Brilliant! I knew you'd be up to the task. Hmmm... for someone who just defeated the puppeteer, you look somber. What is it?" />
+            <imgdir name="yes">
+                <string name="0" value="#rBlack Wings#k... Did #p1104000# the #o9300285# really mention that? I see... so he was also part of the Black Wings..." />
+                <string name="1" value="Black Wings are a group of followers of Black Mage. They long for the time when Black Mage controlled the world and would do anything to bring the Wizard back to life and regain control of the world. I can't believe the #o9300285# was also a member of the Black Wings. It looks like they'll become active once more." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="I have told you to head over to the Cave of #o2230100# so you can find the #bhome of #o9300285##k, and defeat #r#p1104000# the #o9300285##k. Did you forget the password? Sigh... you were good with gathering up the information, but you aren't as good at actually following it through." />
+                    <string name="1" value="Do you remember the writings on #p1061006#? The password is XXXXXXX is a genius #o9300285#! What's the word that's goes in there? What else, but his name \r\n#p1104000#? The password is #b#p1104000# is a genius #o9300285##k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101002" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9300285" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20725" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="28" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

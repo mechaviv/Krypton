@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3022.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dances with Balrog and His Recovery" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="19" />
+        <int name="area" value="33" />
+        <string name="1" value="I went to Perion and met up with #bDances with Balrog#k. After I showed him the ring, he conceded that he may have an item that'll provide enough clues to help me ultimately find the Book of Ancient. Of course, he also didn't want to just give it away like that. Since he's spent too much energy trying to help other warriors, he wanted #b2 Power Crystals#k to recover his strength, in return for handing me the item that holds the clue." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8320" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005000" />
+                    <int name="count" value="-2" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3023" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="But I can't just give you that. I also have been giving away a little bit of my power to all the warrior-hopefuls for hundreds of years, but there have been a sudden rush of people wanting to be Warriors, I've used up most of my power as a result. Get me #b2 #t4005000#s#k and I'll help you find #b#t4031056##k. What do you think? Do you want to do it?" />
+            <string name="0" value="Hmm...you need me for something? Wait, isn't that Elmina's #b#t4031053##k...! How did you... really? You're here looking for #t4031056# at the request of Alcaster? #bThe Book of Ancient#k, huh...I've forgotten about that book for a while...I'm sorry to say this, but even I don't know where exactly that book has gone. However, I do have something that may give you a clue as to finding the book's whereabouts." />
+            <imgdir name="yes">
+                <string name="0" value="Good choice. #t4005000# is something you can acquire from the monsters on land. Of course it won't be easy to get them but still, I think you are capapble of doing it. I'll be waiting for you here. Best of luck to you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm...but without my help you won't ever be able to find #bThe Book of Ancient#k...Anyway if you have a change of heart, feel free to come back." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Still haven't found #b2 #t4005000#s#k yet? It's something you can find from the monsters on land from time to time. It won't be easy but I think you are capable of doing it. I'll be waiting for you here. Kepp trying!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4005000" />
+                    <int name="count" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3021" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

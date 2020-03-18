@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28281.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="[Collect] Preparations for the Traditional Ceremony" />
+        <int name="area" value="30" />
+        <string name="0" value="#b#@1020000:##k in #b#m102000000##k has a favor to ask of you." />
+        <string name="1" value="He says he needs #rLeaves#k to use in a traditional ceremony for his ancestors.\nEliminate #rDark Stumps#k and collect 20 #rLeaves#k.\n#rDark Stumps#k can be found all throughout #b#m101030300##k and #b#m101030000##k.\n\nReport back to #b#@1020000:##k in #b#m102000000##k upon completion." />
+        <string name="2" value="You have eliminated #rDark Stumps#k and have collected #rLeaves#k for the traditional ceremony." />
+        <string name="demandSummary" value="#i4000005:# #t4000005:# #c4000005# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="Exp 1,100&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I must begin the traditional ceremony for our ancestors shortly, but I don't have enough #rLeaves#k for the ceremony. I don't have much time.\n\nOh, you look like an adventurer. Won't you help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You can acquire #rLeaves#k by hunting #rDark Stumps#k.\nPlease bring me about 20 of them.\n\nYou'll find #rDark Stumps#k widely spread out from #b#m101030300##k to #b#m101030000##k." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know #rDark Stumps#k are strong, but please! Have some confidence in yourself!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="That was quick. So, wasn't it difficult eliminating them? Those monsters have a very high defense rate. Haha! I feel safe knowing there are adventurers like you out there." />
+            <imgdir name="yes">
+                <string name="0" value="Thanks to your help, I can proceed with the traditional ceremony for our ancestors.\n\nTake care and see you around." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please bring me 20 #rLeaves#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1020000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000005" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1020000" />
+            <int name="lvmin" value="12" />
+        </imgdir>
+    </imgdir>
+</imgdir>

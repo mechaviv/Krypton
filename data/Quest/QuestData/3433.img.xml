@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3433.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting 400 Mateon Tentacles" />
+        <string name="parent" value="The Antidote" />
+        <int name="order" value="4" />
+        <int name="area" value="37" />
+        <string name="0" value="I should go see Rice the Medic at the Omega Sector." />
+        <string name="1" value="Rice said the research has gone well, but realized it required much more materials than the ones I got for him, so I'll have to give him #b400 Mateon Tentacles#k.\n\n#t4000120# #b#c4000120##k/400" />
+        <string name="2" value="Rice the Medic of Omega Sector requested the #b400 Mateon Tentacles#k, and I gathered up all of them. Will this prove to be a turning point on the research? I should go see Rice right about the time when the tentacles run out." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="-400" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2000005" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Welcome back. Great timing, by the way, because I was just about to run out of the tentacles. I want to extract the tentacle in a couple of really interesting ways, but since they are from aliens, it hasn't been easy. Well, do you want to help me gather up some materials one more time?" />
+            <imgdir name="yes">
+                <string name="0" value="Thanks for deciding to help me out once more! The people upstairs, the higher-ranked officials, said thanks to you for your help. The people upstairs have been waiting for the creation of the Antidote to combat the poison attack the aliens feature. I'm sorry, but the material you gathered up for me have run out, so... please gather up #b400 #t4000120#s#k for me. Okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you'd easily Say yes. You must be really busy right now. I can always use some help here, so please talk to me if you ever feel like changing your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back. Did you gather up the #b400 #t4000120#s#k like I asked you to get? Alright, then. I can finally continue on with the Antidote studies. Well, this isn't much, but I'm sure it'll help you on your journey, so please use it wisely." />
+            <imgdir name="yes">
+                <string name="0" value="You really gathered up the finest-quality tentacles available. Do you see the purple liquid that's flowing on the cover? It looks like a lethal poison, and it scares a lot out of me. Alright, now, gotta go back to the studies. Please remember that I may run out of the materials sometime soon, and please keep dropping by, alrght? Good bye!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Please gather up #b400 #t4000120#s#k to fight off the deadly poison and the aliens. With them, I may be able to create a breakthrough Antidote! Hey, by the way, this is to be kept a secret from #b#p2051000##k of Omega Sector Silo, alright?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000120" />
+                    <int name="count" value="400" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2050010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3432" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="40" />
+        </imgdir>
+    </imgdir>
+</imgdir>

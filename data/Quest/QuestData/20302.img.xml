@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20302.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Master of Disguise" />
+        <int name="area" value="15" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="The detailed instructions on searching for the thief will be given by #b#p1101004##k, the Chief Knight of Fire. I better talk to #p1101004#." />
+        <string name="1" value="Apparently, the member of the Black Wings has yet to escape Ereve. If we just search the island thoroughly, we may be able to find the culprit. First, I'll need to visit #b#p1101002##k and receive a #bInvestigation Permit#k, followed by a thorough search of Ereve to find #r#o9001009##k. Once I find him, I'll need to defeat him in a battle and bring back #b#t4032101##k in the process. The problem is that the enemy, being the #o9001009#, is adept at transforming into different persons, so I better talk to each and every one of them to figure out who's real or fake. \n\n#o9001009##r #a203021##k\n#i4032102# #t4032102# #b#c4032102# / 1#k" />
+        <string name="2" value="I was able to defeat #p1104001# the #o9001009#, a member of the Black Wings, and managed to recover #t4032102#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032102" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Wow, you're here! #p1101002# gave you an outline, right? Then let's cut to the chase. Ereve is an island protected by the Shinsoo, which means no force of evil can enter the island. Even if someone did enter, the person would have been noticed right away." />
+            <string name="1" value="The problem is, we were unable to spot the intruder this time. That's because the thief is the #rmember of the Black Wings, #o9001009# #p1104001##k. We detected an intrusion, but we were unable to spot the fake. So while people were panicking, the thief brazenly breezed through and stole the treasure." />
+            <string name="2" value="That is the one item that SHOULD NOT be at the hands of Black Mage! Since #o9001009# has yet to leave Ereve, I want you to join in on the search as well. If you meet #p1101002#, you'll be able to receive a #b#t4032179##k that requires rummaging through Ereve." />
+            <string name="3" value="Okay, now I want you to defeat #r#o9001009##k and bring back the #btreasure#k! I, as well as other members, will also aid you in the search." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="#o9001009# is most likely disguised as one of the Knights. The appearances may change, but the inner self won't, so #rI suggest you keep talking to various Knights until you hear something that doesn't sound like it would come from a Knight. If you do, you can consider that individual #o9001009##k and attack immediately." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are... are you scared? I can understand the fear that's creeping through you... but running away will not help you accomplish a single thing. Please think about this once more." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Were you able to defeat #o9001009# #p1104001#?? Wow, that is just incredible! You are indeed an incredible Knight!" />
+            <imgdir name="yes">
+                <string name="0" value="The Empress is very proud of your work!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Were you not able to find #o9001009# yet? #o9001009# has yet to leave Ereve, so receive the #bInvestigation Permit#k first from #b#p1101002##k, then conduct a search of your own. Sooner or later, you'll find #r#o9001009##k. I need you to really eliminate it and bring back the treasure!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Were you not able to find #o9001009# yet? #o9001009# has yet to leave Ereve, so receive the #bInvestigation Permit#k first from #b#p1101002##k, then conduct a search of your own. Sooner or later, you'll find #r#o9001009##k. I need you to really eliminate it and bring back #b#t4032102##k!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1101004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032102" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9001009" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1101004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20300" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="1210" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

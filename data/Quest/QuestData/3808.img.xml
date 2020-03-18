@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3808.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Intruder - The Herb Farm 2" />
+        <string name="parent" value="Intruder - The Herb Farm" />
+        <int name="order" value="2" />
+        <int name="area" value="44" />
+        <string name="0" value="Apparently, there was a thief at #p2092000#'s herb farm at #m251000000#..." />
+        <string name="1" value="#p2092000# claimed that someone had entered his herb farm and stole some of his herbs. #p2092000# seemed confident that it was the work of the red-nosed pirates, and asked me to defeat #r#o7130104##k and #r#o6130208##k.\n\n#o7130104#  #r#a38080##k \n#o6130208#  #r#a38081##k" />
+        <string name="2" value="I was able to defeat #o6130208# and #o7130104#. Now that I have apprehended the suspects, #p2092000# should enjoy a nice, long sleep tonight." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="자네 모험가이지? 그럼 해적 퇴치 같은 일도 잘 하겠군. 안 그런가? 제발 저 해적단 녀석들을 어떻게 좀 해 줘! " />
+            <imgdir name="yes">
+                <string name="0" value="무슨 말이냐고? 전에 #o5120501#가 밭에 들어왔잖은가? 그거에 신경을 쓰면서 인삼을 지키는 동안 웬 녀석들이 밭에 들어와서 다른 약초들을 훔쳐갔어! 그게 어떻게 기른 건데 그걸! 분명 해적단 녀석들의 소행일 거야! " />
+                <string name="1" value="이 해적 녀석들! 여기에 소굴을 만든 것도 못마땅한데 약초를 훔쳐가다니! 자네가 해적 #o6130208#와 #o7130104#을 혼내주게! " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="모험가라면 강할텐데 힘 없는 마을 사람을 돕지조차 않는다니! 그러면 저 해적들과 다를 게 뭔가?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="33500" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You're a traveler, right? Then you must be pretty good at fighting against pirates. Now please do something against them!" />
+            <imgdir name="yes">
+                <string name="0" value="What am I saying? Well, remember last time, a whole bunch of #o5120501#s invaded my farm? While I was busy protecting my farm against them, someone else walked into the farm and stole other herbs!! You'll never understand how painstaking it was to grow and nurture those herbs. I am pretty sure it's the work of those pirates!" />
+                <string name="1" value="Those pirates!!! It angers me greatly that they made a huge mess out of this farm, but for them to steal the herbs... they will pay for this! I want you to teach those pirates a lesson or two by defeating #r80 #o6130208#s#k and #r80 #o7130104#s#k!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You call yourself a traveler when you are unwiling to help those in need? I don't see the difference between you and the pirates." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh! Thank you for eliminating both #o6130208#s and #o7130104#s. I'm sure they learned the lesson; they won't do it again... I sure hope so. Great work there!" />
+            <imgdir name="yes">
+                <string name="0" value="Those pirates only stole the most expensive herbs available. At least they have an eye for the herbs... but those herbs aren't for them! Those were for #p2091002#. I'll never get these robbed again. Ever." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You haven't eliminated #r#o6130208#s#k and #r#o7130104#s#k? They are the ones responsible for stealing my herbs, so I want you to take care of them. 100 each." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You haven't eliminated #r#o6130208#s#k and #r#o7130104#s#k? They are the ones responsible for stealing my herbs, so I want you to take care of them. 100 each." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2092000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7130104" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6130208" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2092000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3807" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

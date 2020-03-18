@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21766.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Suspicious John" />
+        <int name="area" value="6" />
+        <string name="0" value="#p1002001# has noticed that #p20000# has been acting weird lately. You'd better head over to Lith Harbor and talk to #p1002001# to see what's up." />
+        <string name="1" value="Apparently, #p20000# started displaying some strange behavior ever since he started carrying some wooden box with him. Your task now is to investigate the wooden box that's next to #p20000#." />
+        <string name="2" value="As you promised to #p20000#, you did not reveal to #p1002001# that the wooden box contained medication for arthritis." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="You find out the secrets of the wooden box?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21767" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21766e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002001" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21706" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21766s" />
+            <int name="lvmin" value="13" />
+            <imgdir name="job">
+                <int name="0" value="2100" />
+                <int name="1" value="2110" />
+                <int name="2" value="2111" />
+                <int name="3" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

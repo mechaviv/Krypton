@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2364.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Suri the Owl" />
+        <int name="area" value="30" />
+        <string name="0" value="Lady Syl has something she wants to propose to you." />
+        <string name="1" value="Lady Syl proposes that you develop your skills. She tells you to visit Suri the Owl, who is located at The Secret Garden Basement. She says that although the owl can communicate with humans only by using vocabulary cards, he is an expert at training Dual Blades. Training through an owl...? " />
+        <string name="2" value="Lady Syl proposed that you develop your skill. She told you to visit Suri the Owl located at the Secret Garden Basement. She said that although the owl can communicate with humans only by using vocabulary cards, he is an expert at training Dual Blades. You met the owl, who seems normal, whatever that means..." />
+        <string name="demandSummary" value="Talk to #bSuri#k located at The Secret Garden Basement." />
+        <string name="rewardSummary" value="EXP 3,000\r\nProceed to 'Suri's Beginner Training 1' quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="3000" />
+            <int name="nextQuest" value="2365" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Now that you've taken your first step as a Dual Blade, why don't you develop your skills?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Down in The Secret Garden Basement, you'll find my pet owl, #bSuri#k. Although he can't talk, he can communicate by using cards with vocabulary words. He is an excellent training instructor, so please visit him to develop your skills." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose you can train on your own, but that's usually very difficult for most..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Hoot? Hoooooot!!\r\n#L0##bWhat's he saying?...#l\n#k" />
+            <string name="1" value="Hoot Hoot Hoot!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                    <int name="flip" value="1" />
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Down in The Secret Garden Basement, you'll find my pet owl, #bSuri#k. Although he can't talk, he can communicate by using cards with vocabulary words. He is an excellent training instructor, so please visit him to develop your skills." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057003" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1056000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2363" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="20" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3113.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Talk with Eliza" />
+        <string name="parent" value="Goddess's Pet" />
+        <int name="order" value="3" />
+        <int name="area" value="33" />
+        <string name="1" value="#bEliza#k was angry when she heard that her goddess was kidnapped right after she awoke, and she couldn't control her anger. Now she realizes that it was foolish of her, and regrets being angry. #bEliza#k herself is at peace now, but her #rClone#k, which was created through her angry impulses, is still roaming about and attacking innocent people. #bEliza#k asks me to defeat the #rEliza#k up in #b Stairway to the Sky II#k. \n\n#o8220000# #r#a31131##k" />
+        <string name="2" value="#bEliza#k is relieved of hearing that her clone is no longer able to do any harm." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="384000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Human... I now know why you have come to meet me. You are a brave and strong being, and you have come to calm me down so that I will not to harm to others. " />
+            <string name="1" value="I couldn't control my rage when I heard that my Goddess had been kidnapped right after I awoke from my sleep. That rage has brought about this tragedy. Now I know how foolish I was. I do not wish to hurt anyone else. However..." />
+            <string name="2" value="My angry impulse has created #rclones#k of myself that feel nothing but hatred inside. They look and have powers just like me, but their hearts are filled with hate. Since these are creations of my own rage, I cannot eliminate them. instead only confine them in #bStairway to the Sky II#k." />
+            <string name="3" value="They will surely do some damage if we keep them there. Strong and brave human, would you please eliminate the shadows of #rEliza#k for me and for your race? I would be obliged to you if you would. " />
+            <imgdir name="yes">
+                <string name="0" value="Thank you making a difficult decision. I will wait here until you eliminate all those shadowy Elizas." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="The task may seem to be difficult, but I cannot hold you to it." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You've defeated my shadow. Thank you." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated all my shadows yet. They may have my name, #rEliza#k, but their hearts are filled only with rage. Please go eliminate them all. " />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2012026" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="8220000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2012026" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3112" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="83" />
+        </imgdir>
+    </imgdir>
+</imgdir>

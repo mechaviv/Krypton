@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28444.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="T-1227's Mission: Eliminate Iruvatas" />
+        <int name="area" value="45" />
+        <string name="0" value="T-1227 has prepared today's mission for you.\r\nEliminate 50 Iruvatas.&#xD;&#xA;" />
+        <string name="1" value="T-1227 says that if you successfully complete this mission, you may be able to earn Iruvata Booster.\r\nEliminate 50 Iruvatas.&#xD;&#xA;" />
+        <string name="2" value="You have successfully completed today's mission from T-1227.\r\nYou eliminated 50 Iruvatas.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="Contact me when you are ready." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201101" />
+            <string name="endscript" value="android_GL" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7120109" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201149" />
+            <int name="infoNumber" value="28440" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="28444" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="10080" />
+        </imgdir>
+    </imgdir>
+</imgdir>

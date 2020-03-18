@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3807.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Intruder - The Herb Farm 1" />
+        <string name="parent" value="Intruder - The Herb Farm" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2092000##k, the owner of the herb farm at #b#m251000000##k, seemed to be in trouble..." />
+        <string name="1" value="#p2092000# seemed very concerned by the fact that a bunch of #b#o5120501#s#k have invaded the herb farm, pretending to be Ginsengs, and sucked up all the nutrients from the fertile soil. He wanted me to eliminate #r80 #o5120501#s#k so his Ginsengs can grow in his farm.\n\n#o5120501#  #r#a38071##k" />
+        <string name="2" value="I managed to eliminate the #o5120501#s that have made life miserable for the Ginsengs at the herb farm in #p2092000#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="이런 이런. 새로 수확한 인삼이 이렇게 비틀어져서야 어디에 쓰겠어. 쯧쯧. #p2091002#이 뭐라고 하겠구만. 으응? 왜 그러냐고? 흐음… 혹시 인삼과 #o5120501# 구분할 줄 아느냐? 그것도 모르진 않겠지? 그러면 이 일을 도와줘야겠다." />
+            <imgdir name="yes">
+                <string name="0" value="별로 대단한 일은 아니야. 며칠 전부터 계속 인삼을 기르는 약초밭에 #o5120501#들이 인삼인 척 하고 들어와서 양분을 빼앗고 있거든. 그러니 인삼들이 잘 클 수 있도록 #o5120501# 100마리를 퇴치해 달라는 거야. 인삼과 #o5120501#만 구분할 줄 알면 할 수 있는 간단한 일이지. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="인삼과 #o5120501#도 구분할 줄 모르는 거냐? 젊은 녀석이 눈이 그렇게 안 좋아?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="18300" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sigh... what's with this crop of ginseng? They aren't fresh at all... all twisted and limp. This is no good... #p2091002# will probably Say something about this... Huh? Why am I like this? \nHmmm... can you tell the difference between ginseng and #o5120501# by any chance? Surely you know how to distinguish the two, right? Then you'll need to help me out here." />
+            <imgdir name="yes">
+                <string name="0" value="It really isn't much. A few days ago, a group of #o5120501#s#k went into my herb farm, disguising themselves as ginsengs, and sucked away all the nutrients from the fertilizer, and they've been doing that ever since. My request here is that I want you to take out #r80 #o5120501#s#k so that the ginsengs will grow as planned, not like the crop I have here right now. It's really easy, as long as you can distinguish the two." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Can't you tell the difference between ginseng and #o5120501#?? Someone as young as you should be able to SEE the difference between the two!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh ... you defeated all the #o5120501#s. Well done!" />
+            <imgdir name="yes">
+                <string name="0" value="I may have to set up a wall around my farm or something. It seems like everyone wants a piece of these herbs. Sigh..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You still haven't defeated #r100 #o5120501#s#k? This shouldn't take long at all..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2092000" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120501" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2092000" />
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

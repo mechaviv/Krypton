@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3360.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Verifying the Password" />
+        <string name="parent" value="The Secret, Quiet Passage" />
+        <int name="order" value="3" />
+        <int name="area" value="44" />
+        <string name="1" value="#p2111006# said he came up with the master code that'll allow me to gain free access to the Secret Passage, and gave me a long list of numbers. Sigh... this is so complicated, I'll have to write it down somewhere." />
+        <string name="2" value="When I entered the master key #p2111006# gave me, the Secret Passage opened up, and now I have unlimited access to the passage. Hmm... he's much more helpful than I thought." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="info" value="0" />
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="info" value="0.000000" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="How was it? Were you able to gain access to the Secret Passage? I knew it. My brain's still working well... even though I don't have one now." />
+            <imgdir name="yes">
+                <string name="0" value="The existence of the Secret Passage should not be made public to others. Why? Because inside the Secret Passage, you'll be led to... uhm, never mind. You didn't hear that from me. Anyway, keep this a secret, okay?&#x9;" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2111006" />
+            <imgdir name="infoex">
+                <imgdir name="0">
+                    <string name="value" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2111006" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3359" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q3360s" />
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

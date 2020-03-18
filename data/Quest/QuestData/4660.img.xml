@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4660.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Educating Smart Pets (Pet Summon)" />
+        <int name="area" value="50" />
+        <string name="0" value="You have a very smart pet with you. Please take it to Bartos the pet instructor. With his guidance, the pet may do something different." />
+        <string name="1" value="In order to request Bartos for help in teaching the evolving pet new movements, I'll need to bring him his favorite drink. " />
+        <string name="2" value="I gave Bartos the drink and taught the evolving pet. I can now order the pet to come right next to me. Type /petcome to have your pet come to you." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="petskill" value="128" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031993" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hoh... you seem to have yourself quite an intelligent pet. Did you bring it here for my training? Well, with a little of the training, I can teach the pet to move right next to you in an instant, wherever it may be at the moment. Are you interested?" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, good decision. You should also know that there's nothing's that's free. If you train others as much as I do, you tend to get a bit thirsty. Can you get me a drink? I have this drink that I really love, so much so that the merchants know exactly what i want. I'll be waiting." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Fine, if you don't want to. I don't think you fully understand the importance of education. Don't you want your pet to reach its full potential? Anyway... if you ever change your mind, let me know." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you bring the drink? Ahhh...just thinking about drinking this already puts me in a much better mood. Okay, now shall we start the session?" />
+            <imgdir name="yes">
+                <string name="0" value="Hey what do you think? That was fast, wasn't it? Marvel at my awesome training skills... and now, your pet will be that much more obedient to your commands. All you need to do is Say /petcome, and your pet will slide up next to you." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="What? You didn't bring the drinks yet? I am thirsty...and I can't teach without the drink." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1012006" />
+            <int name="petRecallLimit" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4031993" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000048" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="5000049" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5000050" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5000051" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="5000052" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="5000053" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1012006" />
+            <int name="petRecallLimit" value="1" />
+            <imgdir name="pet">
+                <imgdir name="0">
+                    <int name="id" value="5000048" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="5000049" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="5000050" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="5000051" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="id" value="5000052" />
+                </imgdir>
+                <imgdir name="5">
+                    <int name="id" value="5000053" />
+                </imgdir>
+            </imgdir>
+            <int name="interval" value="0" />
+        </imgdir>
+    </imgdir>
+</imgdir>

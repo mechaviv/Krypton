@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3815.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Finding the Ingredients for Tae Sang" />
+        <int name="area" value="44" />
+        <string name="sortkey" value="14" />
+        <string name="0" value="#b#p2091002##k of #b#m250000000##k was apprently searching for a better ingredient for medicines." />
+        <string name="1" value="#p2091002# told me that he heard rumors that at the lair of the pirates at #m251000000#, there are some herb concentrates available that cannot be obtained in ground. He asked me if I could get #b50 #t2022132#s#k and #b100 #t2022131#s#k for him.\n\n#t2022132#  #b#c2022132##k/50\n#t2022131#  #b#c2022131##k/100" />
+        <string name="2" value="I found 50 #t2022132#s and 50 #t2022131#s, and gave them to #p2091002#." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022132" />
+                    <int name="count" value="-50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022131" />
+                    <int name="count" value="-100" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="50" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Formulating a medicine is much different from building a weapon or creating spells. Medicine is used to fix the human beings. It takes utmost concentration to create a stellar medicine. There's no way you can nonchalantly make these. Which is why ... you there, would you like to aid in my quest to create a potent ingredient for medicines?" />
+            <imgdir name="yes">
+                <string name="0" value="Hahaha... you definitely have your head screwed on the right place. Okay, now you'll have to go see #bLord Pirate#k. What? Why the pirate ship? Well, from what I hear, apparently there are ingredients on the pirate ship that just cannot be grown on a normal ground. They are called #b#t2022132##k and #b#t2022131##k, and supposedly those are the ingredients that contain concentrated levels of the effects of the regular herbs." />
+                <string name="1" value="But other potent ingredients like 100-year-old bellflowers and ginsengs are too powerful to be concentrated. They can only be concentrated by being neutralized by the ocean. Unfortunately, there's no ocean around here to find them, but the pirate ship, which has gone through ample amounts of ocean water, should be a fertile &quot;ground&quot; for those ingredients." />
+                <string name="2" value="Thus, I would like for you to enter the lair of Lord Pirate and collect #b50 #t2022132#s#k and #b100 Ginseng Concentrates#k. It's not easy to enter the lair, but I want you to put your best effort in it, since this is to create powerful medicines for people." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="These ingredients are used to fix people. I am sure you've taken thousands of potions, so you of all people should understand the importance of these ingredients. Why would you decline to help me on this?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Is this really #t2022132# and #t2022131#?! Ohhh, good!! This smells much different than a regular bellflower or a ginseng. This must be much more powerful than those, too! Great work!" />
+            <imgdir name="yes">
+                <string name="0" value="I'm sure a much more powerful medicine will be made with these. No Gong and Do Gong should be happy with these." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="So you have not gathered up #b50 #t2022132#s#k and #b100 #t2022131#s#k? Well, it's understandable if you're fearing the #blair of Lord Pirate#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022132" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022131" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091002" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

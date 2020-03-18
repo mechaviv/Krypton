@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21302.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Making Red Jade" />
+        <int name="area" value="6" />
+        <string name="type" value="[Job Adv.]" />
+        <string name="0" value="You think you may have to make a new #t4032312# for #p1201002#, but you don't know where to start, since you don't know what to use or how to make it. Maybe #b#p1201000##k knows a thing or two?" />
+        <string name="1" value="#p1201000# tells you to head over to #m140030000# and use the Mirror of Desire to discover how to make a #t4032312#. That seems to be the only possible solution. Oh well…you should go to #b#m140030000##k.\r\n\r\n#i4032312# #t4032312# #b#c4032312# / 1#k " />
+        <string name="2" value="You successfully made a #t4032312#. Thankfully, #p1201002# seemed quite satisfied with it. Having recovered the powers of the Red Jade, #p1201002# unlocked more abilities for you." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="What happened this time? Hmmm, so you need to make the polearm's gem yourself? My goodness, that weapon definitely has an attitude, but you can't ignore its pleas either...." />
+            <string name="1" value="#t4032312# is probably a gem that has the power to exponentially expand the weapon's powers, which means you'll have to cater to its wishes and make it a #t4032312# as it wishes." />
+            <string name="2" value="What? You don't know how? That's easy! This is directly related to you, you have a specific target, and you even have a specific wish. That means you can use the #bMirror of Desire#k! Go ahead!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You remember where the Mirror of Desire is, right? Head west, out of town, until you reach a dead end near the ice cliff, inside #m140030000#. There, your task is to find out how to make a #b#t4032312##k, and then make it. The #bMaker Skill#k should come in handy for you." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="…Eh? What is it? Are there side effects to using the Mirror of Desire? Or do you really not like anything that seems to have to do with the occult? I refuse to put up with whiners! " />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Still not able to find what the polearm wanted? I'm telling you, the Mirror of Desire will tell you exactly where it is! Don't tell me you forgot how to get to #m140030000#. Just head all the way west past town." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="A master who'd forgotten how to make a #b#t4032312##k…?! I can't believe I am owned by this 'hero.' No reason to dream, no reason to hope… *Sigh*" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032312" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21302e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1201000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21301" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

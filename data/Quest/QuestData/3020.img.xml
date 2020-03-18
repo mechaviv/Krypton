@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3020.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Collecting Wolf Skin" />
+        <string name="parent" value="In Search of the Book of Ancient" />
+        <int name="order" value="17" />
+        <int name="area" value="33" />
+        <string name="1" value="#bScadur#k mentioned that the price of wolf skin has gone up the roof these days, and wanted to make a deal with me. 80 Hector Tails and 80 White Fang Tails will be enough for him to return the ring to me, along with telling me everything he knows regarding the situation. .\n\n#t4000051# #b#c4000051##k/80\n#t4000052# #b#c4000052##k/80" />
+        <string name="2" value="Being satisfied with Hector Tails and White Fang Tails, Scadur said he would give the ring back." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="9450" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2000004" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="-80" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000052" />
+                    <int name="count" value="-80" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="3021" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hahaha ... Looks like I'll be taking care of this ring for a while. Don't try to wrestle it away from me, because I've been fighting monsters for a long long time and you can't even come close to beating me. If you really want it back, however, we can make a deal. Don't worry, I won't ask you to do anything ridiculous. What do you think ... do we have ourselves a deal?" />
+            <string name="1" value="Alright, the deal is simple. Recently the price on the wolf skin has skyrocketed, but it's been tough hunting them since it's that time of the year where they get very aggressive. If you get me #b80 #t4000051#s and 80 #t4000052#s#k, I'll return the ring AND tell you everything I know about it. Don't make me wait too long. Get me those ASAP!" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You brought #b80 #t4000051#s and 80 #t4000052#s#k like you promised. Here's the ring like I promised. Also, since you did me a big favor, here's an item for you. I don't really need it now. Before that, though, check and see if you have any room on your use inventory." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Recently the price on the wolf skin has skyrocketed, but it's been tough hunting them since it's that time of the year where they get very aggressive. If you get me #b100 #t4000051#s and 100 #t4000052#s#k, I'll return the ring AND tell you everything I know about it. Don't make me wait too long. Get me those ASAP!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020007" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000051" />
+                    <int name="count" value="80" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000052" />
+                    <int name="count" value="80" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020007" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3019" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

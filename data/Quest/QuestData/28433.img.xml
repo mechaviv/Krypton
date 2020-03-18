@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28433.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="How to find friends" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="The Maple Administrator says she wants to tell you how to find friends." />
+        <string name="1" value="Try finding friends to make your MapleStory experience even better!" />
+        <string name="2" value="Hooray! You've added a friend. Make more friends to enrich your MapleStory experience." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <imgdir name="no" />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Have you found a friend yet? Open the Friends window (hotkey: R) and press the Find Friends button to search for friends...or use the Friend Finder Megaphone!" />
+            <imgdir name="yes" />
+            <imgdir name="lost">
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010000" />
+            <string name="startscript" value="q28433s" />
+            <int name="lvmin" value="11" />
+            <int name="normalAutoStart" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

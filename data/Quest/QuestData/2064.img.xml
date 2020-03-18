@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2064.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Estelle's Request" />
+        <string name="parent" value="Mrs. Ming Ming's Second Worry" />
+        <int name="order" value="2" />
+        <int name="area" value="30" />
+        <string name="1" value="I ran into #bEstelle#k near Ellinia. She was making a necklace for her mother's birthday present. If I can get her #b1 Garnet#k, she was willing to give me the special sauce." />
+        <string name="2" value="I got #b1 Garnet#k for Estelle, who I met near Ellinia, for making her mother's birthday present. She gave me #bEstelle's Special Sauce#k. I better collect other materials and return to Mrs. Ming Ming." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021000" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2076" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="How may I help you? Ahh ... my patented special sauce huh? You need that for the big feast for the Carnival? Hmmm ... my mom gave me this, so I don't know if I should give this to a stranger like you, unless you can do me a favor ..." />
+            <imgdir name="yes">
+                <string name="0" value="The 'favor' is pretty simple actually. My mom's birthday is coming up in a few days. I'd love to get her a pretty #t4021000# necklace, but I'm seriously lacking #t4021000#. Can you get me 1 #b#t4021000##k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's not that difficult a favor, not something you'd say no to without even hearing about it one bit. If you really need my special sauce, then please come talk to me. I'll see you around." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I'd love to get my mom a pretty #t4021000# necklace for her birthday that's coming up in a few days. Can you get me 1 #b#t4021000##k in exchange for the special sauce?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1032105" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4021000" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1032105" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2063" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="21" />
+        </imgdir>
+    </imgdir>
+</imgdir>

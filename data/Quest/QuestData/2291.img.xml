@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2291.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Admission to the VIP Zone" />
+        <int name="area" value="30" />
+        <string name="0" value="Could it be...? Is it really the VIP Zone in Kerning Square? Rush over to #bJune#k!" />
+        <string name="1" value="He says he'll let you enter the VIP Zone if you bring him VIP Tickets. He says you can get them from any monster in Kerning Square." />
+        <string name="2" value="He says the VIP Zone can be entered once every 30 minutes. Go see #bJune#k when the 30 minutes are up." />
+        <string name="demandSummary" value="#i4032521:# #t4032521:# #c4032521# / 10&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Move out of the way! This isn't a place just anyone can enter! What? You really want to go in here?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Fine. Then bring me #b10 VIP Tickets#k from the monsters in Kerning Square. I'll let you enjoy the VIP Zone for exactly 10 minutes. That doesn't mean that you can bring me 5 tickets and enter for 5 minutes... You must bring me 10 tickets, okay?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Then move out of the way." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052125" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032521" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q2291e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052125" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2290" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="35" />
+            <int name="lvmax" value="50" />
+            <int name="interval" value="30" />
+        </imgdir>
+    </imgdir>
+</imgdir>

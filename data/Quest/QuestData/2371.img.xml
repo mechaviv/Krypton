@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2371.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Yun" />
+        <int name="area" value="30" />
+        <string name="0" value="Yun seems to be very worried about Lady Syl. Go see Yun." />
+        <string name="1" value="Yun says that Lady Syl seems to have lost all will after reading the former Dark Lord's diary. Therefore, she would like to give Lady Syl a gift. Obtain a Tulip from the Fire Boars and give it to Yun." />
+        <string name="2" value="Yun said that Lady Syl seemed to have lost all will after reading the former Dark Lord's diary. Therefore, she wanted to give Lady Syl a gift. You obtained a Tulip from the Fire Boars and gave it to Yun." />
+        <string name="demandSummary" value="#i4032629:# #t4032629:# #c4032629# / 20&#xD;&#xA;" />
+        <string name="rewardSummary" value="EXP 15,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="15000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032629" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hello, #b#h0##k... Ever since Sister Syl read the former Dark Lord's diary, she's confined herself to her room and won't come out. I guess she needs time to figure things out. Before the Dark Lord's passing, Sister Syl and Jin were very close... She was torn and confused when he suddenly became the object of her wrath." />
+            <string name="1" value="Now, she's discovered that her anger was all based on false beliefs... I am worried that Sister Syl will lose all motivation for life. I'd like to help her by giving her a gift. Would you kindly help me?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Sister Syl enjoys potted plants, but she also loves Yellow Tulips. They say that the Fire Boars at the Burnt Lands also like Yellow Tulips and often carry them around. Will you get #b20 Yellow Tulips#k from the Fire Boars for me?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I'm so worried, sister Syl hasn't been eating anything." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow! I'm sure these fresh tulips will help Sister Syl regain her energy. Thank you so much! If the opportunity arises, I'll do what I can to help you as well, #h0#." />
+            <imgdir name="yes">
+                <string name="0" value="Please let me know if you ever need my help. I really would like to repay you. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="They say that the Fire Boars at the Burnt Lands also like Yellow Tulips and often carry them around. Will you get #b20 Yellow Tulips#k from the Fire Boars for me?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1057002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032629" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1057002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2369" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="30" />
+            <int name="subJobFlags" value="2" />
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="420" />
+                <int name="3" value="430" />
+                <int name="4" value="411" />
+                <int name="5" value="421" />
+                <int name="6" value="431" />
+                <int name="7" value="412" />
+                <int name="8" value="422" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

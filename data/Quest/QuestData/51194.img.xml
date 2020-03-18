@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="51194.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Correcting the Past 3: Catching Up to Tortoise" />
+        <int name="area" value="50" />
+        <string name="0" value="Future Doctor Bing is looking for someone to prevent the delivery of materials to the Processing Plant." />
+        <string name="1" value="Go to the Underground Passage in the past using the #b#p9250138##k and defeat the #b#o9420073#s#k that are delivering materials for the Time Machine." />
+        <string name="2" value="You prevented the Time Machine materials from being delivered to the Processing Plant." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032724" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032728" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4310006" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Do you remember what happened in the Underground Passage? You delivered the materials to the Processing Plant." />
+            <string name="1" value="I will send you to the Underground Passage of the past using a black whole activation device.\r\nYou will be fighting against OS4 Shuttles like the one you drove in the past." />
+            <string name="2" value="Defeat as many shuttles as you can so the Time Machine materials won't be delivered to the Processing Plant.\n\rThe shuttles are strong, so the people inside shouldn't get hurt." />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Don't worry, the pilots won't get hurt. Now, hurry!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Do you not have the courage to confront your pass self?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You're back! Thanks to you, we were able to stop much of the materials from reaching the plant." />
+            <imgdir name="yes">
+                <string name="0" value="Still, the deliveries will continue. Please help us again tomorrow!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="default">
+                    <string name="0" value="There are still OS4 Shuttles making their delivery! Fix the past!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9250124" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9420073" />
+                    <int name="count" value="5" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9250124" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="51191" />
+                    <int name="state" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032724" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

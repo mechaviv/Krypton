@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21011.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Missing Weapon" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You should talk to #b#p1202002##k on your way back to town." />
+        <string name="1" value="#p1202002# tells you it's an honor to meet a real hero and pleads with you to say hello to his brother #b#p1202003##k, who's also eager to meet a hero." />
+        <string name="2" value="#p1202003# said that a true hero should never be without a weapon and gave you a sword. A hero without a weapon? Were you really a hero to begin with?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I just heard someone say, 'The hero has returned!' Did I hear wrong, or is it…is it really true? So this…this person standing before me is the hero?!" />
+            <string name="1" value="     #i4001172#" />
+            <string name="2" value="Oh this is unreal… I can't believe I am staring right at a hero of Maple World! It's an honor! Here, let me shake your hand…and if you could give me a hug... Hehe, could you please sign this, too?" />
+            <string name="3" value="Ah, I'm so sorry. I was so happy to have finally met you that I guess I got a little carried away. Whew, deep breaths. Deep breaths. Okay, I feel better now. But um…can I ask you a favor? Please?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="My brother #b#p1202003##k is just down the street, and he's been dying to meet you! I know you're busy, but could you please stop by and say hello to #p1202003#? Please…" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ah, okay. I understand. Heroes are very busy. *Sniff…* If you ever get any free time, though..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You haven't talked to #b#p1202003##k yet? He's riiight there. Are you nervous about approching a fan? I never knew heroes could be so shy…" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202003" />
+            <string name="endscript" value="q21011e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21010" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="4913.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Subani's Legacy - Discovery" />
+        <string name="parent" value="Subani's Legacy" />
+        <int name="order" value="1" />
+        <int name="area" value="45" />
+        <string name="0" value="I heard there's an adventurer over at the MesoGears underneath Bigger Ben. What mysteries does it hold? I should find out!" />
+        <string name="1" value="I spoke with the famous John Barricades' one-half of the world famous Barricade Bros. Treasure Hunting Co. He spoke to me about Subani, the legendary mage responsible for the Dark Scrolls throughout the Maple World. He believes there is something within the MesoGears that may be a treasure of his. I've agreed to help clear the way. I'll have to defeat #b50 Killa Bees, 30 Mighty Maple Eaters and 40 Fire Tusks#k so I can explore deeper into the MesoGears..." />
+        <string name="2" value="I cleared a path straight through the MesoGears, and now I can explore there in peace. When I'm ready, I can see John Barricade to continue with the next part of this adventure!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8500" />
+            <int name="pop" value="2" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2040804" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey. Got a sec?" />
+            <imgdir name="yes">
+                <string name="0" value="Then you've come to the right place! Name's John Barricade, one half of the world-famous Barricade Bros. Treasure Hunting Co. I've been trying to explore the Temple Hive, but I haven't got that far in. But with your help, I think we can make a push to discover some treasure...First, I'll need you to clear the area. Wipe out #b50 Killa Bees, 30 Mighty Maple Eaters#k and #b40 Fire Tusks#k. After that, head back to me and we'll get some real work done. Hop to it, kid!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It's called &quot;distinct fashion sense&quot;. And I wouldn't talk if I were you..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Great work, kid! Ready to hear about the treasure? \n\n#L0##bOk, what else have you discovered?#k#l" />
+            <string name="1" value="Well, it's a pretty long list. I always liked history, even when I was a kid. All my other subjects were ok, but I always got straight A's in History-probably because my dad would kick my butt if I didn't. That what happens when you grow up with an archeologist for a father. \n\n#L0##bWhat about your family?#k#l" />
+            <string name="2" value="You must mean my brother, Jack Barricade. We've agreed to something that I'll tell you about a bit later, but essentially, he's looking for something in Aqua Road, and I'm searching here. \n\n#L0##bOk, you still haven't told me what was the first thing you discovered?#k#l" />
+            <string name="3" value="Oh, sorry. It happens sometimes. After college, my brother and I concluded that the only way to live forever was to find the Fountain of Youth. It took 3 years, but we finally found it! \n\n#L0##bNO WAY!#k#l" />
+            <string name="4" value="WAY! \n\n#L0##bThat's awesome!#k#l" />
+            <string name="5" value="We thought so too, but man we made a lot of businesses mad with that one..." />
+            <imgdir name="yes">
+                <string name="0" value="Ok, let's get going. Clear a path, come on back and let's figure out this mystery." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="4">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="Not even close to done, shorty. Get back out there and knock out #b50 Killa Bees, 30 Mighty Maple Eaters#k and #b40 Fire Tusks#k. After that, we can talk." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9201051" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="9400540" />
+                    <int name="count" value="50" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9400548" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="9400542" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201051" />
+            <int name="lvmin" value="36" />
+        </imgdir>
+    </imgdir>
+</imgdir>

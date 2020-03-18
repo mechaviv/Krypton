@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9389.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Party with Jane" />
+        <int name="area" value="50" />
+        <string name="0" value="#b#p1002100##k, who lives in Lith Harbor, wants to join the MapleStory 3rd Anniversary Bonanza..  I better help #b#p1002100##k make her way to the party." />
+        <string name="1" value="In order to attend the party with #b#p1002100##k, I'll have to prove my level of courage and power to her dad by slaying tough monsters.\n\n#t04000028:# #b#c04000028:#/3#k \n#t04000046:# #b#c04000046:#/3#k \n#o7130100#  #r#a93891##k\n#o7130101#  #r#a93892##k  \n#r!Warning : Please don't lose #b#t1002508##k." />
+        <string name="2" value="After helping #b#p1002100##k in her quest to go to the party, she strengthened my #b#t01002508##k as promised." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="20000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000028" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4000046" />
+                    <int name="count" value="-3" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="-1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="id" value="1002511" />
+                    <int name="count" value="1" />
+                    <int name="var" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, isn't that the #b#t01002508##k for the 3rd anniversary of MapleStory? I really wanted to go to the party myself, but my dad's not letting me go. He's very strict and protective of me. He might let me go, though, if he finds out that I'm going with someone who's brave enough to protect me throughout the night. Someone like you. Would you like to prove yourself to my dad that you're indeed a courageous, brave fighter, and let me go to the party?" />
+            <imgdir name="yes">
+                <string name="0" value=" I knew I found the right person. Someone as brave and courageous as you will definitely make my dad feel safer about letting me go to the party. He said only the bravest can slay the terrible monsters that live deep in the dungeon. The names of those monsters are #b#o7130100##k and #b#o7130101##k. Please defeat #b30 of them each#k and bring back #b3 #t4000028#s#k and #b3 #t04000046#s#k to prove it. In the mean time, I'll try to convince my dad to let me go..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you are a brave man.. Looks like I judged wrongly." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must be a really brave person. While you were out there, I had a chance to talk to my dad, but he told me he wouldn't let me go unless he sees #b3 #t4000028#s#k and #b3 #t04000046#s#k in front of him. I don't think I can go to the party with you. I think you should go first. I'll catch up with you there. Oh yeah, before I forget, although I can't accompany you to the party, here's the upgraded #b#t01002508##k as promised." />
+            <imgdir name="yes">
+                <string name="0" value="Enjoy the party!" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="To prove your level of courage, you'll need to slay #b30 #o7130100#s#k and #b30 #o7130101#s#k, and bring #b3 #t4000028#s#k and #b3 #t04000046#s#b as proof. And PLEASE don't lose #b#t1002508##k." />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="To prove your level of courage, you'll need to slay #b30 #o7130100#s#k and #b30 #o7130101#s#k, and bring #b3 #t4000028#s#k and #b3 #t04000046#s#b as proof." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1002100" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000046" />
+                    <int name="count" value="3" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="4000028" />
+                    <int name="count" value="3" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="7130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="7130101" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002100" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="9388" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="9386" />
+                    <int name="state" value="2" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="9387" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1002508" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="71" />
+            <string name="start" value="2008050100" />
+            <string name="end" value="2008051400" />
+        </imgdir>
+    </imgdir>
+</imgdir>

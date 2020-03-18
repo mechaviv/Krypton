@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21013.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="A Gift for the Hero" />
+        <int name="area" value="6" />
+        <string name="type" value="[Required]" />
+        <string name="0" value="You should talk to #b#p1202005##k, standing on the road to town." />
+        <string name="1" value="#p1202005# confesses that he's always wanted to build one particular gift for a hero and that he's stored all the necessary components in a box. He asks you to break open the box and bring him the items inside. Break boxes by swinging at them with regular attacks, then collect the #b#t4032309##k and #b#t4032310##k." />
+        <string name="2" value="You received a chair from #p1202005#. #p1202005# encouraged you by telling you that you are still a hero even though you've lost your powers." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Haven't you found the #b#t4032309##k and #b#t4032310##k yet? I stored those items in a box nearby, so all you'll need to do is break the box and bring back the items. You can break boxes by swinging at them like you're attacking a monster." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1202005" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032309" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="4032310" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <string name="endscript" value="q21013e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1202005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21012" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21013s" />
+            <imgdir name="job">
+                <int name="0" value="2000" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2327.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="James's Whereabouts (3)" />
+        <int name="area" value="30" />
+        <string name="showLayerTag" value="james3" />
+        <string name="0" value="You're trying to help #b#p1300008##k escape the castle." />
+        <string name="1" value="You need to help #b#p1300008#'s#k escape. After, you should go visit #b#p1300005##k!" />
+        <string name="2" value="You successfully helped #b#p1300008#'s#k escape." />
+        <string name="summary" value="You need to help #b#p1300008#'s#k successfully escape." />
+        <string name="rewardSummary" value="EXP 8,000\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="8000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1300008" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1300008" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2326" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q2327s" />
+            <int name="lvmin" value="30" />
+            <int name="lvmax" value="38" />
+        </imgdir>
+    </imgdir>
+</imgdir>

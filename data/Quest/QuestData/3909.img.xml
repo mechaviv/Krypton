@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3909.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Dancer's Ringing" />
+        <int name="area" value="44" />
+        <string name="0" value="#b#p2101000##k, a dancer in #b#m260000000##k, seems to be looking for something to improve her set of moves..." />
+        <string name="1" value="#p2101000# is an ambitious dancer who desires to be the best. She came up with the idea of putting bells on her dress, to make her moves more dynamic. She feels that this will take her to stardom and wants you to get some #b#t4000328#s#k from #r#o2100105#s#k. \n\n#i4000328# #t4000328#  #b#c4000328##k/20" />
+        <string name="2" value="You got #p2101000# some #t4000328#s. There's a rumor that if the #t4000328# rings, #o2100105#s will appear. The thing is, #p2101000# didn't seem afraid one bit." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <string name="0" value="앗. 너는 전에 #o2100105#에게서 #t4000328#을 구해다 준 그 모험가잖아? 반가워~ 네 덕분에 춤 연습은 잘 되고 있어. 아름다운 방울 소리에 맞춰서 춤을 추는 걸 보면 귀한 것만 좋아한다는 왕비도 깜짝 놀랄걸." />
+            <string name="1" value="하지만 이 춤만으로도 살짝 부족한 느낌이 드는 건 왜일까? 동작은 완벽하고 의상도 완벽한데... 역시 소품이 문제인 것 같아. 이 칼은 연습용인데다가 너무 낡아서 특기인 칼춤을 추기엔 너무 수수한 것 같아. 네가 좀 도와주지 않을래?" />
+            <imgdir name="yes">
+                <string name="0" value="후훗. 이 #p2101000#님의 춤에 반한 너라면 도와주겠다고 할 줄 알았어. #m260000000#에서 칼을 만들만한 사람은 제작자 #p2100001# 뿐이니까 그에게 가서 무희용의 칼을 만들어 달라고 해봐. 고지식한 사람이라 무희용 칼을 만들어 줄지 모르겠다~ 그럼 부탁해!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="에엣? 도와주지 않겠다는 거야? 너무해~ 멋진 칼만 있으면 더 화려하고 아름다운 춤을 출 수 있을 텐데. 이 #p2101000#님의 칼춤이 보고 싶지 않은 거야?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="6000" />
+            <int name="pop" value="1" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000328" />
+                    <int name="count" value="-20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Ahh! Something's missing. Even with all these moves, something's not right. Hey, since you aren't from around here, you may have a different point of view. What's missing from my dance?\r\n#L0# #b Since you're practicing moves, you must be a dancer!" />
+            <string name="1" value="Uh, can't you tell just by looking? I, #p2101000#, am the best dancer in #m260000000#. Unfortunately, I still have yet to dance inside the palace. Unless my moves are more radical, the queen won't be interested. Want to help me?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Hah, I knew you'd fall in love with my moves. Come to think of it, if I put some bells on my dress while I dance, that'll really look special. If you can get me #b20 #t4000328#s#k from #r#o2100105#s#k, then I promise I'll perform some better moves. You can count on it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Pssssh, whatever. Are you really going to throw away a golden opportunity to see an amazing new dance?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey! You brought the #t4000328#s! Alright, I'll put these on the dress and once I dance around with all this festive clanging, the dance will seem that much more dynamic. Thanks!" />
+            <imgdir name="yes">
+                <string name="0" value="Hmm? If I ring these bells, #o2100105#s will pop out? Uh… who told you that? They live in the desert. Why would they slide all the way here?" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Hmmm. You didn't get #b20 #t4000328#s#k yet! You can find #t4000328#s off of #r#o2100105#s#k, so all you need to do is defeat them." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2101000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000328" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2101000" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3900" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="24" />
+        </imgdir>
+    </imgdir>
+</imgdir>

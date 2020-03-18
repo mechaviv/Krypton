@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2090.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="I'm Bored 1" />
+        <string name="parent" value="I'm Bored" />
+        <int name="order" value="1" />
+        <int name="area" value="30" />
+        <string name="0" value="I should go see Icarus, who's at the top of a building in Kerning City. He seems to be bored out of his mind. " />
+        <string name="1" value="I got to talk to Icarus of Kerning City. Just what exactly is he doing staring aimlessly at the sky anyway? He seemed to be really bored, and asked me if I can answer his set of questions." />
+        <string name="2" value="I answered all the questions that Icarus of Kerning City asked. That was easy." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="2091" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Man, soooo boring. Hey, you! Do you have any free time right now? Do you wanna hang out with me? I'm really bored out of my mind here." />
+            <imgdir name="yes">
+                <string name="0" value="Alright! Thanks... now, what should we do? How about ... I know, why don't I quiz you on some things? They aren't going to be hard at all, so don't worry about it. Are you down with it?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh you're busy ... I'm really bored, though. Don't you wanna hang out with me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="ask" value="1" />
+            <string name="0" value="Which of these monsters will you NOT see near Kerning City? \r\n#L0##b1. Stump#k #l\r\r#L1##b2. Blue Mushroom#k #l\r\n#L2##b3. Slime#k #l\r\n#L3##b4. Ribbon Pig#k #l\r\n#L4##b5. Hector#k #l" />
+            <string name="1" value="Which of these NPC's will not NOT see at Kerning City?\r\n#L0##b1. Don Giovanni#k #l\r\n#L1##b2. Andre#k #l\r\n#L2##b3. Mong From the Kong#k #l\r\n#L3##b4. Valen#k \r\n#L4##b5. Don Hwang#k #l" />
+            <string name="2" value="To make your way to Orbis, which of these towns will you have to go to get on board for the trip?\r\n#L0##b1. Ellinia#k #l\r\n#L1##b2. El Nath#k #l\r\n#L3##b3. Perion#k #l\r\n#L4##b4. Henesys#k #l" />
+            <string name="3" value="Wow, you're pretty good! You should be starring on a quiz show, the way you're answering these questions!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="5" />
+                    <string name="0" value="No no no! Think carefully!" />
+                    <string name="1" value="No no no! Think carefully!" />
+                    <string name="2" value="No no no! Think carefully!" />
+                    <string name="3" value="No no no! Think carefully!" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="4" />
+                    <string name="0" value="You're wrong!! You can see that NPC at Kerning City!" />
+                    <string name="1" value="You're wrong!! You can see that NPC at Kerning City!" />
+                    <string name="2" value="You're wrong!! You can see that NPC at Kerning City!" />
+                    <string name="4" value="You're wrong!! You can see that NPC at Kerning City!" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                    <string name="1" value="Are you sure? Think again!" />
+                    <string name="2" value="Are you sure? Think again!" />
+                    <string name="3" value="Are you sure? Think again!" />
+                    <string name="4" value="Are you sure? Think again!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052106" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052106" />
+            <int name="lvmin" value="10" />
+        </imgdir>
+    </imgdir>
+</imgdir>

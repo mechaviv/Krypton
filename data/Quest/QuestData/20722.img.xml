@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20722.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Wooden Mask" />
+        <int name="area" value="15" />
+        <string name="0" value="I better ask Agent #b#p1103004##k of #m102000000# about the new assignment." />
+        <string name="1" value="#p1103004# told me something's not right in #b#m101030102##k, and wanted me to go there and eliminate #r#o2230110#s#k. After eliminating #r#o2230110##k, I also have to bring back #b#t4032146##k... \n\n#o2230110##r #a207221##k \n#i4032146# #t4032146# #b#c4032146# / 1#k" />
+        <string name="2" value="I was able to eliminate #o2230110#s and brought back #b#t4032146##k. #p1103004# had a serious look on his face while looking at the detector..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="5000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032146" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Oh, the detector works. Good thing it works well... but wait, why is it reacting like this...? Um, I'm sorry to tell you this since you just arrived, but I need you to get involved in this assignment immediately! The detector is reacting! \n#b#L0#What is this detector for?#l\n#k" />
+            <string name="1" value="This detector #rdetects forces of darkness connected to the puppeteer#k. Since the detector is reacting, that means the puppeteer is planning something nearby! \n#b#L0#Where's the location?#l\n#k" />
+            <string name="2" value="The location: #b#m101030102##k! I have a feeling the puppeteer is trying to control #o2230110#! Please go there and slay those #o2230110#s! I need you to slay about a 1,000 of them...\n#b#L0#1,000???#l\n#k" />
+            <string name="3" value="Is... that too much? Then 500...\n#b#L0#500???#l\n#k" />
+            <string name="4" value="Is 500 too much? Then 200..." />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="1" />
+                </imgdir>
+                <imgdir name="3">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Please defeat #r200 #o2230110#s#k and bring back #b#t4032146##k! If it's the puppeteer's deed, then I am sure we'll be able to recover #t4032146# as well. Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Is... that too much? But we need to slay at least 200..." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you were able to defeat all the #o2230110#s and retrieve the doll as well! Thank goodness this was working, but still.. Once is not enough. No, no, it's nothing. I'll let you know if I find something peculiar with the detector." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don't think you have defeated #r200 #o2230110#s#k and brought back #b#t4032146##k yet. I need you to go to #b#m101030102##k and complete the assignment immediately!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I don't think you have defeated #r200 #o2230110#s#k and brought back #b#t4032146##k yet. I need you to go to #b#m101030102##k and complete the assignment immediately! Otherwise, this may get out of hand!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032146" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230110" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20721" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="25" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

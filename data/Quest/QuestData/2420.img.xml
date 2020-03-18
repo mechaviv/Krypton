@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2420.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Using Lucky Seven" />
+        <int name="area" value="10" />
+        <int name="selectedSkillID" value="4001344" />
+        <string name="0" value="Power B. Fore at the training center wants you to learn how to use a new skill." />
+        <string name="1" value="Power B. Fore is teaching you how to use a new skill. Use Lucky Seven to eliminate some Stumps.\r\n\r\n#o130100# #a24201# (Use Lucky Seven)" />
+        <string name="2" value="You used Lucky Seven to eliminate some Stumps." />
+        <string name="summary" value="Use Lucky Seven to eliminate 30 Stumps." />
+        <string name="demandSummary" value="#o130100# #a24201#\r\n" />
+        <string name="rewardSummary" value="EXP 1200\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="1200" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Hey, thanks! I was able to get back my letter of commendation thanks to you. Shall we start with the training now? You know what skills are, right? Use them wisely, and you'll be able to perform attacks that are more powerful than you're normally capable of. What do you think? Want to give it a try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Okay, now use Lucky Seven to defeat 30 Stumps." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I thought you told me you wanted to train." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Great... great work there. I can see you were diligent in your training, so let me give you a boost on leveling up." />
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven't defeated all the Stumps yet." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1052113" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="130100" />
+                    <int name="count" value="30" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1052113" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2413" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="400" />
+                <int name="1" value="410" />
+                <int name="2" value="411" />
+                <int name="3" value="412" />
+                <int name="4" value="420" />
+                <int name="5" value="421" />
+                <int name="6" value="422" />
+                <int name="7" value="430" />
+                <int name="8" value="431" />
+                <int name="9" value="432" />
+                <int name="10" value="433" />
+                <int name="11" value="434" />
+            </imgdir>
+            <imgdir name="skill">
+                <imgdir name="0">
+                    <int name="id" value="4001344" />
+                    <int name="acquire" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

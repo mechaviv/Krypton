@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6104.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="New Guess" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="5" />
+        <int name="area" value="10" />
+        <string name="1" value="My hunch was right about #bShammos#k. He knew a bit more and was able to give me further details, but there's something strange about what #p2022003# said. Let's ask #b#p2020010##k. Finally getting somewhere! \n\n#t4161027#  #b#c4161027# / 1#k " />
+        <string name="2" value=" I took the book back to #p2020010# following a lead from #bShammos#k. Rene said that #p2022003# used to be human and that I should pay close attention to what he says--both as a warning and path to discovering more. " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161027" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161027" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="Yes! Yes! That's right. This is that! You don't know someone who knows about this book? \n\r#L0# #bDo you know? #k" />
+            <string name="1" value="Hahahaha! How would #p2022003# know! Never! Never! Nobody knows!" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="No body in the world knows about the book! Never! Hahaha! I don't need that book! Take it back!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Never known nobody who knows nothing about anything! Nobody! You neither! #p2020010# doesn't know either! Hahaha!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Are you sure #p2022003# said that? That's interesting. He looks inhuman now, but #p2022003# used to be a human and intelligent. He speaks in wicked ways while he is very wise. You should take it seriously. He only appears crazy..." />
+            <imgdir name="yes">
+                <string name="0" value=" Let me think about #p2022003#'s story. Please come back later and I should be able to tell you some more. " />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Tell #p2020010# to be quiet! There's too much noise in here!" />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Have you seen #b#p2022003##k? And by the way, where did you leave your book?" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="*Giggle* Is this what you've lost? I don't feel like giving it back to you. Well, maybe for a donation...kidding!" />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2020010" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161027" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2022003" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6103" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

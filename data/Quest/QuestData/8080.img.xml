@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="8080.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Lazy Alien Grey" />
+        <string name="parent" value="Umi's Ambition" />
+        <int name="order" value="2" />
+        <int name="area" value="48" />
+        <string name="0" value="Apparently, #r#p9120005##k paid for the machine to #p2050002##k, only to keep waiting for the machine to come. #nIn any case, I better talk to #r#p9120005##k." />
+        <string name="1" value="#r#p9120005##k asked me to convince #r#p2050002##k to send the machine to her. \nIn any case, I should meet up with  #r#p2050002##k." />
+        <string name="2" value="I was able to meet #r#p2050002##k. This is it!" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="nextQuest" value="8081" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Ah, you came just in time. Got some free time with you?" />
+            <imgdir name="yes">
+                <string name="0" value="Actually something terrible has happened. #r#p2050002##k has still not sent the machine here." />
+                <string name="1" value=" I already wired 100,000,000 mesos to his bank account... you look like someone that can negotiate. Can you go talk to #r#p2050002##k and take care of this for me?" />
+                <string name="2" value=" In exchange, once the machine gets here, I'll let you be the first one to use it." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I know it's just as important to you as it is to me. Please make some time available and talk to me." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hey hey, why are you raising your voice? Why? What? Since you wired the money, you want the machine now? Fine fine, chill out!" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2050002" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9120005" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="8079" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="50" />
+        </imgdir>
+    </imgdir>
+</imgdir>

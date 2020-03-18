@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3610.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Preparing to Eliminate Goblins" />
+        <string name="parent" value="Goblin at Black Mountain" />
+        <int name="order" value="1" />
+        <int name="area" value="37" />
+        <string name="0" value="Apparently, Chumji, who is the landlord of the Korean Folk Town, have a request for me." />
+        <string name="1" value="Chumji, who resides in Korean Folk Town, requested that I take out the Goblins who have been appearing at the mountain. The Goblins that have appeared at the Black Mountain are the goblins that have run away from the storybook on the Goblin Story, and they have been hiding out at an abandoned home. In order to draw them out of the seclusion, he told me I needed three different types of baits: #b#t2022050#, #t2022051#, #t2022052##k. I'll need to move around town and gather those items up. and then return to Chumji.\n\n#t2022050# #b#c2022050##k/1\n#t2022051# #b#c2022051##k/1\n#t2022052# #b#c2022052##k/1" />
+        <string name="2" value="Chumji, who requested that I eliminate the Goblins that have run away from the storybook on Goblin Story and are currently hiding at an abandoned house in a mountain, told me that in order to draw them out, I'll need to have three things that they love : buckwheat paste, roasted pork, and rice wine, and he wanted me to gather them up for him. In the end, I was able to do so with help from Kong Ji, Hongbu, and Chil Nam." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2071000" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+            <int name="nextQuest" value="3611" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="You must be from out of town. When you reach my age, you get a general feel for a person just by looking, and you look quite strong. Listen, I'll tell you what's going on here. A while ago, a huge problem arose at the Helios Tower Library. I have no way of finding out the details, but apparently, a group of Goblins have popped out of the storybook and is hiding behind the Black Mountain at the back of the town." />
+            <string name="1" value="This is what the paragraph can read to make it more streamlined.  &quot;Once the Goblins went into the mountain, so aptly named Black Mountain, it has been dark 24/7.  I'm sure it has something to do with them.  The ones that control those Goblins are the 3 King Goblins.  It is a necessity to defeat those Goblins in order to restore order in the Black Mountain.  What do you think? Are you willing to accept the challenge?" />
+            <imgdir name="yes">
+                <string name="0" value="I knew I had an eye for a talent; I also knew you'd Say yes. It's not easy to defeat a Goblin, however. They are very adept at hiding themselves out of human sight. In order to locate them, you must use a bait to bring the Goblins out. The bait should of course be something they like." />
+                <string name="1" value="Apparently Goblins love #b#t2022050##k, #b#t2022051#, and #t2022052##k. These can be obtained through the people in this town. Once you gathered them all, make sure to bring them all to me." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value=" I must be really old now. I thought you'd take an interest in this matter. I must have seen something wrong." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Interesting; you got them all. People in this town aren't necessarily cooperative with the outsiders. You really must be someone special..." />
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value=" Is it hard to obtain that list of food I gave you? People in this town aren't necessarily cooperative with the outsiders, you know. I suggest you help them first. Help them, so they can help you in return." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2071000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="2022050" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022051" />
+                    <int name="count" value="1" />
+                </imgdir>
+                <imgdir name="2">
+                    <int name="id" value="2022052" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2071000" />
+            <int name="lvmin" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

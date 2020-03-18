@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="2005.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Arcon's Blood?" />
+        <string name="parent" value="Maya and the Weird Medicine" />
+        <int name="order" value="4" />
+        <int name="area" value="30" />
+        <string name="1" value="You find Manji in Perion, but he is unwilling to give you any #bArcon's blood#k for free. He wants you to go to the underground tunnel in the middle of the island and gather up #b40 Charms of the Undead#k first. Who does he think he is, treating you so coldly?! You almost regret agreeing to help Maya, but it seems like no one else is willing to..." />
+        <string name="2" value="Manji asked for Charms of the Undead in return for some Arcon's Blood." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="-40" />
+                </imgdir>
+            </imgdir>
+            <int name="nextQuest" value="2006" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="So you want to acquire some #b#t4031005##k? Hah...that's not for a nobody like you. You can't obtain #t4031005# unless you're strong... If you really want it, prove me wrong and show me that you are worthy of it..." />
+            <string name="1" value="There's a huge cave in the middle of this island. In the deepest part of that cave live the mutants of Arcon. Take down those monsters and collect #b#e40 #t4000008#s#k#n. Are you brave enough?" />
+            <string name="2" value="That's right... A #b#t4000008##k looks like this #i4000008#. I'm doing this for a first-timer like you, so be thankful." />
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hmmm... I may have underestimated you. Alright, here's the #t4031005#, since a promise is definitely a promise. Take it." />
+            <imgdir name="yes">
+                <string name="0" value="This bottle contains the blood of an Arcon I slayed... Hopefully you'll use it wisely, because it's a rare, precious item..." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="If you want to get the #t4031005# from me, you need to defeat monster in the underground tunnel and collect #b#e40 #t4000008#s#k#n. Until then, I can't give any #t4031005# to a nobody like you..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1022002" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000008" />
+                    <int name="count" value="40" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1022002" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="2004" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="15" />
+        </imgdir>
+    </imgdir>
+</imgdir>

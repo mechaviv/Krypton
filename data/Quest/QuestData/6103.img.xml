@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="6103.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Shammos's Advice" />
+        <string name="parent" value="Extreme Temptation" />
+        <int name="order" value="4" />
+        <int name="area" value="10" />
+        <string name="1" value=" Despite her vast knowledge of bow-based combat, #p2020010#, like #p1012100#, didn't know much about the skill. I hear #bShammos#k's rambling about something...Perhaps I should pay him a visit...\n\n#t4161026#  #b#c4161026# / 1#k" />
+        <string name="2" value="#p2022003# took the book and started reading it. Would he know something? He certainly appeared focused on deciphering what this new skill could be...I hope he can tell me more! " />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161026" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="100000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161026" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="1" value="......? Weird. Don't you think #b#p2022003##k is talking to someone downstairs? Perhaps you should find out..." />
+            <string name="0" value=" Did you say the book was about #bThe Bowman's Ultimate Skill#k? Interesting. Even #p1012100# has no idea, so how could I possibly know more?  It makes sense about such a technique existing, but as for how to acquire it...I'm not sure. Maybe it's better for YOU to keep this book. I feel that this is your mission--discover the technique!" />
+            <imgdir name="yes">
+                <string name="0" value=" Look at #b#p2022003##k. He's rambling on about something..." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You can't hear #p2022003#'s voice?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="*Giggles* Do you think you can get ultimate power? Pfft! Bowmen are foolish! What's the point of talking to people who don't have any idea what to do, how to do it or where to perfect such a skill?  But Shammos knows...oh yes, Shammos knows...Why hi there! What is that? Do you want to know more about the book? Let me have a look!" />
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Look at #b#p2022003##k." />
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value=" #b#p2022003##k knows about it. He does! He knows what? I don't know what he knows but I know he knows, and now you know~Hahaha!" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value=" Take care of the book. You are so lucky to have it back. Athena found it and sent it when you lost it. " />
+                <imgdir name="yes" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2022003" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4161026" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2020010" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="6102" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="job">
+                <int name="0" value="312" />
+                <int name="1" value="322" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

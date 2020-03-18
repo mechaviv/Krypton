@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="20723.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Stone Mask" />
+        <int name="area" value="15" />
+        <string name="0" value="Agent #b#p1103004##k of #m102000000# has a new assignment for me..." />
+        <string name="1" value="#p1103004# told me this time, the detector reacted in the direction of #b#m101030103##k and assigned me to eliminate #r200 #o2230111#s#k there, while bringing back #b#t4032147##k. \n\n#o2230111##r #a207231##k \n#i4032147# #t4032147# #b#c4032147# / 1#k" />
+        <string name="2" value="I was able to eliminate all the #o2230111#s. #p1103004# then proceeded to look at the detector again..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="6500" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032147" />
+                    <int name="count" value="-1" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Okay, the detector is reacting again. The location is actually not far from where you last did your deed. This time, it's #m101030103#! I think the puppeteer is trying to control #o2230111#! We must prevent this from getting any worse!" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Please head to #b#m101030103##k and defeat 1000... no, 500... no, #r200#k #r#o2230111#s#k and bring back #b#t4032147##k for me! Good luck!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Huh? I guess you pressed the wrong button. If you wish to accept the mission, you press ACCEPT. Talk to me again, and press ACCEPT this time." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Wow, you did defeat 200 #o2230111#s and brought back the doll as well! If this worked twice, then that means the detector is working fine... phew... what? What do I mean by this?" />
+            <imgdir name="yes">
+                <string name="0" value="This detector is actually not a complete product. I just brought one that was still in its beta stages. Since it had a high probability of failure, I didn't want to bring it straight to the battleground, so... i wanted to test it at #m102000000#, where there's a high probability of the puppeteer appearing." />
+                <string name="1" value="Thankfully, the test worked to perfection. As suspected by #p1101002#, the puppeteer appeared around #m102000000#, and the detector proved it without a shadow of doubt. I was worried we might have gotten a totally different monster, but that's not the case." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I think you have yet to defeat #r200 #o2230111#s#k and bring back #b#t4032147##k... The detector reacts around #b#m101030103##k, so please go there and complete the assignment!" />
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="I think you have yet to defeat #r200 #o2230111#s#k and bring back #b#t4032147##k... The detector reacts around #b#m101030103##k, so please go there and complete the assignment!" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1103004" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032147" />
+                    <int name="count" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="2230111" />
+                    <int name="count" value="200" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1103004" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="20722" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="26" />
+            <imgdir name="job">
+                <int name="0" value="1000" />
+                <int name="1" value="1100" />
+                <int name="2" value="1110" />
+                <int name="3" value="1111" />
+                <int name="4" value="1112" />
+                <int name="5" value="1200" />
+                <int name="6" value="1210" />
+                <int name="7" value="1211" />
+                <int name="8" value="1212" />
+                <int name="9" value="1300" />
+                <int name="10" value="1310" />
+                <int name="11" value="1311" />
+                <int name="12" value="1312" />
+                <int name="13" value="1400" />
+                <int name="14" value="1410" />
+                <int name="15" value="1411" />
+                <int name="16" value="1412" />
+                <int name="17" value="1500" />
+                <int name="18" value="1510" />
+                <int name="19" value="1511" />
+                <int name="20" value="1512" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

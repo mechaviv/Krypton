@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3803.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Lost Document" />
+        <string name="parent" value="Do Gong's Teaching" />
+        <int name="order" value="1" />
+        <int name="area" value="44" />
+        <string name="0" value="Apparently at #b#m250000000##k, there's someone by the name of #b#p2091001##k who is the meditation instructor on the Masters, and he knows a way to become the Legendary Being." />
+        <string name="1" value="#p2091001# stated that there's a scroll out there that should help one to become the Master. Unfortunately, the scroll that contains all the skills have been lost by #p2091001# once at #m250010501# around the Peach Farm, only to find it back later. Alas, the scroll is old and ragged, with ripped pages here and there. So, does that mean if I find the ripped #b#t4000299##k, then I can become a Master myself?\n\n#t4000299# #i4000299#  #b#c4000299##k/10" />
+        <string name="2" value="I managed to find #t4000299#, and brought it back to #p2091001#. Unfortunately, #p2091001# had the look of great concern as he rummaged through #o5120506#..." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="55" />
+            <imgdir name="job">
+                <int name="0" value="100" />
+                <int name="1" value="110" />
+                <int name="2" value="120" />
+                <int name="3" value="130" />
+                <int name="4" value="111" />
+                <int name="5" value="121" />
+                <int name="6" value="131" />
+                <int name="7" value="112" />
+                <int name="8" value="122" />
+                <int name="9" value="132" />
+                <int name="10" value="200" />
+                <int name="11" value="210" />
+                <int name="12" value="220" />
+                <int name="13" value="230" />
+                <int name="14" value="211" />
+                <int name="15" value="221" />
+                <int name="16" value="231" />
+                <int name="17" value="212" />
+                <int name="18" value="222" />
+                <int name="19" value="232" />
+                <int name="20" value="300" />
+                <int name="21" value="310" />
+                <int name="22" value="320" />
+                <int name="23" value="311" />
+                <int name="24" value="321" />
+                <int name="25" value="312" />
+                <int name="26" value="322" />
+                <int name="27" value="400" />
+                <int name="28" value="410" />
+                <int name="29" value="420" />
+                <int name="30" value="411" />
+                <int name="31" value="421" />
+                <int name="32" value="412" />
+                <int name="33" value="422" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="exp" value="22000" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000299" />
+                    <int name="count" value="-10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <int name="ask" value="1" />
+            <string name="0" value="You must be the one that came to #m250000000# to become the true Master. What do you think? Have you acquired plenty of useful knowledge here?\r\n#L0#  #bNo. It's hard to understand what the Masters are saying." />
+            <string name="1" value="I see. It's understandable. A regular person will have a hard time comprehending the philosophical nature of the Master talk, but once you become the Master yourself, you'll fully understand. The easier way to understand them would be... oh, that's right! The scroll! With it, you'll have a much easier time understanding their talk. Are you ... interested in acquiring #b#o5120506##k by any chance?" />
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1" />
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Good. Well, it's hard to say no when the item is an old, ancient document. Just reading it itself will be a difficult task, however. That #o5120506#, I lost it at #m250010501# around the peach farm a long, long time ago." />
+                <string name="1" value="Fortunately, I found #o5120506# much later, but years of wear and tear in the forest has rendered this document old and ragged, with ripped pages here and there. This is precisely the reason why it's impossible to acquire the mysterious skills through the pages of #o5120506#. If you are really intent on learning the skill, however, you'll have to acquire #b#t4000299##k #i4000299#." />
+                <string name="2" value="Other #o5120506#s may secretly hold on to #t4000299#, so I suggest you defeat #r#o5120506##k and bring me #b10#k pages." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="You don't want to learn #o5120506#? It'll take you a significant amount of time to become the Master just by training. Well, it's up to you though. If you prefer that method, then... I won't stop you." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Hoh! You really did gather up all the #t4000299#s! Alright, now all I have to do is ... wait, hold on." />
+            <imgdir name="yes">
+                <string name="0" value="Hmmm ... I'm sorry, but I'll have to look into the #t4000299# that you brought first. These footprints... I have a feeling something's up." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I guess you don't have all #b10 #t4000299#s#k. Without them, you won't be able to acquire the tricks of becoming the Master." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091001" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4000299" />
+                    <int name="count" value="10" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091001" />
+            <int name="lvmin" value="55" />
+        </imgdir>
+    </imgdir>
+</imgdir>

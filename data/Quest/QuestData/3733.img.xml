@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="3733.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Survivor Search" />
+        <string name="parent" value="Year 2215- The Bombing" />
+        <int name="order" value="4" />
+        <int name="area" value="41" />
+        <string name="1" value="May was happy that you were able to reduce the population of the noisy Robbies, but was also concerned that she may be the only survivor left. She asks you to investigate the area where the missile landed and search for survivors." />
+        <string name="2" value="You have searched the area all the way to the location where the missile landed, as May requested. Fortunately, you were able to find a male survivor named Bao. How is it that he doesn't even have a tiny scratch on him?" />
+        <string name="rewardSummary" value="EXP 30,000\r\nCan participate in &quot;The Dangerous Android&quot; quest.\r\n" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="30000" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="I was so happy that those Robbies were silenced, but then I began to think that I may be the only survivor left. That's so frightening. I mean, there must be other survivors, right? #b#h0##k, could you investigate the area and see if you can find any?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="Could you search little deeper into the area, near where the missile landed? I haven't been able to search that far." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="#b#h0##k, do you think there are any survivors besides me?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Who is that? There is a survivor! Here, right here!" />
+            <imgdir name="yes">
+                <string name="0" value="I'm so relieved that there is another survivor." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="There must be other survivors, right? #b#h0##k, could you investigate the area and see if you can find anyone?" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2082010" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2082009" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="3732" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="70" />
+        </imgdir>
+    </imgdir>
+</imgdir>

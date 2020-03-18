@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9683.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Spirit Week Sept 13th" />
+        <int name="area" value="50" />
+        <string name="0" value="Something good might happen if you go see #b#p9010010##k." />
+        <string name="1" value="#b#p9010010##k says if you give her a scroll, she will use magic to increase the success rate of your scroll by 5%. You can only do that 5 times today, so choose wisely." />
+        <string name="2" value="#b#p9010010##k has traded your scroll for a better one with higher success rate. How nice of her." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The Spirit Week Event! I, Cassandra the great, am using magic to increase the success rate of your scrolls by 5% every Monday for a brief time in September. But you won’t be able to trade the scroll once I use magic on it. You want to give it a try?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="If you bring me 10% or 60% scrolls today, I will #ruse magic to increase the success rate of the scrolls by 5%#k. Now, talk to me again after you’ve picked a scroll and trade it in for a better one by selecting the appropriate option. You can only do this 5 times today, so choose wisely. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Casting magic on scrolls is harder than you think. That's why it can only be done for a couple of Mondays during the month of September. Come find me on the right day if you change your mind." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9010010" />
+            <string name="endscript" value="scrollchange2" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9010010" />
+            <int name="lvmin" value="10" />
+            <string name="start" value="2010083000" />
+            <string name="end" value="2010083100" />
+        </imgdir>
+    </imgdir>
+</imgdir>

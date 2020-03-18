@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9849.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="No Gong's Test" />
+        <int name="area" value="50" />
+        <int name="autoStart" value="1" />
+        <string name="0" value="Did you hear #b#p2091000##k, the physical trainer of Mu Lung, might need help?" />
+        <string name="1" value="#b#p2091000##k says your test is to defeat Grizzly and Panda. They may just be bears, but they are training to become masters, so defeating them won't be as easy as you think.\n\n#o5120500# #r#a98491##k \n#o6130203# #r#a98492##k" />
+        <string name="2" value="You have returned after defeating Grizzly and Panda. However, No Gong says you still have a long way to go until you can become a master. What? Why does he keep doing this? Is he even planning on making you into a master?" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="The path toward master is long and difficult! What? You're already tired of fighting Straw Target Dummies? How can you say you're tired already? When I was young, I defeated 569,800...er, countless numbers of them!" />
+            <string name="1" value="Sigh. You just don't understand. Are you really that confident in your abilities? If so, why don't I test you on enemies stronger than Straw Target Dummies. You up for it?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="You seem confident. Good. Then fight #ro5120500#s#k and #r#o6130203#s#k. They are not simple animals, so they may be able to teach you a thing or two. Come see me once you have eliminated #r100 of each#k. " />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Yes, Straw Target Dummies are more that suitable. Go to the training center and train against them." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmm... I guess you haven't defeated all of the #rGrizzlys#k and #rPandas#k yet. Then again, eliminating #r100 of each#k of them is no easy task. Though that is why this is good training." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="2091000" />
+            <string name="endscript" value="huntUP8" />
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="5120500" />
+                    <int name="count" value="100" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="6130203" />
+                    <int name="count" value="100" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="2091000" />
+            <int name="lvmin" value="60" />
+            <string name="start" value="2007052900" />
+            <string name="end" value="2007061800" />
+            <int name="interval" value="1440" />
+            <imgdir name="fieldEnter">
+                <int name="0" value="250010301" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="28224.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Delivering the Antique" />
+        <string name="parent" value="Antique Search" />
+        <int name="order" value="1" />
+        <int name="area" value="10" />
+        <string name="0" value="#b#@9201118:##k in #bHenesys#k says he has a favor to ask of you. Let's talk to him." />
+        <string name="1" value="#b#@9201118:##k in #bHenesys#k has asked you to go see #b#@1072008:##k in #bNautilus#k and retrieve his #rAntique#k." />
+        <string name="2" value="#b#@1072008:##k in #bNautilus#k has asked that you bring the #rAntique#k for her. Let's talk to her." />
+        <string name="rewardSummary" value="Exp 800&#xD;&#xA;Able to proceed to 'Antique Search' as next quest.&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <int name="exp" value="800" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Sorry, I keep making you travel back and forth.\n\nI called you over to ask for a favor...\n\nI thought this job would be perfect for a beginning Bowman like you. Will you listen to what I have to say?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="A while back, I found an amazing piece of Antique while I was reading a book I borrowed from #b#p1012109##k.\n\nSo I asked #b#p1072008##k in #bThe Nautilus#k to find me that piece if she finds herself in Leafre during one of her adventures, and I think she did!\n\nCould you go over to #bThe Nautilus#k and retrieve my #rAntique#k from #b#p1072008##k?" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Are you not ready yet?" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Welcome.\n\nYou're here because #b#p9201118##k has asked you to?" />
+            <imgdir name="yes">
+                <string name="0" value="But I don't have the #rAntique#k here at the moment…" />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="#b#p1072008##k is in #bThe Nautilus#k." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1090000" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9201118" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28223" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmax" value="40" />
+            <imgdir name="job">
+                <int name="0" value="300" />
+                <int name="1" value="310" />
+                <int name="2" value="320" />
+                <int name="3" value="311" />
+                <int name="4" value="321" />
+                <int name="5" value="312" />
+                <int name="6" value="322" />
+                <int name="7" value="1300" />
+                <int name="8" value="1310" />
+                <int name="9" value="1311" />
+                <int name="10" value="1312" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

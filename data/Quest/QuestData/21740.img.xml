@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="21740.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="The Stolen Seal Stone of Orbis" />
+        <int name="area" value="6" />
+        <string name="type" value="[Skill]" />
+        <string name="0" value="You lost the Seal Stone of Orbis. What does this mean? Head to #b#m104000000##k and talk to #b#p1002104##k to get some advice." />
+        <string name="1" value="After explaining to #p1002104# everything that took place in #m200000000#, #p1002104# felt that this information should be relayed to #b#p1201000##k as well." />
+        <string name="2" value="#p1201000# seemed glad to have discovered that the Black Wings are after the Seal Stone and that there's more than one Seal Stone out there. She encouraged you with motivating words, then taught you a new skill that she had just decoded, known as the #bCombo Smash#k." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1" />
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="You still haven't gone to #b#m140000000##k yet? Apparently #b#p1201000##k has something for you, so go right now. Don't worry about this." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="1201000" />
+            <string name="endscript" value="q21740e" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="1002104" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="21739" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+            <string name="startscript" value="q21740s" />
+            <int name="lvmin" value="45" />
+            <imgdir name="job">
+                <int name="0" value="2110" />
+                <int name="1" value="2111" />
+                <int name="2" value="2112" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>

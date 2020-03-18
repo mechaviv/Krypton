@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="10496.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="가가의 월동준비" />
+        <int name="area" value="50" />
+        <string name="0" value="추운 겨울 옆구리가 유난히도 시릴 #b가가#k를 찾아가 보자." />
+        <string name="1" value="가가는 추운날씨에는 빨간 내복이 최고라며 옷감을 준비해 달라고 했다. 옷감은 몬스터들에게서 얻을수 있다고?" />
+        <string name="2" value="빨간색 내복을 입은 가가. 생각만 해도 너무 웃긴걸?" />
+        <string name="demandSummary" value="#i4032532:# #t4032532:# #c4032532# / 20&#xD;&#xA;" />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032532" />
+                    <int name="count" value="-20" />
+                </imgdir>
+                <imgdir name="1">
+                    <int name="id" value="2022657" />
+                    <int name="count" value="1" />
+                    <int name="period" value="1440" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="Whoa! It's so cold! I feel like I'm going to freeze! How about you, #b#h0##k?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="When the wind chills you like it's doing now, Red Thermals are the best. Just thinking about wearing a soft and warm Red Thermal makes me happy." />
+                <string name="1" value="I really want to wear some Red Thermals. They are supposed to make you warm as well as stylish! Please gather #b20 #t4032532# so that I can wear some pretty Red Thermals! Thank you!" />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Ooh... I'm so cold!" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Yeah! That beautiful red fabric... Exactly what I asked for! Please give it to me and I will give you a Guitar Case that I used to use when I was preparing to become...an idol...when I was younger. You'll find a gift inside the Guitar Case." />
+            <imgdir name="yes">
+                <string name="0" value="If you don't open the Guitar Case, a mysterious energy will transform the Guitar Case into a better one the next day. That Guitar Case will contain an even better gift. \r\nAlso, I need to make many, many thermals so please bring me more fabric every hour." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You didn't find #b20 #t4032532#s#k? You should be able get them while hunting monsters..." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000021" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="4032532" />
+                    <int name="count" value="20" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000021" />
+            <int name="lvmin" value="13" />
+            <string name="end" value="200912280000" />
+            <int name="interval" value="60" />
+        </imgdir>
+    </imgdir>
+</imgdir>

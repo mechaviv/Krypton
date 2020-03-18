@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="29301.img">
+    <imgdir name="QuestInfo">
+        <string name="name" value="Title Challenge - Ultimate Magician" />
+        <int name="area" value="10" />
+        <int name="viewMedalItem" value="1142010" />
+        <string name="0" value="#b#eTitle Challenge - Ultimate Magician#n\n#kThe Monk of Honor, Dalair, said those who reach the highest level in their job will each receive their own unique title.  Warriors will get the title, #e#bGallant Warrior#k#n, Magicians, #e#bWiseman#k#n, Archers, #e#bLord Sniper#k#n, Thieves, #e#bLegendary Thief#k#n and Pirates, #e#bKing Pirate#k#n.  If I'm qualified enough to be selected by the God of Honor, I should go see Dalair and take the test. " />
+        <string name="1" value="#b#eTitle Challenge - Ultimate Magician#n\n#k\n - Level : #b#jlevel##k / 200" />
+        <string name="2" value="#b#eTitle Challenge - Ultimate Magician#n\n#k\n - Level : #b#jlevel##k / 200\n\nThe Monk of Honor, Dalair, presented me with the Ultimate Magician title '#bWiseman#k' after I reached level 200." />
+    </imgdir>
+    <imgdir name="Act">
+        <imgdir name="0" />
+        <imgdir name="1">
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142010" />
+                    <int name="count" value="1" />
+                    <int name="job" value="4" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Say">
+        <imgdir name="0">
+            <string name="0" value="#v1142010# #e#b#t1142010##k\n\n - Reach Level 200 as a Magician\n\n#nDo you want to test your skills to see if you're worthy of this title?" />
+            <imgdir name="stop" />
+            <imgdir name="yes">
+                <string name="0" value="I wish you the best.  There isn't a specific time limit, so whenever you think you're ready, come back and see me.  Also, you should know that unless you complete or quit this quest first, you won't be able to try out for another title." />
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Come back when you're ready." />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You reached level 200 as a magician!  Great job!" />
+            <string name="1" value="Take this." />
+            <imgdir name="yes">
+                <string name="0" value="On behalf of the God of Honor, I, Dalair, announce to the world that you are the owner of this honorable title.  If you want to try out for a new title, come back and see me any time." />
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <string name="0" value="Reach level 200." />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="Check">
+        <imgdir name="1">
+            <int name="npc" value="9000040" />
+            <int name="level" value="200" />
+        </imgdir>
+        <imgdir name="0">
+            <int name="npc" value="9000040" />
+            <imgdir name="item">
+                <imgdir name="0">
+                    <int name="id" value="1142010" />
+                </imgdir>
+            </imgdir>
+            <int name="lvmin" value="180" />
+            <int name="interval" value="0" />
+            <imgdir name="job">
+                <int name="0" value="200" />
+                <int name="1" value="210" />
+                <int name="2" value="220" />
+                <int name="3" value="230" />
+                <int name="4" value="211" />
+                <int name="5" value="221" />
+                <int name="6" value="231" />
+                <int name="7" value="212" />
+                <int name="8" value="222" />
+                <int name="9" value="232" />
+            </imgdir>
+        </imgdir>
+    </imgdir>
+</imgdir>
