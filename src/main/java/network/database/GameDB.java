@@ -31,6 +31,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
+
+import game.user.quest.info.SimpleStrMap;
+import util.FileTime;
 import util.Pointer;
 
 /**
@@ -125,6 +128,20 @@ public class GameDB {
                     cd.load(rs, DBChar.QuestRecord);
                 }
             }
+
+            try (PreparedStatement ps = con.prepareStatement("SELECT * FROM `questperformex` WHERE `CharacterID` = ?")) {
+                ps.setInt(1, characterID);
+                try (ResultSet rs = ps.executeQuery()) {
+                    cd.load(rs, DBChar.QuestRecordEx);
+                }
+            }
+
+            try (PreparedStatement ps = con.prepareStatement("SELECT * FROM `questcomplete` WHERE `CharacterID` = ?")) {
+                ps.setInt(1, characterID);
+                try (ResultSet rs = ps.executeQuery()) {
+                    cd.load(rs, DBChar.QuestComplete);
+                }
+            }
             // Initialize New Equip ItemSN/CashItemSN
             boolean updateEquip = false;
             for (ItemSlotBase item : cd.getEquipped()) {
@@ -211,7 +228,62 @@ public class GameDB {
             ex.printStackTrace(System.err);
         }
     }
-    
+
+    public static void rawSaveQuestRecord(int characterID, Map<Integer, String> questRecord) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questperform` WHERE CharacterID = ?")) {
+                Database.execute(con, ps, characterID);
+            }
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `questperform` SET `QuestState` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
+                for (Map.Entry<Integer, String> quest : questRecord.entrySet()) {
+                    int questID = quest.getKey();
+                    String value = quest.getValue() == null ? "" : quest.getValue();
+                    if (questID != 0) Database.execute(con, ps, value, characterID, questID);
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
+
+    public static void rawSaveQuestRecordEx(int characterID, Map<Integer, SimpleStrMap> questRecordEx) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questperformex` WHERE CharacterID = ?")) {
+                Database.execute(con, ps, characterID);
+            }
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `questperformex` SET `RawString` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
+                for (Map.Entry<Integer, SimpleStrMap> questEx : questRecordEx.entrySet()) {
+                    int questID = questEx.getKey();
+                    String rawString = "";
+                    SimpleStrMap simpleStrMap = questEx.getValue();
+                    if (simpleStrMap != null) {
+                        rawString = simpleStrMap.getRawString();
+                    }
+                    if (questID != 0) Database.execute(con, ps, rawString, characterID, questID);
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
+
+    public static void rawSaveQuestComplete(int characterID, Map<Integer, FileTime> questComplete) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questcomplete` WHERE CharacterID = ?")) {
+                Database.execute(con, ps, characterID);
+            }
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `questcomplete` SET `CompleteTime` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
+                for (Map.Entry<Integer, FileTime> quest : questComplete.entrySet()) {
+                    int questID = quest.getKey();
+                    long time = quest.getValue() != null ? quest.getValue().fileTimeToLong() : 0;
+                    if (questID != 0 && time != 0) Database.execute(con, ps, time, characterID, questID);
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
+
     public static void rawSetInventorySize(int characterID, List<Integer> inventorySize) {
         try (Connection con = Database.getDB().poolConnection()) {
             try (PreparedStatement ps = con.prepareStatement("UPDATE `inventorysize` SET `EquipCount` = ?, `ConsumeCount` = ?, `InstallCount` = ?, `EtcCount` = ? WHERE `CharacterID` = ?")) {

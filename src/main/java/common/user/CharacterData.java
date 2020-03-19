@@ -494,7 +494,22 @@ public class CharacterData {
         }
         if ((flag & DBChar.QuestRecord) != 0) {
             while (rs.next()) {
-                questRecord.put(Integer.parseInt(rs.getString("QRKey")), rs.getString("QRValue"));
+                questRecord.put(rs.getInt("QRKey"), rs.getString("QuestState"));
+            }
+        }
+
+        if ((flag & DBChar.QuestRecordEx) != 0) {
+            while (rs.next()) {
+                SimpleStrMap simpleStrMap = new SimpleStrMap();
+                simpleStrMap.initFromRawString(rs.getString("RawString"));
+                questRecordEx.put(rs.getInt("QRKey"), simpleStrMap);
+            }
+        }
+
+        if ((flag & DBChar.QuestComplete) != 0) {
+            while (rs.next()) {
+                long completeTime = rs.getLong("CompleteTime");
+                questComplete.put(rs.getInt("QRKey"), completeTime != 0 ? FileTime.longToFileTime(completeTime) : FileTime.START);
             }
         }
     }

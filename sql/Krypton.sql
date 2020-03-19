@@ -233,8 +233,8 @@ DROP TABLE IF EXISTS `questperform`;
 CREATE TABLE `questperform` (
   `SN` int(11) NOT NULL AUTO_INCREMENT,
   `CharacterID` int(11) NOT NULL DEFAULT 0,
-  `QRKey` varchar(100) NOT NULL DEFAULT '0',
-  `QRValue` varchar(100) NOT NULL,
+  `QRKey` int(11) NOT NULL DEFAULT 0,
+  `QuestState` varchar(100) NOT NULL,
   PRIMARY KEY (`SN`),
   UNIQUE KEY `QRKey` (`QRKey`,`CharacterID`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -246,6 +246,46 @@ CREATE TABLE `questperform` (
 /*!40000 ALTER TABLE `questperform` DISABLE KEYS */;
 /*!40000 ALTER TABLE `questperform` ENABLE KEYS */;
 
+
+-- Definition of table `questcomplete`
+--
+
+DROP TABLE IF EXISTS `questcomplete`;
+CREATE TABLE `questcomplete` (
+  `SN` int(11) NOT NULL AUTO_INCREMENT,
+  `CharacterID` int(11) NOT NULL DEFAULT 0,
+  `QRKey` int(11) NOT NULL DEFAULT 0,
+  `CompleteTime` BIGINT(20) NOT NULL,
+  PRIMARY KEY (`SN`),
+  UNIQUE KEY `QRKey` (`QRKey`,`CharacterID`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `questperform`
+--
+
+/*!40000 ALTER TABLE `questcomplete` DISABLE KEYS */;
+/*!40000 ALTER TABLE `questcomplete` ENABLE KEYS */;
+
+-- Definition of table `questperformex`
+--
+
+DROP TABLE IF EXISTS `questperformex`;
+CREATE TABLE `questperformex` (
+  `SN` int(11) NOT NULL AUTO_INCREMENT,
+  `CharacterID` int(11) NOT NULL DEFAULT 0,
+  `QRKey` int(11) NOT NULL DEFAULT 0,
+  `QRValue` varchar(100) NOT NULL,
+  PRIMARY KEY (`SN`),
+  UNIQUE KEY `QRKey` (`QRKey`,`CharacterID`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `questperform`
+--
+
+/*!40000 ALTER TABLE `questperformex` DISABLE KEYS */;
+/*!40000 ALTER TABLE `questperformex` ENABLE KEYS */;
 
 --
 -- Definition of table `reward`

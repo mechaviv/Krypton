@@ -2763,6 +2763,15 @@ public class User extends Creature {
                         if ((characterDataModFlag & DBChar.SkillRecord) != 0) {
                             GameDB.rawSaveSkillRecord(getCharacterID(), character.getSkillRecord());
                         }
+                        if ((characterDataModFlag & DBChar.QuestRecord) != 0) {
+                            GameDB.rawSaveQuestRecord(getCharacterID(), character.getQuestRecord());
+                        }
+                        if ((characterDataModFlag & DBChar.QuestRecordEx) != 0) {
+                            GameDB.rawSaveQuestRecordEx(getCharacterID(), character.getQuestRecordEx());
+                        }
+                        if ((characterDataModFlag & DBChar.QuestComplete) != 0) {
+                            GameDB.rawSaveQuestComplete(getCharacterID(), character.getQuestComplete());
+                        }
                         if ((characterDataModFlag & DBChar.ItemSlotEquip) != 0) {
                             CommonDB.rawUpdateItemEquip(characterID, character.getEquipped(), character.getEquipped2(), character.getItemSlot().get(ItemType.Equip));
                         }

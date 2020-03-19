@@ -401,7 +401,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
                     job = JobAccessor.NOVICE.getJob();
                     switch (selectedSubJob) {
                         default:
-                            map = 0;
+                            map = 10000;
                             break;
                     }
                     break;
@@ -428,7 +428,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
                 default:
                     level = 1;
                     job = JobAccessor.NOVICE.getJob();
-                    map = 0;
+                    map = 10000;
                     break;
             }
             final Pointer<Integer> newCharacterID = new Pointer<>(0);
