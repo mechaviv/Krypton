@@ -90,4 +90,19 @@ public class MobPool {
         mp.encode(packet);
         return packet;
     }
+
+    //nHPIndicator
+
+    public static OutPacket onHPIndicator(int mobID, int percentage) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobHPIndicator);
+        packet.encodeInt(mobID);
+        packet.encodeByte(percentage);
+        return packet;
+    }
+    public static OutPacket onSuspendReset(int mobID, boolean suspendReset) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobSuspendReset);
+        packet.encodeInt(mobID);
+        packet.encodeBool(suspendReset);
+        return packet;
+    }
 }

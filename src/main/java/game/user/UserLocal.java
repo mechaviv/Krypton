@@ -40,7 +40,7 @@ public class UserLocal {
      * 
      * @return The local user effect packet
      */
-    public static OutPacket onEffect(byte userEffect, int... args) {
+    public static OutPacket onEffect(byte userEffect, String str, int... args) {
         OutPacket packet = new OutPacket(LoopbackPacket.UserEffectLocal);
         packet.encodeByte(userEffect);
         switch (userEffect) {
@@ -54,6 +54,25 @@ public class UserLocal {
                 packet.encodeInt(args[0]);
                 packet.encodeByte(args[1]);
                 break;
+            case UserEffect.AvatarOriented:
+                packet.encodeString(str);
+                packet.encodeInt(0);// no use
+                break;
+        }
+        return packet;
+    }
+
+    public static OutPacket balloonMsg(String message, int width, int timeOut, int x, int y) {
+        OutPacket packet = new OutPacket(LoopbackPacket.UserBalloonMsg);
+        packet.encodeString(message);
+        packet.encodeShort(width);
+        packet.encodeShort(timeOut);
+
+        boolean automated = x == 0 && y == 0;
+        packet.encodeBool(automated);
+        if (!automated) {
+            packet.encodeInt(x);
+            packet.encodeInt(y);
         }
         return packet;
     }

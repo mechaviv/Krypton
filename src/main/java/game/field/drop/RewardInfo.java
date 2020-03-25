@@ -17,77 +17,117 @@
  */
 package game.field.drop;
 
+import util.FileTime;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Eric
  */
 public class RewardInfo {
     private byte type;
-    private final int money;
-    private final int prob;
+    private int money;
     private int itemId;
+    private int prob;
     private int min;
     private int max;
     private int maxCount;
     private int period;
-    private final boolean premiumMap;
-    
-    public RewardInfo(int money, int itemId, int prob, int min, int max, boolean premium) {
-        this.money = money;
-        this.prob = prob;
-        if (this.money == 0) {
-            this.itemId = itemId;
-            this.min = min;
-            this.max = max;
-        }
-        this.premiumMap = premium;
+    private FileTime dateExpire;
+    private List<Integer> qrKeys;
+    private boolean premiumMap;
+
+    public RewardInfo() {
+        this.qrKeys = new ArrayList<>();
     }
 
     public byte getType() {
         return type;
     }
 
+    public void setType(byte type) {
+        this.type = type;
+    }
+
     public int getMoney() {
         return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public int getItemId() {
         return itemId;
     }
 
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
+    }
+
     public int getProb() {
         return prob;
+    }
+
+    public void setProb(int prob) {
+        this.prob = prob;
     }
 
     public int getMin() {
         return min;
     }
 
+    public void setMin(int min) {
+        this.min = min;
+    }
+
     public int getMax() {
         return max;
+    }
+
+    public void setMax(int max) {
+        this.max = max;
     }
 
     public int getMaxCount() {
         return maxCount;
     }
 
+    public void setMaxCount(int maxCount) {
+        this.maxCount = maxCount;
+    }
+
     public int getPeriod() {
         return period;
+    }
+
+    public void setPeriod(int period) {
+        this.period = period;
+    }
+
+    public FileTime getDateExpire() {
+        return dateExpire;
+    }
+
+    public void setDateExpire(FileTime dateExpire) {
+        this.dateExpire = dateExpire;
+    }
+
+    public List<Integer> getQrKey() {
+        return qrKeys;
+    }
+
+    public void setQrKey(List<Integer> qrKeys) {
+        this.qrKeys = qrKeys;
     }
 
     public boolean isPremiumMap() {
         return premiumMap;
     }
 
-    public void setType(byte type) {
-        this.type = type;
-    }
-
-    public void setMaxCount(int maxCount) {
-        this.maxCount = maxCount;
-    }
-
-    public void setPeriod(int period) {
-        this.period = period;
+    public void setPremiumMap(boolean premiumMap) {
+        this.premiumMap = premiumMap;
     }
 }

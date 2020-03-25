@@ -17,6 +17,9 @@
  */
 package util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Eric
@@ -151,5 +154,27 @@ public class Utilities {
      */
     public static boolean isNumber(String string) {
         return string != null && string.matches("-?\\d+(\\.\\d+)?");
+    }
+
+    public static void getRandomUniqueArray(List<Integer> shuffles, int start, int range, int count) {
+        shuffles.clear();
+
+        List<Integer> tempList = new ArrayList<>();
+        if (range != 0) {
+            for (int i = 0; i < range; i++) {
+                tempList.add(i + start);
+            }
+        }
+        for (int i = 0; i < count; i++) {
+            int rand = Math.abs(Rand32.genRandom().intValue());
+
+            int size = tempList.size();
+            if (size != 0) {
+                rand = rand % size;
+            }
+            shuffles.add(i, tempList.get(rand));
+            tempList.remove(rand);
+        }
+        tempList.clear();
     }
 }

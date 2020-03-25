@@ -35,6 +35,7 @@ import java.util.Map.Entry;
 
 import util.FileTime;
 import util.Logger;
+import util.SystemTime;
 import util.wz.WzFileSystem;
 import util.wz.WzPackage;
 import util.wz.WzProperty;
@@ -51,6 +52,7 @@ public class ItemInfo {
     protected static final Map<Integer, StateChangeItem> statChangeItem;
     protected static final Map<Integer, PortalScrollItem> portalScrollItem;
     protected static final Map<Integer, UpgradeItem> upgradeItem;
+    protected static final Map<Integer, MobSummonItem> mobSummonItem;
     //
     protected static final Map<Integer, String> mapString;
     protected static final Map<Integer, Map<String, String>> itemString;
@@ -62,7 +64,7 @@ public class ItemInfo {
         statChangeItem = new HashMap<>();
         portalScrollItem = new HashMap<>();
         upgradeItem = new HashMap<>();
-
+        mobSummonItem = new HashMap<>();
         // Initialize Strings
         mapString = new HashMap<>();
         itemString = new HashMap<>();
@@ -88,6 +90,8 @@ public class ItemInfo {
         return upgradeItem.get(itemID);
     }
 
+    public static MobSummonItem getMobSummonItem(int itemID) { return mobSummonItem.get(itemID); }
+
     public static String getItemName(int itemID) {
         Map<String, String> value = itemString.getOrDefault(itemID, null);
         if (value == null) {
@@ -98,6 +102,18 @@ public class ItemInfo {
 
     public static String getMapName(int mapID) {
         return mapString.get(mapID);
+    }
+
+    public static FileTime getItemDateExpire(String dateExpire) {
+        if (dateExpire == null || dateExpire.isEmpty()) {
+            return FileTime.DATE_2079;
+        }
+        SystemTime systemTime = new SystemTime();
+        systemTime.setYear(Integer.parseInt(dateExpire.substring(0, 4)));
+        systemTime.setMonth(Integer.parseInt(dateExpire.substring(4, 6)));
+        systemTime.setDay(Integer.parseInt(dateExpire.substring(6, 8)));
+        systemTime.setHour(Integer.parseInt(dateExpire.substring(8, 10)));
+        return systemTime.systemTimeToFileTime();
     }
 
     public static int getBulletPAD(int itemID) {
@@ -186,7 +202,7 @@ public class ItemInfo {
                 Logger.logError("Inexistant item [%d]", itemID);
                 return null;
             }
-            if (ti <= ItemType.Etc) {
+            if (ti <= ItemType.Cash) {
                 BundleItem info = getBundleItem(itemID);
                 if (info != null) {
                     ItemSlotBundle item = new ItemSlotBundle(itemID);
@@ -474,6 +490,8 @@ public class ItemInfo {
             registerPortalScrollItem(item.getItemID(), itemData);
         } else if (ItemAccessor.isWeatherItem(item.getItemID())) {
             // wonder if 'CashItem' should add this and megaphone (208)..
+        } else if (ItemAccessor.isMobSummonItem(item.getItemID())) {
+            registerMobSummonItem(item.getItemID(), itemData);
         }
 
         bundleItem.put(item.getItemID(), item);
@@ -557,6 +575,26 @@ public class ItemInfo {
             item.setMoveTo(WzUtil.getInt32(spec.getNode("moveTo"), Field.Invalid));
         }
         portalScrollItem.put(item.getItemID(), item);
+    }
+
+    private static void registerMobSummonItem(int itemID, WzProperty itemData) {
+        MobSummonItem item = new MobSummonItem();
+        item.setItemID(itemID);
+
+        WzProperty info = itemData.getNode("info");
+        if (info != null) {
+            item.setType(WzUtil.getInt32(info.getNode("type"), 0));
+        }
+        WzProperty mobProp = itemData.getNode("mob");
+        if (mobProp != null) {
+            for (WzProperty mobData : mobProp.getChildNodes()) {
+                MobEntry entry = new MobEntry();
+                entry.setMobTemplateID(WzUtil.getInt32(mobData.getNode("id"), 0));
+                entry.setProb(WzUtil.getInt32(mobData.getNode("prob"), 0));
+                item.getMobs().add(entry);
+            }
+        }
+        mobSummonItem.put(itemID, item);
     }
 
     private static void registerUpgradeItem(int itemID, WzProperty itemData) {

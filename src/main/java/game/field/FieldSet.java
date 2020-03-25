@@ -7,14 +7,15 @@ import game.GameApp;
 import game.field.event.EventInfo;
 import game.field.event.EventManager;
 import game.field.event.Timer;
-import game.field.life.mob.Mob;
 import game.field.life.npc.Npc;
-import game.field.set.EventProgress;
-import game.field.set.ReactorActionInfo;
-import game.field.set.ReactorInfo;
+import game.field.reactor.ReactorPool;
+import game.field.reactor.action.ActionType;
+import game.field.reactor.action.ReactorActionInfo;
+import game.field.reactor.action.ReactorInfo;
 import game.script.ScriptVM;
 import game.user.User;
 import game.user.WvsContext;
+import game.user.quest.UserQuestRecord;
 import network.packet.OutPacket;
 import util.Logger;
 import util.Pointer;
@@ -90,10 +91,12 @@ public class FieldSet extends EventManager {
     public int enter(int characterID, int fieldInfo) {
         User user = GameApp.getInstance().getChannel(channelID).findUser(characterID);
         if (user == null) {
+            Logger.logReport("Return 9");
             return 9;
         }
         Field field = user.getField();
         if (field == null) {
+            Logger.logReport("Return -1");
             return -1;
         }
         List<User> users = new ArrayList<>();// loads the users from party
@@ -200,6 +203,7 @@ public class FieldSet extends EventManager {
         } else {
             // TODO (wedding 30)
         }
+        Logger.logReport("Return %d", result);
         return result;
     }
 
@@ -293,7 +297,7 @@ public class FieldSet extends EventManager {
                         Pointer<Integer> y = new Pointer<>(Integer.parseInt(event.getArgs().get(3)));
                         StaticFoothold fh = field.getSpace2D().getFootholdUnderneath(x, y.get(), y);
                         if (fh != null) {
-                            field.getLifePool().createMob(templateID, null, x, y.get(), (short) fh.getSN(), false, MobAppearType.NORMAL, 0, (byte) 1, 0, null);
+                            field.getLifePool().createMob(templateID, null, x, y.get(), (short) fh.getSN(), false, MobAppearType.NORMAL, 0, (byte) 1, 0, null, false);
                         }
                     }
                 }
@@ -336,6 +340,7 @@ public class FieldSet extends EventManager {
                 affectedUsers.add(user);
             }
             if (affectedUsers.size() != 0) {
+                Logger.logReport("Casting out [3]");
                 castOut(affectedUsers, 0, "");
             }
             allUsers.clear();
@@ -391,9 +396,9 @@ public class FieldSet extends EventManager {
         getUserList(users);
         for (User user : users) {
             int inc = exp;
-            //if (quest > 0 && UserQuestRecord.get(user, quest) != null) {
-            //    inc *= 0.7;
-            //}
+            if (quest > 0 && UserQuestRecord.get(user, quest) != null) {
+                inc *= 0.7;
+            }
             int flag = user.incEXP(inc, false);
             if (flag != 0) {
                 user.sendCharacterStat(Request.None, flag);
@@ -417,6 +422,7 @@ public class FieldSet extends EventManager {
                 // CGuildMan::RemoveGuildQuestWaitingList(TSingleton<CGuildMan>::ms_pInstance, abs(TSingleton<CGuildMan>::ms_pInstance->m_nGulidIDCanEnterQuest));
             }
         }
+        Logger.logReport("Casting out [2]");
         castOut(users, fieldID, portal);
         users.clear();
     }
@@ -574,7 +580,7 @@ public class FieldSet extends EventManager {
     public String getVariable(String key) {
         lockVariable.lock();
         try {
-            return variable.getOrDefault(key, null);
+            return variable.getOrDefault(key, "");
         } finally {
             lockVariable.unlock();
         }
@@ -708,23 +714,224 @@ public class FieldSet extends EventManager {
     //~~~~~~~~~~~~~~~~ TODO functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Reactor methods:
     public void checkBossMap() {
+        if (affectedFields.get(0).getReactorPool().getState("boss") != 0 && getUserCount() == 0) {
+            lockVariable.lock();
+            try {
+                variable.clear();
+            } finally {
+                lockVariable.unlock();
+            }
+            for (int i = 0; i < affectedCount; i++) {
+                affectedFields.get(i).reset(shuffleReactor);
+            }
+        }
     }
 
-    public boolean checkReactorAction(Field field, String reactorName, int eventTime) {
+    public boolean checkReactorAction(Field field, String reactorName, long eventTime) {
+        int idX = getFieldIndex(field);
+        if (idX < 0) {
+            return false;
+        }
+        int index = 0;
+        for (ReactorActionInfo actionInfo : reactorActionInfos) {
+            if (actionInfo.getFieldIDx() != idX) {
+                continue;
+            }
+            boolean correctState = true, found = false;
+            for (ReactorInfo reactorInfo : actionInfo.getReactorInfos()) {
+                int state = field.getReactorPool().getState(reactorInfo.getName());
+                if (state < 0 || state != reactorInfo.getEventState()) {
+                    correctState = false;
+                    break;
+                }
+                if (reactorInfo.getName().equals(reactorName)) {
+                    found = true;
+                }
+            }
+            if (found && correctState) {
+                EventManager.lock.lock();
+                try {
+                    EventInfo eventInfo = new EventInfo();
+                    eventInfo.setEventSN(EventManager.setTime(this, eventTime));
+                    eventInfo.getArgs().clear();
+                    eventInfo.getArgs().add(index);
+                    eventInfo.getArgs().add(0);// reactor = 0 | event = 1
+                    Logger.logReport("[Field Set] Adding reactor event");
+                    getEventInfos().put(eventInfo.getEventSN(), eventInfo);
+                } finally {
+                    EventManager.lock.unlock();
+                }
+            }
+            index++;
+        }
         return true;
     }
 
     public void checkShouwaBossMap() {
+        if (affectedFields.get(0).getReactorPool().getState("shouwaBoss") != 0 && getUserCount() == 0) {
+            lockVariable.lock();
+            try {
+                variable.clear();
+            } finally {
+                lockVariable.unlock();
+            }
+            for (int i = 0; i < affectedCount; i++) {
+                affectedFields.get(i).reset(shuffleReactor);
+            }
+        }
     }
 
     public void doReactorAction(ReactorActionInfo reactorActionInfo) {
+        int type = reactorActionInfo.getType();
+        List<String> args = reactorActionInfo.getArgs();
+        Logger.logReport("Doing reactor action [%d]", type);
+        if (type == ActionType.SetReactorState) {
+            if (args == null || args.isEmpty() || args.size() < 3) {
+                return;
+            }
+            int fieldIDx = Integer.parseInt(args.get(0));
+            if (fieldIDx < 0 || fieldIDx >= this.count) {
+                return;
+            }
+            Field field = allFields.get(fieldIDx);
+            if (field == null || field.getReactorPool() == null) {
+                return;
+            }
+            ReactorPool reactorPool = field.getReactorPool();
+
+            String name = args.get(1);
+            if (name == null || name.isEmpty()) {
+                return;
+            }
+            int state = Integer.parseInt(args.get(2));
+            if (state < 0) {
+                state = reactorPool.getState(name) + 1;
+            }
+            reactorPool.setState(name, state);
+
+            if (args.size() > 3) {
+                int statueVal = Integer.parseInt(args.get(3));
+                String variable = getVariable("statueQuestion");
+
+                int statues = 1;
+                while (true) {
+                    if (variable.indexOf("" + statues) < 0) {
+                        break;
+                    }
+                    statues++;
+                }
+                if (statueVal == statues - 1) {
+                    setVariable("statueAnswer", "00000000000000000000");
+                    reactorPool.setReactorHitEnable(true);
+                }
+            }
+        } else if (type == ActionType.SetVariable) {
+            if (args == null || args.isEmpty() || args.size() < 2) {
+                return;
+            }
+            String varName = args.get(0);
+            String varValue = args.get(1);
+            if (varName == null || varName.isEmpty() || varValue == null || varValue.isEmpty()) {
+                return;
+            }
+            if (getFieldSetName().equals("ZakumBoss") || varName.equals("boss") || getUserCount() != 0) {
+                setVariable(varName, varValue);
+            }
+        } else if (type == ActionType.ChangeBGM) {
+            Logger.logReport("Changing BGM");
+            if (args == null || args.isEmpty() || args.size() < 2) {
+                Logger.logReport("Return args length = [%d]", args.size());
+                return;
+            }
+            int fieldIDx = Integer.parseInt(args.get(0));
+            if (fieldIDx < 0 || fieldIDx >= this.count) {
+                return;
+            }
+            Field field = allFields.get(fieldIDx);
+            if (field == null) {
+                return;
+            }
+            String BGM = args.get(1);
+            if (BGM != null && !BGM.isEmpty()) {
+                field.effectChangeBGM(BGM);
+            }
+        } else if (type == ActionType.TrembleEffect) {
+            if (args == null || args.isEmpty() || args.size() < 3) {
+                return;
+            }
+            int heavyNShortTremble = Integer.parseInt(args.get(0)) != 0 ? 1 : 0;
+            int delay = Integer.parseInt(args.get(1));
+            for (int i = 2; ; i++) {
+                if (args.size() < i + 1) {
+                    break;
+                }
+                Field field = allFields.get(i);
+                if (field != null) {
+                    field.effectTremble(heavyNShortTremble, delay);
+                }
+            }
+        } else if (type == ActionType.RemoveAllMob) {
+            if (args == null || args.isEmpty() || args.size() < 1) {
+                return;
+            }
+            int fieldIDx = Integer.parseInt(args.get(0));
+            if (fieldIDx < 0 || fieldIDx >= this.count) {
+                return;
+            }
+            Field field = allFields.get(fieldIDx);
+            if (field == null) {
+                return;
+            }
+            field.getLifePool().removeAllMob(false);
+            field.getLifePool().setMobGen(false, 0);
+        } else if (type == ActionType.SetObjectState) {
+            if (args == null || args.isEmpty() || args.size() < 3) {
+                return;
+            }
+            int fieldIDx = Integer.parseInt(args.get(0));
+            if (fieldIDx < 0 || fieldIDx >= this.count) {
+                return;
+            }
+            Field field = allFields.get(fieldIDx);
+            if (field == null) {
+                return;
+            }
+            String name = args.get(1);
+            int state = Integer.parseInt(args.get(2));
+            if (name == null || name.isEmpty()) {
+                return;
+            }
+            field.setObjectState(name, state);
+        }
     }
 
     public int getReactorState(int fieldIDx, String name) {
+        Field field = allFields.get(fieldIDx);
+        if (field != null && field.getReactorPool() != null) {
+            return field.getReactorPool().getState(name);
+        }
         return -1;
     }
 
     public void setReactorState(int fieldIDx, String name, int state, int order) {
+        EventManager.lock.lock();
+        try {
+            ReactorActionInfo reactorActionInfo = new ReactorActionInfo();
+            reactorActionInfo.setType(ActionType.SetReactorState);
+            reactorActionInfo.getArgs().add("" + fieldIDx);
+            reactorActionInfo.getArgs().add(name);
+            reactorActionInfo.getArgs().add("" + state);
+            reactorActionInfo.getArgs().add("" + order);
+            reactorActionInfos.add(reactorActionInfo);
+        } finally {
+            EventManager.lock.unlock();
+        }
+        EventInfo eventInfo = new EventInfo();
+        eventInfo.setEventSN(EventManager.setTime(this, System.currentTimeMillis()));
+        eventInfo.getArgs().clear();
+        eventInfo.getArgs().add(reactorActionInfos.size() - 1);
+        eventInfo.getArgs().add(0);
+        getEventInfos().put(eventInfo.getEventSN(), eventInfo);
     }
 
     // Party methods:
@@ -774,7 +981,8 @@ public class FieldSet extends EventManager {
         if (isMCarnivalWaitingFieldSet() || isRomioJulietFieldSet()) {
             // TODO
         }
-        if (checkTimeOut == 0 || timeOut.isWaiting(System.currentTimeMillis())) {
+        boolean wa = timeOut.isWaiting(System.currentTimeMillis());
+        if (checkTimeOut == 0 || wa) {
             if (tryToRunInitScript) {
                 if (userCount > 0) {
                     // should iterate ?
@@ -798,6 +1006,7 @@ public class FieldSet extends EventManager {
                 destroyClock();
                 fieldSetStart = false;
             } else {
+                Logger.logReport("Casting out [1]");
                 castOut(users, targetFieldID, "");
             }
             if (tryToRunInitScript) {
@@ -892,7 +1101,6 @@ public class FieldSet extends EventManager {
 
         Field field = allFields.get(fieldIDx);
         if (field != null) {
-
             for (WzProperty sub : subData.getChildNodes()) {
                 if (sub.getNodeName().equals("info")) {
                     int type = WzUtil.getInt32(sub.getNode("type"), -1);
@@ -921,6 +1129,7 @@ public class FieldSet extends EventManager {
                     actionInfo.getReactorInfos().add(ri);
                 }
             }
+            reactorActionInfos.add(actionInfo);
         }
     }
 

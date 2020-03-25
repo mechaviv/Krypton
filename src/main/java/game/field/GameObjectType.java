@@ -29,8 +29,11 @@ public class GameObjectType {
             User        = 3,
             Npc         = 4,
             Mob         = 5,
+            Pet         = 6,
             Item        = 7,
             Portal      = 8,
-            NO          = 9
+            Reactor     = 9,
+            Employee    = 10,
+            NO          = 11
     ;
 }

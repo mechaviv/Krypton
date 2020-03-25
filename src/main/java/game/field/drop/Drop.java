@@ -21,11 +21,17 @@ import common.item.ItemAccessor;
 import common.item.ItemSlotBase;
 import common.item.ItemType;
 import game.field.FieldObj;
+import game.party.PartyMan;
 import game.user.User;
 import game.user.item.Inventory;
 import game.user.item.ItemInfo;
 import java.awt.Point;
+import java.util.Arrays;
+import java.util.List;
+
+import game.user.quest.UserQuestRecord;
 import network.packet.OutPacket;
+import util.Logger;
 import util.Pointer;
 
 /**
@@ -49,6 +55,7 @@ public class Drop extends FieldObj {
     private int dropID;
     private int sourceID;
     private int ownerID;
+    private int ownPartyID;
     private int ownType;
     private int money;
     private int period;
@@ -57,10 +64,13 @@ public class Drop extends FieldObj {
     private long createTime;
     private boolean isMoney;
     private boolean everlasting;
+    private boolean consumeOnPickUp;
+    private boolean byPet;
     private Point pt1;
     private Point pt2;
     private ItemSlotBase item;
-    
+    private List<Integer> quests;
+
     public Drop(int dropID, Reward reward, int ownerID, int sourceID, int x1, int y1,int x2, int y2) {
         super();
         this.dropID = dropID;
@@ -73,6 +83,7 @@ public class Drop extends FieldObj {
         this.showMax = 0;
         this.period = reward.getPeriod();
         if (reward.getInfo() != null) {
+            this.quests = reward.getInfo().getQrKey();
             this.showMax = reward.getInfo().getMaxCount();
         }
         this.item = reward.getItem();
@@ -158,6 +169,9 @@ public class Drop extends FieldObj {
     
     @Override
     public boolean isShowTo(User user) {
+        if (quests == null || quests.isEmpty()) {
+            return true;
+        }
         if (user == null || user.getHP() == 0 || user.getField() == null) {
             return false;
         }
@@ -183,7 +197,21 @@ public class Drop extends FieldObj {
                 }
             }
         }
-        return true;
+        for (Integer quest : quests) {
+            if (quest == 0) {
+                continue;
+            }
+            if (UserQuestRecord.get(user, quest) == null) {
+                return false;
+            }
+        }
+        boolean show = ownType == 2 || ownType == 3;
+        if (ownType == 0 && user.getCharacterID() == ownerID) {
+            show = true;
+        } else if (ownType == 1 && PartyMan.getInstance().isPartyMember(ownPartyID, user.getCharacterID())) {
+            show = true;
+        }
+        return show;
     }
     
     public void setCreateTime(long time) {

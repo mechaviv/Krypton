@@ -32,7 +32,9 @@ import javax.json.JsonReader;
 import game.field.FieldMan;
 import game.field.life.mob.MobTemplate;
 import game.field.life.npc.NpcTemplate;
+import game.field.reactor.ReactorTemplate;
 import game.party.PartyMan;
+import game.script.ScriptVM;
 import game.user.User;
 import game.user.item.ItemInfo;
 import game.user.quest.QuestMan;
@@ -233,7 +235,8 @@ public class GameApp {
     
     private void initializeGameData() {
         long time;
-        
+        new ScriptVM();
+
         // Load Items and Equipment
         time = System.currentTimeMillis();
         ItemInfo.load();
@@ -263,14 +266,19 @@ public class GameApp {
         
         // Load Mobs
         time = System.currentTimeMillis();
-        MobTemplate.load(true);
+        MobTemplate.load(false);
         Logger.logReport("Loaded Mob Attributes in " + ((System.currentTimeMillis() - time) / 1000.0) + " seconds.");
         
         // Load Npcs
         time = System.currentTimeMillis();
         NpcTemplate.load(true);
         Logger.logReport("Loaded Npc Attributes in " + ((System.currentTimeMillis() - time) / 1000.0) + " seconds.");
-        
+
+        // Load Reactors
+        time = System.currentTimeMillis();
+        ReactorTemplate.load();
+        Logger.logReport("Loaded Reactor Attributes in " + ((System.currentTimeMillis() - time) / 1000.0) + " seconds.");
+
         // Load Maps
         time = System.currentTimeMillis();
         FieldMan.init(getChannels().size());

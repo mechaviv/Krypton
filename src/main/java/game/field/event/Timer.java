@@ -1,5 +1,7 @@
 package game.field.event;
 
+import util.Logger;
+
 /**
  * Created by MechAviv on 2/2/2020.
  */
@@ -11,7 +13,7 @@ public class Timer {
         if (cur - start > flag << 10) {
             flag &= 0x7FFFFFFF;
         }
-        return (flag >> 31) != 0;
+        return (flag >>> 31) != 0;
     }
 
     public int getFlag() {

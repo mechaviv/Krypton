@@ -1,0 +1,1 @@
+self.fieldRemoveAllMob(self.userGetFieldID())

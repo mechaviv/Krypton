@@ -665,14 +665,15 @@ public class QuestMan {
                     itemInfo.setItemID(WzUtil.getInt32(item.getNode("id"), 0));
                     itemInfo.setCount(WzUtil.getInt32(item.getNode("count"), 0));
                     demand.getDemandItem().add(itemInfo);
-                    // TODO: just uncomment when is quest item is coded
-                    // if (i == 1 && ItemInfo.getInstance().isQuestItem(itemID)) {
-                    //     if (itemQuest.getOrDefault(itemID, null) != null) {
-                    //          Logger.logError("Duplicate Quest Item in Complete Quest Demand :  QuestID = %d, ItemID = %d", questID, itemInfo.getItemID());
-                    //          return false;
-                    //     }
-                    //      itemQuest.put(itemID, questID);
-                    // }
+                    if (i == 1 && ItemInfo.isQuestItem(itemInfo.getItemID())) {
+                        List<Integer> quests = itemQuest.getOrDefault(itemInfo.getItemID(), new ArrayList<>());
+                        if (quests.contains(questID)) {
+                            Logger.logError("Duplicate Quest Item in Complete Quest Demand :  QuestID = %d, ItemID = %d", questID, itemInfo.getItemID());
+                            return false;
+                        }
+                        quests.add(questID);
+                        itemQuest.put(itemInfo.getItemID(), quests);
+                    }
                 }
             }
             WzProperty petProperty = demandData.getNode("pet");

@@ -25,7 +25,10 @@ public class UserQuestRecord {
         }
         if (user.lock()) {
             try {
-                return user.getCharacter().getQuestRecord().getOrDefault(key, null);
+                if (!user.getCharacter().getQuestRecord().containsKey(key)) {
+                    return null;
+                }
+                return user.getCharacter().getQuestRecord().get(key);
             } finally {
                 user.unlock();
             }

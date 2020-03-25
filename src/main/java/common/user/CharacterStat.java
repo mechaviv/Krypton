@@ -33,7 +33,7 @@ public class CharacterStat {
     private int face;
     private int hair;
     private byte skin;
-    private byte level;
+    private int level;
     private short job;
     private short subJob;
     private short STR;
@@ -183,7 +183,7 @@ public class CharacterStat {
         return skin;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return level;
     }
 
@@ -260,7 +260,7 @@ public class CharacterStat {
         setSkin(rs.getByte("Skin"));
         setFace(rs.getInt("Face"));
         setHair(rs.getInt("Hair"));
-        setLevel(rs.getByte("Level"));
+        setLevel(rs.getInt("Level"));
         setJob(rs.getShort("Job"));
         setSubJob(rs.getShort("SubJob"));
         setSTR(rs.getShort("STR"));
@@ -305,7 +305,7 @@ public class CharacterStat {
     }
 
     public void setLevel(int level) {
-        this.level = (byte) level;
+        this.level = level;
     }
 
     public void setJob(short job) {

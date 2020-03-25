@@ -25,6 +25,7 @@ import common.user.CharacterData;
 import common.user.CharacterStat;
 import common.user.CharacterStat.CharacterStatType;
 import game.field.Field;
+import game.field.FieldMan;
 import game.field.FieldPacket;
 import game.field.drop.DropPool;
 import game.field.drop.Reward;
@@ -70,6 +71,7 @@ public class GMCommands {
 
     public static String map(User user, String[] args) {
         if (args.length > 0) {
+            FieldMan.getInstance(user.getChannelID()).getField(Integer.parseInt(args[0])).reset(true);
             user.postTransferField(Integer.parseInt(args[0]), "", false);
             return null;
         }
@@ -79,7 +81,7 @@ public class GMCommands {
     @CommandDesc("Updates the level of your character")
     public static String level(User user, CharacterStat stat, String[] args) {
         if (args.length > 0) {
-            stat.setLevel(Byte.parseByte(args[0]));
+            stat.setLevel(Integer.parseInt(args[0]));
             user.sendCharacterStat(Request.Excl, CharacterStatType.LEV);
             return null;
         }

@@ -18,12 +18,10 @@
 package game.field.life.mob;
 
 import common.Request;
+import common.game.field.FieldEffectFlags;
 import common.game.field.MobAppearType;
 import game.GameApp;
-import game.field.Creature;
-import game.field.Field;
-import game.field.GameObjectType;
-import game.field.MovePath;
+import game.field.*;
 import game.field.MovePath.Elem;
 import game.field.drop.Reward;
 import game.field.drop.RewardType;
@@ -85,8 +83,10 @@ public class Mob extends Creature {
     private long create;
     private long lastRecovery;
     private long lastUpdatePoison;
+    private long lastSendMobHP;
     private final Map<Integer, Long> attackers;
-    
+    private boolean testDrops;
+
     public Mob(Field field, MobTemplate template, boolean noDropPriority) {
         super();
         setField(field);
@@ -108,6 +108,7 @@ public class Mob extends Creature {
         this.lastX = 0;
         this.lastY = 0;
         this.experiencedMoveStateChange = false;
+        this.testDrops = false;
         this.attackers = new HashMap<>();
         this.hp = getMaxHP();
         this.mp = getMaxMP();
@@ -115,6 +116,7 @@ public class Mob extends Creature {
         this.templateID = template.getTemplateID();
         this.stat = new MobStat();
         long time = System.currentTimeMillis();
+        this.lastSendMobHP = time;
         this.lastRecovery = time;
         this.lastAttack = time;
         this.lastMove = time;
@@ -122,7 +124,7 @@ public class Mob extends Creature {
         this.stat.setFrom(template);
     }
     
-    public double alterEXPbyLevel(byte level, double incEXP) {
+    public double alterEXPbyLevel(int level, double incEXP) {
         return incEXP;
     }
     
@@ -201,7 +203,7 @@ public class Mob extends Creature {
                                 incEXP *= user.getExpRate();
                                 incEXP *= getField().getIncEXPRate();
                                 incEXP = Math.max(1.0, incEXP);
-                                
+
                                 int flag = user.incEXP((int) incEXP, false);
                                 if (flag != 0) {
                                     user.sendCharacterStat(Request.None, flag);
@@ -309,7 +311,7 @@ public class Mob extends Creature {
                 ownerDropRate = (int) user.getMesoRate();
                 ownerDropRate_Ticket = (int) user.getTicketDropRate();
             }
-            List<Reward> rewards = Reward.create(template.getRewardInfo(), false, ownerDropRate, ownerDropRate_Ticket);
+            List<Reward> rewards = Reward.create(template.getRewardInfo(), false, ownerDropRate, ownerDropRate_Ticket, testDrops);
             if (rewards == null || rewards.isEmpty()) {
                 return;
             }
@@ -374,8 +376,10 @@ public class Mob extends Creature {
             return System.currentTimeMillis() - create >= 30000;
         }
         // TODO: self destruct and remove after handling
-        // removeAfter doesn't exist yet, actually..
-        return false;
+        if (template.getRemoveAfter() == 0) {
+            return false;
+        }
+        return 1000 * template.getRemoveAfter() < time - getCreate();
     }
     
     @Override
@@ -397,7 +401,7 @@ public class Mob extends Creature {
         Pointer<Integer> lastDamageCharacterID = new Pointer<>(0);
         int ownerID = distributeExp(lastDamageCharacterID);
         if (ownerID != 0) {
-            User user = GameApp.getInstance().findUser(ownerID);
+            User user = GameApp.getInstance().getChannel(getField().getChannelID()).findUser(ownerID);
             if (user != null && user.getField().getFieldID() == getField().getFieldID()) {
                 setMobCountQuestInfo(user);
             }
@@ -412,7 +416,7 @@ public class Mob extends Creature {
             getField().getLifePool().changeMobController(characterID, this, true);
         attackers.put(characterID, time);
         if (damage > 0) {
-            if (damage > 9999) {
+            if (damage > Integer.MAX_VALUE) {
                 Logger.logError("Invalid Mob Damage. Name : %s, Damage: %d", user.getCharacterName(), damage);
                 return false;
             }
@@ -593,9 +597,51 @@ public class Mob extends Creature {
     public void setMobHP(int hp) {
         if (hp >= 0 && hp <= getMaxHP() && hp != getHP()) {
             this.hp = hp;
+
+            int color = template.getHpTagColor();
+            int bg = template.getHpTagBgColor();
+            if (color != 0 && bg != 0 && !template.isHpGaugeHide()) {
+                sendMobHPChange(hp, color, bg, false);
+            }
+            broadcastHP();
         }
     }
-    
+
+    public void sendMobHPEnd() {
+        int color = template.getHpTagColor();
+        int bg = template.getHpTagBgColor();
+        if (color != 0 && bg != 0) {
+            sendMobHPChange(-(template.isHpGaugeHide() ? 1 : 0), color, bg, true);
+        }
+    }
+
+    public void sendMobHPChange(int hp, int color, int bgColor, boolean enforce) {
+        if (System.currentTimeMillis() - this.lastSendMobHP > 500 || enforce) {
+            this.lastSendMobHP = System.currentTimeMillis();
+            getField().splitSendPacket(getSplit(), FieldPacket.onFieldEffect(FieldEffectFlags.MobHPTag, null, template.getTemplateID(), hp, template.getMaxHP(), color, bgColor), null);
+        }
+    }
+
+    public void broadcastHP() {
+        if (attackers.size() <= 0) {
+            return;
+        }
+        int percentage = 100 * getHP() / template.getMaxHP();
+        if (percentage <= 0 && getHP() > 0) {
+            percentage = 1;
+        }
+        OutPacket packet = MobPool.onHPIndicator(getGameObjectID(), percentage);
+        for (Iterator<Integer> it = attackers.keySet().iterator(); it.hasNext();) {
+            int characterID = it.next();
+            User user = GameApp.getInstance().getChannel(getField().getChannelID()).findUser(characterID);
+            if (user != null && user.getField() == getField()) {
+                user.sendPacket(packet);
+            } else {
+                it.remove();
+            }
+        }
+    }
+
     public void setMobType(int type) {
         this.mobType = (byte) type;
     }
@@ -695,7 +741,8 @@ public class Mob extends Creature {
     }
 
     public void setFieldBossMobHP(int hp) {
-        if (getField().getFieldID() == Field.HONTALE_MAP_ID && getTemplateID() == BossIDs.HONTALE_SPIRIT_MOB_ID) {
+        if (getField().getFieldID() == Field.HONTALE_MAP_ID && getTemplateID() == BossIDs.HONTALE_SPIRIT_MOB_ID ||
+            getField().getFieldID() == Field.BABY_BOSS_MAP_ID && getTemplateID() == BossIDs.BABYBOSS_DUMMY5_MOB_ID) {
             setMobHP(hp);
         }
     }
@@ -713,5 +760,33 @@ public class Mob extends Creature {
         if (template != null) {
             template.setMobCountQuestInfo(user);
         }
+    }
+
+    public void setTestDrops(boolean testDrops) {
+        this.testDrops = testDrops;
+    }
+
+    public byte getMobType() {
+        return mobType;
+    }
+
+    public void sendSuspendReset(boolean suspendReset) {
+        getField().splitSendPacket(getSplit(), MobPool.onSuspendReset(getGameObjectID(), suspendReset), null);
+    }
+
+    public boolean isForcedDead() {
+        return forcedDead;
+    }
+
+    public short getFootholdSN() {
+        return footholdSN;
+    }
+
+    public boolean isNoDropPriority() {
+        return noDropPriority;
+    }
+
+    public byte getMoveAction() {
+        return moveAction;
     }
 }

@@ -305,7 +305,7 @@ public class Inventory {
                     user.getCharacter().getItemSlot().get(ti).add(null);
                     user.getCharacter().getItemTrading().get(ti).add(0);
                 }
-                user.addCharacterDataMod(ItemAccessor.getItemTypeFromTypeIndex(ti));
+                user.addCharacterDataMod(DBChar.InventorySize);
                 user.sendPacket(WvsContext.onInventoryGrow(ti, slotInc));
                 return true;
             } finally {

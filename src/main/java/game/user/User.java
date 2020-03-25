@@ -42,6 +42,8 @@ import game.messenger.Messenger;
 import game.miniroom.MiniRoom;
 import game.miniroom.MiniRoomBase;
 import game.party.PartyMan;
+import game.party.PartyPacket;
+import game.party.PartyResCode;
 import game.script.ScriptVM;
 import game.user.command.CommandHandler;
 import game.user.command.UserGradeCode;
@@ -75,10 +77,31 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- *
  * @author Eric
  */
 public class User extends Creature {
+    // Misc. Variables
+    private final Lock lock;
+    private final Lock lockSocket;
+    // Skills
+    private final UserSkill userSkill;
+    // Cheat Inspector
+    // private CheatInspector cheatInspector;
+    private final CalcDamage calcDamage;
+    // Character Data
+    private final CharacterData character;
+    private final List<ItemSlotBase> realEquip;
+    // Avatar Look
+    private final AvatarLook avatarLook;
+    // Basic Stat
+    private final BasicStat basicStat;
+    // Secondary Stat
+    private final SecondaryStat secondaryStat;
+    // User RNG's
+    private final Rand32 rndActionMan;
+    // Party stuff
+    private final LinkedList<Integer> partyInvitedCharacterID;
+    private final ReentrantLock partyInviteLock;
     private int accountID;
     private int characterID;
     private int gradeCode;
@@ -86,9 +109,6 @@ public class User extends Creature {
     // Account/Character Names
     private String nexonClubID;
     private String characterName;
-    // Misc. Variables
-    private final Lock lock;
-    private final Lock lockSocket;
     private Npc tradingNpc;
     private long lastSelectNPCTime;
     private boolean onTransferField;
@@ -104,8 +124,6 @@ public class User extends Creature {
     private int illegalMPIncTime;
     private int illegalMPIncSize;
     private String community;
-    // Skills
-    private final UserSkill userSkill;
     private long lastAttack;
     private long lastAttackTime;
     private long lastAttackDelay;
@@ -125,9 +143,6 @@ public class User extends Creature {
     // Trade Limits
     private int tradeMoneyLimit;
     private int tempTradeMoney;
-    // Cheat Inspector
-    // private CheatInspector cheatInspector;
-    private final CalcDamage calcDamage;
     private int invalidTryRepeatCount;
     private int invalidUserActionCount;
     private int invalidMobMoveCount;
@@ -136,19 +151,8 @@ public class User extends Creature {
     private int warpCheckedCount;
     private int invalidDamageCount;
     private int invalidDamageMissCount;
-    // Character Data
-    private final CharacterData character;
     private int characterDataModFlag;
-    private final List<ItemSlotBase> realEquip;
-    // Avatar Look
-    private final AvatarLook avatarLook;
     private int avatarModFlag;
-    // Basic Stat
-    private final BasicStat basicStat;
-    // Secondary Stat
-    private final SecondaryStat secondaryStat;
-    // User RNG's
-    private final Rand32 rndActionMan;
     // Mini Rooms
     // private UserMiniRoom userMR;
     private MiniRoomBase miniRoom;
@@ -168,9 +172,6 @@ public class User extends Creature {
     private Point curPos;
     private byte moveAction;
     private short footholdSN;
-    // Party stuff
-    private final LinkedList<Integer> partyInvitedCharacterID;
-    private final ReentrantLock partyInviteLock;
     // Monster Carnival
     private int teamForMCarnival;
 
@@ -259,7 +260,7 @@ public class User extends Creature {
 
     /**
      * This is a User::~User deleting destructor.
-     *
+     * <p>
      * WARNING: This method should ONLY be used when you NULL the User object.
      */
     public final void destructUser() {
@@ -295,12 +296,16 @@ public class User extends Creature {
         return false;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return character.getCharacterStat().getLevel();
     }
 
     public MiniRoomBase getMiniRoom() {
         return miniRoom;
+    }
+
+    public void setMiniRoom(MiniRoomBase miniRoom) {
+        this.miniRoom = miniRoom;
     }
 
     public boolean incAP(int inc, boolean onlyFull) {
@@ -363,14 +368,26 @@ public class User extends Creature {
                     }
                     Pointer<Boolean> reachMaxLev = new Pointer<>(false);
                     if (ExpAccessor.tryProcessLevelUp(character, basicStat, inc, reachMaxLev)) {
-                        if (character.getCharacterStat().getJob() != 0) {
+                        if (!JobAccessor.isBeginnerJob(character.getCharacterStat().getJob())) {
                             incSP(3, false);
                             incAP(5, false);
+                            flag |= CharacterStatType.AP | CharacterStatType.SP;
+                        } else if (character.getCharacterStat().getLevel() < 11) {
+                            flag |= CharacterStatType.STR;
+                            if (character.getCharacterStat().getLevel() >= 6) {
+                                incSTR(4, false);
+                                incDEX(1, false);
+                                flag |= CharacterStatType.DEX;
+                            } else {
+                                incSTR(5, false);
+                            }
                         }
-                        flag |= CharacterStatType.LEV | CharacterStatType.AP | CharacterStatType.SP;
-                        flag |= CharacterStatType.HP | CharacterStatType.MP | CharacterStatType.MHP | CharacterStatType.MMP;
+                        flag |= CharacterStatType.LEV | CharacterStatType.HP | CharacterStatType.MP | CharacterStatType.MHP | CharacterStatType.MMP;
                         validateStat(false);
                         onLevelUp();
+                        if (PartyMan.getInstance().charIdToPartyID(getCharacterID()) > 0) {
+                            PartyMan.getInstance().postChangeLevelOrJob(getCharacterID(), getLevel(), true);
+                        }
                         if (reachMaxLev.get()) {
                             setMaxLevelReach();
                         }
@@ -660,7 +677,7 @@ public class User extends Creature {
                 List<Integer> newSkillRoot = new ArrayList<>();
                 SkillAccessor.getSkillRootFromJob(character.getCharacterStat().getJob(), curSkillRoot);
                 SkillAccessor.getSkillRootFromJob(val, newSkillRoot);
-                for (Iterator<Integer> it = curSkillRoot.iterator(); it.hasNext();) {
+                for (Iterator<Integer> it = curSkillRoot.iterator(); it.hasNext(); ) {
                     int skillRoot = it.next();
                     if (newSkillRoot.contains(skillRoot)) {
                         it.remove();
@@ -668,7 +685,29 @@ public class User extends Creature {
                 }
                 character.getCharacterStat().setJob((short) val);
                 if (val != 0 && character.getCharacterStat().getLevel() < 11) {
-                    // Do we still apply STR/DEX default stats in this ver?
+                    int ap = character.getCharacterStat().getAP();
+
+                    int STR = character.getCharacterStat().getSTR() - 4;
+                    if (STR > 0) {
+                        ap += STR;
+                    }
+                    int DEX = character.getCharacterStat().getDEX() - 4;
+                    if (DEX > 0) {
+                        ap += DEX;
+                    }
+                    int INT = character.getCharacterStat().getINT() - 4;
+                    if (INT > 0) {
+                        ap += INT;
+                    }
+                    int LUK = character.getCharacterStat().getLUK() - 4;
+                    if (LUK > 0) {
+                        ap += LUK;
+                    }
+                    character.getCharacterStat().setSTR((short) 4);
+                    character.getCharacterStat().setDEX((short) 4);
+                    character.getCharacterStat().setINT((short) 4);
+                    character.getCharacterStat().setLUK((short) 4);
+                    character.getCharacterStat().setAP(ap);
                 }
                 if (!curSkillRoot.isEmpty()) {
                     List<SkillRecord> changes = new ArrayList<>();
@@ -678,37 +717,54 @@ public class User extends Creature {
                             for (SkillEntry skill : root.getSkills()) {
                                 int skillID = skill.getSkillID();
                                 character.getSkillRecord().remove(skillID);
+                                character.getSkillMasterLev().remove(skillID);
                                 SkillRecord change = new SkillRecord();
                                 change.setInfo(-1);
                                 change.setSkillID(skillID);
+                                change.setMasterLevel(0);
                                 changes.add(change);
                             }
                         }
                     }
-                    //UserSkillRecord.sendCharacterSkillRecord(this, false, changes);
-                    addCharacterDataMod(DBChar.SkillRecord);
+                    validateStat(true);
+                    UserSkillRecord.sendCharacterSkillRecord(this, (byte) 0, changes);
                     changes.clear();
                 }
-                /*if (!newSkillRoot.isEmpty()) {
+                if (!newSkillRoot.isEmpty()) {
                     List<SkillRecord> changes = new ArrayList<>();
                     for (int skillRoot : newSkillRoot) {
                         SkillRoot root = SkillInfo.getInstance().getSkillRoot(skillRoot);
                         if (root != null) {
                             for (SkillEntry skill : root.getSkills()) {
                                 int skillID = skill.getSkillID();
+                                if (SkillAccessor.isSkillNeedMasterLevel(skillID)) {
+                                    int defaultMasterLev = skill.getDefaultMasterLev();
+                                    character.getSkillMasterLev().put(skillID, defaultMasterLev);
 
-                                // Ignore - we don't have masteries yet.
+                                    int slv = character.getSkillRecord().getOrDefault(skillID, 0);
+                                    if (defaultMasterLev > 0) {
+                                        character.getSkillRecord().put(skillID, slv);
+                                        SkillRecord change = new SkillRecord();
+                                        change.setSkillID(skillID);
+                                        change.setInfo(slv);
+                                        change.setMasterLevel(defaultMasterLev);
+                                        changes.add(change);
+                                    }
+                                }
                             }
                         }
                     }
-                    //UserSkillRecord.sendCharacterSkillRecord(this, false, changes);
-                    addCharacterDataMod(DBChar.SkillRecord);
+                    validateStat(true);
+                    UserSkillRecord.sendCharacterSkillRecord(this, (byte) 0, changes);
                     changes.clear();
-                }*/
+                }
                 validateStat(true);
                 addCharacterDataMod(DBChar.Character);
-                sendCharacterStat(Request.None, CharacterStatType.Job);
-                //onUserEffect(false, true, UserEffect.JobChanged);
+                if (PartyMan.getInstance().charIdToPartyID(getCharacterID()) > 0) {
+                    PartyMan.getInstance().postChangeLevelOrJob(getCharacterID(), val, false);
+                }
+                //sendCharacterStat(Request.None, CharacterStatType.Job);
+                onUserEffect(false, true, UserEffect.JobChanged);
             } finally {
                 unlock();
             }
@@ -725,6 +781,7 @@ public class User extends Creature {
             unlock();
         }
     }
+    ///////////////////////////// CQWUser END ///////////////////////
 
     public void statChange(int inc, int dec, short incHP, short incMP) {
         lock.lock();
@@ -765,7 +822,6 @@ public class User extends Creature {
             unlock();
         }
     }
-    ///////////////////////////// CQWUser END ///////////////////////
 
     public void addCharacterDataMod(int flag) {
         this.characterDataModFlag |= flag;
@@ -773,8 +829,7 @@ public class User extends Creature {
 
     public boolean canAttachAdditionalProcess() {
         if (socket != null && !onTransferField && getHP() > 0 && miniRoom == null && tradingNpc == null) {
-            if (runningVM == null)
-                return true;
+            return runningVM == null;
         }
         return false;
     }
@@ -785,10 +840,10 @@ public class User extends Creature {
             this.tradingNpc = null;
             if (miniRoom != null) {
                 //miniRoom.onUserLeave(this);
-	            miniRoom = null;
+                miniRoom = null;
             }
             if (runningVM != null) {
-            	runningVM.destruct();
+                runningVM.destruct();
                 runningVM.destroy(this);
             }
         } finally {
@@ -866,6 +921,10 @@ public class User extends Creature {
         return gradeCode;
     }
 
+    public void setGradeCode(int grade) {
+        this.gradeCode = grade;
+    }
+
     public short getHP() {
         return character.getCharacterStat().getHP();
     }
@@ -882,12 +941,24 @@ public class User extends Creature {
         return character.getCharacterStat().getPosMap();
     }
 
+    public void setPosMap(int map) {
+        character.getCharacterStat().setPosMap(map);
+    }
+
     public byte getPortal() {
         return character.getCharacterStat().getPortal();
     }
 
+    public void setPortal(byte portal) {
+        character.getCharacterStat().setPortal(portal);
+    }
+
     public ScriptVM getScriptVM() {
         return runningVM;
+    }
+
+    public void setScriptVM(ScriptVM vm) {
+        this.runningVM = vm;
     }
 
     public SecondaryStat getSecondaryStat() {
@@ -1020,12 +1091,12 @@ public class User extends Creature {
         return false;
     }
 
-    public void setScriptVM(ScriptVM vm) {
-        this.runningVM = vm;
-    }
-
     public String getCommunity() {
         return community;
+    }
+
+    public void setCommunity(String name) {
+        this.community = name;
     }
 
     public Point getCurrentPosition() {
@@ -1145,6 +1216,12 @@ public class User extends Creature {
             case ClientPacket.UserDropMoneyRequest:
                 onDropMoneyRequest(packet);
                 break;
+            case ClientPacket.PartyRequest:
+                onPartyRequest(packet);
+                break;
+            case ClientPacket.PartyResult:
+                onPartyResult(packet);
+                break;
             case ClientPacket.UserSkillUpRequest:
                 userSkill.onSkillUpRequest(packet);
                 break;
@@ -1231,6 +1308,7 @@ public class User extends Creature {
                     closeSocket();
                     return;
                 }
+                packet.decodeInt();
                 int flag = packet.decodeInt();
                 boolean up;
                 switch (flag) {
@@ -1351,9 +1429,15 @@ public class User extends Creature {
         if (getCurFieldKey() != packet.decodeByte()) {
             return;
         }
+        boolean extraByte = false;
+        if (packet.decodeByte() == 1) {
+            extraByte = true;
+        }
+        packet.decodeBuffer(3);
         //[01] 00 78 00 00 00 07 D1 02 CB FD 4C 02 D3 06 65 03
-        packet.decodeInt();// ~pDrInfo.dr0
+        //packet.decodeInt();// ~pDrInfo.dr0
         packet.decodeInt();// ~pDrInfo.dr1
+        if (extraByte) packet.decodeByte();
         byte attackInfo = packet.decodeByte();//nDamagePerMob | 16 * nMobCount
         byte damagePerMob = (byte) (attackInfo & 0xF);
         byte mobCount = (byte) ((attackInfo >>> 4) & 0xF);
@@ -1400,7 +1484,7 @@ public class User extends Creature {
         if (getHP() > 0 && getField() != null) {
             if (skillID == Fighter.FinalAttack || skillID == Fighter.FinalAttackEx || skillID == Page.FinalAttack || skillID == Page.FinalAttackEx
                     || skillID == Spearman.FinalAttack || skillID == Spearman.FinalAttackEx || skillID == Hunter.FinalAttack_Bow || skillID == Crossbowman.FinalAttack_Crossbow)
-                    this.lastAttackDelay = this.finalAttackDelay;
+                this.lastAttackDelay = this.finalAttackDelay;
             long attackTime = System.currentTimeMillis();
             if (attackCheckIgnoreCnt <= 0) {
                 if (attackTime - lastAttackTime >= lastAttackDelay) {
@@ -1701,6 +1785,7 @@ public class User extends Creature {
         }
         short hp = 0;
         short mp = 0;
+        packet.decodeInt();
         int flag = packet.decodeInt();
         if ((flag & CharacterStatType.HP) != 0) {
             hp = packet.decodeShort();
@@ -1732,7 +1817,7 @@ public class User extends Creature {
                         Logger.logError("Illegal HP recovery time : %d", characterID);
                         return;
                     }
-                    int recoveryHP = (int) ((double) (SkillAccessor.getHPRecoveryUpgrade(character) + 10.0d) * recoveryRate);
+                    int recoveryHP = (int) ((SkillAccessor.getHPRecoveryUpgrade(character) + 10.0d) * recoveryRate);
                     if (recoveryHP < hp) {
                         ++illegalHPIncSize;
                     }
@@ -1751,7 +1836,7 @@ public class User extends Creature {
                         Logger.logError("Illegal MP recovery time : %d", characterID);
                         return;
                     }
-                    int recoveryMP = (int) ((double) (SkillAccessor.getMPRecoveryUpgrade(character) + 3.0d) * recoveryRate);
+                    int recoveryMP = (int) ((SkillAccessor.getMPRecoveryUpgrade(character) + 3.0d) * recoveryRate);
                     if (recoveryMP < mp) {
                         ++illegalMPIncSize;
                     }
@@ -1858,7 +1943,10 @@ public class User extends Creature {
     }
 
     public void onHit(InPacket packet) {
+        packet.decodeInt();// time
         byte mobAttackIdx = packet.decodeByte();
+        packet.decodeByte();// magic elem attr (not sure if obstacle hit has it)
+
         int obstacleData = 0;
         int clientDamage = 0;
         int mobTemplateID = 0;
@@ -1867,19 +1955,26 @@ public class User extends Creature {
         int mobID = 0;
         byte hitAction = 0;
         int damage = 0;
+        boolean guard = false;
         Point hit = new Point(0, 0);
         if (mobAttackIdx <= AttackIndex.Counter) {
             obstacleData = packet.decodeInt();
         } else {
             clientDamage = packet.decodeInt();
             mobTemplateID = packet.decodeInt();
+            mobID = packet.decodeInt();
             left = packet.decodeByte();
-            reflect = packet.decodeByte();
+            reflect = packet.decodeByte();// nX
+            guard = packet.decodeBool();// bGuard
+            packet.decodeByte();// bKnockback
+            packet.decodeByte();// nPowerGuard
             if (reflect != 0) {
                 mobID = packet.decodeInt();
                 hitAction = packet.decodeByte();
                 hit.x = packet.decodeShort();
                 hit.y = packet.decodeShort();
+                packet.decodeShort();// user x ?
+                packet.decodeShort();// user y ?
             }
         }
         if (getField() == null) {
@@ -2235,7 +2330,7 @@ public class User extends Creature {
                             if (ItemAccessor.isRechargeableItem(itemID)) {
                                 int number = item.getItemNumber();
                                 double unitPrice = Math.ceil((double) number * info.getUnitPrice());
-                                uInc = (long) (info.getSellPrice() + (long) unitPrice) >> 32;
+                                uInc = (info.getSellPrice() + (long) unitPrice) >> 32;
                                 inc = (int) (info.getSellPrice() + (long) unitPrice);
                             } else {
                                 inc = count * info.getSellPrice();
@@ -2290,7 +2385,7 @@ public class User extends Creature {
                                 if (Inventory.rawRechargeItem(this, pos, changeLog)) {
                                     addCharacterDataMod(DBChar.ItemSlotConsume);
                                     Inventory.sendInventoryOperation(this, Request.None, changeLog);
-                                    incMoney(-(int)inc, false, true);
+                                    incMoney(-(int) inc, false, true);
                                     sendCharacterStat(Request.None, CharacterStatType.Money);
                                     sendPacket(ShopDlg.onShopResult(ShopResCode.Success));//RechargeSuccess
                                 } else {
@@ -2616,24 +2711,10 @@ public class User extends Creature {
         sendPacket(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, msg));
     }
 
-    public void setCommunity(String name) {
-        this.community = name;
-    }
-
-    public void setGradeCode(int grade) {
-        this.gradeCode = grade;
-    }
-
-    public void setMiniRoom(MiniRoomBase miniRoom) {
-        this.miniRoom = miniRoom;
-    }
-
-    public void setPosMap(int map) {
-        character.getCharacterStat().setPosMap(map);
-    }
-
-    public void setPortal(byte portal) {
-        character.getCharacterStat().setPortal(portal);
+    public void sendDebugMessage(String format, Object... args) {
+        String text = String.format(format, args);
+        sendPacket(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, text));
+        Logger.logReport("[DEBUG Message] %s", text);
     }
 
     public boolean isWearItemOnNeed(int necessaryItemID) {
@@ -2679,7 +2760,7 @@ public class User extends Creature {
             getChannel().broadcast(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, notice));
         }
     }
-    
+
     public byte tryChangeHairOrFace(int couponItemID, int param) {
         if (ItemAccessor.getItemTypeIndexFromID(couponItemID) != ItemType.Cash) {
             return -1;
@@ -2716,11 +2797,11 @@ public class User extends Creature {
                     if (type == 0 || type == 1) {
                         setHair(param);
                         sendCharacterStat(Request.None, CharacterStatType.Hair);
-	                    postAvatarModified(AvatarLook.Look);
+                        postAvatarModified(AvatarLook.Look);
                     } else if (type == 2) {
                         setFace(param);
-	                    sendCharacterStat(Request.None, CharacterStatType.Face);
-	                    postAvatarModified(AvatarLook.Face);
+                        sendCharacterStat(Request.None, CharacterStatType.Face);
+                        postAvatarModified(AvatarLook.Face);
                     }
                     return 1;
                 } else {
@@ -2771,6 +2852,13 @@ public class User extends Creature {
                         }
                         if ((characterDataModFlag & DBChar.QuestComplete) != 0) {
                             GameDB.rawSaveQuestComplete(getCharacterID(), character.getQuestComplete());
+                        }
+                        if ((characterDataModFlag & DBChar.InventorySize) != 0) {
+                            List<Integer> inventorySize = new ArrayList<>();
+                            for (int ti = ItemType.Equip; ti <= ItemType.Cash; ti++) {
+                                inventorySize.add(character.getItemSlotCount(ti));
+                            }
+                            GameDB.rawSetInventorySize(getCharacterID(), inventorySize);
                         }
                         if ((characterDataModFlag & DBChar.ItemSlotEquip) != 0) {
                             CommonDB.rawUpdateItemEquip(characterID, character.getEquipped(), character.getEquipped2(), character.getItemSlot().get(ItemType.Equip));
@@ -2844,6 +2932,10 @@ public class User extends Creature {
     }
 
     public void onUserEffect(boolean local, boolean remote, byte effect, int... args) {
+        onUserEffect(local, remote, effect, null, args);
+    }
+
+    public void onUserEffect(boolean local, boolean remote, byte effect, String str, int... args) {
         int skillID = 0;
         int slv = 0;
         if (args.length > 0) {
@@ -2856,7 +2948,7 @@ public class User extends Creature {
             getField().splitSendPacket(getSplit(), UserRemote.onEffect(getCharacterID(), effect, skillID, slv), this);
         }
         if (local) {
-            sendPacket(UserLocal.onEffect(effect, skillID, slv));
+            sendPacket(UserLocal.onEffect(effect, str, skillID, slv));
         }
     }
 
@@ -2928,16 +3020,20 @@ public class User extends Creature {
                 postAvatarModified(flag);
             }
             // Max all skills on a user based on their current Job Race
-            if (false && isGM() && character.getSkillRecord().isEmpty()) {
-                SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(character.getCharacterStat().getJob());
-                if (visibleSR != null) {
-                    for (SkillEntry skill : visibleSR.getSkills()) {
-                        int skillID = skill.getSkillID();
-                        int skillRoot = skillID / 10000;
-                        if (skill != null && skill.getMaxLevel() != 0) {
-                            //if (JobAccessor.isCorrectJobForSkillRoot(character.getCharacterStat().getJob(), skillRoot)) {
-                            character.getSkillRecord().put(skillID, skill.getMaxLevel());
-                            //}
+            if (isGM() && character.getSkillRecord().isEmpty()) {
+                List<Integer> skillRoots = new ArrayList<>();
+                SkillAccessor.getSkillRootFromJob(character.getCharacterStat().getJob(), skillRoots);
+                for (Integer skillRootID : skillRoots) {
+                    SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(skillRootID);
+                    if (visibleSR != null) {
+                        for (SkillEntry skill : visibleSR.getSkills()) {
+                            int skillID = skill.getSkillID();
+                            int skillRoot = skillID / 10000;
+                            if (skill != null && skill.getMaxLevel() != 0) {
+                                if (JobAccessor.isCorrectJobForSkillRoot(skillRootID, skillRoot)) {
+                                    character.getSkillRecord().put(skillID, skill.getMaxLevel());
+                                }
+                            }
                         }
                     }
                 }
@@ -3082,6 +3178,99 @@ public class User extends Creature {
         PartyMan.getInstance().notifyUserHPChanged(this, sendOnly);
     }
 
+    public void onPartyRequest(InPacket packet) {
+        int type = packet.decodeByte();
+        if (type <= 0) {
+            return;
+        }
+        if (type == PartyResCode.CreateNewParty) {
+            if (false && isGM()) {
+                sendPacket(PartyPacket.adminCannotCreate());
+                return;
+            }
+            PartyMan.getInstance().postCreateNewParty(getCharacterID());
+        } else if (type == PartyResCode.WithdrawParty) {
+            PartyMan.getInstance().postWithdrawParty(getCharacterID(), packet.decodeBool());
+        } else if (type == PartyResCode.JoinParty) {
+            User user = GameApp.getInstance().getChannel(getChannelID()).findUserByName(packet.decodeString(), true);
+            if (user == null) {
+                return;
+            }
+            if (!isPartyInvitedCharacterID(getCharacterID())) {
+                Logger.logError("Uninvited User Tried to join party.");
+                return;
+            }
+            PartyMan.getInstance().postJoinParty(getCharacterID(), user.getCharacterID());
+        } else if (type == PartyResCode.InviteParty) {
+            int partyID = PartyMan.getInstance().charIdToPartyID(getCharacterID());
+            if (partyID == 0 || PartyMan.getInstance().isPartyBoss(getCharacterID())) {
+                User user = GameApp.getInstance().getChannel(getChannelID()).findUserByName(packet.decodeString(), true);
+                if (user == null) {
+                    sendPacket(PartyPacket.partyResult(PartyResCode.JoinParty_UnknownUser));
+                    return;
+                }
+                int invitedPartyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+                if (invitedPartyID != 0) {
+                    sendPacket(PartyPacket.partyResult(PartyResCode.JoinParty_AlreadyJoined));
+                    return;
+                }
+                user.sendPacket(PartyPacket.inviteParty(getCharacterID(), getCharacterName(), getLevel(), getCharacter().getCharacterStat().getJob()));
+                addPartyInvitedCharacterID(user.getCharacterID());
+            }
+        } else if (type == PartyResCode.KickParty) {
+            int memberID = packet.decodeInt();
+            int partyID = PartyMan.getInstance().charIdToPartyID(getCharacterID());
+            if (partyID != 0 && PartyMan.getInstance().isPartyBoss(partyID, getCharacterID()) && PartyMan.getInstance().isPartyMember(partyID, memberID)) {
+                PartyMan.getInstance().postWithdrawParty(memberID, true);
+                return;
+            }
+            sendPacket(PartyPacket.partyResult(PartyResCode.KickParty_Unknown));
+        } else if (type == PartyResCode.ChangePartyBoss) {
+            int memberID = packet.decodeInt();
+            User user = GameApp.getInstance().getChannel(getChannelID()).findUser(memberID);
+            int partyID = PartyMan.getInstance().charIdToPartyID(getCharacterID());
+            if (user != null && partyID != 0 && PartyMan.getInstance().isPartyBoss(partyID, getCharacterID()) && PartyMan.getInstance().isPartyMember(partyID, memberID) && user.getCharacter().getCharacterStat().getJob() != 0) {
+                if (getField() == null) {
+                    sendPacket(PartyPacket.partyResult(PartyResCode.ChangePartyBoss_NotSameField));
+                    return;
+                }
+                if (user.getField() == null || user.getField().getFieldID() != getField().getFieldID()) {
+                    sendPacket(PartyPacket.partyResult(PartyResCode.ChangePartyBoss_NoMemberInSameField));
+                    return;
+                }
+                PartyMan.getInstance().postChangePartyBoss(memberID, false, true);
+            }
+            // todo: check field party boss change limit
+        }
+    }
+
+    public void onPartyResult(InPacket packet) {
+        int type = packet.decodeByte();
+        int inviterID = packet.decodeInt();
+        User inviter = GameApp.getInstance().getChannel(getChannelID()).findUser(inviterID);
+        if (inviter == null || PartyMan.getInstance().charIdToPartyID(inviterID) == 0) {
+            return;
+        }
+        if (!inviter.isPartyInvitedCharacterID(getCharacterID())) {
+            Logger.logError("Invite Party requested without being invited");
+            return;
+        }
+        if (type == PartyResCode.InviteParty_Sent) {
+            inviter.sendPacket(PartyPacket.invitePartySent(getCharacterName()));
+            return;// skip remove part
+            // not sure if need remove pt inv
+        } else if (type == PartyResCode.InviteParty_AlreadyInvitedByInviter) {
+            inviter.sendPacket(PartyPacket.serverMsg(String.format("You have already invited '%s' to your party.", getCharacterName())));
+        } else if (type == PartyResCode.InviteParty_Rejected) {
+            inviter.sendPacket(PartyPacket.serverMsg(String.format("'%s' have denied request to the party.", getCharacterName())));
+        } else if (type == PartyResCode.InviteParty_Accepted) {
+            PartyMan.getInstance().postJoinParty(inviterID, getCharacterID());
+        } else {
+            sendSystemMessage("Party Result Type = " + type);
+        }
+        inviter.removePartyInviteCharacterID(getCharacterID());
+    }
+
     public void lostQuestItem(InPacket packet, int questID) {
     }
 
@@ -3163,7 +3352,6 @@ public class User extends Creature {
             }
             scriptName = QuestMan.getInstance().getStartScriptName(questID);
         }
-        Logger.logReport("Script name = [%s]", scriptName);
         if (scriptName == null || scriptName.isEmpty()) {
             sendPacket(UserLocal.QuestResult.onActFailed(questID, QuestFlag.QuestRes_Act_Failed_Unknown));
             return;
@@ -3179,7 +3367,7 @@ public class User extends Creature {
         if (act == null) {
             return QuestFlag.QuestRes_Act_Success;
         }
-        sendSystemMessage("Trying qust start act");
+        sendDebugMessage("Trying qust start act [%d]", questID);
         int result = Inventory.tryExchange(this, act.getIncMoney(), act.getActItem());
         if (result == QuestFlag.QuestRes_Act_Success) {
             // TODO handle pet tameness
@@ -3300,5 +3488,4 @@ public class User extends Creature {
         // todo skills, npc actions, map msgs, buffs
         return QuestFlag.QuestRes_Act_Success;
     }
-
 }

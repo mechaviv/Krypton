@@ -66,6 +66,10 @@ public class ItemAccessor {
         return itemID / 10000 == 209;
     }
 
+    public static boolean isMobSummonItem(int itemID) {
+        return itemID / 10000 == 210;
+    }
+
     public static boolean isTreatSingly(ItemSlotBase p) {
         if (ItemInfo.isCashItem(p.getItemID())) {
             return true;
@@ -149,7 +153,7 @@ public class ItemAccessor {
     
     public static void getRealEquip(CharacterData c, List<ItemSlotBase> realEquip, int excl1, int excl2) {
         byte gender = c.getCharacterStat().getGender();
-        byte level = c.getCharacterStat().getLevel();
+        int level = c.getCharacterStat().getLevel();
         short job = c.getCharacterStat().getJob();
         short STR = c.getCharacterStat().getSTR();
         short DEX = c.getCharacterStat().getDEX();

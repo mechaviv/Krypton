@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class BasicStat {
     private byte gender;
-    private byte level;
+    private int level;
     private short job;
     private short STR, DEX, INT, LUK;
     private short pop;
@@ -52,7 +52,7 @@ public class BasicStat {
         return gender;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return level;
     }
 

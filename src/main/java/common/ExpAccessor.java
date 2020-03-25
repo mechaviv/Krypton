@@ -30,18 +30,29 @@ import util.Pointer;
 public class ExpAccessor {
     public static final int MAX_LEVEL = 200;
     public static final int[] EXP_USER = new int[201];
-    
+
     static {
         // NEXTLEVEL::NEXTLEVEL
-        for (int i = 1; i <= 5; i++) {
-            EXP_USER[i] = i * (i * i / 2 + 15);
-        }
-        for (int i = 6; i <= 50; i++) {
-            EXP_USER[i] = i * i / 3 * (i * i / 3 + 19);
-        }
-        for (int i = 51; i <= MAX_LEVEL; i++) {
-            EXP_USER[i] = (int) ((float) EXP_USER[i - 1] * 1.0548f);
-        }
+        EXP_USER[1] = 15;
+        EXP_USER[2] = 34;
+        EXP_USER[3] = 57;
+        EXP_USER[4] = 92;
+        EXP_USER[5] = 135;
+        EXP_USER[6] = 372;
+        EXP_USER[7] = 560;
+        EXP_USER[8] = 840;
+        EXP_USER[9] = 1242;
+        for (int i = 10; i <= 14; i++) EXP_USER[i] = EXP_USER[9];
+        for (int i = 15; i <= 29; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.2 + 0.5);
+        for (int i = 30; i <= 34; i++) EXP_USER[i] = EXP_USER[29];
+        for (int i = 35; i <= 39; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.2 + 0.5);
+        for (int i = 40; i <= 69; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.08 + 0.5);
+        for (int i = 70; i <= 74; i++) EXP_USER[i] = EXP_USER[69];
+        for (int i = 75; i <= 119; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.07 + 0.5);
+        for (int i = 120; i <= 124; i++) EXP_USER[i] = EXP_USER[119];
+        for (int i = 125; i <= 159; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.07 + 0.5);
+        for (int i = 160; i <= 199; i++) EXP_USER[i] = (int) (EXP_USER[i - 1] * 1.06 + 0.5);
+        EXP_USER[200] = 0;
     }
     
     /**
@@ -54,7 +65,7 @@ public class ExpAccessor {
      * @return If the user has physically leveled up.
      */
     public static boolean tryProcessLevelUp(CharacterData cd, BasicStat bs, int inc, Pointer<Boolean> reachMaxLv) {
-        byte level = cd.getCharacterStat().getLevel();
+        int level = cd.getCharacterStat().getLevel();
         int exp = inc + cd.getCharacterStat().getEXP();
         if (level >= MAX_LEVEL) {
             cd.getCharacterStat().setEXP(0);

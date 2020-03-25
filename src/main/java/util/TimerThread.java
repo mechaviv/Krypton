@@ -44,6 +44,7 @@ public class TimerThread {
     public static final void createTimerThread() {
         World.start();
         Field.start();
+        Party.start();
         Etc.start();
         Logger.logReport("Timer thread started");
     }
@@ -51,6 +52,7 @@ public class TimerThread {
     public static final void terminate() {
         World.stop();
         Field.stop();
+        Party.stop();
         Etc.stop();
     }
 

@@ -23,6 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 
 import game.field.event.EventManager;
+import game.field.event.EventManager2;
 import util.Logger;
 import util.Size;
 import util.TimerThread;
@@ -48,6 +49,7 @@ public class FieldMan {
         TimerThread.Field.Register(() -> {
             FieldMan.this.update(System.currentTimeMillis());
             EventManager.update(System.currentTimeMillis());
+            EventManager2.update(System.currentTimeMillis());
         }, 100, 1000);
     }
     
@@ -70,9 +72,9 @@ public class FieldMan {
                 managers[i].fields.putAll(managers[i - 1].fields);
                 managers[i].fieldSets.putAll(managers[i - 1].fieldSets);
             } else {
-                managers[i].registerField();
+                managers[i].registerField(i);
                 managers[i].loadFieldSet(i);
-                loaded = true;
+                //loaded = true;
             }
         }
     }
@@ -93,17 +95,17 @@ public class FieldMan {
         return false;
     }
 
-    private void registerField() {
+    private void registerField(int channelID) {
         Logger.logReport("Loading Field Info");
         WzPackage mapDir = new WzFileSystem().init("Map/Map").getPackage();
         if (mapDir != null) {
-            registerField(mapDir);
+            registerField(mapDir, channelID);
             mapDir.release();
         }
         mapDir = null;
     }
 
-    public void registerField(WzPackage mainDir) {
+    public void registerField(WzPackage mainDir, int channelID) {
         for (WzPackage fieldDir : mainDir.getChildren().values()) {
             for (WzProperty field : fieldDir.getEntries().values()) {
                 int fieldID = Integer.parseInt(field.getNodeName().replaceAll(".img", ""));
@@ -114,14 +116,14 @@ public class FieldMan {
                     int fieldLink = Integer.parseInt(link);
                     field = mainDir.getChildren().get(String.format("Map%d", fieldLink / 100000000)).getItem(String.format("%d.img", fieldLink));
                 }
-                fields.put(fieldID, registerField(fieldID, field, info));
+                fields.put(fieldID, registerField(fieldID, channelID, field, info));
             }
             fieldDir.release();
         }
     }
 
-    private Field registerField(int fieldID, WzProperty mapData, WzProperty info) {
-        final Field field = new Field(fieldID);
+    private Field registerField(int fieldID, int channelID, WzProperty mapData, WzProperty info) {
+        final Field field = new Field(fieldID, channelID);
 
         if (info != null) {
             field.setFieldReturn(WzUtil.getInt32(info.getNode("returnMap"), Field.Invalid));
@@ -146,6 +148,7 @@ public class FieldMan {
         field.getPortal().restorePortal(mapData.getNode("portal"), field);
 
         field.getLifePool().init(field, mapData);
+        field.getReactorPool().init(field, mapData, info);
         return field;
     }
     
@@ -156,7 +159,7 @@ public class FieldMan {
     }
 
     public void loadFieldSet(int channelID) {
-        WzProperty fieldSetData = new WzFileSystem().init("Map").getPackage().getItem("FieldSet.img");
+        WzProperty fieldSetData = new WzFileSystem().init("Data").getPackage().getItem("FieldSet.img");
         if (fieldSetData != null) {
             for (WzProperty fieldSet : fieldSetData.getChildNodes()) {
                 String fieldSetName = fieldSet.getNodeName();

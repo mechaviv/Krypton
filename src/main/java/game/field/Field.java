@@ -18,6 +18,7 @@
 package game.field;
 
 import common.BroadcastMsg;
+import common.game.field.FieldEffectFlags;
 import common.item.ItemAccessor;
 import game.GameApp;
 import game.field.MovePath.Elem;
@@ -29,10 +30,13 @@ import game.field.life.mob.MobPool;
 import game.field.life.npc.Npc;
 import game.field.life.npc.NpcPool;
 import game.field.portal.PortalMap;
+import game.field.reactor.ReactorPool;
 import game.party.PartyMan;
 import game.user.User;
 import game.user.UserRemote;
 import game.user.WvsContext;
+import game.user.item.ItemInfo;
+import game.user.item.MobSummonItem;
 import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.OutPacket;
@@ -86,6 +90,7 @@ public class Field {
     private final PortalMap portal;
     private final LifePool lifePool;
     private final DropPool dropPool;
+    private final ReactorPool reactorPool;
     private final Map<Integer, User> users;
     private int fieldReturn;
     private int forcedReturn;
@@ -113,10 +118,12 @@ public class Field {
     private FieldSplit splitEnd;
     private List<FieldSplit> fieldSplit;
     private FieldSet parentFieldSet;
+    private final int channelID;
 
-    public Field(int fieldID) {
+    public Field(int fieldID, int channelID) {
         this.fieldObjIdCounter = new AtomicInteger(30000);
         this.field = fieldID;
+        this.channelID = channelID;
         this.space2D = new WvsPhysicalSpace2D();
         this.portal = new PortalMap();
         this.weatherItemID = 0;
@@ -124,6 +131,7 @@ public class Field {
         this.incRateDrop = 1.0d;
         this.lifePool = new LifePool(this);
         this.dropPool = new DropPool(this);
+        this.reactorPool = new ReactorPool(this);
         this.users = new ConcurrentHashMap<>();
     }
 
@@ -478,6 +486,8 @@ public class Field {
             lifePool.onPacket(user, type, packet);
         } else if (type >= ClientPacket.BEGIN_DROPPOOL && type <= ClientPacket.END_DROPPOOL) {
             dropPool.onPacket(user, type, packet);
+        } else if (type >= ClientPacket.BEGIN_REACTORPOOL && type <= ClientPacket.END_REACTORPOOL) {
+            reactorPool.onPacket(user, type, packet);
         }
     }
 
@@ -738,6 +748,11 @@ public class Field {
         updateFieldBoss();
         lifePool.update(time);
         dropPool.tryExpire(false);
+        //  CMessageBoxPool::TryExpireMessageBox(&v2->m_messageBoxPool);
+        //  CSummonedPool::Update(&v2->m_summonedPool, tCur);
+        //  CAffectedAreaPool::Update(&v2->m_affectedAreaPool, tCur);
+        //  CTownPortalPool::Update(&v2->m_townPortalPool, tCur);
+        reactorPool.update(time);
         if (weatherItemID != 0 && ItemAccessor.isWeatherItem(weatherItemID)) {
             if (weatherDuration != 0 && time - weatherBegin > 1000 * weatherDuration
                     || weatherDuration == 0 && time - weatherBegin > 30000) {
@@ -748,60 +763,74 @@ public class Field {
     }
 
     private void updateFieldBoss() {
-        if (this.field != HONTALE_MAP_ID) {
-            return;
-        }
-        Mob spiritMob = this.lifePool.getMobByTemplateID(BossIDs.HONTALE_SPIRIT_MOB_ID);
-        if (spiritMob == null) {
-            return;
-        }
-        int hp = 0;
-        for (int i = 2; i <= 9; i++) {
-            Mob hontalePart = this.lifePool.getMobByTemplateID(BossIDs.HONTALE_BASE_MOB_ID + i);
-            if (hontalePart != null) {
-                hp += hontalePart.getHP();
+        if (this.field == HONTALE_MAP_ID) {
+
+            Mob spiritMob = this.lifePool.getMobByTemplateID(BossIDs.HONTALE_SPIRIT_MOB_ID);
+            if (spiritMob == null) {
+                return;
             }
-        }
-
-        if (spiritMob.getHP() <= 0) {
-            SystemTime st = SystemTime.getLocalTime();
-            Logger.logReport("[Hontale: Dead Time] - %04d/%02d/%02d %02d:%02d:%02d", st.getYear(), st.getMonth(), st.getDay(), st.getHour(), st.getMinute(), st.getSecond());
-
-            int huntingTime = (int) (System.currentTimeMillis() - spiritMob.getCreate()) / 1000;
-            int hour = huntingTime / 3600;
-            int min = huntingTime % 3600 / 60;
-            int sec = huntingTime % 3600 % 60;
-            Logger.logReport("[Hontale: Hunting Duration] : %02d Hours / %02d Min / %02d Sec", hour, min, sec);
-
-            Point spiritPosition = new Point(spiritMob.getCurrentPos());
-            this.lifePool.removeMob(spiritMob);
-
-            int userCount = users.size();
-            if (userCount >= 10 || huntingTime >= 3600) {
-                spiritMob.giveReward(0, spiritPosition, 0, false);
-            } else {
-                Logger.logReport("[Hontale: Hacking] - No Reward ( UserCount %d, HuntingTime %d )", userCount, huntingTime);
+            int hp = 0;
+            for (int i = 2; i <= 9; i++) {
+                Mob hontalePart = this.lifePool.getMobByTemplateID(BossIDs.HONTALE_BASE_MOB_ID + i);
+                if (hontalePart != null) {
+                    hp += hontalePart.getHP();
+                }
             }
-            this.lifePool.removeAllMob();
+            spiritMob.setFieldBossMobHP(hp);
 
-            for (User user : getUsers()) {
-                spiritMob.setMobCountQuestInfo(user);
-            }
-            GameApp.getInstance().broadcastWorld(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE_WITHOUT_PREFIX, "To the crew that have finally conquered Horned Tail after numerous attempts, I salute thee! You are the true heroes of Leafre!!"));
+            if (spiritMob.getHP() <= 0) {
+                SystemTime st = SystemTime.getLocalTime();
+                Logger.logReport("[Hontale: Dead Time] - %04d/%02d/%02d %02d:%02d:%02d", st.getYear(), st.getMonth(), st.getDay(), st.getHour(), st.getMinute(), st.getSecond());
 
-            String debugMsg = "[Hontale: Killed by] - ";
-            int levelSum = 0;
-            for (User user : getUsers()) {
-                debugMsg += "(" + user.getCharacterName() + "), ";
-                levelSum += user.getLevel();
-            }
-            Logger.logReport(debugMsg);
+                int huntingTime = (int) (System.currentTimeMillis() - spiritMob.getCreate()) / 1000;
+                int hour = huntingTime / 3600;
+                int min = huntingTime % 3600 / 60;
+                int sec = huntingTime % 3600 % 60;
+                Logger.logReport("[Hontale: Hunting Duration] : %02d Hours / %02d Min / %02d Sec", hour, min, sec);
 
-            int avgLevel = 0;
-            if (userCount > 0) {
-                avgLevel = levelSum / userCount;
+                Point spiritPosition = new Point(spiritMob.getCurrentPos());
+                this.lifePool.removeMob(spiritMob);
+
+                int userCount = users.size();
+                if (true || userCount >= 10 || huntingTime >= 3600) {
+                    spiritMob.giveReward(0, spiritPosition, 0, false);
+                } else {
+                    Logger.logReport("[Hontale: Hacking] - No Reward ( UserCount %d, HuntingTime %d )", userCount, huntingTime);
+                }
+                this.lifePool.removeAllMob(false);
+
+                for (User user : getUsers()) {
+                    spiritMob.setMobCountQuestInfo(user);
+                }
+                GameApp.getInstance().broadcastWorld(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE_WITHOUT_PREFIX, "To the crew that have finally conquered Horned Tail after numerous attempts, I salute thee! You are the true heroes of Leafre!!"));
+
+                String debugMsg = "[Hontale: Killed by] - ";
+                int levelSum = 0;
+                for (User user : getUsers()) {
+                    debugMsg += "(" + user.getCharacterName() + "), ";
+                    levelSum += user.getLevel();
+                }
+                Logger.logReport(debugMsg);
+
+                int avgLevel = 0;
+                if (userCount > 0) {
+                    avgLevel = levelSum / userCount;
+                }
+                Logger.logReport("[Hontale: Info] - User Count ( %d ), Avg Level ( %d )", userCount, avgLevel);
             }
-            Logger.logReport("[Hontale: Info] - User Count ( %d ), Avg Level ( %d )", userCount, avgLevel);
+        } else if (this.field == BABY_BOSS_MAP_ID) {
+            Mob spiritMob = this.lifePool.getMobByTemplateID(BossIDs.BABYBOSS_DUMMY5_MOB_ID);
+            if (spiritMob == null) {
+                return;
+            }
+            int hp = 0;
+            for (int i = 2; i <= 6; i++) {
+                Mob part = this.lifePool.getMobByTemplateID(BossIDs.BABYBOSS_BASE_MOB_ID + i);
+                if (part != null) {
+                    hp += part.getHP();
+                }
+            }
+            spiritMob.setFieldBossMobHP(hp);
         }
     }
 
@@ -810,7 +839,7 @@ public class Field {
         portal.resetPortal();
         lifePool.reset();
         dropPool.tryExpire(true);
-        // CReactorPool::Reset(&v2->m_reactorPool, bShuffleReactor);
+        reactorPool.reset(shuffleReactor);
     }
 
     public FieldSet getParentFieldSet() {
@@ -819,5 +848,42 @@ public class Field {
 
     public void setParentFieldSet(FieldSet parentFieldSet) {
         this.parentFieldSet = parentFieldSet;
+    }
+
+    public ReactorPool getReactorPool() {
+        return reactorPool;
+    }
+
+    public int getChannelID() {
+        return channelID;
+    }
+
+    public void effectTremble(int heavyNShortTremble, int delay) {
+        broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.Tremble, null, heavyNShortTremble, delay), false);
+    }
+
+    public void effectChangeBGM(String BGM) {
+        broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.ChangeBGM, BGM), false);
+    }
+
+    public void setObjectState(String name, int state) {
+        if (name == null || name.isEmpty() || state < 0) {
+            return;
+        }
+        broadcastPacket(FieldPacket.setObjectState(name, state), false);
+    }
+
+    public boolean checkReactorAction(String reactorName, long eventTime) {
+        if (parentFieldSet == null) {
+            return false;
+        }
+        return parentFieldSet.checkReactorAction(this, reactorName, eventTime);
+    }
+
+    public void summonMob(int x, int y, int itemID) {
+        MobSummonItem item = ItemInfo.getMobSummonItem(itemID);
+        if (item != null) {
+            lifePool.onMobSummonItemUseRequest(new Point(x, y), item, false);
+        }
     }
 }

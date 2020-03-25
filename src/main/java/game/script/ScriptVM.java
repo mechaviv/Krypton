@@ -177,6 +177,8 @@ public class ScriptVM {
                                     target.sendSystemMessage(String.format("%S script {%s} has not yet been implemented.", "Undefined Script Type", splitted[splitted.length - 1]));
                                     Logger.logError("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, "Undefined");
                                 } else {
+                                    if (splitted[splitted.length - 2].equals("quests")) return false;
+
                                     target.sendSystemMessage(String.format("%S script {%s} has not yet been implemented.", splitted[splitted.length - 2], splitted[splitted.length - 1]));
                                     Logger.logError("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, splitted[splitted.length - 2]);
                                 }

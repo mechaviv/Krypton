@@ -35,7 +35,7 @@ CREATE TABLE `character` (
   `Skin` tinyint(2) unsigned DEFAULT 0,
   `Face` int(11) unsigned DEFAULT 0,
   `Hair` int(11) unsigned DEFAULT 0,
-  `Level` tinyint(4) unsigned DEFAULT 1,
+  `Level` int(11) unsigned DEFAULT 1,
   `Job` int(11) unsigned DEFAULT 0,
   `SubJob` int(11) unsigned DEFAULT 0,
   `STR` int(11) unsigned DEFAULT 4,
@@ -96,6 +96,7 @@ CREATE TABLE `inventorysize` (
   `ConsumeCount` int(11) NOT NULL DEFAULT 24,
   `InstallCount` int(11) NOT NULL DEFAULT 24,
   `EtcCount` int(11) NOT NULL DEFAULT 24,
+  `CashCount` int(11) NOT NULL DEFAULT 24,
   PRIMARY KEY (`CharacterID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

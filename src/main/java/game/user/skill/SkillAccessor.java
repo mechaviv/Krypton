@@ -75,22 +75,32 @@ public class SkillAccessor {
         { {22, 27, 0, 14, 16, 20}, {15, 20, 0, 10, 12, 15} },//Bowman
         { {22, 27, 0, 14, 16, 20}, {15, 20, 0, 10, 12, 15} },//Thief
     };
-    
+
     public static List<Integer> getSkillRootFromJob(int job, List<Integer> a) {
         if (JobAccessor.findJob(job) != null) {
-            int jobCode;
-            if (job % 1000 / 100 > 0) {
-                jobCode = 100 * (10 * job / 1000);
+            int jobType = job % 1000 / 100;
+            if (jobType > 0) {
+                int jobCode = 100 * (jobType + 10 * (job / 1000));
                 a.add(jobCode);
-                if (job % 100 / 10 > 0) {
-                    jobCode += 10 * (job % 100 / 10);
-                    a.add(jobCode);
+
+                int jobCat = job % 100 / 10;
+                if (jobCat > 0) {
+                    int jobCodeCat = jobCode + 10 * jobCat;
+                    a.add(jobCodeCat);
+
+                    for (int i = 1; i <= 8; i++) {
+                        if (job % 10 < i) {
+                            break;
+                        }
+                        jobCodeCat++;
+                        a.add(jobCodeCat);
+                    }
                 }
             }
         }
         return a;
     }
-    
+
     public static int getEndureDuration(CharacterData cd) {
         int jobCategory = JobAccessor.getJobCategory(cd.getCharacterStat().getJob());
         Pointer<SkillEntry> skillEntry = new Pointer<>();

@@ -155,4 +155,14 @@ public class Rect {
         }
         return src1;
     }
+
+    @Override
+    public String toString() {
+        return "Rect{" +
+                "left=" + left +
+                ", top=" + top +
+                ", right=" + right +
+                ", bottom=" + bottom +
+                '}';
+    }
 }

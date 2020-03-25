@@ -1,4 +1,4 @@
-package game.field.set;
+package game.field.reactor.action;
 
 /**
  * Created by MechAviv on 2/3/2020.

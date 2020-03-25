@@ -196,7 +196,7 @@ public class GameDB {
                         int max = rs.getInt("Max");
                         boolean premium = rs.getBoolean("premium");
                         
-                        rewardInfo.add(count++, new RewardInfo(money, itemId, prob, min, max, premium));
+                        //rewardInfo.add(count++, new RewardInfo(money, itemId, prob, min, max, premium));
                     }
                 }
             }
@@ -286,8 +286,8 @@ public class GameDB {
 
     public static void rawSetInventorySize(int characterID, List<Integer> inventorySize) {
         try (Connection con = Database.getDB().poolConnection()) {
-            try (PreparedStatement ps = con.prepareStatement("UPDATE `inventorysize` SET `EquipCount` = ?, `ConsumeCount` = ?, `InstallCount` = ?, `EtcCount` = ? WHERE `CharacterID` = ?")) {
-                Database.execute(con, ps, inventorySize.get(0), inventorySize.get(1), inventorySize.get(2), inventorySize.get(3), characterID);
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `inventorysize` SET `EquipCount` = ?, `ConsumeCount` = ?, `InstallCount` = ?, `EtcCount` = ?, `CashCount` = ? WHERE `CharacterID` = ?")) {
+                Database.execute(con, ps, inventorySize.get(0), inventorySize.get(1), inventorySize.get(2), inventorySize.get(3), inventorySize.get(4), characterID);
             }
         } catch (SQLException ex) {
             ex.printStackTrace(System.err);

@@ -19,6 +19,7 @@ package game.user;
 
 import common.BroadcastMsg;
 import common.GivePopularityRes;
+import common.item.ItemSlotBase;
 import common.user.CharacterStat;
 import common.user.MessageType;
 import game.field.drop.DropPickup;
@@ -56,6 +57,7 @@ public class WvsContext {
         cs.encodeChangeStat(packet, flag);
         packet.encodeByte(0);
         packet.encodeByte(0);
+        packet.encodeByte(0);// for secure i guess
         return packet;
     }
 
@@ -86,8 +88,59 @@ public class WvsContext {
         OutPacket packet = new OutPacket(LoopbackPacket.BroadcastMsg);
         packet.encodeByte(type);
         packet.encodeString(msg);
-        if (type == BroadcastMsg.UTIL_DLG_EX) {
-            packet.encodeInt(templateID);
+
+        ItemSlotBase item = null;
+        switch (type) {
+            case BroadcastMsg.SPEAKER_WORLD:
+            case BroadcastMsg.SKULL_SPEAKER:
+                packet.encodeByte(0);
+                packet.encodeByte(0);
+                break;
+            case BroadcastMsg.ITEM_SPEAKER:
+                packet.encodeByte(0);
+                packet.encodeByte(0);
+                packet.encodeBool(item != null);
+                if (item != null) {
+                    item.encode(packet);
+                }
+                break;
+            case BroadcastMsg.NOTICE_WITHOUT_PREFIX:
+                packet.encodeInt(0);
+                break;
+            case BroadcastMsg.UTIL_DLG_EX:
+                packet.encodeInt(templateID);
+                break;
+            case BroadcastMsg.SPEAKER_BRIDGE:
+                packet.encodeByte(0);
+                break;
+            case BroadcastMsg.ART_SPEAKER_WORLD:
+                int lines = 0;
+                packet.encodeByte(lines);
+                if (lines > 1) {
+                    packet.encodeString("");
+                }
+                if (lines > 2) {
+                    packet.encodeString("");
+                }
+                packet.encodeByte(0);
+                packet.encodeByte(0);
+                break;
+            case BroadcastMsg.BLOW_WEATHER:
+                packet.encodeInt(0);
+                break;
+            case BroadcastMsg.GACHAPON_ANNOUNCE:
+                packet.encodeInt(0);
+                packet.encodeString("");
+                item.encode(packet);
+                break;
+            case BroadcastMsg.GACHAPON_ANNOUNCE_OPEN:
+            case BroadcastMsg.GACHAPON_ANNOUNCE_COPY:
+                packet.encodeString("");
+                item.encode(packet);
+                break;
+            case BroadcastMsg.CASH_SHOP_AD:
+                packet.encodeInt(0);// item slot
+                break;
         }
         return packet;
     }
@@ -95,6 +148,7 @@ public class WvsContext {
     public static OutPacket onDropPickUpMessage(int dropType, int incMeso, int itemID, int quantity) {
         OutPacket packet = new OutPacket(LoopbackPacket.Message);
         packet.encodeByte(MessageType.DropPickUpMessage);
+
         packet.encodeByte(dropType);
         if (dropType == DropPickup.AddInventoryItem) {
             packet.encodeInt(itemID);
@@ -179,6 +233,14 @@ public class WvsContext {
         return packet;
     }
 
+    public static OutPacket onIncSPMessage(int job, int inc) {
+        OutPacket packet = new OutPacket(LoopbackPacket.Message);
+        packet.encodeByte(MessageType.IncSPMessage);
+        packet.encodeShort(job);
+        packet.encodeByte(inc);
+        return packet;
+    }
+
     public static OutPacket onGivePopularityResult(byte type, String characterName, boolean raise) {
         OutPacket packet = new OutPacket(LoopbackPacket.GivePopularityResult);
         packet.encodeByte(type);
@@ -209,7 +271,10 @@ public class WvsContext {
         for (SkillRecord skill : change) {
             packet.encodeInt(skill.getSkillID());
             packet.encodeInt(skill.getInfo());
+            packet.encodeInt(skill.getMasterLevel());
+            packet.encodeFileTime(skill.getDateExpire());
         }
+        packet.encodeByte(0);
         return packet;
     }
     

@@ -35,14 +35,13 @@ import game.field.life.mob.MobTemplate;
 import game.field.life.npc.Npc;
 import game.field.life.npc.NpcTemplate;
 import game.user.User;
+import game.user.item.MobEntry;
+import game.user.item.MobSummonItem;
 import game.user.skill.SkillAccessor;
 import game.user.skill.Skills.Assassin;
 import game.user.skill.Skills.Thief;
 import java.awt.Point;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import game.user.skill.data.SkillLevelData;
@@ -91,6 +90,7 @@ public class LifePool {
         this.mobGen = new ArrayList<>();
         this.mobGenExcept = new ArrayList<>();
         this.lastCreateMobTime = System.currentTimeMillis();
+        this.subMobCount = -1;
     }
     
     public boolean changeMobController(User user, int mobIdWanted, boolean chase) {
@@ -142,12 +142,16 @@ public class LifePool {
         }
         return null;
     }
-    
+
     public boolean createMob(Mob mob, Point pt) {
-        return createMob(mob.getTemplateID(), mob.getMobGen(), pt.x, pt.y, (short) field.getSpace2D().getFootholdUnderneath(pt.x, pt.y).getSN(), false, MobAppearType.REGEN, 0, (byte) 0, 0, null);
+        return createMob(mob, pt, false);
+    }
+
+    public boolean createMob(Mob mob, Point pt, boolean testDrops) {
+        return createMob(mob.getTemplateID(), mob.getMobGen(), pt.x, pt.y, (short) field.getSpace2D().getFootholdUnderneath(pt.x, pt.y).getSN(), false, MobAppearType.REGEN, 0, (byte) 0, 0, null, testDrops);
     }
     
-    public boolean createMob(int templateID, MobGen pmg, int x, int y, short fh, boolean noDropPriority, int type, int option, byte left, int mobType, Controller owner) {
+    public boolean createMob(int templateID, MobGen pmg, int x, int y, short fh, boolean noDropPriority, int type, int option, byte left, int mobType, Controller owner, boolean testDrops) {
         if (owner == null) {
             if (ctrlMin.getCount() != 0) {
                 owner = ctrlMin.getHeap().get(0);
@@ -185,6 +189,7 @@ public class LifePool {
 
             mob.setSummonType(type);
             mob.setSummonOption(option);
+            mob.setTestDrops(testDrops);
             Point pt = field.makePointInSplit(x, y);
             field.splitRegisterFieldObj(pt.x, pt.y, FieldSplit.Mob, mob);
             if (type != MobAppearType.SUSPENDED) {
@@ -517,8 +522,11 @@ public class LifePool {
         }
     }
     
-    public void removeAllMob() {
+    public void removeAllMob(boolean exceptMobDamagedByMob) {
         for (Mob mob : mobs.values()) {
+            if (exceptMobDamagedByMob && mob.getTemplate().isDamagedByMob()) {
+                continue;
+            }
             mob.setForcedDead(true);
             removeMob(mob);
         }
@@ -569,8 +577,37 @@ public class LifePool {
             updateCtrlHeap(mob.getController());
             mob.sendChangeControllerPacket(mob.getController().getUser(), (byte) 0);
         }
+        int x = mob.getCurrentPos().x;
+        int y = mob.getCurrentPos().y;
+        short fhSN = mob.getFootholdSN();
+        boolean dropPriority = mob.isNoDropPriority();
+
+        if (!mob.isForcedDead()) {
+            for (int templateID : mob.getTemplate().getReviveTemplateIDs()) {
+                Logger.logReport("Reviving [%d]", templateID);
+                //  byte left, int mobType, Controller owner, boolean testDrops) {
+                createMob(templateID, mob.getMobGen(), x, y, fhSN, dropPriority, MobAppearType.REVIVED, mob.getGameObjectID(), (byte) ((mob.getMoveAction() & 1) != 0 ? 1 : 0), mob.getTemplate().isBoss() ? 2 : 0, null, false);
+            }
+        }
+        mob.sendMobHPEnd();
+        // CMob::GiveBuffOnDead(v2);
         field.splitUnregisterFieldObj(FieldSplit.Mob, mob);
         mob.setRemoved();
+        //  if ( !v3->m_lMob._m_uCount )
+        //    CContinentMan::OnAllSummonedMobRemoved(TSingleton<CContinentMan>::ms_pInstance, v3->m_pField->m_dwField);
+        if (mob.getMobType() == 1) {
+            this.subMobCount--;
+        }
+        if (this.subMobCount == 0) {
+            for (Mob mainMob : mobs.values()) {
+                if (mainMob != null && mainMob.getMobType() == 2) {
+                    mainMob.sendSuspendReset(true);
+                    mainMob.setSummonType(MobAppearType.NORMAL);
+                    mainMob.setSummonOption(0);
+                    break;
+                }
+            }
+        }
     }
     
     public void removeMob(int mobTemplateID) {
@@ -589,6 +626,7 @@ public class LifePool {
                 int distanceY = mob.getCurrentPos().y - user.getCurrentPosition().y;
                 if (Math.abs(distanceY) <= 200 && mob.getTemplateID() == mobTemplateID) {
                     mob.setMobCountQuestInfo(user);
+                    mob.setForcedDead(true);
                     removeMob(mob);
                 }
             }
@@ -626,7 +664,7 @@ public class LifePool {
     
     public void reset() {
         mobGenExcept.clear();
-        removeAllMob();
+        removeAllMob(false);
         tryCreateMob(true);
     }
     
@@ -727,7 +765,7 @@ public class LifePool {
                     MobGen pmg = mobGens.remove(index);
                     if (pmg == null)
                         continue;
-                    if (createMob(pmg.templateID, pmg, pmg.x, pmg.y, pmg.fh, false, MobAppearType.REGEN, 0, pmg.f, 0, null))
+                    if (createMob(pmg.templateID, pmg, pmg.x, pmg.y, pmg.fh, false, MobAppearType.REGEN, 0, pmg.f, 0, null, false))
                         --mobCount;
                     if (mobCount <= 0) {
                         break;
@@ -912,5 +950,29 @@ public class LifePool {
                 mob.onMobDead(hit, delay);
             }
         }
+    }
+
+    public boolean onMobSummonItemUseRequest(Point pt, MobSummonItem info, boolean noDropPriority) {
+        StaticFoothold foothold = getField().getSpace2D().getFootholdUnderneath(pt.x, pt.y, null);
+        if (foothold == null) {
+            return false;
+        }
+        List<Integer> create = new ArrayList<>();
+        for (MobEntry entry : info.getMobs()) {
+            if (Math.abs(Rand32.genRandom().intValue()) % 100 < entry.getProb()) {
+                create.add(entry.getMobTemplateID());
+            }
+        }
+        // some ctrl stuff
+        boolean success = true;
+        for (Integer templateID : create) {
+            if (!createMob(templateID, null, pt.x, pt.y, (short) foothold.getSN(), noDropPriority, info.getType(), 0, (byte) 0, 0, null, false)) {
+                success = false;
+                break;
+            }
+        }
+        create.clear();
+
+        return success;
     }
 }

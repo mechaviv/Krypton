@@ -186,6 +186,13 @@ public class FieldPacket {
         return packet;
     }
 
+    public static OutPacket setObjectState(String name, int state) {
+        OutPacket packet = new OutPacket(LoopbackPacket.SetObjectState);
+        packet.encodeString(name);
+        packet.encodeInt(state);
+        return packet;
+    }
+
     public static OutPacket destroyClock() {
         OutPacket packet = new OutPacket(LoopbackPacket.DestroyClock);
         return packet;

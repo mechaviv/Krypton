@@ -160,6 +160,10 @@ public enum JobAccessor {
         return job / 1000 == 0 && subJob == 1;
     }
 
+    public static boolean isBeginnerJob(int job) {
+        return job % 1000 == 0 || job == 2001;
+    }
+
     public static String getJobName(int job) {
         switch(job) {
             case 0:

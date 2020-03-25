@@ -51,12 +51,15 @@ public class MobTemplate implements WzXML {
     private int templateID;
     private String name;
     private boolean bodyAttack;
+    private boolean notAttack;
     private byte moveAbility;
     private boolean boss;
     private byte level;
-    private short maxHP;
-    private short maxMP;
+    private int maxHP;
+    private int maxMP;
     private byte speed;
+    private byte flySpeed;
+    private byte chaseSpeed;
     private short pad;
     private short pdd;
     private short mad;
@@ -69,14 +72,42 @@ public class MobTemplate implements WzXML {
     private short hpRecovery;
     private short mpRecovery;
     private boolean undead;
+    private double fs;
+    private int hpTagColor;
+    private int hpTagBgColor;
+    private boolean invincible;
+    private boolean hasPublicDrop;
+    private boolean hasExplosiveDrop;
+    private int deadBuff;
+    private int removeAfter;
+    private boolean removeQuest;
+    private boolean pickUpDrop;
+    private boolean firstAttack;
+    private int selfDestructionHP;
+    private boolean damagedByMob;
+    private boolean doNotRemove;
+    private int dropItemPeriod;
+    private int banType;
+    private String banMsg;
+    private MobSelfDestruction selfDestructionInfo;
+    private int getCP;
+    private boolean hpGaugeHide;
+    private int fixedDamage;
+    private boolean onlyNormalAttack;
+
     private final List<MobAttackInfo> attackInfo;
+    private final List<MobSkillInfo> skillInfo;
     private final List<RewardInfo> rewardInfo;
-    
+    private final List<Integer> reviveTemplateIDs;
+    private final List<MobBanMap> banMap;
+
     public MobTemplate() {
         this.damagedElemAttr = new ArrayList<>(AttackElem.Count);
         this.attackInfo = new ArrayList<>();
+        this.skillInfo = new ArrayList<>();
         this.rewardInfo = new ArrayList<>();
-        
+        this.reviveTemplateIDs = new ArrayList<>();
+        this.banMap = new ArrayList<>();
         for (int i = 0; i < AttackElem.Count; i++) {
             this.damagedElemAttr.add(i, AttackElemAttr.None);
         }
@@ -94,29 +125,45 @@ public class MobTemplate implements WzXML {
     public static void load(boolean useSAX) {
         Logger.logReport("Loading Mob Attributes");
         WzPackage mobDir = new WzFileSystem().init("Mob").getPackage();
+        WzProperty reward = new WzFileSystem().init("Data").getPackage().getItem("Reward.img");
         if (mobDir != null) {
             if (useSAX) {
                 for (WzSAXProperty mobData : mobDir.getSAXEntries().values()) {
-                    registerMob(Integer.parseInt(mobData.getFileName().replaceAll(".img.xml", "")), mobData);
+                    int templateID = Integer.parseInt(mobData.getFileName().replaceAll(".img.xml", ""));
+                    registerMob(templateID, mobData, reward.getNode(String.format("m%07d", templateID)));
                 }
             } else {
                 for (WzProperty mobData : mobDir.getEntries().values()) {
-                    registerMob(Integer.parseInt(mobData.getNodeName().replaceAll(".img", "")), mobData);
+                    int templateID = Integer.parseInt(mobData.getNodeName().replaceAll(".img", ""));
+                    registerMob(templateID, mobDir, mobData, reward.getNode(String.format("m%07d", templateID)));
                 }
             }
             mobDir.release();
+            reward.release();
         }
         mobDir = null;
+        reward = null;
     }
 
-    private static void registerMob(int templateID, WzProperty prop) {
+    private static void registerMob(int templateID, WzPackage mobDir, WzProperty prop, WzProperty reward) {
         WzProperty info = prop.getNode("info");
         if (info == null) {
             return;
         }
         MobTemplate template = new MobTemplate();
         template.templateID = templateID;
-        
+
+        String link = WzUtil.getString(info.getNode("link"), null);
+        if (link != null) {
+            info = mobDir.getItem(link + ".img").getNode("info");
+        }
+        if (info == null) {
+            Logger.logError("[Mob Template] No Info for [%d]", templateID);
+        }
+        if (templates.containsKey(templateID)) {
+            Logger.logError("[Mob Template] Duplicated mob template [%d]", templateID);
+            return;
+        }
         boolean jump = prop.getNode("jump") != null;
         boolean move = prop.getNode("move") != null;
         boolean fly = prop.getNode("fly") != null;
@@ -133,11 +180,15 @@ public class MobTemplate implements WzXML {
         }
         template.name = WzUtil.getString(info.getNode("name"), "NULL");
         template.bodyAttack = WzUtil.getBoolean(info.getNode("bodyAttack"), false);
+        template.notAttack = WzUtil.getBoolean(info.getNode("notAttack"), false);
         template.boss = WzUtil.getBoolean(info.getNode("boss"), false);
         template.level = WzUtil.getByte(info.getNode("level"), 1);
-        template.maxHP = WzUtil.getShort(info.getNode("maxHP"), 0);
-        template.maxMP = WzUtil.getShort(info.getNode("maxMP"), 0);
-        template.speed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(info.getNode("speed"), 0)));
+        template.maxHP = WzUtil.getInt32(info.getNode("maxHP"), 0);
+        template.maxMP = WzUtil.getInt32(info.getNode("maxMP"), 0);
+        template.speed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(info.getNode("speed"), 0) + 100));
+        template.flySpeed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(info.getNode("flySpeed"), 0) + 100));
+        template.chaseSpeed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(info.getNode("chaseSpeed"), 0) + 100));
+
         template.pad = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("PADamage"), 0)));
         template.pdd = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("PDDamage"), 0)));
         template.mad = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("MADamage"), 0)));
@@ -160,7 +211,42 @@ public class MobTemplate implements WzXML {
         template.hpRecovery = WzUtil.getShort(info.getNode("hpRecovery"), 0);
         template.mpRecovery = WzUtil.getShort(info.getNode("mpRecovery"), 0);
         template.undead = WzUtil.getBoolean(info.getNode("undead"), false);
-        
+        template.pickUpDrop = WzUtil.getBoolean(info.getNode("pickUp"), false);
+        template.firstAttack = WzUtil.getBoolean(info.getNode("firstAttack"), false);
+        template.selfDestructionHP = WzUtil.getInt32(info.getNode("selfDestructionHP"), -1);
+        template.fs = WzUtil.getDouble(info.getNode("fs"), 1.0);
+        template.hpTagColor = WzUtil.getInt32(info.getNode("hpTagColor"), 0);
+        template.hpTagBgColor = WzUtil.getInt32(info.getNode("hpTagBgcolor"), 0);
+        template.invincible = WzUtil.getBoolean(info.getNode("invincible"), false);
+        template.hasPublicDrop = WzUtil.getBoolean(info.getNode("publicReward"), false);
+        template.hasExplosiveDrop = WzUtil.getBoolean(info.getNode("explosiveReward"), false);
+        template.deadBuff = WzUtil.getInt32(info.getNode("buff"), 0);
+        template.removeAfter = WzUtil.getInt32(info.getNode("removeAfter"), 0);
+        template.removeQuest = WzUtil.getBoolean(info.getNode("removeQuest"), false);
+        template.damagedByMob = WzUtil.getBoolean(info.getNode("damagedByMob"), false);
+        template.doNotRemove = WzUtil.getBoolean(info.getNode("doNotRemove"), false);
+        template.dropItemPeriod = WzUtil.getInt32(info.getNode("dropItemPeriod"), 0);
+        template.getCP = WzUtil.getInt32(info.getNode("getCP"), 0);
+        template.fixedDamage = WzUtil.getInt32(info.getNode("fixedDamage"), 0);
+        template.onlyNormalAttack = WzUtil.getBoolean(info.getNode("onlyNormalAttack"), false);
+        template.doNotRemove = WzUtil.getBoolean(info.getNode("HPgaugeHide"), false);
+
+        WzProperty selfDestruction = info.getNode("selfDestruction");
+        if (selfDestruction != null) {
+            template.selfDestructionInfo = new MobSelfDestruction();
+            template.selfDestructionInfo.setActionType(WzUtil.getInt32(selfDestruction.getNode("action"), 0));
+            template.selfDestructionInfo.setBearHP(WzUtil.getInt32(selfDestruction.getNode("hp"), -1));
+            template.selfDestructionInfo.setFirstAttack( WzUtil.getBoolean(info.getNode("firstAttack"), false));
+            template.selfDestructionInfo.setRemoveAfter(WzUtil.getInt32(selfDestruction.getNode("removeAfter"), 0));
+        }
+
+        WzProperty revives = info.getNode("revive");
+        if (revives != null) {
+            for (WzProperty revive : revives.getChildNodes()) {
+                template.reviveTemplateIDs.add(WzUtil.getInt32(revive, 0));
+            }
+        }
+
         for (int i = 1; ; i++) {
             WzProperty attack = prop.getNode(String.format("attack%d", i));
             if (attack == null) {
@@ -175,20 +261,49 @@ public class MobTemplate implements WzXML {
                 template.attackInfo.add(new MobAttackInfo(type, conMP, magic));
             }
         }
-        
-        Reward.loadReward(templateID, template.rewardInfo);
+
+        WzProperty skills = info.getNode("skill");
+        if (skills != null) {
+            for (WzProperty skill : skills.getChildNodes()) {
+                MobSkillInfo mobSkillInfo = new MobSkillInfo();
+                mobSkillInfo.setSkillID(WzUtil.getInt32(skill.getNode("skill"), 0));
+                mobSkillInfo.setSlv(WzUtil.getInt32(skill.getNode("level"), 0));
+                template.skillInfo.add(mobSkillInfo);
+            }
+        }
+
+        WzProperty banPath = info.getNode("ban");
+        if (banPath != null) {
+            template.banType = WzUtil.getInt32(banPath.getNode("banType"), 0);
+            template.banMsg = WzUtil.getString(banPath.getNode("banMsg"), null);
+
+            WzProperty banMapPath = banPath.getNode("banMap");
+            if (banMapPath != null) {
+                for (int i = 0; ; i++) {
+                    WzProperty banMap = banMapPath.getNode("" + i);
+                    if (banMap == null) {
+                        break;
+                    }
+                    MobBanMap mobBanMap = new MobBanMap();
+                    mobBanMap.setFieldID(WzUtil.getInt32(banMap.getNode("field"), 0));
+                    mobBanMap.setPortalName(WzUtil.getString(banMap.getNode("portal"), null));
+                    template.banMap.add(mobBanMap);
+                }
+            }
+        }
+        Reward.loadReward(reward, template.rewardInfo);
         
         templates.put(templateID, template);
     }
     
-    private static void registerMob(int templateID, WzSAXProperty prop) {
+    private static void registerMob(int templateID, WzSAXProperty prop, WzProperty reward) {
         MobTemplate template = new MobTemplate();
         template.templateID = templateID;
         
         prop.addEntity(template);
         prop.parse();
-        
-        Reward.loadReward(templateID, template.rewardInfo);
+
+        Reward.loadReward(reward, template.rewardInfo);
         templates.put(templateID, template);
     }
     
@@ -248,10 +363,10 @@ public class MobTemplate implements WzXML {
                 this.level = WzUtil.getByte(value, 1);
                 break;
             case "maxHP":
-                this.maxHP = WzUtil.getShort(value, 0);
+                this.maxHP = WzUtil.getInt32(value, 0);
                 break;
             case "maxMP":
-                this.maxMP = WzUtil.getShort(value, 0);
+                this.maxMP = WzUtil.getInt32(value, 0);
                 break;
             case "speed":
                 this.speed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(value, 0)));
@@ -392,11 +507,11 @@ public class MobTemplate implements WzXML {
         return level;
     }
     
-    public short getMaxHP() {
+    public int getMaxHP() {
         return maxHP;
     }
     
-    public short getMaxMP() {
+    public int getMaxMP() {
         return maxMP;
     }
     
@@ -458,5 +573,113 @@ public class MobTemplate implements WzXML {
     
     public List<RewardInfo> getRewardInfo() {
         return rewardInfo;
+    }
+
+    public byte getFlySpeed() {
+        return flySpeed;
+    }
+
+    public byte getChaseSpeed() {
+        return chaseSpeed;
+    }
+
+    public boolean isNotAttack() {
+        return notAttack;
+    }
+
+    public int getHpTagColor() {
+        return hpTagColor;
+    }
+
+    public int getHpTagBgColor() {
+        return hpTagBgColor;
+    }
+
+    public boolean isInvincible() {
+        return invincible;
+    }
+
+    public boolean isHasPublicDrop() {
+        return hasPublicDrop;
+    }
+
+    public boolean isHasExplosiveDrop() {
+        return hasExplosiveDrop;
+    }
+
+    public int getDeadBuff() {
+        return deadBuff;
+    }
+
+    public int getRemoveAfter() {
+        return removeAfter;
+    }
+
+    public boolean isRemoveQuest() {
+        return removeQuest;
+    }
+
+    public boolean isPickUpDrop() {
+        return pickUpDrop;
+    }
+
+    public boolean isFirstAttack() {
+        return firstAttack;
+    }
+
+    public int getSelfDestructionHP() {
+        return selfDestructionHP;
+    }
+
+    public boolean isDamagedByMob() {
+        return damagedByMob;
+    }
+
+    public boolean isDoNotRemove() {
+        return doNotRemove;
+    }
+
+    public int getDropItemPeriod() {
+        return dropItemPeriod;
+    }
+
+    public int getBanType() {
+        return banType;
+    }
+
+    public String getBanMsg() {
+        return banMsg;
+    }
+
+    public MobSelfDestruction getSelfDestructionInfo() {
+        return selfDestructionInfo;
+    }
+
+    public int getGetCP() {
+        return getCP;
+    }
+
+    public boolean isHpGaugeHide() {
+        return hpGaugeHide;
+    }
+
+    public int getFixedDamage() {
+        return fixedDamage;
+    }
+
+    public boolean isOnlyNormalAttack() {
+        return onlyNormalAttack;
+    }
+
+    public List<MobSkillInfo> getSkillInfo() {
+        return skillInfo;
+    }
+
+    public List<Integer> getReviveTemplateIDs() {
+        return reviveTemplateIDs;
+    }
+
+    public List<MobBanMap> getBanMap() {
+        return banMap;
     }
 }

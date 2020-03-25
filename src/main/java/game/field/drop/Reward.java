@@ -19,13 +19,24 @@ package game.field.drop;
 
 import common.item.ItemAccessor;
 import common.item.ItemSlotBase;
+import game.user.item.BundleItem;
+import game.user.item.EquipItem;
 import game.user.item.ItemInfo;
 import game.user.item.ItemVariationOption;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import game.user.quest.QuestDemand;
+import game.user.quest.QuestMan;
+import game.user.quest.info.QuestItemInfo;
 import network.database.GameDB;
+import util.FileTime;
+import util.Logger;
 import util.Rand32;
+import util.wz.WzProperty;
+import util.wz.WzUtil;
 
 /**
  *
@@ -89,10 +100,11 @@ public class Reward {
         this.info = info;
     }
     
-    public static List<Reward> create(List<RewardInfo> rewardInfo, boolean premiumMap, int ownerDropRate, int ownerDropRate_Ticket) {
-        final float INC_DROP_RATE = 1.0f; //fIncDropRate, default 1
+    public static List<Reward> create(List<RewardInfo> rewardInfo, boolean premiumMap, int ownerDropRate, int ownerDropRate_Ticket, boolean test) {
+        final float INC_DROP_RATE = 3.0f; //fIncDropRate, default 1
+        final float INC_DROP_RATE_WSE = 1.0f;
         final float REWARD_RATE = 1.0f; //dRewardRate, always 1 (used for monster carnival which doesn't exist)
-        
+
         List<Reward> rewards = new ArrayList<>();
         for (RewardInfo info : rewardInfo) {
             int itemRate = 1;
@@ -103,11 +115,12 @@ public class Reward {
                 if (info.getType() == RewardType.ITEM)
                     itemRate = ownerDropRate_Ticket;
             }
-            int minProb = (int) (long) (1000000000.0d / INC_DROP_RATE / (double) ownerDropRate / (double) itemRate / REWARD_RATE);
+            int minProb = (int) (long) (1000000000.0d / INC_DROP_RATE * INC_DROP_RATE_WSE / (double) ownerDropRate / (double) itemRate / REWARD_RATE);
             int maxProb = 1000000000;
             if (minProb > 0) {
                 maxProb = (int) (Rand32.getInstance().random() % minProb);
             }
+            if (test) maxProb = 1;
             if (maxProb < info.getProb()) {
                 Reward reward = new Reward();
                 if (!info.isPremiumMap() || premiumMap) {
@@ -148,33 +161,97 @@ public class Reward {
         Collections.shuffle(rewards);
         return rewards;
     }
-    
-    public static void loadReward(int templateID, List<RewardInfo> rewardInfo) {
-        rewardInfo.clear();
-        
-        int count = GameDB.rawLoadReward(templateID, rewardInfo);
+
+    public static int loadReward(WzProperty reward, List<RewardInfo> rewardInfos) {
+        if (reward == null) {
+            return -1;
+        }
+        int count = reward.getChildNodes().size();
+        if (count <= 0) {
+            return -1;
+        }
         for (int i = 0; i < count; i++) {
-            RewardInfo reward = rewardInfo.get(i);
-            if (reward.getMoney() > 0) {
-                reward.setType(RewardType.MONEY);
+            RewardInfo rewardInfo = new RewardInfo();
+            WzProperty rewardData = reward.getNode("" + i);
+
+            int money = WzUtil.getInt32(rewardData.getNode("money"), 0);
+            if (money == 0) {
+                rewardInfo.setType(RewardType.ITEM);
+                int itemID = WzUtil.getInt32(rewardData.getNode("item"), 0);
+                rewardInfo.setItemId(itemID);
+                rewardInfo.setMin(WzUtil.getInt32(rewardData.getNode("min"), 1));
+                rewardInfo.setMax(WzUtil.getInt32(rewardData.getNode("max"), 1));
+                rewardInfo.setPeriod(WzUtil.getInt32(rewardData.getNode("period"), 0));
+
+                int dateExpire = WzUtil.getInt32(rewardData.getNode("dateExpire"), 0);
+                rewardInfo.setDateExpire(ItemInfo.getItemDateExpire(dateExpire != 0 ? "" + dateExpire : null));
+
+                List<Integer> quests = QuestMan.getInstance().getQuestsByItem(itemID);
+                if (quests != null) {
+                    for (Integer quest : quests) {
+                        rewardInfo.getQrKey().add(quest);
+                        QuestDemand demand = QuestMan.getInstance().getCompleteDemand(quest);
+
+                        for (QuestItemInfo questItemInfo : demand.getDemandItem()) {
+                            if (questItemInfo.getItemID() == itemID) {
+                                rewardInfo.setMaxCount(questItemInfo.getCount());
+                            }
+                        }
+                    }
+                }
+
+                int maxPerSlot = 1;
+                boolean timeLimited = false;
+                BundleItem bundleItem = ItemInfo.getBundleItem(itemID);
+                if (bundleItem != null) {
+                    maxPerSlot = bundleItem.getSlotMax();
+                    timeLimited = bundleItem.isTimeLimited();
+                } else {
+                    EquipItem equipItem = ItemInfo.getEquipItem(itemID);
+                    if (equipItem != null) {
+                        timeLimited = equipItem.isTimeLimited();
+                    }
+                }
+                if (FileTime.compareFileTime(rewardInfo.getDateExpire(), FileTime.DATE_2079) < 0 && rewardInfo.getPeriod() != 0) {
+                    return 1;
+                }
+
+                if (timeLimited != (FileTime.compareFileTime(rewardInfo.getDateExpire(), FileTime.DATE_2079) < 0 || rewardInfo.getPeriod() != 0)) {
+                    //  <int name="timeLimited" value="1" />
+                    //            <int name="slotMax" value="1" />
+                    return 2;
+                }
+                if (rewardInfo.getMin() <= 0 || rewardInfo.getMax() > maxPerSlot) {
+                    return 3;
+                }
+                if (ItemInfo.isCashItem(itemID)) {
+                    return 4;
+                }
+                if (ItemInfo.getItemSlot(itemID, ItemVariationOption.None) == null) {
+                    return 0;// not being added to list
+                }
             } else {
-                reward.setType(RewardType.ITEM);
-                reward.setPeriod(0);
-                
-                // Nexon additionally returns errors for the below conditions..
-                if (reward.getMin() <= 0 || reward.getMax() > 1) {
-                    
-                }
-                if (ItemInfo.isCashItem(reward.getItemId())) {
-                    
-                }
-                if (ItemInfo.getItemSlot(reward.getItemId(), ItemVariationOption.None) == null) {
-                    
-                }
-                if (reward.getPeriod() != 0) {
-                    // if FileTime.CompareFileTime(ftDateExpire, FileTime.END) < 0
+                rewardInfo.setType(RewardType.MONEY);
+                rewardInfo.setMoney(money);
+            }
+
+            String strProb = WzUtil.getString(rewardData.getNode("prob"), "");
+            double tempProb = 0.0;
+            if (strProb.substring(0, 4).equals("[R8]")) {
+                tempProb = Double.parseDouble(strProb.substring(4));
+                if (tempProb > 1.0 || tempProb < 0.0) {
+                    return 6;
                 }
             }
+            int prob = (int) (tempProb * 1000000000.0);
+            prob = Math.max(prob, 0);
+            prob = Math.min(prob, 1000000000);
+            rewardInfo.setProb(prob);
+
+            rewardInfo.setPremiumMap(WzUtil.getInt32(rewardData.getNode("premium"), 0) != 0);
+
+            rewardInfos.add(rewardInfo);
         }
+        return 0;// success
     }
 }

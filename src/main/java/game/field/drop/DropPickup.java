@@ -23,9 +23,9 @@ package game.field.drop;
  */
 public class DropPickup {
     public static final byte
+            Done                = -1,
             AddInventoryItem    = 0,
             Messo               = 1,
-            Done                = 2,
             NOMSG               = 3
     ;
 }

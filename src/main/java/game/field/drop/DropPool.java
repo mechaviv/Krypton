@@ -25,6 +25,7 @@ import game.user.User;
 import game.user.stat.CharacterTemporaryStat;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import network.packet.ClientPacket;
@@ -33,6 +34,7 @@ import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 import util.Logger;
 import util.Pointer;
+import util.Rect;
 
 /**
  *
@@ -142,8 +144,15 @@ public class DropPool {
             user.sendDropPickUpFailPacket(Request.Excl);
             return;
         }
-        
+        if (user.getCurFieldKey() != packet.decodeByte()) {
+            return;
+        }
+        packet.decodeInt();// update time
+        packet.decodeShort();// pos x
+        packet.decodeShort();// pos y
         int dropID = packet.decodeInt();
+        packet.decodeInt();// client crc
+
         Drop drop = drops.get(dropID);
         if (drop == null) {
             return;
@@ -175,14 +184,21 @@ public class DropPool {
         packet.encodeInt(drop.getDropID());
         packet.encodeBool(drop.isMoney());
         packet.encodeInt(drop.getDropInfo());
+        packet.encodeInt(drop.getOwnerID());
+        packet.encodeByte(drop.getOwnType());// (USER_OWN = 0 | PARTY_OWN = 1 | NO_OWN = 2 | EXPLOSIVE_NO_OWN = 3)
         packet.encodeShort(drop.getPt2().x);
         packet.encodeShort(drop.getPt2().y);
+        packet.encodeInt(drop.getSourceID());
         if (enterType == Drop.JustShowing || enterType == Drop.Create || enterType == Drop.FadingOut) {
-            packet.encodeInt(drop.getSourceID());
             packet.encodeShort(drop.getPt1().x);
             packet.encodeShort(drop.getPt1().y);
             packet.encodeShort(delay);
         }
+        if (!drop.isMoney()) {
+            packet.encodeFileTime(drop.getItem().getDateExpire());
+        }
+        packet.encodeByte(0);// bByPet
+        packet.encodeByte(0);// unk
         return packet;
     }
     
@@ -194,5 +210,17 @@ public class DropPool {
             packet.encodeInt(option);//dwPickupID
         }
         return packet;
+    }
+
+    public void findDropInRect(Rect rc, List<Drop> drops, int timeAfter) {
+        long cur = System.currentTimeMillis();
+        for (Iterator<Map.Entry<Integer, Drop>> it = this.drops.entrySet().iterator(); it.hasNext();) {
+            Drop drop = it.next().getValue();
+            if ((cur - drop.getCreateTime()) >= timeAfter) {
+                if (rc.ptInRect(drop.getPt2())) {
+                    drops.add(drop);
+                }
+            }
+        }
     }
 }

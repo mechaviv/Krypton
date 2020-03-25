@@ -1,0 +1,7 @@
+self.fieldSetMobGen(270050100, False, 0)
+self.fieldRemoveMob(270050100, 8820019)
+self.fieldRemoveMob(270050100, 8820020)
+self.fieldRemoveMob(270050100, 8820021)
+self.fieldRemoveMob(270050100, 8820022)
+self.fieldRemoveMob(270050100, 8820023)
+#self.fieldRemoveAllMob(270050100)

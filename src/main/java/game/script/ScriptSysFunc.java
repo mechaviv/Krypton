@@ -35,6 +35,7 @@ import game.field.life.mob.Mob;
 import game.field.portal.Portal;
 import game.user.AvatarLook;
 import game.user.User;
+import game.user.UserLocal;
 import game.user.WvsContext;
 import game.user.item.ChangeLog;
 import game.user.item.ExchangeElem;
@@ -58,6 +59,7 @@ import java.util.concurrent.TimeUnit;
 import game.user.stat.Flag;
 import network.packet.InPacket;
 import util.Logger;
+import util.Rand32;
 
 /**
  * @author Eric
@@ -104,7 +106,6 @@ public class ScriptSysFunc {
                     }
                     posMsgHistory = runningVM.getHistoryPos() - 1;
                 }
-                Logger.logReport("Message History [%d] | History Position [%d]", runningVM.getMsgHistory().size(), posMsgHistory);
                 runningVM.setHistoryPos(posMsgHistory);
                 MsgHistory msgHistory = runningVM.getMsgHistory().get(posMsgHistory - 1);
                 boolean next = (Boolean) msgHistory.getMemory().get(1);
@@ -247,7 +248,6 @@ public class ScriptSysFunc {
                 return;
             }
         }
-        Logger.logReport("Message History [%d] | History Position [%d]", runningVM.getMsgHistory().size(), runningVM.getHistoryPos());
         msg.setSpeakerTypeID(speakerTypeID);
         msg.setSpeakerTemplateID(speakerTemplateID);
         runningVM.getMsgHistory().addLast(msg);
@@ -407,7 +407,7 @@ public class ScriptSysFunc {
             Logger.logError("VM run time error - No field %d", fieldID);
             return;
         }
-        field.getLifePool().removeAllMob();
+        field.getLifePool().removeAllMob(true);
     }
 
     public void fieldRemoveMob(int fieldID, int mobTemplateID) {
@@ -444,6 +444,15 @@ public class ScriptSysFunc {
                 field.getLifePool().createMob(mob, new Point(x, y));
             }
         }
+    }
+
+    public void fieldSummonMob(int x, int y, int itemID) {
+        Field field = FieldMan.getInstance(getChannelID()).getField(getUser().getField().getFieldID());
+        if (field == null) {
+            Logger.logError("VM run time error - No field %d", getUser().getField().getFieldID());
+            return;
+        }
+        field.summonMob(x, y, itemID);
     }
 
     public void fieldSummonNpc(int fieldID, int npcTemplateID, int x, int y) {
@@ -631,6 +640,7 @@ public class ScriptSysFunc {
         }
         List<ExchangeElem> exchange = new ArrayList<>();
         List<Integer> items = new ArrayList<>();
+        List<Integer> counts = new ArrayList<>();
         List<ChangeLog> logAdd = new ArrayList<>();
         List<ChangeLog> logRemove = new ArrayList<>();
         int argCount = args.length / 2;
@@ -647,6 +657,7 @@ public class ScriptSysFunc {
                         logRemove.clear();
                         logAdd.clear();
                         items.clear();
+                        counts.clear();
                         exchange.clear();
                         return false;
                     }
@@ -665,6 +676,7 @@ public class ScriptSysFunc {
                         logRemove.clear();
                         logAdd.clear();
                         items.clear();
+                        counts.clear();
                         exchange.clear();
                         return false;
                     }
@@ -695,6 +707,7 @@ public class ScriptSysFunc {
                         logRemove.clear();
                         logAdd.clear();
                         items.clear();
+                        counts.clear();
                         exchange.clear();
                         return false;
                     }
@@ -722,6 +735,7 @@ public class ScriptSysFunc {
                                 logRemove.clear();
                                 logAdd.clear();
                                 items.clear();
+                                counts.clear();
                                 exchange.clear();
                                 return false;
                             }
@@ -733,21 +747,22 @@ public class ScriptSysFunc {
                 }
             }
             items.add(itemID);
-            items.add(count);
+            counts.add(count);
         }
         if (incMoney != 0 || argCount != 0) {
             if (Inventory.exchange(getUser(), incMoney, exchange, logAdd, logRemove)) {
                 Inventory.sendInventoryOperation(getUser(), Request.None, logRemove);
                 Inventory.sendInventoryOperation(getUser(), Request.None, logAdd);
-                if (!items.isEmpty() && items.size() >= 2) {
-                    //getUser().postQuestEffect(true, items, null, 0);
+                if (!items.isEmpty() && !counts.isEmpty() && items.size() == counts.size()) {
+                    getUser().postQuestEffect(true, items, counts, null, 0);
                 }
                 if (incMoney != 0) {
-                    //getUser().sendIncMoneyMessage(incMoney);
+                    getUser().sendIncMoneyMessage(incMoney);
                 }
                 logRemove.clear();
                 logAdd.clear();
                 items.clear();
+                counts.clear();
                 exchange.clear();
                 return true;
             }
@@ -757,7 +772,7 @@ public class ScriptSysFunc {
 
     public int inventoryGetHoldCount(byte ti) {
         int count = 0;
-        if (ti >= ItemType.Equip && ti <= ItemType.Etc) {
+        if (ti >= ItemType.Equip && ti <= ItemType.Cash) {
             for (ItemSlotBase item : getUser().getCharacter().getItemSlot(ti)) {
                 if (item != null) {
                     ++count;
@@ -774,7 +789,7 @@ public class ScriptSysFunc {
     }
 
     public int inventoryGetSlotCount(byte ti) {
-        if (ti >= ItemType.Equip && ti <= ItemType.Etc) {
+        if (ti >= ItemType.Equip && ti <= ItemType.Cash) {
             return getUser().getCharacter().getItemSlotCount(ti);
         }
         return 0;
@@ -807,7 +822,7 @@ public class ScriptSysFunc {
     }
 
     public void userBroadcastMessage(int bmType, String message) {
-        getUser().sendPacket(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, message));
+        getUser().sendPacket(WvsContext.onBroadcastMsg((byte) bmType, message));
     }
 
     public void userEnforceNpcChat(int npcID) {
@@ -818,6 +833,14 @@ public class ScriptSysFunc {
 
     public void questEndEffect() {
         getUser().onUserEffect(true, true, UserEffect.QuestComplete);
+    }
+
+    public void userAvatarOriented(String path) {
+        getUser().onUserEffect(true, false, UserEffect.AvatarOriented, path);
+    }
+
+    public void userBalloonMsg(String message, int width, int timeOut, int x, int y) {
+        getUser().sendPacket(UserLocal.balloonMsg(message, width, timeOut, x, y));
     }
 
     public short userGetAP() {
@@ -864,7 +887,7 @@ public class ScriptSysFunc {
         return getUser().getCharacter().getCharacterStat().getLUK();
     }
 
-    public byte userGetLevel() {
+    public int userGetLevel() {
         return getUser().getCharacter().getCharacterStat().getLevel();
     }
 
@@ -1055,7 +1078,7 @@ public class ScriptSysFunc {
             try {
                 if (getUser().incMoney(inc, onlyFull, true)) {
                     getUser().sendCharacterStat(Request.None, CharacterStatType.Money);
-                    //getUser().sendIncMoneyMessage(inc);
+                    getUser().sendIncMoneyMessage(inc);
                     return true;
                 }
             } finally {
@@ -1084,6 +1107,7 @@ public class ScriptSysFunc {
             try {
                 if (getUser().incSP(inc, onlyFull)) {
                     getUser().sendCharacterStat(Request.None, CharacterStatType.SP);
+                    getUser().sendPacket(WvsContext.onIncSPMessage(getUser().getCharacter().getCharacterStat().getJob(), inc));
                     return true;
                 }
             } finally {
@@ -1280,6 +1304,23 @@ public class ScriptSysFunc {
         long t1 = TimeUnit.MINUTES.toMinutes(dateFromString(time1).atZone(ZoneId.systemDefault()).toInstant().getEpochSecond()) / 60;
         long t2 = TimeUnit.MINUTES.toMinutes(dateFromString(time2).atZone(ZoneId.systemDefault()).toInstant().getEpochSecond()) / 60;
         return (int) (t1 - t2);
+    }
+
+    public int random(int from, int end) {
+        int oldFrom = from;
+        int oldEnd = end;
+        if (from >= end) {
+            from = oldEnd;
+            end = oldFrom;
+        }
+        if (from == end) {
+            return from;
+        }
+        int rand = Math.abs(Rand32.genRandom().intValue());
+        if (end - from == -1) {
+            return rand;
+        }
+        return from + rand % (end - from + 1);
     }
 
     private static LocalDateTime dateFromString(String curDate) {

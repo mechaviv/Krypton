@@ -139,7 +139,7 @@ public class OutPacket {
         
         // Calculate the length of the remaining buffer to form the
         // length of the block. 
-        int lenBlock = Math.min(remain, 0x5B4);
+        int lenBlock = Math.min(remain, 0x10000);
         
         // Allocate a new destination block of empty bytes, used as the
         // new pDes buffer which will hold the encrypted packet.
