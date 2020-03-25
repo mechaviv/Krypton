@@ -47,6 +47,7 @@ import game.party.PartyResCode;
 import game.script.ScriptVM;
 import game.user.command.CommandHandler;
 import game.user.command.UserGradeCode;
+import game.user.func.FunckeyMapped;
 import game.user.item.*;
 import game.user.quest.QuestAct;
 import game.user.quest.QuestFlag;
@@ -68,9 +69,7 @@ import util.Rand32;
 import util.Rect;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
@@ -175,6 +174,12 @@ public class User extends Creature {
     // Monster Carnival
     private int teamForMCarnival;
 
+    // Function key mapped
+    private FunckeyMapped[] funcKeyMapped;
+    private boolean funcKeyMappedInitEmpty;
+    private int petConsumeItemID_HP;
+    private int petConsumeItemID_MP;
+
     protected User(int characterID) {
         super();
 
@@ -248,6 +253,30 @@ public class User extends Creature {
 
         this.characterID = character.getCharacterStat().getCharacterID();
         this.characterName = character.getCharacterStat().getName();
+
+        this.funcKeyMapped = FunckeyMapped.getDefault();
+        this.petConsumeItemID_HP = 0;
+        this.petConsumeItemID_MP = 0;
+
+        List<Integer> data = new ArrayList<>();
+        int funcCount = GameDB.rawGetFuncKeyMapped(characterID, data);
+        this.funcKeyMappedInitEmpty = funcCount == 0;
+        if (funcCount != 0) {
+            this.funcKeyMappedInitEmpty = true;
+            for (int i = 0; i < funcCount; i += 3) {
+                int keyID = data.get(i);
+                int type = data.get(i + 1);
+                int funcID = data.get(i + 2);
+                if (keyID == 200) {
+                    this.petConsumeItemID_HP = funcID;
+                } else if (keyID == 201) {
+                    this.petConsumeItemID_MP = funcID;
+                } else {
+                    this.funcKeyMapped[keyID] = new FunckeyMapped(type, funcID);
+                    this.funcKeyMappedInitEmpty = false;
+                }
+            }
+        }
 
         this.validateStat(true);
 
@@ -1160,7 +1189,14 @@ public class User extends Creature {
         curPos.y = portal.getPortal().get(idx).getPortalPos().y;
         moveAction = 0;
         footholdSN = 0;
+
         sendSetFieldPacket(true);
+
+        // FuncKeyMapped
+        sendPacket(FuncKeyMappedMan.onInit(funcKeyMappedInitEmpty, funcKeyMapped));
+        sendPacket(FuncKeyMappedMan.onPetConsumeItemInit(petConsumeItemID_HP));
+        sendPacket(FuncKeyMappedMan.onPetConsumeMPItemInit(petConsumeItemID_MP));
+
         if (getField().onEnter(this)) {
             // I'm genuinely curious why Nexon has migration packets for messenger,
             // when you can't "migrate" channels without logging out first?
@@ -1290,6 +1326,9 @@ public class User extends Creature {
             case ClientPacket.Admin:
                 onAdmin(packet);
                 break;
+            case ClientPacket.FuncKeyMappedModified:
+                onFuncKeyMappedModified(packet);
+                break;
             default: {
                 if (type >= ClientPacket.BEGIN_FIELD && type <= ClientPacket.END_FIELD) {
                     onFieldPacket(type, packet);
@@ -1418,6 +1457,58 @@ public class User extends Creature {
                 unlock();
             }
         }
+    }
+
+    public void onFuncKeyMappedModified(InPacket packet) {
+        int funcType = packet.decodeInt();
+
+        if (funcType == 0) {// KeyModified
+            int size = packet.decodeInt();
+            if (size <= 0) {
+                return;
+            }
+            for (int i = 0; i < size; i++) {
+                int index = packet.decodeInt();
+                if (index >= 0 && index < 89) {
+                    int type = packet.decodeByte();
+                    int ID = packet.decodeInt();
+                    funcKeyMapped[index] = new FunckeyMapped(type, ID);
+                }
+            }
+
+        } else if (funcType == 1) {// PetConsumeItemModified
+            this.petConsumeItemID_HP = packet.decodeInt();
+        } else if (funcType == 2) {// PetConsumeMPItemModified
+            this.petConsumeItemID_MP = packet.decodeInt();
+        } else {
+            return;
+        }
+        List<Integer> changed = new ArrayList<>();
+        for (int i = 0; i < 89; i++) {
+            FunckeyMapped defaultFunc = FunckeyMapped.getDefault()[i];
+            FunckeyMapped modifiedFunc = this.funcKeyMapped[i];
+            if (modifiedFunc.getType() != defaultFunc.getType() || modifiedFunc.getID() != defaultFunc.getID()) {
+                changed.add(i);
+            }
+        }
+        if (this.petConsumeItemID_HP != 0) changed.add(200);
+        if (this.petConsumeItemID_MP != 0) changed.add(201);
+
+        List<Integer> data = new ArrayList<>();// data to be saved
+        for (Integer keyID : changed) {
+            data.add(keyID);
+            if (keyID == 200) {
+                data.add(2);
+                data.add(this.petConsumeItemID_HP);
+            } else if (keyID == 201) {
+                data.add(2);
+                data.add(this.petConsumeItemID_MP);
+            } else {
+                data.add(funcKeyMapped[keyID].getType());
+                data.add(funcKeyMapped[keyID].getID());
+            }
+        }
+        GameDB.rawUpdateFuncKeyMapped(getCharacterID(), data);
     }
 
     public void onAttack(short type, InPacket packet) {
@@ -3021,16 +3112,14 @@ public class User extends Creature {
             }
             // Max all skills on a user based on their current Job Race
             if (isGM() && character.getSkillRecord().isEmpty()) {
-                List<Integer> skillRoots = new ArrayList<>();
-                SkillAccessor.getSkillRootFromJob(character.getCharacterStat().getJob(), skillRoots);
-                for (Integer skillRootID : skillRoots) {
-                    SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(skillRootID);
+                for (JobAccessor job : JobAccessor.values()) {
+                    SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(job.getJob());
                     if (visibleSR != null) {
                         for (SkillEntry skill : visibleSR.getSkills()) {
                             int skillID = skill.getSkillID();
                             int skillRoot = skillID / 10000;
                             if (skill != null && skill.getMaxLevel() != 0) {
-                                if (JobAccessor.isCorrectJobForSkillRoot(skillRootID, skillRoot)) {
+                                if (JobAccessor.isCorrectJobForSkillRoot(job.getJob(), skillRoot)) {
                                     character.getSkillRecord().put(skillID, skill.getMaxLevel());
                                 }
                             }

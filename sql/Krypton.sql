@@ -63,7 +63,20 @@ CREATE TABLE `character` (
 /*!40000 ALTER TABLE `character` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character` ENABLE KEYS */;
 
+DROP TABLE IF EXISTS `funckeymapped`;
+CREATE TABLE `funckeymapped` (
+  `CharacterID` int(11) NOT NULL,
+  `Keys` TEXT NOT NULL,
+  PRIMARY KEY (`CharacterID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `funckeymapped`
+--
+
+
+/*!40000 ALTER TABLE `character` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character` ENABLE KEYS */;
 --
 -- Definition of table `givepopularity`
 --

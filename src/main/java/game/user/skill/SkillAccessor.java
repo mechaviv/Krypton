@@ -51,8 +51,8 @@ public class SkillAccessor {
             EVA_MAX             = 999,
             SPEED_MAX           = 130,
             JUMP_MAX            = 123,
-            HP_MAX              = 30000,
-            MP_MAX              = 10000,
+            HP_MAX              = 99999,
+            MP_MAX              = 99999,
             POP_MAX             = 30000,//Unconfirmed
             AP_MAX              = 255,//Unconfirmed
             SP_MAX              = 255//Unconfirmed

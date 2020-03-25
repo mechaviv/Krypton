@@ -292,7 +292,7 @@ public class LoginApp {
     
     public void start() {
         try {
-            Logger.logReport("MapleStory Korea Service WvsLogin.exe.");
+            Logger.logReport("MapleStory GL Service WvsLogin.exe.");
             setUp();
             Logger.logReport("WvsLogin has been initialized in " + ((System.currentTimeMillis() - serverStartTime) / 1000.0) + " seconds.");
         } catch (Exception ex) {

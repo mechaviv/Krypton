@@ -24,6 +24,7 @@ import common.user.CharacterData;
 import common.user.CharacterStat;
 import common.user.DBChar;
 import game.field.drop.RewardInfo;
+import game.user.func.FunckeyMapped;
 import game.user.item.Inventory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -34,6 +35,7 @@ import java.util.Map;
 
 import game.user.quest.info.SimpleStrMap;
 import util.FileTime;
+import util.Logger;
 import util.Pointer;
 
 /**
@@ -206,7 +208,28 @@ public class GameDB {
         
         return count;
     }
-    
+
+    public static int rawGetFuncKeyMapped(int characterID, List<Integer> data) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("SELECT `Keys` FROM `funckeymapped` WHERE `CharacterID` = ?")) {
+                ps.setInt(1, characterID);
+                try (ResultSet rs = ps.executeQuery()) {
+                    if (rs.next()) {
+                        String keys = rs.getString("Keys");
+                        String[] splitted = keys.split(",");
+                        for (String split : splitted) {
+                            data.add(Integer.parseInt(split));
+                        }
+                        return data.size();
+                    }
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+        return 0;
+    }
+
     public static void rawSaveCharacter(CharacterStat cs) {
         try (Connection con = Database.getDB().poolConnection()) {
             try (PreparedStatement ps = con.prepareStatement("UPDATE `character` SET `CharacterName` = ?, `Gender` = ?, `Skin` = ?, `Face` = ?, `Hair` = ?, `Level` = ?, `Job` = ?, `SubJob` = ?, `STR` = ?, `DEX` = ?, `INT` = ?, `LUK` = ?, `HP` = ?, `MP` = ?, `MaxHP` = ?, `MaxMP` = ?, `AP` = ?, `SP` = ?, `EXP` = ?, `POP` = ?, `Money` = ?, `Map` = ?, `Portal` = ? WHERE `CharacterID` = ?")) {
@@ -288,6 +311,20 @@ public class GameDB {
         try (Connection con = Database.getDB().poolConnection()) {
             try (PreparedStatement ps = con.prepareStatement("UPDATE `inventorysize` SET `EquipCount` = ?, `ConsumeCount` = ?, `InstallCount` = ?, `EtcCount` = ?, `CashCount` = ? WHERE `CharacterID` = ?")) {
                 Database.execute(con, ps, inventorySize.get(0), inventorySize.get(1), inventorySize.get(2), inventorySize.get(3), inventorySize.get(4), characterID);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
+
+    public static void rawUpdateFuncKeyMapped(int characterID, List<Integer> data) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `funckeymapped` SET `Keys` = ? WHERE `CharacterID` = ?")) {
+                String dataStr = "";
+                for (Integer i : data) {
+                    dataStr += "," + i;
+                }
+                Database.execute(con, ps, dataStr.substring(1), characterID);
             }
         } catch (SQLException ex) {
             ex.printStackTrace(System.err);
