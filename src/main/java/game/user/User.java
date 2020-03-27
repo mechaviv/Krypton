@@ -1208,7 +1208,7 @@ public class User extends Creature {
         if (option.getOption() != 0) {
             Pointer<SkillEntry> comboSkill = new Pointer<>();
             int slv = SkillInfo.getInstance().getSkillLevel(character, Crusader.ComboAttack, comboSkill);
-            if (slv >= 30) {
+            if (slv >= 20) {
                 option.setModOption(comboSkill.get().getLevelData(slv).X);
 
                 Pointer<SkillEntry> advSkill = new Pointer<>();
@@ -1308,6 +1308,9 @@ public class User extends Creature {
                 break;
             case ClientPacket.UserSkillUseRequest:
                 userSkill.onSkillUseRequest(packet);
+                break;
+            case ClientPacket.UserSkillCancelRequest:
+                userSkill.onSkillCancelRequest(packet);
                 break;
             case ClientPacket.UserCharacterInfoRequest:
                 onCharacterInfoRequest(packet);
@@ -1779,14 +1782,15 @@ public class User extends Creature {
                 if (oldOption != 0 && type == ClientPacket.UserMeleeAttack && skillID != Crusader.Shout) {
                     if (successAttack) {
                         int prop = comboOpt.getModOption() >> 16;
-                        int modOption = comboOpt.getModOption() & 0xFFFF;
+                        int maxOrbCount = comboOpt.getModOption() & 0xFFFF;
+                        Logger.logReport("Prop = [%d] | Mod Option = [%d]", prop, maxOrbCount);
 
                         int incComboCounter = 1;
-                        if (oldOption != modOption) {
+                        if (oldOption != maxOrbCount) {
                             incComboCounter = (Rand32.genRandom() % 100 < prop ? 1 : 0) + 1;
                         }
                         int newComboCounter = incComboCounter + oldOption;
-                        newComboCounter = Math.max(newComboCounter, modOption + 1);
+                        newComboCounter = Math.min(newComboCounter, maxOrbCount + 1);
                         comboOpt.setOption(newComboCounter);
                     }
                     if (skillID == Crusader.Coma || skillID == Crusader.Panic) {
@@ -3094,7 +3098,7 @@ public class User extends Creature {
     }
 
     public void sendTemporaryStatReset(Flag reset) {
-        if (!reset.isZero()) {
+        if (reset.isSet()) {
             lock.lock();
             try {
                 sendPacket(WvsContext.onTemporaryStatReset(reset));

@@ -11,6 +11,7 @@ import game.user.item.BundleItem;
 import game.user.item.ItemInfo;
 import game.user.skill.data.*;
 import game.user.skill.entries.*;
+import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.SecondaryStat;
 import game.user.stat.psd.AdditionPsd;
 import util.Logger;
@@ -278,6 +279,9 @@ public class SkillInfo {
         }
         Pointer<SkillEntry> curSkillEntry = new Pointer<>();
         if (getSkillLevel(user.getCharacter(), skillID, curSkillEntry) < slv) {
+            return false;
+        }
+        if (skillID == Skills.Hero.Enrage && user.getSecondaryStat().getStat(CharacterTemporaryStat.ComboCounter).getOption() < 10) {
             return false;
         }
         SkillEntry skillEntry = curSkillEntry.get();

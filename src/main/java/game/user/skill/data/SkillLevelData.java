@@ -302,7 +302,7 @@ public class SkillLevelData {
         this.loaded = true;
     }
 
-    private static final ScriptEngine engine = new ScriptEngineManager().getEngineByName("JavaScript");
+    public static final ScriptEngine engine = new ScriptEngineManager().getEngineByName("JavaScript");
     public static int getParsedCommonData(String text, int skillID, int level) {
         int result = 0;
         if (text == null || text.isEmpty() || level == 0) {

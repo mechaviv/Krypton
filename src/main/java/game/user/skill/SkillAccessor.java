@@ -473,6 +473,7 @@ public class SkillAccessor {
             case Warrior.IronBody:
             case Fighter.PowerGuard:
             case Crusader.ComboAttack:
+            case Hero.Enrage:
             case Page.PowerGuard:
             case Magician.MagicGuard:
             case Magician.MagicArmor:
@@ -483,11 +484,14 @@ public class SkillAccessor {
             case Rogue.DarkSight:
                 return true;
             default: {
-                return false;
+                if (isStance(skillID)) {
+                    return true;
+                }
             }
         }
+        return false;
     }
-    
+
     public static boolean isMobStatChange(int skillID) {
         switch (skillID) {
             case Page.Threaten:
@@ -548,9 +552,48 @@ public class SkillAccessor {
             case Viper.WIND_BOOSTER:
                 return true;
             default: {
+                if (isMapleHero(skillID)) {
+                    return true;
+                }
                 return false;
             }
         }
+    }
+
+    public static boolean isMapleHero(int skillID) {
+        switch (skillID) {
+            case Hero.MapleHero:
+            case Paladin.MAPLE_HERO:
+            case DarkKnight.MAPLE_HERO:
+            case ArchMage1.MAPLE_HERO:
+            case ArchMage2.MAPLE_HERO:
+            case Bishop.MAPLE_HERO:
+            case Bowmaster.MAPLE_HERO:
+            case CrossbowMaster.MAPLE_HERO:
+            case NightLord.MAPLE_HERO:
+            case Shadower.MAPLE_HERO:
+            case Dual5.MAPLE_HERO:
+            case Viper.MAPLE_HERO:
+            case Captain.MAPLE_HERO:
+            case Aran.MAPLE_HERO:
+            case Evan.MAPLE_HERO:
+            case BMage.MAPLE_HERO:
+            case WildHunter.MAPLE_HERO:
+            case Mechanic.MAPLE_HERO:
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean isStance(int skillID) {
+        switch (skillID) {
+            case Hero.Stance:
+            case Paladin.STANCE:
+            case DarkKnight.STANCE:
+            case BMage.STANCE:
+                return true;
+        }
+        return false;
     }
 
     public static boolean isIgnoreMasterLevelForCommon(int skillID) {

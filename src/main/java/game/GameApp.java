@@ -28,6 +28,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
+import javax.script.ScriptEngine;
 
 import game.field.FieldMan;
 import game.field.life.mob.MobTemplate;
@@ -40,6 +41,7 @@ import game.user.item.ItemInfo;
 import game.user.item.ItemOptionInfo;
 import game.user.quest.QuestMan;
 import game.user.skill.SkillInfo;
+import game.user.skill.data.SkillLevelData;
 import network.database.CommonDB;
 import network.database.Database;
 import network.packet.OutPacket;
@@ -297,6 +299,7 @@ public class GameApp {
     }
     
     public void start() {
+        ScriptEngine engine = SkillLevelData.engine;// touch the engine (until I'll make my own analyzer)
         this.worldID = Byte.parseByte(System.getProperty("gameID", "0"));
         
         TimerThread.createTimerThread();

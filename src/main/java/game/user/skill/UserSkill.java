@@ -25,6 +25,7 @@ import common.item.ItemAccessor;
 import common.item.ItemType;
 import common.user.CharacterStat.CharacterStatType;
 import common.user.UserEffect;
+import game.messenger.Character;
 import game.user.User;
 import game.user.WvsContext;
 import game.user.skill.Skills.*;
@@ -132,6 +133,10 @@ public class UserSkill {
         }
     }
 
+    public void onSkillCancelRequest(InPacket packet) {
+
+    }
+
     public void onSkillUpRequest(InPacket packet) {
         if (user.lock()) {
             try {
@@ -169,7 +174,8 @@ public class UserSkill {
             hpRate = (int) ((double) rate * ((double) partyCount * 0.3d + 1.0d) * (double) skill.getLevelData(slv).HP * 0.01d);
         }
 
-        Flag skillFlag = processSkill(skill, slv, duration);
+        Flag resetFlag = new Flag(Flag.INT_128);
+        Flag skillFlag = processSkill(skill, slv, duration, resetFlag);
         int statFlag = 0;
         if (skill.getLevelData(slv).HP != 0) {
             double inc = Math.ceil(hpRate / partyCount);
@@ -186,6 +192,7 @@ public class UserSkill {
         user.updatePassiveSkillData();
         user.validateStat(false);
         user.sendCharacterStat(Request.Excl, statFlag);
+        user.sendTemporaryStatReset(resetFlag);
         user.sendTemporaryStatSet(skillFlag);
         if (user.getField() != null) {
             user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
@@ -197,7 +204,8 @@ public class UserSkill {
         long cur = System.currentTimeMillis();
         long duration = Math.max(cur + time, 1);
 
-        Flag skillFlag = processSkill(skill, slv, duration);
+        Flag resetFlag = new Flag(Flag.INT_128);
+        Flag skillFlag = processSkill(skill, slv, duration, resetFlag);
         if (skill.getSkillID() == Rogue.DarkSight) {
             SecondaryStatOption opt = user.getSecondaryStat().getStat(CharacterTemporaryStat.DarkSight);
             if (opt != null) {
@@ -225,6 +233,7 @@ public class UserSkill {
         user.updatePassiveSkillData();
         user.validateStat(true);
         user.sendCharacterStat(Request.Excl, statFlag);
+        user.sendTemporaryStatReset(resetFlag);
         user.sendTemporaryStatSet(skillFlag);
         if (user.getField() != null) {
             user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
@@ -302,7 +311,7 @@ public class UserSkill {
         user.sendPacket(WvsContext.onSkillUseResult(Request.None));
     }
 
-    private Flag processSkill(SkillEntry skill, byte slv, long duration) {
+    private Flag processSkill(SkillEntry skill, byte slv, long duration, Flag resetFlag) {
         Flag flag = new Flag(Flag.INT_128);
 
         SkillLevelData level = skill.getLevelData(slv);
@@ -343,42 +352,55 @@ public class UserSkill {
             }
             // WARRIOR
             case Fighter.PowerGuard:
-            case Page.PowerGuard:
+            case Page.PowerGuard: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.PowerGuard, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
-            case Crusader.ComboAttack:
+            }
+            case Crusader.ComboAttack: {
                 SecondaryStatOption option = new SecondaryStatOption(1, skill.getSkillID(), duration);
                 option.setModOption(level.X);
 
                 Pointer<SkillEntry> adv = new Pointer<>();
                 int advSLV;
-                if (slv >= 30
-                && (advSLV = SkillInfo.getInstance().getSkillLevel(user.getCharacter(), Hero.AdvancedCombo, adv)) != 0) {
+                if (slv >= 20
+                        && (advSLV = SkillInfo.getInstance().getSkillLevel(user.getCharacter(), Hero.AdvancedCombo, adv)) != 0) {
                     SkillLevelData sd = adv.get().getLevelData(advSLV);
                     option.setModOption(sd.X | (sd.Prop << 16));
                 }
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ComboCounter, option));
                 break;
-            case Spearman.HyperBody:
+            }
+            case Hero.Enrage: {
+                user.getSecondaryStat().setStatOption(CharacterTemporaryStat.ComboCounter, 1);
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.ComboCounter));
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DamR, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case Spearman.HyperBody: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxHP, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxMP, new SecondaryStatOption(level.Y, skill.getSkillID(), duration)));
                 break;
+            }
             // MAGICIAN
-            case Magician.MagicGuard:
+            case Magician.MagicGuard: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MagicGuard, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
-            case Cleric.Invincible:
+            }
+            case Cleric.Invincible: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Invincible, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
+            }
             // BOWMAN
             case Hunter.SoulArrow_Bow:
-            case Crossbowman.SoulArrow_Crossbow:
+            case Crossbowman.SoulArrow_Crossbow: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.SoulArrow, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
+            }
             // THIEF
-            case Rogue.DarkSight:
+            case Rogue.DarkSight: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkSight, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
+            }
             // PIRATE
             case Viper.WIND_BOOSTER: {
                 PartyBoosterStat ts = (PartyBoosterStat) user.getSecondaryStat().temporaryStats[TSIndex.PARTY_BOOSTER];
@@ -389,6 +411,14 @@ public class UserSkill {
                 ts.setCurrentTime(System.currentTimeMillis());
                 flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.PartyBooster));
                 break;
+            }
+            default: {
+                if (SkillAccessor.isMapleHero(skill.getSkillID())) {
+                    flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.BasicStatUp, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                }
+                if (SkillAccessor.isStance(skill.getSkillID())) {
+                    flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Stance, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                }
             }
         }
 
