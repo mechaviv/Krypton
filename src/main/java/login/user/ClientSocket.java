@@ -356,19 +356,11 @@ public class ClientSocket extends SimpleChannelInboundHandler {
         int gender = packet.decodeByte();
 
         // Dice Roll information
-        int totStat = 0;
-        for (int i = 0; i < 4; i++) {
-            int val = 4;//packet.decodeInt();
-            if (val < 4) {
-                ret = false;
-            } else {
-                totStat += val;
-            }
-            stat.add(val);
-        }
-        if (totStat > 25)
-            ret = false;
-        
+        stat.add(12);// str
+        stat.add(5);// dex
+        stat.add(4);// int
+        stat.add(4);// luk
+
         // Check Character Name
         if (!LoginApp.getInstance().checkCharName(charName, true))
             ret = false;

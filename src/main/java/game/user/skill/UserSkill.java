@@ -134,7 +134,21 @@ public class UserSkill {
     }
 
     public void onSkillCancelRequest(InPacket packet) {
+        int skillID = packet.decodeInt();
 
+        if (SkillAccessor.isWeaponBooster(skillID) || SkillAccessor.isSelfStatChange(skillID) || SkillAccessor.isPartyStatChange(skillID)) {
+            Flag reset = user.getSecondaryStat().resetByReasonID(skillID);
+            if (skillID == Rogue.DarkSight) {
+                //nCur = timeGetTime();
+                //if (!nCur) nCur = 1;
+                //pUser->m_secondaryStat.tDarkSight_ = nCur;
+            }
+            if (reset.isSet()) {
+                user.validateStat(false);
+                user.sendTemporaryStatReset(reset);
+            }
+        }
+        // handle skill prepare here
     }
 
     public void onSkillUpRequest(InPacket packet) {

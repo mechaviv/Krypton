@@ -408,13 +408,16 @@ public class User extends Creature {
                             incAP(5, false);
                             flag |= CharacterStatType.AP | CharacterStatType.SP;
                         } else if (character.getCharacterStat().getLevel() < 11) {
-                            flag |= CharacterStatType.STR;
-                            if (character.getCharacterStat().getLevel() >= 6) {
-                                incSTR(4, false);
-                                incDEX(1, false);
+                            int dexValue = Math.max(getLevel() - getCharacter().getCharacterStat().getDEX(), 0);
+                            if (dexValue > 0) {
+                                incDEX(dexValue, false);
                                 flag |= CharacterStatType.DEX;
-                            } else {
-                                incSTR(5, false);
+                            }
+                            int val = 4 * character.getCharacterStat().getLevel() + 12;
+                            int strVal = (val - getCharacter().getCharacterStat().getSTR()) & ((val - getCharacter().getCharacterStat().getSTR() <= 0 ? 1 : 0) - 1);
+                            if (strVal > 0) {
+                                incSTR(strVal, false);
+                                flag |= CharacterStatType.STR;
                             }
                         }
                         flag |= CharacterStatType.LEV | CharacterStatType.HP | CharacterStatType.MP | CharacterStatType.MHP | CharacterStatType.MMP;
@@ -638,6 +641,7 @@ public class User extends Creature {
                 return false;
             }
             int newSTR = Math.max(Math.min(STR + inc, SkillAccessor.STR_MAX), 0);
+
             character.getCharacterStat().setSTR((short) newSTR);
             if (newSTR == STR) {
                 return false;
@@ -1333,6 +1337,9 @@ public class User extends Creature {
             case ClientPacket.UserAbilityUpRequest:
                 onAbilityUpRequest(packet);
                 break;
+            case ClientPacket.UserAbilityMassUpRequest:
+                onAbilityMassUpRequest(packet);
+                break;
             case ClientPacket.UserStatChangeItemUseRequest:
                 onStatChangeItemUseRequest(packet);
                 break;
@@ -1426,6 +1433,55 @@ public class User extends Creature {
                 unlock();
             }
         }
+    }
+
+    public void onAbilityMassUpRequest(InPacket packet) {
+        if (character.getCharacterStat().getAP() <= 0) {
+            Logger.logError("No ability point left");
+            closeSocket();
+            return;
+        }
+        packet.decodeInt();// time
+
+        int totalFlag = 0;
+
+        int changes = packet.decodeInt();
+        for (int i = 0; i < changes; i++) {
+            int flag = packet.decodeInt();
+            int value = packet.decodeInt();
+            if (character.getCharacterStat().getAP() < value) {
+                Logger.logError("No enough ability point left");
+                closeSocket();
+                return;
+            }
+            totalFlag |= flag;
+            boolean up;
+            switch (flag) {
+                case CharacterStatType.STR:
+                    up = incSTR(value, true);
+                    break;
+                case CharacterStatType.DEX:
+                    up = incDEX(value, true);
+                    break;
+                case CharacterStatType.INT:
+                    up = incINT(value, true);
+                    break;
+                case CharacterStatType.LUK:
+                    up = incLUK(value, true);
+                    break;
+                default: {
+                    Logger.logError("Incorrect AP-Up stat");
+                    return;
+                }
+            }
+            if (up) {
+                totalFlag |= CharacterStatType.AP;
+                character.getCharacterStat().setAP(character.getCharacterStat().getAP() - value);
+                validateStat(false);
+            }
+        }
+        addCharacterDataMod(DBChar.Character);
+        sendCharacterStat(Request.Excl, totalFlag);
     }
 
     public void onAdmin(InPacket packet) {
