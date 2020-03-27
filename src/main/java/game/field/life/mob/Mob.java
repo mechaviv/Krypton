@@ -41,6 +41,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
+import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.Flag;
 import network.packet.OutPacket;
 import util.Logger;
@@ -503,6 +504,26 @@ public class Mob extends Creature {
         
         Flag flag = new Flag(Flag.INT_128);
         switch (skillID) {
+            case Knight.ICE_CHARGE: {
+                int attr;
+                if ((attr = template.getDamagedElemAttr().get(AttackElem.Ice)) == AttackElemAttr.Damage0 || attr == AttackElemAttr.Damage50) {
+                    return;
+                }
+                opt.setDuration(time + 1000 * level.Y);
+                flag.performOR(stat.setStat(MobStats.Freeze, opt));
+                this.experiencedMoveStateChange = true;
+            }
+            case Knight.CHARGE_BLOW: {
+                if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.WeaponCharge) <= 0) {
+                    return;
+                }
+                int reason = user.getSecondaryStat().getStatReason(CharacterTemporaryStat.WeaponCharge);
+                if (reason == Knight.ICE_CHARGE) {
+                    return;
+                }
+                opt.setOption(1);
+                flag.performOR(stat.setStat(MobStats.Stun, opt));
+            }
             case Wizard2.ColdBeam: {
                 int attr;
                 if ((attr = template.getDamagedElemAttr().get(AttackElem.Ice)) == AttackElemAttr.Damage0 || attr == AttackElemAttr.Damage50) {

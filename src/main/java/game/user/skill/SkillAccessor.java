@@ -468,13 +468,22 @@ public class SkillAccessor {
     
     public static boolean isSelfStatChange(int skillID) {
         switch (skillID) {
+            // Beginner Jobs
             case Beginner.KROKO_EVENT_RIDING:
-
+            // 1ST Warrior
             case Warrior.IronBody:
+            // 2ND Warriors
             case Fighter.PowerGuard:
-            case Crusader.ComboAttack:
-            case Hero.Enrage:
             case Page.PowerGuard:
+            // 3RD Warriors
+            case Crusader.ComboAttack:
+            case Knight.FIRE_CHARGE:
+            case Knight.ICE_CHARGE:
+            case Knight.LIGHTNING_CHARGE:
+            // 4TH Warriors
+            case Hero.Enrage:
+            case Paladin.DIVINE_CHARGE:
+
             case Magician.MagicGuard:
             case Magician.MagicArmor:
             case Cleric.Invincible:

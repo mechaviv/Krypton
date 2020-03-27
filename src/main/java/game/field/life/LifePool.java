@@ -38,6 +38,7 @@ import game.user.User;
 import game.user.item.MobEntry;
 import game.user.item.MobSummonItem;
 import game.user.skill.SkillAccessor;
+import game.user.skill.SkillInfo;
 import game.user.skill.Skills;
 import game.user.skill.Skills.Assassin;
 import game.user.skill.Skills.Thief;
@@ -47,6 +48,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
+import game.user.stat.CharacterTemporaryStat;
+import game.user.stat.SecondaryStatOption;
 import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.LoopbackPacket;
@@ -846,6 +849,16 @@ public class LifePool {
                         if (mob != null) {
                             if (type == ClientPacket.UserMagicAttack) {
                                 user.getCalcDamage().MDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, action, skill, slv, info.damageCli, mobCount);
+                            } else if (skillID == Skills.Paladin.SANCTUARY) {
+                                if (damagePerMob > 0) {
+                                    for (int i = 0; i < damagePerMob; i++) {
+                                        int damage = mob.getHP() - 1;
+                                        if (damage >= 99999) {
+                                            damage = 99999;
+                                        }
+                                        info.damageCli.set(i, damage);
+                                    }
+                                }
                             } else {
                                 user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, bulletItemID, attackType, action, skill, slv, info.damageCli);
                             }
@@ -933,7 +946,20 @@ public class LifePool {
                                 }
                             }
                         }
-                    
+                        // CheckSelfDestruct here
+                        // Mortal Blow here
+                        if (mob.getHP() > 0 && damageSum > 0) {
+                            SecondaryStatOption option = user.getSecondaryStat().getStat(CharacterTemporaryStat.WeaponCharge);
+                            if (option.getOption() != 0 && skillID != Skills.Beginner.THROW_SNAIL) {
+                                if (option.getReason() == Skills.Knight.ICE_CHARGE) {
+                                    Pointer<SkillEntry> iceCharge = new Pointer<>();
+                                    int iceChargeSLV = SkillInfo.getInstance().getSkillLevel(user.getCharacter(), Skills.Knight.ICE_CHARGE, iceCharge);
+                                    if (iceChargeSLV > 0) {
+                                        mob.onMobStatChangeSkill(user, iceCharge.get(), (byte) iceChargeSLV, damageSum);
+                                    }
+                                }
+                            }
+                        }
                         if (skill != null && slv > 0) {
                             SkillLevelData level = skill.getLevelData(slv);
                             if (skillID == Thief.Steal) {

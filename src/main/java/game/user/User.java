@@ -283,7 +283,6 @@ public class User extends Creature {
                 }
             }
         }
-        this.updatePassiveSkillData();
         this.validateStat(true);
 
         // Apply default configured rates
@@ -444,7 +443,7 @@ public class User extends Creature {
         lock.lock();
         try {
             int hp = character.getCharacterStat().getHP();
-            int mhp = character.getCharacterStat().getMHP();
+            int mhp = getBasicStat().getMHP();
             if (hp == 0) {
                 return false;
             }
@@ -452,7 +451,7 @@ public class User extends Creature {
                 return false;
             }
             int newHP = Math.max(Math.min(hp + inc, mhp), 0);
-            character.getCharacterStat().setHP((short) newHP);
+            character.getCharacterStat().setHP(newHP);
             if (newHP == 0) {
                 //cheatInspector.initUserDamagedTime(0, false);
                 onUserDead();
@@ -517,7 +516,7 @@ public class User extends Creature {
                 return false;
             }
             int newMHP = Math.max(Math.min(mhp + inc, SkillAccessor.HP_MAX), 50);
-            character.getCharacterStat().setMHP((short) newMHP);
+            character.getCharacterStat().setMHP(newMHP);
             if (newMHP == mhp) {
                 return false;
             } else {
@@ -538,7 +537,7 @@ public class User extends Creature {
                 return false;
             }
             int newMMP = Math.max(Math.min(mmp + inc, SkillAccessor.MP_MAX), 5);
-            character.getCharacterStat().setMMP((short) newMMP);
+            character.getCharacterStat().setMMP(newMMP);
             if (newMMP == mmp) {
                 return false;
             } else {
@@ -558,12 +557,12 @@ public class User extends Creature {
                 return false;
             }
             int mp = character.getCharacterStat().getMP();
-            int mmp = character.getCharacterStat().getMMP();
+            int mmp = getBasicStat().getMMP();
             if (onlyFull && (inc < 0 && mp + inc < 0 || inc > 0 && mp + inc > mmp)) {
                 return false;
             }
             int newMP = Math.max(Math.min(mp + inc, mmp), 0);
-            character.getCharacterStat().setMP((short) newMP);
+            character.getCharacterStat().setMP(newMP);
             if (newMP == mp) {
                 return false;
             }
@@ -854,9 +853,9 @@ public class User extends Creature {
                     break;
             }
             if (inc == CharacterStatType.MHP || dec == CharacterStatType.MHP)
-                character.getCharacterStat().setMHP((short) (character.getCharacterStat().getMHP() + incHP));
+                character.getCharacterStat().setMHP(character.getCharacterStat().getMHP() + incHP);
             if (inc == CharacterStatType.MMP || dec == CharacterStatType.MMP)
-                character.getCharacterStat().setMMP((short) (character.getCharacterStat().getMMP() + incMP));
+                character.getCharacterStat().setMMP(character.getCharacterStat().getMMP() + incMP);
         } finally {
             unlock();
         }
@@ -1612,7 +1611,7 @@ public class User extends Creature {
 
     public void onPassiveskillInfoUpdate(InPacket packet) {
         if (packet.decodeInt() - lastPassiveSkillDataUpdate >= 10000) {
-            updatePassiveSkillData();
+            validateStat(false);
             lastPassiveSkillDataUpdate = Utilities.timeGetTime();
         }
     }
@@ -1829,6 +1828,15 @@ public class User extends Creature {
                             }
                         }
                         changeLog.clear();
+                    }
+                }
+                int advancedChargeProp = 0;
+                int advancedChargeDamage = 0;
+                if (getCharacter().getCharacterStat().getJob() == JobAccessor.PALADIN.getJob()) {
+                    Pointer<SkillEntry> advCharge = new Pointer<>();
+                    int advChargeSLV = SkillInfo.getInstance().getSkillLevel(getCharacter(), Paladin.ADVANCED_CHARGE, advCharge);
+                    if (advChargeSLV > 0) {
+                        advancedChargeDamage = advCharge.get().getLevelData(advChargeSLV).Damage;
                     }
                 }
                 boolean successAttack = getField().getLifePool().onUserAttack(this, type, attackType, mobCount, damagePerMob, skill, slv, action, left, speedDegree, bulletItemID, attack, ballStart);
@@ -2777,7 +2785,6 @@ public class User extends Creature {
                             basicStat.setFrom(character, character.getEquipped(), character.getEquipped2(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                             secondaryStat.clear();
                             secondaryStat.setFrom(basicStat, character.getEquipped(), character);
-                            updatePassiveSkillData();
                             validateStat(false);
                             addCharacterDataMod(DBChar.Character);
                             isDead = true;
@@ -3126,7 +3133,6 @@ public class User extends Creature {
             else
                 reset = secondaryStat.resetByTime(time);
             if (!reset.isZero()) {
-                updatePassiveSkillData();
                 validateStat(false);
                 sendTemporaryStatReset(reset);
             }
@@ -3211,10 +3217,15 @@ public class User extends Creature {
             AvatarLook avatarOld = avatarLook.makeClone();
             ItemAccessor.getRealEquip(character, realEquip, 0, 0);
             avatarLook.load(character.getCharacterStat(), character.getEquipped(), character.getEquipped2());
+            maxGMSkills();
             checkEquippedSetItem();
-
+            updatePassiveSkillData();
             int pdsMHPr = 0;
             int pdsMMPr = 0;
+            if (passiveSkillData != null) {
+                pdsMHPr = passiveSkillData.getMHPr();
+                pdsMMPr = passiveSkillData.getMMPr();
+            }
             int maxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxHP);
             int maxMPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxMP);
             int basicStatInc = secondaryStat.getStatOption(CharacterTemporaryStat.BasicStatUp);
@@ -3267,23 +3278,6 @@ public class User extends Creature {
                     flag |= AvatarLook.Unknown2;//idk, just a guess
                 }
                 postAvatarModified(flag);
-            }
-            // Max all skills on a user based on their current Job Race
-            if (isGM() && character.getSkillRecord().isEmpty()) {
-                for (JobAccessor job : JobAccessor.values()) {
-                    SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(job.getJob());
-                    if (visibleSR != null) {
-                        for (SkillEntry skill : visibleSR.getSkills()) {
-                            int skillID = skill.getSkillID();
-                            int skillRoot = skillID / 10000;
-                            if (skill != null && skill.getMaxLevel() != 0) {
-                                if (JobAccessor.isCorrectJobForSkillRoot(job.getJob(), skillRoot)) {
-                                    character.getSkillRecord().put(skillID, skill.getMaxLevel());
-                                }
-                            }
-                        }
-                    }
-                }
             }
             avatarOld.getEquipped().clear();
         } finally {
@@ -3882,5 +3876,24 @@ public class User extends Creature {
         passiveSkillData.setMESOr(Math.min(Math.max(passiveSkillData.getMESOr(), 0), 100));
         passiveSkillData.setOCr(Math.min(Math.max(passiveSkillData.getOCr(), 0), 50));
         passiveSkillData.setDCr(Math.min(Math.max(passiveSkillData.getDCr(), 0), 50));
+    }
+
+    public void maxGMSkills() {
+        if (isGM() && character.getSkillRecord().isEmpty()) {
+            for (JobAccessor job : JobAccessor.values()) {
+                SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(job.getJob());
+                if (visibleSR != null) {
+                    for (SkillEntry skill : visibleSR.getSkills()) {
+                        int skillID = skill.getSkillID();
+                        int skillRoot = skillID / 10000;
+                        if (skill != null && skill.getMaxLevel() != 0) {
+                            if (JobAccessor.isCorrectJobForSkillRoot(job.getJob(), skillRoot)) {
+                                character.getSkillRecord().put(skillID, skill.getMaxLevel());
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

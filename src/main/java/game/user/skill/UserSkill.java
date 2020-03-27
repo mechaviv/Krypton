@@ -158,7 +158,6 @@ public class UserSkill {
                 int skillID = packet.decodeInt();
                 List<SkillRecord> change = new ArrayList<>();
                 if (UserSkillRecord.skillUp(user, skillID, true, change)) {
-                    user.updatePassiveSkillData();
                     user.validateStat(false);
                     user.sendCharacterStat(Request.None, CharacterStatType.SP);
                 }
@@ -203,7 +202,6 @@ public class UserSkill {
                 }
             }
         }
-        user.updatePassiveSkillData();
         user.validateStat(false);
         user.sendCharacterStat(Request.Excl, statFlag);
         user.sendTemporaryStatReset(resetFlag);
@@ -244,7 +242,6 @@ public class UserSkill {
             statFlag |= CharacterStatType.MP;
         }
 
-        user.updatePassiveSkillData();
         user.validateStat(true);
         user.sendCharacterStat(Request.Excl, statFlag);
         user.sendTemporaryStatReset(resetFlag);
@@ -391,6 +388,12 @@ public class UserSkill {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DamR, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
+            case Knight.FIRE_CHARGE:
+            case Knight.ICE_CHARGE:
+            case Knight.LIGHTNING_CHARGE:
+            case Paladin.DIVINE_CHARGE:
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.WeaponCharge, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
             case Spearman.HyperBody: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxHP, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxMP, new SecondaryStatOption(level.Y, skill.getSkillID(), duration)));

@@ -25,6 +25,8 @@ import game.user.item.ItemInfo;
 import game.user.item.ItemOptionInfo;
 import game.user.item.ItemOptionLevelData;
 import game.user.skill.SkillAccessor;
+import util.Logger;
+
 import java.util.List;
 
 /**
@@ -155,7 +157,7 @@ public class BasicStat {
         this.mmp += (pdsMMPr + swallowMaxMPIncRate + maxMPIncRate + incMaxMPr + option.MMPr) * this.mmp / 100;
 
         this.mhp = Math.min(this.mhp, SkillAccessor.HP_MAX);
-        this.mmp = Math.min(this.mhp, SkillAccessor.MP_MAX);
+        this.mmp = Math.min(this.mmp, SkillAccessor.MP_MAX);
     }
 
     public void applyItemOption(int itemOptionID, int level) {
