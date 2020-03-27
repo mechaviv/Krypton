@@ -29,7 +29,6 @@ import util.Pointer;
  * @author Eric
  */
 public class ItemAccessor {
-
     public static boolean isWeapon(int itemID) {
         int type = itemID / 10000;
         
@@ -40,12 +39,32 @@ public class ItemAccessor {
         return getItemTypeIndexFromID(itemID) == ItemType.Equip ? itemID / 1000 % 10 : 2;
     }
 
-    public static int getWeaponType(int itemID) {
-        int type = itemID / 100000;
-        if (getItemTypeIndexFromID(itemID) == ItemType.Equip && (type == 13 || type == 14)) {
-            return itemID / 10000 % 100;
+    public static final int getWeaponType(int itemID) {
+        if (itemID / 1000000 != 1) return WeaponTypeFlag.NONE;
+
+        int type = itemID / 10000 % 100;
+        switch (type) {
+            case WeaponTypeFlag.OH_SWORD:
+            case WeaponTypeFlag.OH_AXE:
+            case WeaponTypeFlag.OH_MACE:
+            case WeaponTypeFlag.DAGGER:
+            case WeaponTypeFlag.SUB_DAGGER:
+            case WeaponTypeFlag.WAND:
+            case WeaponTypeFlag.STAFF:
+            case WeaponTypeFlag.BAREHAND:
+            case WeaponTypeFlag.TH_SWORD:
+            case WeaponTypeFlag.TH_AXE:
+            case WeaponTypeFlag.TH_MACE:
+            case WeaponTypeFlag.SPEAR:
+            case WeaponTypeFlag.POLEARM:
+            case WeaponTypeFlag.BOW:
+            case WeaponTypeFlag.CROSSBOW:
+            case WeaponTypeFlag.THROWINGGLOVE:
+            case WeaponTypeFlag.KNUCKLE:
+            case WeaponTypeFlag.GUN:
+                return type;
         }
-        return 0;
+        return WeaponTypeFlag.NONE;
     }
     
     public static boolean isStateChangeItem(int itemID) {
@@ -168,10 +187,10 @@ public class ItemAccessor {
             if (pos != excl1 && pos != excl2) {
                 equip = (ItemSlotEquip) c.getItem(ItemType.Equip, pos);
                 if (equip != null) {
-                    incSTR += equip.iSTR;
-                    incDEX += equip.iDEX;
-                    incINT += equip.iINT;
-                    incLUK += equip.iLUK;
+                    incSTR += equip.item.iSTR;
+                    incDEX += equip.item.iDEX;
+                    incINT += equip.item.iINT;
+                    incLUK += equip.item.iLUK;
                 }
                 realEquip.set(-pos, equip);
             } else {
@@ -184,15 +203,15 @@ public class ItemAccessor {
             for (pos = 1; pos <= BodyPart.BP_Count; pos++) {
                 equip = (ItemSlotEquip) realEquip.get(pos);
                 if (equip != null) {
-                    int totSTR = incSTR + STR - equip.iSTR;
-                    int totDEX = incDEX + DEX - equip.iDEX;
-                    int totINT = incINT + INT - equip.iINT;
-                    int totLUK = incLUK + LUK - equip.iLUK;
+                    int totSTR = incSTR + STR - equip.item.iSTR;
+                    int totDEX = incDEX + DEX - equip.item.iDEX;
+                    int totINT = incINT + INT - equip.item.iINT;
+                    int totLUK = incLUK + LUK - equip.item.iLUK;
                     if (!ItemInfo.isAbleToEquip(gender, level, job, totSTR, totDEX, totINT, totLUK, pop, equip.getItemID())) {
-                        incSTR -= equip.iSTR;
-                        incDEX -= equip.iDEX;
-                        incINT -= equip.iINT;
-                        incLUK -= equip.iLUK;
+                        incSTR -= equip.item.iSTR;
+                        incDEX -= equip.item.iDEX;
+                        incINT -= equip.item.iINT;
+                        incLUK -= equip.item.iLUK;
                         realEquip.set(pos, null);
                         break;
                     }
@@ -298,5 +317,31 @@ public class ItemAccessor {
     public static boolean isMatchedItemIDGender(int itemID, int gender) {
         int itemGender = getGenderFromID(itemID);
         return gender == 2 || itemGender == 2 || itemGender == gender;
+    }
+
+    public static class WeaponTypeFlag {
+        public static final int
+                NOT_CHECK_SUBWEPPON = 0xFFFFFFFF,
+                NONE = 0x0,
+                OH_SWORD = 0x1E,
+                OH_AXE = 0x1F,
+                OH_MACE = 0x20,
+                DAGGER = 0x21,
+                SUB_DAGGER = 0x22,
+                WAND = 0x25,
+                STAFF = 0x26,
+                BAREHAND = 0x27,
+                TH_SWORD = 0x28,
+                TH_AXE = 0x29,
+                TH_MACE = 0x2A,
+                SPEAR = 0x2B,
+                POLEARM = 0x2C,
+                BOW = 0x2D,
+                CROSSBOW = 0x2E,
+                THROWINGGLOVE = 0x2F,
+                KNUCKLE = 0x30,
+                GUN = 0x31,
+                COUNT = 0x11,
+                EXCOUNT = 0x12;
     }
 }

@@ -179,22 +179,22 @@ public class ItemInfo {
                 return null;
             }
             ItemSlotEquip item = new ItemSlotEquip(itemID);
-            item.ruc = ItemVariationOption.getVariation(info.getTUC(), option).byteValue();//Total Upgrade Count
-            item.iSTR = ItemVariationOption.getVariation(info.getIncSTR(), option).shortValue();
-            item.iDEX = ItemVariationOption.getVariation(info.getIncDEX(), option).shortValue();
-            item.iINT = ItemVariationOption.getVariation(info.getIncINT(), option).shortValue();
-            item.iLUK = ItemVariationOption.getVariation(info.getIncLUK(), option).shortValue();
-            item.iMaxHP = ItemVariationOption.getVariation(info.getIncMaxHP(), option).shortValue();
-            item.iMaxMP = ItemVariationOption.getVariation(info.getIncMaxMP(), option).shortValue();
-            item.iPAD = ItemVariationOption.getVariation(info.getIncPAD(), option).shortValue();
-            item.iMAD = ItemVariationOption.getVariation(info.getIncMAD(), option).shortValue();
-            item.iPDD = ItemVariationOption.getVariation(info.getIncPDD(), option).shortValue();
-            item.iMDD = ItemVariationOption.getVariation(info.getIncMDD(), option).shortValue();
-            item.iACC = ItemVariationOption.getVariation(info.getIncACC(), option).shortValue();
-            item.iEVA = ItemVariationOption.getVariation(info.getIncEVA(), option).shortValue();
-            item.iCraft = ItemVariationOption.getVariation(info.getIncCraft(), option).shortValue();
-            item.iSpeed = ItemVariationOption.getVariation(info.getIncSpeed(), option).shortValue();
-            item.iJump = ItemVariationOption.getVariation(info.getIncJump(), option).shortValue();
+            item.item.ruc = ItemVariationOption.getVariation(info.getTUC(), option).byteValue();//Total Upgrade Count
+            item.item.iSTR = ItemVariationOption.getVariation(info.getIncSTR(), option).shortValue();
+            item.item.iDEX = ItemVariationOption.getVariation(info.getIncDEX(), option).shortValue();
+            item.item.iINT = ItemVariationOption.getVariation(info.getIncINT(), option).shortValue();
+            item.item.iLUK = ItemVariationOption.getVariation(info.getIncLUK(), option).shortValue();
+            item.item.iMaxHP = ItemVariationOption.getVariation(info.getIncMaxHP(), option).shortValue();
+            item.item.iMaxMP = ItemVariationOption.getVariation(info.getIncMaxMP(), option).shortValue();
+            item.item.iPAD = ItemVariationOption.getVariation(info.getIncPAD(), option).shortValue();
+            item.item.iMAD = ItemVariationOption.getVariation(info.getIncMAD(), option).shortValue();
+            item.item.iPDD = ItemVariationOption.getVariation(info.getIncPDD(), option).shortValue();
+            item.item.iMDD = ItemVariationOption.getVariation(info.getIncMDD(), option).shortValue();
+            item.item.iACC = ItemVariationOption.getVariation(info.getIncACC(), option).shortValue();
+            item.item.iEVA = ItemVariationOption.getVariation(info.getIncEVA(), option).shortValue();
+            item.item.iCraft = ItemVariationOption.getVariation(info.getIncCraft(), option).shortValue();
+            item.item.iSpeed = ItemVariationOption.getVariation(info.getIncSpeed(), option).shortValue();
+            item.item.iJump = ItemVariationOption.getVariation(info.getIncJump(), option).shortValue();
 
             return item.makeClone();
         } else {
@@ -419,7 +419,9 @@ public class ItemInfo {
             item.setIncINT(WzUtil.getShort(info.getNode("incINT"), 0));
             item.setIncLUK(WzUtil.getShort(info.getNode("incLUK"), 0));
             item.setIncMaxHP(WzUtil.getShort(info.getNode("incMHP"), 0));
-            item.setIncMaxMP(WzUtil.getShort(info.getNode("incMMP"), WzUtil.getShort(info.getNode("incMMD"), 0)));
+            item.setIncMaxHPr(WzUtil.getShort(info.getNode("incMHPr"), 0));
+            item.setIncMaxMP(WzUtil.getShort(info.getNode("incMMP"), 0));
+            item.setIncMaxMPr(WzUtil.getShort(info.getNode("incMMPr"), 0));
 
             item.setIncPAD(WzUtil.getShort(info.getNode("incPAD"), 0));
             item.setIncMAD(WzUtil.getShort(info.getNode("incMAD"), 0));
@@ -439,7 +441,7 @@ public class ItemInfo {
             item.setQuest(WzUtil.getInt32(info.getNode("quest"), 0) != 0);
             item.setOnly(WzUtil.getInt32(info.getNode("only"), 0) != 0);
             item.setTimeLimited(WzUtil.getInt32(info.getNode("timeLimited"), 0) != 0);
-
+            item.setSetItemID(WzUtil.getInt32(info.getNode("setItemID"), 0));
             // vslot, iconRaw, tuc, sfx, incMDD, icon, reqLUK, reqLevel, knockback, reqDEX, incJump, price, attack, incINT, islot, incSTR, incPDD, stand, cash, incMHP, reqPOP, afterImage, incACC, incLUK, nameTag, incMMD, incDEX, reqJob, chatBalloon, incSpeed, attackSpeed, name, incEVA, incMMP, incMAD, incPAD, reqINT, walk, reqSTR, desc
 
         }

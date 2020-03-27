@@ -25,13 +25,12 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.handler.timeout.IdleStateHandler;
-import io.netty.util.concurrent.ScheduledFuture;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -42,7 +41,7 @@ import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
-import network.security.XORCrypter;
+import network.security.SocketKey;
 import shop.ShopApp;
 import util.Logger;
 import util.Rand32;
@@ -65,17 +64,15 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
 
     private final Channel channel;
+    private SocketKey key;
     private SocketDecoder decoder;
     private SocketEncoder encoder;
     private final Lock lockSend;
-    private XORCrypter cipher;
     private int migrateState;
     private int characterID;
     public boolean adminClient;
     private User user;
     private int localSocketSN;
-    private int seqSnd;
-    private int seqRcv;
     private final AtomicBoolean closePosted;
     private final AtomicBoolean updatePosted;
     private String addr;
@@ -102,8 +99,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        encoder = new SocketEncoder(cipher);
-        decoder = new SocketDecoder(cipher);
+        encoder = new SocketEncoder(key);
+        decoder = new SocketDecoder(key);
         channel.pipeline().addBefore("ClientSocket", "AliveAck", new IdleStateHandler(20, 15, 0));
         channel.pipeline().addBefore("ClientSocket", "SocketEncoder", encoder);
         channel.pipeline().addBefore("ClientSocket", "SocketDecoder", decoder);
@@ -111,8 +108,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
         packet.encodeShort(14);
         packet.encodeShort(OrionConfig.CLIENT_VER);
         packet.encodeString(OrionConfig.CLIENT_PATCH);
-        packet.encodeInt(cipher.getSeqRcv());
-        packet.encodeInt(cipher.getSeqSnd());
+        packet.encodeInt(key.getSeqRcv());
+        packet.encodeInt(key.getSeqSnd());
         packet.encodeByte(OrionConfig.GAME_LOCALE);
         acceptTime = System.currentTimeMillis();
         channel.writeAndFlush(Unpooled.wrappedBuffer(packet.toArray()));
@@ -199,9 +196,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
 
     public void initSequence() {
-        this.seqRcv = Rand32.getInstance().random().intValue();
-        this.seqSnd = Rand32.getInstance().random().intValue();
-        this.cipher = new XORCrypter(this.seqSnd, this.seqRcv);
+        this.key = new SocketKey(Rand32.getInstance().random().intValue(), Rand32.getInstance().random().intValue());
     }
 
     public void onClose() {
@@ -332,8 +327,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
         try {
             if (!this.closePosted.get() || force) {
                 List<byte[]> buff = new LinkedList<>();
-                packet.makeBufferList(buff, OrionConfig.CLIENT_VER, cipher);
-                encoder.getCipher().updateSeqSnd();
+                packet.makeBufferList(buff, OrionConfig.CLIENT_VER, key.getSeqSnd());
+                key.updateSend();
                 sendPacket(buff);
                 buff.clear();
             }

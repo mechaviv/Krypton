@@ -38,6 +38,7 @@ import game.field.life.mob.MobTemplate;
 import game.field.life.npc.*;
 import game.field.portal.Portal;
 import game.field.portal.PortalMap;
+import game.messenger.Character;
 import game.messenger.Messenger;
 import game.miniroom.MiniRoom;
 import game.miniroom.MiniRoomBase;
@@ -60,13 +61,12 @@ import game.user.skill.Skills.*;
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.*;
+import game.user.stat.psd.AdditionPsd;
+import game.user.stat.psd.PassiveSkillData;
 import network.database.CommonDB;
 import network.database.GameDB;
 import network.packet.*;
-import util.Logger;
-import util.Pointer;
-import util.Rand32;
-import util.Rect;
+import util.*;
 
 import java.awt.*;
 import java.util.*;
@@ -96,11 +96,14 @@ public class User extends Creature {
     private final BasicStat basicStat;
     // Secondary Stat
     private final SecondaryStat secondaryStat;
+    // Passive Stat
+    private final PassiveSkillData passiveSkillData;
     // User RNG's
     private final Rand32 rndActionMan;
     // Party stuff
     private final LinkedList<Integer> partyInvitedCharacterID;
     private final ReentrantLock partyInviteLock;
+    private int lastPassiveSkillDataUpdate;
     private int accountID;
     private int characterID;
     private int gradeCode;
@@ -208,6 +211,7 @@ public class User extends Creature {
         this.lastCharacterDataFlush = time;
         this.nextCheckCashItemExpire = time;
         this.lastAttack = time;
+        this.lastPassiveSkillDataUpdate = Utilities.timeGetTime();
         this.nexonClubID = "";
         this.characterName = "";
         this.community = "#TeamEric";
@@ -218,6 +222,7 @@ public class User extends Creature {
         this.partyInviteLock = new ReentrantLock(true);
         this.basicStat = new BasicStat();
         this.secondaryStat = new SecondaryStat();
+        this.passiveSkillData = new PassiveSkillData();
         this.avatarLook = new AvatarLook();
         this.rndActionMan = new Rand32();
         this.calcDamage = new CalcDamage();
@@ -234,6 +239,7 @@ public class User extends Creature {
 
         this.basicStat.clear();
         this.secondaryStat.clear();
+        this.passiveSkillData.clear();
     }
 
     public User(ClientSocket socket) {
@@ -277,7 +283,7 @@ public class User extends Creature {
                 }
             }
         }
-
+        this.updatePassiveSkillData();
         this.validateStat(true);
 
         // Apply default configured rates
@@ -954,7 +960,7 @@ public class User extends Creature {
         this.gradeCode = grade;
     }
 
-    public short getHP() {
+    public int getHP() {
         return character.getCharacterStat().getHP();
     }
 
@@ -1197,10 +1203,41 @@ public class User extends Creature {
         sendPacket(FuncKeyMappedMan.onPetConsumeItemInit(petConsumeItemID_HP));
         sendPacket(FuncKeyMappedMan.onPetConsumeMPItemInit(petConsumeItemID_MP));
 
+        resetTemporaryStat(System.currentTimeMillis(), 0);
+        SecondaryStatOption option = secondaryStat.getStat(CharacterTemporaryStat.ComboCounter);
+        if (option.getOption() != 0) {
+            Pointer<SkillEntry> comboSkill = new Pointer<>();
+            int slv = SkillInfo.getInstance().getSkillLevel(character, Crusader.ComboAttack, comboSkill);
+            if (slv >= 30) {
+                option.setModOption(comboSkill.get().getLevelData(slv).X);
+
+                Pointer<SkillEntry> advSkill = new Pointer<>();
+                int advSLV = SkillInfo.getInstance().getSkillLevel(character, Hero.AdvancedCombo, advSkill);
+                if (advSLV != 0) {
+                    SkillLevelData sd = advSkill.get().getLevelData(advSLV);
+                    option.setModOption(sd.X | (sd.Prop << 16));
+                }
+            }
+        }
         if (getField().onEnter(this)) {
             // I'm genuinely curious why Nexon has migration packets for messenger,
             // when you can't "migrate" channels without logging out first?
             // The only "migration" done is to the Shop, which can't access messenger.
+            String firstUserEnter = getField().getFirstUserEnter();
+            if (!getField().isUserEntered() && firstUserEnter != null && !firstUserEnter.isEmpty()) {
+                ScriptVM script = new ScriptVM();
+                if (script.setScript(this, "field/first/" + firstUserEnter, this)) {
+                    script.run(this);
+                }
+                getField().setUserEntered(true);
+            }
+            String userEnter = getField().getUserEnter();
+            if (userEnter != null && !userEnter.isEmpty()) {
+                ScriptVM script = new ScriptVM();
+                if (script.setScript(this, "field/" + userEnter, this)) {
+                    script.run(this);
+                }
+            }
         } else {
             Logger.logError("Failed in entering field");
             closeSocket();
@@ -1328,6 +1365,9 @@ public class User extends Creature {
                 break;
             case ClientPacket.FuncKeyMappedModified:
                 onFuncKeyMappedModified(packet);
+                break;
+            case ClientPacket.PassiveskillInfoUpdate:
+                onPassiveskillInfoUpdate(packet);
                 break;
             default: {
                 if (type >= ClientPacket.BEGIN_FIELD && type <= ClientPacket.END_FIELD) {
@@ -1509,6 +1549,13 @@ public class User extends Creature {
             }
         }
         GameDB.rawUpdateFuncKeyMapped(getCharacterID(), data);
+    }
+
+    public void onPassiveskillInfoUpdate(InPacket packet) {
+        if (packet.decodeInt() - lastPassiveSkillDataUpdate >= 10000) {
+            updatePassiveSkillData();
+            lastPassiveSkillDataUpdate = Utilities.timeGetTime();
+        }
     }
 
     public void onAttack(short type, InPacket packet) {
@@ -1725,8 +1772,30 @@ public class User extends Creature {
                         changeLog.clear();
                     }
                 }
-                if (getField().getLifePool().onUserAttack(this, type, attackType, mobCount, damagePerMob, skill, slv, action, left, speedDegree, bulletItemID, attack, ballStart)) {
+                boolean successAttack = getField().getLifePool().onUserAttack(this, type, attackType, mobCount, damagePerMob, skill, slv, action, left, speedDegree, bulletItemID, attack, ballStart);
 
+                SecondaryStatOption comboOpt = secondaryStat.getStat(CharacterTemporaryStat.ComboCounter);
+                int oldOption = comboOpt.getOption();
+                if (oldOption != 0 && type == ClientPacket.UserMeleeAttack && skillID != Crusader.Shout) {
+                    if (successAttack) {
+                        int prop = comboOpt.getModOption() >> 16;
+                        int modOption = comboOpt.getModOption() & 0xFFFF;
+
+                        int incComboCounter = 1;
+                        if (oldOption != modOption) {
+                            incComboCounter = (Rand32.genRandom() % 100 < prop ? 1 : 0) + 1;
+                        }
+                        int newComboCounter = incComboCounter + oldOption;
+                        newComboCounter = Math.max(newComboCounter, modOption + 1);
+                        comboOpt.setOption(newComboCounter);
+                    }
+                    if (skillID == Crusader.Coma || skillID == Crusader.Panic) {
+                        comboOpt.setOption(1);
+                    }
+                    secondaryStat.setStat(CharacterTemporaryStat.ComboCounter, comboOpt);
+                    if (comboOpt.getOption() != oldOption) {
+                        sendTemporaryStatSet(CharacterTemporaryStat.getMask(CharacterTemporaryStat.ComboCounter));
+                    }
                 }
             }
         }
@@ -2573,6 +2642,22 @@ public class User extends Creature {
             this.attackCheckIgnoreCnt = 3;
             this.onTransferField = false;
             //this.attackTimeCheckAlert = 0;
+
+            String firstUserEnter = getField().getFirstUserEnter();
+            if (!getField().isUserEntered() && firstUserEnter != null && !firstUserEnter.isEmpty()) {
+                ScriptVM script = new ScriptVM();
+                if (script.setScript(this, "field/first/" + firstUserEnter, this)) {
+                    script.run(this);
+                }
+                getField().setUserEntered(true);
+            }
+            String userEnter = getField().getUserEnter();
+            if (userEnter != null && !userEnter.isEmpty()) {
+                ScriptVM script = new ScriptVM();
+                if (script.setScript(this, "field/" + userEnter, this)) {
+                    script.run(this);
+                }
+            }
         } else {
             Logger.logError("Failed in entering field");
             closeSocket();
@@ -2629,9 +2714,10 @@ public class User extends Creature {
                             }
                             portal = "";
                             character.getCharacterStat().setHP(50);
-                            basicStat.setFrom(character, character.getEquipped(), character.getEquipped2(), 0, 0);
+                            basicStat.setFrom(character, character.getEquipped(), character.getEquipped2(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                             secondaryStat.clear();
                             secondaryStat.setFrom(basicStat, character.getEquipped(), character);
+                            updatePassiveSkillData();
                             validateStat(false);
                             addCharacterDataMod(DBChar.Character);
                             isDead = true;
@@ -2980,6 +3066,7 @@ public class User extends Creature {
             else
                 reset = secondaryStat.resetByTime(time);
             if (!reset.isZero()) {
+                updatePassiveSkillData();
                 validateStat(false);
                 sendTemporaryStatReset(reset);
             }
@@ -2989,6 +3076,7 @@ public class User extends Creature {
     }
 
     public void sendTemporaryStatSet(Flag set) {
+        Logger.logReport("Is Set = [%S]", set.isSet());
         if (set.isSet()) {
             lock.lock();
             try {
@@ -3063,16 +3151,26 @@ public class User extends Creature {
             AvatarLook avatarOld = avatarLook.makeClone();
             ItemAccessor.getRealEquip(character, realEquip, 0, 0);
             avatarLook.load(character.getCharacterStat(), character.getEquipped(), character.getEquipped2());
+            checkEquippedSetItem();
 
+            int pdsMHPr = 0;
+            int pdsMMPr = 0;
             int maxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxHP);
             int maxMPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxMP);
+            int basicStatInc = secondaryStat.getStatOption(CharacterTemporaryStat.BasicStatUp);
+            int maxHPInc = secondaryStat.getStatOption(CharacterTemporaryStat.EMHP);
+            int maxMPInc = secondaryStat.getStatOption(CharacterTemporaryStat.EMMP);
+            int swallowMaxMPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.SwallowMaxMP);
+            int conversionMaxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.Conversion);
+            int morewildMaxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MorewildMaxHP);
+            int jaguarRidingHPIncRate = 0;
             int speed = secondaryStat.speed;
             int weaponID = 0;
             if (character.getItem(ItemType.Equip, -BodyPart.Weapon) != null) {
                 weaponID = character.getItem(ItemType.Equip, -BodyPart.Weapon).getItemID();
             }
 
-            basicStat.setFrom(character, realEquip, character.getEquipped2(), maxHPIncRate, maxMPIncRate);
+            basicStat.setFrom(character, realEquip, character.getEquipped2(), maxHPIncRate, maxMPIncRate, basicStatInc, maxHPInc, maxMPInc, swallowMaxMPIncRate, conversionMaxHPIncRate, morewildMaxHPIncRate, pdsMHPr, pdsMMPr, jaguarRidingHPIncRate);
             secondaryStat.setFrom(basicStat, realEquip, character);
 
             int flag = 0;
@@ -3576,5 +3674,153 @@ public class User extends Creature {
         UserQuestRecord.setComplete(this, questID);
         // todo skills, npc actions, map msgs, buffs
         return QuestFlag.QuestRes_Act_Success;
+    }
+
+    public boolean isMarried() {
+        return false;
+    }
+
+    public boolean isInParty() {
+        return PartyMan.getInstance().charIdToPartyID(getCharacterID()) != 0;
+    }
+
+    public boolean isPartyBoss() {
+        int partyID = PartyMan.getInstance().charIdToPartyID(getCharacterID());
+        return PartyMan.getInstance().isPartyBoss(partyID, getCharacterID());
+    }
+
+    public void checkEquippedSetItem() {
+        character.getEquippedSetItem().clear();
+        for (int i = 0; i < BodyPart.BP_Count; i++) {
+            ItemSlotBase item = realEquip.get(i);
+            if (item != null) {
+                EquipItem equipItem = ItemInfo.getEquipItem(item.getItemID());
+                int setItemID;
+                if (equipItem != null && (setItemID = equipItem.getSetItemID()) != 0) {
+                    EquippedSetItem equippedSetItem = character.getEquippedSetItem().getOrDefault(setItemID, new EquippedSetItem(setItemID));
+                    equippedSetItem.setPartsCount(equippedSetItem.getPartsCount() + 1);
+                    equippedSetItem.getItems().add(item.getItemID());
+                    character.getEquippedSetItem().put(equippedSetItem.getSetItemID(), equippedSetItem);
+                }
+            }
+        }
+    }
+
+    public PassiveSkillData getPassiveSkillData() {
+        return passiveSkillData;
+    }
+
+    public void updatePassiveSkillData() {
+        if (passiveSkillData == null) {
+            return;
+        }
+        passiveSkillData.clear();
+        // guild skills
+        for (Iterator<Integer> it = character.getSkillRecord().keySet().iterator(); it.hasNext(); ) {
+            int skillID = it.next();
+            Pointer<SkillEntry> skill = new Pointer<>();
+            int slv = SkillInfo.getInstance().getSkillLevel(character, skillID, skill);
+            if (skill.get() != null && skill.get().getPsdSkill() != 0 && (skill.get().getSkillID() != 35101007 /* || pUser->m_nRidingVehicleID == 1932016)*/)) {
+                if (skill.get().getSkillID() == 35121013) {
+                    slv = SkillInfo.getInstance().getSkillLevel(character, 35111004, skill);
+                    setPassiveSkillData(skill.get(), slv);
+                } else if (slv > 0) {
+                    setPassiveSkillData(skill.get(), slv);
+                }
+            }
+        }
+        if (character.getCharacterStat().getJob() / 100 == 35) {
+            if (SkillInfo.getInstance().getSkillLevel(character, 35121005, null) > 0) {
+                int slv = SkillInfo.getInstance().getSkillLevel(character, 35111004, null);
+                SkillEntry skill = SkillInfo.getInstance().getSkill(35121013);
+                setPassiveSkillData(skill, slv);
+            }
+        }
+        if (secondaryStat.getStat(CharacterTemporaryStat.Dice).getOption() > 1) {
+            passiveSkillData.setMHPr(passiveSkillData.getMHPr() + secondaryStat.getDiceInfo()[DiceFlags.MHP_R]);
+            passiveSkillData.setMMPr(passiveSkillData.getMMPr() + secondaryStat.getDiceInfo()[DiceFlags.MMP_R]);
+            passiveSkillData.setCr(passiveSkillData.getCr() + secondaryStat.getDiceInfo()[DiceFlags.CR]);
+            passiveSkillData.setCDMin(passiveSkillData.getCDMin() + secondaryStat.getDiceInfo()[DiceFlags.CD_MIN]);
+            passiveSkillData.setACCr(passiveSkillData.getACCr() + secondaryStat.getDiceInfo()[DiceFlags.ACC_R]);
+            passiveSkillData.setEVAr(passiveSkillData.getEVAr() + secondaryStat.getDiceInfo()[DiceFlags.EVA_R]);
+            passiveSkillData.setAr(passiveSkillData.getAr() + secondaryStat.getDiceInfo()[DiceFlags.AR]);
+            passiveSkillData.setEr(passiveSkillData.getEr() + secondaryStat.getDiceInfo()[DiceFlags.ER]);
+            passiveSkillData.setPDDr(passiveSkillData.getPDDr() + secondaryStat.getDiceInfo()[DiceFlags.PDD_R]);
+            passiveSkillData.setMDDr(passiveSkillData.getMDDr() + secondaryStat.getDiceInfo()[DiceFlags.MDD_R]);
+            passiveSkillData.setPDr(passiveSkillData.getPDr() + secondaryStat.getDiceInfo()[DiceFlags.PD_R]);
+            passiveSkillData.setMDr(passiveSkillData.getMDr() + secondaryStat.getDiceInfo()[DiceFlags.MD_R]);
+            passiveSkillData.setDIPr(passiveSkillData.getDIPr() + secondaryStat.getDiceInfo()[DiceFlags.DIP_R]);
+            passiveSkillData.setPDamR(passiveSkillData.getPDamR() + secondaryStat.getDiceInfo()[DiceFlags.PDAM_R]);
+            passiveSkillData.setMDamR(passiveSkillData.getMDamR() + secondaryStat.getDiceInfo()[DiceFlags.MDAM_R]);
+            passiveSkillData.setPADr(passiveSkillData.getPADr() + secondaryStat.getDiceInfo()[DiceFlags.PAD_R]);
+            passiveSkillData.setMADr(passiveSkillData.getMADr() + secondaryStat.getDiceInfo()[DiceFlags.MAD_R]);
+            passiveSkillData.setEXPr(passiveSkillData.getEXPr() + secondaryStat.getDiceInfo()[DiceFlags.EXP_R]);
+            passiveSkillData.setIMPr(passiveSkillData.getIMPr() + secondaryStat.getDiceInfo()[DiceFlags.IMP_R]);
+            passiveSkillData.setASRr(passiveSkillData.getASRr() + secondaryStat.getDiceInfo()[DiceFlags.ASR_R]);
+            passiveSkillData.setTERr(passiveSkillData.getTERr() + secondaryStat.getDiceInfo()[DiceFlags.TER_R]);
+            passiveSkillData.setMESOr(passiveSkillData.getMHPr() + secondaryStat.getDiceInfo()[DiceFlags.MESO_R]);
+        }
+        revisePassiveSkillData();
+    }
+
+    public void setPassiveSkillData(SkillEntry skill, int slv) {
+        if (skill == null || slv <= 0) {
+            return;
+        }
+        SkillLevelData sd = skill.getLevelData(slv);
+        passiveSkillData.setMHPr(passiveSkillData.getMHPr() + sd.MHPr);
+        passiveSkillData.setMMPr(passiveSkillData.getMMPr() + sd.MMPr);
+        passiveSkillData.setACCr(passiveSkillData.getACCr() + sd.ACCr);
+        passiveSkillData.setEVAr(passiveSkillData.getEVAr() + sd.EVAr);
+        passiveSkillData.setEr(passiveSkillData.getEr() + sd.Er);
+        passiveSkillData.setPDDr(passiveSkillData.getPDDr() + sd.PDDr);
+        passiveSkillData.setMDDr(passiveSkillData.getMDDr() + sd.MDDr);
+        passiveSkillData.setPDr(passiveSkillData.getPDr() + sd.PDr);
+        passiveSkillData.setMDr(passiveSkillData.getMDr() + sd.MDr);
+
+        passiveSkillData.setPADr(passiveSkillData.getPADr() + sd.PADr);
+        passiveSkillData.setMADr(passiveSkillData.getMADr() + sd.MADr);
+        passiveSkillData.setEXPr(passiveSkillData.getEXPr() + sd.EXPr);
+        passiveSkillData.setIMPr(passiveSkillData.getIMPr() + sd.IMPr);
+        passiveSkillData.setASRr(passiveSkillData.getASRr() + sd.ASRr);
+        passiveSkillData.setTERr(passiveSkillData.getTERr() + sd.TERr);
+        passiveSkillData.setMESOr(passiveSkillData.getMESOr() + sd.MESOr);
+        passiveSkillData.setPADx(passiveSkillData.getPADx() + sd.PADx);
+        passiveSkillData.setMADx(passiveSkillData.getMADx() + sd.MADx);
+        passiveSkillData.setIMDr(passiveSkillData.getIMDr() + sd.IMDr);
+        passiveSkillData.setPsdJump(passiveSkillData.getPsdJump() + sd.PsdJump);
+        passiveSkillData.setPsdSpeed(passiveSkillData.getMHPr() + sd.PsdSpeed);
+        passiveSkillData.setOCr(passiveSkillData.getOCr() + sd.OCr);
+        passiveSkillData.setDCr(passiveSkillData.getDCr() + sd.DCr);
+
+        if (skill.getAdditionPsdOffset().isEmpty() || skill.getPsdSkill() == 2) {
+            passiveSkillData.setCr(passiveSkillData.getCr() + sd.Cr);
+            passiveSkillData.setCDMin(passiveSkillData.getCDMin() + sd.CDMin);
+            passiveSkillData.setAr(passiveSkillData.getAr() + sd.Ar);
+            passiveSkillData.setDIPr(passiveSkillData.getDIPr() + sd.DIPr);
+            passiveSkillData.setPDamR(passiveSkillData.getPDamR() + sd.PDamr);
+            passiveSkillData.setMDamR(passiveSkillData.getMDamR() + sd.MDamr);
+        }
+        if (skill.getAdditionPsdOffset().size() > 0) {
+            for (Map.Entry<Integer, AdditionPsd> psdData : skill.getAdditionPsdOffset().entrySet()) {
+                AdditionPsd apsd = new AdditionPsd();
+
+                AdditionPsd apsdOffset = psdData.getValue();
+                apsd.setCr(Math.max(sd.Cr + apsdOffset.getCr(), 0));
+                apsd.setCDMin(Math.max(sd.CDMin + apsdOffset.getCDMin(), 0));
+                apsd.setAr(Math.max(sd.Ar + apsdOffset.getAr(), 0));
+                apsd.setDIPr(Math.max(sd.DIPr + apsdOffset.getDIPr(), 0));
+                apsd.setPDamr(Math.max(sd.PDamr + apsdOffset.getPDamr(), 0));
+                apsd.setMDamr(Math.max(sd.MDamr + apsdOffset.getMDamr(), 0));
+                apsd.setIMPr(Math.max(sd.IMPr + apsdOffset.getIMPr(), 0));
+                passiveSkillData.getAdditionPsd().put(psdData.getKey(), apsd);
+            }
+        }
+    }
+
+    public void revisePassiveSkillData() {
+        passiveSkillData.setMESOr(Math.min(Math.max(passiveSkillData.getMESOr(), 0), 100));
+        passiveSkillData.setOCr(Math.min(Math.max(passiveSkillData.getOCr(), 0), 50));
+        passiveSkillData.setDCr(Math.min(Math.max(passiveSkillData.getDCr(), 0), 50));
     }
 }

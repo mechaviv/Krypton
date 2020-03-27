@@ -27,12 +27,14 @@ import common.item.ItemType;
 import common.user.CharacterStat.CharacterStatType;
 import common.user.DBChar;
 import common.user.UserEffect;
+import game.GameApp;
 import game.field.Field;
 import game.field.FieldMan;
 import game.field.FieldSet;
 import game.field.GameObject;
 import game.field.life.mob.Mob;
 import game.field.portal.Portal;
+import game.party.PartyMan;
 import game.user.AvatarLook;
 import game.user.User;
 import game.user.UserLocal;
@@ -109,7 +111,7 @@ public class ScriptSysFunc {
                 runningVM.setHistoryPos(posMsgHistory);
                 MsgHistory msgHistory = runningVM.getMsgHistory().get(posMsgHistory - 1);
                 boolean next = (Boolean) msgHistory.getMemory().get(1);
-                target.sendPacket(ScriptMan.onSay((byte) msgHistory.getSpeakerTypeID(), msgHistory.getSpeakerTemplateID(), (String) msgHistory.getMemory().get(0), posMsgHistory != 1, next));
+                target.sendPacket(ScriptMan.onSay((byte) msgHistory.getSpeakerTypeID(), msgHistory.getSpeakerTemplateID(), msgHistory.getOverrideSpeakerID(), msgHistory.getParam(), (String) msgHistory.getMemory().get(0), posMsgHistory != 1, next));
                 break;
             case ScriptMessage.AskYesNo:
             case ScriptMessage.AskAccept:
@@ -216,14 +218,25 @@ public class ScriptSysFunc {
         msg.getMemory().addAll(memory);
         byte speakerTypeID = 0;
         int speakerTemplateID = 0;
+        int overrideSpeakerID = 0;
+        int param = ParamType.None;
+
         if (speaker != null) {
             speakerTypeID = (byte) speaker.getGameObjectTypeID();
             speakerTemplateID = speaker.getTemplateID();
+            if (speaker instanceof User) {
+                param |= ParamType.PlayerAsSpeaker;
+                overrideSpeakerID = 9010000;// to avoid DCs
+            }
         }
         switch (type) {
             case ScriptMessage.Say:
                 boolean next = (Boolean) memory.get(1);
-                msg.setPacket(ScriptMan.onSay(speakerTypeID, speakerTemplateID, (String) memory.get(0), runningVM.getHistoryPos() != 0, next));
+                overrideSpeakerID = (Integer) memory.get(2);
+                if (overrideSpeakerID != 0) {
+                    param |= ParamType.OverrideSpeakerID;
+                }
+                msg.setPacket(ScriptMan.onSay(speakerTypeID, speakerTemplateID, overrideSpeakerID, param, (String) memory.get(0), runningVM.getHistoryPos() != 0, next));
                 break;
             case ScriptMessage.AskYesNo:
                 msg.setPacket(ScriptMan.onAskYesNo(speakerTypeID, speakerTemplateID, (String) memory.get(0)));
@@ -250,6 +263,8 @@ public class ScriptSysFunc {
         }
         msg.setSpeakerTypeID(speakerTypeID);
         msg.setSpeakerTemplateID(speakerTemplateID);
+        msg.setOverrideSpeakerID(overrideSpeakerID);
+        msg.setParam(param);
         runningVM.getMsgHistory().addLast(msg);
         runningVM.setHistoryPos(runningVM.getMsgHistory().size());
     }
@@ -259,9 +274,18 @@ public class ScriptSysFunc {
     }
 
     public void say(String text, boolean next) {
+        say(text, next, 0);
+    }
+
+    public void say(String text, int overrideSpeakerID) {
+        say(text, false, overrideSpeakerID);
+    }
+
+    public void say(String text, boolean next, int overrideSpeakerID) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
         memory.add(next);
+        memory.add(overrideSpeakerID);
         makeMessagePacket(ScriptMessage.Say, memory, runningVM.getSelf());
         sendMessageAnswer();
         memory.clear();
@@ -821,6 +845,34 @@ public class ScriptSysFunc {
         return false;
     }
 
+    public boolean inventoryHasThisItemInHisParty(int itemID) {
+        User user = getUser();
+        if (user == null) {
+            return false;
+        }
+        if (Inventory.getItemCount(user, itemID) > 0) {
+            return true;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return false;
+        }
+        List<Integer> members = new ArrayList<>();
+        if (!PartyMan.getInstance().getSnapshot(partyID, members)) {
+            return false;
+        }
+        for (Integer memberID : members) {
+            User member = GameApp.getInstance().getChannel(getChannelID()).findUser(memberID);
+            if (member == null) {
+                continue;
+            }
+            if (Inventory.getItemCount(member, itemID) > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void userBroadcastMessage(int bmType, String message) {
         getUser().sendPacket(WvsContext.onBroadcastMsg((byte) bmType, message));
     }
@@ -1178,6 +1230,156 @@ public class ScriptSysFunc {
         getUser().postAvatarModified(AvatarLook.Look);
     }
 
+    public int userCallOtherParty(int characterID, int fieldID) {
+        int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+        if (partyID <= 0) {
+            return 2;
+        }
+
+        List<Integer> members = new ArrayList<>();
+        if (!PartyMan.getInstance().getSnapshot(partyID, members)) {
+            return 2;
+        }
+
+        User leader =GameApp.getInstance().getChannel(getChannelID()).findUser(characterID);
+        if (leader == null) {
+            return 2;
+        }
+
+        for (Integer memberID : members) {
+            User member = GameApp.getInstance().getChannel(getChannelID()).findUser(memberID);
+            if (member == null) {
+                return 2;
+            }
+            Field field = member.getField();
+            if (member.getHP() <= 0 || field == null || field != leader.getField()) {
+                return 2;
+            }
+            member.postTransferField(fieldID, "", false);
+        }
+        return 0;
+    }
+
+    public void userGivePartyBuff(int buffID) {
+
+    }
+
+    public void userCancelPartyBuff(int buffID) {
+
+    }
+
+    public int userGetPartyMemberID(int index) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(userGetCharacterID());
+        if (user == null || index < 0 || index > 5) {
+            return -1;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return -1;
+        }
+        return PartyMan.getInstance().getPartyMemberID(partyID, index);
+    }
+
+    public int userGetPartyMemberJob(int index) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(userGetCharacterID());
+        if (user == null || index < 0 || index > 5) {
+            return -1;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return -1;
+        }
+        return PartyMan.getInstance().getPartyMemberJob(partyID, index);
+    }
+
+    public int userGetPartyMemberLevel(int index) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(userGetCharacterID());
+        if (user == null || index < 0 || index > 5) {
+            return -1;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return -1;
+        }
+        return PartyMan.getInstance().getPartyMemberLevel(partyID, index);
+    }
+
+    public String userGetPartyMemberName(int index) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(userGetCharacterID());
+        if (user == null || index < 0 || index > 5) {
+            return null;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return null;
+        }
+        return PartyMan.getInstance().getPartyMemberName(partyID, index);
+    }
+
+    public boolean userIsInParty() {
+        return getUser() != null && getUser().isInParty();
+    }
+
+    public boolean userIsPartyBoss() {
+        return getUser() != null && getUser().isPartyBoss();
+    }
+
+    public int userTransferParty(int fieldID, String portal, int option) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(userGetCharacterID());
+        if (user == null) {
+            return 2;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return 2;
+        }
+        List<Integer> members = new ArrayList<>();
+        if (!PartyMan.getInstance().getSnapshot(partyID, members)) {
+            return 2;
+        }
+        for (Integer memberID : members) {
+            User member = GameApp.getInstance().getChannel(getChannelID()).findUser(memberID);
+            if (member == null) {
+                continue;
+            }
+            Field field = member.getField();
+            if (field == null || field != user.getField()) {
+                if (option == 1) {
+                    return 1;
+                }
+            }
+            member.postTransferField(fieldID, portal, false);
+        }
+        return 2;
+    }
+
+    public int getPartyMemberID(int characterID, int index) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(characterID);
+        if (user == null || index < 0 || index > 5) {
+            return -1;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0) {
+            return -1;
+        }
+        return PartyMan.getInstance().getPartyMemberID(partyID, index);
+    }
+
+    public boolean isPartyBoss() {
+        return PartyMan.getInstance().isPartyBoss(userGetCharacterID());
+    }
+
+    public boolean setPartyTeamForMCarnival(int characterID, int teamNo) {
+        User user = GameApp.getInstance().getChannel(getChannelID()).findUser(characterID);
+        if (user == null) {
+            return false;
+        }
+        int partyID = PartyMan.getInstance().charIdToPartyID(user.getCharacterID());
+        if (partyID <= 0 || teamNo >= 2) {
+            return false;
+        }
+        return true;//CPartyMan::SetTeamForMCarnival(partyID, teamNo);
+    }
     /**
      *  Checks if the user can complete the quest
      * @param questID quest key to check

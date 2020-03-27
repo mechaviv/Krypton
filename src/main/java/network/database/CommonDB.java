@@ -73,24 +73,43 @@ public class CommonDB {
                         item.setDateExpire(FileTime.longToFileTime(rs.getLong("ExpireDate")));
                         item.setCashItemSN(rs.getLong("CashItemSN"));
                         item.setItemSN(rs.getLong("ItemSN"));
-                        item.ruc = rs.getByte("RUC");
-                        item.cuc = rs.getByte("CUC");
-                        item.iSTR = rs.getShort("I_STR");
-                        item.iDEX = rs.getShort("I_DEX");
-                        item.iINT = rs.getShort("I_INT");
-                        item.iLUK = rs.getShort("I_LUK");
-                        item.iMaxHP = rs.getShort("I_MaxHP");
-                        item.iMaxMP = rs.getShort("I_MaxMP");
-                        item.iPAD = rs.getShort("I_PAD");
-                        item.iMAD = rs.getShort("I_MAD");
-                        item.iPDD = rs.getShort("I_PDD");
-                        item.iMDD = rs.getShort("I_MDD");
-                        item.iACC = rs.getShort("I_ACC");
-                        item.iEVA = rs.getShort("I_EVA");
-                        item.iCraft = rs.getShort("I_Craft");
-                        item.iSpeed = rs.getShort("I_Speed");
-                        item.iJump = rs.getShort("I_Jump");
-                        
+                        item.item.ruc = rs.getByte("RUC");
+                        item.item.cuc = rs.getByte("CUC");
+                        item.item.iSTR = rs.getShort("I_STR");
+                        item.item.iDEX = rs.getShort("I_DEX");
+                        item.item.iINT = rs.getShort("I_INT");
+                        item.item.iLUK = rs.getShort("I_LUK");
+                        item.item.iMaxHP = rs.getShort("I_MaxHP");
+                        item.item.iMaxMP = rs.getShort("I_MaxMP");
+                        item.item.iPAD = rs.getShort("I_PAD");
+                        item.item.iMAD = rs.getShort("I_MAD");
+                        item.item.iPDD = rs.getShort("I_PDD");
+                        item.item.iMDD = rs.getShort("I_MDD");
+                        item.item.iACC = rs.getShort("I_ACC");
+                        item.item.iEVA = rs.getShort("I_EVA");
+                        item.item.iCraft = rs.getShort("I_Craft");
+                        item.item.iSpeed = rs.getShort("I_Speed");
+                        item.item.iJump = rs.getShort("I_Jump");
+
+                        item.item.attribute = rs.getShort("Attribute");
+                        item.item.levelUpType = rs.getByte("LevelUpType");
+                        item.item.level = rs.getByte("Level");
+                        item.item.exp = rs.getInt("Exp");
+                        item.item.durability = rs.getInt("Durability");
+                        item.item.iuc = rs.getInt("IUC");
+
+                        item.option.grade = rs.getByte("O_Grade");
+                        item.option.chuc = rs.getByte("O_CHUC");
+                        item.option.option1 = rs.getShort("O_Option1");
+                        item.option.option2 = rs.getShort("O_Option2");
+                        item.option.option3 = rs.getShort("O_Option3");
+
+                        String title = rs.getString("Title");
+                        if (title == null) {
+                            title = "";
+                        }
+                        item.title = title;
+
                         cd.setItem(ItemType.Equip, pos, item);
                     }
                 }
@@ -115,7 +134,12 @@ public class CommonDB {
                         item.setCashItemSN(rs.getLong("CashItemSN"));
                         item.setItemSN(rs.getLong("ItemSN"));
                         item.setItemNumber(rs.getShort("Number"));
-                        
+                        item.setItemAttribute(rs.getShort("Attribute"));
+                        String title = rs.getString("Title");
+                        if (title == null) {
+                            title = "";
+                        }
+                        item.setItemTitle(title);
                         cd.setItem(ti, pos, item);
                     }
                 }
@@ -185,7 +209,7 @@ public class CommonDB {
             String removeCashSN = "";
             // Equip Inventory
             if (itemSlot != null) {
-                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `ExpireDate` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
+                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `O_Grade` = ?, `O_CHUC` = ?, `O_Option1` = ?, `O_Option2` = ?, `O_Option3` = ?, `ExpireDate` = ?, `Title` = ?, `Attribute` = ?, `LevelUpType` = ?, `Level` = ?, `Exp` = ?, `Durability` = ?, `IUC` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
                     for (int pos = 1; pos < itemSlot.size(); pos++) {
                         ItemSlotEquip item = (ItemSlotEquip) itemSlot.get(pos);
                         if (item != null) {
@@ -195,14 +219,14 @@ public class CommonDB {
                             if (item.getCashItemSN() != 0) {
                                 removeCashSN += item.getCashItemSN() + ", ";
                             }
-                            Database.execute(con, ps, characterID, pos, item.getItemID(), item.ruc, item.cuc, item.iSTR, item.iDEX, item.iINT, item.iLUK, item.iMaxHP, item.iMaxMP, item.iPAD, item.iMAD, item.iPDD, item.iMDD, item.iACC, item.iEVA, item.iCraft, item.iSpeed, item.iJump, item.getDateExpire().fileTimeToLong(), item.getSN(), item.getCashItemSN());
+                            Database.execute(con, ps, characterID, pos, item.getItemID(), item.item.ruc, item.item.cuc, item.item.iSTR, item.item.iDEX, item.item.iINT, item.item.iLUK, item.item.iMaxHP, item.item.iMaxMP, item.item.iPAD, item.item.iMAD, item.item.iPDD, item.item.iMDD, item.item.iACC, item.item.iEVA, item.item.iCraft, item.item.iSpeed, item.item.iJump, item.option.grade, item.option.chuc, item.option.option1, item.option.option2, item.option.option3, item.getDateExpire().fileTimeToLong(), item.title, item.item.attribute, item.item.levelUpType, item.item.level, item.item.exp, item.item.durability, item.item.iuc, item.getSN(), item.getCashItemSN());
                         }
                     }
                 }
             }
             // Equipped Inventory
             if (equipped != null) {
-                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `ExpireDate` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
+                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `O_Grade` = ?, `O_CHUC` = ?, `O_Option1` = ?, `O_Option2` = ?, `O_Option3` = ?, `ExpireDate` = ?, `Title` = ?, `Attribute` = ?, `LevelUpType` = ?, `Level` = ?, `Exp` = ?, `Durability` = ?, `IUC` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
                     for (int pos = 1; pos < equipped.size(); pos++) {
                         ItemSlotEquip item = (ItemSlotEquip) equipped.get(pos);
                         if (item != null) {
@@ -212,14 +236,14 @@ public class CommonDB {
                             if (item.getCashItemSN() != 0) {
                                 removeCashSN += item.getCashItemSN() + ", ";
                             }
-                            Database.execute(con, ps, characterID, -pos, item.getItemID(), item.ruc, item.cuc, item.iSTR, item.iDEX, item.iINT, item.iLUK, item.iMaxHP, item.iMaxMP, item.iPAD, item.iMAD, item.iPDD, item.iMDD, item.iACC, item.iEVA, item.iCraft, item.iSpeed, item.iJump, item.getDateExpire().fileTimeToLong(), item.getSN(), item.getCashItemSN());
+                            Database.execute(con, ps, characterID, -pos, item.getItemID(), item.item.ruc, item.item.cuc, item.item.iSTR, item.item.iDEX, item.item.iINT, item.item.iLUK, item.item.iMaxHP, item.item.iMaxMP, item.item.iPAD, item.item.iMAD, item.item.iPDD, item.item.iMDD, item.item.iACC, item.item.iEVA, item.item.iCraft, item.item.iSpeed, item.item.iJump, item.option.grade, item.option.chuc, item.option.option1, item.option.option2, item.option.option3, item.getDateExpire().fileTimeToLong(), item.title, item.item.attribute, item.item.levelUpType, item.item.level, item.item.exp, item.item.durability, item.item.iuc, item.getSN(), item.getCashItemSN());
                         }
                     }
                 }
             }
             // Cash Equipped Inventory
             if (cashEquipped != null) {
-                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `ExpireDate` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
+                try (PreparedStatement ps = con.prepareStatement("UPDATE `itemslotequip` SET `CharacterID` = ?, `POS` = ?, `ItemID` = ?, `RUC` = ?, `CUC` = ?, `I_STR` = ?, `I_DEX` = ?, `I_INT` = ?, `I_LUK` = ?, `I_MaxHP` = ?, `I_MaxMP` = ?, `I_PAD` = ?, `I_MAD` = ?, `I_PDD` = ?, `I_MDD` = ?, `I_ACC` = ?, `I_EVA` = ?, `I_Craft` = ?, `I_Speed` = ?, `I_Jump` = ?, `O_Grade` = ?, `O_CHUC` = ?, `O_Option1` = ?, `O_Option2` = ?, `O_Option3` = ?, `ExpireDate` = ?, `Title` = ?, `Attribute` = ?, `LevelUpType` = ?, `Level` = ?, `Exp` = ?, `Durability` = ?, `IUC` = ? WHERE `ItemSN` = ? AND `CashItemSN` = ?")) {
                     for (int pos = 1; pos < cashEquipped.size(); pos++) {
                         ItemSlotEquip item = (ItemSlotEquip) cashEquipped.get(pos);
                         if (item != null) {
@@ -229,7 +253,7 @@ public class CommonDB {
                             if (item.getCashItemSN() != 0) {
                                 removeCashSN += item.getCashItemSN() + ", ";
                             }
-                            Database.execute(con, ps, characterID, -pos - BodyPart.BP_Count, item.getItemID(), item.ruc, item.cuc, item.iSTR, item.iDEX, item.iINT, item.iLUK, item.iMaxHP, item.iMaxMP, item.iPAD, item.iMAD, item.iPDD, item.iMDD, item.iACC, item.iEVA, item.iCraft, item.iSpeed, item.iJump, item.getDateExpire().fileTimeToLong(), item.getSN(), item.getCashItemSN());
+                            Database.execute(con, ps, characterID, -pos - BodyPart.BP_Count, item.getItemID(), item.item.ruc, item.item.cuc, item.item.iSTR, item.item.iDEX, item.item.iINT, item.item.iLUK, item.item.iMaxHP, item.item.iMaxMP, item.item.iPAD, item.item.iMAD, item.item.iPDD, item.item.iMDD, item.item.iACC, item.item.iEVA, item.item.iCraft, item.item.iSpeed, item.item.iJump, item.option.grade, item.option.chuc, item.option.option1, item.option.option2, item.option.option3, item.getDateExpire().fileTimeToLong(), item.title, item.item.attribute, item.item.levelUpType, item.item.level, item.item.exp, item.item.durability, item.item.iuc, item.getSN(), item.getCashItemSN());
                         }
                     }
                 }

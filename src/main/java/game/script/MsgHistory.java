@@ -31,7 +31,9 @@ public class MsgHistory {
     private final List<Object> memory;
     private int speakerTypeID;
     private int speakerTemplateID;
+    private int overrideSpeakerID;
     private int couponItemID;
+    private int param;
 
     public MsgHistory(int type) {
         this.type = type;
@@ -80,5 +82,25 @@ public class MsgHistory {
 
     public void setSpeakerTemplateID(int templateID) {
         this.speakerTemplateID = templateID;
+    }
+
+    public int getParam() {
+        return param;
+    }
+
+    public void setParam(int param) {
+        this.param = param;
+    }
+
+    public void addParam(int param) {
+        this.param |= param;
+    }
+
+    public int getOverrideSpeakerID() {
+        return overrideSpeakerID;
+    }
+
+    public void setOverrideSpeakerID(int overrideSpeakerID) {
+        this.overrideSpeakerID = overrideSpeakerID;
     }
 }

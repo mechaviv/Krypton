@@ -18,17 +18,17 @@
 package network;
 
 import common.OrionConfig;
+import game.user.ClientSocket;
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
-import java.nio.ByteOrder;
+
 import java.util.List;
 import network.packet.InPacket;
-import network.security.XORCrypter;
+import network.security.IGCipher;
+import network.security.SocketKey;
 import util.Logger;
 import util.Pointer;
-import util.Utilities;
 
 /**
  * The server-end networking decoder. 
@@ -37,12 +37,12 @@ import util.Utilities;
  * @author Eric
  */
 public class SocketDecoder extends ReplayingDecoder<Void> {
-    private final XORCrypter cipher;
-    
-    public SocketDecoder(XORCrypter cipher) {
-        this.cipher = cipher;
+    private final SocketKey key;
+
+    public SocketDecoder(SocketKey key) {
+        this.key = key;
     }
-    
+
     class RecvData {
         /* The maximum incoming data buffer sizes */
         class MaxSize {
@@ -64,7 +64,7 @@ public class SocketDecoder extends ReplayingDecoder<Void> {
         try {
             state = packet.appendBuffer(buff, lastState);
             if (state > 0 && lastState.get() <= 0) {
-                if (packet.decodeSeqBase(cipher.getSeqRcv()) != OrionConfig.CLIENT_VER) {
+                if (packet.decodeSeqBase(key.getSeqRcv()) != OrionConfig.CLIENT_VER) {
                     Logger.logError("Incorrect packet header sequencing");
                     ctx.disconnect();
                     return;
@@ -82,12 +82,12 @@ public class SocketDecoder extends ReplayingDecoder<Void> {
         try {
             state = packet.appendBuffer(buff, lastState);
             if (state == 2) {
-                if (!packet.decryptData(cipher)) {
+                if (!packet.decryptData(key.getSeqRcv())) {
                     Logger.logError("DecryptData Failed");
-                    cipher.updateSeqRcv();
+                    key.updateRecv();
                     return;
                 }
-                cipher.updateSeqRcv();
+                key.updateRecv();
                 out.add(packet);
             }
         } finally {

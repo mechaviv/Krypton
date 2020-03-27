@@ -12,6 +12,7 @@ import game.user.item.ItemInfo;
 import game.user.skill.data.*;
 import game.user.skill.entries.*;
 import game.user.stat.SecondaryStat;
+import game.user.stat.psd.AdditionPsd;
 import util.Logger;
 import util.Pointer;
 import util.Rect;
@@ -522,6 +523,26 @@ public class SkillInfo {
         loadReqSkill(reqs, skill.getNode("req"));
         entry.setReqSkills(reqs);
 
+        //             <imgdir name="psdSkill">
+        //                <imgdir name="1311001" />
+        //                <imgdir name="1311003" />
+        //                <imgdir name="1311005" />
+        //                <imgdir name="1311006" />
+        //            </imgdir>
+        WzProperty psdSkillData = skill.getNode("psdSkill");
+        if (psdSkillData != null) {
+            for (WzProperty psdSkill : psdSkillData.getChildNodes()) {
+                AdditionPsd apsd = new AdditionPsd();
+                apsd.setAr(WzUtil.getInt32(psdSkill.getNode("ar"), 0));
+                apsd.setCr(WzUtil.getInt32(psdSkill.getNode("cr"), 0));
+                apsd.setCDMin(WzUtil.getInt32(psdSkill.getNode("criticaldamageMin"), 0));
+                apsd.setDIPr(WzUtil.getInt32(psdSkill.getNode("damR"), 0));
+                apsd.setPDamr(WzUtil.getInt32(psdSkill.getNode("pdR"), 0));
+                apsd.setMDamr(WzUtil.getInt32(psdSkill.getNode("mdR"), 0));
+                apsd.setIMPr(WzUtil.getInt32(psdSkill.getNode("ignoreMobpdpR"), 0));
+                entry.getAdditionPsdOffset().put(Integer.valueOf(psdSkill.getNodeName()), apsd);
+            }
+        }
         SkillLevelDataCommon common = new SkillLevelDataCommon();
         Pointer<Integer> maxLevel = new Pointer<>(0);
         loadLevelDataCommon(skillID, skill.getNode("common"), common, maxLevel);

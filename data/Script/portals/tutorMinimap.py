@@ -1,0 +1,1 @@
+self.userAvatarOriented("UI/tutorial.img/1")

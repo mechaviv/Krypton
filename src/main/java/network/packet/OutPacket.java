@@ -23,9 +23,8 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import network.security.ShandaCrypto;
-import network.security.XORCrypter;
+import network.security.aes.AESCipher;
 import util.FileTime;
-import util.Pointer;
 import util.Utilities;
 
 /**
@@ -126,9 +125,8 @@ public class OutPacket {
      * 
      * @param l The list of buffer blocks to be flushed to socket
      * @param seqBase The sequence base (a.k.a the game version)
-     * @param cipher The client's crypter
      */
-    public void makeBufferList(List<byte[]> l, int seqBase, XORCrypter cipher) {
+    public void makeBufferList(List<byte[]> l, int seqBase, int seqKey) {
         // The source buffer to encrypt - do NOT encrypt directly;
         // all output of encrypted buffer should be in pDes, not pSrc.
         byte[] src = toArray();
@@ -162,7 +160,7 @@ public class OutPacket {
         
         // Encode the sequence base and write it to the first 2 bytes of the
         // TCP packet header.
-        int rawSeq = encodeSeqBase(seqBase, cipher.getSeqSnd());
+        int rawSeq = encodeSeqBase(seqBase, seqKey);
         byte[] dest = new byte[4];
         //*(unsigned __int16 *)pDes = uRawSeq;
         dest[des++] = (byte) ((rawSeq >>> 8) & 0xFF);
@@ -179,7 +177,7 @@ public class OutPacket {
         //pDes += 2;
 
         src = ShandaCrypto.encryptData(src);
-        src = cipher.encrypt(src);
+        src = AESCipher.Crypt(src, seqKey);
 
         // Encrypt the first block and append to the buffer list.
         System.arraycopy(src, src0, block, des, desEnd - des);

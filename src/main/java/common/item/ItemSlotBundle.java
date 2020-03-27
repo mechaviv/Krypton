@@ -25,12 +25,16 @@ import network.packet.OutPacket;
  */
 public class ItemSlotBundle extends ItemSlotBase {
     private short number;
+    private short attribute;
     private long sn;
+    private String title;
 
     public ItemSlotBundle(int itemID) {
         super(itemID);
         this.number = 1;
+        this.attribute = 0;
         this.sn = 0;
+        this.title = "";
     }
 
     @Override
@@ -77,5 +81,69 @@ public class ItemSlotBundle extends ItemSlotBase {
 
     public void setItemSN(long sn) {
         this.sn = sn;
+    }
+
+    public String getItemTitle() {
+        return title;
+    }
+
+    public void setItemTitle(String title) {
+        this.title = title;
+    }
+
+    public short getItemAttribute() {
+        return this.attribute;
+    }
+
+    public boolean isProtectedItem() {
+        return (this.attribute & 0x1) != 0;
+    }
+
+    public boolean isPreventSlipItem() {
+        return (this.attribute & 0x2) != 0;
+    }
+
+    public boolean isSupportWarmItem() {
+        return (this.attribute & 0x4) != 0;
+    }
+
+    public boolean isBindedItem() {
+        return (this.attribute & 0x8) != 0;
+    }
+
+    public boolean isPossibleTradingItem() {
+        return (this.attribute & 0x10) != 0;
+    }
+
+    public void setItemAttribute(short newAttribute) {
+        this.attribute = newAttribute;
+    }
+
+    public void resetPossibleTrading() {
+        this.attribute &= 0xFFEF;
+    }
+
+    public void resetProtected() {
+        this.attribute &= 0xFFFE;
+    }
+
+    public void setProtected() {
+        this.attribute |= 0x1;
+    }
+
+    public void setPreventSlip() {
+        this.attribute |= 0x2;
+    }
+
+    public void setWarmSupport() {
+        this.attribute |= 0x4;
+    }
+
+    public void setBinded() {
+        this.attribute |= 0x8;
+    }
+
+    public void setPossibleTrading() {
+        this.attribute |= 0x10;
     }
 }

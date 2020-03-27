@@ -103,8 +103,8 @@ public class Skills {
                 ImproveBasic = 1000000,
                 Endure = 1000002,
 
-        // exists
-        MHPInc = 1000006,
+                // exists
+                MHPInc = 1000006,
                 IronBody = 1001003,
                 PowerStrike = 1001004,
                 SlashBlast = 1001005
@@ -141,7 +141,7 @@ public class Skills {
     public static class Crusader extends Skills {
         // <editor-fold defaultstate="collapsed" desc="Crusader">
         public static final int
-                UpgradeMpRecovery = 1110000,
+                UpgradeMpRecovery = 1110000,// get_mp_recovery_upgrade
                 ChanceAttack      = 1110009,
                 ComboAttack       = 1111002,
                 Panic             = 1111003,

@@ -38,23 +38,43 @@ public class UserPool {
     public static OutPacket onUserEnterField(User user) {
         OutPacket packet = new OutPacket(LoopbackPacket.UserEnterField);
         packet.encodeInt(user.getCharacterID());
-        
+
+        packet.encodeByte(user.getCharacter().getCharacterStat().getLevel());
         packet.encodeString(user.getCharacterName());
-        packet.encodeByte(user.getCharacter().getCharacterStat().getGender());
+
+        packet.encodeString("");
+        packet.encodeShort(0);
+        packet.encodeByte(0);
+        packet.encodeShort(0);
+        packet.encodeByte(0);
 
         user.getSecondaryStat().encodeForRemote(packet, CharacterTemporaryStat.getMask(CharacterTemporaryStat.NONE));
-        
-        packet.encodeInt(user.getCharacter().getCharacterStat().getFace());
-        packet.encodeInt(0); //AvatarLook.Unknown2 (unused int)
-        packet.encodeInt(0); //AvatarLook.Unknown3 (unused int)
-        
-        user.getAvatarLook().encode(packet);
-        packet.encodeInt(0); //Unknown (modifies *(v3 + 161) aka *(v1 + 644))
-        
+        packet.encodeShort(user.getCharacter().getCharacterStat().getJob());
+        user.getCharacter().encodeAvatarLook(packet);
+
+        packet.encodeInt(0);// driver ID
+        packet.encodeInt(0);// passenser id
+        packet.encodeInt(0);// choco count
+        packet.encodeInt(0);// active effect itemid
+        packet.encodeInt(0);// completed set itemid
+        packet.encodeInt(0);// portable chair id
         packet.encodeShort(user.getCurrentPosition().x);
         packet.encodeShort(user.getCurrentPosition().y);
         packet.encodeByte(user.getMoveAction());
         packet.encodeShort(user.getFootholdSN());
+        packet.encodeByte(0);// show admin effect
+        packet.encodeByte(0);// pet
+        packet.encodeInt(0);// taming mob level
+        packet.encodeInt(0);// taming mob exp
+        packet.encodeInt(0);// taming mob fatigue
+        packet.encodeByte(0);// mini room shit
+        packet.encodeByte(0);// ad board
+        packet.encodeByte(0);// couple record
+        packet.encodeByte(0);// friend record
+        packet.encodeByte(0);// marriage record
+        packet.encodeByte(0);// delayed effect
+        packet.encodeByte(0);// new year shit
+        packet.encodeInt(0);// phase
         return packet;
     }
     

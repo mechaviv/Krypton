@@ -40,10 +40,10 @@ public class CharacterStat {
     private short DEX;
     private short INT;
     private short LUK;
-    private short hp;
-    private short mhp;
-    private short mp;
-    private short mmp;
+    private int hp;
+    private int mhp;
+    private int mp;
+    private int mmp;
     private short ap;
     private short sp;
     private final AtomicInteger exp;
@@ -209,19 +209,19 @@ public class CharacterStat {
         return LUK;
     }
 
-    public short getHP() {
+    public int getHP() {
         return hp;
     }
 
-    public short getMHP() {
+    public int getMHP() {
         return mhp;
     }
 
-    public short getMP() {
+    public int getMP() {
         return mp;
     }
 
-    public short getMMP() {
+    public int getMMP() {
         return mmp;
     }
 
@@ -267,10 +267,10 @@ public class CharacterStat {
         setDEX(rs.getShort("DEX"));
         setINT(rs.getShort("INT"));
         setLUK(rs.getShort("LUK"));
-        setHP(rs.getShort("HP"));
-        setMP(rs.getShort("MP"));
-        setMHP(rs.getShort("MaxHP"));
-        setMMP(rs.getShort("MaxMP"));
+        setHP(rs.getInt("HP"));
+        setMP(rs.getInt("MP"));
+        setMHP(rs.getInt("MaxHP"));
+        setMMP(rs.getInt("MaxMP"));
         setAP(rs.getShort("AP"));
         setSP(rs.getShort("SP"));
         setEXP(rs.getInt("EXP"));
@@ -331,18 +331,18 @@ public class CharacterStat {
     }
 
     public void setHP(int hp) {
-        this.hp = (short) hp;
+        this.hp = hp;
     }
 
-    public void setMHP(short mhp) {
+    public void setMHP(int mhp) {
         this.mhp = mhp;
     }
 
     public void setMP(int mp) {
-        this.mp = (short) mp;
+        this.mp = mp;
     }
 
-    public void setMMP(short mmp) {
+    public void setMMP(int mmp) {
         this.mmp = mmp;
     }
 

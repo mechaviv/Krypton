@@ -514,31 +514,31 @@ public class Inventory {
             ItemSlotBase equipItem = cd.getItem(ItemType.Equip, epos);
             if (equipItem != null) {
                 if (ItemInfo.isReqUpgradeItem(useItem.getItemID(), equipItem.getItemID())) {
-                    if (((ItemSlotEquip) equipItem).ruc > 0) {
+                    if (((ItemSlotEquip) equipItem).item.ruc > 0) {
                         UpgradeItem info = ItemInfo.getUpgradeItem(useItem.getItemID());
                         if (info != null) {
                             Pointer<Integer> decRet = new Pointer<>(0);
                             if (InventoryManipulator.rawRemoveItem(cd, ItemType.Consume, upos, 1, changeLog, decRet, null) && decRet.get() == 1) {
                                 ItemSlotEquip item = (ItemSlotEquip) equipItem;
-                                --item.ruc;
+                                --item.item.ruc;
                                 scrolled = true;
                                 if (Rand32.getInstance().random() % 101 <= info.getSuccess()) {
-                                    ++item.cuc;
-                                    item.iSTR = (short) Math.min(Math.max(item.iSTR + info.getIncSTR(), 0), 9999);
-                                    item.iDEX = (short) Math.min(Math.max(item.iDEX + info.getIncDEX(), 0), 9999);
-                                    item.iINT = (short) Math.min(Math.max(item.iINT + info.getIncINT(), 0), 9999);
-                                    item.iLUK = (short) Math.min(Math.max(item.iLUK + info.getIncLUK(), 0), 9999);
-                                    item.iMaxHP = (short) Math.min(Math.max(item.iMaxHP + info.getIncMaxHP(), 0), 9999);
+                                    ++item.item.cuc;
+                                    item.item.iSTR = (short) Math.min(Math.max(item.item.iSTR + info.getIncSTR(), 0), 9999);
+                                    item.item.iDEX = (short) Math.min(Math.max(item.item.iDEX + info.getIncDEX(), 0), 9999);
+                                    item.item.iINT = (short) Math.min(Math.max(item.item.iINT + info.getIncINT(), 0), 9999);
+                                    item.item.iLUK = (short) Math.min(Math.max(item.item.iLUK + info.getIncLUK(), 0), 9999);
+                                    item.item.iMaxHP = (short) Math.min(Math.max(item.item.iMaxHP + info.getIncMaxHP(), 0), 9999);
                                     //item.iMaxMP = Math.min(Math.max(item.iMaxMP + info.getIncMaxMP(), 0), 9999);
-                                    item.iPAD = (short) Math.min(Math.max(item.iPAD + info.getIncPAD(), 0), 255);
-                                    item.iMAD = (short) Math.min(Math.max(item.iMAD + info.getIncMAD(), 0), 255);
-                                    item.iPDD = (short) Math.min(Math.max(item.iPDD + info.getIncPDD(), 0), 255);
-                                    item.iMDD = (short) Math.min(Math.max(item.iMDD + info.getIncMDD(), 0), 255);
-                                    item.iACC = (short) Math.min(Math.max(item.iACC + info.getIncACC(), 0), 255);
-                                    item.iEVA = (short) Math.min(Math.max(item.iEVA + info.getIncEVA(), 0), 255);
+                                    item.item.iPAD = (short) Math.min(Math.max(item.item.iPAD + info.getIncPAD(), 0), 255);
+                                    item.item.iMAD = (short) Math.min(Math.max(item.item.iMAD + info.getIncMAD(), 0), 255);
+                                    item.item.iPDD = (short) Math.min(Math.max(item.item.iPDD + info.getIncPDD(), 0), 255);
+                                    item.item.iMDD = (short) Math.min(Math.max(item.item.iMDD + info.getIncMDD(), 0), 255);
+                                    item.item.iACC = (short) Math.min(Math.max(item.item.iACC + info.getIncACC(), 0), 255);
+                                    item.item.iEVA = (short) Math.min(Math.max(item.item.iEVA + info.getIncEVA(), 0), 255);
                                     //item.iCraft = (short) Math.min(Math.max(item.iCraft + info.getIncCraft(), 0), 255);
-                                    item.iSpeed = (short) Math.min(Math.max(item.iSpeed + info.getIncSpeed(), 0), 40);
-                                    item.iJump = (short) Math.min(Math.max(item.iJump + info.getIncJump(), 0), 23);
+                                    item.item.iSpeed = (short) Math.min(Math.max(item.item.iSpeed + info.getIncSpeed(), 0), 40);
+                                    item.item.iJump = (short) Math.min(Math.max(item.item.iJump + info.getIncJump(), 0), 23);
                                 }
                                 InventoryManipulator.insertChangeLog(changeLog, ChangeLog.DelItem, ItemType.Equip, epos, null, (short) 0, (short) 0);
                                 InventoryManipulator.insertChangeLog(changeLog, ChangeLog.NewItem, ItemType.Equip, epos, item, (short) 0, (short) 0);

@@ -11,8 +11,9 @@ public class EquippedSetItem {
     private int partsCount;
     private List<Integer> items;
 
-    public EquippedSetItem() {
-        items = new ArrayList<>();
+    public EquippedSetItem(int setItemID) {
+        this.items = new ArrayList<>();
+        this.setItemID = setItemID;
     }
 
     public int getSetItemID() {

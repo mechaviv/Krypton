@@ -32,6 +32,7 @@ import game.field.life.npc.NpcPool;
 import game.field.portal.PortalMap;
 import game.field.reactor.ReactorPool;
 import game.party.PartyMan;
+import game.script.ScriptVM;
 import game.user.User;
 import game.user.UserRemote;
 import game.user.WvsContext;
@@ -119,6 +120,9 @@ public class Field {
     private List<FieldSplit> fieldSplit;
     private FieldSet parentFieldSet;
     private final int channelID;
+    private String userEnter;
+    private boolean userEntered;
+    private String firstUserEnter;
 
     public Field(int fieldID, int channelID) {
         this.fieldObjIdCounter = new AtomicInteger(30000);
@@ -840,6 +844,7 @@ public class Field {
         lifePool.reset();
         dropPool.tryExpire(true);
         reactorPool.reset(shuffleReactor);
+        userEntered = false;
     }
 
     public FieldSet getParentFieldSet() {
@@ -885,5 +890,29 @@ public class Field {
         if (item != null) {
             lifePool.onMobSummonItemUseRequest(new Point(x, y), item, false);
         }
+    }
+
+    public String getUserEnter() {
+        return userEnter;
+    }
+
+    public void setUserEnter(String userEnter) {
+        this.userEnter = userEnter;
+    }
+
+    public String getFirstUserEnter() {
+        return firstUserEnter;
+    }
+
+    public void setFirstUserEnter(String firstUserEnter) {
+        this.firstUserEnter = firstUserEnter;
+    }
+
+    public boolean isUserEntered() {
+        return userEntered;
+    }
+
+    public void setUserEntered(boolean userEntered) {
+        this.userEntered = userEntered;
     }
 }

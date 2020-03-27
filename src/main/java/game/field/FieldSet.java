@@ -12,6 +12,7 @@ import game.field.reactor.ReactorPool;
 import game.field.reactor.action.ActionType;
 import game.field.reactor.action.ReactorActionInfo;
 import game.field.reactor.action.ReactorInfo;
+import game.party.PartyMan;
 import game.script.ScriptVM;
 import game.user.User;
 import game.user.WvsContext;
@@ -102,71 +103,355 @@ public class FieldSet extends EventManager {
         List<User> users = new ArrayList<>();// loads the users from party
         users.add(user);
         if (name.equals("Party1")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() != 4) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 21 || level > 30) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("Party2")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            for (User partyUser : users) {
+                String value = UserQuestRecord.get(partyUser, 7000);
+                if (value == null) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("Party3")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() != 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 35 || level > 50) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("Party4")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+        } else if (name.equals("Party5")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() != 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 51 || level > 70) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("PartyAmoria")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() != 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 40 || !user.isMarried()) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("PartyAmoriaBo")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+        } else if (name.equals("PartyLudiMaze")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 3) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 51 || level > 70) {
+                    return 3;
+                }
+                if (partyUser.isItemExist((byte) 4, 4001106)) {
+                    return 6;
+                }
+            }
+        } else if (name.equals("Wedding1") || name.equals("Wedding2")) {
             // TODO
-        }
-        if (name.equals("Party2")) {
+        } else if (name.equals("Wedding4")) {
             // TODO
-        }
-        if (name.equals("Party3")) {
+        } else if (name.length() >= 7 && name.substring(0, 7).equals("Wedding")) {
             // TODO
+        } else if (name.equals("MoonRabbit")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 1) {// 3 temp 1
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 10) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("MoonPig")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 3) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 10) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("Hontale1") || name.equals("Hontale3")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            int reqCount = name.equals("Hontale1") ? 6 : 1;
+            if (users.size() < reqCount) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 80) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("S4efreet") || name.equals("S4snipe") || name.equals("S4rush")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 2) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 120) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("S4common1") || name.equals("S4common2")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() > 6) {// ?
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 120) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("DavyJohn1")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 3 || users.size() > 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 55 || level > 100) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("MCarnival100") || name.equals("MCarnival110") || name.equals("MCarnival120") || name.equals("MCarnival130")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 2 || users.size() > 4 || users.size() > 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 30 || level > 50) {
+                    return 3;
+                }
+            }
+        } else if (name.equals("MCarnival140") || name.equals("MCarnival150")) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() < 3 || users.size() > 6) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 30 || level > 50) {
+                    return 3;
+                }
+            }
+        } else if (isRomioJulietFieldSet()) {
+            List<Integer> characterIDs = new ArrayList<>();
+            int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+            if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+                return 1;
+            }
+            for (Integer partyUserID : characterIDs) {
+                User partyUser = GameApp.getInstance().getChannel(user.getChannelID()).findUser(partyUserID);
+                if (partyUser != null && partyUser.getField() == field) {
+                    users.add(partyUser);
+                }
+            }
+            if (users.size() != 4) {
+                return 2;
+            }
+            for (User partyUser : users) {
+                int level = partyUser.getLevel();
+                if (level < 71 || level > 85) {
+                    return 3;
+                }
+            }
+        } else {
+            users.add(user);
         }
-        if (name.equals("Party4")) {
-            // TODO
-        }
-        if (name.equals("Party5")) {
-            // TODO
-        }
-        if (name.equals("PartyAmoria")) {
-            // TODO
-        }
-        if (name.equals("PartyAmoriaBo")) {
-            // TODO
-        }
-        if (name.equals("PartyLudiMaze")) {
-            // TODO
-        }
-        if (name.equals("Wedding1") || name.equals("Wedding2")) {
-            // TODO
-        }
-        if (name.equals("Wedding4")) {
-            // TODO
-        }
-        if (name.length() >= 7 && name.substring(0, 7).equals("Wedding")) {
-            // TODO
-        }
-        if (name.equals("MoonRabbit")) {
-            // TODO
-        }
-        if (name.equals("MoonPig")) {
-            // TODO
-        }
-        if (name.equals("Hontale1") || name.equals("Hontale3")) {
-            // TODO
-        }
-        if (name.equals("S4efreet")) {
-            // TODO
-        }
-        if (name.equals("S4snipe")) {
-            // TODO
-        }
-        if (name.equals("S4rush")) {
-            // TODO
-        }
-        if (name.equals("S4common1") || name.equals("S4common2")) {
-            // TODO
-        }
-        if (name.equals("DavyJohn1")) {
-            // TODO
-        }
-        if (name.equals("MCarnival100") || name.equals("MCarnival110") || name.equals("MCarnival120") || name.equals("MCarnival130")) {
-            // TODO
-        }
-        if (name.equals("MCarnival140") || name.equals("MCarnival150")) {
-            // TODO
-        }
-        if (isRomioJulietFieldSet()) {
-            // TODO
-        }
+
         int result = tryEnter(users, fieldInfo, characterID);
         if (result == 0) {
             switch (name) {
@@ -188,9 +473,10 @@ public class FieldSet extends EventManager {
                     break;
                 }
             }
-            if (isMCarnivalWaitingFieldSet() || isWatermelonFieldSet() || isRomioJulietFieldSet()) {
-                startEvent(user);
-            }
+            if (name.equals("Wedding1"))
+                if (isMCarnivalWaitingFieldSet() || isWatermelonFieldSet() || isRomioJulietFieldSet()) {
+                    startEvent(user);
+                }
             tryToRunInitScript = true;
         }
         if (name.equals("Wedding1") || name.equals("Wedding2") && result == 0) {
@@ -577,6 +863,10 @@ public class FieldSet extends EventManager {
         return eventStart;
     }
 
+    public void setEventStart(long eventStart) {
+        this.eventStart = eventStart;
+    }
+
     public String getVariable(String key) {
         lockVariable.lock();
         try {
@@ -602,10 +892,6 @@ public class FieldSet extends EventManager {
             //    if ( v5 )
             //      v6->m_lock._m_pTIB = 0;
         }
-    }
-
-    public void setEventStart(long eventStart) {
-        this.eventStart = eventStart;
     }
 
     public void setTargetFieldID(int targetFieldID) {
@@ -936,6 +1222,31 @@ public class FieldSet extends EventManager {
 
     // Party methods:
     public void checkParty(List<User> users) {
+        /*if (!name.equals("Party1") && !name.equals("Party3") && users.size() <= 1) {
+            castOut(users, 0, "");
+            return;
+        }
+
+        int characterID = 0;
+        int members = 0;
+        for (User user : users) {
+            if (user != null) {
+                if (members >= 6) {
+                    castOut(users, 0, "");
+                    return;
+                }
+                characterID = user.getCharacterID();
+                members++;
+            }
+        }
+
+        List<Integer> characterIDs = new ArrayList<>();
+        int partyID = PartyMan.getInstance().charIdToPartyID(characterID);
+        if (partyID == 0 || !PartyMan.getInstance().getSnapshot(partyID, characterIDs)) {
+            castOut(users, 0, "");
+            return;
+        }*/
+        // more cast out stuff i don't understand their usage for now I leave it like this
     }
 
     // Guild methods:

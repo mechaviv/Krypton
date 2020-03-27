@@ -2,10 +2,9 @@ package game.user.skill.entries;
 
 import game.user.skill.SkillRecord;
 import game.user.skill.SkillType;
-import game.user.skill.data.AdditionPsd;
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.data.SkillLevelDataCommon;
-import util.Logger;
+import game.user.stat.psd.AdditionPsd;
 import util.wz.WzProperty;
 
 import java.util.*;

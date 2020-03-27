@@ -187,6 +187,8 @@ CREATE TABLE `itemslotbundle` (
   `Number` int(11) NOT NULL DEFAULT 0,
   `TI` int(11) NOT NULL DEFAULT 0,
   `ExpireDate` bigint(20) NOT NULL DEFAULT -1,
+  `Title` varchar(50) DEFAULT NULL,
+  `Attribute` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`SN`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -227,7 +229,19 @@ CREATE TABLE `itemslotequip` (
   `I_Craft` int(11) NOT NULL DEFAULT 0,
   `I_Speed` int(11) NOT NULL DEFAULT 0,
   `I_Jump` int(11) NOT NULL DEFAULT 0,
+  `O_Grade` int(11) NOT NULL DEFAULT 0,
+  `O_CHUC` int(11) NOT NULL DEFAULT 0,
+  `O_Option1` int(11) NOT NULL DEFAULT 0,
+  `O_Option2` int(11) NOT NULL DEFAULT 0,
+  `O_Option3` int(11) NOT NULL DEFAULT 0,
   `ExpireDate` bigint(20) NOT NULL DEFAULT -1,
+  `Title` varchar(50) DEFAULT NULL,
+  `Attribute` int(11) NOT NULL DEFAULT 0,
+  `LevelUpType` int(11) NOT NULL DEFAULT 0,
+  `Level` int(11) NOT NULL DEFAULT 0,
+  `Exp` int(11) NOT NULL DEFAULT 0,
+  `Durability` int(11) NOT NULL DEFAULT -1,
+  `IUC` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`SN`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

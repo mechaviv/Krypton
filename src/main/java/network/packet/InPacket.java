@@ -22,7 +22,6 @@ import io.netty.buffer.Unpooled;
 import java.nio.charset.Charset;
 
 import network.security.ShandaCrypto;
-import network.security.XORCrypter;
 import network.security.aes.AESCipher;
 import util.FileTime;
 import util.Pointer;
@@ -298,13 +297,10 @@ public class InPacket {
     }
     
     /**
-     * Decrypts the encrypted packet buffer using the client's XORCrypter.
-     * 
-     * @param cipher The crypter used to decrypt the buffer
-     * 
+     * Decrypts the encrypted packet buffer using the client's XORCrypter.*
      * @return If the block was both valid and decrypted
      */
-    public boolean decryptData(XORCrypter cipher) {
+    public boolean decryptData(int seqKey) {
         int remain = dataLen;
         int lenBlock = Math.min(remain, 0x5B0);
         if (remain != 0) {
@@ -318,8 +314,8 @@ public class InPacket {
             recvBuff.resetReaderIndex();
             recvBuff.resetWriterIndex();
 
-            AESCipher.Crypt(src, cipher.getSeqRcv());
-            ShandaCrypto.decryptData(src);
+            src = AESCipher.Crypt(src, seqKey);
+            src = ShandaCrypto.decryptData(src);
 
             /*
             int src0 = 0;

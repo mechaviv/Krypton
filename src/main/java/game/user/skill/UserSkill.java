@@ -33,15 +33,19 @@ import game.user.skill.entries.SkillEntry;
 import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.Flag;
 import game.user.stat.SecondaryStatOption;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import game.user.stat.ts.PartyBoosterStat;
+import game.user.stat.ts.TSIndex;
+import game.user.stat.ts.TwoStateTemporaryStat;
 import network.packet.InPacket;
 import util.Logger;
 import util.Pointer;
 import util.Rand32;
 
 /**
- *
  * @author Eric
  */
 public class UserSkill {
@@ -79,7 +83,40 @@ public class UserSkill {
             doActiveSkill_SelfStatChange(skill, slv, packet);
             return;
         } else if (SkillAccessor.isWeaponBooster(skillID)) {
-            doActiveSkill_WeaponBooster(skill, slv, 1, 1);
+            int wt1 = 0, wt2 = 0, wt3 = 0, wt4 = 0;
+            if (skillID == Page.WeaponBooster) {
+                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD; wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
+                wt3 = ItemAccessor.WeaponTypeFlag.OH_MACE;  wt4 = ItemAccessor.WeaponTypeFlag.TH_MACE;
+            } else if (skillID == SoulMaster.SWORD_BOOSTER || skillID == Fighter.WeaponBooster) {
+                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD; wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
+                wt3 = ItemAccessor.WeaponTypeFlag.OH_AXE;   wt4 = ItemAccessor.WeaponTypeFlag.TH_AXE;
+            } else if (skillID == Spearman.WeaponBooster) {
+                wt1 = ItemAccessor.WeaponTypeFlag.SPEAR;   wt2 = ItemAccessor.WeaponTypeFlag.SPEAR;
+                wt3 = ItemAccessor.WeaponTypeFlag.POLEARM; wt4 = ItemAccessor.WeaponTypeFlag.POLEARM;
+            } else if (skillID == Mage1.MAGIC_BOOSTER || skillID == Mage2.MAGIC_BOOSTER || skillID == FlameWizard.MAGIC_BOOSTER || skillID == Evan.MAGIC_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.STAFF; wt2 = ItemAccessor.WeaponTypeFlag.WAND;
+            } else if (skillID == Hunter.BowBooster || skillID == WindBreaker.BOW_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.BOW;
+            } else if (skillID == Crossbowman.CrossbowBooster || skillID == WildHunter.CROSSBOW_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.CROSSBOW;
+            } else if (skillID == Assassin.JavelinBooster || skillID == NightWalker.JAVELIN_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.THROWINGGLOVE;
+            } else if (skillID == Thief.DaggerBooster) {
+                wt1 = ItemAccessor.WeaponTypeFlag.DAGGER;
+            } else if (skillID == Dual1.DUAL_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.DAGGER;
+                wt2 = ItemAccessor.WeaponTypeFlag.SUB_DAGGER;
+            } else if (skillID == Gunslinger.GUN_BOOSTER || skillID == Mechanic.BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.GUN;
+            } else if (skillID == InFighter.KNUCKLE_BOOSTER || skillID == Striker.KNUCKLE_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.KNUCKLE;
+            } else if (skillID == Aran.POLEARM_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.POLEARM;
+            } else if (skillID == BMage.STAFF_BOOSTER) {
+                wt1 = ItemAccessor.WeaponTypeFlag.STAFF;
+            }
+            if (wt1 == 0 && wt2 == 0 && wt3 == 0 && wt4 == 0) Logger.logError("New weapon booster [%d]", skillID);
+            doActiveSkill_WeaponBooster(skill, slv, wt1, wt2, wt3, wt4);
             return;
         }
         switch (skillID) {
@@ -90,6 +127,7 @@ public class UserSkill {
                 break;
             default: {
                 Logger.logReport("Found new skill: %d", skillID);
+                user.sendCharacterStat(Request.Excl, 0);
             }
         }
     }
@@ -101,6 +139,7 @@ public class UserSkill {
                 int skillID = packet.decodeInt();
                 List<SkillRecord> change = new ArrayList<>();
                 if (UserSkillRecord.skillUp(user, skillID, true, change)) {
+                    user.updatePassiveSkillData();
                     user.validateStat(false);
                     user.sendCharacterStat(Request.None, CharacterStatType.SP);
                 }
@@ -133,7 +172,7 @@ public class UserSkill {
         Flag skillFlag = processSkill(skill, slv, duration);
         int statFlag = 0;
         if (skill.getLevelData(slv).HP != 0) {
-            double inc = Math.ceil((double) ((int) hpRate / partyCount));
+            double inc = Math.ceil(hpRate / partyCount);
             if (user.incHP((int) (long) inc, false)) {
                 statFlag |= CharacterStatType.HP;
                 if (skill.getSkillID() == Cleric.Heal) {
@@ -144,6 +183,7 @@ public class UserSkill {
                 }
             }
         }
+        user.updatePassiveSkillData();
         user.validateStat(false);
         user.sendCharacterStat(Request.Excl, statFlag);
         user.sendTemporaryStatSet(skillFlag);
@@ -182,6 +222,7 @@ public class UserSkill {
             statFlag |= CharacterStatType.MP;
         }
 
+        user.updatePassiveSkillData();
         user.validateStat(true);
         user.sendCharacterStat(Request.Excl, statFlag);
         user.sendTemporaryStatSet(skillFlag);
@@ -207,19 +248,26 @@ public class UserSkill {
         user.sendCharacterStat(Request.Excl, 0);
     }
 
-    public void doActiveSkill_WeaponBooster(SkillEntry skill, byte slv, int wt1, int wt2) {
+    public void doActiveSkill_WeaponBooster(SkillEntry skill, byte slv, int wt1, int wt2, int wt3, int wt4) {
         SkillLevelData levelData = skill.getLevelData(slv);
         int wt = ItemAccessor.getWeaponType(user.getCharacter().getItem(ItemType.Equip, -BodyPart.Weapon).getItemID());
-        if (wt > 0 && SkillAccessor.isCorrectItemForBooster(wt, user.getCharacter().getCharacterStat().getJob()) && levelData.Time > 0) {
-            long duration = System.currentTimeMillis() + 1000 * levelData.Time;
-            user.getSecondaryStat().setStat(CharacterTemporaryStat.Booster, new SecondaryStatOption(1, skill.getSkillID(), duration));
-            user.sendCharacterStat(Request.Excl, 0);
-            user.sendTemporaryStatSet(CharacterTemporaryStat.getMask(CharacterTemporaryStat.Booster));
-            if (user.getField() != null) {
-                user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
+        if (skill.getSkillID() == Dual1.DUAL_BOOSTER) {
+            int subWT = ItemAccessor.getWeaponType(user.getCharacter().getItem(ItemType.Equip, -BodyPart.Shield).getItemID());
+            if (!user.getCharacter().isEquippedDualDagger() || wt != wt1 || subWT != wt2) {
+                user.sendCharacterStat(Request.Excl, 0);
+                return;
             }
-        } else {
+        } else if (wt <= 0 || wt != wt1 && wt != wt2 && wt != wt3 && wt != wt4 || levelData.Time <= 0) {
             user.sendCharacterStat(Request.Excl, 0);
+            return;
+        }
+
+        long duration = System.currentTimeMillis() + 1000 * levelData.Time;
+        user.getSecondaryStat().setStat(CharacterTemporaryStat.Booster, new SecondaryStatOption(1, skill.getSkillID(), duration));
+        user.sendCharacterStat(Request.Excl, 0);
+        user.sendTemporaryStatSet(CharacterTemporaryStat.getMask(CharacterTemporaryStat.Booster));
+        if (user.getField() != null) {
+            user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
         }
     }
 
@@ -230,7 +278,7 @@ public class UserSkill {
         String character = user.getCharacterName();
         int fieldID = user.getField().getFieldID();
         short job = user.getCharacter().getCharacterStat().getJob();
-        String format = new String();
+        String format = "";
         if (SkillAccessor.isTeleportSkill(skillID)) {
             if (JobAccessor.getJobCategory(job) == JobCategory.WIZARD) {
                 int skillLevel = SkillAccessor.getTeleportSkillLevel(user.getCharacter());
@@ -284,10 +332,32 @@ public class UserSkill {
         }
 
         switch (skill.getSkillID()) {
+            // BEGINNER
+            case Beginner.KROKO_EVENT_RIDING: {
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.RideVehicle));
+                TwoStateTemporaryStat ts = (TwoStateTemporaryStat) user.getSecondaryStat().temporaryStats[TSIndex.RIDE_VEHICLE];
+                ts.setReason(skill.getSkillID());
+                ts.setValue(1932007);
+                ts.setLastUpdated(System.currentTimeMillis() + 21000);
+                break;
+            }
             // WARRIOR
             case Fighter.PowerGuard:
             case Page.PowerGuard:
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.PowerGuard, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            case Crusader.ComboAttack:
+                SecondaryStatOption option = new SecondaryStatOption(1, skill.getSkillID(), duration);
+                option.setModOption(level.X);
+
+                Pointer<SkillEntry> adv = new Pointer<>();
+                int advSLV;
+                if (slv >= 30
+                && (advSLV = SkillInfo.getInstance().getSkillLevel(user.getCharacter(), Hero.AdvancedCombo, adv)) != 0) {
+                    SkillLevelData sd = adv.get().getLevelData(advSLV);
+                    option.setModOption(sd.X | (sd.Prop << 16));
+                }
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ComboCounter, option));
                 break;
             case Spearman.HyperBody:
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxHP, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
@@ -309,6 +379,17 @@ public class UserSkill {
             case Rogue.DarkSight:
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkSight, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
+            // PIRATE
+            case Viper.WIND_BOOSTER: {
+                PartyBoosterStat ts = (PartyBoosterStat) user.getSecondaryStat().temporaryStats[TSIndex.PARTY_BOOSTER];
+                ts.setValue(level.X);
+                ts.setReason(skill.getSkillID());
+                ts.setLastUpdated(duration);
+                ts.setExpireTerm(level.Time);
+                ts.setCurrentTime(System.currentTimeMillis());
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.PartyBooster));
+                break;
+            }
         }
 
         return flag;

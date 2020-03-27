@@ -17,11 +17,13 @@
  */
 package network;
 
+import game.user.ClientSocket;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
+import network.security.SocketKey;
+
 import java.util.Arrays;
-import network.security.XORCrypter;
 
 /**
  * The server-end networking encoder. 
@@ -30,10 +32,10 @@ import network.security.XORCrypter;
  * @author Eric
  */
 public class SocketEncoder extends MessageToByteEncoder<byte[]> {
-    private final XORCrypter cipher;
+    private final SocketKey key;
     
-    public SocketEncoder(XORCrypter cipher) {
-        this.cipher = cipher;
+    public SocketEncoder(SocketKey key) {
+        this.key = key;
     }
     
     @Override
@@ -43,7 +45,7 @@ public class SocketEncoder extends MessageToByteEncoder<byte[]> {
         out.writeBytes(Arrays.copyOf(oPacket, oPacket.length));
     }
     
-    public final XORCrypter getCipher() {
-        return cipher;
+    public final SocketKey getKey() {
+        return key;
     }
 }

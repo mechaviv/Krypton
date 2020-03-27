@@ -206,6 +206,7 @@ public class Mob extends Creature {
 
                                 int flag = user.incEXP((int) incEXP, false);
                                 if (flag != 0) {
+                                    user.sendIncExpMessage(true, (int) incEXP, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0);
                                     user.sendCharacterStat(Request.None, flag);
                                 }
                             } finally {

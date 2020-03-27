@@ -1,1 +1,1 @@
-self.askYesNo("Would you like to skip the tutorials and head straight to Lith Harbor?")
+#self.askYesNo("Would you like to skip the tutorials and head straight to Lith Harbor?")

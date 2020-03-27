@@ -1,0 +1,1 @@
+self.registerTransferField(130010000, "east00")

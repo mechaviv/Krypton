@@ -151,9 +151,9 @@ public class CharacterTemporaryStat {
             DashSpeed        = 123,
             DashJump        = 124,
             RideVehicle        = 125,
-            NULL_CTS_126       = 126,
-            NULL_CTS_127       = 127,
-            NULL_CTS_128       = 128,
+            PartyBooster        = 126,
+            GuidedBullet       = 127,
+            Undead       = 128,
             SummonBomb  = 129,
             COUNT_PLUS1 = 130,
             NONE        = 0xFFFFFFFF//0xFFFFFFFF

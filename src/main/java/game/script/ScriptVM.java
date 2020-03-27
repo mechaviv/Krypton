@@ -24,6 +24,7 @@ import game.field.portal.Portal;
 import game.user.User;
 import java.awt.Point;
 import java.io.*;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
@@ -173,15 +174,21 @@ public class ScriptVM {
                                 return true;
                             } else {
                                 String[] splitted = scriptName.split("/");
+                                Logger.logReport("Not found %s", Arrays.toString(splitted));
+                                String msg1 = null, msg2 = null;
                                 if (splitted.length == 1) {
-                                    target.sendSystemMessage(String.format("%S script {%s} has not yet been implemented.", "Undefined Script Type", splitted[splitted.length - 1]));
-                                    Logger.logError("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, "Undefined");
-                                } else {
+                                    msg1 = String.format("%S script {%s} has not yet been implemented.", "Undefined Script Type", splitted[splitted.length - 1]);
+                                    msg2 = String.format("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, "Undefined");
+                                } else if (splitted.length == 2){
                                     if (splitted[splitted.length - 2].equals("quests")) return false;
-
-                                    target.sendSystemMessage(String.format("%S script {%s} has not yet been implemented.", splitted[splitted.length - 2], splitted[splitted.length - 1]));
-                                    Logger.logError("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, splitted[splitted.length - 2]);
+                                    msg1 = String.format("%S script {%s} has not yet been implemented.", splitted[splitted.length - 2], splitted[splitted.length - 1]);
+                                    msg2 = String.format("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, splitted[splitted.length - 2]);
+                                } else if (splitted.length == 3) {
+                                    msg1 = String.format("%S/%S script {%s} has not yet been implemented.", splitted[splitted.length - 3], splitted[splitted.length - 2], splitted[splitted.length - 1]);
+                                    msg2 = String.format("inexistent script '%s' (TemplateID: %d) (Type: %S)", splitted[splitted.length - 1], s != null ? s.getTemplateID() : -1, splitted[splitted.length - 2]);
                                 }
+                                if (msg1 != null) target.sendSystemMessage(msg1);
+                                if (msg2 != null) Logger.logError(msg2);
                             }
                         }
                     } finally {

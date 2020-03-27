@@ -9,7 +9,7 @@ import util.FileTime;
 public class QuestItemOption {
     private boolean named;
     private int period;
-    private int jobFlag;
+    private long jobFlag;
     private int gender;
     private int probRate;
     private int variation;
@@ -23,7 +23,7 @@ public class QuestItemOption {
         this.period = period;
     }
 
-    public int getJobFlag() {
+    public long getJobFlag() {
         return jobFlag;
     }
 

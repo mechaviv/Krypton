@@ -23,6 +23,7 @@ import common.item.ItemAccessor;
 import common.user.CharacterData;
 import common.user.CharacterStat.CharacterStatType;
 import game.user.skill.Skills.*;
+import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.BasicStat;
 import java.util.List;
@@ -168,32 +169,6 @@ public class SkillAccessor {
             }
         }
         return 0;
-    }
-    
-    public static boolean isCorrectItemForBooster(int weaponType, int job) {
-        switch (JobAccessor.findJob(job)) {
-            case FIGHTER:
-                return weaponType == 30 || weaponType == 31 || weaponType == 40 || weaponType == 41;
-            case Page:
-                return weaponType == 30 || weaponType == 32 || weaponType == 40 || weaponType == 42;
-            case Spearman:
-                return weaponType == 43 || weaponType == 44;
-            case WIZARD_FIRE_POISON:
-            case WIZARD_THUNDER_COLD:
-            case CLERIC:
-                return weaponType == 37 || weaponType == 38;
-            case HUNTER:
-                return weaponType == 45;
-            case CROSSBOWMAN:
-                return weaponType == 46;
-            case ASSASSIN:
-                return weaponType == 47;
-            case THIEF:
-                return weaponType == 33;
-            default: {
-                return false;
-            }
-        }
     }
     
     public static int decHPVal(int job) {
@@ -493,8 +468,11 @@ public class SkillAccessor {
     
     public static boolean isSelfStatChange(int skillID) {
         switch (skillID) {
+            case Beginner.KROKO_EVENT_RIDING:
+
             case Warrior.IronBody:
             case Fighter.PowerGuard:
+            case Crusader.ComboAttack:
             case Page.PowerGuard:
             case Magician.MagicGuard:
             case Magician.MagicArmor:
@@ -525,15 +503,30 @@ public class SkillAccessor {
     public static boolean isWeaponBooster(int skillID) {
         switch (skillID) {
             case Fighter.WeaponBooster:
-            case Fighter.WeaponBoosterEx:
             case Page.WeaponBooster:
-            case Page.WeaponBoosterEx:
             case Spearman.WeaponBooster:
-            case Spearman.WeaponBoosterEx:
+            case Mage1.MAGIC_BOOSTER:
+            case Mage2.MAGIC_BOOSTER:
             case Hunter.BowBooster:
             case Crossbowman.CrossbowBooster:
             case Assassin.JavelinBooster:
             case Thief.DaggerBooster:
+            case Dual1.DUAL_BOOSTER:
+            case Gunslinger.GUN_BOOSTER:
+            case InFighter.KNUCKLE_BOOSTER:
+
+            case SoulMaster.SWORD_BOOSTER:
+            case FlameWizard.MAGIC_BOOSTER:
+            case WindBreaker.BOW_BOOSTER:
+            case NightWalker.JAVELIN_BOOSTER:
+            case Striker.KNUCKLE_BOOSTER:
+
+            case Aran.POLEARM_BOOSTER:
+            case Evan.MAGIC_BOOSTER:
+
+            case BMage.STAFF_BOOSTER:
+            case WildHunter.CROSSBOW_BOOSTER:
+            case Mechanic.BOOSTER:
                 return true;
             default: {
                 return false;
@@ -552,6 +545,7 @@ public class SkillAccessor {
             case Cleric.Bless:
             case Assassin.Haste:
             case Thief.Haste:
+            case Viper.WIND_BOOSTER:
                 return true;
             default: {
                 return false;
@@ -682,6 +676,43 @@ public class SkillAccessor {
         if (skillEntry == null) {
             return false;
         }
-        return false;//skillEntry.isFinalAttack();
+        return skillEntry.isFinalAttack();
     }
+
+    public int getComboDamageParam(CharacterData cd, int skillID, int comboCounter) {
+        if (comboCounter < 1) {
+            return 0;
+        }
+        int job = cd.getCharacterStat().getJob();
+        Pointer<SkillEntry> coma = new Pointer<>();
+        Pointer<SkillEntry> hardSkin = new Pointer<>();
+
+        int comaSLV = SkillInfo.getInstance().getSkillLevel(cd, 11111001 + (job / 1000 != 1 ? -9999999 : 0) + 3, coma);
+        int hardSkinSLV = SkillInfo.getInstance().getSkillLevel(cd, 11110005 + (job / 1000 != 1 ? -9990002 : 0) + 1, hardSkin);
+
+        if (comaSLV <= 0) {
+            return 0;
+        }
+
+        int damagePerCombo = coma.get().getLevelData(comaSLV).DIPr;
+        int x = coma.get().getLevelData(comaSLV).X;
+        if (hardSkinSLV > 0) {
+            SkillLevelData sd = hardSkin.get().getLevelData(hardSkinSLV);
+            damagePerCombo += sd.DIPr;
+            x = sd.X;
+        }
+        if (comboCounter >= x) {
+            comboCounter = x;
+        }
+        if (skillID == Crusader.Coma || skillID == Crusader.Panic || skillID == SoulMaster.COMA_SWORD || skillID == SoulMaster.PANIC_SWORD) {
+            Pointer<SkillEntry> addDamageSkill = new Pointer<>();
+            int slv = SkillInfo.getInstance().getSkillLevel(cd, skillID, addDamageSkill);
+            if (slv <= 0) {
+                return 0;
+            }
+            damagePerCombo += addDamageSkill.get().getLevelData(slv).Y;
+        }
+        return comboCounter * damagePerCombo + 100;
+    }
+
 }

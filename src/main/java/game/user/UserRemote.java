@@ -75,6 +75,7 @@ public class UserRemote {
         OutPacket packet = new OutPacket(LoopbackPacket.UserTemporaryStatSet);
         packet.encodeInt(characterID);
         ss.encodeForRemote(packet, flag);
+        packet.encodeShort(0);// delay
         return packet;
     }
 

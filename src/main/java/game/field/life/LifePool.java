@@ -38,6 +38,7 @@ import game.user.User;
 import game.user.item.MobEntry;
 import game.user.item.MobSummonItem;
 import game.user.skill.SkillAccessor;
+import game.user.skill.Skills;
 import game.user.skill.Skills.Assassin;
 import game.user.skill.Skills.Thief;
 import java.awt.Point;
@@ -48,6 +49,7 @@ import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
 import network.packet.ClientPacket;
 import network.packet.InPacket;
+import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 import util.Logger;
 import util.Pointer;
@@ -852,15 +854,39 @@ public class LifePool {
                         }
                     }
                 }
-            
-                OutPacket packet = new OutPacket(type);
+
+                int header = LoopbackPacket.UserMeleeAttack;
+                switch (type) {
+                    case ClientPacket.UserMagicAttack:
+                        header = LoopbackPacket.UserMagicAttack;
+                        break;
+                    case ClientPacket.UserShootAttack:
+                        header = LoopbackPacket.UserShootAttack;
+                        break;
+                    case ClientPacket.UserBodyAttack:
+                        header = LoopbackPacket.UserBodyAttack;
+                        break;
+                }
+                OutPacket packet = new OutPacket(header);
                 packet.encodeInt(user.getCharacterID());
                 packet.encodeByte(damagePerMob | 16 * mobCount);
+                packet.encodeByte(user.getLevel());
                 packet.encodeByte(slv);
                 if (slv > 0) {
                     packet.encodeInt(skillID);
                 }
-                packet.encodeByte(action);
+                if (skillID == Skills.Sniper.STRAFE) {
+                    int passiveSLV = 0;
+                    int passiveSkill = 0;
+                    packet.encodeByte(passiveSLV);
+                    if (passiveSLV > 0) {
+                        packet.encodeInt(passiveSkill);
+                    }
+                }
+
+                boolean serialAttack = false;
+                packet.encodeBool(serialAttack);
+                packet.encodeShort(action);
                 packet.encodeByte(speedDegree);
                 packet.encodeByte(SkillAccessor.getWeaponMastery(user.getCharacter(), weaponItemID, attackType, null));
                 packet.encodeInt(bulletItemID);
@@ -868,11 +894,11 @@ public class LifePool {
                     packet.encodeInt(info.mobID);
                     packet.encodeByte(info.hitAction);
                     for (int i = 0; i < damagePerMob; i++) {
+                        packet.encodeByte(0);// bCritical
                         packet.encodeShort(info.damageCli.get(i));
                     }
                 }
                 getField().splitSendPacket(user.getSplit(), packet, user);
-            
                 Pointer<Integer> prop = new Pointer<>(0);
                 Pointer<Integer> percent = new Pointer<>(0);
                 int mpSteal = 0;

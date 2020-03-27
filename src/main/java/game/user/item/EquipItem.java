@@ -24,15 +24,17 @@ public class EquipItem {
 
     private int itemID;
     private String itemName;
-    private int reqSTR, reqDEX, reqINT, reqLUK, reqPOP, reqJob, reqLevel;
+    private int reqSTR, reqDEX, reqINT, reqLUK, reqPOP, reqJob, reqLevel;// reqMobLevel ?
     private int sellPrice;// price
     private boolean cash;
     private short incSTR, incDEX, incINT, incLUK;
-    private short incMaxHP, incMaxMP;// incMHP, incMMP
+    private short incMaxHP, incMaxMP, incMaxHPr, incMaxMPr;// incMHP, incMMP
     private short incPAD, incMAD, incPDD, incMDD;
-    private short incACC, incEVA, incCraft, incSpeed, incJump, incSwim;
+    private short incACC, incEVA, incCraft, incSpeed, incJump, incSwim, incFatigue;
     private int knockback, attackSpeed;
+    private int setItemID;
     private byte tuc;//Total Upgrade Count
+    private byte iucMax;
     private boolean quest;
     private boolean only;
     private boolean timeLimited;
@@ -299,5 +301,45 @@ public class EquipItem {
 
     public void setTimeLimited(boolean timeLimited) {
         this.timeLimited = timeLimited;
+    }
+
+    public short getIncMaxHPr() {
+        return incMaxHPr;
+    }
+
+    public void setIncMaxHPr(short incMaxHPr) {
+        this.incMaxHPr = incMaxHPr;
+    }
+
+    public short getIncMaxMPr() {
+        return incMaxMPr;
+    }
+
+    public void setIncMaxMPr(short incMaxMPr) {
+        this.incMaxMPr = incMaxMPr;
+    }
+
+    public short getIncFatigue() {
+        return incFatigue;
+    }
+
+    public void setIncFatigue(short incFatigue) {
+        this.incFatigue = incFatigue;
+    }
+
+    public byte getIucMax() {
+        return iucMax;
+    }
+
+    public void setIucMax(byte iucMax) {
+        this.iucMax = iucMax;
+    }
+
+    public int getSetItemID() {
+        return setItemID;
+    }
+
+    public void setSetItemID(int setItemID) {
+        this.setItemID = setItemID;
     }
 }

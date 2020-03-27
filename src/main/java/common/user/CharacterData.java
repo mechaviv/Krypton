@@ -639,6 +639,14 @@ public class CharacterData {
         return questRecord.remove(questID) != null;
     }
 
+    public boolean isEquippedDualDagger() {
+        ItemSlotBase main = equipped.get(11);
+        ItemSlotBase sub = equipped2.get(10);
+        if (main != null && sub != null) {
+            return ItemAccessor.getWeaponType(main.getItemID()) == ItemAccessor.WeaponTypeFlag.DAGGER && ItemAccessor.getWeaponType(sub.getItemID()) == ItemAccessor.WeaponTypeFlag.SUB_DAGGER;
+        }
+        return false;
+    }
     public List<ItemSlotBase> getDragonEquipped() {
         return dragonEquipped;
     }

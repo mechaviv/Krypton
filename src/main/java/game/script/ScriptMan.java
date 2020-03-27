@@ -26,12 +26,15 @@ import network.packet.OutPacket;
  */
 public class ScriptMan {
 
-    public static OutPacket onSay(byte speakerTypeID, int speakerTemplateID, String text, boolean prev, boolean next) {
+    public static OutPacket onSay(byte speakerTypeID, int speakerTemplateID, int overrideSpeakerID, int param, String text, boolean prev, boolean next) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.Say);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
+        if ((param & ParamType.OverrideSpeakerID) != 0) {
+            packet.encodeInt(overrideSpeakerID);
+        }
         packet.encodeString(text);
         packet.encodeBool(prev);
         packet.encodeBool(next);

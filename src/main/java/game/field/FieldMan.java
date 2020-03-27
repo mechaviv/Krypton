@@ -138,8 +138,10 @@ public class FieldMan {
             field.setClock(WzUtil.getBoolean(info.getNode("clock"), false));
             field.setTown(WzUtil.getBoolean(info.getNode("town"), false));
             field.setSwim(WzUtil.getBoolean(info.getNode("swim"), false));
-
             field.getSpace2D().setFieldAttr(WzUtil.getFloat(info.getNode("fs"), 1.0f), field.isSwim());
+            field.setUserEnter(WzUtil.getString(info.getNode("onUserEnter"), null));
+            field.setFirstUserEnter(WzUtil.getString(info.getNode("onFirstUserEnter"), null));
+
         }
 
         restoreFoothold(field, mapData.getNode("foothold"), mapData.getNode("ladderRope"), info);

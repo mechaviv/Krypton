@@ -54,7 +54,7 @@ import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
-import network.security.XORCrypter;
+import network.security.SocketKey;
 import util.Logger;
 import util.Pointer;
 import util.Rand32;
@@ -68,11 +68,10 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     private static final int MAX_CHARACTERS = 15;
     
     private final Channel channel;
+    private SocketKey key;
     private SocketDecoder decoder;
     private SocketEncoder encoder;
     private final Lock lockSend;
-    private XORCrypter cipher;
-    
     private int loginState;
     private int failCount;
     private int accountID;
@@ -85,11 +84,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     private int birthDate;//Doesn't exist, this is KSSN instead.
     private boolean closePosted;
     private final Map<Integer, String> characters;
-    
     private int localSocketSN;
     private int ssn;
-    private int seqSnd;
-    private int seqRcv;
     private int ipBlockType;
     private long aliveReqSent;
     private long lastAliveAck;
@@ -123,8 +119,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        encoder = new SocketEncoder(cipher);
-        decoder = new SocketDecoder(cipher);
+        encoder = new SocketEncoder(key);
+        decoder = new SocketDecoder(key);
         channel.pipeline().addBefore("ClientSocket", "AliveAck", new IdleStateHandler(20, 20, 0));
         channel.pipeline().addBefore("ClientSocket", "SocketEncoder", encoder);
         channel.pipeline().addBefore("ClientSocket", "SocketDecoder", decoder);
@@ -133,8 +129,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
         packet.encodeShort(14);
         packet.encodeShort(OrionConfig.CLIENT_VER);
         packet.encodeString(OrionConfig.CLIENT_PATCH);
-        packet.encodeInt(cipher.getSeqRcv());
-        packet.encodeInt(cipher.getSeqSnd());
+        packet.encodeInt(key.getSeqRcv());
+        packet.encodeInt(key.getSeqSnd());
         packet.encodeByte(OrionConfig.GAME_LOCALE);
         channel.writeAndFlush(Unpooled.wrappedBuffer(packet.toArray()));
         super.channelActive(ctx);
@@ -225,9 +221,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
     
     public void initSequence() {
-        this.seqRcv = Rand32.getInstance().random().intValue();
-        this.seqSnd = Rand32.getInstance().random().intValue();
-        this.cipher = new XORCrypter(this.seqSnd, this.seqRcv);
+        key = new SocketKey(Rand32.getInstance().random().intValue(), Rand32.getInstance().random().intValue());
     }
     
     public boolean isAdmin() {
@@ -399,31 +393,27 @@ public class ClientSocket extends SimpleChannelInboundHandler {
                 case RaceSelect.NORMAL:
                     level = 1;
                     job = JobAccessor.NOVICE.getJob();
-                    switch (selectedSubJob) {
-                        default:
-                            map = 10000;
-                            break;
-                    }
+                    map = 10000;
                     break;
                 case RaceSelect.CYGNUS:
                     level = 1;
                     job = JobAccessor.NOBLESSE.getJob();
-                    map = 0;
+                    map = 130030000;
                     break;
                 case RaceSelect.ARAN:
                     level = 1;
                     job = JobAccessor.LEGEND.getJob();
-                    map = 0;
+                    map = 914000000;
                     break;
                 case RaceSelect.EVAN:
                     level = 1;
                     job = JobAccessor.EVAN_JR.getJob();
-                    map = 0;
+                    map = 900010000;
                     break;
                 case RaceSelect.RESISTANCE:
                     level = 1;
                     job = JobAccessor.CITIZEN.getJob();
-                    map = 0;
+                    map = 931000000;
                     break;
                 default:
                     level = 1;
@@ -642,8 +632,8 @@ public class ClientSocket extends SimpleChannelInboundHandler {
         try {
             if (!this.closePosted || force) {
                 List<byte[]> buff = new LinkedList<>();
-                packet.makeBufferList(buff, OrionConfig.CLIENT_VER, cipher);
-                cipher.updateSeqSnd();
+                packet.makeBufferList(buff, OrionConfig.CLIENT_VER, key.getSeqSnd());
+                key.updateSend();
                 sendPacket(buff);
             }
         } finally {

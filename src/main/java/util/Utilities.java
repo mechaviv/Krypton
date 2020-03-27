@@ -177,4 +177,9 @@ public class Utilities {
         }
         tempList.clear();
     }
+
+    public static int timeGetTime() {
+        return (int) (System.nanoTime() / 1000000);
+    }
+
 }

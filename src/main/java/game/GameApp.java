@@ -37,6 +37,7 @@ import game.party.PartyMan;
 import game.script.ScriptVM;
 import game.user.User;
 import game.user.item.ItemInfo;
+import game.user.item.ItemOptionInfo;
 import game.user.quest.QuestMan;
 import game.user.skill.SkillInfo;
 import network.database.CommonDB;
@@ -240,6 +241,7 @@ public class GameApp {
         // Load Items and Equipment
         time = System.currentTimeMillis();
         ItemInfo.load();
+        ItemOptionInfo.iterateItemOptionInfo();
         Logger.logReport("Loaded Item Info in " + ((System.currentTimeMillis() - time) / 1000.0) + " seconds.");
 
         // Load Quests

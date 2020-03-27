@@ -26,28 +26,20 @@ import util.FileTime;
  */
 public class ItemSlotEquip extends ItemSlotBase {
     private long sn;
-
-    // TODO: Getter/Setters
-    public byte ruc;//Remaining Upgrade Count
-    public byte cuc;//Current Upgrade Count
-    public short iSTR;
-    public short iDEX;
-    public short iINT;
-    public short iLUK;
-    public short iMaxHP;
-    public short iMaxMP;
-    public short iPAD;//Physical Attack Damage
-    public short iMAD;//Magic Attack Damage
-    public short iPDD;//Physical Defense
-    public short iMDD;//Magic Defense
-    public short iACC;//Accuracy Rate
-    public short iEVA;//Evasion
-    public short iCraft;//Hands
-    public short iSpeed;
-    public short iJump;
+    public String title;
+    public FileTime equipped;
+    public int prevBonusExpRate;
+    public ItemSlotEquipBase item;
+    public ItemSlotEquipOpt option;
 
     public ItemSlotEquip(int itemID) {
         super(itemID);
+        this.item = new ItemSlotEquipBase();
+        this.option = new ItemSlotEquipOpt();
+        this.title = "";
+        this.equipped = FileTime.DATE_1900;
+        this.prevBonusExpRate = -1;
+        this.item.durability = -1;
     }
 
     @Override
@@ -65,13 +57,6 @@ public class ItemSlotEquip extends ItemSlotBase {
         return ItemSlotType.Equip;
     }
 
-    public boolean isSameEquipItem(ItemSlotEquip src) {
-        return this.ruc == src.ruc && this.cuc == src.cuc && this.iSTR == src.iSTR && this.iDEX == src.iDEX && this.iINT == src.iINT && this.iLUK == src.iLUK
-                && this.iMaxHP == src.iMaxHP && this.iMaxMP == src.iMaxMP && this.iPAD == src.iPAD && this.iMAD == src.iMAD && this.iPDD == src.iPDD
-                && this.iMDD == src.iMDD && this.iACC == src.iACC && this.iEVA == src.iEVA && this.iCraft == src.iCraft && this.iSpeed == src.iSpeed
-                && this.iJump == src.iJump;
-    }
-
     @Override
     public ItemSlotBase makeClone() {
         ItemSlotEquip item = (ItemSlotEquip) createItem(ItemSlotType.Equip);
@@ -80,69 +65,58 @@ public class ItemSlotEquip extends ItemSlotBase {
         item.setItemSN(this.getSN());
         item.setDateExpire(this.getDateExpire());
 
-        // TODO: Apply and use setters with this class.
-        item.ruc = this.ruc;
-        item.cuc = this.cuc;
-        item.iSTR = this.iSTR;
-        item.iDEX = this.iDEX;
-        item.iINT = this.iINT;
-        item.iLUK = this.iLUK;
-        item.iMaxHP = this.iMaxHP;
-        item.iMaxMP = this.iMaxMP;
-        item.iPAD = this.iPAD;
-        item.iMAD = this.iMAD;
-        item.iPDD = this.iPDD;
-        item.iMDD = this.iMDD;
-        item.iACC = this.iACC;
-        item.iEVA = this.iEVA;
-        item.iCraft = this.iCraft;
-        item.iSpeed = this.iSpeed;
-        item.iJump = this.iJump;
-
+        item.item = this.item.makeClone();
+        item.option = this.option.makeClone();
         return item;
+    }
+
+    public boolean isSameEquipItem(ItemSlotEquip src) {
+        return this.item.isSameEquipItem(src.item) && this.option.isSameEquipItem(src.option);
     }
 
     @Override
     public void rawEncode(OutPacket packet) {
         packet.encodeByte(ItemSlotType.Equip);
         super.rawEncode(packet);
-        packet.encodeByte(ruc);
-        packet.encodeByte(cuc);
-        packet.encodeShort(iSTR);
-        packet.encodeShort(iDEX);
-        packet.encodeShort(iINT);
-        packet.encodeShort(iLUK);
-        packet.encodeShort(iMaxHP);
-        packet.encodeShort(iMaxMP);
-        packet.encodeShort(iPAD);
-        packet.encodeShort(iMAD);
-        packet.encodeShort(iPDD);
-        packet.encodeShort(iMDD);
-        packet.encodeShort(iACC);
-        packet.encodeShort(iEVA);
-        packet.encodeShort(iCraft);
-        packet.encodeShort(iSpeed);
-        packet.encodeShort(iJump);
+        packet.encodeByte(item.ruc);
+        packet.encodeByte(item.cuc);
+        packet.encodeShort(item.iSTR);
+        packet.encodeShort(item.iDEX);
+        packet.encodeShort(item.iINT);
+        packet.encodeShort(item.iLUK);
+        packet.encodeShort(item.iMaxHP);
+        packet.encodeShort(item.iMaxMP);
+        packet.encodeShort(item.iPAD);
+        packet.encodeShort(item.iMAD);
+        packet.encodeShort(item.iPDD);
+        packet.encodeShort(item.iMDD);
+        packet.encodeShort(item.iACC);
+        packet.encodeShort(item.iEVA);
+        packet.encodeShort(item.iCraft);
+        packet.encodeShort(item.iSpeed);
+        packet.encodeShort(item.iJump);
 
-        packet.encodeString("");
-        packet.encodeShort(0);
-        packet.encodeByte(0);
-        packet.encodeByte(0);
-        packet.encodeInt(0);
-        packet.encodeInt(-1);
-        packet.encodeInt(0);
-        // GW_ItemSlotEquipOpt::GW_ItemSlotEquipOpt
-        packet.encodeByte(0);// nGrade
-        packet.encodeByte(0);// CHUC
-        for (int i = 0; i < 5; i++) {// opt 1-3 & socket 1-2
-            packet.encodeShort(0);
-        }
-        // end
+        packet.encodeString(title);
+        packet.encodeShort(item.attribute);
+        packet.encodeByte(item.levelUpType);
+        packet.encodeByte(item.level);
+        packet.encodeInt(item.exp);
+        packet.encodeInt(item.durability);
+        packet.encodeInt(item.iuc);
+
+        packet.encodeByte(option.grade);
+        packet.encodeByte(option.chuc);
+        packet.encodeShort(option.option1);
+        packet.encodeShort(option.option2);
+        packet.encodeShort(option.option3);
+        packet.encodeShort(0);// socket 1
+        packet.encodeShort(0);// socket 2
+
         if (getCashItemSN() == 0) {
             packet.encodeLong(getSN());
         }
-        packet.encodeFileTime(FileTime.START);
-        packet.encodeInt(-1);
+        packet.encodeFileTime(equipped);
+        packet.encodeInt(prevBonusExpRate);
     }
 
     @Override
@@ -152,5 +126,98 @@ public class ItemSlotEquip extends ItemSlotBase {
 
     public void setItemSN(long sn) {
         this.sn = sn;
+    }
+
+    public void setItemTitle(String title) {
+        this.title = title;
+    }
+
+    // Attributes
+    public short getItemAttribute() {
+        return item.attribute;
+    }
+
+    public boolean isProtectedItem() {
+        return (item.attribute & 0x1) != 0;
+    }
+
+    public boolean isPreventSlipItem() {
+        return (item.attribute & 0x2) != 0;
+    }
+
+    public boolean isSupportWarmItem() {
+        return (item.attribute & 0x4) != 0;
+    }
+
+    public boolean isBindedItem() {
+        return (item.attribute & 0x8) != 0;
+    }
+
+    public boolean isPossibleTradingItem() {
+        return (item.attribute & 0x10) != 0;
+    }
+
+    public void setItemAttribute(short newAttribute) {
+        this.item.attribute = newAttribute;
+    }
+
+    public void resetPossibleTrading() {
+        this.item.attribute &= 0xFFEF;
+    }
+
+    public void resetProtected() {
+        this.item.attribute &= 0xFFFE;
+    }
+
+    public void setProtected() {
+        this.item.attribute |= 0x1;
+    }
+
+    public void setPreventSlip() {
+        this.item.attribute |= 0x2;
+    }
+
+    public void setWarmSupport() {
+        this.item.attribute |= 0x4;
+    }
+
+    public void setBinded() {
+        this.item.attribute |= 0x8;
+    }
+
+    public void setPossibleTrading() {
+        this.item.attribute |= 0x10;
+    }
+    // IUC Attributes (Hammer)
+    public int getIUCAdd() {
+        return (this.item.iuc >> 8) & 0xFF;
+    }
+
+    public int getIUCValue() {
+        return this.item.iuc;
+    }
+
+    public void setIUCAdd(int add) {
+        this.item.iuc = (add << 8) + (this.item.iuc & 0xFFFF00FF);
+    }
+
+    public void setIUCValue(int value) {
+        this.item.iuc = value + (this.item.iuc & 0xFFFFFF00);
+    }
+    // Potential Attributes
+    public int getItemGrade() {
+        return this.option.grade;
+    }
+
+    public boolean isReleased() {
+        return (option.grade & 0x4) != 0;
+    }
+
+    public void setReleased(boolean released) {
+        if (released) {
+            this.option.grade |= 0x4;
+        } else {
+            this.option.grade = 0;
+        }
     }
 }

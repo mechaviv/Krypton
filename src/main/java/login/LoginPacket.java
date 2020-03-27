@@ -116,7 +116,7 @@ public class LoginPacket {
             }
         }
         packet.encodeByte(2);// login opt
-        packet.encodeInt(Math.max(3, characters.size()));
+        packet.encodeInt(Math.max(15, characters.size()));
         packet.encodeInt(0);// buy char count
         return packet;
     }

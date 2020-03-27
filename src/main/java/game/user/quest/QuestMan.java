@@ -469,6 +469,8 @@ public class QuestMan {
     }
 
     public boolean loadAct() {
+        startAct.clear();
+        completeAct.clear();
         WzPackage questPackage = new WzFileSystem().init("Quest").getPackage();
 
         WzProperty act = questPackage.getItem("Act.img");
@@ -777,7 +779,7 @@ public class QuestMan {
                     QuestItemOption option = new QuestItemOption();
                     option.setNamed(WzUtil.getInt32(item.getNode("name"), 0) != 0);
                     option.setPeriod(WzUtil.getInt32(item.getNode("period"), 0));
-                    option.setJobFlag(WzUtil.getInt32(item.getNode("job"), 0x1F));
+                    option.setJobFlag(WzUtil.getInt32(item.getNode("job"), 0xFFFFFFFF));
                     option.setGender(WzUtil.getInt32(item.getNode("gender"), 2));
                     option.setProbRate(WzUtil.getInt32(item.getNode("prop"), 0));
                     option.setVariation(WzUtil.getInt32(item.getNode("var"), 0));
