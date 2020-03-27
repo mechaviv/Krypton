@@ -18,6 +18,7 @@
 package game.field.life.mob;
 
 import game.field.MovePath;
+import game.user.stat.Flag;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 
@@ -43,17 +44,29 @@ public class MobPool {
         return packet;
     }
     
-    public static OutPacket onStatSet(Mob mob, int flagSet, int skillID, short delay) {
+    public static OutPacket onStatSet(Mob mob, Flag flagSet, short delay) {
         OutPacket packet = new OutPacket(LoopbackPacket.MobStatSet);
         packet.encodeInt(mob.getGameObjectID());
         mob.getMobStat().encodeTemporary(packet, flagSet);
-        packet.encodeInt(skillID);
-        if (skillID != 0) {
-            packet.encodeShort(delay);
+        packet.encodeShort(delay);
+        packet.encodeByte(0);
+        if (MobStats.isMovementAffectingStat(flagSet)) {
+            packet.encodeByte(0);
         }
         return packet;
     }
-    
+
+    public static OutPacket onStatReset(Mob mob, Flag flagReset) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobStatReset);
+        packet.encodeInt(mob.getGameObjectID());
+        packet.encodeBuffer(flagReset.toByteArray());
+        packet.encodeByte(0);
+        if (MobStats.isMovementAffectingStat(flagReset)) {
+            packet.encodeByte(0);
+        }
+        return packet;
+    }
+
     public static OutPacket onCtrlAck(int mobID, short mobCtrlSN, boolean nextAttackPossible, int mp) {
         OutPacket packet = new OutPacket(LoopbackPacket.MobCtrlAck);
         packet.encodeInt(mobID);

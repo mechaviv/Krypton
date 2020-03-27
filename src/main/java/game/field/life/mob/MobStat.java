@@ -23,6 +23,9 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import game.user.stat.CharacterTemporaryStat;
+import game.user.stat.Flag;
 import network.packet.OutPacket;
 
 /**
@@ -37,6 +40,7 @@ public class MobStat {
     
     private final Map<Integer, MobStatOption> stats;
     private final List<Integer> damagedElemAttr;
+    private final List<BurnedInfo> burnedInfo;
     private byte level;
     private short pad;
     private short pdd;
@@ -45,10 +49,16 @@ public class MobStat {
     private short acc;
     private short eva;
     private byte speed;
-    
+    private double fs;
+    private boolean invincible;
+    private boolean disable;
+    private boolean cannotEvade;
+    private int counterProb;
+
     public MobStat() {
         this.stats = new LinkedHashMap<>();
         this.damagedElemAttr = new ArrayList<>();
+        this.burnedInfo = new ArrayList<>();
     }
     
     public void adjustDamagedElemAttr(int skillID) {
@@ -68,15 +78,39 @@ public class MobStat {
         this.stats.clear();
     }
     
-    public void encodeTemporary(OutPacket packet, int flag) {
-        packet.encodeInt(flag);
-        for (int cts : stats.keySet()) {
-            if ((cts & flag) != 0) {
-                MobStatOption opt = getStat(cts);
-                packet.encodeShort(opt.getOption());
-                packet.encodeInt(opt.getReason());
-                packet.encodeShort((int) ((opt.getDuration() - System.currentTimeMillis()) / 500));
+    public void encodeTemporary(OutPacket packet, Flag flag) {
+        Flag toSend = new Flag(Flag.INT_128);
+        long cur = System.currentTimeMillis();
+        for (int ms : stats.keySet()) {
+            if (flag.operatorAND(MobStats.getMask(ms)).isSet() && getStatOption(ms) != 0) {
+                toSend.performOR(CharacterTemporaryStat.getMask(ms));
             }
+        }
+        MobStatHelper.encodeTemporaryStats(this, packet, cur, toSend);
+
+        if (toSend.operatorAND(MobStats.getMask(MobStats.Burned)).isSet()) {
+            packet.encodeInt(burnedInfo.size());
+            for (BurnedInfo burned : burnedInfo) {
+                packet.encodeInt(burned.getCharacterID());
+                packet.encodeInt(burned.getSkillID());
+                packet.encodeInt(burned.getDamage());
+                packet.encodeInt(burned.getInterval());
+                packet.encodeInt(burned.getEnd());
+                packet.encodeInt(burned.getDotCount());
+            }
+        }
+        if (toSend.operatorAND(MobStats.getMask(MobStats.PCounter)).isSet()) {
+            packet.encodeInt(getStat(MobStats.PCounter).getModOption());
+            packet.encodeInt(counterProb);
+        }
+
+        if (toSend.operatorAND(MobStats.getMask(MobStats.MCounter)).isSet()) {
+            packet.encodeInt(getStat(MobStats.MCounter).getModOption());
+            packet.encodeInt(counterProb);
+        }
+        if (toSend.operatorAND(MobStats.getMask(MobStats.Disable)).isSet()) {
+            packet.encodeBool(invincible);
+            packet.encodeBool(disable);
         }
     }
     
@@ -144,14 +178,14 @@ public class MobStat {
         return reset;
     }
     
-    public int reset(int reset) {
+    public Flag reset(int reset) {
         for (Iterator<Integer> it = stats.keySet().iterator(); it.hasNext();) {
             int stat = it.next();
             if ((stat & reset) != 0) {
                 it.remove();
             }
         }
-        return reset;
+        return MobStats.getMask(reset);
     }
     
     public void resetDamagedElemAttr(List<Integer> originalDamagedElemAttr) {
@@ -159,12 +193,12 @@ public class MobStat {
         damagedElemAttr.addAll(originalDamagedElemAttr);
     }
     
-    public int resetTemporary(long time) {
-        int reset = 0;
+    public Flag resetTemporary(long time) {
+        Flag reset = new Flag(Flag.INT_128);
         for (Iterator<Map.Entry<Integer, MobStatOption>> it = stats.entrySet().iterator(); it.hasNext();) {
             Map.Entry<Integer, MobStatOption> stat = it.next();
             if (stat.getValue().getOption() != 0 && time - stat.getValue().getDuration() > 0) {
-                reset |= stat.getKey();
+                reset.performOR(MobStats.getMask(stat.getKey()));
                 it.remove();
             }
         }
@@ -219,9 +253,9 @@ public class MobStat {
         this.speed = (byte) speed;
     }
     
-    public int setStat(int cts, MobStatOption opt) {
+    public Flag setStat(int cts, MobStatOption opt) {
         stats.put(cts, opt);
-        return cts;
+        return MobStats.getMask(cts);
     }
     
     public void setStatOption(int cts, int option) {
@@ -235,5 +269,13 @@ public class MobStat {
         EMPTY_OPTION = new MobStatOption();
         
         MovementAffecting = MobStats.Speed | MobStats.Stun;
+    }
+
+    public int getCounterProb() {
+        return counterProb;
+    }
+
+    public void setCounterProb(int counterProb) {
+        this.counterProb = counterProb;
     }
 }

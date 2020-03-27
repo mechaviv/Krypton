@@ -29,6 +29,7 @@ import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 import javax.script.ScriptEngine;
+import javax.script.ScriptException;
 
 import game.field.FieldMan;
 import game.field.life.mob.MobTemplate;
@@ -299,7 +300,7 @@ public class GameApp {
     }
     
     public void start() {
-        ScriptEngine engine = SkillLevelData.engine;// touch the engine (until I'll make my own analyzer)
+        try { SkillLevelData.engine.eval(""); } catch (ScriptException e) { }
         this.worldID = Byte.parseByte(System.getProperty("gameID", "0"));
         
         TimerThread.createTimerThread();

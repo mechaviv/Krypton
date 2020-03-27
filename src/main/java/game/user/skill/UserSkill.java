@@ -259,6 +259,7 @@ public class UserSkill {
     }
 
     public void doActiveSkill_MobStatChange(SkillEntry skill, byte slv, InPacket packet, boolean sendResult) {
+        packet.decodeInt();// user pos
         int count = packet.decodeByte();
         for (int i = 0; i < count; i++) {
             int mobID = packet.decodeInt();

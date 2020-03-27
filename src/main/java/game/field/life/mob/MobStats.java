@@ -17,25 +17,76 @@
  */
 package game.field.life.mob;
 
+import game.user.stat.Flag;
+
 /**
  *
  * @author Eric
  */
 public class MobStats {
     public static final int
-            PAD     = 0x1,
-            PDD     = 0x2,
-            MAD     = 0x4,
-            MDD     = 0x8,
-            ACC     = 0x10,
-            EVA     = 0x20,
-            Speed   = 0x40,
-            // Doesn't do anything as far as I'm aware, but since
-            // Poison exists, I'll assume this is just a dummy stat.
-            Poison  = 0x80,
-            // Since Freeze also freezes a mob, but is a visual,
-            // I guess they are both the same MobStat?
-            Freeze  = 0x100,
-            Stun    = 0x100
+            PAD                 = 0,
+            PDD                 = 1,
+            MAD                 = 2,
+            MDD                 = 3,
+            ACC                 = 4,
+            EVA                 = 5,
+            Speed               = 6,
+            Stun                = 7,
+            Freeze              = 8,
+            Poison              = 9,
+            Seal                = 10,
+            Darkness            = 11,
+            PowerUp             = 12,
+            MagicUp             = 13,
+            PGuardUp            = 14,
+            MGuardUp            = 15,
+            Doom                = 16,
+            Web                 = 17,
+            PImmune             = 18,
+            MImmune             = 19,
+            Showdown            = 20,
+            HardSkin            = 21,
+            Ambush              = 22,
+            DamagedElemAttr     = 23,
+            Venom               = 24,
+            Blind               = 25,
+            SealSkill           = 26,
+            Burned              = 27,
+            Dazzle              = 28,
+            PCounter            = 29,
+            MCounter            = 30,
+            Disable             = 31,
+            RiseByToss          = 32,
+            BodyPressure        = 33,
+            Weakness            = 34,
+            TimeBomb            = 35,
+            MagicCrash          = 36,
+            HealByDamage        = 37,
+            NONE = 0xFFFFFFFF;
     ;
+
+    public static Flag getMask(int bits) {
+        Flag flag = new Flag(Flag.INT_128);
+        if (bits == NONE) {
+            flag.setEncodeAll();
+        } else {
+            flag.setValue(1);
+            flag.shiftLeft(bits);
+        }
+        return new Flag(flag, Flag.INT_128);
+    }
+
+    private static Flag MOVEMENT_AFFECTING_STAT = null;
+    public static boolean isMovementAffectingStat(Flag flag) {
+        if (MOVEMENT_AFFECTING_STAT == null) {
+            MOVEMENT_AFFECTING_STAT = new Flag(Flag.INT_128);
+            MOVEMENT_AFFECTING_STAT.performOR(getMask(Speed));
+            MOVEMENT_AFFECTING_STAT.performOR(getMask(Stun));
+            MOVEMENT_AFFECTING_STAT.performOR(getMask(Freeze));
+            MOVEMENT_AFFECTING_STAT.performOR(getMask(Doom));
+            MOVEMENT_AFFECTING_STAT.performOR(getMask(RiseByToss));
+        }
+        return !flag.operatorAND(MOVEMENT_AFFECTING_STAT).isZero();
+    }
 }

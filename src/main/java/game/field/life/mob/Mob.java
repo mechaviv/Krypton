@@ -41,6 +41,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
+import game.user.stat.Flag;
 import network.packet.OutPacket;
 import util.Logger;
 import util.Pointer;
@@ -228,8 +229,7 @@ public class Mob extends Creature {
         packet.encodeInt(getGameObjectID());
         packet.encodeByte(0);// nCalcDamageStatIndex
         packet.encodeInt(getTemplateID());
-        //stat.encodeTemporary(packet, 0);
-        packet.encodeBuffer(new byte[16]);
+        stat.encodeTemporary(packet, MobStats.getMask(MobStats.NONE));
         packet.encodeShort(curPos.x);
         packet.encodeShort(curPos.y);
         packet.encodeByte(moveAction);
@@ -501,7 +501,7 @@ public class Mob extends Creature {
         opt.setReason(skillID);
         opt.setDuration(duration);
         
-        int flag = 0;
+        Flag flag = new Flag(Flag.INT_128);
         switch (skillID) {
             case Wizard2.ColdBeam: {
                 int attr;
@@ -509,7 +509,7 @@ public class Mob extends Creature {
                     return;
                 }
                 opt.setOption(1);
-                flag |= stat.setStat(MobStats.Freeze, opt);
+                flag.performOR(stat.setStat(MobStats.Freeze, opt));
                 this.experiencedMoveStateChange = true;
                 break;
             }
@@ -519,7 +519,7 @@ public class Mob extends Creature {
                     return;
                 }
                 opt.setOption(1);
-                flag |= stat.setStat(MobStats.Stun, opt);
+                flag.performOR(stat.setStat(MobStats.Stun, opt));
                 this.experiencedMoveStateChange = true;
                 break;
             }
@@ -531,25 +531,25 @@ public class Mob extends Creature {
                 opt.setOption(Math.max(Math.min(Short.MAX_VALUE, getMaxHP() / (70 - slv)), level.MAD));
                 opt.setModOption(user.getCharacterID());
                 this.lastUpdatePoison = time;
-                flag |= stat.setStat(MobStats.Poison, opt);
+                flag.performOR(stat.setStat(MobStats.Poison, opt));
                 break;
             }
             case Wizard1.Slow:
             case Wizard2.Slow: {
-                flag |= stat.setStat(MobStats.Speed, opt);
+                flag.performOR(stat.setStat(MobStats.Speed, opt));
                 break;
             }
             case Page.Threaten:
             case Rogue.Disorder: {
-                flag |= stat.setStat(MobStats.PAD, opt);
-                flag |= stat.setStat(MobStats.PDD, new MobStatOption(y, skillID, duration));
+                flag.performOR(stat.setStat(MobStats.PAD, opt));
+                flag.performOR(stat.setStat(MobStats.PDD, new MobStatOption(y, skillID, duration)));
                 break;
             }
             default: {
                 return;
             }
         }
-        if (flag != 0) {
+        if (flag.isSet()) {
             sendMobTemporaryStatSet(flag, 0);
         }
     }
@@ -564,15 +564,15 @@ public class Mob extends Creature {
         }
     }
     
-    public void sendMobTemporaryStatReset(int reset) {
-        if (reset != 0) {
-            //getField().splitSendPacket(getSplit(), MobPool.onStatSet(this, reset, 0, (short) 0), null);
+    public void sendMobTemporaryStatReset(Flag reset) {
+        if (reset.isSet()) {
+            getField().splitSendPacket(getSplit(), MobPool.onStatReset(this, reset), null);
         }
     }
     
-    public void sendMobTemporaryStatSet(int flag, int delay) {
-        if (flag != 0) {
-            getField().splitSendPacket(getSplit(), MobPool.onStatSet(this, flag, stat.getStatReason(flag), (short) delay), null);
+    public void sendMobTemporaryStatSet(Flag flag, int delay) {
+        if (flag.isSet()) {
+            getField().splitSendPacket(getSplit(), MobPool.onStatSet(this, flag, (short) delay), null);
         }
     }
     
@@ -684,12 +684,12 @@ public class Mob extends Creature {
             return;
         if (stat.getStatOption(MobStats.Poison) != 0)
             updatePoison(time);
-        int reset = stat.resetTemporary(time);
+        Flag reset = stat.resetTemporary(time);
         if (hp == 1) {
             if (stat.getStatOption(MobStats.Poison) != 0)
-                reset |= stat.reset(MobStats.Poison);
+                reset.performOR(stat.reset(MobStats.Poison));
         }
-        if (reset != 0) {
+        if (reset.isSet()) {
             sendMobTemporaryStatReset(reset);
         }
         if (time - lastRecovery > 8000) {
