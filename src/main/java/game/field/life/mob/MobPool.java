@@ -21,6 +21,7 @@ import game.field.MovePath;
 import game.user.stat.Flag;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
+import util.Pointer;
 
 /**
  *
@@ -67,14 +68,14 @@ public class MobPool {
         return packet;
     }
 
-    public static OutPacket onCtrlAck(int mobID, short mobCtrlSN, boolean nextAttackPossible, int mp) {
+    public static OutPacket onCtrlAck(int mobID, short mobCtrlSN, boolean nextAttackPossible, int mp, Pointer<Integer> skillCommand, Pointer<Integer> slv) {
         OutPacket packet = new OutPacket(LoopbackPacket.MobCtrlAck);
         packet.encodeInt(mobID);
         packet.encodeShort(mobCtrlSN);
         packet.encodeBool(nextAttackPossible);
         packet.encodeShort(mp);
-        packet.encodeByte(0);// skillCommand
-        packet.encodeByte(0);// slv
+        packet.encodeByte(skillCommand.get());
+        packet.encodeByte(slv.get());
         return packet;
     }
     

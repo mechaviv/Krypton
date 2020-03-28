@@ -484,10 +484,21 @@ public class SkillAccessor {
             // 4TH Warriors
             case Hero.Enrage:
             case Paladin.DIVINE_CHARGE:
-
+            // 1ST Magicians
             case Magician.MagicGuard:
             case Magician.MagicArmor:
+            // 2ND Magicians
             case Cleric.Invincible:
+            // 3RD Magicians
+            case Mage1.ELEMENTAL_RESET:
+            case Mage2.ELEMENTAL_RESET:
+            // 4TH Magicians
+            case ArchMage1.MANA_REFLECTION:
+            case ArchMage2.MANA_REFLECTION:
+            case Bishop.MANA_REFLECTION:
+            case ArchMage1.INFINITY:
+            case ArchMage2.INFINITY:
+            case Bishop.INFINITY:
             case Archer.Focus:
             case Hunter.SoulArrow_Bow:
             case Crossbowman.SoulArrow_Crossbow:
@@ -507,6 +518,7 @@ public class SkillAccessor {
             case Page.Threaten:
             case Wizard1.Slow:
             case Wizard2.Slow:
+            case Mage1.SEAL:
                 return true;
             default: {
                 return false;
@@ -557,6 +569,7 @@ public class SkillAccessor {
             case Wizard2.Meditation:
             case Cleric.Heal:
             case Cleric.Bless:
+            case Priest.HOLY_SYMBOL:
             case Assassin.Haste:
             case Thief.Haste:
             case Viper.WIND_BOOSTER:
@@ -568,6 +581,20 @@ public class SkillAccessor {
                 return false;
             }
         }
+    }
+
+    public static boolean isSummonSkill(int skillID) {
+        switch (skillID) {
+            case DarkKnight.BEHOLDER:
+            case ArchMage1.IFRIT:
+            case ArchMage2.ELQUINES:
+            case Priest.SUMMON_DRAGON:
+            case Bishop.BAHAMUT:
+            case Ranger.PUPPET:
+            case Ranger.SILVER_HAWK:
+                return true;
+        }
+        return false;
     }
 
     public static boolean isMapleHero(int skillID) {
@@ -606,6 +633,13 @@ public class SkillAccessor {
         return false;
     }
 
+    public static boolean isSkillPrepare(int skillID) {
+        switch (skillID) {
+            case Bowmaster.STORM_ARROW:
+                return true;
+        }
+        return false;
+    }
     public static boolean isIgnoreMasterLevelForCommon(int skillID) {
         switch (skillID) {
             case Hero.CombatMastery:
@@ -732,7 +766,7 @@ public class SkillAccessor {
         return skillEntry.isFinalAttack();
     }
 
-    public int getComboDamageParam(CharacterData cd, int skillID, int comboCounter) {
+    public static int getComboDamageParam(CharacterData cd, int skillID, int comboCounter) {
         if (comboCounter < 1) {
             return 0;
         }
@@ -768,4 +802,107 @@ public class SkillAccessor {
         return comboCounter * damagePerCombo + 100;
     }
 
+    public static int getAmplification(CharacterData cd, int skillID, Pointer<Integer> incMPCon) {
+        int job = cd.getCharacterStat().getJob();
+        SkillLevelData level = null;
+
+        Pointer<SkillEntry> skillEntry = new Pointer<>();
+        int slv = 0;
+        if (JobAccessor.isCorrectJobForSkillRoot(job, 211)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Mage1.ELEMENT_AMPLIFICATION, skillEntry);
+            if (slv != 0) {
+                level = skillEntry.get().getLevelData(slv);
+            }
+        } else if (JobAccessor.isCorrectJobForSkillRoot(job, 221)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Mage2.ELEMENT_AMPLIFICATION, skillEntry);
+            if (slv != 0) {
+                level = skillEntry.get().getLevelData(slv);
+            }
+        } else if (JobAccessor.isCorrectJobForSkillRoot(job, 1211)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, FlameWizard.ELEMENT_AMPLIFICATION, skillEntry);
+            if (slv != 0) {
+                level = skillEntry.get().getLevelData(slv);
+            }
+        } else if (JobAccessor.isCorrectJobForSkillRoot(job, 2215)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Evan.ELEMENT_AMPLIFICATION, skillEntry);
+            if (slv != 0) {
+                level = skillEntry.get().getLevelData(slv);
+            }
+        }
+        if (incMPCon != null) {
+            incMPCon.set(100);
+        }
+        if (level == null) {
+            return 100;
+        }
+        if (incMPCon != null) {
+            switch (skillID) {
+                case Magician.MagicClaw:
+                case Magician.EnergyBolt:
+                case Wizard1.FireArrow:
+                case Wizard1.PoisonBreath:
+                case Mage1.EXPLOSION:
+                case Mage1.POISON_MIST:
+                case Mage1.MAGIC_COMPOSITION:
+                case ArchMage1.BIGBANG:
+                case ArchMage1.FIRE_DEMON:
+                case ArchMage1.PARALYZE:
+                case ArchMage1.METEOR:
+                case Wizard2.ColdBeam:
+                case Wizard2.ThunderBolt:
+                case Mage2.ICE_STRIKE:
+                case Mage2.THUNDER_SPEAR:
+                case Mage2.MAGIC_COMPOSITION:
+                case ArchMage2.BIGBANG:
+                case ArchMage2.ICE_DEMON:
+                case ArchMage2.CHAIN_LIGHTNING:
+                case ArchMage2.BLIZZARD:
+                case FlameWizard.MAGIC_CLAW:
+                case FlameWizard.METEOR:
+                case FlameWizard.FIRE_PILLAR:
+                case FlameWizard.FIRE_ARROW:
+                case FlameWizard.FLAME_GEAR:
+                case FlameWizard.FIRE_STRIKE:
+                case Evan.MAGIC_MISSILE:
+                case Evan.ICE_BREATH:
+                case Evan.FIRECIRCLE:
+                case Evan.LIGHTING_BOLT:
+                case Evan.MAGIC_FLAIR:
+                case Evan.DRAGON_THRUST:
+                case Evan.EARTHQUAKE:
+                case Evan.BREATH:
+                case Evan.KILLING_WING:
+                case Evan.ILLUSION:
+                case Evan.FLAME_WHEEL:
+                case Evan.BLAZE:
+                case Evan.DARK_FOG:
+                    incMPCon.set(level.X);
+                    break;
+            }
+        }
+        return level.Y;
+    }
+
+    public static boolean isAntiRepeatBuffSkill(int skillID) {
+        switch (skillID) {
+            case Warrior.IronBody:
+            case Fighter.Fury:
+            case Crusader.MagicCrash:
+            case Page.Threaten:
+            case Knight.LIGHTNING_CHARGE:
+            case Knight.RESTORATION:
+            case Spearman.IronWall:
+            case Spearman.HyperBody:
+            case DragonKnight.MAGIC_CRASH:
+            case Wizard1.Meditation:
+            case Hermit.MESO_UP:
+                return true;
+            default:
+                if (isMapleHero(skillID)) {
+                    return true;
+                }
+                break;
+        }
+        return false;
+    }
 }

@@ -33,12 +33,15 @@ import game.field.drop.Reward;
 import game.field.drop.RewardType;
 import game.field.life.AttackIndex;
 import game.field.life.AttackInfo;
+import game.field.life.MoveAbility;
 import game.field.life.mob.Mob;
 import game.field.life.mob.MobAttackInfo;
+import game.field.life.mob.MobSkills;
 import game.field.life.mob.MobTemplate;
 import game.field.life.npc.*;
 import game.field.portal.Portal;
 import game.field.portal.PortalMap;
+import game.field.summoned.Summoned;
 import game.messenger.Messenger;
 import game.miniroom.MiniRoom;
 import game.miniroom.MiniRoomBase;
@@ -58,6 +61,7 @@ import game.user.quest.info.QuestItemOption;
 import game.user.quest.info.act.ActItem;
 import game.user.skill.*;
 import game.user.skill.Skills.*;
+import game.user.skill.data.MobSkillLevelData;
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.*;
@@ -103,6 +107,8 @@ public class User extends Creature {
     // Party stuff
     private final LinkedList<Integer> partyInvitedCharacterID;
     private final ReentrantLock partyInviteLock;
+    // Summoned
+    private final List<Summoned> summoneds;
     private int lastPassiveSkillDataUpdate;
     private int accountID;
     private int characterID;
@@ -156,6 +162,11 @@ public class User extends Creature {
     private int invalidDamageMissCount;
     private int characterDataModFlag;
     private int avatarModFlag;
+    // Skills
+    private int preparedSkill;
+    private long lastKeyDown;
+    private boolean keyDown;
+
     // Mini Rooms
     // private UserMiniRoom userMR;
     private MiniRoomBase miniRoom;
@@ -233,6 +244,7 @@ public class User extends Creature {
         // TODO: Nexon-like user caching to avoid DB load upon each login/migrate.
         this.partyInvitedCharacterID = new LinkedList<>();
         this.character = GameDB.rawLoadCharacter(characterID);
+        this.summoneds = new ArrayList<>();
         this.realEquip = new ArrayList<>(BodyPart.BP_Count + 1);
 
         for (int i = 0; i <= BodyPart.BP_Count; i++) {
@@ -1268,6 +1280,33 @@ public class User extends Creature {
         }
     }
 
+    public void onSummonedPacket(short type, InPacket packet) {
+        int summonedID = packet.decodeInt();
+        if (getField() == null) {
+            // skip calc damage stuff
+            return;
+        }
+        Summoned summoned = getSummonedBySummonedID(summonedID);
+        if (summoned == null) {
+            // skip calc damage stuff
+            return;
+        }
+        switch (type) {
+            case ClientPacket.SummonedHit:
+                summoned.onHit(this, packet);
+                break;
+            case ClientPacket.SummonedSkill:
+                summoned.onSkill(this, packet);
+                break;
+            case ClientPacket.SummonedAttack:
+                summoned.onAttack(this, packet);
+                break;
+            case ClientPacket.SummonedMove:
+                summoned.onMove(this, packet);
+                break;
+        }
+    }
+
     public void onFieldPacket(short type, InPacket packet) {
         if (getField() != null) {
             getField().onPacket(this, type, packet);
@@ -1316,6 +1355,9 @@ public class User extends Creature {
                 break;
             case ClientPacket.UserSkillCancelRequest:
                 userSkill.onSkillCancelRequest(packet);
+                break;
+            case ClientPacket.UserSkillPrepareRequest:
+                userSkill.onSkillPrepareRequest(packet);
                 break;
             case ClientPacket.UserCharacterInfoRequest:
                 onCharacterInfoRequest(packet);
@@ -1383,6 +1425,8 @@ public class User extends Creature {
             default: {
                 if (type >= ClientPacket.BEGIN_FIELD && type <= ClientPacket.END_FIELD) {
                     onFieldPacket(type, packet);
+                } else if (type >= ClientPacket.BEGIN_SUMMONED && type <= ClientPacket.END_SUMMONED) {
+                    onSummonedPacket(type, packet);
                 } else {
                     Logger.logReport("[Unidentified Packet] [0x" + Integer.toHexString(type).toUpperCase() + "]: " + packet.dumpString());
                 }
@@ -1670,6 +1714,14 @@ public class User extends Creature {
         if (type == ClientPacket.UserShootAttack) {
             packet.decodeByte();// pUser->m_bNextShootExJablin && CUserLocal::CheckApplyExJablin(pUser, pSkill, nAttackAction);
         }
+        if (SkillAccessor.isSkillPrepare(skillID) && skillID != Bowmaster.STORM_ARROW) {
+            if (getPreparedSkill() != skillID) {
+                Logger.logError("Attack packet without prepare [%d,%d]", getPreparedSkill(), skillID);
+                return;
+            }
+        }
+        if (skillID != Bowmaster.STORM_ARROW) setPreparedSkill(0);
+
         short actionMask = packet.decodeShort();//((_BYTE)bLeft << 7) | nAction & 0x7F
         byte left = (byte) ((actionMask >>> 15) & 1);
         int action = (short) (actionMask & 0x7FFF);
@@ -1753,7 +1805,7 @@ public class User extends Creature {
 
             Point ballStart = new Point();
             if (type == ClientPacket.UserShootAttack) {
-                // ptStart? TODO Check ShootAttack decodes
+                ballStart = new Point(packet.decodeShort(), packet.decodeShort());
             }
 
             byte attackType;
@@ -1777,7 +1829,7 @@ public class User extends Creature {
                         slv = (byte) SkillInfo.getInstance().getSkillLevel(character, skillID, null);
                         if (slv > 0) {
                             skill = SkillInfo.getInstance().getSkill(skillID);
-                            if (skillID != Cleric.Heal && !SkillInfo.getInstance().adjustConsumeForActiveSkill(this, skillID, slv)) {
+                            if (skillID != Cleric.Heal && !SkillInfo.getInstance().adjustConsumeForActiveSkill(this, skillID, slv, false, 0)) {
                                 Logger.logReport("Failed to adjust consume for active skill!!! (SkillID:%d,SLV:%d)", skillID, slv);
                                 getCalcDamage().skip();
                                 return;
@@ -2792,6 +2844,7 @@ public class User extends Creature {
                             isDead = true;
                         }
                         if (fieldID != -1 && !loopback && !isDead && !isGM()) {
+                            Logger.logError("lol 1");
                             sendPacket(FieldPacket.onTransferFieldReqIgnored());
                             return;
                         }
@@ -2799,11 +2852,13 @@ public class User extends Creature {
                             return;
                         }
                         if (!isDead && !loopback && !canAttachAdditionalProcess()) {
+                            Logger.logError("lol 2");
                             sendPacket(FieldPacket.onTransferFieldReqIgnored());
                             return;
                         }
                         if (fieldID == -1 && (portal == null || portal.isEmpty())) {
                             if (!loopback) {
+                                Logger.logError("lol 3");
                                 sendPacket(FieldPacket.onTransferFieldReqIgnored());
                             }
                             return;
@@ -2817,6 +2872,7 @@ public class User extends Creature {
                                 return;
                             }
                             if (!pt.enable) {
+                                Logger.logError("lol 4");
                                 sendPacket(FieldPacket.onTransferFieldReqIgnored());
                                 this.onTransferField = false;
                                 return;
@@ -2836,6 +2892,7 @@ public class User extends Creature {
                         }
                         if (FieldMan.getInstance(getChannelID()).isBlockedMap(fieldID)) {
                             Logger.logError("User tried to enter the Blocked Map #1 (From:%d,To:%d)", getField().getFieldID(), fieldID);
+                            Logger.logError("lol 5");
                             sendPacket(FieldPacket.onTransferFieldReqIgnored());
                             this.onTransferField = false;
                             return;
@@ -3924,5 +3981,194 @@ public class User extends Creature {
         }
         removeSkills.clear();
         lastDragonBloodUpdate = System.currentTimeMillis();
+    }
+
+    public Summoned getSummonedBySkillID(int skillID) {
+        if (getField() == null) {
+            return null;
+        }
+        return getField().getSummonedPool().getSummoned(getCharacterID(), skillID);
+    }
+
+    public Summoned getSummonedBySummonedID(int summonedID) {
+        if (getField() == null) {
+            return null;
+        }
+        return getField().getSummonedPool().getSummoned(summonedID);
+    }
+
+    public boolean createSummoned(SkillEntry skill, int slv, Point pt, long end, boolean migrate) {
+        if (skill == null) {
+            return false;
+        }
+        int skillID = skill.getSkillID();
+
+        int toRemove = 0;
+        if (skillID == Priest.SUMMON_DRAGON) {
+            toRemove = Bishop.BAHAMUT;
+        } else if (skillID == Bishop.BAHAMUT) {
+            toRemove = Priest.SUMMON_DRAGON;
+        } else if (skillID == Ranger.SILVER_HAWK) {
+            toRemove = Bowmaster.PHOENIX;
+        } else if (skillID == Bowmaster.PHOENIX) {
+            toRemove = Ranger.SILVER_HAWK;
+        } else if (skillID == Sniper.GOLDEN_EAGLE) {
+            toRemove = CrossbowMaster.FREEZER;
+        } else if (skillID == CrossbowMaster.FREEZER) {
+            toRemove = Sniper.GOLDEN_EAGLE;
+        }
+
+        lock.lock();
+        try {
+            removeSummoned(skillID, 4, 0);
+            if (toRemove != 0) {
+                removeSummoned(toRemove, 4, 0);
+            }
+            Summoned summoned = getField().getSummonedPool().createSummoned(getCharacterID(), skillID, slv, getLevel(), pt, end, migrate);
+            if (summoned == null) {
+                return false;
+            }
+            summoneds.add(summoned);
+        } finally {
+            lock.unlock();
+        }
+        return true;
+    }
+
+    public void removeSummoned(int skillID, int leaveType, long cur) {
+        List<Integer> removeList = new ArrayList<>();
+        lock.lock();
+        try {
+            for (Iterator<Summoned> it = summoneds.iterator(); it.hasNext(); ) {
+                Summoned summoned = it.next();
+                if ((skillID == 0 || summoned.getSkillID() == skillID) && (cur == 0 || cur - summoned.getEnd() >= 0)) {
+                    if (leaveType == 2) {
+                        removeList.add(summoned.getSkillID());
+                    }
+                    it.remove();
+                }
+            }
+
+            for (Integer summoned : removeList) {
+                getField().getSummonedPool().removeSummoned(getCharacterID(), summoned, 0);
+            }
+            getField().getSummonedPool().removeSummoned(getCharacterID(), skillID, leaveType);
+        } finally {
+            lock.unlock();
+        }
+        removeList.clear();
+    }
+
+    public void reregisterSummoned() {
+        lock.lock();
+        try {
+            for (Iterator<Summoned> it = summoneds.iterator(); it.hasNext(); ) {
+                Summoned summoned = it.next();
+                if (summoned.getMoveAbility() != MoveAbility.Stop) {
+                    getField().getSummonedPool().createSummoned(summoned, getCurrentPosition());
+                } else {
+                    it.remove();
+                }
+            }
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public int getPreparedSkill() {
+        return preparedSkill;
+    }
+
+    public void setPreparedSkill(int preparedSkill) {
+        this.preparedSkill = preparedSkill;
+    }
+
+    public long getLastKeyDown() {
+        return lastKeyDown;
+    }
+
+    public void setLastKeyDown(long lastKeyDown) {
+        this.lastKeyDown = lastKeyDown;
+    }
+
+    public boolean isKeyDown() {
+        return keyDown;
+    }
+
+    public void setKeyDown(boolean keyDown) {
+        this.keyDown = keyDown;
+    }
+
+    public void onStatChangeByMobSkill(int skillID, int slv, MobSkillLevelData level, int delay, int mobTemplateID) {
+        int prop = level.getProp();
+        if (prop == 0) {
+            prop = 100;
+        }
+        if (Math.abs(Rand32.genRandom().intValue()) % 100 >= prop) {
+            return;
+        }
+        Flag tempSet = new Flag(Flag.INT_128);
+        Flag tempReset = new Flag(Flag.INT_128);
+        int duration = level.getDuration();
+        int reason = skillID | (slv << 16);
+        if (duration <= 0) {
+            if (skillID == MobSkills.DISPEL) {
+                tempReset = secondaryStat.resetByUserSkill();
+                validateStat(false);
+            }
+        } else {
+            long endTime = delay + System.currentTimeMillis() + duration;
+            boolean holyShield = secondaryStat.getStatOption(CharacterTemporaryStat.Holyshield) != 0;
+            switch (skillID) {
+                case MobSkills.SEAL:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Seal, new SecondaryStatOption(1, reason, endTime)));
+                case MobSkills.DARKNESS:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Darkness, new SecondaryStatOption(1, reason, endTime)));
+                    break;
+                case MobSkills.WEAKNESS:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Weakness, new SecondaryStatOption(1, reason, endTime)));
+                    break;
+                case MobSkills.STUN:
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Stun , new SecondaryStatOption(1, reason, endTime)));
+                    break;
+                case MobSkills.CURSE:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Curse, new SecondaryStatOption(1, reason, endTime)));
+                    break;
+                case MobSkills.POISON:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Poison, new SecondaryStatOption(level.getX(), reason, endTime)));
+                    break;
+                case MobSkills.SLOW:
+                    if (holyShield) {
+                        break;
+                    }
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Slow, new SecondaryStatOption(level.getX(), reason, endTime)));
+                    break;
+                case MobSkills.ATTRACT:
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.Attract, new SecondaryStatOption(level.getX(), reason, endTime)));
+                    break;
+                case MobSkills.BANMAP:
+                    SecondaryStatOption opt = new SecondaryStatOption(1, reason, endTime);
+                    opt.setModOption(mobTemplateID);
+                    tempSet.performOR(secondaryStat.setStat(CharacterTemporaryStat.BanMap, opt));
+                    break;
+            }
+        }
+        sendTemporaryStatReset(tempReset);
+        sendTemporaryStatSet(tempSet);
     }
 }

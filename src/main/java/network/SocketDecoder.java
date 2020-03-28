@@ -65,7 +65,7 @@ public class SocketDecoder extends ReplayingDecoder<Void> {
             state = packet.appendBuffer(buff, lastState);
             if (state > 0 && lastState.get() <= 0) {
                 if (packet.decodeSeqBase(key.getSeqRcv()) != OrionConfig.CLIENT_VER) {
-                    Logger.logError("Incorrect packet header sequencing");
+                    Logger.logError("Incorrect packet header sequencing [%d] | [%d]", key.getSeqRcv(), packet.decodeSeqBase(key.getSeqRcv()));
                     ctx.disconnect();
                     return;
                 }
@@ -88,6 +88,7 @@ public class SocketDecoder extends ReplayingDecoder<Void> {
                     return;
                 }
                 key.updateRecv();
+
                 out.add(packet);
             }
         } finally {

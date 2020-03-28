@@ -899,7 +899,7 @@ public class LifePool {
 
                 boolean serialAttack = false;
                 packet.encodeBool(serialAttack);
-                packet.encodeShort(action);
+                packet.encodeShort(action & 0x7FFF | left << 15);
                 packet.encodeByte(speedDegree);
                 packet.encodeByte(SkillAccessor.getWeaponMastery(user.getCharacter(), weaponItemID, attackType, null));
                 packet.encodeInt(bulletItemID);
@@ -910,6 +910,15 @@ public class LifePool {
                         packet.encodeByte(0);// bCritical
                         packet.encodeShort(info.damageCli.get(i));
                     }
+                }
+                if (header == LoopbackPacket.UserShootAttack) {
+                    packet.encodeShort(ballStart.x);
+                    packet.encodeShort(ballStart.y);
+                }
+                if (skillID == Skills.ArchMage1.BIGBANG || skillID == Skills.ArchMage2.BIGBANG || skillID == Skills.Bishop.BIGBANG || skillID == Skills.Evan.ICE_BREATH || skillID == Skills.Evan.BREATH) {
+                    packet.encodeInt(0);// keydown
+                } else if (skillID == Skills.WildHunter.SWALLOW_DUMMY_ATTACK) {
+                    packet.encodeInt(0);// swallow mob templateID
                 }
                 getField().splitSendPacket(user.getSplit(), packet, user);
                 Pointer<Integer> prop = new Pointer<>(0);
@@ -1026,5 +1035,23 @@ public class LifePool {
         create.clear();
 
         return success;
+    }
+
+    public int findAffectedMobInRect(Rect rect, List<Mob> affectedMobs, Mob except) {
+        int count = 0;
+        for (Mob mob : mobs.values()) {
+            if (mob == except) {
+                continue;
+            }
+            if (rect.ptInRect(mob.getCurrentPos())) {
+                affectedMobs.add(mob);
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int getMobCount() {
+        return mobs.size();
     }
 }

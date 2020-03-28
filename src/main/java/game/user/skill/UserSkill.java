@@ -27,6 +27,7 @@ import common.user.CharacterStat.CharacterStatType;
 import common.user.UserEffect;
 import game.messenger.Character;
 import game.user.User;
+import game.user.UserRemote;
 import game.user.WvsContext;
 import game.user.skill.Skills.*;
 import game.user.skill.data.SkillLevelData;
@@ -35,6 +36,7 @@ import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.Flag;
 import game.user.stat.SecondaryStatOption;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +61,12 @@ public class UserSkill {
     public void onSkillUseRequest(InPacket packet) {
         packet.decodeInt();// time
         int skillID = packet.decodeInt();
+
+        int spiritJavelinItemID = 0;
+        if (skillID == NightLord.SPIRIT_JAVELIN) {
+            spiritJavelinItemID = packet.decodeInt();
+        }
+
         byte slv = packet.decodeByte();
         if (user.getField() == null) {
             sendFailPacket();
@@ -69,7 +77,7 @@ public class UserSkill {
         }
         Pointer<SkillEntry> skillEntry = new Pointer<>();
         if (slv <= 0 || SkillInfo.getInstance().getSkillLevel(user.getCharacter(), skillID, skillEntry) < slv
-                || !SkillInfo.getInstance().adjustConsumeForActiveSkill(user, skillID, slv)) {
+                || !SkillInfo.getInstance().adjustConsumeForActiveSkill(user, skillID, slv, false, spiritJavelinItemID)) {
             sendFailPacket();
             return;
         }
@@ -81,6 +89,9 @@ public class UserSkill {
             doActiveSkill_PartyStatChange(skill, slv, packet);
             return;
         } else if (SkillAccessor.isSelfStatChange(skillID)) {
+            if (skillID == ThiefMaster.CHAKRA && !checkSkillPrepared(skillID)) {
+                return;
+            }
             doActiveSkill_SelfStatChange(skill, slv, packet);
             return;
         } else if (SkillAccessor.isWeaponBooster(skillID)) {
@@ -119,6 +130,9 @@ public class UserSkill {
             if (wt1 == 0 && wt2 == 0 && wt3 == 0 && wt4 == 0) Logger.logError("New weapon booster [%d]", skillID);
             doActiveSkill_WeaponBooster(skill, slv, wt1, wt2, wt3, wt4);
             return;
+        } else if (SkillAccessor.isSummonSkill(skillID)) {
+            doActiveSkill_Summon(skill, slv, packet);
+            return;
         }
         switch (skillID) {
             case Wizard2.Teleport:
@@ -147,8 +161,34 @@ public class UserSkill {
                 user.validateStat(false);
                 user.sendTemporaryStatReset(reset);
             }
+        } else {
+            user.getField().splitSendPacket(user.getSplit(), UserRemote.onSkillCancel(user.getCharacterID(), user.getPreparedSkill()), user);
+            user.setPreparedSkill(0);
         }
-        // handle skill prepare here
+    }
+
+    public void onSkillPrepareRequest(InPacket packet) {
+        if (user.getField() == null) {
+            sendFailPacket();
+            return;
+        }
+        int skillID = packet.decodeInt();
+        int slv = packet.decodeByte();
+        int action = packet.decodeShort();
+        int speed = packet.decodeByte();
+
+        boolean keyDown = SkillAccessor.isKeyDownSkill(skillID);
+        if (slv <= 0 || SkillInfo.getInstance().getSkillLevel(user.getCharacter(), skillID, null) != slv
+        ||  !SkillInfo.getInstance().adjustConsumeForActiveSkill(user, skillID, (byte) slv, keyDown, 0) || user.getPreparedSkill() != 0) {
+            sendFailPacket();
+            return;
+        }
+        user.setPreparedSkill(skillID);
+        if (keyDown) {
+            user.setLastKeyDown(System.currentTimeMillis());
+            user.setKeyDown(true);
+        }
+        user.getField().splitSendPacket(user.getSplit(), UserRemote.onSkillPrepare(user.getCharacterID(), skillID, slv, action, speed), user);
     }
 
     public void onSkillUpRequest(InPacket packet) {
@@ -256,11 +296,12 @@ public class UserSkill {
     }
 
     public void doActiveSkill_MobStatChange(SkillEntry skill, byte slv, InPacket packet, boolean sendResult) {
-        packet.decodeInt();// user pos
+        //int pos = packet.decodeInt();// user pos
         int count = packet.decodeByte();
+        //Logger.logReport("Count [%d] %d", count, pos);
         for (int i = 0; i < count; i++) {
             int mobID = packet.decodeInt();
-
+            Logger.logReport("Mob ID [%d]", mobID);
             user.getField().getLifePool().onMobStatChangeSkill(user, mobID, skill, slv);
         }
         if (sendResult) {
@@ -292,6 +333,17 @@ public class UserSkill {
         }
     }
 
+    public void doActiveSkill_Summon(SkillEntry skill, int slv, InPacket packet) {
+        if (user.getField().getFieldID() / 1000000 % 100 == 9) {
+            return;
+        }
+        Point pt = new Point(packet.decodeShort(), packet.decodeShort());
+        boolean sendResult = user.createSummoned(skill, slv, pt, 0, false);
+        user.sendCharacterStat(Request.Excl, 0);
+        if (sendResult) {
+            user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
+        }
+    }
     public boolean checkMovementSkill(int skillID, byte slv) {
         if (user.isGM()) {
             return true;
@@ -321,6 +373,14 @@ public class UserSkill {
 
     public void sendFailPacket() {
         user.sendPacket(WvsContext.onSkillUseResult(Request.None));
+    }
+
+    public boolean checkSkillPrepared(int skillID) {
+        if (user.getPreparedSkill() != skillID) {
+            Logger.logError("SkillUse packet without prepare [%d,%d]", user.getPreparedSkill(), skillID);
+            return false;
+        }
+        return true;
     }
 
     private Flag processSkill(SkillEntry skill, byte slv, long duration, Flag resetFlag) {
@@ -412,6 +472,27 @@ public class UserSkill {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Invincible, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
+            case Priest.HOLY_SYMBOL: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.HolySymbol, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case Mage1.ELEMENTAL_RESET:
+            case Mage2.ELEMENTAL_RESET: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ElementalReset, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));// -x or x :?
+                break;
+            }
+            case ArchMage1.MANA_REFLECTION:
+            case ArchMage2.MANA_REFLECTION:
+            case Bishop.MANA_REFLECTION: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ManaReflection, new SecondaryStatOption(level.X | (level.Prop << 16), skill.getSkillID(), duration)));// or only x ?
+                break;
+            }
+            case ArchMage1.INFINITY:
+            case ArchMage2.INFINITY:
+            case Bishop.INFINITY: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Infinity, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
             // BOWMAN
             case Hunter.SoulArrow_Bow:
             case Crossbowman.SoulArrow_Crossbow: {
@@ -422,6 +503,10 @@ public class UserSkill {
             case Rogue.DarkSight: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkSight, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
+            }
+            case ThiefMaster.CHAKRA: {
+                //w/e
+                user.setPreparedSkill(0);
             }
             // PIRATE
             case Viper.WIND_BOOSTER: {
@@ -443,7 +528,6 @@ public class UserSkill {
                 }
             }
         }
-
         return flag;
     }
 }

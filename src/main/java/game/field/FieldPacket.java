@@ -40,6 +40,7 @@ public class FieldPacket {
      */
     public static OutPacket onTransferFieldReqIgnored() {
         OutPacket packet = new OutPacket(LoopbackPacket.TransferFieldReqIgnored);
+        packet.encodeByte(0);
         return packet;
     }
     

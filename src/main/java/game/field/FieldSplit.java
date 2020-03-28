@@ -31,7 +31,8 @@ public class FieldSplit {
             Mob             = 1,
             Npc             = 2,
             Drop            = 3,
-            NO              = 4
+            Summoned        = 4,
+            NO              = 5
     ;
     private int row;
     private int col;

@@ -17,15 +17,19 @@
  */
 package game.field;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import util.Pointer;
+import util.Rand32;
 import util.Range;
 import util.Rect;
 import util.wz.WzProperty;
 import util.wz.WzUtil;
+
+import static util.Utilities.getRandomUniqueArray;
 
 /**
  *
@@ -60,7 +64,7 @@ public class WvsPhysicalSpace2D {
     public StaticFoothold getFoothold(int sn) {
         return footholds.get(sn);
     }
-    
+
     public StaticFoothold getFootholdClosest(Field field, int x, int y, Pointer<Integer> pcx, Pointer<Integer> pcy, int hitx) {
         StaticFoothold ret = null;
         
@@ -126,8 +130,8 @@ public class WvsPhysicalSpace2D {
         return ret;
     }
     
-    /*public void getFootholdRandom(int count, Rect range, List<Point> apt) {
-        Rect dst = Rect.IntersectRect(range, mbr);
+    public void getFootholdRandom(int count, Rect range, List<Point> apt) {
+        Rect dst = Rect.intersectRect(range, mbr);
         List<Integer> shuffle = new ArrayList<>();
         int x0 = dst.left;
         int x1 = (dst.right - dst.left + 1) / (2 * count);
@@ -153,7 +157,7 @@ public class WvsPhysicalSpace2D {
             position.clear();
         }
         shuffle.clear();
-    }*/
+    }
     
     public void getFootholdRange(int x, int y1, int y2, List<Integer> position) {
         for (StaticFoothold pfh : footholds.values()) {
@@ -203,7 +207,7 @@ public class WvsPhysicalSpace2D {
     public StaticFoothold getFootholdUnderneath(int x, int y) {
         return getFootholdUnderneath(x, y, null);
     }
-    
+
     public LadderOrRope getLadderOrRope(int x1, int y1, int x2, int y2) {
         int xMin = Math.min(x1, x2) - 10;
         int xMax = Math.max(x1, x2) + 10;

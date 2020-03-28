@@ -267,6 +267,10 @@ public class GameApp {
         // Load Skills
         time = System.currentTimeMillis();
         SkillInfo.getInstance().iterateSkillInfo();
+        SkillInfo.getInstance().loadMobSkill();
+        SkillInfo.getInstance().loadMCSkill();
+        SkillInfo.getInstance().loadMCGuardian();
+        SkillInfo.getInstance().loadItemOptionSkill();
         Logger.logReport("Loaded Skill Info in " + ((System.currentTimeMillis() - time) / 1000.0) + " seconds.");
         
         // Load Mobs

@@ -29,20 +29,20 @@ import game.field.life.Controller;
 import game.field.life.MoveAbility;
 import game.field.life.mob.MobDamageLog.Info;
 import game.user.User;
+import game.user.skill.SkillInfo;
 import game.user.skill.Skills.*;
 import java.awt.Point;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import game.user.skill.data.MobSkillLevelData;
 import game.user.skill.data.SkillLevelData;
+import game.user.skill.entries.MobSkillEntry;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.Flag;
+import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 import util.Logger;
 import util.Pointer;
@@ -86,8 +86,11 @@ public class Mob extends Creature {
     private long lastRecovery;
     private long lastUpdatePoison;
     private long lastSendMobHP;
+    private long lastSkillUse;
+    private int skillCommand;
     private final Map<Integer, Long> attackers;
     private boolean testDrops;
+    private final List<MobSkillContext> skillContexts;
 
     public Mob(Field field, MobTemplate template, boolean noDropPriority) {
         super();
@@ -123,6 +126,8 @@ public class Mob extends Creature {
         this.lastAttack = time;
         this.lastMove = time;
         this.create = time;
+        this.skillContexts = new ArrayList<>();
+        template.makeSkillContext(skillContexts);
         this.stat.setFrom(template);
     }
     
@@ -450,11 +455,17 @@ public class Mob extends Creature {
         return decMP;
     }
     
-    public boolean onMobMove(boolean nextAttackPossible, byte action, int data) {
+    public boolean onMobMove(boolean nextAttackPossible, byte action, int data, Pointer<Integer> skillCommand, Pointer<Integer> slv, Pointer<Boolean> shootAttack) {
         long time = System.currentTimeMillis();
         lastMove = time;
-        if (action >= 0) {//>= MobAct.Move
-            // Wait, mob attacks don't exist yet because there's no MobSkill..
+        if (action >= MobActType.MOVE) {
+            if (action < MobActType.ATTACK1 || action > MobActType.ATTACKF) {
+                if (action >= MobActType.SKILL1 && action <= MobActType.SKILLF && !doSkill(data & 0xFF, (data >> 8) & 0xFF, (data >> 16))) {
+                    return false;
+                }
+            } else {
+                // deadly attack handling
+            }
         }
         if (time - lastAttack > 5000) {
             int characterID = 0;
@@ -479,9 +490,351 @@ public class Mob extends Creature {
             this.lastAttack = time;
         }
         this.nextAttackPossible = nextAttackPossible;
+        prepareNextSkill(skillCommand, slv, time);
         return true;
     }
-    
+
+    public boolean doSkill(int skillID, int slv, int option) {
+        int skillIndex = template.getSkillIndex(skillID, slv);
+        if (stat.getStatOption(MobStats.SealSkill) != 0 || skillCommand != skillID || skillIndex < 0) {
+            Logger.logReport("%d != %d", skillCommand, skillID);
+            Logger.logReport("%d < 0", skillIndex);
+            skillCommand = 0;
+            return false;
+        }
+        MobSkillInfo skill = template.getSkillInfo().get(skillIndex);
+        MobSkillLevelData level = SkillInfo.getInstance().getMobSkill(skill.getSkillID()).getLevelData().get(skill.getSlv() - 1);
+        MobSkillContext context = skillContexts.get(skillIndex);
+        this.mp = Math.max(this.mp - level.getConMP(), 0);
+
+        long time = System.currentTimeMillis();
+        if (time == 0) {
+            time = 1;
+        }
+        lastSkillUse = time;
+        context.setLastSkillUse(time);
+        if (context.getSkillID() == MobSkills.SUMMON) {
+            context.setSummoned(context.getSummoned() + level.getTemplateIDs().size());
+        }
+        skillCommand = 0;
+        Logger.logReport("Doing Skill [0x%X, %d]", skillID, slv);
+        if (MobSkills.isStatChange(skillID)) {
+            doSkill_StatChange(skillID, slv, level, option);
+        } else if (MobSkills.isUserStatChange(skillID)) {
+            doSkill_UserStatChange(skillID, slv, level, option);
+        } else if (MobSkills.isPartizanStatChange(skillID)) {
+            doSkill_PartizanStatChange(skillID, slv, level, option);
+        } else if (MobSkills.isPartizanOneTimeStatChange(skillID)) {
+            doSkill_PartizanOneTimeStatChange(skillID, slv, level, option);
+        } else if (MobSkills.isSummon(skillID)) {
+            doSkill_Summon(level, option);
+        } else if (MobSkills.isAffectArea(skillID)) {
+
+        } else {
+            Logger.logReport("[Mob Skill] Unhandled skill [0x%X, %d, 0x%X]", skillID, slv, option);
+        }
+        return true;
+    }
+
+    public void doSkill_StatChange(int skillID, int slv, MobSkillLevelData level, int delay) {
+        int x = level.getX();
+        int reason = skillID | (slv << 16);
+        long duration = System.currentTimeMillis() + level.getDuration();
+
+        Flag set = new Flag(Flag.INT_128);
+        switch (skillID) {
+            case MobSkills.POWERUP:
+                set.performOR(stat.setStat(MobStats.PowerUp, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.MAGICUP:
+                set.performOR(stat.setStat(MobStats.MagicUp, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.PGUARDUP:
+                set.performOR(stat.setStat(MobStats.PGuardUp, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.MGUARDUP:
+                set.performOR(stat.setStat(MobStats.MGuardUp, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.HASTE:
+            case MobSkills.SPEED:
+                set.performOR(stat.setStat(MobStats.Speed, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.PHYSICAL_IMMUNE:
+                set.performOR(stat.setStat(MobStats.PImmune, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.MAGIC_IMMUNE:
+                set.performOR(stat.setStat(MobStats.MImmune, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.HARDSKIN:
+                set.performOR(stat.setStat(MobStats.HardSkin, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.PAD:
+                set.performOR(stat.setStat(MobStats.PAD, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.MAD:
+                set.performOR(stat.setStat(MobStats.MAD, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.PDR:
+                set.performOR(stat.setStat(MobStats.PDD, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.MDR:
+                set.performOR(stat.setStat(MobStats.MDD, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.ACC:
+                set.performOR(stat.setStat(MobStats.ACC, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.EVA:
+                set.performOR(stat.setStat(MobStats.EVA, new MobStatOption(x, reason, duration)));
+                break;
+            case MobSkills.SEALSKILL:
+                set.performOR(stat.setStat(MobStats.SealSkill, new MobStatOption(1, reason, duration)));
+                break;
+        }
+        sendMobTemporaryStatSet(set, delay);
+    }
+
+    public void doSkill_UserStatChange(int skillID, int slv, MobSkillLevelData level, int delay) {
+        Rect affected = new Rect();
+        affected.top = level.getAffectedArea().top;
+        affected.bottom = level.getAffectedArea().bottom;
+        if ((moveAction & 1) != 0) {// is left
+            affected.right = -level.getAffectedArea().left;
+            affected.left = -level.getAffectedArea().right;
+        } else {
+            affected.right = level.getAffectedArea().right;
+            affected.left = level.getAffectedArea().left;
+        }
+        affected.offsetRect(curPos.getX(), curPos.getY());
+
+        Collection<User> users = getField().getUsers();
+        if (users.size() != 0) {
+            int targetUserCount = level.getTargetUserCount();
+            boolean allUsers = true;
+            if (targetUserCount >= 0) {
+                allUsers = false;
+            }
+            for (User user : users) {
+                if (affected.ptInRect(user.getCurrentPosition()) && targetUserCount != 0 && user.getCharacter().getCharacterStat().getHP() != 0) {
+                    user.onStatChangeByMobSkill(skillID, slv, level, delay, getTemplateID());
+                    if (!allUsers && --targetUserCount <= 0) {
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+    public void doSkill_PartizanStatChange(int skillID, int slv, MobSkillLevelData level, int delay) {
+        Rect rect = new Rect();
+        rect.top = level.getAffectedArea().top;
+        rect.bottom = level.getAffectedArea().bottom;
+        rect.right = level.getAffectedArea().right;
+        rect.left = level.getAffectedArea().left;
+        if (rect.isRectEmpty()) {
+            return;
+        }
+        if ((moveAction & 1) != 0) {// is left
+            rect.right = -level.getAffectedArea().left;
+            rect.left = -level.getAffectedArea().right;
+        }
+        rect.offsetRect(curPos.getX(), curPos.getY());
+
+        List<Mob> mobs = new ArrayList<>();
+        int count = getField().getLifePool().findAffectedMobInRect(rect, mobs, null);
+        for (int i = 0; i < count; i++) {
+            if (mobs.get(i).getTemplateID() != 9999999) {
+                doSkill_UserStatChange(skillID, slv, level, delay);
+            }
+        }
+        mobs.clear();
+    }
+
+    public void doSkill_PartizanOneTimeStatChange(int skillID, int slv, MobSkillLevelData level, int delay) {
+        Rect rect = new Rect();
+        rect.top = level.getAffectedArea().top;
+        rect.bottom = level.getAffectedArea().bottom;
+        rect.right = level.getAffectedArea().right;
+        rect.left = level.getAffectedArea().left;
+        if (rect.isRectEmpty()) {
+            return;
+        }
+        if ((moveAction & 1) != 0) {// is left
+            rect.right = -level.getAffectedArea().left;
+            rect.left = -level.getAffectedArea().right;
+        }
+        rect.offsetRect(curPos.getX(), curPos.getY());
+
+        List<Mob> mobs = new ArrayList<>();
+        int count = getField().getLifePool().findAffectedMobInRect(rect, mobs, null);
+        for (int i = 0; i < count; i++) {
+            if (mobs.get(i).getTemplateID() != 9999999) {
+                doSkill_OneTimeStatChange(skillID, slv, level, delay);
+            }
+        }
+        mobs.clear();
+    }
+
+    public void doSkill_OneTimeStatChange(int skillID, int slv, MobSkillLevelData level, int delay) {
+        if (skillID != MobSkills.HEAL_M) {
+            return;
+        }
+        int heal = level.getX() + Math.abs(Rand32.genRandom().intValue())  % level.getY();
+        int newHP = Math.min(heal + hp, template.getMaxHP());
+        setMobHP(newHP);
+        sendDamagedPacket(1, -heal);
+        sendMobAffectedPacket((slv << 16) | MobSkills.HEAL_M, 0);
+    }
+
+    public void doSkill_Summon(MobSkillLevelData level, int delay) {
+        List<Integer> revives = level.getTemplateIDs();
+        if (revives.isEmpty()) {
+            return;
+        }
+        if (getField().getLifePool().getMobCount() >= 50) {
+            return;
+        }
+        Rect rect = new Rect(-150, -100, 100, 150);
+        if (!level.getAffectedArea().isRectEmpty()) {
+            rect.left = level.getAffectedArea().left;
+            rect.top = level.getAffectedArea().top;
+            rect.right = level.getAffectedArea().right;
+            rect.bottom = level.getAffectedArea().bottom;
+        }
+        rect.offsetRect(curPos.getX(), curPos.getY());
+
+        List<Point> points = new ArrayList<>();
+        getField().getSpace2D().getFootholdRandom(revives.size(), rect, points);
+        if (points.size() < revives.size()) {
+            Logger.logError("Illegal summon mob count ( %d/%d ) [Field : %d]", points.size(), revives.size(), getField().getFieldID());
+        }
+        int index = 0;
+        for (Point point : points) {
+            int x = point.x;
+            Pointer<Integer> pcy = new Pointer<>(point.y);
+            StaticFoothold foothold = getField().getSpace2D().getFootholdUnderneath(x, pcy.get(), pcy);
+            if (foothold != null) {
+                getField().getLifePool().createMob(revives.get(index), null, x, pcy.get(), (short) foothold.getSN(), noDropPriority, level.getEffect(), delay, (byte) 0, 0, null, false);
+            }
+            index++;
+        }
+        points.clear();
+    }
+
+    public void prepareNextSkill(Pointer<Integer> skillCommand, Pointer<Integer> slv, long cur) {
+        if (stat.getStatOption(MobStats.SealSkill) != 0) {
+            return;
+        }
+        List<MobSkillInfo> skills = template.getSkillInfo();
+        if (skills == null || skills.isEmpty()) {
+            return;
+        }
+        if (!nextAttackPossible) {
+            return;
+        }
+        if (this.skillCommand != 0) {
+            return;
+        }
+        if (lastSkillUse != 0 && cur - lastSkillUse < 3000) {
+            return;
+        }
+
+        List<Integer> chosenSkills = new ArrayList<>();
+        for (int i = 0; i < template.getSkillInfo().size(); i++) {
+            MobSkillContext context = null;
+            MobSkillInfo skill = null;
+            if (i >= 0) {
+                int skillSize = template.getSkillInfo().size();
+                if (skillSize != 0 && i < skillSize) {
+                    context = skillContexts.get(i);
+                    skill = template.getSkillInfo().get(i);
+                }
+            }
+            if (context == null || skill == null) {
+                continue;
+            }
+            MobSkillLevelData level = SkillInfo.getInstance().getMobSkill(skill.getSkillID()).getLevelData().get(skill.getSlv() - 1);
+            if (level.getHpBelow() != 0 && getHP() / template.getMaxHP() * 100 > level.getHpBelow()) {
+                continue;
+            }
+            int interval = level.getInerval();
+            if (interval != 0 && interval + context.getLastSkillUse() - cur > 0) {
+                continue;
+            }
+            int skillID = context.getSkillID();
+            if (skillID == MobSkills.HASTE) {
+                int option = stat.getStatOption(MobStats.Speed);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.POWERUP) {
+                int option = stat.getStatOption(MobStats.PowerUp);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.MAGICUP) {
+                int option = stat.getStatOption(MobStats.MagicUp);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.MGUARDUP) {
+                int option = stat.getStatOption(MobStats.MGuardUp);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.PGUARDUP) {
+                int option = stat.getStatOption(MobStats.PGuardUp);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.PHYSICAL_IMMUNE || skillID == MobSkills.MAGIC_IMMUNE) {
+                if (stat.getStatOption(MobStats.PImmune) == 0 && stat.getStatOption(MobStats.MImmune) == 0) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.HARDSKIN) {
+                int option = stat.getStatOption(MobStats.HardSkin);
+                if (option == 0) {
+                    chosenSkills.add(i);
+                }
+                if (Math.abs(100 - option) < Math.abs(100 - level.getX())) {
+                    chosenSkills.add(i);
+                }
+            } else if (skillID == MobSkills.SUMMON) {
+                int skillSummonCount = level.getTemplateIDs().size();
+                if (skillSummonCount + context.getSummoned() <= level.getLimit()) {
+                    chosenSkills.add(i);
+                }
+            } else {
+                chosenSkills.add(i);
+            }
+        }
+        if (!chosenSkills.isEmpty()) {
+            int length = chosenSkills.size();
+            if (length != 0) {
+                int rand = Math.abs(Rand32.genRandom().intValue()) % length;
+                MobSkillContext newContext = skillContexts.get(rand);
+                skillCommand.set(newContext.getSkillID());
+                this.skillCommand = newContext.getSkillID();
+                slv.set(newContext.getSlv());
+                Logger.logReport("Applying skill [%d] slv [%d]", newContext.getSkillID(), newContext.getSlv());
+            }
+        }
+        chosenSkills.clear();
+    }
     public void onMobStatChangeSkill(User user, SkillEntry skill, byte slv, int damageSum) {
         SkillLevelData level = skill.getLevelData(slv);
         int prop = level.Prop;
@@ -501,7 +854,7 @@ public class Mob extends Creature {
         opt.setOption(x);
         opt.setReason(skillID);
         opt.setDuration(duration);
-        
+        Logger.logReport("X [%d] | Reason [%d] | Time [%d]", x, skillID, level.Time);
         Flag flag = new Flag(Flag.INT_128);
         switch (skillID) {
             case Knight.ICE_CHARGE: {
@@ -544,13 +897,16 @@ public class Mob extends Creature {
                 this.experiencedMoveStateChange = true;
                 break;
             }
-            case Wizard1.PoisonBreath: {
+            case Wizard1.PoisonBreath:
+            case ArchMage1.FIRE_DEMON:
+            case ArchMage1.METEOR: {
                 int attr;
                 if ((attr = template.getDamagedElemAttr().get(AttackElem.Poison)) == AttackElemAttr.Damage0 || attr == AttackElemAttr.Damage50) {
                     return;
                 }
                 opt.setOption(Math.max(Math.min(Short.MAX_VALUE, getMaxHP() / (70 - slv)), level.MAD));
                 opt.setModOption(user.getCharacterID());
+                opt.setDuration(time + 1000 * level.DotTime);
                 this.lastUpdatePoison = time;
                 flag.performOR(stat.setStat(MobStats.Poison, opt));
                 break;
@@ -558,6 +914,11 @@ public class Mob extends Creature {
             case Wizard1.Slow:
             case Wizard2.Slow: {
                 flag.performOR(stat.setStat(MobStats.Speed, opt));
+                break;
+            }
+            case Mage1.SEAL: {
+                opt.setOption(1);
+                flag.performOR(stat.setStat(MobStats.Seal, opt));
                 break;
             }
             case Page.Threaten:
@@ -571,6 +932,7 @@ public class Mob extends Creature {
             }
         }
         if (flag.isSet()) {
+            Logger.logReport("Sending");
             sendMobTemporaryStatSet(flag, 0);
         }
     }
@@ -605,7 +967,7 @@ public class Mob extends Creature {
     
     public void setController(Controller ctrl) {
         this.nextAttackPossible = false;
-        //this.skillCommand = 0;
+        this.skillCommand = 0;
         this.controller = ctrl;
         long time = System.currentTimeMillis();
         this.lastAttack = time;
@@ -810,5 +1172,25 @@ public class Mob extends Creature {
 
     public byte getMoveAction() {
         return moveAction;
+    }
+
+    public void sendDamagedPacket(int type, int decHP) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobDamaged);
+        packet.encodeInt(getGameObjectID());
+        packet.encodeByte(type);
+        packet.encodeInt(decHP);
+        if (template.isDamagedByMob()) {
+            packet.encodeInt(getHP());
+            packet.encodeInt(template.getMaxHP());
+        }
+        getField().splitSendPacket(getSplit(), packet, null);
+    }
+
+    public void sendMobAffectedPacket(int skillID, int delay) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobAffected);
+        packet.encodeInt(getGameObjectID());
+        packet.encodeInt(skillID);
+        packet.encodeShort(delay);
+        getField().splitSendPacket(getSplit(), packet, null);
     }
 }

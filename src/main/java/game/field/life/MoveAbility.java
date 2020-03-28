@@ -25,7 +25,10 @@ public class MoveAbility {
     public static final byte
             Stop            = 0,
             Walk            = 1,
-            Jump            = 2,
-            Fly             = 3
+            WalkRandom      = 2,
+            Jump            = 3,
+            Fly             = 4,
+            FlyRandom       = 5,
+            Escort          = 6
     ;
 }

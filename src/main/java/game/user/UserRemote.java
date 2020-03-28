@@ -51,6 +51,7 @@ public class UserRemote {
                 break;
             case UserEffect.SkillUse:
                 packet.encodeInt(args[0]);
+                packet.encodeByte(0);
                 packet.encodeByte(args[1]);
                 break;
             case UserEffect.SkillAffected:
@@ -139,7 +140,24 @@ public class UserRemote {
         mp.encode(packet);
         return packet;
     }
-    
+
+    public static OutPacket onSkillPrepare(int characterID, int skillID, int slv, int action, int speed) {
+        OutPacket packet = new OutPacket(LoopbackPacket.UserSkillPrepare);
+        packet.encodeInt(characterID);
+        packet.encodeInt(skillID);
+        packet.encodeByte(slv);
+        packet.encodeShort(action);
+        packet.encodeByte(speed);
+        return packet;
+    }
+
+    public static OutPacket onSkillCancel(int characterID, int skillID) {
+        OutPacket packet = new OutPacket(LoopbackPacket.UserSkillCancel);
+        packet.encodeInt(characterID);
+        packet.encodeInt(skillID);
+        return packet;
+    }
+
     /**
      * The user damaged packet.
      * When a user is hit or takes damage, this displays the damage dealt.

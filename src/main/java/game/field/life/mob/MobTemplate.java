@@ -483,6 +483,36 @@ public class MobTemplate implements WzXML {
         }
     }
 
+    public void makeSkillContext(List<MobSkillContext> contexts) {
+        long lastSkillUse = System.currentTimeMillis() - 60000;
+        for (MobSkillInfo skill : getSkillInfo()) {
+            MobSkillContext context = new MobSkillContext();
+            context.setSkillID(skill.getSkillID());
+            context.setSlv(skill.getSlv());
+            long last = 0;
+            if (lastSkillUse != 0) {
+                last = lastSkillUse;
+            } else {
+                last = 1;
+                lastSkillUse = 1;
+            }
+            context.setLastSkillUse(last);
+            context.setSummoned(0);
+            contexts.add(context);
+        }
+    }
+
+    public int getSkillIndex(int skillID, int slv) {
+        int index = 0;
+        for (MobSkillInfo skill : getSkillInfo()) {
+            if (skill.getSkillID() == skillID && skill.getSlv() == slv) {
+                return index;
+            }
+            index++;
+        }
+        return -1;
+    }
+
     public int getTemplateID() {
         return templateID;
     }

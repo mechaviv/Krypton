@@ -8,6 +8,8 @@ import common.user.CharacterStat;
 import game.field.life.mob.AttackElem;
 import game.user.User;
 import game.user.item.BundleItem;
+import game.user.item.ExchangeElem;
+import game.user.item.Inventory;
 import game.user.item.ItemInfo;
 import game.user.skill.data.*;
 import game.user.skill.entries.*;
@@ -270,7 +272,7 @@ public class SkillInfo {
         return false;
     }
 
-    public boolean adjustConsumeForActiveSkill(User user, int skillID, byte slv) {
+    public boolean adjustConsumeForActiveSkill(User user, int skillID, byte slv, boolean keyDown, int spiritJavelinItemID) {
         if (slv <= 0) {
             return false;
         }
@@ -286,8 +288,27 @@ public class SkillInfo {
         }
         SkillEntry skillEntry = curSkillEntry.get();
         SkillLevelData level = skillEntry.getLevelData(slv);
+        Pointer<Integer> incMPCon = new Pointer<>(0);
+        SkillAccessor.getAmplification(user.getCharacter(), skillID, incMPCon);
+
         int hp = level.HPCon;
-        int mp = level.MPCon;
+        if (skillID == Skills.DragonKnight.DRAGON_ROAR) {
+            if (user.getBasicStat().getMHP() / 2 <= user.getCharacter().getCharacterStat().getHP()) {
+                hp = user.getBasicStat().getMHP() * level.X / 100;
+            }
+        }
+        int mp = incMPCon.get() * level.MPCon / 100;
+        if (keyDown || user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Infinity) != 0) {
+            mp = 0;
+        }
+        int concentration = user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Concentration);
+        if (concentration != 0) {
+            mp = ((100 - concentration) * mp);
+        }
+        int money = level.MoneyCon;
+        if (skillID == Skills.Hermit.SHADOW_MESO && user.getSecondaryStat().getStatOption(CharacterTemporaryStat.ShadowPartner) != 0) {
+            // TODO
+        }
         if (user.lock()) {
             try {
                 int flag = 0;
@@ -297,7 +318,23 @@ public class SkillInfo {
                 if (mp > 0) {
                     flag |= CharacterStat.CharacterStatType.MP;
                 }
-                if (user.getHP() == 0 || hp > 0 && hp >= user.getHP() || mp > 0 && mp > user.getCharacter().getCharacterStat().getMP()) {
+                if (money > 0) {
+                    flag |= CharacterStat.CharacterStatType.Money;
+                }
+
+                if (user.getHP() == 0 || hp > 0 && hp >= user.getHP() || mp > 0 && mp > user.getCharacter().getCharacterStat().getMP() && money > 0 && money > user.getCharacter().getCharacterStat().getMoney()) {
+                    if (flag != 0)
+                        user.sendCharacterStat(Request.None, flag);
+                    return false;
+                }
+                int itemCon = level.ItemCon;
+                int itemConNo = level.ItemConNo;
+                if (itemCon != 0 && itemConNo > 0 && itemConNo > Inventory.getItemCount(user, itemCon)) {
+                    if (flag != 0)
+                        user.sendCharacterStat(Request.None, flag);
+                    return false;
+                }
+                if (spiritJavelinItemID > 0 && level.BulletConsume > Inventory.getItemCount(user, spiritJavelinItemID)) {
                     if (flag != 0)
                         user.sendCharacterStat(Request.None, flag);
                     return false;
@@ -308,8 +345,26 @@ public class SkillInfo {
                 if (mp > 0) {
                     user.incMP(-mp, true);
                 }
+                if (money > 0) {
+                    user.incMoney(-money, true, true);
+                }
                 if (flag != 0) {
                     user.sendCharacterStat(Request.None, flag);
+                }
+                if (itemCon != 0 && itemConNo > 0) {
+                    ExchangeElem elem = new ExchangeElem();
+                    elem.setAdd(false);
+                    elem.getRemove().setItemID(itemCon);
+                    elem.getRemove().setCount((short) itemConNo);
+                    elem.getRemove().setTI((byte) 0);
+                    elem.getRemove().setPOS((short) 0);
+                    List<ExchangeElem> toRemove = new ArrayList<>();
+                    toRemove.add(elem);
+                    Inventory.exchange(user, 0, toRemove, null, null);
+                    toRemove.clear();
+                }
+                if (spiritJavelinItemID > 0) {
+                    Inventory.wasteItem(user, spiritJavelinItemID, (short) level.BulletConsume);
                 }
                 return true;
             } finally {
@@ -473,10 +528,73 @@ public class SkillInfo {
     }
 
     public boolean loadMobSkill() {
+        WzProperty mobSkillDir = new WzFileSystem().init("Skill").getPackage().getItem("MobSkill.img");
+        if (mobSkillDir == null) {
+            return false;
+        }
+        for (WzProperty mobSkillData : mobSkillDir.getChildNodes()) {
+            int skillID = Integer.parseInt(mobSkillData.getNodeName());
+
+            WzProperty levelData = mobSkillData.getNode("level");
+            if (levelData == null) {
+                return false;
+            }
+            MobSkillEntry skill = new MobSkillEntry(skillID);
+            loadMobSkillLevelData(skillID, skill.getLevelData(), levelData);
+            mobSkills.put(skillID, skill);
+        }
         return true;
     }
 
-    public boolean loadMobSkillLevelData(int skillID, MobSkillLevelData[] levelData, WzProperty p) {
+    public boolean loadMobSkillLevelData(int skillID, List<MobSkillLevelData> levelData, WzProperty p) {
+        for (int i = 0; i < p.getChildNodes().size(); i++) {
+            levelData.add(i, null);
+        }
+        for (WzProperty level : p.getChildNodes()) {
+            MobSkillLevelData data = new MobSkillLevelData();
+            data.setHpBelow(WzUtil.getInt32(level.getNode("hp"), 0));
+
+            data.setConMP(WzUtil.getInt32(level.getNode("conMP"), 0));
+            data.setDuration(1000 * WzUtil.getInt32(level.getNode("time"), 0));
+            data.setInerval(1000 * WzUtil.getInt32(level.getNode("interval"), 0));
+            data.setProp(WzUtil.getInt32(level.getNode("prop"), 0));
+            data.setX(WzUtil.getInt32(level.getNode("x"), 0));
+            data.setY(WzUtil.getInt32(level.getNode("y"), 0));
+            data.setTargetUserCount(WzUtil.getInt32(level.getNode("count"), -1));
+            data.setTargetUserRandom(WzUtil.getBoolean(level.getNode("randomTarget"), false));
+            data.setDirection(WzUtil.getInt32(level.getNode("direction"), 0));
+            int elemAttr = 4;
+            String elem = WzUtil.getString(level.getNode("elemAttr"), null);
+            if (elem != null && !elem.isEmpty()) {
+                switch ((byte) elem.charAt(0)) {
+                    case 0x46:
+                        elemAttr = 2;
+                        break;
+                    case 0x49:
+                        elemAttr = 1;
+                        break;
+                    case 0x4C:
+                        elemAttr = 3;
+                        break;
+                }
+            }
+            data.setElemAttr(elemAttr);
+            Point lt = WzUtil.getPoint(level.getNode("lt"), null);
+            Point rb = WzUtil.getPoint(level.getNode("rb"), null);
+            if (lt != null || rb != null) {
+                data.setAffectedArea(new Rect(lt.x, lt.y, rb.x, rb.y));
+            }
+            data.setLimit(WzUtil.getInt32(level.getNode("limit"), 0));
+            data.setEffect(WzUtil.getInt32(level.getNode("summonEffect"), 0));
+            for (int i = 0; ; i++) {
+                WzProperty reviveData = level.getNode("" + i);
+                if (reviveData == null) {
+                    break;
+                }
+                data.getTemplateIDs().add(i, WzUtil.getInt32(reviveData, 0));
+            }
+            levelData.set(Integer.parseInt(level.getNodeName()) - 1, data);
+        }
         return true;
     }
 

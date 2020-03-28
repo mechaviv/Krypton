@@ -48,6 +48,7 @@ public class UserLocal {
                 break;
             case UserEffect.SkillUse:
                 packet.encodeInt(args[0]);
+                packet.encodeByte(0);
                 packet.encodeByte(args[1]);
                 break;
             case UserEffect.SkillAffected:

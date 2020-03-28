@@ -1,0 +1,53 @@
+package game.field.life.mob;
+
+/**
+ * Created by MechAviv on 3/28/2020.
+ */
+public class MobActType {
+    public static final int 
+            MOVE        = 0x0,
+            STAND       = 0x1,
+            JUMP        = 0x2,
+            FLY         = 0x3,
+            ROPE        = 0x4,
+            REGEN       = 0x5,
+            BOMB        = 0x6,
+            HIT1        = 0x7,
+            HIT2        = 0x8,
+            HITF        = 0x9,
+            DIE1        = 0xA,
+            DIE2        = 0xB,
+            DIEF        = 0xC,
+            ATTACK1     = 0xD,
+            ATTACK2     = 0xE,
+            ATTACK3     = 0xF,
+            ATTACK4     = 0x10,
+            ATTACK5     = 0x11,
+            ATTACK6     = 0x12,
+            ATTACK7     = 0x13,
+            ATTACK8     = 0x14,
+            ATTACKF     = 0x15,
+            SKILL1      = 0x16,
+            SKILL2      = 0x17,
+            SKILL3      = 0x18,
+            SKILL4      = 0x19,
+            SKILL5      = 0x1A,
+            SKILL6      = 0x1B,
+            SKILL7      = 0x1C,
+            SKILL8      = 0x1D,
+            SKILL9      = 0x1E,
+            SKILL10     = 0x1F,
+            SKILL11     = 0x20,
+            SKILL12     = 0x21,
+            SKILL13     = 0x22,
+            SKILL14     = 0x23,
+            SKILL15     = 0x24,
+            SKILL16     = 0x25,
+            SKILLF      = 0x26,
+            CHASE       = 0x27,
+            MISS        = 0x28,
+            SAY         = 0x29,
+            EYE         = 0x2A,
+            NO          = 0x2B,
+            ENABLED     = 0x25;
+}

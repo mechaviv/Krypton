@@ -31,6 +31,9 @@ import game.field.life.npc.Npc;
 import game.field.life.npc.NpcPool;
 import game.field.portal.PortalMap;
 import game.field.reactor.ReactorPool;
+import game.field.summoned.Summoned;
+import game.field.summoned.SummonedPacket;
+import game.field.summoned.SummonedPool;
 import game.party.PartyMan;
 import game.script.ScriptVM;
 import game.user.User;
@@ -41,10 +44,7 @@ import game.user.item.MobSummonItem;
 import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.OutPacket;
-import util.Logger;
-import util.Rect;
-import util.Size;
-import util.SystemTime;
+import util.*;
 
 import java.awt.*;
 import java.util.List;
@@ -92,6 +92,7 @@ public class Field {
     private final LifePool lifePool;
     private final DropPool dropPool;
     private final ReactorPool reactorPool;
+    private final SummonedPool summonedPool;
     private final Map<Integer, User> users;
     private int fieldReturn;
     private int forcedReturn;
@@ -136,6 +137,7 @@ public class Field {
         this.lifePool = new LifePool(this);
         this.dropPool = new DropPool(this);
         this.reactorPool = new ReactorPool(this);
+        this.summonedPool = new SummonedPool(this);
         this.users = new ConcurrentHashMap<>();
     }
 
@@ -347,6 +349,11 @@ public class Field {
         user.setPosMap(this.field);
         users.put(user.getCharacterID(), user);
         lifePool.insertController(user);
+        if (getFieldID() / 1000000 % 100 == 9) {
+            user.removeSummoned(0, 3, 0);
+        } else {
+            user.reregisterSummoned();
+        }
         if (weatherItemID != 0) {
             user.sendPacket(FieldPacket.onBlowWeather(weatherItemID, weatherMsg));
         }
@@ -361,6 +368,7 @@ public class Field {
     public void onLeave(User user) {
         lifePool.removeController(user);
         dropPool.onLeave(user);
+        user.removeSummoned(0, 2, System.currentTimeMillis());
         users.remove(user.getCharacterID());
         splitRegisterUser(user.getSplit(), null, user);
         splitUnregisterFieldObj(FieldSplit.User, user);
@@ -401,8 +409,13 @@ public class Field {
             action = -1;
         else
             action = (byte) ((action >> 1) & 0xFF);
-        if (mob.onMobMove(nextAttackPossible, action, data)) {
-            ctrl.sendPacket(MobPool.onCtrlAck(mob.getGameObjectID(), mobCtrlSN, nextAttackPossible, mob.getMP()));
+
+        Pointer<Integer> skillCommand = new Pointer<>(0);
+        Pointer<Integer> slv = new Pointer<>(0);
+        Pointer<Boolean> shootAttack = new Pointer<>(false);
+
+        if (mob.onMobMove(nextAttackPossible, action, data, skillCommand, slv, shootAttack)) {
+            ctrl.sendPacket(MobPool.onCtrlAck(mob.getGameObjectID(), mobCtrlSN, nextAttackPossible, mob.getMP(), skillCommand, slv));
             MovePath mp = new MovePath();
             mp.decode(packet);
             packet.decodeByte();// pMob.bChasing
@@ -549,6 +562,31 @@ public class Field {
             splitRegisterUser(splitOld, splitNew, user);
         }
         splitSendPacket(user.getSplit(), UserRemote.onMove(user.getCharacterID(), mp), user);
+        mp.getElem().clear();
+    }
+
+    public void onSummonedMove(User user, Summoned summoned, InPacket packet) {
+        MovePath mp = new MovePath();
+        mp.decode(packet);
+        if (mp.getElem().size() > 0) {
+            Elem tail = mp.getElem().getLast();
+            int xPos = tail.getX();
+            int yPos = tail.getY();
+            int sn = tail.getFh();
+            FieldSplit splitOld = summoned.getSplit();
+            int x = ScreenWidthOffset * splitOld.getCol() + leftTop.x - 100;
+            int y = ScreenHeightOffset * splitOld.getRow() + leftTop.y - 75;
+
+            FieldSplit centerSplit = null;
+            if (splitOld == null || xPos < x || xPos > x + 800 || yPos < y || yPos > y + 600) {
+                centerSplit = splitFromPoint(xPos, yPos);
+            }
+            summoned.setMovePosition(xPos, yPos, tail.getMoveAction(), (short) sn);
+            if (centerSplit != null) {
+                splitMigrateFieldObj(centerSplit, FieldSplit.Summoned, summoned);
+            }
+        }
+        splitSendPacket(summoned.getSplit(), SummonedPacket.onMove(user.getCharacterID(), summoned.getSummonedID(), mp), user);
         mp.getElem().clear();
     }
 
@@ -753,7 +791,7 @@ public class Field {
         lifePool.update(time);
         dropPool.tryExpire(false);
         //  CMessageBoxPool::TryExpireMessageBox(&v2->m_messageBoxPool);
-        //  CSummonedPool::Update(&v2->m_summonedPool, tCur);
+        summonedPool.update(time);
         //  CAffectedAreaPool::Update(&v2->m_affectedAreaPool, tCur);
         //  CTownPortalPool::Update(&v2->m_townPortalPool, tCur);
         reactorPool.update(time);
@@ -914,5 +952,9 @@ public class Field {
 
     public void setUserEntered(boolean userEntered) {
         this.userEntered = userEntered;
+    }
+
+    public SummonedPool getSummonedPool() {
+        return summonedPool;
     }
 }

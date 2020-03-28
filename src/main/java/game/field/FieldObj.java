@@ -19,6 +19,7 @@ package game.field;
 
 import game.user.User;
 import network.packet.OutPacket;
+import util.Logger;
 
 /**
  *

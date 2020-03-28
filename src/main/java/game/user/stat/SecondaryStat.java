@@ -296,6 +296,31 @@ public class SecondaryStat {
         return reset;
     }
 
+    public Flag resetByUserSkill() {
+        Flag reset = new Flag(Flag.INT_128);
+        for (Iterator<Map.Entry<Integer, SecondaryStatOption>> it = stats.entrySet().iterator(); it.hasNext(); ) {
+            Map.Entry<Integer, SecondaryStatOption> stat = it.next();
+            if (stat.getValue().getReason() / 1000000 > 0) {
+                reset.performOR(CharacterTemporaryStat.getMask(stat.getKey()));
+                it.remove();
+            }
+        }
+
+        for (int index = 0; index < TSIndex.NO; index++) {
+            TemporaryStatBase ts = temporaryStats[index];
+            if (ts.getResaon() / 1000000 > 0) {
+                if (ts instanceof TwoStateTemporaryStat && ((TwoStateTemporaryStat) ts).isActivated(System.currentTimeMillis())) {
+                    reset.performOR(CharacterTemporaryStat.getMask(TSIndex.getCTSByIndex(index)));
+                    temporaryStats[index].reset();
+                } else if (ts.getValue() != 0) {
+                    reset.performOR(CharacterTemporaryStat.getMask(TSIndex.getCTSByIndex(index)));
+                    temporaryStats[index].reset();
+                }
+            }
+        }
+        return reset;
+    }
+
     public void setFrom(BasicStat bs, List<ItemSlotBase> realEquip, CharacterData cd) {
         short job = bs.getJob();
         int jc = JobAccessor.getJobCategory(job);
