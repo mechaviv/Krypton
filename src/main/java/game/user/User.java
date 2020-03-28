@@ -20,6 +20,7 @@ package game.user;
 import common.*;
 import common.item.*;
 import common.user.CharacterData;
+import common.user.CharacterStat;
 import common.user.CharacterStat.CharacterStatType;
 import common.user.DBChar;
 import common.user.UserEffect;
@@ -38,7 +39,6 @@ import game.field.life.mob.MobTemplate;
 import game.field.life.npc.*;
 import game.field.portal.Portal;
 import game.field.portal.PortalMap;
-import game.messenger.Character;
 import game.messenger.Messenger;
 import game.miniroom.MiniRoom;
 import game.miniroom.MiniRoomBase;
@@ -130,6 +130,7 @@ public class User extends Creature {
     private long lastAttackTime;
     private long lastAttackDelay;
     private long finalAttackDelay;
+    private long lastDragonBloodUpdate;
     private int attackCheckIgnoreCnt;
     private int attackSpeedErr;
     // Hide
@@ -212,6 +213,7 @@ public class User extends Creature {
         this.nextCheckCashItemExpire = time;
         this.lastAttack = time;
         this.lastPassiveSkillDataUpdate = Utilities.timeGetTime();
+        this.lastDragonBloodUpdate = time;
         this.nexonClubID = "";
         this.characterName = "";
         this.community = "#TeamEric";
@@ -3058,6 +3060,7 @@ public class User extends Creature {
 
     public void update(long time) {
         resetTemporaryStat(time, 0);
+        applyTemporaryStat(time);
         flushCharacterData(time, false);
         checkCashItemExpire(time);
         checkGeneralItemExpire(time);
@@ -3226,6 +3229,7 @@ public class User extends Creature {
                 pdsMHPr = passiveSkillData.getMHPr();
                 pdsMMPr = passiveSkillData.getMMPr();
             }
+            
             int maxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxHP);
             int maxMPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MaxMP);
             int basicStatInc = secondaryStat.getStatOption(CharacterTemporaryStat.BasicStatUp);
@@ -3895,5 +3899,30 @@ public class User extends Creature {
                 }
             }
         }
+    }
+
+    public void applyTemporaryStat(long time) {
+        if (time - lastDragonBloodUpdate < 4000) {
+            return;
+        }
+        List<Integer> removeSkills = new ArrayList<>();
+        int dragonBlood = getSecondaryStat().getStatOption(CharacterTemporaryStat.DragonBlood);
+        if (dragonBlood != 0) {
+            if (incHP(-dragonBlood, true)) {
+                if (getCharacter().getCharacterStat().getHP() <= 0) {
+                    getCharacter().getCharacterStat().setHP(1);
+                    removeSkills.add(DragonKnight.DRAGON_BLOOD);
+                }
+                sendCharacterStat(Request.None, CharacterStatType.HP);
+                onUserEffect(true, true, UserEffect.SkillSpecial, DragonKnight.DRAGON_BLOOD);
+            } else {
+                removeSkills.add(DragonKnight.DRAGON_BLOOD);
+            }
+        }
+        for (int skillID : removeSkills) {
+            resetTemporaryStat(0, skillID);
+        }
+        removeSkills.clear();
+        lastDragonBloodUpdate = System.currentTimeMillis();
     }
 }

@@ -480,6 +480,7 @@ public class SkillAccessor {
             case Knight.FIRE_CHARGE:
             case Knight.ICE_CHARGE:
             case Knight.LIGHTNING_CHARGE:
+            case DragonKnight.DRAGON_BLOOD:
             // 4TH Warriors
             case Hero.Enrage:
             case Paladin.DIVINE_CHARGE:

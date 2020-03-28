@@ -54,6 +54,9 @@ public class UserLocal {
                 packet.encodeInt(args[0]);
                 packet.encodeByte(args[1]);
                 break;
+            case UserEffect.SkillSpecial:
+                packet.encodeInt(args[0]);
+                break;
             case UserEffect.AvatarOriented:
                 packet.encodeString(str);
                 packet.encodeInt(0);// no use

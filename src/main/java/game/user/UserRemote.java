@@ -57,6 +57,9 @@ public class UserRemote {
                 packet.encodeInt(args[0]);
                 packet.encodeByte(args[1]);
                 break;
+            case UserEffect.SkillSpecial:
+                packet.encodeInt(args[0]);
+                break;
         }
         return packet;
     }

@@ -399,6 +399,10 @@ public class UserSkill {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MaxMP, new SecondaryStatOption(level.Y, skill.getSkillID(), duration)));
                 break;
             }
+            case DragonKnight.DRAGON_BLOOD: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DragonBlood, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
             // MAGICIAN
             case Magician.MagicGuard: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MagicGuard, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
