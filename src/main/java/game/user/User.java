@@ -34,10 +34,7 @@ import game.field.drop.RewardType;
 import game.field.life.AttackIndex;
 import game.field.life.AttackInfo;
 import game.field.life.MoveAbility;
-import game.field.life.mob.Mob;
-import game.field.life.mob.MobAttackInfo;
-import game.field.life.mob.MobSkills;
-import game.field.life.mob.MobTemplate;
+import game.field.life.mob.*;
 import game.field.life.npc.*;
 import game.field.portal.Portal;
 import game.field.portal.PortalMap;
@@ -1683,6 +1680,7 @@ public class User extends Creature {
         byte attackInfo = packet.decodeByte();//nDamagePerMob | 16 * nMobCount
         byte damagePerMob = (byte) (attackInfo & 0xF);
         byte mobCount = (byte) ((attackInfo >>> 4) & 0xF);
+        int weaponItemID = avatarLook.getEquipped().get(11);
         packet.decodeInt();// ~pDrInfo.dr2
         packet.decodeInt();// ~pDrInfo.dr3
         int skillID = packet.decodeInt();
@@ -1706,9 +1704,11 @@ public class User extends Creature {
         if (SkillAccessor.isKeyDownSkill(skillID)) {
             keyDown = packet.decodeInt();
         }
-        this.lastAttack = System.currentTimeMillis();
+        long time = System.currentTimeMillis();
+        this.lastAttack = time;
         int bulletItemID = 0;
         int mobTemplateID = 0;
+        int banMapMobTemplateID = 0;
 
         int option = packet.decodeByte();
         if (type == ClientPacket.UserShootAttack) {
@@ -1773,6 +1773,9 @@ public class User extends Creature {
                 Mob mob = getField().getLifePool().getMob(info.mobID);
                 if (mob != null) {
                     mobTemplateID = mob.getTemplateID();
+                    if (mob.getTemplate().getBanType() == 2) {
+                        banMapMobTemplateID = mobTemplateID;
+                    }
                 }
                 info.hitAction = packet.decodeByte();
 
@@ -1917,6 +1920,87 @@ public class User extends Creature {
                     secondaryStat.setStat(CharacterTemporaryStat.ComboCounter, comboOpt);
                     if (comboOpt.getOption() != oldOption) {
                         sendTemporaryStatSet(CharacterTemporaryStat.getMask(CharacterTemporaryStat.ComboCounter));
+                    }
+                }
+                int job = getCharacter().getCharacterStat().getJob();
+                int wt = ItemAccessor.getWeaponType(weaponItemID);
+
+                int mobStatSkillID = 0;
+                int mobStatSkillDelay = 0;
+
+                if (secondaryStat.getStatOption(CharacterTemporaryStat.HamString) != 0
+                &&  wt == ItemAccessor.WeaponTypeFlag.BOW
+                &&  skillID != Hunter.PowerKnockback
+                &&  skillID != Hunter.ArrowBomb) {
+                    mobStatSkillID = Bowmaster.HAMSTRING;
+                    mobStatSkillDelay = 1000;
+                }
+                if (secondaryStat.getStatOption(CharacterTemporaryStat.Blind) != 0
+                && wt == ItemAccessor.WeaponTypeFlag.CROSSBOW
+                && skillID != Crossbowman.PowerKnockback) {
+                    mobStatSkillID = CrossbowMaster.BLIND;
+                    mobStatSkillDelay = 1000;
+                }
+                if (job == 412 && wt == ItemAccessor.WeaponTypeFlag.THROWINGGLOVE
+                &&  skillID != 0 && type == ClientPacket.UserShootAttack
+                &&  skillID != Assassin.Drain
+                &&  skillID != Hermit.SHADOW_MESO
+                &&  skillID != NightLord.SHOWDOWN
+                &&  skillID != NightLord.NINJA_STORM) {
+                    mobStatSkillID = NightLord.VENOM;
+                    mobStatSkillDelay = 1000;
+                }
+                if (job == 422 && wt == ItemAccessor.WeaponTypeFlag.DAGGER
+                &&  skillID != Thief.Steal
+                &&  skillID != ThiefMaster.THIEVES
+                &&  skillID != ThiefMaster.MESO_EXPLOSION
+                &&  skillID != Shadower.SHOWDOWN) {
+                    mobStatSkillID = Shadower.VENOM;
+                    mobStatSkillDelay = 1000;
+                }
+                if (mobStatSkillID != 0) {
+                    Pointer<SkillEntry> mobStatSkill = new Pointer<>();
+                    int mobStatSLV = SkillInfo.getInstance().getSkillLevel(getCharacter(), mobStatSkillID, mobStatSkill);
+                    if (mobStatSLV > 0 && mobStatSkill.get() != null && mobCount > 0) {
+                        for (int i = 0; i < mobCount; i++) {
+                            if (damagePerMob <= 0) {
+                                break;
+                            }
+                            AttackInfo att = attack.get(i);
+                            for (int j = 0; j < damagePerMob; j++) {
+                                if (att.damageCli.get(j) <= 0) {
+                                    break;
+                                }
+                                getField().getLifePool().onMobStatChangeSkill(this, att.mobID, mobStatSkill.get(), (byte) mobStatSLV);
+                            }
+                        }
+                    }
+                }
+                if (skillID != 0) {
+                    SkillLevelData levelData = skill.getLevelData(slv);
+                    if (skillID == Mage1.POISON_MIST) {
+                        int delay = 700;
+                        long start = time + delay;
+                        long end = start + 1000 * levelData.Time;
+                        Rect rect = levelData.affectedArea.copy();
+                        rect.offsetRect(userPos.getX(), userPos.getY());
+                        getField().getAffectedAreaPool().insertAffectedArea(false, getCharacterID(), skillID, slv, start, end, userPos, rect);
+                    }
+                    if (skillID == NightLord.NINJA_STORM && mobCount > 0) {
+                        for (int i = 0; i < mobCount; i++) {
+                            AttackInfo atk = attack.get(i);
+                            if (atk.damageCli.get(i) <= 0) {
+                                continue;
+                            }
+                            getField().getLifePool().onMobStatChangeSkill(this, atk.mobID, skill, slv);
+                        }
+                    }
+                    // meso explosion drop remove here
+                    if (skillID == DragonKnight.DRAGON_ROAR) {
+                        sendTemporaryStatSet(secondaryStat.setStat(CharacterTemporaryStat.Stun, new SecondaryStatOption(1, DragonKnight.DRAGON_ROAR, time + 1000 * 2)));
+                    }
+                    if (banMapMobTemplateID != 0) {
+                        banMapByMob(banMapMobTemplateID);
                     }
                 }
             }
@@ -4170,5 +4254,19 @@ public class User extends Creature {
         }
         sendTemporaryStatReset(tempReset);
         sendTemporaryStatSet(tempSet);
+    }
+
+    public void banMapByMob(int mobTemplateID) {
+        MobTemplate template = MobTemplate.getMobTemplate(mobTemplateID);
+        if (template == null) {
+            return;
+        }
+        if (template.getBanMap() == null || template.getBanMap().size() <= 0) {
+            Logger.logError("Incorrect MobTemplateID in CUser::BanMapByMob (MID:%d, FID:%d, CID:%d)", template.getTemplateID(), getField().getFieldID(), getCharacterID());
+            return;
+        }
+        MobBanMap banMap = template.getBanMap().get(Math.abs(Rand32.genRandom().intValue()) % template.getBanMap().size());
+        postTransferField(banMap.getFieldID(), banMap.getPortalName(), false);
+        sendSystemMessage(template.getBanMsg());
     }
 }

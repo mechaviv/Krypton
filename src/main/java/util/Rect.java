@@ -17,6 +17,8 @@
  */
 package util;
 
+import network.packet.OutPacket;
+
 import java.awt.Point;
 
 /**
@@ -43,7 +45,11 @@ public class Rect {
         this.right = right;
         this.bottom = bottom;
     }
-    
+
+    public Rect copy() {
+        return new Rect(left, top, right, bottom);
+    }
+
     /**
      * Checks whether or not this <code>Rectangle</code> contains the
      * specified <code>Point</code>.
@@ -154,6 +160,13 @@ public class Rect {
             return new Rect(x1, y1, x2 - x1, y2 - y1);
         }
         return src1;
+    }
+
+    public void encode(OutPacket packet) {
+        packet.encodeInt(left);
+        packet.encodeInt(top);
+        packet.encodeInt(right);
+        packet.encodeInt(bottom);
     }
 
     @Override

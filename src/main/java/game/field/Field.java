@@ -22,6 +22,7 @@ import common.game.field.FieldEffectFlags;
 import common.item.ItemAccessor;
 import game.GameApp;
 import game.field.MovePath.Elem;
+import game.field.affectedarea.AffectedAreaPool;
 import game.field.drop.DropPool;
 import game.field.life.LifePool;
 import game.field.life.mob.BossIDs;
@@ -93,6 +94,7 @@ public class Field {
     private final DropPool dropPool;
     private final ReactorPool reactorPool;
     private final SummonedPool summonedPool;
+    private final AffectedAreaPool affectedAreaPool;
     private final Map<Integer, User> users;
     private int fieldReturn;
     private int forcedReturn;
@@ -138,6 +140,7 @@ public class Field {
         this.dropPool = new DropPool(this);
         this.reactorPool = new ReactorPool(this);
         this.summonedPool = new SummonedPool(this);
+        this.affectedAreaPool = new AffectedAreaPool(this);
         this.users = new ConcurrentHashMap<>();
     }
 
@@ -792,7 +795,7 @@ public class Field {
         dropPool.tryExpire(false);
         //  CMessageBoxPool::TryExpireMessageBox(&v2->m_messageBoxPool);
         summonedPool.update(time);
-        //  CAffectedAreaPool::Update(&v2->m_affectedAreaPool, tCur);
+        affectedAreaPool.update(time);
         //  CTownPortalPool::Update(&v2->m_townPortalPool, tCur);
         reactorPool.update(time);
         if (weatherItemID != 0 && ItemAccessor.isWeatherItem(weatherItemID)) {
@@ -956,5 +959,9 @@ public class Field {
 
     public SummonedPool getSummonedPool() {
         return summonedPool;
+    }
+
+    public AffectedAreaPool getAffectedAreaPool() {
+        return affectedAreaPool;
     }
 }

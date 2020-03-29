@@ -502,7 +502,11 @@ public class SkillAccessor {
             case Archer.Focus:
             case Hunter.SoulArrow_Bow:
             case Crossbowman.SoulArrow_Crossbow:
+            case Bowmaster.HAMSTRING:
+            case Bowmaster.CONCENTRATION:
+            case CrossbowMaster.BLIND:
             case Rogue.DarkSight:
+            case Hermit.SHADOW_PARTNER:
                 return true;
             default: {
                 if (isStance(skillID)) {
@@ -519,6 +523,7 @@ public class SkillAccessor {
             case Wizard1.Slow:
             case Wizard2.Slow:
             case Mage1.SEAL:
+            case Hermit.SHADOW_WEB:
                 return true;
             default: {
                 return false;
@@ -570,8 +575,11 @@ public class SkillAccessor {
             case Cleric.Heal:
             case Cleric.Bless:
             case Priest.HOLY_SYMBOL:
+            case Bowmaster.SHARP_EYES:
+            case CrossbowMaster.SHARP_EYES:
             case Assassin.Haste:
             case Thief.Haste:
+            case Hermit.MESO_UP:
             case Viper.WIND_BOOSTER:
                 return true;
             default: {
@@ -592,6 +600,11 @@ public class SkillAccessor {
             case Bishop.BAHAMUT:
             case Ranger.PUPPET:
             case Ranger.SILVER_HAWK:
+            case Bowmaster.PHOENIX:
+            case Sniper.PUPPET:
+            case Sniper.GOLDEN_EAGLE:
+            case CrossbowMaster.FREEZER:
+            case Hermit.SHADOW_MIRROR:
                 return true;
         }
         return false;
@@ -884,6 +897,7 @@ public class SkillAccessor {
     }
 
     public static boolean isAntiRepeatBuffSkill(int skillID) {
+        // not finished
         switch (skillID) {
             case Warrior.IronBody:
             case Fighter.Fury:

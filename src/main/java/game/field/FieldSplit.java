@@ -32,7 +32,8 @@ public class FieldSplit {
             Npc             = 2,
             Drop            = 3,
             Summoned        = 4,
-            NO              = 5
+            AffectedArea    = 5,
+            NO              = 6
     ;
     private int row;
     private int col;

@@ -497,8 +497,6 @@ public class Mob extends Creature {
     public boolean doSkill(int skillID, int slv, int option) {
         int skillIndex = template.getSkillIndex(skillID, slv);
         if (stat.getStatOption(MobStats.SealSkill) != 0 || skillCommand != skillID || skillIndex < 0) {
-            Logger.logReport("%d != %d", skillCommand, skillID);
-            Logger.logReport("%d < 0", skillIndex);
             skillCommand = 0;
             return false;
         }
@@ -516,8 +514,8 @@ public class Mob extends Creature {
         if (context.getSkillID() == MobSkills.SUMMON) {
             context.setSummoned(context.getSummoned() + level.getTemplateIDs().size());
         }
+        skillContexts.set(skillIndex, context);
         skillCommand = 0;
-        Logger.logReport("Doing Skill [0x%X, %d]", skillID, slv);
         if (MobSkills.isStatChange(skillID)) {
             doSkill_StatChange(skillID, slv, level, option);
         } else if (MobSkills.isUserStatChange(skillID)) {
@@ -529,7 +527,7 @@ public class Mob extends Creature {
         } else if (MobSkills.isSummon(skillID)) {
             doSkill_Summon(level, option);
         } else if (MobSkills.isAffectArea(skillID)) {
-
+            doSkill_AffectArea(skillID, slv, level, option);
         } else {
             Logger.logReport("[Mob Skill] Unhandled skill [0x%X, %d, 0x%X]", skillID, slv, option);
         }
@@ -720,6 +718,15 @@ public class Mob extends Creature {
         points.clear();
     }
 
+    public void doSkill_AffectArea(int skillID, int slv, MobSkillLevelData level, int delay) {
+        long start = delay + System.currentTimeMillis();
+        long end = start + level.getDuration();
+        Rect area = level.getAffectedArea().copy();
+        Point pt = new Point(curPos.x, curPos.y);
+        area.offsetRect(pt.getX(), pt.getY());
+        getField().getAffectedAreaPool().insertAffectedArea(true, getGameObjectID(), skillID, slv, start, end, pt, area);
+    }
+
     public void prepareNextSkill(Pointer<Integer> skillCommand, Pointer<Integer> slv, long cur) {
         if (stat.getStatOption(MobStats.SealSkill) != 0) {
             return;
@@ -826,11 +833,10 @@ public class Mob extends Creature {
             int length = chosenSkills.size();
             if (length != 0) {
                 int rand = Math.abs(Rand32.genRandom().intValue()) % length;
-                MobSkillContext newContext = skillContexts.get(rand);
+                MobSkillContext newContext = skillContexts.get(chosenSkills.get(rand));
                 skillCommand.set(newContext.getSkillID());
                 this.skillCommand = newContext.getSkillID();
                 slv.set(newContext.getSlv());
-                Logger.logReport("Applying skill [%d] slv [%d]", newContext.getSkillID(), newContext.getSlv());
             }
         }
         chosenSkills.clear();

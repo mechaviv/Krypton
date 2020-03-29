@@ -25,12 +25,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SummonedPool {
     private final Field field;
     private final Map<Integer, Summoned> summoneds;
-    private final AtomicInteger summonedIdCounter;
+    public final static AtomicInteger summonedIdCounter = new AtomicInteger(0);
 
     public SummonedPool(Field field) {
         this.field = field;
         this.summoneds = new HashMap<>();
-        this.summonedIdCounter = new AtomicInteger(0);
     }
 
     public void update(long time) {
@@ -55,7 +54,6 @@ public class SummonedPool {
             return false;
         }
         summoned.setField(field);
-        summoned.setSummonedID(summonedIdCounter.incrementAndGet());
         summoned.setCurPos(new Point(pt.x, pt.y));
         field.getEncloseSplit(fieldSplit, summoned.getSplits());
         for (FieldSplit split : summoned.getSplits()) {
@@ -82,14 +80,15 @@ public class SummonedPool {
             moveAbility = MoveAbility.Walk;
             if (skillID == DarkKnight.BEHOLDER)
                 assistType = AssistType.Heal;
-        } else if (skillID == Priest.SUMMON_DRAGON || skillID == Ranger.SILVER_HAWK) {
+        } else if (skillID == Priest.SUMMON_DRAGON || skillID == Ranger.SILVER_HAWK || skillID == Bowmaster.PHOENIX || skillID == Sniper.GOLDEN_EAGLE || skillID == CrossbowMaster.FREEZER) {
             moveAbility = MoveAbility.Fly;
+        } else if (skillID == Hermit.SHADOW_MIRROR) {
+            moveAbility = MoveAbility.Stop;
         } else if (skillID == Ranger.PUPPET || skillID == Sniper.PUPPET) {
             moveAbility = MoveAbility.Stop;
             assistType = AssistType.None;
         }
         Summoned summoned = new Summoned(field);
-        summoned.setSummonedID(summonedIdCounter.incrementAndGet());
         summoned.init(characterID, skillID, slv, charLevel, newPos, (short) staticFoothold.getSN(), moveAbility, assistType);
         summoned.setCreateTime(System.currentTimeMillis());
 
@@ -98,7 +97,7 @@ public class SummonedPool {
             return null;
         }
         SkillLevelData sd = skill.getLevelData(slv);
-        summoned.setEnd(migrate ? end : summoned.getCreateTime() + 1000 * 10);
+        summoned.setEnd(migrate ? end : summoned.getCreateTime() + 1000 * sd.Time);
         summoned.setHp(sd.X);
         summoned.setPAD(sd.EPAD);
         summoned.setMAD(sd.MAD);

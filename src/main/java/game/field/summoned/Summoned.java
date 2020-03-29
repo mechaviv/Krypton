@@ -44,6 +44,7 @@ public class Summoned extends FieldObj {
 
     public Summoned(Field field) {
         super(field);
+        this.summonedID = SummonedPool.summonedIdCounter.incrementAndGet();
     }
 
     public void init(int characterID, int skillID, int slv, int charLevel, Point pt, short footholdSN, int moveAbility, int assistType) {
@@ -292,10 +293,6 @@ public class Summoned extends FieldObj {
 
     public int getSummonedID() {
         return summonedID;
-    }
-
-    public void setSummonedID(int summonedID) {
-        this.summonedID = summonedID;
     }
 
     public int getCharLevel() {

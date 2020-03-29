@@ -499,9 +499,34 @@ public class UserSkill {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.SoulArrow, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
+            case Bowmaster.SHARP_EYES:
+            case CrossbowMaster.SHARP_EYES: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.SharpEyes, new SecondaryStatOption((level.Y | (level.X << 8)), skill.getSkillID(), duration)));
+                break;
+            }
+            case Bowmaster.HAMSTRING: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.HamString, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case Bowmaster.CONCENTRATION: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Concentration, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case CrossbowMaster.BLIND: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Blind, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
             // THIEF
             case Rogue.DarkSight: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkSight, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case Hermit.MESO_UP: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MesoUp, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case Hermit.SHADOW_PARTNER: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ShadowPartner, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
             case ThiefMaster.CHAKRA: {
