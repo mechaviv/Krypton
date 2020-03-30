@@ -22,6 +22,7 @@ import common.GivePopularityRes;
 import common.item.ItemSlotBase;
 import common.user.CharacterStat;
 import common.user.MessageType;
+import common.user.WildHunterInfo;
 import game.field.drop.DropPickup;
 import game.user.item.ChangeLog;
 import game.user.item.InventoryManipulator;
@@ -281,6 +282,12 @@ public class WvsContext {
     public static OutPacket onSkillUseResult(byte onExclRequest) {
         OutPacket packet = new OutPacket(LoopbackPacket.SkillUseResult);
         packet.encodeByte(onExclRequest);
+        return packet;
+    }
+
+    public static OutPacket onWildHunterInfo(WildHunterInfo wildHunterInfo) {
+        OutPacket packet = new OutPacket(LoopbackPacket.WildHunterInfo);
+        wildHunterInfo.encode(packet);
         return packet;
     }
 }

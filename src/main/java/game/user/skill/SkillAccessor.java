@@ -522,6 +522,8 @@ public class SkillAccessor {
             case Dual4.MIRROR_IMAGING:
             case Pirate.DASH:
             case BMage.CYCLONE:
+            case WildHunter.JAGUAR_RIDING:
+            case WildHunter.SOUL_ARROW_CROSSBOW:
                 return true;
             default: {
                 if (isStance(skillID)) {
@@ -681,6 +683,7 @@ public class SkillAccessor {
         }
         return false;
     }
+
     public static boolean isIgnoreMasterLevelForCommon(int skillID) {
         switch (skillID) {
             case Hero.CombatMastery:
@@ -956,6 +959,22 @@ public class SkillAccessor {
             case BMage.AURA_DARK_ADVANCED:
             case BMage.AURA_BLUE_ADVANCED:
             case BMage.AURA_YELLOW_ADVANCED:
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean isMobCaptureSkill(int skillID) {
+        switch (skillID) {
+            case Citizen.CAPTURE:
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean isSummonMonsterSkill(int skillID) {
+        switch (skillID) {
+            case Citizen.SUMMON_MONSTER:
                 return true;
         }
         return false;

@@ -23,6 +23,8 @@ import common.item.BodyPart;
 import common.item.ItemSlotBase;
 import common.item.ItemSlotEquip;
 import common.user.CharacterData;
+import common.user.WildHunterInfo;
+import game.messenger.Character;
 import game.user.skill.DiceFlags;
 import game.user.skill.SkillAccessor;
 import game.user.skill.SkillInfo;
@@ -404,5 +406,36 @@ public class SecondaryStat {
 
     public int[] getDiceInfo() {
         return diceInfo;
+    }
+
+    public boolean isRidingSkillVehicle() {
+        TwoStateTemporaryStat ts = (TwoStateTemporaryStat) temporaryStats[TSIndex.RIDE_VEHICLE];
+        if (ts.isActivated(System.currentTimeMillis()) && ts.getValue() / 10000 == 193) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isWildhunterJaguarVehicle() {
+        if (!isRidingSkillVehicle()) {
+            return false;
+        }
+        int val = temporaryStats[TSIndex.RIDE_VEHICLE].getValue();
+        for (int i = 1; i < WildHunterInfo.RIDING_WILD_HUNTER_JAGUAR.length; i++) {
+            if (val == WildHunterInfo.RIDING_WILD_HUNTER_JAGUAR[i]) return true;
+        }
+        return false;
+    }
+
+    public int getJaguarRidingMaxHPUp(CharacterData cd) {
+        if (!isWildhunterJaguarVehicle()) {
+            return 0;
+        }
+        Pointer<SkillEntry> skill = new Pointer<>();
+        int slv = SkillInfo.getInstance().getSkillLevel(cd, WildHunter.JAGUAR_RIDING, skill);
+        if (slv <= 0) {
+            return 0;
+        }
+        return skill.get().getLevelData(slv).Z;
     }
 }

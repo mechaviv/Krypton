@@ -1200,4 +1200,12 @@ public class Mob extends Creature {
         packet.encodeShort(delay);
         getField().splitSendPacket(getSplit(), packet, null);
     }
+
+    public void sendMobCatchPacket(boolean success, boolean delay) {
+        OutPacket packet = new OutPacket(LoopbackPacket.MobCatchEffect);
+        packet.encodeInt(getGameObjectID());
+        packet.encodeBool(success);
+        packet.encodeBool(delay);
+        getField().splitSendPacket(getSplit(), packet, null);
+    }
 }

@@ -20,6 +20,7 @@ package game.user;
 import common.user.UserEffect;
 import game.field.MovePath;
 import game.field.life.AttackIndex;
+import game.user.skill.Skills;
 import game.user.stat.Flag;
 import game.user.stat.SecondaryStat;
 import java.awt.Point;
@@ -50,9 +51,18 @@ public class UserRemote {
             case UserEffect.LevelUp:
                 break;
             case UserEffect.SkillUse:
+                int skillID = args[0];
                 packet.encodeInt(args[0]);
-                packet.encodeByte(0);
+                packet.encodeByte(args[2]);
                 packet.encodeByte(args[1]);
+                if (skillID == Skills.Citizen.SUMMON_MONSTER) {
+                    packet.encodeByte(args[3]);// bLeft
+                    packet.encodeShort(args[4]);// x
+                    packet.encodeShort(args[5]);// y
+                }
+                if (skillID == Skills.Citizen.CAPTURE) {
+                    packet.encodeByte(args[3]);
+                }
                 break;
             case UserEffect.SkillAffected:
                 packet.encodeInt(args[0]);

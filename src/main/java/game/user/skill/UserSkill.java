@@ -24,7 +24,9 @@ import common.item.BodyPart;
 import common.item.ItemAccessor;
 import common.item.ItemType;
 import common.user.CharacterStat.CharacterStatType;
+import common.user.DBChar;
 import common.user.UserEffect;
+import game.field.life.mob.Mob;
 import game.messenger.Character;
 import game.user.User;
 import game.user.UserRemote;
@@ -143,6 +145,12 @@ public class UserSkill {
             return;
         } else if (SkillAccessor.isAffectedAreaSkill(skillID)) {
             doActiveSkill_AffectedArea(skill, slv, packet);
+            return;
+        } else if (SkillAccessor.isMobCaptureSkill(skillID)) {
+            doActiveSkill_MobCapture(skill, slv, packet);
+            return;
+        } else if (SkillAccessor.isSummonMonsterSkill(skillID)) {
+            doActiveSkill_SummonMonster(skill, slv, packet);
             return;
         }
         switch (skillID) {
@@ -315,9 +323,7 @@ public class UserSkill {
     }
 
     public void doActiveSkill_MobStatChange(SkillEntry skill, byte slv, InPacket packet, boolean sendResult) {
-        //int pos = packet.decodeInt();// user pos
         int count = packet.decodeByte();
-        //Logger.logReport("Count [%d] %d", count, pos);
         for (int i = 0; i < count; i++) {
             int mobID = packet.decodeInt();
             Logger.logReport("Mob ID [%d]", mobID);
@@ -374,7 +380,40 @@ public class UserSkill {
         long start = System.currentTimeMillis() + 300;
         long end = start + level.Time * 1000;
         user.getField().getAffectedAreaPool().insertAffectedArea(false, user.getCharacterID(), skill.getSkillID(), slv, start, end, pos ,rect);
+        user.sendCharacterStat(Request.Excl, 0);
         user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
+    }
+
+    public void doActiveSkill_MobCapture(SkillEntry skill, int slv, InPacket packet) {
+        if (user.getField().getFieldID() != 931000500) {
+            return;
+        }
+        Mob mob = user.getField().getLifePool().getMob(packet.decodeInt());
+        if (mob == null || mob.getTemplateID() / 1000 != 9304) {
+            user.onUserEffect(true, true, UserEffect.SkillUse, skill.getSkillID(), slv, 2);
+            sendFailPacket();
+            return;
+        }
+        if (mob.getHP() <= 0 || mob.getHP() > mob.getTemplate().getMaxHP() / 2) {
+            user.onUserEffect(true, true, UserEffect.SkillUse, skill.getSkillID(), slv, 1);
+            mob.sendMobCatchPacket(false, false);
+            sendFailPacket();
+            return;
+        }
+        user.getCharacter().getWildHunterInfo().setRidingType((byte) (mob.getTemplate().getTemplateID() % 10 + 1));
+        user.sendPacket(WvsContext.onWildHunterInfo(user.getCharacter().getWildHunterInfo()));
+        user.addCharacterDataMod(DBChar.WildHunterInfo);
+        mob.sendMobCatchPacket(true, true);
+        user.getField().getLifePool().removeMob(mob);
+        user.sendCharacterStat(Request.Excl, 0);
+        user.onUserEffect(true, true, UserEffect.SkillUse, skill.getSkillID(), slv, 0);
+        // 0 = success | 1 = high hp | 2 = monster cannot be captured
+    }
+
+    public void doActiveSkill_SummonMonster(SkillEntry skill, int slv, InPacket packet) {
+        int summonMonster = packet.decodeInt();
+        Point pos = new Point(packet.decodeShort(), packet.decodeShort());
+        int left = packet.decodeByte();
     }
 
     public boolean checkMovementSkill(int skillID, byte slv) {
@@ -528,7 +567,8 @@ public class UserSkill {
             }
             // BOWMAN
             case Hunter.SoulArrow_Bow:
-            case Crossbowman.SoulArrow_Crossbow: {
+            case Crossbowman.SoulArrow_Crossbow:
+            case WildHunter.SOUL_ARROW_CROSSBOW: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.SoulArrow, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
@@ -657,6 +697,13 @@ public class UserSkill {
             }
             case BMage.CYCLONE: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Cyclone, new SecondaryStatOption(slv, skill.getSkillID(), duration)));
+            }
+            case WildHunter.JAGUAR_RIDING: {
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.RideVehicle));
+                TwoStateTemporaryStat ts = (TwoStateTemporaryStat) user.getSecondaryStat().temporaryStats[TSIndex.RIDE_VEHICLE];
+                ts.setReason(skill.getSkillID());
+                ts.setValue(user.getCharacter().getWildHunterInfo().getRidingItem());
+                ts.setLastUpdated(System.currentTimeMillis() + Integer.MAX_VALUE);
             }
             default: {
                 if (SkillAccessor.isMapleHero(skill.getSkillID())) {

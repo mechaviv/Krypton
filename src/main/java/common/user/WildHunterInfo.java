@@ -7,7 +7,15 @@ import util.Rand32;
  * Created by MechAviv on 3/30/2020.
  */
 public class WildHunterInfo {
-    private static final int[] RIDING_WILD_HUNTER_JAGUAR_190 = {0, 1932015, 1932030, 1932031, 1932032, 1932033, 1932036};
+    public static final int[] RIDING_WILD_HUNTER_JAGUAR = {
+            0, // none
+            1932015, // black jaguar
+            1932030, // orange jaguar
+            1932031, // red jaguar
+            1932032, // purple jaguar
+            1932033, // blue jaguar
+            1932036  // Jaria black jaguar (killer eyes)
+    };
 
     private byte ridingType;
     private byte idX;
@@ -38,9 +46,9 @@ public class WildHunterInfo {
 
     public int getRidingItem() {
         if (ridingType <= 0) {
-            return RIDING_WILD_HUNTER_JAGUAR_190[0];
+            return RIDING_WILD_HUNTER_JAGUAR[0];
         }
-        return RIDING_WILD_HUNTER_JAGUAR_190[Math.min(ridingType, 6)];
+        return RIDING_WILD_HUNTER_JAGUAR[Math.min(ridingType, 6)];
     }
 
     public byte getRidingType() {

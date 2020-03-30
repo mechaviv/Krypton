@@ -3338,17 +3338,29 @@ public class User extends Creature {
     public void onUserEffect(boolean local, boolean remote, byte effect, String str, int... args) {
         int skillID = 0;
         int slv = 0;
+        int charLevel = 0;
+        int left = 0;
+        int x = 0;
+        int y = 0;
         if (args.length > 0) {
             skillID = args[0];
             if (args.length > 1) {
                 slv = args[1];
+                if (effect == UserEffect.SkillUse) charLevel = getLevel();
+            }
+            if (args.length > 2) {
+                left = args[2];
+            }
+            if (args.length > 4) {
+                x = args[3];
+                y = args[4];
             }
         }
         if (remote) {
-            getField().splitSendPacket(getSplit(), UserRemote.onEffect(getCharacterID(), effect, skillID, slv), this);
+            getField().splitSendPacket(getSplit(), UserRemote.onEffect(getCharacterID(), effect, skillID, slv, charLevel, left, x, y), this);
         }
         if (local) {
-            sendPacket(UserLocal.onEffect(effect, str, skillID, slv));
+            sendPacket(UserLocal.onEffect(effect, str, skillID, slv, charLevel, left, x, y));
         }
     }
 
@@ -3390,7 +3402,7 @@ public class User extends Creature {
             int swallowMaxMPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.SwallowMaxMP);
             int conversionMaxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.Conversion);
             int morewildMaxHPIncRate = secondaryStat.getStatOption(CharacterTemporaryStat.MorewildMaxHP);
-            int jaguarRidingHPIncRate = 0;
+            int jaguarRidingHPIncRate = secondaryStat.getJaguarRidingMaxHPUp(character);
             int speed = secondaryStat.speed;
             int weaponID = 0;
             if (character.getItem(ItemType.Equip, -BodyPart.Weapon) != null) {

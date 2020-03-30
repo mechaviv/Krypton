@@ -20,6 +20,7 @@ package game.user;
 import common.user.UserEffect;
 import game.user.quest.QuestFlag;
 import game.user.quest.QuestTimer;
+import game.user.skill.Skills;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 
@@ -47,9 +48,18 @@ public class UserLocal {
             case UserEffect.LevelUp:
                 break;
             case UserEffect.SkillUse:
+                int skillID = args[0];
                 packet.encodeInt(args[0]);
-                packet.encodeByte(0);
+                packet.encodeByte(args[2]);
                 packet.encodeByte(args[1]);
+                if (skillID == Skills.Citizen.SUMMON_MONSTER) {
+                    packet.encodeByte(args[3]);// bLeft
+                    packet.encodeShort(args[4]);// x
+                    packet.encodeShort(args[5]);// y
+                }
+                if (skillID == Skills.Citizen.CAPTURE) {
+                    packet.encodeByte(args[3]);
+                }
                 break;
             case UserEffect.SkillAffected:
                 packet.encodeInt(args[0]);
