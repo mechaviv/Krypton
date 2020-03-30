@@ -76,7 +76,7 @@ public class SummonedPool {
         }
         int moveAbility = MoveAbility.Jump;
         int assistType = AssistType.Attack;
-        if (skillID == DarkKnight.BEHOLDER || skillID == ArchMage1.IFRIT || skillID == ArchMage2.ELQUINES || skillID == Bishop.BAHAMUT) {
+        if (skillID == DarkKnight.BEHOLDER || skillID == ArchMage1.IFRIT || skillID == ArchMage2.ELQUINES || skillID == Bishop.BAHAMUT || skillID == SoulMaster.SOUL) {
             moveAbility = MoveAbility.Walk;
             if (skillID == DarkKnight.BEHOLDER)
                 assistType = AssistType.Heal;

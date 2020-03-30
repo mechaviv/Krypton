@@ -894,7 +894,8 @@ public class Mob extends Creature {
                 break;
             }
             case Hunter.ArrowBomb:
-            case Thief.Steal: {
+            case Thief.Steal:
+            case InFighter.BACKSPIN_BLOW: {
                 if (skillID == Hunter.ArrowBomb && damageSum < template.getPushedDamage() && (Rand32.genRandom() % 3) != 0) {
                     return;
                 }

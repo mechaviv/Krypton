@@ -1345,6 +1345,7 @@ public class User extends Creature {
             case ClientPacket.UserMeleeAttack:
             case ClientPacket.UserShootAttack:
             case ClientPacket.UserMagicAttack:
+            case ClientPacket.UserBodyAttack:
                 onAttack(type, packet);
                 break;
             case ClientPacket.UserSkillUseRequest:
@@ -1812,7 +1813,9 @@ public class User extends Creature {
             }
 
             byte attackType;
-            if (type == ClientPacket.UserMagicAttack) {
+            if (type == ClientPacket.UserBodyAttack) {
+                attackType = 4;
+            } else if (type == ClientPacket.UserMagicAttack) {
                 attackType = 3;
             } else if (type == ClientPacket.UserShootAttack) {
                 attackType = 2;
@@ -1986,19 +1989,24 @@ public class User extends Creature {
                         rect.offsetRect(userPos.getX(), userPos.getY());
                         getField().getAffectedAreaPool().insertAffectedArea(false, getCharacterID(), skillID, slv, start, end, userPos, rect);
                     }
-                    if (skillID == NightLord.NINJA_STORM && mobCount > 0) {
+                    if ((skillID == NightLord.NINJA_STORM || skillID == InFighter.BACKSPIN_BLOW) && mobCount > 0) {
                         for (int i = 0; i < mobCount; i++) {
                             AttackInfo atk = attack.get(i);
-                            if (atk.damageCli.get(i) <= 0) {
+                            if (atk.damageCli.size() <= 0) {
                                 continue;
                             }
                             getField().getLifePool().onMobStatChangeSkill(this, atk.mobID, skill, slv);
                         }
                     }
                     // meso explosion drop remove here
+                    Flag set = new Flag(Flag.INT_128);
                     if (skillID == DragonKnight.DRAGON_ROAR) {
-                        sendTemporaryStatSet(secondaryStat.setStat(CharacterTemporaryStat.Stun, new SecondaryStatOption(1, DragonKnight.DRAGON_ROAR, time + 1000 * 2)));
+                        set.performOR(secondaryStat.setStat(CharacterTemporaryStat.Stun, new SecondaryStatOption(1, DragonKnight.DRAGON_ROAR, time + 1000 * 2)));
                     }
+                    if (skillID == Dual5.FINAL_CUT) {
+                        set.performOR(secondaryStat.setStat(CharacterTemporaryStat.FinalCut, new SecondaryStatOption(levelData.Y, Dual5.FINAL_CUT, time + 1000 * levelData.Time)));
+                    }
+                    sendTemporaryStatSet(set);
                     if (banMapMobTemplateID != 0) {
                         banMapByMob(banMapMobTemplateID);
                     }

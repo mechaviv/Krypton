@@ -256,7 +256,8 @@ public class SkillLevelData {
         this.Y = getParsedCommonData(levelCommon.Y, skillID, level);
         this.Z = getParsedCommonData(levelCommon.Z, skillID, level);
         this.Cooltime = getParsedCommonData(levelCommon.Cooltime, skillID, level);
-        this.Action = getParsedCommonData(levelCommon.Action, skillID, level);
+        String action = levelCommon.Action;
+        this.Action = 0;//getParsedCommonData(levelCommon.Action, skillID, level);
         this.MHPr = getParsedCommonData(levelCommon.MHPr, skillID, level);
         this.MMPr = getParsedCommonData(levelCommon.MMPr, skillID, level);
         this.Cr = getParsedCommonData(levelCommon.Cr, skillID, level);

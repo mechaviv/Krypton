@@ -35,16 +35,16 @@ public class JobCategory {
             ADMIN = 9,
             NO = 10,
 
-    SOULMASTER = 11,
+            SOULMASTER = 11,
             FLAMEWIZARD = 12,
             WINDBREAKER = 13,
             NIGHTWALKER = 14,
             STRIKER = 15,
 
-    ARAN = 21,
+            ARAN = 21,
             EVAN = 22,
 
-    RES_WIZARD = 32,
+            RES_WIZARD = 32,
             RES_ARCHER = 33,
             RES_PIRATE = 35;
     ;

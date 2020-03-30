@@ -40,6 +40,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import game.user.stat.ts.DashTemporaryStat;
 import game.user.stat.ts.PartyBoosterStat;
 import game.user.stat.ts.TSIndex;
 import game.user.stat.ts.TwoStateTemporaryStat;
@@ -47,6 +48,7 @@ import network.packet.InPacket;
 import util.Logger;
 import util.Pointer;
 import util.Rand32;
+import util.Rect;
 
 /**
  * @author Eric
@@ -61,13 +63,12 @@ public class UserSkill {
     public void onSkillUseRequest(InPacket packet) {
         packet.decodeInt();// time
         int skillID = packet.decodeInt();
+        byte slv = packet.decodeByte();
 
         int spiritJavelinItemID = 0;
         if (skillID == NightLord.SPIRIT_JAVELIN) {
             spiritJavelinItemID = packet.decodeInt();
         }
-
-        byte slv = packet.decodeByte();
         if (user.getField() == null) {
             sendFailPacket();
             return;
@@ -97,16 +98,23 @@ public class UserSkill {
         } else if (SkillAccessor.isWeaponBooster(skillID)) {
             int wt1 = 0, wt2 = 0, wt3 = 0, wt4 = 0;
             if (skillID == Page.WeaponBooster) {
-                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD; wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
-                wt3 = ItemAccessor.WeaponTypeFlag.OH_MACE;  wt4 = ItemAccessor.WeaponTypeFlag.TH_MACE;
+                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD;
+                wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
+                wt3 = ItemAccessor.WeaponTypeFlag.OH_MACE;
+                wt4 = ItemAccessor.WeaponTypeFlag.TH_MACE;
             } else if (skillID == SoulMaster.SWORD_BOOSTER || skillID == Fighter.WeaponBooster) {
-                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD; wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
-                wt3 = ItemAccessor.WeaponTypeFlag.OH_AXE;   wt4 = ItemAccessor.WeaponTypeFlag.TH_AXE;
+                wt1 = ItemAccessor.WeaponTypeFlag.OH_SWORD;
+                wt2 = ItemAccessor.WeaponTypeFlag.TH_SWORD;
+                wt3 = ItemAccessor.WeaponTypeFlag.OH_AXE;
+                wt4 = ItemAccessor.WeaponTypeFlag.TH_AXE;
             } else if (skillID == Spearman.WeaponBooster) {
-                wt1 = ItemAccessor.WeaponTypeFlag.SPEAR;   wt2 = ItemAccessor.WeaponTypeFlag.SPEAR;
-                wt3 = ItemAccessor.WeaponTypeFlag.POLEARM; wt4 = ItemAccessor.WeaponTypeFlag.POLEARM;
+                wt1 = ItemAccessor.WeaponTypeFlag.SPEAR;
+                wt2 = ItemAccessor.WeaponTypeFlag.SPEAR;
+                wt3 = ItemAccessor.WeaponTypeFlag.POLEARM;
+                wt4 = ItemAccessor.WeaponTypeFlag.POLEARM;
             } else if (skillID == Mage1.MAGIC_BOOSTER || skillID == Mage2.MAGIC_BOOSTER || skillID == FlameWizard.MAGIC_BOOSTER || skillID == Evan.MAGIC_BOOSTER) {
-                wt1 = ItemAccessor.WeaponTypeFlag.STAFF; wt2 = ItemAccessor.WeaponTypeFlag.WAND;
+                wt1 = ItemAccessor.WeaponTypeFlag.STAFF;
+                wt2 = ItemAccessor.WeaponTypeFlag.WAND;
             } else if (skillID == Hunter.BowBooster || skillID == WindBreaker.BOW_BOOSTER) {
                 wt1 = ItemAccessor.WeaponTypeFlag.BOW;
             } else if (skillID == Crossbowman.CrossbowBooster || skillID == WildHunter.CROSSBOW_BOOSTER) {
@@ -133,11 +141,15 @@ public class UserSkill {
         } else if (SkillAccessor.isSummonSkill(skillID)) {
             doActiveSkill_Summon(skill, slv, packet);
             return;
+        } else if (SkillAccessor.isAffectedAreaSkill(skillID)) {
+            doActiveSkill_AffectedArea(skill, slv, packet);
+            return;
         }
         switch (skillID) {
             case Wizard2.Teleport:
             case Wizard1.Teleport:
             case Cleric.Teleport:
+            case BMage.TELEPORT:
                 doActiveSkill_Teleport(skill, slv);
                 break;
             default: {
@@ -156,6 +168,13 @@ public class UserSkill {
                 //nCur = timeGetTime();
                 //if (!nCur) nCur = 1;
                 //pUser->m_secondaryStat.tDarkSight_ = nCur;
+            }
+
+            if (SkillAccessor.isBMageAuraSkill(skillID)) {
+                reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.Aura));
+                reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.DarkAura));
+                reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.BlueAura));
+                reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.YellowAura));
             }
             if (reset.isSet()) {
                 user.validateStat(false);
@@ -179,7 +198,7 @@ public class UserSkill {
 
         boolean keyDown = SkillAccessor.isKeyDownSkill(skillID);
         if (slv <= 0 || SkillInfo.getInstance().getSkillLevel(user.getCharacter(), skillID, null) != slv
-        ||  !SkillInfo.getInstance().adjustConsumeForActiveSkill(user, skillID, (byte) slv, keyDown, 0) || user.getPreparedSkill() != 0) {
+                || !SkillInfo.getInstance().adjustConsumeForActiveSkill(user, skillID, (byte) slv, keyDown, 0) || user.getPreparedSkill() != 0) {
             sendFailPacket();
             return;
         }
@@ -344,6 +363,20 @@ public class UserSkill {
             user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
         }
     }
+
+    public void doActiveSkill_AffectedArea(SkillEntry skill, int slv, InPacket packet) {
+        Point pos = new Point(packet.decodeShort(), packet.decodeShort());
+        SkillLevelData level = skill.getLevelData(slv);
+
+        Rect rect = level.affectedArea.copy();
+        rect.offsetRect(pos.getX(), pos.getY());
+
+        long start = System.currentTimeMillis() + 300;
+        long end = start + level.Time * 1000;
+        user.getField().getAffectedAreaPool().insertAffectedArea(false, user.getCharacterID(), skill.getSkillID(), slv, start, end, pos ,rect);
+        user.onUserEffect(false, true, UserEffect.SkillUse, skill.getSkillID(), slv);
+    }
+
     public boolean checkMovementSkill(int skillID, byte slv) {
         if (user.isGM()) {
             return true;
@@ -353,7 +386,7 @@ public class UserSkill {
         short job = user.getCharacter().getCharacterStat().getJob();
         String format = "";
         if (SkillAccessor.isTeleportSkill(skillID)) {
-            if (JobAccessor.getJobCategory(job) == JobCategory.WIZARD) {
+            if (JobAccessor.getJobCategory(job) == JobCategory.WIZARD || JobAccessor.getJobCategory(job) == JobCategory.RES_WIZARD) {
                 int skillLevel = SkillAccessor.getTeleportSkillLevel(user.getCharacter());
                 if (slv > skillLevel + 3) {
                     format = String.format("[SkillHack] Illegal Teleport LEVEL Tried [ %s ] Field: %d / SkillID: %d / (CurLev: %d, ReqLev: %d) (DISCONNECTED)", character, fieldID, skillID, skillLevel, slv);
@@ -525,15 +558,49 @@ public class UserSkill {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MesoUp, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
-            case Hermit.SHADOW_PARTNER: {
+            case Hermit.SHADOW_PARTNER:
+            case ThiefMaster.SHADOW_PARTNER:
+            case Dual4.MIRROR_IMAGING: {
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.ShadowPartner, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case ThiefMaster.PICKPOCKET: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.PickPocket, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
+                break;
+            }
+            case ThiefMaster.MESO_GUARD: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.MesoGuard, new SecondaryStatOption(level.X, skill.getSkillID(), duration)));
                 break;
             }
             case ThiefMaster.CHAKRA: {
                 //w/e
                 user.setPreparedSkill(0);
             }
+            case Dual3.HUSTLE_DASH: {
+                DashTemporaryStat ts = (DashTemporaryStat) user.getSecondaryStat().temporaryStats[TSIndex.DASH_SPEED];
+                ts.setValue(level.X);
+                ts.setReason(skill.getSkillID());
+                ts.setLastUpdated(duration);
+                ts.setExpireTerm(level.Time);
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.DashSpeed));
+                break;
+            }
             // PIRATE
+            case Pirate.DASH: {
+                DashTemporaryStat ts1 = (DashTemporaryStat) user.getSecondaryStat().temporaryStats[TSIndex.DASH_SPEED];
+                ts1.setValue(level.X);
+                ts1.setReason(skill.getSkillID());
+                ts1.setLastUpdated(duration);
+                ts1.setExpireTerm(level.Time);
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.DashSpeed));
+
+                DashTemporaryStat ts2 = (DashTemporaryStat) user.getSecondaryStat().temporaryStats[TSIndex.DASH_JUMP];
+                ts2.setValue(level.Y);
+                ts2.setReason(skill.getSkillID());
+                ts2.setLastUpdated(duration);
+                ts2.setExpireTerm(level.Time);
+                flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.DashJump));
+            }
             case Viper.WIND_BOOSTER: {
                 PartyBoosterStat ts = (PartyBoosterStat) user.getSecondaryStat().temporaryStats[TSIndex.PARTY_BOOSTER];
                 ts.setValue(level.X);
@@ -543,6 +610,53 @@ public class UserSkill {
                 ts.setCurrentTime(System.currentTimeMillis());
                 flag.performOR(CharacterTemporaryStat.getMask(CharacterTemporaryStat.PartyBooster));
                 break;
+            }
+            case BMage.AURA_DARK: {
+                if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
+                    break;
+                }
+                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+
+                int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_DARK_ADVANCED, null);
+                if (slv >= 20 && advSLV > 0) {
+                    option.setReason(BMage.AURA_DARK_ADVANCED);
+                    slv = (byte) advSLV;
+                }
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkAura, option));
+                break;
+            }
+            case BMage.AURA_BLUE: {
+                if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
+                    break;
+                }
+                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+                int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_BLUE_ADVANCED, null);
+                if (slv >= 20 && advSLV > 0) {
+                    option.setReason(BMage.AURA_BLUE_ADVANCED);
+                    slv = (byte) advSLV;
+                }
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.BlueAura, option));
+                break;
+            }
+            case BMage.AURA_YELLOW: {
+                if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
+                    break;
+                }
+                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+
+                int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_YELLOW_ADVANCED, null);
+                if (slv >= 20 && advSLV > 0) {
+                    option.setReason(BMage.AURA_YELLOW_ADVANCED);
+                    slv = (byte) advSLV;
+                }
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.YellowAura, option));
+                break;
+            }
+            case BMage.CYCLONE: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.Cyclone, new SecondaryStatOption(slv, skill.getSkillID(), duration)));
             }
             default: {
                 if (SkillAccessor.isMapleHero(skill.getSkillID())) {

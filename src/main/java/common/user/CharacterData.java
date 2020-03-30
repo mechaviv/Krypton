@@ -34,6 +34,7 @@ import game.user.quest.info.SimpleStrMap;
 import game.user.skill.SkillAccessor;
 import network.packet.OutPacket;
 import util.FileTime;
+import util.Logger;
 
 /**
  *
@@ -641,7 +642,7 @@ public class CharacterData {
 
     public boolean isEquippedDualDagger() {
         ItemSlotBase main = equipped.get(11);
-        ItemSlotBase sub = equipped2.get(10);
+        ItemSlotBase sub = equipped.get(10);
         if (main != null && sub != null) {
             return ItemAccessor.getWeaponType(main.getItemID()) == ItemAccessor.WeaponTypeFlag.DAGGER && ItemAccessor.getWeaponType(sub.getItemID()) == ItemAccessor.WeaponTypeFlag.SUB_DAGGER;
         }

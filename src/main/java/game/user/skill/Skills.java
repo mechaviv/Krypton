@@ -1493,6 +1493,7 @@ public class Skills {
                 FINISH_ATTACK3 = 32001009,
                 FINISH_ATTACK4 = 32001010,
                 FINISH_ATTACK5 = 32001011,
+
                 SPELL_MASTERY = 32100006,
                 QUAD_BLOW = 32101000,
                 DARK_BOW = 32101001,
@@ -1523,7 +1524,7 @@ public class Skills {
                 MAPLE_HERO = 32121007,
                 HEROS_WILL = 32121008,
 
-        AURA_ALL = 0,
+                AURA_ALL = 0,
                 AURA_DARK_BLUE = 1,
                 AURA_DARK_YELLOW = 2,
                 AURA_BLUE_YELOW = 3

@@ -334,7 +334,7 @@ public class SkillAccessor {
     }
     
     public static boolean isTeleportSkill(int skillID) {
-        final int[] skills = { Wizard1.Teleport, Wizard2.Teleport, Cleric.Teleport };
+        final int[] skills = { Wizard1.Teleport, Wizard2.Teleport, Cleric.Teleport, BMage.TELEPORT};
         
         for (int skill : skills) {
             if (skillID == skill)
@@ -354,6 +354,12 @@ public class SkillAccessor {
                 break;
             case CLERIC:
                 skill = Cleric.Teleport;
+                break;
+            case BMAGE_1:
+            case BMAGE_2:
+            case BMAGE_3:
+            case BMAGE_4:
+                skill = BMage.TELEPORT;
                 break;
         }
         
@@ -472,6 +478,7 @@ public class SkillAccessor {
             case Beginner.KROKO_EVENT_RIDING:
             // 1ST Warrior
             case Warrior.IronBody:
+            case SoulMaster.IRON_BODY:
             // 2ND Warriors
             case Fighter.PowerGuard:
             case Page.PowerGuard:
@@ -507,6 +514,14 @@ public class SkillAccessor {
             case CrossbowMaster.BLIND:
             case Rogue.DarkSight:
             case Hermit.SHADOW_PARTNER:
+            case ThiefMaster.SHADOW_PARTNER:
+            case ThiefMaster.PICKPOCKET:
+            case ThiefMaster.MESO_GUARD:
+            case Dual2.SELF_HASTE:
+            case Dual3.HUSTLE_DASH:
+            case Dual4.MIRROR_IMAGING:
+            case Pirate.DASH:
+            case BMage.CYCLONE:
                 return true;
             default: {
                 if (isStance(skillID)) {
@@ -581,6 +596,9 @@ public class SkillAccessor {
             case Thief.Haste:
             case Hermit.MESO_UP:
             case Viper.WIND_BOOSTER:
+            case BMage.AURA_DARK:
+            case BMage.AURA_BLUE:
+            case BMage.AURA_YELLOW:
                 return true;
             default: {
                 if (isMapleHero(skillID)) {
@@ -605,6 +623,16 @@ public class SkillAccessor {
             case Sniper.GOLDEN_EAGLE:
             case CrossbowMaster.FREEZER:
             case Hermit.SHADOW_MIRROR:
+            case ThiefMaster.SHADOW_MIRROR:
+            case SoulMaster.SOUL:
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean isAffectedAreaSkill(int skillID) {
+        switch (skillID) {
+            case Shadower.SMOKE_SHELL:
                 return true;
         }
         return false;
@@ -916,6 +944,19 @@ public class SkillAccessor {
                     return true;
                 }
                 break;
+        }
+        return false;
+    }
+
+    public static boolean isBMageAuraSkill(int skillID) {
+        switch (skillID) {
+            case BMage.AURA_DARK:
+            case BMage.AURA_BLUE:
+            case BMage.AURA_YELLOW:
+            case BMage.AURA_DARK_ADVANCED:
+            case BMage.AURA_BLUE_ADVANCED:
+            case BMage.AURA_YELLOW_ADVANCED:
+                return true;
         }
         return false;
     }
