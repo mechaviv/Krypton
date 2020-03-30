@@ -948,6 +948,20 @@ INSERT INTO `users` (`AccountID`,`LoginID`,`Password`,`Gender`,`GradeCode`,`Bloc
 
 
 
+--
+-- Definition of table `wildhunterinfo`
+--
+
+
+CREATE TABLE `wildhunterinfo` (
+  `CharacterID` int(11) NOT NULL,
+  `RidingType` tinyint(4) NOT NULL DEFAULT '0',
+  `CapturedMobs` varchar(100) DEFAULT '0,0,0,0,0',
+  `IDx` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`CharacterID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;

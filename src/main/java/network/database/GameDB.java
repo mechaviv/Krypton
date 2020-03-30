@@ -23,6 +23,7 @@ import common.item.ItemType;
 import common.user.CharacterData;
 import common.user.CharacterStat;
 import common.user.DBChar;
+import common.user.WildHunterInfo;
 import game.field.drop.RewardInfo;
 import game.user.func.FunckeyMapped;
 import game.user.item.Inventory;
@@ -142,6 +143,13 @@ public class GameDB {
                 ps.setInt(1, characterID);
                 try (ResultSet rs = ps.executeQuery()) {
                     cd.load(rs, DBChar.QuestComplete);
+                }
+            }
+            // Load Wild Hunter Info
+            try (PreparedStatement ps = con.prepareStatement("SELECT * FROM `wildhunterinfo` WHERE `CharacterID` = ?")) {
+                ps.setInt(1, characterID);
+                try (ResultSet rs = ps.executeQuery()) {
+                    cd.load(rs, DBChar.WildHunterInfo);
                 }
             }
             // Initialize New Equip ItemSN/CashItemSN
@@ -325,6 +333,20 @@ public class GameDB {
                     dataStr += "," + i;
                 }
                 Database.execute(con, ps, dataStr.substring(1), characterID);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
+
+    public static void rawSaveWildHunterInfo(int characterID, WildHunterInfo wildHunterInfo) {
+        try (Connection con = Database.getDB().poolConnection()) {
+            try (PreparedStatement ps = con.prepareStatement("UPDATE `wildhunterinfo` SET `RidingType` = ?, `CapturedMobs` = ?, `IDx` = ? WHERE `CharacterID` = ?")) {
+                String dataStr = "";
+                for (int i = 0; i < wildHunterInfo.getCapturedMobs().length; i++) {
+                    dataStr += "," + wildHunterInfo.getCapturedMobs()[i];
+                }
+                Database.execute(con, ps, wildHunterInfo.getRidingType(), dataStr.substring(1), wildHunterInfo.getIdX(), characterID);
             }
         } catch (SQLException ex) {
             ex.printStackTrace(System.err);

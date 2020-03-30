@@ -8,9 +8,10 @@ import util.Rand32;
  */
 public class WildHunterInfo {
     private static final int[] RIDING_WILD_HUNTER_JAGUAR_190 = {0, 1932015, 1932030, 1932031, 1932032, 1932033, 1932036};
+
     private byte ridingType;
+    private byte idX;
     private final int[] capturedMobs;
-    private int idX;
 
     public WildHunterInfo() {
         this.capturedMobs = new int[5];
@@ -54,11 +55,11 @@ public class WildHunterInfo {
         return capturedMobs;
     }
 
-    public int getIdX() {
+    public byte getIdX() {
         return idX;
     }
 
-    public void setIdX(int idX) {
+    public void setIdX(byte idX) {
         this.idX = idX;
     }
 }

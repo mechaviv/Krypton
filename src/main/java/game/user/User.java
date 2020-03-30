@@ -3249,6 +3249,9 @@ public class User extends Creature {
                         if ((characterDataModFlag & DBChar.QuestComplete) != 0) {
                             GameDB.rawSaveQuestComplete(getCharacterID(), character.getQuestComplete());
                         }
+                        if ((characterDataModFlag & DBChar.WildHunterInfo) != 0) {
+                            GameDB.rawSaveWildHunterInfo(getCharacterID(), character.getWildHunterInfo());
+                        }
                         if ((characterDataModFlag & DBChar.InventorySize) != 0) {
                             List<Integer> inventorySize = new ArrayList<>();
                             for (int ti = ItemType.Equip; ti <= ItemType.Cash; ti++) {

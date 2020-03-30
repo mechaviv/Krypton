@@ -17,6 +17,7 @@
  */
 package common.user;
 
+import common.JobCategory;
 import common.item.BodyPart;
 import common.item.ItemAccessor;
 import common.item.ItemSlotBase;
@@ -53,6 +54,7 @@ public class CharacterData {
     ;
 
     private final CharacterStat characterStat;
+    private final WildHunterInfo wildHunterInfo;
     private final List<ItemSlotBase> equipped;
     private final List<ItemSlotBase> equipped2;
     private final List<ItemSlotBase> dragonEquipped;
@@ -72,9 +74,9 @@ public class CharacterData {
     private int moneyTrading;
     private int combatOrders;
     private boolean onTrading;
-        
     public CharacterData() {
         this.characterStat = new CharacterStat();
+        this.wildHunterInfo = new WildHunterInfo();
 
         this.equipped = new ArrayList<>(BodyPartCount + 1);
         this.equipped2 = new ArrayList<>(BodyPartCount + 1);
@@ -326,11 +328,8 @@ public class CharacterData {
             }
         }
         if ((flag & DBChar.WildHunterInfo) != 0) {
-            if (characterStat.getJob() / 100 == 33) {
-                packet.encodeByte(0);
-                for (int i = 0; i < 5; i++) {
-                    packet.encodeInt(0);
-                }
+            if (characterStat.getJob() / 100 == JobCategory.RES_ARCHER) {
+                wildHunterInfo.encode(packet);
             }
         }
         if ((flag & DBChar.QuestComplete_Old) != 0) {
@@ -513,6 +512,18 @@ public class CharacterData {
                 questComplete.put(rs.getInt("QRKey"), completeTime != 0 ? FileTime.longToFileTime(completeTime) : FileTime.START);
             }
         }
+
+        if ((flag & DBChar.WildHunterInfo) != 0) {
+            while (rs.next()) {
+                wildHunterInfo.setRidingType(rs.getByte("RidingType"));
+                wildHunterInfo.setIdX(rs.getByte("IDx"));
+                String capturedMobs = rs.getString("CapturedMobs");
+                String[] splitted = capturedMobs.split(",");
+                for (int i = 0; i < wildHunterInfo.getCapturedMobs().length; i++) {
+                    wildHunterInfo.getCapturedMobs()[i] = Integer.parseInt(splitted[i]);
+                }
+            }
+        }
     }
 
     public boolean setItem(byte ti, int pos, ItemSlotBase item) {
@@ -688,4 +699,7 @@ public class CharacterData {
         return questRecord;
     }
 
+    public WildHunterInfo getWildHunterInfo() {
+        return wildHunterInfo;
+    }
 }
