@@ -69,6 +69,7 @@ public class UserLocal {
                 packet.encodeInt(args[0]);
                 break;
             case UserEffect.AvatarOriented:
+            case UserEffect.ReservedEffect:
                 packet.encodeString(str);
                 packet.encodeInt(0);// no use
                 break;
@@ -88,6 +89,19 @@ public class UserLocal {
             packet.encodeInt(x);
             packet.encodeInt(y);
         }
+        return packet;
+    }
+
+    public static OutPacket setDirectionMode(boolean set, int duration) {
+        OutPacket packet = new OutPacket(LoopbackPacket.SetDirectionMode);
+        packet.encodeBool(set);
+        packet.encodeInt(duration);
+        return packet;
+    }
+
+    public static OutPacket setStandAloneMode(boolean standAloneMode) {
+        OutPacket packet = new OutPacket(LoopbackPacket.SetStandAloneMode);
+        packet.encodeBool(standAloneMode);
         return packet;
     }
 

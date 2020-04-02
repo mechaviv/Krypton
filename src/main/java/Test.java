@@ -14,15 +14,14 @@ import game.user.skill.SkillAccessor;
 import game.user.skill.SkillInfo;
 import game.user.skill.Skills;
 import game.user.skill.entries.MobSkillEntry;
+import game.user.stat.CalcDamageHelper;
+import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.ts.EnergyChargeStat;
 import game.user.stat.ts.TemporaryStatBase;
 import game.user.stat.ts.TwoStateTemporaryStat;
 import network.packet.InPacket;
 import org.python.jline.internal.Log;
-import util.Logger;
-import util.Rand32;
-import util.SystemTime;
-import util.Utilities;
+import util.*;
 import util.wz.WzFileSystem;
 import util.wz.WzProperty;
 import util.wz.WzUtil;
@@ -38,16 +37,34 @@ import java.util.List;
  */
 public class Test {
     public static void main(String[] args) {
-        int val = 60372986;// FA 37 99 03
-        int v = -115 & 0xFF;
-        Logger.logReport("%d", v);
-        Logger.logReport("%d", v & 0xFF);
-        int val1 =  (byte) val;
-        int val2 = (val >> 8) & 0xFF;
-        int val3 = (byte) (-56 & 0xFF);
-        Logger.logReport("0x%X", val & 0xFF);
-        Logger.logReport("0x%X", -56);
-        Logger.logReport("0x%X", (byte) val3);
-        if (val3 == 0xC8) Logger.logReport("ss");
+        // Crit Damage = [38.546316854631684] | Real Damage [148.8256451785645]
+        // svr 206 crit | should be 205
+        double dmg = 148.8256451785645;
+        int critDamage = (int) 38.546316854631684;
+        dmg += dmg * critDamage / 100.0;
+        System.out.println(dmg);// 105
+    }
+
+    public static double adjustRandomDamage(double damage, int rand, double k, int mastery) {
+        double prop = (double)mastery / 100.0 + k;
+        if (prop >= 0.95) {
+            prop = 0.95;
+        }
+        double p = prop * damage + 0.5;
+        return get_rand(rand, damage, p);
+    }
+
+    public static double get_rand(int rand, double f0, double f1) {
+        double realF1 = f1;
+        double realF0 = f0;
+        if (f0 > f1) {
+            realF1 = f0;
+            realF0 = f1;
+            return realF0 + (double) (Integer.toUnsignedLong(rand) % 10000000) * (realF1 - realF0) / 9999999.0;
+        }
+        if (f1 != f0) {
+            return realF0 + (double) (Integer.toUnsignedLong(rand) % 10000000) * (realF1 - realF0) / 9999999.0;
+        }
+        return f0;
     }
 }

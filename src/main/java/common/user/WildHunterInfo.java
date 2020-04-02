@@ -41,7 +41,7 @@ public class WildHunterInfo {
                 randomMobs[randCounter++] = capturedMobs[i];
             }
         }
-        return randCounter != 0 ? randomMobs[Math.abs(Rand32.genRandom().intValue()) % randCounter] : 0;
+        return randCounter != 0 ? randomMobs[Rand32.genRandom() % randCounter] : 0;
     }
 
     public int getRidingItem() {

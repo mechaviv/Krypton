@@ -196,7 +196,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
 
     public void initSequence() {
-        this.key = new SocketKey(Rand32.getInstance().random().intValue(), Rand32.getInstance().random().intValue());
+        this.key = new SocketKey(Rand32.genRandom(), Rand32.genRandom());
     }
 
     public void onClose() {

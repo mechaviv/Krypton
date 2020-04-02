@@ -1,0 +1,1 @@
+self.fieldEffectScreen("maplemap/enter/2000000")

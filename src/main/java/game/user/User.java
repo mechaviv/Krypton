@@ -19,11 +19,8 @@ package game.user;
 
 import common.*;
 import common.item.*;
-import common.user.CharacterData;
-import common.user.CharacterStat;
+import common.user.*;
 import common.user.CharacterStat.CharacterStatType;
-import common.user.DBChar;
-import common.user.UserEffect;
 import game.Channel;
 import game.GameApp;
 import game.field.*;
@@ -1239,6 +1236,7 @@ public class User extends Creature {
             // The only "migration" done is to the Shop, which can't access messenger.
             String firstUserEnter = getField().getFirstUserEnter();
             if (!getField().isUserEntered() && firstUserEnter != null && !firstUserEnter.isEmpty()) {
+                destroyAdditionalProcess();
                 ScriptVM script = new ScriptVM();
                 if (script.setScript(this, "field/first/" + firstUserEnter, this)) {
                     script.run(this);
@@ -1247,6 +1245,7 @@ public class User extends Creature {
             }
             String userEnter = getField().getUserEnter();
             if (userEnter != null && !userEnter.isEmpty()) {
+                destroyAdditionalProcess();
                 ScriptVM script = new ScriptVM();
                 if (script.setScript(this, "field/" + userEnter, this)) {
                     script.run(this);
@@ -2859,6 +2858,7 @@ public class User extends Creature {
 
             String firstUserEnter = getField().getFirstUserEnter();
             if (!getField().isUserEntered() && firstUserEnter != null && !firstUserEnter.isEmpty()) {
+                destroyAdditionalProcess();
                 ScriptVM script = new ScriptVM();
                 if (script.setScript(this, "field/first/" + firstUserEnter, this)) {
                     script.run(this);
@@ -2867,11 +2867,13 @@ public class User extends Creature {
             }
             String userEnter = getField().getUserEnter();
             if (userEnter != null && !userEnter.isEmpty()) {
+                destroyAdditionalProcess();
                 ScriptVM script = new ScriptVM();
                 if (script.setScript(this, "field/" + userEnter, this)) {
                     script.run(this);
                 }
             }
+            sendDebugMessage("User Enter = [%s] | First User Enter = [%s]", userEnter, firstUserEnter);
         } else {
             Logger.logError("Failed in entering field");
             closeSocket();
@@ -3081,9 +3083,10 @@ public class User extends Creature {
 
     public void sendSetFieldPacket(boolean characterData) {
         if (characterData) {
-            int s1 = Rand32.getInstance().random().intValue();
-            int s2 = Rand32.getInstance().random().intValue();
-            int s3 = Rand32.getInstance().random().intValue();
+            int s1 = Rand32.getInstance().random();
+            int s2 = Rand32.getInstance().random();
+            int s3 = Rand32.getInstance().random();
+            Logger.logReport("s1 = [0x%X] | s2 = [0x%X] | s3 = [0x%X] ", s1, s2,s3);
             calcDamage.setSeed(s1, s2, s3);
             sendPacket(Stage.onSetField(this, true, s1, s2, s3));
         } else {
@@ -3103,12 +3106,15 @@ public class User extends Creature {
     }
 
     public void sendSystemMessage(String msg) {
-        sendPacket(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, msg));
+        OutPacket packet = new OutPacket(LoopbackPacket.Message);
+        packet.encodeByte(MessageType.SystemMessage);
+        packet.encodeString(msg);
+        sendPacket(packet);
     }
 
     public void sendDebugMessage(String format, Object... args) {
         String text = String.format(format, args);
-        sendPacket(WvsContext.onBroadcastMsg(BroadcastMsg.NOTICE, text));
+        sendSystemMessage(text);
         Logger.logReport("[DEBUG Message] %s", text);
     }
 
@@ -3863,9 +3869,9 @@ public class User extends Creature {
 
         int rand;
         if (lastProp != 0) {
-            rand = Math.abs(Rand32.getInstance().random().intValue()) % lastProp;
+            rand = Math.abs(Rand32.getInstance().random()) % lastProp;
         } else {
-            rand = Math.abs(Rand32.getInstance().random().intValue());
+            rand = Math.abs(Rand32.getInstance().random());
         }
         for (int i = 0; i < props.size(); i++) {
             if (rand <= props.get(i)) {
@@ -4211,7 +4217,7 @@ public class User extends Creature {
         if (prop == 0) {
             prop = 100;
         }
-        if (Math.abs(Rand32.genRandom().intValue()) % 100 >= prop) {
+        if (Rand32.genRandom() % 100 >= prop) {
             return;
         }
         Flag tempSet = new Flag(Flag.INT_128);
@@ -4288,8 +4294,35 @@ public class User extends Creature {
             Logger.logError("Incorrect MobTemplateID in CUser::BanMapByMob (MID:%d, FID:%d, CID:%d)", template.getTemplateID(), getField().getFieldID(), getCharacterID());
             return;
         }
-        MobBanMap banMap = template.getBanMap().get(Math.abs(Rand32.genRandom().intValue()) % template.getBanMap().size());
+        MobBanMap banMap = template.getBanMap().get(Rand32.genRandom() % template.getBanMap().size());
         postTransferField(banMap.getFieldID(), banMap.getPortalName(), false);
         sendSystemMessage(template.getBanMsg());
+    }
+
+    public boolean enforceNpcChat(int npcID) {
+        NpcTemplate template = NpcTemplate.getNpcTemplate(npcID);
+        if (template == null) {
+            return false;
+        }
+        String name = template.getName();
+        Npc npc;
+        if (name == null || name.isEmpty()) {
+            npc = getField().getLifePool().getNpcByTemplateID(npcID);
+        } else {
+            npc = getField().getLifePool().getNpc(template.getName());
+        }
+        if (npc == null) {
+            return false;
+        }
+        String scriptName = template.getScript();
+        if (scriptName == null || scriptName.isEmpty()) {
+            return false;
+        }
+        destroyAdditionalProcess();
+        ScriptVM script = new ScriptVM();
+        if (script.setScript(this, "npcs/" + scriptName, npc)) {
+            script.run(this);
+        }
+        return true;
     }
 }

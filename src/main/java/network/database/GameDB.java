@@ -262,9 +262,6 @@ public class GameDB {
 
     public static void rawSaveQuestRecord(int characterID, Map<Integer, String> questRecord) {
         try (Connection con = Database.getDB().poolConnection()) {
-            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questperform` WHERE CharacterID = ?")) {
-                Database.execute(con, ps, characterID);
-            }
             try (PreparedStatement ps = con.prepareStatement("UPDATE `questperform` SET `QuestState` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
                 for (Map.Entry<Integer, String> quest : questRecord.entrySet()) {
                     int questID = quest.getKey();
@@ -279,9 +276,6 @@ public class GameDB {
 
     public static void rawSaveQuestRecordEx(int characterID, Map<Integer, SimpleStrMap> questRecordEx) {
         try (Connection con = Database.getDB().poolConnection()) {
-            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questperformex` WHERE CharacterID = ?")) {
-                Database.execute(con, ps, characterID);
-            }
             try (PreparedStatement ps = con.prepareStatement("UPDATE `questperformex` SET `RawString` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
                 for (Map.Entry<Integer, SimpleStrMap> questEx : questRecordEx.entrySet()) {
                     int questID = questEx.getKey();
@@ -300,9 +294,6 @@ public class GameDB {
 
     public static void rawSaveQuestComplete(int characterID, Map<Integer, FileTime> questComplete) {
         try (Connection con = Database.getDB().poolConnection()) {
-            try (PreparedStatement ps = con.prepareStatement("DELETE FROM `questcomplete` WHERE CharacterID = ?")) {
-                Database.execute(con, ps, characterID);
-            }
             try (PreparedStatement ps = con.prepareStatement("UPDATE `questcomplete` SET `CompleteTime` = ? WHERE `CharacterID` = ? AND `QRKey` = ?")) {
                 for (Map.Entry<Integer, FileTime> quest : questComplete.entrySet()) {
                     int questID = quest.getKey();

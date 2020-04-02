@@ -1,0 +1,15 @@
+val = self.questRecordExGet(23007, "vel01")
+if val == "1":
+    self.sayNext("Whoa. Wh-what happened? The glass is broken... Did that vibration earlier break it?")
+    self.sayNext("Now, there's nothing stopping you right? Let's get out of here!", 0, 0x2)
+    self.sayNext("But...")
+    self.sayNext("Do you WANT to stay here or something?", 0, 0x2)
+    self.sayNext("Of course not!")
+    self.sayNext("Then hurry up! Let's go!", 0, 0x2)
+    self.questRecordExSet(23007, "vel01", "2")
+    self.registerTransferField(931000020, "st00")
+elif val == "2":
+    self.sayNext("It's been...a really long time since I've been outside the laboratory. Where are we?")
+    self.sayNext("This is the road that leads to Edelstein, where I live! Let's get out of here before the Black Wings follow us.", 0, 0x2)
+    self.questRecordExSet(23007, "vel01", "3")
+    self.userAvatarOriented("Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow1")

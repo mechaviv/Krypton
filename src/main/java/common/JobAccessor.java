@@ -159,9 +159,17 @@ public enum JobAccessor {
     public static boolean isDualJobBorn(int job, int subJob) {
         return job / 1000 == 0 && subJob == 1;
     }
-
     public static boolean isBeginnerJob(int job) {
         return job % 1000 == 0 || job == 2001;
+    }
+    public static boolean isCygnusJob(int job) { return job / 1000 == 1; }
+    public static boolean isAranJob(int job) { return job / 100 == 21 || job == 2000; }
+    public static boolean isWildHunterJob(int job) { return job / 100 == 33; }
+    public static boolean isMechanicJob(int job) { return job / 100 == 35; }
+    public static boolean isMageJob(int jobCode) { return jobCode == 2 || jobCode == 12 || jobCode == 22 || jobCode == 32; }
+
+    public static int getNoviceSkillAsRace(int skillID, int job) {
+        return job / 100 == 22 || job == 2001 ? skillID + 20010000 : skillID + 10000000 * (job / 1000);
     }
 
     public static String getJobName(int job) {

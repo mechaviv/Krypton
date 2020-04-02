@@ -92,7 +92,7 @@ public class PortalMap {
     
     public Portal getRandStartPoint() { // GetRandStartPoint2 and GetRandStartPoint3 are the same and just LogReport..
         if (!startPoint.isEmpty()) {
-            int idx = (int) (Rand32.getInstance().random() % startPoint.size());
+            int idx = Math.abs(Rand32.getInstance().random()) % startPoint.size();
             if (idx < 0) {//should never happen..
                 idx = 0;
             }

@@ -27,7 +27,6 @@ import common.user.CharacterStat.CharacterStatType;
 import common.user.DBChar;
 import common.user.UserEffect;
 import game.field.life.mob.Mob;
-import game.messenger.Character;
 import game.user.User;
 import game.user.UserRemote;
 import game.user.WvsContext;
@@ -246,7 +245,7 @@ public class UserSkill {
             int baseInt = user.getBasicStat().getINT();
             int rand = 0;
             if ((baseInt - (baseInt * 0.8d)) > 0) {
-                rand = (int) (Rand32.getInstance().random() % (baseInt - (baseInt * 0.8d)));
+                rand = (int) (Math.abs(Rand32.getInstance().random()) % (baseInt - (baseInt * 0.8d)));
                 rand += (int) (baseInt - (baseInt * 0.8d));
             }
             int rate = user.getSecondaryStat().mad + user.getSecondaryStat().getStatOption(CharacterTemporaryStat.MAD);
@@ -494,6 +493,10 @@ public class UserSkill {
                 ts.setLastUpdated(System.currentTimeMillis() + 21000);
                 break;
             }
+            case Beginner.SHARP_EYES: {
+                flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.SharpEyes, new SecondaryStatOption((15 | (40 << 8)), skill.getSkillID(), System.currentTimeMillis() + 1000 * 240)));
+                break;
+            }
             // WARRIOR
             case Fighter.PowerGuard:
             case Page.PowerGuard: {
@@ -655,14 +658,14 @@ public class UserSkill {
                 if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
                     break;
                 }
-                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+                SecondaryStatOption option = new SecondaryStatOption(slv, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
 
                 int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_DARK_ADVANCED, null);
                 if (slv >= 20 && advSLV > 0) {
                     option.setReason(BMage.AURA_DARK_ADVANCED);
-                    slv = (byte) advSLV;
+                    option.setOption(advSLV);
                 }
-                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(option.getOption(), skill.getSkillID(), option.getDuration())));
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkAura, option));
                 break;
             }
@@ -670,13 +673,13 @@ public class UserSkill {
                 if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
                     break;
                 }
-                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+                SecondaryStatOption option = new SecondaryStatOption(slv, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
                 int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_BLUE_ADVANCED, null);
                 if (slv >= 20 && advSLV > 0) {
                     option.setReason(BMage.AURA_BLUE_ADVANCED);
-                    slv = (byte) advSLV;
+                    option.setOption(advSLV);
                 }
-                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(option.getOption(), skill.getSkillID(), option.getDuration())));
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.BlueAura, option));
                 break;
             }
@@ -684,14 +687,14 @@ public class UserSkill {
                 if (user.getSecondaryStat().getStatOption(CharacterTemporaryStat.Aura) != 0) {
                     break;
                 }
-                SecondaryStatOption option = new SecondaryStatOption(level.X, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
+                SecondaryStatOption option = new SecondaryStatOption(slv, skill.getSkillID(), System.currentTimeMillis() + Integer.MAX_VALUE);
 
                 int advSLV =  SkillInfo.getInstance().getSkillLevel(user.getCharacter(), BMage.AURA_YELLOW_ADVANCED, null);
                 if (slv >= 20 && advSLV > 0) {
                     option.setReason(BMage.AURA_YELLOW_ADVANCED);
-                    slv = (byte) advSLV;
+                    option.setOption(advSLV);
                 }
-                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(slv, skill.getSkillID(), option.getDuration())));
+                user.sendTemporaryStatSet(user.getSecondaryStat().setStat(CharacterTemporaryStat.Aura, new SecondaryStatOption(option.getOption(), skill.getSkillID(), option.getDuration())));
                 flag.performOR(user.getSecondaryStat().setStat(CharacterTemporaryStat.YellowAura, option));
                 break;
             }

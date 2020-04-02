@@ -124,14 +124,15 @@ public class BasicStat {
                 if (equipItem != null) {
                     incMaxHPr += equipItem.getIncMaxHPr();
                     incMaxMPr += equipItem.getIncMaxMPr();
-
-                    int level = equipItem.getReqLevel() / 10;
-                    applyItemOption(equip.option.option1, level);
-                    applyItemOption(equip.option.option2, level);
-                    applyItemOption(equip.option.option3, level);
-                    applyItemOptionR(equip.option.option1, level, option);
-                    applyItemOptionR(equip.option.option2, level, option);
-                    applyItemOptionR(equip.option.option3, level, option);
+                    if (equip.option != null) {
+                        int level = (equipItem.getReqLevel() - 1) / 10;
+                        applyItemOption(equip.option.option1, level);
+                        applyItemOption(equip.option.option2, level);
+                        applyItemOption(equip.option.option3, level);
+                        applyItemOptionR(equip.option.option1, level, option);
+                        applyItemOptionR(equip.option.option2, level, option);
+                        applyItemOptionR(equip.option.option3, level, option);
+                    }
                 }
             }
         }
@@ -192,6 +193,18 @@ public class BasicStat {
         bOption.LUKr += optData.incLUKr;
         bOption.MHPr += optData.incMaxHPr;
         bOption.MMPr += optData.incMaxMPr;
+    }
+
+    public int calcBasePDD() {
+        return (int) (INT * 0.4 + LUK * 0.5 + DEX * 0.5 + STR * 1.2);
+    }
+
+    public int calcBaseMDD() {
+        return (int) (STR * 0.4 + DEX * 0.5 + LUK * 0.5 + INT * 1.2);
+    }
+
+    public int calcBasePACC() {
+        return (int) (LUK + DEX * 1.2);
     }
 
     public void setGender(byte gender) {

@@ -221,7 +221,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
     
     public void initSequence() {
-        key = new SocketKey(Rand32.getInstance().random().intValue(), Rand32.getInstance().random().intValue());
+        key = new SocketKey(Rand32.genRandom(), Rand32.genRandom());
     }
     
     public boolean isAdmin() {

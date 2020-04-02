@@ -1,0 +1,1 @@
+self.userEnforceNpcChat(2159008)

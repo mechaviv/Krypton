@@ -190,9 +190,9 @@ public class MobTemplate implements WzXML {
         template.chaseSpeed = (byte) Math.min(140, Math.max(0, WzUtil.getByte(info.getNode("chaseSpeed"), 0) + 100));
 
         template.pad = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("PADamage"), 0)));
-        template.pdd = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("PDDamage"), 0)));
+        template.pdd = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("PDRate"), 0)));
         template.mad = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("MADamage"), 0)));
-        template.mdd = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("MDDamage"), 0)));
+        template.mdd = (short) Math.min(1999, Math.max(0, WzUtil.getShort(info.getNode("MDRate"), 0)));
         template.acc = WzUtil.getByte(info.getNode("acc"), 0);
         template.eva = WzUtil.getByte(info.getNode("eva"), 0);
         template.exp = WzUtil.getInt32(info.getNode("exp"), 0);

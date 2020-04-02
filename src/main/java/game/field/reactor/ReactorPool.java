@@ -106,7 +106,7 @@ public class ReactorPool {
 
                 long regenAfter = 0;
                 if (interval > 0) {
-                    regenAfter = cur + (interval / 10) + Math.abs(Rand32.genRandom().intValue()) % (6 * interval / 10);
+                    regenAfter = cur + (interval / 10) + Rand32.genRandom() % (6 * interval / 10);
                 }
                 reactorGen.setRegenAfter(regenAfter);
                 reactorGen.setReactorCount(0);

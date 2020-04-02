@@ -4,15 +4,10 @@ import game.GameApp;
 import game.field.*;
 import game.field.drop.Drop;
 import game.field.drop.Reward;
-import game.field.drop.RewardInfo;
 import game.field.event.EventInfo;
-import game.field.event.EventManager;
 import game.field.event.EventManager2;
-import game.field.life.mob.MobLeaveField;
-import game.field.life.mob.MobPool;
 import game.field.life.npc.Npc;
 import game.field.reactor.action.ActionType;
-import game.field.reactor.action.ReactorActionInfo;
 import game.party.PartyMan;
 import game.script.ScriptVM;
 import game.user.User;
@@ -77,7 +72,7 @@ public class Reactor extends EventManager2 {
             if (strArgs.size() + 1 != numArgs.size()) {
                 return;
             }
-            int rand = (int) (Rand32.genRandom() % strArgs.size());
+            int rand = Rand32.genRandom() % strArgs.size();
             int fieldID = numArgs.get(rand + 1);
             String portal = strArgs.get(rand);
             boolean lastHitOnly = numArgs.get(0) != 0;
@@ -337,7 +332,7 @@ public class Reactor extends EventManager2 {
             if (reactorGen.getReactorCount() == 0) {
                 int regenInterval = reactorGen.getRegenInterval();
 
-                int rand = (regenInterval / 10) + Math.abs(Rand32.genRandom().intValue()) % (6 * regenInterval / 10);
+                int rand = (regenInterval / 10) + Rand32.genRandom() % (6 * regenInterval / 10);
 
                 reactorGen.setRegenAfter(rand  + System.currentTimeMillis());
             }

@@ -522,7 +522,7 @@ public class Inventory {
                                 ItemSlotEquip item = (ItemSlotEquip) equipItem;
                                 --item.item.ruc;
                                 scrolled = true;
-                                if (Rand32.getInstance().random() % 101 <= info.getSuccess()) {
+                                if (Math.abs(Rand32.getInstance().random()) % 101 <= info.getSuccess()) {
                                     ++item.item.cuc;
                                     item.item.iSTR = (short) Math.min(Math.max(item.item.iSTR + info.getIncSTR(), 0), 9999);
                                     item.item.iDEX = (short) Math.min(Math.max(item.item.iDEX + info.getIncDEX(), 0), 9999);

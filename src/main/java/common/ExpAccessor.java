@@ -21,6 +21,7 @@ import common.user.CharacterData;
 import common.user.CharacterStat.CharacterStatType;
 import game.user.skill.SkillAccessor;
 import game.user.stat.BasicStat;
+import util.Logger;
 import util.Pointer;
 
 /**
@@ -107,6 +108,7 @@ public class ExpAccessor {
         }
         cd.getCharacterStat().setEXP(exp);
         if (cd.getCharacterStat().getHP() > 0) {
+            Logger.logReport("New HP [%d] | New MP [%d]", cd.getCharacterStat().getMHP(), cd.getCharacterStat().getMMP());
             cd.getCharacterStat().setHP(cd.getCharacterStat().getMHP());
             cd.getCharacterStat().setMP(cd.getCharacterStat().getMMP());
         }

@@ -182,6 +182,14 @@ public class WvsContext {
         return packet;
     }
 
+    public static OutPacket onQuestRecordExMessage(int questID, String rawStr) {
+        OutPacket packet = new OutPacket(LoopbackPacket.Message);
+        packet.encodeByte(MessageType.QuestRecordExMessage);
+        packet.encodeShort(questID);
+        packet.encodeString(rawStr);
+        return packet;
+    }
+
     public static OutPacket onCashItemExpireMessage(int itemID) {
         OutPacket packet = new OutPacket(LoopbackPacket.Message);
         packet.encodeByte(MessageType.CashItemExpireMessage);

@@ -166,7 +166,7 @@ public class Utilities {
             }
         }
         for (int i = 0; i < count; i++) {
-            int rand = Math.abs(Rand32.genRandom().intValue());
+            int rand = Rand32.genRandom();
 
             int size = tempList.size();
             if (size != 0) {

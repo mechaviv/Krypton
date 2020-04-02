@@ -28,6 +28,9 @@ import game.user.skill.entries.SkillEntry;
 import game.user.stat.BasicStat;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+
+import game.user.stat.CharacterTemporaryStat;
+import game.user.stat.SecondaryStat;
 import util.Pointer;
 
 /**
@@ -40,17 +43,17 @@ public class SkillAccessor {
             MAX_CLIENT_DAMAGE   = 9999,
             
             // The maximum per stat that a player can obtain and/or use.
-            STR_MAX             = 999,
-            DEX_MAX             = 999,
-            INT_MAX             = 999,
-            LUK_MAX             = 999,
-            PAD_MAX             = 999,
-            PDD_MAX             = 999,
-            MAD_MAX             = 999,
-            MDD_MAX             = 999,
-            ACC_MAX             = 999,
-            EVA_MAX             = 999,
-            SPEED_MAX           = 130,
+            STR_MAX             = 32767,
+            DEX_MAX             = 32767,
+            INT_MAX             = 32767,
+            LUK_MAX             = 32767,
+            PAD_MAX             = 29999,
+            PDD_MAX             = 30000,
+            MAD_MAX             = 29999,
+            MDD_MAX             = 30000,
+            ACC_MAX             = 9999,
+            EVA_MAX             = 9999,
+            SPEED_MAX           = 140,
             JUMP_MAX            = 123,
             HP_MAX              = 99999,
             MP_MAX              = 99999,
@@ -282,10 +285,10 @@ public class SkillAccessor {
             int maxMP  = INC_HP_MP[jobCategory][!levelUp ? 1 : 0][4];
             int randMP = INC_HP_MP[jobCategory][!levelUp ? 1 : 0][5];
             if (incHP) {//Nexon uses the C++ engine RNG, we will use the JVM's RNG.
-                hpInc = minHP + ThreadLocalRandom.current().nextInt(Short.MAX_VALUE) % (maxHP - minHP + 1);
+                hpInc = minHP + ThreadLocalRandom.current().nextInt(Integer.MAX_VALUE) % (maxHP - minHP + 1);
             }
             if (incMP) {
-                mpInc = ThreadLocalRandom.current().nextInt(Short.MAX_VALUE) % (maxMP - minMP + 1) + minMP + bs.getINT() * randMP / 200;
+                mpInc = ThreadLocalRandom.current().nextInt(Integer.MAX_VALUE) % (maxMP - minMP + 1) + minMP + bs.getINT() * randMP / 200;
             }
             if (incHP) {
                 int skillID = Warrior.MHPInc;
@@ -319,13 +322,13 @@ public class SkillAccessor {
             }
             if (incHP) {
                 if (cd.getCharacterStat().getMHP() < HP_MAX) {
-                    cd.getCharacterStat().setMHP((short) Math.min(Math.max(hpInc + cd.getCharacterStat().getMHP(), 50), HP_MAX));
+                    cd.getCharacterStat().setMHP(Math.min(Math.max(hpInc + cd.getCharacterStat().getMHP(), 50), HP_MAX));
                     inc = true;
                 }
             }
             if (incMP) {
                 if (cd.getCharacterStat().getMMP() < MP_MAX) {
-                    cd.getCharacterStat().setMMP((short) Math.min(Math.max(mpInc + cd.getCharacterStat().getMMP(), 5), MP_MAX));
+                    cd.getCharacterStat().setMMP(Math.min(Math.max(mpInc + cd.getCharacterStat().getMMP(), 5), MP_MAX));
                     inc = true;
                 }
             }
@@ -418,60 +421,208 @@ public class SkillAccessor {
     }
 
     
-    public static int getWeaponMastery(CharacterData cd, int weaponItemID, int attackType, Pointer<Integer> accInc) {
-        final int MELEE = 1, SHOOT = 2;
+    public static int getWeaponMastery(CharacterData cd, SecondaryStat ss, int weaponItemID, int attackType, int skillID, Pointer<Integer> accInc, Pointer<Integer> padInc) {
+        final int MELEE = 0, SHOOT = 1;
         
         int wt = ItemAccessor.getWeaponType(weaponItemID);
         int mastery = 0;
         switch (wt) {
-            case 30: //OneHand_Sword
-            case 40: //TowHand_Sword
-                if (attackType == MELEE) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Fighter.WeaponMastery, accInc);
-                    if (mastery == 0)
-                        mastery = SkillAccessor.getMasteryFromSkill(cd, Page.WeaponMastery, accInc);
+            case ItemAccessor.WeaponTypeFlag.OH_SWORD:
+            case ItemAccessor.WeaponTypeFlag.TH_SWORD:
+                if (attackType != MELEE && (skillID != SoulMaster.SOUL_BLADE || attackType != SHOOT)) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Fighter.WeaponMastery, accInc);
+                if (mastery == 0) {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, Page.WeaponMastery, accInc);
+                    if (mastery != 0) {
+                        if (ss.getStatOption(CharacterTemporaryStat.WeaponCharge) != 0) {
+                            Pointer<Integer> subAccInc = new Pointer<>(0);
+                            int subMastery = SkillAccessor.getMasteryFromSkill(cd, Paladin.ADVANCED_CHARGE, subAccInc);
+                            if (subMastery != 0) {
+                                mastery = subMastery;
+                            }
+                            if (subAccInc.get() != 0) {
+                                accInc.set(subAccInc.get());
+                            }
+                        }
+                    } else {
+                        mastery = SkillAccessor.getMasteryFromSkill(cd, SoulMaster.SWORD_MASTERY, accInc);
+                    }
                 }
                 break;
-            case 31: //OneHand_Axe
-            case 41: //TowHand_Axe
-                if (attackType == MELEE) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Fighter.WeaponMasteryEx, accInc);
-                    if (mastery == 0)
-                        mastery = SkillAccessor.getMasteryFromSkill(cd, Page.WeaponMasteryEx, accInc);
+            case ItemAccessor.WeaponTypeFlag.OH_AXE:
+            case ItemAccessor.WeaponTypeFlag.TH_AXE:
+                if (attackType != MELEE) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Fighter.WeaponMastery, accInc);
+                break;
+            case ItemAccessor.WeaponTypeFlag.OH_MACE:
+            case ItemAccessor.WeaponTypeFlag.TH_MACE:
+                if (attackType != MELEE) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Page.WeaponMastery, accInc);
+                if (ss.getStatOption(CharacterTemporaryStat.WeaponCharge) != 0) {
+                    Pointer<Integer> subAccInc = new Pointer<>(0);
+                    int subMastery = SkillAccessor.getMasteryFromSkill(cd, Paladin.ADVANCED_CHARGE, subAccInc);
+                    if (subMastery != 0) {
+                        mastery = subMastery;
+                    }
+                    if (subAccInc.get() != 0) {
+                        accInc.set(subAccInc.get());
+                    }
                 }
                 break;
-            case 32: //OneHand_Mace
-            case 42: //TowHand_Mace
-                if (attackType == MELEE) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Page.WeaponMasteryEx, accInc);
-                    if (mastery == 0)
-                        mastery = SkillAccessor.getMasteryFromSkill(cd, Fighter.WeaponMasteryEx, accInc);
+            case ItemAccessor.WeaponTypeFlag.DAGGER:
+                if (attackType != MELEE) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, cd.isEquippedDualDagger() ? Dual1.DUAL_MASTERY : Thief.DaggerMastery, accInc);
+                break;
+            case ItemAccessor.WeaponTypeFlag.SPEAR:
+                if (attackType != MELEE) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Spearman.WeaponMastery, accInc);
+                if (ss.getStatOption(CharacterTemporaryStat.Beholder) != 0) {
+                    mastery += SkillAccessor.getMasteryFromSkill(cd, DarkKnight.BEHOLDER, null);
                 }
                 break;
-            case 45: //Bow
-                if (attackType == SHOOT) {
+            case ItemAccessor.WeaponTypeFlag.POLEARM:
+                if (attackType != MELEE && (skillID != Aran.COMBO_SMASH && skillID != Aran.COMBO_FENRIR && skillID != Aran.COMBO_TEMPEST || attackType != SHOOT)) {
+                    return 0;
+                }
+                if (JobAccessor.isAranJob(cd.getCharacterStat().getJob())) {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, Aran.POLEARM_MASTERY, accInc);
+                    int highMastery = SkillAccessor.getMasteryFromSkill(cd, Aran.HIGH_MASTERY, padInc);
+                    if (highMastery != 0) {
+                        mastery = highMastery;
+                    }
+                } else {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, Spearman.WeaponMastery, accInc);
+                    if (ss.getStatOption(CharacterTemporaryStat.Beholder) != 0) {
+                        mastery += SkillAccessor.getMasteryFromSkill(cd, DarkKnight.BEHOLDER, null);
+                    }
+                }
+                break;
+            case ItemAccessor.WeaponTypeFlag.BOW:
+                if (attackType != SHOOT) {
+                    return 0;
+                }
+                int bowExpert;
+                if (JobAccessor.isCygnusJob(cd.getCharacterStat().getJob())) {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, WindBreaker.BOW_MASTERY, accInc);
+                    bowExpert = SkillAccessor.getMasteryFromSkill(cd, WindBreaker.BOW_EXPERT, padInc);
+                } else {
                     mastery = SkillAccessor.getMasteryFromSkill(cd, Hunter.BowMastery, accInc);
+                    bowExpert = SkillAccessor.getMasteryFromSkill(cd, Bowmaster.BOW_EXPERT, padInc);
+                }
+                if (bowExpert != 0) mastery = bowExpert;
+                break;
+            case ItemAccessor.WeaponTypeFlag.CROSSBOW:
+                boolean wildHunter = JobAccessor.isWildHunterJob(cd.getCharacterStat().getJob());
+                if (attackType != SHOOT || (!wildHunter || attackType != MELEE)) {
+                    return 0;
+                }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, wildHunter ? WildHunter.CROSSBOW_MASTERY : Crossbowman.CrossbowMastery, accInc);
+                int crossbowExpert = SkillAccessor.getMasteryFromSkill(cd, wildHunter ? WildHunter.CROSSBOW_EXPERT : CrossbowMaster.CROSSBOW_EXPERT, padInc);
+                if (crossbowExpert != 0) {
+                    mastery = crossbowExpert;
                 }
                 break;
-            case 46: //CrossBow
-                if (attackType == SHOOT) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Crossbowman.CrossbowMastery, accInc);
+            case ItemAccessor.WeaponTypeFlag.THROWINGGLOVE:
+                if (attackType != SHOOT && (skillID != NightWalker.POISON_BOMB || attackType != MELEE)) {
+                    return 0;
                 }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, JobAccessor.isCygnusJob(cd.getCharacterStat().getJob()) ? NightWalker.JAVELIN_MASTERY : Assassin.JavelinMastery, accInc);
                 break;
-            case 47: //ThrowingGloves
-                if (attackType == SHOOT) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Assassin.JavelinMastery, accInc);
+            case ItemAccessor.WeaponTypeFlag.KNUCKLE:
+                if (attackType != MELEE && (skillID != Viper.ENERGY_ORB && skillID != Striker.SHARK_WAVE || attackType != SHOOT)) {
+                    return 0;
                 }
+                mastery = SkillAccessor.getMasteryFromSkill(cd, JobAccessor.isCygnusJob(cd.getCharacterStat().getJob()) ? Striker.KNUCKLE_MASTERY : InFighter.KNUCKLE_MASTERY, accInc);
                 break;
-            case 33: //Dagger
-                if (attackType == MELEE) {
-                    mastery = SkillAccessor.getMasteryFromSkill(cd, Thief.DaggerMastery, accInc);
+            case ItemAccessor.WeaponTypeFlag.GUN:
+                if (JobAccessor.isMechanicJob(cd.getCharacterStat().getJob())) {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, Mechanic.HN07_UPGRADE, accInc);
+                    if (mastery == 0) {
+                        mastery = SkillAccessor.getMasteryFromSkill(cd, Mechanic.GUN_MASTERY, accInc);
+                    }
+                } else if (attackType != SHOOT && (skillID != Captain.AIR_STRIKE || attackType != MELEE)) {
+                    return 0;
+                } else {
+                    mastery = SkillAccessor.getMasteryFromSkill(cd, Gunslinger.GUN_MASTERY, accInc);
                 }
                 break;
         }
         return mastery;
     }
-    
+
+    public static int getMagicMastery(CharacterData cd, Pointer<Integer> madInc) {
+        int mastery = 0;
+
+        int job = cd.getCharacterStat().getJob();
+        int jobPrefix = job / 10;
+        switch (jobPrefix) {
+            case 21:
+                // Wizard 1
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Wizard1.SpellMastery, madInc);
+                break;
+            case 22:
+                // Wizard 2
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Wizard2.SpellMastery, madInc);
+                break;
+            case 23:
+                // Cleric
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Cleric.SpellMastery, madInc);
+                break;
+            case 120:
+            case 121:
+                // Blaze Wizard
+                mastery = SkillAccessor.getMasteryFromSkill(cd, FlameWizard.SPELL_MASTERY, madInc);
+                break;
+            case 220:
+            case 221:
+                // Evan
+                mastery = SkillAccessor.getMasteryFromSkill(cd, Evan.SPELL_MASTERY, madInc);
+                Pointer<Integer> subMadInc = new Pointer<>(0);
+                int subMastery = SkillAccessor.getMasteryFromSkill(cd, Evan.MAGIC_MASTERY, subMadInc);
+                if (subMastery != 0) {
+                    mastery = subMastery;
+                    if (subMadInc.get() != 0) {
+                        madInc.add(subMadInc.get());
+                    }
+                }
+                break;
+            case 320:
+            case 321:
+                // Battle Mage
+                mastery = SkillAccessor.getMasteryFromSkill(cd, BMage.SPELL_MASTERY, madInc);
+                break;
+        }
+        return mastery;
+    }
+
+    public static int getIncreaseSpeed(CharacterData cd) {
+        int job = cd.getCharacterStat().getJob();
+        Pointer<SkillEntry> skill = new Pointer<>();
+        int slv = 0;
+        if (JobAccessor.isCorrectJobForSkillRoot(job, 311)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Ranger.THRUST, skill);
+        } else if (JobAccessor.isCorrectJobForSkillRoot(job, 321)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Sniper.THRUST, skill);
+        } else if (JobAccessor.isCorrectJobForSkillRoot(job , 1310)) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, WindBreaker.THRUST, skill);
+        }
+        int speed = 0;
+        if (slv != 0) {
+            speed = skill.get().getLevelData(slv).Speed;
+        }
+        return speed;
+    }
+
     public static boolean isSelfStatChange(int skillID) {
         switch (skillID) {
             // Beginner Jobs
@@ -594,6 +745,7 @@ public class SkillAccessor {
             case Priest.HOLY_SYMBOL:
             case Bowmaster.SHARP_EYES:
             case CrossbowMaster.SHARP_EYES:
+            case Beginner.SHARP_EYES:
             case Assassin.Haste:
             case Thief.Haste:
             case Hermit.MESO_UP:
@@ -978,5 +1130,23 @@ public class SkillAccessor {
                 return true;
         }
         return false;
+    }
+
+    public static int getShadowPartnerSkillID(int job) {
+        int[] skills = {Hermit.SHADOW_PARTNER, ThiefMaster.SHADOW_PARTNER, NightWalker.SHADOW_PARTNER, Dual4.MIRROR_IMAGING};
+        for (int i = 0; i < skills.length; i++) {
+            if (JobAccessor.isCorrectJobForSkillRoot(job, skills[i])) {
+                return skills[i];
+            }
+        }
+        return 0;
+    }
+
+    public static int getCriticalSkillLevel(CharacterData cd, int weaponItemID, int attackType, Pointer<Integer> prop, Pointer<Integer> param) {
+        return 0;
+    }
+
+    public static boolean isJaguarMeleeAttackSkill(int skillID) {
+        return skillID == WildHunter.CLAW_CUT || skillID == WildHunter.ELRECTRONICSHOCK || skillID == WildHunter.CROSS_ROAD || skillID == WildHunter.JAGUAR_NUCKBACK || skillID == WildHunter.SWALLOW_DUMMY_ATTACK;
     }
 }

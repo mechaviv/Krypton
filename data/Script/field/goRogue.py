@@ -1,0 +1,1 @@
+self.userReservedEffect("Effect/Direction3.img/rogue/Scene1")

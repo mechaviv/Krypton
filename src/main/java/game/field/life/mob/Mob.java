@@ -38,7 +38,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import game.user.skill.data.MobSkillLevelData;
 import game.user.skill.data.SkillLevelData;
-import game.user.skill.entries.MobSkillEntry;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.Flag;
@@ -323,7 +322,7 @@ public class Mob extends Creature {
                 return;
             }
             if (steal) {
-                Reward reward = rewards.get((int) (Rand32.getInstance().random() % rewards.size()));
+                Reward reward = rewards.get(Math.abs(Rand32.getInstance().random()) % rewards.size());
                 if (reward.getItem() != null) {
                     itemID_Stolen = reward.getItem().getItemID();
                 }
@@ -358,9 +357,9 @@ public class Mob extends Creature {
     public void heal(int min, int max) {
         int decHP;
         if (max == min)
-            decHP = Rand32.genRandom().intValue();
+            decHP = Rand32.genRandom();
         else
-            decHP = min + Rand32.genRandom().intValue() % (max - min);
+            decHP = min + Rand32.genRandom() % (max - min);
         setMobHP(Math.min(decHP + getHP(), getMaxHP()));
     }
     
@@ -676,7 +675,7 @@ public class Mob extends Creature {
         if (skillID != MobSkills.HEAL_M) {
             return;
         }
-        int heal = level.getX() + Math.abs(Rand32.genRandom().intValue())  % level.getY();
+        int heal = level.getX() + Rand32.genRandom()  % level.getY();
         int newHP = Math.min(heal + hp, template.getMaxHP());
         setMobHP(newHP);
         sendDamagedPacket(1, -heal);
@@ -832,7 +831,7 @@ public class Mob extends Creature {
         if (!chosenSkills.isEmpty()) {
             int length = chosenSkills.size();
             if (length != 0) {
-                int rand = Math.abs(Rand32.genRandom().intValue()) % length;
+                int rand = Rand32.genRandom() % length;
                 MobSkillContext newContext = skillContexts.get(chosenSkills.get(rand));
                 skillCommand.set(newContext.getSkillID());
                 this.skillCommand = newContext.getSkillID();
@@ -1062,7 +1061,7 @@ public class Mob extends Creature {
                     long regen = 0;
                     int delay = 7 * mobGen.regenInterval / 10;
                     if (delay != 0)
-                        regen = 13 * mobGen.regenInterval / 10 + Rand32.getInstance().random() % delay;
+                        regen = 13 * mobGen.regenInterval / 10 + Math.abs(Rand32.getInstance().random()) % delay;
                     mobGen.regenAfter = regen + System.currentTimeMillis();
                 }
             }

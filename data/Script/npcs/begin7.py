@@ -34,5 +34,7 @@ else:
             self.say("What? You're telling me you wanted to go without any money? You're one weirdo...")
         else:
             self.sayNext("Awesome! #e150 mesos#n accepted! Alright, off to Victoria Island!")
-            self.registerTransferField(104000000, "maple00")
+            self.userSetDirectionMode(True, 0)
+            self.userSetStandAloneMode(True)
+            self.registerTransferField(2010000, "")
 

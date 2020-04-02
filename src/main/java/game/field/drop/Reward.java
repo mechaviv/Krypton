@@ -24,16 +24,13 @@ import game.user.item.EquipItem;
 import game.user.item.ItemInfo;
 import game.user.item.ItemVariationOption;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 import game.user.quest.QuestDemand;
 import game.user.quest.QuestMan;
 import game.user.quest.info.QuestItemInfo;
-import network.database.GameDB;
 import util.FileTime;
-import util.Logger;
 import util.Rand32;
 import util.wz.WzProperty;
 import util.wz.WzUtil;
@@ -118,7 +115,7 @@ public class Reward {
             int minProb = (int) (long) (1000000000.0d / INC_DROP_RATE * INC_DROP_RATE_WSE / (double) ownerDropRate / (double) itemRate / REWARD_RATE);
             int maxProb = 1000000000;
             if (minProb > 0) {
-                maxProb = (int) (Rand32.getInstance().random() % minProb);
+                maxProb = Math.abs(Rand32.getInstance().random()) % minProb;
             }
             if (test) maxProb = 1;
             if (maxProb < info.getProb()) {
@@ -131,7 +128,7 @@ public class Reward {
                         int max = 4 * info.getMoney() / 5;
                         int rand = 1;
                         if (min > 0) {
-                            rand = Math.max(1, max + (int) (Rand32.getInstance().random() % min));
+                            rand = Math.max(1, max + Math.abs(Rand32.getInstance().random()) % min);
                         }
                         reward.setMoney(moneyRate * rand);
                         rewards.add(reward);
@@ -147,7 +144,7 @@ public class Reward {
                                 if (ItemAccessor.isBundleTypeIndex(ItemAccessor.getItemTypeIndexFromID(info.getItemId()))) {
                                     int rand = Math.min(info.getMax() - info.getMin() + 1, 1);
                                     if (rand > 1)
-                                        rand = info.getMin() + (int) (Rand32.getInstance().random() % rand);
+                                        rand = info.getMin() + Math.abs(Rand32.getInstance().random()) % rand;
                                     item.setItemNumber(rand);
                                 }
                                 reward.setItem(item);

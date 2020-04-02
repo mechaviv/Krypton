@@ -278,4 +278,16 @@ public class MobStat {
     public void setCounterProb(int counterProb) {
         this.counterProb = counterProb;
     }
+
+    public boolean isInvincible() {
+        return invincible;
+    }
+
+    public void setInvincible(boolean invincible) {
+        this.invincible = invincible;
+    }
+
+    public List<Integer> getDamagedElemAttr() {
+        return damagedElemAttr;
+    }
 }

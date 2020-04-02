@@ -109,7 +109,7 @@ public class User {
             this.cashShopAuthorized = true;
             Logger.logReport("User is cashShopAuthorized");
         }
-        this.cashKey = Rand32.getInstance().random().intValue();
+        this.cashKey = Rand32.getInstance().random();
         this.lock = new ReentrantLock();
         this.lockSocket = new ReentrantLock();
     }

@@ -1,0 +1,1 @@
+self.userAvatarOriented("Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk")

@@ -51,7 +51,7 @@ public class ItemVariationOption {
     public static Integer getVariation(int v, int option) {//ITEMVARIATIONOPTION enOption
         if (v != 0) {
             int randRange = Math.min(v / 10 + 1, 5);
-            int randomBit = Rand32.getRand(1 << (randRange + 2), 0).intValue();
+            int randomBit = Rand32.getRand(1 << (randRange + 2), 0);
             int delta = 0;
             for (int i = 0; i < randRange + 2; i++) {
                 delta += randomBit & 1;

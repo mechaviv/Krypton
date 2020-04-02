@@ -8,5 +8,6 @@ public class ParamType {
             None = 0,
             NotCancellable          = 0x1,
             PlayerAsSpeaker         = 0x2,
-            OverrideSpeakerID       = 0x4;
+            OverrideSpeakerID       = 0x4,
+            SpeakerOnRight          = 0x8;
 }

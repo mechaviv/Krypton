@@ -904,6 +904,18 @@ public class Field {
         return channelID;
     }
 
+    public void effectObject(String name) {
+        broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.Object, name), false);
+    }
+
+    public void effectScreen(String name) {
+        broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.Screen, name), false);
+    }
+
+    public void effectSound(String name) {
+        broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.Sound, name), false);
+    }
+
     public void effectTremble(int heavyNShortTremble, int delay) {
         broadcastPacket(FieldPacket.onFieldEffect(FieldEffectFlags.Tremble, null, heavyNShortTremble, delay), false);
     }

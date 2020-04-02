@@ -142,12 +142,12 @@ public class WvsPhysicalSpace2D {
             if (x1 == 0) {
                 y1 = 0;
             } else {
-                y1 = Rand32.getRand(x1, 0).intValue();
+                y1 = Rand32.getRand(x1, 0);
             }
             int x2 = x0 + y1 + x1 * shuffle.get(i);
             getFootholdRange(x2, dst.top, dst.bottom, position);
             if (!position.isEmpty()) {
-                int y2 = position.get(Rand32.getRand(position.size(), 0).intValue());
+                int y2 = position.get(Rand32.getRand(position.size(), 0));
                 apt.add(new Point(x2, y2));
                 if (apt.size() == count) {
                     position.clear();

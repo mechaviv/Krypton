@@ -54,11 +54,7 @@ import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
-import util.Logger;
-import util.Pointer;
-import util.Rand32;
-import util.Range;
-import util.Rect;
+import util.*;
 import util.wz.WzProperty;
 import util.wz.WzUtil;
 
@@ -766,7 +762,7 @@ public class LifePool {
                 while (true) {
                     if (mobGens.isEmpty())
                         break;
-                    index = (int) (Rand32.getInstance().random() % mobGens.size());
+                    index = Math.abs(Rand32.getInstance().random()) % mobGens.size();
                     MobGen pmg = mobGens.remove(index);
                     if (pmg == null)
                         continue;
@@ -837,7 +833,12 @@ public class LifePool {
                     skillID = skill.getSkillID();
                 }
                 int weaponItemID = user.getCharacter().getItem(ItemType.Equip, -BodyPart.Weapon).getItemID();
-            
+
+                boolean nextAttackCritical = false;
+                int attackCount = 0;
+                boolean shadowPartner = false, invincible = false;
+                int criticalProb = 0, criticalDamage = 0, totalDAMr = 0, bossDAMr = 0, ignoreTargetDEF = 0, dragonFury = 0, AR01Pad = 0, AR01Mad = 0, keyDown = 0, darkForce = 0, advancedChargeDamage = 0;
+
                 if (mobCount > 0) {
                     for (Iterator<AttackInfo> it = attack.iterator(); it.hasNext();) {
                         AttackInfo info = it.next();
@@ -848,7 +849,7 @@ public class LifePool {
                         Mob mob = mobs.get(info.mobID);
                         if (mob != null) {
                             if (type == ClientPacket.UserMagicAttack) {
-                                user.getCalcDamage().MDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, action, skill, slv, info.damageCli, mobCount);
+                                user.getCalcDamage().MDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), info.mobID, mob.getMobStat(), mob.getTemplate(), user.getPassiveSkillData(), nextAttackCritical, damagePerMob, weaponItemID, action, skill, slv, info.damageSvr, info.critical, criticalProb, criticalDamage, totalDAMr, bossDAMr, ignoreTargetDEF, mobCount, keyDown, dragonFury, AR01Mad);
                             } else if (skillID == Skills.Paladin.SANCTUARY) {
                                 if (damagePerMob > 0) {
                                     for (int i = 0; i < damagePerMob; i++) {
@@ -856,16 +857,27 @@ public class LifePool {
                                         if (damage >= 99999) {
                                             damage = 99999;
                                         }
-                                        info.damageCli.set(i, damage);
+                                        info.damageSvr.set(i, damage);
                                     }
                                 }
                             } else {
-                                user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, bulletItemID, attackType, action, skill, slv, info.damageCli);
+                                user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), info.mobID, mob.getMobStat(), mob.getTemplate(), user.getPassiveSkillData(), nextAttackCritical, attackCount, damagePerMob, weaponItemID, bulletItemID, attackType, action, shadowPartner, skill, slv, info.damageSvr, info.critical, criticalProb, criticalDamage, totalDAMr, bossDAMr, ignoreTargetDEF, dragonFury, AR01Pad, keyDown, darkForce, advancedChargeDamage, invincible);
+                                //user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, bulletItemID, attackType, action, skill, slv, info.damageCli);
                             }
                         } else {
                             user.getCalcDamage().skip();
                         }
                     }
+                }
+
+                int index = 1;
+                for (AttackInfo a : attack) {
+                    user.sendDebugMessage("Attack [%d]", index);
+                    String damageInfo = "";
+                    for (int i = 0; i < damagePerMob; i++) {
+                        damageInfo += "[" + a.damageSvr.get(i) + ", (Crit) " + a.critical.get(i) + "], ";
+                    }
+                    user.sendDebugMessage(damageInfo);
                 }
 
                 int header = LoopbackPacket.UserMeleeAttack;
@@ -901,14 +913,14 @@ public class LifePool {
                 packet.encodeBool(serialAttack);
                 packet.encodeShort(action & 0x7FFF | left << 15);
                 packet.encodeByte(speedDegree);
-                packet.encodeByte(SkillAccessor.getWeaponMastery(user.getCharacter(), weaponItemID, attackType, null));
+                packet.encodeByte(SkillAccessor.getWeaponMastery(user.getCharacter(), user.getSecondaryStat(), weaponItemID, attackType, skillID, null, null));
                 packet.encodeInt(bulletItemID);
                 for (AttackInfo info : attack) {
                     packet.encodeInt(info.mobID);
                     packet.encodeByte(info.hitAction);
                     for (int i = 0; i < damagePerMob; i++) {
-                        packet.encodeByte(0);// bCritical
-                        packet.encodeShort(info.damageCli.get(i));
+                        packet.encodeBool(info.critical.get(i));// bCritical
+                        packet.encodeShort(info.damageSvr.get(i));
                     }
                 }
                 if (header == LoopbackPacket.UserShootAttack) {
@@ -1020,7 +1032,7 @@ public class LifePool {
         }
         List<Integer> create = new ArrayList<>();
         for (MobEntry entry : info.getMobs()) {
-            if (Math.abs(Rand32.genRandom().intValue()) % 100 < entry.getProb()) {
+            if (Rand32.genRandom() % 100 < entry.getProb()) {
                 create.add(entry.getMobTemplateID());
             }
         }

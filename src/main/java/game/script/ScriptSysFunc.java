@@ -48,6 +48,7 @@ import game.user.item.StateChangeItem;
 import game.user.quest.QuestDemand;
 import game.user.quest.QuestMan;
 import game.user.quest.UserQuestRecord;
+import game.user.quest.UserQuestRecordEx;
 import game.user.skill.SkillInfo;
 
 import java.awt.Point;
@@ -207,7 +208,7 @@ public class ScriptSysFunc {
         runningVM.setHistoryPos(0);
     }
 
-    private void makeMessagePacket(int type, List<Object> memory, GameObject speaker) {
+    private void makeMessagePacket(int type, List<Object> memory, GameObject speaker, int param) {
         if (runningVM.getStatus().get() == ScriptVM.Finishing) {
             throw new RuntimeException("Attempting to execute script after finish status.");
         }
@@ -219,7 +220,6 @@ public class ScriptSysFunc {
         byte speakerTypeID = 0;
         int speakerTemplateID = 0;
         int overrideSpeakerID = 0;
-        int param = ParamType.None;
 
         if (speaker != null) {
             speakerTypeID = (byte) speaker.getGameObjectTypeID();
@@ -239,23 +239,23 @@ public class ScriptSysFunc {
                 msg.setPacket(ScriptMan.onSay(speakerTypeID, speakerTemplateID, overrideSpeakerID, param, (String) memory.get(0), runningVM.getHistoryPos() != 0, next));
                 break;
             case ScriptMessage.AskYesNo:
-                msg.setPacket(ScriptMan.onAskYesNo(speakerTypeID, speakerTemplateID, (String) memory.get(0)));
+                msg.setPacket(ScriptMan.onAskYesNo(speakerTypeID, speakerTemplateID, (String) memory.get(0), param));
                 break;
             case ScriptMessage.AskAccept:
-                msg.setPacket(ScriptMan.onAskAccept(speakerTypeID, speakerTemplateID, (String) memory.get(0)));
+                msg.setPacket(ScriptMan.onAskAccept(speakerTypeID, speakerTemplateID, (String) memory.get(0), param));
                 break;
             case ScriptMessage.AskAvatar:
                 msg.setCouponItemID((Integer) memory.get(1));
-                msg.setPacket(ScriptMan.onAskAvatar(speakerTypeID, speakerTemplateID, (String) memory.get(0), (int[]) memory.get(2)));
+                msg.setPacket(ScriptMan.onAskAvatar(speakerTypeID, speakerTemplateID, (String) memory.get(0), (int[]) memory.get(2), param));
                 break;
             case ScriptMessage.AskMenu:
-                msg.setPacket(ScriptMan.onAskMenu(speakerTypeID, speakerTemplateID, (String) memory.get(0)));
+                msg.setPacket(ScriptMan.onAskMenu(speakerTypeID, speakerTemplateID, (String) memory.get(0), param));
                 break;
             case ScriptMessage.AskText:
-                msg.setPacket(ScriptMan.onAskText(speakerTypeID, speakerTemplateID, (String) memory.get(0), (String) memory.get(1), (Short) memory.get(2), (Short) memory.get(3)));
+                msg.setPacket(ScriptMan.onAskText(speakerTypeID, speakerTemplateID, (String) memory.get(0), (String) memory.get(1), (Short) memory.get(2), (Short) memory.get(3), param));
                 break;
             case ScriptMessage.AskNumber:
-                msg.setPacket(ScriptMan.onAskNumber(speakerTypeID, speakerTemplateID, (String) memory.get(0), (Integer) memory.get(1), (Integer) memory.get(2), (Integer) memory.get(3)));
+                msg.setPacket(ScriptMan.onAskNumber(speakerTypeID, speakerTemplateID, (String) memory.get(0), (Integer) memory.get(1), (Integer) memory.get(2), (Integer) memory.get(3), param));
                 break;
             default: {
                 return;
@@ -273,99 +273,110 @@ public class ScriptSysFunc {
         say(text, false);
     }
 
-    public void say(String text, boolean next) {
-        say(text, next, 0);
-    }
-
-    public void say(String text, int overrideSpeakerID) {
-        say(text, false, overrideSpeakerID);
-    }
-
-    public void say(String text, boolean next, int overrideSpeakerID) {
-        List<Object> memory = new ArrayList<>();
-        memory.add(text);
-        memory.add(next);
-        memory.add(overrideSpeakerID);
-        makeMessagePacket(ScriptMessage.Say, memory, runningVM.getSelf());
-        sendMessageAnswer();
-        memory.clear();
-        tryCapture();
-    }
-
     public void sayNext(String text) {
         say(text, true);
     }
 
-    public Object askYesNo(String text) {
+    public void sayNext(String text, int overrideSpeakerID) {
+        say(text, true, overrideSpeakerID, 0);
+    }
+
+    public void sayNext(String text, int overrideSpeakerID, int param) {
+        say(text, true, overrideSpeakerID, param);
+    }
+
+    public void say(String text, boolean next) {
+        say(text, next, 0, 0);
+    }
+
+    public void say(String text, int overrideSpeakerID) {
+        say(text, overrideSpeakerID, 0);
+    }
+
+    public void say(String text, int overrideSpeakerID, int param) {
+        say(text, false, overrideSpeakerID, param);
+    }
+
+    public void say(String text, boolean next, int overrideSpeakerID, int param) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
-        makeMessagePacket(ScriptMessage.AskYesNo, memory, runningVM.getSelf());
+        memory.add(next);
+        memory.add(overrideSpeakerID);
+        makeMessagePacket(ScriptMessage.Say, memory, runningVM.getSelf(), param);
+        sendMessageAnswer();
+        memory.clear();
+        tryCapture();
+    }
+
+
+    public Object askYesNo(String text) { return askYesNo(text, ParamType.None); }
+    public Object askYesNo(String text, int param) {
+        List<Object> memory = new ArrayList<>();
+        memory.add(text);
+        makeMessagePacket(ScriptMessage.AskYesNo, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
         return value;
     }
 
-    public Object askAccept(String text) {
+    public Object askAccept(String text) { return askAccept(text, ParamType.None); }
+    public Object askAccept(String text, int param) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
-        makeMessagePacket(ScriptMessage.AskAccept, memory, runningVM.getSelf());
+        makeMessagePacket(ScriptMessage.AskAccept, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
         return value;
     }
 
-    public Object askMenu(String text) {
+    public Object askMenu(String text) { return askMenu(text, ParamType.None); }
+    public Object askMenu(String text, int param) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
-        makeMessagePacket(ScriptMessage.AskMenu, memory, runningVM.getSelf());
+        makeMessagePacket(ScriptMessage.AskMenu, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
         return value;
     }
 
-    public Object askAvatar(String text, int... canadite) {
-        return askAvatar(text, -1, canadite);
-    }
-
-    public Object askAvatar(String text, int couponItemID, int... canadite) {
+    public Object askAvatar(String text, int... canadite) { return askAvatar(text, -1, ParamType.None, canadite); }
+    public Object askAvatar(String text, int couponItemID, int... canadite) { return askAvatar(text, couponItemID, ParamType.None, canadite); }
+    public Object askAvatar(String text, int couponItemID, int param, int... canadite) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
         memory.add(couponItemID);
         memory.add(canadite);
-        makeMessagePacket(ScriptMessage.AskAvatar, memory, runningVM.getSelf());
+        makeMessagePacket(ScriptMessage.AskAvatar, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
         return value;
     }
-
-    public Object askNumber(String text, int def, int min, int max) {
+    public Object askNumber(String text, int def, int min, int max) { return askNumber(text, def, min, max, ParamType.None); }
+    public Object askNumber(String text, int def, int min, int max, int param) {
         List<Object> memory = new ArrayList<>();
         memory.add(text);
         memory.add(def);
         memory.add(min);
         memory.add(max);
-        makeMessagePacket(ScriptMessage.AskNumber, memory, runningVM.getSelf());
+        makeMessagePacket(ScriptMessage.AskNumber, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
         return value;
     }
 
-    public Object askText(String text) {
-        return askText(text, "", 0, 0);
-    }
-
-    public Object askText(String msg, String msgDefault, int lenMin, int lenMax) {
+    public Object askText(String text) { return askText(text, "", 0, 0, ParamType.None); }
+    public Object askText(String msg, String msgDefault, int lenMin, int lenMax, int param) {
         List<Object> memory = new ArrayList<>();
         memory.add(msg);
         memory.add(msgDefault);
         memory.add(lenMin);
         memory.add(lenMax);
-        makeMessagePacket(ScriptMessage.AskText, memory, runningVM.getSelf());
+        makeMessagePacket(ScriptMessage.AskText, memory, runningVM.getSelf(), param);
         sendMessageAnswer();
         memory.clear();
         tryCapture();
@@ -423,6 +434,42 @@ public class ScriptSysFunc {
             return false;
         }
         return field.isUserExist(characterID);
+    }
+
+    public void fieldEffectObject(String name) {
+        Field field = FieldMan.getInstance(getChannelID()).getField(userGetFieldID());
+        if (field == null) {
+            Logger.logError("VM run time error - No field %d", userGetFieldID());
+            return;
+        }
+        field.effectObject(name);
+    }
+
+    public void fieldEffectScreen(String name) {
+        Field field = FieldMan.getInstance(getChannelID()).getField(userGetFieldID());
+        if (field == null) {
+            Logger.logError("VM run time error - No field %d", userGetFieldID());
+            return;
+        }
+        field.effectScreen(name);
+    }
+
+    public void fieldEffectSound(String name) {
+        Field field = FieldMan.getInstance(getChannelID()).getField(userGetFieldID());
+        if (field == null) {
+            Logger.logError("VM run time error - No field %d", userGetFieldID());
+            return;
+        }
+        field.effectSound(name);
+    }
+
+    public void fieldEffectTremble(int heavyNShortTremble, int delay) {
+        Field field = FieldMan.getInstance(getChannelID()).getField(userGetFieldID());
+        if (field == null) {
+            Logger.logError("VM run time error - No field %d", userGetFieldID());
+            return;
+        }
+        field.effectTremble(heavyNShortTremble, delay);
     }
 
     public void fieldRemoveAllMob(int fieldID) {
@@ -879,7 +926,7 @@ public class ScriptSysFunc {
 
     public void userEnforceNpcChat(int npcID) {
         if (getUser() != null && getUser().getField() != null && getUser().getHP() != 0) {
-            //getUser().enforceNpcChat(npcID);
+            getUser().enforceNpcChat(npcID);
         }
     }
 
@@ -891,8 +938,20 @@ public class ScriptSysFunc {
         getUser().onUserEffect(true, false, UserEffect.AvatarOriented, path);
     }
 
+    public void userReservedEffect(String path) {
+        getUser().onUserEffect(true, false, UserEffect.ReservedEffect, path);
+    }
+
     public void userBalloonMsg(String message, int width, int timeOut, int x, int y) {
         getUser().sendPacket(UserLocal.balloonMsg(message, width, timeOut, x, y));
+    }
+
+    public void userSetDirectionMode(boolean set, int duration) {
+        getUser().sendPacket(UserLocal.setDirectionMode(set, duration));
+    }
+
+    public void userSetStandAloneMode(boolean standAloneMode) {
+        getUser().sendPacket(UserLocal.setStandAloneMode(standAloneMode));
     }
 
     public short userGetAP() {
@@ -1471,6 +1530,15 @@ public class ScriptSysFunc {
         return 1;
     }
 
+    public int questRecordExSet(int questID, String key, String value) {
+        return UserQuestRecordEx.set(getUser(), questID, key, value) ? 1 : 0;
+    }
+
+    public String questRecordExGet(int questID, String key) {
+        String value = UserQuestRecordEx.get(getUser(), questID, key);
+        return value != null ? value : "";
+    }
+
     public void registerTransferField(int field) {
         registerTransferField(field, 0);
     }
@@ -1518,7 +1586,7 @@ public class ScriptSysFunc {
         if (from == end) {
             return from;
         }
-        int rand = Math.abs(Rand32.genRandom().intValue());
+        int rand = Rand32.genRandom();
         if (end - from == -1) {
             return rand;
         }

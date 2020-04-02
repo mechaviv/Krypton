@@ -41,7 +41,6 @@ import network.packet.ClientPacket;
 import network.packet.InPacket;
 import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
-import network.security.IGCipher;
 import network.security.SocketKey;
 import util.Logger;
 import util.Rand32;
@@ -199,7 +198,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
     }
     
     public void initSequence() {
-        key = new SocketKey(Rand32.genRandom().intValue(), Rand32.genRandom().intValue());
+        key = new SocketKey(Rand32.genRandom(), Rand32.genRandom());
     }
     
     public void onClose() {

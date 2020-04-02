@@ -41,32 +41,32 @@ public class ScriptMan {
         return packet;
     }
 
-    public static OutPacket onAskYesNo(byte speakerTypeID, int speakerTemplateID, String text) {
+    public static OutPacket onAskYesNo(byte speakerTypeID, int speakerTemplateID, String text, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskYesNo);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(text);
         return packet;
     }
 
-    public static OutPacket onAskAccept(byte speakerTypeID, int speakerTemplateID, String text) {
+    public static OutPacket onAskAccept(byte speakerTypeID, int speakerTemplateID, String text, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskAccept);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(text);
         return packet;
     }
 
-    public static OutPacket onAskText(byte speakerTypeID, int speakerTemplateID, String msg, String msgDefault, short lenMin, short lenMax) {
+    public static OutPacket onAskText(byte speakerTypeID, int speakerTemplateID, String msg, String msgDefault, short lenMin, short lenMax, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskText);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(msg);
         packet.encodeString(msgDefault);
         packet.encodeShort(lenMin);
@@ -74,12 +74,12 @@ public class ScriptMan {
         return packet;
     }
 
-    public static OutPacket onAskNumber(byte speakerTypeID, int speakerTemplateID, String msg, int def, int min, int max) {
+    public static OutPacket onAskNumber(byte speakerTypeID, int speakerTemplateID, String msg, int def, int min, int max, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskNumber);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(msg);
         packet.encodeInt(def);
         packet.encodeInt(min);
@@ -87,22 +87,22 @@ public class ScriptMan {
         return packet;
     }
 
-    public static OutPacket onAskMenu(byte speakerTypeID, int speakerTemplateID, String msg) {
+    public static OutPacket onAskMenu(byte speakerTypeID, int speakerTemplateID, String msg, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskMenu);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(msg);
         return packet;
     }
 
-    public static OutPacket onAskAvatar(byte speakerTypeID, int speakerTemplateID, String msg, int[] canadite) {
+    public static OutPacket onAskAvatar(byte speakerTypeID, int speakerTemplateID, String msg, int[] canadite, int param) {
         OutPacket packet = new OutPacket(LoopbackPacket.ScriptMessage);
         packet.encodeByte(speakerTypeID);
         packet.encodeInt(speakerTemplateID);
         packet.encodeByte(ScriptMessage.AskAvatar);
-        packet.encodeByte(0);// param
+        packet.encodeByte(param);
         packet.encodeString(msg);
         packet.encodeByte(canadite.length);
         for (int val : canadite) {
