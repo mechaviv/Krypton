@@ -883,7 +883,9 @@ CREATE TABLE `skillrecord` (
   `SN` int(11) NOT NULL AUTO_INCREMENT,
   `CharacterID` int(11) NOT NULL DEFAULT 0,
   `SkillID` int(11) NOT NULL DEFAULT 0,
-  `Info` int(11) NOT NULL DEFAULT 0,
+  `Level` int(11) NOT NULL DEFAULT 0,
+  `MasterLevel` int(11) NOT NULL DEFAULT 0,
+  `DateExpire` BIGINT(20) NOT NULL DEFAULT 0,
   PRIMARY KEY (`SN`),
   UNIQUE KEY `SkillID` (`SkillID`,`CharacterID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -29,6 +29,8 @@ import game.user.item.ItemInfo;
 import game.user.skill.SkillAccessor;
 import game.user.skill.SkillInfo;
 import game.user.skill.Skills.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import game.user.skill.entries.SkillEntry;
@@ -343,7 +345,7 @@ public class CalcDamage {
             Pointer<Integer> tempProp = new Pointer<>(0);
             Pointer<Integer> tempParam = new Pointer<>(0);
             SkillAccessor.getCriticalSkillLevel(cd, weaponItemID, attackType, tempProp, tempParam);
-            criticalAttackProp = tempProp.get();
+            criticalAttackProp = tempProp.get() + 5;
             criticalAttackParam[0]  = tempParam.get();
         }
         int sharpEyesProp = Math.max(Math.min((ss.getStatOption(CharacterTemporaryStat.SharpEyes) >> 8), 100), 0);
@@ -353,7 +355,8 @@ public class CalcDamage {
         int thornsParam = Math.max((byte) ss.getStatOption(CharacterTemporaryStat.ThornsEffect), 0);
 
         criticalAttackProp += Math.max(sharpEyesProp, thornsProp) + ss.getStatOption(CharacterTemporaryStat.SwallowCritical);
-        criticalAttackParam[0]  += thornsParam;// + cd->critical.nProb (also take a look in kmst leak)
+        criticalAttackParam[0] += Math.max(sharpEyesParam, thornsParam);
+
 
         Pointer<SkillEntry> tempSkill;
         int tempSLV;
@@ -400,6 +403,11 @@ public class CalcDamage {
             whirlWindProp = skill.getLevelData(SLV).Prop;
         }
 
+        List<Integer> shadowPartnerDamage = new ArrayList<>();
+        if (shadowPartner) {
+            for (int i = 0; i < damagePerMob * 2; i++) shadowPartnerDamage.add(i, 0);
+        }
+
         for (int i = 0; i < damagePerMob; i++) {
             damage.set(i, 0);
             if (skillID == Beginner.BAMBOO || skillID == Noblesse.BAMBOO || skillID == Legend.BAMBOO || skillID == EvanJr.BAMBOO || skillID == Citizen.BAMBOO) {
@@ -418,11 +426,7 @@ public class CalcDamage {
                 continue;
             }
             if (ms.getStatOption(MobStats.Freeze) == 0 || ms.getStatReason(MobStats.Freeze) != Aran.COMBO_TEMPEST) {
-                if (calcPImmune(ms, ss, random[idx++ % RND_SIZE] % 100)) {
-                    damage.set(i, 1);
-                    continue;
-                }
-                if (skillID == Aran.COMBO_TEMPEST && !template.isBoss()) {
+                if (calcPImmune(ms, ss, random[idx++ % RND_SIZE] % 100) || (skillID == Aran.COMBO_TEMPEST && !template.isBoss())) {
                     damage.set(i, 1);
                     continue;
                 }
@@ -464,13 +468,15 @@ public class CalcDamage {
                     continue;
                 }
             }
-            if (skillID == Paladin.SANCTUARY) {
-                damage.set(i, 1);// modified by server
-                continue;
-            }
-            if (skill != null && skill.getLevelData(SLV).FixDamage != 0 || skillID == JobAccessor.getNoviceSkillAsRace(Beginner.VISITOR_MORPH_SKILL_NORMAL, job) || skillID == JobAccessor.getNoviceSkillAsRace(Beginner.VISITOR_MORPH_SKILL_SKILL, job)) {
-                damage.set(i, skill.getLevelData(SLV).FixDamage);
-                continue;
+            if (skill != null) {
+                if (skillID == Paladin.SANCTUARY) {
+                    damage.set(i, 1);// modified by server
+                    continue;
+                }
+                if (skill.getLevelData(SLV).FixDamage != 0 || skillID == JobAccessor.getNoviceSkillAsRace(Beginner.VISITOR_MORPH_SKILL_NORMAL, job) || skillID == JobAccessor.getNoviceSkillAsRace(Beginner.VISITOR_MORPH_SKILL_SKILL, job)) {
+                    damage.set(i, skill.getLevelData(SLV).FixDamage);
+                    continue;
+                }
             }
             if (ss.getStatOption(CharacterTemporaryStat.Darkness) != 0) {
                 double rndProb = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE],100.0, 0.0);
@@ -490,64 +496,242 @@ public class CalcDamage {
             boolean tripleThrow = skillID == NightLord.TRIPLE_THROW || skillID == NightWalker.TRIPLE_THROW;
             double damageByWT = calcDamageByWT(wt, bs, pad, mad);
 
+            Logger.logReport("CalcDamage__CalcDamageByWT: Damage [%s] | WT [%d] | PAD [%d] | MAD [%d]", damageByWT, wt, pad, mad);
             if (luckySeven) {
                 double rndProb = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE],(double)bs.getLUK() * 1.4, bs.getLUK()) * 5.5;
                 damageByWT = rndProb * (double) pad / 100.0;
+                Logger.logReport("Adjust 1");
             }
             if (tripleThrow) {
                 double rndProb = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE],(double)bs.getLUK() * 1.4, bs.getLUK()) * 6.0;
                 damageByWT = rndProb * (double) pad / 100.0;
+                Logger.logReport("Adjust 2");
             }
             if (wt == ItemAccessor.WeaponTypeFlag.WAND || wt == ItemAccessor.WeaponTypeFlag.STAFF) {
                 damageByWT *= 0.2;
+                Logger.logReport("Adjust 3");
             }
             if (!CharacterActions.isShootAction(action)) {
                 // TODO: add is mechanic vehicle when I finish mechanic
                 if (!SkillAccessor.isJaguarMeleeAttackSkill(skillID) && skillID != WildHunter.FLASH_RAIN) {
                     if (wt == ItemAccessor.WeaponTypeFlag.BOW || wt == ItemAccessor.WeaponTypeFlag.CROSSBOW) {
                         damageByWT *= 0.6;
+                        Logger.logReport("Adjust 4");
                     }
-                    if (skillID != Shadower.ASSASSINATION && skillID != NightLord.NINJA_STORM && skillID != NightWalker.VAMPIRE && skillID != NightWalker.POISON_BOMB) {
+                    if (wt == ItemAccessor.WeaponTypeFlag.THROWINGGLOVE && skillID != Shadower.ASSASSINATION && skillID != NightLord.NINJA_STORM && skillID != NightWalker.VAMPIRE && skillID != NightWalker.POISON_BOMB) {
                         damageByWT *= 0.4;
+                        Logger.logReport("Adjust 5");
                     } else if (wt == ItemAccessor.WeaponTypeFlag.GUN && action != CharacterActions.FIREBURNER && action != CharacterActions.COOLINGEFFECT && skillID != Gunslinger.THROWING_BOMB && skillID != Captain.AIR_STRIKE && skillID != Captain.BATTLESHIP_CANNON && skillID != Captain.BATTLESHIP_TORPEDO && skillID != Dual5.MONSTER_BOMB) {
                         damageByWT *= 0.4;
+                        Logger.logReport("Adjust 6");
                         if (action == CharacterActions.STRAIGHT || action == CharacterActions.SOMERSAULT) {
                             damageByWT *= 1.8;
+                            Logger.logReport("Adjust 7");
                         }
                     }
                 }
             }
             if (CharacterActions.isProneStabAction(action)) {
+                Logger.logReport("Adjust 8");
                 damageByWT *= 0.1;
             }
             if (!luckySeven && !tripleThrow) {
-                damageByWT = CalcDamageHelper.adjustRandomDamage(damageByWT, random[idx++ % RND_SIZE], (long) getMasteryConstByWT(wt), mastery);
+                double old = damageByWT;
+                int rand = random[idx++ % RND_SIZE];
+                damageByWT = CalcDamageHelper.adjustRandomDamage(damageByWT, rand, getMasteryConstByWT(wt), mastery);
+                Logger.logReport("CalcDamage__AdjustRandomDamage: Result DMG [%s] | Damage [%s] | Rand [0x%X] | k [%s] | Mastery [%d]", damageByWT, old, rand, getMasteryConstByWT(wt), mastery);
             }
             damageByWT += damageByWT * psdPDamR / 100.0;
 
-            double damageAdjustedByMobLevel = damageByWT;
             if (!invincible) {
                 if (bs.getLevel() < ms.getLevel()) {
                     int range = ms.getLevel() - bs.getLevel();
-                    damageAdjustedByMobLevel = (double) (100.0 - range) / 100.0 * damageByWT;
+                    damageByWT *= (100.0 - range) / 100.0;
                 }
             }
-            // cd elem boost ?
-            List<Integer> mobDamagedElemAttr = ms.getDamagedElemAttr();
-            // mob attr here
-            // weapon charge elem attr
 
+            int elemBoost = 0;// cd elem boost
+            double oldDamage = damageByWT;
+            damageByWT = CalcDamageHelper.getDamageAdjustedByElemAttr(damageByWT, skill, ms.getDamagedElemAttr(), SLV, 1.0, elemBoost/ 100.0);
+            Logger.logReport("get_damage_adjusted_by_elemAttr: Result DMG [%s] | Damage [%s] | SLV [%d] | Adjust By Buff [%s] | Boost [%s]", damageByWT, oldDamage, SLV, 1.0, elemBoost / 100.0);
+            // battle record tinhg
+            oldDamage = damageByWT;
+            damageByWT = CalcDamageHelper.getDamageAdjustedByChargedElemAttr(damageByWT, ms.getDamagedElemAttr(), ss, cd);
+            Logger.logReport("get_damage_adjusted_by_charged_elemAttr: Result DMG [%s] | Damage [%s]", damageByWT, oldDamage);
+
+            double assisted = CalcDamageHelper.getDamageAdjustedByAssistChargedElemAttr(damageByWT, ms.getDamagedElemAttr(), ss, cd);
+            Logger.logReport("get_damage_adjusted_by_assist_charged_elemAttr: Result DMG [%s] | Damage [%s]", assisted, damageByWT);
+
+            damageByWT += assisted;
             if (skillID != DragonKnight.SACRIFICE && skillID != ThiefMaster.ASSAULTER && skillID != Viper.DEMOLITION) {
+                int pdR = ms.getPDD() + ms.getStatOption(MobStats.PDD);
+                if (ms.getStatOption(MobStats.PDD) != 0 && ms.getStatReason(MobStats.PDD) == Page.Threaten && template.getTemplateID() / 10000 != 882) {
+                    pdR = (int) (((double) ms.getPDD() / 100.0 + 1.0) * (double) ms.getStatOption(MobStats.PDD));
+                }
+                pdR = Math.max(Math.min(pdR, 100), 0);
+                int impR = Math.min(psdIMPr + ignoreTargetDEF, 100);
+                Logger.logReport("PDr [%d] IMPr [%d]", pdR, impR);
+                damageByWT *= ((100.0 - (pdR * impR / -100 + pdR)) / 100.0);
+                /*int mdR = Math.max(Math.min(ms.getPDD() + ms.getStatOption(MobStats.PDD), 100), 0);
+                int impR = Math.min(psdIMPr + ignoreTargetDEF, 100);
+                int mobTotalMDD = mdR * impR / -100 + mdR;
+                damageByWT *= ((100.0 - mobTotalMDD) / 100.0);*/
             }
-            double rnd = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], 0.0, 100.0);
-            if (nextAttackCritical || criticalAttackProp > 0 && criticalAttackProp > rnd) {
-                int param = criticalAttackParam[0] + psdCDMin + 20;
-                param = Math.min(param, sharpEyesParam + 50);
 
-                rnd = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], param, sharpEyesParam + 50);
-                critical.set(i, true);
-                damageByWT += rnd / 100.0 * damageByWT;
+            criticalAttackParam[1] = 0;
+            if (skill != null) {
+                criticalAttackParam[1] = skill.getLevelData(SLV).Damage;
+                if (skill.getSkillID() == Mechanic.SG88) {
+                    criticalAttackParam[1] = skill.getLevelData(SLV).Y;
+                }
             }
+            if (skillID == Sniper.STRAFE) {
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, CrossbowMaster.ULTIMATE_STRAFE, tempSkill);
+                if (tempSLV != 0 && tempSkill.get() != null) {
+                    criticalAttackParam[1] = tempSkill.get().getLevelData(tempSLV).Damage;
+                }
+            }
+            if (skillID == WildHunter.FLASH_RAIN && i == damagePerMob - 1) {
+                criticalAttackParam[1] = skill.getLevelData(SLV).X;
+            }
+            tempSkill = new Pointer<>();
+            tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Buccaneer.INFIGHTING_MASTERY, tempSkill);
+            if (tempSLV != 0 && tempSkill.get() != null) {
+                switch (skillID) {
+                    case InFighter.BACKSPIN_BLOW:
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).X;
+                        break;
+                    case InFighter.DOUBLE_UPPER:
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).Y;
+                        break;
+                    case InFighter.SCREW_PUNCH:
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).Z;
+                        break;
+                }
+            }
+            int comboDamageParam = SkillAccessor.getComboDamageParam(cd, skillID, ss.getStatOption(CharacterTemporaryStat.ComboCounter) - 1);
+            if (skillID == Valkyrie.FIRE_BURNER || skillID == Valkyrie.COOLING_EFFECT) {
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Captain.PROPERTY_UPGRADE, tempSkill);
+                if (tempSLV != 0 && tempSkill.get() != null) {
+                    criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).Damage;
+                }
+            }
+            if (criticalAttackParam[1] > 0) {
+                criticalAttackParam[1] += ms.getStatOption(MobStats.RiseByToss);
+            }
+            if (skillID == Warrior.PowerStrike || skillID == Warrior.SlashBlast) {
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Fighter.ImproveBasic, tempSkill);
+                if (tempSLV <= 0) {
+                    tempSkill = new Pointer<>();
+                    tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Page.ImproveBasic, tempSkill);
+                    if (tempSLV <= 0) {
+                        tempSkill = new Pointer<>();
+                        tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Spearman.ImproveBasic, tempSkill);
+                    }
+                }
+                Logger.logReport("Temp SLV [%d]| Skill [%s]", tempSLV, tempSkill.get() != null);
+                if (tempSLV != 0 && tempSkill.get() != null) {
+                    if (skillID == Warrior.PowerStrike && criticalAttackParam[1] > 0) {
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).X;
+                    }
+                    if (skillID == Warrior.SlashBlast && criticalAttackParam[1] > 0) {
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).Y;
+                    }
+                }
+            }
+            if (skillID == Archer.ArrowBlow || skillID == Archer.DoubleShot) {
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Hunter.ImproveBasic, tempSkill);
+                if (tempSLV <= 0) {
+                    tempSkill = new Pointer<>();
+                    tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Crossbowman.ImproveBasic, tempSkill);
+                }
+                if (tempSLV != 0 && tempSkill.get() != null) {
+                    if (skillID == Archer.ArrowBlow && criticalAttackParam[1] > 0) {
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).X;
+                    }
+                    if (skillID ==  Archer.DoubleShot && criticalAttackParam[1] > 0) {
+                        criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).Y;
+                    }
+                }
+            }
+            if (skillID == ThiefMaster.MESO_EXPLOSION && JobAccessor.isCorrectJobForSkillRoot(job, 422)) {
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Shadower.GRID, tempSkill);
+                if (tempSLV != 0 && tempSkill.get() != null) {
+                    criticalAttackParam[1] += tempSkill.get().getLevelData(tempSLV).X;
+                }
+            }
+            if (advancedChargeDamage != 0 && skillID == Knight.CHARGE_BLOW) {
+                damageByWT *= advancedChargeDamage / 100.0;
+            } else if (criticalAttackParam[1] > 0) {
+                Logger.logReport("Damage Before[%s]", damageByWT);
+                damageByWT = criticalAttackParam[1] / 100.0 * damageByWT;
+                Logger.logReport("Damage After [%s]", damageByWT);
+            }
+            if (comboDamageParam > 0) {
+                Logger.logReport("Combo param = [%d]", comboDamageParam);
+                damageByWT *= comboDamageParam / 100.0;
+            }
+            if (shadowPartner) {
+                shadowPartnerDamage.set(i, (int) damageByWT);
+            }
+            int enrage = ss.getStatOption(CharacterTemporaryStat.Enrage);
+            if (enrage != 0) {
+                damageByWT *= (enrage / 100 + 100) / 100.0;
+            }
+
+            double rand;
+            Logger.logReport("Prop = [%d]", criticalAttackProp);
+            if ((skillID != Shadower.ASSASSINATION || action == CharacterActions.ASSASSINATIONS) && nextAttackCritical || criticalAttackProp > 0 && (rand = CalcDamageHelper.get_rand(random[idx++ % 7], 0.0, 100.0)) <= criticalAttackProp) {
+                int param = criticalAttackParam[0] + psdCDMin + 20;
+                param = Math.min(param, 50 + sharpEyesParam);
+
+                rand = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], param,50 + sharpEyesParam);
+                critical.set(i, true);
+                damageByWT += (int) rand / 100.0 * (int) damageByWT;
+            }
+            if (skillID != DragonKnight.SACRIFICE && ms.getStatOption(MobStats.PGuardUp) != 0) {
+                damageByWT *= ms.getStatOption(MobStats.PGuardUp) / 100.0;
+            }
+            if (ss.getStatOption(CharacterTemporaryStat.ShadowPartner) != 0 && shadowPartner) {
+                int reason = ss.getStatReason(CharacterTemporaryStat.ShadowPartner);
+                if (reason == Dual4.MIRROR_IMAGING) {
+                    if (i >= attackCount && !SkillAccessor.isMirrorExceptedSkill(skillID)) {
+                        int lvl = SkillInfo.getInstance().getSkillLevel(cd, Dual4.MIRROR_IMAGING);
+                        int shadowDmg = Math.max(shadowPartnerDamage.get(i - attackCount), 1);
+                        damage.set(i ,shadowDmg * shadowPartnerSkill.get().getLevelData(lvl).X / 100);
+                        critical.set(i, false);
+                        continue;
+                    }
+                } else {
+                    if (skillID != NightLord.SHOWDOWN && skillID != Shadower.SHOWDOWN && i >= damagePerMob) {
+                        int index = i - damagePerMob / 2;
+                        if (skill != null) {
+                            damageByWT = (int) (damage.get(index) * shadowPartnerSkill.get().getLevelData(spSLV).Y);
+                        } else {
+                            damageByWT = (int) (damage.get(index) * shadowPartnerSkill.get().getLevelData(spSLV).X);
+                        }
+                        critical.set(i, critical.get(index));
+                    }
+                }
+            }
+            if (skillID == Shadower.ASSASSINATION) {
+                //TODO
+            }
+            if (ss.getStatOption(CharacterTemporaryStat.WindWalk) > 0) {
+                // TODO
+            }
+            if (ss.getStatOption(CharacterTemporaryStat.DarkSight) > 0) {
+                // TODO
+            }
+            if (ms.getStatOption(MobStats.Stun) > 0 || ms.getStatOption(MobStats.Blind) > 0) {
+                // TODO
+            }
+            damageByWT = Math.max(damageByWT, 1);
             damage.set(i, (int) damageByWT);
         }
     }

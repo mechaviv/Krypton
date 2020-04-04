@@ -20,6 +20,7 @@ package game.field.life;
 import common.Request;
 import common.game.field.MobAppearType;
 import common.item.BodyPart;
+import common.item.ItemSlotEquip;
 import common.item.ItemType;
 import common.user.CharacterStat.CharacterStatType;
 import common.user.UserEffect;
@@ -825,7 +826,7 @@ public class LifePool {
         }
     }
     
-    public boolean onUserAttack(User user, short type, byte attackType, byte mobCount, byte damagePerMob, SkillEntry skill, byte slv, int action, byte left, byte speedDegree, int bulletItemID, List<AttackInfo> attack, Point ballStart) {
+    public boolean onUserAttack(User user, short type, byte attackType, byte mobCount, byte damagePerMob, SkillEntry skill, byte slv, int action, byte left, byte speedDegree, int attackActionType, int bulletItemID, List<AttackInfo> attack, Point ballStart) {
         if (user.lock()) {
             try {
                 int skillID = 0;
@@ -848,7 +849,7 @@ public class LifePool {
                         }
                         Mob mob = mobs.get(info.mobID);
                         if (mob != null) {
-                            if (type == ClientPacket.UserMagicAttack) {
+                            if (type == ClientPacket.UserMagicAttack || user.getCharacter().getCharacterStat().getJob() / 100 == 32) {
                                 user.getCalcDamage().MDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), info.mobID, mob.getMobStat(), mob.getTemplate(), user.getPassiveSkillData(), nextAttackCritical, damagePerMob, weaponItemID, action, skill, slv, info.damageSvr, info.critical, criticalProb, criticalDamage, totalDAMr, bossDAMr, ignoreTargetDEF, mobCount, keyDown, dragonFury, AR01Mad);
                             } else if (skillID == Skills.Paladin.SANCTUARY) {
                                 if (damagePerMob > 0) {
@@ -863,21 +864,50 @@ public class LifePool {
                             } else {
                                 user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), info.mobID, mob.getMobStat(), mob.getTemplate(), user.getPassiveSkillData(), nextAttackCritical, attackCount, damagePerMob, weaponItemID, bulletItemID, attackType, action, shadowPartner, skill, slv, info.damageSvr, info.critical, criticalProb, criticalDamage, totalDAMr, bossDAMr, ignoreTargetDEF, dragonFury, AR01Pad, keyDown, darkForce, advancedChargeDamage, invincible);
                                 //user.getCalcDamage().PDamage(user.getCharacter(), user.getBasicStat(), user.getSecondaryStat(), mob.getMobStat(), damagePerMob, weaponItemID, bulletItemID, attackType, action, skill, slv, info.damageCli);
+                                int damagePerMobAfter = damagePerMob;
+                                if (shadowPartner) {
+                                    damagePerMobAfter /= 2;
+                                }
+
+                                if (attackActionType == 10 && damagePerMobAfter > 1) {
+                                    if (info.damageSvr.get(0) != mob.getMaxHP() && info.damageSvr.get(0) != Integer.MAX_VALUE) {
+                                        if (skill == null || SkillAccessor.getSkillRootFromSkill(skill.getSkillID()) / 10 == 43 ||  SkillAccessor.getSkillRootFromSkill(skill.getSkillID()) == 900) {
+                                            ItemSlotEquip weapon = (ItemSlotEquip) user.getCharacter().getEquipped().get(BodyPart.Weapon);
+                                            ItemSlotEquip subWeapon = (ItemSlotEquip) user.getCharacter().getEquipped().get(BodyPart.Shield);
+                                            if (weapon != null && subWeapon != null) {
+                                                double pad = (double) weapon.item.iPAD / (double) (subWeapon.item.iPAD + weapon.item.iPAD);
+                                                double reduce = 1.0 - pad;
+                                                for (int i = 0; i < damagePerMobAfter; i++) {
+                                                    int damage = info.damageSvr.get(i);
+                                                    if (i % 2 != 0) {
+                                                        info.damageSvr.set(i, (int) (damage * reduce));
+                                                    } else {
+                                                        info.damageSvr.set(i, (int) (damage * pad));
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         } else {
                             user.getCalcDamage().skip();
                         }
                     }
                 }
-
                 int index = 1;
                 for (AttackInfo a : attack) {
-                    user.sendDebugMessage("Attack [%d]", index);
+                    //user.sendDebugMessage("Attack [%d]", index++);
                     String damageInfo = "";
                     for (int i = 0; i < damagePerMob; i++) {
+                        if (a.damageCli.get(i).intValue() != a.damageSvr.get(i).intValue()) {
+                            user.sendDebugMessage("Damage Calculate FAILED | [S:%d, C:%d]Skill ID [%d] | Last Return [%d]",a.damageSvr.get(i), a.damageCli.get(i), skillID, user.lastAttackReturn);
+                            //user.lastAttackReturn = -1;
+                            break;
+                        }
                         damageInfo += "[" + a.damageSvr.get(i) + ", (Crit) " + a.critical.get(i) + "], ";
                     }
-                    user.sendDebugMessage(damageInfo);
+                    //user.sendDebugMessage(damageInfo);
                 }
 
                 int header = LoopbackPacket.UserMeleeAttack;
@@ -920,7 +950,7 @@ public class LifePool {
                     packet.encodeByte(info.hitAction);
                     for (int i = 0; i < damagePerMob; i++) {
                         packet.encodeBool(info.critical.get(i));// bCritical
-                        packet.encodeShort(info.damageSvr.get(i));
+                        packet.encodeShort(info.damageCli.get(i));
                     }
                 }
                 if (header == LoopbackPacket.UserShootAttack) {

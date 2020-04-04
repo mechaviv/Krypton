@@ -44,7 +44,7 @@ public class LoginPacket {
             packet.encodeInt(socket.getAccountID());
             packet.encodeByte(socket.getGender());
             packet.encodeByte(socket.getGradeCode());
-            packet.encodeShort(0);// private status
+            packet.encodeShort(0x100);// private status
             packet.encodeByte(0);// country
             packet.encodeString(socket.getNexonClubID());
             packet.encodeByte(0);// purchase exp

@@ -188,7 +188,7 @@ public class User extends Creature {
     private boolean funcKeyMappedInitEmpty;
     private int petConsumeItemID_HP;
     private int petConsumeItemID_MP;
-
+    public int lastAttackReturn = -1;
     protected User(int characterID) {
         super();
 
@@ -1590,6 +1590,11 @@ public class User extends Creature {
                         int duration = packet.decodeInt();//or fieldID
                         break;
                     }
+                    case AdminPacketType.PASSIVESKILLVALUEVIEW:
+                        if (packet.decodeBool()) {
+                            setChatPassiveSkillDataInfo();
+                        }
+                        break;
                     default: {
                         Logger.logReport("New admin command found (%d)", type);
                     }
@@ -1663,9 +1668,11 @@ public class User extends Creature {
         if (secondaryStat.getStatOption(CharacterTemporaryStat.DarkSight) != 0) {
             Flag reset = secondaryStat.resetByCTS(CharacterTemporaryStat.DarkSight);
             sendTemporaryStatReset(reset);
+            this.lastAttackReturn = 0;
             return;
         }
         if (getCurFieldKey() != packet.decodeByte()) {
+            this.lastAttackReturn = 1;
             return;
         }
         boolean extraByte = false;
@@ -1717,6 +1724,7 @@ public class User extends Creature {
         if (SkillAccessor.isSkillPrepare(skillID) && skillID != Bowmaster.STORM_ARROW) {
             if (getPreparedSkill() != skillID) {
                 Logger.logError("Attack packet without prepare [%d,%d]", getPreparedSkill(), skillID);
+                this.lastAttackReturn = 2;
                 return;
             }
         }
@@ -1742,6 +1750,7 @@ public class User extends Creature {
                 } else {
                     if (attackSpeedErr == 2) {
                         Logger.logError("[ User ] user's attack speed is abnormally fast [ name=%s, actionNo=%d, skillID=%d, userDelay=%d < minDelay=%d, finalAttack=%d, boosterLevel=%d, fieldid=%d ]");
+                        this.lastAttackReturn = 3;
                         return;
                     }
                     attackSpeedErr++;
@@ -1822,6 +1831,7 @@ public class User extends Creature {
                 attackType = 1;
             } else {
                 Logger.logError("Attack Type Error %d", type);
+                this.lastAttackReturn = 4;
                 return;
             }
 
@@ -1837,6 +1847,7 @@ public class User extends Creature {
                             if (skillID != Cleric.Heal && !SkillInfo.getInstance().adjustConsumeForActiveSkill(this, skillID, slv, false, 0)) {
                                 Logger.logReport("Failed to adjust consume for active skill!!! (SkillID:%d,SLV:%d)", skillID, slv);
                                 getCalcDamage().skip();
+                                this.lastAttackReturn = 5;
                                 return;
                             }
                             if (skill != null) {
@@ -1868,6 +1879,7 @@ public class User extends Creature {
                     if (item != null) {
                         if (character.getItemTrading().get(ItemType.Consume).get(bulletItemPos) != 0 || item.getItemNumber() < bulletCount) {
                             getCalcDamage().skip();
+                            this.lastAttackReturn = 6;
                             return;
                         }
                         if (ItemAccessor.isJavelinItem(item.getItemID())) {
@@ -1898,7 +1910,7 @@ public class User extends Creature {
                         advancedChargeDamage = advCharge.get().getLevelData(advChargeSLV).Damage;
                     }
                 }
-                boolean successAttack = getField().getLifePool().onUserAttack(this, type, attackType, mobCount, damagePerMob, skill, slv, action, left, speedDegree, bulletItemID, attack, ballStart);
+                boolean successAttack = getField().getLifePool().onUserAttack(this, type, attackType, mobCount, damagePerMob, skill, slv, action, left, speedDegree, actionType, bulletItemID, attack, ballStart);
 
                 SecondaryStatOption comboOpt = secondaryStat.getStat(CharacterTemporaryStat.ComboCounter);
                 int oldOption = comboOpt.getOption();
@@ -3390,7 +3402,7 @@ public class User extends Creature {
             AvatarLook avatarOld = avatarLook.makeClone();
             ItemAccessor.getRealEquip(character, realEquip, 0, 0);
             avatarLook.load(character.getCharacterStat(), character.getEquipped(), character.getEquipped2());
-            maxGMSkills();
+            if (!calledByConstructor) maxGMSkills();
             checkEquippedSetItem();
             updatePassiveSkillData();
             int pdsMHPr = 0;
@@ -4052,9 +4064,38 @@ public class User extends Creature {
         passiveSkillData.setDCr(Math.min(Math.max(passiveSkillData.getDCr(), 0), 50));
     }
 
+    public void setChatPassiveSkillDataInfo() {
+        String msg = "Server: ";
+        msg += String.format("mhpR[%d] mmpR[%d] cr[%d] criticaldamageMin[%d] accR[%d] evaR[%d] ar[%d] er[%d] pddR[%d] mddR[%d] pdr[%d] mdR[%d] damR[%d] pdR[%d] mdR[%d] padR[%d] madR[%d] expR[%d] ignoreMobpdpR[%d] asrR[%d] terR[%d] mesoR[%d] padX[%d] madX[%d] ", passiveSkillData.getMHPr(), passiveSkillData.getMMPr(), passiveSkillData.getCr(), passiveSkillData.getCDMin(), passiveSkillData.getACCr(), passiveSkillData.getEVAr(), passiveSkillData.getAr(), passiveSkillData.getEr(), passiveSkillData.getPDDr(), passiveSkillData.getMDDr(), passiveSkillData.getPDr(), passiveSkillData.getMDr(), passiveSkillData.getDIPr(), passiveSkillData.getPDamR(), passiveSkillData.getMDamR(), passiveSkillData.getPADr(), passiveSkillData.getMADr(), passiveSkillData.getEXPr(), passiveSkillData.getIMPr(), passiveSkillData.getASRr(), passiveSkillData.getTERr(), passiveSkillData.getMESOr(), passiveSkillData.getPADx(), passiveSkillData.getMADx());
+        msg += String.format("ignoreMobDamR[%d] psdJump[%d] psdSpeed[%d] overChargeR[%d] disCountR[%d] ", passiveSkillData.getIMDr(), passiveSkillData.getPsdJump(), passiveSkillData.getPsdSpeed(), passiveSkillData.getOCr(), passiveSkillData.getDCr());
+        sendSystemMessage(msg);
+    }
+
     public void maxGMSkills() {
-        if (isGM() && character.getSkillRecord().isEmpty()) {
-            for (JobAccessor job : JobAccessor.values()) {
+        if (isGM()) {
+            character.getSkillRecord().clear();
+            List<SkillRecord> change = new ArrayList<>();
+            List<Integer> skillRoots = new ArrayList<>();
+            SkillAccessor.getSkillRootFromJob(getCharacter().getCharacterStat().getJob(), skillRoots);
+            for (Integer sr : skillRoots) {
+                SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(sr);
+                if (visibleSR != null) {
+                    for (SkillEntry skill : visibleSR.getSkills()) {
+                        int skillID = skill.getSkillID();
+                        int skillRoot = skillID / 10000;
+                        if (skill != null && skill.getMaxLevel() != 0) {
+                            if (JobAccessor.isCorrectJobForSkillRoot(getCharacter().getCharacterStat().getJob(), skillRoot)) {
+                                character.getSkillRecord().put(skillID, skill.getMaxLevel());
+                                change.add(new SkillRecord(skillID, skill.getMaxLevel()));
+                            }
+                        }
+                    }
+                }
+
+            }
+            UserSkillRecord.sendCharacterSkillRecord(this, Request.Excl, change);
+            /*for (JobAccessor job : JobAccessor.values()) {
+                if (JobAccessor.isBeginnerJob(job.getJob())) continue;
                 SkillRoot visibleSR = SkillInfo.getInstance().getSkillRoot(job.getJob());
                 if (visibleSR != null) {
                     for (SkillEntry skill : visibleSR.getSkills()) {
@@ -4067,7 +4108,7 @@ public class User extends Creature {
                         }
                     }
                 }
-            }
+            }*/
         }
     }
 

@@ -452,7 +452,7 @@ public class ItemInfo {
     private static void iterateBundleItem() {
         WzPackage itemDir = new WzFileSystem().init("Item").getPackage();
         if (itemDir != null) {
-            String[] category = {"Consume", "Install", "Etc"};
+            String[] category = {"Consume", "Install", "Etc", "Cash"};
             for (String cat : category) {
                 WzPackage pack = itemDir.getChildren().get(cat);
                 for (WzProperty itemSection : pack.getEntries().values()) {

@@ -22,6 +22,7 @@ import common.JobCategory;
 import common.item.ItemAccessor;
 import common.user.CharacterData;
 import common.user.CharacterStat.CharacterStatType;
+import game.field.life.mob.AttackElem;
 import game.user.skill.Skills.*;
 import game.user.skill.data.SkillLevelData;
 import game.user.skill.entries.SkillEntry;
@@ -31,6 +32,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import game.user.stat.CharacterTemporaryStat;
 import game.user.stat.SecondaryStat;
+import util.Logger;
 import util.Pointer;
 
 /**
@@ -103,6 +105,10 @@ public class SkillAccessor {
             }
         }
         return a;
+    }
+
+    public static int getSkillRootFromSkill(int skillID) {
+        return skillID / 10000;
     }
 
     public static int getEndureDuration(CharacterData cd) {
@@ -422,7 +428,7 @@ public class SkillAccessor {
 
     
     public static int getWeaponMastery(CharacterData cd, SecondaryStat ss, int weaponItemID, int attackType, int skillID, Pointer<Integer> accInc, Pointer<Integer> padInc) {
-        final int MELEE = 0, SHOOT = 1;
+        final int MELEE = 1, SHOOT = 2;
         
         int wt = ItemAccessor.getWeaponType(weaponItemID);
         int mastery = 0;
@@ -523,7 +529,8 @@ public class SkillAccessor {
                 break;
             case ItemAccessor.WeaponTypeFlag.CROSSBOW:
                 boolean wildHunter = JobAccessor.isWildHunterJob(cd.getCharacterStat().getJob());
-                if (attackType != SHOOT || (!wildHunter || attackType != MELEE)) {
+                if (attackType != SHOOT && (!wildHunter || attackType != MELEE)) {
+                    Logger.logReport("Crossbow Failed | Attack Type [%d] | Wild Hunter [%s]", attackType, wildHunter);
                     return 0;
                 }
                 mastery = SkillAccessor.getMasteryFromSkill(cd, wildHunter ? WildHunter.CROSSBOW_MASTERY : Crossbowman.CrossbowMastery, accInc);
@@ -967,35 +974,36 @@ public class SkillAccessor {
             return 0;
         }
         int job = cd.getCharacterStat().getJob();
-        Pointer<SkillEntry> coma = new Pointer<>();
-        Pointer<SkillEntry> hardSkin = new Pointer<>();
+        Pointer<SkillEntry> combo = new Pointer<>();
+        Pointer<SkillEntry> advCombo = new Pointer<>();
 
-        int comaSLV = SkillInfo.getInstance().getSkillLevel(cd, 11111001 + (job / 1000 != 1 ? -9999999 : 0) + 3, coma);
-        int hardSkinSLV = SkillInfo.getInstance().getSkillLevel(cd, 11110005 + (job / 1000 != 1 ? -9990002 : 0) + 1, hardSkin);
-
-        if (comaSLV <= 0) {
+        int comboSLV = SkillInfo.getInstance().getSkillLevel(cd, job / 1000 == 1 ? SoulMaster.COMBO_ATTACK : Crusader.ComboAttack, combo);
+        int advComboSLV = SkillInfo.getInstance().getSkillLevel(cd, job / 1000 == 1 ? SoulMaster.ADVANCED_COMBO : Hero.AdvancedCombo, advCombo);
+        if (comboSLV <= 0) {
             return 0;
         }
-
-        int damagePerCombo = coma.get().getLevelData(comaSLV).DIPr;
-        int x = coma.get().getLevelData(comaSLV).X;
-        if (hardSkinSLV > 0) {
-            SkillLevelData sd = hardSkin.get().getLevelData(hardSkinSLV);
-            damagePerCombo += sd.DIPr;
-            x = sd.X;
+        SkillLevelData level = combo.get().getLevelData(comboSLV);
+        int x = 0;
+        int dipR = level.DIPr;
+        if (advComboSLV > 0) {
+            level = advCombo.get().getLevelData(advComboSLV);
+            x = level.X;
+            dipR += level.DIPr;
+        } else {
+            x = level.X;
         }
         if (comboCounter >= x) {
             comboCounter = x;
         }
-        if (skillID == Crusader.Coma || skillID == Crusader.Panic || skillID == SoulMaster.COMA_SWORD || skillID == SoulMaster.PANIC_SWORD) {
-            Pointer<SkillEntry> addDamageSkill = new Pointer<>();
-            int slv = SkillInfo.getInstance().getSkillLevel(cd, skillID, addDamageSkill);
+        if (skillID == Crusader.Coma || skillID == Crusader.Panic || skillID == SoulMaster.PANIC_SWORD || skillID == SoulMaster.COMA_SWORD) {
+            Pointer<SkillEntry> skill = new Pointer<>();
+            int slv = SkillInfo.getInstance().getSkillLevel(cd, skillID, skill);
             if (slv <= 0) {
                 return 0;
             }
-            damagePerCombo += addDamageSkill.get().getLevelData(slv).Y;
+            dipR += skill.get().getLevelData(slv).Y;
         }
-        return comboCounter * damagePerCombo + 100;
+        return comboCounter * dipR + 100;
     }
 
     public static int getAmplification(CharacterData cd, int skillID, Pointer<Integer> incMPCon) {
@@ -1143,10 +1151,75 @@ public class SkillAccessor {
     }
 
     public static int getCriticalSkillLevel(CharacterData cd, int weaponItemID, int attackType, Pointer<Integer> prop, Pointer<Integer> param) {
-        return 0;
+        Pointer<SkillEntry> skill = new Pointer<>();
+        int slv = 0;
+
+        int job = cd.getCharacterStat().getJob();
+        if (job / 1000 == 3) {
+            slv = SkillInfo.getInstance().getSkillLevel(cd, Citizen.CRITICAL, skill);
+        } else {
+            switch (ItemAccessor.getWeaponType(weaponItemID)) {
+                case ItemAccessor.WeaponTypeFlag.BOW:
+                case ItemAccessor.WeaponTypeFlag.CROSSBOW:
+                    if (attackType != 2) {
+                        break;
+                    }
+                    int skillID = JobAccessor.isCygnusJob(job) ? WindBreaker.CRITICAL_SHOT : Archer.CriticalShot;
+                    slv = SkillInfo.getInstance().getSkillLevel(cd, JobAccessor.isCygnusJob(job) ? WindBreaker.CRITICAL_SHOT : Archer.CriticalShot, skill);
+                    break;
+                case ItemAccessor.WeaponTypeFlag.THROWINGGLOVE:
+                    if (attackType != 2) {
+                        break;
+                    }
+                    slv = SkillInfo.getInstance().getSkillLevel(cd, JobAccessor.isCygnusJob(job) ? NightWalker.CRITICAL_THROW : Assassin.CriticalThrow, skill);
+                    break;
+                case ItemAccessor.WeaponTypeFlag.KNUCKLE:
+                    slv = SkillInfo.getInstance().getSkillLevel(cd, Striker.CRITICAL_PUNCH, skill);
+                    break;
+                default:
+                    slv = 0;
+                    break;
+            }
+        }
+        if (skill.get() != null && slv > 0) {
+            prop.set(skill.get().getLevelData(slv).Prop);
+            param.set(skill.get().getLevelData(slv).Damage);
+        } else {
+            prop.set(0);
+            param.set(0);
+            slv = 0;
+        }
+        return slv;
     }
 
     public static boolean isJaguarMeleeAttackSkill(int skillID) {
         return skillID == WildHunter.CLAW_CUT || skillID == WildHunter.ELRECTRONICSHOCK || skillID == WildHunter.CROSS_ROAD || skillID == WildHunter.JAGUAR_NUCKBACK || skillID == WildHunter.SWALLOW_DUMMY_ATTACK;
+    }
+
+    public static int getElementByChargedSkillID(int chargeSkillID) {
+        switch (chargeSkillID) {
+            case Knight.FIRE_CHARGE:
+                return AttackElem.Fire;
+            case Knight.ICE_CHARGE:
+            case Aran.SNOW_CHARGE:
+                return AttackElem.Ice;
+            case Knight.LIGHTNING_CHARGE:
+            case Striker.LIGHTNING_CHARGE:
+                return AttackElem.Light;
+            case Paladin.DIVINE_CHARGE:
+                return AttackElem.Holy;
+        }
+        return AttackElem.Physical;
+    }
+
+    public static boolean isMirrorExceptedSkill(int skillID) {
+        switch (skillID) {
+            case Dual3.FLASH_BANG:
+            case Dual4.OWL_DEATH:
+            case Dual5.MONSTER_BOMB:
+            case Dual5.SUDDEN_RAID:
+                return true;
+        }
+        return false;
     }
 }

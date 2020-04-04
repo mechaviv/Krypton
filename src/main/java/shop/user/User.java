@@ -358,21 +358,21 @@ public class User {
     }
 
     private void onCashItemRequest(InPacket packet) {
-        byte type = packet.decodeByte();
+        int type = packet.decodeByte(true);
         switch (type) {
-            case 1:
+            case CashItemRequest.Buy:
                 onBuy(packet);
                 break;
-            case 2:
+            case CashItemRequest.Gift:
                 onGift(packet);
                 break;
-            case 3:
+            case CashItemRequest.IncSlotCount:
                 onIncSlotCount(packet);
                 break;
-            case 6:
+            case CashItemRequest.MoveLtoS:
                 onMoveLToS(packet);
                 break;
-            case 7:
+            case CashItemRequest.MoveStoL:
                 onMoveSToL(packet);
                 break;
             default:
@@ -675,23 +675,205 @@ public class User {
     }
 
     public class CashItemRequest {
-
-        public static final byte LoadLockerDone = 10;
-        public static final byte LoadLockerFailed = 11;
-        public static final byte BuyDone = 12;
-        public static final byte BuyFailed = 13;
-        public static final byte GiftDone = 14;
-        public static final byte GiftFailed = 15;
-        public static final byte IncSlotCountDone = 16;
-        public static final byte IncSlotCountFailed = 17;
-        public static final byte MoveLtoSDone = 18;
-        public static final byte MoveLToSFailed = 19 /*not sure if this is legit*/;
-        public static final byte MoveSToLDone = 20;
-        public static final byte MoveSToLFailed = 21;
-        public static final byte DestroyDone = 22;
-        public static final byte DestroyFailed = 23;
+        public static final short WebShopOrderGetList = 0x0;
+        public static final short LoadLocker = 0x1;
+        public static final short LoadWish = 0x2;
+        public static final short Buy = 0x3;
+        public static final short Gift = 0x4;
+        public static final short SetWish = 0x5;
+        public static final short IncSlotCount = 0x6;
+        public static final short IncTrunkCount = 0x7;
+        public static final short IncCharSlotCount = 0x8;
+        public static final short IncBuyCharCount = 0x9;
+        public static final short EnableEquipSlotExt = 0xA;
+        public static final short CancelPurchase = 0xB;
+        public static final short ConfirmPurchase = 0xC;
+        public static final short Destroy = 0xD;
+        public static final short MoveLtoS = 0xE;
+        public static final short MoveStoL = 0xF;
+        public static final short Expire = 0x10;
+        public static final short Use = 0x11;
+        public static final short StatChange = 0x12;
+        public static final short SkillChange = 0x13;
+        public static final short SkillReset = 0x14;
+        public static final short DestroyPetItem = 0x15;
+        public static final short SetPetName = 0x16;
+        public static final short SetPetLife = 0x17;
+        public static final short SetPetSkill = 0x18;
+        public static final short SetItemName = 0x19;
+        public static final short SendMemo = 0x1A;
+        public static final short GetMaplePoint = 0x1B;
+        public static final short Rebate = 0x1C;
+        public static final short UseCoupon = 0x1D;
+        public static final short GiftCoupon = 0x1E;
+        public static final short Couple = 0x1F;
+        public static final short BuyPackage = 0x20;
+        public static final short GiftPackage = 0x21;
+        public static final short BuyNormal = 0x22;
+        public static final short ApplyWishListEvent = 0x23;
+        public static final short MovePetStat = 0x24;
+        public static final short FriendShip = 0x25;
+        public static final short ShopScan = 0x26;
+        public static final short LoadPetExceptionList = 0x27;
+        public static final short UpdatePetExceptionList = 0x28;
+        public static final short FreeCashItem = 0x29;
+        public static final short LoadFreeCashItem = 0x2A;
+        public static final short Script = 0x2B;
+        public static final short PurchaseRecord = 0x2C;
+        public static final short TradeDone = 0x2D;
+        public static final short BuyDone = 0x2E;
+        public static final short TradeSave = 0x2F;
+        public static final short TradeLog = 0x30;
+        public static final short EvolPet = 0x31;
+        public static final short BuyNameChange = 0x32;
+        public static final short CancelChangeName = 0x33;
+        public static final short BuyTransferWorld = 0x35;
+        public static final short CancelTransferWorld = 0x36;
+        public static final short CharacterSale = 0x37;
+        public static final short ItemUpgrade = 0x3C;
+        public static final short ItemUpgradeFail = 0x3E;
+        public static final short ItemUpgradeReq = 0x3F;
+        public static final short ItemUpgradeDone = 0x40;
+        public static final short Vega = 0x43;
+        public static final short CashItemGachapon = 0x4A;
+        public static final short CashGachaponOpen = 0x4B;
+        public static final short CashGachaponCopy = 0x4C;
+        public static final short ChangeMaplePoint = 0x4D;
+        public static final short CheckFreeCashItemTable = 0x4E;
+        public static final short SetFreeCashItemTable = 0x51;
+        public static final short Give = 0xBD;
     }
 
+    public class CashItemResult {
+        public static final short CancelNameChangeFail = 0x34;
+        public static final short CharacterSaleSuccess = 0x38;
+        public static final short CharacterSaleFail = 0x39;
+        public static final short CharacterSaleInvalidName = 0x3A;
+        public static final short CharacterSaleInvalidItem = 0x3B;
+        public static final short ItemUpgradeSuccess = 0x3D;
+        public static final short ItemUpgradeDone = 0x41;
+        public static final short ItemUpgradeErr = 0x42;
+        public static final short VegaSuccess1 = 0x44;
+        public static final short VegaSuccess2 = 0x45;
+        public static final short VegaErr = 0x46;
+        public static final short VegaErr2 = 0x47;
+        public static final short VegaErr_InvalidItem = 0x48;
+        public static final short VegaFail = 0x49;
+        public static final short CheckFreeCashItemTable_Done = 0x4F;
+        public static final short CheckFreeCashItemTable_Failed = 0x50;
+        public static final short SetFreeCashItemTable_Done = 0x52;
+        public static final short SetFreeCashItemTable_Failed = 0x53;
+        public static final short LimitGoodsCount_Changed = 0x54;
+        public static final short WebShopOrderGetList_Done = 0x55;
+        public static final short WebShopOrderGetList_Failed = 0x56;
+        public static final short WebShopReceive_Done = 0x57;
+        public static final short LoadLocker_Done = 0x58;
+        public static final short LoadLocker_Failed = 0x59;
+        public static final short LoadGift_Done = 0x5A;
+        public static final short LoadGift_Failed = 0x5B;
+        public static final short LoadWish_Done = 0x5C;
+        public static final short LoadWish_Failed = 0x5D;
+        public static final short MapleTV_Failed_Wrong_User_Name = 0x5E;
+        public static final short MapleTV_Failed_User_Not_Connected = 0x5F;
+        public static final short AvatarMegaphone_Queue_Full = 0x60;
+        public static final short AvatarMegaphone_Level_Limit = 0x61;
+        public static final short SetWish_Done = 0x62;
+        public static final short SetWish_Failed = 0x63;
+        public static final short Buy_Done = 0x64;
+        public static final short Buy_Failed = 0x65;
+        public static final short UseCoupon_Done = 0x66;
+        public static final short UseCoupon_Done_NormalItem = 0x67;
+        public static final short GiftCoupon_Done = 0x68;
+        public static final short UseCoupon_Failed = 0x69;
+        public static final short UseCoupon_CashItem_Failed = 0x6A;
+        public static final short Gift_Done = 0x6B;
+        public static final short Gift_Failed = 0x6C;
+        public static final short IncSlotCount_Done = 0x6D;
+        public static final short IncSlotCount_Failed = 0x6E;
+        public static final short IncTrunkCount_Done = 0x6F;
+        public static final short IncTrunkCount_Failed = 0x70;
+        public static final short IncCharSlotCount_Done = 0x71;
+        public static final short IncCharSlotCount_Failed = 0x72;
+        public static final short IncBuyCharCount_Done = 0x73;
+        public static final short IncBuyCharCount_Failed = 0x74;
+        public static final short EnableEquipSlotExt_Done = 0x75;
+        public static final short EnableEquipSlotExt_Failed = 0x76;
+        public static final short MoveLtoS_Done = 0x77;
+        public static final short MoveLtoS_Failed = 0x78;
+        public static final short MoveStoL_Done = 0x79;
+        public static final short MoveStoL_Failed = 0x7A;
+        public static final short Destroy_Done = 0x7B;
+        public static final short Destroy_Failed = 0x7C;
+        public static final short Expire_Done = 0x7D;
+        public static final short Expire_Failed = 0x7E;
+        public static final short Use_Done = 0x7F;
+        public static final short Use_Failed = 0x80;
+        public static final short StatChange_Done = 0x81;
+        public static final short StatChange_Failed = 0x82;
+        public static final short SkillChange_Done = 0x83;
+        public static final short SkillChange_Failed = 0x84;
+        public static final short SkillReset_Done = 0x85;
+        public static final short SkillReset_Failed = 0x86;
+        public static final short DestroyPetItem_Done = 0x87;
+        public static final short DestroyPetItem_Failed = 0x88;
+        public static final short SetPetName_Done = 0x89;
+        public static final short SetPetName_Failed = 0x8A;
+        public static final short SetPetLife_Done = 0x8B;
+        public static final short SetPetLife_Failed = 0x8C;
+        public static final short MovePetStat_Failed = 0x8D;
+        public static final short MovePetStat_Done = 0x8E;
+        public static final short SetPetSkill_Failed = 0x8F;
+        public static final short SetPetSkill_Done = 0x90;
+        public static final short SendMemo_Done = 0x91;
+        public static final short SendMemo_Warning = 0x92;
+        public static final short SendMemo_Failed = 0x93;
+        public static final short GetMaplePoint_Done = 0x94;
+        public static final short GetMaplePoint_Failed = 0x95;
+        public static final short Rebate_Done = 0x96;
+        public static final short Rebate_Failed = 0x97;
+        public static final short Couple_Done = 0x98;
+        public static final short Couple_Failed = 0x99;
+        public static final short BuyPackage_Done = 0x9A;
+        public static final short BuyPackage_Failed = 0x9B;
+        public static final short GiftPackage_Done = 0x9C;
+        public static final short GiftPackage_Failed = 0x9D;
+        public static final short BuyNormal_Done = 0x9E;
+        public static final short BuyNormal_Failed = 0x9F;
+        public static final short ApplyWishListEvent_Done = 0xA0;
+        public static final short ApplyWishListEvent_Failed = 0xA1;
+        public static final short Friendship_Done = 0xA2;
+        public static final short Friendship_Failed = 0xA3;
+        public static final short LoadExceptionList_Done = 0xA4;
+        public static final short LoadExceptionList_Failed = 0xA5;
+        public static final short UpdateExceptionList_Done = 0xA6;
+        public static final short UpdateExceptionList_Failed = 0xA7;
+        public static final short LoadFreeCashItem_Done = 0xA8;
+        public static final short LoadFreeCashItem_Failed = 0xA9;
+        public static final short FreeCashItem_Done = 0xAA;
+        public static final short FreeCashItem_Failed = 0xAB;
+        public static final short Script_Done = 0xAC;
+        public static final short Script_Failed = 0xAD;
+        public static final short Bridge_Failed = 0xAE;
+        public static final short PurchaseRecord_Done = 0xAF;
+        public static final short PurchaseRecord_Failed = 0xB0;
+        public static final short EvolPet_Failed = 0xB1;
+        public static final short EvolPet_Done = 0xB2;
+        public static final short NameChangeBuy_Done = 0xB3;
+        public static final short NameChangeBuy_Failed = 0xB4;
+        public static final short TransferWorld_Done = 0xB5;
+        public static final short TransferWorld_Failed = 0xB6;
+        public static final short CashGachaponOpen_Done = 0xB7;
+        public static final short CashGachaponOpen_Failed = 0xB8;
+        public static final short CashGachaponCopy_Done = 0xB9;
+        public static final short CashGachaponCopy_Failed = 0xBA;
+        public static final short ChangeMaplePoint_Done = 0xBB;
+        public static final short ChangeMaplePoint_Failed = 0xBC;
+        public static final short Give_Done = 0xBE;
+        public static final short Give_Failed = 0xBF;
+        public static final short GashItemGachapon_Failed = 0xC0;
+        public static final short CashItemGachapon_Done = 0xC1;
+    }
+    
     public class ModFlag {
 
         private static final byte NexonCash = 0x1;

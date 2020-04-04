@@ -35,6 +35,7 @@ import game.user.item.ChangeLog;
 import game.user.item.InventoryManipulator;
 import game.user.item.ItemInfo;
 import game.user.item.ItemVariationOption;
+import util.Logger;
 import util.Utilities;
 
 import java.util.ArrayList;
@@ -83,6 +84,7 @@ public class GMCommands {
         if (args.length > 0) {
             stat.setLevel(Integer.parseInt(args[0]));
             user.sendCharacterStat(Request.Excl, CharacterStatType.LEV);
+            user.validateStat(false);
             return null;
         }
         return "!level <level>";
@@ -103,6 +105,7 @@ public class GMCommands {
         if (args.length > 0) {
             stat.setJob(Short.parseShort(args[0]));
             user.sendCharacterStat(Request.Excl, CharacterStatType.Job);
+            user.validateStat(false);
             return null;
         }
         return "!job <jobid>";
@@ -112,6 +115,7 @@ public class GMCommands {
         stat.setHP(stat.getMHP());
         stat.setMP(stat.getMMP());
         user.sendCharacterStat(Request.Excl, CharacterStatType.HP | CharacterStatType.MP);
+        user.validateStat(false);
         return null;
     }
 
@@ -157,6 +161,7 @@ public class GMCommands {
                     if (alias.equals("item")) {
                         List<ChangeLog> changeLog = new ArrayList<>();
                         byte ti = ItemAccessor.getItemTypeIndexFromID(itemID);
+                        user.sendDebugMessage("TI = [%d]", ti);
                         InventoryManipulator.rawAddItem(cd, ti, item, changeLog, null);
                         user.sendPacket(InventoryManipulator.makeInventoryOperation(Request.None, changeLog));
                         user.addCharacterDataMod(ItemAccessor.getItemTypeFromTypeIndex(ti));

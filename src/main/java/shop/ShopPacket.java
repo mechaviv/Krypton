@@ -23,7 +23,7 @@ import network.packet.LoopbackPacket;
 import network.packet.OutPacket;
 import shop.user.CashItemInfo;
 import shop.user.User;
-import shop.user.User.CashItemRequest;
+import shop.user.User.CashItemResult;
 
 /**
  *
@@ -33,7 +33,7 @@ public class ShopPacket {
 
     public static OutPacket onBuyDone(CashItemInfo cashItemInfo) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.BuyDone);
+        packet.encodeByte(CashItemResult.Buy_Done);
         packet.encodeLong(cashItemInfo.getCashItemSN());
         packet.encodeInt(cashItemInfo.getAccountID());
         packet.encodeInt(cashItemInfo.getCharacterID());
@@ -46,14 +46,14 @@ public class ShopPacket {
 
     public static OutPacket onBuyFailed(byte type) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.BuyFailed);
+        packet.encodeByte(CashItemResult.Buy_Failed);
         packet.encodeByte(type);
         return packet;
     }
 
     public static OutPacket onGiftDone(String rcvCharacterName, int itemID, short count) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.GiftDone);
+        packet.encodeByte(CashItemResult.Gift_Done);
         packet.encodeString(rcvCharacterName);
         packet.encodeInt(itemID);
         packet.encodeShort(count);
@@ -62,14 +62,14 @@ public class ShopPacket {
 
     public static OutPacket onGiftFailed(byte type) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.GiftFailed);
+        packet.encodeByte(CashItemResult.Gift_Failed);
         packet.encodeByte(type);
         return packet;
     }
 
     public static OutPacket onIncSlotCountDone(byte ti, short newSlotCount) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.IncSlotCountDone);
+        packet.encodeByte(CashItemResult.IncSlotCount_Done);
         packet.encodeByte(ti);
         packet.encodeShort(newSlotCount);
         return packet;
@@ -77,14 +77,14 @@ public class ShopPacket {
 
     public static OutPacket onIncSlotCountFailed(byte type) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.IncSlotCountFailed);
+        packet.encodeByte(CashItemResult.IncSlotCount_Failed);
         packet.encodeByte(type);
         return packet;
     }
 
     public static OutPacket onLoadLockerDone(List<CashItemInfo> cashItemInfo) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.LoadLockerDone);
+        packet.encodeByte(CashItemResult.LoadLocker_Done);
         packet.encodeByte(cashItemInfo.size());
         for (CashItemInfo cashItem : cashItemInfo) {
             packet.encodeLong(cashItem.getCashItemSN());
@@ -100,7 +100,7 @@ public class ShopPacket {
 
     public static OutPacket onMoveLToS(short pos, ItemSlotBase item, byte ti) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.MoveLtoSDone);
+        packet.encodeByte(CashItemResult.MoveLtoS_Done);
         packet.encodeShort(pos);
         packet.encodeByte(ti);
         item.encode(packet);
@@ -109,14 +109,14 @@ public class ShopPacket {
 
     public static OutPacket onMoveLToSFailed(byte type) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.MoveLToSFailed);
+        packet.encodeByte(CashItemResult.MoveLtoS_Failed);
         packet.encodeByte(type);
         return packet;
     }
 
     public static OutPacket onMoveSToL(CashItemInfo cashItem) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.MoveSToLDone);
+        packet.encodeByte(CashItemResult.MoveStoL_Done);
         packet.encodeLong(cashItem.getCashItemSN());
         packet.encodeInt(cashItem.getAccountID());
         packet.encodeInt(cashItem.getCharacterID());
@@ -129,7 +129,7 @@ public class ShopPacket {
 
     public static OutPacket onMoveSToLFailed(byte type) {
         OutPacket packet = new OutPacket(LoopbackPacket.CashShopCashItemResult);
-        packet.encodeByte(CashItemRequest.MoveSToLFailed);
+        packet.encodeByte(CashItemResult.MoveStoL_Failed);
         packet.encodeByte(type);
         return packet;
     }

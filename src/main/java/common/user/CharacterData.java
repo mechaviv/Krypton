@@ -489,9 +489,16 @@ public class CharacterData {
 
         if ((flag & DBChar.SkillRecord) != 0) {
             while (rs.next()) {
-                skillRecord.put(rs.getInt("SkillID"), rs.getInt("Info"));
+                int skillID = rs.getInt("SkillID");
+                skillRecord.put(skillID, rs.getInt("Level"));
+                if (SkillAccessor.isSkillNeedMasterLevel(skillID)) {
+                    skillMasterLev.put(skillID, rs.getInt("MasterLevel"));
+                }
+                long dateExpire = rs.getLong("DateExpire");
+                skillExpired.put(skillID, dateExpire != 0 ? FileTime.longToFileTime(dateExpire) : FileTime.END);
             }
         }
+
         if ((flag & DBChar.QuestRecord) != 0) {
             while (rs.next()) {
                 questRecord.put(rs.getInt("QRKey"), rs.getString("QuestState"));

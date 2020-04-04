@@ -42,6 +42,7 @@ import java.util.Map;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.ts.*;
 import network.packet.OutPacket;
+import util.Logger;
 import util.Pointer;
 
 import static game.user.stat.CharacterTemporaryStat.*;
@@ -441,9 +442,9 @@ public class SecondaryStat {
                 this.eva += wildHunterJaguarRiding.getLevelData(slv).Y;
             }
         }
-        int attackType = 0;
+        int attackType = 1;
         if (job % 1000 / 100 == 3 || job / 10 == 41 || job / 10 == 52 || job / 100 == 13 || job / 100 == 14) {
-            attackType = 1;
+            attackType = 2;
         }
 
         int weaponItemID = 0;
@@ -457,6 +458,7 @@ public class SecondaryStat {
         if (SkillAccessor.getWeaponMastery(cd, this, weaponItemID, attackType, 0, accInc, padInc) != 0) {
             this.acc += accInc.get();
             this.pad += padInc.get();
+            Logger.logReport("Adding [%d] PAD", padInc.get());
         }
         if (SkillAccessor.getMagicMastery(cd, madInc) != 0) {
             this.mad += madInc.get();
@@ -485,6 +487,7 @@ public class SecondaryStat {
         itemEVAr += optionRate.EVAr;
 
         this.pad = Math.max(Math.min(this.pad, SkillAccessor.PAD_MAX), 0);
+        Logger.logReport("PAD = [%d]", pad);
         this.pdd = Math.max(Math.min(this.pdd, SkillAccessor.PDD_MAX), 0);
         this.mad = Math.max(Math.min(this.mad, SkillAccessor.MAD_MAX), 0);
         this.mdd = Math.max(Math.min(this.mdd, SkillAccessor.MDD_MAX), 0);

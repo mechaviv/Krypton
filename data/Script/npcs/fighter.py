@@ -24,16 +24,16 @@ elif val == "p2":
         self.say("Give this necklace to #bTylus#k from Ossyria and you can make a second test for 3rd grade. Good luck ~!")
 else:
     if job == 0:
-        self.say("Do you wish to become a Warrior? You need to meet some criteria for this. #bYou must be at least level 10, with at least 35 STR #k.", True)
+        self.sayNext("Do you wish to become a Warrior? You need to meet some criteria for this. #bYou must be at least level 10, with at least 35 STR #k.")
         if level <= 9 or str <= 34:
-            self.say("I don't believe you already have the qualities to be a Warrior yet. You need to train hard to become one or unable to handle the situation. Become much stronger and then come look for me.", True)
+            self.sayNext("I don't believe you already have the qualities to be a Warrior yet. You need to train hard to become one or unable to handle the situation. Become much stronger and then come look for me.")
         else:
             ret = self.askYesNo("You definitely look like a warrior. It may not have been there yet, but I can already see a Warrior in you. What do you think? Do you wish to become a Warrior?")
             if ret == 0:
                 self.say("So you need to think a little more... There is no reason to hurry... there is no something to do anyway... let me know when to make your decision, okay?")
             else:
                 if self.inventoryGetSlotCount(1) > self.inventoryGetHoldCount(1):
-                    self.say("You are much stronger now. In addition, all your inventories have more slots. A whole row, to be exact. You can check. I just gave you a little #bSP#k. When you open the #b skills menu in the lower left corner of the screen, you will see the skills you can learn using SP. #rWarning#k: You cannot increase them all at once. There are also those that will be available only after you learn some skills first.", True)
+                    self.sayNext("You are much stronger now. In addition, all your inventories have more slots. A whole row, to be exact. You can check. I just gave you a little #bSP#k. When you open the #b skills menu in the lower left corner of the screen, you will see the skills you can learn using SP. #rWarning#k: You cannot increase them all at once. There are also those that will be available only after you learn some skills first.")
                     ret2 = self.inventoryExchange(0, 1302077, 1)
                     if ret2 == 0:
                         self.say("Hmm ... Check if there is an empty slot in your Equip inventory. I'm trying to give you a weapon as a reward for your performance.")

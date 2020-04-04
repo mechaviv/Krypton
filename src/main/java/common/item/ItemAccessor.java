@@ -144,8 +144,9 @@ public class ItemAccessor {
             case ItemType.Consume:
             case ItemType.Install:
             case ItemType.Etc:
-            case ItemType.Cash:
                 return ItemSlotType.Bundle;
+            case ItemType.Cash:
+                return (byte) (3 - (itemID / 10000 != 500 ? 1 : 0));
             default: {
                 return 0;
             }
