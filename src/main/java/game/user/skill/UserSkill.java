@@ -46,10 +46,7 @@ import game.user.stat.ts.PartyBoosterStat;
 import game.user.stat.ts.TSIndex;
 import game.user.stat.ts.TwoStateTemporaryStat;
 import network.packet.InPacket;
-import util.Logger;
-import util.Pointer;
-import util.Rand32;
-import util.Rect;
+import util.*;
 
 /**
  * @author Eric
@@ -171,12 +168,9 @@ public class UserSkill {
 
         if (SkillAccessor.isWeaponBooster(skillID) || SkillAccessor.isSelfStatChange(skillID) || SkillAccessor.isPartyStatChange(skillID)) {
             Flag reset = user.getSecondaryStat().resetByReasonID(skillID);
-            if (skillID == Rogue.DarkSight) {
-                //nCur = timeGetTime();
-                //if (!nCur) nCur = 1;
-                //pUser->m_secondaryStat.tDarkSight_ = nCur;
+            if (skillID == Rogue.DarkSight || skillID == NightWalker.DARK_SIGHT) {
+                user.getSecondaryStat().getStat(CharacterTemporaryStat.DarkSight).setDuration(System.currentTimeMillis());
             }
-
             if (SkillAccessor.isBMageAuraSkill(skillID)) {
                 reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.Aura));
                 reset.performOR(user.getSecondaryStat().resetByCTS(CharacterTemporaryStat.DarkAura));
@@ -287,11 +281,7 @@ public class UserSkill {
         if (skill.getSkillID() == Rogue.DarkSight) {
             SecondaryStatOption opt = user.getSecondaryStat().getStat(CharacterTemporaryStat.DarkSight);
             if (opt != null) {
-                // tCur = HIDWORD(tCur);
-                // Convert the time into timeGetTime() seconds
-                cur /= 1000;
-                cur = Math.max(1, cur - 3000);
-                opt.setModOption((int) cur);
+                opt.setModOption(Utilities.timeGetTime() - 3000);
                 user.getSecondaryStat().setStat(CharacterTemporaryStat.DarkSight, opt);
             }
         }

@@ -194,12 +194,16 @@ public class UserRemote {
             packet.encodeByte(left);
             packet.encodeByte(reflect);
             if (reflect > 0) {
+                packet.encodeByte(0);// power guard
                 packet.encodeInt(mobID);
                 packet.encodeByte(hitAction);
                 packet.encodeShort(hit.x);
                 packet.encodeShort(hit.y);
             }
+            packet.encodeByte(0);// bGuard
+            packet.encodeByte(0);// skill flag ?
         }
+        packet.encodeInt(0);
         return packet;
     }
     

@@ -915,6 +915,30 @@ public class SkillAccessor {
         return false;
     }
 
+    public static int getMaxGaugeTime(int skillID) {
+        if (!isKeyDownSkill(skillID)) {
+            return 0;
+        }
+        switch (skillID) {
+            case ArchMage1.BIGBANG:
+            case ArchMage2.BIGBANG:
+            case Bishop.BIGBANG:
+            case Evan.ICE_BREATH:
+                return 2000;
+            case CrossbowMaster.PIERCING:
+                return 900;
+            case Dual5.FINAL_CUT:
+                return 600;
+            case Dual5.MONSTER_BOMB:
+                return 1200;
+            case InFighter.SCREW_PUNCH:
+            case Gunslinger.THROWING_BOMB:
+            case NightWalker.POISON_BOMB:
+            case Striker.SCREW_PUNCH:
+                return 1000;
+        }
+        return 500;
+    }
     public static boolean isShootSkillNotUsingShootingWeapon(int skillID) {
         switch (skillID) {
             case NightLord.SHOWDOWN:
@@ -1221,5 +1245,9 @@ public class SkillAccessor {
                 return true;
         }
         return false;
+    }
+
+    public static boolean isDualAddDamageExceptSkill(int skillID) {
+        return skillID >= Dual5.FINAL_CUT && skillID <= Dual5.SUDDEN_RAID;
     }
 }

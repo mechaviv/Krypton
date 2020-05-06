@@ -940,7 +940,7 @@ public class LifePool {
                 }
 
                 boolean serialAttack = false;
-                packet.encodeBool(serialAttack);
+                packet.encodeBool(serialAttack);// option
                 packet.encodeShort(action & 0x7FFF | left << 15);
                 packet.encodeByte(speedDegree);
                 packet.encodeByte(SkillAccessor.getWeaponMastery(user.getCharacter(), user.getSecondaryStat(), weaponItemID, attackType, skillID, null, null));
@@ -950,7 +950,7 @@ public class LifePool {
                     packet.encodeByte(info.hitAction);
                     for (int i = 0; i < damagePerMob; i++) {
                         packet.encodeBool(info.critical.get(i));// bCritical
-                        packet.encodeShort(info.damageCli.get(i));
+                        packet.encodeInt(info.damageCli.get(i));
                     }
                 }
                 if (header == LoopbackPacket.UserShootAttack) {

@@ -627,6 +627,7 @@ public class ClientSocket extends SimpleChannelInboundHandler {
                 packet.makeBufferList(buff, OrionConfig.CLIENT_VER, key.getSeqSnd());
                 key.updateSend();
                 sendPacket(buff);
+                buff.clear();
             }
         } finally {
             this.lockSend.unlock();

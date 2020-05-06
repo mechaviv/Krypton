@@ -18,14 +18,12 @@
 package game.user.stat;
 
 import common.JobAccessor;
-import common.JobCategory;
 import common.item.ItemAccessor;
 import common.user.CharacterData;
 import game.field.life.mob.MobStat;
 import game.field.life.mob.MobStats;
 import game.field.life.mob.MobTemplate;
 import game.user.CharacterActions;
-import game.user.item.ItemInfo;
 import game.user.skill.SkillAccessor;
 import game.user.skill.SkillInfo;
 import game.user.skill.Skills.*;
@@ -36,15 +34,10 @@ import java.util.List;
 import game.user.skill.entries.SkillEntry;
 import game.user.stat.psd.AdditionPsd;
 import game.user.stat.psd.PassiveSkillData;
-import org.python.jline.internal.Log;
 import util.Logger;
 import util.Pointer;
 import util.Rand32;
 
-/**
- *
- * @author Eric
- */
 public class CalcDamage {
     private static final int RND_SIZE = 7;
     
@@ -58,38 +51,6 @@ public class CalcDamage {
         this.rndForCheckDamageMiss = new Rand32();
         this.rndGenForMob = new Rand32();
         this.invalidCount = 0;
-    }
-    
-    public boolean checkMDamageMiss(MobStat ms, CharacterData cd, BasicStat bs, SecondaryStat ss, long randForMissCheck) {
-        int eva = Math.max(0, Math.min(ss.eva + ss.getStatOption(CharacterTemporaryStat.EVA), SkillAccessor.EVA_MAX));
-        int level = bs.getLevel();
-        eva -= (ms.getLevel() - level) / 2;
-        int mobACC = 0;
-        if (level >= ms.getLevel() || eva > 0) 
-            mobACC = eva;
-        double rand = (double) mobACC;
-        double b = rand * 0.1d;
-        rand = getRand(randForMissCheck, b, rand);
-        int acc = Math.max(0, Math.min(ms.getACC() + ms.getStatOption(MobStats.ACC), SkillAccessor.ACC_MAX));
-        return rand >= (double) acc;
-    }
-    
-    public boolean checkPDamageMiss(MobStat ms, CharacterData cd, BasicStat bs, SecondaryStat ss, long randForMissCheck) {
-        int eva = Math.max(0, Math.min(ss.eva + ss.getStatOption(CharacterTemporaryStat.EVA), SkillAccessor.EVA_MAX));
-        int level = bs.getLevel();
-        eva -= (ms.getLevel() - level) / 2;
-        int mobACC = 0;
-        if (level >= ms.getLevel() || eva > 0) 
-            mobACC = eva;
-        double rand = (double) mobACC;
-        int acc = Math.max(0, Math.min(ms.getACC() + ms.getStatOption(MobStats.ACC), SkillAccessor.ACC_MAX));
-        double b = rand / ((double) acc * 4.5) * 100.0;
-        if (JobAccessor.getJobCategory(bs.getJob()) == JobCategory.THIEF) {
-            b = Math.max(5.0, Math.min(b, 95.0));
-        } else {
-            b = Math.max(2.0, Math.min(b, 80.0));
-        }
-        return b > (double) (randForMissCheck % 10000000) * 0.0000100000010000001;
     }
     
     public void decInvalidCount() {
@@ -157,11 +118,6 @@ public class CalcDamage {
         for (int i = 0; i < random.length; i++) {
             random[i] = rndGenForCharacter.random();
         }
-        String randstar = "";
-        for (int randd : random) {
-            randstar += String.format("0x%X,", randd);
-        }
-        //Logger.logReport("Randoms = [%s]", randstar);
         int wt = ItemAccessor.getWeaponType(weaponItemID);
 
         int acc = ss.getACC(cd, psdACCr, bs.calcBasePACC());
@@ -212,7 +168,7 @@ public class CalcDamage {
                 continue;
             }
             if (ms.getStatOption(MobStats.MImmune) != 0) {
-                int rand = random[idx++ % 7] % 100;
+                int rand = random[idx++ % RND_SIZE] % 100;
                 if (rand > ss.getStatOption(CharacterTemporaryStat.RespectMImmune)) {
                     damage.set(i, 1);
                     continue;
@@ -224,7 +180,7 @@ public class CalcDamage {
             }
             int mobEVA = Math.max(Math.min((ms.getEVA() + ms.getStatOption(MobStats.EVA)), 9999), 0);
             int mobACCr = CalcDamageHelper.calcACCr(acc, mobEVA, bs.getLevel(), ms.getLevel(), psdAR);
-            double rand = CalcDamageHelper.get_rand(random[idx++ % 7], 100.0, 0.0);
+            double rand = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], 100.0, 0.0);
             if (mobACCr < rand) {
                 continue;
             }
@@ -232,7 +188,7 @@ public class CalcDamage {
                 // fix damage stuff
             }
             double dmg = calcDamageByWT(wt, bs, 0, mad);
-            double rndDmg = CalcDamageHelper.adjustRandomDamage(dmg, random[idx++ % 7], getMasteryConstByWT(wt), mastery);
+            double rndDmg = CalcDamageHelper.adjustRandomDamage(dmg, random[idx++ % RND_SIZE], getMasteryConstByWT(wt), mastery);
             rndDmg += (psdMDamR * rndDmg / 100.0) * amp / 100;
 
             int elemBoost = 0;
@@ -251,9 +207,9 @@ public class CalcDamage {
                     rndDmg = skillDamage / 100.0 * rndDmg;
                 }
             }
-            if (nextAttackCritical || criticalAttackProp > 0 && (rand = CalcDamageHelper.get_rand(random[idx++ % 7], 0.0, 100.0)) <= criticalAttackProp) {
+            if (nextAttackCritical || criticalAttackProp > 0 && (rand = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], 0.0, 100.0)) <= criticalAttackProp) {
                 int totalCDMin = Math.min(criticalAttackParam + psdCDMin + 20, 50);
-                double critDamage = CalcDamageHelper.get_rand(random[idx++ % 7], totalCDMin, 50.0);
+                double critDamage = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], totalCDMin, 50.0);
                 critical.set(i, true);
                 rndDmg += (int) critDamage / 100.0 * rndDmg;
             }
@@ -686,7 +642,7 @@ public class CalcDamage {
 
             double rand;
             Logger.logReport("Prop = [%d]", criticalAttackProp);
-            if ((skillID != Shadower.ASSASSINATION || action == CharacterActions.ASSASSINATIONS) && nextAttackCritical || criticalAttackProp > 0 && (rand = CalcDamageHelper.get_rand(random[idx++ % 7], 0.0, 100.0)) <= criticalAttackProp) {
+            if ((skillID != Shadower.ASSASSINATION || action == CharacterActions.ASSASSINATIONS) && nextAttackCritical || criticalAttackProp > 0 && (rand = CalcDamageHelper.get_rand(random[idx++ % RND_SIZE], 0.0, 100.0)) <= criticalAttackProp) {
                 int param = criticalAttackParam[0] + psdCDMin + 20;
                 param = Math.min(param, 50 + sharpEyesParam);
 
@@ -694,6 +650,7 @@ public class CalcDamage {
                 critical.set(i, true);
                 damageByWT += (int) rand / 100.0 * (int) damageByWT;
             }
+            Logger.logReport("Damage after critical adjust [%s]", damageByWT);
             if (skillID != DragonKnight.SACRIFICE && ms.getStatOption(MobStats.PGuardUp) != 0) {
                 damageByWT *= ms.getStatOption(MobStats.PGuardUp) / 100.0;
             }
@@ -729,10 +686,65 @@ public class CalcDamage {
                 // TODO
             }
             if (ms.getStatOption(MobStats.Stun) > 0 || ms.getStatOption(MobStats.Blind) > 0) {
-                // TODO
+                tempSkill = new Pointer<>();
+                tempSLV = SkillInfo.getInstance().getSkillLevel(cd, Crusader.ChanceAttack, tempSkill);
+                if (tempSLV > 0) {
+                    damageByWT *= tempSkill.get().getLevelData(tempSLV).Damage / 100.0;
+                }
             }
-            damageByWT = Math.max(damageByWT, 1);
-            damage.set(i, (int) damageByWT);
+            // TODO: monster handicap 9000-9002
+            // TODO: mob category stuff
+            // TODO: additional boss damage
+            if (keyDown != 0) {
+                damageByWT *= (90 * keyDown / SkillAccessor.getMaxGaugeTime(skillID) + 10) / 100.0;
+            }
+            if (ms.getStatOption(MobStats.HardSkin) == 0 || critical.get(i)) {
+                if (darkForce != 0) {
+                    damageByWT *= (double) (darkForce + 100) / 100.0;
+                }
+                //damageByWT = GuidedBulletStat.applyGuidedBulletDamage(cd, ss, mobID, damageByWT);
+
+                if (ss.getStatOption(CharacterTemporaryStat.DojangBerserk) != 0) {
+                    damageByWT *= (double)ss.getStatOption(CharacterTemporaryStat.DojangBerserk) / 100.0;
+                }
+                boolean dualAddDamageExcept = SkillAccessor.isDualAddDamageExceptSkill(skillID);
+                if (ss.getStatOption(CharacterTemporaryStat.SuddenDeath) != 0 && !dualAddDamageExcept) {
+                    damageByWT *= (double)ss.getStatOption(CharacterTemporaryStat.SuddenDeath) / 100.0;
+                }
+                if (ss.getStatOption(CharacterTemporaryStat.FinalCut) != 0 && !dualAddDamageExcept) {
+                    damageByWT *= (double)ss.getStatOption(CharacterTemporaryStat.FinalCut) / 100.0;
+                }
+                if (AR01Pad != 0) {
+                    damageByWT *= (double)(AR01Pad + 100) / 100.0;
+                }
+                if (SkillAccessor.isJaguarMeleeAttackSkill(skillID)) {
+                    tempSkill = new Pointer<>();
+                    tempSLV = SkillInfo.getInstance().getSkillLevel(cd, WildHunter.RIDING_MASTERY, tempSkill);
+                    if (tempSLV > 0) {
+                        damageByWT *= (double) (tempSkill.get().getLevelData(tempSLV).Damage + 100) / 100.0;
+                    }
+                }
+                if (skillID == Hermit.SHADOW_MESO) {
+                    // TODO
+                }
+                // deadly attack ?
+                if (!template.isBoss() && bossDAMr > 0) {
+                    bossDAMr = 0;
+                }
+                int damageRate = totalDAMr + psdDIPr + bossDAMr;
+                if (ss.getStatOption(CharacterTemporaryStat.DamR) > 0) {
+                    damageRate += ss.getStatOption(CharacterTemporaryStat.DamR);
+                }
+                Logger.logReport("Total Damage Rate [%d]", damageRate);
+                damageByWT += (double)damageRate * damageByWT / 100.0;
+                damageByWT = Math.min(Math.max(damageByWT, 1), Integer.MAX_VALUE);
+                damage.set(i, (int) damageByWT);
+                if (ms.getStatOption(MobStats.HealByDamage) != 0) {
+                    damage.set(i, (int) damageByWT * ms.getStatOption(MobStats.HealByDamage) / - 100);
+                }
+            } else {
+                damage.set(i, 0);
+            }
         }
     }
 
@@ -792,99 +804,7 @@ public class CalcDamage {
         }
         return 0.2;
     }
-
-    public void PDamage(CharacterData cd, BasicStat bs, SecondaryStat ss, MobStat ms, int damagePerMob, int weaponItemID, int bulletItemID, int attackType, int action, SkillEntry skill, byte slv, List<Integer> damage) {
-        int idx = 0;
-        long[] random = new long[RND_SIZE];
-        for (int i = 0; i < random.length; i++) {
-            random[i] = rndGenForCharacter.random();
-        }
-        
-        int skillID = 0;
-        if (skill != null)
-            skillID = skill.getSkillID();
-        int wt = ItemAccessor.getWeaponType(weaponItemID);
-        int acc = Math.max(0, Math.min(ss.acc + ss.getStatOption(CharacterTemporaryStat.ACC), SkillAccessor.ACC_MAX));
-        int mobPDD = acc;
-        int eva = Math.max(0, ms.getLevel() - bs.getLevel());
-        double a = (double) mobPDD * 100.0 / ((double) eva * 10.0 + 255.0);
-        int pad = ss.pad + ss.getStatOption(CharacterTemporaryStat.PAD);
-        if (bulletItemID != 0)
-            pad += ItemInfo.getBulletPAD(bulletItemID);
-        pad = Math.max(0, Math.min(pad, SkillAccessor.PAD_MAX));
-        if (damagePerMob <= 0) {
-            return;
-        }
-
-        for (int dmg : damage) {
-            mobPDD = Math.max(0, Math.min(ms.getEVA() + ms.getStatOption(MobStats.EVA), SkillAccessor.EVA_MAX));
-            
-            double b = a * 1.3;
-            double dmgDone = a * 0.7;
-            long rand = random[idx++ % RND_SIZE];
-            
-            if (b != dmgDone) {
-                b = getRand(rand, dmgDone, b);
-            }
-            if (b >= (double) mobPDD) {
-                if (((wt != 45 && wt != 46 && wt != 47) || (action >= 22 && action <= 27)) && wt != 32) {
-                    switch (wt) {
-                        case 45: // Bow
-                            break;
-                        case 46: // CrossBow
-                            break;
-                        case 41: // TowHand_Axe
-                        case 42: // TowHand_Mace
-                            if (action >= 5 && action <= 15) {
-                                
-                            } else {
-                                
-                            }
-                            break;
-                        case 43: // Spear
-                        case 44: // PoleArm
-                            if ((action >= 5 && action <= 15) == (wt == 43)) {
-                                
-                            } else {
-                                
-                            }
-                            break;
-                        case 40: // TowHand_Sword
-                            break;
-                        case 31: // OneHand_Axe
-                        case 32: // OneHand_Mace
-                        case 37: // Wand
-                        case 38: // Staff
-                            if (action >= 5 && action <= 15) {
-                                
-                            } else {
-                                
-                            }
-                            break;
-                        case 30: // OneHand_Sword
-                        case 33: // Dagger
-                            if (JobAccessor.getJobCategory(bs.getJob()) == JobCategory.THIEF && wt == 33) {
-                                
-                            } else {
-                                
-                            }
-                            break;
-                        case 47: // ThrowingGloves
-                            if (skillID != 0 && skillID == Rogue.DoubleStab_Dagger) {
-                                
-                            } else {
-                                
-                            }
-                            break;
-                    }
-                } else {
-                    
-                }
-                // Begin Critical Calculations
-            }
-        }
-    }
-
+    
     public void setSeed(int s1, int s2, int s3) {
         rndGenForCharacter.seed(s1, s2, s3);
         rndForCheckDamageMiss.seed(s1, s2, s3);
@@ -895,22 +815,5 @@ public class CalcDamage {
         for (int i = 0; i < RND_SIZE; i++) {
             rndGenForCharacter.random();
         }
-    }
-    
-    public static final double getRand(long rand, double f0, double f1) {
-        double random;
-        if (f1 != f0) {
-            // swap f1 with f0
-            if (f1 > f0) {
-                double tmp = f1;
-                f0 = f1;
-                f1 = tmp;
-            }
-            long val = rand % 10000000;
-            random = f1 + (f0 - f1) * val * 0.000000100000010000001;
-        } else {
-            random = f0;
-        }
-        return random;
     }
 }
